@@ -1,3 +1,4 @@
+import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar";
 
 export const metadata = {
@@ -8,8 +9,9 @@ export const metadata = {
 };
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
-    </div>
+      <Banner />
+    </>
   );
 }

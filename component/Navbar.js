@@ -109,7 +109,7 @@ function Navbar() {
               </h3>
             </button>
           </div>
-          <Image src={TulasLogo} alt="" className="w-[10%] h-fit" />
+          <Image src={TulasLogo} alt="" className="w-[10%] h-fit z-10" />
         </div>
         {isChecked && (
           <div className="flex w-full flex-row">
