@@ -49,9 +49,9 @@ function Banner() {
   }, [currentIndex]);
 
   return (
-    <div ref={containerRef} className="w-screen h-screen relative -z-10">
+    <div ref={containerRef} className="w-screen h-screen relative">
       <div
-        className={`absolute inset-0 transition-opacity duration-500 ${
+        className={`absolute -z-10 inset-0 transition-opacity duration-500 ${
           fade ? "opacity-20" : "opacity-100"
         }`}
       >
@@ -61,7 +61,7 @@ function Banner() {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="flex flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
+      <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
         {images.map((_, index) => (
           <div
             key={index}
@@ -73,7 +73,7 @@ function Banner() {
             } `}
           >
             <div
-              className={`w-[20px] h-[20px] rounded-full flex items-center justify-center cursor-pointer ${
+              className={`w-[20px] z-10 h-[20px] rounded-full flex items-center justify-center cursor-pointer ${
                 index === currentIndex
                   ? " bg-white"
                   : " bg-gray-400 blur-[0.6px]"
