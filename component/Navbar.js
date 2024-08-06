@@ -61,7 +61,7 @@ function Navbar() {
   );
 
   return (
-    <div className="px-16 pt-8 w-[calc(100vw-8rem)] absolute flex justify-center">
+    <div className="px-16 pt-8 w-screen absolute flex justify-center">
       <div className="w-full h-fit">
         <div className="flex flex-row justify-between">
           <div className="flex flex-row gap-12 items-start">
@@ -109,7 +109,7 @@ function Navbar() {
               </h3>
             </button>
           </div>
-          <Image src={TulasLogo} alt="" className="w-[10%] h-fit z-10" />
+          <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
         </div>
         {isChecked && (
           <div className="flex w-full flex-row">
