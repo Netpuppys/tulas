@@ -29,7 +29,7 @@ function Navbar() {
   };
 
   const renderNestedLinks = (nestedLinks) => (
-    <div className="absolute w-[12rem]">
+    <div className="absolute w-[12rem] z-10 text-wrap">
       {nestedLinks.map((nestedItem, nestedIndex) => (
         <div className="list-item" key={nestedIndex}>
           <Link className="link" href={nestedItem?.linkTo || "#"}>
@@ -43,14 +43,14 @@ function Navbar() {
 
           {nestedItem.superNestedLinks &&
             nestedItem.superNestedLinks.length > 0 && (
-              <div className="ml-[12rem]">
+              <div className="ml-[12rem] text-wrap">
                 {nestedItem.superNestedLinks.length > 1}
                 {renderNestedLinks(nestedItem.superNestedLinks)}
               </div>
             )}
           {nestedItem.thirdNestedLinks &&
             nestedItem.thirdNestedLinks.length > 0 && (
-              <div className="ml-[12rem]">
+              <div className="ml-[12rem] text-wrap">
                 {nestedItem.thirdNestedLinks.length > 1}
                 {renderNestedLinks(nestedItem.thirdNestedLinks)}
               </div>
@@ -112,9 +112,9 @@ function Navbar() {
           <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
         </div>
         {isChecked && (
-          <div className="flex w-full flex-row">
+          <div className="flex w-full flex-row z-10">
             <LuCornerDownRight className="-mt-[15px] ml-[55px] text-white font-thin text-[60px]" />
-            <div className="navbar-list-main text-[20px] flex flex-row w-full justify-between">
+            <div className="navbar-list-main text-[20px] flex flex-row w-full justify-between z-10">
               {sitemap.map((item, index) => (
                 <div
                   className="main-list-item"
