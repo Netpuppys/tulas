@@ -68,7 +68,7 @@ function Navbar() {
   );
 
   return (
-    <div className="px-16 pt-8 w-screen absolute flex justify-center">
+    <div className="px-16 pt-8 w-full absolute flex justify-center">
       <div className="w-full h-fit">
         <div className="flex flex-row justify-between">
           <div className="flex flex-row gap-12 items-start">

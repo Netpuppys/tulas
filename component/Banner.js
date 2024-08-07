@@ -73,12 +73,9 @@ function Banner() {
   };
 
   return (
-    <div
-      ref={containerRef}
-      className="w-full h-screen relative overflow-hidden"
-    >
+    <div ref={containerRef} className="w-full h-screen relative">
       <div
-        className={`absolute -z-10 w-full h-full overflow-hidden o inset-0 transition-opacity duration-500 ${
+        className={`absolute -z-10 w-full h-full inset-0 transition-opacity duration-500 ${
           fade ? "opacity-20" : "opacity-100"
         }`}
       >
@@ -88,7 +85,7 @@ function Banner() {
           className="object-cover w-full h-fit"
         />
       </div>
-      <div className="flex z-10 flex-col self-center overflow-hidden items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
+      <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
         {images.map((_, index) => (
           <div
             key={index}

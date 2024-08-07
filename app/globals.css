@@ -33,6 +33,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+body::-webkit-scrollbar {
+  width: 6px;
+  --tw-bg-opacity: 0.8;
+  background-color: #007a83;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
 
 @layer utilities {
   .text-balance {
