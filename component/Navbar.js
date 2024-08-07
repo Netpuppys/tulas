@@ -34,7 +34,14 @@ function Navbar() {
         <div className="list-item" key={nestedIndex}>
           <Link className="link" href={nestedItem?.linkTo || "#"}>
             <div className="flex justify-between">
-              <p className="nested-link-title">{nestedItem?.title}</p>
+              <p
+                className="nested-link-title font-semibold"
+                style={{
+                  fontFamily: "Zilla Slab",
+                }}
+              >
+                {nestedItem?.title}
+              </p>
               {nestedItem?.nestedLinks?.length > 1 && (
                 <IoIosArrowForward className="nav-arrows" />
               )}
@@ -123,7 +130,14 @@ function Navbar() {
                   onMouseLeave={() => handleMenuLeave()}
                 >
                   <Link className={"link"} href={item.linkTo || "#"}>
-                    <p className="title">{item.title}</p>
+                    <p
+                      className="title font-semibold"
+                      style={{
+                        fontFamily: "Zilla Slab",
+                      }}
+                    >
+                      {item.title}
+                    </p>
                   </Link>
                   <div className="dropdown-container list-none">
                     {activeMenu === index &&
