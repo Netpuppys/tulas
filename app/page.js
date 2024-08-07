@@ -1,5 +1,6 @@
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar";
+import AboutTulas from "./Component/AboutTulas";
 
 export const metadata = {
   title:
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Navbar />
       <Banner />
+      <AboutTulas />
     </>
   );
 }
