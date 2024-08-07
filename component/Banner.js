@@ -75,14 +75,14 @@ function Banner() {
   return (
     <div ref={containerRef} className="w-screen h-screen relative">
       <div
-        className={`absolute -z-10 inset-0 transition-opacity duration-500 ${
+        className={`absolute -z-10 w-screen h-screen inset-0 transition-opacity duration-500 ${
           fade ? "opacity-20" : "opacity-100"
         }`}
       >
         <Image
           src={images[currentIndex]}
           alt=""
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-fit"
         />
       </div>
       <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
@@ -107,8 +107,22 @@ function Banner() {
         ))}
       </div>
       <div className="bottom-10 z-10 absolute ml-16">
-        <h2 className="text-[60px] text-white z-10">{title}</h2>
-        <h4 className="w-[50%]">{paragraph}</h4>
+        <h2
+          className="text-[60px] text-white z-10"
+          style={{
+            fontFamily: "Carot Slab",
+          }}
+        >
+          {title}
+        </h2>
+        <h4
+          className="w-[50%]"
+          style={{
+            fontFamily: "TT Chocolates",
+          }}
+        >
+          {paragraph}
+        </h4>
       </div>
       <button
         onClick={handleScrollArrow}

@@ -119,7 +119,7 @@ function Navbar() {
           <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
         </div>
         {isChecked && (
-          <div className="flex w-full flex-row z-10">
+          <div className="flex w-full pr-[160px] flex-row z-10">
             <LuCornerDownRight className="-mt-[15px] ml-[55px] text-white font-thin text-[60px]" />
             <div className="navbar-list-main text-[20px] flex flex-row w-full justify-between z-10">
               {sitemap.map((item, index) => (

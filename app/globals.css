@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Carot Slab";
+  src: url(../public/fonts/Carot\ Slab\ Medium.ttf);
+}
+@font-face {
+  font-family: "TT Chocolates";
+  src: url(../public/fonts/TT\ Chocolates\ Trial\ Medium.otf);
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
