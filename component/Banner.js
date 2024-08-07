@@ -73,7 +73,10 @@ function Banner() {
   };
 
   return (
-    <div ref={containerRef} className="w-screen h-screen relative">
+    <div
+      ref={containerRef}
+      className="w-screen h-screen relative overflow-hidden"
+    >
       <div
         className={`absolute -z-10 w-screen h-screen inset-0 transition-opacity duration-500 ${
           fade ? "opacity-20" : "opacity-100"
