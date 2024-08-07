@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar";
 import AboutTulas from "./Component/AboutTulas";
+import WhyTulasScroll from "./Component/WhyTulasScroll";
 
 export const metadata = {
   title:
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <AboutTulas />
+      <WhyTulasScroll />
     </>
   );
 }
