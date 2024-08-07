@@ -6,8 +6,18 @@ import Banner2 from "../public/Components/Banner/Banner1.webp";
 import Banner3 from "../public/Components/Banner/Banner1.webp";
 import Banner4 from "../public/Components/Banner/Banner1.webp";
 import Banner5 from "../public/Components/Banner/Banner1.webp";
-
+import ScrollImage from "../public/Components/Banner/scrollWidget.png";
+import { FaArrowDown, FaLongArrowAltDown } from "react-icons/fa";
+import { IoIosArrowRoundDown } from "react-icons/io";
 function Banner() {
+  const title = (
+    <>
+      <span className="text-[#007A83]">UNLOCK</span> NEW <br />
+      PATHWAYS TO <span className="text-[#007A83]">SUCCESS</span>
+    </>
+  );
+  const paragraph =
+    "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, Dehradun with the vision of offering excellent academics along with fostering the professional and personal personas of every student of the institute.";
   const images = [Banner1, Banner2, Banner3, Banner4, Banner5];
   const [currentIndex, setCurrentIndex] = useState(2);
   const [fade, setFade] = useState(false);
@@ -73,7 +83,7 @@ function Banner() {
             } `}
           >
             <div
-              className={`w-[20px] z-10 h-[20px] rounded-full flex items-center justify-center cursor-pointer ${
+              className={`w-[15px] z-10 h-[15px] rounded-full flex items-center justify-center cursor-pointer ${
                 index === currentIndex
                   ? " bg-white"
                   : " bg-gray-400 blur-[0.6px]"
@@ -82,6 +92,20 @@ function Banner() {
           </div>
         ))}
       </div>
+      <div className="bottom-10 z-10 absolute ml-16">
+        <h2 className="text-[60px] text-white z-10">{title}</h2>
+        <h4 className="w-[50%]">{paragraph}</h4>
+      </div>
+      <button className="bottom-10 right-10 absolute z-10 w-[100px] aspect-square">
+        <div className="relative w-full h-full flex justify-center items-center">
+          <Image
+            className="animate-scrollSpin absolute w-full h-fit"
+            src={ScrollImage}
+            alt=""
+          />
+          <IoIosArrowRoundDown className="absolute text-[40px] font-thin" />
+        </div>
+      </button>
     </div>
   );
 }
