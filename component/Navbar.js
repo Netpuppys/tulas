@@ -118,7 +118,7 @@ function Navbar() {
           <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
         </div>
         {isChecked && (
-          <div className="flex w-full pr-[160px] flex-row z-10">
+          <div className="flex w-full max-w-[1300px] pr-[160px] flex-row z-10">
             <div className="-mt-[12px] ml-[60px] text-white font-thin text-[60px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
