@@ -53,7 +53,10 @@ function AboutTulas() {
     </>
   );
   return (
-    <div className="h-screen w-screen bg-white flex flex-row justify-between px-24 items-center">
+    <div
+      id="2"
+      className="h-screen w-screen bg-white flex flex-row justify-between px-24 items-center"
+    >
       <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-2xl w-1/2 px-8">
         {aboutTulas}
       </h3>
@@ -66,7 +69,7 @@ function AboutTulas() {
       >
         <div
           className="npf_wgts"
-          data-height="450px"
+          data-height="500px"
           style={{
             width: "100%",
             margin: "auto",

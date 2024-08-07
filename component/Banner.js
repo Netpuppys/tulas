@@ -7,7 +7,6 @@ import Banner3 from "../public/Components/Banner/Banner1.webp";
 import Banner4 from "../public/Components/Banner/Banner1.webp";
 import Banner5 from "../public/Components/Banner/Banner1.webp";
 import ScrollImage from "../public/Components/Banner/scrollWidget.png";
-import { FaArrowDown, FaLongArrowAltDown } from "react-icons/fa";
 import { IoIosArrowRoundDown } from "react-icons/io";
 function Banner() {
   const title = (
@@ -23,6 +22,8 @@ function Banner() {
   const [fade, setFade] = useState(false);
   const containerRef = useRef(null);
   const intervalRef = useRef(null);
+  const maxSections = 13;
+  const [scrollToSection, setScrollToSection] = useState(1);
 
   const changeImage = (index) => {
     setFade(true);
@@ -57,6 +58,19 @@ function Banner() {
   useEffect(() => {
     changeImage(currentIndex);
   }, [currentIndex]);
+
+  const handleScrollArrow = () => {
+    if (scrollToSection < maxSections) {
+      setScrollToSection((prev) => prev + 1);
+    }
+
+    if (scrollToSection < maxSections) {
+      const element = document.getElementById(`${scrollToSection}`);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   return (
     <div ref={containerRef} className="w-screen h-screen relative">
@@ -96,7 +110,10 @@ function Banner() {
         <h2 className="text-[60px] text-white z-10">{title}</h2>
         <h4 className="w-[50%]">{paragraph}</h4>
       </div>
-      <button className="bottom-10 right-10 absolute z-10 w-[100px] aspect-square">
+      <button
+        onClick={handleScrollArrow}
+        className="bottom-10 right-10 absolute z-10 w-[100px] aspect-square"
+      >
         <div className="relative w-full h-full flex justify-center items-center">
           <Image
             className="animate-scrollSpin absolute w-full h-fit"
