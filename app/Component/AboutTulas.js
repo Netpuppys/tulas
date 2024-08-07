@@ -55,7 +55,7 @@ function AboutTulas() {
   return (
     <div
       id="2"
-      className="min-h-screen w-screen bg-white flex flex-row justify-between px-24 items-center"
+      className="min-h-screen w-full bg-white flex flex-row justify-between px-24 items-center"
     >
       <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-xl 2xl:text-2xl w-[45%] px-8">
         {aboutTulas}
