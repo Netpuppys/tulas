@@ -30,6 +30,7 @@ function AboutTulas() {
       </span>
       <br />
       <br />
+      <br />
       With this vision,{" "}
       <span className="text-[#007A83] italic"> Tula’s Institute </span>has been
       ranked in{" "}
@@ -58,13 +59,13 @@ function AboutTulas() {
       className="min-h-screen bg-white flex flex-row justify-between px-24 items-center"
     >
       <div className="w-[50%]">
-        <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-xl 2xl:text-2xl w-[80%] mx-auto">
+        <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-xl 2xl:text-2xl max-w-[682px] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>
       <div className="w-[50%]">
         <div
-          className="w-[80%] py-8 px-8 mx-auto bg-[#C0E1E3]"
+          className="max-w-[429px] py-8 px-8 ml-auto mr-0 bg-[#C0E1E3]"
           style={{
             boxShadow: "0px 3.29px 35.039px 0px rgba(0, 0, 0, 0.50)",
             borderRadius: "30px",
