@@ -55,28 +55,32 @@ function AboutTulas() {
   return (
     <div
       id="2"
-      className="min-h-screen w-full bg-white flex flex-row justify-between px-24 items-center"
+      className="min-h-screen bg-white flex flex-row justify-between px-24 items-center"
     >
-      <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-xl 2xl:text-2xl w-[45%] px-8">
-        {aboutTulas}
-      </h3>
-      <div
-        className="w-[35%] px-8 py-8 bg-[#C0E1E3]"
-        style={{
-          boxShadow: "0px 3.29px 35.039px 0px rgba(0, 0, 0, 0.50)",
-          borderRadius: "30px",
-        }}
-      >
+      <div className="w-[50%]">
+        <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-xl 2xl:text-2xl w-[80%] mx-auto">
+          {aboutTulas}
+        </h3>
+      </div>
+      <div className="w-[50%]">
         <div
-          className="npf_wgts"
-          data-height="500px"
+          className="w-[80%] py-8 px-8 mx-auto bg-[#C0E1E3]"
           style={{
-            width: "100%",
-            margin: "auto",
-            marginBottom: "2rem",
+            boxShadow: "0px 3.29px 35.039px 0px rgba(0, 0, 0, 0.50)",
+            borderRadius: "30px",
           }}
-          data-w="43cde486b796708909f0caeb58a1cd48"
-        ></div>
+        >
+          <div
+            className="npf_wgts"
+            data-height="500px"
+            style={{
+              width: "100%",
+              margin: "auto",
+              marginBottom: "2rem",
+            }}
+            data-w="43cde486b796708909f0caeb58a1cd48"
+          ></div>
+        </div>
       </div>
     </div>
   );
