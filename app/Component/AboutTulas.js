@@ -46,9 +46,9 @@ function AboutTulas() {
       for the past 3 years by{" "}
       <span className="text-[#007A83] italic">
         {" "}
-        “The Times of India-Engineering Survey”{" "}
+        “The Times of India-Engineering Survey”,{" "}
       </span>
-      ,ranked{" "}
+      ranked{" "}
       <span className="text-[#007A83] italic"> AA+ by “Career 360”.</span>
     </>
   );
@@ -57,11 +57,11 @@ function AboutTulas() {
       id="2"
       className="h-screen w-screen bg-white flex flex-row justify-between px-24 items-center"
     >
-      <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-2xl w-1/2 px-8">
+      <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-xl 2xl:text-2xl w-[45%] px-8">
         {aboutTulas}
       </h3>
       <div
-        className="w-[40%] px-8 py-8 bg-[#C0E1E3]"
+        className="w-[35%] px-8 py-8 bg-[#C0E1E3]"
         style={{
           boxShadow: "0px 3.29px 35.039px 0px rgba(0, 0, 0, 0.50)",
           borderRadius: "30px",
