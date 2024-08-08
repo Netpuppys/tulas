@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ScrollTulas from "../../public/Homepage/ScrollSection/WhyTulas.png";
 import Image from "next/image";
 import {
@@ -13,7 +13,16 @@ import Card4 from "../../public/Homepage/ScrollSection/Card4.png";
 
 function WhyTulasScroll() {
   const scrollRef = useRef();
+  const [index, setIndex] = useState(1);
   const images = [
+    { src: Card1 },
+    { src: Card2 },
+    { src: Card3 },
+    { src: Card4 },
+    { src: Card1 },
+    { src: Card2 },
+    { src: Card3 },
+    { src: Card4 },
     { src: Card1 },
     { src: Card2 },
     { src: Card3 },
@@ -46,14 +55,22 @@ function WhyTulasScroll() {
   }, []);
 
   const handleForwardClick = () => {
-    // document.querySelector(".innerText").style.left = `[calc((${
-    //   100 - value / 15
-    // }%)+4vw)]`;
+    if (scrollRef.current && index < images.length) {
+      scrollRef.current.scroll({
+        top: 288 * index,
+        behavior: "smooth",
+      });
+      setIndex((prev) => prev + 1);
+    }
   };
   const handleBackClick = () => {
-    // document.querySelector(".innerText").style.left = `[calc((${
-    //   100 - value / 15
-    // }%)-4vw)]`;
+    if (scrollRef.current && index !== 1) {
+      scrollRef.current.scroll({
+        top: -288 * index,
+        behavior: "smooth",
+      });
+      setIndex((prev) => prev - 1);
+    }
   };
 
   return (
@@ -85,20 +102,23 @@ function WhyTulasScroll() {
             <IoArrowForwardCircleOutline onClick={handleForwardClick} />
             <IoArrowBackCircleOutline onClick={handleBackClick} />
           </div>
-          <div className="fixed z-20 top-1/2 left-full w-screen transform -translate-y-1/2 innerText">
-            <div ref={scrollRef} className="flex w-full h-full  gap-12">
+          <div
+            ref={scrollRef}
+            className="fixed z-20 top-1/2 left-full max-w-screen transform -translate-y-1/2 innerText"
+          >
+            <div className="flex w-fit h-fit gap-12">
               {images.map((image, index) => (
                 <div
                   key={index}
-                  className="group rounded-xl w-full h-fit shadow-lg transform transition-all duration-500 hover:scale-125"
+                  className="group rounded-xl w-[20rem] h-full overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-125"
                 >
                   <Image
                     src={image.src}
                     alt=""
-                    className="z-20 object-cover w-[15rem] h-fit rounded-xl"
+                    className="z-20 object-cover w-full h-full"
                     layout="responsive"
                   />
-                  <div className="absolute rounded-xl inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
                 </div>
               ))}
             </div>
