@@ -13,7 +13,8 @@ import Card4 from "../../public/Homepage/ScrollSection/Card4.png";
 
 function WhyTulasScroll() {
   const scrollRef = useRef();
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
+  const [width, setWidth] = useState()
   const images = [
     { src: Card1 },
     { src: Card2 },
@@ -36,7 +37,7 @@ function WhyTulasScroll() {
         ".section"
       ).style.clipPath = `circle(${clipValue}px at center center)`;
 
-      document.querySelector(".innerText").style.left = `${100 - value / 15}%`;
+      document.querySelector(".innerText").style.paddingLeft = `${100 - value / 10}%`;
 
       // Rotate the image based on scroll value
       const rotationDegree = value % 360;
@@ -54,22 +55,41 @@ function WhyTulasScroll() {
     };
   }, []);
 
+  useEffect(() => {
+    const updateWidth = () => {
+      if (scrollRef.current) {
+        setWidth(scrollRef.current.offsetWidth);
+      }
+    };
+
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
   const handleForwardClick = () => {
-    if (scrollRef.current && index < images.length) {
-      scrollRef.current.scroll({
-        top: 288 * index,
-        behavior: "smooth",
-      });
-      setIndex((prev) => prev + 1);
+    // if (scrollRef.current && index < images.length) {
+    //   scrollRef.current.scroll({
+    //     top: 288 * index,
+    //     behavior: "smooth",
+    //   });
+    //   setIndex((prev) => prev + 1);
+    // }
+    if (index < images.length-1) {
+      setIndex(prev => prev + 1)
     }
   };
   const handleBackClick = () => {
-    if (scrollRef.current && index !== 1) {
-      scrollRef.current.scroll({
-        top: -288 * index,
-        behavior: "smooth",
-      });
-      setIndex((prev) => prev - 1);
+    // if (scrollRef.current && index !== 1) {
+    //   scrollRef.current.scroll({
+    //     top: -288 * index,
+    //     behavior: "smooth",
+    //   });
+    //   setIndex((prev) => prev - 1);
+    // }
+    if (index !== 0) {
+      setIndex(prev => prev - 1)
     }
   };
 
@@ -98,29 +118,35 @@ function WhyTulasScroll() {
             and well-furnished classrooms, seminar hall, library, workshop, and
             fully airconditioned & spacious auditorium.
           </h4>
-          <div className="flex fixed flex-col text-[60px] transform -translate-y-1/2 left-[7vw] top-1/2">
-            <IoArrowForwardCircleOutline onClick={handleForwardClick} />
-            <IoArrowBackCircleOutline onClick={handleBackClick} />
-          </div>
-          <div
-            ref={scrollRef}
-            className="fixed z-20 top-1/2 left-full max-w-screen transform -translate-y-1/2 innerText"
-          >
-            <div className="flex w-fit h-fit gap-12">
-              {images.map((image, index) => (
-                <div
-                  key={index}
-                  className="group rounded-xl w-[20rem] h-full overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-125"
-                >
-                  <Image
-                    src={image.src}
-                    alt=""
-                    className="z-20 object-cover w-full h-full"
-                    layout="responsive"
-                  />
-                  <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
-                </div>
-              ))}
+          <div className="fixed w-screen -translate-y-1/2 z-30  top-1/2 flex items-center justify-start">
+            <div className="flex w-40 flex-col text-[60px]  items-center justify-center">
+              <IoArrowForwardCircleOutline onClick={handleForwardClick} />
+              <IoArrowBackCircleOutline onClick={handleBackClick} />
+            </div>
+
+            <div className="w-[calc(100%-10rem)] pl-10 overflow-hidden py-10 innerText">
+            <div
+              style={{ transform: `translateX(-${index * (width+48)}px)` }}
+              className="w-fit"
+            >
+              <div className="flex w-fit h-fit gap-12">
+                {images.map((image, index) => (
+                  <div
+                  ref={scrollRef}
+                    key={index}
+                    className="group rounded-xl w-[20rem] h-full overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-125"
+                  >
+                    <Image
+                      src={image.src}
+                      alt=""
+                      className="z-20 object-cover w-full h-full"
+                      layout="responsive"
+                    />
+                    <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+                  </div>
+                ))}
+              </div>
+              </div>
             </div>
           </div>
         </section>
