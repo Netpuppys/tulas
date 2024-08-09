@@ -10,6 +10,10 @@
   font-family: "TT Chocolates";
   src: url(../public/fonts/TT\ Chocolates\ Trial\ Medium.otf);
 }
+@font-face {
+  font-family: "DKAppelstroop";
+  src: url(../public/fonts/DK\ Appelstroop.otf);
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
