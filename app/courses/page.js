@@ -121,7 +121,7 @@ function CoursesScroll() {
       <div ref={ref} className="w-full h-[100vh] z-50 bg-[#3D001B] relative">
         <div className="w-[1px] h-[20vh] bg-white relative top-0 left-1/2 -translate-x-1/2"></div>
         <div className="w-full mx-auto pt-8">
-          <div className="flex items-center justify-center w-full h-fit gap-6">
+          <div className="flex items-center justify-center w-full h-fit gap-[0.8vw]">
             {cardsCourses.map((image, index) => (
               <div
                 key={index}
@@ -133,7 +133,7 @@ function CoursesScroll() {
                   className="z-20 object-cover w-full h-full hover:brightness-75"
                   layout="responsive"
                 />
-                <div className="text-white absolute z-30 w-fit text-center p-2 bottom-0">
+                <div className="text-white absolute z-30 w-fit text-left p-2 bottom-0">
                   {image.title}
                 </div>
               </div>
