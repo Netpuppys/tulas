@@ -16,6 +16,7 @@ import Card7 from "../../public/Homepage/ScrollSection/Card7.png";
 import Card8 from "../../public/Homepage/ScrollSection/Card8.png";
 
 function WhyTulasScroll() {
+  const [scrollY, setScrollY ] = useState(0)
   const title = "WHY TULA’S";
   const paragraph =
     "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
@@ -39,10 +40,22 @@ function WhyTulasScroll() {
   useEffect(() => {
     const handleScroll = () => {
       let value = window.scrollY;
+      setScrollY(value)
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+
+      let value = window.scrollY;
       let clipValue = Math.max(100, value); // Set minimum value for clipPath to 100
       document.querySelector(
         ".section"
-      ).style.clipPath = `circle(${clipValue}px at center center)`;
+      ).style.clipPath = `circle(${Math.max(100, clipValue) }px at center center)`;
 
       document.querySelector(".innerText").style.paddingLeft = `${
         100 - value / 8
@@ -99,7 +112,10 @@ function WhyTulasScroll() {
             className="z-10 w-fit h-[40vh] fixed rotatingImage pointer-events-none"
           />
         </div>
-        <section className="fixed top-0 w-full h-screen flex clip-circle-50px section backgroundScroll">
+        <section 
+          style={{ clipPath: "circle(100px at center center)"}}
+          className="fixed top-0 w-full h-screen flex clip-circle-50px section backgroundScroll"
+        >
           <h3
             style={{
               fontFamily: "Carot Slab",
@@ -135,7 +151,7 @@ function WhyTulasScroll() {
               </button>
             </div>
 
-            <div className="w-[calc(100%-10rem)] pl-10 overflow-x-hidden py-10 innerText">
+            <div className="w-[calc(100%-10rem)] pl-[100vw] overflow-x-hidden py-10 innerText">
               <div
                 style={{ transform: `translateX(-${index * (width + 48)}px)` }}
                 className="w-fit"

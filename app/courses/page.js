@@ -7,35 +7,29 @@ function CoursesScroll() {
   const [scale, setScale] = useState(1);
   const [scaleLeaf, setScaleLeaf] = useState(1);
   const [opacity, setOpacity] = useState(1);
-  const [height, setHeight] = useState(); // New state for height
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setScale(1 + scrollY * 0.0001); // Increase scale based on scroll position
+      setScale(1 + scrollY * 0.0001);
       setScaleLeaf(1 + scrollY * 0.001);
-
-      // Adjust opacity based on scroll position, ensuring it stays within 0-1 range
-      setOpacity(Math.max(1 - scrollY * 0.001, 0)); // Decrease opacity based on scroll position
-      const newHeight = Math.max(10, 30 - scrollY * 0.01); // Adjust height from 10vh to 30vh
-      setHeight(newHeight);
-      console.log(newHeight);
+      setOpacity(Math.max(1 - scrollY * 0.001, 0));
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call initially to set the values on load
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [opacity]);
 
   return (
-    <div className="w-full h-[300vh] relative overflow-hidden">
+    <div className="w-full h-[500vh] relative overflow-hidden">
       <div
         className="fixed w-full h-[100vh] z-10 bg-no-repeat bg-cover bg-center flex justify-center items-center"
         style={{
           backgroundImage: `url(${BackgroundCourses.src})`,
           transform: `scale(${scale})`,
-          opacity: opacity, // Apply opacity based on scroll position
+          opacity: opacity,
         }}
       >
         <h3 className="font-[Dynalight] text-[74px] text-center leading-[100px]">
@@ -47,9 +41,8 @@ function CoursesScroll() {
         </h3>
       </div>
       <div
-        className={`fixed w-full h-[100vh] flex flex-col gap-2 justify-end items-center transition-opacity duration-300 ease-in-out ${
-          opacity < 0.09 ? "opacity-100 translate-in" : "opacity-0"
-        }`}
+        className={`w-full h-[100vh] flex flex-col gap-2 justify-end items-center transition-opacity duration-300 ease-in-out fixed
+         ${opacity < 0.09 ? "opacity-100 translate-in" : "opacity-0"}`}
       >
         <div className="font-[ExtraWide] text-[42px] text-center">Courses</div>
         <div className="bg-white w-[1px] h-[8vh]"></div>
@@ -65,10 +58,8 @@ function CoursesScroll() {
         </h5>
         <div className="h-[30vh]">
           <div
-            className={`bg-white w-[1px]  ${
-              opacity < 0.001
-                ? `opacity-100 translate-in h-[${height}vh]`
-                : "opacity-0"
+            className={`bg-white w-[1px] h-[30vh] ${
+              opacity < 0.0001 ? `opacity-100 translate-in` : "opacity-0"
             }`}
           ></div>
         </div>
@@ -79,7 +70,7 @@ function CoursesScroll() {
         style={{
           backgroundImage: `url(${BackgroundLeaf.src})`,
           transform: `scale(${scaleLeaf})`,
-          opacity: opacity, // Apply opacity based on scroll position
+          opacity: opacity,
         }}
       ></div>
     </div>
