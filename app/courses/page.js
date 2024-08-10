@@ -23,7 +23,7 @@ function CoursesScroll() {
   }, [opacity]);
 
   return (
-    <div className="w-full h-[500vh] relative overflow-hidden">
+    <div className="w-full h-[500vh] bg-[#3D001B] relative overflow-hidden">
       <div
         className="fixed w-full h-[100vh] z-10 bg-no-repeat bg-cover bg-center flex justify-center items-center"
         style={{
