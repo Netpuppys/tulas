@@ -2,14 +2,26 @@
 import React, { useEffect, useRef, useState } from "react";
 import BackgroundCourses from "../../public/Homepage/Courses/Courses.png";
 import BackgroundLeaf from "../../public/Homepage/Courses/CoursesLeaf.png";
-
+import Engineering from "../../public/Homepage/Courses/Engineering.png";
+import Business from "../../public/Homepage/Courses/Business.png";
+import Agriculture from "../../public/Homepage/Courses/Agriculture.png";
+import MassCoummunication from "../../public/Homepage/Courses/MassCommunication.png";
+import computeApplication from "../../public/Homepage/Courses/ComputerApplication.png";
+import Image from "next/image";
 function CoursesScroll() {
   const [scale, setScale] = useState(1);
   const [scaleLeaf, setScaleLeaf] = useState(1);
   const [opacity, setOpacity] = useState(1);
-
   const ref = useRef(null);
   const [isInView, setIsInView] = useState(false);
+
+  const cardsCourses = [
+    { src: Engineering, title: "DEPARTMENT OF ENGINEERING" },
+    { src: Business, title: "GRADUATE SCHOOL OF BUSINESS" },
+    { src: Agriculture, title: "DEPARTMENT OF AGRICULTURE" },
+    { src: MassCoummunication, title: "DEPARTMENT OF MASS COMUNICATION" },
+    { src: computeApplication, title: "DEPARTMENT OF COMPUTER APPLICATION" },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -107,7 +119,27 @@ function CoursesScroll() {
         ></div>
       </div>
       <div ref={ref} className="w-full h-[100vh] z-50 bg-[#3D001B] relative">
-        <div className="w-[1px] h-[20vh] bg-white absolute top-0 left-1/2 -translate-x-1/2"></div>
+        <div className="w-[1px] h-[20vh] bg-white relative top-0 left-1/2 -translate-x-1/2"></div>
+        <div className="w-full mx-auto pt-8">
+          <div className="flex items-center justify-center w-full h-fit gap-6">
+            {cardsCourses.map((image, index) => (
+              <div
+                key={index}
+                className="w-[18vw] h-full overflow-hidden shadow-lg transform transition-all duration-500"
+              >
+                <Image
+                  src={image.src}
+                  alt=""
+                  className="z-20 object-cover w-full h-full hover:brightness-75"
+                  layout="responsive"
+                />
+                <div className="text-white absolute z-30 w-fit text-center p-2 bottom-0">
+                  {image.title}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
