@@ -14,6 +14,10 @@
   font-family: "DKAppelstroop";
   src: url(../public/fonts/DK\ Appelstroop.otf);
 }
+@font-face {
+  font-family: "ExtraWide";
+  src: url(../public/fonts/fonnts.com-Roc_Grotesk_ExtraWide_Medium.otf);
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -89,4 +93,16 @@ span {
     ),
     url(../public/Homepage/ScrollSection/BackgroundImageScroll.png) lightgray
       50% / cover no-repeat;
+}
+@keyframes translateIn {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.translate-in {
+  animation: translateIn 0.5s ease-out;
 }
