@@ -115,14 +115,7 @@ function Banner() {
         >
           {title}
         </h2>
-        <h4
-          className="w-[50%]"
-          style={{
-            fontFamily: "TT Chocolates",
-          }}
-        >
-          {paragraph}
-        </h4>
+        <h4 className="w-[50%] font-[TTChocolates]">{paragraph}</h4>
       </div>
       <button
         onClick={handleScrollArrow}

@@ -2,12 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import BackgroundCourses from "../../public/Homepage/Courses/Courses.png";
 import BackgroundLeaf from "../../public/Homepage/Courses/CoursesLeaf.png";
-import Engineering from "../../public/Homepage/Courses/Engineering.png";
-import Business from "../../public/Homepage/Courses/Business.png";
-import Agriculture from "../../public/Homepage/Courses/Agriculture.png";
-import MassCoummunication from "../../public/Homepage/Courses/MassCommunication.png";
-import computeApplication from "../../public/Homepage/Courses/ComputerApplication.png";
-import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
+import CardCourses from "../Component/CardCourses";
 function CoursesScroll() {
   const [scale, setScale] = useState(1);
   const [scaleLeaf, setScaleLeaf] = useState(1);
@@ -15,31 +11,18 @@ function CoursesScroll() {
   const ref = useRef(null);
   const [isInView, setIsInView] = useState(false);
 
-  const cardsCourses = [
-    { src: Engineering, title: "DEPARTMENT OF ENGINEERING" },
-    { src: Business, title: "GRADUATE SCHOOL OF BUSINESS" },
-    { src: Agriculture, title: "DEPARTMENT OF AGRICULTURE" },
-    { src: MassCoummunication, title: "DEPARTMENT OF MASS COMUNICATION" },
-    { src: computeApplication, title: "DEPARTMENT OF COMPUTER APPLICATION" },
-  ];
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Check if the element is in the viewport
         setIsInView(entry.isIntersecting);
-        console.log(entry.isIntersecting);
       },
       {
-        threshold: 0, // Trigger the observer when at least 10% of the element is in view
+        threshold: 0,
       }
     );
-
     if (ref.current) {
       observer.observe(ref.current);
     }
-
-    // Cleanup the observer when the component is unmounted
     return () => {
       if (ref.current) {
         observer.unobserve(ref.current);
@@ -54,10 +37,8 @@ function CoursesScroll() {
       setScaleLeaf(1 + scrollY * 0.001);
       setOpacity(Math.max(1 - scrollY * 0.001, 0));
     };
-
     window.addEventListener("scroll", handleScroll);
     handleScroll();
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, [opacity]);
 
@@ -91,7 +72,7 @@ function CoursesScroll() {
           </div>
           <div className="bg-white w-[1px] h-[8vh]"></div>
           <h5
-            className={`w-full max-w-[50rem] font-[TT Chocolates] text-[25px] text-center transition-opacity duration-300 ease-in-out ${
+            className={`w-full max-w-[50rem] font-[TTChocolates] text-[25px] text-center transition-opacity duration-300 ease-in-out ${
               opacity < 0.001 ? "opacity-100 translate-in" : "opacity-0"
             }`}
           >
@@ -118,28 +99,17 @@ function CoursesScroll() {
           }}
         ></div>
       </div>
-      <div ref={ref} className="w-full h-[100vh] z-50 bg-[#3D001B] relative">
+      <div ref={ref} className="w-full h-[110vh] z-50 bg-[#3D001B] relative">
         <div className="w-[1px] h-[20vh] bg-white relative top-0 left-1/2 -translate-x-1/2"></div>
         <div className="w-full mx-auto pt-8">
-          <div className="flex items-center justify-center w-full h-fit gap-[0.8vw]">
-            {cardsCourses.map((image, index) => (
-              <div
-                key={index}
-                className="w-[18vw] h-full overflow-hidden shadow-lg transform transition-all duration-500"
-              >
-                <Image
-                  src={image.src}
-                  alt=""
-                  className="z-20 object-cover w-full h-full hover:brightness-75"
-                  layout="responsive"
-                />
-                <div className="text-white absolute z-30 w-fit text-left p-2 bottom-0">
-                  {image.title}
-                </div>
-              </div>
-            ))}
-          </div>
+          <CardCourses />
         </div>
+        <Fade>
+          <div className="text-center w-[55%] mx-auto text-[22px] font-[TTChocolates] pt-10">
+            The Institute provides excellent infrastructural and ICT facilities
+            with well-equipped laboratories.
+          </div>
+        </Fade>
       </div>
     </>
   );

@@ -7,7 +7,7 @@
   src: url(../public/fonts/Carot\ Slab\ Medium.ttf);
 }
 @font-face {
-  font-family: "TT Chocolates";
+  font-family: "TTChocolates";
   src: url(../public/fonts/TT\ Chocolates\ Trial\ Medium.otf);
 }
 @font-face {
@@ -96,10 +96,10 @@ span {
 }
 @keyframes translateIn {
   from {
-    transform: translateY(50px);
+    transform: translateY(10vh);
   }
   to {
-    transform: translateY(0px);
+    transform: translateY(0vh);
   }
 }
 

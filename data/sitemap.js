@@ -140,7 +140,7 @@ const sitemap = [
             thirdNestedLinks: [
               {
                 title: "Diploma in Civil Engineering",
-                linkTo: "diploma-in-civil-engineering/",
+                linkTo: "/diploma-in-civil-engineering/",
               },
               {
                 title: "Diploma in Mechanical Engineering",
