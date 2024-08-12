@@ -82,6 +82,7 @@ function CardCourses() {
       degrees: [
         {
           name: "MBA",
+          link: "/courses/mba/",
           branches: [
             {
               name: "Finance",
@@ -204,7 +205,7 @@ function CardCourses() {
         <Fade delay={300}>
           <div
             key={index}
-            className={`w-[18vw] group h-full overflow-hidden shadow-lg transform transition-all duration-500`}
+            className={`w-[18vw] group card-group h-full overflow-hidden shadow-lg transform transition-all duration-500`}
           >
             <Image
               src={image.src}
@@ -212,14 +213,14 @@ function CardCourses() {
               className="z-20 object-cover w-full h-full group-hover:brightness-50"
               layout="responsive"
             />
-            <div className="absolute z-30 bottom-0 p-2 flex flex-col gap-2">
-              <div className="text-white w-fit text-left font-[BenchNine] text-3xl">
+            <div className="absolute z-30 bottom-0 p-2 flex flex-col gap-4">
+              <div className="text-white slide-in w-fit text-left font-[BenchNine] text-3xl">
                 {image.title}
               </div>
               {image.degrees.map((degree, degreeIndex) => (
                 <div
                   key={degreeIndex}
-                  className="hidden group-hover:block text-white w-fit text-left"
+                  className="hidden slide-in text-white w-fit text-left"
                 >
                   <Link
                     href={degree.link || "#"}
@@ -229,7 +230,7 @@ function CardCourses() {
                   </Link>
                   {degree.branches.map((branches, branchesIndex) => (
                     <Link href={branches.linkTo || "#"}>
-                      <h3 className="text-sm" key={branchesIndex}>
+                      <h3 className="text-xs" key={branchesIndex}>
                         {branches.name}
                       </h3>
                     </Link>
