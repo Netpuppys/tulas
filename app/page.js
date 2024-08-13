@@ -3,6 +3,8 @@ import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar";
 import AboutTulas from "./Component/AboutTulas";
 import WhyTulasScroll from "./Component/WhyTulasScroll";
+import Virtual from "./Component/Virtual";
+import VirtualTour from "./Component/VirtualTour";
 
 export const metadata = {
   title:
@@ -16,7 +18,8 @@ export default function Home() {
       <Navbar />
       <Banner />
       <AboutTulas />
-      
+      <Virtual />
+      <VirtualTour />
     </>
   );
 }

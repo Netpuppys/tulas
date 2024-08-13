@@ -4,6 +4,7 @@ import BackgroundCourses from "../../public/Homepage/Courses/Courses.png";
 import BackgroundLeaf from "../../public/Homepage/Courses/CoursesLeaf.png";
 import { Fade } from "react-awesome-reveal";
 import CardCourses from "../Component/CardCourses";
+import Accreditation from "../Component/Accreditation";
 function CoursesScroll() {
   const [scale, setScale] = useState(1);
   const [scaleLeaf, setScaleLeaf] = useState(1);
@@ -99,18 +100,13 @@ function CoursesScroll() {
           }}
         ></div>
       </div>
-      <div ref={ref} className="w-full h-[110vh] z-50 bg-[#3D001B] relative">
+      <div ref={ref} className="w-full h-[75vh] z-50 bg-[#3D001B] relative">
         <div className="w-[1px] h-[20vh] bg-white relative top-0 left-1/2 -translate-x-1/2"></div>
         <div className="w-full mx-auto pt-8">
           <CardCourses />
         </div>
-        <Fade>
-          <div className="text-center w-[55%] mx-auto text-[22px] font-[TTChocolates] pt-10">
-            The Institute provides excellent infrastructural and ICT facilities
-            with well-equipped laboratories.
-          </div>
-        </Fade>
       </div>
+      <Accreditation />
     </>
   );
 }
