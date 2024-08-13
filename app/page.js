@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar";
 import AboutTulas from "./Component/AboutTulas";
-import WhyTulasScroll from "./Component/WhyTulasScroll";
+import Video from "./Component/Video";
 import Virtual from "./Component/Virtual";
 import VirtualTour from "./Component/VirtualTour";
 
@@ -20,6 +20,7 @@ export default function Home() {
       <AboutTulas />
       <Virtual />
       <VirtualTour />
+      <Video />
     </>
   );
 }
