@@ -1,7 +1,7 @@
 import React from "react";
 import Stars from "../../public/Homepage/Accreditation/Stars.png";
 import Image from "next/image";
-import AccreditationImg from "../../public/Homepage/Accreditation/Accreditation.png";
+import AccreditationImg from "../../public/Homepage/Accreditation/accreditation.png";
 import RecordImg from "../../public/Homepage/Accreditation/Record.png";
 import { Fade } from "react-awesome-reveal";
 function Accreditation() {
