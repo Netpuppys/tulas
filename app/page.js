@@ -5,6 +5,7 @@ import AboutTulas from "./Component/AboutTulas";
 import Video from "./Component/Video";
 import Virtual from "./Component/Virtual";
 import VirtualTour from "./Component/VirtualTour";
+import Footer from "@/component/Footer";
 
 export const metadata = {
   title:
@@ -21,6 +22,7 @@ export default function Home() {
       <Virtual />
       <VirtualTour />
       <Video />
+      <Footer />
     </>
   );
 }
