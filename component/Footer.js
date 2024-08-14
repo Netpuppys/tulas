@@ -9,6 +9,8 @@ import {
 import TulasFooter from "../public/Components/Footer/tulasFooter.png";
 import Link from "next/link";
 
+const subTitle = "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India"
+
 const Footer = () => {
   const keyLinks = [
     { title: "Anti-ragging", linkTo: "" },
@@ -61,34 +63,36 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="w-full h-[60%] bg-[#808080] px-[5%] flex justify-between items-center">
+        <div className="w-full h-[6vh] bg-[#808080] px-[2%] gap-3 flex justify-between items-center">
           <h4 className="font-[Oswald] text-[28px] text-white ">CONNECT US</h4>
           <ul className="flex gap-2">
             {socialMediaLinks.map((social, index) => (
-              <button
-                className="bg-[#fff] opacity-[0.08] text-white px-1 py-1"
+              <Link
                 key={index}
+                href={social.href}
+                className="bg-[#fff] rounded-lg bg-opacity-[0.08] text-white p-2 text-xl"
               >
-                <Link href={social.href}>{social.icon}</Link>
-              </button>
+                {social.icon}
+              </Link>
             ))}
           </ul>
           <button className="bg-[rgba(255, 255, 255, 0.08)] text-white"></button>
         </div>
       </div>
-      {/* <div className="">
-        <div className="">
+      <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center gap-4 justify-center">
           <Image
             src={TulasFooter}
             alt="Tula's Dehradun Logo"
             width={200}
             height={80}
           />
-          <p className="text-sm mt-2">
-            Copyright © 2024 Tula's Institute, Dehradun | All Rights Reserved
+          <p className="text-sm mt-2 max-w-[40rem] text-center">
+            {subTitle}
           </p>
-          <p className="text-sm mt-2">Designed and Managed By NetPuppys</p>
+          {/* <p className="text-sm mt-2">Designed and Managed By NetPuppys</p> */}
         </div>
+
         <div className="mb-6 md:mb-0">
           <h4 className="text-xl font-bold mb-4">Key Links</h4>
           <ul className="">
@@ -140,7 +144,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-      </div> */}
+      </div>
     </footer>
   );
 };

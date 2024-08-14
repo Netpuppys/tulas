@@ -16,7 +16,7 @@ function Video() {
             src="https://res.cloudinary.com/dwdqs0osd/video/upload/v1723530948/Campus_Tour___Tula_s_Institute___Dehradun_safmr2.mp4"
           />
 
-          <p class="text-2xl w-[60%] mx-auto text-center text-black">
+          <p class="text-2xl w-[60%] font-[TTChocolates] mx-auto text-center text-black">
             <span class="font-medium text-[#007A83]">Tula's Institute</span> was
             established in 2006, under the aegis of Rishabh Educational Trust,
             Dehradun with the vision of offering excellent academics along with
