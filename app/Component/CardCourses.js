@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 function CardCourses() {
+
   const cardsCourses = [
     {
       src: Engineering,
@@ -210,8 +211,7 @@ function CardCourses() {
             <Image
               src={image.src}
               alt=""
-              className="z-20 object-cover w-full h-full group-hover:brightness-50"
-              layout="responsive"
+              className="z-50 object-cover w-full h-full group-hover:brightness-50"
             />
             <div className="absolute z-30 bottom-0 p-2 flex flex-col gap-4">
               <div className="text-white slide-in w-fit text-left font-[BenchNine] text-3xl">
