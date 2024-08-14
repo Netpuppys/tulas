@@ -118,7 +118,7 @@ function WhyTulasScroll({ parentRef }) {
 
   return (
     <div className="bg-white w-full h-full">
-      <div ref={childRef} className="relative w-full h-[200vh]">
+      <div ref={childRef} className="relative w-full h-[250vh]">
 
         <div className={`${changePosition()? "fixed" : "absolute"} w-full z-40 top-0 h-full flex pt-[30vh] justify-center `}>
           <Image
