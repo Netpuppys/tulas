@@ -3,7 +3,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import ScrollTulas from "../../public/Homepage/ScrollSection/WhyTulas.png";
 import Image from "next/image";
-import { IoArrowForwardCircleOutline, IoArrowBackCircleOutline } from "react-icons/io5";
+import {
+  IoArrowForwardCircleOutline,
+  IoArrowBackCircleOutline,
+} from "react-icons/io5";
 import Card1 from "../../public/Homepage/ScrollSection/Card1.png";
 import Card2 from "../../public/Homepage/ScrollSection/Card2.png";
 import Card3 from "../../public/Homepage/ScrollSection/Card3.png";
@@ -14,7 +17,8 @@ import Card7 from "../../public/Homepage/ScrollSection/Card7.png";
 import Card8 from "../../public/Homepage/ScrollSection/Card8.png";
 
 const title = "WHY TULA’S";
-const paragraph = "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
+const paragraph =
+  "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
 const images = [
   { src: Card1, text: "Distinguished Faculty Credited with Numerous Patents" },
   { src: Card2, text: "Well Stocked Library with E-books and E-journals" },
@@ -28,12 +32,12 @@ const images = [
 
 function WhyTulasScroll({ parentRef }) {
   const scrollRef = useRef();
-  const childRef = useRef(null)
+  const childRef = useRef(null);
   const [index, setIndex] = useState(0);
   const [width, setWidth] = useState();
-  const [ scrollY, setScrollY ] = useState(0)
-  const [ componentHeight, setComponentHeight ] = useState(0)
-  const [ distanceFromTop, setDistanceFromTop ] = useState(0)
+  const [scrollY, setScrollY] = useState(0);
+  const [componentHeight, setComponentHeight] = useState(0);
+  const [distanceFromTop, setDistanceFromTop] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,29 +54,24 @@ function WhyTulasScroll({ parentRef }) {
 
         setComponentHeight(childRef.current.offsetHeight);
 
-        document
-          .querySelector(".section")
-          .style
-          .clipPath = `circle(${Math.max(100, clipValue)}px at center center)`;
+        document.querySelector(".section").style.clipPath = `circle(${Math.max(
+          100,
+          clipValue
+        )}px at center center)`;
 
-        document
-          .querySelector(".innerText")
-          .style
-          .paddingLeft = `${100 - value / 8}%`;
+        document.querySelector(".innerText").style.paddingLeft = `${
+          100 - value / 8
+        }%`;
 
         // Rotate the image based on scroll value
         const rotationDegree = (value % 360) / 10;
-        document
-          .querySelector(".rotatingImage")
-          .style
-          .transform = `rotate(${rotationDegree}deg)`;
+        document.querySelector(
+          ".rotatingImage"
+        ).style.transform = `rotate(${rotationDegree}deg)`;
 
         // Reduce opacity of the image based on scroll value
         const opacityValue = Math.max(1 - value / 1000, 0); // Adjust 1000 to control the rate of opacity reduction
-        document
-          .querySelector(".rotatingImage")
-          .style
-          .opacity = opacityValue;
+        document.querySelector(".rotatingImage").style.opacity = opacityValue;
       }
     };
 
@@ -109,18 +108,21 @@ function WhyTulasScroll({ parentRef }) {
 
   const changePosition = () => {
     const distAndHeight = distanceFromTop + componentHeight;
-    if (scrollY>0 && scrollY<distAndHeight) {
-      return true
+    if (scrollY > 0 && scrollY < distAndHeight) {
+      return true;
     }
-    
-    return false
-  }
+
+    return false;
+  };
 
   return (
     <div className="bg-white w-full h-full">
       <div ref={childRef} className="relative w-full h-[250vh]">
-
-        <div className={`${changePosition()? "fixed" : "absolute"} w-full z-40 top-0 h-full flex pt-[30vh] justify-center `}>
+        <div
+          className={`${
+            changePosition() ? "fixed" : "absolute"
+          } w-full z-40 top-0 h-full flex pt-[30vh] justify-center `}
+        >
           <Image
             src={ScrollTulas}
             alt=""
@@ -130,24 +132,26 @@ function WhyTulasScroll({ parentRef }) {
 
         <section
           style={{ clipPath: "circle(100px at center center)" }}
-          className={`${changePosition()? "fixed" : "absolute"} top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
+          className={`${
+            changePosition() ? "fixed" : "absolute"
+          } top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
         >
           <div className="relative w-full h-full flex flex-col justify-center items-center">
             <h3
               style={{
                 fontFamily: "Carot Slab",
               }}
-              className="text-[70px] h-[75px] text-[#E69706] w-full whitespace-nowrap absolute top-0 z-10 pt-[2vh] text-center"
+              className="text-3xl md:text-[70px] h-[75px] text-[#E69706] w-full whitespace-nowrap absolute top-0 z-10 pt-10  text-center"
             >
               {title}
             </h3>
-            <h4 className="text-2xl font-[Rothwood] absolute top-0 z-10 pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-[20vw] mx-auto text-center text-white">
+            <h4 className="text-lg md:text-2xl font-[Rothwood] absolute top-0 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[20vw] mx-auto text-center text-white">
               {paragraph}
             </h4>
-            <div className="absolute w-full -translate-y-1/2 z-30 top-1/2 flex items-center justify-start">
-              <div className="flex w-40 flex-col text-[60px] items-center justify-center">
+            <div className="absolute w-full md:-translate-y-1/2 z-30 top-3/4 md:top-1/2 flex items-center justify-start">
+              <div className="flex w-full md:w-40 md:flex-col text-[60px] items-center justify-center">
                 <button
-                  className={`${
+                  className={`pointer-events-auto ${
                     index === 0 ? "cursor-not-allowed" : "cursor-pointer"
                   }`}
                   onClick={handleForwardClick}
@@ -156,7 +160,7 @@ function WhyTulasScroll({ parentRef }) {
                   <IoArrowForwardCircleOutline />
                 </button>
                 <button
-                  className={`${
+                  className={`pointer-events-auto ${
                     index === images.length - 1
                       ? "cursor-not-allowed"
                       : "cursor-pointer"

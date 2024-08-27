@@ -7,6 +7,7 @@ import { FaPen } from "react-icons/fa";
 import sitemap from "../data/sitemap";
 import Image from "next/image";
 import { useMobile } from "./IsMobileContext";
+import Header from "./NavbarMobile";
 
 function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
@@ -118,8 +119,8 @@ function Navbar() {
           </div>
           <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
         </div>
-        {isChecked && !isMobile && (
-          <div className="flex w-full max-w-[1500px] pr-[160px] flex-row z-10">
+        {isChecked && (
+          <div className="hidden md:flex w-full max-w-[1500px] pr-[160px] flex-row z-10">
             <div className="-mt-[12px] ml-[60px] text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -163,6 +164,7 @@ function Navbar() {
             </div>
           </div>
         )}
+        {/* {isChecked && <Header />} */}
       </div>
       <div></div>
     </div>
