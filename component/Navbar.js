@@ -6,11 +6,12 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FaPen } from "react-icons/fa";
 import sitemap from "../data/sitemap";
 import Image from "next/image";
+import { useMobile } from "./IsMobileContext";
 
 function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
-
+  const isMobile = useMobile();
   const handleMenuHover = (index) => {
     setActiveMenu(index);
   };
@@ -67,15 +68,15 @@ function Navbar() {
   );
 
   return (
-    <div className="px-16 pt-8 w-full absolute flex justify-center">
+    <div className="px-4 md:px-16 pt-8 w-full absolute flex justify-center">
       <div className="w-full h-fit">
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-row gap-12 items-start">
+        <div className="flex w-full  flex-row-reverse md:flex-row justify-between">
+          <div className="flex  md:w-fit flex-row-reverse md:flex-row gap-6 md:gap-12 ">
             <button
               className="flex flex-row justify-between items-center cursor-pointer pointer-events-auto relative z-[3333]"
               onClick={handleButtonClick}
             >
-              <div className="p-[20px] border-2 border-white rounded-[50%] aspect-square border-r-transparent">
+              <div className="p-[15px] md:p-[20px] border-2 border-white rounded-[50%] aspect-square border-r-transparent">
                 <label
                   className={
                     isChecked
@@ -93,7 +94,7 @@ function Navbar() {
                 style={{
                   fontFamily: "Zilla Slab",
                 }}
-                className="text-white text-left text-[25px] -ml-4 font-semibold transition-color"
+                className="hidden md:block text-white text-left text-[25px] -ml-4 font-semibold transition-color"
               >
                 {!isChecked ? "Menu" : "Close"}
               </h3>
@@ -102,14 +103,14 @@ function Navbar() {
               className="flex flex-row justify-between items-center cursor-pointer pointer-events-auto relative z-[3333]"
               onClick={() => (window.location.href = "/admissions2024/")}
             >
-              <div className="p-[20px] border-2 border-white rounded-[50%] aspect-square border-r-transparent">
-                <FaPen className="text-xl" />
+              <div className="p-[15px] md:p-[20px] border-2 border-white rounded-[50%] aspect-square border-r-transparent">
+                <FaPen className="w-[30px] h-[30px]" />
               </div>
               <h3
                 style={{
                   fontFamily: "Zilla Slab",
                 }}
-                className="text-white text-left text-[25px] -ml-4 font-semibold transition-color"
+                className="hidden md:block text-white text-left text-[25px] -ml-4 font-semibold transition-color"
               >
                 Apply Now
               </h3>
@@ -117,7 +118,7 @@ function Navbar() {
           </div>
           <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
         </div>
-        {isChecked && (
+        {isChecked && !isMobile && (
           <div className="flex w-full max-w-[1500px] pr-[160px] flex-row z-10">
             <div className="-mt-[12px] ml-[60px] text-white">
               <svg

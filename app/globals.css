@@ -133,3 +133,8 @@ span {
     /* opacity: 1; */
   }
 }
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

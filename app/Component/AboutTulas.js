@@ -56,14 +56,14 @@ function AboutTulas() {
   return (
     <div
       id="2"
-      className="min-h-screen bg-white flex flex-row justify-between px-24 items-center"
+      className="md:min-h-screen bg-white md:flex flex-row justify-between px-10 py-10 md:px-24 items-center"
     >
-      <div className="w-[50%]">
-        <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-xl 2xl:text-2xl max-w-[682px] ml-0 mr-auto">
+      <div className="w-full md:w-[50%]">
+        <h3 className="text-[#2B2B2B] font-[Rothwood] font-semibold text-lg 2xl:text-2xl max-w-[682px] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>
-      <div className="w-[50%]">
+      <div className="w-full py-10 md:w-[50%]">
         <div
           className="max-w-[429px] py-8 px-8 ml-auto mr-0 bg-[#C0E1E3]"
           style={{

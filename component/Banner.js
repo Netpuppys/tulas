@@ -82,7 +82,7 @@ function Banner() {
         <Image
           src={images[currentIndex]}
           alt=""
-          className="object-cover w-full h-fit"
+          className="object-cover w-full h-screen"
         />
       </div>
       <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
@@ -97,7 +97,7 @@ function Banner() {
             } `}
           >
             <div
-              className={`w-[15px] z-10 h-[15px] rounded-full flex items-center justify-center cursor-pointer ${
+              className={`w-[10px] h-[10px] md:w-[15px] z-10 md:h-[15px] rounded-full flex items-center justify-center cursor-pointer ${
                 index === currentIndex
                   ? " bg-white"
                   : " bg-gray-400 blur-[0.6px]"
@@ -106,20 +106,22 @@ function Banner() {
           </div>
         ))}
       </div>
-      <div className="bottom-10 z-10 absolute ml-16">
+      <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
         <h2
-          className="text-[60px] text-white z-10"
+          className="text-[38px] md:text-[60px] text-white z-10"
           style={{
             fontFamily: "Carot Slab",
           }}
         >
           {title}
         </h2>
-        <h4 className="w-[50%] font-[TTChocolates]">{paragraph}</h4>
+        <h4 className="w-full md:w-[50%] text-sm md:text-lg font-[TTChocolates]">
+          {paragraph}
+        </h4>
       </div>
       <button
         onClick={handleScrollArrow}
-        className="bottom-10 right-10 absolute z-10 w-[100px] aspect-square"
+        className="hidden md:block bottom-10 right-10 absolute z-10 w-[100px] aspect-square"
       >
         <div className="relative w-full h-full flex justify-center items-center">
           <Image
