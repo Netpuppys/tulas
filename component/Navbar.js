@@ -69,12 +69,28 @@ function Navbar() {
   );
 
   return (
-    <div className="px-4 md:px-16 pt-8 w-full absolute flex justify-center">
+    <div className="px-4 md:px-16 w-full absolute flex flex-col justify-center pointer-events-auto">
+      <div className=" h-[80px] w-full flex justify-between items-center">
+        <a href="tel:+91-6366937159" className=" font-[TTChocolates]">
+          Admission Helpline No. +91-6366937159
+        </a>
+        <div className="flex gap-6">
+          <button className="text-[#fff] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] rounded-full">
+            Pay Online
+          </button>
+          <button className="text-[#222] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] bg-white rounded-full">
+            Apply Now
+          </button>
+          <button className="text-[#fff] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] rounded-full">
+            Virtual Tour
+          </button>
+        </div>
+      </div>
       <div className="w-full h-fit">
         <div className="flex w-full  flex-row-reverse md:flex-row justify-between">
           <div className="flex  md:w-fit flex-row-reverse md:flex-row gap-6 md:gap-12 ">
             <button
-              className="flex flex-row justify-between items-center cursor-pointer pointer-events-auto relative z-[3333]"
+              className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
               onClick={handleButtonClick}
             >
               <div className="p-[15px] md:p-[20px] border-2 border-white rounded-[50%] aspect-square border-r-transparent">
@@ -101,7 +117,7 @@ function Navbar() {
               </h3>
             </button>
             <button
-              className="flex flex-row justify-between items-center cursor-pointer pointer-events-auto relative z-[3333]"
+              className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
               onClick={() => (window.location.href = "/admissions2024/")}
             >
               <div className="p-[15px] md:p-[20px] border-2 border-white rounded-[50%] aspect-square border-r-transparent">
@@ -166,7 +182,6 @@ function Navbar() {
         )}
         {/* {isChecked && <Header />} */}
       </div>
-      <div></div>
     </div>
   );
 }
