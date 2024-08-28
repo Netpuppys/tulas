@@ -1,15 +1,12 @@
 const sitemap = [
-  {
-    title: "Home",
-    linkTo: "/",
-  },
+  // {
+  //   title: "Home",
+  //   linkTo: "/",
+  // },
   {
     title: "About Us",
+    linkTo: "/about/",
     nestedLinks: [
-      {
-        title: "About Us",
-        linkTo: "/about/",
-      },
       {
         title: "Contact",
         linkTo: "/contact/",
@@ -21,48 +18,48 @@ const sitemap = [
       {
         title: "Management Messages",
         linkTo: "/about/management-messages/",
-        superNestedLinks: [
-          {
-            title: "Message From The Chairman",
-            linkTo: "/our-team/message-from-the-chairman/",
-          },
-          {
-            title: "Message from Executive Director",
-            linkTo: "/our-team/message-from-executive-director/",
-          },
-          {
-            title: "Message From Vice President",
-            linkTo: "/our-team/message-from-vice-president/",
-          },
-          {
-            title: "Message From Vice President Technology",
-            linkTo: "/our-team/message-from-vice-president-technology/",
-          },
-          {
-            title: "Message From Director",
-            linkTo: "/our-team/message-from-director/",
-          },
-          {
-            title: "Message From Dean Academics",
-            linkTo: "/our-team/message-from-dean-academics/",
-          },
-          {
-            title: "Message From Dean R&D",
-            linkTo: "/our-team/message-from-dean-rd/",
-          },
-          {
-            title: "Message From Registrar",
-            linkTo: "/our-team/message-from-registrar/",
-          },
-          {
-            title: "Message From Adjunct Professor",
-            linkTo: "/our-team/message-from-adjunct-professor/",
-          },
-          {
-            title: "Approval",
-            linkTo: "/about/approval/",
-          },
-        ],
+        // superNestedLinks: [
+        //   {
+        //     title: "Message From The Chairman",
+        //     linkTo: "/our-team/message-from-the-chairman/",
+        //   },
+        //   {
+        //     title: "Message from Executive Director",
+        //     linkTo: "/our-team/message-from-executive-director/",
+        //   },
+        //   {
+        //     title: "Message From Vice President",
+        //     linkTo: "/our-team/message-from-vice-president/",
+        //   },
+        //   {
+        //     title: "Message From Vice President Technology",
+        //     linkTo: "/our-team/message-from-vice-president-technology/",
+        //   },
+        //   {
+        //     title: "Message From Director",
+        //     linkTo: "/our-team/message-from-director/",
+        //   },
+        //   {
+        //     title: "Message From Dean Academics",
+        //     linkTo: "/our-team/message-from-dean-academics/",
+        //   },
+        //   {
+        //     title: "Message From Dean R&D",
+        //     linkTo: "/our-team/message-from-dean-rd/",
+        //   },
+        //   {
+        //     title: "Message From Registrar",
+        //     linkTo: "/our-team/message-from-registrar/",
+        //   },
+        //   {
+        //     title: "Message From Adjunct Professor",
+        //     linkTo: "/our-team/message-from-adjunct-professor/",
+        //   },
+        //   {
+        //     title: "Approval",
+        //     linkTo: "/about/approval/",
+        //   },
+        // ],
       },
       {
         title: "Blog",
@@ -108,18 +105,15 @@ const sitemap = [
               },
               {
                 title: "Computer Science & Engineering (AI&ML)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/",
+                linkTo: "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/",
               },
               {
                 title: "Computer Science & Engineering (Cyber Security)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-cyber-security/",
+                linkTo: "/courses/btech/computer-science-engineering-cyber-security/",
               },
               {
                 title: "Computer Science & Engineering( Data Science)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-data-science/",
+                linkTo: "/courses/btech/computer-science-engineering-data-science/",
               },
               {
                 title: "Electronics & Communication Engineering",

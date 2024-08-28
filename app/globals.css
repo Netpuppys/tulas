@@ -40,19 +40,16 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 6px;
   --tw-bg-opacity: 0.8;
   background-color: transparent;
-  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #007a83; /* color of the scroll thumb */
-  border-radius: 10px; /* roundness of the scroll thumb */
-  /* creates padding around scroll thumb */
-}
-
+  background-color: #007a83;
+  border-radius: 10px; 
+} */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -133,8 +130,8 @@ span {
     /* opacity: 1; */
   }
 }
-@media (max-width: 768px) {
-  ::-webkit-scrollbar {
+/* @media (max-width: 768px) { */
+  /* ::-webkit-scrollbar {
     display: none;
-  }
-}
+  } */
+/* } */
