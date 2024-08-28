@@ -73,9 +73,13 @@ function BannerHome() {
   };
 
   return (
-    <div ref={containerRef} className="w-full h-screen relative">
+    <div
+      ref={containerRef}
+      className="w-full h-screen relative flex items-center justify-center z-0"
+    >
+      {/* background */}
       <div
-        className={`absolute -z-10 w-full h-full inset-0 transition-opacity duration-500 ${
+        className={`-z-10 w-full h-full inset-0 transition-opacity duration-500 overflow-hidden ${
           fade ? "opacity-20" : "opacity-100"
         }`}
       >
