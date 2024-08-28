@@ -12,7 +12,7 @@ import Header from "./NavbarMobile";
 function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
   const [activeMenu, setActiveMenu] = useState();
-  const [subIndex, setSubIndex] = useState()
+  const [subIndex, setSubIndex] = useState();
   const isMobile = useMobile();
   const handleMenuHover = (index) => {
     setActiveMenu(index);
@@ -34,17 +34,19 @@ function Navbar() {
     <div className="w-full z-10 text-wrap flex flex-col items-center gap-2">
       {nestedLinks.map((nestedItem, nestedIndex) => (
         <div className="w-full text-center" key={nestedIndex}>
-          <Link 
+          <Link
             className={`relative w-full
-            ${alignLeft? "text-left" : "text-center"} 
-            ${nowrap? "text-nowrap" : "text-wrap"}`}
+            ${alignLeft ? "text-left" : "text-center"} 
+            ${nowrap ? "text-nowrap" : "text-wrap"}`}
             href={nestedItem?.linkTo || "#"}
             onMouseEnter={() => setSubIndex(nestedIndex)}
             onMouseLeave={() => setSubIndex(null)}
           >
-            <div className={`relative w-full flex items-center justify-center text-white h-8 hover:bg-white group hover:text-black hover:text-opacity-80
-            ${nestedItem?.superNestedLinks?.length > 0? "pr-6" : "pr-0"}
-            `}>
+            <div
+              className={`relative w-full flex items-center justify-center text-white h-8 hover:bg-white group hover:text-black hover:text-opacity-80
+            ${nestedItem?.superNestedLinks?.length > 0 ? "pr-6" : "pr-0"}
+            `}
+            >
               <p
                 className="nested-link-title font-semibold px-5"
                 style={{
@@ -60,16 +62,16 @@ function Navbar() {
               )}
             </div>
 
-            {nestedItem.superNestedLinks && nestedIndex === subIndex &&
-            nestedItem.superNestedLinks.length > 0 && (
-              <div className="absolute text-nowrap w-[15rem] px-5 py-2 rounded-xl rounded-tl-none left-[calc(100%)] bg-black bg-opacity-30 top-0">
-                {nestedItem.superNestedLinks.length > 1}
-                {renderNestedLinks(nestedItem.superNestedLinks)}
-              </div>
-            )}
+            {nestedItem.superNestedLinks &&
+              nestedIndex === subIndex &&
+              nestedItem.superNestedLinks.length > 0 && (
+                <div className="absolute text-nowrap w-[15rem] px-5 py-2 rounded-xl rounded-tl-none left-[calc(100%)] bg-black bg-opacity-30 top-0">
+                  {nestedItem.superNestedLinks.length > 1}
+                  {renderNestedLinks(nestedItem.superNestedLinks)}
+                </div>
+              )}
           </Link>
 
-          
           {/* {nestedItem.thirdNestedLinks &&
             nestedItem.thirdNestedLinks.length > 0 && (
               <div className="ml-[12rem] text-wrap">
@@ -164,7 +166,9 @@ function Navbar() {
               </h3>
             </button>
           </div>
-          <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
+          <Link href="/">
+            <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
+          </Link>
         </div>
         {/* onclick menu */}
         {isChecked && (
