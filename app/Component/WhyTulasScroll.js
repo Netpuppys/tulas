@@ -137,12 +137,7 @@ function WhyTulasScroll({ parentRef }) {
           } top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
         >
           <div className="relative w-full h-full flex flex-col justify-center items-center">
-            <h3
-              style={{
-                fontFamily: "Carot Slab",
-              }}
-              className="text-3xl md:text-[70px] h-[75px] text-[#E69706] w-full whitespace-nowrap absolute top-0 z-10 pt-10  text-center"
-            >
+            <h3 className="font-[CarotSlab] text-3xl md:text-[70px] h-[75px] text-[#E69706] w-full whitespace-nowrap absolute top-0 z-10 pt-10  text-center">
               {title}
             </h3>
             <h4 className="text-lg md:text-2xl font-[Rothwood] absolute top-0 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[20vw] mx-auto text-center text-white">

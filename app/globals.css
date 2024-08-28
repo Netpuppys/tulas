@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Carot Slab";
+  font-family: "CarotSlab";
   src: url(../public/fonts/Carot\ Slab\ Medium.ttf);
 }
 @font-face {

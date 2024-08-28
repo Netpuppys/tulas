@@ -5,7 +5,7 @@ function Video() {
     <div class="relative w-full  min-h-screen my-10">
       <div class="flex items-center w-full h-full justify-center">
         <div class="flex flex-col w-full">
-          <h2 class="text-[42px] text-center w-full font-[Carot Slab] text-[#007A83] mb-4">
+          <h2 class="text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
             BEST ENGINEERING COLLEGE IN DEHRADUN
           </h2>
           <video
