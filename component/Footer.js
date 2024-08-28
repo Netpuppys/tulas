@@ -51,8 +51,9 @@ const Footer = () => {
     { href: "#", icon: <FaYoutube /> },
   ];
   return (
-    <footer className=" h-screen w-full text-white">
+    <footer className="h-screen w-full text-white overflow-hidden">
       <div className="w-full h-[12vh] flex items-end">
+        {/* black bar */}
         <div className="w-[67%] min-w-[1000px] h-full bg-[#120008] flex justify-between px-4 items-center">
           <h3 className="font-[Oswald] text-[40px]">
             WANT TO LEARN MORE ABOUT TULA’S?
@@ -66,6 +67,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
+        {/* gray social icons div */}
         <div className="w-[33%] h-[6vh] bg-[#808080] px-[2%] gap-3 flex justify-between items-center">
           <h4 className="font-[Oswald] text-[28px] text-white ">CONNECT US</h4>
           <ul className="flex gap-2">
@@ -82,14 +84,15 @@ const Footer = () => {
           <button className="bg-[rgba(255, 255, 255, 0.08)] text-white"></button>
         </div>
       </div>
+      {/* main footer */}
       <div className="w-full flex flex-col h-[88vh] items-center bg-[#3D001B]">
         <div className="w-full flex flex-col items-center gap-4 justify-center">
           <Image
             src={TulasFooter}
             alt="Tula's Dehradun Logo"
-            className="max-w-[400px] h-fit mt-8"
+            className="max-w-[200px] h-fit mt-8"
           />
-          <p className="text-xl mt-2 max-w-[800px] text-center">{subTitle}</p>
+          <p className="mt-2 max-w-[600px] text-center">{subTitle}</p>
           {/* <p className="text-sm mt-2">Designed and Managed By NetPuppys</p> */}
         </div>
 

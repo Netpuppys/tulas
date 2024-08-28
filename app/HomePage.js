@@ -15,7 +15,7 @@ export default function HomePage() {
     const parentRef = useRef(null)
 
     return (
-        <div ref={parentRef} className="w-full overflow-x-hidden">
+        <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
             <Navbar />
             <Banner />
             <AboutTulas />

@@ -121,12 +121,12 @@ function WhyTulasScroll({ parentRef }) {
         <div
           className={`${
             changePosition() ? "fixed" : "absolute"
-          } w-full z-40 top-0 h-full flex pt-[30vh] justify-center `}
+          } w-full z-40 top-0 h-full flex pt-[30vh] justify-center pointer-events-none`}
         >
           <Image
             src={ScrollTulas}
             alt=""
-            className="z-10 w-fit h-[40vh] rotatingImage pointer-events-none"
+            className="z-10 w-fit h-[40vh] rotatingImage"
           />
         </div>
 
@@ -148,10 +148,11 @@ function WhyTulasScroll({ parentRef }) {
             <h4 className="text-lg md:text-2xl font-[Rothwood] absolute top-0 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[20vw] mx-auto text-center text-white">
               {paragraph}
             </h4>
-            <div className="absolute w-full md:-translate-y-1/2 z-30 top-3/4 md:top-1/2 flex items-center justify-start">
+            {/* card scroll btns */}
+            <div className="absolute w-fit md:-translate-y-1/2 z-30 top-3/4 left-0 md:top-1/2 flex items-center justify-start">
               <div className="flex w-full md:w-40 md:flex-col text-[60px] items-center justify-center">
                 <button
-                  className={`pointer-events-auto ${
+                  className={`pointer-events-auto shadow-2xl ${
                     index === 0 ? "cursor-not-allowed" : "cursor-pointer"
                   }`}
                   onClick={handleForwardClick}
@@ -160,7 +161,7 @@ function WhyTulasScroll({ parentRef }) {
                   <IoArrowForwardCircleOutline />
                 </button>
                 <button
-                  className={`pointer-events-auto ${
+                  className={`pointer-events-auto shadow-2xl ${
                     index === images.length - 1
                       ? "cursor-not-allowed"
                       : "cursor-pointer"
@@ -173,7 +174,8 @@ function WhyTulasScroll({ parentRef }) {
               </div>
             </div>
 
-            <div className="w-[calc(100%-10rem)] absolute  pl-[100vw] overflow-x-hidden py-10 innerText">
+            {/* cards container */}
+            <div className="w-[calc(100%-10rem)] right-0 absolute py-10 innerText">
               <div
                 style={{ transform: `translateX(-${index * (width + 48)}px)` }}
                 className="w-fit"

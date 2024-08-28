@@ -73,18 +73,20 @@ function Banner() {
   };
 
   return (
-    <div ref={containerRef} className="w-full h-screen relative">
+    <div ref={containerRef} className="w-full h-screen relative flex items-center justify-center z-0">
+      {/* background */}
       <div
-        className={`absolute -z-10 w-full h-full inset-0 transition-opacity duration-500 ${
+        className={`-z-10 w-full h-full inset-0 transition-opacity duration-500 overflow-hidden ${
           fade ? "opacity-20" : "opacity-100"
         }`}
       >
         <Image
           src={images[currentIndex]}
           alt=""
-          className="object-cover w-full h-screen"
+          className="object-cover w-full h-full"
         />
       </div>
+      {/* pagination dots */}
       <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
         {images.map((_, index) => (
           <div
@@ -106,6 +108,7 @@ function Banner() {
           </div>
         ))}
       </div>
+      {/* text and others */}
       <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
         <h2
           className="text-[38px] md:text-[60px] text-white z-10"

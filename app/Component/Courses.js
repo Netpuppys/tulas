@@ -11,8 +11,10 @@ function Courses({ parentRef }) {
   const [scaleLeaf, setScaleLeaf] = useState(1);
   const [opacity, setOpacity] = useState(1);
   const [ scrollY, setScrollY ] = useState(0)
-  const ref = useRef(null);
   const [isInView, setIsInView] = useState(false);
+  const [componentHeight, setComponentHeight] = useState()
+
+  const ref = useRef(null);
   const childRef = useRef(null);
 
   useEffect(() => {
@@ -32,13 +34,23 @@ function Courses({ parentRef }) {
   }, []);
 
   useEffect(() => {
+    if (childRef.current) {
+      const compHeight = childRef.current.getBoundingClientRect().height;
+      setComponentHeight(compHeight);
+      console.log(compHeight)
+    }
+  }, [])
+
+  useEffect(() => {
     const handleScroll = () => {
         if (parentRef.current && childRef.current) {
             const parentTop = parentRef.current.getBoundingClientRect().top;
             const childTop = childRef.current.getBoundingClientRect().top;
 
             const positionFromTop = childTop - parentTop;
-            const scroll = Math.max(window.scrollY - positionFromTop, 0);
+            const scrollValue = Math.max(window.scrollY - positionFromTop, 0)
+            const scroll = Math.min(scrollValue, componentHeight)
+
             setScrollY(scroll);
             setScale(1 + scroll * 0.0001);
             setScaleLeaf(1 + scroll * 0.001);
@@ -50,14 +62,14 @@ function Courses({ parentRef }) {
     return () => {
         window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [componentHeight]);
 
   return (
-    <div ref={childRef} className="w-full">
+    <div ref={childRef} className="w-full h-fit">
       <div className="w-full h-[250vh] relative bg-[#3D001B] overflow-hidden">
 
         <div
-            className={`${(scrollY>0)? "fixed" : "absolute"} top-0 left-0 w-full h-[100vh] z-[11] bg-no-repeat bg-cover bg-center`}
+            className={`${(scrollY>0 && scrollY<componentHeight)? "fixed" : "absolute"} top-0 left-0 w-screen h-screen z-[11] bg-no-repeat bg-cover bg-center`}
             style={{
                 backgroundImage: `url(${BackgroundLeaf.src})`,
                 transform: `scale(${scaleLeaf})`,
@@ -66,7 +78,7 @@ function Courses({ parentRef }) {
         ></div>
 
         <div
-            className={`${(scrollY>0)? "fixed" : "absolute"} top-0 left-0 flex items-center justify-center w-full h-[100vh] z-10 bg-no-repeat bg-cover bg-center`}
+            className={`${(scrollY>0 && scrollY<componentHeight)? "fixed" : "absolute"} top-0 left-0 flex items-center justify-center w-screen h-screen z-10 bg-no-repeat bg-cover bg-center`}
             style={{
                 backgroundImage: `url(${BackgroundCourses.src})`,
                 transform: `scale(${scale})`,

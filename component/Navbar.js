@@ -11,7 +11,8 @@ import Header from "./NavbarMobile";
 
 function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(null);
+  const [activeMenu, setActiveMenu] = useState();
+  const [subIndex, setSubIndex] = useState()
   const isMobile = useMobile();
   const handleMenuHover = (index) => {
     setActiveMenu(index);
@@ -29,47 +30,61 @@ function Navbar() {
     }
   };
 
-  const renderNestedLinks = (nestedLinks) => (
-    <div className="absolute w-[12rem] z-10 text-wrap">
+  const renderNestedLinks = (nestedLinks, nowrap, alignLeft) => (
+    <div className="w-full z-10 text-wrap flex flex-col items-center gap-2">
       {nestedLinks.map((nestedItem, nestedIndex) => (
-        <div className="list-item" key={nestedIndex}>
-          <Link className="link" href={nestedItem?.linkTo || "#"}>
-            <div className="flex justify-between">
+        <div className="w-full text-center" key={nestedIndex}>
+          <Link 
+            className={`relative w-full
+            ${alignLeft? "text-left" : "text-center"} 
+            ${nowrap? "text-nowrap" : "text-wrap"}`}
+            href={nestedItem?.linkTo || "#"}
+            onMouseEnter={() => setSubIndex(nestedIndex)}
+            onMouseLeave={() => setSubIndex(null)}
+          >
+            <div className={`relative w-full flex items-center justify-center text-white h-8 hover:bg-white group hover:text-black hover:text-opacity-80
+            ${nestedItem?.superNestedLinks?.length > 0? "pr-6" : "pr-0"}
+            `}>
               <p
-                className="nested-link-title font-semibold"
+                className="nested-link-title font-semibold px-5"
                 style={{
                   fontFamily: "Zilla Slab",
                 }}
               >
                 {nestedItem?.title}
               </p>
-              {nestedItem?.nestedLinks?.length > 1 && (
-                <IoIosArrowForward className="nav-arrows" />
+              {nestedItem?.superNestedLinks?.length > 0 && (
+                <p className="absolute top-1/2 right-1 -translate-y-1/2 ">
+                  <IoIosArrowForward />
+                </p>
               )}
             </div>
-          </Link>
 
-          {nestedItem.superNestedLinks &&
+            {nestedItem.superNestedLinks && nestedIndex === subIndex &&
             nestedItem.superNestedLinks.length > 0 && (
-              <div className="ml-[12rem] text-wrap">
+              <div className="absolute text-nowrap w-[15rem] px-5 py-2 rounded-xl rounded-tl-none left-[calc(100%)] bg-black bg-opacity-30 top-0">
                 {nestedItem.superNestedLinks.length > 1}
                 {renderNestedLinks(nestedItem.superNestedLinks)}
               </div>
             )}
-          {nestedItem.thirdNestedLinks &&
+          </Link>
+
+          
+          {/* {nestedItem.thirdNestedLinks &&
             nestedItem.thirdNestedLinks.length > 0 && (
               <div className="ml-[12rem] text-wrap">
                 {nestedItem.thirdNestedLinks.length > 1}
                 {renderNestedLinks(nestedItem.thirdNestedLinks)}
               </div>
-            )}
+            )} */}
         </div>
       ))}
     </div>
   );
 
   return (
-    <div className="px-4 md:px-16 w-full absolute flex flex-col justify-center pointer-events-auto">
+    <div className="px-4 md:px-16 w-full absolute flex flex-col justify-center z-50">
+      {/* top bar */}
       <div className=" h-[80px] w-full flex justify-between items-center">
         <a href="tel:+91-6366937159" className=" font-[TTChocolates]">
           Admission Helpline No. +91-6366937159
@@ -101,6 +116,7 @@ function Navbar() {
           </button>
         </div>
       </div>
+      {/* main footer */}
       <div className="w-full h-fit">
         <div className="flex w-full  flex-row-reverse md:flex-row justify-between">
           <div className="flex  md:w-fit flex-row-reverse md:flex-row gap-6 md:gap-12 ">
@@ -150,6 +166,7 @@ function Navbar() {
           </div>
           <Image src={TulasLogo} alt="" className="w-[160px] h-fit z-10" />
         </div>
+        {/* onclick menu */}
         {isChecked && (
           <div className="hidden md:flex w-full max-w-[1500px] pr-[160px] flex-row z-10">
             <div className="-mt-[12px] ml-[60px] text-white">
@@ -166,17 +183,17 @@ function Navbar() {
                 />
               </svg>
             </div>
-            <div className="navbar-list-main mt-[40px] pl-10 text-[20px] flex flex-row w-full justify-between z-10">
+            <div className="navbar-list-main mt-[32px] pl-10 text-[20px] flex flex-row w-full gap-8 z-10">
               {sitemap.map((item, index) => (
                 <div
-                  className="main-list-item"
+                  className="group flex items-center justify-start py-2 hover:bg-black hover:bg-opacity-40 rounded-2xl h-fit flex-col text-center relative"
                   key={index}
                   onMouseEnter={() => handleMenuHover(index)}
                   onMouseLeave={() => handleMenuLeave()}
                 >
-                  <Link className={"link"} href={item.linkTo || "#"}>
+                  <Link className="mb-2" href={item.linkTo || "#"}>
                     <p
-                      className="title font-semibold"
+                      className="title font-semibold text-nowrap"
                       style={{
                         fontFamily: "Zilla Slab",
                       }}
@@ -184,7 +201,7 @@ function Navbar() {
                       {item.title}
                     </p>
                   </Link>
-                  <div className="dropdown-container list-none">
+                  <div className="w-full h-fit list-none text-sm">
                     {activeMenu === index &&
                       item.nestedLinks &&
                       item.nestedLinks.length > 0 &&
