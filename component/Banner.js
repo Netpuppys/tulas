@@ -3,7 +3,7 @@ import React from "react";
 
 function Banner({ image, belowTitle, belowPara, title, description }) {
   return (
-    <div className="h-screen w-full">
+    <div className="h-screen w-full z-40">
       <div className="h-[71vh] w-full relative">
         <Image
           src={image}
