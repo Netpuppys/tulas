@@ -3,7 +3,6 @@ import React from "react";
 import BannerImg from "../../public/Components/Banner/BannerImg.png";
 import Navbar from "@/component/Navbar";
 import background from "../../public/AboutDehradun/background.png";
-import Image from "next/image";
 function Contact() {
   return (
     <>
@@ -25,14 +24,13 @@ function Contact() {
           "Being the capital city, Dehradun is well-connected by roads, rail and air and is easily accessible from most parts of the country. It is 235 km away from India’s capital, New Delhi. Dehradun is easy to reach and an accessible destination that you can visit any time of the year."
         }
       />
-      <div className="w-full h-screen overflow-hidden">
-        <Image
-          src={background}
-          className="w-full h-full z-0 fixed object-cover"
-          alt=""
-        />
-      </div>
-      <div className="h-screen w-full  text-[100px]">Harsh</div>
+      <div
+        className="w-full h-screen overflow-hidden"
+        style={{
+          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 122, 131, 0.00) 0%, rgba(0, 122, 131, 0.76) 59.07%), url(${background}) lightgray -243.692px 0px / 128.205% 106.526% no-repeat`,
+        }}
+      ></div>
+      <div className="h-screen w-full text-[100px]">Harsh</div>
     </>
   );
 }
