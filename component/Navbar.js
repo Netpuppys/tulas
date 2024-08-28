@@ -75,13 +75,28 @@ function Navbar() {
           Admission Helpline No. +91-6366937159
         </a>
         <div className="flex gap-6">
-          <button className="text-[#fff] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] rounded-full">
+          <button
+            onClick={() => {
+              window.location.href = "/pay-fee-online/";
+            }}
+            className="text-[#fff] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] rounded-full"
+          >
             Pay Online
           </button>
-          <button className="text-[#222] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] bg-white rounded-full">
+          <button
+            onClick={() => {
+              window.location.href = "/admissions2024/";
+            }}
+            className="text-[#222] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] bg-white rounded-full"
+          >
             Apply Now
           </button>
-          <button className="text-[#fff] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] rounded-full">
+          <button
+            onClick={() => {
+              window.location.href = "/virtual-tour/index.html";
+            }}
+            className="text-[#fff] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] rounded-full"
+          >
             Virtual Tour
           </button>
         </div>
