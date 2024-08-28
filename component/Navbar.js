@@ -13,7 +13,6 @@ function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
   const [activeMenu, setActiveMenu] = useState();
   const [subIndex, setSubIndex] = useState();
-  const isMobile = useMobile();
   const handleMenuHover = (index) => {
     setActiveMenu(index);
   };

@@ -56,6 +56,13 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.image-gradient {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+              linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+              linear-gradient(0deg, rgba(0, 122, 131, 0.00) 0%, rgba(0, 122, 131, 0.76) 59.07%),
+              url('/public/AboutDehradun/background.png') lightgray -243.692px 0px / 128.205% 106.526% no-repeat;
+}
+
 span {
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }

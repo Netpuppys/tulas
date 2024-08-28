@@ -3,7 +3,10 @@ import React from "react";
 import BannerImg from "../../public/Components/Banner/BannerImg.png";
 import Navbar from "@/component/Navbar";
 import background from "../../public/AboutDehradun/background.png";
+import Image from "next/image";
 function Contact() {
+  const gradient = "linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 122, 131, 0.00) 0%, rgba(0, 122, 131, 0.76) 59.07%)"
+
   return (
     <>
       <Navbar />
@@ -25,11 +28,17 @@ function Contact() {
         }
       />
       <div
-        className="w-full h-screen overflow-hidden"
-        style={{
-          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 122, 131, 0.00) 0%, rgba(0, 122, 131, 0.76) 59.07%), url(${background}) lightgray -243.692px 0px / 128.205% 106.526% no-repeat`,
-        }}
-      ></div>
+        className="w-full h-[200vh] overflow-hidden image-gradient"
+        // style={{
+        //   background: `linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 122, 131, 0.00) 0%, rgba(0, 122, 131, 0.76) 59.07%), url(${background}) lightgray -243.692px 0px / 128.205% 106.526% no-repeat`,
+        // }}
+      >
+        {/* <Image
+          src={background}
+          className="object-cover w-full h-full "
+          alt=""
+        /> */}
+      </div>
       <div className="h-screen w-full text-[100px]">Harsh</div>
     </>
   );
