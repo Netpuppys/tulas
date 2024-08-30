@@ -11,6 +11,7 @@ import planeImage from "../../public/AboutDehradun/plane.png";
 import roadImage from "../../public/AboutDehradun/road.png";
 import hillsImage from "../../public/AboutDehradun/hills.png";
 import Cards from "./components/Cards";
+import { Fade } from "react-awesome-reveal";
 const title = (
   <>
     <span className="text-[#007A83]">ABOUT</span>
@@ -67,13 +68,15 @@ function Contact() {
         />
         <div className="bg-transparent w-full py-20 h-[37rem] text-pretty flex items-center justify-center gap-14">
           {cardData.map((card, index) => (
-            <div key={index} className="w-fit h-full">
-              <Cards
-                title={card.title}
-                image={card.image}
-                description={card.description}
-              />
-            </div>
+            <Fade>
+              <div key={index} className="w-fit h-full">
+                <Cards
+                  title={card.title}
+                  image={card.image}
+                  description={card.description}
+                />
+              </div>
+            </Fade>
           ))}
         </div>
         <div className="w-full p-10 pb-40">
@@ -86,17 +89,19 @@ function Contact() {
                 Soothe your senses with the beautiful aesthetics offered at{" "}
                 <span className="text-[#E69706]">Tula&apos;s Institute</span>
               </p>
-              <p className="text-[#D1D1D1] pr-10 text-pretty font-[TTChocolates]">
-                {mainDescription}
-              </p>
+              <div className="text-[#D1D1D1] text-base 2xl:text-lg pr-10 text-pretty font-[TTChocolates]">
+                <Fade delay={500}>{mainDescription}</Fade>
+              </div>
             </div>
 
             <div className={`w-1/2 overflow-hidden`}>
-              <Image
-                src={hillsImage}
-                className="w-full h-full object-cover"
-                alt="bg"
-              />
+              <Fade delay={300}>
+                <Image
+                  src={hillsImage}
+                  className="w-full h-full object-cover"
+                  alt="bg"
+                />
+              </Fade>
             </div>
           </div>
         </div>
