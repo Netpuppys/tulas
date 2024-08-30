@@ -1,3 +1,4 @@
+"use client";
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar";
 import React from "react";
@@ -15,6 +16,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import TulasFooter from "../../public/Components/Footer/tulasFooter.png";
 import { FaBicycle, FaCar, FaTrain, FaWalking } from "react-icons/fa";
 import ContactForm from "./Component/form";
+import { Fade } from "react-awesome-reveal";
 const title = (
   <>
     CONTACT <span className="text-[#007A83]">US</span>
@@ -119,35 +121,39 @@ function Contact() {
         <div className="w-full py-24">
           <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex items-center justify-center gap-14 border-b-2 border-white">
             {cardData.map((card, index) => (
-              <Link
-                href={card.link}
-                key={index}
-                className="w-fit font-[TTChocolates] font-semibold text-[14px] h-fit text-center flex flex-col items-center justify-center gap-3"
-              >
-                <Image src={card.image} alt="" />
-                {card.title}
-                <br />
-                <p className="max-w-[169px] text-wrap ">{card.description}</p>
-              </Link>
+              <Fade delay={200}>
+                <Link
+                  href={card.link}
+                  key={index}
+                  className="w-fit font-[TTChocolates] font-semibold text-[14px] h-fit text-center flex flex-col items-center justify-center gap-3"
+                >
+                  <Image src={card.image} alt="" />
+                  {card.title}
+                  <br />
+                  <p className="max-w-[169px] text-wrap ">{card.description}</p>
+                </Link>
+              </Fade>
             ))}
           </div>
           <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex items-center justify-center gap-14">
             {mobileContact.map((mobileContact, index) => (
-              <div
-                key={index}
-                className="w-fit h-fit text-center flex flex-col items-center justify-center gap-3"
-              >
-                <h4 className="max-w-[257px] font-[TTChocolatesBold] font-extrabold text-[22px]">
-                  {mobileContact.title}
-                </h4>
-                <br />
-                <Link href={mobileContact.link}>
-                  <button className="w-fit text-wrap px-10 py-2 font-semibold font-[TTChocolatesBold] text-[14px] text-[#760135] bg-white rounded-full flex gap-2 items-center ">
-                    <FiPhoneCall />
-                    {mobileContact.button}
-                  </button>
-                </Link>
-              </div>
+              <Fade delay={300}>
+                <div
+                  key={index}
+                  className="w-fit h-fit text-center flex flex-col items-center justify-center gap-3"
+                >
+                  <h4 className="max-w-[257px] font-[TTChocolatesBold] font-extrabold text-[22px]">
+                    {mobileContact.title}
+                  </h4>
+                  <br />
+                  <Link href={mobileContact.link}>
+                    <button className="w-fit text-wrap px-10 py-2 font-semibold font-[TTChocolatesBold] text-[14px] text-[#760135] bg-white rounded-full flex gap-2 items-center ">
+                      <FiPhoneCall />
+                      {mobileContact.button}
+                    </button>
+                  </Link>
+                </div>
+              </Fade>
             ))}
           </div>
         </div>
