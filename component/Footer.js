@@ -8,11 +8,12 @@ import {
 } from "react-icons/fa";
 import TulasFooter from "../public/Components/Footer/tulasFooter.png";
 import Link from "next/link";
+import ContactForm from "@/app/contact/Component/form";
 
 const subTitle =
   "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India";
 
-const Footer = () => {
+const Footer = ({ set = false }) => {
   const keyLinks = [
     { title: "Anti-ragging", linkTo: "" },
     { title: "Grievance", linkTo: "" },
@@ -51,10 +52,10 @@ const Footer = () => {
     { href: "#", icon: <FaYoutube /> },
   ];
   return (
-    <footer className="h-screen w-full text-white overflow-hidden z-40">
+    <footer className="min-h-screen w-full text-white overflow-hidden z-40">
       <div className="w-full h-[12vh] flex items-end bg-transparent">
         {/* black bar */}
-        <div className="w-[67%] min-w-[1000px] h-full bg-[#120008] flex justify-between px-4 items-center">
+        <div className="w-[67%] min-w-[1000px] h-full bg-[#120008] flex justify-between px-4 items-center z-40">
           <h3 className="font-[Oswald] text-[40px]">
             WANT TO LEARN MORE ABOUT TULA’S?
           </h3>
@@ -84,6 +85,7 @@ const Footer = () => {
           <button className="bg-[rgba(255, 255, 255, 0.08)] text-white"></button>
         </div>
       </div>
+      {set && <ContactForm />}
       {/* main footer */}
       <div className="w-full flex flex-col h-[88vh] items-center bg-[#3D001B]">
         <div className="w-full flex flex-col items-center gap-4 justify-center">
