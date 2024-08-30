@@ -51,8 +51,8 @@ const Footer = () => {
     { href: "#", icon: <FaYoutube /> },
   ];
   return (
-    <footer className="h-screen w-full text-white overflow-hidden">
-      <div className="w-full h-[12vh] flex items-end">
+    <footer className="h-screen w-full text-white overflow-hidden z-40">
+      <div className="w-full h-[12vh] flex items-end bg-transparent">
         {/* black bar */}
         <div className="w-[67%] min-w-[1000px] h-full bg-[#120008] flex justify-between px-4 items-center">
           <h3 className="font-[Oswald] text-[40px]">

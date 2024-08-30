@@ -10,6 +10,8 @@ import Footer from "@/component/Footer";
 import Courses from "./Component/Courses";
 import WhyTulasScroll from "./Component/WhyTulasScroll";
 import BannerHome from "@/app/Component/BannerHome";
+import CampusLife from "./Component/CampusLife";
+import Testimonials from "./Component/Testimonials";
 
 export default function HomePage() {
   const parentRef = useRef(null);
@@ -24,6 +26,8 @@ export default function HomePage() {
       <Virtual />
       <VirtualTour />
       <Video />
+      <CampusLife />
+      <Testimonials />
       <Footer />
     </div>
   );
