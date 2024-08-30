@@ -12,6 +12,7 @@ import WhyTulasScroll from "./Component/WhyTulasScroll";
 import BannerHome from "@/app/Component/BannerHome";
 import CampusLife from "./Component/CampusLife";
 import Testimonials from "./Component/Testimonials";
+import RankBanner from "./Component/RankBanner";
 
 export default function HomePage() {
   const parentRef = useRef(null);
@@ -28,6 +29,7 @@ export default function HomePage() {
       <Video />
       <CampusLife />
       <Testimonials />
+      <RankBanner />
       <Footer />
     </div>
   );
