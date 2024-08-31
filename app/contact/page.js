@@ -60,6 +60,13 @@ function Contact() {
       link: "mailto:info@tulas.edu.in",
     },
     {
+      title: "ADDRESS",
+      image: address,
+      description:
+        "Tulas Institute Mehre Ka Gaon PO Selaqui Dhoolkot Dehradun Uttarakhand 248011",
+      link: "https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D",
+    },
+    {
       title: "COLLEGE LANDLINE",
       image: landline,
       description: "+91-6366937159",
@@ -70,13 +77,6 @@ function Contact() {
       image: fax,
       description: "0135-2699305",
       link: "fax:0135-2699305",
-    },
-    {
-      title: "ADDRESS",
-      image: address,
-      description:
-        "Tulas Institute Mehre Ka Gaon PO Selaqui Dhoolkot Dehradun Uttarakhand 248011",
-      link: "https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D",
     },
   ];
   const mobileContact = [
@@ -119,7 +119,7 @@ function Contact() {
         />
 
         <div className="w-full py-24">
-          <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex items-center justify-center gap-14 border-b-2 border-white">
+          <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex justify-center gap-14 border-b-2 border-white">
             {cardData.map((card, index) => (
               <Fade delay={200}>
                 <Link

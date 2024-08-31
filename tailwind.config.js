@@ -16,6 +16,10 @@ module.exports = {
       },
       animation: {
         scrollSpin: "scrollSpin 6s linear infinite",
+        translateLeft: "translateLeft 0.8s linear",
+        translateRight: "translateRight 0.8s linear",
+        translateTop: "translateTop 0.8s linear",
+        translateBottom: "translateBottom 0.8s linear",
       },
       keyframes: {
         scrollSpin: {
@@ -24,6 +28,38 @@ module.exports = {
           },
           to: {
             transform: "rotate(360deg)",
+          },
+        },
+        translateLeft: {
+          from: {
+            transform: "translateX(-20%)",
+          },
+          to: {
+            transform: "translateX(0%)",
+          },
+        },
+        translateRight: {
+          from: {
+            transform: "translateX(20%)",
+          },
+          to: {
+            transform: "translateX(0%)",
+          },
+        },
+        translateTop: {
+          from: {
+            transform: "translateY(-100%)",
+          },
+          to: {
+            transform: "translateY(0%)",
+          },
+        },
+        translateBottom: {
+          from: {
+            transform: "translateY(100%)",
+          },
+          to: {
+            transform: "translateY(0%)",
           },
         },
       },
