@@ -19,7 +19,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           </h4>
         </div>
       </div>
-      <div className="h-[29vh] w-full  flex flex-col justify-center max-w-[735px] px-4 mx-auto">
+      <div className="h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-4 mx-auto">
         <h3 className="font-[CarotSlab] font-medium text-4xl text-[#760135] text-left mb-3">
           {belowTitle}
         </h3>

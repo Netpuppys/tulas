@@ -13,7 +13,7 @@ import ContactForm from "@/app/contact/Component/form";
 const subTitle =
   "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India";
 
-const Footer = ({ set = false }) => {
+const Footer = ({ set = false, color = false }) => {
   const keyLinks = [
     { title: "Anti-ragging", linkTo: "" },
     { title: "Grievance", linkTo: "" },
@@ -51,19 +51,45 @@ const Footer = ({ set = false }) => {
     { href: "#", icon: <FaLinkedinIn /> },
     { href: "#", icon: <FaYoutube /> },
   ];
+  const cardsData = [
+    {
+      leftText:
+        "Copyright © 2023 Tula's Institute, Dehradun | All Rights Reserved",
+      buttons: [
+        { text: "Privacy Policy", linkTo: "/privacy-policy/" },
+        { text: "Terms & Conditions", linkTo: "/terms-conditions/" },
+      ],
+    },
+    {
+      leftText: (
+        <>
+          Designed and Managed By <a href="https://netpuppys.com">NetPuppys</a>
+        </>
+      ),
+      buttons: [
+        { text: "Blog", linkTo: "/blog/" },
+        { text: "Contact Us", linkTo: "/contact/" },
+      ],
+    },
+  ];
+
   return (
     <footer className="min-h-screen w-full text-white overflow-hidden z-40">
       <div className="w-full h-[12vh] flex items-end bg-transparent">
         {/* black bar */}
-        <div className="w-[67%] min-w-[1000px] h-full bg-[#120008] flex justify-between px-4 items-center z-40">
+        <div
+          className={`w-[67%] min-w-[1000px] h-full ${
+            color ? "bg-[#00383D]" : "bg-[#120008]"
+          }  flex justify-between px-4 items-center z-40`}
+        >
           <h3 className="font-[Oswald] text-[40px]">
             WANT TO LEARN MORE ABOUT TULA’S?
           </h3>
           <div className="flex gap-4">
-            <button className="bg-[#00383D] border-2 border-[#E69706] py-2 px-5 text-white">
+            <button className="bg-transparent hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-2 px-5 text-white">
               ENQUIRY NOW
             </button>
-            <button className="bg-[#E69706] border-2 border-[#E69706] py-2 px-5 text-black">
+            <button className="bg-[#E69706] border-2 border-[#E69706] py-2 px-5 text-[#120008] hover:text-white hover:bg-transparent ">
               APPLY TODAY
             </button>
           </div>
@@ -87,7 +113,11 @@ const Footer = ({ set = false }) => {
       </div>
       {set && <ContactForm />}
       {/* main footer */}
-      <div className="w-full flex flex-col h-[88vh] items-center bg-[#3D001B]">
+      <div
+        className={`w-full flex flex-col h-[88vh] items-center ${
+          color ? "bg-[#007A83]" : "bg-[#3D001B]"
+        }`}
+      >
         <div className="w-full flex flex-col items-center gap-4 justify-center">
           <Image
             src={TulasFooter}
@@ -102,7 +132,7 @@ const Footer = ({ set = false }) => {
           {socialMediaLinks.map((social, index) => (
             <li
               key={index}
-              className="text-[25px] p-2 rounded-full bg-[#732D4C]"
+              className="text-[25px] p-2 rounded-full backdrop:blur-3xl bg-opacity-20 bg-white"
             >
               <a href={social.href}>{social.icon}</a>
             </li>
@@ -119,12 +149,14 @@ const Footer = ({ set = false }) => {
             </div>
             <p className="text-[20px] font-[TTChocolates] mb-8">
               Tulas Institute, Dhoolkot Near Selaqui, Dhulkot Rd, Dehradun,
-              <span className="text-[#E69706]"> Uttarakhand</span>
+              <br />
+              <strong className="text-[#E69706]"> Uttarakhand</strong>
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.277785508504!2d77.8834027760641!3d30.343054304360063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929fa74538275%3A0x3cb757428c691de3!2sTula&#39;s%20Institute!5e0!3m2!1sen!2sin!4v1724739581831!5m2!1sen!2sin"
               allowfullscreen=""
               loading="lazy"
+              className="rounded-2xl"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
 
@@ -200,6 +232,26 @@ const Footer = ({ set = false }) => {
             </p>
           </div>
         </div>
+        {cardsData.map((card, index) => (
+          <div
+            key={index}
+            className="px-10 flex w-full justify-between items-center"
+          >
+            <h3 className="text-[18px] w-fit font-[TTChocolates] font-medium text-[#EFEFEF]">
+              {card.leftText}
+            </h3>
+            <div className="text-lg w-fit font-[TTChocolates] font-medium text-[#EFEFEF] flex gap-2 h-fit">
+              {card.buttons.map((button, index) => (
+                <div className="flex gap-2" key={index}>
+                  <Link href={button.linkTo}>{button.text}</Link>
+                  {index < card.buttons.length - 1 && (
+                    <div className="w-[2px] h-[25px] rounded-full bg-[#EFEFEF]"></div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </footer>
   );
