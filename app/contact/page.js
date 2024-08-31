@@ -135,7 +135,7 @@ function Contact() {
               </Fade>
             ))}
           </div>
-          <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex items-center justify-center gap-14">
+          <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex items-end justify-center gap-14">
             {mobileContact.map((mobileContact, index) => (
               <Fade delay={300}>
                 <div

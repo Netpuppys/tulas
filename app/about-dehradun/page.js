@@ -66,7 +66,7 @@ function Contact() {
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
-        <div className="bg-transparent w-full py-20 h-[37rem] text-pretty flex items-center justify-center gap-14">
+        <div className="bg-transparent w-full py-20 h-[37rem] text-pretty flex items-start justify-center gap-14">
           {cardData.map((card, index) => (
             <Fade>
               <div key={index} className="w-fit h-full">

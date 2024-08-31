@@ -1,4 +1,5 @@
 "use client";
+import React, { useState, useEffect, useRef } from "react";
 import Banner from "@/component/Banner";
 import Image from "next/image";
 import BannerImg from "../../public/Components/Banner/bannerImg.png";
@@ -24,24 +25,77 @@ export default function About() {
       title: "# Industry Exposure",
     },
   ];
-  const cards = [
+  const [inView, setInView] = useState(false);
+  const [stats, setStats] = useState([
     {
-      title: "22",
+      start: 0,
+      end: 22,
       description: "ACRE WIFI CAMPUS",
     },
     {
-      title: "150+",
+      start: 0,
+      end: 150,
       description: "QUALIFIED TEACHERS",
     },
     {
-      title: "2000+",
+      start: 1800,
+      end: 2000,
       description: "STUDENTS ENROLLED",
     },
     {
-      title: "17",
+      start: 0,
+      end: 17,
       description: "YEARS OF EXPERIENCE",
     },
-  ];
+  ]);
+  const statsRef = useRef(null);
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setInView(true);
+      }
+    });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 1, // Trigger when at least 100% of the component is visible
+    });
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (inView) {
+      const animateNumbers = () => {
+        stats.forEach((stat, index) => {
+          let start = stat.start;
+          const end = stat.end;
+          const duration = 2000; // 1 seconds
+          const stepTime = Math.abs(Math.floor(duration / (end - start)));
+
+          const timer = setInterval(() => {
+            start += 1;
+            setStats((prevStats) =>
+              prevStats.map((item, i) =>
+                i === index
+                  ? { ...item, animatedStatNo: Math.min(start, end) }
+                  : item
+              )
+            );
+            if (start >= end) {
+              clearInterval(timer);
+            }
+          }, stepTime);
+        });
+      };
+      animateNumbers();
+    }
+  }, [inView]);
   return (
     <>
       <Navbar />
@@ -88,15 +142,20 @@ export default function About() {
             </Fade>
           ))}
         </div>
-        <div className="bg-transparent w-full py-4 flex items-center justify-center gap-4">
-          {cards.map((cards, index) => (
+        <div
+          ref={statsRef}
+          className="bg-transparent w-full py-4 flex items-center justify-center gap-4"
+        >
+          {stats.map((cards, index) => (
             <Fade>
               <div
                 key={index}
                 className="backdrop-blur-md bg-white bg-opacity-30 w-[227px] flex flex-col items-center justify-center gap-3 rounded-2xl h-[208px]"
               >
                 <h3 className="text-[#E69706] font-[TTChocolatesBold] text-[45px] font-black">
-                  {cards.title}
+                  {cards.animatedStatNo || cards.start}
+                  {index === 1 && <>+</>}
+                  {index === 2 && <>+</>}
                 </h3>
                 <h2 className="text-white font-[TTChocolates] text-[18px] font-normal">
                   {cards.description}
