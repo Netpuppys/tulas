@@ -70,10 +70,10 @@ const ContactForm = ({ contactRef }) => {
     <div
       ref={contactRef}
       id="contact"
-      className="w-full bg-[#3D001B] py-28 px-[13%]"
+      className="w-full bg-[#3D001B] py-8 md:py-28 px-8 md:px-[13%]"
     >
       <ToastContainer closeButton closeOnClick={true} />
-      <h3 className="text-white font-[CarotSlab] text-[40px] text-center">
+      <h3 className="text-[30px] text-white font-[CarotSlab] md:text-[40px] text-center">
         CONTACT US
       </h3>
       <form
@@ -142,7 +142,7 @@ const ContactForm = ({ contactRef }) => {
         <div className="mt-4 flex justify-center items-center">
           <button
             type="submit"
-            className="w-fit px-44 py-2 bg-white text-[#760135] rounded-3xl text-[24px] hover:bg-[#59032f] hover:text-white transition duration-200"
+            className="w-fit px-14 py-1 md:px-44 md:py-2 bg-white text-[#760135] rounded-3xl text-[24px] hover:bg-[#59032f] hover:text-white transition duration-200"
           >
             Submit
           </button>

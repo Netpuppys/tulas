@@ -111,15 +111,15 @@ function Contact() {
         }
       />
       {/* fixed background */}
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden md:-mb-[6vh]">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
 
-        <div className="w-full py-24">
-          <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex justify-center gap-14 border-b-2 border-white">
+        <div className="w-full py-0 p-10 md:py-24">
+          <div className="bg-transparent w-fit py-20 mx-auto h-fit text-pretty grid grid-cols-2 md:grid-cols-5 justify-center gap-14 border-b-2 border-white">
             {cardData.map((card, index) => (
               <Fade delay={200}>
                 <Link
@@ -135,17 +135,17 @@ function Contact() {
               </Fade>
             ))}
           </div>
-          <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex items-end justify-center gap-14">
+          <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex flex-col md:flex-row items-center md:items-end justify-center gap-10 md:gap-14">
             {mobileContact.map((mobileContact, index) => (
               <Fade delay={300}>
                 <div
                   key={index}
-                  className="w-fit h-fit text-center flex flex-col items-center justify-center gap-3"
+                  className="w-fit h-fit text-center flex flex-col items-center justify-center gap-4 md:gap-14"
                 >
                   <h4 className="max-w-[257px] font-[TTChocolatesBold] font-extrabold text-[22px]">
                     {mobileContact.title}
                   </h4>
-                  <br />
+
                   <Link href={mobileContact.link}>
                     <button className="w-fit text-wrap px-10 py-2 font-semibold font-[TTChocolatesBold] text-[14px] text-[#760135] bg-white rounded-full flex gap-2 items-center ">
                       <FiPhoneCall />

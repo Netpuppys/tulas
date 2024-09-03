@@ -86,7 +86,7 @@ function Navbar() {
   return (
     <div className="px-4 md:px-16 w-full absolute flex flex-col justify-center z-50">
       {/* top bar */}
-      <div className=" h-[80px] w-full flex justify-between items-center">
+      <div className="hidden h-[80px] w-full md:flex justify-between items-center">
         <a href="tel:+91-6366937159" className=" font-[TTChocolates]">
           Admission Helpline No. +91-6366937159
         </a>
@@ -117,10 +117,10 @@ function Navbar() {
           </button>
         </div>
       </div>
-      {/* main footer */}
-      <div className="w-full h-fit">
-        <div className="flex w-full  flex-row-reverse md:flex-row justify-between">
-          <div className="flex  md:w-fit flex-row-reverse md:flex-row gap-6 md:gap-12 ">
+      {/* main navbar */}
+      <div className="w-full pt-8 md:pt-0 h-fit">
+        <div className="flex w-full flex-row-reverse md:flex-row justify-between">
+          <div className="flex md:w-fit flex-row-reverse md:flex-row gap-6 md:gap-12 ">
             <button
               className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
               onClick={handleButtonClick}

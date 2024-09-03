@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import {
   FaFacebookF,
@@ -55,10 +56,6 @@ const Footer = ({ set = false, color = false }) => {
     {
       leftText:
         "Copyright © 2023 Tula's Institute, Dehradun | All Rights Reserved",
-      buttons: [
-        { text: "Privacy Policy", linkTo: "/privacy-policy/" },
-        { text: "Terms & Conditions", linkTo: "/terms-conditions/" },
-      ],
     },
     {
       leftText: (
@@ -66,6 +63,16 @@ const Footer = ({ set = false, color = false }) => {
           Designed and Managed By <a href="https://netpuppys.com">NetPuppys</a>
         </>
       ),
+    },
+  ];
+  const button = [
+    {
+      buttons: [
+        { text: "Privacy Policy", linkTo: "/privacy-policy/" },
+        { text: "Terms & Conditions", linkTo: "/terms-conditions/" },
+      ],
+    },
+    {
       buttons: [
         { text: "Blog", linkTo: "/blog/" },
         { text: "Contact Us", linkTo: "/contact/" },
@@ -75,27 +82,27 @@ const Footer = ({ set = false, color = false }) => {
 
   return (
     <footer className="min-h-screen w-full text-white overflow-hidden z-40">
-      <div className="w-full h-[12vh] flex items-end bg-transparent">
+      <div className="w-full h-fit md:h-[12vh] flex flex-col md:flex-row items-end bg-transparent">
         {/* black bar */}
         <div
-          className={`w-[67%] min-w-[1000px] h-full ${
+          className={`w-full md:w-[67%] md:min-w-[1000px] h-full ${
             color ? "bg-[#00383D]" : "bg-[#120008]"
-          }  flex justify-between px-4 items-center z-40`}
+          }  flex justify-between px-4 py-2 md:py-0 items-center z-40`}
         >
-          <h3 className="font-[Oswald] text-[40px]">
+          <h3 className="font-[Oswald] w-1/2 md:w-fit text-[16px] md:text-[40px]">
             WANT TO LEARN MORE ABOUT TULA’S?
           </h3>
-          <div className="flex gap-4">
-            <button className="bg-transparent hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-2 px-5 text-white">
+          <div className="flex w-fit gap-4">
+            <button className="text-[9px] md:text-[18px] bg-transparent hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-1 md:py-2 md:px-5 text-white">
               ENQUIRY NOW
             </button>
-            <button className="bg-[#E69706] border-2 border-[#E69706] py-2 px-5 text-[#120008] hover:text-white hover:bg-transparent ">
+            <button className="bg-[#E69706] border-2 text-[9px] md:text-[18px] border-[#E69706] py-1 px-1 md:py-2 md:px-5 text-[#120008] hover:text-white hover:bg-transparent ">
               APPLY TODAY
             </button>
           </div>
         </div>
         {/* gray social icons div */}
-        <div className="w-[33%] h-[6vh] bg-[#808080] px-[2%] gap-3 flex justify-between items-center">
+        <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[2%] gap-3 flex justify-between items-center">
           <h4 className="font-[Oswald] text-[28px] text-white ">CONNECT US</h4>
           <ul className="flex gap-2">
             {socialMediaLinks.map((social, index) => (
@@ -114,7 +121,7 @@ const Footer = ({ set = false, color = false }) => {
       {set && <ContactForm />}
       {/* main footer */}
       <div
-        className={`w-full flex flex-col h-[88vh] items-center ${
+        className={`w-full flex flex-col h-fit md:h-[88vh] items-center ${
           color ? "bg-[#007A83]" : "bg-[#3D001B]"
         }`}
       >
@@ -124,8 +131,9 @@ const Footer = ({ set = false, color = false }) => {
             alt="Tula's Dehradun Logo"
             className="max-w-[200px] h-fit mt-8"
           />
-          <p className="mt-2 max-w-[600px] text-center">{subTitle}</p>
-          {/* <p className="text-sm mt-2">Designed and Managed By NetPuppys</p> */}
+          <p className="mt-2 text-sm md:text-base px-4 md:px-0 max-w-[600px] text-center">
+            {subTitle}
+          </p>
         </div>
 
         <ul className="flex gap-2 mt-6">
@@ -139,15 +147,15 @@ const Footer = ({ set = false, color = false }) => {
           ))}
         </ul>
 
-        <div className="flex justify-between w-full h-full mt-8 px-[5%]">
-          <div className="max-w-[352px]">
-            <div className=" justify-center flex flex-col">
-              <div className="w-[70px] h-[2px] bg-[#E69706]"></div>
-              <h4 className="text-3xl font-normal mb-4 font-[Oswald]">
+        <div className="flex flex-col gap-2 md:flex-row justify-between w-full h-full mt-8 px-[5%]">
+          <div className="max-w-[352px] flex flex-col items-center md:block">
+            <div className="items-center md:items-start justify-center flex flex-col">
+              <div className="w-[50px] md:w-[70px] h-[2px] bg-[#E69706]"></div>
+              <h4 className="text-2xl md:text-3xl font-normal mb-4 font-[Oswald]">
                 ADDRESS
               </h4>
             </div>
-            <p className="text-[20px] font-[TTChocolates] mb-8">
+            <p className="text-[20px] text-center md:text-start font-[TTChocolates] mb-8">
               Tulas Institute, Dhoolkot Near Selaqui, Dhulkot Rd, Dehradun,
               <br />
               <strong className="text-[#E69706]"> Uttarakhand</strong>
@@ -162,10 +170,10 @@ const Footer = ({ set = false, color = false }) => {
 
             <div className="mt-4"></div>
           </div>
-          <div className="mb-6 md:mb-0 w-[600px]">
-            <div className="w-[500px] justify-center flex flex-col items-center text-center">
-              <div className="w-[60px] h-[2px] bg-[#E69706]"></div>
-              <h4 className="text-3xl font-normal mb-4 font-[Oswald]">
+          <div className="mb-6 md:mb-0 md:w-[600px]">
+            <div className="md:w-[500px] justify-center flex flex-col items-center text-center">
+              <div className="w-[50px] md:w-[60px] h-[2px] bg-[#E69706]"></div>
+              <h4 className="text-2xl md:text-3xl font-normal mb-4 font-[Oswald]">
                 KEY LINKS
               </h4>
             </div>
@@ -173,7 +181,10 @@ const Footer = ({ set = false, color = false }) => {
               <ul className="max-w-[220px] w-full">
                 {keyLinks.map((link, index) => (
                   <li key={index} className="">
-                    <Link href={link.linkTo} className="flex gap-2 ">
+                    <Link
+                      href={link.linkTo}
+                      className="flex gap-2 text-sm md:text-xl w-fit"
+                    >
                       <span className="text-[#E69706]">{"> "}</span>
                       {link.title}
                     </Link>
@@ -183,7 +194,10 @@ const Footer = ({ set = false, color = false }) => {
               <ul className="max-w-[279px] w-full">
                 {keyLinks2.map((link, index) => (
                   <li key={index} className="">
-                    <Link href={link.linkTo} className="flex gap-2 ">
+                    <Link
+                      href={link.linkTo}
+                      className="flex gap-2 text-sm md:text-xl w-fit"
+                    >
                       <span className="text-[#E69706]">{"> "}</span>
                       {link.title}
                     </Link>
@@ -193,65 +207,83 @@ const Footer = ({ set = false, color = false }) => {
             </h5>
           </div>
 
-          <div className="">
-            <div className=" justify-center flex flex-col">
-              <div className="w-[70px] h-[2px] bg-[#E69706]"></div>
-              <h4 className="text-3xl font-normal mb-4 font-[Oswald]">
-                TELEPHONE
-              </h4>
+          <div className="flex flex-row mb-6 md:flex-col w-full md:w-fit h-full md:h-fit items-start justify-between">
+            <div className="flex flex-col w-fit h-full">
+              <div className="justify-center flex flex-col">
+                <div className="w-[50px] md:w-[70px] h-[2px] bg-[#E69706]"></div>
+                <h4 className="text-2xl md:text-3xl font-normal mb-4 font-[Oswald]">
+                  TELEPHONE
+                </h4>
+              </div>
+              <ul className="text-[14px] md:text-[20px] font-[TTChocolates]">
+                <li>
+                  <a href="tel:0135-269930">
+                    <span className="text-[#E69706]">{"> "}</span>0135-269930
+                    (Landline)
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+91-6366937159">
+                    <span className="text-[#E69706]">{"> "}</span>+91-6366937159
+                    <br />
+                    (India Admission Helpline)
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+91-9837634737">
+                    <span className="text-[#E69706]">{"> "}</span>+91-9837634737
+                    <br />
+                    (Nepal Admission Helpline)
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul className="text-[20px] font-[TTChocolates]">
-              <li>
-                <a href="tel:0135-269930">
-                  <span className="text-[#E69706]">{"> "}</span>0135-269930
-                  (Landline)
-                </a>
-              </li>
-              <li>
-                <a href="tel:+91-6366937159">
-                  <span className="text-[#E69706]">{"> "}</span>+91-6366937159
-                  <br />
-                  (India Admission Helpline)
-                </a>
-              </li>
-              <li>
-                <a href="tel:+91-9837634737">
-                  <span className="text-[#E69706]">{"> "}</span>+91-9837634737
-                  <br />
-                  (Nepal Admission Helpline)
-                </a>
-              </li>
-            </ul>
-            <div className="mt-8 justify-center flex flex-col">
-              <div className="w-[70px] h-[2px] bg-[#E69706]"></div>
-              <h4 className="text-3xl font-normal mb-4 font-[Oswald]">MAIL</h4>
-            </div>
+            <div className="flex-col flex w-fit h-full">
+              <div className="md:mt-8 justify-center flex flex-col">
+                <div className="w-[50px] md:w-[70px] h-[2px] bg-[#E69706]"></div>
+                <h4 className="text-2xl md:text-3xl font-normal mb-4 font-[Oswald]">
+                  MAIL
+                </h4>
+              </div>
 
-            <p className="text-[20px] font-[TTChocolates]">
-              <a href="mailto:info@tulas.edu.in">info@tulas.edu.in</a>
-            </p>
+              <p className="text-sm md:text-[20px] font-[TTChocolates]">
+                <a href="mailto:info@tulas.edu.in">info@tulas.edu.in</a>
+              </p>
+            </div>
           </div>
         </div>
-        {cardsData.map((card, index) => (
-          <div
-            key={index}
-            className="px-10 flex w-full justify-between items-center"
-          >
-            <h3 className="text-[18px] w-fit font-[TTChocolates] font-medium text-[#EFEFEF]">
-              {card.leftText}
-            </h3>
-            <div className="text-lg w-fit font-[TTChocolates] font-medium text-[#EFEFEF] flex gap-2 h-fit">
-              {card.buttons.map((button, index) => (
-                <div className="flex gap-2" key={index}>
-                  <Link href={button.linkTo}>{button.text}</Link>
-                  {index < card.buttons.length - 1 && (
-                    <div className="w-[2px] h-[25px] rounded-full bg-[#EFEFEF]"></div>
-                  )}
-                </div>
-              ))}
-            </div>
+        <div className="flex-col flex md:flex-row justify-between w-full">
+          <div className="w-full flex flex-col items-center md:items-start justify-between px-10 py-4">
+            {cardsData.map((card, index) => (
+              <div key={index} className="text-center md:text-left md:mb-0">
+                <p className="text-sm md:text-base">{card.leftText}</p>
+              </div>
+            ))}
           </div>
-        ))}
+          <div className="w-full flex md:flex-col items-center md:items-end justify-center md:px-10 md:py-4 pb-4 md:pb-0">
+            {button.map((btnGroup, index) => (
+              <div
+                key={index}
+                className="flex items-center border-r-2 border-white md:border-0"
+              >
+                {btnGroup.buttons.map((btn, btnIndex) => (
+                  <React.Fragment key={btnIndex}>
+                    <Link
+                      href={btn.linkTo}
+                      className={`px-1 text-xs md:text-base md:px-2 ${
+                        btnIndex < btnGroup.buttons.length - 1
+                          ? "border-r-2 border-white"
+                          : ""
+                      }`}
+                    >
+                      {btn.text}
+                    </Link>
+                  </React.Fragment>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </footer>
   );

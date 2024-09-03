@@ -60,13 +60,13 @@ function Contact() {
         }
       />
       {/* fixed background */}
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden md:-mb-[6vh]">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
-        <div className="bg-transparent w-full py-20 h-[37rem] text-pretty flex items-start justify-center gap-14">
+        <div className="bg-transparent w-full py-20 md:h-[37rem] text-pretty flex flex-col md:flex-row items-center md:items-start justify-center gap-14">
           {cardData.map((card, index) => (
             <Fade>
               <div key={index} className="w-fit h-full">
@@ -79,26 +79,28 @@ function Contact() {
             </Fade>
           ))}
         </div>
-        <div className="w-full p-10 pb-40">
-          <div className="w-full overflow-hidden rounded-3xl shadow-2xl bg-white bg-opacity-20 backdrop-blur-lg flex">
+        <div className="w-full p-5 md:p-10 md:pb-40">
+          <div className="w-full overflow-hidden rounded-3xl shadow-2xl bg-white bg-opacity-20 backdrop-blur-lg flex flex-col-reverse md:flex-row">
             <div
               // ref={compRef}
-              className="w-1/2 py-20 pl-10 pr-5 border-r-2 border-white"
+              className="w-full md:w-1/2 py-10 md:py-20 px-6 md:pl-10 md:pr-5 md:border-r-2 border-white"
             >
-              <p className="text-white mb-5 text-3xl font-[CarotSlab] font-medium">
+              <p className="text-white mb-5 text-2xl md:text-3xl font-[CarotSlab] font-medium">
                 Soothe your senses with the beautiful aesthetics offered at{" "}
                 <span className="text-[#E69706]">Tula&apos;s Institute</span>
               </p>
-              <div className="text-[#D1D1D1] text-base 2xl:text-lg pr-10 text-pretty font-[TTChocolates]">
+              <div className="text-[#D1D1D1] text-sm md:text-base 2xl:text-lg md:pr-10 text-pretty font-[TTChocolates]">
                 <Fade delay={500}>{mainDescription}</Fade>
               </div>
             </div>
 
-            <div className={`w-1/2 overflow-hidden`}>
+            <div
+              className={`w-full md:w-1/2 h-[70vh] md:h-fit overflow-hidden`}
+            >
               <Fade delay={300}>
                 <Image
                   src={hillsImage}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[70vh] md:h-fit object-cover rounded-3xl"
                   alt="bg"
                 />
               </Fade>
