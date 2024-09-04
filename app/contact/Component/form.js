@@ -81,7 +81,7 @@ const ContactForm = ({ contactRef }) => {
         onSubmit={handleSubmit}
         className=" h-fit w-full py-10 font-[TTChocolates] text-[16px] border-b-[1px] border-white"
       >
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           <div>
             <label className="block mb-2">Your Name</label>
             <input
