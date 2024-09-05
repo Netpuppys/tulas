@@ -122,7 +122,7 @@ const Footer = ({ set = false, color = false }) => {
       {/* main footer */}
       <div
         className={`w-full flex flex-col h-fit md:h-[88vh] items-center ${
-          color ? "bg-[#007A83]" : "bg-[#3D001B]"
+          color ? "bg-[#005D64]" : "bg-[#3D001B]"
         }`}
       >
         <div className="w-full flex flex-col items-center gap-4 justify-center">
