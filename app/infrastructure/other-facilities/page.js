@@ -196,7 +196,7 @@ function OtherFacilities() {
         ))}
       </div>
 
-      <Footer />
+      <Footer color={true}/>
     </div>
   );
 }
