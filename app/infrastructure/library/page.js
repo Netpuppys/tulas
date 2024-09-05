@@ -140,7 +140,12 @@ function Library() {
           </div>
         </Fade>
       </div>
-      <button className="px-20 py-2 mb-8 bg-white text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white">
+      <button
+        onClick={() => {
+          window.location.href = "/tulas-library-e-resources/";
+        }}
+        className="px-20 py-2 mb-8 bg-white text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
+      >
         TULA’S Library Resources
       </button>
 
