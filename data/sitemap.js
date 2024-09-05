@@ -105,15 +105,18 @@ const sitemap = [
               },
               {
                 title: "Computer Science & Engineering (AI&ML)",
-                linkTo: "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/",
+                linkTo:
+                  "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/",
               },
               {
                 title: "Computer Science & Engineering (Cyber Security)",
-                linkTo: "/courses/btech/computer-science-engineering-cyber-security/",
+                linkTo:
+                  "/courses/btech/computer-science-engineering-cyber-security/",
               },
               {
                 title: "Computer Science & Engineering( Data Science)",
-                linkTo: "/courses/btech/computer-science-engineering-data-science/",
+                linkTo:
+                  "/courses/btech/computer-science-engineering-data-science/",
               },
               {
                 title: "Electronics & Communication Engineering",
@@ -237,7 +240,7 @@ const sitemap = [
             linkTo: "https://teacher.camu.in/",
           },
           {
-            title: "Teacher Login",
+            title: "Student Login",
             linkTo: "https://student.camu.in/",
           },
         ],
