@@ -9,12 +9,43 @@ import background from "../../public/ict-facilities/background.png";
 import { Fade } from "react-awesome-reveal";
 import ICTImage from "../../public/ict-facilities/ict-facilities.png";
 import { useInView } from "react-intersection-observer";
+import lcd from "../../public/ict-facilities/lcd.png";
+import lan from "../../public/ict-facilities/lan.png";
+import whiteBoard from "../../public/ict-facilities/white-board.png";
+import wifi from "../../public/ict-facilities/wifi.png";
 
 function ICTFacilities() {
   const { ref, inView } = useInView({
-    triggerOnce: false, // This allows the animation to trigger every time the component comes into view
-    threshold: 0.1, // 10% of the element must be visible to trigger
+    triggerOnce: false,
+    threshold: 0.1,
   });
+
+  const data = [
+    {
+      title: "LCD Projectors",
+      image: lcd,
+      description:
+        "LCD Projectors: – It allows the teacher to interact with students better, to use a multimodal form of teaching and to provide more entertaining ways to teach and get ",
+    },
+    {
+      title: "LAN",
+      image: lan,
+      description:
+        "LAN (Local area network) – is a computer network that interconnects computers within a limited area. It controls the flow of information, such as software, ",
+    },
+    {
+      title: "WIFI",
+      image: wifi,
+      description:
+        "Wi-Fi (Wireless fidelity) – It serves as a significant tool to communicate, discuss, and even explore various information from a different world and reference.",
+    },
+    {
+      title: "Smart board",
+      image: whiteBoard,
+      description:
+        "Smart board – It is an electronic whiteboard, is a classroom tool that allows images from a computer screen to be displayed onto a classroom board.",
+    },
+  ];
 
   return (
     <div className="flex flex-col items-center overflow-hidden">
@@ -32,7 +63,6 @@ function ICTFacilities() {
           "Tula’s has implemented ICT to support advanced learning and assessment. The institute has adequate classrooms to meet the need of the various programs being run. Presently all lecture rooms, tutorial rooms and seminar halls are equipped with projectors and Wi-Fi/LAN connectivity for the use of ICT during teaching.Computer assisted learning and digital materials are made available to the students to supplementclassroom teaching."
         }
       />
-      {/* fixed background */}
       <div className="w-full relative overflow-hidden -mb-[6vh]">
         <Image
           src={background}
@@ -82,6 +112,32 @@ function ICTFacilities() {
           />
         </Fade>
       </div>
+      <Fade delay={300}>
+        <div className="w-full px-10 flex flex-wrap justify-center gap-12 items-center py-20 pt-0 h-fit">
+          {data.map((card, index) => (
+            <div
+              key={index}
+              style={{
+                borderRadius: "26px",
+                border: "1px solid #A3A3A3",
+              }}
+              className="bg-transparent w-[16rem] h-fit relative rounded-xl flex flex-col items-center justify-start group hover:shadow-2xl transition-all ease-in-out delay-50 duration-200"
+            >
+              <Image
+                src={card.image}
+                alt="logo"
+                className="rounded-2xl w-full"
+              />
+              <p className="font-semibold text-xl tracking-tight p-3">
+                {card.title}
+              </p>
+              <p className="text-gray-500 text-[15px] text-center p-3 pt-0">
+                {card.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Fade>
       <div className="w-full h-fit z-50">
         <Footer />
       </div>
