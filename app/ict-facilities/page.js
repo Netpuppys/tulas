@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import Banner from "@/component/Banner";
 import BannerImg from "../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar";
@@ -7,7 +7,7 @@ import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../public/ict-facilities/background.png";
 import { Fade } from "react-awesome-reveal";
-import ICT from "../../public/ict-facilities/ict-facilities.png";
+import ICTImage from "../../public/ict-facilities/ict-facilities.png";
 import { useInView } from "react-intersection-observer";
 
 function ICTFacilities() {
@@ -17,7 +17,7 @@ function ICTFacilities() {
   });
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center overflow-hidden">
       <Navbar />
       <Banner
         image={BannerImg}
@@ -40,7 +40,10 @@ function ICTFacilities() {
           alt=""
         />
       </div>
-      <div className="pt-40 pb-20 bg-transparent w-[95%] ml-[5%] h-fit flex items-center justify-between">
+      <div
+        ref={ref}
+        className="pt-40 pb-20 bg-transparent w-[95%] ml-[5%] h-fit flex items-center justify-between"
+      >
         <Fade delay={300} className="w-[45%]">
           <div className="w-full block">
             <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
@@ -70,10 +73,15 @@ function ICTFacilities() {
           </div>
         </Fade>
         <Fade className="w-[45%]">
-          <Image src={ICT} alt="" className="w-full h-fit rounded-3xl" />
+          <Image
+            src={ICTImage}
+            alt=""
+            className={`w-full h-fit ${
+              inView ? "animate-translateRight" : "opacity-0"
+            }`}
+          />
         </Fade>
       </div>
-
       <div className="w-full h-fit z-50">
         <Footer />
       </div>

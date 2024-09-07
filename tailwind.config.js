@@ -32,7 +32,7 @@ module.exports = {
         },
         translateLeft: {
           from: {
-            transform: "translateX(-20%)",
+            transform: "translateX(-100%)",
           },
           to: {
             transform: "translateX(0%)",
@@ -40,7 +40,7 @@ module.exports = {
         },
         translateRight: {
           from: {
-            transform: "translateX(20%)",
+            transform: "translateX(100%)",
           },
           to: {
             transform: "translateX(0%)",
