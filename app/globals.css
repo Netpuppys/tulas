@@ -90,6 +90,23 @@ span {
     url(../public/Homepage/ScrollSection/BackgroundImageScroll.png) lightgray
       50% / cover no-repeat;
 }
+.backgroundScrollSports {
+  background: 
+    url(../public/infrastructure/computerScience/background.png) lightgray 50% / cover no-repeat;
+}
+
+/* linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(
+      0deg,
+      rgba(0, 122, 131, 0.72) 0%,
+      rgba(0, 122, 131, 0.72) 100%
+    ), */
+
 .backgroundVirtual {
   background: linear-gradient(
       0deg,
@@ -133,6 +150,5 @@ span {
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
     display: none;
-    
   }
 }

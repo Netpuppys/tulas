@@ -3,7 +3,7 @@ import React from "react";
 
 function Banner({ image, belowTitle, belowPara, title, description }) {
   return (
-    <div className="md:h-screen w-full z-40 bg-white">
+    <div className="md:min-h-screen w-full z-40 bg-white">
       <div className="h-[80vh] md:h-[71vh] w-full relative">
         <Image
           src={image}
@@ -19,7 +19,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           </h4>
         </div>
       </div>
-      <div className="h-[35vh] md:h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-4 mx-auto">
+      <div className="min-h-[35vh] py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-4 mx-auto">
         <h3 className="text-2xl font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-left mb-3">
           {belowTitle}
         </h3>

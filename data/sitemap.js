@@ -230,7 +230,7 @@ const sitemap = [
       },
       {
         title: "Institute Video",
-        linkTo: "/institute-video/",
+        linkTo: "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view",
       },
       {
         title: "ERP",

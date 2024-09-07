@@ -102,7 +102,7 @@ const Footer = ({ set = false, color = false }) => {
           </div>
         </div>
         {/* gray social icons div */}
-        <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[2%] gap-3 flex justify-between items-center">
+        <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[2%] gap-3 flex justify-between items-center z-50">
           <h4 className="font-[Oswald] text-[28px] text-white ">CONNECT US</h4>
           <ul className="flex gap-2">
             {socialMediaLinks.map((social, index) => (
@@ -121,7 +121,7 @@ const Footer = ({ set = false, color = false }) => {
       {set && <ContactForm />}
       {/* main footer */}
       <div
-        className={`w-full flex flex-col h-fit md:h-[88vh] items-center ${
+        className={`w-full flex flex-col relative z-50 h-fit md:h-[88vh] items-center ${
           color ? "bg-[#005D64]" : "bg-[#3D001B]"
         }`}
       >
