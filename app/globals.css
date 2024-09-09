@@ -40,14 +40,14 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
 }
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 6px;
   --tw-bg-opacity: 0.8;
   background-color: transparent;
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: #007a83;
+::-webkit-scrollbar-thumb {
+  background-color: white;
   border-radius: 10px;
 }
 @layer utilities {
@@ -91,8 +91,8 @@ span {
       50% / cover no-repeat;
 }
 .backgroundScrollSports {
-  background: 
-    url(../public/infrastructure/computerScience/background.png) lightgray 50% / cover no-repeat;
+  background: url(../public/infrastructure/computerScience/background.png)
+    lightgray 50% / cover no-repeat;
 }
 
 /* linear-gradient(
@@ -146,6 +146,41 @@ span {
     transform: translateY(0);
     /* opacity: 1; */
   }
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+}
+
+th,
+td {
+  border: 1px solid #fff;
+  padding: 18px;
+  text-align: left;
+}
+td {
+  padding: 15px;
+}
+th {
+  border: 1px solid #3d001b;
+  font-size: 18px;
+}
+th {
+  background-color: #fff;
+  color: #3d001b;
+}
+
+.total-row {
+  font-weight: bold;
+  background-color: #fff;
+  border-top: 2px solid #fff;
+}
+
+.total-row td {
+  border-top: none;
 }
 @media (max-width: 768px) {
   ::-webkit-scrollbar {

@@ -11,7 +11,7 @@ import ICTImage from "../../../public/research/r-and-cell/r-and-cell.png";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 
-function ICTFacilities() {
+function RAndCell() {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
@@ -125,4 +125,4 @@ function ICTFacilities() {
   );
 }
 
-export default ICTFacilities;
+export default RAndCell;
