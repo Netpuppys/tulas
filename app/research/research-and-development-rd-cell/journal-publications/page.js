@@ -5,7 +5,7 @@ import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
-import background from "../../../../public/research/r-and-cell/funded-projects-and-grants/background.png";
+import background from "../../../../public/research/r-and-cell/journal/background.png";
 import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
 
@@ -53,7 +53,7 @@ function RAndDFunded() {
       </div>
 
       <div className="w-full h-fit z-50">
-        <Footer />
+        <Footer color={true} />
       </div>
     </div>
   );
