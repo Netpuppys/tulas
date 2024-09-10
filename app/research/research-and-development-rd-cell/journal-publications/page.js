@@ -22,26 +22,20 @@ function RAndDFunded() {
         image={BannerImg}
         title={
           <>
-            Funded <span className="text-[#007A83]">Projects and Grants</span>
+            Journal <span className="text-[#007A83]">Publications</span>
           </>
         }
         description={<></>}
         belowTitle={<></>}
         belowPara={
           <>
-            Research projects provide opportunities for academic individuals to
-            acquire and use their skills in a variety of fields. It will be
-            pertinent and graceful if a project gets funded by some Govt./Other
-            agency and will certainly meet all the expenditure to be met out
-            during the tenure of that project. It also allows students to
-            collaborate with their faculty members on research projects. AICTE,
-            ISRO, DST, UCOST, SERB and other national and international
-            financial bodies offer sponsored initiatives under various research
-            schemes to the aspirants.
+            The faculty member’s research expertise and interests are reflected
+            in the form of Research/Review paper/Books/Books Chapters
+            publications. Our Institute encourages and incentivises its faculty
+            members to publish their research in any form.
             <br />
             <br />
-            Various projects and research grants awarded to our institute are
-            listed below:
+            The list of selected research papers published is given below:
           </>
         }
       />
@@ -54,9 +48,7 @@ function RAndDFunded() {
       </div>
       <div className="p-32 pb-50">
         <div className="h-[90vh] px-5 overflow-y-scroll">
-          <div className="border-y-2 border-white">
-            <TableComponent />
-          </div>
+          <TableComponent />
         </div>
       </div>
 
