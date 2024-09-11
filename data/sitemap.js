@@ -1,8 +1,8 @@
 const sitemap = [
-  // {
-  //   title: "Home",
-  //   linkTo: "/",
-  // },
+  {
+    title: "Home",
+    linkTo: "/",
+  },
   {
     title: "About Us",
     linkTo: "/about/",
@@ -18,48 +18,6 @@ const sitemap = [
       {
         title: "Management Messages",
         linkTo: "/about/management-messages/",
-        // superNestedLinks: [
-        //   {
-        //     title: "Message From The Chairman",
-        //     linkTo: "/our-team/message-from-the-chairman/",
-        //   },
-        //   {
-        //     title: "Message from Executive Director",
-        //     linkTo: "/our-team/message-from-executive-director/",
-        //   },
-        //   {
-        //     title: "Message From Vice President",
-        //     linkTo: "/our-team/message-from-vice-president/",
-        //   },
-        //   {
-        //     title: "Message From Vice President Technology",
-        //     linkTo: "/our-team/message-from-vice-president-technology/",
-        //   },
-        //   {
-        //     title: "Message From Director",
-        //     linkTo: "/our-team/message-from-director/",
-        //   },
-        //   {
-        //     title: "Message From Dean Academics",
-        //     linkTo: "/our-team/message-from-dean-academics/",
-        //   },
-        //   {
-        //     title: "Message From Dean R&D",
-        //     linkTo: "/our-team/message-from-dean-rd/",
-        //   },
-        //   {
-        //     title: "Message From Registrar",
-        //     linkTo: "/our-team/message-from-registrar/",
-        //   },
-        //   {
-        //     title: "Message From Adjunct Professor",
-        //     linkTo: "/our-team/message-from-adjunct-professor/",
-        //   },
-        //   {
-        //     title: "Approval",
-        //     linkTo: "/about/approval/",
-        //   },
-        // ],
       },
       {
         title: "Blog",
@@ -230,7 +188,8 @@ const sitemap = [
       },
       {
         title: "Institute Video",
-        linkTo: "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view",
+        linkTo:
+          "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view",
       },
       {
         title: "ERP",

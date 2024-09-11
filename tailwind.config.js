@@ -17,7 +17,9 @@ module.exports = {
       animation: {
         scrollSpin: "scrollSpin 6s linear infinite",
         translateLeft: "translateLeft 0.8s linear",
+        translateLeftMenu: "translateLeftMenu 0.3s linear",
         translateRight: "translateRight 0.8s linear",
+        translateRightMenu: "translateRightMenu 0.3s linear",
         translateTop: "translateTop 0.8s linear",
         translateBottom: "translateBottom 0.8s linear",
       },
@@ -44,6 +46,26 @@ module.exports = {
           },
           to: {
             transform: "translateX(0%)",
+          },
+        },
+        translateLeftMenu: {
+          from: {
+            left: "-100%",
+            transform: "translateX(-100%)",
+          },
+          to: {
+            left: "0px",
+            transform: "translateX(0%)",
+          },
+        },
+        translateRightMenu: {
+          from: {
+            left: "0px",
+            transform: "translateX(0%)",
+          },
+          to: {
+            left: "-100%",
+            transform: "translateX(-100%)",
           },
         },
         translateTop: {

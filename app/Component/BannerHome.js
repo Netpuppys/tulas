@@ -8,7 +8,7 @@ import Banner4 from "../../public/Homepage/BannerHome/Banner1.webp";
 import Banner5 from "../../public/Homepage/BannerHome/Banner1.webp";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
-function BannerHome() {
+function BannerHome({ isChecked }) {
   const title = (
     <>
       <span className="text-[#007A83]">UNLOCK</span> NEW <br />
@@ -110,7 +110,11 @@ function BannerHome() {
           </div>
         ))}
       </div>
-      <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
+      <div
+        className={`bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16 ${
+          isChecked ? "pl-[25vw] animate-translateLeftMenu" : "pl-0"
+        }`}
+      >
         <h2 className="text-[38px] md:text-[60px] text-white z-10 font-[CarotSlab]">
           {title}
         </h2>

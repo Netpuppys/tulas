@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Navbar from "@/component/Navbar/Navbar";
 import AboutTulas from "./Component/AboutTulas";
 import Video from "./Component/Video";
@@ -16,11 +16,12 @@ import RankBanner from "./Component/RankBanner";
 
 export default function HomePage() {
   const parentRef = useRef(null);
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
-      <Navbar />
-      <BannerHome />
+      <Navbar setState={setIsChecked} />
+      <BannerHome isChecked={isChecked} />
       <AboutTulas />
       <WhyTulasScroll parentRef={parentRef} />
       <Courses parentRef={parentRef} />

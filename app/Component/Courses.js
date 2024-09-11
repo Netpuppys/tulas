@@ -10,19 +10,17 @@ function Courses({ parentRef }) {
   const [scale, setScale] = useState(1);
   const [scaleLeaf, setScaleLeaf] = useState(1);
   const [opacity, setOpacity] = useState(1);
-  const [ scrollY, setScrollY ] = useState(0)
+  const [scrollY, setScrollY] = useState(0);
   const [isInView, setIsInView] = useState(false);
-  const [componentHeight, setComponentHeight] = useState()
+  const [componentHeight, setComponentHeight] = useState();
 
   const ref = useRef(null);
   const childRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsInView(entry.isIntersecting);
-      },
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsInView(entry.isIntersecting);
+    });
     if (ref.current) {
       observer.observe(ref.current);
     }
@@ -37,53 +35,56 @@ function Courses({ parentRef }) {
     if (childRef.current) {
       const compHeight = childRef.current.getBoundingClientRect().height;
       setComponentHeight(compHeight);
-      console.log(compHeight)
+      console.log(compHeight);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-        if (parentRef.current && childRef.current) {
-            const parentTop = parentRef.current.getBoundingClientRect().top;
-            const childTop = childRef.current.getBoundingClientRect().top;
+      if (parentRef.current && childRef.current) {
+        const parentTop = parentRef.current.getBoundingClientRect().top;
+        const childTop = childRef.current.getBoundingClientRect().top;
 
-            const positionFromTop = childTop - parentTop;
-            const scrollValue = Math.max(window.scrollY - positionFromTop, 0)
-            const scroll = Math.min(scrollValue, componentHeight)
+        const positionFromTop = childTop - parentTop;
+        const scrollValue = Math.max(window.scrollY - positionFromTop, 0);
+        const scroll = Math.min(scrollValue, componentHeight);
 
-            setScrollY(scroll);
-            setScale(1 + scroll * 0.0001);
-            setScaleLeaf(1 + scroll * 0.001);
-            setOpacity(Math.max(1 - scroll * 0.001, 0));
-        }
+        setScrollY(scroll);
+        setScale(1 + scroll * 0.0001);
+        setScaleLeaf(1 + scroll * 0.001);
+        setOpacity(Math.max(1 - scroll * 0.001, 0));
+      }
     };
 
-      window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-        window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [componentHeight]);
 
   return (
     <div ref={childRef} className="w-full h-fit">
       <div className="w-full h-[250vh] relative bg-[#3D001B] overflow-hidden">
-
         <div
-            className={`${(scrollY>0 && scrollY<componentHeight)? "fixed" : "absolute"} top-0 left-0 w-screen h-screen z-[11] bg-no-repeat bg-cover bg-center`}
-            style={{
-                backgroundImage: `url(${BackgroundLeaf.src})`,
-                transform: `scale(${scaleLeaf})`,
-                opacity: opacity,
-            }}
+          className={`${
+            scrollY > 0 && scrollY < componentHeight ? "fixed" : "absolute"
+          } top-0 left-0 w-screen h-screen z-[11] bg-no-repeat bg-cover bg-center`}
+          style={{
+            backgroundImage: `url(${BackgroundLeaf.src})`,
+            transform: `scale(${scaleLeaf})`,
+            opacity: opacity,
+          }}
         ></div>
 
         <div
-            className={`${(scrollY>0 && scrollY<componentHeight)? "fixed" : "absolute"} top-0 left-0 flex items-center justify-center w-screen h-screen z-10 bg-no-repeat bg-cover bg-center`}
-            style={{
-                backgroundImage: `url(${BackgroundCourses.src})`,
-                transform: `scale(${scale})`,
-                opacity: opacity,
-            }}
+          className={`${
+            scrollY > 0 && scrollY < componentHeight ? "fixed" : "absolute"
+          } top-0 left-0 flex items-center justify-center w-screen h-screen z-10 bg-no-repeat bg-cover bg-center`}
+          style={{
+            backgroundImage: `url(${BackgroundCourses.src})`,
+            transform: `scale(${scale})`,
+            opacity: opacity,
+          }}
         >
           <h3 className="font-[Dynalight] text-[74px] z-20 text-center leading-[100px]">
             Our
@@ -124,8 +125,11 @@ function Courses({ parentRef }) {
         </div>
       </div>
 
-      <div ref={ref} className="w-full h-[75vh] z-50 bg-[#3D001B] relative">
-        <div className="w-[1px] h-[20vh] bg-white relative top-0 left-1/2 -translate-x-1/2"></div>
+      <div
+        ref={ref}
+        className="w-full h-[75vh] z-40 bg-[#3D001B] relative flex flex-col items-center"
+      >
+        <div className="w-[1px] min-h-[20vh] bg-white"></div>
         <div className="w-full mx-auto pt-8">
           <CardCourses />
         </div>
