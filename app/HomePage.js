@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import Navbar from "@/component/Navbar";
+import Navbar from "@/component/Navbar/Navbar";
 import AboutTulas from "./Component/AboutTulas";
 import Video from "./Component/Video";
 import Virtual from "./Component/Virtual";

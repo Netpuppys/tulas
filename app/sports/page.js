@@ -2,7 +2,7 @@
 import Banner from "@/component/Banner";
 import React, { useRef } from "react";
 import BannerImg from "../../public/infrastructure/library/bannerImg.png";
-import Navbar from "@/component/Navbar";
+import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import SportsScroll from "./Component/Sport";
 import background from "../../public/infrastructure/HostelMess/background.png";

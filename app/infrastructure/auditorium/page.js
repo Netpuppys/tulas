@@ -2,7 +2,7 @@
 
 import Banner from "@/component/Banner";
 import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
-import Navbar from "@/component/Navbar";
+import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/auditorium/background.png";
@@ -69,7 +69,11 @@ function Auditorium() {
               </div>
             </Fade>
             <Fade className="w-[45%]">
-              <Image src={section.image} alt="" className="w-full h-fit rounded-3xl" />
+              <Image
+                src={section.image}
+                alt=""
+                className="w-full h-fit rounded-3xl"
+              />
             </Fade>
           </div>
         ))}

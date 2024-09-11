@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import TulasLogo from "../public/Components/Navbar/TulasLogo.png";
+import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaPen } from "react-icons/fa";
-import sitemap from "../data/sitemap";
+import sitemap from "../../../data/sitemap";
 import Image from "next/image";
-import { useMobile } from "./IsMobileContext";
-import Header from "./NavbarMobile";
+import { useMobile } from "../../IsMobileContext";
+import Header from "../../NavbarMobile";
 
 function Navbar() {
   const [isChecked, setIsChecked] = useState(false);

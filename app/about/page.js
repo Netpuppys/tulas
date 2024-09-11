@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Banner from "@/component/Banner";
 import Image from "next/image";
 import BannerImg from "../../public/Components/Banner/bannerImg.png";
-import Navbar from "@/component/Navbar";
+import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import background from "../../public/AboutDehradun/background.png";
 import { Fade } from "react-awesome-reveal";

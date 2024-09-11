@@ -1,6 +1,6 @@
 "use client";
 import Banner from "@/component/Banner";
-import Navbar from "@/component/Navbar";
+import Navbar from "@/component/Navbar/Navbar";
 import React from "react";
 import Link from "next/link";
 import BannerImg from "../../public/Components/Banner/bannerImg.png";
