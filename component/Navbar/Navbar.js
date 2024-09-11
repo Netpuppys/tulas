@@ -4,7 +4,6 @@ import Link from "next/link";
 import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import { FaPen } from "react-icons/fa";
 import Image from "next/image";
-import "./Component/Render.css";
 import sitemap from "@/data/sitemap";
 import { FiMinus, FiPlus } from "react-icons/fi";
 
