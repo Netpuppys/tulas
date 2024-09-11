@@ -203,7 +203,7 @@ function Navbar({ setState }) {
           {nestedLinksVisible && (
             <div className="pl-10 w-[25vw] bg-white fixed left-[25vw] top-0 h-screen">
               {/* Render the nested links here */}
-              {item.nestedLinks.map((nestedLink, nestedIndex) => (
+              {/* {item.nestedLinks.map((nestedLink, nestedIndex) => (
                 <Link
                   href={nestedLink.linkTo || "#"}
                   key={nestedIndex}
@@ -211,7 +211,7 @@ function Navbar({ setState }) {
                 >
                   {nestedLink.title}
                 </Link>
-              ))}
+              ))} */}
             </div>
           )}
         </div>
