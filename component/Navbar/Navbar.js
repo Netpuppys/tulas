@@ -192,7 +192,7 @@ function Navbar({ setState }) {
         </div>
         {/* onclick menu */}
         <div
-          className={`hidden md:block w-[25vw] min-w-[400px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
+          className={`hidden md:block w-[400px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
             isChecked
               ? "animate-translateLeftMenu left-0"
               : "animate-translateRightMenu left-[-100%]"
@@ -237,9 +237,9 @@ function Navbar({ setState }) {
 
         {activeLink !== null && (
           <div
-            className={`hidden md:block w-[25vw] min-w-[400px] bg-white absolute top-0 h-screen overflow-y-scroll ${
+            className={`hidden md:block w-[400px] min-w-[400px] bg-white absolute top-0 h-screen overflow-y-scroll ${
               nestedLinksVisible
-                ? "animate-translateLeftMenu left-[25vw]"
+                ? "animate-translateLeftMenu left-[400px]"
                 : "animate-translateRightMenu left-[-100%]"
             }`}
           >

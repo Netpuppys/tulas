@@ -112,7 +112,7 @@ function BannerHome({ isChecked }) {
       </div>
       <div
         className={`bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16 ${
-          isChecked ? "md:pl-[25vw] md:animate-translateLeftMenu" : "pl-0"
+          isChecked ? "md:pl-[400px] md:animate-translateLeftMenu" : "pl-0"
         }`}
       >
         <h2 className="text-[38px] md:text-[60px] text-white z-10 font-[CarotSlab]">
