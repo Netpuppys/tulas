@@ -12,7 +12,7 @@ function Location() {
   return (
     <div
       ref={ref}
-      className="w-full py-14 h-fit bg-white text-black flex justify-center items-center gap-8 px-3"
+      className="w-full py-14 h-fit bg-white text-black flex justify-center items-center gap-8 px-3 overflow-hidden"
     >
       <Image
         src={location}

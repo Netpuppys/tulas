@@ -5,11 +5,9 @@ import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import TulasLogoGreen from "../../public/Components/Navbar/TulasLogoGreen.png";
 import { FaPen } from "react-icons/fa";
 import Image from "next/image";
-import sitemap from "@/data/sitemap";
-import { FiPlus, FiX } from "react-icons/fi";
 import NavbarMobile from "./Component/NavbarMobile";
 import { useMobile } from "../IsMobileContext";
-
+import NavbarDesktop from "./Component/NavbarDesktop";
 function Navbar({ setState }) {
   const [isChecked, setIsChecked] = useState(false);
   const isMobile = useMobile();
@@ -17,39 +15,12 @@ function Navbar({ setState }) {
   const [superExpandedIndex, setSuperExpandedIndex] = useState(null);
   const [thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
   const [nestedLinksVisible, setNestedLinksVisible] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
-
-  const handleExpandNestedLinks = (index) => {
-    if (expandedIndex === index) {
-      setNestedLinksVisible(false);
-      setSuperExpandedIndex(null);
-      setExpandedIndex(null);
-      setThirdExpandedIndex(null);
-    } else {
-      setNestedLinksVisible(true);
-      setActiveLink(index);
-      setExpandedIndex(index);
-    }
-  };
-  const handleExpandSuperNestedLinks = (index) => {
-    if (superExpandedIndex === index) {
-      setSuperExpandedIndex(null);
-      setThirdExpandedIndex(null);
-    } else {
-      setSuperExpandedIndex(index);
-    }
-  };
-  const handleExpandThirdNestedLinks = (index) => {
-    if (thirdExpandedIndex === index) {
-      setThirdExpandedIndex(null);
-    } else {
-      setThirdExpandedIndex(index);
-    }
-  };
 
   const handleButtonClick = () => {
     if (isChecked) {
       setExpandedIndex(null);
+      setSuperExpandedIndex(null);
+      setThirdExpandedIndex(null);
       setNestedLinksVisible(false);
       setIsChecked(false);
     } else {
@@ -60,7 +31,7 @@ function Navbar({ setState }) {
   useEffect(() => {
     if (setState) setState(isChecked);
     if (isChecked) {
-      //document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
@@ -175,172 +146,29 @@ function Navbar({ setState }) {
           </div>
           <Link href="/" className="z-[3333]">
             <Image
-              src={isChecked && isMobile ? TulasLogoGreen : TulasLogo}
+              src={isChecked ? TulasLogoGreen : TulasLogo}
               alt="Tulas Logo"
-              className="w-[160px] h-fit pointer-events-auto cursor-pointer"
+              className="block md:hidden w-[160px] h-fit pointer-events-auto cursor-pointer"
+            />
+            <Image
+              src={TulasLogo}
+              alt="Tulas Logo"
+              className="hidden md:block w-[160px] h-fit pointer-events-auto cursor-pointer"
             />
           </Link>
         </div>
-        <div
-          className={`block md:hidden absolute w-full top-0 bg-white h-screen ${
-            isChecked
-              ? "animate-translateLeftMenu left-0 block"
-              : "animate-translateRightMenu left-[-100%] hidden"
-          }`}
-        >
-          <NavbarMobile />
-        </div>
-        {/* onclick menu */}
-        <div
-          className={`hidden md:block w-[400px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
-            isChecked
-              ? "animate-translateLeftMenu left-0"
-              : "animate-translateRightMenu left-[-100%]"
-          }`}
-        >
-          <div className="w-full h-[calc(100vh-300px)] relative top-[200px] overflow-auto">
-            {sitemap.map((item, index) => (
-              <div
-                className="border-t border-[#C5C5C5] flex flex-col w-full h-fit"
-                key={index}
-              >
-                <span className="flex items-center justify-between cursor-pointer h-full min-h-[60px]">
-                  <Link
-                    href={item.linkTo || "#"}
-                    className="flex-auto font-[TTChocolatesBold] font-bold px-10 py-1 flex items-center h-full text-[22px] text-[#007A83]"
-                  >
-                    {item.title}
-                  </Link>
-                  {item.nestedLinks && (
-                    <div
-                      onClick={() => handleExpandNestedLinks(index)}
-                      className="w-fit !h-full min-h-[60px] px-5 bg-[#E3E3E3] flex justify-center items-center"
-                    >
-                      {expandedIndex === index ? (
-                        <FiX
-                          className={`text-[#007A83] text-[22px] ${
-                            expandedIndex === index
-                              ? "animate-scrollSpinExpand"
-                              : ""
-                          }`}
-                        />
-                      ) : (
-                        <FiPlus className="text-[#007A83] text-[22px]" />
-                      )}
-                    </div>
-                  )}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {activeLink !== null && (
-          <div
-            className={`hidden md:block w-[400px] min-w-[400px] bg-white absolute top-0 h-screen overflow-y-scroll ${
-              nestedLinksVisible
-                ? "animate-translateLeftMenu left-[400px]"
-                : "animate-translateRightMenu left-[-100%]"
-            }`}
-          >
-            <div className="h-fit w-full overflow-auto mt-[120px] py-[40px]">
-              <p className="text-[#007A83] text-[32px] font-extrabold font-[CarotSlab] px-10 w-fit py-4 h-fit">
-                {sitemap[activeLink].title}
-              </p>
-              {sitemap[activeLink]?.nestedLinks?.map((nestedLinks, index) => (
-                <div
-                  className="border-t border-[#C5C5C5] flex flex-col h-fit w-full overflow-auto"
-                  key={`${activeLink}-${index}`}
-                >
-                  <span className="flex items-center justify-between cursor-pointer h-full min-h-[60px]">
-                    <Link
-                      href={nestedLinks.linkTo || "#"}
-                      className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-medium flex items-center h-full text-[22px] text-[#007A83]"
-                    >
-                      {nestedLinks.title}
-                    </Link>
-                    {nestedLinks.superNestedLinks && (
-                      <div
-                        onClick={() => handleExpandSuperNestedLinks(index)}
-                        className="w-fit h-full min-h-[60px] px-5 bg-[#E3E3E3] flex justify-center items-center"
-                      >
-                        {superExpandedIndex === index ? (
-                          <FiX
-                            className={`text-[#007A83] text-[22px] ${
-                              superExpandedIndex === index
-                                ? "animate-scrollSpinExpand"
-                                : ""
-                            }`}
-                          />
-                        ) : (
-                          <FiPlus className="text-[#007A83] text-[22px]" />
-                        )}
-                      </div>
-                    )}
-                  </span>
-                  {superExpandedIndex === index &&
-                    nestedLinks.superNestedLinks.map(
-                      (superNestedLinks, index) => (
-                        <div
-                          key={index}
-                          className="border-t border-[#C5C5C5] bg-[#E3E3E3] flex flex-col w-full h-fit"
-                        >
-                          <span className="flex items-center justify-between cursor-pointer w-full h-full min-h-[60px]">
-                            <Link
-                              key={index}
-                              href={superNestedLinks.linkTo || "#"}
-                              className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-medium flex items-center h-full text-[20px] text-[#007A83]"
-                            >
-                              {superNestedLinks.title}
-                            </Link>
-                            {superNestedLinks.thirdNestedLinks && (
-                              <div
-                                onClick={() =>
-                                  handleExpandThirdNestedLinks(index)
-                                }
-                                className="w-fit h-full min-h-[60px] px-5 bg-[#acababce] flex justify-center items-center"
-                              >
-                                {thirdExpandedIndex === index ? (
-                                  <FiX
-                                    className={`text-[#007A83] text-[22px] ${
-                                      thirdExpandedIndex === index
-                                        ? "animate-scrollSpinExpand"
-                                        : ""
-                                    }`}
-                                  />
-                                ) : (
-                                  <FiPlus className="text-[#007A83] text-[22px]" />
-                                )}
-                              </div>
-                            )}
-                          </span>
-                          {thirdExpandedIndex === index &&
-                            superNestedLinks.thirdNestedLinks.map(
-                              (thirdNestedLinks, index) => (
-                                <div
-                                  key={index}
-                                  className="border-t border-[#C5C5C5] bg-[#acababce] flex flex-col w-full h-fit"
-                                >
-                                  <span className="flex items-center justify-between cursor-pointer w-full h-full min-h-[60px]">
-                                    <Link
-                                      key={index}
-                                      href={thirdNestedLinks.linkTo || "#"}
-                                      className="flex-auto font-[TTChocolates] px-14 py-1 font-normal flex items-center h-full text-[18px] text-[#007A83]"
-                                    >
-                                      {thirdNestedLinks.title}
-                                    </Link>
-                                  </span>
-                                </div>
-                              )
-                            )}
-                        </div>
-                      )
-                    )}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        <NavbarMobile isChecked={isChecked} />
+        <NavbarDesktop
+          setExpandedIndex={setExpandedIndex}
+          expandedIndex={expandedIndex}
+          isChecked={isChecked}
+          setNestedLinksVisible={setNestedLinksVisible}
+          nestedLinksVisible={nestedLinksVisible}
+          superExpandedIndex={superExpandedIndex}
+          setSuperExpandedIndex={setSuperExpandedIndex}
+          thirdExpandedIndex={thirdExpandedIndex}
+          setThirdExpandedIndex={setThirdExpandedIndex}
+        />
       </div>
     </div>
   );
