@@ -2,13 +2,17 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
+import TulasLogoGreen from "../../public/Components/Navbar/TulasLogoGreen.png";
 import { FaPen } from "react-icons/fa";
 import Image from "next/image";
 import sitemap from "@/data/sitemap";
-import { FiMinus, FiPlus, FiX } from "react-icons/fi";
+import { FiPlus, FiX } from "react-icons/fi";
+import NavbarMobile from "./Component/NavbarMobile";
+import { useMobile } from "../IsMobileContext";
 
 function Navbar({ setState }) {
   const [isChecked, setIsChecked] = useState(false);
+  const isMobile = useMobile();
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [superExpandedIndex, setSuperExpandedIndex] = useState(null);
   const [thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
@@ -169,17 +173,26 @@ function Navbar({ setState }) {
               </h3>
             </button>
           </div>
-          <Link href="/">
+          <Link href="/" className="z-[3333]">
             <Image
-              src={TulasLogo}
+              src={isChecked && isMobile ? TulasLogoGreen : TulasLogo}
               alt="Tulas Logo"
-              className="w-[160px] h-fit z-10"
+              className="w-[160px] h-fit pointer-events-auto cursor-pointer"
             />
           </Link>
         </div>
+        <div
+          className={`block md:hidden absolute top-0 bg-white h-screen ${
+            isChecked
+              ? "animate-translateLeftMenu left-0 block"
+              : "animate-translateRightMenu left-[-100%] hidden"
+          }`}
+        >
+          <NavbarMobile />
+        </div>
         {/* onclick menu */}
         <div
-          className={`w-[25vw] min-w-[400px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
+          className={`hidden md:block w-[25vw] min-w-[400px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
             isChecked
               ? "animate-translateLeftMenu left-0"
               : "animate-translateRightMenu left-[-100%]"
@@ -204,7 +217,13 @@ function Navbar({ setState }) {
                       className="w-fit !h-full min-h-[60px] px-5 bg-[#E3E3E3] flex justify-center items-center"
                     >
                       {expandedIndex === index ? (
-                        <FiX className="text-[#007A83] text-[22px]" />
+                        <FiX
+                          className={`text-[#007A83] text-[22px] ${
+                            expandedIndex === index
+                              ? "animate-scrollSpinExpand"
+                              : ""
+                          }`}
+                        />
                       ) : (
                         <FiPlus className="text-[#007A83] text-[22px]" />
                       )}
@@ -218,13 +237,13 @@ function Navbar({ setState }) {
 
         {activeLink !== null && (
           <div
-            className={`w-[25vw] min-w-[400px] bg-white absolute top-0 h-screen overflow-y-scroll ${
+            className={`hidden md:block w-[25vw] min-w-[400px] bg-white absolute top-0 h-screen overflow-y-scroll ${
               nestedLinksVisible
                 ? "animate-translateLeftMenu left-[25vw]"
                 : "animate-translateRightMenu left-[-100%]"
             }`}
           >
-            <div className="h-fit w-fit overflow-auto mt-[120px] py-[40px]">
+            <div className="h-fit w-full overflow-auto mt-[120px] py-[40px]">
               <p className="text-[#007A83] text-[32px] font-[CarotSlab] px-10 w-fit py-4 h-fit">
                 {sitemap[activeLink].title}
               </p>
@@ -246,7 +265,13 @@ function Navbar({ setState }) {
                         className="w-fit h-full min-h-[60px] px-5 bg-[#E3E3E3] flex justify-center items-center"
                       >
                         {superExpandedIndex === index ? (
-                          <FiX className="text-[#007A83] text-[22px]" />
+                          <FiX
+                            className={`text-[#007A83] text-[22px] ${
+                              superExpandedIndex === index
+                                ? "animate-scrollSpinExpand"
+                                : ""
+                            }`}
+                          />
                         ) : (
                           <FiPlus className="text-[#007A83] text-[22px]" />
                         )}
@@ -273,12 +298,18 @@ function Navbar({ setState }) {
                                 onClick={() =>
                                   handleExpandThirdNestedLinks(index)
                                 }
-                                className="w-fit h-full min-h-[60px] px-5 bg-[#E3E3E3] flex justify-center items-center"
+                                className="w-fit h-full min-h-[60px] px-5 bg-[#acababce] flex justify-center items-center"
                               >
                                 {thirdExpandedIndex === index ? (
-                                  <FiX className="text-[#007A83] text-[22px]" />
+                                  <FiX
+                                    className={`text-[#007A83] text-[22px] ${
+                                      thirdExpandedIndex === index
+                                        ? "animate-scrollSpinExpand"
+                                        : ""
+                                    }`}
+                                  />
                                 ) : (
-                                  <FiPlus className="text-[#007A83] text-[22px]" />
+                                  <FiPlus className="text-[#007A83] text-[22px]`" />
                                 )}
                               </div>
                             )}
@@ -288,7 +319,7 @@ function Navbar({ setState }) {
                               (thirdNestedLinks, index) => (
                                 <div
                                   key={index}
-                                  className="border-t border-[#C5C5C5] bg-white flex flex-col w-full h-fit"
+                                  className="border-t border-[#C5C5C5] bg-[#acababce] flex flex-col w-full h-fit"
                                 >
                                   <span className="flex items-center justify-between cursor-pointer w-full h-full min-h-[60px]">
                                     <Link

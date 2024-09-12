@@ -16,6 +16,7 @@ module.exports = {
       },
       animation: {
         scrollSpin: "scrollSpin 6s linear infinite",
+        scrollSpinExpand: "scrollSpinExpand 0.1s linear",
         translateLeft: "translateLeft 0.8s linear",
         translateLeftMenu: "translateLeftMenu 0.3s linear",
         translateRight: "translateRight 0.8s linear",
@@ -30,6 +31,14 @@ module.exports = {
           },
           to: {
             transform: "rotate(360deg)",
+          },
+        },
+        scrollSpinExpand: {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(90deg)",
           },
         },
         translateLeft: {
