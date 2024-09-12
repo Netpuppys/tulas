@@ -127,10 +127,10 @@ function Contact() {
                   key={index}
                   className="w-fit font-[TTChocolates] font-semibold text-[14px] h-fit text-center flex flex-col items-center justify-center gap-3"
                 >
-                  <Image src={card.image} alt="" />
+                  <Image src={card.image} alt="" className="w-[50px] h-fit" />
                   {card.title}
                   <br />
-                  <p className="max-w-[169px] text-wrap ">{card.description}</p>
+                  <p className="max-w-[169px] text-wrap">{card.description}</p>
                 </Link>
               </Fade>
             ))}
