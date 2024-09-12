@@ -182,7 +182,7 @@ function Navbar({ setState }) {
           </Link>
         </div>
         <div
-          className={`block md:hidden absolute top-0 bg-white h-screen ${
+          className={`block md:hidden absolute w-full top-0 bg-white h-screen ${
             isChecked
               ? "animate-translateLeftMenu left-0 block"
               : "animate-translateRightMenu left-[-100%] hidden"
@@ -207,7 +207,7 @@ function Navbar({ setState }) {
                 <span className="flex items-center justify-between cursor-pointer h-full min-h-[60px]">
                   <Link
                     href={item.linkTo || "#"}
-                    className="flex-auto font-[TTChocolates] px-10 py-1 font-normal flex items-center h-full text-[22px] text-[#007A83]"
+                    className="flex-auto font-[TTChocolatesBold] font-bold px-10 py-1 flex items-center h-full text-[22px] text-[#007A83]"
                   >
                     {item.title}
                   </Link>
@@ -244,7 +244,7 @@ function Navbar({ setState }) {
             }`}
           >
             <div className="h-fit w-full overflow-auto mt-[120px] py-[40px]">
-              <p className="text-[#007A83] text-[32px] font-[CarotSlab] px-10 w-fit py-4 h-fit">
+              <p className="text-[#007A83] text-[32px] font-extrabold font-[CarotSlab] px-10 w-fit py-4 h-fit">
                 {sitemap[activeLink].title}
               </p>
               {sitemap[activeLink]?.nestedLinks?.map((nestedLinks, index) => (
@@ -255,7 +255,7 @@ function Navbar({ setState }) {
                   <span className="flex items-center justify-between cursor-pointer h-full min-h-[60px]">
                     <Link
                       href={nestedLinks.linkTo || "#"}
-                      className="flex-auto font-[TTChocolates] px-10 py-1 font-normal flex items-center h-full text-[22px] text-[#007A83]"
+                      className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-medium flex items-center h-full text-[22px] text-[#007A83]"
                     >
                       {nestedLinks.title}
                     </Link>
@@ -289,7 +289,7 @@ function Navbar({ setState }) {
                             <Link
                               key={index}
                               href={superNestedLinks.linkTo || "#"}
-                              className="flex-auto font-[TTChocolates] px-12 py-1 font-normal flex items-center h-full text-[20px] text-[#007A83]"
+                              className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-medium flex items-center h-full text-[20px] text-[#007A83]"
                             >
                               {superNestedLinks.title}
                             </Link>
@@ -309,7 +309,7 @@ function Navbar({ setState }) {
                                     }`}
                                   />
                                 ) : (
-                                  <FiPlus className="text-[#007A83] text-[22px]`" />
+                                  <FiPlus className="text-[#007A83] text-[22px]" />
                                 )}
                               </div>
                             )}
@@ -325,7 +325,7 @@ function Navbar({ setState }) {
                                     <Link
                                       key={index}
                                       href={thirdNestedLinks.linkTo || "#"}
-                                      className="flex-auto font-[TTChocolates] px-14 py-1 font-normal flex items-center h-full text-[20px] text-[#007A83]"
+                                      className="flex-auto font-[TTChocolates] px-14 py-1 font-normal flex items-center h-full text-[18px] text-[#007A83]"
                                     >
                                       {thirdNestedLinks.title}
                                     </Link>
