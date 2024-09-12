@@ -118,8 +118,8 @@ function Contact() {
           alt=""
         />
 
-        <div className="w-full py-0 p-10 md:py-24">
-          <div className="bg-transparent w-fit py-20 mx-auto h-fit text-pretty flex flex-wrap justify-center gap-14 border-b-2 border-white">
+        <div className="w-full py-0 p-8 md:py-24">
+          <div className="bg-transparent w-fit py-20 mx-auto h-fit text-pretty flex flex-wrap justify-center gap-12 border-b-2 border-white">
             {cardData.map((card, index) => (
               <Fade delay={200}>
                 <Link
