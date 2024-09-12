@@ -82,6 +82,8 @@
   font-size: 20px;
   font-family: TTChocolates;
   font-weight: 600;
+  border-bottom-width: 1px;
+  border-color: #fff;
   display: flex;
   align-items: center;
   background-color: #d7d7d7;
@@ -130,8 +132,9 @@
 .site-map-ss-header {
   min-height: 60px;
   color: #007a83;
-  border-width: 0;
   font-size: 18px;
+  border-bottom-width: 1px;
+  border-color: white;
   font-family: TTChocolates;
   font-weight: 400;
   display: flex;
@@ -166,6 +169,8 @@
   font-weight: 300;
   background-color: #2c2c2c;
   color: white;
+  border-bottom-width: 1px;
+  border-color: white;
   align-items: center;
   transition: all 0.3 ease;
 }
