@@ -58,7 +58,11 @@ function NavbarDesktop({
               className="border-t border-[#C5C5C5] flex flex-col w-full h-fit"
               key={index}
             >
-              <span className="flex items-center justify-between cursor-pointer h-full min-h-[60px]">
+              <span
+                className={`flex items-center justify-between cursor-pointer hover:bg-[#E3E3E3] ${
+                  expandedIndex === index ? "bg-[#E3E3E3]" : "bg-white"
+                } transition-all duration-300 ease-linear h-full min-h-[60px]`}
+              >
                 <Link
                   href={item.linkTo || "#"}
                   className="flex-auto font-[TTChocolatesBold] font-bold px-10 py-1 flex items-center h-full text-[22px] text-[#007A83]"
@@ -68,13 +72,15 @@ function NavbarDesktop({
                 {item.nestedLinks && (
                   <div
                     onClick={() => handleExpandNestedLinks(index)}
-                    className="w-fit !h-full min-h-[60px] px-5 bg-[#E3E3E3] flex justify-center items-center"
+                    className={`w-fit !h-full min-h-[60px] px-5 bg-[#E3E3E3] ${
+                      expandedIndex === index ? "bg-[#919191]" : ""
+                    } flex justify-center items-center`}
                   >
                     {expandedIndex === index ? (
                       <FiX
-                        className={`text-[#007A83] text-[22px] ${
+                        className={`text-[22px] ${
                           expandedIndex === index
-                            ? "animate-scrollSpinExpand"
+                            ? "animate-scrollSpinExpand text-white"
                             : ""
                         }`}
                       />
@@ -107,28 +113,30 @@ function NavbarDesktop({
                 className="border-t border-[#C5C5C5] flex flex-col h-fit w-full overflow-auto"
                 key={`${activeLink}-${index}`}
               >
-                <span className="flex items-center justify-between cursor-pointer h-full min-h-[60px]">
+                <span className="flex items-center bg-white group hover:bg-[#919191] transition-all duration-300 ease-linear justify-between cursor-pointer h-full min-h-[60px]">
                   <Link
                     href={nestedLinks.linkTo || "#"}
-                    className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-medium flex items-center h-full text-[22px] text-[#007A83]"
+                    className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-medium flex items-center h-full text-[22px] text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                   >
                     {nestedLinks.title}
                   </Link>
                   {nestedLinks.superNestedLinks && (
                     <div
                       onClick={() => handleExpandSuperNestedLinks(index)}
-                      className="w-fit h-full min-h-[60px] px-5 bg-[#E3E3E3] flex justify-center items-center"
+                      className={`w-fit h-full min-h-[60px] px-5 bg-[#919191] ${
+                        superExpandedIndex === index ? "bg-[#2c2c2c]" : ""
+                      } flex justify-center items-center`}
                     >
                       {superExpandedIndex === index ? (
                         <FiX
-                          className={`text-[#007A83] text-[22px] ${
+                          className={`text-white text-[22px] ${
                             superExpandedIndex === index
                               ? "animate-scrollSpinExpand"
                               : ""
                           }`}
                         />
                       ) : (
-                        <FiPlus className="text-[#007A83] text-[22px]" />
+                        <FiPlus className="text-white text-[22px]" />
                       )}
                     </div>
                   )}
@@ -138,13 +146,13 @@ function NavbarDesktop({
                     (superNestedLinks, index) => (
                       <div
                         key={index}
-                        className="border-t border-[#C5C5C5] bg-[#E3E3E3] flex flex-col w-full h-fit"
+                        className="border-t border-[#C5C5C5] flex flex-col w-full h-fit"
                       >
-                        <span className="flex items-center justify-between cursor-pointer w-full h-full min-h-[60px]">
+                        <span className="flex items-center justify-between bg-[#919191] hover:bg-[#2c2c2c] cursor-pointer w-full h-full min-h-[60px]">
                           <Link
                             key={index}
                             href={superNestedLinks.linkTo || "#"}
-                            className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-medium flex items-center h-full text-[20px] text-[#007A83]"
+                            className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-medium flex items-center h-full text-[20px] text-white"
                           >
                             {superNestedLinks.title}
                           </Link>
@@ -153,18 +161,18 @@ function NavbarDesktop({
                               onClick={() =>
                                 handleExpandThirdNestedLinks(index)
                               }
-                              className="w-fit h-full min-h-[60px] px-5 bg-[#acababce] flex justify-center items-center"
+                              className="w-fit h-full min-h-[60px] px-5 bg-[#2c2c2c] flex justify-center items-center"
                             >
                               {thirdExpandedIndex === index ? (
                                 <FiX
-                                  className={`text-[#007A83] text-[22px] ${
+                                  className={`text-white text-[22px] ${
                                     thirdExpandedIndex === index
                                       ? "animate-scrollSpinExpand"
                                       : ""
                                   }`}
                                 />
                               ) : (
-                                <FiPlus className="text-[#007A83] text-[22px]" />
+                                <FiPlus className="text-white text-[22px]" />
                               )}
                             </div>
                           )}
@@ -174,13 +182,13 @@ function NavbarDesktop({
                             (thirdNestedLinks, index) => (
                               <div
                                 key={index}
-                                className="border-t border-[#C5C5C5] bg-[#acababce] flex flex-col w-full h-fit"
+                                className="border-t border-[#C5C5C5] bg-[#2c2c2c] group hover:bg-white flex flex-col w-full h-fit"
                               >
                                 <span className="flex items-center justify-between cursor-pointer w-full h-full min-h-[60px]">
                                   <Link
                                     key={index}
                                     href={thirdNestedLinks.linkTo || "#"}
-                                    className="flex-auto font-[TTChocolates] px-14 py-1 font-normal flex items-center h-full text-[18px] text-[#007A83]"
+                                    className="flex-auto font-[TTChocolates] px-14 py-1 font-normal flex items-center h-full text-[18px] text-white group-hover:text-[#2c2c2c]"
                                   >
                                     {thirdNestedLinks.title}
                                   </Link>

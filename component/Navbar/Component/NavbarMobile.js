@@ -89,16 +89,16 @@ function NavbarMobile({ isChecked }) {
                             )
                           }
                         >
-                          <div className="relative w-full h-full flex items-center justify-center">
+                          <div className="relative w-full h-full flex items-center bg-[#919191] justify-center">
                             <FiPlus
-                              className={`transition-all duration-500 ease-in-out text-lg text-[#007A83] absolute ${
+                              className={`transition-all duration-500 ease-in-out text-lg text-white absolute ${
                                 showSubSubHeaders === subItem.title
                                   ? "rotate-90 opacity-0"
                                   : "rotate-0 opacity-100"
                               }`}
                             />
                             <FiMinus
-                              className={`transition-all duration-500 ease-in-out text-lg text-[#007A83] absolute ${
+                              className={`transition-all duration-500 ease-in-out text-lg text-white absolute ${
                                 showSubSubHeaders === subItem.title
                                   ? "rotate-0 opacity-100"
                                   : "-rotate-90 opacity-0"
@@ -142,9 +142,9 @@ function NavbarMobile({ isChecked }) {
                                     )
                                   }
                                 >
-                                  <div className="relative w-full h-full flex items-center justify-center">
+                                  <div className="relative w-full h-full flex items-center bg-[#2C2C2C] justify-center">
                                     <FiPlus
-                                      className={`transition-all duration-500 ease-in-out text-lg text-[#007A83] absolute ${
+                                      className={`transition-all duration-500 ease-in-out text-lg text-white absolute ${
                                         showSubSubSubHeaders ===
                                         subsubItem.title
                                           ? "rotate-90 opacity-0"
@@ -152,7 +152,7 @@ function NavbarMobile({ isChecked }) {
                                       }`}
                                     />
                                     <FiMinus
-                                      className={`transition-all duration-500 ease-in-out text-lg text-[#007A83] absolute ${
+                                      className={`transition-all duration-500 ease-in-out text-lg text-white absolute ${
                                         showSubSubSubHeaders ===
                                         subsubItem.title
                                           ? "rotate-0 opacity-100"
