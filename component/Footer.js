@@ -266,7 +266,7 @@ const Footer = ({ set = false, color = false }) => {
             {button.map((btnGroup, index) => (
               <div
                 key={index}
-                className="flex items-center border-r-2 border-white md:border-0"
+                className="flex items-center border-r-2 border-white md:border-0 last:border-opacity-0"
               >
                 {btnGroup.buttons.map((btn, btnIndex) => (
                   <React.Fragment key={btnIndex}>
@@ -274,7 +274,7 @@ const Footer = ({ set = false, color = false }) => {
                       href={btn.linkTo}
                       className={`px-1 text-xs font-light md:font-normal md:text-base md:px-2 ${
                         btnIndex < btnGroup.buttons.length - 1
-                          ? "border-r-2 border-white"
+                          ? "border-r-2 border-white last:border-r-0"
                           : ""
                       }`}
                     >
