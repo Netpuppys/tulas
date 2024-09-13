@@ -11,7 +11,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           className="w-full h-full object-cover absolute"
         />
         <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-          <h3 className="text-[30px] md:text-[60px] text-white z-10 font-[CarotSlab]">
+          <h3 className="text-[40px] md:text-[60px] text-white z-10 font-[CarotSlab]">
             {title}
           </h3>
           <h4 className="w-full md:w-[50%] text-sm md:text-lg font-[TTChocolates]">

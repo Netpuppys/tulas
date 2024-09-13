@@ -32,7 +32,7 @@ function EntrepreneurshipDevelopmentCell() {
           "Tula’s Entrepreneurship Development Cell is a dynamic unit within the institute that focuses on fostering an entrepreneurial ecosystem and nurturing aspiring entrepreneurs among students, faculty, and alumni. The cell collaborates closely with Tula’s Technology and Business Incubator (TTBIF), which is owned by the institute and is recognized by the Uttarakhand Start-up and MSME India."
         }
       />
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
@@ -41,15 +41,15 @@ function EntrepreneurshipDevelopmentCell() {
       </div>
       <div
         ref={ref}
-        className="pt-40 pb-20 bg-transparent w-[95%] ml-[5%] h-fit flex items-center justify-between"
+        className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[95%] md:ml-[5%] h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between"
       >
-        <Fade delay={300} className="w-[45%]">
+        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
           <div className="w-full block">
-            <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
+            <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
               Entrepreneurship Development
             </h3>
             <br />
-            <h4 className="text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+            <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
               The Entrepreneurship Development Cell, in conjunction with TTBIF,
               fulfills the following key roles and functions:
               <br />
@@ -113,12 +113,12 @@ function EntrepreneurshipDevelopmentCell() {
             </h4>
           </div>
         </Fade>
-        <Fade className="w-[45%]">
+        <Fade className="w-full md:w-[45%]">
           <Image
             src={intellectual}
             alt=""
-            className={`w-full h-fit ${
-              inView ? "animate-translateRight" : "opacity-0"
+            className={`w-full h-fit rounded-xl md:rounded-none md:rounded-s-3xl ${
+              inView ? "md:animate-translateRight" : "opacity-0"
             }`}
           />
         </Fade>

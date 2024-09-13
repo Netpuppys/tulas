@@ -45,18 +45,16 @@ function RAndDFunded() {
           </>
         }
       />
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
       </div>
-      <div className="p-32 pb-50">
-        <div className="h-[90vh] px-5 overflow-y-scroll">
-          <div className="border-y-2 border-white">
-            <TableComponent />
-          </div>
+      <div className="p-8 md:p-32">
+        <div className="h-[90vh] px-5 overflow-auto w-[100vw] md:w-auto flex items-start justify-start">
+          <TableComponent />
         </div>
       </div>
 

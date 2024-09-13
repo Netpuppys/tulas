@@ -33,7 +33,7 @@ function IntellectualPropertyRightsIprCell() {
           "The Intellectual Property Rights (IPR) Cell at Tula’s Institute is a dedicated unit that focuses on the management, protection, and utilization of intellectual property assets within the institute. The IPR Cell plays a critical role in creating awareness about intellectual property rights, facilitating the filing and protection of IP assets, and supporting innovation and research activities."
         }
       />
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
@@ -42,15 +42,15 @@ function IntellectualPropertyRightsIprCell() {
       </div>
       <div
         ref={ref}
-        className="pt-40 pb-20 bg-transparent w-[95%] ml-[5%] h-fit flex items-center justify-between"
+        className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[95%] md:ml-[5%] h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between"
       >
-        <Fade delay={300} className="w-[45%]">
+        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
           <div className="w-full block">
-            <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
+            <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
               IPR Cell
             </h3>
             <br />
-            <h4 className="text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+            <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
               The key functions and responsibilities of the IPR Cell include:
               <br />
               <br />
@@ -132,12 +132,12 @@ function IntellectualPropertyRightsIprCell() {
             </h4>
           </div>
         </Fade>
-        <Fade className="w-[45%]">
+        <Fade className="w-full md:w-[45%]">
           <Image
             src={intellectual}
             alt=""
-            className={`w-full h-fit ${
-              inView ? "animate-translateRight" : "opacity-0"
+            className={`w-full h-fit rounded-xl md:rounded-none md:rounded-s-3xl ${
+              inView ? "md:animate-translateRight" : "opacity-0"
             }`}
           />
         </Fade>

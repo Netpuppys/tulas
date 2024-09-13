@@ -34,7 +34,7 @@ function RAndCell() {
           "The Research and Development (R&D) Cell at Tula’s Institute is an integral part of the Centre for Innovation, Research, and Entrepreneurship (CIRE). Its primary focus is to facilitate and drive cutting-edge research activities across various disciplines within the Institute."
         }
       />
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
@@ -43,15 +43,15 @@ function RAndCell() {
       </div>
       <div
         ref={ref}
-        className="pt-40 pb-20 bg-transparent w-[95%] ml-[5%] h-fit flex items-center justify-between"
+        className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[95%] md:ml-[5%] h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between"
       >
-        <Fade delay={300} className="w-[45%]">
+        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
           <div className="w-full block">
-            <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
+            <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
               R&D Cell
             </h3>
             <br />
-            <h4 className="text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+            <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
               The R&D Cell plays a crucial role in facilitating the smooth
               conduction of various government and non-government research
               projects at Tula’s Institute. It acts as a central point of
@@ -108,12 +108,12 @@ function RAndCell() {
             </h4>
           </div>
         </Fade>
-        <Fade className="w-[45%]">
+        <Fade className="w-full md:w-[45%]">
           <Image
             src={ICTImage}
             alt=""
-            className={`w-full h-fit ${
-              inView ? "animate-translateRight" : "opacity-0"
+            className={`w-full h-fit rounded-xl md:rounded-none md:rounded-s-3xl ${
+              inView ? "md:animate-translateRight" : "opacity-0"
             }`}
           />
         </Fade>

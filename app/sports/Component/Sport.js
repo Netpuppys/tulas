@@ -25,7 +25,6 @@ const paragraph = (
     enables all the students and faculty members to be connected which is
     essential for effective learning.
     <br />
-    <br />
     Our Digital library has over 5800+ e-books available round the clock through
     a FTP server on the intranet. Students can access the material and books
     anytime from anywhere on the campus.
@@ -151,12 +150,12 @@ function SportsScroll({ parentRef }) {
             <h3 className="font-[CarotSlab] text-3xl md:text-[70px] h-[75px] text-white w-full whitespace-nowrap absolute top-0 z-10 pt-10  text-center">
               {title}
             </h3>
-            <h4 className="text-lg md:text-2xl font-[Rothwood] absolute top-0 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[20vw] mx-auto text-center text-white">
+            <h4 className="text-sm md:text-2xl font-[Rothwood] absolute top-0 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[20vw] mx-auto text-center text-white">
               {paragraph}
             </h4>
             {/* card scroll btns */}
-            <div className="absolute w-fit z-30 top-3/4 left-0 md:top-[52.5%] flex items-center justify-start">
-              <div className="flex w-full md:w-40 md:flex-col text-[60px] items-center justify-center">
+            <div className="absolute w-fit mx-auto z-30 top-[80%] md:left-0 md:top-[52.5%] flex items-center justify-center md:justify-start">
+              <div className="flex w-fit md:w-40 md:flex-col text-[60px] items-center justify-center">
                 <button
                   className={`pointer-events-auto shadow-2xl ${
                     index === 0 ? "cursor-not-allowed" : "cursor-pointer"
@@ -180,7 +179,7 @@ function SportsScroll({ parentRef }) {
               </div>
             </div>
             {/* cards container */}
-            <div className="w-[calc(100%-10rem)] right-0 absolute top-[40%] py-10 innerText">
+            <div className="w-[90%] mx-auto md:w-[calc(100%-10rem)] right-0 absolute top-[40%] py-10 innerText">
               <div
                 style={{ transform: `translateX(-${index * (width + 48)}px)` }}
                 className="w-fit"
@@ -190,7 +189,7 @@ function SportsScroll({ parentRef }) {
                     <div
                       ref={scrollRef}
                       key={index}
-                      className="group rounded-xl w-[25rem] h-full overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-125"
+                      className="group rounded-xl w-[20rem] md:w-[25rem] h-full overflow-hidden shadow-lg transform transition-all duration-500 md:hover:scale-125"
                     >
                       <Image
                         src={image.src}

@@ -149,7 +149,7 @@ span {
 }
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #fff;
@@ -185,5 +185,16 @@ th {
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
     display: none;
+  }
+  th,
+  td {
+    padding: 8px;
+  }
+  td {
+    padding: 6px;
+    font-size: 10px;
+  }
+  th {
+    font-size: 12px;
   }
 }

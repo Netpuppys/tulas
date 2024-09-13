@@ -27,14 +27,11 @@ function Sports() {
         <div className="relative">
           <Image
             src={background}
-            className="absolute bottom-0 left-0 w-full"
+            className="absolute left-0 w-full h-[250vh] object-cover"
             alt=""
           />
-          <Image src={background} className="absolute left-0 w-full" alt="" />
           <SportsScroll parentRef={parentRef} />
         </div>
-
-        <div className="w-full h-screen bg-blue ">dbif</div>
       </div>
       <Footer color={true} />
     </>
