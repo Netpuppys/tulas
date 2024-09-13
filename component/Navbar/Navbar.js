@@ -8,6 +8,8 @@ import Image from "next/image";
 import NavbarMobile from "./Component/NavbarMobile";
 import { useMobile } from "../IsMobileContext";
 import NavbarDesktop from "./Component/NavbarDesktop";
+import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
+
 function Navbar({ setState }) {
   const [isChecked, setIsChecked] = useState(false);
   const isMobile = useMobile();
@@ -44,13 +46,11 @@ function Navbar({ setState }) {
     <div className="px-4 md:px-10 w-full fixed flex flex-col justify-center z-[9999]">
       {/* top bar */}
       <div className="hidden h-[80px] w-full md:flex justify-between items-center z-[9999]">
-        <a
-          href="tel:+91-6366937159"
-          className={`font-[TTChocolates] ${
-            isChecked ? "text-black" : "text-white"
-          }`}
-        >
-          Admission Helpline No. +91-6366937159
+        <a href="tel:+91-6366937159" className="footer-call-number">
+          <Image src={phoneCallGif} alt="" className="footer-call-number-gif" />
+          <div className="footer-call-number-text">
+            Admission Helpline No. +91-6366937159
+          </div>
         </a>
         <div className="flex gap-6">
           <button
