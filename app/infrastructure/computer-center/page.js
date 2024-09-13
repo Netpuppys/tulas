@@ -63,7 +63,7 @@ function ComputerScience() {
         description={<></>}
         belowTitle={<></>}
         belowPara={
-          <p className="text-lg">
+          <p className="text-sm md:text-lg">
             Information Technology is unarguably the defining force of this
             millennium, and Tula’s Institute is poised to break new ground as
             the most e-enabled Engineering cum Business School in Uttarakhand.
@@ -81,47 +81,42 @@ function ComputerScience() {
         }
       />
       {/* fixed background */}
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
       </div>
-      <div className="pt-40 w-[90%] mx-auto bg-transparent h-fit">
+      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
         {sections.map((section, index) => (
           <div
             key={index}
-            className={`flex mb-20 justify-between w-full h-fit items-center ${
-              index % 2 !== 0 ? "flex-row-reverse" : ""
+            className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 justify-between w-full h-fit items-center ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
             } `}
           >
-            <Fade delay={300} className="w-[45%]">
+            <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
               <div className="w-full block">
-                <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
+                <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
                   {section.title}
                 </h3>
                 <br />
-                <h4 className="text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+                <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
                   {section.description}
                 </h4>
               </div>
             </Fade>
-            <Fade className="w-[45%]">
+            <Fade className="w-full md:w-[45%]">
               <Image
                 src={section.image}
                 alt=""
-                className="w-full h-fit rounded-3xl"
+                className="w-full h-fit rounded-xl md:rounded-3xl"
               />
             </Fade>
           </div>
         ))}
       </div>
-
-      <button className="px-20 py-2 mb-8 bg-white text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white">
-        TULA’S Computer Resources
-      </button>
-
       <div className="w-full h-fit z-50">
         <Footer />
       </div>

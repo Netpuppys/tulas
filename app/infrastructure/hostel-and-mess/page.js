@@ -20,7 +20,7 @@ function LectureTheater() {
   });
   const sections = [
     {
-      title: "Mess ( Only Vegetarian )",
+      title: "Mess (Only Vegetarian)",
       description:
         "The students in the hostels roll only have the right to enter into mess premises. The students are required to come to the mess during their specified timing only, not before or after. The students govern mess Committee; the mess committee makes sure that students’ health and nutrition is well taken care of. Mess serves breakfast, lunch, evening tea and dinner every day and the weekly menu (Chinese, North and South Indian cuisines) is available with mess in-charge; the students make menu, and the cuisine is changed twice a month.",
       image: biggestAuditorium,
@@ -48,7 +48,7 @@ function LectureTheater() {
     },
   ];
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center overflow-hidden">
       <Navbar />
       <Banner
         image={BannerImg}
@@ -64,21 +64,21 @@ function LectureTheater() {
         }
       />
       {/* fixed background */}
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
       </div>
-      <div className="pt-40 pb-20 bg-transparent w-[95%] ml-[5%] h-fit flex items-center justify-between">
-        <Fade delay={300} className="w-[45%]">
+      <div className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[90%] mx-auto h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between">
+        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
           <div className="w-full block">
-            <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
+            <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
               Facilities for a Hosteler
             </h3>
             <br />
-            <h4 className="text-[20px] font-[TTChocolates] text-[#D9D9D9]">
+            <h4 className="text-[16px] md:text-[20px] font-[TTChocolates] text-[#D9D9D9]">
               <ul className="list-disc ml-4">
                 <li>24-hour WIFI facility</li>
                 <li>Separate table and chair for every hosteler</li>
@@ -115,18 +115,22 @@ function LectureTheater() {
             </h4>
           </div>
         </Fade>
-        <Fade className="w-[45%]">
-          <Image src={hostel} alt="" className="w-full h-fit" />
+        <Fade className="w-full md:w-[45%]">
+          <Image
+            src={hostel}
+            alt=""
+            className="w-full h-fit rounded-xl md:rounded-3xl"
+          />
         </Fade>
       </div>
       <div
         ref={ref}
-        className="w-full h-fit py-20 bg-white px-[15%] flex justify-between items-center"
+        className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"
       >
-        <div className="w-[40%] h-fit flex justify-center items-center">
+        <div className="w-full md:w-[40%] h-fit flex justify-center items-center">
           <div className="flex flex-col justify-center items-center">
             <h3
-              className={`font-[CarotSlab] font-medium text-[#3D001B] text-[40px] transition-transform duration-1000 ${
+              className={`font-[CarotSlab] font-medium text-[#3D001B] text-[28px] md:text-[40px] text-center transition-transform duration-1000 ${
                 inView ? "animate-translateLeft" : "opacity-0"
               }`}
             >
@@ -142,7 +146,7 @@ function LectureTheater() {
           </div>
         </div>
         <h4
-          className={`text-black w-[50%] max-w-[669px] text-[22px] font-[TTChocolates] font-medium ${
+          className={`text-black max-w-[669px] w-full text-[16px] md:text-[22px] font-[TTChocolates] font-medium ${
             inView ? "animate-translateRight" : "opacity-0"
           }`}
         >
@@ -154,30 +158,30 @@ function LectureTheater() {
           students by celebrating major religious festivals.
         </h4>
       </div>
-      <div className="pt-40 w-[90%] mx-auto bg-transparent h-fit">
+      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
         {sections.map((section, index) => (
           <div
             key={index}
-            className={`flex mb-20 justify-between w-full h-fit items-center ${
-              index % 2 !== 0 ? "flex-row-reverse" : ""
+            className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 justify-between w-full h-fit items-center ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
             } `}
           >
-            <Fade delay={300} className="w-[45%]">
+            <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
               <div className="w-full block">
-                <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
+                <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
                   {section.title}
                 </h3>
                 <br />
-                <h4 className="text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+                <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
                   {section.description}
                 </h4>
               </div>
             </Fade>
-            <Fade className="w-[45%]">
+            <Fade className="w-full md:w-[45%]">
               <Image
                 src={section.image}
                 alt=""
-                className="w-full h-fit rounded-3xl"
+                className="w-full h-fit rounded-xl md:rounded-3xl"
               />
             </Fade>
           </div>

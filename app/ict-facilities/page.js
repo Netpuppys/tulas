@@ -63,7 +63,7 @@ function ICTFacilities() {
           "Tula’s has implemented ICT to support advanced learning and assessment. The institute has adequate classrooms to meet the need of the various programs being run. Presently all lecture rooms, tutorial rooms and seminar halls are equipped with projectors and Wi-Fi/LAN connectivity for the use of ICT during teaching.Computer assisted learning and digital materials are made available to the students to supplementclassroom teaching."
         }
       />
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
@@ -72,15 +72,15 @@ function ICTFacilities() {
       </div>
       <div
         ref={ref}
-        className="pt-40 pb-20 bg-transparent w-[95%] ml-[5%] h-fit flex items-center justify-between"
+        className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[90%] mx-auto h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between"
       >
-        <Fade delay={300} className="w-[45%]">
+        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
           <div className="w-full block">
-            <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
+            <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
               ICT Facilities
             </h3>
             <br />
-            <h4 className="text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+            <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
               {
                 "In addition to traditional method of teaching, the faculty members are using the IT enabled learning tools such as PPT, Video clippings, online classes, online sources, to expose the students for advanced knowledge and practical learning. Internet with capacity of over 205 Mbps is made available."
               }
@@ -102,18 +102,18 @@ function ICTFacilities() {
             </h4>
           </div>
         </Fade>
-        <Fade className="w-[45%]">
+        <Fade className="w-full md:w-[45%]">
           <Image
             src={ICTImage}
             alt=""
-            className={`w-full h-fit ${
-              inView ? "animate-translateRight" : "opacity-0"
+            className={`w-full h-fit rounded-xl md:rounded-3xl ${
+              inView ? "md:animate-translateRight" : "md:opacity-0"
             }`}
           />
         </Fade>
       </div>
       <Fade delay={300}>
-        <div className="w-full px-10 flex flex-wrap justify-center gap-12 items-center py-20 pt-0 h-fit">
+        <div className="w-full px-2 md:px-10 flex flex-wrap justify-center gap-6 md:gap-12 items-center py-20 pt-0 h-fit">
           {data.map((card, index) => (
             <div
               key={index}
@@ -121,17 +121,17 @@ function ICTFacilities() {
                 borderRadius: "26px",
                 border: "1px solid #A3A3A3",
               }}
-              className="bg-transparent w-[16rem] h-fit relative rounded-xl flex flex-col items-center justify-start group hover:shadow-2xl transition-all ease-in-out delay-50 duration-200"
+              className="bg-transparent w-[9rem] md:w-[16rem] h-fit relative rounded-xl flex flex-col items-center justify-start group hover:shadow-2xl transition-all ease-in-out delay-50 duration-200"
             >
               <Image
                 src={card.image}
                 alt="logo"
                 className="rounded-2xl w-full"
               />
-              <p className="font-semibold text-xl tracking-tight p-3">
+              <p className="font-semibold text-center text-base md:text-xl tracking-tight p-3">
                 {card.title}
               </p>
-              <p className="text-gray-500 text-[15px] text-center p-3 pt-0">
+              <p className="text-[#D3D3D3] text-[12px] md:text-[15px] text-center p-3 pt-0">
                 {card.description}
               </p>
             </div>

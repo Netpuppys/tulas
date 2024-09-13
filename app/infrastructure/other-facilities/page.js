@@ -95,26 +95,26 @@ const sectionsData = [
 
 const Section = ({ section, index }) => (
   <div
-    className={`flex mb-20 justify-between w-full h-fit items-center ${
-      index % 2 !== 0 ? "flex-row-reverse" : ""
+    className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 justify-between w-full h-fit items-center ${
+      index % 2 !== 0 ? "md:flex-row-reverse" : ""
     } `}
   >
-    <Fade delay={300} className="w-[45%]">
+    <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
       <div className="w-full block">
-        <h3 className="px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[52px] border-l-4 border-white">
+        <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
           {section.title}
         </h3>
         <br />
-        <h4 className="text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+        <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
           {section.description}
         </h4>
       </div>
     </Fade>
-    <Fade className="w-[45%]">
+    <Fade className="w-full md:w-[45%]">
       <Image
         src={section.image}
-        alt={section.title}
-        className="w-full h-fit rounded-3xl"
+        alt=""
+        className="w-full h-fit rounded-xl md:rounded-3xl"
       />
     </Fade>
   </div>
@@ -138,7 +138,7 @@ function OtherFacilities() {
         }
       />
       {/* fixed background */}
-      <div className="w-full relative overflow-hidden -mb-[6vh]">
+      <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
@@ -146,17 +146,17 @@ function OtherFacilities() {
         />
       </div>
 
-      <div className="pt-40 w-[90%] mx-auto bg-transparent h-fit">
+      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
         {sectionsData.slice(0, 2).map((section, index) => (
           <Section key={index} section={section} index={index} />
         ))}
       </div>
 
-      <div className="w-full h-fit py-20 bg-white px-[15%] flex flex-col justify-between items-center">
-        <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[40px] transition-transform duration-1000">
+      <div className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col justify-between items-center">
+        <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[28px] text-center md:text-[40px] transition-transform duration-1000">
           Book Bank
         </h3>
-        <h4 className="text-black w-[80%] max-w-[928px] text-[22px] font-[TTChocolates] text-center font-medium">
+        <h4 className="text-black w-full md:w-[80%] max-w-[928px] text-[16px] md:text-[22px] font-[TTChocolates] text-center font-medium">
           Book bank concept has been implemented in the institute. Under this
           scheme, every student gets 6 to 8 books for the complete semester. In
           addition to the support available from library, this scheme supports
@@ -166,17 +166,17 @@ function OtherFacilities() {
         </h4>
       </div>
 
-      <div className="pt-40 w-[90%] mx-auto bg-transparent h-fit">
+      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
         {sectionsData.slice(2, 4).map((section, index) => (
           <Section key={index} section={section} index={index} />
         ))}
       </div>
 
-      <div className="w-full h-fit py-20 bg-white px-[15%] flex flex-col justify-between items-center">
-        <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[40px] transition-transform duration-1000">
+      <div className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col justify-between items-center">
+        <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[28px] text-center md:text-[40px] transition-transform duration-1000">
           Shopping Arcade
         </h3>
-        <h4 className="text-black w-[80%] max-w-[928px] text-[22px] font-[TTChocolates] text-center font-medium">
+        <h4 className="text-black w-full md:w-[80%] max-w-[928px] text-[16px] md:text-[22px] font-[TTChocolates] text-center font-medium">
           A shopping arcade has been set up within the campus. It has the
           facility of laundry, a barber’s shop, stationary and a tuck shop.
           Reprographic facility is also available. First aid boxes have been
@@ -190,7 +190,7 @@ function OtherFacilities() {
         </h4>
       </div>
 
-      <div className="pt-40 w-[90%] mx-auto bg-transparent h-fit">
+      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
         {sectionsData.slice(4).map((section, index) => (
           <Section key={index} section={section} index={index} />
         ))}
