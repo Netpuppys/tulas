@@ -11,7 +11,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           className="w-full h-full object-cover absolute"
         />
         <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-          <h3 className="text-[24px] md:text-[60px] text-white z-10 font-[CarotSlab]">
+          <h3 className="text-[30px] md:text-[60px] text-white z-10 font-[CarotSlab]">
             {title}
           </h3>
           <h4 className="w-full md:w-[50%] text-sm md:text-lg font-[TTChocolates]">
@@ -19,7 +19,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           </h4>
         </div>
       </div>
-      <div className="min-h-[35vh] py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-4 mx-auto">
+      <div className="min-h-[35vh] py-8 md:py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-8 mx-auto">
         <h3 className="text-2xl font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-left mb-3">
           {belowTitle}
         </h3>

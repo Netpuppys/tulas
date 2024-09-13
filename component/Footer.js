@@ -55,7 +55,7 @@ const Footer = ({ set = false, color = false }) => {
   const cardsData = [
     {
       leftText:
-        "Copyright © 2023 Tula's Institute, Dehradun | All Rights Reserved",
+        "Copyright © 2025 Tula's Institute, Dehradun | All Rights Reserved",
     },
     {
       leftText: (
@@ -256,7 +256,9 @@ const Footer = ({ set = false, color = false }) => {
           <div className="w-full flex flex-col items-center md:items-start justify-between px-10 py-4">
             {cardsData.map((card, index) => (
               <div key={index} className="text-center md:text-left md:mb-0">
-                <p className="text-sm md:text-base">{card.leftText}</p>
+                <p className="text-xs font-light md:font-normal md:text-base">
+                  {card.leftText}
+                </p>
               </div>
             ))}
           </div>
@@ -270,7 +272,7 @@ const Footer = ({ set = false, color = false }) => {
                   <React.Fragment key={btnIndex}>
                     <Link
                       href={btn.linkTo}
-                      className={`px-1 text-xs md:text-base md:px-2 ${
+                      className={`px-1 text-xs font-light md:font-normal md:text-base md:px-2 ${
                         btnIndex < btnGroup.buttons.length - 1
                           ? "border-r-2 border-white"
                           : ""
