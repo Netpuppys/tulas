@@ -6,13 +6,11 @@ import TulasLogoGreen from "../../public/Components/Navbar/TulasLogoGreen.png";
 import { FaPen } from "react-icons/fa";
 import Image from "next/image";
 import NavbarMobile from "./Component/NavbarMobile";
-import { useMobile } from "../IsMobileContext";
 import NavbarDesktop from "./Component/NavbarDesktop";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 
 function Navbar({ setState }) {
   const [isChecked, setIsChecked] = useState(false);
-  const isMobile = useMobile();
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [superExpandedIndex, setSuperExpandedIndex] = useState(null);
   const [thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
