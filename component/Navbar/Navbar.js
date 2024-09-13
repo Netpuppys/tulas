@@ -41,7 +41,7 @@ function Navbar({ setState }) {
     };
   }, [isChecked]);
   return (
-    <div className="px-4 md:px-10 w-full absolute flex flex-col justify-center z-[9999]">
+    <div className="px-4 md:px-10 w-full fixed flex flex-col justify-center z-[9999]">
       {/* top bar */}
       <div className="hidden h-[80px] w-full md:flex justify-between items-center z-[9999]">
         <a href="tel:+91-6366937159" className="footer-call-number">
