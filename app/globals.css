@@ -232,6 +232,14 @@ th {
   font-weight: 400;
   flex-direction: column;
 }
+input[type="radio"]:checked + label span {
+  background-color: white;
+  box-shadow: 0px 0px 0px 2px white inset;
+}
+
+input[type="radio"]:checked + label {
+  color: white;
+}
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
     display: none;
