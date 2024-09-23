@@ -8,16 +8,20 @@ const sitemap = [
     linkTo: "/about/",
     nestedLinks: [
       {
+        title: "Management Messages",
+        linkTo: "/about/management-messages",
+      },
+      {
+        title: "Approval",
+        linkTo: "/about/approval/",
+      },
+      {
         title: "Contact",
         linkTo: "/contact/",
       },
       {
         title: "Why Tula's",
         linkTo: "/about/why-tulas/",
-      },
-      {
-        title: "Management Messages",
-        linkTo: "/about/management-messages/",
       },
       {
         title: "Blog",
