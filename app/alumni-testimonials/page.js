@@ -38,7 +38,7 @@ function AlumniTestimonials() {
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
-        <div className="py-20"><Testimonial/></div>
+        <div className="py-10"><Testimonial/></div>
       </div>
       <div className="-mb-[6vh] bg-white py-10">
         <h3 className="text-[#007A83] text-[50px] text-center font-[TTChocolatesBold]">
