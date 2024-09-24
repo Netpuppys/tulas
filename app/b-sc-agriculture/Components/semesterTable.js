@@ -127,12 +127,12 @@ const SemesterTable = () => {
       {semesterData.map((semester, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center gap-6"
+          className="flex flex-col items-center justify-center gap-4 md:gap-6"
         >
-          <h2 className="w-full py-2 text-[#3D0018] bg-white text-center rounded-full text-[30px]">
+          <h2 className="w-full py-1 md:py-2 text-[#3D0018] bg-white text-center rounded-full text-[18px] md:text-[30px]">
             {semester.semester}
           </h2>
-          <table className="w-full mb-6">
+          <table className="w-full mb-4 md:mb-6">
             <thead>
               <tr>
                 <th className="w-[30%]">SUBJECT CODE</th>

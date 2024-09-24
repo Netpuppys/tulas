@@ -124,37 +124,41 @@ function FacultyData() {
     },
   ];
   return (
-    <div className="bg-transparent flex flex-wrap gap-8 w-full">
+    <div className="bg-transparent flex flex-wrap gap-4 md:gap-8 w-full">
       {facultyData.map((faculty, index) => (
         <div
           key={index}
-          className="flex w-[48%] bg-white rounded-3xl overflow-hidden items-center"
+          className="flex w-full md:w-[48%] bg-white rounded-3xl overflow-hidden items-center"
         >
-          <Image src={faculty.imageUrl} alt="" className="rounded-2xl" />
-          <div className="px-8 flex flex-col gap-4">
-            <h3 className="text-[#3D001B] font-[TTChocolatesBold] font-semibold text-[30px]">
+          <Image
+            src={faculty.imageUrl}
+            alt=""
+            className="rounded-2xl w-[40%] h-full object-cover md:w-fit"
+          />
+          <div className="px-4 py-4 md:px-8 flex flex-col gap-2 md:gap-4">
+            <h3 className="text-[#3D001B] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">
               {faculty.name}
             </h3>
-            <p className="text-[#656565]">
+            <p className="text-[#656565] text-[14px] md:text-[16px]">
               <strong className="text-black">Education:- </strong>
               {faculty.education}
             </p>
             {faculty.experience && (
-              <p className="text-[#656565]">
+              <p className="text-[#656565] text-[14px] md:text-[16px]">
                 <strong className="text-black">Experience:- </strong>
                 {faculty.experience}
               </p>
             )}
-            <p className="text-[#656565]">
+            <p className="text-[#656565] text-[14px] md:text-[16px]">
               <strong className="text-black">Designation:- </strong>
               {faculty.designation}
             </p>
-            <p className="text-[#656565]">
+            <p className="text-[#656565] text-[14px] md:text-[16px]">
               <strong className="text-black">Specialization:- </strong>
               {faculty.specialization}
             </p>
             {faculty.publications && (
-              <p className="text-[#656565]">
+              <p className="text-[#656565] text-[14px] md:text-[16px]">
                 <strong className="text-black">Publications:- </strong>
                 {faculty.publications}
               </p>

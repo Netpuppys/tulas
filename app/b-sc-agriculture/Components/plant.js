@@ -59,7 +59,7 @@ function Plant({ parentRef }) {
       </div>
 
       <div ref={ref} className="z-40 bg-transparent h-fit relative px-4">
-        <h5 className="w-[50%] mx-auto py-20 text-[22px] font-[TTChocolates] font-normal">
+        <h5 className="w-full md:w-[50%] px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
           A bachelor’s degree in agriculture is a broad-based program with a lot
           of promise. It covers topics such as food production, gardening,
           animal husbandry, rural economy and development, environmental health
@@ -107,15 +107,15 @@ function Plant({ parentRef }) {
             </li>
           </ul>
         </h5>
-        <div className="flex justify-between items-center mx-[5%]">
-          <h8 className="text-[200px] leading-none font-[Arapey]  text-white [text-shadow:_20px_0px_0_black]">
+        <div className="flex justify-between items-center mx-[2%] md:mx-[5%]">
+          <h8 className="text-[50px] md:text-[200px] leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_20px_0px_0_black]">
             Discover
           </h8>
           <button className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]">
-            <h3 className="hidden font-inter md:block text-left text-[25px] -mr-4 font-light transition-color">
+            <h3 className="font-inter text-left text-[18px] md:text-[25px] -mr-4 font-light transition-color">
               See More
             </h3>
-            <div className="p-[15px] md:p-[20px] text-[30px] border-2 rounded-[50%] aspect-square border-l-transparent">
+            <div className="p-[10px] md:p-[20px] text-[20px] md:text-[30px] border-2 rounded-[50%] aspect-square border-l-transparent">
               <PiArrowRight />
             </div>
           </button>

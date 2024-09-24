@@ -11,7 +11,7 @@ function Table() {
   ];
   return (
     <>
-      <div className="py-20 px-4 w-full max-w-[1200px] mx-auto relative z-[20]">
+      <div className="py-10 md:py-20 px-4 w-full max-w-[1200px] mx-auto relative z-[20]">
         <div className="h-fit rounded-full bg-white py-1 px-1 overflow-hidden flex">
           {cards.map((card, index) => (
             <div
@@ -23,18 +23,18 @@ function Table() {
               }`}
               onClick={() => setSelectedCard(index)}
             >
-              <button className="flex items-center font-[TTChocolatesBold] rounded-full py-2 text-[20px] justify-center gap-14">
+              <button className="flex items-center font-[TTChocolatesBold] rounded-full py-1 md:py-2 text-[15px] md:text-[20px] justify-center gap-14">
                 {card.title}
               </button>
             </div>
           ))}
         </div>
-        <div className="pt-20">
+        <div className="pt-10 md:pt-20">
           {selectedCard === 0 && (
-            <div className="bg-white rounded-3xl text-[#3D0018] px-8 py-8 text-[40px]">
+            <div className="bg-white rounded-3xl text-[#3D0018] px-4 md:px-8 py-4 md:py-8 text-[28px] md:text-[40px]">
               <span className="font-[Arapey]">Admission Eligibility</span>{" "}
               <br />
-              <ul className="font-[TTChocolates] list-disc ml-5 text-[23px] text-black">
+              <ul className="font-[TTChocolates] list-disc ml-5 text-[14px] md:text-[23px] text-black">
                 <li>
                   Passed 10+2 examination with Physics, Chemistry,
                   Mathematics/Biology/Agriculture Obtained at least 45% marks
