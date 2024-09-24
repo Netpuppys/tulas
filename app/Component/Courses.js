@@ -86,10 +86,10 @@ function Courses({ parentRef }) {
             opacity: opacity,
           }}
         >
-          <h3 className="font-[Dynalight] text-[74px] z-20 text-center leading-[100px]">
+          <h3 className="font-[Dynalight] text-[74px] text-white z-20 text-center leading-[100px]">
             Our
             <br />
-            <span className="font-[DKAppelstroop] text-[150px] font-normal">
+            <span className="font-[DKAppelstroop] text-white text-[150px] font-normal">
               Courses
             </span>
           </h3>
@@ -101,12 +101,12 @@ function Courses({ parentRef }) {
             opacity < 0.09 ? "opacity-100 translate-in" : "opacity-0"
           }`}
         >
-          <div className="font-[ExtraWide] text-[42px] text-center">
+          <div className="font-[ExtraWide] text-[42px] text-white text-center">
             Courses
           </div>
           <div className="bg-white w-[1px] h-[8vh]"></div>
           <h5
-            className={`w-full max-w-[50rem] font-[TTChocolates] text-[25px] text-center transition-opacity duration-300 ease-in-out ${
+            className={`w-full max-w-[50rem] text-white font-[TTChocolates] text-[25px] text-center transition-opacity duration-300 ease-in-out ${
               opacity < 0.001 ? "opacity-100 translate-in" : "opacity-0"
             }`}
           >

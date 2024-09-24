@@ -3,13 +3,15 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import TulasLogoGreen from "../../public/Components/Navbar/TulasLogoGreen.png";
+import TulasLogoRed from "../../public/Components/Navbar/TulasLogoRed.png";
+
 import { FaPen } from "react-icons/fa";
 import Image from "next/image";
 import NavbarMobile from "./Component/NavbarMobile";
 import NavbarDesktop from "./Component/NavbarDesktop";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 
-function Navbar({ setState }) {
+function Navbar({ setState, position = false }) {
   const [isChecked, setIsChecked] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [superExpandedIndex, setSuperExpandedIndex] = useState(null);
@@ -41,7 +43,11 @@ function Navbar({ setState }) {
     };
   }, [isChecked]);
   return (
-    <div className="px-4 md:px-10 w-full fixed flex flex-col justify-center z-[9999]">
+    <div
+      className={`px-4 md:px-10 w-full ${
+        position ? "relative pb-6" : "fixed"
+      } flex flex-col justify-center z-[9999]`}
+    >
       {/* top bar */}
       <div className="hidden h-[80px] w-full md:flex justify-between items-center z-[9999]">
         <a href="tel:+91-6366937159" className="footer-call-number">
@@ -53,19 +59,31 @@ function Navbar({ setState }) {
         <div className="flex gap-6">
           <button
             onClick={() => (window.location.href = "/pay-fee-online/")}
-            className="text-[#fff] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] rounded-full"
+            className={`font-[TTChocolates] px-8 py-2 border-2 rounded-full ${
+              position
+                ? "text-[#760135] border-[#760135]"
+                : "border-[#fff] text-[#fff]"
+            }`}
           >
             Pay Online
           </button>
           <button
             onClick={() => (window.location.href = "/admissions2024/")}
-            className="text-[#222] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] bg-white rounded-full"
+            className={`font-[TTChocolates] px-8 py-2 border-2 rounded-full ${
+              position
+                ? "text-white border-[#760135] bg-[#760135]"
+                : "text-[#222] border-white bg-white"
+            }`}
           >
             Apply Now
           </button>
           <button
             onClick={() => (window.location.href = "/virtual-tour/index.html")}
-            className="text-[#fff] font-[TTChocolates] px-8 py-2 border-2 border-[#fff] rounded-full"
+            className={`font-[TTChocolates] px-8 py-2 border-2 rounded-full ${
+              position
+                ? "text-[#760135] border-[#760135]"
+                : "border-[#fff] text-[#fff]"
+            }`}
           >
             Virtual Tour
           </button>
@@ -81,7 +99,11 @@ function Navbar({ setState }) {
             >
               <div
                 className={`p-[15px] md:p-[20px] border-2 rounded-[50%] aspect-square border-r-transparent ${
-                  isChecked ? "border-black" : "border-white"
+                  (isChecked && position) || isChecked
+                    ? "border-black"
+                    : position
+                    ? "border-[#760135]"
+                    : "border-white"
                 }`}
               >
                 <label
@@ -92,18 +114,31 @@ function Navbar({ setState }) {
                   }
                 >
                   <span
-                    className={`my-[3px] rounded-lg h-[3px] w-1/2 ${
-                      isChecked ? "bg-black" : "bg-white"
-                    }`}
+                    className={`my-[3px] rounded-lg h-[3px] w-1/2
+                     ${
+                       (isChecked && position) || isChecked
+                         ? "bg-black"
+                         : position
+                         ? "bg-[#760135]"
+                         : "bg-white"
+                     }`}
                   ></span>
                   <span
                     className={`my-[3px] rounded-lg h-[3px] w-full ${
-                      isChecked ? "bg-black" : "bg-white"
+                      (isChecked && position) || isChecked
+                        ? "bg-black"
+                        : position
+                        ? "bg-[#760135]"
+                        : "bg-white"
                     }`}
                   ></span>
                   <span
                     className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
-                      isChecked ? "bg-black" : "bg-white"
+                      (isChecked && position) || isChecked
+                        ? "bg-black"
+                        : position
+                        ? "bg-[#760135]"
+                        : "bg-white"
                     }`}
                   ></span>
                 </label>
@@ -111,7 +146,11 @@ function Navbar({ setState }) {
               <h3
                 style={{ fontFamily: "Zilla Slab" }}
                 className={`hidden md:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                  isChecked ? "text-black" : "text-white"
+                  (isChecked && position) || isChecked
+                    ? "text-black"
+                    : position
+                    ? "text-[#760135]"
+                    : "text-white"
                 }`}
               >
                 {!isChecked ? "Menu" : "Close"}
@@ -123,19 +162,31 @@ function Navbar({ setState }) {
             >
               <div
                 className={`p-[15px] md:p-[20px] border-2 ${
-                  isChecked ? "border-black" : "border-white"
+                  (isChecked && position) || isChecked
+                    ? "border-black"
+                    : position
+                    ? "border-[#760135]"
+                    : "border-white"
                 } rounded-[50%] aspect-square border-r-transparent`}
               >
                 <FaPen
                   className={`w-[30px] h-[30px] ${
-                    isChecked ? "text-black" : "text-white"
+                    (isChecked && position) || isChecked
+                      ? "text-black"
+                      : position
+                      ? "text-[#760135]"
+                      : "text-white"
                   }`}
                 />
               </div>
               <h3
                 style={{ fontFamily: "Zilla Slab" }}
                 className={`hidden md:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                  isChecked ? "text-black" : "text-white"
+                  (isChecked && position) || isChecked
+                    ? "text-black"
+                    : position
+                    ? "text-[#760135]"
+                    : "text-white"
                 }`}
               >
                 Apply Now
@@ -149,7 +200,7 @@ function Navbar({ setState }) {
               className="block md:hidden w-[160px] h-fit pointer-events-auto cursor-pointer"
             />
             <Image
-              src={TulasLogo}
+              src={position ? TulasLogoRed : TulasLogo}
               alt="Tulas Logo"
               className="hidden md:block w-[160px] h-fit pointer-events-auto cursor-pointer"
             />
