@@ -102,10 +102,41 @@ const Carousel = () => {
       // Allow horizontal scroll (deltaX)
     };
 
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const handleTouchStart = (e) => {
+      touchStartX = e.touches[0].clientX;
+    };
+
+    const handleTouchMove = (e) => {
+      touchEndX = e.touches[0].clientX;
+
+      // Prevent vertical scroll behavior
+      const deltaX = touchEndX - touchStartX;
+      if (Math.abs(deltaX) > 0) {
+        e.preventDefault();
+        // Allow horizontal scroll by adjusting carousel scroll position
+        carouselElement.scrollLeft -= deltaX;
+      }
+
+      touchStartX = touchEndX;
+    };
+
+    // Add wheel event listener for desktop
     carouselElement.addEventListener("wheel", handleWheel, { passive: false });
 
+    // Add touch event listeners for mobile devices
+    carouselElement.addEventListener("touchstart", handleTouchStart);
+    carouselElement.addEventListener("touchmove", handleTouchMove, {
+      passive: false,
+    });
+
     return () => {
+      // Clean up event listeners
       carouselElement.removeEventListener("wheel", handleWheel);
+      carouselElement.removeEventListener("touchstart", handleTouchStart);
+      carouselElement.removeEventListener("touchmove", handleTouchMove);
     };
   }, []);
 
