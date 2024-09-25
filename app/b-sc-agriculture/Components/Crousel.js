@@ -151,7 +151,7 @@ const Carousel = () => {
           {/* Right side - Carousel display */}
           <div
             ref={carouselRef}
-            className="w-full flex gap-6 py-10 overflow-scroll scrollbarHidden pr-[100vw]"
+            className="w-full flex gap-6 py-10 overflow-scroll scrollbarHidden pr-[20vw] md:pr-[100vw]"
           >
             {items.map((item, index) => (
               <div
