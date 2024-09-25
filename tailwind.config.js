@@ -23,8 +23,18 @@ module.exports = {
         translateRightMenu: "translateRightMenu 0.3s linear",
         translateTop: "translateTop 0.8s linear",
         translateBottom: "translateBottom 0.8s linear",
+        overlay: "overlay 0.5s ease"
       },
       keyframes: {
+        overlay: {
+          from: {
+            background: "transparent",
+            opacity: "0"
+          }, to: {
+            background: "#ffffff",
+            opacity: 0.6
+          }
+        },
         scrollSpin: {
           from: {
             transform: "rotate(0deg)",
