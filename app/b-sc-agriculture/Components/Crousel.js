@@ -95,32 +95,42 @@ const Carousel = () => {
   useEffect(() => {
     const carouselElement = carouselRef.current;
 
+    // Handle wheel event for desktop devices
     const handleWheel = (e) => {
-      if (e.deltaX !== 0) {
-        e.preventDefault(); // Prevent default vertical scroll behavior
+      if (Math.abs(e.deltaX) > 0) {
+        e.preventDefault(); // Prevent horizontal scroll
       }
-      // Allow horizontal scroll (deltaX)
+      // Allow vertical scrolling (deltaY)
     };
 
     let touchStartX = 0;
+    let touchStartY = 0;
     let touchEndX = 0;
+    let touchEndY = 0;
 
+    // Handle touch start (mobile)
     const handleTouchStart = (e) => {
       touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
     };
 
+    // Handle touch move (mobile)
     const handleTouchMove = (e) => {
       touchEndX = e.touches[0].clientX;
+      touchEndY = e.touches[0].clientY;
 
-      // Prevent vertical scroll behavior
       const deltaX = touchEndX - touchStartX;
-      if (Math.abs(deltaX) > 0) {
-        e.preventDefault();
-        // Allow horizontal scroll by adjusting carousel scroll position
-        carouselElement.scrollLeft -= deltaX;
+      const deltaY = touchEndY - touchStartY;
+
+      // If horizontal swipe is greater than vertical swipe, prevent horizontal scrolling
+      if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        e.preventDefault(); // Prevent horizontal scrolling
+      } else {
+        // Allow vertical scroll, no need to preventDefault here
       }
 
       touchStartX = touchEndX;
+      touchStartY = touchEndY;
     };
 
     // Add wheel event listener for desktop
