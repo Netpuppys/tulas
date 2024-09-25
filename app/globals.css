@@ -240,7 +240,7 @@ input[type="radio"]:checked + label span {
 input[type="radio"]:checked + label {
   color: white;
 }
-.scrollbarHidden::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 @media (max-width: 768px) {

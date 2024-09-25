@@ -195,15 +195,17 @@ function Navbar({ setState, position = false }) {
           </div>
           <Link href="/" className="z-[3333]">
             <Image
-              src={isChecked ? TulasLogoGreen : TulasLogo}
+              src={
+                (isChecked && position) || isChecked
+                  ? TulasLogoGreen
+                  : position
+                  ? TulasLogoRed
+                  : TulasLogo
+              }
               alt="Tulas Logo"
-              className="block md:hidden w-[160px] h-fit pointer-events-auto cursor-pointer"
+              className="w-[160px] h-fit pointer-events-auto cursor-pointer"
             />
-            <Image
-              src={position ? TulasLogoRed : TulasLogo}
-              alt="Tulas Logo"
-              className="hidden md:block w-[160px] h-fit pointer-events-auto cursor-pointer"
-            />
+
           </Link>
         </div>
         <NavbarMobile isChecked={isChecked} />
