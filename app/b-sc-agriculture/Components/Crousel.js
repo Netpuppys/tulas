@@ -124,7 +124,7 @@ const Carousel = () => {
           </div>
         </button> */}
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center pl-10 py-10 w-full overflow-hidden h-full">
+      <div className="flex flex-col md:flex-row justify-between items-center pl-4 md:pl-10 py-10 w-full overflow-hidden h-full">
         {/* Left side text and scroll */}
         <div className="px-4 w-80">
           <ul className="space-y-4">
