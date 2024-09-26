@@ -6,7 +6,7 @@ const tableData = [
     projects: [
       {
         id: 1,
-        name: "Devloment OF Device For Emergency Assistance to veicles in remote ares in Uttrakhand(RNSS-NAVIC)",
+        name: "Development Of Device For Emergency Assistance to veicles in remote ares in Uttarakhand(RNSS-NAVIC)",
         principalInvestigator: "Dr. Sanjeev Kumar",
         department: "Computer Application",
         amount: "₹3,78,200/-",
