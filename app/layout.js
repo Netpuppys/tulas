@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
         ></link>
       </head>
       <body className={inter.className}>
-        <MobileProvider>{children}</MobileProvider>
+        <MobileProvider>
+          {children}
+        </MobileProvider>
       </body>
     </html>
   );

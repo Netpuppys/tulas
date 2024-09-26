@@ -134,14 +134,14 @@ const SemesterTable = () => {
           </h2>
           <table className="w-full mb-4 md:mb-20">
             <thead>
-              <tr>
+              <tr className="font-[900]">
                 <th className="w-[30%]">SUBJECT CODE</th>
                 <th className="w-[70%]">SUBJECT</th>
               </tr>
             </thead>
             <tbody>
               {semester.subjects.map((subject, idx) => (
-                <tr key={idx}>
+                <tr key={idx} className="tracking-[0.1rem] font-[700]">
                   <td>{subject.code}</td>
                   <td>{subject.title}</td>
                 </tr>

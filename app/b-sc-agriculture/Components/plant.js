@@ -2,12 +2,33 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import plant from "../../../public/bsc-agriculture/pLANT.png";
+import irrigation from "../../../public/bsc-agriculture/irrigation.png";
+import tractor from "../../../public/bsc-agriculture/tractor.png";
 import Table from "./table";
 import Carousel from "./Crousel";
 function Plant({ parentRef }) {
+  const images = [
+    plant,
+    irrigation,
+    tractor,
+    // Add more image paths as needed
+  ];
   const [scaleLeaf, setScaleLeaf] = useState(1);
   const [opacity, setOpacity] = useState(1);
   const [scrollY, setScrollY] = useState(0);
+  const [randomImage, setRandomImage] = useState(images[1]);
+  // Function to pick a random image
+  const getRandomImage = () => {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    return images[randomIndex];
+  };
+
+  // Change image on component mount and every specific event
+  useEffect(() => {
+    const randomImg = getRandomImage();
+    setRandomImage(randomImg);
+  }, []); // Run on mount, or you can trigger this on specific events (e.g., onClick)
+
   const [componentHeight, setComponentHeight] = useState();
 
   const ref = useRef(null);
@@ -51,7 +72,7 @@ function Plant({ parentRef }) {
             scrollY > 0 ? "fixed" : "absolute"
           } top-0 left-0 w-screen h-screen z-[9] bg-no-repeat bg-cover bg-center`}
           style={{
-            backgroundImage: `url(${plant.src})`,
+            backgroundImage: `url(${randomImage.src})`,
             transform: `scale(${scaleLeaf})`,
             opacity: opacity,
           }}
@@ -59,7 +80,7 @@ function Plant({ parentRef }) {
       </div>
 
       <div ref={ref} className="z-40 bg-transparent h-fit relative pl-4">
-        <h5 className="w-full md:w-[50%] px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
+        <h5 className="w-full text-white md:w-[50%] px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
           A bachelor’s degree in agriculture is a broad-based program with a lot
           of promise. It covers topics such as food production, gardening,
           animal husbandry, rural economy and development, environmental health

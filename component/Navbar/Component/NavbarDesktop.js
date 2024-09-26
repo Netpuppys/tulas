@@ -16,25 +16,27 @@ function NavbarDesktop({
   setNestedLinksVisible,
 }) {
   const [activeLink, setActiveLink] = useState(null);
+
   const handleExpandNestedLinks = (index) => {
-    if (expandedIndex === index) {
-      setNestedLinksVisible(false);
-      setSuperExpandedIndex(null);
-      setExpandedIndex(null);
-      setThirdExpandedIndex(null);
-    } else {
-      setNestedLinksVisible(true);
+    if (expandedIndex !== index) {
       setActiveLink(index);
-      setExpandedIndex(index);
-    }
+    } 
+
+    setNestedLinksVisible(true);
+    setSuperExpandedIndex(null);
+    setActiveLink(index);
+    setExpandedIndex(index);
+    setThirdExpandedIndex(null);
   };
+
   const handleExpandSuperNestedLinks = (index) => {
-    if (superExpandedIndex === index) {
-      setSuperExpandedIndex(null);
-      setThirdExpandedIndex(null);
-    } else {
+    if (superExpandedIndex!== index) {
       setSuperExpandedIndex(index);
+    } 
+    else{
+      setSuperExpandedIndex(null);
     }
+    setThirdExpandedIndex(null);
   };
   const handleExpandThirdNestedLinks = (index) => {
     if (thirdExpandedIndex === index) {
@@ -142,7 +144,7 @@ function NavbarDesktop({
                   )}
                 </span>
                 {superExpandedIndex === index &&
-                  nestedLinks.superNestedLinks.map(
+                  nestedLinks.superNestedLinks?.map(
                     (superNestedLinks, index) => (
                       <div
                         key={index}
@@ -178,7 +180,7 @@ function NavbarDesktop({
                           )}
                         </span>
                         {thirdExpandedIndex === index &&
-                          superNestedLinks.thirdNestedLinks.map(
+                          superNestedLinks.thirdNestedLinks?.map(
                             (thirdNestedLinks, index) => (
                               <div
                                 key={index}

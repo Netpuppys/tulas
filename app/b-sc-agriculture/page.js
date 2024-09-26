@@ -6,6 +6,7 @@ import Navbar from "@/component/Navbar/Navbar";
 import background from "../../public/bsc-agriculture/background.png";
 import Image from "next/image";
 import Plant from "./Components/plant";
+import Footer from "@/component/Footer";
 function BSCAgriculture() {
   const parentRef = useRef(null);
 
@@ -22,7 +23,9 @@ function BSCAgriculture() {
           "B.Sc. Agriculture is a four-year UG (Undergraduate) degree program that focuses on theoretical and practical training in various agricultural techniques. B.Sc. Agriculture offers a wide range of opportunities for graduates to work in various sectors of agriculture, from technical aspects to commercial opportunities, and from production to sales."
         }
       />
+
       <Plant parentRef={parentRef} />
+      
       <div className="w-full relative overflow-hidden">
         <Image
           src={background}
@@ -30,6 +33,7 @@ function BSCAgriculture() {
           alt=""
         />
       </div>
+      <Footer  color={true}/>
     </div>
   );
 }
