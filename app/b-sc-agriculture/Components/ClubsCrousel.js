@@ -6,41 +6,29 @@ import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
 import Image from "next/image";
 import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
 import { RiArrowRightSFill } from "react-icons/ri";
-import { PiArrowRight } from "react-icons/pi";
+//import { PiArrowRight } from "react-icons/pi";
 
-const Carousel = () => {
+const ClubsCrousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
   const [disabled, setDisabled] = useState(false);
   const items = [
     {
-      title: "USP's",
+      title: "Clubs/Societies/ Memberships",
       description:
-        "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+        "Following Clubs/Societies/ Memberships are running in the department",
       image: USP,
     },
     {
-      title: "Course Outcomes",
+      title: "Beyond Curriculum",
       description:
-        "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+        "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s.",
       image: Course,
     },
     {
-      title: "Program Outcomes",
+      title: "Career Prospects",
       description:
-        "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
-      image: Program,
-    },
-    {
-      title: "Program Specific Outcome",
-      description:
-        "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
-      image: Course,
-    },
-    {
-      title: "Program Educational Objective",
-      description:
-        "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+        "Agriculture Research Scientist Subject Matter Specialist in different Krishi Vigyan Kendras (KVKs)",
       image: Program,
     },
 
@@ -151,10 +139,10 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative z-20">
+    <div className="relative z-20 py-8 md:py-20">
       <div className="flex w-full justify-between items-center px-0 md:px-[5%]">
-        <h8 className="text-[80px] w-full text-center md:text-start md:text-[200px] leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_20px_0px_0_black]">
-          Discover
+        <h8 className="text-[60px] w-full text-center md:text-start md:text-[200px] leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_20px_0px_0_black]">
+          Explore More
         </h8>
         {/* <button className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]">
           <h3 className="font-inter text-left text-[18px] md:text-[25px] -mr-4 font-light transition-color">
@@ -189,7 +177,7 @@ const Carousel = () => {
         </div>
 
         <div className="w-full md:w-[calc(100vw-26.5rem)] relative overflow-y-visible">
-          {/* Right side - Carousel display */}
+          {/* Right side - ClubsCrousel display */}
           <div
             ref={carouselRef}
             className="w-full flex gap-6 py-10 overflow-scroll scrollbarHidden pr-[20vw] md:pr-[100vw]"
@@ -251,4 +239,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default ClubsCrousel;

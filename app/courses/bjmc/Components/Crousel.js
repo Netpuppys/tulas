@@ -1,8 +1,8 @@
 // Carousel.js
 import React, { useEffect, useRef, useState } from "react";
-import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
+import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
+import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import Image from "next/image";
 import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
 import { RiArrowRightSFill } from "react-icons/ri";

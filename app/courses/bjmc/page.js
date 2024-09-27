@@ -1,18 +1,18 @@
 "use client";
 import React, { useRef } from "react";
-import BannerProgram from "@/component/BannerProgram/BannerProgram";
-import BannerImg from "../../public/bsc-agriculture/bannerImg.png";
+import BannerImg from "../../../public/bsc-agriculture/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
-import background from "../../public/bsc-agriculture/background.png";
+import background from "../../../public/courses/bjmc/background.png";
 import Image from "next/image";
-import Plant from "./Components/plant";
+import BJMC from "./Components/BJMC";
 import Footer from "@/component/Footer";
+import BannerProgram from "@/component/BannerProgram/BannerProgram";
 import Carousel from "./Components/Crousel";
-import Table from "./Components/table";
 import Vision from "./Components/Vision";
+import Table from "./Components/table";
 import ClubsCrousel from "./Components/ClubsCrousel";
-import TopRecruiter from "@/component/topRecruiter";
-function BSCAgriculture() {
+import TopRecruiter from "../../../component/topRecruiter";
+function BAJMC() {
   const parentRef = useRef(null);
 
   return (
@@ -22,14 +22,14 @@ function BSCAgriculture() {
       </div>
       <BannerProgram
         image={BannerImg}
-        title={"BSc."}
-        titleColor={"Agriculture"}
+        title={"BA."}
+        titleColor={"JMC"}
         description={
-          "B.Sc. Agriculture is a four-year UG (Undergraduate) degree program that focuses on theoretical and practical training in various agricultural techniques. B.Sc. Agriculture offers a wide range of opportunities for graduates to work in various sectors of agriculture, from technical aspects to commercial opportunities, and from production to sales."
+          "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
         }
       />
 
-      <Plant parentRef={parentRef} />
+      <BJMC parentRef={parentRef} />
       <Carousel />
       <Vision />
       <Table />
@@ -42,9 +42,9 @@ function BSCAgriculture() {
           alt=""
         />
       </div>
-      <Footer color={true} />
+      <Footer />
     </div>
   );
 }
 
-export default BSCAgriculture;
+export default BAJMC;

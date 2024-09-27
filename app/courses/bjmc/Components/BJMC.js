@@ -1,20 +1,16 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import plant from "../../../public/bsc-agriculture/pLANT.png";
-import irrigation from "../../../public/bsc-agriculture/irrigation.png";
-import tractor from "../../../public/bsc-agriculture/tractor.png";
-function Plant({ parentRef }) {
+import bjmc from "../../../../public/courses/bjmc/bjmc.png";
+function BJMC({ parentRef }) {
   const images = [
-    plant,
-    irrigation,
-    tractor,
+    bjmc,
     // Add more image paths as needed
   ];
   const [scaleLeaf, setScaleLeaf] = useState(1);
   const [opacity, setOpacity] = useState(1);
   const [scrollY, setScrollY] = useState(0);
-  const [randomImage, setRandomImage] = useState(images[1]);
+  const [randomImage, setRandomImage] = useState(images[0]);
   // Function to pick a random image
   const getRandomImage = () => {
     const randomIndex = Math.floor(Math.random() * images.length);
@@ -79,56 +75,40 @@ function Plant({ parentRef }) {
 
       <div ref={ref} className="z-40 bg-transparent h-fit relative pl-4">
         <h5 className="w-full text-white md:w-[50%] px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
-          A bachelor’s degree in agriculture is a broad-based program with a lot
-          of promise. It covers topics such as food production, gardening,
-          animal husbandry, rural economy and development, environmental health
-          and so on. Other businesses may face layoffs, but agriculture will
-          never be one of them because “food” is a basic human need. There will
-          never be a recession or a slowdown when it comes to feeding the
-          planet. Truly speaking, advances in technology, research, and
-          inventions in this field have greatly expanded the scope of
-          agriculture.
+          Bachelor of Journalism & Mass Communication is a three year
+          interdisciplinary program in which students learn holistically about
+          media and its various aspects. Students learn the underpinning
+          theories related to media, its history, and its legal and ethical
+          obligations. They also learn to frame news, design the headlines and
+          outlet of the newspaper. Students are taught about the media laws,
+          constitution and other relevant laws which are required in public life
+          as a Journalist. Apart from it, program also nurtures creative aspects
+          of students that includes photography, film-making, editing and other
+          aspects of visual story telling like screen writing and story
+          boarding. Students who aspire to develop their taste in the field of
+          advertising & public relations get to learn about history and theories
+          related to respective field. Subjects like Development Communication,
+          Visual Communication & Media research are also taught to the students.
           <br />
           <br />
-          A student pursuing B.Sc. Agriculture degree will study Agronomy, Soil
-          Science, Horticulture, Plant Breeding and Genetics, Entomology, Plant
-          Pathology, Animal Science, Extension Education, Plant Biochemistry,
-          Agriculture Economics and Fundamentals of Biotechnology, among other
-          subjects. The course is based on ICAR (Indian Council of Agricultural
-          Research) recommendations and is intended to teach students how to
-          improve crop production in a sustainable manner while also providing a
-          broad understanding of agriculture and allied fields.
+          In addition, the program not only develops media related skills but
+          also enriches students to provide pervasive understanding of media and
+          its function’s historicity and totality.
           <br />
           <br />
-          <strong>The primary goal of this program is to:</strong>
+          The Department conducts outdoor photography walks, educational
+          excursions, movie screenings followed by discussions, random
+          extempore, interactive sessions from industry experts and
+          extracurricular activities which enrich students’ social engagements.
           <br />
           <br />
-          <ul className="list-disc ml-5">
-            <li>
-              Instil subject-specific knowledge while also establishing a link
-              between practical solutions and theory.
-            </li>
-            <br />
-            <li>
-              Encourage students’ personal development and self-confidence,
-              which will provide them with opportunities to work in the
-              agribusiness.
-            </li>
-            <br />
-            <li>
-              Using scientific and experimental evidence to make
-              agriculture-related issues appealing.
-            </li>
-            <br />
-            <li>
-              Use practical applications and research to hone problem-solving
-              skills.
-            </li>
-          </ul>
+          Apart from it, students are engaged with diverse communities like
+          media fraternity, cultural groups, regional artists, film stars, award
+          winning athletes and reformers via different modes of engagement.
         </h5>
       </div>
     </div>
   );
 }
 
-export default Plant;
+export default BJMC;
