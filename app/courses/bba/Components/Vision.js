@@ -9,7 +9,7 @@ function Vision() {
     {
       title: "Departmental Vision",
       description:
-        "To emerge as a leading hub for teaching, research, creative endeavor and pioneering approaches to promote ethical and socially responsible communication practices in Media and Journalism.",
+        "To pave the way for business administration, amalgamating human capital development, research  and innovation with strong commitment towards society.",
       image: DepartmentalVission,
     },
     {
@@ -18,24 +18,27 @@ function Vision() {
         <>
           <ul classname="list-disc ml-5">
             <li>
-              To provide high-quality education to prepare students for
-              professional success and critical thinking.
+              To equip proteges with a comprehensive set of analytical,
+              technical and behavioral skills to navigate global business
+              dynamism.
             </li>
             <li>
-              To foster diversity, interdisciplinary learning, and creativity
-              within the curriculum.
+              To foster a culture of innovation and ethical practices
+              encouraging individuals to be professional and responsible value
+              creators for the society and stakeholders.
             </li>
             <li>
-              To uphold values of freedom of expression, mutual respect, and
-              ethical conduct.
+              To nurture entrepreneurial mind sets of aspirants by unleashing
+              enterprising skills, opportunities and facilities.
             </li>
             <li>
-              To encourage students to integrate their knowledge and skills for
-              community service, career advancement, and lifelong learning.
+              To contribute for sustainable future by industrial and
+              institutional collaboration for contemporary research settings.
             </li>
             <li>
-              To cultivate social responsibility and expertise in journalism and
-              mass communication among students.
+              To cultivate strong leadership traits among learners by bridging
+              the gap between theory and practices through real world learning
+              experiences.
             </li>
           </ul>
         </>

@@ -4,7 +4,7 @@ import BannerImg from "../../../public/bsc-agriculture/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/courses/bjmc/background.png";
 import Image from "next/image";
-import BJMC from "./Components/BJMC";
+import Mba from "./Components/MBA";
 import Footer from "@/component/Footer";
 import BannerProgram from "@/component/BannerProgram/BannerProgram";
 import Carousel from "./Components/Crousel";
@@ -12,7 +12,7 @@ import Vision from "./Components/Vision";
 import Table from "./Components/table";
 import ClubsCrousel from "./Components/ClubsCrousel";
 import TopRecruiter from "../../../component/topRecruiter";
-function BAJMC() {
+function MBA() {
   const parentRef = useRef(null);
 
   return (
@@ -23,15 +23,15 @@ function BAJMC() {
       <BannerProgram
         image={BannerImg}
         title=<>
-          BA.<span className="text-[#760135]">JMC</span>
+          MB<span className="text-[#760135]">A</span>
         </>
         titleColor={""}
         description={
-          "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
+          "Master of Business Administration (MBA) program is a two year degree program planned to encourage the capacities expected from world class managers and entrepreneurs. The scope of MBA aspirant, regardless, isn’t limited rigidly to the business world but also to the public region, government, private industry, and various areas."
         }
       />
 
-      <BJMC parentRef={parentRef} />
+      <Mba parentRef={parentRef} />
       <Carousel />
       <Vision />
       <Table />
@@ -49,4 +49,4 @@ function BAJMC() {
   );
 }
 
-export default BAJMC;
+export default MBA;

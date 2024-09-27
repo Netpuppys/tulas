@@ -33,24 +33,6 @@ const sitemap = [
     title: "Programs",
     nestedLinks: [
       {
-        title: "Department of Agriculture",
-        superNestedLinks: [
-          {
-            title: "B.Sc Agriculture",
-            linkTo: "/b-sc-agriculture/",
-          },
-        ],
-      },
-      {
-        title: "Department of Mass Communiations",
-        superNestedLinks: [
-          {
-            title: "BAJMC",
-            linkTo: "/courses/bjmc/",
-          },
-        ],
-      },
-      {
         title: "Department Of Engineering",
         superNestedLinks: [
           {
@@ -118,6 +100,24 @@ const sitemap = [
           {
             title: "Department of Applied Sciences and Engineering",
             linkTo: "/courses/applied-science/",
+          },
+        ],
+      },
+      {
+        title: "Department of Agriculture",
+        superNestedLinks: [
+          {
+            title: "B.Sc Agriculture",
+            linkTo: "/b-sc-agriculture/",
+          },
+        ],
+      },
+      {
+        title: "Department of Mass Communiations",
+        superNestedLinks: [
+          {
+            title: "BAJMC",
+            linkTo: "/courses/bjmc/",
           },
         ],
       },

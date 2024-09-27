@@ -16,7 +16,7 @@ function Vision() {
       title: "Departmental Mission",
       description: (
         <>
-          <ul>
+          <ul classname="list-disc ml-5">
             <li>
               To create and share information about sustainable farming methods
               that boost productivity, save resources, and help combat climate
