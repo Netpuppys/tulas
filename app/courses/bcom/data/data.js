@@ -2,7 +2,7 @@ import bcom from "../../../../public/courses/bcom/bcom.png";
 import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
-import bcomDocument from "../../../../public/courses/Bcom/BCom.pdf";
+import bcomDocument from "../../../../public/courses/bcom/Bcom.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
 import DrRanitKishore from "../../../../public/courses/bba/facultyData/DrRanitKishore.webp";
