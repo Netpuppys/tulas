@@ -32,12 +32,10 @@ function BBA() {
       </div>
       <BannerProgram
         image={BannerImg}
-        title=<>
-          BB<span className="text-[#760135]">A</span>
-        </>
-        titleColor={""}
+        title={"B.COM"}
+        titleColor={"(HONS)"}
         description={
-          "The three-year Bachelor of Business Administration (BBA) program is designed keeping in mind the needs of the bright students who are looking for a career in entrepreneurship, management profession or towards higher education in business administration."
+          "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
         }
       />
 

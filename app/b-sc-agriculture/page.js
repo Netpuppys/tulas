@@ -1,17 +1,28 @@
 "use client";
 import React, { useRef } from "react";
-import BannerProgram from "@/component/BannerProgram/BannerProgram";
+import BannerProgram from "@/component/Programs/BannerProgram";
 import BannerImg from "../../public/bsc-agriculture/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../public/bsc-agriculture/background.png";
 import Image from "next/image";
-import Plant from "./Components/plant";
 import Footer from "@/component/Footer";
-import Carousel from "./Components/Crousel";
-import Table from "./Components/table";
-import Vision from "./Components/Vision";
-import ClubsCrousel from "./Components/ClubsCrousel";
+import {
+  cards,
+  content,
+  facultyData,
+  images,
+  items,
+  itemsClubs,
+  sections,
+  selectedCard1,
+  semesterData,
+} from "./data/data";
+import Program from "@/component/Programs/Program";
+import CarouselProgram from "@/component/Programs/CrouselProgram";
+import Vision from "@/component/Programs/Vision";
+import TableProgram from "@/component/Programs/tableProgram";
 import TopRecruiter from "@/component/topRecruiter";
+
 function BSCAgriculture() {
   const parentRef = useRef(null);
 
@@ -29,12 +40,17 @@ function BSCAgriculture() {
         }
       />
 
-      <Plant parentRef={parentRef} />
-      <Carousel />
-      <Vision />
-      <Table />
+      <Program parentRef={parentRef} images={images} content={content} />
+      <CarouselProgram heading={"Discover"} items={items} />
+      <Vision sections={sections} />
+      <TableProgram
+        cards={cards}
+        selectedCard1={selectedCard1}
+        semesterData={semesterData}
+        facultyData={facultyData}
+      />
       <TopRecruiter />
-      <ClubsCrousel />
+      <CarouselProgram heading={"Explore More"} items={itemsClubs} />
       <div className="w-full relative overflow-hidden">
         <Image
           src={background}

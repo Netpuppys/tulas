@@ -4,14 +4,24 @@ import BannerImg from "../../../public/bsc-agriculture/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/courses/bjmc/background.png";
 import Image from "next/image";
-import BJMC from "./Components/BJMC";
 import Footer from "@/component/Footer";
-import BannerProgram from "@/component/BannerProgram/BannerProgram";
-import Carousel from "./Components/Crousel";
-import Vision from "./Components/Vision";
-import Table from "./Components/table";
-import ClubsCrousel from "./Components/ClubsCrousel";
+import BannerProgram from "@/component/Programs/BannerProgram";
 import TopRecruiter from "../../../component/topRecruiter";
+import Program from "@/component/Programs/Program";
+import CarouselProgram from "@/component/Programs/CrouselProgram";
+import Vision from "@/component/Programs/Vision";
+import TableProgram from "@/component/Programs/tableProgram";
+import {
+  cards,
+  content,
+  facultyData,
+  images,
+  items,
+  itemsClubs,
+  sections,
+  selectedCard1,
+  semesterData,
+} from "./data/data";
 function BAJMC() {
   const parentRef = useRef(null);
 
@@ -30,13 +40,17 @@ function BAJMC() {
           "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
         }
       />
-
-      <BJMC parentRef={parentRef} />
-      <Carousel />
-      <Vision />
-      <Table />
+      <Program parentRef={parentRef} images={images} content={content} />
+      <CarouselProgram heading={"Discover"} items={items} />
+      <Vision sections={sections} />
+      <TableProgram
+        cards={cards}
+        selectedCard1={selectedCard1}
+        semesterData={semesterData}
+        facultyData={facultyData}
+      />
       <TopRecruiter />
-      <ClubsCrousel />
+      <CarouselProgram heading={"Explore More"} items={itemsClubs} />
       <div className="w-full relative overflow-hidden">
         <Image
           src={background}

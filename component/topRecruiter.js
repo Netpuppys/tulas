@@ -59,14 +59,17 @@ function TopRecruiter() {
         className="w-full"
       >
         {crouselImages.map((group, index) => (
-          <SwiperSlide key={index} className="flex justify-center max-w-[90%} flex-wrap">
-            <div className="flex flex-wrap gap-8 justify-center items-center">
+          <SwiperSlide
+            key={index}
+            className="flex justify-center max-w-[90%} flex-wrap"
+          >
+            <div className="flex flex-wrap gap-10 justify-center items-center">
               {group.map((image, imgIndex) => (
                 <Image
                   key={imgIndex}
                   src={image}
                   alt="Top Recruiter"
-                  className="w-auto h-20 object-cover"
+                  className="w-auto h-20 object-cover grayscale"
                 />
               ))}
             </div>
@@ -80,7 +83,9 @@ function TopRecruiter() {
           <div
             key={index}
             onClick={() => setCurrentIndex(index)} // Manually change index on dot click
-            className={`cursor-pointer ${index === currentIndex ? "active" : ""}`}
+            className={`cursor-pointer ${
+              index === currentIndex ? "active" : ""
+            }`}
           >
             <div
               className={`w-[10px] h-[10px] md:w-[19px] bg-[#36091F80] bg-opacity-50 md:h-[19px] rounded-full ${

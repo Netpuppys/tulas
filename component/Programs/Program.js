@@ -1,12 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import bjmc from "../../../../public/courses/bjmc/bjmc.png";
-function BJMC({ parentRef }) {
-  const images = [
-    bjmc,
-    // Add more image paths as needed
-  ];
+function Program({ parentRef, images, content }) {
   const [scaleLeaf, setScaleLeaf] = useState(1);
   const [opacity, setOpacity] = useState(1);
   const [scrollY, setScrollY] = useState(0);
@@ -75,40 +70,11 @@ function BJMC({ parentRef }) {
 
       <div ref={ref} className="z-40 bg-transparent h-fit relative pl-4">
         <h5 className="w-full text-white md:w-[50%] px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
-          Bachelor of Journalism & Mass Communication is a three year
-          interdisciplinary program in which students learn holistically about
-          media and its various aspects. Students learn the underpinning
-          theories related to media, its history, and its legal and ethical
-          obligations. They also learn to frame news, design the headlines and
-          outlet of the newspaper. Students are taught about the media laws,
-          constitution and other relevant laws which are required in public life
-          as a Journalist. Apart from it, program also nurtures creative aspects
-          of students that includes photography, film-making, editing and other
-          aspects of visual story telling like screen writing and story
-          boarding. Students who aspire to develop their taste in the field of
-          advertising & public relations get to learn about history and theories
-          related to respective field. Subjects like Development Communication,
-          Visual Communication & Media research are also taught to the students.
-          <br />
-          <br />
-          In addition, the program not only develops media related skills but
-          also enriches students to provide pervasive understanding of media and
-          its function’s historicity and totality.
-          <br />
-          <br />
-          The Department conducts outdoor photography walks, educational
-          excursions, movie screenings followed by discussions, random
-          extempore, interactive sessions from industry experts and
-          extracurricular activities which enrich students’ social engagements.
-          <br />
-          <br />
-          Apart from it, students are engaged with diverse communities like
-          media fraternity, cultural groups, regional artists, film stars, award
-          winning athletes and reformers via different modes of engagement.
+          {content}
         </h5>
       </div>
     </div>
   );
 }
 
-export default BJMC;
+export default Program;

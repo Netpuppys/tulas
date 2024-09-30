@@ -1,52 +1,14 @@
 // Carousel.js
 import React, { useEffect, useRef, useState } from "react";
-import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
-import mbaDocument from "../../../../public/courses/mba/MBA.pdf";
 import Image from "next/image";
 import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
 import { RiArrowRightSFill } from "react-icons/ri";
 //import { PiArrowRight } from "react-icons/pi";
-import Link from "next/link";
 
-const Carousel = () => {
+const CarouselProgram = ({ heading, items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
   const [disabled, setDisabled] = useState(false);
-  const items = [
-    {
-      title: "USP's",
-      description:
-        "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
-      image: USP,
-    },
-    {
-      title: "Program Outcomes",
-      description:
-        "Apply knowledge of management theories and practices to solve business problems.",
-      image: Program,
-    },
-    {
-      title: "Program Specific Outcome",
-      description:
-        "To develop skills in business analytics for industry and business requirements.",
-      image: Course,
-    },
-    {
-      title: "Program Educational Objective",
-      description:
-        "To sharpen problem solving ability by acquiring holistic knowledge of the managerial concepts.",
-      image: Program,
-    },
-    {
-      title: "Course Outcomes",
-      description: <Link href={mbaDocument}>MBA</Link>,
-      image: Course,
-    },
-
-    // Add other carousel items here
-  ];
 
   const handleNext = () => {
     if (activeIndex < items.length - 1) {
@@ -155,7 +117,7 @@ const Carousel = () => {
     <div className="relative z-20">
       <div className="flex w-full justify-between items-center px-0 md:px-[5%]">
         <h8 className="text-[80px] w-full text-center md:text-start md:text-[200px] leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_20px_0px_0_black]">
-          Discover
+          {heading}
         </h8>
         {/* <button className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]">
           <h3 className="font-inter text-left text-[18px] md:text-[25px] -mr-4 font-light transition-color">
@@ -189,8 +151,8 @@ const Carousel = () => {
           </ul>
         </div>
 
-        <div className="w-full md:w-[calc(100vw-26.5rem)] relative overflow-y-visible">
-          {/* Right side - Carousel display */}
+        <div className="w-full h-full md:w-[calc(100vw-26.5rem)] py-8 relative overflow-y-visible">
+          {/* Right side - CarouselProgram display */}
           <div
             ref={carouselRef}
             className="w-full flex gap-6 py-10 overflow-scroll scrollbarHidden pr-[20vw] md:pr-[100vw]"
@@ -224,7 +186,7 @@ const Carousel = () => {
             ))}
           </div>
           {/* Navigation Controls */}
-          <div className="absolute -bottom-10 z-20 right-14 md:right-20 text-[30px] md:text-[50px] flex space-x-4">
+          <div className="absolute -bottom-6 z-20 right-14 md:right-20 text-[30px] md:text-[50px] flex space-x-4">
             <button
               disabled={disabled}
               onClick={handlePrev}
@@ -252,4 +214,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselProgram;
