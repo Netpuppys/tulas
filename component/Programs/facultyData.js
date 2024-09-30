@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 function FacultyData({ facultyData }) {
   return (
-    <div className="bg-transparent flex flex-wrap gap-4 md:gap-8 w-full">
+    <div className="bg-transparent flex justify-center flex-wrap gap-4 md:gap-8 w-full">
       {facultyData.map((faculty, index) => (
         <div
           key={index}

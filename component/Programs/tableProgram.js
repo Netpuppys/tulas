@@ -46,7 +46,7 @@ function TableProgram({
           )}
           {selectedCard === 1 && <SemesterTable semesterData={semesterData} />}
           {selectedCard === 2 && <FacultyData facultyData={facultyData} />}
-          {selectedCard === 3 && <HOD hod={hod} HODcontent={HODcontent} />}
+          {hod && selectedCard === 3 && <HOD hod={hod} HODcontent={HODcontent} />}
         </div>
       </div>
     </>
