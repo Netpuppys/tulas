@@ -18,24 +18,30 @@ function FacultyData({ facultyData }) {
             <h3 className="text-[#EAFEFF] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">
               {faculty.name}
             </h3>
-            <p className="text-[14px] md:text-[16px]">
-              <strong>Education:- </strong>
-              {faculty.education}
-            </p>
+            {faculty.experience && (
+              <p className="text-[14px] md:text-[16px]">
+                <strong>Education:- </strong>
+                {faculty.education}
+              </p>
+            )}
             {faculty.experience && (
               <p className="text-[14px] md:text-[16px]">
                 <strong>Experience:- </strong>
                 {faculty.experience}
               </p>
             )}
-            <p className="text-[14px] md:text-[16px]">
-              <strong>Designation:- </strong>
-              {faculty.designation}
-            </p>
-            <p className="text-[14px] md:text-[16px]">
-              <strong>Specialization:- </strong>
-              {faculty.specialization}
-            </p>
+            {faculty.designation && (
+              <p className="text-[14px] md:text-[16px]">
+                <strong>Designation:- </strong>
+                {faculty.designation}
+              </p>
+            )}
+            {faculty.specialization && (
+              <p className="text-[14px] md:text-[16px]">
+                <strong>Specialization:- </strong>
+                {faculty.specialization}
+              </p>
+            )}
             {faculty.publications && (
               <p className="text-[14px] md:text-[16px]">
                 <strong>Publications:- </strong>

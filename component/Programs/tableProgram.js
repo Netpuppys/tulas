@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import SemesterTable from "./semesterData";
 import FacultyData from "./facultyData";
+import SelectedCardTable from "./SelectedCardTable";
+import HOD from "./HOD";
 
-function TableProgram({ cards, selectedCard1, semesterData, facultyData }) {
+function TableProgram({
+  cards,
+  selectedCard1,
+  selectedCardTable,
+  semesterData,
+  facultyData,
+  hod,
+  HODcontent,
+}) {
   const [selectedCard, setSelectedCard] = useState(1); // Index 1 is selected by default
 
   return (
@@ -26,13 +36,17 @@ function TableProgram({ cards, selectedCard1, semesterData, facultyData }) {
           ))}
         </div>
         <div className="pt-10 md:pt-20">
-          {selectedCard === 0 && (
+          {selectedCard === 0 && selectedCard1 && (
             <div className="bg-white rounded-3xl text-[#3D0018] px-4 md:px-8 py-4 md:py-8 text-[28px] md:text-[40px]">
               {selectedCard1}
             </div>
           )}
+          {selectedCard === 0 && selectedCardTable && (
+            <SelectedCardTable selectedCardTable={selectedCardTable} />
+          )}
           {selectedCard === 1 && <SemesterTable semesterData={semesterData} />}
           {selectedCard === 2 && <FacultyData facultyData={facultyData} />}
+          {selectedCard === 3 && <HOD hod={hod} HODcontent={HODcontent} />}
         </div>
       </div>
     </>

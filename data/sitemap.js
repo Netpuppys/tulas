@@ -125,12 +125,12 @@ const sitemap = [
         title: "Graduate School of Business",
         superNestedLinks: [
           {
-            title: "MBA",
-            linkTo: "/courses/mba/",
-          },
-          {
             title: "BBA",
             linkTo: "/courses/bba/",
+          },
+          {
+            title: "MBA",
+            linkTo: "/courses/mba/",
           },
           {
             title: "B.Com (Hons.)",
