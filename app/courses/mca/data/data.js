@@ -109,7 +109,7 @@ export const cards = [
   { title: "Eligibility" },
   { title: "Curriculum" },
   { title: "Senior Faculty" },
-  { title: "FROM THE DESK of HOD" },
+  { title: "From the Desk of HOD" },
 ];
 
 export const selectedCardTable = [

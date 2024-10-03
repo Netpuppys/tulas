@@ -13,16 +13,16 @@ function TableProgram({
   hod,
   HODcontent,
 }) {
-  const [selectedCard, setSelectedCard] = useState(1); // Index 1 is selected by default
+  const [selectedCard, setSelectedCard] = useState(0); // Index 1 is selected by default
 
   return (
     <>
       <div className="py-10 md:py-20 px-4 w-full max-w-[1200px] mx-auto relative z-[20]">
-        <div className="h-fit rounded-full bg-white py-1 px-1 overflow-hidden flex">
+        <div className="rounded-full bg-white py-1 px-1 overflow-hidden flex items-center">
           {cards.map((card, index) => (
             <div
               key={card.id}
-              className={`w-[33.33%] h-full py-1 rounded-full px-1 flex items-center justify-center cursor-pointer ${
+              className={`w-full py-1 rounded-full px-1 flex items-center justify-center cursor-pointer ${
                 selectedCard === index
                   ? "text-white bg-[#3D001B]"
                   : "text-[#3D001B] bg-white"
@@ -44,9 +44,26 @@ function TableProgram({
           {selectedCard === 0 && selectedCardTable && (
             <SelectedCardTable selectedCardTable={selectedCardTable} />
           )}
-          {selectedCard === 1 && <SemesterTable semesterData={semesterData} />}
-          {selectedCard === 2 && <FacultyData facultyData={facultyData} />}
-          {hod && selectedCard === 3 && <HOD hod={hod} HODcontent={HODcontent} />}
+          {selectedCard === 1 && semesterData && (
+            <SemesterTable semesterData={semesterData} />
+          )}
+          {selectedCard === 1 && !semesterData && (
+            <FacultyData facultyData={facultyData} />
+          )}
+          {selectedCard === 2 && semesterData && (
+            <FacultyData facultyData={facultyData} />
+          )}
+          {selectedCard === 0 &&
+            !selectedCardTable &&
+            !selectedCard1 &&
+            !semesterData &&
+            !hod && <FacultyData facultyData={facultyData} />}
+          {selectedCard === 2 && !semesterData && hod && (
+            <HOD hod={hod} HODcontent={HODcontent} />
+          )}
+          {hod && selectedCard === 3 && (
+            <HOD hod={hod} HODcontent={HODcontent} />
+          )}
         </div>
       </div>
     </>

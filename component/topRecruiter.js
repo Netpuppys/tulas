@@ -63,13 +63,13 @@ function TopRecruiter() {
             key={index}
             className="flex justify-center max-w-[90%} flex-wrap"
           >
-            <div className="flex flex-wrap gap-10 justify-center items-center">
+            <div className="flex flex-wrap gap-10 md:gap-16 justify-center items-center">
               {group.map((image, imgIndex) => (
                 <Image
                   key={imgIndex}
                   src={image}
                   alt="Top Recruiter"
-                  className="w-auto h-20 object-cover grayscale"
+                  className="w-[60px] md:w-[8%] h-fit object-cover grayscale"
                 />
               ))}
             </div>

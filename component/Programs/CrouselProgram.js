@@ -174,10 +174,10 @@ const CarouselProgram = ({ heading, items }) => {
                 <div className="w-full absolute bottom-0 p-2">
                   <h3 className="text-wrap flex items-center gap-1 text-[30px] font-[TTChocolatesBold] w-full border border-b-white group-hover:border-b-black border-transparent text-white group-hover:text-black">
                     <RiArrowRightSFill />
-                    {item.title}
+                    <span className="line-clamp-1">{item.title}</span>
                   </h3>
                   <ul className="ml-5 list-disc">
-                    <li className="text-wrap text-[15px] pt-2 text-white group-hover:text-black">
+                    <li className="text-wrap text-[15px] line-clamp-1 pt-2 text-white group-hover:text-black">
                       {item.description}
                     </li>
                   </ul>
