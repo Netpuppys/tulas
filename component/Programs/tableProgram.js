@@ -12,6 +12,7 @@ function TableProgram({
   facultyData,
   hod,
   HODcontent,
+  specialization,
 }) {
   const [selectedCard, setSelectedCard] = useState(0); // Index 1 is selected by default
 
@@ -63,6 +64,11 @@ function TableProgram({
           )}
           {hod && selectedCard === 3 && (
             <HOD hod={hod} HODcontent={HODcontent} />
+          )}
+          {selectedCard === 4 && specialization && (
+            <div className="bg-white rounded-3xl text-[#3D0018] px-4 md:px-8 py-4 md:py-8 text-[14px] md:text-[20px]">
+              {specialization}
+            </div>
           )}
         </div>
       </div>
