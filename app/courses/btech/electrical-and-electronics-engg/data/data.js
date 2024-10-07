@@ -4,18 +4,15 @@ import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
-import AbhishekChakravorty from "../../../../../public/courses/btech/electronics-and-communication/facultyData/AbhishekChakravorty.webp";
-import NishantSaxena from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NishantSaxena.webp";
-import SunilSemwal from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SunilSemwal.webp";
-import Mukesh from "../../../../../public/courses/btech/electronics-and-communication/facultyData/Mukesh.webp";
-import TripureshJoshi from "../../../../../public/courses/btech/electronics-and-communication/facultyData/TripureshJoshi.webp";
-import sandeepgautam from "../../../../../public/courses/btech/electronics-and-communication/facultyData/sandeepgautam.webp";
-import VaibhavKumar from "../../../../../public/courses/btech/electronics-and-communication/facultyData/VaibhavKumar.webp";
-import MohitKumar from "../../../../../public/courses/btech/electronics-and-communication/facultyData/MohitKumar.webp";
-import SandeepKhantwal from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SandeepKhantwal.webp";
-import himani from "../../../../../public/courses/btech/electronics-and-communication/facultyData/himani.webp";
-import RahulNegi from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RahulNegi.webp";
-import ParwatiBhandari from "../../../../../public/courses/btech/electronics-and-communication/facultyData/ParwatiBhandari.webp";
+import Kothari from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/Kothari.webp";
+import SunilSemwal from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/SunilSemwal.webp";
+import MukeshPathela from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/MukeshPathela.webp";
+import AbhishekChakravorty from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/AbhishekChakravorty.webp";
+import Nanse from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/Nanse.webp";
+import Rashmi from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/Rashmi.webp";
+import VrijMohan from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/VrijMohan.webp";
+import sushmaMam from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/sushmaMam.webp";
+import amitUniyal from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/amitUniyal.webp";
 
 import EEEpdf from "../../../../../public/courses/btech/electrical/EEE.pdf";
 import Link from "next/link";
@@ -351,14 +348,14 @@ export const hod = [
 
 export const facultyData = [
   {
-    name: "Dr. Nishant Saxena",
+    name: "Dr. D.P. Kothari",
     education: "B.Tech, M.Tech., Ph.D.",
-    experience: "20 Yrs.",
-    designation: "Professor and Dean Academics",
-    specialization: "Biomedical Electronics",
+    experience: "53 Yrs.",
+    designation: "Adjunct Professor",
+    specialization: "Power System, Electrical Machines, Networks theory",
     publications:
-      "35+ Research publications in reputed journals and conferences",
-    imageUrl: NishantSaxena,
+      "840 Research publications in reputed journals and conferences",
+    imageUrl: Kothari,
   },
   {
     name: "Dr. Sunil Semwal",
@@ -375,86 +372,66 @@ export const facultyData = [
     name: "Mr. Mukesh Pathela",
     education: "B.E., M.Tech., Ph.D. (Pursuing)",
     experience: "17 Yrs.",
-    designation: "Assistant Professor",
+    designation: "Assistant Professor and HoD",
     specialization:
       "Analog Circuits, Digital Communication, Digital Image Processing",
-    publications:
-      "14 Research publications in reputed journals and conferences",
-    imageUrl: Mukesh,
+    publications: "14",
+    imageUrl: MukeshPathela,
   },
   {
-    name: "Dr. Tripuresh Joshi",
-    education: "B.Tech, M.Tech, Ph.D.",
-    experience: "11 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Soilid State Devices, TFET, Optoelectronics",
-    publications:
-      "15 Research publications in reputed journals and conferences",
-    imageUrl: TripureshJoshi,
-  },
-  {
-    name: "Mr. Sandeep Gautam",
-    education: "Ph.D. (Pursuing)",
-    experience: "12 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Instrumentation and Automation",
-    publications: "9 Research publications in reputed journals and conferences",
-    imageUrl: sandeepgautam,
-  },
-  {
-    name: "Mr. Vaibhav Kumar",
+    name: "Mr. Abhishek Chakravorty",
     education: "B.Tech, M.Tech",
     experience: "10 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Wireless Mobile Communication",
-    publications: "4 Research publications in reputed journals and conferences",
-    imageUrl: VaibhavKumar,
-  },
-  {
-    name: "Mr. Mohit Kumar",
-    education: "B.Tech, M.Tech",
-    experience: "10 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Artificial Intelligence and Bio-Medical",
-    publications: "3 Research publications in reputed journals and conferences",
-    imageUrl: MohitKumar,
-  },
-  {
-    name: "Mr. Sandeep Khantwal",
-    education: "B.Tech, M.Tech, Ph.D. (Pursuing)",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "VLSI",
-    publications:
-      "16 Research publications in reputed journals and conferences",
-    imageUrl: SandeepKhantwal,
-  },
-  {
-    name: "Ms. Himani Rawat",
-    education: "B.Tech, M.Tech",
-    experience: "3 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Communication Systems, Machine Learning",
-    publications: "3",
-    imageUrl: himani,
-  },
-  {
-    name: "Mr. Rahul Negi",
-    education: "B.Tech, M.Tech",
-    experience: "3 Yrs.",
     designation: "Assistant Professor",
     specialization: "Instrumentation and Control",
-    publications: "2 Research publications in reputed journals and conferences",
-    imageUrl: RahulNegi,
+    publications: "7 Research publications in reputed journals and conferences",
+    imageUrl: AbhishekChakravorty,
   },
   {
-    name: "Ms. Parvati Bhandari",
+    name: "Ms. Nanse",
     education: "B.Tech, M.Tech",
     experience: "4 Yrs.",
     designation: "Assistant Professor",
-    specialization: "Wireless and Mobile Communication",
-    publications: "1 Research publication in reputed journals and conferences",
-    imageUrl: ParwatiBhandari,
+    specialization: "Instrumentation",
+    publications: "2 Research publications in reputed journals and conferences",
+    imageUrl: Nanse,
+  },
+  {
+    name: "Ms. Rashmi Dhaundiyal",
+    education: "B.Tech, M.Tech",
+    experience: "6 Yrs.",
+    designation: "Assistant Professor",
+    specialization: "Power System",
+    publications: "2 Research publications in reputed journals and conferences",
+    imageUrl: Rashmi,
+  },
+  {
+    name: "Mr. Vrij Mohan Vidyarthi",
+    education: "B.Tech, M.Tech",
+    experience: "8 Yrs.",
+    designation: "Assistant Professor",
+    specialization: "Power Electronics",
+    publications: "5 Research publications in reputed journals and conferences",
+    imageUrl: VrijMohan,
+  },
+  {
+    name: "Mrs. Sushma",
+    education: "B.Tech, M.Tech",
+    experience: "12 Yrs.",
+    designation: "Assistant Professor",
+    specialization: "Control System",
+    publications: "7 Research publications in reputed journals and conferences",
+    imageUrl: sushmaMam,
+  },
+  {
+    name: "Mr. Amit Unial",
+    education: "B.Tech, M.Tech",
+    experience: "5 Yrs.",
+    designation: "Assistant Professor",
+    specialization:
+      "Power System Optimization, Power Electronic Converters, EV",
+    publications: "N/A",
+    imageUrl: amitUniyal,
   },
 ];
 
