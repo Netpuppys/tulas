@@ -102,7 +102,7 @@ export default function AboutPage() {
   // Listen to the URL changes and scroll to the section when the hash changes
   useEffect(() => {
     if (
-      window.location.pathname === "/about/management-messages" &&
+      window.location.pathname === "/about/management-messages/" &&
       managementRef.current
     ) {
       managementRef.current.scrollIntoView({ behavior: "smooth" });

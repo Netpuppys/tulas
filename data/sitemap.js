@@ -8,12 +8,20 @@ const sitemap = [
     linkTo: "/about/",
     nestedLinks: [
       {
+        title: "About",
+        linkTo: "/about/",
+      },
+      {
         title: "Management Messages",
         linkTo: "/about/management-messages",
       },
       {
         title: "Approval",
         linkTo: "/about/approval/",
+      },
+      {
+        title: "About Dehradun",
+        linkTo: "/about-dehradun/",
       },
       {
         title: "Contact",

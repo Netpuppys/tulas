@@ -76,7 +76,7 @@ function Library() {
               creating digital libraries.
               <br />
               <br />
-              Our Digital library has over 17500+ e-books  and 2200 + e-Journals
+              Our Digital library has over 59000+ e-books and 2400 + e-Journals
               available round the clock through a FTP server on the intranet,
               whereby students can access the material and books anytime from
               anywhere on the campus.
@@ -150,7 +150,7 @@ function Library() {
       </div>
       <button
         onClick={() => {
-          window.location.href = "/tulas-library-e-resources/";
+          window.location.href = "https://tulas-opac.kohacloud.in/";
         }}
         className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
       >
