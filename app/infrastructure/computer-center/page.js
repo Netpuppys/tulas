@@ -36,13 +36,13 @@ function ComputerScience() {
           research and education.
           <ul className="list-disc ml-5">
             <li>
-              More than 500 desktops with 24×7 Wi-Fi internet facility up-to
-              205-Mbps loaded with latest licensed software at the students
+              More than 500 + desktops with 24×7 Wi-Fi internet facility up-to
+              1-Gbps loaded with latest licensed software at the students
               disposal.
             </li>
             <li>
-              The commissioning of the Campus Area Network has been done for 650
-              nodes.
+              The commissioning of the Campus Area Network has been done for
+              650+ nodes.
             </li>
           </ul>
         </>
