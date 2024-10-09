@@ -42,6 +42,20 @@ function Navbar({ setState, position = false }) {
       document.body.style.overflow = "auto";
     };
   }, [isChecked]);
+
+  const handleOutsideClick = () => {
+    if (isChecked) {
+      setExpandedIndex(null);
+      setSuperExpandedIndex(null);
+      setThirdExpandedIndex(null);
+      setNestedLinksVisible(false);
+      setIsChecked(false);
+      setIsChecked(false);
+    }
+    if (nestedLinksVisible) {
+      setNestedLinksVisible(false);
+    }
+  };
   return (
     <div
       className={`px-4 md:px-10 w-full ${
@@ -205,9 +219,16 @@ function Navbar({ setState, position = false }) {
               alt="Tulas Logo"
               className="w-[160px] h-fit pointer-events-auto cursor-pointer"
             />
-
           </Link>
         </div>
+        <div
+          onClick={handleOutsideClick}
+          className={`${
+            isChecked
+              ? "w-full h-screen pointer-events-auto absolute left-0 top-0 bg-opacity-40 bg-black"
+              : ""
+          } transition-all duration-100 ease-linear`}
+        ></div>
         <NavbarMobile isChecked={isChecked} />
         <NavbarDesktop
           setExpandedIndex={setExpandedIndex}
