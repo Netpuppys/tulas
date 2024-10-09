@@ -14,7 +14,7 @@ import Gymnasium from "../../../public/infrastructure/Other/gymnasium.png";
 import guestHouse from "../../../public/infrastructure/Other/guestHouse.png";
 import medical from "../../../public/infrastructure/Other/medical.png";
 import playGround from "../../../public/infrastructure/Other/playGround.png";
-import TulasTransportation from "../../../public/infrastructure/Other/TulasTransportation.webp";
+import TulasTransportation from "../../../public/infrastructure/Other/TulasTransportation.png";
 const sectionsData = [
   {
     title: "Wifi Facility",
