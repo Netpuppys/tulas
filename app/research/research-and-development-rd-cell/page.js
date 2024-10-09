@@ -10,6 +10,9 @@ import { Fade } from "react-awesome-reveal";
 import ICTImage from "../../../public/research/r-and-cell/r-and-cell.png";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
+import Collaborators from "./Component/Collaborators";
+import graph1 from "../../../public/research/r-and-cell/graph1.png";
+import graph2 from "../../../public/research/r-and-cell/graph2.png";
 
 function RAndCell() {
   const { ref, inView } = useInView({
@@ -118,6 +121,20 @@ function RAndCell() {
           />
         </Fade>
       </div>
+      <Collaborators />
+      <h3 className="text-white text-center text-[25px] md:text-[40px] font-[CarotSlab]">
+        Cumulative Citations
+      </h3>
+      <div className="flex items-center flex-col md:flex-row justify-center gap-6 md:gap-[10%] py-8 md:py-14">
+        <Image src={graph1} alt="" className="w-[80%] md:w-[40%]" />
+        <Image src={graph2} alt="" className="w-[80%] md:w-[40%]" />
+      </div>
+      <Link
+        href="/research/research-and-development-rd-cell/funded-projects-and-grants/"
+        className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
+      >
+        Funded Projects and Grants
+      </Link>
       <div className="w-full h-fit z-50">
         <Footer color={true} />
       </div>
