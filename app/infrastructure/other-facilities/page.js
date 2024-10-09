@@ -14,19 +14,19 @@ import Gymnasium from "../../../public/infrastructure/Other/gymnasium.png";
 import guestHouse from "../../../public/infrastructure/Other/guestHouse.png";
 import medical from "../../../public/infrastructure/Other/medical.png";
 import playGround from "../../../public/infrastructure/Other/playGround.png";
-
+import TulasTransportation from "../../../public/infrastructure/Other/TulasTransportation.webp";
 const sectionsData = [
   {
     title: "Wifi Facility",
     description: (
       <>
-        Availability of 24Hrs Wi-Fi internet access in the campus with 205 mbps
+        Availability of 24Hrs Wi-Fi internet access in the campus with 1 Gbps
         speed and Comprehensive e-learning environment provided in the campus,
         enables all the students and faculty members to be connected which is
         essential for effective learning.
         <br />
         <br />
-        Our Digital library has over 5800+ e-books available round the clock
+        Our Digital library has over 59000+ e-books available round the clock
         through a FTP server on the intranet. Students can access the material
         and books anytime from anywhere on the campus.
       </>
@@ -90,6 +90,40 @@ const sectionsData = [
     description:
       "A play ground facility is available for sports like cricket, football, volley ball, throw ball, basket ball, badminton and many other outdoor games.A play ground facility is available for sports like cricket, football, volley ball, throw ball, basket ball, badminton and many other outdoor games.",
     image: playGround,
+  },
+  {
+    title: "Transportation",
+    description: (
+      <>
+        The college offers transportation to all students and members of faculty
+        to the prime locations. Safe and comfortable transportation buses are
+        provided by the Tula`s Institute. Students are picked up and dropped at
+        fixed points within 500 metre radius of their residences.
+        <br />
+        <br />
+        The Institute provides transportation facilities to students. The
+        parents who want to send their children to Institute by Institute l bus
+        should apply for it at the beginning of the academic year. Bus fees will
+        be collected in three instalments. The Institute bus facility should be
+        availed for an entire term. One months’ notice in writing should be
+        given for discontinuance of the bus facility. Requests for change of
+        boarding points must be made in writing one month in advance. Nobody
+        without a valid bus pass will be allowed to board the bus.
+        <br />
+        <br />
+        Loss of the pass shall be reported promptly at the Institute office.
+        Commuting by Institute bus is an occasion for the pupils to cultivate
+        good habits like patience, forbearance, tolerance, sympathy, team
+        spirit, cooperation and consideration for others. Gentlemanly and
+        exemplary behaviour is expected of all the students in the bus and at
+        the boarding points where they wait for the bus. Strong and prompt
+        disciplinary action will be taken against the students who misbehave. If
+        the Institute bus fails to ply on any day on account of some unforeseen
+        difficulty, the students should come to Institute by other means. No
+        complaint will be entertained on such issues.
+      </>
+    ),
+    image: TulasTransportation,
   },
 ];
 
