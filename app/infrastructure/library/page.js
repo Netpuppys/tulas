@@ -138,12 +138,7 @@ function Library() {
               is spread on an area of more than 448 sq m with varied books on
               Basic Sciences, Engineering and Technology, Humanities, Social
               Sciences and Management.
-              <br />
-              <br />
-              Our Digital library has over 17500+ e-books  and 2200 + e-Journals
-              available round the clock through a FTP server on the intranet,
-              whereby students can access the material and books anytime from
-              anywhere on the campus.
+              
             </h4>
           </div>
         </Fade>
