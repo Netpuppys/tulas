@@ -9,7 +9,7 @@ import background from "../../../../public/research/r-and-cell/journal/backgroun
 import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
 
-function RAndDFunded() {
+function RAndDConferenceOrganized() {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
@@ -62,4 +62,4 @@ function RAndDFunded() {
   );
 }
 
-export default RAndDFunded;
+export default RAndDConferenceOrganized;

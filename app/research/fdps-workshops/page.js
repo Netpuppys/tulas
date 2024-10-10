@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
 import Banner from "@/component/Banner";
-import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
-import background from "../../../../public/research/r-and-cell/funded-projects-and-grants/background.png";
+import background from "../../../public/research/r-and-cell/funded-projects-and-grants/background.png";
 import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
 
-function RAndDConferencePublication() {
+function RAndFDPS() {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
@@ -22,23 +22,25 @@ function RAndDConferencePublication() {
         image={BannerImg}
         title={
           <>
-            Books, Conference
-            <span className="text-[#007A83]"> & Book Chapters</span>
+            FDPs &<span className="text-[#007A83]">Workshops</span>
           </>
         }
         description={<></>}
         belowTitle={<></>}
         belowPara={
           <>
-            At Tula’s Institute, we recognize the importance of Books, book
-            chapters and conference publication as a significant aspect of
-            academic learning and research. We encourage our faculty,
-            researchers, and students to actively participate in conferences
-            relevant to their areas of expertise and share their research
-            findings with the wider academic community.
-            <br />
-            <br />
-            List of books, book chapter and Conferences are listed below:
+            The FDP offers a collaborative learning strategy in the form of
+            workshops and seminars. Participants are encouraged to gain
+            knowledge of curriculum development and academic administration. The
+            FDP necessitates a significant amount of effort from participants in
+            terms of individual preparation as well as a group activity. As
+            faculty members visit the other campuses and interact with people
+            from various backgrounds, they gain more than simply classroom
+            experiences. Participants are frequently given the opportunity to
+            tour industrial sites, attend research seminars, special guest
+            lectures, and workshops. Participants are strongly encouraged to
+            generate their own cases or research projects on their own
+            initiative. The list of the same is given below:
           </>
         }
       />
@@ -62,4 +64,4 @@ function RAndDConferencePublication() {
   );
 }
 
-export default RAndDConferencePublication;
+export default RAndFDPS;

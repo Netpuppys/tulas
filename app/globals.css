@@ -173,6 +173,7 @@ td {
 th {
   border: 1px solid #3d001b;
   font-size: 18px;
+  text-align: center;
 }
 th {
   background-color: #fff;
