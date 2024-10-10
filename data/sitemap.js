@@ -226,10 +226,10 @@ const sitemap = [
         title: "Research and Development (R&D) Cell",
         linkTo: "/research/research-and-development-rd-cell/",
         superNestedLinks: [
-          {
-            title: "Funded Research Projects",
-            linkTo: "/research/research-and-development-rd-cell/",
-          },
+          // {
+          //   title: "Funded Research Projects",
+          //   linkTo: "/research/research-and-development-rd-cell/",
+          // },
           {
             title: "Funded Projects and Grants",
             linkTo:
