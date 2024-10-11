@@ -1,5 +1,6 @@
 import Plagiarism from "../public/research/plagiarism-policy.pdf";
 import Research_Remuneration_Form from "../public/research/Research_Remuneration_Form.pdf";
+import NewResearchPolicy from "../public/research/NewResearchPolicy.pdf";
 const sitemap = [
   {
     title: "Home",
@@ -258,7 +259,7 @@ const sitemap = [
           },
           {
             title: "Research Policy",
-            linkTo: "",
+            linkTo: NewResearchPolicy,
           },
           {
             title: "Plagiarism Policy",
