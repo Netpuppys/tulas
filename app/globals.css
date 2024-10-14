@@ -42,6 +42,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: white;
+  color: white;
 }
 ::-webkit-scrollbar {
   width: 6px;
