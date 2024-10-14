@@ -20,7 +20,7 @@ function NavbarDesktop({
   const handleExpandNestedLinks = (index) => {
     if (expandedIndex !== index) {
       setActiveLink(index);
-    } 
+    }
 
     setNestedLinksVisible(true);
     setSuperExpandedIndex(null);
@@ -30,10 +30,9 @@ function NavbarDesktop({
   };
 
   const handleExpandSuperNestedLinks = (index) => {
-    if (superExpandedIndex!== index) {
+    if (superExpandedIndex !== index) {
       setSuperExpandedIndex(index);
-    } 
-    else{
+    } else {
       setSuperExpandedIndex(null);
     }
     setThirdExpandedIndex(null);
@@ -54,7 +53,7 @@ function NavbarDesktop({
             : "animate-translateRightMenu left-[-100%]"
         }`}
       >
-        <div className="w-full h-[calc(100vh-440px)] relative top-[200px] overflow-auto">
+        <div className="w-full h-[calc(100vh-350px)] relative top-[200px] overflow-auto">
           {sitemap.map((item, index) => (
             <div
               className="border-t border-[#C5C5C5] flex flex-col w-full h-fit"
