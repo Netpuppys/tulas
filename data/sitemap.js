@@ -297,6 +297,14 @@ const sitemap = [
             title: "IIC Events",
             linkTo: "/research/institute-innovation-council-iic/iic-events/",
           },
+          {
+            title: "IAAS Events",
+            linkTo: "/research/institute-innovation-council-iic/iaas-events/",
+          },
+          {
+            title: "IEEE SB Events",
+            linkTo: "/research/institute-innovation-council-iic/ieee-sb-events/",
+          },
         ],
       },
       {
