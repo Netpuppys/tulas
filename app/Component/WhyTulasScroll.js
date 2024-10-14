@@ -147,7 +147,7 @@ function WhyTulasScroll({ parentRef }) {
             <div className="absolute w-fit md:-translate-y-1/2 z-30 top-3/4 left-0 md:top-1/2 flex items-center justify-start">
               <div className="flex w-full md:w-40 md:flex-col text-[60px] items-center justify-center">
                 <button
-                  className={`pointer-events-auto shadow-2xl ${
+                  className={`pointer-events-auto text-white shadow-2xl ${
                     index === 0 ? "cursor-not-allowed" : "cursor-pointer"
                   }`}
                   onClick={handleForwardClick}
@@ -156,7 +156,7 @@ function WhyTulasScroll({ parentRef }) {
                   <IoArrowForwardCircleOutline />
                 </button>
                 <button
-                  className={`pointer-events-auto shadow-2xl ${
+                  className={`pointer-events-auto text-white shadow-2xl ${
                     index === images.length - 1
                       ? "cursor-not-allowed"
                       : "cursor-pointer"

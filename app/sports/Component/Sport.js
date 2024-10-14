@@ -157,7 +157,7 @@ function SportsScroll({ parentRef }) {
             <div className="absolute w-fit mx-auto z-30 top-[80%] md:left-0 md:top-[52.5%] flex items-center justify-center md:justify-start">
               <div className="flex w-fit md:w-40 md:flex-col text-[60px] items-center justify-center">
                 <button
-                  className={`pointer-events-auto shadow-2xl ${
+                  className={`pointer-events-auto text-white shadow-2xl ${
                     index === 0 ? "cursor-not-allowed" : "cursor-pointer"
                   }`}
                   onClick={handleForwardClick}
@@ -166,7 +166,7 @@ function SportsScroll({ parentRef }) {
                   <IoArrowForwardCircleOutline />
                 </button>
                 <button
-                  className={`pointer-events-auto shadow-2xl ${
+                  className={`pointer-events-auto text-white shadow-2xl ${
                     index === images.length - 1
                       ? "cursor-not-allowed"
                       : "cursor-pointer"

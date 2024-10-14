@@ -69,7 +69,7 @@ function TopRecruiter() {
                   key={imgIndex}
                   src={image}
                   alt="Top Recruiter"
-                  className="w-[60px] md:w-[8%] h-fit object-cover grayscale"
+                  className="w-[60px] md:w-[8%] h-fit object-cover"
                 />
               ))}
             </div>

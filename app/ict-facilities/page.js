@@ -76,7 +76,7 @@ function ICTFacilities() {
       >
         <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
           <div className="w-full block">
-            <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
+            <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
               ICT Facilities
             </h3>
             <br />
@@ -128,7 +128,7 @@ function ICTFacilities() {
                 alt="logo"
                 className="rounded-2xl w-full"
               />
-              <p className="font-semibold text-center text-base md:text-xl tracking-tight p-3">
+              <p className="font-semibold text-white text-center text-base md:text-xl tracking-tight p-3">
                 {card.title}
               </p>
               <p className="text-[#D3D3D3] text-[12px] md:text-[15px] text-center p-3 pt-0">

@@ -130,7 +130,7 @@ function Contact() {
                   <Image src={card.image} alt="" className="w-[48px] h-fit" />
                   {card.title}
                   <br />
-                  <p className="max-w-[169px] text-wrap">{card.description}</p>
+                  <p className="max-w-[169px] text-white text-wrap">{card.description}</p>
                 </Link>
               </Fade>
             ))}
@@ -142,7 +142,7 @@ function Contact() {
                   key={index}
                   className="w-fit h-fit text-center flex flex-col items-center justify-center gap-4 md:gap-14"
                 >
-                  <h4 className="max-w-[257px] font-[TTChocolatesBold] font-extrabold text-[22px]">
+                  <h4 className="max-w-[257px] text-white font-[TTChocolatesBold] font-extrabold text-[22px]">
                     {mobileContact.title}
                   </h4>
 

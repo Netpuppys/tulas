@@ -118,7 +118,7 @@ function BannerHome({ isChecked }) {
         <h2 className="text-[38px] md:text-[60px] text-white z-10 font-[CarotSlab]">
           {title}
         </h2>
-        <h4 className="w-full md:w-[50%] text-sm md:text-lg font-[TTChocolates]">
+        <h4 className="w-full md:w-[50%] text-sm text-white md:text-lg font-[TTChocolates]">
           {paragraph}
         </h4>
       </div>
@@ -128,7 +128,7 @@ function BannerHome({ isChecked }) {
       >
         <div className="relative w-full h-full flex justify-center items-center">
           <Image
-            className="animate-scrollSpin absolute w-full h-fit"
+            className="animate-scrollSpin absolute w-full h-fit text-white"
             src={ScrollImage}
             alt=""
           />

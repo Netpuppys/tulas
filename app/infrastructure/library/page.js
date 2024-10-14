@@ -65,7 +65,7 @@ function Library() {
       <div className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[90%] mx-auto h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between">
         <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
           <div className="w-full block">
-            <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
+            <h3 className="px-4 text-white md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
               Digital Library
             </h3>
             <br />
@@ -129,7 +129,7 @@ function Library() {
         </Fade>
         <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
           <div className="w-full block">
-            <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
+            <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
               Reference Library
             </h3>
             <br />

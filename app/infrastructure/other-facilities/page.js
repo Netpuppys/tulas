@@ -135,7 +135,7 @@ const Section = ({ section, index }) => (
   >
     <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
       <div className="w-full block">
-        <h3 className="px-4 md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
+        <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
           {section.title}
         </h3>
         <br />

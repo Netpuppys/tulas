@@ -94,14 +94,14 @@ function Management() {
         className="w-full h-fit flex flex-col justify-center items-center"
       >
         <h3
-          className={`font-[CarotSlab] text-[52px] ${
+          className={`font-[CarotSlab] text-white text-[52px] ${
             inView ? "animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
           MEET OUR MANAGEMENT
         </h3>
         <h5
-          className={`font-[Rothwood] text-[20px] max-w-[665px] italic text-center font-medium ${
+          className={`font-[Rothwood] text-white text-[20px] max-w-[665px] italic text-center font-medium ${
             inView ? "animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
@@ -130,7 +130,7 @@ function Management() {
                     className="rounded-3xl mb-2 w-[265px] h-[372px] object-cover"
                   />
                 </Fade>
-                <h2 className="font-[TTChocolatesBold] font-semibold text-[37px] text-center">
+                <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[37px] text-center">
                   {card.name}
                 </h2>
                 <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[22px] text-center">

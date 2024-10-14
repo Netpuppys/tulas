@@ -14,7 +14,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           <h3 className="text-[40px] md:text-[60px] text-white z-10 font-[CarotSlab]">
             {title}
           </h3>
-          <h4 className="w-full md:w-[50%] text-sm md:text-lg font-[TTChocolates]">
+          <h4 className="w-full md:w-[50%] text-white text-sm md:text-lg font-[TTChocolates]">
             {description}
           </h4>
         </div>

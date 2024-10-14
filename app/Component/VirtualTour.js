@@ -85,7 +85,7 @@ function VirtualTour() {
           <div key={index} className="flex flex-col items-center">
             <Image src={stat.img} alt={stat.title} />
             <h3
-              className="text-[40px] font-[TTChocolatesBold]"
+              className="text-[40px] text-white font-[TTChocolatesBold]"
               style={{
                 textShadow: "0px 4px 26px #40E269",
               }}
@@ -93,7 +93,7 @@ function VirtualTour() {
               {stat.animatedStatNo || stat.start}
               {"+"}
             </h3>
-            <h3 className="text-[18px] font-[TTChocolatesBold]">
+            <h3 className="text-[18px] text-white font-[TTChocolatesBold]">
               {stat.title}
             </h3>
           </div>
