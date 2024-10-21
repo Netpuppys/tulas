@@ -59,7 +59,7 @@ function Program({ parentRef, images, content }) {
         <div
           className={`${
             scrollY > 0 ? "fixed" : "absolute"
-          } top-0 left-0 w-screen h-screen z-[9] bg-no-repeat bg-cover bg-center`}
+          } top-0 left-0 w-full h-screen z-[9] bg-no-repeat bg-cover bg-center`}
           style={{
             backgroundImage: `url(${randomImage.src})`,
             transform: `scale(${scaleLeaf})`,

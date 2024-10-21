@@ -19,7 +19,7 @@ const AboutFacultyModal = ({ setActiveProfile, activeProfile, relatedProfiles })
 
   return (
     <div 
-        className="w-screen h-screen z-[9999] pointer-events-auto  fixed top-0 left-0 bg-black overflow-y-scroll bg-opacity-40 backdrop-blur-sm flex items-start justify-end"
+        className="w-full h-screen z-[9999] pointer-events-auto  fixed top-0 left-0 bg-black overflow-y-scroll bg-opacity-40 backdrop-blur-sm flex items-start justify-end"
     >
         <div ref={scrollRef} className="w-full md:w-[45vw] h-screen z-[9999] animate-translateRight pointer-events-auto bg-white overflow-y-scroll">
             

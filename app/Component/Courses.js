@@ -68,7 +68,7 @@ function Courses({ parentRef }) {
         <div
           className={`${
             scrollY > 0 && scrollY < componentHeight ? "fixed" : "absolute"
-          } top-0 left-0 w-screen h-screen z-[11] bg-no-repeat bg-cover bg-center`}
+          } top-0 left-0 w-full h-screen z-[11] bg-no-repeat bg-cover bg-center`}
           style={{
             backgroundImage: `url(${BackgroundLeaf.src})`,
             transform: `scale(${scaleLeaf})`,
@@ -79,7 +79,7 @@ function Courses({ parentRef }) {
         <div
           className={`${
             scrollY > 0 && scrollY < componentHeight ? "fixed" : "absolute"
-          } top-0 left-0 flex items-center justify-center w-screen h-screen z-10 bg-no-repeat bg-cover bg-center`}
+          } top-0 left-0 flex items-center justify-center w-full h-screen z-10 bg-no-repeat bg-cover bg-center`}
           style={{
             backgroundImage: `url(${BackgroundCourses.src})`,
             transform: `scale(${scale})`,

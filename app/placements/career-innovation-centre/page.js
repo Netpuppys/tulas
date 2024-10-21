@@ -39,7 +39,7 @@ const page = () => {
     <div className='w-full min-h-screen'>
         <Image
             src={background}
-            className='fixed -z-10 w-screen object-cover top-0 left-0'
+            className='fixed -z-10 w-full object-cover top-0 left-0'
             alt=''
         />
 

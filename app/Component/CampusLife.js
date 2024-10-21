@@ -85,12 +85,12 @@ const CampusLife = () => {
                   <div
                     key={index}
                     style={{ height: contHeight }}
-                    className="w-screen h-full relative overflow-hidden flex items-center justify-center"
+                    className="w-full h-full relative overflow-hidden flex items-center justify-center"
                   >
                     <Image
                       src={image}
                       height={contHeight}
-                      className="w-screen h-full object-cover"
+                      className="w-full h-full object-cover"
                       alt=""
                     />
                     <div className="absolute top-0 left-0 w-full h-full z-10 bg-[#007A83] bg-opacity-30"></div>
