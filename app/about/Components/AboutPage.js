@@ -182,7 +182,7 @@ export default function AboutPage() {
       <Location />
       {/* Add ref to the Management component */}
       <div ref={managementRef}>
-        <Management />
+        <Management  />
       </div>
       <Footer />
     </>

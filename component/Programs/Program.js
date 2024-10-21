@@ -68,7 +68,7 @@ function Program({ parentRef, images, content }) {
         ></div>
       </div>
 
-      <div ref={ref} className="z-40 bg-transparent h-fit relative pl-4">
+      <div ref={ref} className="z-[9] bg-transparent h-fit relative pl-4">
         <h5 className="w-full text-white md:w-[50%] px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
           {content}
         </h5>
