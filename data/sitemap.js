@@ -303,7 +303,8 @@ const sitemap = [
           },
           {
             title: "IEEE SB Events",
-            linkTo: "/research/institute-innovation-council-iic/ieee-sb-events/",
+            linkTo:
+              "/research/institute-innovation-council-iic/ieee-sb-events/",
           },
         ],
       },
@@ -325,12 +326,12 @@ const sitemap = [
         linkTo: "/bank-details/",
       },
       {
-        title: "E-Prospectus",
-        linkTo: "/download-e-prospectus/",
-      },
-      {
         title: "Pay Fee Online",
         linkTo: "/pay-fee-online/",
+      },
+      {
+        title: "E-Prospectus",
+        linkTo: "/download-e-prospectus/",
       },
     ],
   },

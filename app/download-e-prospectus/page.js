@@ -1,5 +1,5 @@
 import React from "react";
-import AdmissionPage from "./Components/AdmissionPage";
+import AdmissionPage from "../admission-procedure/Components/AdmissionPage";
 
 function page() {
   return (

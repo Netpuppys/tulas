@@ -17,8 +17,8 @@ import Link from "next/link";
 
 function TableRender({ tableData }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 md:gap-6">
-      <table className="w-full mb-4 md:mb-20">
+    <div className="flex flex-col items-center justify-center gap-4 md:gap-6 overflow-x-scroll">
+      <table className="w-full mb-4 md:mb-20 ">
         <thead>
           <tr className="font-[900]">
             <th className="w-[5%]">S.NO</th>
