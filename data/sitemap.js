@@ -358,6 +358,10 @@ const sitemap = [
         title: "Industries Tie-ups",
         linkTo: "/placements/industries-tie-up/",
       },
+      {
+        title: "Career Innovation Centre",
+        linkTo: "/placements/career-innovation-centre/"
+      }
     ],
   },
   {

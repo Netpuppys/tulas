@@ -3,12 +3,27 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
 import { RiArrowRightSFill } from "react-icons/ri";
+import ActiveCardModal from "./components/ActiveCardModal";
 //import { PiArrowRight } from "react-icons/pi";
 
 const CarouselProgram = ({ heading, items }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
-  const [disabled, setDisabled] = useState(false);
+
+  const [ activeIndex, setActiveIndex ] = useState(0);
+  const [ disabled, setDisabled ] = useState(false);
+  const [ activeCard, setActiveCard ] = useState(null)
+
+  useEffect(() => {
+    if (activeCard) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [activeCard]);
 
   const handleNext = () => {
     if (activeIndex < items.length - 1) {
@@ -114,7 +129,17 @@ const CarouselProgram = ({ heading, items }) => {
   }, []);
 
   return (
-    <div className="relative z-20">
+    <div className="relative z-[99]">
+
+      {activeCard &&
+        <ActiveCardModal
+          card={activeCard}
+          setActiveCard={setActiveCard}
+          items={items}
+          heading={heading}
+        />
+      }
+
       <div className="flex w-full justify-between items-center px-0 md:px-[5%]">
         <h8 className="text-[80px] w-full text-center md:text-start md:text-[200px] leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_20px_0px_0_black]">
           {heading}
@@ -160,6 +185,7 @@ const CarouselProgram = ({ heading, items }) => {
             {items.map((item, index) => (
               <div
                 key={index}
+                onClick={() => setActiveCard(item)}
                 className={`relative min-w-[348px] group max-w-[348px] h-[460px] transition-all duration-500 ease-in-out ${
                   activeIndex === index ? "" : ""
                 }`}
@@ -169,8 +195,10 @@ const CarouselProgram = ({ heading, items }) => {
                   alt=""
                   className="w-full h-full object-cover"
                 />
+                
                 <div className="absolute group-hover:animate-overlay inset-0 group-hover:bg-white group-hover:opacity-60"></div>
                 <div className="absolute block group-hover:hidden inset-0 bg-black opacity-60"></div>
+
                 <div className="w-full absolute bottom-0 p-2">
                   <h3 className="text-wrap flex items-center gap-1 text-[30px] font-[TTChocolatesBold] w-full border border-b-white group-hover:border-b-black border-transparent text-white group-hover:text-black">
                     <RiArrowRightSFill />
@@ -185,8 +213,9 @@ const CarouselProgram = ({ heading, items }) => {
               </div>
             ))}
           </div>
+
           {/* Navigation Controls */}
-          <div className="absolute -bottom-6 z-20 right-14 md:right-20 text-[30px] md:text-[50px] flex space-x-4">
+          <div className="absolute -bottom-6 z-[9] right-14 md:right-20 text-[30px] md:text-[50px] flex space-x-4">
             <button
               disabled={disabled}
               onClick={handlePrev}

@@ -17,9 +17,9 @@ module.exports = {
       animation: {
         scrollSpin: "scrollSpin 6s linear infinite",
         scrollSpinExpand: "scrollSpinExpand 0.1s linear",
-        translateLeft: "translateLeft 0.8s linear",
+        translateLeft: "translateLeft 0.4s linear",
         translateLeftMenu: "translateLeftMenu 0.3s linear",
-        translateRight: "translateRight 0.8s linear",
+        translateRight: "translateRight 0.4s linear",
         translateRightMenu: "translateRightMenu 0.3s linear",
         translateTop: "translateTop 0.8s linear",
         translateBottom: "translateBottom 0.8s linear",

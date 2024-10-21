@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef } from "react";
 import BannerImg from "../../../../public/bsc-agriculture/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
@@ -24,6 +25,7 @@ import {
   selectedCardTable,
   semesterData,
 } from "./data/data";
+
 function BAJMC() {
   const parentRef = useRef(null);
 
@@ -34,16 +36,18 @@ function BAJMC() {
       </div>
       <BannerProgram
         image={BannerImg}
-        title=<>
+        title={<>
           CIVIL <span className="text-[#760135]">ENGINEERING</span>
-        </>
+        </>}
         titleColor={""}
         description={
-          "The Civil Engineering Department of Tula’s Institute came into existence in the year 2011. The department offers Diploma, Undergraduate, and Postgraduate programs in civil engineering."
+          "The Civil Engineering Department of Tula's Institute came into existence in the year 2011. The department offers Diploma, Undergraduate, and Postgraduate programs in civil engineering."
         }
       />
       <Program parentRef={parentRef} images={images} content={content} />
+
       <CarouselProgram heading={"Discover"} items={items} />
+
       <Vision sections={sections} />
       <TableProgram
         cards={cards}
@@ -55,6 +59,7 @@ function BAJMC() {
       />
       <TopRecruiter />
       <CarouselProgram heading={"Explore More"} items={itemsClubs} />
+
       <div className="w-full relative overflow-hidden">
         <Image
           src={background}
@@ -62,6 +67,7 @@ function BAJMC() {
           alt=""
         />
       </div>
+      
       <Footer />
     </div>
   );

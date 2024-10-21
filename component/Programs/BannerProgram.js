@@ -11,7 +11,7 @@ function BannerProgram({ image, title, titleColor, description }) {
           className="w-full h-full object-cover absolute rounded-3xl"
         />
       </div>
-      <div className="-mt-[18vh] md:-mt-[10vh] w-[70%]  md:w-[50%] z-10 relative">
+      <div className="-mt-[18vh] md:-mt-[10vh] w-[70%]  md:w-[50%] z-[9] relative">
         <h3 className="text-[38px] max-w-[290px] md:max-w-full leading-none md:leading-normal mb-2 md:mb-0 md:text-[60px] text-black z-10 font-[CarotSlab]">
           {title} <span className="text-[#760135]">{titleColor}</span>
         </h3>

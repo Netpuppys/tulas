@@ -15,10 +15,12 @@ import shipra from "../../../../../public/courses/btech/civil-engineering/facult
 import MohitBisht from "../../../../../public/courses/btech/civil-engineering/facultyData/MohitBisht.webp";
 import ArunAgarwal from "../../../../../public/courses/btech/civil-engineering/facultyData/ArunAgarwal.webp";
 import Link from "next/link";
+
 export const images = [
   civil,
   // Add more image paths as needed
 ];
+
 export const content = (
   <>
     The Civil Engineering Department of Tula’s Institute came into existence in
@@ -33,12 +35,18 @@ export const content = (
     right choice.
   </>
 );
+
 export const items = [
   {
     title: "USP's",
     description:
       "The programs emphasize on industry and research based projects, which would enhance skills to become successful professionals.",
     image: USP,
+    points: [
+      "The infrastructure sector has become the biggest focus area for the Government of India.",
+      "The Govt. is providing special allocations in budget to complement infrastructure growth and housing for all schemes which in turn generates employment for the civil engineers. Also, India and Japan have joined hands for infrastructure development in India’s Northeast states to undertake strategic infrastructure projects for the region.",
+      "It is the oldest branch of engineering & serves as the base of engineering."
+    ]
   },
   {
     title: "Course Outcomes",
@@ -110,12 +118,14 @@ export const sections = [
     image: DepartmentalMission,
   },
 ];
+
 export const cards = [
   { title: "Eligibility" },
   { title: "Curriculum" },
   { title: "Senior Faculty" },
   { title: "From the Desk of HOD" },
 ];
+
 export const selectedCardTable = [
   {
     sno: 1,
