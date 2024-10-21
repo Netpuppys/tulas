@@ -70,38 +70,19 @@ function Navbar({ setState, position = false }) {
             Admission Helpline No. +91-6366937159
           </div>
         </a>
-        <div className="flex gap-6">
-          <button
-            onClick={() => (window.location.href = "/pay-fee-online/")}
-            className={`font-[TTChocolates] px-8 py-2 border-2 rounded-full ${
-              position
-                ? "text-[#760135] border-[#760135]"
-                : "border-[#fff] text-[#fff]"
-            }`}
-          >
-            Pay Online
-          </button>
-          <button
-            onClick={() => (window.location.href = "/admissions2024/")}
-            className={`font-[TTChocolates] px-8 py-2 border-2 rounded-full ${
-              position
-                ? "text-white border-[#760135] bg-[#760135]"
-                : "text-[#222] border-white bg-white"
-            }`}
-          >
-            Apply Now
-          </button>
-          <button
-            onClick={() => (window.location.href = "/virtual-tour/index.html")}
-            className={`font-[TTChocolates] px-8 py-2 border-2 rounded-full ${
-              position
-                ? "text-[#760135] border-[#760135]"
-                : "border-[#fff] text-[#fff]"
-            }`}
-          >
-            Virtual Tour
-          </button>
-        </div>
+        <Link href="/" className="z-[3333]">
+          <Image
+            src={
+              (isChecked && position) || isChecked
+                ? TulasLogoGreen
+                : position
+                ? TulasLogoRed
+                : TulasLogo
+            }
+            alt=""
+            className="w-[160px] h-fit pointer-events-auto cursor-pointer"
+          />
+        </Link>
       </div>
       {/* main navbar */}
       <div className="w-full pt-8 md:pt-0 h-fit">
@@ -207,7 +188,7 @@ function Navbar({ setState, position = false }) {
               </h3>
             </button>
           </div>
-          <Link href="/" className="z-[3333]">
+          <Link href="/" className="z-[3333] md:hidden">
             <Image
               src={
                 (isChecked && position) || isChecked
@@ -216,7 +197,7 @@ function Navbar({ setState, position = false }) {
                   ? TulasLogoRed
                   : TulasLogo
               }
-              alt="Tulas Logo"
+              alt=""
               className="w-[160px] h-fit pointer-events-auto cursor-pointer"
             />
           </Link>

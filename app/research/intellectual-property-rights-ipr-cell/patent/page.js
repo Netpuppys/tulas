@@ -8,12 +8,34 @@ import Footer from "@/component/Footer";
 import background from "../../../../public/research/r-and-cell/journal/background.png";
 import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
+import patent1 from "../../../../public/research/patents/patent1.jpg";
+import patent2 from "../../../../public/research/patents/patent2.png";
+import patent3 from "../../../../public/research/patents/patent3.png";
+import patent4 from "../../../../public/research/patents/patent4.png";
+import patent5 from "../../../../public/research/patents/patent5.png";
+import patent6 from "../../../../public/research/patents/patent6.png";
+import patent7 from "../../../../public/research/patents/patent7.png";
+import patent8 from "../../../../public/research/patents/patent8.png";
+import patent9 from "../../../../public/research/patents/patent9.png";
+import patent10 from "../../../../public/research/patents/patent10.jpg";
 
 function Patent() {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
   });
+  const patentImages = [
+    patent1,
+    patent2,
+    patent3,
+    patent4,
+    patent5,
+    patent6,
+    patent7,
+    patent8,
+    patent9,
+    patent10,
+  ];
 
   return (
     <div className="flex flex-col items-center overflow-hidden">
@@ -50,7 +72,11 @@ function Patent() {
           <TableComponent />
         </div>
       </div>
-
+      <div className="px-8 pb-8 md:px-32 md:pb-32 flex flex-col items-center justify-center">
+        <h3 className="font-[CarotSlab] text-[clamp(25px,3vw,75px)]">
+          ALL PATENTS
+        </h3>
+      </div>
       <div className="w-full h-fit z-50">
         <Footer color={true} />
       </div>

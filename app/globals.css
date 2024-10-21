@@ -43,6 +43,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
   color: white;
+  font-family: "TTChocolates";
 }
 ::-webkit-scrollbar {
   width: 6px;

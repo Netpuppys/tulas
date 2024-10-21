@@ -19,11 +19,11 @@ function TableProgram({
   return (
     <>
       <div className="py-10 md:py-20 px-4 w-full max-w-[1200px] mx-auto relative z-[20]">
-        <div className="rounded-full bg-white py-1 px-1 overflow-hidden flex items-center">
+        <div className="md:rounded-full md:bg-white py-1 px-1 overflow-hidden flex flex-col md:flex-row gap-2 md:gap-0 items-center">
           {cards.map((card, index) => (
             <div
               key={card.id}
-              className={`w-full py-1 rounded-full px-1 flex items-center justify-center cursor-pointer ${
+              className={`w-full py-1 rounded-full px-1 flex  items-center justify-center cursor-pointer ${
                 selectedCard === index
                   ? "text-white bg-[#3D001B]"
                   : "text-[#3D001B] bg-white"
