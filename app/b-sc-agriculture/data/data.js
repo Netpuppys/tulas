@@ -77,31 +77,31 @@ export const items = [
   {
     title: "USP's",
     description:
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
     image: USP,
   },
   {
     title: "Course Outcomes",
     description:
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
     image: Course,
   },
   {
     title: "Program Outcomes",
     description:
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
     description:
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
     image: Course,
   },
   {
     title: "Program Educational Objective",
     description:
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
     image: Program,
   },
 
@@ -402,19 +402,19 @@ export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
     description:
-      "Following Clubs/Societies/ Memberships are running in the department",
+      ["Following Clubs/Societies/ Memberships are running in the department"],
     image: USP,
   },
   {
     title: "Beyond Curriculum",
     description:
-      "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s.",
+      ["Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s."],
     image: Course,
   },
   {
     title: "Career Prospects",
     description:
-      "Agriculture Research Scientist Subject Matter Specialist in different Krishi Vigyan Kendras (KVKs)",
+      ["Agriculture Research Scientist Subject Matter Specialist in different Krishi Vigyan Kendras (KVKs)"],
     image: Program,
   },
 

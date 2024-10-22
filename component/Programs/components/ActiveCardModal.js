@@ -52,35 +52,44 @@ const ActiveCardModal = ({
         </div>
 
         {/* content div */}
-        <div className="flex-col-reverse md:flex-row items-center md:items-start flex gap-6 justify-between px-10 py-16">
-          <div className="">
-            <p
-              className={`${
-                color ? "text-[#007A83]" : "text-[#760135]"
-              } underline underline-offset-8 text-3xl font-[CarotSlab] font-medium`}
-            >
-              {card?.title}
-            </p>
-            <p className=" text-[#1b1b1b] text-justify text-wrap text-lg font-light mt-6">
-              {card.description}
-            </p>
-            <div className="mt-6">
-              {card?.points?.map((item, index) => (
-                <p
-                  key={index}
-                  className=" text-[#1b1b1b] text-justify text-wrap text-lg font-light mt-6"
-                >
-                  {item}
-                </p>
-              ))}
+        <div className="px-10 py-16">
+          <div className="flex-col-reverse md:flex-row items-center md:items-start flex gap-6 justify-between">
+            <div className="">
+              <p
+                className={`${
+                  color ? "text-[#007A83]" : "text-[#760135]"
+                } underline underline-offset-8 text-[clamp(20px,1.5vw,40px)] font-[CarotSlab] font-medium`}
+              >
+                {card?.title}
+              </p>
+              <p className="mt-6">
+                {card?.description?.map((item, index) => (
+                  <p
+                    key={index}
+                    className=" text-[#1b1b1b] text-justify text-wrap text-[clamp(14px,1vw,40px)] font-light mt-6"
+                  >
+                    {item}
+                  </p>
+                ))}
+              </p>
+            </div>
+            <div className="bg-[#007a83] min-w-60 overflow-hidden w-60 min-h-[20rem] h-[20rem] shadow-2xl">
+              <Image
+                src={card.image}
+                className="w-full h-full object-cover"
+                alt=""
+              />
             </div>
           </div>
-          <div className="bg-[#007a83] min-w-60 overflow-hidden w-60 min-h-[20rem] h-[20rem] shadow-2xl">
-            <Image
-              src={card.image}
-              className="w-full h-full object-cover"
-              alt=""
-            />
+          <div className="mt-6">
+            {card?.points?.map((item, index) => (
+              <p
+                key={index}
+                className=" text-[#1b1b1b] text-justify text-wrap text-[clamp(14px,1vw,40px)] font-light mt-6"
+              >
+                {item}
+              </p>
+            ))}
           </div>
         </div>
 
@@ -93,7 +102,7 @@ const ActiveCardModal = ({
             alt=""
             className="absolute w-full -z-10 top-0 h-full object-cover"
           />
-          <p className=" text-[clamp(2.5rem,4vw,4.5rem)] text-center leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_0.4vw_0vw_0_black]">
+          <p className="text-[clamp(2.5rem,4vw,4.5rem)] text-center leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_0.4vw_0vw_0_black]">
             {heading}
           </p>
 

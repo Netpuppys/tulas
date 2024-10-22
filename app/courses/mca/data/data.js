@@ -41,30 +41,33 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description: "Industry-led & Practice Based Curriculum.",
+    description: ["Industry-led & Practice Based Curriculum."],
     image: USP,
   },
   {
     title: "Course Outcomes",
-    description: <Link href={mcaDocument}>MCA</Link>,
+    description: [<Link href={mcaDocument}>MCA</Link>],
     image: Course,
   },
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "Computational Knowledge :Apply knowledge of computing fundamentals, computing specialization, mathematics",
+    ],
     image: Program,
   },
   {
     title: "Program Educational Outcomes",
-    description:
+    description: [
       "PEO 1: Achieve success in professional endeavors by acquiring a solid foundation in mathematical, computing, and engineering principles.",
+    ],
     image: Course,
   },
   {
     title: "Program Specific Outcomes",
-    description:
+    description: [
       "PSO 1: Understand and apply the computing techniques, mathematical principles and industrial concepts to effectively tackle real-time industrial challenges.",
+    ],
     image: Course,
   },
 
@@ -304,19 +307,21 @@ export const HODcontent = (
 export const itemsClubs = [
   {
     title: "Opportunities in Computer Application",
-    description: "Computer Programmer",
+    description: ["Computer Programmer"],
     image: USP,
   },
   {
     title: "Beyond Curriculum",
-    description:
+    description: [
       "Student perform various internship programs, Short term courses, Add on courses for their advancement in the field.",
+    ],
     image: Course,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "After the completion of this program, the students have the option to grow in one of the following fields",
+    ],
     image: Program,
   },
 ];

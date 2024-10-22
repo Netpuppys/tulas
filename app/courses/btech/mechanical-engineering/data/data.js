@@ -35,30 +35,33 @@ export const content = (
 export const items = [
   {
     title: "USP",
-    description:
+    description: [
       "50+ Add-On Certification and 30+ Short Term Courses (STC) for holistic development of the students.",
+    ],
     image: USP,
   },
   {
     title: "COURSE OUTCOMES",
-    description: <Link href={MEDocument}>B.Tech Mechanical</Link>,
+    description: [<Link href={MEDocument}>B.Tech Mechanical</Link>],
     image: Course,
   },
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "PO1 – Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+    ],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
-    description: "PSO1 : Develop capability and motivation for higher.",
+    description: ["PSO1 : Develop capability and motivation for higher."],
     image: Course,
   },
   {
     title: "Program Educational Objectives",
-    description:
+    description: [
       "Graduates will be able to adapt to technological changes in Mechanical Engineering and evelop innovative and sustainable solutions to societal needs.",
+    ],
     image: Program,
   },
 
@@ -459,25 +462,28 @@ export const specialization = (
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: "Society of Mechanical Engineering (SME)",
+    description: ["Society of Mechanical Engineering (SME)"],
     image: USP,
   },
   {
     title: "Edge over others",
-    description:
+    description: [
       "As per Make in India newsletter 2016, there were 280,800 mechanical engineers working in various industries in India and the number is expected to grow by 20% (approximately) by 2026.",
+    ],
     image: Program,
   },
   {
     title: "Beyond Curriculum",
-    description:
+    description: [
       "Apart from the regular curriculum as specified by the affiliating university, we also conduct various hands – on – workshops/ seminars/ short term courses/ expert talks as add on certifications to the students.",
+    ],
     image: Program,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "Mechanical engineers create and implement solutions to a wide range of challenges, increasing efficiency in a variety of sectors.",
+    ],
     image: Program,
   },
 ];

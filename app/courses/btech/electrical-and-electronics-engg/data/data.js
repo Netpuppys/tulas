@@ -43,30 +43,33 @@ export const content = (
 export const items = [
   {
     title: "USP of the Electrical and Electronics Engineering",
-    description: "Industry-led and Practice Based Curriculum.",
+    description: ["Industry-led and Practice Based Curriculum."],
     image: USP,
   },
   {
     title: "COURSE OUTCOMES",
-    description: <Link href={EEEpdf}>B.Tech EEE</Link>,
+    description: [<Link href={EEEpdf}>B.Tech EEE</Link>],
     image: Program,
   },
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+    ],
     image: Course,
   },
   {
     title: "PROGRAM SPECIFIC OUTCOMES",
-    description:
+    description: [
       "To identify, develop, construct, and explore complex engineering issues involving electric circuits, control systems, electrical machines, and power systems, apply the fundamentals of science, mathematics, and engineering.",
+    ],
     image: Course,
   },
   {
     title: "Programme Educational Objectives",
-    description:
+    description: [
       "To prepare students to learn and apply cutting-edge technologies in the field of Electrical and Electronic engineering.",
+    ],
     image: Program,
   },
 
@@ -461,25 +464,28 @@ export const HODcontent = (
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: "Embedded Club",
+    description: ["Embedded Club"],
     image: USP,
   },
   {
     title: "Edge over others",
-    description:
+    description: [
       "The Overall employment of electrical and electronics engineers is projected to grow 7 percent from 2020 to 2030, about as fast as the average for all occupations.",
+    ],
     image: Course,
   },
   {
     title: "Beyond Curriculum",
-    description:
+    description: [
       "Apart from the regular curriculum as specified by the university, we also conduct various workshops/ seminar/Short term courses / Expert talks as add on certifications to the students. These activities enhance the learning skills of the student and make them ready for the industry. Department also conducts industrial visits to aware the students about the recent trends and technologies of the industry.",
+    ],
     image: Program,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "An Electrical engineer determines how to design and improve electrical products along with the systems, evaluating systems’ safety, reliability, and performance. Electrical engineers work in many sectors including power and renewable energy companies",
+    ],
     image: Program,
   },
 ];

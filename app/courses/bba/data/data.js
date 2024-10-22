@@ -69,31 +69,31 @@ export const items = [
   {
     title: "USP's",
     description:
-      "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
+      ["Fully equipped modern amphitheater kind classrooms for better reach and visibility."],
     image: USP,
   },
 
   {
     title: "Program Outcomes",
     description:
-      "Apply the management domain knowledge to solve routine and specific business problems.",
+      ["Apply the management domain knowledge to solve routine and specific business problems."],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
     description:
-      "To analyse complex data, understanding the financial implications of managerial decision making.",
+      ["To analyse complex data, understanding the financial implications of managerial decision making."],
     image: Course,
   },
   {
     title: "Program Educational Objective",
     description:
-      "To provide value based professional education to management aspirants.",
+      ["To provide value based professional education to management aspirants."],
     image: Program,
   },
   {
     title: "Course Outcomes",
-    description: <Link href={bbaDocument}>BBA</Link>,
+    description: [<Link href={bbaDocument}>BBA</Link>],
     image: Course,
   },
 
@@ -286,24 +286,24 @@ export const facultyData = [
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: "VIBGYOR",
+    description: ["VIBGYOR"],
     image: USP,
   },
   {
     title: "Edge over others",
-    description: "A Versatile degree",
+    description: ["A Versatile degree"],
     image: Course,
   },
   {
     title: "Beyond Curriculum",
     description:
-      "At the point when various sorts of co-curricular exercises are incorporated at the everyday schedule level",
+      ["At the point when various sorts of co-curricular exercises are incorporated at the everyday schedule level"],
     image: Program,
   },
   {
     title: "Career Prospects",
     description:
-      "BBA is a  professional degree that nurtures its students who are passionate about getting into business and management careers.",
+      ["BBA is a  professional degree that nurtures its students who are passionate about getting into business and management careers."],
     image: Course,
   },
   // Add other carousel items here

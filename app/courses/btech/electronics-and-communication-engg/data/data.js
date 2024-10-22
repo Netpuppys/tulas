@@ -61,30 +61,33 @@ export const content = (
 export const items = [
   {
     title: "USP of the of Electronics and Communication Engineering",
-    description: "Industry-led & Practice Based Curriculum.",
+    description: ["Industry-led & Practice Based Curriculum."],
     image: USP,
   },
   {
     title: "COURSE OUTCOMES",
-    description: <Link href={EceDocument}>B.Tech ECE</Link>,
+    description: [<Link href={EceDocument}>B.Tech ECE</Link>],
     image: Course,
   },
   {
     title: "Program Outcomes",
-    description:
-      " Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+    description: [
+      "Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+    ],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
-    description:
-      " PSO1 : To develop the ability to apply concepts from electronics, communications, signal processing, VLSI, control systems, and other fields to the design, development, and implementation of application-oriented engineering systems.",
+    description: [
+      "PSO1 : To develop the ability to apply concepts from electronics, communications, signal processing, VLSI, control systems, and other fields to the design, development, and implementation of application-oriented engineering systems.",
+    ],
     image: Course,
   },
   {
     title: "Program Educational Objective",
-    description:
+    description: [
       "To provide strong technical, hands-on, critical thinking, and team player abilities will enable them to pursue successful jobs in industry.",
+    ],
     image: Program,
   },
 
@@ -525,26 +528,30 @@ export const specialization = (
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description:
+    description: [
       "Following Clubs/Societies/ Memberships are running in the department",
+    ],
     image: USP,
   },
   {
     title: "Edge over others",
-    description:
+    description: [
       "Recently the union cabinet of Indian government sanctioned the INR 76,000 Crores incentive scheme for semiconductors.",
+    ],
     image: Program,
   },
   {
     title: "Beyond Curriculum",
-    description:
+    description: [
       "Apart from the regular curriculum as specified by the university, we also conduct various Workshops/ Seminars/ Short term courses/ Expert Talks as add on certifications to the students.",
+    ],
     image: Program,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "Electronics and Communication Engineers are highly demanded in fields such as Network Engineering, Aeronautics Electronics Systems, Electronic Surveillance System, Mobile Communication, Embedded Systems, Power Industry, Software Development, etc.",
+    ],
     image: Program,
   },
 ];

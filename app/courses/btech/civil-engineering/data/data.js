@@ -58,12 +58,13 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description:
+    description: [
       "The programs emphasize on industry and research based projects, which would enhance skills to become successful professionals.",
-    image: USP,
-    points: [
       "A team of qualified faculty members with ample teaching and industry experience is the highlight of the department of civil engineering.",
       "Industrial as well as Government site visits are organized as a common feature.",
+    ],
+    image: USP,
+    points: [
       "Short Term Courses (STC) for student development, Value Added Courses/Add On Certifications/Short Term Courses (VAC) for all-round student development.",
       "Different software laboratories are functional such as Auto CADD, STAAD Pro etc for the holistic growth of our students.",
       "Curriculum comprise of both industry-led and practice-based courses.",
@@ -72,20 +73,21 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: (
+    description: [
       <Link className="hover:text-[#3D001B]" href={civilDocument}>
         Download B.Tech Civil Course Outcomes
-      </Link>
-    ),
+      </Link>,
+    ],
     image: Course,
   },
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+      "Problem Analysis : Identify, formulate, research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
+    ],
     image: Program,
     points: [
-      "Problem Analysis : Identify, formulate, research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
       "Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
       "Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
       "Modern Tool usage : Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modelling to complex engineering activities with an understanding of the limitations.",
@@ -100,21 +102,23 @@ export const items = [
   },
   {
     title: "Program Specific Outcome",
-    description:
+    description: [
       "PSO1 : Understanding and providing innovative and ethical solutions to problems of natural and built environment using fundamentals of applied science, structural, hydraulics, geotechnical, transportation, environmental, water resources engineering, geomatics and interdisciplinary areas.",
+      "PSO2 : Able to design a system, component or process in civil engineering context with focus on sustainable development meeting the requirements of the industry and society.",
+    ],
     image: Course,
     points: [
-      "PSO2 : Able to design a system, component or process in civil engineering context with focus on sustainable development meeting the requirements of the industry and society.",
       "PSO3 : Up-gradation to latest skills, techniques and materials in the field of civil engineering and allied areas.",
     ],
   },
   {
     title: "Program Educational Objective",
-    description:
+    description: [
       "PEO1 : Civil Engineering Professionals: The graduates will be equipped with the theoretical concepts of civil engineering subjects like structural, hydraulics, geotechnical, transportation, environmental, water resources engineering, geomatics and their application in planning, analysis, design and construction of infrastructure and development in associated fields of civil engineering.",
+      "PEO2 : Entrepreneurship and Leadership: The graduates of Civil Engineering program will be proficient to formulate analyze and solve engineering problems to become employable engineers and capable entrepreneurs.",
+    ],
     image: Program,
     points: [
-      "PEO2 : Entrepreneurship and Leadership: The graduates of Civil Engineering program will be proficient to formulate analyze and solve engineering problems to become employable engineers and capable entrepreneurs.",
       "PEO3 : Lifelong learning: To develop technical and communication skills required in the field of civil engineering and overall personality development of the students, inculcating leadership and teamwork abilities in the students so that they can effectively interact and work with the socio-culturally diverse societies across the globe.",
       "PEO4 : Social awareness and Ethics: Graduates will understand ethical and professional practice issues and demonstrate a commitment to professional social awareness and continuing education in technical and management institutes of repute nationally and globally.",
     ],
@@ -535,10 +539,8 @@ export const HODcontent =
 export const itemsClubs = [
   {
     title: "Work carried out by Civil Engineer",
-    description:
+    description: [
       "There is an opportunity for Civil Engineers to get a job in government, public & private sectors. Some job titles are listed here:",
-    image: USP,
-    points: [
       "Civil Engineer",
       "Building control surveyor",
       "Design Engineer",
@@ -546,36 +548,39 @@ export const itemsClubs = [
       "Maintenance & Service Engineer",
       "Assistant Engineers & Junior Engineers in state & Central government organizations",
     ],
+    image: USP,
   },
   {
     title: "Clubs/Societies/ Memberships",
-    description: "Society of Civil Engineering",
+    description: ["Society of Civil Engineering", "VIBGYOR", "VICTREE"],
     image: Course,
-    points: ["VIBGYOR", "VICTREE"],
   },
   {
     title: "Edge over others",
-    description:
+    description: [
       "The infrastructure sector has become the biggest focus area for the Government of India.",
+      "The Govt. is providing special allocations in budget to complement infrastructure growth and housing for all schemes which in turn generates employment for the civil engineers. Also, India and Japan have joined hands for infrastructure development in India’s Northeast states to undertake strategic infrastructure projects for the region.",
+    ],
     image: Program,
     points: [
-      "The Govt. is providing special allocations in budget to complement infrastructure growth and housing for all schemes which in turn generates employment for the civil engineers. Also, India and Japan have joined hands for infrastructure development in India’s Northeast states to undertake strategic infrastructure projects for the region.",
       "It is the oldest branch of engineering & serves as the base of engineering.",
     ],
   },
   {
     title: "Beyond Curriculum",
-    description:
+    description: [
       "Apart from the regular curriculum as specified by the university, we also conducts various workshops/ seminar/ Short term courses/ Expert Talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips time to time for making students aware of the recent trends and advancements in the industries.",
+    ],
     image: Program,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "Civil engineers create and implement solutions to a wide range of challenges, increasing efficiency in a variety of sectors. You may expect outstanding employment opportunities, high income, and a variety of work areas if you major in civil engineering. Civil engineering abilities are transferrable, which means they will be valuable in a range of sectors and can help to gain additional employment opportunities. A civil engineering degree will equip you with a variety of abilities, including:",
+      "Problem-solving – engineering is all about discovering better, more efficient methods to do things.",
+    ],
     image: Program,
     points: [
-      "Problem-solving – engineering is all about discovering better, more efficient methods to do things.",
       "Team building– working in groups allows you to share expertise and build faster, more reliable solutions.",
       "Research and Innovation: The students of the department are encouraged to participate in the research activities. They are also encouraged to be an entrepreneur by providing them all necessary support to build their startups.",
     ],

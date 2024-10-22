@@ -122,31 +122,35 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description:
+    description: [
       "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
+    ],
     image: USP,
   },
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "Apply knowledge of management theories and practices to solve business problems.",
+    ],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
-    description:
+    description: [
       "To develop skills in business analytics for industry and business requirements.",
+    ],
     image: Course,
   },
   {
     title: "Program Educational Objective",
-    description:
+    description: [
       "To sharpen problem solving ability by acquiring holistic knowledge of the managerial concepts.",
+    ],
     image: Program,
   },
   {
     title: "Course Outcomes",
-    description: <Link href={mbaDocument}>MBA</Link>,
+    description: [<Link href={mbaDocument}>MBA</Link>],
     image: Course,
   },
 
@@ -398,24 +402,26 @@ export const facultyData = [
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: "VIBGYOR",
+    description: ["VIBGYOR"],
     image: USP,
   },
   {
     title: "Edge over others",
-    description: "A Versatile degree",
+    description: ["A Versatile degree"],
     image: Course,
   },
   {
     title: "Beyond Curriculum",
-    description:
+    description: [
       "Activities for various types of personal and professional development",
+    ],
     image: Program,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "MBA degree holder gets job opportunities that includes team leadership",
+    ],
     image: Course,
   },
 ];

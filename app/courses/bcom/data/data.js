@@ -58,33 +58,37 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description:
+    description: [
       "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
+    ],
     image: USP,
   },
 
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "PO1 – Understand theoretical and practical concepts of accounting and commerce.",
+    ],
     image: Program,
   },
   {
     title: "Program Educational Objective",
-    description:
+    description: [
       "PEO1: To understand the concepts of Auditing and taxation and the other areas of Commerce.",
+    ],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
-    description:
+    description: [
       "PSO1: To be able to demonstrate knowledge in setting up a computerized accounting system.",
+    ],
     image: Course,
   },
 
   {
     title: "Course Outcomes",
-    description: <Link href={bcomDocument}>B.com</Link>,
+    description: [<Link href={bcomDocument}>B.com</Link>],
     image: Course,
   },
 
@@ -343,24 +347,26 @@ export const facultyData = [
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: "VIBGYOR",
+    description: ["VIBGYOR"],
     image: USP,
   },
   {
     title: "Edge over others",
-    description: "A Versatile degree",
+    description: ["A Versatile degree"],
     image: Course,
   },
   {
     title: "Beyond Curriculum",
-    description:
+    description: [
       "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s.",
+    ],
     image: Program,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "B.Com (Hons.) graduates are in great demand in accounting, auditing firms as well as banks and insurance companies.",
+    ],
     image: Course,
   },
   // Add other carousel items here

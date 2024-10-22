@@ -75,20 +75,23 @@ export const content = (
 export const items = [
   {
     title: "Program Objectives",
-    description:
+    description: [
       "Develop a solid foundation in computer science, mathematics, statistics, and data analysis: The program aims to provide students with a strong foundation in these key areas to develop the necessary skills to become successful data scientists.",
+    ],
     image: USP,
   },
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+    ],
     image: Program,
   },
   {
     title: "Program Specific Outcomes",
-    description:
+    description: [
       "PSO1 : Provide Industry led/sponsor Teaching Learning facilities.",
+    ],
     image: Course,
   },
 
@@ -186,13 +189,14 @@ export const HODcontent = (
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: "Society of Computer Science and Engineering.",
+    description: ["Society of Computer Science and Engineering."],
     image: USP,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "Machine Learning Engineer: Design, develop, and implement machine learning models and algorithms for specific applications, such as image recognition, natural language processing, and recommendation systems.",
+    ],
     image: Course,
   },
 ];

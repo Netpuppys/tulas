@@ -46,12 +46,12 @@ export const items = [
   {
     title: "STRENGTHS AND USP’S OF THE DEPARTMENT",
     description:
-      "The department is dedicated to educational and soft-skills excellence.",
+      ["The department is dedicated to educational and soft-skills excellence."],
     image: USP,
   },
   {
     title: "Course Outcomes",
-    description: <Link href={ASCdocument}>B.Tech 1st Year</Link>,
+    description: [<Link href={ASCdocument}>B.Tech 1st Year</Link>],
     image: Course,
   },
 ];

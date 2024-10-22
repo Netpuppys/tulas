@@ -55,31 +55,35 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description:
+    description: [
       "Practice based Curriculum to fit into the industry requirements.",
+    ],
     image: USP,
   },
   {
     title: "Course Outcomes",
-    description: <Link href={cseDocument}>B.Tech Computer Science</Link>,
+    description: [<Link href={cseDocument}>B.Tech Computer Science</Link>],
     image: Course,
   },
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+    ],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
-    description:
+    description: [
       "PSO1 : Problem Solving Approach: Apply programming paradigms, architectural patterns, algorithmic techniques, relevant applications and augmentation to solve real-world complex problems.",
+    ],
     image: Course,
   },
   {
     title: "Program Educational Objective",
-    description:
+    description: [
       "PE01:Computer Science Professional : To equip students with theoretical and applied knowledge, enabling them to solve multidisciplinary real-life problems, becoming computer engineering professionals in programming skills  for technology development, deployment, and system implementation.",
+    ],
     image: Program,
   },
 
@@ -359,35 +363,40 @@ export const HODcontent = (
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: "Society of Computer Science and Engineering.",
+    description: ["Society of Computer Science and Engineering."],
     image: USP,
   },
   {
     title: "News Letter / Magazine",
-    description: <Link href={CseDrishti}>डिजिटल DRISHTI | JAN-MAR(2024)</Link>,
+    description: [
+      <Link href={CseDrishti}>डिजिटल DRISHTI | JAN-MAR(2024)</Link>,
+    ],
     image: Course,
   },
   {
     title: "Edge over others",
-    description:
+    description: [
       "Maximum number of students of Computer Science and Engineering are hired by prominent companies through campus placements.",
+    ],
     image: Program,
   },
   {
     title: "Beyond Curriculum",
-    description: "Microsoft Innovation Centre",
+    description: ["Microsoft Innovation Centre"],
     image: Program,
   },
   {
     title: "Innovation in Teaching & Learning",
-    description:
+    description: [
       "Explicit teaching is a purposeful way of overtly teaching students.",
+    ],
     image: Program,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "A computer science engineer is involved in various aspects of computing.",
+    ],
     image: Program,
   },
 ];

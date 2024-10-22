@@ -49,32 +49,37 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description:
+    description: [
       "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+    ],
     image: USP,
   },
   {
     title: "Course Outcomes",
-    description:
+    description: [
       "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+    ],
     image: Course,
   },
   {
     title: "Program Outcomes",
-    description:
+    description: [
       "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+    ],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
-    description:
+    description: [
       "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+    ],
     image: Course,
   },
   {
     title: "Program Educational Objective",
-    description:
+    description: [
       "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+    ],
     image: Program,
   },
 
@@ -244,26 +249,30 @@ export const facultyData = [
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description:
+    description: [
       "Pixel Party: Journalism & Mass Communication department runs their film club in the campus.",
+    ],
     image: USP,
   },
   {
     title: "Edge over others",
-    description:
+    description: [
       "An individual with the BJMC degree possesses the ability to comprehend society",
+    ],
     image: Course,
   },
   {
     title: "Beyond Curriculum",
-    description:
+    description: [
       "Bachelor of Journalism & Mass Communication is a program that can be treated as a lifestyle in itself.",
+    ],
     image: Program,
   },
   {
     title: "Career Prospects",
-    description:
+    description: [
       "Students can choose to excel in range of career options after pursuing Journalism & Mass Communication Course.",
+    ],
     image: USP,
   },
 

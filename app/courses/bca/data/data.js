@@ -53,24 +53,24 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description: "Industry-led & Practice Based Curriculum.",
+    description: ["Industry-led & Practice Based Curriculum."],
     image: USP,
   },
   {
     title: "Course Outcomes",
-    description: <Link href={bcaDocument}>BCA</Link>,
+    description: [<Link href={bcaDocument}>BCA</Link>],
     image: Course,
   },
   {
     title: "Program Outcomes",
     description:
-      "PO1 – Take Thinking : Take informed action after identifying the assumptions that frame our thinking and action",
+      ["PO1 – Take Thinking : Take informed action after identifying the assumptions that frame our thinking and action"],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
     description:
-      "Ability to build and perform career in data management and support IT industry.",
+      ["Ability to build and perform career in data management and support IT industry."],
     image: Course,
   },
 
@@ -236,19 +236,19 @@ export const facultyData = [
 export const itemsClubs = [
   {
     title: "Opportunities in Computer Application",
-    description: "Computer Programmer",
+    description: ["Computer Programmer"],
     image: USP,
   },
   {
     title: "Beyond Curriculum",
     description:
-      "Student perform various internship programs, Short term courses, Add on courses for their advancement in the field.",
+      ["Student perform various internship programs, Short term courses, Add on courses for their advancement in the field."],
     image: Course,
   },
   {
     title: "Career Prospects",
     description:
-      "After the completion of this program, the students have the option to grow in one of the following fields",
+      ["After the completion of this program, the students have the option to grow in one of the following fields"],
     image: Program,
   },
 ];
