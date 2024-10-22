@@ -52,7 +52,7 @@ const ActiveCardModal = ({
         </div>
 
         {/* content div */}
-        <div className="flex-col-reverse md:flex-row items-center flex gap-6 justify-between px-10 py-16">
+        <div className="flex-col-reverse md:flex-row items-center md:items-start flex gap-6 justify-between px-10 py-16">
           <div className="">
             <p
               className={`${
