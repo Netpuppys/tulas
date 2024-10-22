@@ -222,7 +222,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
             <div className="flex md:w-fit animate-translateButton flex-row-reverse md:flex-row gap-4 md:gap-6">
               {/* menu button */}
               <button
-                className="bg-[#007A83] rounded-full text-3xl shadow-lg w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+                className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 md:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
                 onClick={handleButtonClick}
               >
                 {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
@@ -250,7 +250,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
               </button>
               {/* apply now button */}
               <button
-                className="bg-[#760135] rounded-full text-3xl shadow-lg w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+                className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 md:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
                 onClick={() => (window.location.href = "/admissions2024/")}
               >
                 <PiPencilSimpleLineLight />
