@@ -2,8 +2,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 
-function Vision({sections}) {
-  
+function Vision({ sections }) {
   return (
     <div>
       <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
@@ -20,9 +19,9 @@ function Vision({sections}) {
                   {section.title}
                 </h3>
                 <br />
-                <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+                <div className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
                   {section.description}
-                </h4>
+                </div>
               </div>
             </Fade>
             <Fade className="w-full md:w-[45%]">

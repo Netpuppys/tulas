@@ -1,31 +1,51 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
 import { IoClose } from "react-icons/io5";
 import { RiArrowRightSFill } from "react-icons/ri";
 
 const ActiveCardModal = ({ card, setActiveCard, items, heading }) => {
-    
-    return (
-        <div className='w-screen h-screen z-[999] top-0 left-0 fixed bg-black bg-opacity-40 backdrop-blur-sm flex items-start justify-end'>
-            <div className='overflow-y-scroll z-[999] bg-white w-full md:w-[45vw] h-full'>
-                {/* top bar */}
-                <div className="w-full md:w-[45vw] h-20 bg-[#760135] flex items-center justify-between px-[1.3rem] py-4">
-                    <p className="font-[CarotSlab] text-[1.6rem] font-medium">
-                       {heading}
-                    </p>
-                    <button
-                        onClick={() => setActiveCard(null)} 
-                        className="h-full aspect-square bg-white flex items-center justify-center text-[#760135] text-2xl"
-                    >
-                        <IoClose />
-                    </button>
-                </div>
+  const scrollRef = useRef();
+  const handleCardChange = (item) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    setActiveCard(item);
+  };
+  return (
+    <div className="w-full h-screen z-[999] pointer-events-auto top-0 left-0 fixed bg-black bg-opacity-40 backdrop-blur-sm flex items-start justify-end">
+      <div
+        onClick={() => setActiveCard(null)}
+        className="cursor-pointer w-[55vw] h-full hidden md:block"
+      ></div>
+      <div
+        ref={scrollRef}
+        className="animate-translateRight pointer-events-auto overflow-y-scroll z-[999] bg-white w-full md:w-[45vw] h-full"
+      >
+        {/* top bar */}
+        <div className="w-full md:w-[45vw] h-20 bg-[#760135] flex items-center justify-between px-[1.3rem] py-4">
+          <p className="font-[CarotSlab] text-[1.6rem] font-medium">
+            {heading}
+          </p>
+          <button
+            onClick={() => setActiveCard(null)}
+            className="h-full aspect-square bg-white flex items-center justify-center text-[#760135] text-2xl"
+          >
+            <IoClose />
+          </button>
+        </div>
 
         {/* content div */}
         <div className="flex gap-6 justify-between px-10 py-16">
           <div className="">
-            <p className="text-[#760135] underline underline-offset-8 text-3xl font-[CarotSlab] font-medium ">
+            <p className="text-[#760135] underline underline-offset-8 text-3xl font-[CarotSlab] font-medium">
               {card?.title}
+            </p>
+            <p className=" text-[#1b1b1b] text-wrap text-lg font-light mt-6">
+              {card.description}
             </p>
             <div className="mt-6">
               {card?.points?.map((item, index) => (
@@ -57,7 +77,7 @@ const ActiveCardModal = ({ card, setActiveCard, items, heading }) => {
             {items.map((item, index) => (
               <div
                 key={index}
-                onClick={() => setActiveCard(item)}
+                onClick={() => handleCardChange(item)}
                 className={`relative w-[calc(50%-2.5rem)] group transition-all text-left duration-500 ease-in-out ${
                   item.title === card.title ? "hidden" : "block"
                 } `}

@@ -58,7 +58,11 @@ function Program({ parentRef, images, content }) {
       <div className="w-full h-[200vh] relative bg-transparent overflow-hidden">
         <div
           className={`${
-            scrollY > 0 ? "fixed" : "absolute"
+            scrollY > 0 && opacity === 0
+              ? "absolute"
+              : scrollY > 0
+              ? "fixed"
+              : "absolute"
           } top-0 left-0 w-full h-screen z-[9] bg-no-repeat bg-cover bg-center`}
           style={{
             backgroundImage: `url(${randomImage.src})`,
