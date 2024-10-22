@@ -21,12 +21,15 @@ function NavbarDesktop({
     if (expandedIndex !== index) {
       setActiveLink(index);
     }
-
     setNestedLinksVisible(true);
     setSuperExpandedIndex(null);
     setActiveLink(index);
     setExpandedIndex(index);
     setThirdExpandedIndex(null);
+    if (expandedIndex === index) {
+      setExpandedIndex(null);
+      setActiveLink(null);
+    }
   };
 
   const handleExpandSuperNestedLinks = (index) => {

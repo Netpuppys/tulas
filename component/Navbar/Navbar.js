@@ -14,17 +14,17 @@ import NavbarDesktop from "./Component/NavbarDesktop";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 
 function Navbar({ setState, position = false, fullBanner = false }) {
-  const [ isChecked, setIsChecked] = useState(false);
-  const [ expandedIndex, setExpandedIndex] = useState(null);
-  const [ superExpandedIndex, setSuperExpandedIndex] = useState(null);
-  const [ thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
-  const [ nestedLinksVisible, setNestedLinksVisible] = useState(false);
-  const [ scrolled, setScrolled] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [superExpandedIndex, setSuperExpandedIndex] = useState(null);
+  const [thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
+  const [nestedLinksVisible, setNestedLinksVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   // useEffect to check if the page is scrolled
   useEffect(() => {
     const handleScroll = () => {
-      const threshold = fullBanner? 1 : 0.5
+      const threshold = fullBanner ? 1 : 0.5;
       // 60vh in pixels
       const sixtyVH = window.innerHeight * threshold;
 
@@ -112,32 +112,31 @@ function Navbar({ setState, position = false, fullBanner = false }) {
       {/* main navbar */}
       <div className="w-full pt-8 md:pt-0 h-fit">
         <div className="flex w-full flex-row-reverse md:flex-row justify-between">
-
-          {!scrolled &&
-          <div className="flex md:w-fit flex-row-reverse animate-fadeIn md:flex-row gap-6 md:gap-12">
-            {/* menu button */}
-            <button
-              className="flex flex-row justify-between items-center cursor-pointer relative z-[9999]"
-              onClick={handleButtonClick}
-            >
-              <div
-                className={`p-[15px] md:p-[20px] border-2 rounded-[50%] aspect-square border-r-transparent ${
-                  (isChecked && position) || isChecked
-                    ? "border-black"
-                    : position
-                    ? "border-[#760135]"
-                    : "border-white"
-                }`}
+          {!scrolled && (
+            <div className="flex md:w-fit flex-row-reverse animate-fadeIn md:flex-row gap-6 md:gap-12">
+              {/* menu button */}
+              <button
+                className="flex flex-row justify-between items-center cursor-pointer relative z-[9999]"
+                onClick={handleButtonClick}
               >
-                <label
-                  className={
-                    isChecked
-                      ? "checked flex flex-col w-[30px] cursor-pointer"
-                      : "unCheck flex flex-col w-[30px] cursor-pointer"
-                  }
+                <div
+                  className={`p-[15px] md:p-[20px] border-2 rounded-[50%] aspect-square border-r-transparent ${
+                    (isChecked && position) || isChecked
+                      ? "border-black"
+                      : position
+                      ? "border-[#760135]"
+                      : "border-white"
+                  }`}
                 >
-                  <span
-                    className={`my-[3px] rounded-lg h-[3px] w-1/2
+                  <label
+                    className={
+                      isChecked
+                        ? "checked flex flex-col w-[30px] cursor-pointer"
+                        : "unCheck flex flex-col w-[30px] cursor-pointer"
+                    }
+                  >
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-1/2
                      ${
                        (isChecked && position) || isChecked
                          ? "bg-black"
@@ -145,117 +144,119 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                          ? "bg-[#760135]"
                          : "bg-white"
                      }`}
-                  ></span>
-                  <span
-                    className={`my-[3px] rounded-lg h-[3px] w-full ${
-                      (isChecked && position) || isChecked
-                        ? "bg-black"
-                        : position
-                        ? "bg-[#760135]"
-                        : "bg-white"
-                    }`}
-                  ></span>
-                  <span
-                    className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
-                      (isChecked && position) || isChecked
-                        ? "bg-black"
-                        : position
-                        ? "bg-[#760135]"
-                        : "bg-white"
-                    }`}
-                  ></span>
-                </label>
-              </div>
-              <h3
-                style={{ fontFamily: "Zilla Slab" }}
-                className={`hidden md:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                  (isChecked && position) || isChecked
-                    ? "text-black"
-                    : position
-                    ? "text-[#760135]"
-                    : "text-white"
-                }`}
-              >
-                {!isChecked ? "Menu" : "Close"}
-              </h3>
-            </button>
-            {/* apply now button */}
-            <button
-              className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
-              onClick={() => (window.location.href = "/admissions2024/")}
-            >
-              <div
-                className={`p-[15px] md:p-[20px] border-2 ${
-                  (isChecked && position) || isChecked
-                    ? "border-black"
-                    : position
-                    ? "border-[#760135]"
-                    : "border-white"
-                } rounded-[50%] aspect-square border-r-transparent`}
-              >
-                <FaPen
-                  className={`w-[30px] h-[30px] ${
+                    ></span>
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-full ${
+                        (isChecked && position) || isChecked
+                          ? "bg-black"
+                          : position
+                          ? "bg-[#760135]"
+                          : "bg-white"
+                      }`}
+                    ></span>
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
+                        (isChecked && position) || isChecked
+                          ? "bg-black"
+                          : position
+                          ? "bg-[#760135]"
+                          : "bg-white"
+                      }`}
+                    ></span>
+                  </label>
+                </div>
+                <h3
+                  style={{ fontFamily: "Zilla Slab" }}
+                  className={`hidden md:block text-left text-[25px] -ml-4 font-semibold transition-color ${
                     (isChecked && position) || isChecked
                       ? "text-black"
                       : position
                       ? "text-[#760135]"
                       : "text-white"
                   }`}
-                />
-              </div>
-              <h3
-                style={{ fontFamily: "Zilla Slab" }}
-                className={`hidden md:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                  (isChecked && position) || isChecked
-                    ? "text-black"
-                    : position
-                    ? "text-[#760135]"
-                    : "text-white"
-                }`}
-              >
-                Apply Now
-              </h3>
-            </button>
-          </div>}
-
-          {scrolled &&
-          <div className="flex md:w-fit animate-translateButton flex-row-reverse md:flex-row gap-4 md:gap-6">
-          {/* menu button */}
-          <button
-            className="bg-[#007A83] rounded-full text-3xl shadow-lg w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-            onClick={handleButtonClick}
-          >
-            {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
-            <div
-                className={`p-[15px] md:p-[20px] rounded-[50%] aspect-square border-r-transparent`}
-              >
-                <label
-                  className={
-                    isChecked
-                      ? "checked flex flex-col w-[30px] cursor-pointer"
-                      : "unCheck flex flex-col w-[30px] cursor-pointer"
-                  }
                 >
-                  <span
-                    className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
-                  ></span>
-                  <span
-                    className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
-                  ></span>
-                  <span
-                    className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
-                  ></span>
-                </label>
-              </div>
-          </button>
-          {/* apply now button */}
-          <button
-            className="bg-[#760135] rounded-full text-3xl shadow-lg w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-            onClick={() => (window.location.href = "/admissions2024/")}
-          >
-            <PiPencilSimpleLineLight />
-          </button>
-        </div>}
+                  {!isChecked ? "Menu" : "Close"}
+                </h3>
+              </button>
+              {/* apply now button */}
+              <button
+                className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
+                onClick={() => (window.location.href = "/admissions2024/")}
+              >
+                <div
+                  className={`p-[15px] md:p-[20px] border-2 ${
+                    (isChecked && position) || isChecked
+                      ? "border-black"
+                      : position
+                      ? "border-[#760135]"
+                      : "border-white"
+                  } rounded-[50%] aspect-square border-r-transparent`}
+                >
+                  <FaPen
+                    className={`w-[30px] h-[30px] ${
+                      (isChecked && position) || isChecked
+                        ? "text-black"
+                        : position
+                        ? "text-[#760135]"
+                        : "text-white"
+                    }`}
+                  />
+                </div>
+                <h3
+                  style={{ fontFamily: "Zilla Slab" }}
+                  className={`hidden md:block text-left text-[25px] -ml-4 font-semibold transition-color ${
+                    (isChecked && position) || isChecked
+                      ? "text-black"
+                      : position
+                      ? "text-[#760135]"
+                      : "text-white"
+                  }`}
+                >
+                  Apply Now
+                </h3>
+              </button>
+            </div>
+          )}
+
+          {scrolled && (
+            <div className="flex md:w-fit animate-translateButton flex-row-reverse md:flex-row gap-4 md:gap-6">
+              {/* menu button */}
+              <button
+                className="bg-[#007A83] rounded-full text-3xl shadow-lg w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+                onClick={handleButtonClick}
+              >
+                {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
+                <div
+                  className={`p-[15px] md:p-[20px] rounded-[50%] aspect-square border-r-transparent`}
+                >
+                  <label
+                    className={
+                      isChecked
+                        ? "checked flex flex-col w-[30px] cursor-pointer"
+                        : "unCheck flex flex-col w-[30px] cursor-pointer"
+                    }
+                  >
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
+                    ></span>
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
+                    ></span>
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
+                    ></span>
+                  </label>
+                </div>
+              </button>
+              {/* apply now button */}
+              <button
+                className="bg-[#760135] rounded-full text-3xl shadow-lg w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+                onClick={() => (window.location.href = "/admissions2024/")}
+              >
+                <PiPencilSimpleLineLight />
+              </button>
+            </div>
+          )}
 
           <Link href="/" className="z-[3333] md:hidden">
             <Image
