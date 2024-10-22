@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
 import { RiArrowRightSFill } from "react-icons/ri";
-import ActiveCardModal from "./components/ActiveCardModal";
+import ActiveCardModal from "./ActiveCardModal";
 //import { PiArrowRight } from "react-icons/pi";
 
 const CarouselProgram = ({ heading, items, background, color }) => {
