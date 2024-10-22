@@ -42,7 +42,11 @@ function BBA() {
       />
 
       <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram heading={"Discover"} items={items} />
+      <CarouselProgram
+        heading={"Discover"}
+        items={items}
+        background={background}
+      />
       <Vision sections={sections} />
       <TableProgram
         cards={cards}
@@ -51,7 +55,11 @@ function BBA() {
         facultyData={facultyData}
       />
       <TopRecruiter />
-      <CarouselProgram heading={"Explore More"} items={itemsClubs} />
+      <CarouselProgram
+        heading={"Explore More"}
+        items={itemsClubs}
+        background={background}
+      />
       <div className="w-full relative overflow-hidden">
         <Image
           src={background}

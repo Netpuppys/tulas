@@ -41,7 +41,12 @@ function BSCAgriculture() {
       />
 
       <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram heading={"Discover"} items={items} />
+      <CarouselProgram
+        heading={"Discover"}
+        items={items}
+        color={true}
+        background={background}
+      />
       <Vision sections={sections} />
       <TableProgram
         cards={cards}
@@ -50,7 +55,12 @@ function BSCAgriculture() {
         facultyData={facultyData}
       />
       <TopRecruiter />
-      <CarouselProgram heading={"Explore More"} items={itemsClubs} />
+      <CarouselProgram
+        heading={"Explore More"}
+        items={itemsClubs}
+        color={true}
+        background={background}
+      />
       <div className="w-full relative overflow-hidden">
         <Image
           src={background}

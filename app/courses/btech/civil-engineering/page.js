@@ -36,9 +36,11 @@ function BAJMC() {
       </div>
       <BannerProgram
         image={BannerImg}
-        title={<>
-          CIVIL <span className="text-[#760135]">ENGINEERING</span>
-        </>}
+        title={
+          <>
+            CIVIL <span className="text-[#760135]">ENGINEERING</span>
+          </>
+        }
         titleColor={""}
         description={
           "The Civil Engineering Department of Tula's Institute came into existence in the year 2011. The department offers Diploma, Undergraduate, and Postgraduate programs in civil engineering."
@@ -46,21 +48,29 @@ function BAJMC() {
       />
       <Program parentRef={parentRef} images={images} content={content} />
 
-      <CarouselProgram heading={"Discover"} items={items} />
+      <CarouselProgram
+        heading={"Discover"}
+        items={items}
+        background={background}
+      />
 
       <Vision sections={sections} />
       <div className="w-full overflow-x-scroll">
-      <TableProgram
-        cards={cards}
-        selectedCardTable={selectedCardTable}
-        semesterData={semesterData}
-        facultyData={facultyData}
-        hod={hod}
-        HODcontent={HODcontent}
-      />
+        <TableProgram
+          cards={cards}
+          selectedCardTable={selectedCardTable}
+          semesterData={semesterData}
+          facultyData={facultyData}
+          hod={hod}
+          HODcontent={HODcontent}
+        />
       </div>
       <TopRecruiter />
-      <CarouselProgram heading={"Explore More"} items={itemsClubs} />
+      <CarouselProgram
+        heading={"Explore More"}
+        items={itemsClubs}
+        background={background}
+      />
 
       <div className="w-full relative overflow-hidden">
         <Image
@@ -69,7 +79,7 @@ function BAJMC() {
           alt=""
         />
       </div>
-      
+
       <Footer />
     </div>
   );

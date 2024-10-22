@@ -17,7 +17,6 @@ import {
   facultyData,
   images,
   items,
-  itemsClubs,
   sections,
 } from "./data/data";
 function BAJMC() {
@@ -40,11 +39,15 @@ function BAJMC() {
         }
       />
       <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram heading={"Discover"} items={items} />
+      <CarouselProgram
+        heading={"Discover"}
+        items={items}
+        background={background}
+      />
       <Vision sections={sections} />
       <TableProgram cards={cards} facultyData={facultyData} />
       <TopRecruiter />
-      
+
       <div className="w-full relative overflow-hidden">
         <Image
           src={background}

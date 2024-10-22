@@ -6,12 +6,12 @@ import { RiArrowRightSFill } from "react-icons/ri";
 import ActiveCardModal from "./components/ActiveCardModal";
 //import { PiArrowRight } from "react-icons/pi";
 
-const CarouselProgram = ({ heading, items }) => {
+const CarouselProgram = ({ heading, items, background, color }) => {
   const carouselRef = useRef(null);
 
-  const [ activeIndex, setActiveIndex ] = useState(0);
-  const [ disabled, setDisabled ] = useState(false);
-  const [ activeCard, setActiveCard ] = useState(null)
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [disabled, setDisabled] = useState(false);
+  const [activeCard, setActiveCard] = useState(null);
 
   useEffect(() => {
     if (activeCard) {
@@ -130,15 +130,16 @@ const CarouselProgram = ({ heading, items }) => {
 
   return (
     <div className="relative z-[99]">
-
-      {activeCard &&
+      {activeCard && (
         <ActiveCardModal
           card={activeCard}
           setActiveCard={setActiveCard}
           items={items}
           heading={heading}
+          color={color}
+          background={background}
         />
-      }
+      )}
 
       <div className="flex w-full justify-between items-center px-0 md:px-[5%]">
         <h8 className="text-[80px] w-full text-center md:text-start md:text-[200px] leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_20px_0px_0_black]">
@@ -195,7 +196,7 @@ const CarouselProgram = ({ heading, items }) => {
                   alt=""
                   className="w-full h-full object-cover"
                 />
-                
+
                 <div className="absolute group-hover:animate-overlay inset-0 group-hover:bg-white group-hover:opacity-60"></div>
                 <div className="absolute block group-hover:hidden inset-0 bg-black opacity-60"></div>
 
