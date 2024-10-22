@@ -5,9 +5,7 @@ import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import TulasLogoGreen from "../../public/Components/Navbar/TulasLogoGreen.png";
 import TulasLogoRed from "../../public/Components/Navbar/TulasLogoRed.png";
 
-import { CgMenuLeftAlt } from "react-icons/cg";
 import { PiPencilSimpleLineLight } from "react-icons/pi";
-import { IoCloseOutline } from "react-icons/io5";
 
 import { FaPen } from "react-icons/fa";
 import Image from "next/image";
