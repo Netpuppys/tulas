@@ -58,7 +58,7 @@ const ActiveCardModal = ({ card, setActiveCard, items, heading }) => {
               <div
                 key={index}
                 onClick={() => setActiveCard(item)}
-                className={`relative w-[calc(50%-2.5rem)] group transition-all duration-500 ease-in-out ${
+                className={`relative w-[calc(50%-2.5rem)] group transition-all text-left duration-500 ease-in-out ${
                   item.title === card.title ? "hidden" : "block"
                 } `}
               >
@@ -71,7 +71,7 @@ const ActiveCardModal = ({ card, setActiveCard, items, heading }) => {
                 <div className="absolute group-hover:animate-overlay inset-0 group-hover:bg-white group-hover:opacity-60"></div>
                 <div className="absolute block group-hover:hidden inset-0 bg-black opacity-60"></div>
 
-                <div className="w-full absolute bottom-0 p-2">
+                <div className="w-full text-left absolute bottom-0 p-2">
                   <h3 className="text-wrap flex items-center gap-1 text-[30px] font-[TTChocolatesBold] w-full border border-b-white group-hover:border-b-black border-transparent text-white group-hover:text-black">
                     <RiArrowRightSFill />
                     <span className="line-clamp-1">{item.title}</span>

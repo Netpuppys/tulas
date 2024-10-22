@@ -70,6 +70,29 @@ const page = () => {
                 />
             </div>
         </div>
+
+        <div className='w-full h-96 bg-white'>
+
+        </div>
+
+        <div className='flex min-h-screen items-start justify-between gap-10 py-24'>
+            <div className='w-1/2 pr-20'>
+                <Image
+                    src={hostel}
+                    className='w-full h-full object-cover'
+                    alt=''
+                />
+            </div>
+            <div className='pl-20 w-1/2'>
+                <p className='text-[2.5rem] font-semibold'>
+                    <span className='h-full w-[2px] rounded-full bg-white text-opacity-0'>.</span> Career Innovation Centre (CIC)
+                </p>
+                <p className='pt-10'>
+                    {content}
+                </p>
+            </div>
+        </div>
+
     </div>
   )
 }

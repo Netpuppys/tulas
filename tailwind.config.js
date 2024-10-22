@@ -23,9 +23,28 @@ module.exports = {
         translateRightMenu: "translateRightMenu 0.3s linear",
         translateTop: "translateTop 0.8s linear",
         translateBottom: "translateBottom 0.8s linear",
+        translateButton: "translateButton 0.5s ease",
+        fadeIn: "fadeIn 0.5s ease",
         overlay: "overlay 0.5s ease"
       },
       keyframes: {
+        fadeIn: {
+          from: {
+            opacity: 0,
+            transform: 'scale(0.95) translateY(2rem)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'scale(1) translateY(0rem)'
+          }
+        },
+        translateButton: {
+          from: {
+            transform: "translateY(-20rem)"
+          }, to: {
+            transform: "translateY(0rem)"
+          }
+        },
         overlay: {
           from: {
             background: "transparent",

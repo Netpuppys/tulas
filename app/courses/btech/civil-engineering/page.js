@@ -30,7 +30,7 @@ function BAJMC() {
   const parentRef = useRef(null);
 
   return (
-    <div ref={parentRef}>
+    <div className="max-w-full" ref={parentRef}>
       <div className="w-full h-fit bg-white">
         <Navbar position={true} />
       </div>
@@ -49,6 +49,7 @@ function BAJMC() {
       <CarouselProgram heading={"Discover"} items={items} />
 
       <Vision sections={sections} />
+      <div className="w-full overflow-x-scroll">
       <TableProgram
         cards={cards}
         selectedCardTable={selectedCardTable}
@@ -57,6 +58,7 @@ function BAJMC() {
         hod={hod}
         HODcontent={HODcontent}
       />
+      </div>
       <TopRecruiter />
       <CarouselProgram heading={"Explore More"} items={itemsClubs} />
 
