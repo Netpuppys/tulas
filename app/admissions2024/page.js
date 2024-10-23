@@ -36,7 +36,6 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
-import { items } from '../b-sc-agriculture/data/data';
 
 const programsOffered = [ "B.TECH", "BCA", "BJMC", "M.TECH", "MCA", "B.SC AGRICULTURE", "POLYTECHNIC", "B.COM HONS", "BBA", "MBA" ]
 

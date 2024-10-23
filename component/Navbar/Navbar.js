@@ -95,7 +95,8 @@ function Navbar({ setState, position = false, fullBanner = false }) {
             Admission Helpline No. +91-6366937159
           </div>
         </a>
-        <Link href="/" className="z-[3333]">
+        {!scrolled &&
+        <Link href="/" className="z-[3333] animate-fadeIn pt-16 pr-6">
           <Image
             src={
               (isChecked && position) || isChecked
@@ -105,9 +106,24 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                 : TulasLogo
             }
             alt=""
-            className="w-[160px] h-fit pointer-events-auto cursor-pointer"
+            className="w-[200px] h-fit pointer-events-auto cursor-pointer"
           />
-        </Link>
+        </Link>}
+
+        {scrolled &&
+        <Link href="/" className="z-[3333] animate-translateButton pt-16 pr-6">
+          <Image
+            src={
+              (isChecked && position) || isChecked
+                ? TulasLogoGreen
+                : position
+                ? TulasLogoRed
+                : TulasLogoGreen
+            }
+            alt=""
+            className="w-[200px] h-fit pointer-events-auto cursor-pointer"
+          />
+        </Link>}
       </div>
       {/* main navbar */}
       <div className="w-full pt-8 md:pt-0 h-fit">

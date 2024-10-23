@@ -14,6 +14,10 @@ import CampusLife from "./Component/CampusLife";
 import Testimonials from "./Component/Testimonials";
 import RankBanner from "./Component/RankBanner";
 
+const bannerText = <>
+  <span className="text-[#007A83] font-[TTChocolatesBold] font-semibold">Tula's Institute</span> was established in 2006, under the aegis of <span className="text-[#007A83] font-[TTChocolatesBold] font-semibold">Rishabh Educational Trust, Dehradun</span> with the vision of offering excellent academics along with fostering the professional and personal personas of every student of the institute. Tulas Institute is dedicated to serve the communities by recognizing the diverse needs of individuals.
+</>
+
 export default function HomePage() {
   const parentRef = useRef(null);
   const [isChecked, setIsChecked] = useState(false);
@@ -22,6 +26,11 @@ export default function HomePage() {
     <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
       <Navbar setState={setIsChecked} />
       <BannerHome isChecked={isChecked} />
+      <div className="w-full py-16 flex items-center justify-center">
+        <p className="text-[#404040] text-xl text-left font-[TTChocolates] max-w-[40rem] text-wrap">
+          {bannerText}
+        </p>
+      </div>
       <AboutTulas />
       <WhyTulasScroll parentRef={parentRef} />
       <Courses parentRef={parentRef} />
