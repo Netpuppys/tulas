@@ -24,6 +24,7 @@ function Patent() {
     triggerOnce: false,
     threshold: 0.1,
   });
+  
   const patentImages = [
     patent1,
     patent2,

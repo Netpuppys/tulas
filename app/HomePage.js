@@ -26,8 +26,8 @@ export default function HomePage() {
     <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
       <Navbar setState={setIsChecked} />
       <BannerHome isChecked={isChecked} />
-      <div className="w-full py-16 flex items-center justify-center">
-        <p className="text-[#404040] text-xl text-left font-[TTChocolates] max-w-[40rem] text-wrap">
+      <div className="w-full py-16 flex items-center justify-center px-10">
+        <p className="text-[#404040] md:text-xl text-left font-[TTChocolates] max-w-[40rem] text-wrap">
           {bannerText}
         </p>
       </div>
