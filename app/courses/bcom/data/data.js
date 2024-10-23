@@ -60,30 +60,53 @@ export const items = [
     title: "USP's",
     description: [
       "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
+      "MoU’s with several companies to assist students in their needs of training, placement and internships.",
+      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
     ],
     image: USP,
+    points: [
+      "Interaction based ‘Flipped Classroom’ Learning Methodology.",
+      "Comprehend the theories and techniques used in successful organizations using “Case Based” teaching pedagogy.",
+      "Prepare students for entrepreneurship and employment",
+    ],
   },
 
   {
     title: "Program Outcomes",
     description: [
       "PO1 – Understand theoretical and practical concepts of accounting and commerce.",
+      "PO2 – Develops professional communication skills among learners.",
+      "PO3 – Enhances the capability of decision making at personal and professional levels.",
     ],
     image: Program,
+    points: [
+      "PO4 –Develops entrepreneurial skills amongst learners.",
+      "PO5 – Aims for holistic development of learners.",
+      "PO6 – Ability to understand, analyse and communicate global, economic, legal, and ethical aspects.",
+    ],
   },
   {
     title: "Program Educational Objective",
     description: [
       "PEO1: To understand the concepts of Auditing and taxation and the other areas of Commerce.",
+      "PEO2: To analyze financial statements to interpret organizational efficiency.",
+      "PEO3: To apply critical thinking skills by identifying and analyzing accounting issues using therelevant accounting framework.",
     ],
     image: Program,
+    points: [
+      "PEO4: To execute the best practices of Accounting, taxation and Auditing",
+    ],
   },
   {
     title: "Program Specific Outcome",
     description: [
       "PSO1: To be able to demonstrate knowledge in setting up a computerized accounting system.",
+      "PSO2: To learn relevant accounting career skills, applying both quantitative and qualitative knowledge to their future careers in business.",
     ],
     image: Course,
+    points: [
+      "PSO3: To acquire practical skills to work as tax consultant, audit assistant and other financial supporting services.",
+    ],
   },
 
   {
@@ -347,27 +370,72 @@ export const facultyData = [
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: ["VIBGYOR"],
+    description: ["VIBGYOR", "VICTREE", "COMPETERE"],
     image: USP,
   },
   {
     title: "Edge over others",
-    description: ["A Versatile degree"],
+    description: [
+      "A Versatile degree.",
+      "Personal Development.",
+      "Gateway to number of job opportunities in various fields of management.",
+      "Provides in-depth knowledge of business at an early stage of career.",
+    ],
     image: Course,
+    points: [
+      "Trains well in various qualities like entrepreneurial, leadership and management.",
+      "Global accepted degree courses with wide range of possibilities.",
+      "Dearth of management graduates in Middle East, Europe and Canada etc.",
+      "Program acts as a precursor to management studies, and hence, it is updated regularly to incorporate major developments in the business world.",
+      "Kick-start to a global, reputed and overgrowing career.",
+    ],
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s.",
+      "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s. some of the activities which are regularly conducted for the students are:",
+      "NCC",
+      "NSS",
+      "Picnics",
+      "Educational Tours",
+      "Industrial Visits",
+      "Leisure Tours",
+      "Seminars",
+      "Workshops",
+      "Symposiums",
+      "Athletic meets",
+      "Cultural Meets",
+      "Sport Meets",
+      "Debates",
+      "Extempore",
+      "Mock Interview sessions",
+      "Business plan developments",
+      "Theatre reviews",
+      "Quizzes",
+      "Social Work",
+      "Volunteering in Social cause campaigns",
+      "Conducting Events and Festivals",
+      "And lots more to add to the overall bucket of beyond curriculum activities",
     ],
     image: Program,
   },
   {
     title: "Career Prospects",
     description: [
-      "B.Com (Hons.) graduates are in great demand in accounting, auditing firms as well as banks and insurance companies.",
+      "B.Com (Hons.) graduates are in great demand in accounting, auditing firms as well as banks and insurance companies. They are hired at junior level for various profiles in the finance, accounting, HR and administrative departments of the companies. Top recruiters of B.Com (Hons.) graduates include banks, multinational companies, finance firms and auditing agencies.  This is the reason that B.Com (Hons.) degree holders are among the highest employment rate category as compared to other bachelor’s degrees.",
     ],
     image: Course,
+    points: [
+      "The following are the major options of employment for B.Com (Hons.) graduates.",
+      "Accountant",
+      "Business Executive",
+      "Accounts Manager",
+      "Tax Consultant",
+      "Financial Analyst",
+      "Financial Consultant",
+      "Account Executive",
+      "Business Consultant",
+    ],
   },
   // Add other carousel items here
 ];

@@ -45,9 +45,19 @@ export const content = (
 export const items = [
   {
     title: "STRENGTHS AND USP’S OF THE DEPARTMENT",
-    description:
-      ["The department is dedicated to educational and soft-skills excellence."],
+    description: [
+      "The department is dedicated to educational and soft-skills excellence.",
+      "The department strives to make new student accustomed to the new college environment and make them comfortable at new home away from home.",
+      "Department bridges the gap between school and college education through orientation program which instils leadership, team building & management and social work.",
+    ],
     image: USP,
+    points: [
+      "It aspires to develop and maintain a conducive environment for learning, inquiry, and the generation of new ideas in order to support the education of future engineers and scientists.",
+      "The teaching methodology of the department is based on ‘Learning by Practicing’ strategy.",
+      "It encourage students in developing strong fundamentals in the subject(s) as well as the abilities needed to solve scientific, technological, analytical, and mathematical challenges.",
+      "The department clearly defined teaching and learning process that includes problem-solving sessions, open discussions during tutorials, holding seminars, workshops, and projects, among other things.",
+      "The knowledge gained through laboratory work forms a major component while preparing future professionals.",
+    ],
   },
   {
     title: "Course Outcomes",

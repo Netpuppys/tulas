@@ -43,8 +43,20 @@ export const content = (
 export const items = [
   {
     title: "USP of the Electrical and Electronics Engineering",
-    description: ["Industry-led and Practice Based Curriculum."],
+    description: [
+      "Industry-led and Practice Based Curriculum.",
+      "Content Delivery and Mentoring by Professionally Trained Faculty and Industry Experts (Guest Lectures/ Expert Talks)",
+      "Value Added Courses/ Add On Certifications/ Short Term Courses (STC) for all round development of the students.",
+      "Huge Alumni database currently working with MNC’s and Government Institutions/Sectors.",
+    ],
     image: USP,
+    points: [
+      "More than 50 Publications in reputed journals and conferences.",
+      "Practical oriented teaching with hands on experience (Project Based Learning and Industrial Visits).",
+      "Patents.",
+      "Funded projects.",
+      "More than 100 FDPs completed by faculty members of the department.",
+    ],
   },
   {
     title: "COURSE OUTCOMES",
@@ -55,22 +67,44 @@ export const items = [
     title: "Program Outcomes",
     description: [
       "Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+      "Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
+      "Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
     ],
     image: Course,
+    points: [
+      "Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
+      "Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
+      "The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.",
+      "Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.",
+      "Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.",
+      "Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
+      "Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
+      "Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
+      "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
+    ],
   },
   {
     title: "PROGRAM SPECIFIC OUTCOMES",
     description: [
       "To identify, develop, construct, and explore complex engineering issues involving electric circuits, control systems, electrical machines, and power systems, apply the fundamentals of science, mathematics, and engineering.",
+      "To analyze and identify novel solutions to real-world problems involving power grids, renewable energy systems, industrial automation, electromechanical devices.",
     ],
     image: Course,
+    points: [
+      "To provide professional engineering solutions on society and the environment, as well as professional ethics, and communicate effectively.",
+    ],
   },
   {
     title: "Programme Educational Objectives",
     description: [
       "To prepare students to learn and apply cutting-edge technologies in the field of Electrical and Electronic engineering.",
+      "To encourage graduates to pursue higher education to address the diverse needs of the Electrical and Electronics industries, academia, and research.",
     ],
     image: Program,
+    points: [
+      "To Provide good communication skills, lifelong learning abilities, honesty, teamwork, leadership traits, concern for the environment, and a commitment to safety, health, legal, and cultural issues in the field of Electrical & Electronics",
+      "To prepare students to communicate effectively as team players to cope with building a Prospective career.",
+    ],
   },
 
   // Add other carousel items here
@@ -464,15 +498,26 @@ export const HODcontent = (
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: ["Embedded Club"],
+    description: [
+      "Following Clubs/Societies/ Memberships are running in the departmen",
+      "Embedded Club",
+      "Society of Electrical and Electronics Engineering",
+      "IEEE Memberships and IEEE Student Chapter",
+      "IEEE Power and Energy Society (PES)",
+      "Vibgyor and Victree",
+    ],
     image: USP,
   },
   {
     title: "Edge over others",
     description: [
       "The Overall employment of electrical and electronics engineers is projected to grow 7 percent from 2020 to 2030, about as fast as the average for all occupations.",
+      "With the emergence of Electric vehicles- India’s EV market to grow by 90% to touch $150 billion by 2030",
     ],
     image: Course,
+    points: [
+      "The government is planning to provide incentives worth Rs 76,000 crore towards setting up over 20 semiconductor design, components manufacturing and display fabrication (fab) units over the next six years, in a bid to make India a hub for electronics.",
+    ],
   },
   {
     title: "Beyond Curriculum",
@@ -484,9 +529,25 @@ export const itemsClubs = [
   {
     title: "Career Prospects",
     description: [
-      "An Electrical engineer determines how to design and improve electrical products along with the systems, evaluating systems’ safety, reliability, and performance. Electrical engineers work in many sectors including power and renewable energy companies",
+      "An Electrical engineer determines how to design and improve electrical products along with the systems, evaluating systems’ safety, reliability, and performance. Electrical engineers work in many sectors including power and renewable energy companies, manufacturing and industrial production organizations spread over a range of products. Electrical engineers work on a variety of firms, such as computers, robots, cell phones, radars, navigation systems, wiring and lighting in buildings and other kinds of electrical systems.",
     ],
     image: Program,
+    points: [
+      "There is an opportunity for EEE graduates to get central government jobs, state government jobs, public and private sectors as well. Some job titles are mentioned here:",
+      "Electrical Engineer",
+      "Section Engineers in Railways",
+      "Project Engineer",
+      "Power System Engineer",
+      "Energy Auditor",
+      "Power and Energy planner",
+      "Customer Support Engineer",
+      "Design Engineer",
+      "Quality control Engineer",
+      "Production Engineer",
+      "Maintenance and Service Engineer",
+      "Sales Manager",
+      "Assistant Engineers and Junior Engineers in state and Central government organisations",
+    ],
   },
 ];
 export const specialization = (

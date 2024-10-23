@@ -53,8 +53,16 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description: ["Industry-led & Practice Based Curriculum."],
+    description: [
+      "Industry-led & Practice Based Curriculum.",
+      "Content Delivery & Mentoring by Professionally Trained Faculty & Industry Experts by conducting Guest Lectures/ Expert Talks.",
+      "Value Added Courses/ Add On Certifications/ Short Term Courses (STC) for all round development of the students.",
+    ],
     image: USP,
+    points: [
+      "Alumni database of 200+ alumni currently working with MNC’s and Government Institutions/Sectors.",
+      "Practical oriented teaching with hands on experience (Project Based Learning and Industrial Visits).",
+    ],
   },
   {
     title: "Course Outcomes",
@@ -63,14 +71,25 @@ export const items = [
   },
   {
     title: "Program Outcomes",
-    description:
-      ["PO1 – Take Thinking : Take informed action after identifying the assumptions that frame our thinking and action"],
+    description: [
+      "PO1 – Take Thinking : Take informed action after identifying the assumptions that frame our thinking and action, checking out the degree to which these assumptions are accurate and valid, and looking at our ideas and decisions (intellectual, organizational, and personals) from different perspectives.",
+      "PO2 – Effective Communication : Speak, read, write and listen clearly in person and thought electronics media in English and in one Indian Language, and make meaning of the world by connecting people, ideas, book, media and technology.",
+    ],
     image: Program,
+    points: [
+      "PO3 – Social Interaction : Elicit views of others, mediate disagreements and help reach conclusion in group settings.",
+      "PO4 – Effective Citizenship : Demonstrate empathetic social concern and equity national development, and the ability to act with an informed awareness of issues and participate in civic life through volunteering.",
+      "PO5 – Ethics : Recognize different values system including your own, understand the moral dimension of your decisions, and accept responsibility for them.",
+      "PO6 – Environment and Sustainability : Understand the issues of environmental contexts and sustainable development.",
+      "PO7 – Self-Directed and Life-Long Learning : Acquire the ability to engage in independent and life-long learning in the broadest context socio-technologies changes.",
+    ],
   },
   {
     title: "Program Specific Outcome",
-    description:
-      ["Ability to build and perform career in data management and support IT industry."],
+    description: [
+      "PSO 1 : Ability to build and perform career in data management and support IT industry.",
+      "PSO 2 : Develop skills to design industry software and applications",
+    ],
     image: Course,
   },
 
@@ -236,19 +255,41 @@ export const facultyData = [
 export const itemsClubs = [
   {
     title: "Opportunities in Computer Application",
-    description: ["Computer Programmer"],
+    description: [
+      "Some job titles are listed here:",
+      "Computer Programmer",
+      "Software Developer",
+      "Web Designer",
+      "Database Administrator",
+      "Web/Multimedia Programmer",
+      "Software Consultant",
+      "Technical Writer",
+      "System Analyst",
+    ],
     image: USP,
   },
   {
     title: "Beyond Curriculum",
-    description:
-      ["Student perform various internship programs, Short term courses, Add on courses for their advancement in the field."],
+    description: [
+      "Student perform various internship programs, Short term courses, Add on courses for their advancement in the field.",
+      "BCA students in addition to their curriculum may opt for specialization in various field such as Cyber security, data sciences, AI& ML etc.",
+    ],
     image: Course,
   },
   {
     title: "Career Prospects",
-    description:
-      ["After the completion of this program, the students have the option to grow in one of the following fields"],
+    description: [
+      "After the completion of this program, the students have the option to grow in one of the following fields:",
+      "Cloud Computing",
+      "Ethical Hacking",
+      "GIS (Geographic Information Systems)",
+      "Software Developing",
+      "Software Testing",
+      "Networking",
+      "IT Support",
+      "Machine learning",
+      "Artificial Intelligence",
+    ],
     image: Program,
   },
 ];

@@ -61,8 +61,21 @@ export const content = (
 export const items = [
   {
     title: "USP of the of Electronics and Communication Engineering",
-    description: ["Industry-led & Practice Based Curriculum."],
+    description: [
+      "Industry-led & Practice Based Curriculum.",
+      "Content Delivery & Mentoring by Professionally Trained Faculty & Industry Experts (Guest Lectures/ Expert Talks)",
+      "Value Added Courses/ Add On Certifications/ Short Term Courses (STC) for all round development of the students.",
+      "Huge Alumni database of more than 400 alumni currently working with MNCs and Government Institutions/Sectors.",
+    ],
     image: USP,
+    points: [
+      "Well qualified faculty members (50% Faculty members are doctorate and rest 50% are pursuing Ph.D.).",
+      "More than 150 Publications in reputed journals and conferences.",
+      "Practical oriented teaching with hands on experience (Project Based Learning and Industrial Visits).",
+      "7 Patents.",
+      "6 Funded projects from AICTE, TEQIP-III, Uttarakhand Technical University.",
+      "More than 200 FDPs completed by faculty members of the department.",
+    ],
   },
   {
     title: "COURSE OUTCOMES",
@@ -73,22 +86,44 @@ export const items = [
     title: "Program Outcomes",
     description: [
       "Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+      "Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
+      "Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
     ],
     image: Program,
+    points: [
+      "Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
+      "Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
+      "The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.",
+      "Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.",
+      "Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.",
+      "Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
+      "Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write, effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
+      "Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
+      "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
+    ],
   },
   {
     title: "Program Specific Outcome",
     description: [
       "PSO1 : To develop the ability to apply concepts from electronics, communications, signal processing, VLSI, control systems, and other fields to the design, development, and implementation of application-oriented engineering systems.",
+      "PSO2 : To identify and use the newest hardware and software technologies to isolate and solve complicated problems in the fields of electronics and communication.",
     ],
     image: Course,
+    points: [
+      "PSO3 : Acquaintance with social and environmental awareness, as well as ethical duties, is essential for a successful career in real-world applications while staying current with technology advancements.",
+    ],
   },
   {
     title: "Program Educational Objective",
     description: [
       "To provide strong technical, hands-on, critical thinking, and team player abilities will enable them to pursue successful jobs in industry.",
+      "To engage in continuous learning using cutting-edge technologies to solve societal problems through logical and flexible decision-making.",
     ],
     image: Program,
+    points: [
+      "To apply their resources, expertise, and experience to build, create, and develop new technologies as well as come up with original, inventive solutions to engineering challenges in a multidisciplinary work environment.",
+      "To develop a lifelong learning mindset by implementing and adapting new ideas and technologies as their profession changes.",
+    ],
   },
 
   // Add other carousel items here
@@ -530,28 +565,51 @@ export const itemsClubs = [
     title: "Clubs/Societies/ Memberships",
     description: [
       "Following Clubs/Societies/ Memberships are running in the department",
+      "Embedded Club",
+      "Society of Electronics and Communication Engineering",
+      "IEEE Memberships and IEEE Student Chapter",
+      "VIBGYOR",
     ],
     image: USP,
   },
   {
     title: "Edge over others",
     description: [
-      "Recently the union cabinet of Indian government sanctioned the INR 76,000 Crores incentive scheme for semiconductors.",
+      "Recently the union cabinet of Indian government sanctioned the INR 76,000 Crores incentive scheme for semiconductors. Under this scheme, India will set up more than 20 semiconductor design, components manufacturing and display fabrication units. The scheme has been named the “Programme for Development of Semiconductors and Display Manufacturing Ecosystem.”",
+      "The plan envisages training 85,000 semiconductor engineers to make it a complete C to S (chips to start-ups) ecosystem (including design, fabrication, testing and packaging)",
     ],
     image: Program,
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "Apart from the regular curriculum as specified by the university, we also conduct various Workshops/ Seminars/ Short term courses/ Expert Talks as add on certifications to the students.",
+      "Apart from the regular curriculum as specified by the university, we also conduct various Workshops/ Seminars/ Short term courses/ Expert Talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips regularly to make students aware state of the art technologies used in the industries.",
     ],
     image: Program,
   },
   {
     title: "Career Prospects",
     description: [
-      "Electronics and Communication Engineers are highly demanded in fields such as Network Engineering, Aeronautics Electronics Systems, Electronic Surveillance System, Mobile Communication, Embedded Systems, Power Industry, Software Development, etc.",
+      "Electronics and Communication Engineers are highly demanded in fields such as Network Engineering, Aeronautics Electronics Systems, Electronic Surveillance System, Mobile Communication, Embedded Systems, Power Industry, Software Development, etc. The department focuses on stimulating talent which is professionally superior in meeting global challenges of the industry. The faculty lays emphasis on both theory and practical aspects, industry-relevant knowledge which prepares students for challenging scenarios.",
     ],
     image: Program,
+    points: [
+      "As an Electronics and Communication Engineer students can apply for central government job, state government job, and public & private sectors jobs. Some job titles are listed here:",
+      "Electronics Engineer",
+      "Radio Frequency Engineer",
+      "Air Traffic Controller",
+      "Field Test Engineer",
+      "Telecom Officer",
+      "Radio Officers in Navy and Merchant Navy",
+      "Network Planning Engineer",
+      "Electronics and Communications Consultant",
+      "Customer Support Engineer",
+      "Electronics Technician",
+      "Associate First line Technician",
+      "Research and Development Software Engineer",
+      "Service Engineer",
+      "Senior Sales Manager",
+      "Technical Director",
+    ],
   },
 ];

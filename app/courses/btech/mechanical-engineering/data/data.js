@@ -37,8 +37,14 @@ export const items = [
     title: "USP",
     description: [
       "50+ Add-On Certification and 30+ Short Term Courses (STC) for holistic development of the students.",
+      "Practical oriented teaching with hands on experience i.e. Project Based Learning and frequent Industrial Visits are the salient features of the teaching learning process.",
+      "Two research funded projects from TEQIP-III, Uttarakhand Technical University have been recently completed.",
     ],
     image: USP,
+    points: [
+      "60+ Publications of research papers in reputed journals and conferences.",
+      "4 Patents have been filed by the faculty members and students of the department.",
+    ],
   },
   {
     title: "COURSE OUTCOMES",
@@ -49,20 +55,43 @@ export const items = [
     title: "Program Outcomes",
     description: [
       "PO1 – Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+      "PO2 – Problem Analysis : Identify, formulate, research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
+      "PO3 – Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
     ],
     image: Program,
+    points: [
+      "PO4 – Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
+      "PO5 – Modern Tool usage : Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modelling to complex engineering activities with an understanding of the limitations.",
+      "PO6 – The Engineer and Society : Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.",
+      "PO7 – Environment and Sustainability : Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.",
+      "PO8 – Ethics : Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.",
+      "PO9 – Individual and Team Work : Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
+      "PO10 – Communication : Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
+      "PO11 – Project Management and Finance : Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
+      "PO12 – Life-long Learning : Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
+    ],
   },
   {
     title: "Program Specific Outcome",
-    description: ["PSO1 : Develop capability and motivation for higher."],
+    description: [
+      "Graduate student shall be able to:",
+      "PSO1 : Develop capability and motivation for higher.",
+      "PSO2 : Ability to integrate major Mechanical Engineering streams with innovative activities ensuring high standards of professional ethics.",
+      "PSO3 : Ensuring excellence in using managerial tools and techniques efficient manufacturing and in developing leadership skills with ethical and environmental practices.",
+    ],
     image: Course,
   },
   {
     title: "Program Educational Objectives",
     description: [
-      "Graduates will be able to adapt to technological changes in Mechanical Engineering and evelop innovative and sustainable solutions to societal needs.",
+      "PEO 1: Graduates will be able to adapt to technological changes in Mechanical Engineering and evelop innovative and sustainable solutions to societal needs.",
+      "PEO 2: Graduates will be able to develop leadership skills with high level of integrity and ethical values for team building.",
+      "PEO 3: Graduates will be able to develop professional development through self-study and continuing education.",
     ],
     image: Program,
+    points: [
+      "PEO 4: Analyse, interpret and provide solutions to real life mechanical engineering and related problems.",
+    ],
   },
 
   // Add other carousel items here
@@ -462,28 +491,37 @@ export const specialization = (
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: ["Society of Mechanical Engineering (SME)"],
+    description: [
+      "Society of Mechanical Engineering (SME)",
+      "VIBGYOR ",
+      "VICTREE",
+    ],
     image: USP,
   },
   {
     title: "Edge over others",
     description: [
-      "As per Make in India newsletter 2016, there were 280,800 mechanical engineers working in various industries in India and the number is expected to grow by 20% (approximately) by 2026.",
+      "As per Make in India newsletter 2016, there were 280,800 mechanical engineers working in various industries in India and the number is expected to grow by 20% (approximately) by 2026. The contracting services from companies will continue to add to the growth in mechanical engineering services.",
     ],
     image: Program,
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "Apart from the regular curriculum as specified by the affiliating university, we also conduct various hands – on – workshops/ seminars/ short term courses/ expert talks as add on certifications to the students.",
+      "Apart from the regular curriculum as specified by the affiliating university, we also conduct various hands – on – workshops/ seminars/ short term courses/ expert talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips time to time for making students aware of the recent trends and advancements in the industries.",
     ],
     image: Program,
   },
   {
     title: "Career Prospects",
     description: [
-      "Mechanical engineers create and implement solutions to a wide range of challenges, increasing efficiency in a variety of sectors.",
+      "Mechanical engineers create and implement solutions to a wide range of challenges, increasing efficiency in a variety of sectors. You may expect outstanding employment opportunities, great income, and a variety of work if you major in mechanical engineering. Mechanical engineering abilities are transferrable, which means they will be valuable in a range of sectors and can help you gain additional employment opportunities. A mechanical engineering degree will equip you with a variety of abilities, including:",
     ],
     image: Program,
+    points: [
+      "problem-solving – engineering is all about discovering better, more efficient methods to do things.",
+      "Team building– working in groups allows you to share expertise and build faster, more reliable solutions.",
+      "Research and Innovation: Mechanical Engineers from Tula’s institute able to be Researcher and innovator. They are also to be entrepreneur with startup.",
+    ],
   },
 ];

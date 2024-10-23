@@ -7,6 +7,14 @@ import DepartmentalVission from "../../../../../public/courses/bjmc/departmental
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import AnandKumar from "../../../../../public/courses/btech/computer-science/facultyData/AnandKumar.webp";
 import CseDrishti from "../../../../../public/courses/btech/computer-science/CseDrishti.pdf";
+import CseDrishtiOctDec from "../../../../../public/courses/btech/computer-science/CseDrishtiOct-Dec.pdf";
+import CseDrishtiJulSep from "../../../../../public/courses/btech/computer-science/CseDrishtiJul-Sep.pdf";
+import CseDrishtiApr from "../../../../../public/courses/btech/computer-science/CseDrishtiApr.pdf";
+import CseDrishtiJan from "../../../../../public/courses/btech/computer-science/CseDrishtiJan.pdf";
+import CseDrishtiOct from "../../../../../public/courses/btech/computer-science/CseDrishtiOct.pdf";
+import CseDrishtiJul from "../../../../../public/courses/btech/computer-science/CseDrishtiJul.pdf";
+import CseDrishtiAprJun from "../../../../../public/courses/btech/computer-science/CseDrishtiAprJun.pdf";
+import CseDrishtiJulMar from "../../../../../public/courses/btech/computer-science/CseDrishtiJulMar.pdf";
 import Link from "next/link";
 export const images = [
   computerScience,
@@ -57,34 +65,71 @@ export const items = [
     title: "USP's",
     description: [
       "Practice based Curriculum to fit into the industry requirements.",
+      "Mentoring & Content Delivery by Experienced & qualified Faculty Members and Industry Experts by holding Guest Lectures/ Expert Talks).",
+      "Add on Certification Programs ,Value Added Courses and Short Term Courses are conducted regularly for professional development of the students. (More than 500 certifications).",
     ],
     image: USP,
+    points: [
+      "1000+ Alumni working with reputed MNCs and Government Sectors.",
+      "Well qualified faculty with core teaching & industry experience.",
+      "Strong inclination towards research by faculty members & students. (100+ journal & conference publications).",
+      "Focus on Industry based learning through regular industry interactions, industrial visits, projects and internships.",
+      "12 Patents published by faculty members.",
+      "Funded Research projects from AICTE, TEQIP-III, Uttarakhand Technical University.",
+      "Faculty members indulge in regular upskilling through FDPs, Workshops and Seminars. (175+ FDPs completed).",
+    ],
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={cseDocument}>B.Tech Computer Science</Link>],
+    description: [
+      <Link href={cseDocument}>
+        Click here to Download B.Tech Computer Science Course Outcomes
+      </Link>,
+    ],
     image: Course,
   },
   {
     title: "Program Outcomes",
     description: [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+      "Problem Analysis : Identify, formulate, research literature, and analyze complex Engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
     ],
     image: Program,
+    points: [
+      "Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet t h e specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
+      "Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
+      "Modern Tool usage : Create, select, and apply appropriate techniques, resources, and Modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
+      "The Engineer and Society : Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.",
+      "Environment and Sustainability : Understand the impact of the professional Engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.",
+      "Ethics : Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.",
+      "Individual and Team Work : Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
+      "Communication : Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
+      "Project Management and Finance : Demonstrate knowledge and understanding of the Engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
+      "Life-long Learning : Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
+    ],
   },
   {
     title: "Program Specific Outcome",
     description: [
       "PSO1 : Problem Solving Approach: Apply programming paradigms, architectural patterns, algorithmic techniques, relevant applications and augmentation to solve real-world complex problems.",
+      "PSO2 : Analysis and Synthesis Techniques: Demonstrate the ability to analyse current systems to understand the solution, change or optimise the solution, and synthesise solutions based on new requirements using existing infrastructure and reusable components.",
     ],
     image: Course,
+    points: [
+      "PS03 : Reusability and Adaptability Skills: Assimilate, appreciate, utilize, and  promote cutting-edge technology to improve reusability, adaptability, and scalability.",
+    ],
   },
   {
     title: "Program Educational Objective",
     description: [
       "PE01:Computer Science Professional : To equip students with theoretical and applied knowledge, enabling them to solve multidisciplinary real-life problems, becoming computer engineering professionals in programming skills  for technology development, deployment, and system implementation.",
+      "PE02: Entrepreneurship and Leadership : To cultivate engineering practitioners and leaders, solving industry&#39;s technological problems, demonstrating leadership skills, identifying research gaps and becoming successful entrepreneurs.",
     ],
     image: Program,
+    points: [
+      "PE03:Lifelong learning: To equip students with creative project management skills that help them become lifelong learners by means of continuing education.",
+      "PE04: Social awareness and Ethics: To foster awareness and, accountability and ethics that lead towards efficient collaboration, economic growth and multidisciplinary interactions.",
+    ],
   },
 
   // Add other carousel items here
@@ -359,17 +404,113 @@ export const HODcontent = (
     interaction, applied machine learning etc.
   </>
 );
-
+const innovations = [
+  {
+    sNo: 1,
+    innovationUsed: "Explicit Teaching / Lecture",
+    courseUsed: "Discrete Structure",
+    description:
+      "Explicit teaching is a purposeful way of overtly teaching students. It means a clear-cut and finite way of teaching that includes both instructional and delivery procedures. Most theory-based courses are being delivered through explicit teaching methods.",
+    impactOnLearning:
+      "This method is useful to clearly understand the topic and question can be solved in a very effective way.",
+    academicYear: "2020-21",
+  },
+  {
+    sNo: 3,
+    innovationUsed: "Expert Lectures",
+    courseUsed: "Cyber Security",
+    description:
+      "The department organizes expert/guest lectures to provide in-depth knowledge of different technologies. This provides a platform for students to express their ideas and views.",
+    impactOnLearning:
+      "This way helps to know about the latest trend and knowledge related to industry.",
+    academicYear: "2020-21",
+  },
+  {
+    sNo: 4,
+    innovationUsed: "Peer Teaching",
+    courseUsed: "All Courses",
+    description:
+      "It involves students instructing their peers in a collaborative learning environment. This approach fosters a sense of shared responsibility for knowledge dissemination, promoting active engagement and a deeper understanding of the subject matter. By encouraging students to explain concepts to each other, peer teaching not only enhances their comprehension but also cultivates communication and leadership skills.",
+    impactOnLearning:
+      "This student-centered approach bridges the gap between average and advanced learners. It not only benefits the learners but also creates a supportive community within the classroom, facilitating a more inclusive and effective learning experience.",
+    academicYear: "2020-21",
+  },
+  {
+    sNo: 5,
+    innovationUsed: "Flipped Classroom",
+    courseUsed: "All Courses",
+    description:
+      "In a flipped classroom, students engage with instructional content, often in the form of video lectures or readings, at home before attending class. Classroom time is then dedicated to active, hands-on learning activities, discussions, and collaborative work.",
+    impactOnLearning:
+      "This approach allows for personalized learning, as students can progress through materials at their own pace. At the same time, class time becomes a dynamic space for deeper understanding and application of concepts through interaction with peers and the instructor.",
+    academicYear: "2020-21",
+  },
+  {
+    sNo: 6,
+    innovationUsed: "Tutorial Classes",
+    courseUsed: "All Courses",
+    description:
+      "Tutorial classes are supplementary educational sessions designed to provide additional support, clarification, and reinforcement of academic concepts covered in regular classroom settings. These sessions, often conducted in smaller groups.",
+    impactOnLearning:
+      "This method allows students to receive personalized attention from instructors, ask questions, and delve deeper into challenging topics.",
+    academicYear: "2020-21",
+  },
+  {
+    sNo: 7,
+    innovationUsed: "Group Discussions",
+    courseUsed:
+      "Machine Learning/Software Engineering/Projects/Technical Communications",
+    description:
+      "These sessions provide students with opportunities to explore complex concepts, problem-solving strategies, and programming techniques collectively. Engaging in group discussions enhances communication skills, encourages the sharing of diverse perspectives, and fosters a collaborative spirit among students.",
+    impactOnLearning:
+      "These interactions help reinforce understanding as individuals articulate their thoughts and learn from their peers.",
+    academicYear: "2020-21",
+  },
+  {
+    sNo: 8,
+    innovationUsed: "Self-Learning (MOOC, NPTEL, ICT IIT Kanpur, Swayam)",
+    courseUsed:
+      "Data science for Engineers, Cloud computing, Data Structures & Algorithms",
+    description:
+      "Self-learning platforms provide students with flexible and convenient access to high-quality education from global experts. These platforms offer personalized learning experiences, allowing students to progress at their own pace and explore subjects tailored to their interests.",
+    impactOnLearning:
+      "They promote a culture of continuous learning, helping individuals stay current in their field and develop essential self-directed learning skills for lifelong education and career enhancement.",
+    academicYear: "2020-21",
+  },
+  {
+    sNo: 9,
+    innovationUsed: "Practical sessions",
+    courseUsed: "Object Oriented Programming, Data Structure",
+    description:
+      "This method allows students to apply theoretical knowledge to practical scenarios, fostering a deeper understanding of concepts. In the computer laboratory, students engage in problem-solving, coding exercises, and experiments, honing their analytical and technical skills.",
+    impactOnLearning:
+      "This method helps to understand the concepts in practical way as well and can apply in real time applications.",
+    academicYear: "2020-21",
+  },
+];
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
     description: ["Society of Computer Science and Engineering."],
     image: USP,
+    points: [
+      "IEEE  Student Chapter",
+      "IEEE Computer Society",
+      "Vibgyor and Victree",
+    ],
   },
   {
     title: "News Letter / Magazine",
     description: [
       <Link href={CseDrishti}>डिजिटल DRISHTI | JAN-MAR(2024)</Link>,
+      <Link href={CseDrishtiOctDec}>डिजिटल DRISHTI | OCT-DEC (2023)</Link>,
+      <Link href={CseDrishtiJulSep}>डिजिटल DRISHTI | JULY-SEPT (2023)</Link>,
+      <Link href={CseDrishtiApr}>डिजिटल DRISHTI | APRIL-JUNE(2023)</Link>,
+      <Link href={CseDrishtiJan}>डिजिटल DRISHTI | JAN-MARCH(2023)</Link>,
+      <Link href={CseDrishtiOct}>डिजिटल DRISHTI | OCT-DEC(2022)</Link>,
+      <Link href={CseDrishtiJul}>डिजिटल DRISHTI | JULY-SEPT (2022)</Link>,
+      <Link href={CseDrishtiAprJun}>डिजिटल DRISHTI | APRIL-JUNE(2022)</Link>,
+      <Link href={CseDrishtiJulMar}>डिजिटल DRISHTI | JULY-MAR (2021)</Link>,
     ],
     image: Course,
   },
@@ -377,26 +518,88 @@ export const itemsClubs = [
     title: "Edge over others",
     description: [
       "Maximum number of students of Computer Science and Engineering are hired by prominent companies through campus placements.",
+      "Attractive salary packages are available for B. Tech. Computer Science graduates.",
+      "Students of the Department are encouraged and facilitated to raise start-ups.",
+      "Students are encouraged to participate in the research activities at priority.",
     ],
     image: Program,
   },
   {
     title: "Beyond Curriculum",
-    description: ["Microsoft Innovation Centre"],
+    description: [
+      "Microsoft Innovation Centre",
+      "Windows Azure Program",
+      "Personality Development Programs",
+      "Add on certification programs",
+    ],
     image: Program,
   },
   {
     title: "Innovation in Teaching & Learning",
     description: [
-      "Explicit teaching is a purposeful way of overtly teaching students.",
+      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdpKpjox_H2-p59YtbwHwohIV0ApP-v-MgyuSSUqXZJyMbxGw">
+        Submit Feedback for Innovation in Teaching & Learning
+      </Link>,
     ],
     image: Program,
+    points: [
+      <div className="w-full max-w-full overflow-scroll">
+        <table className="overflow-x-scroll w-fit border border-black text-[clamp(10px,0.7vw,20px)]">
+          <thead>
+            <tr>
+              <th className="p-2">SNo.</th>
+              <th className="p-2">Innovation Used</th>
+              <th className="p-2">Course Used</th>
+              <th className="p-2 min-w-[20rem]">Description</th>
+              <th className="p-2 min-w-[15rem]">Impact on Learning</th>
+              <th className="p-2">Academic Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            {innovations.map((data, index) => (
+              <tr key={index}>
+                <td className="text-black border border-black">{data.sNo}</td>
+                <td className="text-black border border-black">
+                  {data.innovationUsed}
+                </td>
+                <td className="text-black border border-black">
+                  {data.courseUsed}
+                </td>
+                <td className="text-black border border-black">
+                  {data.description}
+                </td>
+                <td className="text-black border border-black">
+                  {data.impactOnLearning}
+                </td>
+                <td className="text-black border border-black">
+                  {data.academicYear}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>,
+    ],
   },
   {
     title: "Career Prospects",
     description: [
-      "A computer science engineer is involved in various aspects of computing.",
+      "A computer science engineer is involved in various aspects of computing. Right from the design of individual microprocessors to personal computers to supercomputers to designing circuits and writing the software that powers the computers.",
+      "A computer science engineer is responsible for designing, testing, implementing, and maintaining computer hardware and software.",
+      "A computer science engineer is responsible for the smooth functioning of the components of the software programming as well as the components of the hardware systems.",
     ],
     image: Program,
+    points: [
+      "A computer science engineer is responsible for managing the operating systems and also looks into the design, set up and testing of networks.",
+      "Some job titles are listed here:",
+      "Computer Programmers",
+      "Software Developers",
+      "Web Designer",
+      "Database Administrator",
+      "Web/Multimedia Programmer",
+      "Software Consultant",
+      "Technical Writer",
+      "System Analyst",
+    ],
   },
 ];

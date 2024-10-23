@@ -19,7 +19,8 @@ import rupalikaushik from "../../../public/bsc-agriculture/facultyData/rupalikau
 import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
-
+import AGRICULTURE from "../../../public/bsc-agriculture/AGRICULTURE.pdf";
+import Link from "next/link";
 export const images = [
   plant,
   irrigation,
@@ -76,32 +77,67 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description:
-      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
+    description: [
+      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      "Wide practical field exposure with individual allotment of working areas to various modules of Agriculture viz Hydroponics, Aeroponics, Mushroom Cultivation, Apiculture, Crop Cafeteria and many more designed in house by the students.",
+      "Interaction based ‘Flipped Classroom’ Learning Methodology.",
+      "25+ research papers and articles published in reputed journals.",
+    ],
     image: USP,
+    points: [
+      "3 funded research projects from UCOST, Dehradun, Uttarakhand.",
+      "300+ alumni working with Government and Private Sectors.",
+      "Comprehend the theories and techniques used in successful organizations using “Practical Based” teaching pedagogy.",
+      "In close proximity to wide range of flora and fauna to be explored with the given curriculum.",
+      "Prepares students for entrepreneurship and employment.",
+      "MoU’s with Krishi Vigyan Kendra and other registered agriculture and farm development centers.",
+    ],
   },
   {
     title: "Course Outcomes",
-    description:
-      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
+    description: [
+      <Link href={AGRICULTURE}>
+        Click here to download AGRICULTURE Course Outcomes
+      </Link>,
+    ],
     image: Course,
   },
   {
     title: "Program Outcomes",
-    description:
-      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
+    description: [
+      "PO1. Create, select, and apply appropriate techniques, resources, and modern tools and software for prediction and forecast of outcomes based on agricultural sciences.",
+      "PO2. To identify and review, formulate and analyse problems in various sectors of Agriculture &amp; Forestry.",
+    ],
     image: Program,
+    points: [
+      "PO3. Design Solutions of various problems found in farming system with due consideration of farmers health and safety.",
+      "PO4. To develop scientific aptitude which is beneficial for the society.",
+      "PO5. To develop communication skills such as reading, writing, speaking etc which will help in expressing ideas and views clearly &amp; effectively.",
+      "PO6. Function effectively as an individual and as a member for leader in divers organizations.",
+      "PO7. Recognize the need for, and have the preparation &amp; ability to engage in independent &amp; lifelong learning in the broadest context of technological &amp; professional changes",
+    ],
   },
   {
     title: "Program Specific Outcome",
-    description:
-      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
+    description: [
+      "PSO 1: Students make use of digital and farm technology to build models for enhancing farming industry.",
+      "PSO 2: An ability to apply the acquired skills and knowledge to experiment, innovate and demonstrate sustainable agricultural practices at grass root level for rural upliftment.",
+    ],
     image: Course,
+    points: [
+      "PSO 3: Students develop entrepreneurial skills by applying knowledge gained through participation in workshops and start-up boot camps.",
+    ],
   },
   {
     title: "Program Educational Objective",
-    description:
-      ["Collaborative and integrative pedagogy helps to adopt concepts quickly."],
+    description: [
+      "PEO1: To develop competencies in various aspects of agriculture and allied sciences.",
+      "PEO2: To promote use of technology in order to solve problems related to agricultural production.",
+      "PEO3: To develop entrepreneurial skills, creativity and innovation in the field of agricultural science.",
+      "PEO4: To produce industry ready graduates with ethical and moral values.",
+      "PEO5: To explore future opportunities in higher studies.",
+      "PEO6: To provide a base for independent and life-long learning in the domain of agricultural practices.",
+    ],
     image: Program,
   },
 
@@ -398,24 +434,100 @@ export const facultyData = [
     imageUrl: rupalikaushik,
   },
 ];
+const careers = [
+  {
+    carrer: "Agriculture Research Scientist",
+    title:
+      "Subject Matter Specialist in different Krishi Vigyan Kendras (KVKs)",
+  },
+  {
+    carrer: "Extension Officer",
+    title: "Field Officer",
+  },
+  {
+    carrer: "Agriculture Officer",
+    title: "Farm Manager",
+  },
+  {
+    carrer: "Plantation Manager",
+    title: "Research Officer",
+  },
+  {
+    carrer: "Officer in Quality Assurance in Related Fields",
+    title: "Agriculture Loan Officer in Banks",
+  },
+  {
+    carrer: "Production Manager",
+    title: "Operations Manager in Fertilizer Units",
+  },
+  {
+    carrer: "Business Development Manager",
+    title: "Food Processing Units in Government",
+  },
+  {
+    carrer: "Agri-Preneurship",
+    title: "Seed Technologies Firm",
+  },
+];
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description:
-      ["Following Clubs/Societies/ Memberships are running in the department"],
+    description: [
+      "Following Clubs/Societies/ Memberships are running in the department",
+      "IAAS- International Association of Students in Agriculture and related Sciences.",
+      "Vibgyor",
+      "Victree",
+    ],
     image: USP,
   },
   {
     title: "Beyond Curriculum",
-    description:
-      ["Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s."],
+    description: [
+      "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s. some of the activities which are regularly conducted for the students are:",
+      "NCC",
+      "NSS",
+      "Picnics",
+      "Educational Tours",
+      "Industrial Visits",
+      "Leisure Tours",
+      "Seminars",
+      "Workshops",
+      "Symposiums",
+      "Athletic meets",
+      "Cultural Meets",
+      "Sport Meets",
+      "Debates",
+      "Extempore",
+      "Mock Interview sessions",
+      "Theatre reviews",
+      "Quizzes",
+      "Social Work",
+      "Volunteering in Social cause campaigns",
+      "Conducting Events and Festivals",
+      "And lots more to add to the overall bucket of beyond curriculum activities",
+    ],
     image: Course,
   },
   {
     title: "Career Prospects",
-    description:
-      ["Agriculture Research Scientist Subject Matter Specialist in different Krishi Vigyan Kendras (KVKs)"],
+    description: [""],
     image: Program,
+    points: [
+      <div className="w-full max-w-full overflow-scroll">
+        <table className="overflow-x-scroll w-fit border border-black text-[clamp(10px,0.7vw,20px)]">
+          <tbody>
+            {careers.map((data, index) => (
+              <tr key={index}>
+                <td className="text-black border border-black">
+                  {data.carrer}
+                </td>
+                <td className="text-black border border-black">{data.title}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>,
+    ],
   },
 
   // Add other carousel items here

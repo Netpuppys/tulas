@@ -76,21 +76,44 @@ export const items = [
   {
     title: "Program Objectives",
     description: [
+      "The objectives of a B.Tech in AI/ML program are as follows:",
       "Develop a solid foundation in computer science, mathematics, statistics, and data analysis: The program aims to provide students with a strong foundation in these key areas to develop the necessary skills to become successful data scientists.",
+      "Learn advanced techniques and tools in data science: The program aims to teach students the latest techniques and tools used in the field of data science, such as machine learning, data mining, big data analytics, and data visualization.",
     ],
     image: USP,
+    points: [
+      "Apply data science techniques to real-world problems: The program aims to provide students with hands-on experience in solving real-world problems using data science techniques.",
+      "Develop critical thinking and problem-solving skills: The program aims to help students develop critical thinking and problem-solving skills necessary to succeed in the field of data science.",
+      "Foster creativity and innovation: The program aims to encourage creativity and innovation in data science by providing students with opportunities to work on projects and participate in internships.",
+      "Emphasize the importance of ethical considerations in data science: The program aims to educate students on the importance of ethical considerations in data science, such as data privacy, security, and bias, and how to apply responsible data science practices.",
+      "Prepare students for a successful career in data science: The program aims to equip students with the knowledge and skills necessary to pursue a successful career in data science in various industries, such as healthcare, finance, e-commerce, and many others.",
+    ],
   },
   {
     title: "Program Outcomes",
     description: [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+      "Problem Analysis : Identify, formulate, research literature, and analyze complex Engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
     ],
     image: Program,
+    points: [
+      "Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet t h e specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
+      "Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
+      "Modern Tool usage : Create, select, and apply appropriate techniques, resources, and Modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
+      "The Engineer and Society : Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.",
+      "Environment and Sustainability : Understand the impact of the professional Engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.",
+      "Ethics : Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.",
+      "Individual and Team Work : Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
+      "Communication : Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
+      "Project Management and Finance : Demonstrate knowledge and understanding of the Engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
+      "Life-long Learning : Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
+    ],
   },
   {
     title: "Program Specific Outcomes",
     description: [
       "PSO1 : Provide Industry led/sponsor Teaching Learning facilities.",
+      "PSO2 : Provide ability to design and develop solution machine learning via sponsor research project.",
     ],
     image: Course,
   },
@@ -189,14 +212,29 @@ export const HODcontent = (
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: ["Society of Computer Science and Engineering."],
+    description: [
+      "Society of Computer Science and Engineering.",
+      "IEEE  Student Chapter",
+      "IEEE Computer Society",
+      "Vibgyor and Victree",
+    ],
     image: USP,
   },
   {
     title: "Career Prospects",
     description: [
       "Machine Learning Engineer: Design, develop, and implement machine learning models and algorithms for specific applications, such as image recognition, natural language processing, and recommendation systems.",
+      "Data Scientist:Analyze large datasets to extract meaningful insights and trends, and use statistical and machine learning techniques to solve complex business problems.",
     ],
     image: Course,
+    points: [
+      "AI Research Scientist:Engage in cutting-edge research to advance the field of artificial intelligence, contributing to the development of new algorithms, models, and technologies.",
+      "Computer Vision Engineer:Develop systems that enable computers to interpret and understand visual information, often used in applications like image and video analysis, object recognition, and augmented reality.",
+      "Natural Language Processing (NLP) Engineer:Work on projects involving the development of algorithms and systems that understand, interpret, and generate human language, applied in areas like chatbots, language translation, and sentiment analysis.",
+      "AI Software Developer:Develop software applications that leverage artificial intelligence and machine learning technologies, integrating them into existing systems or creating new intelligent solutions.",
+      "AI Consultant:Advise businesses on how to implement and integrate AI solutions to improve efficiency, solve business challenges, and gain a competitive edge in their respective industries.",
+      "Business Intelligence Analyst:Use data analysis and visualization tools to provide insights and support decision-making within organizations, often employing machine learning techniques for predictive analytics.",
+      "Entrepreneur/Startup Founder: Start your own venture focusing on AI and ML applications, addressing specific industry needs or developing innovative solutions.",
+    ],
   },
 ];

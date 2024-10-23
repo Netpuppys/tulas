@@ -8,6 +8,8 @@ import TauseefIqbal from "../../../../public/courses/bjmc/facultyData/TauseefIqb
 import NeerajKotiyal from "../../../../public/courses/bjmc/facultyData/NeerajKotiyal.webp";
 import deepkarawat from "../../../../public/courses/bjmc/facultyData/deepkarawat.webp";
 import AnkitGhildiyal from "../../../../public/courses/bjmc/facultyData/AnkitGhildiyal.webp";
+import BJMC from "../../../../public/courses/bjmc/BJMC.pdf";
+import Link from "next/link";
 export const images = [
   bjmc,
   // Add more image paths as needed
@@ -50,37 +52,62 @@ export const items = [
   {
     title: "USP's",
     description: [
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      "Qualified Faculty members from all verticals of Journalism & Mass communication",
+      "State of the art Electronic Media Production Centre (EMPC)",
+      "Tie ups with prominent media houses",
     ],
     image: USP,
+    points: [
+      "In-house Newspaper publication and Electronic Media News dissemination platforms to facilitate students with industrial exposure before entering into job market",
+      "Preparation of professionals for the different media fields which would work closely with different stakeholders of civil society, media, and other democratic institutions, thereby contributing prominently towards overall national and regional development.",
+    ],
   },
   {
     title: "Course Outcomes",
     description: [
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      <Link href={BJMC}>Click here to download BA.JMC Course Outcomes</Link>,
     ],
     image: Course,
   },
   {
     title: "Program Outcomes",
     description: [
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      "PO1- Knowledge- To apply ideas about communication and its significance in society",
+      "PO2- The program will transform the students as a successful media professional",
+      "PO3- To impart skills related to Information Communication Technologies (ICTs), including digital and media literacy and competencies",
     ],
     image: Program,
+    points: [
+      "PO4- To apply the objectivity and critical thinking for communicating to masses through a variety of mediums such as Short Films, Documentary Films, PTC for Television, Advertising and PR Campaign, Event Management, News Paper Production for Print PO5- Create awareness to become an enlightened citizen as well as a dynamic professional with commitment to deliver one’s responsibilities strictly adhering to highest standard of ethics and professionalism",
+      "PO6- Ethics- To apply ethical principles and commit to professional ethics and responsibilities",
+    ],
   },
   {
     title: "Program Specific Outcome",
     description: [
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      "PSO-1- Understanding the basic relationships between culture, society, and communication.",
+      "PSO-2 Provide in-depth understanding of communication theories and models.",
+      "PSO-3 Introduce students to the real-world context of utilizing communication technologies to enhance their communication skills.",
     ],
     image: Course,
+    points: [
+      "PSO-4 To develop learners into skilled and efficient professionals who are prepared for the media and entertainment industry.",
+      "PSO-5 To inculcate the principles of Indian and world culture, as well as professional ethics.",
+      "PSO-6 To prepare socially responsible media academicians, researchers, professionals with global vision.",
+    ],
   },
   {
     title: "Program Educational Objective",
     description: [
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      "PEO-1: To apprise students to know about the modern mass media.",
+      "PEO-2: To enlighten the students about the core challenges of Media Industry.",
+      "PEO-3: To familiarize the students with the media sector and media professionals.",
     ],
     image: Program,
+    points: [
+      "PEO-4: To inculcate the values and ethics of modern mass media.",
+      "PEO-5: To impart Journalistic knowledge as per the best of academics and media industry.",
+    ],
   },
 
   // Add other carousel items here
@@ -250,30 +277,50 @@ export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
     description: [
-      "Pixel Party: Journalism & Mass Communication department runs their film club in the campus.",
+      "Pixel Party: Journalism & Mass Communication department runs their film club in the campus. The film’s club name is ‘Pixel Party’. The club frequently screen thought provoking films & Documentaries and engage students in post screening discussions on aesthetic & social aspect of the cinema.",
+      "Vibgyor",
+      "Victree",
     ],
     image: USP,
   },
   {
     title: "Edge over others",
     description: [
-      "An individual with the BJMC degree possesses the ability to comprehend society",
+      "An individual with the BJMC degree possesses the ability to comprehend society, market, and governance in all its historicity and social cultural variations in addition to an individual with efficient communication skills.",
     ],
     image: Course,
+    points: [
+      "It also cultivates creative instincts in the students to produce meaningful media content for information, awareness and entertainment of both popular and high culture. Department of Journalism & Mass Communication at Tula’s provides adequate infrastructure to prepare students for all sorts of media engagement and research. The department provides state of the art Electronic Media & production Centre with an enriched library and suitable environment.",
+    ],
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "Bachelor of Journalism & Mass Communication is a program that can be treated as a lifestyle in itself.",
+      "Bachelor of Journalism & Mass Communication is a program that can be treated as a lifestyle in itself. A person intensely involved with the program learns a lot of important aspects of life. Important questions of life are as:",
+      "How to decide, Whom to vote?",
+      "How governmental and non-governmental institution functions?",
+      "How to develop taste of good art & culture?",
+      "What has thousand years of history brought to mankind?",
     ],
     image: Program,
+    points: [
+      "How civilizations evolved?",
+      "What could be called a good cinema? Which music is better?",
+      "What is justice?",
+      "What could be called a good literature?",
+      "These questions may appear beyond the scope of curriculum but knowing answers to these questions add certain aesthetic upheaval to life which makes life beautiful.",
+    ],
   },
   {
     title: "Career Prospects",
     description: [
-      "Students can choose to excel in range of career options after pursuing Journalism & Mass Communication Course.",
+      "Students can choose to excel in range of career options after pursuing Journalism & Mass Communication Course. One can become Editor, Journalist at Print, electronic & New Media Platforms in their chosen beat. Students can also make their career in Advertising, Public Relations industry. Students may also study & acquire skills required to carry communication for development and can make career in development sector where range of communication related jobs are available including UNDP & UNESCO Jobs, Jobs in different government departments and in leading NGOs.",
     ],
     image: USP,
+    points: [
+      "Apart from these lucrative career options, aspirant can also aspire to become photographer, film maker, radio jockey, Cinematographer & print designer.",
+      "There are dozens of other career option in Mass Communication for example one can become film critic, Communication associate, academician, Media Researcher, Event Manager, Video Editor, freelancer, Copy writer, Photo Journalist, graphic designer, Voice artists, anchor, etc.",
+    ],
   },
 
   // Add other carousel items here

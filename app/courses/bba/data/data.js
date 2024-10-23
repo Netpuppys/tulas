@@ -68,27 +68,53 @@ export const content = (
 export const items = [
   {
     title: "USP's",
-    description:
-      ["Fully equipped modern amphitheater kind classrooms for better reach and visibility."],
+    description: [
+      "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
+      "200+ alumni network in various startups, Entrepreneurships, governmental and blue-chip companies.",
+      "50+ placement opportunities given during the semester.",
+      "research articles and papers in journals of repute.",
+    ],
     image: USP,
+    points: [
+      "MoU’s with various companies to assist students in their needs of training, placement and internships.",
+      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
+      "Interaction based ‘Flipped Classroom’ Learning Methodology.",
+      "Comprehend the theories and techniques used in successful organizations using “Case Based” Teaching pedagogy.",
+      "Prepare students for entrepreneurship and employment",
+    ],
   },
 
   {
     title: "Program Outcomes",
-    description:
-      ["Apply the management domain knowledge to solve routine and specific business problems."],
+    description: [
+      "PO1: Apply the management domain knowledge to solve routine and specific business problems.",
+      "PO2: Develop capability of analysing and critical thinking to take informed and real time data based decisions.",
+      "PO3: Foster the technological know how to solve business and management related problems in technologically driven environment.",
+    ],
     image: Program,
+    points: [
+      "PO4: Ability to take leadership positions based on ethical, value driven, sustainable, holistic and entrepreneurial approach.",
+      "PO5: Develop various managerial and entrepreneurial skills for catering to the local and global business scenarios.",
+      "PO6: Imbibe and practice the different domain knowledge and develop skills required for specialized functional areas.",
+    ],
   },
   {
     title: "Program Specific Outcome",
-    description:
-      ["To analyse complex data, understanding the financial implications of managerial decision making."],
+    description: [
+      "PSO1: To analyse complex data, understanding the financial implications of managerial decision making.",
+      "PSO2: To be able to perform business analytics using tools such as spreadsheets.",
+      "PSO3: To analyse business management for domestic and international organisation.",
+    ],
     image: Course,
   },
   {
     title: "Program Educational Objective",
-    description:
-      ["To provide value based professional education to management aspirants."],
+    description: [
+      "PEO1: To provide value based professional education to management aspirants.",
+      "PEO2: To prepare learners to address the managerial challenges.",
+      "PEO3: To prepare young minds with a positive attitude for excellent performance and committed service.",
+      "PEO4: To develop and promote entrepreneurial mindset among learners.",
+    ],
     image: Program,
   },
   {
@@ -283,28 +309,109 @@ export const facultyData = [
     imageUrl: BharatBhushan,
   },
 ];
+const bbacourse = [
+  { carrer: "Sales / Inside Sales", title: "Entry Level Sales Executives" },
+  { carrer: "Marketing", title: "Marketing Executives" },
+  { carrer: "Retail Management", title: "Store In charges" },
+  {
+    carrer: "Supply Chain and Analytics",
+    title: "Asst Managers/Logistic Mgrs.",
+  },
+  { carrer: "Operations", title: "Production Executives/Mgrs" },
+  { carrer: "Human Resources", title: "Executives/Asst Managers" },
+  { carrer: "Digital Marketing", title: "DM Executives/Managers" },
+  { carrer: "Finance", title: "Analyst" },
+];
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: ["VIBGYOR"],
+    description: ["VIBGYOR", "VICTREE", "COMPETERE"],
     image: USP,
   },
   {
     title: "Edge over others",
-    description: ["A Versatile degree"],
+    description: [
+      "A Versatile degree",
+      "Personal Development",
+      "Gateway to number of job opportunities in various fields of management",
+      "Gives in-depth knowledge of business at the earliest stage of career",
+    ],
     image: Course,
+    points: [
+      "Trains well in various qualities like entrepreneurial, leadership and management",
+      "Global accepted degree course with wide range of possibilities",
+      "Dearth of management graduates in middle east, Europe and Canadian countries",
+      "Course acts as a precursor to management studies, and hence, it is updated regularly to incorporate major developments in the business world.",
+      "Kick Start to a global, reputed and overgrowing career.",
+    ],
   },
   {
     title: "Beyond Curriculum",
-    description:
-      ["At the point when various sorts of co-curricular exercises are incorporated at the everyday schedule level"],
+    description: [
+      "At the point when various sorts of co-curricular exercises are incorporated at the everyday schedule level, their fundamental objective is to contribute towards an overall improvement of the understudy. The accompanying pointers clarify the main targets of co-curricular exercises:",
+      "To impart students with the importance of teamwork.",
+      "To provide children with plentiful opportunities to imbibe a varied skillset, from furnishing their social and communication skillsto imbibing them with leadership and decision-making abilities.",
+    ],
     image: Program,
+    points: [
+      "To facilitate motivation for learning",
+      "To assist them in developing the spirit for healthy competition",
+      "Work as incredible avenues of socialization and teaches students about the essentials of planning, management, co-operation and co-ordination.",
+      "To promote psychological, ethical, civic, social, disciplinary, cultural and recreational values.",
+      "By getting involved in various types of co-curricular activities, you can relax, rejuvenate and boost your creativity and thinking skills.",
+      "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s. some of the activities which are regularly conducted for the students are:",
+      "NCC",
+      "NSS",
+      "Picnics",
+      "Educational Tours",
+      "Industrial Visits",
+      "Leisure Tours",
+      "Seminars",
+      "Workshops",
+      "Symposiums",
+      "Athletic meets",
+      "Cultural Meets",
+      "Sport Meets",
+      "Debates",
+      "Extempore",
+      "Mock Interview sessions",
+      "Business plan developments",
+      "Theatre reviews",
+      "Quizzes",
+      "Social Work",
+      "Volunteering in Social cause campaigns",
+      "Conducting Events and Festivals",
+      "And lots more to add to the overall bucket of beyond curriculum activities",
+    ],
   },
   {
     title: "Career Prospects",
-    description:
-      ["BBA is a  professional degree that nurtures its students who are passionate about getting into business and management careers."],
+    description: [
+      "BBA is a  professional degree that nurtures its students who are passionate about getting into business and management careers. Students can get placed directly into good known brands immediately after getting their BBA degrees. This is the reason that BBA degree holders are among the highest employment rate category as compared to other bachelor’s degrees.",
+    ],
     image: Course,
+    points: [
+      <div className="w-full max-w-full overflow-scroll">
+        <table className="overflow-x-scroll w-fit border border-black text-[clamp(10px,0.7vw,20px)]">
+          <thead>
+            <tr>
+              <th className="p-2">Specialization</th>
+              <th className="p-2">Jobs</th>
+            </tr>
+          </thead>
+          <tbody>
+            {bbacourse.map((data, index) => (
+              <tr key={index}>
+                <td className="text-black border border-black">
+                  {data.carrer}
+                </td>
+                <td className="text-black border border-black">{data.title}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>,
+    ],
   },
   // Add other carousel items here
 ];
