@@ -34,7 +34,7 @@
 } */
 
 .site-map-header-plus {
-  width: 40px;
+  width: 60px;
   background-color: #e3e3e3;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@
 } */
 
 .site-map-header-minus {
-  width: 40px;
+  width: 60px;
   background-color: #d7d7d7;
   display: flex;
   justify-content: center;
@@ -107,7 +107,7 @@
 .site-map-sub-header-plus,
 .site-map-ss-header-minus,
 .site-map-ss-header-plus {
-  min-width: 40px;
+  min-width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;

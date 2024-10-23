@@ -275,7 +275,8 @@ function Navbar({ setState, position = false, fullBanner = false }) {
             </div>
           )}
 
-          <Link href="/" className="z-[3333] md:hidden">
+          {!scrolled &&
+          <Link href="/" className="z-[3333] md:hidden animate-fadeIn">
             <Image
               src={
                 (isChecked && position) || isChecked
@@ -287,7 +288,22 @@ function Navbar({ setState, position = false, fullBanner = false }) {
               alt=""
               className="w-[160px] h-fit pointer-events-auto cursor-pointer"
             />
-          </Link>
+          </Link>}
+
+          {scrolled &&
+          <Link href="/" className="z-[3333] md:hidden animate-translateButton">
+            <Image
+              src={
+                (isChecked && position) || isChecked
+                  ? TulasLogoGreen
+                  : position
+                  ? TulasLogoRed
+                  : TulasLogoGreen
+              }
+              alt=""
+              className="w-[160px] h-fit pointer-events-auto cursor-pointer"
+            />
+          </Link>}
         </div>
         <div
           onClick={handleOutsideClick}

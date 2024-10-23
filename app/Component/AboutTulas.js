@@ -67,14 +67,14 @@ function AboutTulas() {
   return (
     <div
       id="2"
-      className="bg-transparent flex flex-row relative justify-between px-24 py-20 items-center"
+      className="bg-transparent flex flex-col-reverse md:flex-row gap-8 md:gap-0 relative justify-between px-8 lg:px-24 py-20 items-center"
     >
-      <div className="w-[50%]">
-        <h3 className="text-[#fff] font-[TTChocolates] font-semibold text-xl 2xl:text-2xl max-w-[682px] ml-0 mr-auto">
+      <div className="w-full md:w-[50%]">
+        <h3 className="text-[#fff] font-[TTChocolates] font-semibold text md:text-2xl max-w-[682px] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>
-      <div className="w-[50%]">
+      <div className="w-full md:w-[50%]">
         <div
           className="max-w-[429px] h-fit ml-auto mr-0 "
         >
