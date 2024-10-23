@@ -218,6 +218,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
             </div>
           )}
 
+          {/* minimal buttons after scrolling */}
           {scrolled && (
             <div className="flex md:w-fit animate-translateButton flex-row-reverse md:flex-row gap-4 md:gap-6">
               {/* menu button */}

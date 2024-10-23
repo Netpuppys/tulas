@@ -1,18 +1,20 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect } from "react";
+import deleteForm from "../../public/admissions/deleteForm.png"
 
 function AboutTulas() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.async = true;
-    script.src = "https://widgets.nopaperforms.com/emwgts.js";
-    document.body.appendChild(script);
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.type = "text/javascript";
+  //   script.async = true;
+  //   script.src = "https://widgets.nopaperforms.com/emwgts.js";
+  //   document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
   const aboutTulas = (
     <>
       <span className="text-[#007A83] italic">Tula’s Institute </span>was
@@ -65,22 +67,13 @@ function AboutTulas() {
       </div>
       <div className="w-[50%]">
         <div
-          className="max-w-[429px] py-8 px-8 ml-auto mr-0 bg-[#C0E1E3]"
-          style={{
-            boxShadow: "0px 3.29px 35.039px 0px rgba(0, 0, 0, 0.50)",
-            borderRadius: "30px",
-          }}
+          className="max-w-[429px] h-fit ml-auto mr-0 "
         >
-          <div
-            className="npf_wgts"
-            data-height="500px"
-            style={{
-              width: "100%",
-              margin: "auto",
-              marginBottom: "2rem",
-            }}
-            data-w="43cde486b796708909f0caeb58a1cd48"
-          ></div>
+          <Image
+            src={deleteForm}
+            className="w-full h-full"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -88,3 +81,15 @@ function AboutTulas() {
 }
 
 export default AboutTulas;
+
+// tis widget
+// <div
+// className="npf_wgts"
+// data-height="500px"
+// style={{
+//   width: "100%",
+//   margin: "auto",
+//   marginBottom: "2rem",
+// }}
+// data-w="43cde486b796708909f0caeb58a1cd48"
+// ></div>
