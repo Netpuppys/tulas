@@ -108,7 +108,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>To induce ethical values and spirit of social commitment.</li>
           <li>
             To provide a learning ambience to enhance innovations and problem

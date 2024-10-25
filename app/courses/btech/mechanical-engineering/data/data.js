@@ -107,7 +107,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To provide strong fundamentals and technical skills in Mechanical
             Engineering through effective teaching-learning Methodologies.

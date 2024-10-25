@@ -76,7 +76,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To enable engineering students master the fundamental concepts of
             applied sciences.

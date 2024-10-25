@@ -136,7 +136,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To equip proteges with a comprehensive set of analytical, technical
             and behavioral skills to navigate global business dynamism.

@@ -145,7 +145,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To provide a learning ambience to enhance programming skills for
             problem solving.

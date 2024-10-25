@@ -123,7 +123,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To provide high-quality education to prepare students for
             professional success and critical thinking.

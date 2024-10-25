@@ -42,7 +42,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To impart high quality education to the students to develop
             technical skills and make them a competitive mechanical engineer.

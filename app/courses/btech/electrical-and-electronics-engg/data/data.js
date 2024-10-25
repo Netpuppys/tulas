@@ -120,7 +120,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To provide quality education to students in electrical engineering,
             as well as interdisciplinary areas, using a set curriculum and

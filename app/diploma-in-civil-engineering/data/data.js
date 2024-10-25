@@ -35,7 +35,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To provide learning domain for researchers in the field of
             Innovation & Research.

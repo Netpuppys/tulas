@@ -139,7 +139,7 @@ export const sections = [
     title: "Departmental Mission",
     description: (
       <>
-        <ul classname="list-disc ml-5">
+        <ul className="list-disc ml-5">
           <li>
             To establish a learning environment to produce quality engineers
             with passion for knowledge and creativity in the field of

@@ -136,8 +136,8 @@ export const sections = [
   {
     title: "Departmental Mission",
     description: (
-      <span>
-        <ul classname="list-disc ml-5">
+      <>
+        <ul className="list-disc ml-5">
           <li>
             To equip aspiring civil engineers with a robust understanding of
             fundamental principles and cutting-edge technologies, empowering
@@ -165,7 +165,7 @@ export const sections = [
             worldwide.
           </li>
         </ul>
-      </span>
+      </>
     ),
     image: DepartmentalMission,
   },
