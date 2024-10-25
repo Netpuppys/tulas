@@ -101,6 +101,8 @@ export default async function SlugPage({ params }) {
   const formattedDate = formatDate(blog.date);
   const formattedTitle = blog.title.rendered
     .replace(/&#8217;/g, "'")
+    .replace(/&#8220;/g, "“")
+    .replace(/&#8221;/g, "”")
     .replace(/&#038;/g, "&");
   const headerImg = blog?.yoast_head_json?.og_image?.[0]?.url;
 
@@ -109,32 +111,45 @@ export default async function SlugPage({ params }) {
       <Navbar />
       <div className="md:min-h-screen w-full z-40 bg-white">
         <div
+          className="h-[80vh] md:h-[71vh] w-full relative bg-black"
           style={{
-            backgroundImage: `url(${headerImg})`,
-            backgroundSize: "cover",
-            backgroundColor: "black",
-            backgroundRepeat: "no-repeat",
+            position: "relative",
           }}
-          className="h-[80vh] md:h-[71vh] w-full bg-black bg-opacity-50 relative"
         >
-          <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-            <h3 className="text-[40px] md:text-[clam(20px,3.5vw,60px)] text-[#760135] z-10 font-[CarotSlab]">
-              {blog.title.rendered}
+          {/* Pseudo-element for the background image with opacity */}
+          <div
+            style={{
+              backgroundImage: `url(${headerImg})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              opacity: 0.3, // Opacity for the background
+              zIndex: 0,
+            }}
+          ></div>
+
+          {/* Content section */}
+          <div className="bottom-4 md:bottom-10 opacity-100 z-10 absolute mx-4 md:ml-16">
+            <h3 className="text-[40px] md:text-[clam(20px,3.5vw,60px)] text-[#fff] z-10 font-[CarotSlab]">
+              {formattedTitle}
             </h3>
           </div>
         </div>
+
         <div className="min-h-[35vh] py-8 md:py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-8 mx-auto">
           <h4 className="text-sm font-[TTChocolates] md:text-xl text-[#404040]">
             {blog?.yoast_head_json?.description}
           </h4>
         </div>
       </div>
-      <div className="blog-page-container">
+      <div className="blog-page-content">
         <>
-          <div
-            className="blog-page-content"
-            dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }}
-          />
+          <h4>Published on {formattedDate}</h4>
+          <div dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }} />
         </>
       </div>
       <div className="w-full relative overflow-hidden">
