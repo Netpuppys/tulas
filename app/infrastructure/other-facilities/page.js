@@ -6,8 +6,6 @@ import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/HostelMess/background.png";
-import { Fade } from "react-awesome-reveal";
-import { useInView } from "react-intersection-observer";
 import wifi from "../../../public/infrastructure/Other/wifi.png";
 import atm from "../../../public/infrastructure/Other/atm.png";
 import Gymnasium from "../../../public/infrastructure/Other/gymnasium.png";
@@ -15,7 +13,8 @@ import guestHouse from "../../../public/infrastructure/Other/guestHouse.png";
 import medical from "../../../public/infrastructure/Other/medical.png";
 import playGround from "../../../public/infrastructure/Other/playGround.png";
 import TulasTransportation from "../../../public/infrastructure/Other/TulasTransportation.png";
-const sectionsData = [
+import Vision from "@/component/Programs/Vision";
+const sections = [
   {
     title: "Wifi Facility",
     description: (
@@ -127,33 +126,6 @@ const sectionsData = [
   },
 ];
 
-const Section = ({ section, index }) => (
-  <div
-    className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 justify-between w-full h-fit items-center ${
-      index % 2 !== 0 ? "md:flex-row-reverse" : ""
-    } `}
-  >
-    <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
-      <div className="w-full block">
-        <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
-          {section.title}
-        </h3>
-        <br />
-        <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
-          {section.description}
-        </h4>
-      </div>
-    </Fade>
-    <Fade className="w-full md:w-[45%]">
-      <Image
-        src={section.image}
-        alt=""
-        className="w-full h-fit rounded-xl md:rounded-3xl"
-      />
-    </Fade>
-  </div>
-);
-
 function OtherFacilities() {
   return (
     <div className="flex flex-col items-center">
@@ -180,11 +152,7 @@ function OtherFacilities() {
         />
       </div>
 
-      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
-        {sectionsData.slice(0, 2).map((section, index) => (
-          <Section key={index} section={section} index={index} />
-        ))}
-      </div>
+      <Vision sections={sections.slice(0, 2)} />
 
       <div className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col justify-between items-center">
         <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[28px] text-center md:text-[40px] transition-transform duration-1000">
@@ -200,11 +168,7 @@ function OtherFacilities() {
         </h4>
       </div>
 
-      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
-        {sectionsData.slice(2, 4).map((section, index) => (
-          <Section key={index} section={section} index={index} />
-        ))}
-      </div>
+      <Vision sections={sections.slice(2, 4)} />
 
       <div className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col justify-between items-center">
         <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[28px] text-center md:text-[40px] transition-transform duration-1000">
@@ -224,11 +188,7 @@ function OtherFacilities() {
         </h4>
       </div>
 
-      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
-        {sectionsData.slice(4).map((section, index) => (
-          <Section key={index} section={section} index={index} />
-        ))}
-      </div>
+      <Vision sections={sections.slice(4)} />
 
       <Footer color={true} />
     </div>

@@ -11,12 +11,45 @@ import library from "../../../public/infrastructure/library/library.png";
 import library2 from "../../../public/infrastructure/library/library2.png";
 import NPTEL from "../../../public/infrastructure/library/NPTEL.png";
 import { useInView } from "react-intersection-observer";
+import Vision from "@/component/Programs/Vision";
 
 function Library() {
   const { ref, inView } = useInView({
     triggerOnce: false, // This allows the animation to trigger every time the component comes into view
     threshold: 0.1, // 10% of the element must be visible to trigger
   });
+  const sections = [
+    {
+      title: "Digital Library",
+      description: (
+        <>
+          In the past few years, procedures for digitizing books at high speed
+          and comparatively low cost have improved considerably. The result is
+          that we can now digitize millions of books per year for creating
+          digital libraries.
+          <br />
+          <br />
+          Our Digital library has over 59000+ e-books and 2400 + e-Journals
+          available round the clock through a FTP server on the intranet,
+          whereby students can access the material and books anytime from
+          anywhere on the campus.
+        </>
+      ),
+      image: library,
+    },
+    {
+      title: "Reference Library",
+      description: (
+        <>
+          The Institute has an altogether a separate reference library which is
+          spread on an area of more than 448 sq m with varied books on Basic
+          Sciences, Engineering and Technology, Humanities, Social Sciences and
+          Management.
+        </>
+      ),
+      image: library2,
+    },
+  ];
 
   return (
     <div className="flex flex-col items-center overflow-hidden">
@@ -62,35 +95,7 @@ function Library() {
           alt=""
         />
       </div>
-      <div className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[90%] mx-auto h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between">
-        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
-          <div className="w-full block">
-            <h3 className="px-4 text-white md:px-10 font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
-              Digital Library
-            </h3>
-            <br />
-            <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
-              In the past few years, procedures for digitizing books at high
-              speed and comparatively low cost have improved considerably. The
-              result is that we can now digitize millions of books per year for
-              creating digital libraries.
-              <br />
-              <br />
-              Our Digital library has over 59000+ e-books and 2400 + e-Journals
-              available round the clock through a FTP server on the intranet,
-              whereby students can access the material and books anytime from
-              anywhere on the campus.
-            </h4>
-          </div>
-        </Fade>
-        <Fade className="w-full md:w-[45%]">
-          <Image
-            src={library}
-            alt=""
-            className="w-full h-fit rounded-xl md:rounded-3xl"
-          />
-        </Fade>
-      </div>
+      <Vision sections={sections.slice(0, 1)} />
       <div
         ref={ref}
         className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"
@@ -119,30 +124,7 @@ function Library() {
           the same.
         </h4>
       </div>
-      <div className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[90%] mx-auto h-fit flex gap-8 md:gap-0 flex-col-reverse md:flex-row items-center justify-between">
-        <Fade className="w-full md:w-[45%]">
-          <Image
-            src={library2}
-            alt=""
-            className="w-full h-fit rounded-xl md:rounded-3xl"
-          />
-        </Fade>
-        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
-          <div className="w-full block">
-            <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
-              Reference Library
-            </h3>
-            <br />
-            <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
-              The Institute has an altogether a separate reference library which
-              is spread on an area of more than 448 sq m with varied books on
-              Basic Sciences, Engineering and Technology, Humanities, Social
-              Sciences and Management.
-              
-            </h4>
-          </div>
-        </Fade>
-      </div>
+      <Vision sections={sections.slice(1)} />
       <button
         onClick={() => {
           window.location.href = "https://tulas-opac.kohacloud.in/";

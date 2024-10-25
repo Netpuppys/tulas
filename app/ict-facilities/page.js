@@ -13,12 +13,47 @@ import lcd from "../../public/ict-facilities/lcd.png";
 import lan from "../../public/ict-facilities/lan.png";
 import whiteBoard from "../../public/ict-facilities/white-board.png";
 import wifi from "../../public/ict-facilities/wifi.png";
+import Vision from "@/component/Programs/Vision";
 
 function ICTFacilities() {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
   });
+  const sections = [
+    {
+      title: "ICT Facilities",
+      description: (
+        <>
+          In addition to traditional method of teaching, the faculty members are
+          using the IT enabled learning tools such as PPT, Video clippings,
+          online classes, online sources, to expose the students for advanced
+          knowledge and practical learning. Internet with capacity of over 205
+          Mbps is made available.
+          <br />
+          <br />
+          Classrooms & Seminar halls with ICT enabled facilities Tula's
+          Institute has a state-of-the-art infrastructure, creating an ideal
+          environment for progressive learning and resource development. To meet
+          the academic needs of the students we have well equipped Classrooms,
+          Tutorial rooms and laboratories that meet the AICTE specifications.
+          With an aim to fill the gap between the curriculum and the industry
+          expectations from a graduate engineer the college has provided, apart
+          from the regular Laboratories, industry tie-ups etc.
+          <br />
+          <br />
+          Labs are equipped with adequate hardware and licensed software to run
+          curriculum specific programs. Adequate numbers of personal computers
+          are available for the smooth conduct of the Labs.
+          <br />
+          <br />
+          Institute consists of the adequate numbers of Seminar Halls and class
+          rooms with ICT enabled facilities like:
+        </>
+      ),
+      image: ICTImage,
+    },
+  ];
 
   const data = [
     {
@@ -70,48 +105,7 @@ function ICTFacilities() {
           alt=""
         />
       </div>
-      <div
-        ref={ref}
-        className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[90%] mx-auto h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between"
-      >
-        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
-          <div className="w-full block">
-            <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
-              ICT Facilities
-            </h3>
-            <br />
-            <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
-              {
-                "In addition to traditional method of teaching, the faculty members are using the IT enabled learning tools such as PPT, Video clippings, online classes, online sources, to expose the students for advanced knowledge and practical learning. Internet with capacity of over 205 Mbps is made available."
-              }
-              <br />
-              <br />
-              {
-                "Classrooms & Seminar halls with ICT enabled facilities Tula's Institute has a state-of-the-art infrastructure, creating an ideal environment for progressive learning and resource development. To meet the academic needs of the students we have well equipped Classrooms, Tutorial rooms and laboratories that meet the AICTE specifications. With an aim to fill the gap between the curriculum and the industry expectations from a graduate engineer the college has provided, apart from the regular Laboratories, industry tie-ups etc."
-              }
-              <br />
-              <br />
-              {
-                "Labs are equipped with adequate hardware and licensed software to run curriculum specific programs. Adequate numbers of personal computers are available for the smooth conduct of the Labs."
-              }
-              <br />
-              <br />
-              {
-                "Institute consists of the adequate numbers of Seminar Halls and class rooms with ICT enabled facilities like:"
-              }
-            </h4>
-          </div>
-        </Fade>
-        <Fade className="w-full md:w-[45%]">
-          <Image
-            src={ICTImage}
-            alt=""
-            className={`w-full h-fit rounded-xl md:rounded-3xl ${
-              inView ? "md:animate-translateRight" : "md:opacity-0"
-            }`}
-          />
-        </Fade>
-      </div>
+      <Vision sections={sections} />
       <Fade delay={300}>
         <div className="w-full px-2 md:px-10 flex flex-wrap justify-center gap-6 md:gap-12 items-center py-20 pt-0 h-fit">
           {data.map((card, index) => (

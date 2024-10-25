@@ -12,6 +12,7 @@ import { useInView } from "react-intersection-observer";
 import hostel from "../../../public/infrastructure/HostelMess/hostel.png";
 import vibgyor from "../../../public/infrastructure/HostelMess/vibgyor.png";
 import multiUse from "../../../public/infrastructure/auditorium/multiUse.png";
+import Vision from "@/component/Programs/Vision";
 
 function LectureTheater() {
   const { ref, inView } = useInView({
@@ -19,6 +20,47 @@ function LectureTheater() {
     threshold: 0.1, // 10% of the element must be visible to trigger
   });
   const sections = [
+    {
+      title: "Facilities for a Hosteler",
+      description: (
+        <>
+          <ul className="list-disc ml-4">
+            <li>24-hour WIFI facility</li>
+            <li>Separate table and chair for every hosteler</li>
+            <li>Separate Book Shelves</li>
+            <li>Attached Balcony for each room</li>
+            <li>Solar heated water 24×7</li>
+            <li>Single & Double occupancy rooms are available</li>
+          </ul>
+          <br />
+          Hostel life is an excellent opportunity for the development and
+          enrichment of the character and personality of inmates. Tula’s
+          Institute is known for being the best engineering college in Dehradun
+          for providing 24×7 security for the students living in the hostel and
+          making a living on campus safe and comfortable.
+          <br />
+          <br />
+          A fully qualified MBBS Doctor is available at the campus.
+          <br />
+          <br />
+          Add-on facilities for students living on campus:
+          <br />
+          <ul className="list-disc ml-4">
+            <li>Foreign Language learning</li>
+            <li>Personality Development classes</li>
+            <li>Cricket Ground</li>
+            <li>Volley Ball Court</li>
+            <li>Basket Ball Court</li>
+            <li>Table Tennis Football / Hockey Ground</li>
+            <li>Recreation Room for Indoor Games</li>
+            <li>Modern Gymnasium</li>
+            <li>Television Room</li>
+            <li>Yoga/ Meditation Room</li>
+          </ul>
+        </>
+      ),
+      image: hostel,
+    },
     {
       title: "Mess (Only Vegetarian)",
       description:
@@ -71,58 +113,7 @@ function LectureTheater() {
           alt=""
         />
       </div>
-      <div className="py-8 md:py-20 bg-transparent px-3 md:px-0 w-full md:w-[90%] mx-auto h-fit flex gap-8 md:gap-0 flex-col md:flex-row items-center justify-between">
-        <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
-          <div className="w-full block">
-            <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
-              Facilities for a Hosteler
-            </h3>
-            <br />
-            <h4 className="text-[16px] md:text-[20px] font-[TTChocolates] text-[#D9D9D9]">
-              <ul className="list-disc ml-4">
-                <li>24-hour WIFI facility</li>
-                <li>Separate table and chair for every hosteler</li>
-                <li>Separate Book Shelves</li>
-                <li>Attached Balcony for each room</li>
-                <li>Solar heated water 24×7</li>
-                <li>Single & Double occupancy rooms are available</li>
-              </ul>
-              <br />
-              Hostel life is an excellent opportunity for the development and
-              enrichment of the character and personality of inmates. Tula’s
-              Institute is known for being the best engineering college in
-              Dehradun for providing 24×7 security for the students living in
-              the hostel and making a living on campus safe and comfortable.
-              <br />
-              <br />
-              A fully qualified MBBS Doctor is available at the campus.
-              <br />
-              <br />
-              Add-on facilities for students living on campus:
-              <br />
-              <ul className="list-disc ml-4">
-                <li>Foreign Language learning</li>
-                <li>Personality Development classes</li>
-                <li>Cricket Ground</li>
-                <li>Volley Ball Court</li>
-                <li>Basket Ball Court</li>
-                <li>Table Tennis Football / Hockey Ground</li>
-                <li>Recreation Room for Indoor Games</li>
-                <li>Modern Gymnasium</li>
-                <li>Television Room</li>
-                <li>Yoga/ Meditation Room</li>
-              </ul>
-            </h4>
-          </div>
-        </Fade>
-        <Fade className="w-full md:w-[45%]">
-          <Image
-            src={hostel}
-            alt=""
-            className="w-full h-fit rounded-xl md:rounded-3xl"
-          />
-        </Fade>
-      </div>
+      <Vision sections={sections.slice(0, 1)} />
       <div
         ref={ref}
         className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"
@@ -158,35 +149,7 @@ function LectureTheater() {
           students by celebrating major religious festivals.
         </h4>
       </div>
-      <div className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit">
-        {sections.map((section, index) => (
-          <div
-            key={index}
-            className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 justify-between w-full h-fit items-center ${
-              index % 2 !== 0 ? "md:flex-row-reverse" : ""
-            } `}
-          >
-            <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
-              <div className="w-full block">
-                <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
-                  {section.title}
-                </h3>
-                <br />
-                <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
-                  {section.description}
-                </h4>
-              </div>
-            </Fade>
-            <Fade className="w-full md:w-[45%]">
-              <Image
-                src={section.image}
-                alt=""
-                className="w-full h-fit rounded-xl md:rounded-3xl"
-              />
-            </Fade>
-          </div>
-        ))}
-      </div>
+      <Vision sections={sections.slice(1)} />
       <div className="w-full h-fit z-50">
         <Footer color={true} />
       </div>

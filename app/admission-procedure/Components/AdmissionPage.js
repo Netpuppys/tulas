@@ -9,6 +9,7 @@ import Image from "next/image";
 import Table from "./Table";
 import eProspectus from "../../../public/admission-procedure/e-prospectus.png";
 import { Fade } from "react-awesome-reveal";
+import Vision from "@/component/Programs/Vision";
 const title = (
   <>
     <span className="text-[#007A83]">ADMISSIONS</span>
@@ -241,36 +242,8 @@ function AdmissionPage() {
           </div>
         </div>
       </div>
-      <div
-        ref={prospectusRef}
-        className="pt-8 md:pt-20 px-3 md:px-0 w-full md:w-[90%] mx-auto bg-transparent h-fit"
-      >
-        {sectionsData.map((section, index) => (
-          <div
-            className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 justify-between w-full h-fit items-center ${
-              index % 2 !== 0 ? "md:flex-row-reverse" : ""
-            } `}
-          >
-            <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
-              <div className="w-full block">
-                <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
-                  {section.title}
-                </h3>
-                <br />
-                <h4 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
-                  {section.description}
-                </h4>
-              </div>
-            </Fade>
-            <Fade className="w-full md:w-[45%] bg-balck">
-              <Image
-                src={section.image}
-                alt=""
-                className="w-full h-fit rounded-xl opacity-80 md:rounded-3xl"
-              />
-            </Fade>
-          </div>
-        ))}
+      <div ref={prospectusRef}>
+        <Vision sections={sectionsData} />
       </div>
       <div className="flex items-center justify-center">
         <button
