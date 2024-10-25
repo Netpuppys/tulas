@@ -10,39 +10,65 @@ import {
 import TulasFooter from "../public/Components/Footer/tulasFooter.png";
 import Link from "next/link";
 import ContactForm from "@/app/contact/Component/form";
-
+import innovationAndStartupPolicy from "../public/research/innovation-and-startup-policy.pdf";
+import Plagiarism from "../public/research/plagiarism-policy.pdf";
+import HandBook from "../public/research/HandBook.pdf";
+import NewResearchPolicy from "../public/research/NewResearchPolicy.pdf";
+import ANTIRAGGING0001 from "../public/research/ANTI-RAGGING_0001.pdf";
+import HolidayCalendar from "../public/research/Holiday-Calendar.pdf";
+import Examination from "../public/research/Examination.pdf";
+import ICC from "../public/research/ICC.pdf";
+import MadatoryDisclosure from "../public/research/MadatoryDisclosure.pdf";
+import ACADEMICCALENDER from "../public/research/ACADEMICCALENDER.pdf";
+import codeOfConduct from "../public/research/code-of-conduct.pdf";
 const subTitle =
   "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India";
 
 const Footer = ({ set = false, color = false }) => {
   const keyLinks = [
-    { title: "Anti-ragging", linkTo: "" },
-    { title: "Grievance", linkTo: "" },
-    { title: "Holiday Calendar", linkTo: "" },
-    { title: "Exam Details", linkTo: "" },
-    { title: "Career", linkTo: "" },
-    { title: "ICC", linkTo: "" },
-    { title: "Mandatory Disclosure", linkTo: "" },
-    { title: "Handbook", linkTo: "" },
-    { title: "Research Policy", linkTo: "" },
-    { title: "Plagiarism Policy", linkTo: "" },
-    { title: "QuillBot Software", linkTo: "" },
-    { title: "NAAC", linkTo: "" },
-    { title: "IQAC", linkTo: "" },
+    { title: "Anti-ragging", linkTo: ANTIRAGGING0001 },
+    { title: "Grievance", linkTo: "/grievance/" },
+    { title: "Holiday Calendar", linkTo: HolidayCalendar },
+    { title: "Exam Details", linkTo: Examination },
+    { title: "Career", linkTo: "/careers/" },
+    { title: "ICC", linkTo: ICC },
+    { title: "Mandatory Disclosure", linkTo: MadatoryDisclosure },
+    { title: "Handbook", linkTo: HandBook },
+    { title: "Research Policy", linkTo: NewResearchPolicy },
+    { title: "Plagiarism Policy", linkTo: Plagiarism },
+    {
+      title: "QuillBot Software",
+      linkTo: "https://quillbot.com/login?returnUrl=/app/chrome-extension",
+    },
+    { title: "NAAC", linkTo: "/naac/" },
+    { title: "IQAC", linkTo: "/iqac/" },
   ];
   const keyLinks2 = [
-    { title: "AICTE", linkTo: "" },
-    { title: "AISHE", linkTo: "" },
-    { title: "Uttarakhand Technical University", linkTo: "" },
-    { title: "Sri Devsuman Uttarakhand University", linkTo: "" },
-    { title: "UBTER", linkTo: "" },
-    { title: "National Scholarship Portal", linkTo: "" },
-    { title: "National Career Service", linkTo: "" },
-    { title: "NIRF Ranking", linkTo: "" },
-    { title: "Internshala", linkTo: "" },
-    { title: "Turnitin", linkTo: "" },
-    { title: "Academic Calendar", linkTo: "" },
-    { title: "Code Of Conduct", linkTo: "" },
+    { title: "AICTE", linkTo: "https://www.aicte-india.org/" },
+    { title: "AISHE", linkTo: "https://aishe.gov.in/" },
+    {
+      title: "Uttarakhand Technical University",
+      linkTo: "https://uktech.ac.in/en",
+    },
+    {
+      title: "Sri Devsuman Uttarakhand University",
+      linkTo: "https://www.sdsuv.ac.in/",
+    },
+    { title: "UBTER", linkTo: "https://ubter.in/" },
+    {
+      title: "National Scholarship Portal",
+      linkTo: "https://scholarships.gov.in/",
+    },
+    { title: "National Career Service", linkTo: "https://www.ncs.gov.in/" },
+    { title: "NIRF Ranking", linkTo: "/nirf-ranking/" },
+    { title: "Internshala", linkTo: "https://internshala.com/" },
+    { title: "Turnitin", linkTo: "https://www.turnitin.com/login_page.asp" },
+    { title: "Academic Calendar", linkTo: ACADEMICCALENDER },
+    { title: "Code Of Conduct", linkTo: codeOfConduct },
+    {
+      title: "Innovation and Startup Policy",
+      linkTo: innovationAndStartupPolicy,
+    },
   ];
 
   const socialMediaLinks = [
