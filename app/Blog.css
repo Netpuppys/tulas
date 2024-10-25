@@ -381,30 +381,39 @@
 
 .blog-page-content {
   width: 80%;
-  margin: 3rem auto;
-  font-family: TTChocolatesBold;
-  font-size: 27px;
+  margin: 5rem auto;
+
   font-weight: 200;
   color: #fff;
   letter-spacing: 0.03em;
   line-height: normal;
 }
 .blog-page-content a {
-  color: rgb(112, 112, 112);
+  color: #fff;
+  text-decoration: underline;
 }
 .blog-page-content h3 {
   width: 100%;
   margin: 0rem auto;
+  font-family: TTChocolatesBold;
   font-weight: 900;
 }
-.blog-page-content h1,
+
 .blog-page-content h2,
-.blog-page-content p,
 .blog-page-content h3,
 .blog-page-content h4 {
-  margin-block-start: 0.8em;
+  margin-block-start: 1.5em;
   color: #fff;
-  margin-block-end: 0.8em;
+  font-size: 30px;
+  font-family: TTChocolatesBold;
+  margin-block-end: 0.6em;
+}
+.blog-page-content h1 {
+  margin-block-start: 0.6em;
+  color: #fff;
+  font-size: clamp(20px, 2.1vw, 60px);
+  font-family: TTChocolatesBold;
+  margin-block-end: 0.6em;
 }
 .blog-page-content img {
   width: 60%;
@@ -422,9 +431,13 @@
   border: 2px solid #ddd;
   padding: 10px;
 }
-.blog-page-content table p {
-  margin-block-start: 0.2em;
-  margin-block-end: 0.2em;
+.blog-page-content p {
+  margin-block-start: 0em;
+  margin-block-end: 0.6em;
+  line-height: normal;
+  color: #fff;
+  font-size: 20px;
+  font-family: TTChocolates;
 }
 
 @media (max-width: 1550px) {

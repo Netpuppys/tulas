@@ -105,37 +105,30 @@ export default async function SlugPage({ params }) {
     .replace(/&#8221;/g, "”")
     .replace(/&#038;/g, "&");
   const headerImg = blog?.yoast_head_json?.og_image?.[0]?.url;
+  const words = formattedTitle.split(" ");
+  const halfwayIndex = Math.ceil(words.length / 2); // Calculate halfway point, rounding up for odd lengths
+
+  const firstHalf = words.slice(0, halfwayIndex).join(" ");
+  const secondHalf = words.slice(halfwayIndex).join(" ");
 
   return (
     <>
       <Navbar />
       <div className="md:min-h-screen w-full z-40 bg-white">
-        <div
-          className="h-[80vh] md:h-[71vh] w-full relative bg-black"
-          style={{
-            position: "relative",
-          }}
-        >
+        <div className="h-[80vh] md:h-[71vh] w-full bg-black relative">
           {/* Pseudo-element for the background image with opacity */}
           <div
             style={{
               backgroundImage: `url(${headerImg})`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              opacity: 0.3, // Opacity for the background
-              zIndex: 0,
             }}
+            className="absolute top-0 left-0 right-0 bottom-0 opacity-30 z-0 bg-no-repeat bg-cover"
           ></div>
 
           {/* Content section */}
           <div className="bottom-4 md:bottom-10 opacity-100 z-10 absolute mx-4 md:ml-16">
             <h3 className="text-[40px] md:text-[clam(20px,3.5vw,60px)] text-[#fff] z-10 font-[CarotSlab]">
-              {formattedTitle}
+              {firstHalf}
+              <span className="text-[#5fdde9]"> {secondHalf}</span>
             </h3>
           </div>
         </div>
@@ -148,7 +141,7 @@ export default async function SlugPage({ params }) {
       </div>
       <div className="blog-page-content">
         <>
-          <h4>Published on {formattedDate}</h4>
+          <h6>Published on {formattedDate}</h6>
           <div dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }} />
         </>
       </div>
@@ -159,7 +152,7 @@ export default async function SlugPage({ params }) {
           alt=""
         />
       </div>
-      <Footer />
+      <Footer color={true} />
     </>
   );
 }
