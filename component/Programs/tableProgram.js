@@ -18,7 +18,7 @@ function TableProgram({
 
   return (
     <>
-      <div className="py-10 md:py-20 px-4 w-full max-w-[1200px] mx-auto relative z-[20]">
+      <div className="pb-8 md:pb-20 px-4 w-full max-w-[1200px] mx-auto relative z-[20]">
         <div className="md:rounded-full md:bg-white py-1 px-1 overflow-hidden flex flex-col md:flex-row gap-2 md:gap-0 items-center">
           {cards.map((card, index) => (
             <div

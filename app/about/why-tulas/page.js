@@ -7,18 +7,25 @@ import Footer from "@/component/Footer";
 import hostelBackground from "../../../public/infrastructure/HostelMess/hostel.png";
 import Image from "next/image";
 import whyTulasImage from "../../../public/About/whyTulasImage.png";
-import { Fade } from "react-awesome-reveal";
+import iso from "../../../public/About/why-tulas/iso.png";
+import curriculum from "../../../public/About/why-tulas/curriculum.jpg";
+import Collaboration from "../../../public/About/why-tulas/Collaboration.JPG";
+import tieUps from "../../../public/About/why-tulas/tie-ups.JPG";
+import Academics from "../../../public/About/why-tulas/Academics.JPG";
+import Placement from "../../../public/About/why-tulas/Placement.JPG";
+import Innovative from "../../../public/About/why-tulas/Innovative.png";
+import ratio from "../../../public/About/why-tulas/ratio.png";
 import Vision from "@/component/Programs/Vision";
 
 const sectionData = [
   {
-    image: "",
+    image: iso,
     title: "ISO 9001:2008 Certified",
     description:
       "The institute is affiliated to Uttarakhand Technical University and approved by AICTE, Ministry of HRD, Govt. of India. Tula’s Institute has also been awarded ISO 9001:2008 for quality management services.",
   },
   {
-    image: "",
+    image: curriculum,
     title: "Industry Oriented Curriculum",
     description: (
       <>
@@ -36,7 +43,7 @@ const sectionData = [
     ),
   },
   {
-    image: "",
+    image: Collaboration,
     title: "Corporate Collaboration",
     description: (
       <>
@@ -66,7 +73,7 @@ const sectionData = [
     ),
   },
   {
-    image: "",
+    image: tieUps,
     title: "Academic Tie-Ups",
     description: (
       <>
@@ -94,25 +101,25 @@ const sectionData = [
     ),
   },
   {
-    image: "",
+    image: Academics,
     title: "Academics",
     description:
       "We offer wide range of undergraduate and postgraduate programs in different specializations. Our tailor-made curriculum plays a vital role in providing a better future and industry exposure to our students. We provide a fantastic campus environment to nurture the innovations of young minds. “ Tula’s associated with many educational institutions from various parts of globe for academic excellence, joint events & conferences like University of Andorra, Europe, Inter American University, Argentina and so on.”",
   },
   {
-    image: "",
+    image: Placement,
     title: "Placements",
     description:
       "Tula's institute has been focused in placing the right student at the right job. Placements have been an integral part of the institute. Tula has best placements records in association with 750+ big companies including Sterlite, Adobe, Deutsche Bank, Oracle, etc. Tula’s is the first college who has been focusing on getting the core companies to the campus and assuring the students with 100% placement assistance. Our aim is to place maximum number of students in top notch companies with high salary package. Today we are known as one of the best academic institution with best campus placement in Dehradun.",
   },
   {
-    image: "",
+    image: Innovative,
     title: "Innovative Methodologies",
     description:
       "We believe that innovative teaching method boosts the learning skills rapidly in students. Our expert uses innovative training techniques to train students so that they sound strong in their knowledge of a particular subject. We don’t believe in only theoretical knowledge that’s why we try to impart quality education through intense theoretical & practical sessions at Tula’s.",
   },
   {
-    image: "",
+    image: ratio,
     title: "Student Faculty Ratio 2:1",
     description:
       "Tula's institute has competitive faculty members, on whose shoulders lies the responsibility of taking their students to greater heights. The student and the faculty ratio are 12:1, which helps students to get mentored and catered effectively.",
