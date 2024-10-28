@@ -6,15 +6,9 @@ import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../../public/research/r-and-cell/funded-projects-and-grants/background.png";
-import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
 
 function RAndDFunded() {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
-
   return (
     <div className="flex flex-col items-center overflow-hidden">
       <Navbar />

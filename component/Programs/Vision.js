@@ -16,7 +16,9 @@ function Vision({ sections }) {
             <div
               ref={ref}
               key={index}
-              className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 justify-between w-full md:w-[95%] h-fit items-center ${
+              className={`flex flex-col gap-8 md:gap-0 md:flex-row ${
+                sections.length === 1 ? "" : "mb-8 md:mb-20"
+              } justify-between w-full md:w-[95%] h-fit items-center ${
                 index % 2 !== 0
                   ? "md:flex-row-reverse md:mr-[5%]"
                   : "md:ml-[5%]"
@@ -24,7 +26,7 @@ function Vision({ sections }) {
             >
               <Fade delay={300} className="w-full px-3 md:px-0 md:w-[45%]">
                 <div className="w-full block">
-                  <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[52px] border-l-4 border-white">
+                  <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 border-white">
                     {section.title}
                   </h3>
                   <br />

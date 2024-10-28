@@ -128,16 +128,16 @@ const Footer = ({ set = false, color = false }) => {
           </div>
         </div>
         {/* gray social icons div */}
-        <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[2%] gap-[3%] flex justify-between items-center z-50">
+        <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[5%] gap-[3%] flex justify-between items-center z-50">
           <h4 className="font-[Oswald] text-[28px] md:text-[clamp(12px,1.6vw,28px)] text-white ">
             CONNECT US
           </h4>
-          <ul className="flex gap-[5%]">
+          <ul className="flex w-[60%] gap-[5%]">
             {socialMediaLinks.map((social, index) => (
               <Link
                 key={index}
                 href={social.href}
-                className="bg-[#fff] rounded-lg bg-opacity-[0.8] text-[#808080] p-[3%] text-[25px] md:text-[clamp(8px,1.3vw,25px)]"
+                className="bg-[#fff] rounded-lg bg-opacity-[0.8] text-[#808080] p-[3%] text-[20px] md:text-[clamp(8px,1.3vw,25px)]"
               >
                 {social.icon}
               </Link>

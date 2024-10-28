@@ -298,13 +298,12 @@ const sitemap = [
             linkTo: "/research/institute-innovation-council-iic/iic-events/",
           },
           {
-            title: "IAAS Events",
-            linkTo: "/research/institute-innovation-council-iic/iaas-events/",
+            title: "IAAS Student Branch",
+            linkTo: "/research/iaas-student-branch/",
           },
           {
-            title: "IEEE SB Events",
-            linkTo:
-              "/research/institute-innovation-council-iic/ieee-sb-events/",
+            title: "IEEE Student Branch",
+            linkTo: "/research/ieee-student-branch-stb17561/",
           },
         ],
       },
@@ -360,8 +359,8 @@ const sitemap = [
       },
       {
         title: "Career Innovation Centre",
-        linkTo: "/placements/career-innovation-centre/"
-      }
+        linkTo: "/placements/career-innovation-centre/",
+      },
     ],
   },
   {
