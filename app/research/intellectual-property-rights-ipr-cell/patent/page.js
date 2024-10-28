@@ -7,6 +7,7 @@ import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../../public/research/r-and-cell/journal/background.png";
 import { useInView } from "react-intersection-observer";
+import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import TableComponent from "./data/tableData";
 import patent1 from "../../../../public/research/patents/patent1.jpg";
 import patent2 from "../../../../public/research/patents/patent2.png";
@@ -18,13 +19,14 @@ import patent7 from "../../../../public/research/patents/patent7.png";
 import patent8 from "../../../../public/research/patents/patent8.png";
 import patent9 from "../../../../public/research/patents/patent9.png";
 import patent10 from "../../../../public/research/patents/patent10.jpg";
+import CarouselProgram from "@/component/Programs/CrouselProgram";
+import SlidingCarousel from "./components/SlidingCarousel";
 
 function Patent() {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
   });
-  
   const patentImages = [
     patent1,
     patent2,
@@ -39,7 +41,7 @@ function Patent() {
   ];
 
   return (
-    <div className="flex flex-col items-center overflow-hidden">
+    <div className="w-full flex flex-col items-center overflow-hidden">
       <Navbar />
       <Banner
         image={BannerImg}
@@ -73,10 +75,15 @@ function Patent() {
           <TableComponent />
         </div>
       </div>
-      <div className="px-8 pb-8 md:px-32 md:pb-32 flex flex-col items-center justify-center">
+      <div className="px-8md:px-32 pb-8  md:pb-32 w-full flex flex-col items-center justify-center">
         <h3 className="font-[CarotSlab] text-[clamp(25px,3vw,75px)]">
           ALL PATENTS
         </h3>
+      </div>
+      <div className="w-full">
+        <SlidingCarousel
+          items={patentImages}
+        />
       </div>
       <div className="w-full h-fit z-50">
         <Footer color={true} />
