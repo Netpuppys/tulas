@@ -3,11 +3,26 @@
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import { HiArrowLongLeft, HiArrowLongRight } from 'react-icons/hi2'
+import { IoMdClose } from 'react-icons/io'
 
-const imagePopUp = ({ activeImage, setActiveImage }) => {
+const ImagePopUp = ({ activeImage, setActiveImage }) => {
     return (
-        <div className='w-screen'>
+        <div className='w-screen h-screen overflow-y-scroll px-40 pointer-events-auto overflow-scroll fixed top-0 z-[9999] left-1/2 -translate-x-1/2 backdrop-blur-sm flex flex-col items-center justify-start'>
+            <div className='w-full h-full flex items-center justify-center overflow-scroll relative py-5'>
 
+                <button 
+                    onClick={() => setActiveImage(null)}
+                    className='w-16 aspect-square bg-white rounded-full absolute top-5 right-10 flex items-center justify-center text-[#007A83] border-2 text-4xl border-[#007A83]'
+                >
+                    <IoMdClose />
+                </button>
+
+                <Image
+                    src={activeImage}
+                    className='h-full w-full object-contain'
+                    alt=''
+                />
+            </div>
         </div>
     )
 }
@@ -106,6 +121,13 @@ const SlidingCarousel = ({ items }) => {
 
   return (
     <div className="w-full h-[35rem] my-10 flex">
+
+        {activeImage &&
+        <ImagePopUp
+            activeImage={activeImage}
+            setActiveImage={setActiveImage}
+        />}
+
         <div className="min-w-[20rem] w-[20rem] h-full flex flex-col items-center justify-center gap-6">
             <button
                 onClick={handleScrollLeft}
@@ -130,7 +152,11 @@ const SlidingCarousel = ({ items }) => {
             className="max-w-[calc(100%-20rem)] pl-10 w-[calc(100%-20rem)] overflow-scroll h-full flex items-start justify-start gap-10 pr-[100vw] overflow-y-visible py-10"
         >
         {items.map((card, index) => (
-            <div key={index} className={`bg-white h-full min-w-[22rem] w-[22rem] ${activeIndex === index? "animate-scaleUp scale-110" : ""}`}>
+            <div 
+                key={index} 
+                onClick={() => setActiveImage(card)}
+                className={`bg-white h-full min-w-[22rem] w-[22rem] ${activeIndex === index? "animate-scaleUp scale-110" : ""}`}
+            >
                 <Image
                     src={card}
                     className='w-full h-full object-cover'
