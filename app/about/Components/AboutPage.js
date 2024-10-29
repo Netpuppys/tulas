@@ -30,8 +30,8 @@ export default function AboutPage() {
   const managementRef = useRef(null); // Ref for the Management component
   const statsRef = useRef(null);
 
-  const [inView, setInView] = useState(false);
-  const [stats, setStats] = useState([
+  const [ inView, setInView ] = useState(false);
+  const [ stats, setStats ] = useState([
     {
       start: 0,
       end: 22,
@@ -112,7 +112,7 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <>
+    <div className="max-w-[100vw] md:max-w-none overflow-x-hidden">
       <Navbar />
       <Banner
         title={
@@ -139,12 +139,12 @@ export default function AboutPage() {
       {/* fixed background */}
         <Image
           src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+          className="w-full max-w-screen md:max-w-none fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
       {/* --- */}
 
-      <div className="w-full pb-8">
+      <div className="w-full pb-8 overflow-x-hidden">
         <div className="bg-transparent w-full pt-2 px-10 flex flex-wrap items-center justify-between gap-x-4">
           {button.map((button, index) => (
             <Fade key={index}>
@@ -201,6 +201,6 @@ export default function AboutPage() {
         <Management  />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

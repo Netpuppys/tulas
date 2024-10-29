@@ -24,8 +24,8 @@ function AboutManagement() {
       {sections.map((section, index) => (
         <div
           key={index}
-          className={`flex justify-center min-h-[85vh] max-w-[90vw] mx-auto items-center gap-20 ${
-            index % 2 !== 0 ? "flex-row-reverse" : ""
+          className={`flex flex-col md:flex-row justify-center min-h-[85vh] mb-8 md:mb-0 max-w-[90vw] mx-auto items-center gap-10 md:gap-20 ${
+            index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
           } `}
         >
           <Fade>
@@ -37,10 +37,10 @@ function AboutManagement() {
             />
           </Fade>
           <div className="w-fit">
-            <h3 className="text-[60px] font-[CarotSlab] text-white">
+            <h3 className="text-4xl md:text-[60px] pb-6 font-[CarotSlab] text-white">
               {section.title}
             </h3>
-            <h4 className="text-[22px] font-[TTChocolates] text-white max-w-[659px]">
+            <h4 className="text-lg md:text-[22px] font-[TTChocolates] text-white max-w-[659px]">
               {section.description}
             </h4>
           </div>
