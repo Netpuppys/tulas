@@ -22,10 +22,10 @@ const AboutFacultyModal = ({
   };
 
   return (
-    <div className="w-full h-screen z-[9999] pointer-events-auto  fixed top-0 left-0 bg-black overflow-y-scroll bg-opacity-40 backdrop-blur-sm flex items-start justify-start">
+    <div className="w-screen md:w-full h-screen z-[9999] pointer-events-auto fixed top-0 left-0 bg-black overflow-y-scroll bg-opacity-40 backdrop-blur-sm flex items-start justify-start">
       <div
         onClick={() => setActiveProfile(null)}
-        className="cursor-pointer w-[55vw] h-full hidden md:block"
+        className="cursor-pointer w-0 md:w-[55vw] h-full hidden md:block"
       ></div>
       <div
         ref={scrollRef}
@@ -59,7 +59,7 @@ const AboutFacultyModal = ({
               </p>
             </div>
             {activeProfile?.image && (
-              <div className="bg-[#007a83] min-w-60 overflow-hidden w-60 min-h-[25rem] h-[25rem] rounded-xl shadow-2xl">
+              <div className="bg-[#007a83] hidden md:block min-w-60 overflow-hidden w-60 min-h-[25rem] h-[25rem] rounded-xl shadow-2xl">
                 <Image
                   src={activeProfile.image}
                   className="w-full h-full object-cover"

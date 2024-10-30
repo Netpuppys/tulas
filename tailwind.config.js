@@ -27,9 +27,19 @@ module.exports = {
         translateBottom: "translateBottom 0.8s linear",
         translateButton: "translateButton 0.5s ease",
         fadeIn: "fadeIn 0.5s ease",
-        overlay: "overlay 0.5s ease"
+        overlay: "overlay 0.5s ease",
+        increaseWidth: "increaseWidth 0.3s ease",
+        decreaseWidth: "decreaseWidth 0.3s ease",
+        scaleUp: "scaleUp 0.3s linear",
       },
       keyframes: {
+        scaleUp: {
+          from: {
+              transform: "scale(1)"
+          }, to: {
+              transform: "scale(1.1)"
+          }
+        },
         fadeIn: {
           from: {
             opacity: 0,
@@ -38,6 +48,20 @@ module.exports = {
           to: {
             opacity: 1,
             transform: 'scale(1) translateY(0rem)'
+          }
+        },
+        increaseWidth: {
+          from: {
+            width: "33.33333333%"
+          }, to: {
+            width: "66.66666666%"
+          }
+        },
+        decreaseWidth: {
+          from: {
+            width: "66.66666666%"
+          }, to: {
+            width: "33.33333333%"
           }
         },
         translateButton: {

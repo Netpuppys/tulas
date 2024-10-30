@@ -44,6 +44,7 @@ body {
   background: white;
   color: white;
   font-family: "TTChocolates";
+  overscroll-behavior: none;
 }
 ::-webkit-scrollbar {
   width: 6px;

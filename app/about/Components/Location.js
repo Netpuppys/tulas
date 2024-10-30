@@ -12,24 +12,24 @@ function Location() {
   return (
     <div
       ref={ref}
-      className="w-full py-14 h-fit bg-white text-black flex justify-center items-center gap-8 px-3 overflow-hidden"
+      className="w-full py-14 h-fit bg-white text-black flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 px-3 overflow-hidden"
     >
       <Image
         src={location}
         alt=""
-        className={`transition-transform duration-1000 ${
+        className={` md:w-fit w-16 transition-transform duration-1000 ${
           inView ? "animate-translateLeft" : "opacity-0"
         }`}
       />
       <h3
-        className={`font-[CarotSlab] font-medium text-black text-[40px] transition-transform duration-1000 ${
+        className={`font-[CarotSlab] font-medium text-black text-[30px] md:text-[40px] transition-transform duration-1000 ${
           inView ? "animate-translateLeft" : "opacity-0"
         }`}
       >
         LOCATION
       </h3>
       <p
-        className={`font-[TTChocolates] font-normal text-[#007A83] transition-transform duration-1000 text-[22px] px-20 max-w-[1000px] ${
+        className={`md:font-[TTChocolates] font-[TTChocolatesBold] font-bold md:font-normal text-[#007A83] transition-transform duration-1000 text-[18px] md:text-[22px] text-center md:text-left px-4 md:px-20 max-w-[1000px] ${
           inView ? "animate-translateRight" : "opacity-0"
         }`}
       >

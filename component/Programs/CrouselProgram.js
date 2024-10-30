@@ -56,6 +56,7 @@ const CarouselProgram = ({ heading, items, background, color }) => {
       setActiveIndex(0); // Handle edge case for the first item
     }
   };
+  
   const handleItemClick = (index) => {
     setDisabled(true);
     setActiveIndex(index);
@@ -141,6 +142,7 @@ const CarouselProgram = ({ heading, items, background, color }) => {
         />
       )}
 
+      {heading &&
       <div className="flex w-full justify-between items-center px-0 md:px-[5%]">
         <h8 className="text-[80px] w-full text-center md:text-start md:text-[200px] leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_20px_0px_0_black]">
           {heading}
@@ -153,7 +155,7 @@ const CarouselProgram = ({ heading, items, background, color }) => {
             <PiArrowRight />
           </div>
         </button> */}
-      </div>
+      </div>}
       <div className="flex flex-col md:flex-row justify-between items-center pl-4 md:pl-10 py-10 w-full overflow-hidden h-full">
         {/* Left side text and scroll */}
         <div className="px-4 w-80">
@@ -171,7 +173,7 @@ const CarouselProgram = ({ heading, items, background, color }) => {
                 {activeIndex === index && (
                   <p className="w-4 bg-white h-[1px]"></p>
                 )}
-                {item.title}
+                {item?.title}
               </li>
             ))}
           </ul>
@@ -192,7 +194,7 @@ const CarouselProgram = ({ heading, items, background, color }) => {
                 }`}
               >
                 <Image
-                  src={item.image}
+                  src={item?.image}
                   alt=""
                   className="w-full h-full object-cover"
                 />
@@ -203,11 +205,11 @@ const CarouselProgram = ({ heading, items, background, color }) => {
                 <div className="w-full absolute bottom-0 p-2">
                   <h3 className="text-wrap flex items-center gap-1 text-[30px] font-[TTChocolatesBold] w-full border border-b-white group-hover:border-b-black border-transparent text-white group-hover:text-black">
                     <RiArrowRightSFill />
-                    <span className="line-clamp-1">{item.title}</span>
+                    <span className="line-clamp-1">{item?.title}</span>
                   </h3>
                   <ul className="ml-5 list-disc">
                     <li className="text-wrap text-[15px] line-clamp-1 pt-2 text-white group-hover:text-black">
-                      {item.description}
+                      {item?.description}
                     </li>
                   </ul>
                 </div>
