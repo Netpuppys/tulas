@@ -251,18 +251,18 @@ const Footer = ({ set = false, color = false }) => {
                 </li>
                 <li>
                   <a href="tel:+91-6366937159">
-                    <span className="text-[#E69706]">{"> "}</span>+91-6366937159
+                    <span className="text-[#E69706]">{"> "}</span>+91-9837983721
                     <br />
                     (India Admission Helpline)
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="tel:+91-9837634737">
-                    <span className="text-[#E69706]">{"> "}</span>+91-9837634737
+                    <span className="text-[#E69706]">{"> "}</span>+91-9837983721
                     <br />
                     (Nepal Admission Helpline)
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="flex-col flex w-fit h-full">

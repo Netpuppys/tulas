@@ -89,10 +89,10 @@ function Navbar({ setState, position = false, fullBanner = false }) {
     >
       {/* top bar */}
       <div className="hidden h-[80px] w-full md:flex justify-between items-center z-[9999]">
-        <a href="tel:+91-6366937159" className="footer-call-number">
+        <a href="tel:+91-9837983721" className="footer-call-number">
           <Image src={phoneCallGif} alt="" className="footer-call-number-gif" />
           <div className="footer-call-number-text">
-            Admission Helpline No. +91-6366937159
+            Admission Helpline No. +91-9837983721
           </div>
         </a>
         {!scrolled &&

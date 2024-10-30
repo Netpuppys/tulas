@@ -50,8 +50,8 @@ function Contact() {
     {
       title: "ADMISSION HELPLINE",
       image: phone,
-      description: "+91-6366937159",
-      link: "tel:+91-6366937159",
+      description: "+91-9837983721",
+      link: "tel:+91-9837983721",
     },
     {
       title: "EMAIL",
@@ -69,8 +69,8 @@ function Contact() {
     {
       title: "COLLEGE LANDLINE",
       image: landline,
-      description: "+91-6366937159",
-      link: "tel:+91-6366937159",
+      description: "+91-9837983721",
+      link: "tel:+91-9837983721",
     },
     {
       title: "FAX",
@@ -82,8 +82,8 @@ function Contact() {
   const mobileContact = [
     {
       title: "NEPAL ADMISSION HELPLINE",
-      link: "tel:+91-9837634737",
-      button: "+91 98376 34737",
+      link: "tel:+91-9837983721",
+      button: "+91 98379 83721",
     },
     {
       title: "PLACEMENT HELPLINE",
@@ -92,8 +92,8 @@ function Contact() {
     },
     {
       title: "BIHAR ADMISSION HELPLINE",
-      link: "tel:+91-7503332999",
-      button: "+91 75033 32999",
+      link: "tel:+91-9837983721",
+      button: "+91 98379 83721",
     },
   ];
   return (
