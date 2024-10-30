@@ -18,19 +18,19 @@ function Location() {
         src={location}
         alt=""
         className={` md:w-fit w-16 transition-transform duration-1000 ${
-          inView ? "animate-translateLeft" : "opacity-0"
+          inView ? "md:animate-translateLeft" : "opacity-0"
         }`}
       />
       <h3
         className={`font-[CarotSlab] font-medium text-black text-[30px] md:text-[40px] transition-transform duration-1000 ${
-          inView ? "animate-translateLeft" : "opacity-0"
+          inView ? "md:animate-translateLeft" : "opacity-0"
         }`}
       >
         LOCATION
       </h3>
       <p
         className={`md:font-[TTChocolates] font-[TTChocolatesBold] font-bold md:font-normal text-[#007A83] transition-transform duration-1000 text-[18px] md:text-[22px] text-center md:text-left px-4 md:px-20 max-w-[1000px] ${
-          inView ? "animate-translateRight" : "opacity-0"
+          inView ? "md:animate-translateRight" : "opacity-0"
         }`}
       >
         Dehradun is located 255 km north of India’s capital New Delhi. The Doon

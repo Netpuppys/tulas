@@ -37,10 +37,10 @@ function AboutManagement() {
             />
           </Fade>
           <div className="w-fit">
-            <h3 className="text-4xl md:text-[60px] pb-6 font-[CarotSlab] text-white">
+            <h3 className="text-[36px] md:text-[60px] pb-6 font-[CarotSlab] text-white">
               {section.title}
             </h3>
-            <h4 className="text-lg md:text-[22px] font-[TTChocolates] text-white max-w-[659px]">
+            <h4 className="text-[18px] md:text-[22px] font-[TTChocolates] text-white max-w-[659px]">
               {section.description}
             </h4>
           </div>

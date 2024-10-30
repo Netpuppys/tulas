@@ -349,14 +349,14 @@ function Management() {
       >
         <h3
           className={`font-[CarotSlab] text-white text-[32px] md:text-[52px] text-center md:text-left ${
-            inView ? "animate-translateBottom overflow-hidden" : "opacity-0"
+            inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
           MEET OUR MANAGEMENT
         </h3>
         <h5
           className={`font-[Rothwood] pt-8 md:pt-0 text-white text-[20px] max-w-[665px] px-6 md:px-0 italic text-center font-medium ${
-            inView ? "animate-translateBottom overflow-hidden" : "opacity-0"
+            inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
           The Institute provides excellent infrastructural and ICT facilities
@@ -365,16 +365,16 @@ function Management() {
           fully airconditioned &amp; spacious auditorium.
         </h5>
       </div>
-      <div className="w-full py-20 block">
+      <div className="w-full pt-10 md:pt-20 block">
         {[cards, cardsFaculty].map((cardGroup, groupIndex) => (
           <div
             key={groupIndex}
-            className="w-full flex justify-center flex-wrap gap-4 gap-y-10 md:gap-5 md:px-20 py-4"
+            className="w-full flex justify-center flex-wrap px-4 gap-4 gap-y-10 md:gap-5 md:px-20 py-4"
           >
             {cardGroup.map((card, index) => (
               <div
                 key={index}
-                className="flex flex-col w-[50%-1rem] max-w-[160px] shadow-2xl md:shadow-none md:max-w-[265px] cursor-pointer"
+                className="flex flex-col w-[45%] shadow-2xl md:shadow-none md:max-w-[265px] cursor-pointer"
                 onClick={() =>
                   setActiveProfile({ profile: card, related: cardGroup })
                 }
@@ -384,13 +384,13 @@ function Management() {
                   <Image
                     src={card.image}
                     alt=""
-                    className="rounded-3xl mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
+                    className="rounded-xl md:rounded-3xl mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
                   />
                 </Fade>
-                <h2 className="font-[TTChocolatesBold] text-white font-semibold text-xl md:text-[37px] text-center">
+                <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[37px] text-center">
                   {card.name}
                 </h2>
-                <h4 className="font-[TTChocolates] text-[#C2C2C2] text-sm md:text-[22px] text-center">
+                <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
                   {card.profile}
                 </h4>
               </div>
