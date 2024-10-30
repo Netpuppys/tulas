@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "mdNavbar": "880px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -35,50 +38,55 @@ module.exports = {
       keyframes: {
         scaleUp: {
           from: {
-              transform: "scale(1)"
-          }, to: {
-              transform: "scale(1.1)"
-          }
+            transform: "scale(1)",
+          },
+          to: {
+            transform: "scale(1.1)",
+          },
         },
         fadeIn: {
           from: {
             opacity: 0,
-            transform: 'scale(0.95) translateY(2rem)',
+            transform: "scale(0.95) translateY(2rem)",
           },
           to: {
             opacity: 1,
-            transform: 'scale(1) translateY(0rem)'
-          }
+            transform: "scale(1) translateY(0rem)",
+          },
         },
         increaseWidth: {
           from: {
-            width: "33.33333333%"
-          }, to: {
-            width: "66.66666666%"
-          }
+            width: "33.33333333%",
+          },
+          to: {
+            width: "66.66666666%",
+          },
         },
         decreaseWidth: {
           from: {
-            width: "66.66666666%"
-          }, to: {
-            width: "33.33333333%"
-          }
+            width: "66.66666666%",
+          },
+          to: {
+            width: "33.33333333%",
+          },
         },
         translateButton: {
           from: {
-            transform: "translateY(-20rem)"
-          }, to: {
-            transform: "translateY(0rem)"
-          }
+            transform: "translateY(-20rem)",
+          },
+          to: {
+            transform: "translateY(0rem)",
+          },
         },
         overlay: {
           from: {
             background: "transparent",
-            opacity: "0"
-          }, to: {
+            opacity: "0",
+          },
+          to: {
             background: "#ffffff",
-            opacity: 0.6
-          }
+            opacity: 0.6,
+          },
         },
         scrollSpin: {
           from: {

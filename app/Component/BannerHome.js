@@ -75,7 +75,7 @@ function BannerHome({ isChecked }) {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen relative flex items-center justify-center z-0"
+      className="w-full h-screen relative flex items-start z-0"
     >
       {/* background */}
       <div
@@ -111,14 +111,14 @@ function BannerHome({ isChecked }) {
         ))}
       </div>
       <div
-        className={`bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16 ${
+        className={`bottom-4 md:bottom-10 md:pr-[140px] z-10 absolute mx-4 md:ml-16 ${
           isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"
         }`}
       >
-        <h2 className="text-[38px] md:text-[60px] text-white z-10 font-[CarotSlab]">
+        <h2 className="text-[38px] md:text-[clamp(20px,4.2vw,70px)] text-white z-10 font-[CarotSlab]">
           {title}
         </h2>
-        <h4 className="w-full md:w-[50%] text-sm text-white md:text-lg font-[TTChocolates]">
+        <h4 className="w-full md:max-w-[800px] text-[14px] text-white md:text-[clamp(12px,1.2vw,30px)] font-[TTChocolates]">
           {paragraph}
         </h4>
       </div>
