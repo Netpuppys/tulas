@@ -94,7 +94,7 @@ const AboutFacultyModal = ({
             <p className=" font-[CarotSlab] text-2xl text-[#fbfbfb] font-medium">
               Related Profiles
             </p>
-            <div className="w-full flex flex-wrap items-center justify-center gap-6 mt-5 md:mt-14">
+            <div className="w-full flex flex-wrap items-start md:items-center justify-center gap-6 mt-5 md:mt-14">
               {relatedProfiles?.map((card, groupIndex) => (
                 <div
                   key={groupIndex}
