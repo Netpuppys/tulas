@@ -49,7 +49,7 @@ function IQAC() {
         {button.map((button, index) => (
           <button
             key={index}
-            onClick={() => (window.location.href = `${button.linkTo || "#"}`)}
+            onClick={() => (window.location.href = `${button.linkTo}`)}
             className="py-2 w-[210px] md:w-[400px] rounded-full bg-white text-[clamp(15px,1.2vw,50px)] text-[#760135]"
           >
             {button.title}
