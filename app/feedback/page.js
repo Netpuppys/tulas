@@ -122,7 +122,7 @@ function Feedback() {
       <Navbar />
       <Banner
         image={BannerImg}
-        title={"NIRF Ranking"}
+        title={"Feedback"}
         description={<></>}
         belowTitle={<></>}
         belowPara={
