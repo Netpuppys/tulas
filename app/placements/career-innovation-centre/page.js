@@ -209,30 +209,28 @@ const description = (
 
 const page = () => {
   return (
-    <div className="w-full min-h-screen font-[TTChocolates]">
-      <Image
-        src={background}
-        className="fixed -z-10 w-full object-cover top-0 left-0"
-        alt=""
-      />
-
-      <div className="w-full">
-        <Navbar />
-      </div>
-
+    <div>
+      <Navbar />
       <Banner
         title={"CAREER INNOVATION CENTRE"}
         belowPara={description}
         image={bannerImage}
       />
-
+      <div className="w-full relative overflow-hidden">
+        <Image
+          src={background}
+          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+          alt=""
+        />
+      </div>
       <Vision sections={section.slice(0, 1)} />
 
-     <TopRecruiter/>
+      <TopRecruiter />
 
       <Vision sections={section.slice(1)} />
-
-      <Footer color={true} />
+      <div className="w-full h-fit z-50">
+        <Footer />
+      </div>
     </div>
   );
 };

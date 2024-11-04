@@ -75,7 +75,7 @@ function Patent() {
           <TableComponent />
         </div>
       </div>
-      <div className="px-8md:px-32 pb-8  md:pb-32 w-full flex flex-col items-center justify-center">
+      <div className="px-8 md:px-32 w-full flex flex-col items-center justify-center">
         <h3 className="font-[CarotSlab] text-[clamp(25px,3vw,75px)]">
           ALL PATENTS
         </h3>
