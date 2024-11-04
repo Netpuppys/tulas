@@ -131,7 +131,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
         )}
       </div>
       {/* main navbar */}
-      <div className="w-full pt-8 mdNavbar:pt-0 h-fit">
+      <div className="w-full pt-4 mdNavbar:pt-0 h-fit">
         <div className="flex w-full flex-row-reverse mdNavbar:flex-row justify-between">
           {!scrolled && (
             <div className="flex mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-6 mdNavbar:gap-12">
