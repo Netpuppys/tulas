@@ -132,7 +132,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
       </div>
       {/* main navbar */}
       <div className="w-full pt-2 mdNavbar:pt-0 h-fit">
-        <div className="flex w-full flex-row-reverse mdNavbar:flex-row justify-between">
+        <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
           {!scrolled && (
             <div className="flex mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
               {/* menu button */}
