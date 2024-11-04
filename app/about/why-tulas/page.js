@@ -57,7 +57,7 @@ const sectionData = [
         of students and to enhance their career opportunities too.
         <br />
         <br />
-        <ul className="list-disc">
+        <ul className="list-disc ml-5">
           <li>Microsoft innovation center (MIC)</li>
           <li>Redhat</li>
           <li>Autodesk club</li>
@@ -85,7 +85,7 @@ const sectionData = [
         students.
         <br />
         <br />
-        <ul className="list-disc">
+        <ul className="list-disc ml-5">
           <li>Virtual Labs in association with IIT Roorkee</li>
           <li>Collaboration with IIT Bombay on spoken tutorial project-FOSS</li>
           <li>IEEE Student Chapter</li>

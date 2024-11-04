@@ -226,7 +226,7 @@ function Testimonial() {
 
   return (
     <div>
-      <h3 className="text-white text-center font-[TTChocolatesBold] text-[50px]">
+      <h3 className="text-white text-center font-[TTChocolatesBold] text-[clamp(30px,2.8vw,55px)]">
         Testimonials
       </h3>
       <div>
@@ -236,22 +236,22 @@ function Testimonial() {
         >
           {features.map((feature, index) => (
             <SwiperSlide key={index}>
-              <div className="flex py-10 h-full w-[85%] gap-12 mx-auto items-center justify-center">
+              <div className="flex flex-col md:flex-row py-4 md:py-10 h-full px-4 w-full md:w-[85%] md:px-0 gap-4 md:gap-12 mx-auto items-center justify-center">
                 <Image
                   src={feature.image}
                   alt=""
-                  className="w-[417px] rounded-3xl h-[412px] object-cover"
+                  className="w-[80%] md:w-[417px] rounded-3xl h-[320px] md:h-[412px] object-cover"
                 />
-                <div className="border-[#E69706] bg-[#D9D9D9] bg-opacity-20 backdrop-blur-md w-[80%] rounded-2xl mx-auto flex flex-col justify-between gap-8 border-2 px-8 py-10 cursor-pointer">
+                <div className="border-[#E69706] bg-[#D9D9D9] bg-opacity-20 backdrop-blur-md w-full md:w-[80%] rounded-2xl mx-auto flex flex-col justify-evenly h-full md:h-[412px] border-2 px-4 md:px-8 py-4 md:py-0 cursor-pointer">
                   <div>
-                    <h2 className="text-[40px] leading-none text-white font-[TTChocolatesBold] font-extrabold text-left mb-4">
+                    <h2 className="text-[clamp(20px,2.4vw,50px)] md:leading-none text-white font-[TTChocolatesBold] font-extrabold text-left mb-2 md:mb-4">
                       {feature.name}
                     </h2>
-                    <h3 className="text-[35px] leading-none text-white font-[TTChocolatesBold] font-extrabold text-left mb-4">
+                    <h3 className="text-[clamp(18px,2vw,50px)] md:leading-none text-white font-[TTChocolatesBold] font-extrabold text-left mb-2 md:mb-4">
                       {feature.batch}
                     </h3>
                   </div>
-                  <p className="text-white mb-4 text-[22px]">
+                  <p className="text-white mb-2 md:mb-4 text-[clamp(12px,3.4vw,25px)] md:text-[clamp(14px,1.2vw,25px)]">
                     {feature.description}
                   </p>
                 </div>
@@ -259,7 +259,7 @@ function Testimonial() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="flex space-x-10 pt-4 justify-center self-center">
+        <div className="flex space-x-10 md:pt-4 justify-center self-center">
           <button
             onClick={handlePrevClick}
             className={`pointer-events-auto shadow-2xl text-[#007A83] h-[60px] w-[60px] bg-white rounded-full flex items-center justify-center text-[40px] ${
