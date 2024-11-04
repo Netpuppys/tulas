@@ -83,7 +83,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
   };
   return (
     <div
-      className={`px-4 mdNavbar:px-10 w-full max-w-[500px] mdNavbar:max-w-full ${
+      className={`px-2 mdNavbar:px-10 w-full max-w-[500px] mdNavbar:max-w-full ${
         position ? "relative pb-6" : "fixed"
       } flex flex-col justify-center z-[9999]`}
     >
@@ -131,10 +131,10 @@ function Navbar({ setState, position = false, fullBanner = false }) {
         )}
       </div>
       {/* main navbar */}
-      <div className="w-full pt-4 mdNavbar:pt-0 h-fit">
+      <div className="w-full pt-2 mdNavbar:pt-0 h-fit">
         <div className="flex w-full flex-row-reverse mdNavbar:flex-row justify-between">
           {!scrolled && (
-            <div className="flex mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-6 mdNavbar:gap-12">
+            <div className="flex mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
               {/* menu button */}
               <button
                 className="flex flex-row justify-between items-center cursor-pointer relative z-[9999]"
@@ -241,7 +241,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
 
           {/* minimal buttons after scrolling */}
           {scrolled && (
-            <div className="flex mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-4 mdNavbar:gap-6">
+            <div className="flex mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
               {/* menu button */}
               <button
                 className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
@@ -291,7 +291,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                     : TulasLogo
                 }
                 alt=""
-                className="w-[160px] h-fit pointer-events-auto cursor-pointer"
+                className="w-[120px] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
               />
             </Link>
           )}
@@ -310,7 +310,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                     : TulasLogoGreen
                 }
                 alt=""
-                className="w-[160px] h-fit pointer-events-auto cursor-pointer"
+                className="w-[120px] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
               />
             </Link>
           )}
