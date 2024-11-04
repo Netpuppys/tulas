@@ -115,7 +115,7 @@ export default async function SlugPage({ params }) {
     <>
       <Navbar />
       <div className="md:min-h-screen w-full z-40 bg-white">
-        <div className="h-[80vh] md:h-[71vh] w-full bg-black relative">
+        <div className="h-[240px] md:h-[71vh] w-full bg-black relative">
           {/* Pseudo-element for the background image with opacity */}
           <div
             style={{
@@ -123,17 +123,13 @@ export default async function SlugPage({ params }) {
             }}
             className="absolute top-0 left-0 right-0 bottom-0 opacity-30 z-0 bg-no-repeat bg-cover"
           ></div>
-
-          {/* Content section */}
-          <div className="bottom-4 md:bottom-10 opacity-100 z-10 absolute mx-4 md:ml-16">
-            <h3 className="text-[40px] md:text-[clam(20px,3.5vw,60px)] text-[#fff] z-10 font-[CarotSlab]">
-              {firstHalf}
-              <span className="text-[#5fdde9]"> {secondHalf}</span>
-            </h3>
-          </div>
         </div>
 
-        <div className="min-h-[35vh] py-8 md:py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-8 mx-auto">
+        <div className="min-h-fit py-6 md:py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-6 mx-auto">
+          <h3 className="text-[30px] md:text-[clam(20px,3.5vw,60px)] text-[#000] z-10 font-[CarotSlab]">
+            {firstHalf}
+            <span className="text-[#760135]"> {secondHalf}</span>
+          </h3>
           <h4 className="text-sm font-[TTChocolates] md:text-xl text-[#404040]">
             {blog?.yoast_head_json?.description}
           </h4>

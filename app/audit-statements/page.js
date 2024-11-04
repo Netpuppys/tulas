@@ -44,7 +44,7 @@ function AuditStatement() {
           <button
             key={index}
             onClick={() => (window.location.href = `${button.linkTo}`)}
-            className="py-2 w-[210px] md:w-[400px] rounded-full bg-white text-[clamp(15px,1.2vw,50px)] text-[#007A83]"
+            className="py-2 w-[240px] md:w-[400px] rounded-full bg-white text-[clamp(14px,1.2vw,50px)] text-[#007A83]"
           >
             {button.title}
           </button>

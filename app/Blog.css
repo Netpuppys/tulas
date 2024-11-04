@@ -391,6 +391,8 @@
 .blog-page-content a {
   color: #fff;
   text-decoration: underline;
+  line-height: 110%;
+  text-underline-offset: 3px;
 }
 .blog-page-content h3 {
   width: 100%;

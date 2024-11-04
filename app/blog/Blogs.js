@@ -72,7 +72,7 @@ const Blogs = () => {
           <Image src={loader} alt="Loading..." />
         </div>
       )}
-      <div className="my-12 md:my-20 w-[65%] mx-auto flex flex-col justify-center items-center">
+      <div className="my-5 md:my-20 w-full px-5 md:px-0 md:w-[65%] mx-auto flex flex-col justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-[TTChocolatesBold]">
           {blogs.map((blog) => {
             const formattedDate = formatDate(blog.date);
@@ -94,7 +94,7 @@ const Blogs = () => {
                     />
                     <div className="p-2 text-[clamp(15px,1.3vw,25px)] text-white">
                       <p className="text-[14px]">{formattedDate}</p>
-                      <h5 className="h-[117px] line-clamp-3">
+                      <h5 className="h-[62.5px] md:h-[117px] line-clamp-3">
                         {formattedTitle}
                       </h5>
                     </div>
@@ -106,14 +106,14 @@ const Blogs = () => {
         </div>
         {allBlogsLoaded ? (
           <button
-            className="my-5 rounded-lg bg-[#007A83] text-[27px] py-1 px-16"
+            className="mt-5 rounded-lg bg-[#007A83] text-[27px] py-1 px-16"
             disabled
           >
             All Blogs Loaded
           </button>
         ) : (
           <button
-            className={`my-5 rounded-lg bg-[#007A83] text-[27px] py-1 px-16 ${
+            className={`mt-5 rounded-lg bg-[#007A83] text-[27px] py-1 px-16 ${
               loadingMore ? "opacity-75 cursor-not-allowed" : ""
             }`}
             onClick={handleLoadMore}
