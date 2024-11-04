@@ -183,11 +183,11 @@ function Approval() {
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
-        <div className="py-20 flex flex-col justify-center items-center">
-          <div className="text-[#007A83] text-[35px] font-[TTChocolatesBold] py-1 w-[70%] text-center bg-white rounded-3xl">
+        <div className="py-8 md:py-20 flex flex-col justify-center items-center">
+          <div className="text-[#007A83] text-[25px] md:text-[35px] font-[TTChocolatesBold] py-1 w-[95%] md:w-[70%] text-center bg-white rounded-3xl">
             AICTE Approvals
           </div>
-          <div className="py-10 w-[70%] mx-auto">
+          <div className="pt-10 w-[95%] md:w-[70%] mx-auto">
             {approvalData.map((approval, index) => (
               <div
                 key={index}
@@ -197,21 +197,21 @@ function Approval() {
                   href={approval.link}
                   className="flex justify-between items-center"
                 >
-                  <div className="flex w-full h-full items-center gap-10">
-                    <div className="text-red-500 bg-white group-hover:bg-transparent rounded-r-xl w-[160px] h-[83px] flex items-center justify-center text-[52px]">
+                  <div className="flex w-full h-full items-center gap-2 md:gap-10">
+                    <div className="text-red-500 bg-white group-hover:bg-transparent rounded-r-xl min-w-[80px] max-w-[80px] md:min-w-[160px] md:max-w-[160px] h-[83px] flex items-center justify-center text-[40px] md:text-[52px]">
                       <BsFileEarmarkPdf />
                     </div>
-                    <p className="text-[25px] text-white group-hover:text-black  font-[TTChocolatesBold]">
+                    <p className="text-[18px] md:text-[25px] text-white group-hover:text-black  font-[TTChocolatesBold]">
                       {approval.title}
                     </p>
-                    <p className="text-[30px] text-white group-hover:text-black font-[TTChocolatesBold]">
+                    <p className="text-[20px] md:text-[30px] text-white group-hover:text-black font-[TTChocolatesBold]">
                       {approval.year}
                     </p>
                   </div>
                   <Image
                     src={approval.imageSrc}
                     alt=""
-                    className="w-[200px] object-cover h-[83px] rounded-s-xl"
+                    className="w-[100px] md:w-[200px] object-cover h-[83px] rounded-s-xl"
                   />
                 </Link>
               </div>
