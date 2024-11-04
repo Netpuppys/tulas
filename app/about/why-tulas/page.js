@@ -191,19 +191,19 @@ const page = () => {
 
       <Vision sections={sectionData.slice(0, 4)} />
 
-      <div className="w-full bg-white pt-14 pb-28 flex flex-col items-center justify-center px-[15rem]">
-        <p className="text-[#3D001B] text-[2.5rem] font-bold underline underline-offset-8">
+      <div className="w-full bg-white py-8 md:py-20 flex flex-col items-center justify-center">
+        <p className="text-[#3D001B] text-[clamp(24px,2.2vw,45px)] font-bold underline underline-offset-8">
           World Class Infrastructure
         </p>
-        <p className="text-[#007A83] text-[2rem] font-semibold">
+        <p className="text-[#007A83] text-[clamp(20px,1.8vw,40px)] font-semibold">
           Rated as #1 College Of Dehradun
         </p>
         <Image
           src={whyTulasImage}
-          className="max-w-[90rem] mt-8 mb-12 w-full h-fit"
+          className="py-4 md:py-8 w-[95%] md:w-[80%] h-fit"
           alt=""
         />
-        <p className="text-[#262626] text-center text-xl max-w-[90rem] px-20">
+        <p className="text-[#262626] text-center text-md md:text-xl px-4 w-[90%] md:w-[75%]">
           {bannerText}
         </p>
       </div>
