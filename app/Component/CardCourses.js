@@ -8,7 +8,6 @@ import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 function CardCourses() {
-
   const cardsCourses = [
     {
       src: Engineering,
@@ -201,19 +200,19 @@ function CardCourses() {
     },
   ];
   return (
-    <div className="flex items-center justify-center w-full h-fit gap-4">
+    <div className="flex flex-col md:flex-row items-center justify-center w-full h-fit gap-4">
       {cardsCourses.map((image, index) => (
-        <Fade delay={300}>
+        <Fade delay={300} className="w-[90%] md:w-fit">
           <div
             key={index}
-            className={`w-[18vw] group card-group h-full overflow-hidden shadow-lg transform transition-all duration-500`}
+            className={`w-full md:w-[18vw] group card-group h-[400px] md:h-full overflow-hidden shadow-lg transform transition-all duration-500`}
           >
             <Image
               src={image.src}
               alt=""
               className="z-50 object-cover w-full h-full group-hover:brightness-50"
             />
-            <div className="absolute z-30 bottom-0 p-2 flex flex-col gap-4">
+            <div className="absolute w-full h-fit overflow-scroll z-30 bottom-0 p-2 flex flex-col gap-4">
               <div className="text-white slide-in w-fit text-left font-[BenchNine] text-3xl">
                 {image.title}
               </div>

@@ -136,7 +136,7 @@ function WhyTulasScroll({ parentRef }) {
             changePosition() ? "fixed" : "absolute"
           } top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
         >
-          <div className="relative w-full h-full flex flex-col justify-center items-center">
+          <div className="mt-14 md:mt-0 relative w-full h-full flex flex-col justify-center items-center">
             <h3 className="font-[CarotSlab] text-3xl md:text-[70px] h-[75px] text-[#E69706] w-full whitespace-nowrap absolute top-0 z-10 pt-10  text-center">
               {title}
             </h3>
@@ -144,7 +144,7 @@ function WhyTulasScroll({ parentRef }) {
               {paragraph}
             </h4>
             {/* card scroll btns */}
-            <div className="absolute w-fit md:-translate-y-1/2 z-30 top-3/4 left-0 md:top-1/2 flex items-center justify-start">
+            <div className="absolute w-fit z-30 mt-[340px] md:mt-0 right-2 md:left-0 flex items-center justify-start">
               <div className="flex w-full md:w-40 md:flex-col text-[60px] items-center justify-center">
                 <button
                   className={`pointer-events-auto text-white shadow-2xl ${
@@ -170,7 +170,7 @@ function WhyTulasScroll({ parentRef }) {
             </div>
 
             {/* cards container */}
-            <div className="w-[calc(100%-10rem)] right-0 absolute py-10 innerText">
+            <div className="w-full md:w-[calc(100%-10rem)] right-0 absolute py-10 innerText">
               <div
                 style={{ transform: `translateX(-${index * (width + 48)}px)` }}
                 className="w-fit"
@@ -180,7 +180,7 @@ function WhyTulasScroll({ parentRef }) {
                     <div
                       ref={scrollRef}
                       key={index}
-                      className="group rounded-xl w-[20rem] h-full overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-125"
+                      className="group rounded-xl w-[20rem] h-full aspect-[16/11] overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-125"
                     >
                       <Image
                         src={image.src}

@@ -3,8 +3,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import BackgroundCourses from "../../public/Homepage/Courses/Courses.png";
 import BackgroundLeaf from "../../public/Homepage/Courses/CoursesLeaf.png";
+import CoursesLeafMobile from "../../public/Homepage/Courses/CoursesLeafMobile.png";
 import CardCourses from "./CardCourses";
 import Accreditation from "./Accreditation";
+import { useMobile } from "@/component/IsMobileContext";
 
 function Courses({ parentRef }) {
   const [scale, setScale] = useState(1);
@@ -13,6 +15,7 @@ function Courses({ parentRef }) {
   const [scrollY, setScrollY] = useState(0);
   const [isInView, setIsInView] = useState(false);
   const [componentHeight, setComponentHeight] = useState();
+  const { isMobile } = useMobile();
 
   const ref = useRef(null);
   const childRef = useRef(null);
@@ -70,7 +73,9 @@ function Courses({ parentRef }) {
             scrollY > 0 && scrollY < componentHeight ? "fixed" : "absolute"
           } top-0 left-0 w-full h-screen z-[11] bg-no-repeat bg-cover bg-center`}
           style={{
-            backgroundImage: `url(${BackgroundLeaf.src})`,
+            backgroundImage: `url(${
+              isMobile ? CoursesLeafMobile.src : BackgroundLeaf.src
+            })`,
             transform: `scale(${scaleLeaf})`,
             opacity: opacity,
           }}
@@ -86,10 +91,10 @@ function Courses({ parentRef }) {
             opacity: opacity,
           }}
         >
-          <h3 className="font-[Dynalight] text-[74px] text-white z-20 text-center leading-[100px]">
+          <h3 className="font-[Dynalight] text-[40px] leading-none md:text-[clamp(30px,3vw,120px)] text-white z-20 text-center md:leading-[5.8vw]">
             Our
             <br />
-            <span className="font-[DKAppelstroop] text-white text-[150px] font-normal">
+            <span className="font-[DKAppelstroop] text-white text-[80px] md:text-[clamp(70px,8vw,250px)] font-normal">
               Courses
             </span>
           </h3>
@@ -101,12 +106,12 @@ function Courses({ parentRef }) {
             opacity < 0.09 ? "opacity-100 translate-in" : "opacity-0"
           }`}
         >
-          <div className="font-[ExtraWide] text-[42px] text-white text-center">
+          <div className="font-[ExtraWide] text-[35px] md:text-[42px] text-white text-center">
             Courses
           </div>
           <div className="bg-white w-[1px] h-[8vh]"></div>
           <h5
-            className={`w-full max-w-[50rem] text-white font-[TTChocolates] text-[25px] text-center transition-opacity duration-300 ease-in-out ${
+            className={`w-full px-4 max-w-[50rem] text-white font-[TTChocolates] text-[18px] md:text-[25px] text-center transition-opacity duration-300 ease-in-out ${
               opacity < 0.001 ? "opacity-100 translate-in" : "opacity-0"
             }`}
           >
@@ -127,10 +132,10 @@ function Courses({ parentRef }) {
 
       <div
         ref={ref}
-        className="w-full h-[75vh] z-40 bg-[#3D001B] relative flex flex-col items-center"
+        className="w-full h-fit md:h-[75vh] z-40 bg-[#3D001B] relative flex flex-col items-center"
       >
-        <div className="w-[1px] min-h-[20vh] bg-white"></div>
-        <div className="w-full mx-auto pt-8">
+        <div className="w-[1px] md:min-h-[20vh] bg-white"></div>
+        <div className="w-full mx-auto py-8 md:py-0 md:pt-8">
           <CardCourses />
         </div>
       </div>
