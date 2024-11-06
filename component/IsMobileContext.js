@@ -1,14 +1,15 @@
 "use client";
+
 import React, { createContext, useContext, useState, useEffect } from "react";
 
 const MobileContext = createContext();
 
 export const MobileProvider = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [vw, setVw] = useState(0);
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
+    setIsMobile(window.innerWidth < 768);
     setVw(window.innerWidth);
   };
 
