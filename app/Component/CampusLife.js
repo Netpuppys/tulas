@@ -69,12 +69,12 @@ const CampusLife = () => {
   // }, [imageIndex])
 
   return (
-    <div className="w-full flex flex-col items-center justify-start pt-20 pb-40">
+    <div className="w-full flex flex-col items-center justify-start py-8 md:py-20">
       <p className="uppercase text-4xl text-[#007A83] font-semibold tracking-[0.15em]">
         Campus Life
       </p>
       <div className="w-full relative h-[40rem] mt-8">
-        <div ref={contRef} className="w-full h-full bg-green-300 relative">
+        <div ref={contRef} className="w-full h-full relative">
           <div
             ref={scrollRef}
             className="absolute top-0 left-0 flex overflow-hidden w-full max-h-full"

@@ -70,7 +70,9 @@ function Courses({ parentRef }) {
       <div className="w-full h-[250vh] relative bg-[#3D001B] overflow-hidden">
         <div
           className={`${
-            scrollY > 0 && scrollY < componentHeight ? "fixed" : "absolute"
+            scrollY > 0 && scrollY < componentHeight && opacity !== 0
+              ? "fixed"
+              : "absolute"
           } top-0 left-0 w-full h-screen z-[11] bg-no-repeat bg-cover bg-center`}
           style={{
             backgroundImage: `url(${
@@ -83,7 +85,9 @@ function Courses({ parentRef }) {
 
         <div
           className={`${
-            scrollY > 0 && scrollY < componentHeight ? "fixed" : "absolute"
+            scrollY > 0 && scrollY < componentHeight && opacity !== 0
+              ? "fixed"
+              : "absolute"
           } top-0 left-0 flex items-center justify-center w-full h-screen z-10 bg-no-repeat bg-cover bg-center`}
           style={{
             backgroundImage: `url(${BackgroundCourses.src})`,

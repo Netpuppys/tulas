@@ -67,7 +67,7 @@ function VirtualTour() {
 
   return (
     <div className="w-full h-screen backgroundVirtual flex flex-col">
-      <div className="mt-[6rem] flex flex-col mr-[8rem] ml-auto text-center items-center">
+      <div className="mt-16 md:mt-[6rem] flex flex-col md:mr-[8rem] md:ml-auto text-center items-center">
         <Link href="/virtual-tour/index.html">
           <TbView360Number className="text-white text-[80px]" />
         </Link>
@@ -80,12 +80,15 @@ function VirtualTour() {
           360 Degree Campus Tour
         </h5>
       </div>
-      <div className="flex justify-around mt-auto mb-5" ref={statsRef}>
+      <div
+        className="flex justify-around mx-auto w-full flex-wrap gap-y-5 mt-auto mb-5"
+        ref={statsRef}
+      >
         {stats.map((stat, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <div key={index} className="w-1/2 flex flex-col items-center">
             <Image src={stat.img} alt={stat.title} />
             <h3
-              className="text-[40px] text-white font-[TTChocolatesBold]"
+              className="text-[30px] md:text-[40px] text-white font-[TTChocolatesBold]"
               style={{
                 textShadow: "0px 4px 26px #40E269",
               }}
@@ -93,7 +96,7 @@ function VirtualTour() {
               {stat.animatedStatNo || stat.start}
               {"+"}
             </h3>
-            <h3 className="text-[18px] text-white font-[TTChocolatesBold]">
+            <h3 className="text-[16px] md:text-[18px] text-white font-[TTChocolatesBold]">
               {stat.title}
             </h3>
           </div>
