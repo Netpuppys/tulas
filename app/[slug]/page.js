@@ -7,6 +7,8 @@ import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import "../Blog.css";
 import background from "../../public/AboutDehradun/background.png";
+import { notFound } from "next/navigation"; // Import notFound function
+
 export const revalidate = 60; // ISR revalidation every 60 seconds
 
 export async function generateStaticParams() {
@@ -86,11 +88,7 @@ export default async function SlugPage({ params }) {
   }
 
   if (!blog) {
-    return (
-      <div>
-        <h2>Blog not found</h2>
-      </div>
-    );
+    notFound(); // Render 404 page when no blog is found
   }
 
   const formatDate = (dateString) => {

@@ -16,9 +16,7 @@ function Vision({ sections }) {
             <div
               ref={ref}
               key={index}
-              className={`flex flex-col gap-8 md:gap-0 md:flex-row ${
-                sections.length === 1 ? "" : "mb-8 md:mb-20"
-              } justify-between w-full md:w-[95%] h-fit items-center ${
+              className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 last:mb-0 justify-between w-full md:w-[95%] h-fit items-center ${
                 index % 2 !== 0
                   ? "md:flex-row-reverse md:mr-[5%]"
                   : "md:ml-[5%]"
@@ -30,23 +28,36 @@ function Vision({ sections }) {
                     {section.title}
                   </h3>
                   <br />
-                  <h5 className="text-[16px] md:text-[22px] font-[TTChocolates] text-[#D9D9D9]">
+                  <h5 className="text-[16px] md:text-[clamp(16px,1.3vw,50px)] text-justify font-[TTChocolates] text-[#D9D9D9]">
                     {section.description}
                   </h5>
                 </div>
               </Fade>
               <Fade className="w-full md:w-[45%]">
-                <Image
-                  src={section.image}
-                  alt=""
-                  className={`w-full h-fit  ${
-                    inView
-                      ? index % 2 !== 0
-                        ? "md:animate-translateLeftImage rounded-xl md:rounded-none md:rounded-e-3xl"
-                        : "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-s-3xl"
-                      : "opacity-0 "
-                  }`}
-                />
+                {section.image && (
+                  <Image
+                    src={section.image}
+                    alt=""
+                    className={`w-full h-fit  ${
+                      inView
+                        ? index % 2 !== 0
+                          ? "md:animate-translateLeftImage rounded-xl md:rounded-none md:rounded-e-3xl"
+                          : "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-s-3xl"
+                        : "opacity-0 "
+                    }`}
+                  />
+                )}
+                {!section.image && (
+                  <div
+                    className={`bg-black bg-opacity-40 w-full h-96  ${
+                      inView
+                        ? index % 2 !== 0
+                          ? "md:animate-translateLeftImage rounded-xl md:rounded-none md:rounded-e-3xl"
+                          : "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-s-3xl"
+                        : "opacity-0 "
+                    }`}
+                  ></div>
+                )}
               </Fade>
             </div>
           );

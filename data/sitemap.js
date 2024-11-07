@@ -225,12 +225,16 @@ const sitemap = [
     title: "Campus Life",
     nestedLinks: [
       {
-        title: "Sanskriti",
-        linkTo: "/campus-life/sanskriti",
-      },
-      {
         title: "Celebrities",
         linkTo: "/campus-life/celebrities",
+      },
+      {
+        title: "Technical Fests",
+        linkTo: "/campus-life/technical-fests",
+      },
+      {
+        title: "Sanskriti",
+        linkTo: "/campus-life/sanskriti",
       },
       {
         title: "NCC",
@@ -239,10 +243,6 @@ const sitemap = [
       {
         title: "NSS",
         linkTo: "/campus-life/nss",
-      },
-      {
-        title: "Technical Fests",
-        linkTo: "/campus-life/technical-fests",
       },
       {
         title: "Vibgyor",
