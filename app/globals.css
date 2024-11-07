@@ -11,6 +11,10 @@
   src: url(../public/fonts/TT\ Chocolates\ Trial\ Light.otf);
 }
 @font-face {
+  font-family: "TTChocolatesMedium";
+  src: url(../public/fonts/TT\ Chocolates\ Trial\ Regular.otf);
+}
+@font-face {
   font-family: "TTChocolatesBold";
   src: url(../public/fonts/TT\ Chocolates\ Trial\ Medium.otf);
 }
