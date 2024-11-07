@@ -56,7 +56,7 @@ function NavbarDesktop({
             : "animate-translateRightMenu left-[-100%]"
         }`}
       >
-        <div className="w-full h-[calc(100vh-360px)]  relative top-[180px] overflow-auto">
+        <div className="w-full h-[calc(100vh-350px)]  relative top-[180px] overflow-auto">
           {sitemap.map((item, index) => (
             <div
               className="border-t last:border-b border-[#C5C5C5]   flex flex-col w-full h-fit"
