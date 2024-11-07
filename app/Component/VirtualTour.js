@@ -85,7 +85,7 @@ function VirtualTour() {
         ref={statsRef}
       >
         {stats.map((stat, index) => (
-          <div key={index} className="w-1/2 flex flex-col items-center">
+          <div key={index} className="w-1/2 md:w-[25%] flex flex-col items-center">
             <Image src={stat.img} alt={stat.title} />
             <h3
               className="text-[30px] md:text-[40px] text-white font-[TTChocolatesBold]"
