@@ -222,6 +222,39 @@ const sitemap = [
     ],
   },
   {
+    title: "Campus Life",
+    nestedLinks: [
+      {
+        title: "Sanskriti",
+        linkTo: "/campus-life/sanskriti",
+      },
+      {
+        title: "Celebrities",
+        linkTo: "/campus-life/celebrities",
+      },
+      {
+        title: "NCC",
+        linkTo: "/campus-life/ncc",
+      },
+      {
+        title: "NSS",
+        linkTo: "/campus-life/nss",
+      },
+      {
+        title: "Technical Fests",
+        linkTo: "/campus-life/technical-fests",
+      },
+      {
+        title: "Vibgyor",
+        linkTo: "/campus-life/vibgyor",
+      },
+      {
+        title: "Victree",
+        linkTo: "/campus-life/victree",
+      },
+    ],
+  },
+  {
     title: "R&D (CIRE)",
     linkTo: "/research/",
     nestedLinks: [
