@@ -17,43 +17,55 @@ function AuditStatement() {
     { title: "Audited Statement 2020-2021", linkTo: AuditStatement2020 },
   ];
   return (
-    <div>
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            Audited <span className="text-[#005D64]">Statement</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={""}
-        belowPara={
-          "Please Click on Audited Statement for viewing  Detail Report"
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Audited Statements | Best Engineering College in Dehradun, Uttarakhand
+          | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Review the audited financial statements of Tula's Institute, Dehradun’s leading engineering college. Gain transparency into our financial health, resource allocation, and commitment to quality education and infrastructure. Explore our dedication to accountability and excellence."
         />
-      </div>
-      <div className="py-8 md:py-20 w-full bg-transparent overflow-hidden px-3 md:px-0 flex flex-col justify-center items-center gap-4">
-        {button.map((button, index) => (
-          <button
-            key={index}
-            onClick={() => (window.location.href = `${button.linkTo}`)}
-            className="py-2 w-[240px] md:w-[400px] rounded-full bg-white text-[clamp(14px,1.2vw,50px)] text-[#007A83]"
-          >
-            {button.title}
-          </button>
-        ))}
-      </div>
-      <div className="w-full h-fit z-50">
-        <Footer color={true} />
-      </div>
-    </div>
+      </head>
+      <body>
+        <Navbar />
+        <Banner
+          image={BannerImg}
+          title={
+            <>
+              Audited <span className="text-[#005D64]">Statement</span>
+            </>
+          }
+          description={<></>}
+          belowTitle={""}
+          belowPara={
+            "Please Click on Audited Statement for viewing  Detail Report"
+          }
+        />
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <div className="py-8 md:py-20 w-full bg-transparent overflow-hidden px-3 md:px-0 flex flex-col justify-center items-center gap-4">
+          {button.map((button, index) => (
+            <button
+              key={index}
+              onClick={() => (window.location.href = `${button.linkTo}`)}
+              className="py-2 w-[240px] md:w-[400px] rounded-full bg-white text-[clamp(14px,1.2vw,50px)] text-[#007A83]"
+            >
+              {button.title}
+            </button>
+          ))}
+        </div>
+        <div className="w-full h-fit z-50">
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

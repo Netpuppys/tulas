@@ -36,36 +36,48 @@ function IQACVision() {
     },
   ];
   return (
-    <div>
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={<>IQAC</>}
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          <>
-            Tula’s Institute is dedicated to advancing Research and Development
-            initiatives, driven by a clear vision and mission to explore and
-            advance research in cutting-edge technologies and various fields of
-            Engineering. To foster an environment conducive to such pursuits,
-            the Institute has established the Centre for Innovation, Research,
-            and Entrepreneurship (CIRE).
-          </>
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          IQAC Vision & Mission | Best Engineering College in Dehradun,
+          Uttarakhand | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Discover the vision and mission of the Internal Quality Assurance Cell (IQAC) at Tula's Institute, Dehradun. Learn how our commitment to quality drives academic and institutional excellence, fostering a culture of continuous improvement."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer color={true} />
-      </div>
-    </div>
+      </head>
+      <body>
+        <Navbar />
+        <Banner
+          image={BannerImg}
+          title={<>IQAC</>}
+          description={<></>}
+          belowTitle={<></>}
+          belowPara={
+            <>
+              Tula’s Institute is dedicated to advancing Research and
+              Development initiatives, driven by a clear vision and mission to
+              explore and advance research in cutting-edge technologies and
+              various fields of Engineering. To foster an environment conducive
+              to such pursuits, the Institute has established the Centre for
+              Innovation, Research, and Entrepreneurship (CIRE).
+            </>
+          }
+        />
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <Vision sections={sections} />
+        <div className="w-full h-fit z-50">
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

@@ -3,9 +3,20 @@ import AdmissionPage from "./Components/AdmissionPage";
 
 function page() {
   return (
-    <div>
-      <AdmissionPage />
-    </div>
+    <>
+      <head>
+        <title>
+          Admission Procedure for Btech, Mtech, Mba, Diploma, Bba, Bca, Mca
+        </title>
+        <meta
+          name="description"
+          content="Admission procedure and criteria for Btech,Mtech,Bba,Mba,Bca,Mca,Diploma.Tula is situated in Dehradun,Uttarakhand,India.Top College 9837983721."
+        />
+      </head>
+      <body>
+        <AdmissionPage />
+      </body>
+    </>
   );
 }
 

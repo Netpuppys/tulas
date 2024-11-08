@@ -165,53 +165,64 @@ const bannerText = (
 
 const page = () => {
   return (
-    <div className="w-full min-h-screen font-[TTChocolates]">
-      <Navbar />
-
-      <Banner
-        image={banner}
-        title={
-          <>
-            WHY <span className="text-[#007A83]">TULA'S</span>
-          </>
-        }
-        belowPara={pageDescription}
-      />
-
-      <div className="w-screen h-screen fixed top-0 left-0 -z-10 bg-[linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),linear-gradient(0deg, rgba(61, 0, 27, 0.72) 0%, rgba(61, 0, 27, 0.72) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;]">
-        <Image
-          src={hostelBackground}
-          className="w-full h-full object-cover"
-          alt=""
+    <>
+      <head>
+        <title>Top Engineering college in Dehradun, Uttarakhand</title>
+        <meta
+          name="description"
+          content="Tula's Institute, Best engineering institute in Dehradun Uttarakhand, is North Indiaâ€™s fastest growing private college with best placement records."
         />
-        <div className="w-screen h-screen fixed top-0 left-0 bg-[rgba(0,0,0,0.2)]">
-          <div className="w-full h-full bg-[linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),linear-gradient(0deg,rgba(61,0,27,0.72),rgba(61,0,27,0.72))] bg-cover bg-no-repeat bg-lightgray" />
+      </head>
+      <body>
+        <div className="w-full min-h-screen font-[TTChocolates]">
+          <Navbar />
+
+          <Banner
+            image={banner}
+            title={
+              <>
+                WHY <span className="text-[#007A83]">TULA'S</span>
+              </>
+            }
+            belowPara={pageDescription}
+          />
+
+          <div className="w-screen h-screen fixed top-0 left-0 -z-10 bg-[linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),linear-gradient(0deg, rgba(61, 0, 27, 0.72) 0%, rgba(61, 0, 27, 0.72) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;]">
+            <Image
+              src={hostelBackground}
+              className="w-full h-full object-cover"
+              alt=""
+            />
+            <div className="w-screen h-screen fixed top-0 left-0 bg-[rgba(0,0,0,0.2)]">
+              <div className="w-full h-full bg-[linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),linear-gradient(0deg,rgba(61,0,27,0.72),rgba(61,0,27,0.72))] bg-cover bg-no-repeat bg-lightgray" />
+            </div>
+          </div>
+
+          <Vision sections={sectionData.slice(0, 4)} />
+
+          <div className="w-full bg-white py-8 md:py-20 flex flex-col items-center justify-center">
+            <p className="text-[#3D001B] text-[clamp(24px,2.2vw,45px)] font-bold underline underline-offset-8">
+              World Class Infrastructure
+            </p>
+            <p className="text-[#007A83] text-[clamp(20px,1.8vw,40px)] font-semibold">
+              Rated as #1 College Of Dehradun
+            </p>
+            <Image
+              src={whyTulasImage}
+              className="py-4 md:py-8 w-[95%] md:w-[80%] h-fit"
+              alt=""
+            />
+            <p className="text-[#262626] text-center text-md md:text-xl px-4 w-[90%] md:w-[75%]">
+              {bannerText}
+            </p>
+          </div>
+
+          <Vision sections={sectionData.slice(4)} />
+
+          <Footer />
         </div>
-      </div>
-
-      <Vision sections={sectionData.slice(0, 4)} />
-
-      <div className="w-full bg-white py-8 md:py-20 flex flex-col items-center justify-center">
-        <p className="text-[#3D001B] text-[clamp(24px,2.2vw,45px)] font-bold underline underline-offset-8">
-          World Class Infrastructure
-        </p>
-        <p className="text-[#007A83] text-[clamp(20px,1.8vw,40px)] font-semibold">
-          Rated as #1 College Of Dehradun
-        </p>
-        <Image
-          src={whyTulasImage}
-          className="py-4 md:py-8 w-[95%] md:w-[80%] h-fit"
-          alt=""
-        />
-        <p className="text-[#262626] text-center text-md md:text-xl px-4 w-[90%] md:w-[75%]">
-          {bannerText}
-        </p>
-      </div>
-
-      <Vision sections={sectionData.slice(4)} />
-
-      <Footer />
-    </div>
+      </body>
+    </>
   );
 };
 

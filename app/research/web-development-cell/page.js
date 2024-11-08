@@ -78,33 +78,47 @@ function WebDevelopmentCell() {
     },
   ];
   return (
-    <div className="flex flex-col items-center overflow-hidden">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            Web <span className="text-[#007A83]">Development Cell</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "Tula’s Institute houses a dedicated Web Development Cell that plays a vital role in managing and maintaining the institute’s online presence and digital platforms. The Web Development Cell consists of a team of skilled professionals and enthusiastic students who work together to ensure an effective and engaging online experience for the institute’s stakeholders."
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Web Development Cell | Best Engineering College in Dehradun,
+          Uttarakhand | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Explore the Web Development Cell at Tula's Institute, fostering innovation and skills in web technologies through collaborative projects, workshops, and expert guidance."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer color={true} />
-      </div>
-    </div>
+      </head>
+      <body>
+        <div className="flex flex-col items-center overflow-hidden">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                Web <span className="text-[#007A83]">Development Cell</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              "Tula’s Institute houses a dedicated Web Development Cell that plays a vital role in managing and maintaining the institute’s online presence and digital platforms. The Web Development Cell consists of a team of skilled professionals and enthusiastic students who work together to ensure an effective and engaging online experience for the institute’s stakeholders."
+            }
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Vision sections={sections} />
+          <div className="w-full h-fit z-50">
+            <Footer color={true} />
+          </div>
+        </div>
+      </body>
+    </>
   );
 }
 

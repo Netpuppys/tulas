@@ -26,51 +26,64 @@ function BBA() {
   const parentRef = useRef(null);
 
   return (
-    <div ref={parentRef}>
-      <div className="w-full h-fit bg-white">
-        <Navbar position={true} />
-      </div>
-      <BannerProgram
-        image={BannerImg}
-        title=<>
-          BB<span className="text-[#760135]">A</span>
-        </>
-        titleColor={""}
-        description={
-          "The three-year Bachelor of Business Administration (BBA) program is designed keeping in mind the needs of the bright students who are looking for a career in entrepreneurship, management profession or towards higher education in business administration."
-        }
-      />
-
-      <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram
-        heading={"Discover"}
-        items={items}
-        color={true}
-        background={background}
-      />
-      <Vision sections={sections} />
-      <TableProgram
-        cards={cards}
-        selectedCard1={selectedCard1}
-        semesterData={semesterData}
-        facultyData={facultyData}
-      />
-      <TopRecruiter />
-      <CarouselProgram
-        heading={"Explore More"}
-        items={itemsClubs}
-        color={true}
-        background={background}
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Best BBA College in Dehradun, Uttarakhand | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Tula's is the Best BBA College in Dehradun, Uttarakhand, Tula's is the Top BBA College in all over Uttarakhand 100% placements record in top-level MNC companies, for more info call on admission helpline."
         />
-      </div>
-      <Footer color={true} />
-    </div>
+      </head>
+      <body>
+        <div ref={parentRef}>
+          <div className="w-full h-fit bg-white">
+            <Navbar position={true} />
+          </div>
+          <BannerProgram
+            image={BannerImg}
+            title=<>
+              BB<span className="text-[#760135]">A</span>
+            </>
+            titleColor={""}
+            description={
+              "The three-year Bachelor of Business Administration (BBA) program is designed keeping in mind the needs of the bright students who are looking for a career in entrepreneurship, management profession or towards higher education in business administration."
+            }
+          />
+
+          <Program parentRef={parentRef} images={images} content={content} />
+          <CarouselProgram
+            heading={"Discover"}
+            items={items}
+            color={true}
+            background={background}
+          />
+          <Vision sections={sections} />
+          <TableProgram
+            cards={cards}
+            selectedCard1={selectedCard1}
+            semesterData={semesterData}
+            facultyData={facultyData}
+          />
+          <TopRecruiter />
+          <CarouselProgram
+            heading={"Explore More"}
+            items={itemsClubs}
+            color={true}
+            background={background}
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

@@ -28,53 +28,66 @@ function MBA() {
   const parentRef = useRef(null);
 
   return (
-    <div ref={parentRef}>
-      <div className="w-full h-fit bg-white">
-        <Navbar position={true} />
-      </div>
-      <BannerProgram
-        image={BannerImg}
-        title=<>
-          MC<span className="text-[#760135]">A</span>
-        </>
-        titleColor={""}
-        description={
-          "MCA is a two-year master’s degree program in computer applications. The need for computer professionals is constantly rising globally due to the rapid expansion of the IT industry."
-        }
-      />
-      <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram
-        heading={"Discover"}
-        items={items}
-        color={true}
-        background={background}
-      />
-      <Vision sections={sections} />
-      <TableProgram
-        cards={cards}
-        selectedCardTable={selectedCardTable}
-        semesterData={semesterData}
-        facultyData={facultyData}
-        hod={hod}
-        HODcontent={HODcontent}
-      />
-      <TopRecruiter />
-      <CarouselProgram
-        heading={"Explore More"}
-        items={itemsClubs}
-        color={true}
-        background={background}
-      />
-
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Best Private MCA College in Dehradun, Uttarakhand | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Tula's Institute is one of the Best MCA College in Dehradun, Uttarakhand, India that provides valuable educational practices to its students with the help of experienced faculty."
         />
-      </div>
-      <Footer color={true} />
-    </div>
+      </head>
+      <body>
+        <div ref={parentRef}>
+          <div className="w-full h-fit bg-white">
+            <Navbar position={true} />
+          </div>
+          <BannerProgram
+            image={BannerImg}
+            title=<>
+              MC<span className="text-[#760135]">A</span>
+            </>
+            titleColor={""}
+            description={
+              "MCA is a two-year master’s degree program in computer applications. The need for computer professionals is constantly rising globally due to the rapid expansion of the IT industry."
+            }
+          />
+          <Program parentRef={parentRef} images={images} content={content} />
+          <CarouselProgram
+            heading={"Discover"}
+            items={items}
+            color={true}
+            background={background}
+          />
+          <Vision sections={sections} />
+          <TableProgram
+            cards={cards}
+            selectedCardTable={selectedCardTable}
+            semesterData={semesterData}
+            facultyData={facultyData}
+            hod={hod}
+            HODcontent={HODcontent}
+          />
+          <TopRecruiter />
+          <CarouselProgram
+            heading={"Explore More"}
+            items={itemsClubs}
+            color={true}
+            background={background}
+          />
+
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

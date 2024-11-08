@@ -52,48 +52,60 @@ function ComputerScience() {
     },
   ];
   return (
-    <div className="flex flex-col items-center">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            OUR COMPUTER <span className="text-[#007A83]">CENTRE</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          <p className="text-sm md:text-lg">
-            Information Technology is unarguably the defining force of this
-            millennium, and Tula’s Institute is poised to break new ground as
-            the most e-enabled Engineering cum Business School in Uttarakhand.
-            Wireless technology has emerged as a vital and indispensable means
-            of communication in the twenty first century. Irrespective of the
-            size of an organization, its efficient running depends a lot upon
-            the presence of proper networking systems that enables both the
-            students and faculty to access vital data and information easily at
-            the click of a button. Having understood the importance, Tula’s
-            Institute has invested heavily towards developing World Class IT
-            Infrastructure to facilitate e-learning in today’s day and age and
-            is thus regarded amongst the ‘best engineering colleges in
-            Dehradun’.
-          </p>
-        }
-      />
-      {/* fixed background */}
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>Computer Center in Tula's | Best College in Dehradun</title>
+        <meta
+          name="description"
+          content="Tula's has big in house computer centre.Ranked No-1 college in dehradun"
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+      </head>
+      <body>
+        <div className="flex flex-col items-center">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                OUR COMPUTER <span className="text-[#007A83]">CENTRE</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              <p className="text-sm md:text-lg">
+                Information Technology is unarguably the defining force of this
+                millennium, and Tula’s Institute is poised to break new ground
+                as the most e-enabled Engineering cum Business School in
+                Uttarakhand. Wireless technology has emerged as a vital and
+                indispensable means of communication in the twenty first
+                century. Irrespective of the size of an organization, its
+                efficient running depends a lot upon the presence of proper
+                networking systems that enables both the students and faculty to
+                access vital data and information easily at the click of a
+                button. Having understood the importance, Tula’s Institute has
+                invested heavily towards developing World Class IT
+                Infrastructure to facilitate e-learning in today’s day and age
+                and is thus regarded amongst the ‘best engineering colleges in
+                Dehradun’.
+              </p>
+            }
+          />
+          {/* fixed background */}
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Vision sections={sections} />
+          <div className="w-full h-fit z-50">
+            <Footer />
+          </div>
+        </div>
+      </body>
+    </>
   );
 }
 

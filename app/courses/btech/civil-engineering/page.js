@@ -30,58 +30,71 @@ function BAJMC() {
   const parentRef = useRef(null);
 
   return (
-    <div className="max-w-full" ref={parentRef}>
-      <div className="w-full h-fit bg-white">
-        <Navbar position={true} />
-      </div>
-      <BannerProgram
-        image={BannerImg}
-        title={
-          <>
-            CIVIL <span className="text-[#760135]">ENGINEERING</span>
-          </>
-        }
-        titleColor={""}
-        description={
-          "The Civil Engineering Department of Tula's Institute came into existence in the year 2011. The department offers Diploma, Undergraduate, and Postgraduate programs in civil engineering."
-        }
-      />
-      <Program parentRef={parentRef} images={images} content={content} />
-
-      <CarouselProgram
-        heading={"Discover"}
-        items={items}
-        background={background}
-      />
-
-      <Vision sections={sections} />
-      <div className="w-full overflow-x-scroll">
-        <TableProgram
-          cards={cards}
-          selectedCardTable={selectedCardTable}
-          semesterData={semesterData}
-          facultyData={facultyData}
-          hod={hod}
-          HODcontent={HODcontent}
+    <>
+      <head>
+        <title>
+          Best Civil Engineering Colleges in Dehradun | Best B.Tech College
+        </title>
+        <meta
+          name="description"
+          content="Tula’s Institute is a reputed Best Civil Engineering Colleges in Dehradun Uttarakhand. Department of Civil Engineering has evolved a comprehensive student-centric learning approach."
         />
-      </div>
-      <TopRecruiter />
-      <CarouselProgram
-        heading={"Explore More"}
-        items={itemsClubs}
-        background={background}
-      />
+      </head>
+      <body>
+        <div className="max-w-full" ref={parentRef}>
+          <div className="w-full h-fit bg-white">
+            <Navbar position={true} />
+          </div>
+          <BannerProgram
+            image={BannerImg}
+            title={
+              <>
+                CIVIL <span className="text-[#760135]">ENGINEERING</span>
+              </>
+            }
+            titleColor={""}
+            description={
+              "The Civil Engineering Department of Tula's Institute came into existence in the year 2011. The department offers Diploma, Undergraduate, and Postgraduate programs in civil engineering."
+            }
+          />
+          <Program parentRef={parentRef} images={images} content={content} />
 
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
-        />
-      </div>
+          <CarouselProgram
+            heading={"Discover"}
+            items={items}
+            background={background}
+          />
 
-      <Footer />
-    </div>
+          <Vision sections={sections} />
+          <div className="w-full overflow-x-scroll">
+            <TableProgram
+              cards={cards}
+              selectedCardTable={selectedCardTable}
+              semesterData={semesterData}
+              facultyData={facultyData}
+              hod={hod}
+              HODcontent={HODcontent}
+            />
+          </div>
+          <TopRecruiter />
+          <CarouselProgram
+            heading={"Explore More"}
+            items={itemsClubs}
+            background={background}
+          />
+
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+
+          <Footer />
+        </div>
+      </body>{" "}
+    </>
   );
 }
 

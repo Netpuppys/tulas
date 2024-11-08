@@ -26,49 +26,62 @@ function BBA() {
   const parentRef = useRef(null);
 
   return (
-    <div ref={parentRef}>
-      <div className="w-full h-fit bg-white">
-        <Navbar position={true} />
-      </div>
-      <BannerProgram
-        image={BannerImg}
-        title={"B.COM"}
-        titleColor={"(HONS)"}
-        description={
-          "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
-        }
-      />
-
-      <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram
-        heading={"Discover"}
-        items={items}
-        color={true}
-        background={background}
-      />
-      <Vision sections={sections} />
-      <TableProgram
-        cards={cards}
-        selectedCard1={selectedCard1}
-        semesterData={semesterData}
-        facultyData={facultyData}
-      />
-      <TopRecruiter />
-      <CarouselProgram
-        heading={"Explore More"}
-        items={itemsClubs}
-        color={true}
-        background={background}
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Best B.Com (Hons.) College in Dehradun, Uttarakhand | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Tula's Institute is one of the best B.Com (Hons.) College in Dehradun. The college holds merit not only on academic grounds but also on extracurricular activities."
         />
-      </div>
-      <Footer color={true} />
-    </div>
+      </head>
+      <body>
+        <div ref={parentRef}>
+          <div className="w-full h-fit bg-white">
+            <Navbar position={true} />
+          </div>
+          <BannerProgram
+            image={BannerImg}
+            title={"B.COM"}
+            titleColor={"(HONS)"}
+            description={
+              "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
+            }
+          />
+
+          <Program parentRef={parentRef} images={images} content={content} />
+          <CarouselProgram
+            heading={"Discover"}
+            items={items}
+            color={true}
+            background={background}
+          />
+          <Vision sections={sections} />
+          <TableProgram
+            cards={cards}
+            selectedCard1={selectedCard1}
+            semesterData={semesterData}
+            facultyData={facultyData}
+          />
+          <TopRecruiter />
+          <CarouselProgram
+            heading={"Explore More"}
+            items={itemsClubs}
+            color={true}
+            background={background}
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

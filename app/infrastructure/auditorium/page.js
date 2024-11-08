@@ -27,34 +27,45 @@ function Auditorium() {
     },
   ];
   return (
-    <div className="flex flex-col items-center">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            OUR <span className="text-[#007A83]">AUDITORIUM</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "The auditorium at Tulas Institute in Dehradun is a modern facility designed to host a variety of events, including seminars, conferences, and cultural programs. It is equipped with state-of-the-art audio-visual technology, providing an ideal environment for both academic and extracurricular activities."
-        }
-      />
-      {/* fixed background */}
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>Tula's | Biggest Auditorium in Dehradun,Uttarakhand</title>
+        <meta
+          name="description"
+          content="The Tula's Institute provides computerised library, auditorium having a 500 seating capacity, Microsoft innovation centre, computer centre."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer color={true} />
-      </div>
-    </div>
+      </head>
+      <body>
+        <div className="flex flex-col items-center">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                OUR <span className="text-[#007A83]">AUDITORIUM</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              "The auditorium at Tulas Institute in Dehradun is a modern facility designed to host a variety of events, including seminars, conferences, and cultural programs. It is equipped with state-of-the-art audio-visual technology, providing an ideal environment for both academic and extracurricular activities."
+            }
+          />
+          {/* fixed background */}
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Vision sections={sections} />
+          <div className="w-full h-fit z-50">
+            <Footer color={true} />
+          </div>
+        </div>
+      </body>
+    </>
   );
 }
 

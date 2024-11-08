@@ -29,54 +29,67 @@ function BAJMC() {
   const parentRef = useRef(null);
 
   return (
-    <div ref={parentRef}>
-      <div className="w-full h-fit bg-white">
-        <Navbar position={true} />
-      </div>
-      <BannerProgram
-        image={BannerImg}
-        title=<>
-          Department of{" "}
-          <span className="text-[#760135]">MECHANICAL ENGINEERING</span>
-        </>
-        titleColor={""}
-        description={
-          "The Mechanical Engineering Department of Tula’s Institute is one of the oldest department since its inception in 2006. The department offers Diploma, Undergraduate, and Postgraduate programs in mechanical engineering. The main goal of the curriculum is to impart quality education to the students to develop technical skills, improve their problem-solving abilities, and encourage them to become a competitive mechanical engineer. "
-        }
-      />
-      <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram
-        heading={"Discover"}
-        items={items}
-        color={true}
-        background={background}
-      />
-      <Vision sections={sections} />
-      <TableProgram
-        cards={cards}
-        selectedCardTable={selectedCardTable}
-        semesterData={semesterData}
-        facultyData={facultyData}
-        hod={hod}
-        HODcontent={HODcontent}
-        specialization={specialization}
-      />
-      <TopRecruiter />
-      <CarouselProgram
-        heading={"Explore More"}
-        items={itemsClubs}
-        color={true}
-        background={background}
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Best Mechanical Engineering College in Dehradun | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Tula's Institute is one of the best Mechanical Engineering College in Dehradun, Uttarakhand, Among a myriad of engineering activities, the Mechanical Engineering Department has been a focal point of the Tula's Institute, Dehradun top engineering colleges Dehradun."
         />
-      </div>
-      <Footer color={true} />
-    </div>
+      </head>
+      <body>
+        <div ref={parentRef}>
+          <div className="w-full h-fit bg-white">
+            <Navbar position={true} />
+          </div>
+          <BannerProgram
+            image={BannerImg}
+            title=<>
+              Department of{" "}
+              <span className="text-[#760135]">MECHANICAL ENGINEERING</span>
+            </>
+            titleColor={""}
+            description={
+              "The Mechanical Engineering Department of Tula’s Institute is one of the oldest department since its inception in 2006. The department offers Diploma, Undergraduate, and Postgraduate programs in mechanical engineering. The main goal of the curriculum is to impart quality education to the students to develop technical skills, improve their problem-solving abilities, and encourage them to become a competitive mechanical engineer. "
+            }
+          />
+          <Program parentRef={parentRef} images={images} content={content} />
+          <CarouselProgram
+            heading={"Discover"}
+            items={items}
+            color={true}
+            background={background}
+          />
+          <Vision sections={sections} />
+          <TableProgram
+            cards={cards}
+            selectedCardTable={selectedCardTable}
+            semesterData={semesterData}
+            facultyData={facultyData}
+            hod={hod}
+            HODcontent={HODcontent}
+            specialization={specialization}
+          />
+          <TopRecruiter />
+          <CarouselProgram
+            heading={"Explore More"}
+            items={itemsClubs}
+            color={true}
+            background={background}
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

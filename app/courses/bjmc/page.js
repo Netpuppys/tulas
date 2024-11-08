@@ -26,48 +26,61 @@ function BAJMC() {
   const parentRef = useRef(null);
 
   return (
-    <div ref={parentRef}>
-      <div className="w-full h-fit bg-white">
-        <Navbar position={true} />
-      </div>
-      <BannerProgram
-        image={BannerImg}
-        title=<>
-          BA.<span className="text-[#760135]">JMC</span>
-        </>
-        titleColor={""}
-        description={
-          "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
-        }
-      />
-      <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram
-        heading={"Discover"}
-        items={items}
-        background={background}
-      />
-      <Vision sections={sections} />
-      <TableProgram
-        cards={cards}
-        selectedCard1={selectedCard1}
-        semesterData={semesterData}
-        facultyData={facultyData}
-      />
-      <TopRecruiter />
-      <CarouselProgram
-        heading={"Explore More"}
-        items={itemsClubs}
-        background={background}
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          B.J.M.C (Bachelor of Journalism & Mass Communications) in Dehradun
+        </title>
+        <meta
+          name="description"
+          content="Register Now! & Become a part of the best BJMC College in Dehradun. Tula's Institute has been awarded as the best Engineering & Management College in North India."
         />
-      </div>
-      <Footer />
-    </div>
+      </head>
+      <body>
+        <div ref={parentRef}>
+          <div className="w-full h-fit bg-white">
+            <Navbar position={true} />
+          </div>
+          <BannerProgram
+            image={BannerImg}
+            title=<>
+              BA.<span className="text-[#760135]">JMC</span>
+            </>
+            titleColor={""}
+            description={
+              "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
+            }
+          />
+          <Program parentRef={parentRef} images={images} content={content} />
+          <CarouselProgram
+            heading={"Discover"}
+            items={items}
+            background={background}
+          />
+          <Vision sections={sections} />
+          <TableProgram
+            cards={cards}
+            selectedCard1={selectedCard1}
+            semesterData={semesterData}
+            facultyData={facultyData}
+          />
+          <TopRecruiter />
+          <CarouselProgram
+            heading={"Explore More"}
+            items={itemsClubs}
+            background={background}
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Footer />
+        </div>
+      </body>
+    </>
   );
 }
 

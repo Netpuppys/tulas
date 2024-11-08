@@ -3,9 +3,20 @@ import AdmissionPage from "../admission-procedure/Components/AdmissionPage";
 
 function page() {
   return (
-    <div>
-      <AdmissionPage />
-    </div>
+    <>
+      <head>
+        <title>
+          Download E-Prospectus | Tula's Institute Dehradun, Uttarakhand
+        </title>
+        <meta
+          name="description"
+          content="Download E-Prospectus - Tula's Institute Dehradun, Uttarakhand, is one of the Top and best Engineering College and Management College in Dehradun Uttarakhand, India, Get ranked no-1 College in Dehradun Uttarakhand."
+        />
+      </head>
+      <body>
+        <AdmissionPage />
+      </body>
+    </>
   );
 }
 

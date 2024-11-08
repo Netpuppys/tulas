@@ -99,34 +99,48 @@ function IntellectualPropertyRightsIprCell() {
   ];
 
   return (
-    <div className="flex flex-col items-center overflow-hidden">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            Intellectual Property Rights{" "}
-            <span className="text-[#007A83]">(IPR) Cell</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "The Intellectual Property Rights (IPR) Cell at Tula’s Institute is a dedicated unit that focuses on the management, protection, and utilization of intellectual property assets within the institute. The IPR Cell plays a critical role in creating awareness about intellectual property rights, facilitating the filing and protection of IP assets, and supporting innovation and research activities."
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Intellectual Property Rights (IPR) Cell | Best Engineering College in
+          Dehradun, Uttarakhand | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Explore the Intellectual Property Rights (IPR) Cell at Tula's Institute, dedicated to fostering innovation and protecting intellectual property. Learn about various initiatives and resources to help students and faculty safeguard their creative ideas and research."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+      </head>
+      <body>
+        <div className="flex flex-col items-center overflow-hidden">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                Intellectual Property Rights{" "}
+                <span className="text-[#007A83]">(IPR) Cell</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              "The Intellectual Property Rights (IPR) Cell at Tula’s Institute is a dedicated unit that focuses on the management, protection, and utilization of intellectual property assets within the institute. The IPR Cell plays a critical role in creating awareness about intellectual property rights, facilitating the filing and protection of IP assets, and supporting innovation and research activities."
+            }
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Vision sections={sections} />
+          <div className="w-full h-fit z-50">
+            <Footer />
+          </div>
+        </div>
+      </body>
+    </>
   );
 }
 

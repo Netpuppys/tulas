@@ -76,57 +76,72 @@ function IICEvents() {
     },
   ];
   return (
-    <div className="flex flex-col items-center overflow-hidden">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            IAAS <span className="text-[#007A83]">Student Branch</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          <>
-            Tula’s Institute is proud to host the International Association of
-            Students in Agricultural and Related Sciences (IAAS) chapter on its
-            campus. IAAS is a global student organization that aims to connect
-            and empower students interested in agricultural and related sciences
-            from around the world.
-            <br />
-            <br />
-            The Tula’s IAAS chapter at Tula’s Institute provides a platform for
-            students to engage in activities that promote knowledge exchange,
-            skill development, and networking opportunities in the field of
-            agriculture and related sciences. The chapter organizes a wide range
-            of events, workshops, seminars, and competitions that cater to the
-            interests and professional development of its members.
-            <br />
-            <br />
-            Some key objectives and activities of the Tula’s IAAS chapter at
-            Tula’s Institute include:
-          </>
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          IAAS Student Branch | Best Engineering College in Dehradun,
+          Uttarakhand | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Explore the IAAS Student Branch at Tula's Institute in Dehradun, which fosters knowledge exchange, skill development, international cooperation, and community outreach in the field of agricultural and related sciences. Join us for workshops, events, and global networking opportunities."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="p-8 md:p-32">
-        <div className="h-[90vh] px-5 overflow-auto w-[100vw] md:w-auto flex items-start justify-start">
-          <TableComponent />
-        </div>
-      </div>
+      </head>
+      <body>
+        <div className="flex flex-col items-center overflow-hidden">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                IAAS <span className="text-[#007A83]">Student Branch</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              <>
+                Tula’s Institute is proud to host the International Association
+                of Students in Agricultural and Related Sciences (IAAS) chapter
+                on its campus. IAAS is a global student organization that aims
+                to connect and empower students interested in agricultural and
+                related sciences from around the world.
+                <br />
+                <br />
+                The Tula’s IAAS chapter at Tula’s Institute provides a platform
+                for students to engage in activities that promote knowledge
+                exchange, skill development, and networking opportunities in the
+                field of agriculture and related sciences. The chapter organizes
+                a wide range of events, workshops, seminars, and competitions
+                that cater to the interests and professional development of its
+                members.
+                <br />
+                <br />
+                Some key objectives and activities of the Tula’s IAAS chapter at
+                Tula’s Institute include:
+              </>
+            }
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Vision sections={sections} />
+          <div className="p-8 md:p-32">
+            <div className="h-[90vh] px-5 overflow-auto w-[100vw] md:w-auto flex items-start justify-start">
+              <TableComponent />
+            </div>
+          </div>
 
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+          <div className="w-full h-fit z-50">
+            <Footer />
+          </div>
+        </div>
+      </body>
+    </>
   );
 }
 

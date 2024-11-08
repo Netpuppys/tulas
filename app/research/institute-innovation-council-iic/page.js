@@ -96,34 +96,48 @@ function instituteInnovationCouncilIic() {
   ];
 
   return (
-    <div className="flex flex-col items-center overflow-hidden">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            Institute Innovation{" "}
-            <span className="text-[#007A83]">Council (IIC)</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "Tula’s Institute takes pride in its Institution’s Innovation Council (IIC), which is supported by the Ministry of Education (MoE) through the MoE’s Innovation Cell (MIC) and launched in collaboration with the All India Council for Technical Education (AICTE). The IIC program is designed to systematically cultivate a culture of innovation and a thriving start-up ecosystem within educational institutions."
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Institute Innovation Council (IIC) | Best Engineering College in
+          Dehradun, Uttarakhand | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Explore the Institute Innovation Council (IIC) at Tula's Institute, dedicated to fostering innovation, entrepreneurship, and research. Learn about the initiatives, projects, and opportunities for students to engage in cutting-edge research and technological advancements."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+      </head>
+      <body>
+        <div className="flex flex-col items-center overflow-hidden">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                Institute Innovation{" "}
+                <span className="text-[#007A83]">Council (IIC)</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              "Tula’s Institute takes pride in its Institution’s Innovation Council (IIC), which is supported by the Ministry of Education (MoE) through the MoE’s Innovation Cell (MIC) and launched in collaboration with the All India Council for Technical Education (AICTE). The IIC program is designed to systematically cultivate a culture of innovation and a thriving start-up ecosystem within educational institutions."
+            }
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Vision sections={sections} />
+          <div className="w-full h-fit z-50">
+            <Footer />
+          </div>
+        </div>
+      </body>
+    </>
   );
 }
 

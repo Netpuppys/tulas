@@ -83,59 +83,73 @@ function ICTFacilities() {
   ];
 
   return (
-    <div className="flex flex-col items-center overflow-hidden">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            ICT <span className="text-[#007A83]">FACILITIES</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "Tula’s has implemented ICT to support advanced learning and assessment. The institute has adequate classrooms to meet the need of the various programs being run. Presently all lecture rooms, tutorial rooms and seminar halls are equipped with projectors and Wi-Fi/LAN connectivity for the use of ICT during teaching.Computer assisted learning and digital materials are made available to the students to supplementclassroom teaching."
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          ICT Facilities | Best Engineering College in Dehradun, Uttarakhand |
+          Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Explore the advanced ICT facilities at Tula's Institute, Dehradun. Our state-of-the-art computer labs, high-speed internet, and digital resources support a dynamic learning environment, empowering students with cutting-edge technology"
         />
-      </div>
-      <Vision sections={sections} />
-      <Fade delay={300}>
-        <div className="w-full px-2 md:px-10 flex flex-wrap justify-center gap-6 md:gap-12 items-center py-20 pt-0 h-fit">
-          {data.map((card, index) => (
-            <div
-              key={index}
-              style={{
-                borderRadius: "26px",
-                border: "1px solid #A3A3A3",
-              }}
-              className="bg-transparent w-[9rem] md:w-[16rem] h-fit relative rounded-xl flex flex-col items-center justify-start group hover:shadow-2xl transition-all ease-in-out delay-50 duration-200"
-            >
-              <Image
-                src={card.image}
-                alt="logo"
-                className="rounded-2xl w-full"
-              />
-              <p className="font-semibold text-white text-center text-base md:text-xl tracking-tight p-3">
-                {card.title}
-              </p>
-              <p className="text-[#D3D3D3] text-[12px] md:text-[15px] text-center p-3 pt-0">
-                {card.description}
-              </p>
+      </head>
+      <body>
+        <div className="flex flex-col items-center overflow-hidden">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                ICT <span className="text-[#007A83]">FACILITIES</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              "Tula’s has implemented ICT to support advanced learning and assessment. The institute has adequate classrooms to meet the need of the various programs being run. Presently all lecture rooms, tutorial rooms and seminar halls are equipped with projectors and Wi-Fi/LAN connectivity for the use of ICT during teaching.Computer assisted learning and digital materials are made available to the students to supplementclassroom teaching."
+            }
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Vision sections={sections} />
+          <Fade delay={300}>
+            <div className="w-full px-2 md:px-10 flex flex-wrap justify-center gap-6 md:gap-12 items-center py-20 pt-0 h-fit">
+              {data.map((card, index) => (
+                <div
+                  key={index}
+                  style={{
+                    borderRadius: "26px",
+                    border: "1px solid #A3A3A3",
+                  }}
+                  className="bg-transparent w-[9rem] md:w-[16rem] h-fit relative rounded-xl flex flex-col items-center justify-start group hover:shadow-2xl transition-all ease-in-out delay-50 duration-200"
+                >
+                  <Image
+                    src={card.image}
+                    alt="logo"
+                    className="rounded-2xl w-full"
+                  />
+                  <p className="font-semibold text-white text-center text-base md:text-xl tracking-tight p-3">
+                    {card.title}
+                  </p>
+                  <p className="text-[#D3D3D3] text-[12px] md:text-[15px] text-center p-3 pt-0">
+                    {card.description}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+          </Fade>
+          <div className="w-full h-fit z-50">
+            <Footer />
+          </div>
         </div>
-      </Fade>
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+      </body>
+    </>
   );
 }
 

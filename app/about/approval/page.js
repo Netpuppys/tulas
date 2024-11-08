@@ -43,6 +43,14 @@ import AICTEApproval09pdf from "../../../public/About/Approvals/ApprovalsPDF/AIC
 import AICTEApproval08pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2008-09.pdf";
 import AICTEApproval07pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2007-08.pdf";
 import AICTEApproval06pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-LOA-2006-07.pdf";
+
+export const metadata = {
+  title:
+    "Approval | Tula's Institute",
+  description:
+    "Tula's over the years has undergone a transformation and is today regarded among the top 3 colleges across Uttarakhand.",
+};
+
 function Approval() {
   const approvalData = [
     {

@@ -209,29 +209,40 @@ const description = (
 
 const page = () => {
   return (
-    <div>
-      <Navbar />
-      <Banner
-        title={"CAREER INNOVATION CENTRE"}
-        belowPara={description}
-        image={bannerImage}
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Career Innovation Centre | Tula's Institute | Shaping Future Leaders
+        </title>
+        <meta
+          name="description"
+          content="Discover the Career Innovation Centre at Tula's Institute, where students are empowered with career planning, skills development, and industry connections to excel in their chosen fields."
         />
-      </div>
-      <Vision sections={section.slice(0, 1)} />
+      </head>
+      <body>
+        <Navbar />
+        <Banner
+          title={"CAREER INNOVATION CENTRE"}
+          belowPara={description}
+          image={bannerImage}
+        />
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <Vision sections={section.slice(0, 1)} />
 
-      <TopRecruiter />
+        <TopRecruiter />
 
-      <Vision sections={section.slice(1)} />
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+        <Vision sections={section.slice(1)} />
+        <div className="w-full h-fit z-50">
+          <Footer />
+        </div>
+      </body>
+    </>
   );
 };
 

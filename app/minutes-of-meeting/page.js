@@ -241,43 +241,55 @@ function MinuteOfMeeting() {
     },
   ];
   return (
-    <div>
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            Minute of <span className="text-[#005D64]">Meeting</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={""}
-        belowPara={
-          "The Internal Quality Assurance Cell (IQAC) was established in 2014 at Tula’s Institute, Dehradun as an accreditation quality measure. The IQAC has been constituted as per the recommendations of the National Assessment and Accreditation Council (NAAC). The IQAC ensures the effective implementation of quality initiatives through continuous reviews and periodic meetings. The IQAC works towards attaining excellence in all academic and administrative endeavors of the institution."
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Minutes of Meeting | Best Engineering College in Dehradun, Uttarakhand
+          | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Access the minutes of meetings at Tula's Institute, Dehradun, highlighting discussions, decisions, and initiatives aimed at fostering academic excellence and institutional growth. Stay informed on our continuous commitment to quality education."
         />
-      </div>
-      <div className="py-8 px-4 md:px-20 md:py-20 w-full bg-transparent overflow-hidden flex flex-wrap justify-center items-center gap-4">
-        {button.map((button, index) => (
-          <button
-            key={index}
-            onClick={() => (window.location.href = `${button.linkTo}`)}
-            className="py-2 w-[170px] md:w-[30%] text-[14px] underline md:text-[clamp(15px,1vw,50px)] text-white"
-          >
-            {button.title}
-          </button>
-        ))}
-      </div>
-      <div className="w-full h-fit z-50">
-        <Footer color={true} />
-      </div>
-    </div>
+      </head>
+      <body>
+        <Navbar />
+        <Banner
+          image={BannerImg}
+          title={
+            <>
+              Minute of <span className="text-[#005D64]">Meeting</span>
+            </>
+          }
+          description={<></>}
+          belowTitle={""}
+          belowPara={
+            "The Internal Quality Assurance Cell (IQAC) was established in 2014 at Tula’s Institute, Dehradun as an accreditation quality measure. The IQAC has been constituted as per the recommendations of the National Assessment and Accreditation Council (NAAC). The IQAC ensures the effective implementation of quality initiatives through continuous reviews and periodic meetings. The IQAC works towards attaining excellence in all academic and administrative endeavors of the institution."
+          }
+        />
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <div className="py-8 px-4 md:px-20 md:py-20 w-full bg-transparent overflow-hidden flex flex-wrap justify-center items-center gap-4">
+          {button.map((button, index) => (
+            <button
+              key={index}
+              onClick={() => (window.location.href = `${button.linkTo}`)}
+              className="py-2 w-[170px] md:w-[30%] text-[14px] underline md:text-[clamp(15px,1vw,50px)] text-white"
+            >
+              {button.title}
+            </button>
+          ))}
+        </div>
+        <div className="w-full h-fit z-50">
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

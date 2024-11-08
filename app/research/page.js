@@ -62,52 +62,64 @@ function Research() {
   ];
 
   return (
-    <div>
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            Research and{" "}
-            <span className="text-[#007A83]">Development (R&D) Cell</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          <>
-            Tula’s Institute is dedicated to advancing Research and Development
-            initiatives, driven by a clear vision and mission to explore and
-            advance research in cutting-edge technologies and various fields of
-            Engineering. To foster an environment conducive to such pursuits,
-            the Institute has established the Centre for Innovation, Research,
-            and Entrepreneurship (CIRE). The primary objective of CIRE is to
-            nurture a culture of innovation, research, and entrepreneurship. It
-            oversees the Institute’s research and development activities,
-            intellectual property rights (IPR), entrepreneurship programs, and
-            monitors outcomes such as research publications, project grants,
-            intellectual property assets, and the successful incubation of
-            start-ups.
-            <br />
-            <br />
-            CIRE comprises various sections, each section plays a vital role in
-            driving innovation, research, and entrepreneurial endeavours within
-            the Institute.
-          </>
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Research | Best Engineering College in Dehradun, Uttarakhand | Tula's
+          Institute
+        </title>
+        <meta
+          name="description"
+          content="Explore cutting-edge research initiatives at Tula's Institute, a leading engineering college in Dehradun. Our research programs foster innovation and contribute to technological advancements in various fields."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer color={true} />
-      </div>
-    </div>
+      </head>
+      <body>
+        <Navbar />
+        <Banner
+          image={BannerImg}
+          title={
+            <>
+              Research and{" "}
+              <span className="text-[#007A83]">Development (R&D) Cell</span>
+            </>
+          }
+          description={<></>}
+          belowTitle={<></>}
+          belowPara={
+            <>
+              Tula’s Institute is dedicated to advancing Research and
+              Development initiatives, driven by a clear vision and mission to
+              explore and advance research in cutting-edge technologies and
+              various fields of Engineering. To foster an environment conducive
+              to such pursuits, the Institute has established the Centre for
+              Innovation, Research, and Entrepreneurship (CIRE). The primary
+              objective of CIRE is to nurture a culture of innovation, research,
+              and entrepreneurship. It oversees the Institute’s research and
+              development activities, intellectual property rights (IPR),
+              entrepreneurship programs, and monitors outcomes such as research
+              publications, project grants, intellectual property assets, and
+              the successful incubation of start-ups.
+              <br />
+              <br />
+              CIRE comprises various sections, each section plays a vital role
+              in driving innovation, research, and entrepreneurial endeavours
+              within the Institute.
+            </>
+          }
+        />
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <Vision sections={sections} />
+        <div className="w-full h-fit z-50">
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

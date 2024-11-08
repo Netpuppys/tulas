@@ -29,52 +29,65 @@ function BAJMC() {
   const parentRef = useRef(null);
 
   return (
-    <div ref={parentRef}>
-      <div className="w-full h-fit bg-white">
-        <Navbar position={true} />
-      </div>
-      <BannerProgram
-        image={BannerImg}
-        title=<>
-          Department of Electrical{" "}
-          <span className="text-[#760135]">& Electronics Engineering</span>
-        </>
-        titleColor={""}
-        description={
-          "Department of Electrical and Electronics Engineering started since inception of the institute i.e. 2006, with a vision to become a leading Centre of Excellence for Education for creating employability in field of  Power Systems, Power Electronics, Automation, VLSI, Control Systems, Electric Vehicles, Computer Vision, and Artificial Intelligence, Renewable Energy resources, Smart Grids and IoT networks."
-        }
-      />
-      <Program parentRef={parentRef} images={images} content={content} />
-      <CarouselProgram
-        heading={"Discover"}
-        items={items}
-        background={background}
-      />
-      <Vision sections={sections} />
-      <TableProgram
-        cards={cards}
-        selectedCardTable={selectedCardTable}
-        semesterData={semesterData}
-        facultyData={facultyData}
-        hod={hod}
-        HODcontent={HODcontent}
-        specialization={specialization}
-      />
-      <TopRecruiter />
-      <CarouselProgram
-        heading={"Explore More"}
-        items={itemsClubs}
-        background={background}
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Best EEE Engineering College in Dehradun | Tula's Institute
+        </title>
+        <meta
+          name="description"
+          content="Tula's Institute is one of the best EEE Colleges in Dehradun with a good campus placement record in Electrical and Electronics Engg, the Best engineering college in Dehradun, for students applying for both undergraduate and post-graduate programs."
         />
-      </div>
-      <Footer />
-    </div>
+      </head>
+      <body>
+        <div ref={parentRef}>
+          <div className="w-full h-fit bg-white">
+            <Navbar position={true} />
+          </div>
+          <BannerProgram
+            image={BannerImg}
+            title=<>
+              Department of Electrical{" "}
+              <span className="text-[#760135]">& Electronics Engineering</span>
+            </>
+            titleColor={""}
+            description={
+              "Department of Electrical and Electronics Engineering started since inception of the institute i.e. 2006, with a vision to become a leading Centre of Excellence for Education for creating employability in field of  Power Systems, Power Electronics, Automation, VLSI, Control Systems, Electric Vehicles, Computer Vision, and Artificial Intelligence, Renewable Energy resources, Smart Grids and IoT networks."
+            }
+          />
+          <Program parentRef={parentRef} images={images} content={content} />
+          <CarouselProgram
+            heading={"Discover"}
+            items={items}
+            background={background}
+          />
+          <Vision sections={sections} />
+          <TableProgram
+            cards={cards}
+            selectedCardTable={selectedCardTable}
+            semesterData={semesterData}
+            facultyData={facultyData}
+            hod={hod}
+            HODcontent={HODcontent}
+            specialization={specialization}
+          />
+          <TopRecruiter />
+          <CarouselProgram
+            heading={"Explore More"}
+            items={itemsClubs}
+            background={background}
+          />
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Footer />
+        </div>
+      </body>
+    </>
   );
 }
 

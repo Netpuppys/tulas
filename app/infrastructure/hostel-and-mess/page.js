@@ -90,70 +90,84 @@ function LectureTheater() {
     },
   ];
   return (
-    <div className="flex flex-col items-center overflow-hidden">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            HOSTEL & MESS <span className="text-[#007A83]">FACILITIES</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
-        }
-      />
-      {/* fixed background */}
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Tula's | Best facilities in Dehradun,Uttarakhand | No-1 college in
+          india
+        </title>
+        <meta
+          name="description"
+          content="Best facilities college in dehradun,uttarakhand. Got Ranked no-1 college among all colleges.See all facilities in Tula;s Institute."
         />
-      </div>
-      <Vision sections={sections.slice(0, 1)} />
-      <div
-        ref={ref}
-        className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"
-      >
-        <div className="w-full md:w-[40%] h-fit flex justify-center items-center">
-          <div className="flex flex-col justify-center items-center">
-            <h3
-              className={`font-[CarotSlab] font-medium text-[#3D001B] text-[28px] md:text-[40px] text-center transition-transform duration-1000 ${
-                inView ? "animate-translateLeft" : "opacity-0"
-              }`}
-            >
-              Student Council-Vibgyor
-            </h3>
+      </head>
+      <body>
+        <div className="flex flex-col items-center overflow-hidden">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                HOSTEL & MESS <span className="text-[#007A83]">FACILITIES</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
+            }
+          />
+          {/* fixed background */}
+          <div className="w-full relative overflow-hidden">
             <Image
-              src={vibgyor}
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
-              className={`w-fit h-fit ${
-                inView ? "animate-translateLeft" : "opacity-0"
-              }`}
             />
           </div>
+          <Vision sections={sections.slice(0, 1)} />
+          <div
+            ref={ref}
+            className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"
+          >
+            <div className="w-full md:w-[40%] h-fit flex justify-center items-center">
+              <div className="flex flex-col justify-center items-center">
+                <h3
+                  className={`font-[CarotSlab] font-medium text-[#3D001B] text-[28px] md:text-[40px] text-center transition-transform duration-1000 ${
+                    inView ? "animate-translateLeft" : "opacity-0"
+                  }`}
+                >
+                  Student Council-Vibgyor
+                </h3>
+                <Image
+                  src={vibgyor}
+                  alt=""
+                  className={`w-fit h-fit ${
+                    inView ? "animate-translateLeft" : "opacity-0"
+                  }`}
+                />
+              </div>
+            </div>
+            <h4
+              className={`text-black max-w-[669px] w-full text-[16px] md:text-[22px] font-[TTChocolates] font-medium ${
+                inView ? "animate-translateRight" : "opacity-0"
+              }`}
+            >
+              This Committee is a student-run and student-governed Committee
+              committed to provide unique, exciting, diverse, fun, educational
+              atmosphere for the hostelers. Committee organizes regular movies
+              shows at the auditorium, inter hostel sports matches, recreational
+              trips. This Committee also focuses on keeping the secular harmony
+              among the students by celebrating major religious festivals.
+            </h4>
+          </div>
+          <Vision sections={sections.slice(1)} />
+          <div className="w-full h-fit z-50">
+            <Footer color={true} />
+          </div>
         </div>
-        <h4
-          className={`text-black max-w-[669px] w-full text-[16px] md:text-[22px] font-[TTChocolates] font-medium ${
-            inView ? "animate-translateRight" : "opacity-0"
-          }`}
-        >
-          This Committee is a student-run and student-governed Committee
-          committed to provide unique, exciting, diverse, fun, educational
-          atmosphere for the hostelers. Committee organizes regular movies shows
-          at the auditorium, inter hostel sports matches, recreational trips.
-          This Committee also focuses on keeping the secular harmony among the
-          students by celebrating major religious festivals.
-        </h4>
-      </div>
-      <Vision sections={sections.slice(1)} />
-      <div className="w-full h-fit z-50">
-        <Footer color={true} />
-      </div>
-    </div>
+      </body>
+    </>
   );
 }
 

@@ -128,70 +128,83 @@ const sections = [
 
 function OtherFacilities() {
   return (
-    <div className="flex flex-col items-center">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            OTHER <span className="text-[#007A83]">FACILITIES</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
-        }
-      />
-      {/* fixed background */}
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt="Background"
+    <>
+      <head>
+        <title>Best Facilities Among all colleges in Dehradun,Uttrakhand</title>
+        <meta
+          name="description"
+          content="Tula's Institute is committed to offer the best infrastructure and facilities like: Wifi,Canteen,Gym,Playground,shopping mall...."
         />
-      </div>
+      </head>
+      <body>
+        <div className="flex flex-col items-center">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                OTHER <span className="text-[#007A83]">FACILITIES</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
+            }
+          />
+          {/* fixed background */}
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt="Background"
+            />
+          </div>
 
-      <Vision sections={sections.slice(0, 2)} />
+          <Vision sections={sections.slice(0, 2)} />
 
-      <div className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col justify-between items-center">
-        <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[28px] text-center md:text-[40px] transition-transform duration-1000">
-          Book Bank
-        </h3>
-        <h4 className="text-black w-full md:w-[80%] max-w-[928px] text-[16px] md:text-[22px] font-[TTChocolates] text-center font-medium">
-          Book bank concept has been implemented in the institute. Under this
-          scheme, every student gets 6 to 8 books for the complete semester. In
-          addition to the support available from library, this scheme supports
-          students to get latest set of books of core subjects for each semester
-          from the college without any hassle. Every student is required to pay
-          a nominal annual fee to benefit from this scheme.
-        </h4>
-      </div>
+          <div className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col justify-between items-center">
+            <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[28px] text-center md:text-[40px] transition-transform duration-1000">
+              Book Bank
+            </h3>
+            <h4 className="text-black w-full md:w-[80%] max-w-[928px] text-[16px] md:text-[22px] font-[TTChocolates] text-center font-medium">
+              Book bank concept has been implemented in the institute. Under
+              this scheme, every student gets 6 to 8 books for the complete
+              semester. In addition to the support available from library, this
+              scheme supports students to get latest set of books of core
+              subjects for each semester from the college without any hassle.
+              Every student is required to pay a nominal annual fee to benefit
+              from this scheme.
+            </h4>
+          </div>
 
-      <Vision sections={sections.slice(2, 4)} />
+          <Vision sections={sections.slice(2, 4)} />
 
-      <div className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col justify-between items-center">
-        <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[28px] text-center md:text-[40px] transition-transform duration-1000">
-          Shopping Arcade
-        </h3>
-        <h4 className="text-black w-full md:w-[80%] max-w-[928px] text-[16px] md:text-[22px] font-[TTChocolates] text-center font-medium">
-          A shopping arcade has been set up within the campus. It has the
-          facility of laundry, a barber’s shop, stationary and a tuck shop.
-          Reprographic facility is also available. First aid boxes have been
-          kept in the Labs, workshop, hostel blocks and with the receptionist.
-          An Ambulance with a driver has been kept stand-by so as to cater to
-          the emergent demand of students. The in-house medical facility
-          comprises of basic amenities providing treatment by a specialized
-          medical staff within the campus. A qualified Physician who is our full
-          time medical consultant is also available 24×7 on call. An infirmary
-          in the campus caters to small ailments.
-        </h4>
-      </div>
+          <div className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col justify-between items-center">
+            <h3 className="font-[CarotSlab] font-medium text-[#3D001B] text-[28px] text-center md:text-[40px] transition-transform duration-1000">
+              Shopping Arcade
+            </h3>
+            <h4 className="text-black w-full md:w-[80%] max-w-[928px] text-[16px] md:text-[22px] font-[TTChocolates] text-center font-medium">
+              A shopping arcade has been set up within the campus. It has the
+              facility of laundry, a barber’s shop, stationary and a tuck shop.
+              Reprographic facility is also available. First aid boxes have been
+              kept in the Labs, workshop, hostel blocks and with the
+              receptionist. An Ambulance with a driver has been kept stand-by so
+              as to cater to the emergent demand of students. The in-house
+              medical facility comprises of basic amenities providing treatment
+              by a specialized medical staff within the campus. A qualified
+              Physician who is our full time medical consultant is also
+              available 24×7 on call. An infirmary in the campus caters to small
+              ailments.
+            </h4>
+          </div>
 
-      <Vision sections={sections.slice(4)} />
+          <Vision sections={sections.slice(4)} />
 
-      <Footer color={true} />
-    </div>
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

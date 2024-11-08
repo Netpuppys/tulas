@@ -33,32 +33,38 @@ function TechnicalFest() {
     },
   ];
   return (
-    <div>
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            Technical<span className="text-[#007A83]"> Fests</span>
-          </>
-        }
-        belowPara={
-          "Tula’ Institute proudly hosts Utkrisht, the highly anticipated annual technical fest. This inter-college event attracts students from across the country, eager to showcase their innovative projects and compete in thrilling technical challenges. Participants engage in various activities, including model displays, robot wars, coding competitions, and technical quizzes."
-        }
-      />
-      {/* fixed background */}
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>Technical Fests - Utkrisht at Tula’s Institute, Dehradun</title>
+        <meta name="description" content="Join the excitement of Utkrisht, Tula’s Institute’s annual technical fest. Engage in robot wars, coding competitions, technical quizzes, and more. A platform for students to showcase innovative projects, learn from experts, and explore cutting-edge technologies." />
+      </head>
+      <body>
+        <Navbar />
+        <Banner
+          image={BannerImg}
+          title={
+            <>
+              Technical<span className="text-[#007A83]"> Fests</span>
+            </>
+          }
+          belowPara={
+            "Tula’ Institute proudly hosts Utkrisht, the highly anticipated annual technical fest. This inter-college event attracts students from across the country, eager to showcase their innovative projects and compete in thrilling technical challenges. Participants engage in various activities, including model displays, robot wars, coding competitions, and technical quizzes."
+          }
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer color={true} />
-      </div>
-    </div>
+        {/* fixed background */}
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <Vision sections={sections} />
+        <div className="w-full h-fit z-50">
+          <Footer color={true} />
+        </div>
+      </body>
+    </>
   );
 }
 

@@ -42,69 +42,81 @@ function Celebrities() {
     },
   ];
   return (
-    <div>
-      <Navbar />
-      <div className="h-fit w-full z-40 bg-white">
-        <div className="h-[80vh] md:h-[71vh] w-full relative">
-          <Image
-            src={BannerImg}
-            alt=""
-            className="w-full h-full object-cover absolute"
-          />
-          <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-            <h3 className="text-[40px] md:text-[60px] text-[#007A83] z-10 font-[CarotSlab]">
-              Celebrities
-            </h3>
+    <>
+      <head>
+        <title>
+          Celebrities at Tula's Institute | Film Festivals, Star Nights & Talk
+          Shows
+        </title>
+        <meta
+          name="description"
+          content="Experience the excitement of celebrity events at Tula's Institute, Dehradun's top engineering college. From the Dehradun International Film Festival to Star Nights and exclusive talk shows, our campus comes alive with inspiring encounters with Bollywood stars, directors, and performers."
+        />
+      </head>
+      <body>
+        <Navbar />
+        <div className="h-fit w-full z-40 bg-white">
+          <div className="h-[80vh] md:h-[71vh] w-full relative">
+            <Image
+              src={BannerImg}
+              alt=""
+              className="w-full h-full object-cover absolute"
+            />
+            <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
+              <h3 className="text-[40px] md:text-[60px] text-[#007A83] z-10 font-[CarotSlab]">
+                Celebrities
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-        <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
-          DEHRADUN INTERNATIONAL FILM FESTIVAL
-        </h3>
-        <Image
-          src={filmFestival}
-          alt=""
-          className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%]  mx-auto mb-4"
-        />
-        <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
-          The{" "}
-          <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
-            Tulas Institute{" "}
-          </span>
-          hosts the prestigious
-          <span className="font-black text-[#3D001B] font-[TTChocolatesBold]">
-            {" "}
-            Dehradun International Film Festival{" "}
-          </span>
-          annually, a highlight in the colleges cultural calendar. This
-          star-studded event attracts renowned Bollywood celebrities, including
-          popular directors, actors, producers, and singers, who engage with
-          students and share their invaluable experiences. The festival provides
-          a unique opportunity for students to gain insights into the film
-          industry, foster connections, and be inspired by the journeys of these
-          celebrated figures. Its an annual celebration of regional cinema,
-          creativity, and learning at
-          <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
-            {" "}
-            Tulas Institute.
-          </span>
-        </p>
-      </div>
+        <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
+          <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
+            DEHRADUN INTERNATIONAL FILM FESTIVAL
+          </h3>
+          <Image
+            src={filmFestival}
+            alt=""
+            className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%]  mx-auto mb-4"
+          />
+          <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
+            The{" "}
+            <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
+              Tulas Institute{" "}
+            </span>
+            hosts the prestigious
+            <span className="font-black text-[#3D001B] font-[TTChocolatesBold]">
+              {" "}
+              Dehradun International Film Festival{" "}
+            </span>
+            annually, a highlight in the colleges cultural calendar. This
+            star-studded event attracts renowned Bollywood celebrities,
+            including popular directors, actors, producers, and singers, who
+            engage with students and share their invaluable experiences. The
+            festival provides a unique opportunity for students to gain insights
+            into the film industry, foster connections, and be inspired by the
+            journeys of these celebrated figures. Its an annual celebration of
+            regional cinema, creativity, and learning at
+            <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
+              {" "}
+              Tulas Institute.
+            </span>
+          </p>
+        </div>
 
-      {/* fixed background */}
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
-        />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+        {/* fixed background */}
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <Vision sections={sections} />
+        <div className="w-full h-fit z-50">
+          <Footer />
+        </div>
+      </body>
+    </>
   );
 }
 

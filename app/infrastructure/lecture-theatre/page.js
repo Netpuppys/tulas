@@ -20,34 +20,47 @@ function LectureTheater() {
     },
   ];
   return (
-    <div className="flex flex-col items-center">
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={
-          <>
-            OUR <span className="text-[#007A83]">LECTURE THEATRE</span>
-          </>
-        }
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "The lecture theatres at Tulas Institute are spacious and well-equipped with advanced audio-visual aids, offering an optimal setting for interactive learning and discussions. They are designed to facilitate a comfortable and engaging educational experience for students."
-        }
-      />
-      {/* fixed background */}
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Lecture Theatre of Tula's Dehradun,Uttarakhand |Top College Dehradun
+        </title>
+        <meta
+          name="description"
+          content="Tula's is one of the best b.tech college in Uttarakhand, Dehradun. 100% placements records."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+      </head>
+      <body>
+        <div className="flex flex-col items-center">
+          <Navbar />
+          <Banner
+            image={BannerImg}
+            title={
+              <>
+                OUR <span className="text-[#007A83]">LECTURE THEATRE</span>
+              </>
+            }
+            description={<></>}
+            belowTitle={<></>}
+            belowPara={
+              "The lecture theatres at Tulas Institute are spacious and well-equipped with advanced audio-visual aids, offering an optimal setting for interactive learning and discussions. They are designed to facilitate a comfortable and engaging educational experience for students."
+            }
+          />
+          {/* fixed background */}
+          <div className="w-full relative overflow-hidden">
+            <Image
+              src={background}
+              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+              alt=""
+            />
+          </div>
+          <Vision sections={sections} />
+          <div className="w-full h-fit z-50">
+            <Footer />
+          </div>
+        </div>
+      </body>
+    </>
   );
 }
 

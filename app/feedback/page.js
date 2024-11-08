@@ -118,48 +118,60 @@ function Feedback() {
     },
   ];
   return (
-    <div>
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={"Feedback"}
-        description={<></>}
-        belowTitle={<></>}
-        belowPara={
-          "Tula’s Institute is dedicated to advancing Research and Development initiatives, driven by a clear vision and mission to explore and advance research in cutting-edge technologies and various fields of Engineering. To foster an environment conducive to such pursuits, the Institute has established the Centre for Innovation, Research, and Entrepreneurship (CIRE). "
-        }
-      />
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          Feedback | Best Engineering College in Dehradun, Uttarakhand | Tula's
+          Institute
+        </title>
+        <meta
+          name="description"
+          content="We value your feedback at Tula's Institute, Dehradun. Share your thoughts and suggestions to help us improve and continue providing top-quality education and student support. Your feedback matters to us."
         />
-      </div>
-      <div className="py-8 md:py-20 font-[TTChocolates] w-full bg-transparent overflow-hidden px-3 md:px-0 flex flex-col justify-center items-center gap-4">
-        {button.map((button, index) => (
-          <div
-            key={index}
-            className="py-8 w-[95%] md:w-[85%] px-[2%] md:px-[6%] border border-white rounded-2xl bg-transparent text-white"
-          >
-            <h3 className="border-l-2 md:border-l-4 border-white font-[TTChocolatesBold] font-medium mb-8 rounded-md px-2 md:px-4 text-[clamp(18px,2.5vw,50px)]">
-              {button.title}
-            </h3>
-            {button.nestedLink.map((nested, index) => (
-              <Link key={index} href={nested.linkTo}>
-                <ul className="flex justify-between items-center ml-5 list-disc gap-2 underline text-[clamp(15px,1vw,50px)]">
-                  <li>{nested.title}</li>
-                  <GoDownload />
-                </ul>
-              </Link>
-            ))}
-          </div>
-        ))}
-      </div>
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+      </head>
+      <body>
+        <Navbar />
+        <Banner
+          image={BannerImg}
+          title={"Feedback"}
+          description={<></>}
+          belowTitle={<></>}
+          belowPara={
+            "Tula’s Institute is dedicated to advancing Research and Development initiatives, driven by a clear vision and mission to explore and advance research in cutting-edge technologies and various fields of Engineering. To foster an environment conducive to such pursuits, the Institute has established the Centre for Innovation, Research, and Entrepreneurship (CIRE). "
+          }
+        />
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <div className="py-8 md:py-20 font-[TTChocolates] w-full bg-transparent overflow-hidden px-3 md:px-0 flex flex-col justify-center items-center gap-4">
+          {button.map((button, index) => (
+            <div
+              key={index}
+              className="py-8 w-[95%] md:w-[85%] px-[2%] md:px-[6%] border border-white rounded-2xl bg-transparent text-white"
+            >
+              <h3 className="border-l-2 md:border-l-4 border-white font-[TTChocolatesBold] font-medium mb-8 rounded-md px-2 md:px-4 text-[clamp(18px,2.5vw,50px)]">
+                {button.title}
+              </h3>
+              {button.nestedLink.map((nested, index) => (
+                <Link key={index} href={nested.linkTo}>
+                  <ul className="flex justify-between items-center ml-5 list-disc gap-2 underline text-[clamp(15px,1vw,50px)]">
+                    <li>{nested.title}</li>
+                    <GoDownload />
+                  </ul>
+                </Link>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="w-full h-fit z-50">
+          <Footer />
+        </div>
+      </body>
+    </>
   );
 }
 

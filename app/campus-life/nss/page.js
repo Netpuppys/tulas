@@ -50,28 +50,40 @@ function NSS() {
     },
   ];
   return (
-    <div>
-      <Navbar />
-      <Banner
-        image={BannerImg}
-        title={<span className="text-[#007A83]">NSS</span>}
-        belowPara={
-          "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
-        }
-      />
-      {/* fixed background */}
-      <div className="w-full relative overflow-hidden">
-        <Image
-          src={background}
-          className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-          alt=""
+    <>
+      <head>
+        <title>
+          NSS at Tula's Institute | Fostering Social Responsibility & Community
+          Service
+        </title>
+        <meta
+          name="description"
+          content="Join the National Service Scheme (NSS) at Tula's Institute, where students engage in impactful community service initiatives. From cleanliness drives and blood donation camps to GreenX sustainability projects, our NSS club fosters leadership, teamwork, and a commitment to societal welfare."
         />
-      </div>
-      <Vision sections={sections} />
-      <div className="w-full h-fit z-50">
-        <Footer />
-      </div>
-    </div>
+      </head>
+      <body>
+        <Navbar />
+        <Banner
+          image={BannerImg}
+          title={<span className="text-[#007A83]">NSS</span>}
+          belowPara={
+            "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
+          }
+        />
+        {/* fixed background */}
+        <div className="w-full relative overflow-hidden">
+          <Image
+            src={background}
+            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
+            alt=""
+          />
+        </div>
+        <Vision sections={sections} />
+        <div className="w-full h-fit z-50">
+          <Footer />
+        </div>
+      </body>
+    </>
   );
 }
 
