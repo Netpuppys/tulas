@@ -38,7 +38,7 @@ function NAAC() {
           description={<></>}
           belowTitle={<></>}
           belowPara={
-            "Tula’s Institute is dedicated to advancing Research and Development initiatives, driven by a clear vision and mission to explore and advance research in cutting-edge technologies and various fields of Engineering. To foster an environment conducive to such pursuits, the Institute has established the Centre for Innovation, Research, and Entrepreneurship (CIRE)."
+            "The National Assessment and Accreditation Council (NAAC) plays a pivotal role in assessing and accrediting institutions of higher education in India, promoting quality benchmarks across all spheres of academic, administrative, and infrastructural performance. we take immense pride in maintaining a NAAC- A+ accredited status that underscores our commitment to excellence. This accreditation reflects our dedication to providing quality education, fostering a culture of continuous improvement, and promoting student-centric learning. Our institution continually strives to uphold and enhance its standards through innovative teaching practices, extensive research contributions, and a robust support system for students, faculty, and staff. We are deeply committed to fostering a nurturing and dynamic educational environment that meets global standards and prepares our students to excel in their professional endeavors and societal responsibilities."
           }
         />
         <div className="w-full relative overflow-hidden">

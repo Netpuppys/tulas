@@ -40,12 +40,21 @@ function IQAC() {
           belowTitle={<></>}
           belowPara={
             <>
-              Tula’s Institute is dedicated to advancing Research and
-              Development initiatives, driven by a clear vision and mission to
-              explore and advance research in cutting-edge technologies and
-              various fields of Engineering. To foster an environment conducive
-              to such pursuits, the Institute has established the Centre for
-              Innovation, Research, and Entrepreneurship (CIRE).
+              The Internal Quality Assurance Cell (IQAC) is an integral part of
+              our institute's commitment to fostering and sustaining quality in
+              every aspect of its functioning. The IQAC plays a vital role in
+              enhancing the overall academic and administrative performance of
+              the institution. It functions as a driving force for continuous
+              improvement by developing and implementing a quality benchmark
+              system, ensuring that all our processes align with the
+              institution's mission and objectives. The IQAC facilitates the
+              creation of a learner-centric environment, encourages the use of
+              innovative teaching and learning methodologies, and fosters
+              research and collaboration among faculty and students. By
+              regularly conducting internal audits, feedback sessions, and
+              quality improvement initiatives, the IQAC ensures that our
+              institute remains at the forefront of delivering exceptional
+              education and upholds a culture of excellence and accountability.
             </>
           }
         />

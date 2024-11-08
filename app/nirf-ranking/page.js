@@ -102,7 +102,7 @@ function NIRFRanking() {
           description={<></>}
           belowTitle={<></>}
           belowPara={
-            "Tula’s Institute is dedicated to advancing Research and Development initiatives, driven by a clear vision and mission to explore and advance research in cutting-edge technologies and various fields of Engineering. To foster an environment conducive to such pursuits, the Institute has established the Centre for Innovation, Research, and Entrepreneurship (CIRE). "
+            "The National Institutional Ranking Framework (NIRF) was introduced by the Ministry of Education, Government of India, to promote a culture of transparency, accountability, and excellence in higher education institutions across the country. Our institute's participation in the NIRF is a testament to our continuous pursuit of quality and commitment to providing a transformative educational experience."
           }
         />
         <div className="w-full relative overflow-hidden">

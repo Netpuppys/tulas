@@ -8,6 +8,7 @@ import Footer from "@/component/Footer";
 import background from "../../../public/research/entrepreneurship-development-cell/background.png";
 import intellectual from "../../../public/research/intellectual/intellectual.png";
 import Vision from "@/component/Programs/Vision";
+import innovationAndStartupPolicy from "../../../public/research/innovation-and-startup-policy.pdf";
 
 function EntrepreneurshipDevelopmentCell() {
   const sections = [
@@ -115,6 +116,14 @@ function EntrepreneurshipDevelopmentCell() {
             />
           </div>
           <Vision sections={sections} />
+          <button
+            onClick={() => {
+              window.location.href = innovationAndStartupPolicy;
+            }}
+            className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
+          >
+            Innovation and Startup Policy
+          </button>
           <div className="w-full h-fit z-50">
             <Footer color={true} />
           </div>
