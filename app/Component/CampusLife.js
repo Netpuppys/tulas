@@ -10,13 +10,16 @@ const CampusLife = () => {
   const scrollRef = useRef();
 
   const [contHeight, setContHeight] = useState();
+  const [contWidth, setContWidth] = useState();
   const [albumIndex, setAlbumIndex] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
     if (contRef.current) {
       const height = contRef.current.getBoundingClientRect().height;
+      const width = contRef.current.getBoundingClientRect().width;
       setContHeight(height);
+      setContWidth(width)
       console.log("jehwfdqk" + height);
     }
   }, []);
@@ -84,11 +87,12 @@ const CampusLife = () => {
                 {item.images.map((image, index) => (
                   <div
                     key={index}
-                    style={{ height: contHeight }}
+                    style={{ width: contWidth, height: contHeight }}
                     className="w-full h-full relative overflow-hidden flex items-center justify-center"
                   >
                     <Image
                       src={image}
+                      width={contWidth}
                       height={contHeight}
                       className="w-full h-full object-cover"
                       alt=""
@@ -101,7 +105,7 @@ const CampusLife = () => {
             ))}
           </div>
           {/* up and down btns */}
-          <div className="w-14 z-30 h-fit flex items-center justify-center flex-col gap-2 absolute top-1/2 -translate-y-1/2 right-20">
+          <div className="w-14 z-30 h-fit flex items-center justify-center flex-col gap-2 absolute top-1/2 -translate-y-1/2 right-5 md:right-20">
             <button
               onClick={handlePrevImage}
               disabled={imageIndex === 0 ? true : false}
@@ -123,11 +127,12 @@ const CampusLife = () => {
           </div>
         </div>
         {/* bottom selector */}
-        <div className="w-full z-30 h-40 absolute bottom-0 translate-y-1/2 bg-transparent px-5 flex items-center justify-center">
-          <div className="shadow-2xl bg-white max-w-[85rem] w-full h-full flex flex-col items-center justify-center px-14 rounded-2xl rounded-br-[3rem] relative">
+        <div className="w-full z-30 h-28 md:h-40 absolute bottom-0 translate-y-1/2 bg-transparent px-2 md:px-5 flex items-center justify-center">
+          <div className="shadow-2xl bg-white max-w-[85rem] w-full h-full flex flex-col items-center justify-center px-5 md:px-14 rounded-xl md:rounded-2xl md:rounded-br-[3rem] relative">
             <button className="absolute -top-8 left-5 uppercase tracking-widest text-xs">
               explore more
             </button>
+
             <div className="w-full flex items-center justify-around">
               {campusLifeImages.map((item, index) => (
                 <button
@@ -138,19 +143,20 @@ const CampusLife = () => {
                       albumIndex < index ? "0px" : "-5px"
                     })`,
                   }}
-                  className={`uppercase text-[#050505] font-light
-                            w-1/${campusLifeImages.length}`}
+                  className={`uppercase text-[#050505] font-light text-[0.5rem] md:text-base text-nowrap
+                            w-1/2`}
                 >
                   {item.title}
                 </button>
               ))}
             </div>
+
             <div className="w-full mt-6 relative bg-black bg-opacity-25 h-[0.15rem] rounded-full flex items-center justify-center">
               <div
                 style={{ width: `${25 * (albumIndex + 1)}%` }}
                 className="h-full bg-black rounded-full absolute z-0 top-0 left-0"
               ></div>
-              <div className="w-full flex items-center justify-around z-10 h-10">
+              <div className="w-full flex items-center justify-around z-10 h-6 md:h-10">
                 {campusLifeImages.map((_, index) => (
                   <button
                     key={index}
@@ -158,7 +164,7 @@ const CampusLife = () => {
                     style={{
                       borderWidth: `${albumIndex < index ? "0px" : "2px"}`,
                     }}
-                    className="h-full aspect-square rounded-full bg-white p-3 border-black hover:!border-2"
+                    className="h-full aspect-square rounded-full bg-white p-1 md:p-3 border-black hover:!border-2"
                   >
                     <div className="w-full h-full bg-black rounded-full"></div>
                   </button>
