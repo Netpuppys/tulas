@@ -7,5 +7,9 @@ export const metadata = {
     "Looking for the Top Engineering and Degree College in Dehradun(Uttarakhand)? Look No Further Than Tula's Institute. We Offer the Best Engineering Courses Across India. Visit Now!",
 };
 export default function Home() {
-  return <HomePage />;
+  return (
+    <body>
+      <HomePage />
+    </body>
+  );
 }
