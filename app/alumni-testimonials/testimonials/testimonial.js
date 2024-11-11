@@ -16,6 +16,7 @@ import Himanshu from "../../../public/alumni/Himanshu.webp";
 import Mirza from "../../../public/alumni/Mirza.webp";
 import abdul from "../../../public/alumni/abdul.webp";
 import Image from "next/image";
+
 function Testimonial() {
   const features = [
     {

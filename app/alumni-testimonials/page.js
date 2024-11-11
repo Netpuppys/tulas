@@ -4,9 +4,9 @@ import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import BannerImg from "../../public/Components/Banner/bannerImg.png";
 import background from "../../public/alumni/background.png";
-import React from "react";
 import Testimonials from "../Component/Testimonials";
 import Testimonial from "./testimonials/testimonial";
+
 function AlumniTestimonials() {
   return (
     <>
