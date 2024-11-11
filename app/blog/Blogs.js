@@ -9,6 +9,7 @@ const Blogs = () => {
   const [allBlogsLoaded, setAllBlogsLoaded] = useState(false);
   const [loading, setLoading] = useState(true); // Set loading to true initially
   const [loadingMore, setLoadingMore] = useState(false);
+  
   useEffect(() => {
     const fetchBlogs = async () => {
       try {

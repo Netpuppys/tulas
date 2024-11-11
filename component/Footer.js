@@ -129,7 +129,7 @@ const Footer = ({ set = false, color = false }) => {
         </div>
         {/* gray social icons div */}
         <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[5%] gap-[3%] flex justify-between items-center z-50">
-          <h4 className="font-[Oswald] text-[clamp(20px,6.5vw,35px)] md:text-[clamp(12px,1.6vw,28px)] text-white ">
+          <h4 className="font-[Oswald] text-[clamp(20px,6.5vw,35px)] text-nowrap md:text-[clamp(12px,1.6vw,28px)] text-white ">
             CONNECT US
           </h4>
           <ul className="flex w-[60%] gap-[5%]">
