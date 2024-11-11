@@ -1,7 +1,9 @@
 "use client";
+
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/navigation";
 import { HiMiniArrowLongLeft, HiMiniArrowLongRight } from "react-icons/hi2";
 import SrishtiTiwari from "../../../public/alumni/Srishti-Tiwari-2018-21.webp";
 import DiptanuDebnath from "../../../public/alumni/Diptanu-Debnath-2018-20.webp";

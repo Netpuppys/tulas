@@ -1,11 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
 import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi2";
 
 import iphoneFrame from "../../public/Homepage/Testimonials/iphoneFrame.png";
 import Image from "next/image";
 
-import "swiper/swiper-bundle.css";
+// import { Swiper, SwiperSlide } from "swiper";
+// import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const carouselImages = [iphoneFrame, iphoneFrame, iphoneFrame];
 
@@ -33,7 +34,7 @@ const Testimonials = () => {
 
       <div className="w-full h-fit flex items-center justify-center md:hidden">
         {/* Swiper Carousel */}
-        <Swiper
+        {/* <Swiper
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
@@ -55,7 +56,7 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
       </div>
 
       <button
