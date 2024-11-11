@@ -16,50 +16,65 @@ export const images = [
 ];
 export const content = (
   <>
-    Bachelor of Journalism & Mass Communication is a three year
-    interdisciplinary program in which students learn holistically about media
-    and its various aspects. Students learn the underpinning theories related to
-    media, its history, and its legal and ethical obligations. They also learn
-    to frame news, design the headlines and outlet of the newspaper. Students
-    are taught about the media laws, constitution and other relevant laws which
-    are required in public life as a Journalist. Apart from it, program also
-    nurtures creative aspects of students that includes photography,
-    film-making, editing and other aspects of visual story telling like screen
-    writing and story boarding. Students who aspire to develop their taste in
-    the field of advertising & public relations get to learn about history and
-    theories related to respective field. Subjects like Development
-    Communication, Visual Communication & Media research are also taught to the
-    students.
+    The Bachelor of Journalism & Mass Communication is a three-year
+    interdisciplinary program designed for the modern times, where students gain
+    a comprehensive understanding of media and its multifaceted nature. This
+    curriculum encompasses essential theories related to media, its historical
+    evolution, and its legal and ethical responsibilities in today’s digital
+    age.
     <br />
     <br />
-    In addition, the program not only develops media related skills but also
-    enriches students to provide pervasive understanding of media and its
-    function’s historicity and totality.
+    Students learn how to craft news stories, create compelling headlines, and
+    navigate the intricacies of various media platforms. They delve into media
+    laws, constitutional frameworks, and other pertinent regulations essential
+    for a career in journalism and public communication. Additionally, the
+    program emphasizes the cultivation of creativity, offering training in
+    photography, filmmaking, design, editing, and other critical components of
+    visual storytelling, such as screenwriting and storyboarding.
     <br />
     <br />
-    The Department conducts outdoor photography walks, educational excursions,
-    movie screenings followed by discussions, random extempore, interactive
-    sessions from industry experts and extracurricular activities which enrich
-    students’ social engagements.
+    For those interested in advertising and public relations, the curriculum
+    covers historical and theoretical foundations in these fields. Key subjects
+    like Development Communication, Visual Communication, and Media Research
+    equip students with the knowledge and skills needed to thrive in an
+    ever-changing media landscape.
     <br />
     <br />
-    Apart from it, students are engaged with diverse communities like media
-    fraternity, cultural groups, regional artists, film stars, award winning
-    athletes and reformers via different modes of engagement.
+    Moreover, this program not only sharpens media-specific competencies but
+    also fosters a profound understanding of media's historical context and
+    comprehensive role in society.
+    <br />
+    <br />
+    The Department enhances the learning experience by organizing outdoor
+    photography excursions, educational trips, film screenings followed by
+    discussions, spontaneous extemporaneous speaking events, and interactive
+    sessions with industry professionals. These activities enrich students'
+    social engagement and practical knowledge.
+    <br />
+    <br />
+    Additionally, students connect with diverse communities, including media
+    professionals, cultural groups, regional artists, film stars, award-winning
+    athletes, and reformers, through various engagement initiatives. This
+    exposure helps cultivate a well-rounded perspective on media's impact in the
+    21st century.
   </>
 );
 export const items = [
   {
     title: "USP's",
     description: [
-      "Qualified Faculty members from all verticals of Journalism & Mass communication",
+      "Qualified Faculty members from all verticals of Media, Journalism & Mass communication",
       "State of the art Electronic Media Production Centre (EMPC)",
       "Tie ups with prominent media houses",
     ],
     image: USP,
     points: [
-      "In-house Newspaper publication and Electronic Media News dissemination platforms to facilitate students with industrial exposure before entering into job market",
+      "In-house Newspaper (Tula’s Tabloid) publication and Electronic Media News dissemination platforms to facilitate students with industrial exposure before entering into job market",
       "Preparation of professionals for the different media fields which would work closely with different stakeholders of civil society, media, and other democratic institutions, thereby contributing prominently towards overall national and regional development.",
+      "Opportunities for students to engage in hands-on projects, such as running Departmental Social Media Pages (Instagram & YouTube Channel), fostering creativity and teamwork",
+      <Link href={"https://www.instagram.com/masscommunication_tulas/"}>
+        Click Here to Visit Instagram Page:
+      </Link>,
     ],
   },
   {
@@ -72,29 +87,30 @@ export const items = [
   {
     title: "Program Outcomes",
     description: [
-      "PO1- Knowledge- To apply ideas about communication and its significance in society",
-      "PO2- The program will transform the students as a successful media professional",
-      "PO3- To impart skills related to Information Communication Technologies (ICTs), including digital and media literacy and competencies",
+      "PO1- Shall acquire fundamental knowledge of Mass communication & Journalism and related study area.",
+      "PO2- Shall acquire the knowledge related to media and its impact.",
+      "PO3- Shall be competent enough to undertake a professional job as per demands and requirements of M & E Industry.",
     ],
     image: Program,
     points: [
-      "PO4- To apply the objectivity and critical thinking for communicating to masses through a variety of mediums such as Short Films, Documentary Films, PTC for Television, Advertising and PR Campaign, Event Management, News Paper Production for Print PO5- Create awareness to become an enlightened citizen as well as a dynamic professional with commitment to deliver one’s responsibilities strictly adhering to highest standard of ethics and professionalism",
-      "PO6- Ethics- To apply ethical principles and commit to professional ethics and responsibilities",
+      "PO4- Shall empower themselves by communication, professional and life skills.",
+      "PO5- Shall be able to enhance the ability of leadership.",
+      "PO6- Shall become socially responsible citizen with global vision",
+      "PO7- Shall be equipped with ICTs competencies including digital literacy.",
+      "PO8- Shall become ethically committed media professionals and entrepreneurs adhering to the human values, the Indian culture and the Global culture.",
+      "PO9- Shall have an understanding of acquiring knowledge throughout life.",
+      "PO10- Shall acquire the primary research skills, understand the importance of innovation, entrepreneurship and incubation abilities.",
+      "PO11- Shall acquire the understanding of importance of cooperation and teamwork.",
     ],
   },
   {
     title: "Program Specific Outcome",
     description: [
-      "PSO-1- Understanding the basic relationships between culture, society, and communication.",
-      "PSO-2 Provide in-depth understanding of communication theories and models.",
-      "PSO-3 Introduce students to the real-world context of utilizing communication technologies to enhance their communication skills.",
+      "PSO-1- Demonstrate proficient journalistic skills encompassing research, interviewing, writing, and reporting across various media platforms.",
+      "PSO-2  Apply critical thinking and analytical skills to evaluate media content, ethical implications, and societal impact within the context of journalism and mass communication.",
+      "PSO-3 Utilize diverse communication technologies effectively to produce and disseminate information in alignment with professional standards and audience preferences in the fields of journalism and mass communication.",
     ],
     image: Course,
-    points: [
-      "PSO-4 To develop learners into skilled and efficient professionals who are prepared for the media and entertainment industry.",
-      "PSO-5 To inculcate the principles of Indian and world culture, as well as professional ethics.",
-      "PSO-6 To prepare socially responsible media academicians, researchers, professionals with global vision.",
-    ],
   },
   {
     title: "Program Educational Objective",
@@ -126,7 +142,7 @@ export const sections = [
         <ul className="list-disc ml-5">
           <li>
             To provide high-quality education to prepare students for
-            professional success and critical thinking.
+            professional success and critical thinking
           </li>
           <li>
             To foster diversity, interdisciplinary learning, and creativity
@@ -154,15 +170,16 @@ export const cards = [
   { title: "Eligibility" },
   { title: "Curriculum" },
   { title: "Senior Faculty" },
+  { title: "From the Desk of HOD" },
 ];
 export const selectedCard1 = (
   <>
     <span className="font-[Arapey]">Admission Eligibility</span> <br />
     <ul className="font-[TTChocolates] list-disc ml-5 text-[14px] md:text-[23px] text-black">
       <li>
-        Candidate should be 12th passed or equivalent course in any discipline
-        from any recognized Board / Council with minimum 45% marks for general
-        (open) category and 40% marks for students of SC and ST category.
+        A candidate having passed the Intermediate (10+2) or equivalent
+        Examination in any discipline, from a recognized Examination Board,
+        shall be eligible to apply for admission to the course.
       </li>
       <li>
         Age Requirement: The minimum age requirement for BAJMC is 17 years.
@@ -172,66 +189,92 @@ export const selectedCard1 = (
 );
 export const semesterData = [
   {
-    semester: "I SEMESTER",
+    semester: "Semester I",
     subjects: [
-      { code: "BJMC 101", title: "Introduction to Communication" },
-      { code: "BJMC 102", title: "Mass Media Writing" },
-      { code: "BJMC 103", title: "Journalism –An Introduction" },
-      { code: "BJMC 104", title: "Basics of Computers" },
-    ],
-  },
-  {
-    semester: "II SEMESTER",
-    subjects: [
-      { code: "BJMC 201", title: "History of Print & Broadcasting in India" },
-      { code: "BJMC 202", title: "Reporting and Editing for Print" },
-      { code: "BJMC 203", title: "Socio-Economic & Political Scenario" },
-      { code: "BJMC 204", title: "Basics of Design & Graphics" },
-    ],
-  },
-  {
-    semester: "III SEMESTER",
-    subjects: [
-      { code: "BJMC 301", title: "Photo Journalism" },
-      { code: "BJMC 302", title: "Advertising and Public Relations" },
+      { code: "BAJMC-001", title: "Introduction to Journalism" },
       {
-        code: "BJMC 303",
+        code: "BAJMC-002",
+        title: "Introduction to Media and Communication",
+      },
+      {
+        code: "BAJMC-003",
+        title: "Print Journalism and Production",
+      },
+      { code: "BAJMC-004", title: "Environmental Science" },
+    ],
+  },
+  {
+    semester: "Semester II",
+    subjects: [
+      { code: "BAJMC-005", title: "Reporting & Editing" },
+      {
+        code: "BAJMC-006",
+        title: "Photography and Photojournalism",
+      },
+      {
+        code: "BAJMC-007",
+        title: "Economic Development and Planning",
+      },
+      {
+        code: "BAJMC-008",
+        title: "English / MIL Communication OR Hindi/ MIL Communication",
+      },
+    ],
+  },
+  {
+    semester: "Semester III",
+    subjects: [
+      { code: "BAJMC-009", title: "Media Laws and Ethics" },
+      { code: "BAJMC-010", title: "Television Production" },
+      { code: "BAJMC-011", title: "Design and Graphics" },
+      {
+        code: "BAJMC-012",
         title: "Radio Journalism and Production",
       },
-      { code: "BJMC 304", title: "New Media" },
-    ],
-  },
-  {
-    semester: "IV SEMESTER",
-    subjects: [
-      { code: "BJMC 401", title: "Introduction to Cinema" },
-      { code: "BJMC 402", title: "Development Communication" },
-      { code: "BJMC 403", title: "Media Law" },
       {
-        code: "BJMC 404",
-        title: "Reporting and Editing for Broadcasting",
+        code: "BAJMC-013",
+        title: "Media and Intercultural Communication",
       },
     ],
   },
   {
-    semester: "V SEMESTER",
+    semester: "Semester IV",
     subjects: [
-      { code: "BJMC 501", title: "Contemporary Issues" },
-      { code: "BJMC 502", title: "Online Journalism" },
-      { code: "BJMC 503", title: "Media Management" },
-      { code: "BJMC 504", title: "Digital Video Editing" },
+      {
+        code: "BAJMC-014",
+        title: "Global Media and Communication",
+      },
+      { code: "BAJMC-015", title: "Advertisement" },
+      {
+        code: "BAJMC-016",
+        title: "New Media Technology and Journalism",
+      },
+      { code: "BAJMC-017", title: "Development Communication" },
+      { code: "BAJMC-018", title: "Human Rights and Media" },
     ],
   },
   {
-    semester: "VI SEMESTER",
+    semester: "Semester V",
     subjects: [
-      { code: "BJMC 601", title: "Print Media Production" },
+      { code: "BAJMC-019", title: "Film Appreciation" },
       {
-        code: "BJMC 602",
-        title: "Radio and Television Production",
+        code: "BAJMC-020",
+        title: "Public Relation and Corporate Communication",
       },
-      { code: "BJMC 603", title: "Internship" },
-      { code: "BJMC 604", title: "Comprehensive Vive-Voice" },
+      { code: "BAJMC-021", title: "Event Management" },
+      {
+        code: "BAJMC-022",
+        title: "Current Affairs and Writing for Mass Media",
+      },
+    ],
+  },
+  {
+    semester: "Semester VI",
+    subjects: [
+      { code: "BAJMC-023", title: "Media Management" },
+      { code: "BAJMC-024", title: "Communication Research" },
+      { code: "BAJMC-025", title: "Documentary Production" },
+      { code: "BAJMC-026", title: "Dissertation" },
     ],
   },
 ];
@@ -273,53 +316,112 @@ export const facultyData = [
     imageUrl: AnkitGhildiyal,
   },
 ];
+export const hod = [
+  {
+    name: "Tauseef Iqbal",
+    email: "bjmc.hod@tulas.edu.in",
+    designation: "Head of the Department,",
+    department: "BAJMC Department",
+    imageUrl: TauseefIqbal, // Replace with the actual image path
+  },
+];
+export const HODcontent = (
+  <>
+    Dear Students, Faculty, and Visitors,
+    <br />
+    <br />
+    It is with great enthusiasm that I share our vision, goals, and the vibrant
+    academic environment that we foster here.
+    <br />
+    <br />
+    In an age where information is abundant and communication is paramount, our
+    department stands at the forefront of shaping the future of media
+    professionals. We are dedicated to providing a comprehensive education that
+    encompasses the diverse facets of media, journalism, public relations,
+    advertising, and digital communications. Our curriculum is designed to equip
+    students with the theoretical knowledge and practical skills necessary to
+    thrive in a rapidly evolving media landscape.
+    <br />
+    <br />
+    We are proud to have a faculty of experienced professionals who bring a
+    wealth of knowledge from various media fields. They are committed to
+    nurturing creativity, critical thinking, and ethical practices among our
+    students, preparing them to meet the challenges of the industry head-on.
+    <br />
+    <br />
+    Our state-of-the-art facilities, including EMPC (a multimedia studio),
+    editing suites, and dedicated spaces for workshops and seminars, provide
+    students with hands-on experience that is crucial for their professional
+    development. We also encourage students to engage in internships,
+    collaborative projects, and community outreach programs, enabling them to
+    gain real-world insights and make meaningful contributions.
+    <br />
+    <br />I invite you to explore the opportunities our department offers.
+    Whether you are a prospective student looking to carve your path in the
+    media industry, a current student eager to broaden your horizons, or a
+    visitor wanting to learn more about our programs, we are here to support
+    you.
+    <br />
+    <br />
+    Let us embrace the power of communication to inspire change, foster
+    understanding, and connect with our diverse world. Together, we can shape
+    the future of media and mass communication.
+  </>
+);
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
     description: [
       "Pixel Party: Journalism & Mass Communication department runs their film club in the campus. The film’s club name is ‘Pixel Party’. The club frequently screen thought provoking films & Documentaries and engage students in post screening discussions on aesthetic & social aspect of the cinema.",
-      "Vibgyor",
-      "Victree",
+      "Vibgyor (Extra Curricular Students Club)",
+      "Victree (Sports Club)",
     ],
     image: USP,
   },
   {
     title: "Edge over others",
     description: [
-      "An individual with the BJMC degree possesses the ability to comprehend society, market, and governance in all its historicity and social cultural variations in addition to an individual with efficient communication skills.",
+      "In 21st Century, the media landscape is evolving at an unprecedented pace, and a BAJMC degree equips students with a distinct advantage in this dynamic environment. Graduates emerge with a profound understanding of societal trends, market dynamics, and governance, enriched by historical context and cultural diversity. Coupled with advanced communication skills, they are prepared to navigate the complexities of modern media.",
     ],
     image: Course,
     points: [
-      "It also cultivates creative instincts in the students to produce meaningful media content for information, awareness and entertainment of both popular and high culture. Department of Journalism & Mass Communication at Tula’s provides adequate infrastructure to prepare students for all sorts of media engagement and research. The department provides state of the art Electronic Media & production Centre with an enriched library and suitable environment.",
+      "Our program fosters creativity, enabling students to produce compelling media content that resonates across various platforms, addressing the needs for information, awareness, and entertainment in both popular and high culture.",
+      "At Tula’s Department of Journalism & Mass Communication, we offer cutting-edge infrastructure designed to prepare students for diverse media engagements and research. Our state-of-the-art Electronic Media and Production Centre, along with a comprehensive library and supportive learning environment, empowers students to hone their skills and gain practical experience.",
+      "As the demand for skilled media professionals continues to rise, our graduates are well-positioned to excel in various fields, from journalism and public relations to digital marketing and content creation. With a BAJMC from Tula’s, students are not just participants in the media industry; they are leaders poised to make a significant impact.",
     ],
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "Bachelor of Journalism & Mass Communication is a program that can be treated as a lifestyle in itself. A person intensely involved with the program learns a lot of important aspects of life. Important questions of life are as:",
-      "How to decide, Whom to vote?",
-      "How governmental and non-governmental institution functions?",
-      "How to develop taste of good art & culture?",
-      "What has thousand years of history brought to mankind?",
+      "At Department of Mass Communication Tula’s , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
+      "Besides a wide variety of extracurricular activities, workshops, and industry partnerships, there are also many opportunities for students to acquire additional know-how and proficiencies.",
     ],
     image: Program,
     points: [
-      "How civilizations evolved?",
-      "What could be called a good cinema? Which music is better?",
-      "What is justice?",
-      "What could be called a good literature?",
-      "These questions may appear beyond the scope of curriculum but knowing answers to these questions add certain aesthetic upheaval to life which makes life beautiful.",
+      "Internships and Field Projects: Such opportunities develop students from a theoretical knowledge base to the application of such learning toward practical experiences and connections within a profession.",
+      "Guest Lectures and Seminars: Hosting more regular sessions and presentations from industry experts and other alumni provides our students with exposure to their specific experiences and insights, further enriching their understanding of current trends and practices.",
+      "Student-run media initiatives: Opportunities for students to engage in hands-on projects, such as running Departmental Social Media Pages (Instagram & YouTube Channel), producing newsletters, fostering creativity and teamwork.",
+      "Workshops and skill development programs: Specialized training sessions on emerging technologies, digital media tools, and soft skills that prepare students for the challenges of the media industry.",
+      "Add-on Courses: In addition to our core curriculum, we offer a range of add-on courses that allow students to specialize in specific areas of interest. These courses cover topics such as digital marketing, photography, content creation and video production, equipping students with the expertise to excel in their chosen fields.",
+      "Finally, by going beyond the curriculum, we want to foster professionals who are fully equipped with theoretical knowledge but also adept at all the complexities of the media world.",
+      "Join us for a meaningful impact on the next generation in communication.",
     ],
   },
   {
     title: "Career Prospects",
     description: [
-      "Students can choose to excel in range of career options after pursuing Journalism & Mass Communication Course. One can become Editor, Journalist at Print, electronic & New Media Platforms in their chosen beat. Students can also make their career in Advertising, Public Relations industry. Students may also study & acquire skills required to carry communication for development and can make career in development sector where range of communication related jobs are available including UNDP & UNESCO Jobs, Jobs in different government departments and in leading NGOs.",
+      "With a BAJMC degree, students can explore a wide range of career opportunities, including:",
+      "Journalism: Graduates can pursue careers as reporters, editors, and correspondents in print, broadcast, and digital media, where they investigate and report on current events, shaping public discourse.",
+      "Public Relations: A career in PR allows graduates to manage communications for organizations, build brand awareness, and handle crisis communication, ensuring that the public perception aligns with organizational goals.",
     ],
     image: USP,
     points: [
-      "Apart from these lucrative career options, aspirant can also aspire to become photographer, film maker, radio jockey, Cinematographer & print designer.",
-      "There are dozens of other career option in Mass Communication for example one can become film critic, Communication associate, academician, Media Researcher, Event Manager, Video Editor, freelancer, Copy writer, Photo Journalist, graphic designer, Voice artists, anchor, etc.",
+      "Advertising and Marketing: Graduates can work in advertising agencies, creating impactful campaigns and strategies that resonate with target audiences across various platforms.",
+      "Media Production: Opportunities abound in film, television, and radio production, where graduates can take on roles as producers, directors, and content creators, bringing stories to life through various media.",
+      "Digital Media and Content Creation: In an increasingly digital world, there is a high demand for skilled professionals in content creation, social media management, and digital marketing, allowing graduates to engage audiences online effectively.",
+      "Corporate Communication: Graduates can work in internal and external communications, helping organizations effectively convey their messages to stakeholders and maintain a positive image.",
+      "The program also encourages students to engage with diverse communities, fostering valuable networking opportunities with industry professionals, cultural groups, and influential figures. Through internships, hands-on projects, and extracurricular activities, students gain practical experience that enhances their employability and prepares them for the challenges of the media industry.",
+      "As the demand for innovative and skilled media professionals continues to rise, graduates of the BAJMC program are well-positioned to make a significant impact in their chosen fields, leading the charge in shaping the future of communication.",
     ],
   },
 

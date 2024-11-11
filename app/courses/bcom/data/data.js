@@ -17,41 +17,47 @@ export const images = [
 ];
 export const content = (
   <>
-    This three-year Bachelor of Commerce (Hons.) program is designed to meet the
-    needs of brilliant young people who is willing to work in accounting,
-    commerce, banking, finance and insurance sector. The key objective of the
-    B.Com (Hons.) program is to teach students the fundamentals of commerce and
-    trade principles, which are critical for every kind of business. B.Com
-    (Hons.) is the finest course option for a career in management, teaching,
-    advertising, journalism, mass communication, law, design, public sector, and
-    other fields. For CA and CS aspirants, B.Com (Hons.) is also the best
-    alternative.
+    The Bachelor of Commerce (Hons.) program at Tula’s offers a comprehensive
+    and well-rounded curriculum designed to prepare students for various
+    managerial roles across multiple sectors. Its full-time, three-year degree
+    is affiliated with Sri Dev Suman Uttarakhand University, A State Govt
+    University, Uttarakhand
     <br />
     <br />
-    Auditing and accounting firms, as well as banking and insurance industries,
-    are already in high demand for B.Com (Hons.) graduates. They are hired at a
-    junior level for various positions in the company’s finance, accounting,
-    human resources, and administration. Banks, International corporations,
-    finance business and auditing institutions are among the top employers of
-    B.Com (Hons.)graduates.
+    The Bachelor of Commerce (Hons.) program is a specialized, three-year
+    undergraduate degree designed to equip students with comprehensive knowledge
+    and skills in accounting, commerce, banking, finance, and insurance sectors.
+    It prepares students for a wide range of career paths in both the private
+    and public sectors, and it is particularly advantageous for those aiming for
+    professional certifications like Chartered Accountancy (CA) and Company
+    Secretaryship (CS).
+    <br />
+    <br />
+    The B.Com (Hons.) program provides students with essential knowledge,
+    practical skills, and diverse career opportunities, making it an ideal
+    choice for those interested in business, finance, and commerce. The program
+    is also a strong starting point for students looking to pursue further
+    professional qualifications in accounting, finance, and corporate law.
     <br />
     <br />
     The main objectives of the program are:
     <br />
     <br />
     <ul className="ml-5 list-disc">
-      <li>To comprehend and apply principles from several fields of trade.</li>
+      <li>Comprehend and Apply Principles from Various Fields of Trade</li>
+      <li>Discuss and Implement Commerce Concepts and Procedures</li>
       <li>
-        Discuss and put into practice the concepts and procedures of commerce.
+        Utilize Professional Literature to Enhance Research, Communication, and
+        Presentation Skills
       </li>
       <li>
-        Use professional literature to improve research, communication, and
-        presenting abilities.
+        Demonstrate a Combination of Knowledge and Professional Skills in
+        Specialized Areas
       </li>
-      <li>
-        In certain areas of concentration, demonstrate a combination of
-        knowledge and professional skills.
-      </li>
+      <li>Promote Ethical and Sustainable Business Practices</li>
+      <li>Foster Global Business Awareness</li>
+      <li>Develop Entrepreneurial and Managerial Competencies</li>
+      <li>Develop Core Competence in Commerce</li>
     </ul>
   </>
 );

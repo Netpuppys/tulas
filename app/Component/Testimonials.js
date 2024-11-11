@@ -1,33 +1,32 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import { HiOutlineChevronRight, HiOutlineChevronLeft } from 'react-icons/hi2';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi2";
 
-import iphoneFrame from '../../public/Homepage/Testimonials/iphoneFrame.png';
-import Image from 'next/image';
+import iphoneFrame from "../../public/Homepage/Testimonials/iphoneFrame.png";
+import Image from "next/image";
 
-import 'swiper/swiper-bundle.css';
+import "swiper/swiper-bundle.css";
 
-const carouselImages = [
-  iphoneFrame,
-  iphoneFrame,
-  iphoneFrame,
-]
+const carouselImages = [iphoneFrame, iphoneFrame, iphoneFrame];
 
 const Testimonials = () => {
   return (
-    <div className="w-full h-full flex items-center justify-center gap-10 md:px-40 mt-0 md:mt-20  relative">
-      <button id="swiper-prev" className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 left-0 md:left-10 p-2 rounded-full hover:bg-black hover:bg-opacity-80 text-5xl text-black hover:text-white text-opacity-80 flex items-center justify-center">
+    <div className="w-full h-full flex border border-black items-center justify-center gap-10 md:px-40 mt-0 md:mt-20  relative">
+      <button
+        id="swiper-prev"
+        className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 left-0 md:left-10 p-2 rounded-full hover:bg-black hover:bg-opacity-80 text-5xl text-black hover:text-white text-opacity-80 flex items-center justify-center"
+      >
         <HiOutlineChevronLeft />
       </button>
 
       <div className="w-fit hidden md:flex z-10 items-center justify-start md:justify-center h-full md:pb-20 overflow-x-auto">
-        <div className="w-screen md:h-[70%]">
+        <div className="w-full md:h-[70%]">
           <Image src={iphoneFrame} className="h-full w-full" alt="" />
         </div>
-        <div className="w-screen md:h-[70%] md:scale-125 md:rounded-2xl overflow-hidden">
+        <div className="w-full md:h-[70%] md:scale-125 md:rounded-2xl overflow-hidden">
           <Image src={iphoneFrame} className="h-full w-full" alt="" />
         </div>
-        <div className="w-screen md:h-[70%] rounded-2xl overflow-hidden">
+        <div className="w-full md:h-[70%] rounded-2xl overflow-hidden">
           <Image src={iphoneFrame} className="h-full w-full" alt="" />
         </div>
       </div>
@@ -39,8 +38,8 @@ const Testimonials = () => {
           slidesPerView={1}
           loop={true}
           navigation={{
-            prevEl: '#swiper-prev',
-            nextEl: '#swiper-next',
+            prevEl: "#swiper-prev",
+            nextEl: "#swiper-next",
           }}
           modules={[Navigation]}
           className="w-full md:w-fit"
@@ -48,14 +47,21 @@ const Testimonials = () => {
           {carouselImages.map((image, index) => (
             <SwiperSlide key={index}>
               <div className="w-screen md:h-[70%] rounded-2xl overflow-hidden">
-                <Image src={image} className="h-full w-full" alt={`carousel-image-${index}`} />
+                <Image
+                  src={image}
+                  className="h-full w-full"
+                  alt={`carousel-image-${index}`}
+                />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      <button id="swiper-next" className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 right-0 md:right-10 p-2 rounded-full hover:bg-black hover:bg-opacity-50 text-5xl text-black hover:text-white text-opacity-80 flex items-center justify-center">
+      <button
+        id="swiper-next"
+        className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 right-0 md:right-10 p-2 rounded-full hover:bg-black hover:bg-opacity-50 text-5xl text-black hover:text-white text-opacity-80 flex items-center justify-center"
+      >
         <HiOutlineChevronRight />
       </button>
 

@@ -65,14 +65,14 @@ export const items = [
       "Industry-led & Practice Based Curriculum.",
       "Content Delivery & Mentoring by Professionally Trained Faculty & Industry Experts (Guest Lectures/ Expert Talks)",
       "Value Added Courses/ Add On Certifications/ Short Term Courses (STC) for all round development of the students.",
-      "Huge Alumni database of more than 400 alumni currently working with MNCs and Government Institutions/Sectors.",
+      "Huge Alumni database of more than 300 alumni currently working with MNCs and Government Institutions/Sectors.",
     ],
     image: USP,
     points: [
-      "Well qualified faculty members (50% Faculty members are doctorate and rest 50% are pursuing Ph.D.).",
-      "More than 150 Publications in reputed journals and conferences.",
+      "Well qualified faculty members",
+      "More than 200 Publications in reputed journals and conferences.",
       "Practical oriented teaching with hands on experience (Project Based Learning and Industrial Visits).",
-      "7 Patents.",
+      "10 Patents",
       "6 Funded projects from AICTE, TEQIP-III, Uttarakhand Technical University.",
       "More than 200 FDPs completed by faculty members of the department.",
     ],
@@ -85,32 +85,32 @@ export const items = [
   {
     title: "Program Outcomes",
     description: [
-      "Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
-      "Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
-      "Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
+      "1. Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
+      "2. Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
+      "3. Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
     ],
     image: Program,
     points: [
-      "Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
-      "Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
-      "The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.",
-      "Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.",
-      "Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.",
-      "Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
-      "Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write, effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
-      "Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
-      "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
+      "4. Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
+      "5. Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
+      "6. The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.",
+      "7. Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.",
+      "8. Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.",
+      "9. Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
+      "10. Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
+      "11. Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
+      "12. Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
     ],
   },
   {
     title: "Program Specific Outcome",
     description: [
-      "PSO1 : To develop the ability to apply concepts from electronics, communications, signal processing, VLSI, control systems, and other fields to the design, development, and implementation of application-oriented engineering systems.",
-      "PSO2 : To identify and use the newest hardware and software technologies to isolate and solve complicated problems in the fields of electronics and communication.",
+      "1. PSO1 : To develop the ability to apply concepts from electronics, communications, signal processing, VLSI, control systems, and other fields to the design, development, and implementation of application-oriented engineering systems.",
+      "2. PSO2 : To identify and use the newest hardware and software technologies to isolate and solve complicated problems in the fields of electronics and communication.",
     ],
     image: Course,
     points: [
-      "PSO3 : Acquaintance with social and environmental awareness, as well as ethical duties, is essential for a successful career in real-world applications while staying current with technology advancements.",
+      "3. PSO3 : Acquaintance with social and environmental awareness, as well as ethical duties, is essential for a successful career in real-world applications while staying current with technology advancements.",
     ],
   },
   {
@@ -206,22 +206,21 @@ export const semesterData = [
         title: "Fundamentals of Computers & Programming in C",
       },
       { code: "PRACTICAL" },
-      { code: "BASP 101", title: "Engineering Chemistry lab" },
-      { code: "BASP 103", title: "English for Communication lab" },
+      { code: "BASP 101", title: "Engineering Chemistry Lab" },
+      { code: "BASP 103", title: "English for Communication Lab" },
       {
         code: "BEEP 101",
-        title: "Basic Electrical & Electronics Engineering lab",
+        title: "Basic Electrical & Electronics Engineering Lab",
       },
       {
         code: "BCSP 101",
-        title: "Fundamentals of Computers & Programming in C",
+        title: "Fundamentals of Computers & Programming in C Lab",
       },
       { code: "BMEP 101", title: "Manufacturing Practices/Workshop" },
       { code: "BASP 102", title: "Internship-I" },
       { code: "BASP 105", title: "Swachh Bharat Summer Internship" },
     ],
   },
-
   {
     semester: "II SEMESTER",
     subjects: [
@@ -231,11 +230,11 @@ export const semesterData = [
       { code: "BCET 101", title: "Basic Civil Engineering & Mechanics" },
       { code: "BEST 101", title: "Environmental Studies" },
       { code: "PRACTICAL" },
-      { code: "BASP 104", title: "Engineering Physics lab" },
-      { code: "BMEP 102", title: "Basic Mechanical Engineering lab" },
-      { code: "BCEP 101", title: "Basic Civil Engineering & Mechanics lab" },
+      { code: "BASP 104", title: "Engineering Physics Lab" },
+      { code: "BMEP 102", title: "Basic Mechanical Engineering Lab" },
+      { code: "BCEP 101", title: "Basic Civil Engineering & Mechanics Lab" },
       { code: "BMEP 103", title: "Engineering Graphics" },
-      { code: "BASP 106", title: "Language lab & Seminars" },
+      { code: "BASP 106", title: "Language Lab & Seminars" },
       { code: "BASP 102", title: "Internship-I" },
     ],
   },
@@ -248,7 +247,7 @@ export const semesterData = [
       { code: "BECT 302", title: "Electrical Measurement & Instrumentation" },
       { code: "BECT 304", title: "Electronic Devices" },
       { code: "BEET 305", title: "Network Analysis And Synthesis" },
-      { code: "PRACTICAL" },
+      { code: "PRACTICALS" },
       {
         code: "BEEP 301",
         title: "Electrical Measurement & Instrumentation Lab",
@@ -256,10 +255,13 @@ export const semesterData = [
       { code: "BEEP 305", title: "Network Analysis And Synthesis Lab" },
       { code: "BECP 303", title: "Digital Electronics Lab" },
       { code: "BECP 304", title: "Electronic Devices Lab" },
-      { code: "BASP 307", title: "Evaluation of Internship-I" },
+      {
+        code: "BASP 307",
+        title:
+          "Evaluation of Internship-I Completed at I year level/Seminar Presentation for Lateral Entry",
+      },
     ],
   },
-
   {
     semester: "IV SEMESTER",
     subjects: [
@@ -269,13 +271,12 @@ export const semesterData = [
       { code: "BEET 404", title: "Control System" },
       { code: "BECT 405", title: "Analog Circuits" },
       { code: "BHUT 401", title: "Universal Human Values-2" },
-      { code: "PRACTICAL" },
-      { code: "BECP 403", title: "Analog Communication Lab" },
-      { code: "BEEP 404", title: "Control System Lab" },
-      { code: "BECP 405", title: "Analog Circuits Lab" },
+      { code: "PRACTICALS" },
+      { code: "BECP 403", title: "Analog Communication" },
+      { code: "BEEP 404", title: "Control System" },
+      { code: "BECP 405", title: "Analog Circuits" },
     ],
   },
-
   {
     semester: "V SEMESTER",
     subjects: [
@@ -284,25 +285,31 @@ export const semesterData = [
       { code: "BECT 503", title: "VLSI Technology and Design" },
       { code: "BEET-504(A/B/C/D)", title: "Departmental Elective" },
       { code: "BOEC-505(A/B/C/D)", title: "Open Elective" },
-      { code: "PRACTICAL" },
-      { code: "BECP 501", title: "Microprocessor & Interfacing Lab" },
-      { code: "BEEP-502", title: "Electromagnetic Field Theory Lab" },
-      { code: "BECP 503", title: "VLSI Technology and Design Lab" },
-      { code: "BECP-506", title: "Simulation Software Lab" },
-      { code: "BECP-507", title: "Evaluation of Internship-II" },
-      { code: "Departmental Electives" },
+      { code: "PRACTICALS" },
+      { code: "BECP 501", title: "Microprocessor & Interfacing" },
+      { code: "BEEP-502", title: "Electromagnetic Field Theory" },
+      { code: "BECP 503", title: "VLSI Technology and Design" },
+      {
+        code: "BECP-506",
+        title:
+          "Simulation Software Lab (Mat Lab, Multisim etc) / PCB design and Fabrication Lab",
+      },
+      {
+        code: "BECP-507",
+        title: "Evaluation of Internship-II completed at II year level",
+      },
+      { code: "DEPARTMENTAL ELECTIVES" },
       { code: "BECT 504(A)", title: "CNTL" },
       { code: "BECT 504(B)", title: "Data Communication and Networks" },
       { code: "BECT 504(C)", title: "Advanced Control System" },
       { code: "BECT 504(D)", title: "IC Technology" },
-      { code: "Open Electives" },
-      { code: "BOEC-505(A)", title: "Data Structure using C++" },
-      { code: "BOEC-505(B)", title: "Computer System Organisation" },
+      { code: "OPEN ELECTIVES" },
+      { code: "BOEC-505(A)", title: "Data structure using C++" },
+      { code: "BOEC-505(B)", title: "Computer system Organisation" },
       { code: "BOEC-505(C)", title: "Process Control Instrumentation" },
       { code: "BOET-504(D)", title: "Innovation and Entrepreneurship" },
     ],
   },
-
   {
     semester: "VI SEMESTER",
     subjects: [
@@ -311,22 +318,22 @@ export const semesterData = [
       { code: "BECT-603", title: "Digital Communication" },
       { code: "BEET-604(A/B/C/D)", title: "Departmental Elective" },
       { code: "BOEC-605(A/B/C/D)", title: "Open Elective" },
-      { code: "PRACTICAL" },
-      { code: "BECP-601", title: "Digital Signal Processing Lab" },
-      { code: "BECP-602", title: "Antenna and Wave Propagation Lab" },
-      { code: "BECP-603", title: "Digital Communication Lab" },
-      { code: "BECP-606", title: "Open Source Software Lab" },
+      { code: "PRACTICALS" },
+      { code: "BECP-601", title: "Digital Signal Processing" },
+      { code: "BECP-602", title: "Antenna and Wave Propagation" },
+      { code: "BECP-603", title: "Digital Communication" },
+      { code: "BECP-606", title: "Open Source S/w lab" },
       { code: "BECP-607", title: "Minor Project-I" },
-      { code: "Departmental Electives" },
+      { code: "DEPARTMENTAL ELECTIVES" },
       { code: "BECT 604(A)", title: "Cellular and Mobile Communication" },
       { code: "BECT 604(B)", title: "CMOS Design" },
       { code: "BECT 604(C)", title: "Satellite Communication" },
       { code: "BECT 604(D)", title: "High Speed Electronics" },
-      { code: "Open Electives" },
+      { code: "OPEN ELECTIVES" },
       { code: "BOEC-605(A)", title: "Microcontroller and Embedded System" },
-      { code: "BOEC-605(B)", title: "Biomedical Electronics" },
+      { code: "BOEC-605(B)", title: "Bio medical Electronics" },
       { code: "BOEC-605(C)", title: "Power Electronics" },
-      { code: "BOEC-605(D)", title: "IoT and Application" },
+      { code: "BOEC-605(D)", title: "IOT and Application" },
     ],
   },
   {
@@ -336,21 +343,21 @@ export const semesterData = [
       { code: "BECT-702", title: "Optical Fibre Communication" },
       { code: "BECT-703(A/B/C/D)", title: "Departmental Elective" },
       { code: "BOEC-704(A/B/C/D)", title: "Open Elective" },
-      { code: "PRACTICAL" },
+      { code: "PRACTICALS" },
       { code: "BECP-701", title: "Microwave Engineering Lab" },
       { code: "BECP-702", title: "Optical Fibre Communication Lab" },
       { code: "BECP-705", title: "Virtual Lab" },
       {
         code: "BECP-706",
-        title: "Evaluation of Internship-II (completed at II Year)",
+        title: "Evaluation of Internship-II (completed at II year level)",
       },
       { code: "BECP-707", title: "Minor Project-II" },
-      { code: "Departmental Electives" },
+      { code: "DEPARTMENTAL ELECTIVES" },
       { code: "BECT-703(A)", title: "Mixed Circuit Design" },
       { code: "BECT-703(B)", title: "Digital Image Processing" },
       { code: "BECT-703(C)", title: "Advanced Communication Systems" },
       { code: "BECT-703(D)", title: "Wireless Sensor Networks" },
-      { code: "Open Electives" },
+      { code: "OPEN ELECTIVES" },
       { code: "BOEC-704(A)", title: "Mobile Ad Hoc Networks" },
       { code: "BOEC-704(B)", title: "Artificial Intelligence" },
       { code: "BOEC-704(C)", title: "Artificial Neural Networks" },
@@ -364,16 +371,16 @@ export const semesterData = [
       { code: "BECT-802", title: "Wireless Communications" },
       { code: "BECT-803(A/B/C/D)", title: "Departmental Elective" },
       { code: "BOEC-804(A/B/C/D)", title: "Open Elective" },
-      { code: "PRACTICAL" },
+      { code: "PRACTICALS" },
       { code: "BECP-801", title: "Television and Radar Engineering Lab" },
       { code: "BECP-802", title: "Wireless Communications Lab" },
       { code: "BECP-805", title: "Major Project" },
-      { code: "Departmental Electives" },
+      { code: "DEPARTMENTAL ELECTIVES" },
       { code: "BECT-803(A)", title: "Digital System Design using VHDL" },
       { code: "BECT-803(B)", title: "Adaptive Signal Processing" },
       { code: "BECT-803(C)", title: "Telecommunication Switching System" },
       { code: "BECT-803(D)", title: "SDN and Cognitive Radio Networks" },
-      { code: "Open Electives" },
+      { code: "OPEN ELECTIVES" },
       { code: "BOEC-804(A)", title: "Industrial Automation Technology" },
       { code: "BOEC-804(B)", title: "Machine Learning" },
       { code: "BOEC-804(C)", title: "Underwater Communication" },
@@ -549,13 +556,13 @@ export const specialization = (
     <br />
     <ul className="ml-5 list-disc">
       <li>Industry as IoT Developer</li>
-      <li>Research Institutions</li>
+      {/* <li>Research Institutions</li> */}
       <li>Artificial Intelligence and machine learning</li>
-      <li>IoT governance.</li>
-      <li>Sensor Innovative.</li>
+      <li>IoT governance & Sensor Innovation.</li>
+      {/* <li>Sensor Innovative.</li>
       <li>Social, legal and ethical IoT.</li>
       <li>Trusted hardware and OS.</li>
-      <li>Latest IoT User experience.</li>
+      <li>Latest IoT User experience.</li> */}
     </ul>
   </>
 );
@@ -564,11 +571,11 @@ export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
     description: [
-      "Following Clubs/Societies/ Memberships are running in the department",
-      "Embedded Club",
+      // "Following Clubs/Societies/ Memberships are running in the department",
+      // "Embedded Club",
       "Society of Electronics and Communication Engineering",
-      "IEEE Memberships and IEEE Student Chapter",
-      "VIBGYOR",
+      "IEEE Memberships and IEEE Student Chapter( Power & Energy Society)",
+      // "VIBGYOR",
     ],
     image: USP,
   },
@@ -576,9 +583,14 @@ export const itemsClubs = [
     title: "Edge over others",
     description: [
       "Recently the union cabinet of Indian government sanctioned the INR 76,000 Crores incentive scheme for semiconductors. Under this scheme, India will set up more than 20 semiconductor design, components manufacturing and display fabrication units. The scheme has been named the “Programme for Development of Semiconductors and Display Manufacturing Ecosystem.”",
-      "The plan envisages training 85,000 semiconductor engineers to make it a complete C to S (chips to start-ups) ecosystem (including design, fabrication, testing and packaging)",
+      "The plan envisages training 85,000 semiconductor engineers to make it a complete C to S (chips to start-ups) ecosystem (including design, fabrication, testing and packaging). Govt clears 3 semiconductor projects worth Rs 1.3 Lakh cr by ",
     ],
     image: Program,
+    points: [
+      "1. Tata electronics Pvt Ltd in Dholera Gujrat",
+      "2. Tata Semiconductor Assembly and Test Pvt Ltd in Morigaon Assam",
+      "3. CG power and industrial Solutions Ltd in Sanand Gujrat",
+    ],
   },
   {
     title: "Beyond Curriculum",
@@ -586,11 +598,19 @@ export const itemsClubs = [
       "Apart from the regular curriculum as specified by the university, we also conduct various Workshops/ Seminars/ Short term courses/ Expert Talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips regularly to make students aware state of the art technologies used in the industries.",
     ],
     image: Program,
+    points: [
+      "Add on certification programs on:",
+      "1. IoT and Its applications",
+      "2. Simulation and modelling of Electric Vehicles",
+      "3. Embedded Electric Vehicle system using STM 32",
+      "4. Industrial Automation using PLC & SCADA",
+      "5. PCB designing",
+    ],
   },
   {
     title: "Career Prospects",
     description: [
-      "Electronics and Communication Engineers are highly demanded in fields such as Network Engineering, Aeronautics Electronics Systems, Electronic Surveillance System, Mobile Communication, Embedded Systems, Power Industry, Software Development, etc. The department focuses on stimulating talent which is professionally superior in meeting global challenges of the industry. The faculty lays emphasis on both theory and practical aspects, industry-relevant knowledge which prepares students for challenging scenarios.",
+      "CAREER PROSPECTS: Electronics and Communication Engineers are highly demanded in fields such as Network Engineering, Aeronautics Electronics Systems, Electronic Surveillance System, Mobile Communication, Embedded Systems, Power Industry, Software Development, etc. The department focuses on stimulating talent which is professionally superior in meeting global challenges of the industry. The faculty lays emphasis on both theory and practical aspects, industry-relevant knowledge which prepares students for challenging scenarios.",
     ],
     image: Program,
     points: [

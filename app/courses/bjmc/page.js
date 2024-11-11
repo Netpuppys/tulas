@@ -15,6 +15,8 @@ import {
   cards,
   content,
   facultyData,
+  hod,
+  HODcontent,
   images,
   items,
   itemsClubs,
@@ -22,6 +24,7 @@ import {
   selectedCard1,
   semesterData,
 } from "./data/data";
+import bjmcImage from "../../../public/courses/bjmc/bjmcImage.png";
 function BAJMC() {
   const parentRef = useRef(null);
 
@@ -58,8 +61,15 @@ function BAJMC() {
             background={background}
           />
           <Vision sections={sections} />
+          <Image
+            src={bjmcImage}
+            alt=""
+            className="w-full h-fit mb-8 md:mb-20"
+          />
           <TableProgram
             cards={cards}
+            hod={hod}
+            HODcontent={HODcontent}
             selectedCard1={selectedCard1}
             semesterData={semesterData}
             facultyData={facultyData}

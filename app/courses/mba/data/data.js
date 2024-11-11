@@ -22,92 +22,105 @@ export const images = [
 ];
 export const content = (
   <>
-    Master of Business Administration (MBA) program is a two year degree program
-    planned to encourage the capacities expected from world class managers and
-    entrepreneurs. The scope of MBA aspirant, regardless, isn’t limited rigidly
-    to the business world but also to the public region, government, private
-    industry, and various areas.
+    The MBA program at Tula’s offers a comprehensive and well-rounded curriculum
+    designed to prepare students for various managerial roles across multiple
+    sectors. Its full-time, two-year degree is affiliated with Veer Madho Singh
+    Bhandari Uttarakhand Technical University Dehradun,
     <br />
     <br />
-    In current scenario MBA is the well-known master certification program
-    globally. Today, there are more than 2,500 MBA program specializations
-    available all over the planet; most are introduced in English. First MBA
-    program was introduced at universities in the United States around the turn
-    of the 20th century.
+    The scope of MBA aspirants, regardless, isn’t limited rigidly to the
+    business world but also to the public region, government, private industry,
+    and various areas. In the current scenario, an MBA is a well-known master's
+    Degree program globally.
+    <br />
+    <br />A Master in Business Administration degree is the entryway to
+    different open positions in countless regions like Marketing, Finance, Human
+    Resource, Internal Business, Agri-Business Management, Health Care and
+    Hospital Management, Business Analytics, Data Science, FinTech, Supply Chain
+    Management, Rural Development, and so on.
     <br />
     <br />
-    A Master in Business Administration degree is the entryway to different open
-    positions in countless regions like Marketing, Education, Finance, Sales,
-    Production, operations, administration and so on. The MBA program involves
-    tutoring and planning in organization and give capacities to prepare
-    students for regulatory positions globally. This program is well designed
-    for those individuals who need to seek career in the corporate sector.
+    The MBA program involves tutoring and planning in an organization and gives
+    capacities to prepare students for regulatory positions globally. This
+    program is well-designed for those individuals who need to seek a career in
+    the corporate sector.
+    <br />
+    <br />
+    We at Tula’s offer a full-time two years Master of Business Administration
+    degree affiliated with Uttarakhand Technical University, Dehradun with
+    specialized coursework in Eleven areas:
     <br />
     <br />
     <ul className="list-disc ml-5">
       <li>
-        Marketing: Since the beginning of modern business world, the economics
-        has revolved around how well you market your product or service. The
-        success and failure of any product or service depends upon only one
-        situation that how well you have analyzed the market and how well you
-        have marketed your product or service. With marketing as a
-        specialization, the students learn the key aspects of the modern
-        marketing strategies and can make marketing plans keeping in mind the
-        very context of product promotion and positioning.
+        Marketing: Since the beginning of the modern business world, the
+        economics has revolved around how well you market your product or
+        service. The success and failure of any product or service depends upon
+        only one situation how well you have analysed the market and how well
+        you have marketed your product or service. With marketing as a
+        specialization, the students learn the key aspects of modern marketing
+        strategies and can make marketing plans keeping in mind the very context
+        of product promotion and positioning.
       </li>
       <br />
       <li>
         Human Resource: There is always a scarcity of this type of able and
         competent resource in any organization. With Human Resource as your
-        specialization one can learn the basics to advanced aspects of Training
-        and development, recruiting, Compensation, leadership etc. and can gain
-        access to entry level to advanced position in an organization.
-      </li>
-      <br />
-      <li>
+        specialization, one can learn the basics to advanced aspects of Training
+        and development, recruiting, Compensation, leadership, etc., and can
+        gain access to entry-level to advanced positions in an organization.
         Finance: With Finance as a specialization, the students learn the basics
-        to advanced aspects of behavioral finance, corporate finance, financial
-        mathematics, financial accounting and analysis etc. and get and easy
-        access to finance level market both in private and government sector.
+        to advanced aspects of corporate finance, financial management,
+        financial accounting, and analysis, etc., and get easy access to the
+        finance level market both in the private and government sectors.
       </li>
       <br />
       <li>
         International Business: The specialization teaches the core aspects of
         Export and Import Management, International Marketing, Foreign Exchange
-        Management, International Finance International Logistics etc. and can
-        give the entry level position in jobs and business opportunities beyond
-        the borders of the nation.
-      </li>
-      <br />
-      <li>
-        Entrepreneurship and Venture development: The management specialization
-        on Entrepreneurship & Venture development provides a diverse set of
-        options for students to hone their entrepreneurial skills and can access
-        immense possibilities of setting up their own business based upon their
-        requirements and market situation.
+        Management, International Finance International Logistics, etc., and can
+        give the entry-level position in jobs and business opportunities beyond
+        the borders of the nation. Entrepreneurship and Venture development: The
+        management specialization on Entrepreneurship & Venture development
+        provides a diverse set of options for students to hone their
+        entrepreneurial skills and access immense possibilities of setting up
+        their own business based upon their requirements and market situation.
       </li>
       <br />
       <li>
         Agri-Business Management: The backbone of the Indian Economy –
-        Agriculture and Agribusiness provides 54% employment to the Indian
-        Population. The recent spurt in full time MBA specialization in Agri
-        Business Management program offers focus on development of
-        agri-managerial skills, in the curriculum. The programme aims at
-        enabling meritorious agricultural graduates acquire the critical
-        competencies to function as effective Agri-business managers.
+        Agriculture and Agribusiness provide 54% of employment to the Indian
+        Population. The recent spurt in full-time MBA specialization in the
+        Agri-Business Management program offers a focus on the development of
+        Agri-managerial skills, in the curriculum. The program aims at enabling
+        meritorious agricultural graduates to acquire the critical competencies
+        to function as effective Agri-business managers.
       </li>
       <br />
       <li>
         Business Analytics: Business analytics (BA) is defined as an iterative
         process of methodical exploration of data from a business or other
-        organization. The practice relies heavily on statistical analysis, and
-        is employed by organizations to drive informed decision-making. Business
+        organization. The practice relies heavily on statistical analysis and is
+        employed by organizations to drive informed decision-making. Business
         analytics helps companies get insights about their performance, which
         serves as a corporate asset, giving them a competitive edge. Business
         analytics also allows companies to optimize and even automate business
         processes. Business analytics gives a company important competitive
-        advantages, such as:
+        advantages, such as Faster answers to business questions Answers based
+        on information instead of guesswork Insights into customer behaviour
+        Discovering opportunities for cross-selling and up-selling On-demand
+        business metrics reports.
       </li>
+      <br />
+      <li>Health Care and Hospital Management:-</li>
+      <br />
+      <li>Data Science:- </li>
+      <br />
+      <li>FinTech:-</li>
+      <br />
+      <li>Supply Chain Management:- </li>
+      <br />
+      <li>Rural Development:- </li>
       <br />
       <ul className="list-disc ml-5">
         <li>Faster answers to business questions</li>
@@ -141,8 +154,8 @@ export const items = [
     title: "Program Outcomes",
     description: [
       "PO1: Apply knowledge of management theories and practices to solve business problems.",
-      "PO2: Foster analytical and critical thinking abilities for data-based decision making.",
-      "PO3: Ability to develop value based leadership.",
+      "PO2: Foster analytical and critical thinking abilities for data-based decision-making.",
+      "PO3: Ability to develop value-based leadership.",
       "PO4: Ability to understand, analyse and communicate global, economic, legal, and ethical aspects.",
       "PO5: Ability to lead themselves and others in the achievement of organizational goals.",
     ],
@@ -153,17 +166,17 @@ export const items = [
     description: [
       "PSO 1: To develop skills in business analytics for industry and business requirements.",
       "PSO 2: To develop skills and knowledge for entrepreneurship.",
-      "PSO 3: To develop professionals that overcome business challenges during adverse economic situations",
+      "PSO 3: To develop professionals that overcome business challenges during adverse economic situations.",
     ],
     image: Course,
   },
   {
     title: "Program Educational Objective",
     description: [
-      "PEO 1: To sharpen problem solving ability by acquiring holistic knowledge of the managerial concepts.",
+      "PEO 1: To sharpen problem-solving ability by acquiring a holistic knowledge of the managerial concepts.",
       "PEO 2: To make effective decisions for complex managerial problems by applying analytical tools.",
-      "PEO 3: To produce professionals, team players and leaders in the context of global business scenario.",
-      "PEO 4: To develop and promote entrepreneurial mindset among learners.",
+      "PEO 3: To produce professionals, team players, and leaders in the context of a global business scenario.",
+      "PEO 4: To develop and promote an entrepreneurial mindset among learners.",
     ],
     image: Program,
   },

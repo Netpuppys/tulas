@@ -14,7 +14,7 @@ import VrijMohan from "../../../../../public/courses/btech/electrical-and-electr
 import sushmaMam from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/sushmaMam.webp";
 import amitUniyal from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/amitUniyal.webp";
 
-import EEEpdf from "../../../../../public/courses/btech/electrical/EEE.pdf";
+import EEEpdf from "../../../../../public/courses/btech/electrical-and-electronics/EEE.pdf";
 import Link from "next/link";
 export const images = [
   dataScience,
@@ -22,12 +22,16 @@ export const images = [
 ];
 export const content = (
   <>
+    <strong>About the Program</strong>
+    <br />
+    <br />
     Department of Electrical and Electronics Engineering started since inception
     of the institute i.e. 2006, with a vision to become a leading Centre of
     Excellence for Education for creating employability in field of Power
     Systems, Power Electronics, Automation, VLSI, Control Systems, Electric
     Vehicles, Computer Vision, and Artificial Intelligence, Renewable Energy
-    resources, Smart Grids and IoT networks.
+    resources, Smart Grids and IoT networks, Electric Vehicles, Industrial
+    Automation.
     <br />
     <br />
     Department of Electrical and Electronics Engineering mainly focuses on
@@ -53,8 +57,7 @@ export const items = [
     points: [
       "More than 50 Publications in reputed journals and conferences.",
       "Practical oriented teaching with hands on experience (Project Based Learning and Industrial Visits).",
-      "Patents.",
-      "Funded projects.",
+      "Patents & Funded projects.",
       "More than 100 FDPs completed by faculty members of the department.",
     ],
   },
@@ -187,17 +190,17 @@ export const semesterData = [
         title: "Fundamentals of Computers & Programming in C",
       },
       { code: "PRACTICAL" },
-      { code: "BASP 101", title: "Engineering Chemistry lab" },
-      { code: "BASP 103", title: "English for Communication lab" },
+      { code: "BASP 101", title: "Engineering Chemistry Lab" },
+      { code: "BASP 103", title: "English for Communication Lab" },
       {
         code: "BEEP 101",
-        title: "Basic Electrical & Electronics Engineering lab",
-      },
-      {
-        code: "BCSP 101",
-        title: "Fundamentals of Computers & Programming in C",
+        title: "Basic Electrical & Electronics Engineering Lab",
       },
       { code: "BMEP 101", title: "Manufacturing Practices/Workshop" },
+      {
+        code: "BCSP 101",
+        title: "Fundamentals of Computers & Programming in C Lab",
+      },
       { code: "BASP 102", title: "Internship-I" },
       { code: "BASP 105", title: "Swachh Bharat Summer Internship" },
     ],
@@ -211,11 +214,11 @@ export const semesterData = [
       { code: "BCET 101", title: "Basic Civil Engineering & Mechanics" },
       { code: "BEST 101", title: "Environmental Studies" },
       { code: "PRACTICAL" },
-      { code: "BASP 104", title: "Engineering Physics lab" },
-      { code: "BMEP 102", title: "Basic Mechanical Engineering lab" },
-      { code: "BCEP 101", title: "Basic Civil Engineering & Mechanics lab" },
+      { code: "BASP 104", title: "Engineering Physics Lab" },
+      { code: "BMEP 102", title: "Basic Mechanical Engineering Lab" },
+      { code: "BCEP 101", title: "Basic Civil Engineering & Mechanics Lab" },
       { code: "BMEP 103", title: "Engineering Graphics" },
-      { code: "BASP 106", title: "Language lab & Seminars" },
+      { code: "BASP 106", title: "Language Lab & Seminars" },
       { code: "BASP 102", title: "Internship-I" },
     ],
   },
@@ -226,33 +229,33 @@ export const semesterData = [
       { code: "BEST 301", title: "Mathematics-III" },
       { code: "BEET 301", title: "Electrical Measurement & Instrumentation" },
       { code: "BECT 304", title: "Electronic Devices" },
-      { code: "BEET 305", title: "Network Analysis And Synthesis" },
-      { code: "PRACTICAL" },
+      { code: "BEET 305", title: "Network Analysis and Synthesis" },
+      { code: "PRACTICALS" },
       {
         code: "BEEP 301",
         title: "Electrical Measurement & Instrumentation Lab",
       },
-      { code: "BEEP 305", title: "Network Analysis And Synthesis Lab" },
+      { code: "BEEP 305", title: "Network Analysis and Synthesis Lab" },
       { code: "BEEP 306", title: "Programming Practices" },
       { code: "BECP 304", title: "Electronic Devices Lab" },
       {
         code: "BASP 307",
         title:
-          "Evaluation of Internship-I Completed at I year level/Seminar Presentation for Lateral Entry",
+          "Evaluation of Internship-I Completed at I Year Level/Seminar Presentation for Lateral Entry",
       },
     ],
   },
   {
     semester: "IV SEMESTER",
     subjects: [
-      { code: "BECT 402", title: "Signal And System" },
-      { code: "BEET 402", title: "Electrical And Machine-I" },
+      { code: "BECT 402", title: "Signal and System" },
+      { code: "BEET 402", title: "Electrical and Machine-I" },
       { code: "BECT 401", title: "Digital Electronics" },
       { code: "BEET 404", title: "Power System-I" },
       { code: "BEET 405", title: "Control System" },
       { code: "BHUT 401", title: "Universal Human Values-2" },
-      { code: "PRACTICAL" },
-      { code: "BEEP 402", title: "Electrical And Machine-I Lab" },
+      { code: "PRACTICALS" },
+      { code: "BEEP 402", title: "Electrical and Machine-I Lab" },
       { code: "BECP 401", title: "Digital Electronics Lab" },
       { code: "BEEP 404", title: "Power System-I Lab" },
     ],
@@ -261,49 +264,49 @@ export const semesterData = [
     semester: "V SEMESTER",
     subjects: [
       { code: "BEET 501", title: "Electrical Machine-II" },
-      { code: "BEET 502", title: "Power System-II" },
-      { code: "BEET 503(A/B/C)", title: "Departmental Elective" },
-      { code: "BOET 504(A/B/C)", title: "Open Elective" },
-      { code: "BEET 505", title: "Electromagnetic Field Theory" },
-      { code: "PRACTICAL" },
-      { code: "BEEP 501", title: "Electrical Machine-II LAB" },
-      { code: "BEEP 502", title: "Power System-II LAB" },
-      { code: "BENP 507", title: "Open Source LAB" },
+      { code: "BEET-502", title: "Power System-II" },
+      { code: "BEET-503(A/B/C)", title: "Departmental Elective" },
+      { code: "BOET-504(A/B/C)", title: "Open Elective" },
+      { code: "BEET-505", title: "Electromagnetic Field Theory" },
+      { code: "PRACTICALS" },
+      { code: "BEEP-501", title: "Electrical Machine-II Lab" },
+      { code: "BEEP-502", title: "Power System-II Lab" },
+      { code: "BENP-507", title: "Open Source Lab" },
       {
-        code: "BENP 506",
-        title: "Evaluation of Internship-II completed at II year level",
+        code: "BENP-506",
+        title: "Evaluation of Internship-II Completed at II Year Level",
       },
       { code: "DEPARTMENTAL ELECTIVES" },
-      { code: "BEET 503A", title: "CAD of Power Apparatus" },
-      { code: "BEET 503B", title: "Applied Instrumentation" },
-      { code: "BEET 503C", title: "Electrical Engineering Material" },
-      { code: "Open Electives" },
+      { code: "BEET 503(A)", title: "CAD of Power Apparatus" },
+      { code: "BEET 503(B)", title: "Applied Instrumentation" },
+      { code: "BEET 503(C)", title: "Electrical Engineering Material" },
+      { code: "OPEN ELECTIVES" },
       { code: "BOET-504(A)", title: "Digital Control System" },
       { code: "BOET-504(B)", title: "Communication Engineering" },
-      { code: "BOET-504(C)", title: "Industrial electronics" },
+      { code: "BOET-504(C)", title: "Industrial Electronics" },
       { code: "BOET-504(D)", title: "Innovation and Entrepreneurship" },
     ],
   },
   {
     semester: "VI SEMESTER",
     subjects: [
-      { code: "BEET 601", title: "Power Electronics" },
-      { code: "BECT 602", title: "Microprocessor & Embedded Systems" },
-      { code: "BECT 603", title: "Digital Signal Processing" },
-      { code: "BEET 604(A/B/C)", title: "Departmental Elective" },
-      { code: "BOET 605(A/B/C)", title: "Open Elective" },
-      { code: "PRACTICAL" },
-      { code: "BEEP 601", title: "Power Electronics LAB" },
-      { code: "BECP 602", title: "Microprocessor & Embedded Systems LAB" },
-      { code: "BECP 603", title: "Digital Signal Processing LAB" },
-      { code: "BEEP 606", title: "Simulation Lab/Virtual Lab" },
-      { code: "BEEP 607", title: "Minor Project-I" },
+      { code: "BEET-601", title: "Power Electronics" },
+      { code: "BECT-602", title: "Microprocessor & Embedded Systems" },
+      { code: "BECT-603", title: "Digital Signal Processing" },
+      { code: "BEET-604(A/B/C)", title: "Departmental Elective" },
+      { code: "BOET-605(A/B/C)", title: "Open Elective" },
+      { code: "PRACTICALS" },
+      { code: "BEEP-601", title: "Power Electronics Lab" },
+      { code: "BECP-602", title: "Microprocessor & Embedded Systems Lab" },
+      { code: "BECP-603", title: "Digital Signal Processing Lab" },
+      { code: "BEEP-606", title: "Simulation Lab/Virtual Lab" },
+      { code: "BEEP-607", title: "Minor Project-I" },
       { code: "DEPARTMENTAL ELECTIVES" },
-      { code: "BEET-604(A)", title: "FACTS" },
-      { code: "BEET-604(B)", title: "Energy Management and SCADA" },
-      { code: "BEET-604(C)", title: "NCER" },
-      { code: "Open Electives" },
-      { code: "BOET-605(A)", title: "Introduction to smart grids" },
+      { code: "BEET 604(A)", title: "FACTS" },
+      { code: "BEET 604(B)", title: "Energy Management and SCADA" },
+      { code: "BEET 604(C)", title: "NCER" },
+      { code: "OPEN ELECTIVES" },
+      { code: "BOET-605(A)", title: "Introduction to Smart Grids" },
       { code: "BOET-605(B)", title: "Power Plant Engineering" },
       { code: "BOET-605(C)", title: "Special Electromechanical Systems" },
     ],
@@ -311,40 +314,39 @@ export const semesterData = [
   {
     semester: "VII SEMESTER",
     subjects: [
-      { code: "BEET 701", title: "Switch Gear And Protection" },
+      { code: "BEET-701", title: "Switch Gear and Protection" },
       {
-        code: "BEET 702",
+        code: "BEET-702",
         title: "Utilization of Electrical Energy and Traction",
       },
-      { code: "BEET 703(A/B/C)", title: "Departmental Elective" },
-      { code: "BOCT 704(A/B/C/D)", title: "Open Elective" },
-      { code: "PRACTICAL" },
-      { code: "BEEP 701", title: "Switch Gear And Protection LAB" },
+      { code: "BEET-703(A/B/C)", title: "Departmental Elective" },
+      { code: "BOCT-704(A/B/C/D)", title: "Open Elective" },
+      { code: "PRACTICALS" },
+      { code: "BEEP-701", title: "Switch Gear and Protection Lab" },
       {
-        code: "BEEP 702",
-        title: "Utilization of Electrical Energy and Traction lab",
+        code: "BEEP-702",
+        title: "Utilization of Electrical Energy and Traction Lab",
       },
-      { code: "BEEP 705", title: "Open Source S/w lab" },
+      { code: "BEEP-705", title: "Open Source S/w Lab" },
       {
         code: "BENP 706",
-        title: "Evaluation of Internship-II completed at II year level",
+        name: "Evaluation of Internship-II completed at II year level",
       },
-      { code: "BEEP 707", title: "Minor Project-II" },
-      { code: "DEPARTMENTAL ELECTIVES" },
-      { code: "BEET-703(A)", title: "Soft computing Techniques" },
-      { code: "BEET-703(B)", title: "Non Conventional Energy resources" },
-      { code: "BEET-703(C)", title: "High Voltage Engineering" },
-      { code: "Open Electives" },
-      { code: "BOCT-704(A)", title: "Internet of things" },
+      { code: "BEEP 707", name: "Minor Project-II" },
+    ],
+    departmentalElectives: [
+      { code: "BEET 703(A)", name: "Soft computing Techniques" },
+      { code: "BEET 703(B)", name: "Non Conventional Energy resources" },
+      { code: "BEET 703(C)", name: "High Voltage Engineering" },
+    ],
+    openElectives: [
+      { code: "BOCT 704(A)", name: "Internet of things" },
+      { code: "BOCT 704(B)", name: "Advances in Entrepreneurship Development" },
       {
-        code: "BOCT-704(B)",
-        title: "Advances in Entrepreneurship Development",
+        code: "BOCT 704(C)",
+        name: "Probability theory and stochastic process",
       },
-      {
-        code: "BOCT-704(C)",
-        title: "Probability theory and stochastic process",
-      },
-      { code: "BOCT-704(D)", title: "Robotics and automation" },
+      { code: "BOCT 704(D)", name: "Robotics and automation" },
     ],
   },
   {
@@ -499,12 +501,12 @@ export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
     description: [
-      "Following Clubs/Societies/ Memberships are running in the departmen",
-      "Embedded Club",
+      // "Following Clubs/Societies/ Memberships are running in the departmen",
+      // "Embedded Club",
       "Society of Electrical and Electronics Engineering",
-      "IEEE Memberships and IEEE Student Chapter",
-      "IEEE Power and Energy Society (PES)",
-      "Vibgyor and Victree",
+      "IEEE Memberships and IEEE Student Chapter( Power and Energy Society)",
+      // "IEEE Power and Energy Society (PES)",
+      // "Vibgyor and Victree",
     ],
     image: USP,
   },
@@ -512,19 +514,32 @@ export const itemsClubs = [
     title: "Edge over others",
     description: [
       "The Overall employment of electrical and electronics engineers is projected to grow 7 percent from 2020 to 2030, about as fast as the average for all occupations.",
-      "With the emergence of Electric vehicles- India’s EV market to grow by 90% to touch $150 billion by 2030",
+      "With the emergence of Electric vehicles- India’s EV market to grow by 90% to touch $150 billion by 2030.",
     ],
     image: Course,
     points: [
+      "Emergence of Hybrid and Fuel cell based EV create huge job opportunities in the automotive sector",
       "The government is planning to provide incentives worth Rs 76,000 crore towards setting up over 20 semiconductor design, components manufacturing and display fabrication (fab) units over the next six years, in a bid to make India a hub for electronics.",
+      "Govt clears 3 semiconductor projects worth Rs 1.3 Lakh cr by",
+      "1. Tata electronics Pvt Ltd in Dholera Gujrat",
+      "2. Tata Semiconductor Assembly and Test Pvt Ltd in Morigaon Assam",
+      "3. CG power and industrial Solutions Ltd in Sanand Gujrat",
     ],
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "Apart from the regular curriculum as specified by the university, we also conduct various workshops/ seminar/Short term courses / Expert talks as add on certifications to the students. These activities enhance the learning skills of the student and make them ready for the industry. Department also conducts industrial visits to aware the students about the recent trends and technologies of the industry.",
+      "Apart from the regular curriculum as specified by the university, we also conduct various Workshops/ Seminars/ Short term courses/ Expert Talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips regularly to make students aware state of the art technologies used in the industries.",
     ],
     image: Program,
+    points: [
+      "Add on certification programs on:",
+      "1. IoT and Its applications",
+      "2. Simulation and modelling of Electric Vehicles",
+      "3. Embedded Electric Vehicle system using STM 32",
+      "4. Industrial Automation using PLC & SCADA",
+      "5. PCB designing",
+    ],
   },
   {
     title: "Career Prospects",
@@ -574,13 +589,13 @@ export const specialization = (
     <br />
     <ul className="ml-5 list-disc">
       <li>Industry as IoT Developer</li>
-      <li>Research Institutions</li>
+      {/* <li>Research Institutions</li> */}
       <li>Artificial Intelligence and machine learning</li>
-      <li>IoT governance.</li>
-      <li>Sensor Innovative.</li>
-      <li>Social, legal and ethical IoT.</li>
+      <li>IoT governance & Sensor Innovative</li>
+
+      {/* <li>Social, legal and ethical IoT.</li>
       <li>Trusted hardware and OS.</li>
-      <li>Latest IoT User experience.</li>
+      <li>Latest IoT User experience.</li> */}
     </ul>
   </>
 );

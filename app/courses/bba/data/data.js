@@ -20,33 +20,39 @@ export const images = [
 export const content = (
   <>
     The three-year Bachelor of Business Administration (BBA) program is designed
-    keeping in mind the needs of the bright students who are looking for a
-    career in entrepreneurship, management profession or towards higher
-    education in business administration. This program is open to the students
-    with diverse educational background including, humanities, science, arts and
-    commerce. However, being a program with challenging curricula and contents,
-    it is accessible mainly to those students who have excellent academic record
-    and high potential for success. BBA degree helps students to build
-    managerial skills and prepares them for business administration positions by
-    adopting some of the specialization subjects that are most sought-after in
-    the business world.
+    keeping in mind the needs of bright students who are looking for a career in
+    entrepreneurship, management profession, or higher education in business
+    administration.
+    <br />
+    <br />
+    This program is open to students with diverse educational backgrounds
+    including, humanities, science, arts, and commerce. However, being a program
+    with challenging curricula and contents, it is accessible mainly to those
+    students who have excellent academic records and high potential for success.
+    A BBA degree helps students build managerial skills and prepares them for
+    business administration positions by adopting some of the specialization
+    subjects that are most sought-after in the business world. Internship
+    opportunities, industry projects, and workshops are embedded within the
+    program to give students hands-on experience and exposure to real-world
+    challenges. Students can choose from various specializations, including
+    Finance, Marketing, Human Resource Management, International Business, and
+    more, tailoring their education to match their career goals.
     <br />
     <br />
     Bachelor in Business Administration degree is the gateway to numerous job
-    opportunities in a multitude of sectors like Marketing, Education, Finance,
-    Sales, and Government & Private. The BBA program offers education and
-    training in management and leadership skills to prepare students for
-    managerial roles and entrepreneurship. Students learn multiple aspects of
-    business management through lectures, practical projects, internships, hands
-    on workshops and symposiums etc.
+    opportunities in many sectors like Marketing, Education, Finance, Sales, and
+    Government & Private. The BBA program offers education and training in
+    management and leadership skills to prepare students for managerial roles
+    and entrepreneurship. Students learn multiple aspects of business management
+    through lectures, practical projects, internships, hands-on workshops
+    symposiums, etc.
     <br />
     <br />
     The BBA curriculum is designed by Academia and Industry experts in such a
     way that the students get ample industry exposure and training. It helps
-    student to prepare for real-world experiences and reach smart business
-    conclusions through empirical analysis, such as planning on how an
-    organization operates day-to-day in the face of ongoing changes and
-    challenges.
+    students to prepare for real-world experiences and reach smart business
+    conclusions through empirical analysis, such as planning how an organization
+    operates day-to-day in the face of ongoing changes and challenges
     <br />
     <br />
     The basic goal of this program is to:
@@ -62,6 +68,10 @@ export const content = (
         professional literature
       </li>
       <li>Demonstrate a combination of knowledge and professional skills.</li>
+      <li>
+        Enhance critical thinking and Problem-solving skill and also foster
+        leadership and Teamwork
+      </li>
     </ul>
   </>
 );
@@ -69,17 +79,17 @@ export const items = [
   {
     title: "USP's",
     description: [
-      "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
-      "200+ alumni network in various startups, Entrepreneurships, governmental and blue-chip companies.",
+      "Fully equipped modern amphitheatre kind classrooms for better reach and visibility.",
+      "200+ alumni network in various startups, Entrepreneurship, governmental and blue-chip companies.",
       "50+ placement opportunities given during the semester.",
       "research articles and papers in journals of repute.",
     ],
     image: USP,
     points: [
-      "MoU’s with various companies to assist students in their needs of training, placement and internships.",
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
-      "Interaction based ‘Flipped Classroom’ Learning Methodology.",
-      "Comprehend the theories and techniques used in successful organizations using “Case Based” Teaching pedagogy.",
+      "MoUs with various companies to assist students in their needs of training, placement, and internships.",
+      "Collaborative and integrative pedagogy helps to adopt concepts quickly. ",
+      "Interaction-based ‘Flipped Classroom’ Learning Methodology.",
+      "Comprehend the theories and techniques used in successful organizations using “Case-Based” Teaching pedagogy.",
       "Prepare students for entrepreneurship and employment",
     ],
   },
@@ -88,38 +98,61 @@ export const items = [
     title: "Program Outcomes",
     description: [
       "PO1: Apply the management domain knowledge to solve routine and specific business problems.",
-      "PO2: Develop capability of analysing and critical thinking to take informed and real time data based decisions.",
-      "PO3: Foster the technological know how to solve business and management related problems in technologically driven environment.",
+      "PO2: Develop the capability of analyzing and critical thinking to take informed and real-time data based decisions.",
+      "PO3: Foster the technological know-how to solve business and management-related problems in a technologically driven environment.",
     ],
     image: Program,
     points: [
-      "PO4: Ability to take leadership positions based on ethical, value driven, sustainable, holistic and entrepreneurial approach.",
+      "PO4: Ability to take leadership positions based on ethical, value-driven, sustainable, holistic and entrepreneurial approach.",
       "PO5: Develop various managerial and entrepreneurial skills for catering to the local and global business scenarios.",
       "PO6: Imbibe and practice the different domain knowledge and develop skills required for specialized functional areas.",
+      "Graduates will be able to evaluate the ethical implications of business decisions and demonstrate a commitment to corporate social responsibility.",
+      "Graduates will have a global perspective on business operations, understanding how international markets, cultural differences, and global economic trends affect business strategies.",
     ],
   },
   {
     title: "Program Specific Outcome",
     description: [
-      "PSO1: To analyse complex data, understanding the financial implications of managerial decision making.",
+      "PSO1: To analyse complex data, understanding the financial implications of managerial decision-making.",
       "PSO2: To be able to perform business analytics using tools such as spreadsheets.",
-      "PSO3: To analyse business management for domestic and international organisation.",
+      "PSO3: To analyse business management for domestic and international organizations.",
     ],
     image: Course,
+    points: [
+      "Entrepreneurial and Innovation Skills:- Graduates will be able to identify business opportunities, assess risks, and develop innovative solutions for creating new ventures or fostering innovation within existing organizations.",
+    ],
   },
   {
     title: "Program Educational Objective",
     description: [
-      "PEO1: To provide value based professional education to management aspirants.",
+      "PEO1: To provide value-based professional education to management aspirants.",
       "PEO2: To prepare learners to address the managerial challenges.",
       "PEO3: To prepare young minds with a positive attitude for excellent performance and committed service.",
-      "PEO4: To develop and promote entrepreneurial mindset among learners.",
+      "PEO4: To develop and promote an entrepreneurial mindset among learners.",
     ],
     image: Program,
+    points: [
+      "To develop successful careers in various business sectors such as management, marketing, finance, human resources, and operations, demonstrating the ability to adapt and grow in a dynamic business environment.",
+      "To develop ethically and responsibly in their professional and personal conduct, taking into account the broader implications of business decisions on society, the environment, and the global community.",
+    ],
   },
   {
     title: "Course Outcomes",
     description: [<Link href={bbaDocument}>BBA</Link>],
+    image: Course,
+  },
+  {
+    title: "Value Added Module",
+    description: [
+      "To enhance the soft skills and employability skills of the students, we offer value-added. With a well-established Career Development Centre, we design a comprehensive module that extensively works on students' overall grooming, personality, and soft skills. Also, to develop technical competencies, we run modules for Basics & Advance, MS Excel, and Tally.",
+    ],
+    image: Program,
+  },
+  {
+    title: "Guest lectures & Workshops",
+    description: [
+      "Guest lectures & Workshops are a regular feature and an integral part of the pedagogy of IMS. Corporate head-honchos as well as doyens from the academia are invited to share their valuable insights and conduct lectures from their rich experience. The workshops provide hands-on experience to the students and help them not only learn various industrial concepts pragmatically but also make them aware of contemporary business issues, the challenges, and the combat techniques of the same adopted by diverse organizations.",
+    ],
     image: Course,
   },
 
