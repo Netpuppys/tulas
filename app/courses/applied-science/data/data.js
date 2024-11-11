@@ -31,7 +31,7 @@ export const images = [
 ];
 export const content = (
   <>
-    The Department of Applied Sciences & Engineering is an initiating and
+    The Department of Applied Sciences & Humanities is an initiating and
     supporting department for the Institute’s engineering and other departments.
     Mathematics, Physics, Chemistry, Environmental Science, foundation of
     Engineering and Professional Communication are among the core courses

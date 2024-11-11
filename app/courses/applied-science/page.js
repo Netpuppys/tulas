@@ -26,10 +26,10 @@ function BAJMC() {
     <>
       <head>
         <title>
-          Department of Applied Sciences & Engineering | Best Engineering
+          Department of Applied Sciences & Humanities | Best Engineering
           College in Dehradun, Uttarakhand | Tula's Institute
         </title>
-        <meta name="description" content="Explore the Department of Applied Sciences & Engineering at Tula’s Institute, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty." />
+        <meta name="description" content="Explore the Department of Applied Sciences & Humanities at Tula’s Institute, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty." />
       </head>
       <body>
         <div ref={parentRef}>
@@ -39,14 +39,14 @@ function BAJMC() {
           <BannerProgram
             image={BannerImg}
             title=<>
-              DEPARTMENT OF{" "}
+              Department of{" "}
               <span className="text-[#760135]">
-                APPLIED SCIENCES & ENGINEERING
+                Applied Sciences & Humanities
               </span>
             </>
             titleColor={""}
             description={
-              "The Department of Applied Sciences & Engineering is an initiating and supporting department for the Institute’s engineering and other departments. Mathematics, Physics, Chemistry, Environmental Science, foundation of Engineering and Professional Communication are among the core courses covered by the department."
+              "The Department of Applied Sciences & Humanities is an initiating and supporting department for the Institute’s engineering and other departments. Mathematics, Physics, Chemistry, Environmental Science, foundation of Engineering and Professional Communication are among the core courses covered by the department."
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />

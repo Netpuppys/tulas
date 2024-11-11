@@ -105,16 +105,16 @@ export const items = [
   {
     title: "Program Outcomes",
     description: [
-      "PO1. Create, select, and apply appropriate techniques, resources, and modern tools and software for prediction and forecast of outcomes based on agricultural sciences.",
-      "PO2. To identify and review, formulate and analyse problems in various sectors of Agriculture &amp; Forestry.",
+      "PO1. Create, select, and apply appropriate techniques, resources, and modern tools and software for 	prediction and forecast of outcomes based on agricultural sciences",
+      "PO2. To identify, review, formulate and analyze problems in various sectors of Agriculture &amp; 	Forestry.",
     ],
     image: Program,
     points: [
-      "PO3. Design Solutions of various problems found in farming system with due consideration of farmers health and safety.",
+      "PO3. Design Solutions of various problems found in farming system with due consideration of farmers 	health and safety.",
       "PO4. To develop scientific aptitude which is beneficial for the society.",
-      "PO5. To develop communication skills such as reading, writing, speaking etc which will help in expressing ideas and views clearly &amp; effectively.",
-      "PO6. Function effectively as an individual and as a member for leader in divers organizations.",
-      "PO7. Recognize the need for, and have the preparation &amp; ability to engage in independent &amp; lifelong learning in the broadest context of technological &amp; professional changes",
+      "PO5. To develop communication skills such as reading, writing, speaking etc which will help in 	expressing ideas and views clearly &amp; effectively.",
+      "PO6. Function effectively as an individual and as a member for leader in diverse organizations.",
+      "PO7. Recognize the need for, and have the preparation &amp; ability to engage in independent & Life-long learning in the broadest context of technological &amp; professional changes",
     ],
   },
   {
@@ -125,7 +125,7 @@ export const items = [
     ],
     image: Course,
     points: [
-      "PSO 3: Students develop entrepreneurial skills by applying knowledge gained through participation in workshops and start-up boot camps.",
+      "PSO 3: Students develop entrepreneurial skills by applying knowledge gained through participation in	workshops and start-up boot camps.",
     ],
   },
   {
@@ -172,7 +172,7 @@ export const sections = [
           </li>
           <li>
             To encourage cooperation among all players in the food system –
-            researchers, policymakers, industry figures, and consumers – to
+            researchers, policy-makers, industry figures, and consumers – to
             develop a food chain that is both sustainable and fair.
           </li>
           <li>
