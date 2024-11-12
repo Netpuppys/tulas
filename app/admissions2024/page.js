@@ -202,7 +202,7 @@ const page = () => {
               className="w-full h-full object-cover"
               alt=""
             />
-            <div className="h-[50vh] absolute top-[15vh] right-[10vw]">
+            <div className="h-fit absolute top-[15vh] right-[10vw]">
               <div id="ee-form-15"></div>
             </div>
           </div>
