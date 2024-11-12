@@ -230,8 +230,8 @@ const page = () => {
           </div>
 
           {/* programs offered */}
-          <div className="w-full pb-28">
-            <p className="text-white text-4xl font-[TTChocolatesBold] font-semibold pt-16 text-center">
+          <div className="w-full pb-28 flex flex-col justify-center items-center">
+            <p className="text-white text-4xl font-[TTChocolatesBold] font-semibold pt-16">
               Programs Offered at TULA's
             </p>
             <div className="flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-10 px-24 mt-16">
@@ -247,7 +247,7 @@ const page = () => {
           </div>
 
           {/* INDUSTRY COLLABORATIONS */}
-          <div className="w-full bg-white text-center pt-20 pb-20">
+          <div className="w-full bg-white text-center pt-20 pb-20 flex flex-col justify-center items-center">
             <p className="underline-offset-4 underline text-[#760135] font-[CarotSlab] text-3xl font-medium">
               INDUSTRY COLLABORATIONS
             </p>
