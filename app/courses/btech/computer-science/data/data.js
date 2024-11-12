@@ -196,13 +196,13 @@ export const selectedCardTable = [
 ];
 export const semesterData = [
   {
-    semester: "B.Tech I Sem.",
+    semester: "I SEMESTER",
     subjects: [
-      { code: "AHT-001", title: "Engineering Physics" },
-      { code: "AHT-005", title: "Analytical Mathematics" },
-      { code: "EET-001", title: "English for Communication" },
+      { code: "AHT-003", title: "Engineering Mathematics-I" },
       { code: "CST-001", title: "Programming for Problem Solving" },
-      { code: "AHT-004", title: "EVS" },
+      { code: "EET-001", title: "Basic Electrical Engineering" },
+      { code: "AHT-001", title: "Engineering Physics" },
+      { code: "AHT-004", title: "Environmental Studies" },
       { code: "PRACTICAL" },
       { code: "AHP-001", title: "Engineering Physics Lab" },
       { code: "EEP-001", title: "Basic Electrical Engineering Lab" },
@@ -216,10 +216,10 @@ export const semesterData = [
     ],
   },
   {
-    semester: "B.Tech II Sem.",
+    semester: "II SEMESTER",
     subjects: [
+      { code: "AHT-005", title: "Analytical Mathematics" },
       { code: "AHT-002", title: "Engineering Chemistry" },
-      { code: "AHT-003", title: "Introduction to Engineering Mathematics" },
       { code: "ECT-001", title: "Basic Electronics Engineering" },
       { code: "MET-001", title: "Basic Mechanical Engineering" },
       { code: "PRACTICAL" },
