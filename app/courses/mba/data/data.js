@@ -28,10 +28,10 @@ export const content = (
     Bhandari Uttarakhand Technical University Dehradun,
     <br />
     <br />
-    The scope of MBA aspirants, regardless, isn’t limited rigidly to the
-    business world but also to the public region, government, private industry,
-    and various areas. In the current scenario, an MBA is a well-known master's
-    Degree program globally.
+    The MBA program at Tula’s offers a comprehensive and well-rounded curriculum
+    designed to prepare students for various managerial roles across multiple
+    sectors. Its full-time, two-year degree is affiliated with Veer Madho Singh
+    Bhandari Uttarakhand Technical University Dehradun,
     <br />
     <br />A Master in Business Administration degree is the entryway to
     different open positions in countless regions like Marketing, Finance, Human
@@ -48,7 +48,7 @@ export const content = (
     <br />
     We at Tula’s offer a full-time two years Master of Business Administration
     degree affiliated with Uttarakhand Technical University, Dehradun with
-    specialized coursework in Eleven areas:
+    specialized coursework in eleven areas:
     <br />
     <br />
     <ul className="list-disc ml-5">
@@ -112,15 +112,87 @@ export const content = (
         business metrics reports.
       </li>
       <br />
-      <li>Health Care and Hospital Management:-</li>
+      <li>
+        Health Care and Hospital Management,:- hospital administration and
+        healthcare services are committed to providing top-notch patient care
+        via effective operations, cutting-edge technology, and caring
+        assistance. From staff hiring and regulatory compliance to patient
+        admissions and quality control, we concentrate on streamlining every
+        facet of healthcare facilities. Our method guarantees that patients
+        receive safe, efficient, and individualised care since we are dedicated
+        to innovation and on-going development. Our goal is to develop a
+        healthcare environment that satisfies the requirements of patients today
+        while planning for the future by combining clinical competence with
+        strategic planning and technology.
+      </li>
       <br />
-      <li>Data Science:- </li>
+      <li>
+        Health Care and Hospital Management,:- hospital administration and
+        healthcare services are committed to providing top-notch patient care
+        via effective operations, cutting-edge technology, and caring
+        assistance. From staff hiring and regulatory compliance to patient
+        admissions and quality control, we concentrate on streamlining every
+        facet of healthcare facilities. Our method guarantees that patients
+        receive safe, efficient, and individualised care since we are dedicated
+        to innovation and on-going development. Our goal is to develop a
+        healthcare environment that satisfies the requirements of patients today
+        while planning for the future by combining clinical competence with
+        strategic planning and technology.
+      </li>
       <br />
-      <li>FinTech:-</li>
+      <li>
+        FinTech,- The way we handle, invest, and deal with money is being
+        completely transformed by fintech, or financial technology. Fintech
+        solutions enable banking, payments, lending, and investing faster,
+        safer, and easier than ever before by fusing technology and financial
+        services. From peer-to-peer payments and safe mobile banking to block
+        chain solutions and AI-powered investment platforms, our fintech
+        solutions are made to give people and businesses access to cutting-edge
+        digital financial tools. We work to provide smooth financial services
+        that give you command of your financial future, with an emphasis on
+        openness, user experience, and data security. Our fintech services
+        provide the cutting-edge, adaptable solutions you want in a rapidly
+        changing financial environment, whether your goal is to expedite
+        transactions, gain access to real-time financial analytics, or discover
+        new avenues for wealth accumulation.
+      </li>
       <br />
-      <li>Supply Chain Management:- </li>
+      <li>
+        Supply Chain Management: - Supply chains that are robust and efficient
+        are essential for business success in the fast-paced world of today.
+        Optimizing each stage of the supply chain, from locating raw materials
+        to shipping completed goods to clients, is the goal of supply chain
+        management, or SCM. Our supply chain management (SCM) solutions combine
+        technology, analytics, and strategic alliances to guarantee dependable,
+        on-time delivery, optimize operations, and cut expenses. Demand
+        planning, procurement, inventory control, logistics, and distribution
+        are all included in our comprehensive supply chain solutions. We assist
+        companies in anticipating difficulties, adjusting to shifting market
+        demands, and making wise decisions with our sophisticated data analytics
+        and predictive modelling. Our strategy places a high value on
+        sustainability, agility, and transparency, enabling you to create a
+        supply chain that is not only effective but also sensitive to consumer
+        demands and environmental factors.
+      </li>
       <br />
-      <li>Rural Development:- </li>
+      <li>
+        Rural Development:- Enhancing rural communities' social infrastructure,
+        economic health, and quality of life are the main goals of rural
+        development. Rural development seeks to generate opportunities and
+        enable communities to prosper through focused efforts in infrastructure,
+        sustainable business development, education, healthcare, and
+        agriculture. Our strategy for rural development is comprehensive and
+        focused on the community. We strive to increase agricultural output,
+        make high-quality healthcare and education accessible, construct
+        necessary infrastructure, such as roads and clean water systems, and
+        assist small businesses and neighbourhood markets. We assist rural
+        communities in becoming self-sufficient and opening up new revenue
+        streams by encouraging entrepreneurship and skill development. Our rural
+        development programs, which are dedicated to sustainable growth,
+        prioritize resilience-building to assist communities in adapting to
+        climate change, renewable energy, and environmental conservation. With
+        the appropriate tools and collaborations
+      </li>
       <br />
       <ul className="list-disc ml-5">
         <li>Faster answers to business questions</li>
