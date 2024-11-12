@@ -17,13 +17,15 @@ function FacultyData({ facultyData }) {
               alt=""
               className="rounded-2xl w-full h-full object-cover"
             />
-            <button
-              onClick={() => (window.location.href = faculty.resume)}
-              className="absolute w-full flex gap-3 justify-center items-center bg-white py-1 text-[20px] text-[#760135] font-[TTChocolatesBold] font-[600]"
-            >
-              Resume
-              <FaRegFilePdf />
-            </button>
+            {faculty.resume && (
+              <button
+                onClick={() => (window.location.href = faculty.resume)}
+                className="absolute w-full flex gap-3 justify-center items-center bg-white py-1 text-[20px] text-[#760135] font-[TTChocolatesBold] font-[600]"
+              >
+                Resume
+                <FaRegFilePdf />
+              </button>
+            )}
           </div>
           <div className="px-4 text-white py-4 md:px-8 flex flex-col gap-2 md:gap-4">
             <h3 className="text-[#FFE0EE] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">

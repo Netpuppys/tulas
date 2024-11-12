@@ -6,12 +6,31 @@ import MEDocument from "../../../../../public/courses/btech/mechanical-engineeri
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import AnkitJain from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnkitJain.webp";
-import RahulKumar from "../../../../../public/courses/btech/mechanical-engineering/facultyData/RahulKumar.webp";
-import AnuragBahuguna from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnuragBahuguna.webp";
-import DeveshSharma from "../../../../../public/courses/btech/mechanical-engineering/facultyData/DeveshSharma.webp";
-import AnupamGautam from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnupamGautam.webp";
-import KomalRani from "../../../../../public/courses/btech/mechanical-engineering/facultyData/KomalRani.webp";
+import AnkitResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnkitJainResume.pdf";
+import Sanjay from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Sanjay.png";
+import SanjayResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SanjayResume.pdf";
 import AmitMAURYA from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AmitMAURYA.webp";
+import AmitResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AmitResume.pdf";
+import AnuragBahuguna from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnuragBahuguna.webp";
+import AnuragResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnuragResume.pdf";
+import AnupamGautam from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnupamGautam.webp";
+import AnupamResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnupamResume.pdf";
+import Sachin from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Sachin.png";
+import SachinResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SachinResume.pdf";
+import Subhash from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Subhash.png";
+import SubhashResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SubashResume.pdf";
+import Satish from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Satish.png";
+import SatishResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SatishResume.pdf";
+import Rahul from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Rahul.png";
+import RahulResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/RahulResume.pdf";
+import Himanshu from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Himanshu.png";
+import HimanshuResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/HimanshuResume.pdf";
+import DeveshSharma from "../../../../../public/courses/btech/mechanical-engineering/facultyData/DeveshSharma.webp";
+import DeveshResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/DeveshSharmaResume.pdf";
+import Abhishek from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Abhishek.png";
+import AbhishekResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AbhishekResume.pdf";
+import Manoj from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Manoj.png";
+import ManojResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/ManojResume.pdf";
 import Link from "next/link";
 
 export const images = [
@@ -320,59 +339,119 @@ export const HODcontent = (
 export const facultyData = [
   {
     name: "Mr. Ankit Jain",
-    education: "B.Tech, M.Tech, Ph.D. (Pursuing)",
+    education: "B.Tech, M.Tech, Ph.D.",
     experience: "12 Yrs.",
     designation: "Assistant Professor",
     publications: "2",
     imageUrl: AnkitJain,
+    resume: AnkitResume,
   },
   {
-    name: "Mr. Rahul Kumar",
-    education: "B.Tech, M.Tech, Ph.D. (Pursuing)",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    publications: "1",
-    imageUrl: RahulKumar,
-  },
-  {
-    name: "Mr. Anurag Bahuguna",
-    education: "B.Tech, M.Tech",
-    experience: "7.5 Yrs.",
-    designation: "Assistant Professor",
-    publications: "4",
-    imageUrl: AnuragBahuguna,
-  },
-  {
-    name: "Mr. Devesh Sharma",
-    education: "B.Tech, M.Tech",
-    experience: "7.5 Yrs.",
-    designation: "Assistant Professor",
-    publications: "N/A",
-    imageUrl: DeveshSharma,
-  },
-  {
-    name: "Mr. Anupam Gautam",
-    education: "M.Tech",
-    experience: "10 Yrs.",
-    designation: "Assistant Professor",
-    publications: "7",
-    imageUrl: AnupamGautam,
-  },
-  {
-    name: "Ms. Komal Rani",
-    education: "M.Tech",
-    experience: "4 Yrs.",
-    designation: "Assistant Professor",
-    publications: "2",
-    imageUrl: KomalRani,
+    name: "Dr. Sanjay Sharma",
+    education: "B.Tech, M.Tech, Ph.D",
+    experience: "28 Yrs.",
+    designation: "Prof ME & Dean Student Welfare",
+    publications: "06",
+    imageUrl: Sanjay,
+    resume: SanjayResume,
   },
   {
     name: "Mr. Amit Moray",
     education: "B.Tech, M.Tech, Ph.D. (Pursuing)",
-    experience: "10 Yrs.",
+    experience: "13 Yrs.",
     designation: "Assistant Professor",
     publications: "35",
     imageUrl: AmitMAURYA,
+    resume: AmitResume,
+  },
+  {
+    name: "Mr. Anurag Bahuguna",
+    education: "B.Tech, M.Tech",
+    experience: "11 Yrs. 3 Months",
+    designation: "Assistant Professor",
+    publications: "6",
+    imageUrl: AnuragBahuguna,
+    resume: AnuragResume,
+  },
+  {
+    name: "Mr. Anupam Gautam",
+    education: "M.Tech",
+    experience: "11 Yrs.",
+    designation: "Assistant Professor",
+    publications: "7",
+    imageUrl: AnupamGautam,
+    resume: AnupamResume,
+  },
+  {
+    name: "Mr. Sachin Kaushik",
+    education: "M.Tech",
+    experience: "9.5 Yrs.",
+    designation: "Assistant Professor",
+    publications: "5",
+    imageUrl: Sachin,
+    resume: SachinResume,
+  },
+  {
+    name: "Dr. Subash Chandra Ram",
+    education: "B.Tech, M.Tech, Ph.D.",
+    experience: "9 Yrs.",
+    designation: "Associate Professor",
+    publications: "22",
+    imageUrl: Subhash,
+    resume: SubhashResume,
+  },
+  {
+    name: "Mr. Satish Kumar",
+    education: "B.Tech, M.Tech",
+    experience: "7 Yrs.",
+    designation: "Assistant Professor",
+    imageUrl: Satish,
+    resume: SatishResume,
+  },
+  {
+    name: "Mr. Rahul Kumar",
+    education: "B.Tech, M.Tech, Ph.D.",
+    experience: "7 Yrs.",
+    designation: "Assistant Professor",
+    publications: "01",
+    imageUrl: Rahul,
+    resume: RahulResume,
+  },
+  {
+    name: "Mr. Himanshu Kala",
+    education: "B.Tech, M.Tech",
+    experience: "6 Yrs.",
+    designation: "Assistant Professor",
+    publications: "01",
+    imageUrl: Himanshu,
+    resume: HimanshuResume,
+  },
+  {
+    name: "Mr. Devesh Sharma",
+    education: "B.Tech, M.Tech",
+    experience: "5 Yrs.",
+    designation: "Assistant Professor",
+    publications: "03",
+    imageUrl: DeveshSharma,
+    resume: DeveshResume,
+  },
+  {
+    name: "Mr. Abhishek Singh",
+    education: "B.Tech, M.Tech",
+    experience: "4 Yrs.",
+    designation: "Assistant Professor",
+    publications: "02",
+    imageUrl: Abhishek,
+    resume: AbhishekResume,
+  },
+  {
+    name: "Manoj Singh",
+    education: "B.Tech, M.Tech",
+    experience: "3 Yrs.",
+    designation: "Assistant Professor",
+    publications: "02",
+    imageUrl: Manoj,
+    resume: ManojResume,
   },
 ];
 
