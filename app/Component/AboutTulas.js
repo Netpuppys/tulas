@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import deleteForm from "../../public/admissions/deleteForm.png";
 import formBanner from "../../public/Homepage/aboutTulas/formBanner.png";
 
@@ -22,73 +22,33 @@ const aboutTulas = (
 );
 
 function AboutTulas() {
-  useEffect(() => {
-    const loadScriptAndStyles = () => {
-      window.ee_form_widget_baseurl = "https://eewidget.extraaedge.com/";
+  // useLayoutEffect(() => {
+  //   const loadScriptAndStyles = () => {
+  //     window.ee_form_widget_baseurl = "https://eewidget.extraaedge.com/";
 
-      if (!document.getElementById("__formWidgetCss")) {
-        const linkElement = document.createElement("link");
-        linkElement.id = "__formWidgetCss";
-        linkElement.rel = "stylesheet";
-        linkElement.href =
-          window.ee_form_widget_baseurl + "css/stylesheet.min.css";
-        linkElement.type = "text/css";
-        document.getElementsByTagName("head")[0].appendChild(linkElement);
-      }
-      const scriptElement = document.createElement("script");
-      scriptElement.type = "text/javascript";
-      scriptElement.src =
-        window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
-      scriptElement.onload = async function () {
-        const _eeFormWidget = new eeFormWidget();
-        await _eeFormWidget.init("tulas", "form-14", "ee-form-14");
-      };
+  //     if (!document.getElementById("__formWidgetCss")) {
+  //       const linkElement = document.createElement("link");
+  //       linkElement.id = "__formWidgetCss";
+  //       linkElement.rel = "stylesheet";
+  //       linkElement.href =
+  //         window.ee_form_widget_baseurl + "css/stylesheet.min.css";
+  //       linkElement.type = "text/css";
+  //       document.getElementsByTagName("head")[0].appendChild(linkElement);
+  //     }
+  //     const scriptElement = document.createElement("script");
+  //     scriptElement.type = "text/javascript";
+  //     scriptElement.src =
+  //       window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
+  //     scriptElement.onload = async function () {
+  //       const _eeFormWidget = new eeFormWidget();
+  //       await _eeFormWidget.init("tulas", "form-14", "ee-form-14");
+  //     };
 
-      document.getElementsByTagName("head")[0].appendChild(scriptElement);
-    };
+  //     document.getElementsByTagName("head")[0].appendChild(scriptElement);
+  //   };
 
-    loadScriptAndStyles();
-  }, []);
-  // const aboutTulas = (
-  //   <>
-  //     <span className="text-[#007A83] italic">Tula’s Institute </span>was
-  //     established in <span className="text-[#007A83] italic">2006,</span> under
-  //     the aegis of{" "}
-  //     <span className="text-[#007A83] italic">
-  //       Rishabh Educational Trust, Dehradun
-  //     </span>{" "}
-  //     with the vision of offering excellent academics along with fostering the
-  //     professional and personal personas of every student of the institute.
-  //     <span className="text-[#007A83] italic"> Tula’s Institute</span> is
-  //     dedicated to serve the communities by recognizing the{" "}
-  //     <span className="text-[#007A83] italic">
-  //       diverse needs of individuals.
-  //     </span>
-  //     <br />
-  //     <br />
-  //     <br />
-  //     With this vision,{" "}
-  //     <span className="text-[#007A83] italic"> Tula’s Institute </span>has been
-  //     ranked in{" "}
-  //     <span className="text-[#007A83] italic">
-  //       {" "}
-  //       Top 50 Private Engineering college of India{" "}
-  //     </span>
-  //     for the last 6 years consecutively (from 2016-2021) and also has been
-  //     ranked in{" "}
-  //     <span className="text-[#007A83] italic">
-  //       {" "}
-  //       Top 20 Private Engineering college of North India{" "}
-  //     </span>
-  //     for the past 3 years by{" "}
-  //     <span className="text-[#007A83] italic">
-  //       {" "}
-  //       “The Times of India-Engineering Survey”,{" "}
-  //     </span>
-  //     ranked{" "}
-  //     <span className="text-[#007A83] italic"> AA+ by “Career 360”.</span>
-  //   </>
-  // );
+  //   loadScriptAndStyles();
+  // }, []);
 
   return (
     <div
@@ -117,15 +77,3 @@ function AboutTulas() {
 }
 
 export default AboutTulas;
-
-// tis widget
-// <div
-// className="npf_wgts"
-// data-height="500px"
-// style={{
-//   width: "100%",
-//   margin: "auto",
-//   marginBottom: "2rem",
-// }}
-// data-w="43cde486b796708909f0caeb58a1cd48"
-// ></div>
