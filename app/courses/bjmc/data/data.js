@@ -5,9 +5,15 @@ import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
 import TauseefIqbal from "../../../../public/courses/bjmc/facultyData/TauseefIqbal.webp";
+import TauseefIqbalResume from "../../../../public/courses/bjmc/facultyData/TauseefIqbalResume.pdf";
 import NeerajKotiyal from "../../../../public/courses/bjmc/facultyData/NeerajKotiyal.webp";
+import NeerajKotiyalResume from "../../../../public/courses/bjmc/facultyData/NeerajKotiyalResume.pdf";
 import deepkarawat from "../../../../public/courses/bjmc/facultyData/deepkarawat.webp";
+import deepkarawatResume from "../../../../public/courses/bjmc/facultyData/deepkarawatResume.pdf";
 import AnkitGhildiyal from "../../../../public/courses/bjmc/facultyData/AnkitGhildiyal.webp";
+import AnkitGhildiyalResume from "../../../../public/courses/bjmc/facultyData/AnkitGhildiyalResume.pdf";
+import Neha from "../../../../public/courses/bjmc/facultyData/Neha.png";
+import NehaResume from "../../../../public/courses/bjmc/facultyData/NehaResume.pdf";
 import BJMC from "../../../../public/courses/bjmc/BJMC.pdf";
 import Link from "next/link";
 export const images = [
@@ -282,44 +288,59 @@ export const facultyData = [
   {
     name: "Tauseef Iqbal",
     education: "Master’s in Mass Communication,  Ph.D. (P)",
-    experience: "8 Years",
+    experience: "8+ Years",
     designation: "Assistant Professor",
     specialization: "Film Studies, Radio Production & Photography",
-    publications: "",
+    publications: "02",
     imageUrl: TauseefIqbal, // Add the path for the image
-  },
-  {
-    name: "Neeraj Kotiyal",
-    education: "Bachelors & Masters in media and communication studies",
-    experience: "2 Years",
-    designation: "Assistant Professor",
-    specialization: "Radio / Advertising and Public relations",
-    publications: "",
-    imageUrl: NeerajKotiyal,
-  },
-  {
-    name: "Ms. Deepika Rawat",
-    education: "Master’s in Mass Communication",
-    experience: "3 Years",
-    designation: "Assistant Professor",
-    specialization: "Development Communication",
-    publications: "",
-    imageUrl: deepkarawat,
+    resume: TauseefIqbalResume,
   },
   {
     name: "Dr. Ankit Ghildiyal",
     education: "Ph.D. ",
-    experience: "14 Years",
+    experience: "5 Years",
     designation: "Assistant Professor",
     specialization: "Journalism and Mass Communication (New Media)",
-    publications: "3",
+    publications: "6",
     imageUrl: AnkitGhildiyal,
+    resume: AnkitGhildiyalResume,
+  },
+  {
+    name: "Ms. Deepika Rawat",
+    education: "Master’s in Mass Communication, Ph.D. (Pursuing)",
+    experience: "5 Years",
+    designation: "Assistant Professor",
+    specialization: "Television journalism and production",
+    publications: "4",
+    imageUrl: deepkarawat,
+    resume: deepkarawatResume,
+  },
+  {
+    name: "Neeraj Kotiyal",
+    education: "Bachelors & Masters in media and communication studies",
+    experience: "3 Years",
+    designation: "Assistant Professor",
+    specialization: "Radio / Advertising and Public relations",
+    publications: "2",
+    imageUrl: NeerajKotiyal,
+    resume: NeerajKotiyalResume,
+  },
+  {
+    name: "Dr. Neha Uniyal",
+    education: "Ph.D. ",
+    experience: "3 Years",
+    designation: "Assistant Professor",
+    specialization:
+      "Communication Research ,Print Journalism, Cultural Studies",
+    publications: "1",
+    imageUrl: Neha,
+    resume: NehaResume,
   },
 ];
 export const hod = [
   {
     name: "Tauseef Iqbal",
-    email: "bjmc.hod@tulas.edu.in",
+    email: "jmc.hod@tulas.edu.in",
     designation: "Head of the Department,",
     department: "BAJMC Department",
     imageUrl: TauseefIqbal, // Replace with the actual image path
