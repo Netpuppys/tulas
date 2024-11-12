@@ -1,28 +1,54 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import deleteForm from "../../public/admissions/deleteForm.png"
-import formBanner from "../../public/Homepage/aboutTulas/formBanner.png"
+import deleteForm from "../../public/admissions/deleteForm.png";
+import formBanner from "../../public/Homepage/aboutTulas/formBanner.png";
 
-const aboutTulas = <>
-  Tulas Institute was established in 2006, under the aegis of Rishabh Educational Trust, Dehradun with the vision of offering excellent academics along with fostering the professional and personal personas of every student of the institute. Tula’s Institute is dedicated to serve the communities by recognizing the diverse needs of individuals.
-  <br/>
-  <br/>
-  With this vision, Tula’s Institute has been ranked in Top 50 Private Engineering college of India for the last 6 years consecutively (from 2016-2021) and also has been ranked in Top 20 Private Engineering college of North India for the past 3 years by “The Times of India-Engineering Survey” ,ranked AA+ by “Career 360”.
+const aboutTulas = (
+  <>
+    Tulas Institute was established in 2006, under the aegis of Rishabh
+    Educational Trust, Dehradun with the vision of offering excellent academics
+    along with fostering the professional and personal personas of every student
+    of the institute. Tula’s Institute is dedicated to serve the communities by
+    recognizing the diverse needs of individuals.
+    <br />
+    <br />
+    With this vision, Tula’s Institute has been ranked in Top 50 Private
+    Engineering college of India for the last 6 years consecutively (from
+    2016-2021) and also has been ranked in Top 20 Private Engineering college of
+    North India for the past 3 years by “The Times of India-Engineering Survey”
+    ,ranked AA+ by “Career 360”.
   </>
+);
 
 function AboutTulas() {
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.type = "text/javascript";
-  //   script.async = true;
-  //   script.src = "https://widgets.nopaperforms.com/emwgts.js";
-  //   document.body.appendChild(script);
+  useEffect(() => {
+    const loadScriptAndStyles = () => {
+      window.ee_form_widget_baseurl = "https://eewidget.extraaedge.com/";
 
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
+      if (!document.getElementById("__formWidgetCss")) {
+        const linkElement = document.createElement("link");
+        linkElement.id = "__formWidgetCss";
+        linkElement.rel = "stylesheet";
+        linkElement.href =
+          window.ee_form_widget_baseurl + "css/stylesheet.min.css";
+        linkElement.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(linkElement);
+      }
+      const scriptElement = document.createElement("script");
+      scriptElement.type = "text/javascript";
+      scriptElement.src =
+        window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
+      scriptElement.onload = async function () {
+        const _eeFormWidget = new eeFormWidget();
+        await _eeFormWidget.init("tulas", "form-14", "ee-form-14");
+      };
+
+      document.getElementsByTagName("head")[0].appendChild(scriptElement);
+    };
+
+    loadScriptAndStyles();
+  }, []);
   // const aboutTulas = (
   //   <>
   //     <span className="text-[#007A83] italic">Tula’s Institute </span>was
@@ -75,14 +101,8 @@ function AboutTulas() {
         </h3>
       </div>
       <div className="w-full md:w-[50%]">
-        <div
-          className="max-w-[429px] h-fit ml-auto mr-0 "
-        >
-          <Image
-            src={deleteForm}
-            className="w-full h-full"
-            alt=""
-          />
+        <div className="max-w-[429px] h-fit ml-auto mr-0 ">
+          <div id="ee-form-14"></div>
         </div>
       </div>
 

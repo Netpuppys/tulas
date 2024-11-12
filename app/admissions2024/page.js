@@ -35,7 +35,7 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const programsOffered = [
   "B.TECH",
@@ -152,6 +152,34 @@ const page = () => {
     }
   };
 
+  useEffect(() => {
+    const loadScriptAndStyles = () => {
+      window.ee_form_widget_baseurl = "https://eewidget.extraaedge.com/";
+
+      if (!document.getElementById("__formWidgetCss")) {
+        const linkElement = document.createElement("link");
+        linkElement.id = "__formWidgetCss";
+        linkElement.rel = "stylesheet";
+        linkElement.href =
+          window.ee_form_widget_baseurl + "css/stylesheet.min.css";
+        linkElement.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(linkElement);
+      }
+      const scriptElement = document.createElement("script");
+      scriptElement.type = "text/javascript";
+      scriptElement.src =
+        window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
+      scriptElement.onload = async function () {
+        const _eeFormWidget = new eeFormWidget();
+        await _eeFormWidget.init("tulas", "form-15", "ee-form-15");
+      };
+
+      document.getElementsByTagName("head")[0].appendChild(scriptElement);
+    };
+
+    loadScriptAndStyles();
+  }, []);
+
   return (
     <>
       <head>
@@ -175,7 +203,7 @@ const page = () => {
               alt=""
             />
             <div className="h-[50vh] absolute top-[15vh] right-[10vw]">
-              <Image src={deleteForm} className="w-full h-full" alt="" />
+              <div id="ee-form-15"></div>
             </div>
           </div>
 
