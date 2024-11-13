@@ -156,7 +156,7 @@ function WhyTulasScroll({ parentRef }) {
                   onClick={handleForwardClick}
                   disabled={index === 0}
                 >
-                  <IoIosArrowForward />
+                  <IoIosArrowBack />
                 </button>
                 <button
                   className={`pointer-events-auto aspect-square p-3 rounded-full border-2 border-white bg-white text-[#007A83] shadow-2xl ${
@@ -167,7 +167,7 @@ function WhyTulasScroll({ parentRef }) {
                   onClick={handleBackClick}
                   disabled={index === images.length - 1}
                 >
-                  <IoIosArrowBack />
+                  <IoIosArrowForward />
                 </button>
               </div>
             </div>
