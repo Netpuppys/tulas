@@ -59,20 +59,20 @@ function AboutTulas() {
   return (
     <div
       id="2"
-      className="bg-transparent flex flex-col-reverse md:flex-row gap-8 md:gap-0 relative justify-between px-8 lg:px-24 py-20 items-center"
+      className="bg-transparent flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-20 items-center"
     >
-      <div className="w-full md:w-[50%] py-8 md:py-20">
-        <h3 className="text-[#fff] font-[TTChocolates] font-semibold text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
+      <div className="w-full px-6 md:px-0 md:w-[50%] py-10 md:py-20">
+        <h3 className="text-[#fff] text-justify font-[TTChocolates] font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>
       <div className="w-full md:w-[50%] py-8 md:py-20 flex flex-col justify-center items-center">
-        <div className="max-w-[478px] w-full bg-[#D9d9d9] bg-opacity-20 backdrop-blur-xl h-fit mx-auto border-2 border-white rounded-3xl">
+        <div className="max-w-[478px] w-full bg-[#D9d9d9] overflow-hidden bg-opacity-20 backdrop-blur-xl h-fit mx-auto border-2 border-white rounded-2xl">
           <form
             className="w-full h-full bg-black bg-opacity-25 px-5"
             onSubmit={handleSubmit}
           >
-            <h3 className="text-center text-white text-[clamp(18px,1.3vw,45px)] w-full py-6">
+            <h3 className="text-center text-white text-[clamp(18px,1.3vw,45px)] w-full py-10 pb-6">
               Enquire Now
             </h3>
             <input
@@ -81,7 +81,7 @@ function AboutTulas() {
               value={formData.name}
               onChange={(e) => handleChange("name", e.target.value)}
               required
-              className="w-full px-5 py-3 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-2"
+              className="w-full px-5 py-3 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
             />
             <input
               type="email"
@@ -89,9 +89,9 @@ function AboutTulas() {
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
               required
-              className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-2"
+              className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
             />
-            <div className="mb-2 flex gap-2">
+            <div className="mb-3 flex gap-3">
               <PhoneInput
                 country={"in"}
                 value={formData.mobile}
@@ -127,7 +127,7 @@ function AboutTulas() {
                 Send OTP
               </div>
             </div>
-            <div className="flex gap-2 mb-2">
+            <div className="flex gap-3 mb-3">
               <select
                 value={formData.state}
                 onChange={(e) => handleChange("state", e.target.value)}
@@ -145,7 +145,7 @@ function AboutTulas() {
                 {/* Add options */}
               </select>
             </div>
-            <div className="flex gap-2 mb-2">
+            <div className="flex gap-3 mb-3">
               <select
                 value={formData.course}
                 onChange={(e) => handleChange("course", e.target.value)}
@@ -164,7 +164,7 @@ function AboutTulas() {
               </select>
             </div>
 
-            <div className="flex items-center justify-center gap-4 mb-4">
+            <div className="flex items-center justify-center gap-4 mb-3">
               <input
                 id="consent1"
                 type="checkbox"
@@ -186,7 +186,7 @@ function AboutTulas() {
 
             <button
               type="submit"
-              className="w-full bg-white text-[#007A83] py-3 rounded-[3px] font-semibold mb-6"
+              className="w-full bg-white text-[#007A83] py-3 rounded-[3px] font-semibold mb-10"
             >
               Submit
             </button>

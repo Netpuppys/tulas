@@ -15,6 +15,7 @@ import Card5 from "../../public/Homepage/ScrollSection/Card5.png";
 import Card6 from "../../public/Homepage/ScrollSection/Card6.png";
 import Card7 from "../../public/Homepage/ScrollSection/Card7.png";
 import Card8 from "../../public/Homepage/ScrollSection/Card8.png";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const title = "WHY TULA’S";
 const paragraph =
@@ -137,40 +138,42 @@ function WhyTulasScroll({ parentRef }) {
           } top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
         >
           <div className="mt-14 md:mt-0 relative w-full h-full flex flex-col justify-center items-center">
-            <h3 className="font-[CarotSlab] text-[clamp(20px,7vw,55px)] md:text-[70px] h-[75px] text-[#E69706] w-full whitespace-nowrap absolute top-0 z-10 pt-10  text-center">
+            <h3 className="font-[CarotSlab] text-[clamp(20px,7vw,55px)] md:text-[70px] h-[75px] text-[#E69706] w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
               {title}
             </h3>
-            <h4 className="text-[clamp(12px,4.4vw,25px)] md:text-2xl font-[Rothwood] absolute top-0 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[20vw] mx-auto text-center text-white">
+            <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-semibold font-[TTChocolates] absolute top-3 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[25vw] mx-auto text-center text-white">
               {paragraph}
             </h4>
             {/* card scroll btns */}
-            <div className="absolute w-fit z-30 mt-[340px] md:mt-0 mx-auto md:ml-0 md:mr-auto md:left-0 flex items-center justify-start">
-              <div className="flex w-full md:w-40 md:flex-col text-[60px] items-center justify-center">
+            <div className="absolute w-fit top-[42%] z-30 mt-[340px] md:mt-0 mx-auto  md:ml-0 md:mr-auto md:left-0 flex items-center justify-start">
+              <div className="flex w-full md:w-40 md:flex-col text-[30px] gap-3 items-center justify-center">
                 <button
-                  className={`pointer-events-auto text-white shadow-2xl ${
-                    index === 0 ? "cursor-not-allowed" : "cursor-pointer"
+                  className={`pointer-events-auto aspect-square p-3 rounded-full border-2 border-white text-white shadow-2xl ${
+                    index === 0
+                      ? "cursor-not-allowed opacity-50"
+                      : "cursor-pointer hover:bg-white hover:text-[#007A83]"
                   }`}
                   onClick={handleForwardClick}
                   disabled={index === 0}
                 >
-                  <IoArrowForwardCircleOutline />
+                  <IoIosArrowForward />
                 </button>
                 <button
-                  className={`pointer-events-auto text-white shadow-2xl ${
+                  className={`pointer-events-auto aspect-square p-3 rounded-full border-2 border-white bg-white text-[#007A83] shadow-2xl ${
                     index === images.length - 1
-                      ? "cursor-not-allowed"
-                      : "cursor-pointer"
+                      ? "cursor-not-allowed opacity-50"
+                      : "cursor-pointer hover:bg-transparent hover:text-white"
                   }`}
                   onClick={handleBackClick}
                   disabled={index === images.length - 1}
                 >
-                  <IoArrowBackCircleOutline />
+                  <IoIosArrowBack />
                 </button>
               </div>
             </div>
 
             {/* cards container */}
-            <div className="w-[calc(100%-3rem)] md:w-[calc(100%-10rem)] right-0 absolute py-10 innerText">
+            <div className="w-[calc(100%-3rem)] top-[32%] md:w-[calc(100%-10rem)]  right-0 absolute py-10 innerText">
               <div
                 style={{ transform: `translateX(-${index * (width + 48)}px)` }}
                 className="w-fit"
@@ -180,7 +183,7 @@ function WhyTulasScroll({ parentRef }) {
                     <div
                       ref={scrollRef}
                       key={index}
-                      className="group rounded-xl w-[20rem] h-full aspect-[16/11] overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-125"
+                      className="group rounded-xl w-[20rem] h-full aspect-[16/11] overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-110"
                     >
                       <Image
                         src={image.src}

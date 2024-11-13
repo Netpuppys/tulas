@@ -41,7 +41,7 @@ export default function HomePage() {
         <Navbar setState={setIsChecked} />
         <BannerHome isChecked={isChecked} />
         <div className="w-full py-16 flex items-center justify-center px-10">
-          <p className="text-[#404040] md:text-xl text-left font-[TTChocolates] max-w-[40rem] text-wrap">
+          <p className="text-[#404040] text-[clamp(15px,4.5vw,30px)] text-justify md:text-xl font-[TTChocolates] max-w-[40rem] text-wrap">
             {bannerText}
           </p>
         </div>
