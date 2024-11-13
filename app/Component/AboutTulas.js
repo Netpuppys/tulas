@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import deleteForm from "../../public/admissions/deleteForm.png";
 import formBanner from "../../public/Homepage/aboutTulas/formBanner.png";
+import { courses, specializations } from "@/data/courses";
 
 const aboutTulas = (
   <>
@@ -35,10 +36,22 @@ function AboutTulas() {
     agreeToTerms: false,
   });
 
+ 
+
   const handleChange = (key, value) => {
     setFormData((prev) => ({
       ...prev,
       [key]: value,
+    }));
+    console.log(formData);
+  };
+
+  const handleCourseChange = (e) => {
+    const selectedCourse = e.target.value;
+    setFormData((prev) => ({
+      ...prev,
+      course: selectedCourse,
+      specialization: "",
     }));
   };
 
@@ -148,19 +161,29 @@ function AboutTulas() {
             <div className="flex gap-3 mb-3">
               <select
                 value={formData.course}
-                onChange={(e) => handleChange("course", e.target.value)}
-                className="select-custom w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
+                onChange={handleCourseChange}
+                className="w-1/2 px-5 py-3 bg-[#007A83] text-white focus:outline-none"
               >
                 <option value="">Select Course</option>
-                {/* Add options */}
+                {courses.map((course) => (
+                  <option key={course.id} value={course.id}>
+                    {course.name}
+                  </option>
+                ))}
               </select>
               <select
                 value={formData.specialization}
                 onChange={(e) => handleChange("specialization", e.target.value)}
-                className="select-custom w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
+                className="w-1/2 px-5 py-3 bg-[#007A83] text-white focus:outline-none"
+                disabled={!formData.course}
               >
                 <option value="">Select Specialization</option>
-                {/* Add options */}
+                {formData.course &&
+                  specializations[formData.course].map((spec, index) => (
+                    <option key={index} value={spec.id}>
+                      {spec.name}
+                    </option>
+                  ))}
               </select>
             </div>
 
