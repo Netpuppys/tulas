@@ -35,24 +35,27 @@ export default function HomePage() {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
-      <Navbar setState={setIsChecked} />
-      <BannerHome isChecked={isChecked} />
-      <div className="w-full py-16 flex items-center justify-center px-10">
-        <p className="text-[#404040] md:text-xl text-left font-[TTChocolates] max-w-[40rem] text-wrap">
-          {bannerText}
-        </p>
+    <>
+      {/* <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tulas/ee-form-widget/form-14/widget.js" /> */}
+      <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
+        <Navbar setState={setIsChecked} />
+        <BannerHome isChecked={isChecked} />
+        <div className="w-full py-16 flex items-center justify-center px-10">
+          <p className="text-[#404040] md:text-xl text-left font-[TTChocolates] max-w-[40rem] text-wrap">
+            {bannerText}
+          </p>
+        </div>
+        <AboutTulas />
+        <WhyTulasScroll parentRef={parentRef} />
+        <Courses parentRef={parentRef} />
+        <Virtual />
+        <VirtualTour />
+        <Video />
+        <CampusLife />
+        <Testimonials />
+        <RankBanner />
+        <Footer />
       </div>
-      <AboutTulas />
-      <WhyTulasScroll parentRef={parentRef} />
-      <Courses parentRef={parentRef} />
-      <Virtual />
-      <VirtualTour />
-      <Video />
-      <CampusLife />
-      <Testimonials />
-      <RankBanner />
-      <Footer />
-    </div>
+    </>
   );
 }
