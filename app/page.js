@@ -8,8 +8,11 @@ export const metadata = {
 };
 export default function Home() {
   return (
-    <body>
-      <HomePage />
-    </body>
+    <>
+      <body>
+        <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tulas/ee-form-widget/form-14/widget.js" />
+        <HomePage />
+      </body>
+    </>
   );
 }

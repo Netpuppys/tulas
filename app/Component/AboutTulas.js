@@ -22,33 +22,33 @@ const aboutTulas = (
 );
 
 function AboutTulas() {
-  // useLayoutEffect(() => {
-  //   const loadScriptAndStyles = () => {
-  //     window.ee_form_widget_baseurl = "https://eewidget.extraaedge.com/";
+  useLayoutEffect(() => {
+    const loadScriptAndStyles = () => {
+      window.ee_form_widget_baseurl = "https://eewidget.extraaedge.com/";
 
-  //     if (!document.getElementById("__formWidgetCss")) {
-  //       const linkElement = document.createElement("link");
-  //       linkElement.id = "__formWidgetCss";
-  //       linkElement.rel = "stylesheet";
-  //       linkElement.href =
-  //         window.ee_form_widget_baseurl + "css/stylesheet.min.css";
-  //       linkElement.type = "text/css";
-  //       document.getElementsByTagName("head")[0].appendChild(linkElement);
-  //     }
-  //     const scriptElement = document.createElement("script");
-  //     scriptElement.type = "text/javascript";
-  //     scriptElement.src =
-  //       window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
-  //     scriptElement.onload = async function () {
-  //       const _eeFormWidget = new eeFormWidget();
-  //       await _eeFormWidget.init("tulas", "form-14", "ee-form-14");
-  //     };
+      if (!document.getElementById("__formWidgetCss")) {
+        const linkElement = document.createElement("link");
+        linkElement.id = "__formWidgetCss";
+        linkElement.rel = "stylesheet";
+        linkElement.href =
+          window.ee_form_widget_baseurl + "css/stylesheet.min.css";
+        linkElement.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(linkElement);
+      }
+      const scriptElement = document.createElement("script");
+      scriptElement.type = "text/javascript";
+      scriptElement.src =
+        window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
+      scriptElement.onload = async function () {
+        const _eeFormWidget = new eeFormWidget();
+        await _eeFormWidget.init("tulas", "form-14", "ee-form-14");
+      };
 
-  //     document.getElementsByTagName("head")[0].appendChild(scriptElement);
-  //   };
+      document.getElementsByTagName("head")[0].appendChild(scriptElement);
+    };
 
-  //   loadScriptAndStyles();
-  // }, []);
+    loadScriptAndStyles();
+  }, []);
 
   return (
     <div

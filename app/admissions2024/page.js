@@ -152,33 +152,33 @@ const page = () => {
     }
   };
 
-  // useLayoutEffect(() => {
-  //   const loadScriptAndStyles = () => {
-  //     window.ee_form_widget_baseurl = "https://eewidget.extraaedge.com/";
+  useLayoutEffect(() => {
+    const loadScriptAndStyles = () => {
+      window.ee_form_widget_baseurl = "https://eewidget.extraaedge.com/";
 
-  //     if (!document.getElementById("__formWidgetCss")) {
-  //       const linkElement = document.createElement("link");
-  //       linkElement.id = "__formWidgetCss";
-  //       linkElement.rel = "stylesheet";
-  //       linkElement.href =
-  //         window.ee_form_widget_baseurl + "css/stylesheet.min.css";
-  //       linkElement.type = "text/css";
-  //       document.getElementsByTagName("head")[0].appendChild(linkElement);
-  //     }
-  //     const scriptElement = document.createElement("script");
-  //     scriptElement.type = "text/javascript";
-  //     scriptElement.src =
-  //       window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
-  //     scriptElement.onload = async function () {
-  //       const _eeFormWidget = new eeFormWidget();
-  //       await _eeFormWidget.init("tulas", "form-15", "ee-form-15");
-  //     };
+      if (!document.getElementById("__formWidgetCss")) {
+        const linkElement = document.createElement("link");
+        linkElement.id = "__formWidgetCss";
+        linkElement.rel = "stylesheet";
+        linkElement.href =
+          window.ee_form_widget_baseurl + "css/stylesheet.min.css";
+        linkElement.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(linkElement);
+      }
+      const scriptElement = document.createElement("script");
+      scriptElement.type = "text/javascript";
+      scriptElement.src =
+        window.ee_form_widget_baseurl + "js/eeFormWidget.min.js";
+      scriptElement.onload = async function () {
+        const _eeFormWidget = new eeFormWidget();
+        await _eeFormWidget.init("tulas", "form-15", "ee-form-15");
+      };
 
-  //     document.getElementsByTagName("head")[0].appendChild(scriptElement);
-  //   };
+      document.getElementsByTagName("head")[0].appendChild(scriptElement);
+    };
 
-  //   loadScriptAndStyles();
-  // }, []);
+    loadScriptAndStyles();
+  }, []);
 
   return (
     <>
@@ -190,6 +190,7 @@ const page = () => {
         />
       </head>
       <body>
+        <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tulas/ee-form-widget/form-15/widget.js" />
         <div className="w-full min-h-screen relative font-[TTChocolatesBold]">
           <Link href={"/"} className="absolute top-10 left-10 z-20 w-48">
             <Image src={tulasLogo} className="w-full" alt="" />
