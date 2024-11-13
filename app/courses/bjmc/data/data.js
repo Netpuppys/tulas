@@ -15,6 +15,14 @@ import AnkitGhildiyalResume from "../../../../public/courses/bjmc/facultyData/An
 import Neha from "../../../../public/courses/bjmc/facultyData/Neha.png";
 import NehaResume from "../../../../public/courses/bjmc/facultyData/NehaResume.pdf";
 import BJMC from "../../../../public/courses/bjmc/BJMC.pdf";
+import EMPCLAB from "../../../../public/courses/bjmc/EMPCLAB.jpg";
+import EMPCLAB1 from "../../../../public/courses/bjmc/EMPC LAB (1).jpg";
+import EMPCLAB2 from "../../../../public/courses/bjmc/EMPC LAB (2).jpg";
+import EMPCLAB3 from "../../../../public/courses/bjmc/EMPC LAB (3).jpg";
+import EMPCLAB4 from "../../../../public/courses/bjmc/EMPC LAB (4).jpg";
+import EMPCLAB5 from "../../../../public/courses/bjmc/EMPC LAB (5).jpg";
+import EMPCLAB6 from "../../../../public/courses/bjmc/EMPC LAB (6).jpg";
+import EMPCLAB7 from "../../../../public/courses/bjmc/EMPC LAB (7).jpg";
 import Link from "next/link";
 export const images = [
   bjmc,
@@ -81,6 +89,20 @@ export const items = [
       <Link href={"https://www.instagram.com/masscommunication_tulas/"}>
         Click Here to Visit Instagram Page:
       </Link>,
+    ],
+  },
+  {
+    title: "EMPC (Electronic Media Production Center)",
+    image: EMPCLAB,
+    description: ["Click here to view Images of EPMC Lab"],
+    imagesArray: [
+      EMPCLAB1,
+      EMPCLAB2,
+      EMPCLAB3,
+      EMPCLAB4,
+      EMPCLAB5,
+      EMPCLAB6,
+      EMPCLAB7,
     ],
   },
   {
@@ -308,7 +330,7 @@ export const facultyData = [
   {
     name: "Ms. Deepika Rawat",
     education: "Master’s in Mass Communication, Ph.D. (Pursuing)",
-    experience: "5 Years",
+    experience: "10+ Years",
     designation: "Assistant Professor",
     specialization: "Television journalism and production",
     publications: "4",
