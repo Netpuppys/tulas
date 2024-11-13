@@ -144,13 +144,13 @@ export default function AboutPage() {
       />
       {/* --- */}
 
-      <div className="w-full pb-8 overflow-x-hidden">
-        <div className="bg-transparent w-full pt-2 px-4 md:px-10 flex flex-wrap items-center justify-between gap-x-4">
+      <div className="w-full pb-8 md:pb-20 overflow-x-hidden">
+        <div className="bg-transparent w-full md:w-[70%] mx-auto py-8 md:pt-2 pb-16 md:pb-0 px-4 md:px-10 flex flex-wrap items-center justify-between gap-x-4">
           {button.map((button, index) => (
             <Fade key={index}>
               <button
                 key={index}
-                className="text-[#fff] font-bold text-[16px] md:text-[1.7rem] font-[TTChocolatesBold] rounded-full py-2"
+                className="text-[#fff] font-bold text-[clamp(15px,4.5vw,30px)]  md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold] rounded-full py-2"
               >
                 {button.title}
               </button>
@@ -158,17 +158,17 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <div className="flex w-full flex-col-reverse md:flex-row items-center justify-center">
+        <div className="flex w-full flex-col-reverse md:flex-row items-center gap-16 md:gap-0 mb-16 md:mb-0 justify-center">
           <div
             ref={statsRef}
-            className="bg-transparent w-full md:w-1/2 py-4 flex flex-wrap md:flex-col items-center justify-center gap-2 md:gap-8"
+            className="bg-transparent w-full md:w-1/2 py-4 pb-8 md:pb-0 flex flex-wrap md:flex-col items-center justify-center gap-2 md:gap-8"
           >
             {stats.map((cards, index) => (
               <div
                 key={index}
                 className="flex items-center justify-start gap-4 w-[calc(50%-1rem)] md:w-[300px]"
               >
-                <div className="border border-white rounded-full w-12 md:w-20 aspect-square"></div>
+                <div className="border border-white shadow-inner rounded-full w-12 md:w-20 aspect-square"></div>
                 <div className="flex flex-col items-start justify-center gap-0">
                   <h3 className="text-[#fff] font-[TTChocolatesBold] text-[28px] md:text-[45px] font-black">
                     {cards.animatedStatNo || cards.start}
@@ -182,8 +182,8 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-          <div className="w-full md:w-1/2 flex items-center justify-start h-full px-10 md:px-0 md:pr-20 md:py-12">
-            <div className="bg-white w-full md:h-full py-12 md:min-h-[50rem] max-w-[40rem] flex items-start justify-center flex-col px-4 md:px-12 rounded-xl md:rounded-none md:rounded-r-xl">
+          <div className="w-full md:w-1/2 flex items-center justify-start h-full px-6 md:px-0 md:pr-20 md:py-12">
+            <div className="bg-white w-full md:h-full py-8 md:min-h-[50rem] max-w-[40rem] flex items-start justify-center flex-col px-8 md:px-12 rounded-xl md:rounded-none md:rounded-r-xl">
               <p className="text-[#760135] font-medium font-[TTChocolates] text-[1.4rem] md:text-[2.5rem] text-wrap tracking-widest">
                 <span className="font-bold font-[TTChocolatesBold]">
                   TULA'S
@@ -193,7 +193,7 @@ export default function AboutPage() {
                   COLLEGE
                 </span>
               </p>
-              <p className="text-[#404040] text-justify text-[16px] md:text-[1.8rem] font-medium font-[TTChocolates]">
+              <p className="text-[#404040] text-justify text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-medium font-[TTChocolates] leading-tight">
                 Tula's Institute believes in providing the{" "}
                 <span className="font-[TTChocolatesBold] font-black">
                   best possible facilities
@@ -207,8 +207,9 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        <AboutManagement />
       </div>
-      <AboutManagement />
+
       <Location />
       {/* Add ref to the Management component */}
       <div ref={managementRef}>

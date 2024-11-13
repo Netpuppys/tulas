@@ -24,7 +24,7 @@ function AboutManagement() {
       {sections.map((section, index) => (
         <div
           key={index}
-          className={`flex flex-col md:flex-row justify-center min-h-[85vh] mb-8 md:mb-0 max-w-[90vw] mx-auto items-center gap-10 md:gap-20 ${
+          className={`flex flex-col md:flex-row justify-center min-h-[85vh] mb-8 md:mb-0 w-full md:max-w-[90vw] mx-auto px-10 items-center gap-10 md:gap-20 ${
             index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
           } `}
         >
@@ -40,7 +40,7 @@ function AboutManagement() {
             <h3 className="text-[36px] md:text-[60px] pb-6 font-[CarotSlab] text-white">
               {section.title}
             </h3>
-            <h4 className="text-[18px] md:text-[22px] font-[TTChocolates] text-white max-w-[659px]">
+            <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify font-[TTChocolates] text-white max-w-[659px]">
               {section.description}
             </h4>
           </div>

@@ -12,7 +12,7 @@ function Location() {
   return (
     <div
       ref={ref}
-      className="w-full py-14 h-fit bg-white text-black flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 px-3 overflow-hidden"
+      className="w-full py-14 h-fit bg-white text-black flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 md:px-3 overflow-hidden"
     >
       <Image
         src={location}
@@ -29,7 +29,7 @@ function Location() {
         LOCATION
       </h3>
       <p
-        className={`md:font-[TTChocolates] font-[TTChocolatesBold] font-bold md:font-normal text-[#007A83] transition-transform duration-1000 text-[18px] md:text-[22px] text-center md:text-left px-4 md:px-20 max-w-[1000px] ${
+        className={`md:font-[TTChocolates] font-[TTChocolatesBold] font-bold md:font-normal text-[#007A83] transition-transform duration-1000 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify md:text-left px-10 md:px-20 max-w-[1000px] ${
           inView ? "md:animate-translateRight" : "opacity-0"
         }`}
       >

@@ -46,8 +46,8 @@ const AboutFacultyModal = ({
         </div>
 
         {/* profile content */}
-        <div className="px-5 md:px-10 py-8 md:py-16 ">
-          <div className="flex gap-6 justify-between">
+        <div className="px-10 md:px-10 py-8 md:py-16 ">
+          <div className="flex flex-col-reverse md:flex-row gap-6 justify-between">
             <div className="">
               <p className="capitalize text-[#760135] text-[2.2rem] pb-1 font-semibold underline">
                 {activeProfile?.name}
@@ -60,7 +60,7 @@ const AboutFacultyModal = ({
               </p>
             </div>
             {activeProfile?.image && (
-              <div className="bg-[#007a83] hidden md:block min-w-60 overflow-hidden w-60 min-h-[25rem] h-[25rem] rounded-xl shadow-2xl">
+              <div className="bg-[#007a83] min-w-60 overflow-hidden mx-auto md:mx-0 w-60 min-h-[25rem] h-[25rem] rounded-xl shadow-2xl">
                 <Image
                   src={activeProfile.image}
                   className="w-full h-full object-cover"

@@ -348,14 +348,14 @@ function Management() {
         className="w-full h-fit flex flex-col justify-center items-center"
       >
         <h3
-          className={`font-[CarotSlab] text-white text-[32px] md:text-[52px] text-center md:text-left ${
+          className={`font-[CarotSlab] text-white text-[32px] md:text-[52px] px-10 md:px-0 text-center md:text-left ${
             inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
           MEET OUR MANAGEMENT
         </h3>
         <h5
-          className={`font-[Rothwood] pt-8 md:pt-0 text-white text-[20px] max-w-[665px] px-6 md:px-0 italic text-center font-medium ${
+          className={`font-[Rothwood] pt-8 md:pt-0 text-white text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify max-w-[665px] px-10 md:px-0 italic md:text-center font-medium ${
             inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
@@ -369,12 +369,12 @@ function Management() {
         {[cards, cardsFaculty].map((cardGroup, groupIndex) => (
           <div
             key={groupIndex}
-            className="w-full flex justify-center flex-wrap px-4 gap-4 gap-y-10 md:gap-5 md:px-20 py-4"
+            className="w-full flex justify-center  flex-wrap px-4 gap-4 gap-y-10 md:gap-5 md:px-20 py-4"
           >
             {cardGroup.map((card, index) => (
               <div
                 key={index}
-                className="flex flex-col w-[45%] shadow-2xl md:shadow-none md:max-w-[265px] cursor-pointer"
+                className="flex flex-col w-[45%] hover:opacity-90 hover:scale-105 transition-all ease-linear duration-300 shadow-2xl md:shadow-none md:max-w-[265px] cursor-pointer"
                 onClick={() =>
                   setActiveProfile({ profile: card, related: cardGroup })
                 }
