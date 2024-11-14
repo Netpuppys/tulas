@@ -370,26 +370,26 @@ const sitemap = [
   {
     title: "Placements",
     nestedLinks: [
-      {
-        title: "Placements Activities",
-        linkTo: "/placements/placement-activites/",
-      },
-      {
-        title: "Corporate Relations",
-        linkTo: "/placements/corporate-relations/",
-      },
-      {
-        title: "Placement Registration",
-        linkTo: "/placements/registration-placement/",
-      },
-      {
-        title: "Ujwal Bhavishya",
-        linkTo: "/ujjwal-bhavishya/",
-      },
-      {
-        title: "Industries Tie-ups",
-        linkTo: "/placements/industries-tie-up/",
-      },
+      // {
+      //   title: "Placements Activities",
+      //   linkTo: "/placements/placement-activites/",
+      // },
+      // {
+      //   title: "Corporate Relations",
+      //   linkTo: "/placements/corporate-relations/",
+      // },
+      // {
+      //   title: "Placement Registration",
+      //   linkTo: "/placements/registration-placement/",
+      // },
+      // {
+      //   title: "Ujwal Bhavishya",
+      //   linkTo: "/ujjwal-bhavishya/",
+      // },
+      // {
+      //   title: "Industries Tie-ups",
+      //   linkTo: "/placements/industries-tie-up/",
+      // },
       {
         title: "Career Innovation Centre",
         linkTo: "/placements/career-innovation-centre/",
