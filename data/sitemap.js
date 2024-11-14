@@ -394,6 +394,10 @@ const sitemap = [
         title: "Career Innovation Centre",
         linkTo: "/placements/career-innovation-centre/",
       },
+      {
+        title: "Technical Department",
+        linkTo: "/placements/technical-department/",
+      },
     ],
   },
   {
