@@ -113,7 +113,7 @@ function Library() {
           <Vision sections={sections.slice(0, 1)} />
           <div
             ref={ref}
-            className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"
+            className="w-full h-fit py-8 md:py-20 bg-white px-8 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"
           >
             <div className="w-[70%] md:w-[30%] h-fit flex justify-center items-center">
               <Fade>
