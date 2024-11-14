@@ -29,7 +29,7 @@ function Library() {
           digital libraries.
           <br />
           <br />
-          Our Digital library has over 59000+ e-books and 2400 + e-Journals
+          Our Digital library has over 18383+ e-books and 3338 + e-Journals
           available round the clock through a FTP server on the intranet,
           whereby students can access the material and books anytime from
           anywhere on the campus.
@@ -78,7 +78,7 @@ function Library() {
             belowPara={
               <p className="text-sm md:text-lg">
                 <strong>With</strong> over{" "}
-                <strong className="text-[#007A83]">52200</strong> volumes
+                <strong className="text-[#007A83]">60000</strong> volumes
                 library is a veritable{" "}
                 <strong className="text-[#007A83]">
                   powerhouse of knowledge.
@@ -95,7 +95,7 @@ function Library() {
                 <strong className="text-[#007A83]">
                   ‘Top 10 Engineering colleges in Dehradun’.
                 </strong>{" "}
-                Library at Tula’s is no exception for we believe that it is the
+                Library at Tula’s is no exception, for we believe that it is the
                 heart of the institution and acts as a{" "}
                 <strong className="text-[#007A83]">center</strong> of knowledge
                 for varied subjects.
