@@ -5,7 +5,7 @@ import Navbar from "@/component/Navbar/Navbar";
 import React, { useEffect, useRef, useState } from "react";
 import bannerImage from "../../public/About/whyTulasBanner.png"
 import Footer from "@/component/Footer";
-import formBackground from "../../public/grievance/formBackground.jpg"
+import formBackground from "../../public/grievance/formbackground.jpg"
 import Image from "next/image";
 
 const formTypes = [
