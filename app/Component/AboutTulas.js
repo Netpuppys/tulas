@@ -134,6 +134,7 @@ function AboutTulas() {
                 buttonStyle={{
                   backgroundColor: "white",
                   border: "none",
+                  width: "40px",
                   color: "black", // Flag icon color
                 }}
               />
@@ -141,11 +142,11 @@ function AboutTulas() {
                 Send OTP
               </div>
             </div>
-            <div className="flex gap-3 mb-3">
+            <div className="flex flex-col md:flex-row gap-3 mb-3">
               <select
                 value={formData.State}
                 onChange={handleStateChange}
-                className="w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
               >
                 <option value="">Select State</option>
                 {state
@@ -160,7 +161,7 @@ function AboutTulas() {
               <select
                 value={formData.City}
                 onChange={(e) => handleChange("City", e.target.value)}
-                className="w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
                 disabled={!formData.State}
               >
                 <option value="">Select City</option>
@@ -175,12 +176,12 @@ function AboutTulas() {
                     ))}
               </select>
             </div>
-            <div className="flex gap-3 mb-3">
+            <div className="flex flex-col md:flex-row gap-3 mb-3">
               <select
                 value={formData.Course}
                 onChange={handleCourseChange}
                 required
-                className="w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
               >
                 <option value="">Select Course</option>
                 {courses.map((Course) => (
@@ -193,7 +194,7 @@ function AboutTulas() {
                 value={formData.Center}
                 onChange={(e) => handleChange("Center", e.target.value)}
                 required
-                className="w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
                 disabled={!formData.Course}
               >
                 <option value="">Select Specialization</option>
