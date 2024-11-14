@@ -47,7 +47,7 @@ function BAJMC() {
           <BannerProgram
             image={BannerImg}
             title=<>
-              BA. (Hons.) <span className="text-[#760135]">JMC</span>
+              BA(Hons.) <span className="text-[#760135]">JMC</span>
             </>
             titleColor={""}
             description={
