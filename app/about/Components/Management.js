@@ -7,7 +7,6 @@ import raghav from "../../../public/About/raghav.png";
 import raunak from "../../../public/About/raunak.png";
 import sandip from "../../../public/About/sandip.png";
 import vijay from "../../../public/About/vijay.png";
-import kothari from "../../../public/About/kothari.png";
 import sunilSemwal from "../../../public/About/sunilSemwal.png";
 import nishant from "../../../public/About/nishant.png";
 import Image from "next/image";
@@ -85,7 +84,7 @@ const cards = [
 const cardsFaculty = [
   {
     image: sandip,
-    name: "Dr. Sandip Vijay",
+    name: "Prof. Sandip Vijay",
     profile: "Director",
     description:
       "Tula’s Institute, Dehradun, established in 2006, is a thriving campus run by the Rishabh Educational Trust. Dehradun’s Tula’s Institute has established itself as a fully integrated technical and professional higher education institution. Our Vision for the institute is to emerge as an academic centre by creating and developing world-class professionals and promoting innovation and research. The goal of Tula’s Institute in Dehradun is to create professionals who are socially conscious, ethical, and responsible individuals who have a solid understanding of modern technical and professional principles.",
@@ -160,7 +159,7 @@ const cardsFaculty = [
   },
   {
     image: vijay,
-    name: "Vijay Kumar Upadhyay",
+    name: "Dr. Vijay Kumar Upadhyay",
     profile: "Registrar",
     description:
       "We believe education will play a significant role in accomplishing future productivity, economic goals, and higher standards of living throughout the world. I would like to applaud the student’s community for their hard work, discipline and analytical thinking that has propelled Tula’s Institute to the new heights, year after year. The Institute campus is pollution free, ragging free with conducive studying environment, a beautiful landscape, a picturesque view of modern buildings, plethora of state-of-the-art facilities, modern libraries well equipped gymnasium, indoor and outdoor games/sports facilities, ultra-modern laboratories – are at the service of students.",
@@ -181,63 +180,8 @@ const cardsFaculty = [
     awards: ["Email ID: registrar@tulas.edu.in"],
   },
   {
-    image: kothari,
-    name: "DP Kothari",
-    profile: "Adjunct Professor",
-    description:
-      "The goal of Tula’s Institute is to equip our students with the skills they need to successfully navigate an unpredictable future. Tula’s believes that a technical education’s DNA is dependent on collaboration between four major stakeholders: students, industry, faculty members, and the parents. In contrast to traditional techniques of memorising and rote learning, students at Tula’s acquire knowledge through a dynamic learning process that incorporates research, innovation, instilling social and cultural behaviour, and cooperation.",
-    desc2: (
-      <>
-        In a completely safe and loving environment, arts, music, drama, sports,
-        social, cultural, and other co & extracurricular activities are absorbed
-        into the programme. These variables combine to provide a holistic
-        learning experience that moulds our pupils into well-balanced citizens
-        of the future.
-        <br />
-        <br />
-        We devote the same amount of attention to our faculty members, who must
-        mould the future of our pupils. We provide them with the most up-to-date
-        technology tools, mentor their professional growth, and provide a
-        productive and positive work atmosphere in which they can put their
-        experience and skills to good use for the benefit of the students and
-        themselves.
-        <br />
-        <br />
-        We also recognise that parents play an important role in the development
-        of our students. Maintaining a system of ongoing collaboration and open
-        communication with them contributes to a meaningful educational journey
-        that we all strive to provide for our students.
-        <br />
-        <br />
-        Our technological investments complement our human efforts. As India
-        enters a new era of education and scientific progress, we feel that
-        modern infrastructure and technological development would be critical in
-        bolstering our efforts to be relevant and capable educational providers.
-        <br />
-        <br />
-        Our goal is to give our students with an education that meets
-        international standards. They must be conscious and grateful of their
-        personal and cultural history in order to leave an indelible mark on the
-        pages of human achievement. We must provide them with the wind that
-        their wings require to fly as they strive to be grounded like the Tula
-        family tree.
-      </>
-    ),
-    awards: [
-      "B.Tech, M.Tech., Ph.D.",
-      "Adjunct Professor Tula’s Institute",
-      "Fellow-INAE,Fellow-INASc, Fellow-IEEE, Hon. Fellow, ISTE, FIE (India), Fellow-IETE , MCSI",
-      "Emeritus Director general,VITS Indore",
-      "Former VC, VIT Vellore",
-      "Former Director i/c IIT Delhi",
-      "Former Principal VRCE, Nagpur",
-      "Visiting Fellow, R.M.I.T., Melbourne  Australia",
-      <span className="italic">“Change is the only constant in life”.</span>,
-    ],
-  },
-  {
     image: sunilSemwal,
-    name: "Sunil Semwal",
+    name: "Dr. Sunil Semwal",
     profile: "Dean R&D",
     description:
       "Tula’s Institute is dedicated to societal requirements through research and innovation. Challenges such as sustainable development, water conservation, energy and environment, and many others are addressed with innovation-friendly atmosphere which encourages industry-academic collaborations. Tula’s Institute’s Research and Development cell promotes research in a variety of areas in sciences, engineering, agriculture and management domains to support our research vision. Quality publications are encouraged with an attractive Research Policy, which incentivise the good researchers and propels faculty members to pursue quality research.",
@@ -261,7 +205,7 @@ const cardsFaculty = [
   },
   {
     image: nishant,
-    name: "Dr Nishant Saxena",
+    name: "Prof. Nishant Saxena",
     profile: "Dean Academics",
     description:
       "From a modest beginning in 2006, Tula’s Institute has now grown into a fully integrated engineering and management college. The guiding philosophy of the institute has been the creation of awareness among students so they can face the challenges globally. Tula’s Institute through its various development programmes gives students an edge over their counterparts in enabling them to prepare themselves for a world that is yet to be created, for jobs yet to be invented, and technologies yet undreamt of. In short, we create skilled individuals who are industry-ready. ",
