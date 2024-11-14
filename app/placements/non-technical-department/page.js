@@ -830,7 +830,7 @@ const description = <>
 const page = () => {
 
   return (
-    <div className='w-full'>
+    <div className='w-full bg-[linear-gradient(180deg,_rgba(61,_0,_27,_0.00)_0%,_rgba(118,_1,_53,_0.56)_49.5%,_rgba(61,_0,_27,_0.76)_100%);]'>
         <Image
             src={background}
             className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
@@ -839,7 +839,7 @@ const page = () => {
 
         <Navbar />
         <Banner
-            title={<>TECHNICAL <span className='text-[#007A83]'>PLACEMENT RECORD</span></>}
+            title={<>NON - TECHNICAL <span className='text-[#007A83]'>PLACEMENT RECORD</span></>}
             image={bannerImage}
             belowPara={description}
         />

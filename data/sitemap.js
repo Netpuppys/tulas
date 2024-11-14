@@ -398,6 +398,10 @@ const sitemap = [
         title: "Technical Department",
         linkTo: "/placements/technical-department/",
       },
+      {
+        title: "Non - Technical Department",
+        linkTo: "/placements/non-technical-department/",
+      },
     ],
   },
   {
