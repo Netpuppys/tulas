@@ -3,9 +3,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import deleteForm from "../../public/admissions/deleteForm.png";
 import formBanner from "../../public/Homepage/aboutTulas/formBanner.png";
-import { courses, specializations } from "@/data/courses";
+import { cities, courses, specializations, state } from "@/data/courses";
 
 const aboutTulas = (
   <>
@@ -26,17 +25,18 @@ const aboutTulas = (
 
 function AboutTulas() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    mobile: "",
-    state: "",
-    city: "",
-    course: "",
-    specialization: "",
-    agreeToTerms: false,
+    AuthToken: "TULAS-27-12-2023",
+    Source: "tulas",
+    FirstName: "",
+    Email: "",
+    MobileNumber: "",
+    LeadSource: "25",
+    LeadChannel: "2",
+    Course: "",
+    Center: "",
+    State: "",
+    City: "",
   });
-
- 
 
   const handleChange = (key, value) => {
     setFormData((prev) => ({
@@ -50,15 +50,16 @@ function AboutTulas() {
     const selectedCourse = e.target.value;
     setFormData((prev) => ({
       ...prev,
-      course: selectedCourse,
-      specialization: "",
+      Course: selectedCourse,
+      Center: "",
     }));
   };
-
-  const handleCheckboxChange = () => {
+  const handleStateChange = (e) => {
+    const selectedState = e.target.value;
     setFormData((prev) => ({
       ...prev,
-      agreeToTerms: !prev.agreeToTerms,
+      state: selectedState,
+      city: "",
     }));
   };
 
@@ -91,24 +92,24 @@ function AboutTulas() {
             <input
               type="text"
               placeholder="Enter Student Full Name*"
-              value={formData.name}
-              onChange={(e) => handleChange("name", e.target.value)}
+              value={formData.FirstName}
+              onChange={(e) => handleChange("FirstName", e.target.value)}
               required
               className="w-full px-5 py-3 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
             />
             <input
-              type="email"
+              type="Email"
               placeholder="Enter Email Id*"
-              value={formData.email}
-              onChange={(e) => handleChange("email", e.target.value)}
+              value={formData.Email}
+              onChange={(e) => handleChange("Email", e.target.value)}
               required
               className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
             />
             <div className="mb-3 flex gap-3">
               <PhoneInput
                 country={"in"}
-                value={formData.mobile}
-                onChange={(value) => handleChange("mobile", value)}
+                value={formData.MobileNumber}
+                onChange={(value) => handleChange("MobileNumber", value)}
                 placeholder="Enter Mobile No."
                 inputProps={{
                   name: "phone",
@@ -142,44 +143,62 @@ function AboutTulas() {
             </div>
             <div className="flex gap-3 mb-3">
               <select
-                value={formData.state}
-                onChange={(e) => handleChange("state", e.target.value)}
-                className="select-custom w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
+                value={formData.State}
+                onChange={handleStateChange}
+                className="w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
               >
                 <option value="">Select State</option>
-                {/* Add options */}
+                {state
+                  .slice() // create a shallow copy to avoid modifying the original array
+                  .sort((a, b) => a.name.localeCompare(b.name)) // sort by name alphabetically
+                  .map((state) => (
+                    <option key={state.id} value={state.id}>
+                      {state.name}
+                    </option>
+                  ))}
               </select>
               <select
-                value={formData.city}
-                onChange={(e) => handleChange("city", e.target.value)}
-                className="select-custom w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
+                value={formData.City}
+                onChange={(e) => handleChange("City", e.target.value)}
+                className="w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
+                disabled={!formData.State}
               >
                 <option value="">Select City</option>
-                {/* Add options */}
+                {formData.State &&
+                  cities[formData.State]
+                    .slice()
+                    .sort((a, b) => a.name.localeCompare(b.name))
+                    .map((city, index) => (
+                      <option key={index} value={city.id}>
+                        {city.name}
+                      </option>
+                    ))}
               </select>
             </div>
             <div className="flex gap-3 mb-3">
               <select
-                value={formData.course}
+                value={formData.Course}
                 onChange={handleCourseChange}
-                className="w-1/2 px-5 py-3 bg-[#007A83] text-white focus:outline-none"
+                required
+                className="w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
               >
                 <option value="">Select Course</option>
-                {courses.map((course) => (
-                  <option key={course.id} value={course.id}>
-                    {course.name}
+                {courses.map((Course) => (
+                  <option key={Course.id} value={Course.id}>
+                    {Course.name}
                   </option>
                 ))}
               </select>
               <select
-                value={formData.specialization}
-                onChange={(e) => handleChange("specialization", e.target.value)}
-                className="w-1/2 px-5 py-3 bg-[#007A83] text-white focus:outline-none"
-                disabled={!formData.course}
+                value={formData.Center}
+                onChange={(e) => handleChange("Center", e.target.value)}
+                required
+                className="w-1/2 px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
+                disabled={!formData.Course}
               >
                 <option value="">Select Specialization</option>
-                {formData.course &&
-                  specializations[formData.course].map((spec, index) => (
+                {formData.Course &&
+                  specializations[formData.Course].map((spec, index) => (
                     <option key={index} value={spec.id}>
                       {spec.name}
                     </option>
@@ -195,8 +214,6 @@ function AboutTulas() {
                 className=""
                 value="no"
                 required
-                selected={formData.agreeToTerms === "yes"}
-                onChange={handleCheckboxChange}
               />
               <label
                 for="consent1"
