@@ -196,7 +196,7 @@ export const selectedCardTable = [
 ];
 export const semesterData = [
   {
-    semester: "I SEMESTER",
+    semester: "B.Tech Civil Engg. I SEMESTER",
     subjects: [
       { code: "AHT-003", title: "Engineering Mathematics-I" },
       { code: "CST-001", title: "Programming for Problem Solving" },
@@ -216,7 +216,7 @@ export const semesterData = [
     ],
   },
   {
-    semester: "II SEMESTER",
+    semester: "B.Tech Civil Engg. II SEMESTER",
     subjects: [
       { code: "AHT-005", title: "Analytical Mathematics" },
       { code: "AHT-002", title: "Engineering Chemistry" },
@@ -233,50 +233,77 @@ export const semesterData = [
     ],
   },
   {
+    semester: "B.Tech Civil Engg. III SEMESTER",
+    subjects: [
+      { code: "AHT-006", title: "Advanced Applied Mathematics" },
+      { code: "AHT 008", title: "Universal Human Values" },
+      { code: "CET 001", title: "Construction Material" },
+      { code: "CET 002", title: "Surveying" },
+      { code: "CET 003", title: "Strength of material" },
+      { code: "PRACTICAL" },
+      { code: "CEP 001", title: "Construction Material" },
+      { code: "CEP 002", title: "Surveying" },
+      { code: "CEP 003", title: "Strength of material" },
+      { code: "CEP 004", title: "Internship-I/Mini Project-I" },
+      { code: "SCT 005", title: "Python Programming" },
+    ],
+  },
+  {
     semester: "B.Tech Civil Engg. IV SEMESTER",
     subjects: [
-      { subject_code: "AHT 007", subject_name: "Technical Communication" },
+      { code: "AHT 007", title: "Technical Communication" },
       {
-        subject_code: "CST 003",
-        subject_name: "Data Structure and Algorithms",
+        code: "CST 003",
+        title: "Data Structure and Algorithms",
       },
       {
-        subject_code: "CET 004/CEP 004",
-        subject_name: "Basic Structural Analysis",
+        code: "CET 004",
+        title: "Basic Structural Analysis",
       },
-      { subject_code: "CET 005/CEP 005", subject_name: "Concrete Technology" },
-      { subject_code: "CET 006/CEP 006", subject_name: "Fluid Mechanics" },
-      { subject_code: "CST 006", subject_name: "Cyber Security" },
+      { code: "CET 005", title: "Concrete Technology" },
+      { code: "CET 006", title: "Fluid Mechanics" },
+
+      {
+        code: "CEP 004",
+        title: "Basic Structural Analysis Lab",
+      },
+      { code: "CEP 005", title: "Concrete Technology Lab" },
+      { code: "CEP 006", title: "Fluid Mechanics Lab" },
+      { code: "CST 006", title: "Cyber Security" },
     ],
   },
   {
     semester: "B.Tech Civil Engg. V SEMESTER",
     subjects: [
       {
-        subject_code: "CET 007",
-        subject_name: "Reinforced Concrete Structure",
+        code: "CET 007",
+        title: "Reinforced Concrete Structure",
       },
-      { subject_code: "CET 008", subject_name: "Soil Mechanics" },
-      { subject_code: "CET 009", subject_name: "Advance Structure Analysis" },
-      { subject_code: "CET 011", subject_name: "Engg. Geology" },
+      { code: "CET 008", title: "Soil Mechanics" },
+      { code: "CET 009", title: "Advance Structure Analysis" },
+      { code: "CET 011", title: "Engineering Geology" },
       {
-        subject_code: "CET 015",
-        subject_name: "Safety Management in construction",
-      },
-      {
-        subject_code: "CEP 009",
-        subject_name: "Reinforced Concrete Structure lab",
-      },
-      { subject_code: "CEP 010", subject_name: "Soil Mechanics lab" },
-      { subject_code: "CEP 011", subject_name: "Software lab" },
-
-      {
-        subject_code: "AHT 010",
-        subject_name: "Essence of Indian Traditional Knowledge",
+        code: "CET 015",
+        title: "Safety Management in construction",
       },
       {
-        subject_code: "CEP 012",
-        subject_name: "Evaluation of Internship-II completed After 4th sem",
+        code: "CEP 009",
+        title: "Reinforced Concrete Structure lab",
+      },
+      { code: "CEP 010", title: "Soil Mechanics lab" },
+      { code: "CEP 011", title: "Civil Engineering Software lab" },
+      {
+        code: "CEP 012",
+        title: "Mini Project-II or Internship-II* ",
+      },
+      {
+        code: "AHT 009/ AHT 010",
+        title:
+          "Constitution of India /  Essence of Indian Traditional Knowledge ",
+      },
+      {
+        code: "GP 005",
+        title: "General Proficiency ",
       },
     ],
   },
@@ -284,71 +311,76 @@ export const semesterData = [
     semester: "B.Tech Civil Engg. VI SEMESTER",
     subjects: [
       {
-        subject_code: "BCET 601/BCEP 601",
-        subject_name: "Design of RC Structures",
+        code: "CET 016",
+        title: "Transportation Engineering",
       },
       {
-        subject_code: "BCET 602/BCEP 602",
-        subject_name: "Environmental Engineering I",
+        code: "CET 017",
+        title: "Design of Steel Structure",
       },
-      { subject_code: "BCET 603/BCEP 603", subject_name: "Open Channel Flow" },
+      { code: "CET 018", title: "Environmental Engineering" },
       {
-        subject_code: "BCET 604/(A/B/C/D)",
-        subject_name: "Departmental Electives (Geotechnology)",
+        code: "CET 019",
+        title: "Foundation  Engineering",
       },
       {
-        subject_code: "BOEC 605/(A/B/C/D)",
-        subject_name: "Open Electives (POM)",
+        code: "AHT011",
+        title: "Total Quality Management",
       },
 
       {
-        subject_code: "BCEP 606",
-        subject_name: "OE Lab/ Advance Surveying Lab",
+        code: "CEP 013",
+        title: "Transportation Engineering",
       },
-      { subject_code: "BCEP 507", subject_name: "Minor Project I" },
+      { code: "CEP 014", title: "Design of Steel Structure" },
+      { code: "CEP 015", title: "Environmental Engineering" },
+      {
+        code: "AHT 010/AHT 009",
+        title:
+          "Essence of Indian Traditional Knowledge /  Constitution of India",
+      },
+      { code: "GP 006", title: "General Proficiency" },
     ],
   },
   {
     semester: "B.Tech Civil Engg. VII SEMESTER",
     subjects: [
       {
-        subject_code: "BCET 701/BCEP 701",
-        subject_name: "Environmental Engineering II",
+        code: "BCET 701/ BCEP 701",
+        title: "Environmental Engineering II",
       },
       {
-        subject_code: "BCET 702/BCEP 702",
-        subject_name: "Design of Steel Structure",
+        code: "BCET 702/ BCEP 702",
+        title: "Design of Steel Structure",
       },
       {
-        subject_code: "BCET 703 (C)",
-        subject_name: "Ground Water Engineering",
+        code: "BCET 703 (C)",
+        title: "Ground Water Engineering",
       },
-      { subject_code: "BOEC 704 (A)", subject_name: "Hydrology" },
-      { subject_code: "BCEP 705", subject_name: "Open Source S/w Lab" },
+      { code: "BOEC 704 (A)", title: "Hydrology" },
+      { code: "BCEP 705", title: "Open SourceS/w Lab" },
       {
-        subject_code: "BCEP 706",
-        subject_name:
-          "Evaluation of Internship-III completed at III year level",
+        code: "BCEP 706",
+        title: "Evaluation of Internship-III completed at III year level",
       },
-      { subject_code: "BCEP 707", subject_name: "Minor Project II" },
+      { code: "BCEP 707", title: "Minor Project II" },
     ],
   },
   {
     semester: "B.Tech Civil Engg. VIII SEMESTER",
     subjects: [
       {
-        subject_code: "BCET 801",
-        subject_name: "Construction Planning and Management",
+        code: "BCET 801",
+        title: "Construction Planning and Management",
       },
       {
-        subject_code: "BCET 802",
-        subject_name:
-          "Seismology and Earthquake Resistance Design of Buildings",
+        code: "BCET 802",
+        title: "Seismology and Earthquake Resistance Design of Buildings",
       },
-      { subject_code: "BCET 803 (A)", subject_name: "Irrigation Engineering" },
-      { subject_code: "BOEC 804(A)", subject_name: "Hydropower Engineering" },
-      { subject_code: "BCEP 805", subject_name: "Major Project" },
-      { subject_code: "BCEP 806", subject_name: "Virtual Lab" },
+      { code: "BCET 803 (A)", title: "Irrigation Engineering" },
+      { code: "BOEC 804(A)", title: "Hydropower Engineering" },
+      { code: "BCEP 805", title: "Major Project" },
+      { code: "BCEP 806", title: "Virtual Lab" },
     ],
   },
 ];

@@ -37,6 +37,10 @@ function AboutTulas() {
     State: "",
     City: "",
   });
+  const [otp, setOtp] = useState("");
+  const [isOtpSent, setIsOtpSent] = useState(false);
+  const [message, setMessage] = useState("");
+  const [isPhoneValid, setIsPhoneValid] = useState(false);
 
   const handleChange = (key, value) => {
     setFormData((prev) => ({
@@ -44,6 +48,9 @@ function AboutTulas() {
       [key]: value,
     }));
     console.log(formData);
+    if (key === "MobileNumber") {
+      setIsPhoneValid(value.length >= 10 && /^\d+$/.test(value)); // Example validation for length and digits only
+    }
   };
 
   const handleCourseChange = (e) => {
@@ -63,10 +70,68 @@ function AboutTulas() {
     }));
   };
 
+  const sendOtp = async () => {
+    try {
+      const response = await axios.post(
+        "http://api.msg91.com/api/sendotp.php",
+        {
+          authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
+          mobile: formData.MobileNumber,
+          message: "Your OTP is {{otp}}.", // Replace with your SMS template
+          sender: "MSG91_ID", // Replace with your MSG91 Sender ID
+          otp_expiry: "3",
+          DLT_TE_ID: "TEMPLATE_ID", // Replace with your DLT Template ID
+        }
+      );
+      if (response.data.type === "success") {
+        setIsOtpSent(true);
+        setMessage("OTP sent successfully!");
+      } else {
+        setMessage("Failed to send OTP. Please try again.");
+      }
+    } catch (error) {
+      setMessage("Error while sending OTP.");
+      console.error(error);
+    }
+  };
+
+  const verifyOtp = async () => {
+    try {
+      const response = await axios.get(
+        `https://control.msg91.com/api/v5/otp/verify?mobile=${formData.MobileNumber}&otp=${otp}`,
+        {
+          headers: { authkey: "412590AKveCHLSBnd4658bcea0P1" }, // Replace with your MSG91 Auth Key
+        }
+      );
+      if (response.data.type === "success") {
+        setMessage("OTP verified successfully!");
+      } else {
+        setMessage("OTP verification failed. Please try again.");
+      }
+    } catch (error) {
+      setMessage("Error while verifying OTP.");
+      console.error(error);
+    }
+  };
+
+  const resendOtp = async () => {
+    try {
+      const response = await axios.get(
+        `https://control.msg91.com/api/v5/otp/retry?retrytype=text&mobile=${formData.MobileNumber}&authkey=412590AKveCHLSBnd4658bcea0P1`
+      );
+      if (response.data.type === "success") {
+        setMessage("OTP resent successfully!");
+      } else {
+        setMessage("Failed to resend OTP. Please try again.");
+      }
+    } catch (error) {
+      setMessage("Error while resending OTP.");
+      console.error(error);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Handle form submission logic here
     console.log("Form submitted", formData);
   };
 
@@ -138,10 +203,47 @@ function AboutTulas() {
                   color: "black", // Flag icon color
                 }}
               />
-              <div className="w-[40%] bg-white rounded-[3px] text-[#007A83] cursor-pointer flex items-center justify-center">
+              <button
+                type="button"
+                disabled={!isPhoneValid}
+                onClick={sendOtp}
+                className={`w-[40%] bg-[#007A83] rounded-[3px] flex items-center justify-center px-4 py-3 font-bold text-white ${
+                  isPhoneValid
+                    ? " cursor-pointer"
+                    : "opacity-50 cursor-not-allowed"
+                }`}
+              >
                 Send OTP
-              </div>
+              </button>
             </div>
+            {isOtpSent && (
+              <input
+                type="text"
+                placeholder="Enter OTP"
+                value={otp}
+                onChange={(e) => setOtp(e.target.value)}
+                className="w-full px-5 py-3 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
+              />
+            )}
+            {isOtpSent && (
+              <div className="flex gap-3">
+                <button
+                  type="button"
+                  className="bg-[#007A83] text-white px-5 py-3 rounded-[3px]"
+                  onClick={verifyOtp}
+                >
+                  Verify OTP
+                </button>
+                <button
+                  type="button"
+                  className="bg-[#007A83] text-white px-5 py-3 rounded-[3px]"
+                  onClick={resendOtp}
+                >
+                  Resend OTP
+                </button>
+              </div>
+            )}
+            {message && <p className="text-white mt-3">{message}</p>}
             <div className="flex flex-col md:flex-row gap-3 mb-3">
               <select
                 value={formData.State}
