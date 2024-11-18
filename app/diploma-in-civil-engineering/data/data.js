@@ -7,9 +7,9 @@ import mohitSharma from "../../../public/courses/btech/civil-engineering/faculty
 import PreetiKumari from "../../../public/courses/btech/civil-engineering/facultyData/PreetiKumar.webp";
 import PrashantGussain from "../../../public/courses/btech/civil-engineering/facultyData/PrashantGussain.webp";
 import ArunAgarwal from "../../../public/courses/btech/civil-engineering/facultyData/ArunAgarwal.webp";
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
+import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
+import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
 export const images = [
   diplomaCivil,
   // Add more image paths as needed
