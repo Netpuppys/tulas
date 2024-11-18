@@ -14,7 +14,7 @@ const Blogs = () => {
     const fetchBlogs = async () => {
       try {
         const response = await fetch(
-          `https://tulas.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=18`
+          `https://tulas.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=10`
         );
         const posts = await response.json();
 
