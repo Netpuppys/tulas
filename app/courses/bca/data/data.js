@@ -15,6 +15,10 @@ export const images = [
 ];
 export const content = (
   <>
+    <center className="italic font-black">
+      Your Gateway to the Digital World
+    </center>
+    <br />
     BCA is a three-year bachelor’s degree program in computer applications. The
     need for computer professionals is constantly rising globally due to the
     rapid expansion of the IT industry.
@@ -52,16 +56,76 @@ export const content = (
 );
 export const items = [
   {
-    title: "USP's",
+    title: "USP - Empowering You to Thrive in the World of Technology",
     description: [
-      "Industry-led & Practice Based Curriculum.",
-      "Content Delivery & Mentoring by Professionally Trained Faculty & Industry Experts by conducting Guest Lectures/ Expert Talks.",
-      "Value Added Courses/ Add On Certifications/ Short Term Courses (STC) for all round development of the students.",
+      "At Tula's Institute, we offer a Bachelor of Computer Applications (BCA) program designed for future tech innovators and problem-solvers. Our industry-oriented curriculum, hands-on training, and personalized guidance prepare students to excel in today’s competitive IT landscape. Here’s why BCA at Tula’s Institute is the ideal choice for building your future:",
     ],
     image: USP,
     points: [
-      "Alumni database of 200+ alumni currently working with MNC’s and Government Institutions/Sectors.",
-      "Practical oriented teaching with hands on experience (Project Based Learning and Industrial Visits).",
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>In-Demand Skills for a Future-Ready Career</strong>
+          <br />
+          Gain mastery in the most sought-after programming languages, including
+          C, C++, Java, and Python. Learn core topics in web development,
+          database management, and networking from experienced faculty with
+          real-world expertise. At Tula’s, we don’t just teach technology; we
+          prepare you to thrive in it.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Unmatched Career Opportunities</strong>
+          <br />
+          Our BCA graduates step into fulfilling careers as software developers,
+          system analysts, database administrators, IT consultants, and more.
+          With the tech world expanding rapidly into areas like artificial
+          intelligence, data science, and cybersecurity, a degree from Tula’s
+          Institute positions you at the forefront of these advancements.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Practical, Hands-On Learning</strong>
+          <br />
+          With a curriculum that balances theory and practical application,
+          students at Tula’s gain valuable real-world experience. Through
+          industry projects, internships, and workshops, you’ll apply classroom
+          learning to solve real business challenges. By graduation, you’ll be
+          job-ready with an impressive portfolio of projects and practical
+          skills.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Pathways to Advanced Education</strong>
+          <br />
+          Tula's BCA program sets you up for success, whether you aim to pursue
+          an MCA, MBA, or any other advanced degree. Our program is designed to
+          equip you with the foundational knowledge and academic rigor necessary
+          to excel in higher education and beyond.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Entrepreneurial Empowerment</strong>
+          <br />
+          Our BCA program isn’t just about landing a job; it’s about building a
+          future. Whether you dream of launching your own tech start-up or
+          developing a groundbreaking app, Tula’s Institute equips you with the
+          skills, network, and confidence to succeed as a tech entrepreneur.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Vibrant, Supportive Campus Culture</strong>
+          <br />
+          Join a diverse community of ambitious students and skilled faculty in
+          a dynamic learning environment. Our campus offers state-of-the-art
+          facilities, modern labs, and numerous student clubs where you can
+          sharpen your skills, grow your network, and find lifelong mentors.
+        </li>
+      </ul>,
     ],
   },
   {
@@ -99,7 +163,7 @@ export const sections = [
   {
     title: "Departmental Vision",
     description:
-      "To equip students with skills and strong conceptual understanding in applied sciences and basic engineering domains to pursue higher learning.",
+      "To become centre of excellence in software development and research.",
     image: DepartmentalVission,
   },
   {
@@ -107,27 +171,22 @@ export const sections = [
     description: (
       <>
         <ul className="list-disc ml-5">
+          <li>To induce ethical values and spirit of social commitment.</li>
           <li>
-            To enable engineering students master the fundamental concepts of
-            applied sciences.
+            To provide a learning ambience to enhance innovations and problem
+            solving skills.
           </li>
           <li>
-            To impart essential knowledge through fundamental subjects related
-            to various engineering disciplines.
+            To provide a comprehensive education, benchmarked against the
+            highest global standards.
           </li>
           <li>
-            To prepare students for their successful career based on strong
-            moral and ethical principles.
+            To Collaborate with software industry and adopting technology for
+            achieving quality of technical education.
           </li>
           <li>
-            To develop lifelong learning abilities and developing understanding
-            of social requirements and problems from the outset of a
-            professional life.
-          </li>
-          <li>
-            To build strong outreach and communication skills so that students
-            can effectively communicate scientific knowledge to a variety of
-            stakeholders and audiences.
+            To promote research based projects / activities in the emerging
+            areas of technology convergence.
           </li>
         </ul>
       </>
@@ -254,42 +313,192 @@ export const facultyData = [
 ];
 export const itemsClubs = [
   {
-    title: "Opportunities in Computer Application",
+    title: "Opportunities in BCA - Unlock Your Future in Technology",
     description: [
-      "Some job titles are listed here:",
-      "Computer Programmer",
-      "Software Developer",
-      "Web Designer",
-      "Database Administrator",
-      "Web/Multimedia Programmer",
-      "Software Consultant",
-      "Technical Writer",
-      "System Analyst",
+      "Choosing a Bachelor of Computer Applications (BCA) opens up a world of learning and growth in one of the most sought-after fields today. As a BCA student, you’ll immerse yourself in a curriculum that combines technical skills with practical experiences, preparing you for a variety of exciting roles in technology. Here’s what you can look forward to during your BCA journey:",
     ],
     image: USP,
+    points: [
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Cutting-Edge Curriculum:</strong>
+          <br />
+          Gain proficiency in programming languages like Java, Python, C++, and
+          more. With courses in database management, networking, and software
+          development, BCA covers everything you need to excel in the tech
+          world.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Hands-On Projects:</strong>
+          <br />
+          Get practical experience through projects that solve real-world
+          problems, allowing you to build a portfolio that showcases your skills
+          to future employers.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Internships and Industrial Visits:</strong>
+          <br />
+          Experience firsthand how the industry operates through internships and
+          industrial visits that give you a clear picture of life in the tech
+          world.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Add-On Certifications:</strong>
+          <br />
+          Enhance your expertise with certifications in emerging fields like
+          cloud computing, data analytics, and cybersecurity. These additional
+          skills make you stand out and keep you ahead of industry trends.
+        </li>
+      </ul>,
+      "With a BCA, you’ll be equipped not just with technical knowledge, but with the problem-solving, analytical, and project management skills that today’s tech roles demand. Every experience prepares you to step confidently into a rewarding career.",
+    ],
   },
   {
-    title: "Beyond Curriculum",
+    title: "Beyond the Curriculum - Unlocking Extra Benefits for Your Success",
     description: [
-      "Student perform various internship programs, Short term courses, Add on courses for their advancement in the field.",
-      "BCA students in addition to their curriculum may opt for specialization in various field such as Cyber security, data sciences, AI& ML etc.",
+      "At Tula’s Institute, we believe in empowering our students with real-world skills and experiences that extend far beyond the classroom. Our comprehensive approach includes a variety of additional opportunities to enrich your learning and career prospects:",
     ],
     image: Course,
+    points: [
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Internship Opportunities:</strong>
+          <br />
+          Gain invaluable hands-on experience with internships in leading tech
+          companies, allowing you to apply classroom knowledge to real industry
+          projects.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Short-Term Courses:</strong>
+          <br />
+          Keep pace with the latest trends and tools through targeted short-term
+          courses designed to help you stay competitive and expand your skill
+          set.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Add-On Certification Courses:</strong>
+          <br />
+          Boost your expertise with specialized add-on certification courses,
+          equipping you with niche skills and advanced knowledge in key areas of
+          technology.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Industrial Visits:</strong>
+          <br />
+          Broaden your industry perspective with guided visits to top IT firms
+          and tech hubs, where you can see cutting-edge technology in action and
+          learn directly from industry professionals.
+        </li>
+      </ul>,
+      "These additional offerings not only enhance your practical knowledge but also give you a competitive edge, making you stand out to employers and equipping you to succeed in the dynamic field of technology.",
+    ],
   },
   {
-    title: "Career Prospects",
+    title: "Career Opportunities After BCA – Endless Possibilities Await!",
     description: [
-      "After the completion of this program, the students have the option to grow in one of the following fields:",
-      "Cloud Computing",
-      "Ethical Hacking",
-      "GIS (Geographic Information Systems)",
-      "Software Developing",
-      "Software Testing",
-      "Networking",
-      "IT Support",
-      "Machine learning",
-      "Artificial Intelligence",
+      "Completing a Bachelor of Computer Applications (BCA) opens the door to a world filled with dynamic and rewarding career paths. As a BCA graduate, you’ll be equipped with the skills and knowledge to thrive in an industry where technology is reshaping the future every day. Here are just some of the inspiring career opportunities available to BCA graduates:",
     ],
     image: Program,
+    points: [
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Software Developer</strong>
+          <br />
+          Transform ideas into reality by creating innovative software and
+          applications that make a difference. As a software developer, you’ll
+          be at the forefront of building tech solutions that people use every
+          day, from mobile apps to complex enterprise systems.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong> Web Developer & Designer</strong>
+          <br />
+          Shape the digital landscape as a web developer or designer, crafting
+          engaging and responsive websites that power e-commerce, media, and
+          entertainment. Use your creativity and technical skills to create
+          seamless online experiences for users worldwide.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong> Data Analyst</strong>
+          <br />
+          Dive into the world of data to help businesses make smarter,
+          data-driven decisions. Data analysts play a vital role in interpreting
+          trends, forecasting outcomes, and unlocking valuable insights that
+          drive company growth and innovation.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>System Analyst</strong>
+          <br />
+          Optimize business operations by identifying technology needs and
+          recommending the best solutions. As a system analyst, you’ll bridge
+          the gap between technology and business, ensuring organizations stay
+          competitive and efficient.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong> Database Administrator</strong>
+          <br />
+          Manage and safeguard the data that fuels today’s digital world.
+          Database administrators are responsible for organizing, securing, and
+          ensuring the accessibility of data, making it a critical role in every
+          industry.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Cybersecurity Specialist</strong>
+          <br />
+          Protect organizations from digital threats in this essential and
+          rapidly growing field. As a cybersecurity specialist, you’ll defend
+          systems and data from cyber attacks, safeguarding the digital future.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>IT Consultant</strong>
+          <br />
+          Provide expert advice to businesses on the best technologies to meet
+          their goals. IT consultants guide companies in making strategic tech
+          decisions, from selecting software to implementing secure systems.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Entrepreneur in Tech</strong>
+          <br />
+          Dream of building your own tech company? A BCA equips you with the
+          knowledge and skills to start your own venture, develop innovative
+          apps, or offer IT solutions as an entrepreneur.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Further Studies – MCA and Beyond</strong>
+          <br />
+          For those who wish to deepen their expertise, pursuing a Master’s in
+          Computer Applications (MCA) or specialized certifications can take
+          your skills to an even higher level, opening doors to leadership
+          roles, teaching, and research.
+        </li>
+      </ul>,
+    ],
   },
 ];

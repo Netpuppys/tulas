@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import formBanner from "../../public/Homepage/aboutTulas/formBanner.png";
 import { cities, courses, specializations, state } from "@/data/courses";
+import axios from "axios";
 
 const aboutTulas = (
   <>
@@ -77,10 +78,10 @@ function AboutTulas() {
         {
           authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
           mobile: formData.MobileNumber,
-          message: "Your OTP is {{otp}}.", // Replace with your SMS template
-          sender: "MSG91_ID", // Replace with your MSG91 Sender ID
+          message: `Hello, ##OTP## is your One Time Password (OTP) for Tulas. This OTP is valid for 3 minutes.`, // Replace with your SMS template
+          sender: "TULASD", // Replace with your MSG91 Sender ID
           otp_expiry: "3",
-          DLT_TE_ID: "TEMPLATE_ID", // Replace with your DLT Template ID
+          DLT_TE_ID: "1007161822185716704", // Replace with your DLT Template ID
         }
       );
       if (response.data.type === "success") {
@@ -93,6 +94,17 @@ function AboutTulas() {
       setMessage("Error while sending OTP.");
       console.error(error);
     }
+    //   axios.post("http://api.msg91.com/api/sendotp.php",
+    //       {
+    //         authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
+    //         mobile: formData.MobileNumber,
+    //         message: `Hello, ##OTP## is your One Time Password (OTP) for Tulas. This OTP is valid for 3 minutes.`, // Replace with your SMS template
+    //         sender: "TULASD", // Replace with your MSG91 Sender ID
+    //         otp_expiry: "3",
+    //         DLT_TE_ID: "1007161822185716704", // Replace with your DLT Template ID
+    //       })
+    //       .then(res => console.log(res))
+    //       .catch(err => console.error(err))
   };
 
   const verifyOtp = async () => {

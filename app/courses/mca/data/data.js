@@ -21,34 +21,100 @@ export const images = [
 ];
 export const content = (
   <>
-    Master of Computer Applications (MCA) is one of the most sought-after
-    courses among the post graduates courses. World over IT related technology
-    businesses have fuelled growth, created jobs, and turned out with an
-    increasing number of successful start-ups. IT sector is one of the country’s
-    fastest-growing businesses and has been considered as world’s largest
-    information technology destination. With fast growing global digitalization,
-    the demand for computer applications specialists is constantly expanding.
+    <center className="italic font-black">
+      Elevate Your Career in Technology
+    </center>
+    <br />
+    The Master of Computer Applications (MCA) is a postgraduate pathway to
+    advanced, specialized tech roles for aspiring tech leaders, offering
+    in-depth training in software development, data science, AI, and
+    cybersecurity. With fast growing global digitalization, the demand for
+    computer applications specialists is constantly expanding.
     <br />
     <br />
-    Department of Computer Applications provides a comprehensive understanding
-    of important areas of computer science and its applications providing them
-    professional skills in software development. It assists students in
-    developing practical abilities to solve a variety of difficulties that may
-    arise during computer programming and their applications. In addition, the
-    post graduates of MCA also find a way to move to the education sectors.
+    The Department of Computer Applications provides a comprehensive
+    understanding of important areas of computer science and its applications
+    providing them professional skills in software development. It assists
+    students in developing practical abilities to solve a variety of
+    difficulties that may arise during computer programming and their
+    applications. In addition, the post graduates of MCA also find a way to move
+    to the education sector.
+    <br />
+    <br />
+    <italic className="italic font-black">
+      "With an MCA, you’re not just keeping up with technology—you’re leading
+      it. Step into a future filled with opportunities, and make your mark in
+      the ever-expanding digital world.""
+    </italic>
   </>
 );
 export const items = [
   {
-    title: "USP's",
+    title: "USP - Your Pathway to Excellence in Technology",
     description: [
-      "Industry-led & Practice Based Curriculum.",
-      "Content Delivery & Mentoring by Professionally Trained Faculty & Industry Experts by conducting Guest Lectures/ Expert Talks.",
-      "Value Added Courses/ Add On Certifications/ Short Term Courses (STC) for all round development of the students.",
-      "Alumni database of 70+ alumni currently working with MNC’s and Government Institutions/Sectors.",
-      "Practical oriented teaching with hands on experience (Project Based Learning and Industrial Visits).",
+      "Here’s why Tula’s Institute stands out as the ideal place to pursue your Master of Computer Applications:",
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Industry-Aligned Curriculum:</strong>
+          <br />
+          Learn the latest skills in AI, machine learning, cloud computing, and
+          software development with an industry-informed syllabus.
+        </li>
+      </ul>,
     ],
     image: USP,
+    points: [
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Hands-On Learning:</strong>
+          <br />
+          Gain real-world experience through projects, internships, and advanced
+          lab facilities.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Expert Faculty:</strong>
+          <br />
+          Learn from seasoned educators with deep industry and research
+          backgrounds.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Strong Industry Connections:</strong>
+          <br />
+          Benefit from internships and networking with top tech companies for
+          career advancement.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Career Support:</strong>
+          <br />
+          Access personalized career counseling, resume workshops, and interview
+          preparation.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Entrepreneurial Focus:</strong>
+          <br />
+          Nurture your innovation with startup incubation and mentorship.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Holistic Development: </strong>
+          <br />
+          Engage in extracurriculars, soft skills training, and leadership
+          opportunities.
+        </li>
+      </ul>,
+      <italic className="italic font-black">
+        "Join Tula’s Institute and propel your tech career to new heights!"
+      </italic>,
+    ],
   },
   {
     title: "Course Outcomes",
@@ -379,27 +445,133 @@ export const itemsClubs = [
     image: USP,
   },
   {
-    title: "Beyond Curriculum",
+    title: "Beyond the Curriculum – More Than Just a Degree",
     description: [
-      "Student perform various internship programs, Short term courses, Add on courses for their advancement in the field.",
-      "MCA students in addition to their curriculum may opt for specialization in various field such as Cyber security, data sciences, AI& ML etc.",
+      "At Tula’s Institute, the MCA program offers more than just academic knowledge, preparing you to be a well-rounded tech leader:",
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Internships & Industry Projects:</strong>
+          <br />
+          Gain hands-on experience working with top tech companies on real-world
+          challenges.
+        </li>
+      </ul>,
     ],
     image: Course,
+    points: [
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Add-On Certifications:</strong>
+          <br />
+          Stay ahead with certifications in emerging technologies like
+          Blockchain, Data Analytics, and Cloud Computing.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Industrial Visits: </strong>
+          <br />
+          Get a firsthand look at cutting-edge technology during guided visits
+          to major IT companies.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Entrepreneurial Focus:</strong>
+          <br />
+          Access mentorship, resources, and incubation support to launch your
+          own tech startup.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Soft Skills Development:</strong>
+          <br />
+          Enhance leadership, communication, and problem-solving skills through
+          workshops and activities.
+        </li>
+      </ul>,
+      <italic className="italic font-black">
+        Tula’s MCA program prepares you for both technical expertise and
+        professional success in the tech industry.
+      </italic>,
+    ],
   },
   {
-    title: "Career Prospects",
+    title: "Career Prospectus – A Future Filled with Limitless Potential",
     description: [
-      "After the completion of this program, the students have the option to grow in one of the following fields:",
-      "Cloud Computing",
-      "Ethical Hacking",
-      "GIS (Geographic Information Systems)",
-      "Software Developing",
-      "Software Testing",
-      "Networking",
-      "IT Support",
-      "Machine learning",
-      "Artificial Intelligence",
+      "An MCA degree from Tula’s Institute unlocks a world of rewarding, high-paying career opportunities in the rapidly evolving tech industry:",
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Software Engineer/Developer:</strong>
+          <br />
+          Design and develop software solutions for various platforms and
+          industries.
+        </li>
+      </ul>,
     ],
     image: Program,
+    points: [
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Data Scientist/Analyst: </strong>
+          <br />
+          Analyze big data to drive informed decisions in sectors like finance,
+          healthcare, and retail.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Cybersecurity Specialist: </strong>
+          <br />
+          Protect sensitive data and networks from cyber threats in an
+          increasingly digital world.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>AI/ML Expert:</strong>
+          <br />
+          Develop intelligent systems and applications that learn and adapt from
+          data.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>System Architect: </strong>
+          <br />
+          Design large-scale IT systems and manage complex projects for seamless
+          integration.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>IT Consultant: </strong>
+          <br />
+          Optimize IT infrastructure and digital strategies for organizations
+          across industries.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Tech Entrepreneur:</strong>
+          <br />
+          Launch your own tech venture or offer consultancy services in the tech
+          space.
+        </li>
+      </ul>,
+      <ul className="list-disc ml-5">
+        <li>
+          <strong>Further Education & Research:</strong>
+          <br />
+          Pursue advanced degrees or research, leading to roles in academia or
+          specialized tech sectors.
+        </li>
+      </ul>,
+      "Tula’s MCA program equips you with the skills, insights, and leadership potential to excel in these dynamic fields and shape the future of technology.",
+      <italic className="italic font-black">
+        "The tech world is waiting—are you ready to lead?"
+      </italic>,
+    ],
   },
 ];
