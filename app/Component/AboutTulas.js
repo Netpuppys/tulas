@@ -78,7 +78,7 @@ function AboutTulas() {
         {
           authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
           mobile: formData.MobileNumber,
-          message: `Hello, ##OTP## is your One Time Password (OTP) for Tulas. This OTP is valid for 3 minutes.`, // Replace with your SMS template
+          message: `Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.`, // Replace with your SMS template
           sender: "TULASD", // Replace with your MSG91 Sender ID
           otp_expiry: "3",
           DLT_TE_ID: "1007161822185716704", // Replace with your DLT Template ID

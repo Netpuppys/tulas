@@ -121,11 +121,11 @@ export const items = [
     title: "Program Specific Outcome",
     description: [
       "PSO 1: Students make use of digital and farm technology to build models for enhancing farming industry.",
-      "PSO 2: An ability to apply the acquired skills and knowledge to experiment, innovate and demonstrate sustainable agricultural practices at grass root level for rural upliftment.",
+      "PSO 2: An ability to apply the acquired skills and knowledge to experiment, innovate and demonstrate 	sustainable agricultural practices at grass root level for rural upliftment.",
     ],
     image: Course,
     points: [
-      "PSO 3: Students develop entrepreneurial skills by applying knowledge gained through participation in	workshops and start-up boot camps.",
+      "PSO 3: Students develop entrepreneurial skills by applying knowledge gained through participation in 	workshops and start-up boot camps.",
     ],
   },
   {
@@ -209,98 +209,171 @@ export const semesterData = [
   {
     semester: "I SEMESTER",
     subjects: [
-      { code: "BSAG 101", title: "Elementary Statistics" },
-      { code: "BSAG 102", title: "Agriculture Meteorology" },
-      { code: "BSAG 103", title: "Computer Application" },
-      { code: "BSAG 104", title: "Sr & Spoken English" },
+      { code: "BSAC 101", title: "Fundamental of Horticulture" },
       {
-        code: "BSAG 105",
-        title: "Elementary Agriculture/Elementary Biology",
+        code: "BSAC 102",
+        title: "Fundamentals of Plant Biochemistry and Biotechnology",
       },
-      { code: "BSAG 106", title: "Mathematics" },
-      { code: "BSAG 107", title: "Principles of Agronomy" },
-      { code: "BSAG 108", title: "Rural Sociology & Educational Psychology" },
+      { code: "BSAC 103", title: "Fundamentals of Soil Science" },
+      { code: "BSAC 104", title: "Introduction to Forestry" },
+      {
+        code: "BSAC 105",
+        title: "Comprehension and Communication Skills in English",
+      },
+      { code: "BSAC 106", title: "Fundamentals of Agronomy" },
+      { code: "BSAR 107", title: "Introductory Biology" },
+      { code: "BSAR 108", title: "Elementary Mathematics" },
+      { code: "BSAR 109", title: "Agriculture Heritage" },
+      { code: "BSAR 110", title: "Rural Sociology and Educational Psychology" },
+      { code: "BSAN 111", title: "Human Values and Ethics (Non-gradial)" },
     ],
   },
   {
     semester: "II SEMESTER",
     subjects: [
-      { code: "BSAG 201", title: "Fundamentals of Soil Science" },
-      { code: "BSAG 202", title: "Fundamentals of Horticulture" },
-      { code: "BSAG 203", title: "Elementary Plant Biochemistry" },
-      { code: "BSAG 204", title: "Weed Management" },
-      { code: "BSAG 205", title: "Elements of Genetics" },
-      { code: "BSAG 206", title: "Introductory Entomology" },
-      { code: "BSAG 207", title: "Introductory Plant Pathology" },
-      { code: "BSAG 208", title: "Microbiology" },
+      { code: "BSAC-201", title: "Fundamentals of Genetics" },
+      { code: "BSAC-202", title: "Agricultural Microbiology" },
+      { code: "BSAC-203", title: "Soil and Water Conservation Engineering" },
+      { code: "BSAC-204", title: "Fundamentals of Crop Physiology" },
+      { code: "BSAC-205", title: "Fundamentals of Agricultural Economics" },
+      { code: "BSAC-206", title: "Fundamentals of Plant Pathology" },
+      { code: "BSAC-207", title: "Fundamentals of Entomology" },
+      {
+        code: "BSAC-208",
+        title: "Fundamentals of Agricultural Extension Education",
+      },
+      {
+        code: "BSAC-209",
+        title: "Communication Skills and Personality Development",
+      },
+      {
+        code: "BSAN-110",
+        title: "NSS/NCC/Physical Education and Yoga Practices",
+      },
     ],
   },
   {
     semester: "III SEMESTER",
     subjects: [
-      { code: "BSAG 301", title: "Vegetable Production" },
-      { code: "BSAG 302", title: "Irrigate Water Management" },
       {
-        code: "BSAG 303",
-        title: "Principles of Plant Breeding & Breeding of Field Crops",
+        code: "BSAC 301",
+        title: "Crop Production Technology -1 (Kharif Crops)",
       },
-      { code: "BSAG 304", title: "Soil Fertility & Nutrient Management" },
+      { code: "BSAC 302", title: "Fundamentals of Plant Breeding" },
       {
-        code: "BSAG 305",
-        title: "Agriculture Marketing & International Trade",
+        code: "BSAC 303",
+        title: "Agriculture Finance and Cooperation",
       },
-      { code: "BSAG 306", title: "Field Crops I (Kharif)" },
-      { code: "BSAG 307", title: "Crop Diseases & Pest Management" },
+      { code: "BSAC 304", title: "Agri-informatics" },
+      {
+        code: "BSAC 305",
+        title: "Farm Machinery and Power",
+      },
+      {
+        code: "BSAC 306",
+        title: "Production Technology of Vegetables and Spices",
+      },
+      {
+        code: "BSAC 307",
+        title: "Environmental Studies and Disaster Management",
+      },
+      { code: "BSAC 308", title: "Statistical Methods" },
+      { code: "BSAC 309", title: "Livestock and Poultry Management" },
     ],
   },
   {
     semester: "IV SEMESTER",
     subjects: [
-      { code: "BSAG 401", title: "Economic Entomology" },
-      { code: "BSAG 402", title: "Introduction to Plant Biotechnology" },
-      { code: "BSAG 403", title: "Field Crops II (Rabi)" },
+      { code: "BSAC-401", title: "Crop Production Technology-II (Rabi)" },
       {
-        code: "BSAG 404",
-        title: "Agriculture Cooperation, Finance & Business Management",
+        code: "BSAC-402",
+        title:
+          "Production Technology For ornamental Crops, MAP and Landscaping",
       },
-      { code: "BSAG 405", title: "Insect Pest & Pest Management" },
-      { code: "BSAG 406", title: "Fruits & Plantation Crops" },
-      { code: "BSAG 407", title: "Livestock Production" },
-      { code: "BSAG 408", title: "Rainfed Agriculture" },
+      { code: "BSAC-403", title: "Renewable Energy and Green Technology" },
+      { code: "BSAC-404", title: "Problematic Soils and their Management" },
+      {
+        code: "BSAC-405",
+        title: "Production Technology for Fruit and Plantation Crops",
+      },
+      { code: "BSAC-406", title: "Principles of Seed technology " },
+      { code: "BSAC-407", title: "Farming System & Sustainable Agriculture" },
+      { code: "BSAC-408", title: "Agricultural Marketing, Trade and Prices " },
+      {
+        code: "BSAC-409",
+        title: "Introductory Agrometeorology & Climate Change ",
+      },
+      { code: "BSAE- 110", title: "Weed Management (E)" },
     ],
   },
   {
     semester: "V SEMESTER",
     subjects: [
-      { code: "BSAG 501", title: "Poultry Management" },
-      { code: "BSAG 502", title: "Mushroom Cultivation" },
-      { code: "BSAG 503", title: "Elementary Crop Physiology" },
-      { code: "BSAG 504", title: "Farm Machinery & Power" },
       {
-        code: "BSAG 505",
-        title: "Farm Management & Natural Resource Economics",
+        code: "BSAC 501",
+        title: "Princples of Integrated Pest and Disease Management",
       },
-      { code: "BSAG 506", title: "Fundamentals of Rural Development" },
       {
-        code: "BSAG 507",
-        title: "Post Harvest Management & Processing of Fruits & Vegetables",
+        code: "BSAC 502",
+        title: "Manures, Fertilizers and Soil Fertility Management",
       },
-      { code: "BSAG 508", title: "Practical Crop Production-I" },
+      {
+        code: "BSAC 503",
+        title: "Pest of Crops and Stored Grains and their Management",
+      },
+      {
+        code: "BSAC 504",
+        title:
+          "Dieases of Field Crops and Horticultural Crops and their Management-I",
+      },
+      { code: "BSAC 505", title: "Crop Improvement-I (Kharif Crops)" },
+      {
+        code: "BSAC 506",
+        title: "Entrepreneurship Development and Business Communication",
+      },
+      {
+        code: "BSAC 507",
+        title: "Geoinformatics and Nano-technology and Precision Farming",
+      },
+      { code: "BSAC 508", title: "Practical Crop Production- I" },
+      { code: "BSAC 509", title: "Intellectual Property Rights (IPR)" },
+      { code: "BSAE 107", title: "Protected Cultivation" },
     ],
   },
   {
     semester: "VI SEMESTER",
     subjects: [
-      { code: "BSAG 601", title: "Farming System & Sustainable Agriculture" },
       {
-        code: "BSAG 602",
-        title: "Conservation & Management of Soil & Water Resources",
+        code: "BSAC-601",
+        title: "Rainfed Agriculture & Watershed Agriculture",
       },
-      { code: "BSAG 603", title: "Ornamental Horticulture" },
-      { code: "BSAG 604", title: "Environment Science" },
-      { code: "BSAG 605", title: "Silviculture & Agroforestry" },
-      { code: "BSAG 606", title: "Seed Production & Processing Technology" },
-      { code: "BSAG 607", title: "Practical Crop Production-II" },
+      {
+        code: "BSAC-602",
+        title: "Protected Cultivation and Secondary Agriculture ",
+      },
+      {
+        code: "BSAC-603",
+        title:
+          "Diseases of Field and Horticultural Crops and Their management-II",
+      },
+      {
+        code: "BSAC-604",
+        title:
+          "Post-harvest Management and Value Addition of Fruits and Vegetables",
+      },
+      { code: "BSAC-605", title: "Management of Beneficial Insects " },
+      { code: "BSAC-606", title: "Crop Improvement -II (Rabi crops)" },
+      {
+        code: "BSAC-607",
+        title: "Practical Crop Production (PCP)-II (Rabi crops)",
+      },
+      { code: "BSAC-608", title: "Principles of Organic Farming" },
+      {
+        code: "BSAC-609",
+        title: "Farm Management Production and Resource Economics",
+      },
+      { code: "BSAC-610", title: "Principles of Food Science and Nutrition" },
+      { code: " BSAE- 102", title: "Agrochemicals (E)" },
     ],
   },
   {
