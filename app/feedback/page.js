@@ -7,6 +7,10 @@ import background from "../../public/footer/background.png";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import { GoDownload } from "react-icons/go";
+import Alumni22 from "../../public/FooterPDf/Alumni22.pdf";
+import Employers22 from "../../public/FooterPDf/Employers22.pdf";
+import students22 from "../../public/FooterPDf/students22.pdf";
+import Teacher22 from "../../public/FooterPDf/Teacher22.pdf";
 import Alumni21 from "../../public/FooterPDf/Alumni21.pdf";
 import Employers21 from "../../public/FooterPDf/Employers21.pdf";
 import Parents21 from "../../public/FooterPDf/Parents21.pdf";
@@ -33,6 +37,24 @@ import Link from "next/link";
 
 function Feedback() {
   const button = [
+    {
+      title: "Feedback 2022-2023",
+      nestedLink: [
+        { title: "Alumni Feedback", linkTo: Alumni22 },
+        {
+          title: "Employers Feedback",
+          linkTo: Employers22,
+        },
+        {
+          title: "Students Feedback",
+          linkTo: students22,
+        },
+        {
+          title: "Teachers Feedback",
+          linkTo: Teacher22,
+        },
+      ],
+    },
     {
       title: "Feedback 2021-2022",
       nestedLink: [
