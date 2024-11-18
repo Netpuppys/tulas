@@ -12,7 +12,7 @@ const carouselImages = [iphoneFrame, iphoneFrame, iphoneFrame];
 
 const Testimonials = () => {
   return (
-    <div className="w-full h-full flex border border-black items-center justify-center gap-10 md:px-40 mt-0 md:mt-20  relative">
+    <div className="w-full min-h-screen md:min-h-96 h-fit flex items-center justify-center gap-10 md:px-40 mt-0 md:mt-10  relative">
       <button
         id="swiper-prev"
         className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 left-0 md:left-10 p-2 rounded-full hover:bg-black hover:bg-opacity-80 text-5xl text-black hover:text-white text-opacity-80 flex items-center justify-center"
@@ -20,15 +20,15 @@ const Testimonials = () => {
         <HiOutlineChevronLeft />
       </button>
 
-      <div className="w-fit hidden md:flex z-10 items-center justify-start md:justify-center h-full md:pb-20 overflow-x-auto">
-        <div className="w-full md:h-[70%]">
-          <Image src={iphoneFrame} className="h-full w-full" alt="" />
+      <div className="w-fit hidden md:flex z-10 items-center justify-start md:justify-center h-full md:pb-10 overflow-x-auto">
+        <div className="w-full md:h-[70%] md:scale-90">
+          <Image src={iphoneFrame} className="h-fit w-full" alt="" />
         </div>
-        <div className="w-full md:h-[70%] md:scale-125 md:rounded-2xl overflow-hidden">
-          <Image src={iphoneFrame} className="h-full w-full" alt="" />
+        <div className="w-full md:h-[70%] md:scale-110 md:rounded-2xl overflow-hidden">
+          <Image src={iphoneFrame} className="h-fit w-full" alt="" />
         </div>
-        <div className="w-full md:h-[70%] rounded-2xl overflow-hidden">
-          <Image src={iphoneFrame} className="h-full w-full" alt="" />
+        <div className="w-full md:h-[70%] md:scale-90 rounded-2xl overflow-hidden">
+          <Image src={iphoneFrame} className="h-fit w-full" alt="" />
         </div>
       </div>
 
