@@ -235,8 +235,7 @@ export const semesterData = [
       { code: "CAT-006", title: "Operating System" },
       { code: "CAT-007", title: "Computer Organization" },
       { code: "CAT-008", title: "Python Programming" },
-    ],
-    labs: [
+      { code: "PRACTICAL" },
       { code: "CAP-001", title: "Database Management System" },
       { code: "CAP-002", title: "Operating System" },
       { code: "CAP-003", title: "Computer Organization" },
@@ -267,8 +266,7 @@ export const semesterData = [
         code: "AHT-304",
         title: "Accounting and Financial Management (Non Credit)",
       },
-    ],
-    labs: [
+      { code: "PRACTICAL" },
       {
         code: "CAP-004",
         title: "Data Structure and Analysis of Algorithms",
@@ -297,16 +295,14 @@ export const semesterData = [
         code: "MCAT-307",
         title: "Any Online Course specified by AICTE on latest technology",
       },
-    ],
-    electives: [
+      { code: "Program Elective" },
       { code: "CAT-16", title: "Big Data Analytics" },
       { code: "CAT-17", title: "Soft Computing" },
       { code: "CAT-18", title: "Internet of Things" },
       { code: "CAT-19", title: "Compiler Design" },
       { code: "CAT-20", title: "Cloud Computing" },
       { code: "CAT-21", title: "Multimedia" },
-    ],
-    labs: [
+      { code: "PRACTICAL" },
       { code: "CAP-008", title: "Software Engineering" },
       { code: "CAP-009", title: "Seminar" },
       { code: "CAP-010", title: "Minor Project" },
@@ -316,15 +312,16 @@ export const semesterData = [
     semester: "MCA IV SEMESTER",
     subjects: [
       { code: "CAT-022", title: "Network Security" },
-      { code: "CAT-0XX", title: "Program Elective 2" },
-      { code: "CAT-0XX", title: "Program Elective 3" },
-    ],
-    electives: [
+      { code: "MCAP 403", title: "Major Project" },
+      { code: "MCAT 42X", title: "Program Elective 2" },
+      { code: "MCAT 43X", title: "Program Elective 3" },
+      { code: "Program Elective 2" },
       { code: "CAT-023", title: "Simulation & Modeling" },
       { code: "CAT-024", title: "Neural Networks" },
       { code: "CAT-025", title: "Advanced Java" },
       { code: "CAT-026", title: "Data Science" },
       { code: "CAT-027", title: "Machine Learning" },
+      { code: "Program Elective 3" },
       { code: "CAT-028", title: "Digital Image Processing" },
       {
         code: "CAT-029",
@@ -336,11 +333,10 @@ export const semesterData = [
       },
       { code: "CAT-031", title: "Block Chain Architecture" },
       { code: "CAT-032", title: "Natural Language Processing" },
-    ],
-    labs: [
+      { code: "Program Elective" },
       { code: "CAP-011", title: "Network Security" },
       { code: "CAP-012", title: "Open Elective 2" },
-      { code: "CAP-013", title: "Major Project" },
+      { code: "CAP 013", title: "Major Project" },
     ],
   },
 ];
