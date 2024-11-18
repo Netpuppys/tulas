@@ -34,8 +34,48 @@ module.exports = {
         increaseWidth: "increaseWidth 0.3s ease",
         decreaseWidth: "decreaseWidth 0.3s ease",
         scaleUp: "scaleUp 0.3s linear",
+        expandCheckpoint: "expandCheckpoint 0.3s ease",
+        swipeRight: "swipeRight 0.5s ease",
+        swipeLeft: "swipeLeft 0.5s ease",
       },
       keyframes: {
+        expandCheckpoint: {
+          "0%": {
+            width: "1rem"
+          }, "80%": {
+            width: "2.7rem",
+            border: "1.5px solid #007A83"
+          }, "100%": {
+            width: "2.5rem",
+            border: "1px solid #007A83"
+          }
+        },
+        swipeRight: {
+          from: {
+            position: "absolute",
+            width: "100%",
+            zIndex: 10,
+            top: 0,
+            right: 0
+          }, to: {
+            position: "relative",
+            width: "50%",
+            zIndex: 0
+          }
+        },
+        swipeLeft: {
+          from: {
+            position: "relative",
+            width: "50%",
+            zIndex: 0
+          }, to: {
+            position: "absolute",
+            width: "100%",
+            zIndex: 10,
+            top: 0,
+            right: 0
+          }
+        },
         scaleUp: {
           from: {
             transform: "scale(1)",

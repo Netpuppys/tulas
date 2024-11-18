@@ -13,6 +13,7 @@ import BannerHome from "@/app/Component/BannerHome";
 import CampusLife from "./Component/CampusLife";
 import Testimonials from "./Component/Testimonials";
 import RankBanner from "./Component/RankBanner";
+import Awards from "./Component/Awards";
 
 const bannerText = (
   <>
@@ -54,6 +55,7 @@ export default function HomePage() {
         <CampusLife />
         <Testimonials />
         <RankBanner />
+        <Awards />
         <Footer />
       </div>
     </>
