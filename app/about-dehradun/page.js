@@ -89,29 +89,29 @@ function Contact() {
               ))}
             </div>
             <div className="w-full p-5 md:p-10 md:pb-40">
-              <div className="w-full overflow-hidden rounded-3xl shadow-2xl bg-white bg-opacity-20 backdrop-blur-lg flex flex-col-reverse md:flex-row">
+              <div className="w-full overflow-hidden h-fit md:h-[51vw] rounded-3xl shadow-2xl bg-white bg-opacity-20 backdrop-blur-lg flex flex-col-reverse md:flex-row items-center">
                 <div
                   // ref={compRef}
                   className="w-full md:w-1/2 py-10 md:py-20 px-6 md:pl-10 md:pr-5 md:border-r-2 border-white"
                 >
-                  <p className="text-white mb-5 text-2xl md:text-3xl font-[CarotSlab] font-medium">
+                  <p className="text-white mb-5 text-[30px] md:text-[clamp(20px,2.2vw,50px)] font-[CarotSlab] font-semibold">
                     Soothe your senses with the beautiful aesthetics offered at{" "}
                     <span className="text-[#E69706]">
                       Tula&apos;s Institute
                     </span>
                   </p>
-                  <div className="text-[#D1D1D1] text-sm md:text-base 2xl:text-lg md:pr-10 text-pretty font-[TTChocolates]">
+                  <div className="text-[#D1D1D1] text-justify font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] md:pr-10 text-pretty font-[TTChocolates]">
                     <Fade delay={500}>{mainDescription}</Fade>
                   </div>
                 </div>
 
                 <div
-                  className={`w-full md:w-1/2 h-[70vh] md:h-fit overflow-hidden`}
+                  className={`w-full md:w-1/2 h-[70vh] md:md:h-[51vw] overflow-hidden`}
                 >
                   <Fade delay={300}>
                     <Image
                       src={hillsImage}
-                      className="w-full h-[70vh] md:h-fit object-cover rounded-3xl"
+                      className="w-full h-[70vh] md:md:h-[51vw] object-cover rounded-3xl"
                       alt="bg"
                     />
                   </Fade>

@@ -14,7 +14,7 @@ const Cards = ({ title, image, description }) => {
       </Fade>
 
       <p className="text-xl font-medium text-[#E69706]">{title}</p>
-      <p className="text-[#D1D1D1] min-h-[200px]">{description}</p>
+      <p className="text-[#D1D1D1] font-medium min-h-[200px]">{description}</p>
     </div>
   );
 };
