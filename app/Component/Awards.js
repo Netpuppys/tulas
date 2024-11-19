@@ -8,7 +8,7 @@ import award2 from "../../public/Homepage/awards/award2.webp"
 import award3 from "../../public/Homepage/awards/award3.webp"
 import award4 from "../../public/Homepage/awards/award4.webp"
 
-const Checkpoint = ({ image, setCount, marginTop, expand, flipped=false }) => {
+const Checkpoint = ({ image, setCount, marginTop, expand, flipped=false, title}) => {
     return (
         <div 
             onClick={() => setCount(marginTop)} 
@@ -18,13 +18,13 @@ const Checkpoint = ({ image, setCount, marginTop, expand, flipped=false }) => {
             <div className='w-full h-full relative'>
                 <Image
                     src={image}
-                    className={`w-full ${expand? "" : "hidden group-hover:block"} h-full rounded-full`}
+                    className={`w-full shadow-awardsLine ${expand? "" : "hidden group-hover:block"} h-full rounded-full`}
                     alt=''
                 />
 
                 <div className={`absolute text-nowrap top-1/2 -translate-y-1/2 px-5 ${flipped? "right-full" : "left-full"}`}>
-                    <p className={`${expand? "text-white" : "text-gray-400 text-opacity-60"}`}>
-                        BIM Detailing
+                    <p className={`${expand? "text-white" : "text-gray-400 text-opacity-60"} capitalize`}>
+                        {title}
                     </p>
                 </div>
             </div>
@@ -67,6 +67,7 @@ const Awards = () => {
         {
             ref: firstRef,
             image: award4,
+            provider: "Times Engineering",
             date: "January 6, 2021",
             title: "Ranked 41 nationwide for placement",
             content: "Ranked 41 nationwide for placement among private engineering colleges in India by the Times Engineering survey 2019."
@@ -74,6 +75,7 @@ const Awards = () => {
         {
             ref: secondRef,
             image: award2,
+            provider: "The Times of india",
             date: "August 28, 2020",
             title: "Every parent wants their kids to get the best education",
             content: "Every parent wants their kids to get the best education. At Tula's Institute, a brilliant faculty comes together with premium facilities to offer students a learning experience of their lifetime. Thanks to this, we are one of India’s top 50 private colleges for engineering by The Times of India. So wait no more, get your kid enrolled now."
@@ -81,6 +83,7 @@ const Awards = () => {
         {
             ref: thirdRef,
             image: award3,
+            provider: "The Times of india",
             date: "January 8, 2020",
             title: "Tula's Institue has been ranked 32",
             content: "Tula's Institue has been ranked 32 among the private engineering colleges in India by Times Engineering Survey 2019."
@@ -88,6 +91,7 @@ const Awards = () => {
         {
             ref: fourthRef,
             image: award1,
+            provider: "ASMA",
             date: "January 6, 2021",
             title: "Tula's is awarded with academic excellence award 2020 by ASMA",
             content: "Tula's is awarded with academic excellence award 2020 by ASMA in the Education Leadership Conclave held on 27th November 2020."
@@ -107,12 +111,12 @@ const Awards = () => {
             const interval = setInterval(() => {
                 setCount((prevCount) => {
                   if (prevCount < 100) {
-                    return prevCount + 0.15;
+                    return prevCount + 0.25;
                   } else {
                     return 4;
                   }
                 });
-              }, 100);
+              }, 25);
           
               return () => clearInterval(interval);
         }
@@ -161,13 +165,13 @@ const Awards = () => {
 
                 <div 
                     style={{ height: `${count}%` }}
-                    className=" top-0 left-0 w-full rounded-full bg-white transition-all duration-400"
+                    className=" top-0 left-0 w-full shadow-awardsLine rounded-full bg-white transition-all duration-400"
                 ></div>
 
-                <Checkpoint image={award4} setCount={setCount} marginTop={5} expand={count>5? true : false} />
-                <Checkpoint image={award2} setCount={setCount} marginTop={35} expand={count>35? true : false} flipped={true} />
-                <Checkpoint image={award3} setCount={setCount} marginTop={65} expand={count>65? true : false} />
-                <Checkpoint image={award1} setCount={setCount} marginTop={95} expand={count>95? true : false} flipped={true} />
+                <Checkpoint image={award4} setCount={setCount} marginTop={5} expand={count>5? true : false} title={awards[0].provider} />
+                <Checkpoint image={award2} setCount={setCount} marginTop={35} expand={count>35? true : false} flipped={true} title={awards[1].provider} />
+                <Checkpoint image={award3} setCount={setCount} marginTop={65} expand={count>65? true : false} title={awards[2].provider} />
+                <Checkpoint image={award1} setCount={setCount} marginTop={95} expand={count>95? true : false} flipped={true} title={awards[3].provider} />
             </div>
         </div>
         <div className={`${inView? "animate-swipeRight relative w-full md:w-1/2" : "absolute w-full top-0 right-0 animate-swipeLeft"} h-full overflow-hidden`}>

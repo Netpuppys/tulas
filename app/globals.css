@@ -123,7 +123,7 @@ span {
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.2) 100%
     ),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url(../public/Homepage/Virtual/BackgroundVirtual.png) lightgray 0px -225.15px /
       100% 130% no-repeat;
   background-size: cover;

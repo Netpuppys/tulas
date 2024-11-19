@@ -14,6 +14,7 @@ module.exports = {
       },
       boxShadow: {
         awardsImage: '0px 9px 40px 4px rgba(0, 0, 0, 0.75)',
+        awardsLine: "0px 0px 20px 2px rgba(255,255,255,0.6)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

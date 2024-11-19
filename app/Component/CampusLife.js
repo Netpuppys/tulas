@@ -65,12 +65,6 @@ const CampusLife = () => {
     }
   }, [imageIndex, scrollRef, contHeight]);
 
-  // useEffect(() => {
-  //     setTimeout(() => {
-  //         setImageIndex(prev => prev+1)
-  //     }, 2000)
-  // }, [imageIndex])
-
   return (
     <div className="w-full flex flex-col items-center justify-start py-8 md:py-20">
       <p className="uppercase text-4xl text-[#007A83] font-semibold tracking-[0.15em]">
@@ -127,8 +121,8 @@ const CampusLife = () => {
           </div>
         </div>
         {/* bottom selector */}
-        <div className="w-full z-30 h-28 md:h-40 absolute bottom-0 translate-y-1/2 bg-transparent px-2 md:px-5 flex items-center justify-center">
-          <div className="shadow-2xl bg-white max-w-[85rem] w-full h-full flex flex-col items-center justify-center px-5 md:px-14 rounded-xl md:rounded-2xl md:rounded-br-[3rem] relative">
+        <div className="w-full z-30 h-28 md:h-40 absolute bottom-0 translate-y-1/2 bg-transparent px-4 md:px-5 flex items-center justify-center">
+          <div className="shadow-2xl bg-white max-w-[85rem] w-full h-full flex flex-col items-center justify-center px-5 md:px-14 rounded-xl md:rounded-2xl relative">
             <button className="absolute -top-8 left-5 uppercase tracking-widest text-xs">
               explore more
             </button>
@@ -139,9 +133,7 @@ const CampusLife = () => {
                   key={index}
                   onClick={() => handleAlbumIndex(index)}
                   style={{
-                    transform: `translateY(${
-                      albumIndex < index ? "0px" : "-5px"
-                    })`,
+                    transform: `translateY(-5px)`,
                   }}
                   className={`uppercase text-[#050505] font-light text-[0.5rem] md:text-base text-nowrap
                             w-1/2`}

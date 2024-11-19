@@ -66,7 +66,7 @@ function VirtualTour() {
   }, [inView]);
 
   return (
-    <div className="w-full h-screen backgroundVirtual flex flex-col">
+    <div className="w-full h-screen backgroundVirtual  flex flex-col">
       <div className="mt-16 md:mt-[6rem] flex flex-col md:mr-[8rem] md:ml-auto text-center items-center">
         <Link href="/virtual-tour/index.html">
           <TbView360Number className="text-white text-[80px]" />
