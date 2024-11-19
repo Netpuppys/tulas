@@ -201,7 +201,7 @@ const page = () => {
           <Vision sections={sectionData.slice(0, 4)} />
 
           <div className="w-full bg-white py-8 md:py-20 flex flex-col items-center justify-center">
-            <p className="text-[#3D001B] font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-8">
+            <p className="text-[#3D001B] font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-8 px-4">
               World Class Infrastructure
             </p>
             <p className="text-[#007A83] text-[clamp(20px,1.8vw,40px)] font-semibold">
