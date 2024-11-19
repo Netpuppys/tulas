@@ -86,7 +86,7 @@ function Contact() {
       button: "+91 98379 83721",
     },
     {
-      title: "PLACEMENT HELPLINE",
+      title: "PLACEMENT HELPLINE NUMBER",
       link: "tel:+91-7454904594",
       button: "+91 74549 04594",
     },
@@ -148,7 +148,7 @@ function Contact() {
                 </Fade>
               ))}
             </div>
-            <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex flex-col md:flex-row items-center md:items-end justify-center gap-10 md:gap-14">
+            <div className="bg-transparent w-fit p-10 py-20 mx-auto h-fit text-pretty flex flex-col md:flex-row items-center md:items-center justify-center gap-10 md:gap-14">
               {mobileContact.map((mobileContact, index) => (
                 <Fade delay={300}>
                   <div
