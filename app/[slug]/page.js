@@ -9,17 +9,17 @@ import "../Blog.css";
 import background from "../../public/AboutDehradun/background.png";
 import { notFound } from "next/navigation"; // Import notFound function
 
-export const revalidate = 60; // ISR revalidation every 60 seconds
+export const revalidate = 80; // ISR revalidation every 60 seconds
 
 export async function generateStaticParams() {
   const response1 = await fetch(
-    "https://tulas.edu.in/wp-json/wp/v2/posts?page=1&per_page=10"
+    "https://tulas.edu.in/wp-json/wp/v2/posts?page=1&per_page=18"
   );
   const response2 = await fetch(
-    "https://tulas.edu.in/wp-json/wp/v2/posts?page=2&per_page=10"
+    "https://tulas.edu.in/wp-json/wp/v2/posts?page=2&per_page=18"
   );
   const response3 = await fetch(
-    "https://tulas.edu.in/wp-json/wp/v2/posts?page=3&per_page=10"
+    "https://tulas.edu.in/wp-json/wp/v2/posts?page=3&per_page=18"
   );
   const data1 = await response1.json();
   const data2 = await response2.json();
