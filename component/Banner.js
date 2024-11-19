@@ -4,14 +4,14 @@ import React from "react";
 function Banner({ image, belowTitle, belowPara, title, description }) {
   return (
     <div className={`${(belowPara || belowTitle)? "md:min-h-screen" : ""}  w-full z-40 bg-white`}>
-      <div className="h-[100vh] md:h-[71vh] w-full relative">
+      <div className="h-[100vh] md:h-[79vh] w-full relative">
         <Image
           src={image}
           alt=""
           className="w-full h-full object-cover absolute"
         />
         <div className="bottom-8 px-8 md:bottom-10 z-10 absolute ">
-          <h3 className="text-[40px] md:text-[60px] text-white z-10 font-[CarotSlab]">
+          <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-white z-10 font-[CarotSlab]">
             {title}
           </h3>
           <h4 className="w-full md:w-[50%] text-justify text-white text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates]">
@@ -19,7 +19,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           </h4>
         </div>
       </div>
-      {(belowPara || belowTitle) && <div className="min-h-fit py-16 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-8 mx-auto">
+      {(belowPara || belowTitle) && <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-8 mx-auto">
         <h3 className="text-2xl font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-left mb-3">
           {belowTitle}
         </h3>

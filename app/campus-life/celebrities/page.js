@@ -63,14 +63,14 @@ function Celebrities() {
               className="w-full h-full object-cover absolute"
             />
             <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-              <h3 className="text-[40px] md:text-[60px] text-[#007A83] z-10 font-[CarotSlab]">
+              <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-[#007A83] z-10 font-[CarotSlab]">
                 Celebrities
               </h3>
             </div>
           </div>
         </div>
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
+          <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
             DEHRADUN INTERNATIONAL FILM FESTIVAL
           </h3>
           <Image
@@ -78,7 +78,7 @@ function Celebrities() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%]  mx-auto mb-4"
           />
-          <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
+          <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
             The{" "}
             <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
               Tulas Institute{" "}

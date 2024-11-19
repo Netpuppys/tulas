@@ -24,7 +24,7 @@ function Vision({ sections }) {
             >
               <Fade delay={300} className="w-full md:px-0 md:w-[45%]">
                 <div className="w-full block">
-                  <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] font-semibold rounded-md text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 border-white">
+                  <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 border-white">
                     {section.title}
                   </h3>
                   <br />
