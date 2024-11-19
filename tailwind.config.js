@@ -12,6 +12,9 @@ module.exports = {
       screens: {
         "mdNavbar": "880px",
       },
+      boxShadow: {
+        awardsImage: '0px 9px 40px 4px rgba(0, 0, 0, 0.75)',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -35,8 +38,10 @@ module.exports = {
         decreaseWidth: "decreaseWidth 0.3s ease",
         scaleUp: "scaleUp 0.3s linear",
         expandCheckpoint: "expandCheckpoint 0.3s ease",
-        swipeRight: "swipeRight 0.5s ease",
-        swipeLeft: "swipeLeft 0.5s ease",
+        swipeRight: "swipeRight 0.8s ease",
+        swipeLeft: "swipeLeft 0.8s ease 1s",
+        awardHover: "awardHover 0.5s ease",
+        awardImageHover: "awardImageHover 0.5s ease 0.5s",
       },
       keyframes: {
         expandCheckpoint: {
@@ -48,6 +53,28 @@ module.exports = {
           }, "100%": {
             width: "2.5rem",
             border: "1px solid #007A83"
+          }
+        },
+        awardHover: {
+          from: {
+            maxHeight: "25rem",
+            height: "25rem",
+            overflow: "hidden"
+          }, to: {
+            maxHeight: "40rem",
+            height: "40rem",
+            overflow: "hidden"
+          }
+        },
+        awardImageHover: {
+          from: {
+            objectFit: "cover",
+            borderRadius: "0px",
+            dropShadow: "none"
+          }, to: {
+            objectFit: "contain",
+            borderRadius: "20px",
+            dropShadow: "0px 9px 40px 4px rgba(0, 0, 0, 0.75)"
           }
         },
         swipeRight: {
@@ -199,5 +226,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 };

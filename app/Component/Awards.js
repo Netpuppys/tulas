@@ -1,29 +1,57 @@
 import React, { useEffect, useRef, useState } from 'react'
-import background from "../../public/AboutDehradun/background.png"
 import { FaPause, FaPlay } from "react-icons/fa";
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
+import background from "../../public/Homepage/awards/image.png"
+import award1 from "../../public/Homepage/awards/award1.webp"
+import award2 from "../../public/Homepage/awards/award2.webp"
+import award3 from "../../public/Homepage/awards/award3.webp"
+import award4 from "../../public/Homepage/awards/award4.webp"
 
-const Checkpoint = ({ setCount, marginTop, expand, flipped=false }) => {
+const Checkpoint = ({ image, setCount, marginTop, expand, flipped=false }) => {
     return (
         <div 
             onClick={() => setCount(marginTop)} 
             style={{ top: `${marginTop}%`}} 
-            className={`absolute ${expand? "w-10 border border-[#007A83] animate-expandCheckpoint" : "w-4 hover:w-10 hover:border hover:border-[#007A83] hover:animate-expandCheckpoint"} group cursor-pointer shadow-2xl aspect-square left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center rounded-full bg-slate-400`}
+            className={`absolute ${expand? "w-10 border border-[#007A83] animate-expandCheckpoint" : "w-4 hover:w-10 hover:border hover:border-[#007A83] hover:animate-expandCheckpoint"} group cursor-pointer shadow-2xl aspect-square left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center rounded-full bg-gray-400`}
         >
             <div className='w-full h-full relative'>
                 <Image
-                    src={background}
+                    src={image}
                     className={`w-full ${expand? "" : "hidden group-hover:block"} h-full rounded-full`}
                     alt=''
                 />
 
                 <div className={`absolute text-nowrap top-1/2 -translate-y-1/2 px-5 ${flipped? "right-full" : "left-full"}`}>
-                    <p className={`${expand? "text-[#007A83]" : "text-white"}`}>
+                    <p className={`${expand? "text-white" : "text-gray-400 text-opacity-60"}`}>
                         BIM Detailing
                     </p>
                 </div>
             </div>
+        </div>
+    )
+}
+
+const Card = ({ image, date, title, content }) => {
+    return (
+        <div className='w-full max-w-[45vw] px-10'>
+            <div className='w-full mb-10 max-h-[25rem] group hover:animate-awardHover hover:max-h-[40rem] hover:h-[40rem] h-[25rem] group rounded-[20px] hover:shadow-none shadow-awardsImage overflow-hidden hover:overflow-y-scroll flex items-center justify-center'>
+                <Image  
+                    src={image}
+                    className='w-full h-full object-cover group-hover:w-fit group-hover:animate-awardImageHover delay-500 group-hover:object-contain group-hover:rounded-[20px]'
+                    alt=''
+                />
+            </div>
+            <p className='text-2xl text-white font-bold'>
+                {title}
+            </p>
+            <p className='text-sm text-white opacity-80'>
+                {date}
+            </p>
+            <div className='w-full h-[1px] my-4 bg-white bg-opacity-50 rounded-full'></div>
+            <p className='text-white'>
+                {content}
+            </p>
         </div>
     )
 }
@@ -35,9 +63,40 @@ const Awards = () => {
     const thirdRef = useRef(null)
     const fourthRef = useRef(null)
 
+    const awards = [
+        {
+            ref: firstRef,
+            image: award4,
+            date: "January 6, 2021",
+            title: "Ranked 41 nationwide for placement",
+            content: "Ranked 41 nationwide for placement among private engineering colleges in India by the Times Engineering survey 2019."
+        },
+        {
+            ref: secondRef,
+            image: award2,
+            date: "August 28, 2020",
+            title: "Every parent wants their kids to get the best education",
+            content: "Every parent wants their kids to get the best education. At Tula's Institute, a brilliant faculty comes together with premium facilities to offer students a learning experience of their lifetime. Thanks to this, we are one of India’s top 50 private colleges for engineering by The Times of India. So wait no more, get your kid enrolled now."
+        },
+        {
+            ref: thirdRef,
+            image: award3,
+            date: "January 8, 2020",
+            title: "Tula's Institue has been ranked 32",
+            content: "Tula's Institue has been ranked 32 among the private engineering colleges in India by Times Engineering Survey 2019."
+        },
+        {
+            ref: fourthRef,
+            image: award1,
+            date: "January 6, 2021",
+            title: "Tula's is awarded with academic excellence award 2020 by ASMA",
+            content: "Tula's is awarded with academic excellence award 2020 by ASMA in the Education Leadership Conclave held on 27th November 2020."
+        },
+    ]
+
     const { ref, inView } = useInView({
         triggerOnce: false, 
-        threshold: 0.3,
+        threshold: 0.6,
       });
 
     const [ count, setCount ] = useState(4);
@@ -88,8 +147,8 @@ const Awards = () => {
     }, [count]);
 
   return (
-    <div ref={ref} className='w-full h-screen flex md:flex-row flex-col bg-black relative md:-mb-[6vh]'>
-        <div className='w-full md:w-1/2 h-fit md:h-full flex items-center justify-center bg-[#3D001B] py-20 relative'>
+    <div ref={ref} className='w-full h-screen flex md:flex-row flex-col relative md:-mb-[6vh]'>
+        <div className='w-full md:w-1/2 h-fit md:h-full flex items-center justify-center bg-[#230512] py-20 relative'>
 
             <button 
                 onClick={() => setPlay(prev => !prev)}
@@ -98,17 +157,17 @@ const Awards = () => {
                 {play? <FaPlay /> : <FaPause />}
             </button>
 
-            <div className='h-[90%] w-[2px] bg-opacity-40 bg-gray-400 relative rounded-full'>
+            <div className='h-[90%] w-[2px] bg-gray-400 relative rounded-full'>
 
                 <div 
                     style={{ height: `${count}%` }}
-                    className=" top-0 left-0 w-full rounded-full bg-[#007A83] transition-all duration-400"
+                    className=" top-0 left-0 w-full rounded-full bg-white transition-all duration-400"
                 ></div>
 
-                <Checkpoint setCount={setCount} marginTop={5} expand={count>5? true : false} />
-                <Checkpoint setCount={setCount} marginTop={35} expand={count>35? true : false} flipped={true} />
-                <Checkpoint setCount={setCount} marginTop={65} expand={count>65? true : false} />
-                <Checkpoint setCount={setCount} marginTop={95} expand={count>95? true : false} flipped={true} />
+                <Checkpoint image={award4} setCount={setCount} marginTop={5} expand={count>5? true : false} />
+                <Checkpoint image={award2} setCount={setCount} marginTop={35} expand={count>35? true : false} flipped={true} />
+                <Checkpoint image={award3} setCount={setCount} marginTop={65} expand={count>65? true : false} />
+                <Checkpoint image={award1} setCount={setCount} marginTop={95} expand={count>95? true : false} flipped={true} />
             </div>
         </div>
         <div className={`${inView? "animate-swipeRight relative w-full md:w-1/2" : "absolute w-full top-0 right-0 animate-swipeLeft"} h-full overflow-hidden`}>
@@ -117,41 +176,17 @@ const Awards = () => {
                 className='absolute z-[1] top-0 left-0 w-full scale-150 h-full'
                 alt=''
             />
-            <div ref={scrollRef} className='w-full max-w-full flex items-center justify-start flex-col max-h-full h-full overflow-y-auto px-10 relative z-[2]'>
+            <div ref={scrollRef} className='w-full max-w-full flex items-center justify-start flex-col max-h-full h-full overflow-y-auto bg-black bg-opacity-40 px-10 relative z-[2]'>
                 <div className='w-full max-w-[50vw] h-fit'>
-
-                    <div ref={firstRef} className='w-full h-screen flex items-center justify-center'>
-                        <p className=' text-white font-bold text-sm md:text-3xl'>
-                            1 Furcare Summary
-                            Overview:
-                            Furcare is an all-in-one platform for pet care, catering to the needs of pet owners, veterinarians, and service providers. It aims to streamline pet health management by integrating features such as pet profiles, veterinary appointments, grooming services, daycare bookings, and a marketplace for pet products. The project leverages Flutter for cross-platform mobile apps, with backend support via Laravel, ensuring scalability, security, and accessibility.
-                        </p>
-                    </div>
-
-                    <div ref={secondRef} className='w-full h-screen flex items-center justify-center'>
-                        <p className=' text-white font-bold text-sm md:text-3xl'>
-                            2 Furcare Summary
-                            Overview:
-                            Furcare is an all-in-one platform for pet care, catering to the needs of pet owners, veterinarians, and service providers. It aims to streamline pet health management by integrating features such as pet profiles, veterinary appointments, grooming services, daycare bookings, and a marketplace for pet products. The project leverages Flutter for cross-platform mobile apps, with backend support via Laravel, ensuring scalability, security, and accessibility.
-                        </p>
-                    </div>
-
-                    <div ref={thirdRef} className='w-full h-screen flex items-center justify-center'>
-                        <p className=' text-white font-bold text-sm md:text-3xl'>
-                            3 Furcare Summary
-                            Overview:
-                            Furcare is an all-in-one platform for pet care, catering to the needs of pet owners, veterinarians, and service providers. It aims to streamline pet health management by integrating features such as pet profiles, veterinary appointments, grooming services, daycare bookings, and a marketplace for pet products. The project leverages Flutter for cross-platform mobile apps, with backend support via Laravel, ensuring scalability, security, and accessibility.
-                        </p>
-                    </div>
-
-                    <div ref={fourthRef} className='w-full h-screen flex items-center justify-center'>
-                        <p className=' text-white font-bold text-sm md:text-3xl'>
-                            4 Furcare Summary
-                            Overview:
-                            Furcare is an all-in-one platform for pet care, catering to the needs of pet owners, veterinarians, and service providers. It aims to streamline pet health management by integrating features such as pet profiles, veterinary appointments, grooming services, daycare bookings, and a marketplace for pet products. The project leverages Flutter for cross-platform mobile apps, with backend support via Laravel, ensuring scalability, security, and accessibility.
-                        </p>
-                    </div>
-
+                    {awards.map((item, id) => (
+                    <div key={id} ref={item.ref} className='w-full h-screen flex items-center justify-center'>
+                        <Card
+                            image={item.image}
+                            date={item.date}
+                            title={item.title}
+                            content={item.content}
+                        />
+                    </div>))}
                 </div>
             </div>
         </div>
