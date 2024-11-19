@@ -70,7 +70,7 @@ module.exports = {
         awardImageHover: {
           from: {
             objectFit: "cover",
-            borderRadius: "0px",
+            borderRadius: "20px",
             dropShadow: "none"
           }, to: {
             objectFit: "contain",
