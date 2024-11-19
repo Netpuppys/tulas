@@ -81,7 +81,7 @@ function Celebrities() {
           <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
             The{" "}
             <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
-              Tulas Institute{" "}
+              Tula's Institute{" "}
             </span>
             hosts the prestigious
             <span className="font-black text-[#3D001B] font-[TTChocolatesBold]">
@@ -98,7 +98,7 @@ function Celebrities() {
             regional cinema, creativity, and learning at
             <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
               {" "}
-              Tulas Institute.
+              Tula's Institute.
             </span>
           </p>
         </div>

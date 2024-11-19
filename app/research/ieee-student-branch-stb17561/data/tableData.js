@@ -101,7 +101,7 @@ const tableData = [
   },
   {
     id: 15,
-    name: "IEEESBTULAS members meeting",
+    name: "IEEESBTula's members meeting",
     date: "10-Jul-23",
     category: "Administrative",
     code: "STB17561",

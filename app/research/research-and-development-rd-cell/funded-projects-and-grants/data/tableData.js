@@ -585,7 +585,7 @@ const tableData = [
       },
       {
         id: 15,
-        name: "STC on Application of Remote Sensing & GIS at Tulas",
+        name: "STC on Application of Remote Sensing & GIS at Tula's",
         principalInvestigator: "Mr. Rohin sharma",
         department: "Civil",
         amount: "₹2,45,190/-",
@@ -594,7 +594,7 @@ const tableData = [
       },
       {
         id: 16,
-        name: "STC on Application of Remote Sensing & GIS at Tulas",
+        name: "STC on Application of Remote Sensing & GIS at Tula's",
         principalInvestigator: "Mr. Rohin sharma",
         department: "Civil",
         amount: "₹2,45,190/-",

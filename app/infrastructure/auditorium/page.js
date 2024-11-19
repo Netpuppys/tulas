@@ -48,7 +48,7 @@ function Auditorium() {
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "The auditorium at Tulas Institute in Dehradun is a modern facility designed to host a variety of events, including seminars, conferences, and cultural programs. It is equipped with state-of-the-art audio-visual technology, providing an ideal environment for both academic and extracurricular activities."
+              "The auditorium at Tula's Institute in Dehradun is a modern facility designed to host a variety of events, including seminars, conferences, and cultural programs. It is equipped with state-of-the-art audio-visual technology, providing an ideal environment for both academic and extracurricular activities."
             }
           />
           {/* fixed background */}

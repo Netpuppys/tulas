@@ -184,7 +184,7 @@ const Footer = ({ set = false, color = false }) => {
               </h4>
             </div>
             <p className="text-[20px] md:text-[clamp(10px,1.1vw,20px)] text-center md:text-start font-[TTChocolates] mb-8">
-              Tulas Institute, Dhoolkot Near Selaqui, Dhulkot Rd, Dehradun,
+              Tula's Institute, Dhoolkot Near Selaqui, Dhulkot Rd, Dehradun,
               <strong className="text-[#E69706]"> Uttarakhand</strong>
             </p>
             <iframe

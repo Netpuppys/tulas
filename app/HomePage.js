@@ -17,17 +17,17 @@ import Awards from "./Component/Awards";
 
 const bannerText = (
   <>
-    <span className="text-[#007A83] font-[TTChocolatesBold] font-semibold">
+    <span className=" font-[TTChocolatesBold] font-semibold">
       Tula's Institute
     </span>{" "}
     was established in 2006, under the aegis of{" "}
-    <span className="text-[#007A83] font-[TTChocolatesBold] font-semibold">
-      Rishabh Educational Trust, Dehradun
-    </span>{" "}
-    with the vision of offering excellent academics along with fostering the
-    professional and personal personas of every student of the institute. Tulas
-    Institute is dedicated to serve the communities by recognizing the diverse
-    needs of individuals.
+    <span className=" font-[TTChocolatesBold] font-semibold">
+      Rishabh Educational Trust
+    </span>
+    , Dehradun with the vision of offering excellent academics along with
+    fostering the professional and personal personas of every student of the
+    Institution. Tula's is dedicated to serve the communities by recognizing the
+    diverse needs of individuals.
   </>
 );
 
@@ -41,11 +41,19 @@ export default function HomePage() {
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar setState={setIsChecked} />
         <BannerHome isChecked={isChecked} />
-        <div className="w-full py-16 flex items-center justify-center px-10">
+        <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-[70%] px-8 mx-auto">
+          <h3 className="text-2xl uppercase font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-center mb-6">
+            Tula's Institute
+          </h3>
+          <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-center font-[TTChocolates] text-[#404040]">
+            {bannerText}
+          </h4>
+        </div>
+        {/* <div className="w-full py-16 flex items-center justify-center px-10">
           <p className="text-[#404040] text-[clamp(15px,4.5vw,30px)] text-justify md:text-xl font-[TTChocolates] max-w-[40rem] text-wrap">
             {bannerText}
           </p>
-        </div>
+        </div> */}
         <AboutTulas />
         <WhyTulasScroll parentRef={parentRef} />
         <Courses parentRef={parentRef} />

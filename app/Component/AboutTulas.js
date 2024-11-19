@@ -9,7 +9,7 @@ import axios from "axios";
 
 const aboutTulas = (
   <>
-    Tulas Institute was established in 2006, under the aegis of Rishabh
+    Tula's Institute was established in 2006, under the aegis of Rishabh
     Educational Trust, Dehradun with the vision of offering excellent academics
     along with fostering the professional and personal personas of every student
     of the institute. Tula’s Institute is dedicated to serve the communities by

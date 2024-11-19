@@ -18,7 +18,7 @@ function Accreditation() {
           <div className="flex items-center gap-4">
             <div className="w-[4rem] h-[1px] bg-[#E69706]"></div>
             <h4 className="text-black text-[30px] md:text-[60px] w-fit font-[Oswald] right-0 tracking-[3px] leading-[74px]">
-              ACCREDITATION
+              ACCREDITATIONS
             </h4>
           </div>
         </Fade>

@@ -18,12 +18,12 @@ const page = () => {
     <>
       <head>
         <title>
-          B.Tech at Tulas College: Engineering Excellence - B.Tech Degree
+          B.Tech at Tula's College: Engineering Excellence - B.Tech Degree
           Program
         </title>
         <meta
           name="description"
-          content="B.Tech at Tulas College: Offering cutting-edge engineering education across various disciplines, fostering innovation and enabling graduates to make a significant impact in the engineering field."
+          content="B.Tech at Tula's College: Offering cutting-edge engineering education across various disciplines, fostering innovation and enabling graduates to make a significant impact in the engineering field."
         />
       </head>
       <body>

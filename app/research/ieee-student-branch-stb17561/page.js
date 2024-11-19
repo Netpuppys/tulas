@@ -38,12 +38,12 @@ function IICEvents() {
               <>
                 IEEE is the world’s largest professional association advancing
                 innovation and technological excellence for the benefit of
-                humanity. IEEE-Tulas Student Branch organizes talks, tutorials,
+                humanity. IEEE-Tula's Student Branch organizes talks, tutorials,
                 hands-on workshops, industrial visits and distinguishes lectures
                 with an intention to reach out to students, faculties and
                 industry professionals. The programs are an exercise in life
                 long learning and are offered for the continuing education and
-                skill upgradation of professionals. IEEE-Tulas Student Branch
+                skill upgradation of professionals. IEEE-Tula's Student Branch
                 aims to create an awareness among the students community about
                 the recent advancements and to make them aware of the industry
                 standards and expectations; thereby bridging the gap between

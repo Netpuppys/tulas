@@ -43,7 +43,7 @@ function LectureTheater() {
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "The lecture theatres at Tulas Institute are spacious and well-equipped with advanced audio-visual aids, offering an optimal setting for interactive learning and discussions. They are designed to facilitate a comfortable and engaging educational experience for students."
+              "The lecture theatres at Tula's Institute are spacious and well-equipped with advanced audio-visual aids, offering an optimal setting for interactive learning and discussions. They are designed to facilitate a comfortable and engaging educational experience for students."
             }
           />
           {/* fixed background */}

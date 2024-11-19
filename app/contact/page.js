@@ -63,7 +63,7 @@ function Contact() {
       title: "ADDRESS",
       image: address,
       description:
-        "Tulas Institute Mehre Ka Gaon PO Selaqui Dhoolkot Dehradun Uttarakhand 248011",
+        "Tula's Institute Mehre Ka Gaon PO Selaqui Dhoolkot Dehradun Uttarakhand 248011",
       link: "https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D",
     },
     {
@@ -188,7 +188,7 @@ function Contact() {
             <div className="bg-[#000] bg-opacity-80 h-fit md:h-[450px] text-[#D2D2D2] gap-5 absolute bottom-28 md:bottom-0 self-end md:right-16 w-full md:w-[300px] md:top-0 z-40 px-10 flex flex-col py-5 md:py-3 justify-center">
               <Image src={TulasFooter} alt="" />
               <h4 className="py-8 border-y-[1px] border-white font-[CarotSlab] text-[16px] md:text-[18px]">
-                Tulas Institute, Dhoolkot Near Selaqui, Dhulkot Rd, Dehradun,
+                Tula's Institute, Dhoolkot Near Selaqui, Dhulkot Rd, Dehradun,
                 Uttarakhand, 248011
               </h4>
               <h3 className="font-[CarotSlab] md:text-[18px]">

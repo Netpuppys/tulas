@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
-import Banner1 from "../../public/Homepage/BannerHome/Banner1.webp";
-import Banner2 from "../../public/Homepage/BannerHome/Banner1.webp";
-import Banner3 from "../../public/Homepage/BannerHome/Banner1.webp";
-import Banner4 from "../../public/Homepage/BannerHome/Banner1.webp";
-import Banner5 from "../../public/Homepage/BannerHome/Banner1.webp";
+import Banner1 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
+import Banner2 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
+import Banner3 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
+import Banner4 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
+import Banner5 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
 function BannerHome({ isChecked }) {

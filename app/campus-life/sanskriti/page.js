@@ -13,7 +13,7 @@ function Sanskriti() {
     {
       title: "Sanskriti",
       description:
-        "Sanskriti is the vibrant and highly anticipated annual cultural fest of Tulas Institute, Dehradun, bringing together students, faculty, and renowned artists from bollywood in a joyous fusion of creativity and talent. The fest features a diverse display of cultural programs, from dance, singing, fashion show performances, as well as star-studded celebrity shows where popular singers and musicians mesmerize the audience with their exceptional talents. Sanskriti is more than just an event; its a platform for students to explore their creative potential, gain new experiences, and create lasting memories, celebrating culture, talent, and the spirit of togetherness.",
+        "Sanskriti is the vibrant and highly anticipated annual cultural fest of Tula's Institute, Dehradun, bringing together students, faculty, and renowned artists from bollywood in a joyous fusion of creativity and talent. The fest features a diverse display of cultural programs, from dance, singing, fashion show performances, as well as star-studded celebrity shows where popular singers and musicians mesmerize the audience with their exceptional talents. Sanskriti is more than just an event; its a platform for students to explore their creative potential, gain new experiences, and create lasting memories, celebrating culture, talent, and the spirit of togetherness.",
       image: sanskriti,
     },
   ];
