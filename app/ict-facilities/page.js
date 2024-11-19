@@ -127,7 +127,7 @@ function ICTFacilities() {
                     borderRadius: "26px",
                     border: "1px solid #A3A3A3",
                   }}
-                  className="bg-transparent w-[9rem] md:w-[16rem] h-fit relative rounded-xl flex flex-col items-center justify-start group hover:shadow-2xl transition-all ease-in-out delay-50 duration-200"
+                  className="bg-transparent w-[calc(50%-1.5rem)] md:w-[16rem] h-fit relative rounded-xl flex flex-col items-center justify-start group hover:shadow-2xl transition-all ease-in-out delay-50 duration-200"
                 >
                   <Image
                     src={card.image}
@@ -137,7 +137,7 @@ function ICTFacilities() {
                   <p className="font-semibold text-white text-center text-base md:text-xl tracking-tight p-3">
                     {card.title}
                   </p>
-                  <p className="text-[#D3D3D3] text-[12px] md:text-[15px] text-center p-3 pt-0">
+                  <p className="text-[#D3D3D3] h-[138px] md:h-fit text-[12px] md:text-[15px] text-center p-3 pt-0">
                     {card.description}
                   </p>
                 </div>

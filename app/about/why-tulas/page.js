@@ -197,9 +197,7 @@ const page = () => {
               <div className="w-full h-full bg-[linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),linear-gradient(0deg,rgba(61,0,27,0.72),rgba(61,0,27,0.72))] bg-cover bg-no-repeat bg-lightgray" />
             </div>
           </div>
-
           <Vision sections={sectionData.slice(0, 4)} />
-
           <div className="w-full bg-white py-8 md:py-20 flex flex-col items-center justify-center">
             <p className="text-[#3D001B] font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-8 px-4">
               World Class Infrastructure

@@ -97,7 +97,7 @@ function Vibgyor() {
           <Image
             src={vibgyorMain}
             alt=""
-            className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%]  mx-auto mb-4"
+            className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
           <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
             <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
