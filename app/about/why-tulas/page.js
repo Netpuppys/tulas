@@ -201,7 +201,7 @@ const page = () => {
           <Vision sections={sectionData.slice(0, 4)} />
 
           <div className="w-full bg-white py-8 md:py-20 flex flex-col items-center justify-center">
-            <p className="text-[#3D001B] text-[clamp(24px,2.2vw,45px)] font-bold underline underline-offset-8">
+            <p className="text-[#3D001B] font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-8">
               World Class Infrastructure
             </p>
             <p className="text-[#007A83] text-[clamp(20px,1.8vw,40px)] font-semibold">
@@ -212,7 +212,7 @@ const page = () => {
               className="py-4 md:py-8 w-[95%] md:w-[80%] h-fit"
               alt=""
             />
-            <p className="text-[#262626] text-center text-md md:text-xl px-4 w-[90%] md:w-[75%]">
+            <p className="text-[#262626] text-justify md:text-center text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] px-4 w-[90%] md:w-[75%]">
               {bannerText}
             </p>
           </div>

@@ -28,7 +28,7 @@ function Vision({ sections }) {
                     {section.title}
                   </h3>
                   <br />
-                  <h5 className="text-[16px] md:text-[clamp(16px,1.3vw,50px)] text-justify font-[TTChocolates] text-[#D9D9D9]">
+                  <h5 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify font-[TTChocolates] text-[#D9D9D9]">
                     {section.description}
                   </h5>
                 </div>
