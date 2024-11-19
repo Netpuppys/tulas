@@ -318,10 +318,10 @@ const sitemap = [
         title: "Entrepreneurship Development Cell",
         linkTo: "/research/entrepreneurship-development-cell/",
       },
-      {
-        title: "Web Development Cell",
-        linkTo: "/research/web-development-cell/",
-      },
+      // {
+      //   title: "Web Development Cell",
+      //   linkTo: "/research/web-development-cell/",
+      // },
       {
         title: "Institute Innovation Council",
         linkTo: "/research/institute-innovation-council-iic/",

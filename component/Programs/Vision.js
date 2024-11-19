@@ -38,12 +38,12 @@ function Vision({ sections }) {
                   <Image
                     src={section.image}
                     alt=""
-                    className={`w-full h-fit rounded-xl md:rounded-none md:rounded-e-3xl ${
+                    className={`w-full h-fit ${
                       inView
                         ? index % 2 !== 0
-                          ? "md:animate-translateLeftImage "
-                          : "md:animate-translateRightImage "
-                        : "md:opacity-0 "
+                          ? "md:animate-translateLeftImage rounded-xl md:rounded-none md:rounded-e-3xl"
+                          : "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-e-3xl"
+                        : "rounded-xl md:opacity-0"
                     }`}
                   />
                 )}

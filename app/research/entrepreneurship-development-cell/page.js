@@ -9,8 +9,45 @@ import background from "../../../public/research/entrepreneurship-development-ce
 import intellectual from "../../../public/research/intellectual/intellectual.png";
 import Vision from "@/component/Programs/Vision";
 import innovationAndStartupPolicy from "../../../public/research/innovation-and-startup-policy.pdf";
+import SlidingCarousel from "../intellectual-property-rights-ipr-cell/patent/components/SlidingCarousel";
+import EPR1 from "../../../public/research/entrepreneurship-development-cell/EPR1.png";
+import EPR2 from "../../../public/research/entrepreneurship-development-cell/EPR2.png";
+import EPR3 from "../../../public/research/entrepreneurship-development-cell/EPR3.png";
+import EPR4 from "../../../public/research/entrepreneurship-development-cell/EPR4.png";
+import EPR5 from "../../../public/research/entrepreneurship-development-cell/EPR5.png";
+import EPR6 from "../../../public/research/entrepreneurship-development-cell/EPR6.png";
+import EPR7 from "../../../public/research/entrepreneurship-development-cell/EPR7.png";
+import EPR8 from "../../../public/research/entrepreneurship-development-cell/EPR8.png";
+import EPR9 from "../../../public/research/entrepreneurship-development-cell/EPR9.png";
+import EPR10 from "../../../public/research/entrepreneurship-development-cell/EPR10.png";
+import EPR11 from "../../../public/research/entrepreneurship-development-cell/EPR11.png";
+import EPR12 from "../../../public/research/entrepreneurship-development-cell/EPR12.png";
+import EPR13 from "../../../public/research/entrepreneurship-development-cell/EPR13.png";
+import EPR14 from "../../../public/research/entrepreneurship-development-cell/EPR14.png";
+import EPR15 from "../../../public/research/entrepreneurship-development-cell/EPR15.png";
+import EPR16 from "../../../public/research/entrepreneurship-development-cell/EPR16.png";
+import EPR17 from "../../../public/research/entrepreneurship-development-cell/EPR17.png";
 
 function EntrepreneurshipDevelopmentCell() {
+  const patentImages = [
+    EPR1,
+    EPR2,
+    EPR3,
+    EPR4,
+    EPR5,
+    EPR6,
+    EPR7,
+    EPR8,
+    EPR9,
+    EPR10,
+    EPR11,
+    EPR12,
+    EPR13,
+    EPR14,
+    EPR15,
+    EPR16,
+    EPR17,
+  ];
   const sections = [
     {
       title: "Entrepreneurship Development",
@@ -124,6 +161,14 @@ function EntrepreneurshipDevelopmentCell() {
           >
             Innovation and Startup Policy
           </button>
+          <div className="px-8 md:px-32 w-full flex flex-col items-center justify-center">
+            <h3 className="font-[CarotSlab] text-[clamp(25px,3vw,75px)]">
+              Startup & Entrepreneurship development Cell
+            </h3>
+          </div>
+          <div className="w-full">
+            <SlidingCarousel items={patentImages} />
+          </div>
           <div className="w-full h-fit z-50">
             <Footer color={true} />
           </div>

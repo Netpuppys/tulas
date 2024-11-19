@@ -6,8 +6,6 @@ import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../../public/research/r-and-cell/journal/background.png";
-import { useInView } from "react-intersection-observer";
-import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import TableComponent from "./data/tableData";
 import patent1 from "../../../../public/research/patents/patent1.jpg";
 import patent2 from "../../../../public/research/patents/patent2.png";
@@ -23,10 +21,7 @@ import CarouselProgram from "@/component/Programs/CrouselProgram";
 import SlidingCarousel from "./components/SlidingCarousel";
 
 function Patent() {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
+  
   const patentImages = [
     patent1,
     patent2,
