@@ -99,7 +99,7 @@ const Awards = () => {
     ]
 
     const { ref, inView } = useInView({
-        triggerOnce: false, 
+        triggerOnce: true, 
         threshold: 0.6,
       });
 
@@ -116,7 +116,7 @@ const Awards = () => {
                     return 4;
                   }
                 });
-              }, 25);
+              }, 50);
           
               return () => clearInterval(interval);
         }
@@ -165,7 +165,7 @@ const Awards = () => {
 
                 <div 
                     style={{ height: `${count}%` }}
-                    className=" top-0 left-0 w-full shadow-awardsLine rounded-full bg-white transition-all duration-400"
+                    className=" top-0 left-0 w-full shadow-awardsLine rounded-full bg-white transition-all duration-200"
                 ></div>
 
                 <Checkpoint image={award4} setCount={setCount} marginTop={5} expand={count>5? true : false} title={awards[0].provider} />
@@ -180,7 +180,7 @@ const Awards = () => {
                 className='absolute z-[1] top-0 left-0 w-full scale-150 h-full'
                 alt=''
             />
-            <div ref={scrollRef} className='w-full max-w-full flex items-center justify-start flex-col max-h-full h-full overflow-y-auto bg-black bg-opacity-40 px-10 relative z-[2]'>
+            <div ref={scrollRef} className='w-full max-w-full flex items-center justify-start flex-col max-h-full h-full overflow-y-hidden bg-black bg-opacity-40 px-10 relative z-[2]'>
                 <div className='w-full max-w-[50vw] h-fit'>
                     {awards.map((item, id) => (
                     <div key={id} ref={item.ref} className='w-full h-screen flex items-center justify-center'>
