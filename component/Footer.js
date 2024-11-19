@@ -21,6 +21,9 @@ import ICC from "../public/research/ICC.pdf";
 import MadatoryDisclosure from "../public/research/MadatoryDisclosure.pdf";
 import ACADEMICCALENDER from "../public/research/ACADEMICCALENDER.pdf";
 import codeOfConduct from "../public/research/code-of-conduct.pdf";
+import { FiPhone } from "react-icons/fi";
+import { RiFlightLandLine } from "react-icons/ri";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
 const subTitle =
   "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India";
 
@@ -237,23 +240,21 @@ const Footer = ({ set = false, color = false }) => {
           <div className="flex flex-row mb-6 md:flex-col w-full md:w-fit h-full md:h-fit items-start justify-between">
             <div className="flex flex-col w-fit h-full">
               <div className="justify-center flex flex-col">
-                <div className="w-[40%] md:w-[15%] h-[2px] bg-[#E69706]"></div>
+                <div className="w-[40%] md:w-[65%] h-[2px] bg-[#E69706]"></div>
                 <h4 className="text-[25px] md:text-[clamp(15px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
-                  TELEPHONE
+                  ADMISSION HELPLINE
                 </h4>
               </div>
               <ul className="text-[14px] md:text-[clamp(10px,1.1vw,20px)] font-[TTChocolates]">
                 <li>
-                  <a href="tel:0135-269930">
-                    <span className="text-[#E69706]">{"> "}</span>0135-269930
-                    (Landline)
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+91-6366937159">
-                    <span className="text-[#E69706]">{"> "}</span>+91-9837983721
-                    <br />
-                    (India Admission Helpline)
+                  <a
+                    href="tel:+91-6366937159"
+                    className="flex justify-start items-center gap-2"
+                  >
+                    <span className="text-[#E69706]">
+                      <FiPhone />
+                    </span>
+                    +91-9837983721
                   </a>
                 </li>
                 {/* <li>
@@ -265,6 +266,28 @@ const Footer = ({ set = false, color = false }) => {
                 </li> */}
               </ul>
             </div>
+            <div className="flex flex-col w-fit h-full">
+              <div className="md:mt-8 justify-center flex flex-col">
+                <div className="w-[40%] md:w-[35%] h-[2px] bg-[#E69706]"></div>
+                <h4 className="text-[25px] md:text-[clamp(15px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
+                  LANDLINE
+                </h4>
+              </div>
+              <ul className="text-[14px] md:text-[clamp(10px,1.1vw,20px)] font-[TTChocolates]">
+                <li>
+                  <a
+                    href="tel:0135-269930"
+                    className="flex justify-start items-center gap-2"
+                  >
+                    <span className="text-[#E69706]">
+                      <TbDeviceLandlinePhone />
+                    </span>
+                    0135-2699300
+                  </a>
+                </li>
+              </ul>
+            </div>
+
             <div className="flex-col flex w-fit h-full">
               <div className="md:mt-8 justify-center flex flex-col">
                 <div className="w-[40%] md:w-[15%] h-[2px] bg-[#E69706]"></div>

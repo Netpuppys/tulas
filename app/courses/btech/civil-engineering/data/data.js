@@ -190,8 +190,24 @@ export const selectedCardTable = [
     sno: 2,
     course: "B.Tech (Lateral Entry/Second Year)",
     duration: "3 years",
-    eligibility:
-      "a. Passed Diploma examination with at least 45% marks (40% marks in case of candidates belonging to reserved category) in ANY branch of Engineering and Technology. b. Passed B.Sc. Degree from a recognized University as defined by UGC, with at least 45% marks (40% marks in case of candidates belonging to reserved category) and passed 10+2 examination with Mathematics as a subject. c. Provided that the students belonging to B.Sc. Stream, shall clear the subjects Engineering Graphics/ Engineering Drawing and Engineering Mechanics of the First Year Engineering Programme along with the Second year subjects. d. Provided that the students belonging to B.Sc. Stream shall be considered only after filling the supernumerary seats in this category with students belonging to the Diploma stream. e. Passed D.Voc. Stream in the same or allied sector. f. In the above cases, a suitable bridge Courses, if required such as in Mathematics may be conducted.",
+    eligibility: (
+      <>
+        a. Passed Diploma examination with at least 45% marks (40% marks in case
+        of candidates belonging to reserved category) in ANY branch of
+        Engineering and Technology. <br/>b. Passed B.Sc. Degree from a recognized
+        University as defined by UGC, with at least 45% marks (40% marks in case
+        of candidates belonging to reserved category) and passed 10+2
+        examination with Mathematics as a subject. <br/>c. Provided that the students
+        belonging to B.Sc. Stream, shall clear the subjects Engineering
+        Graphics/ Engineering Drawing and Engineering Mechanics of the First
+        Year Engineering Programme along with the Second year subjects. <br/>d.
+        Provided that the students belonging to B.Sc. Stream shall be considered
+        only after filling the supernumerary seats in this category with
+        students belonging to the Diploma stream. <br/>e. Passed D.Voc. Stream in the
+        same or allied sector. <br/>f. In the above cases, a suitable bridge Courses,
+        if required such as in Mathematics may be conducted.
+      </>
+    ),
   },
 ];
 export const semesterData = [

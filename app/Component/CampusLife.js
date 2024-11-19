@@ -19,7 +19,7 @@ const CampusLife = () => {
       const height = contRef.current.getBoundingClientRect().height;
       const width = contRef.current.getBoundingClientRect().width;
       setContHeight(height);
-      setContWidth(width)
+      setContWidth(width);
       console.log("jehwfdqk" + height);
     }
   }, []);
@@ -66,11 +66,11 @@ const CampusLife = () => {
   }, [imageIndex, scrollRef, contHeight]);
 
   return (
-    <div className="w-full flex flex-col items-center justify-start py-8 md:py-20">
-      <p className="uppercase text-4xl text-[#007A83] font-semibold tracking-[0.15em]">
+    <div className="w-full flex flex-col items-center justify-start py-0">
+      {/* <p className="uppercase text-4xl text-[#007A83] font-semibold tracking-[0.15em]">
         Campus Life
-      </p>
-      <div className="w-full relative h-[40rem] mt-8">
+      </p> */}
+      <div className="w-full relative h-[40rem]">
         <div ref={contRef} className="w-full h-full relative">
           <div
             ref={scrollRef}

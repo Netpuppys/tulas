@@ -18,7 +18,7 @@ function Virtual() {
             the year.
           </h5>
           <br />
-          <h6 className="text-[#007A83] text-[20px] font-[TTChocolates]">
+          <h6 className="text-[#007A83] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates]">
             Being the capital city, Dehradun is well-connected by roads, rail
             and air and is easily accessible from most parts of the country. It
             is 235 km away from India’s capital, New Delhi. Dehradun is easy to
@@ -27,7 +27,7 @@ function Virtual() {
           </h6>
           <br />
 
-          <h5 className="text-black font-[TTChocolatesBold] text-[20px]">
+          <h5 className="text-black font-[TTChocolatesBold] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]">
             Get a detailed tour of our campus through our 360 Degree Tour
             <br />
             <br />

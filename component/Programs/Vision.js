@@ -28,7 +28,7 @@ function Vision({ sections }) {
                     {section.title}
                   </h3>
                   <br />
-                  <h5 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify font-[TTChocolates] text-[#D9D9D9]">
+                  <h5 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify font-[TTChocolates] text-white">
                     {section.description}
                   </h5>
                 </div>
@@ -42,7 +42,7 @@ function Vision({ sections }) {
                       inView
                         ? index % 2 !== 0
                           ? "md:animate-translateLeftImage rounded-xl md:rounded-none md:rounded-e-3xl"
-                          : "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-e-3xl"
+                          : "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-s-3xl"
                         : "rounded-xl md:opacity-0"
                     }`}
                   />

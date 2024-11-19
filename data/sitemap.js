@@ -44,7 +44,7 @@ const sitemap = [
     title: "Programs",
     nestedLinks: [
       {
-        title: "Department Of Engineering",
+        title: "Department of Engineering",
         superNestedLinks: [
           {
             title: "B.Tech",
