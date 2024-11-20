@@ -53,10 +53,7 @@ function AlumniTestimonials() {
             <Testimonial />
           </div>
         </div>
-        <div className="-mb-[6vh] bg-white py-10">
-          <h3 className="text-[#007A83] text-[50px] text-center font-[TTChocolatesBold]">
-            Videos Testimonials
-          </h3>
+        <div className="pb-[6vh] -mb-[6vh] bg-white">
           <Testimonials />
         </div>
         <Footer />
