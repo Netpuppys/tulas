@@ -121,7 +121,9 @@ const CampusLife = () => {
           </div>
         </div>
         {/* bottom selector */}
-        <div className="w-full z-30 h-28 md:h-40 absolute bottom-0 translate-y-1/2 bg-transparent px-4 md:px-5 flex items-center justify-center">
+        
+      </div>
+      <div className="w-full z-30 h-28 md:h-40 -mt-[80px] bg-transparent px-4 md:px-5 flex items-center justify-center">
           <div className="shadow-2xl bg-white max-w-[85rem] w-full h-full flex flex-col items-center justify-center px-5 md:px-14 rounded-xl md:rounded-2xl relative">
             <button className="absolute -top-8 left-5 uppercase tracking-widest text-xs">
               explore more
@@ -165,7 +167,6 @@ const CampusLife = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

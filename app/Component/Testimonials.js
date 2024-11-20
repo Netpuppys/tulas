@@ -9,10 +9,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const carouselImages = [iphoneFrame, iphoneFrame, iphoneFrame];
+const testimonials = [
+  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial1.mp4",
+  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial2.mp4",
+  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial3.mp4"
+]
 
 const Testimonials = () => {
   return (
-    <div className="w-full min-h-screen md:min-h-96 h-fit flex items-center justify-center gap-10 md:px-40 mt-0 md:mt-10  relative">
+    <>
+    <h3 className="text-[#007A83] text-center uppercase font-[CarotSlab] align-baseline md:pt-20 leading-[0.8] text-[clamp(30px,2.8vw,55px)]">
+       Video Testimonials
+      </h3>
+    <div className="w-full md:w-[80%] mx-auto h-fit flex items-center justify-center gap-10 md:px-40 md:py-20 relative">
       <button
         id="swiper-prev"
         className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 left-0 md:left-10 p-2 rounded-full hover:bg-black hover:bg-opacity-80 text-5xl text-black hover:text-white text-opacity-80 flex items-center justify-center"
@@ -20,15 +29,34 @@ const Testimonials = () => {
         <HiOutlineChevronLeft />
       </button>
 
-      <div className="w-fit hidden md:flex z-10 items-center justify-start md:justify-center h-full md:pb-10 overflow-x-auto">
-        <div className="w-full md:h-[70%] md:scale-90">
-          <Image src={iphoneFrame} className="h-fit w-full" alt="" />
+      <div className="w-fit hidden md:flex z-10 items-center justify-start md:justify-center h-full">
+        <div className="w-full md:h-[60%] md:scale-75 ">
+          {/* <Image src={iphoneFrame} className="h-fit w-full" alt="" /> */}
+          <video
+            src={"https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial1.mp4"}
+            className="h-fit w-full aspect-[9/16] blur-[4px]"
+            autoPlay={false}
+            
+            // controls={true}
+          />
         </div>
-        <div className="w-full md:h-[70%] md:scale-110 md:rounded-2xl overflow-hidden">
-          <Image src={iphoneFrame} className="h-fit w-full" alt="" />
+        <div className="w-full md:h-[60%]  md:rounded-2xl overflow-hidden">
+          {/* <Image src={iphoneFrame} className="h-fit w-full" alt="" /> */}
+          <video
+            src={"https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial2.mp4"}
+            className="h-fit w-full aspect-[9/16]"
+            autoPlay={true}
+            // controls={true}
+          />
         </div>
-        <div className="w-full md:h-[70%] md:scale-90 rounded-2xl overflow-hidden">
-          <Image src={iphoneFrame} className="h-fit w-full" alt="" />
+        <div className="w-full md:h-[60%] md:scale-75">
+          {/* <Image src={iphoneFrame} className="h-fit w-full" alt="" /> */}
+          <video
+            src={"https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial3.mp4"}
+            className="h-fit w-full aspect-[9/16] blur-[4px]"
+            autoPlay={false}
+            // controls={true}
+          />
         </div>
       </div>
 
@@ -66,10 +94,10 @@ const Testimonials = () => {
         <HiOutlineChevronRight />
       </button>
 
-      <div className="p-16 absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#E69706]">
+      {/* <div className="p-16 absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#E69706]">
         <div className="w-40 md:w-[18rem] aspect-square rounded-full bg-[#007A83] shadow-2xl"></div>
-      </div>
-    </div>
+      </div> */}
+    </div></>
   );
 };
 
