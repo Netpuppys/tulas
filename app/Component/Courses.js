@@ -120,9 +120,7 @@ function Courses({ parentRef }) {
             }`}
           >
             The Institute provides excellent infrastructural and ICT facilities
-            with well-equipped laboratories, a modern computer centre, spacious
-            and well-furnished classrooms, seminar hall, library, workshop, and
-            fully airconditioned &amp; spacious auditorium.
+            with well-equipped
           </h5>
           <div className="h-[20vh]">
             <div

@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { TbView360Number } from "react-icons/tb";
 import Link from "next/link";
+import BackgroundVirtual from "../../public/Homepage/Virtual/BackgroundVirtual.jpg";
 import students from "../../public/Homepage/Virtual/students.png";
 import faculty from "../../public/Homepage/Virtual/faculty.png";
 import experience from "../../public/Homepage/Virtual/experience.png";
@@ -66,44 +67,41 @@ function VirtualTour() {
   }, [inView]);
 
   return (
-    <div className="w-full h-screen backgroundVirtual  flex flex-col">
-      <div className="mt-16 md:mt-[6rem] flex flex-col md:mr-[8rem] md:ml-auto text-center items-center">
-        <Link href="/virtual-tour/index.html">
-          <TbView360Number className="text-white text-[80px]" />
-        </Link>
-        <h5
-          className="text-[31px] text-[#40E269]"
-          style={{
-            fontFamily: "Reem Kufi",
-          }}
-        >
-          360 Degree Campus Tour
-        </h5>
+    <div>
+      <div className="bg-black">
+        <Image
+          className="w-full h-[70vh] md:h-screen -z-10 bg-black opacity-70 object-cover"
+          src={BackgroundVirtual}
+          alt=""
+        />
       </div>
-      <div
-        className="flex justify-around mx-auto w-full flex-wrap gap-y-5 mt-auto mb-5"
-        ref={statsRef}
-      >
-        {stats.map((stat, index) => (
-          <div
-            key={index}
-            className="w-1/2 md:w-[25%] flex flex-col items-center"
-          >
-            <Image src={stat.img} alt={stat.title} />
-            <h3
-              className="text-[30px] md:text-[40px] text-white font-[TTChocolatesBold]"
-              style={{
-                textShadow: "0px 4px 26px #40E269",
-              }}
+      <div className="relative w-full h-full">
+        <div
+          className="flex -mt-[150px] justify-around backgroundVirtual mx-auto w-[95%] md:w-[80%] py-10 flex-wrap gap-y-5 mb-5"
+          ref={statsRef}
+        >
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="w-1/2 md:w-[25%] flex flex-col items-center"
             >
-              {stat.animatedStatNo || stat.start}
-              {"+"}
-            </h3>
-            <h3 className="text-[16px] md:text-[18px] text-white font-[TTChocolatesBold]">
-              {stat.title}
-            </h3>
-          </div>
-        ))}
+              <div className="px-4 py-4 rounded-full border-[#007A83] border shadow-[0px_4px_26px_2px_#007A83]">
+                <Image
+                  src={stat.img}
+                  alt={stat.title}
+                  className="w-[55px] h-[55px] "
+                />
+              </div>
+              <h3 className="text-[30px] md:text-[40px] text-white textShadow font-[TTChocolatesBold]">
+                {stat.animatedStatNo || stat.start}
+                {"+"}
+              </h3>
+              <h3 className="text-[16px] md:text-[18px] text-white font-[TTChocolatesBold]">
+                {stat.title}
+              </h3>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -219,7 +219,7 @@ function AboutTulas() {
                 type="button"
                 disabled={!isPhoneValid}
                 onClick={sendOtp}
-                className={`w-[40%] bg-[#007A83] rounded-[3px] flex items-center justify-center px-4 py-3 font-bold text-white ${
+                className={`w-1/2 md:w-[40%] bg-white rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-[#007A83] ${
                   isPhoneValid
                     ? " cursor-pointer"
                     : "opacity-50 cursor-not-allowed"

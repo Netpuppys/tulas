@@ -4,9 +4,9 @@ import Link from "next/link";
 import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import TulasLogoGreen from "../../public/Components/Navbar/TulasLogoGreen.png";
 import TulasLogoRed from "../../public/Components/Navbar/TulasLogoRed.png";
-
+import NBA from "../../public/Components/Navbar/NBA.png";
 import { PiPencilSimpleLineLight } from "react-icons/pi";
-
+import NAAC from "../../public/Components/Navbar/NAAC.png";
 import { FaPen } from "react-icons/fa";
 import Image from "next/image";
 import NavbarMobile from "./Component/NavbarMobile";
@@ -96,19 +96,32 @@ function Navbar({ setState, position = false, fullBanner = false }) {
           </div>
         </a>
         {!scrolled && (
-          <Link href="/" className="z-[3333] animate-fadeIn pt-16 pr-6">
+          <div className="flex z-[3333] animate-fadeIn pt-16 pr-6 items-center justify-center gap-8">
+            <Image
+              src={NBA}
+              alt=""
+              className="w-[7vw] h-fit pointer-events-auto cursor-pointer"
+            />
+            <div className="h-[100px] w-[1px] bg-white"></div>
+            <Image
+              src={NAAC}
+              alt=""
+              className="w-[8vw] h-fit pointer-events-auto cursor-pointer"
+            />
+            <div className="h-[100px] w-[1px] bg-white"></div>
             <Image
               src={
                 (isChecked && position) || isChecked
-                  ? TulasLogoGreen
+                  ? TulasLogo
                   : position
                   ? TulasLogoRed
                   : TulasLogo
               }
               alt=""
-              className="w-[200px] h-fit pointer-events-auto cursor-pointer"
+              onClick={() => (window.location.href = "/")}
+              className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
             />
-          </Link>
+          </div>
         )}
 
         {scrolled && (
@@ -125,7 +138,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                   : TulasLogoGreen
               }
               alt=""
-              className="w-[200px] h-fit pointer-events-auto cursor-pointer"
+              className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
             />
           </Link>
         )}
