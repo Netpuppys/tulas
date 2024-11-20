@@ -96,19 +96,19 @@ function Navbar({ setState, position = false, fullBanner = false }) {
           </div>
         </a>
         {!scrolled && (
-          <div className="flex z-[3333] animate-fadeIn pt-16 pr-6 items-center justify-center gap-8">
+          <div className="flex z-[3333] animate-fadeIn pt-16 pr-6 items-center justify-center gap-6">
             <Image
               src={NBA}
               alt=""
-              className="w-[7vw] h-fit pointer-events-auto cursor-pointer"
+              className="w-[5vw] h-fit pointer-events-auto cursor-pointer"
             />
-            <div className="h-[100px] w-[1px] bg-white"></div>
+            <div className="h-[70px] w-[1px] bg-white"></div>
             <Image
               src={NAAC}
               alt=""
-              className="w-[8vw] h-fit pointer-events-auto cursor-pointer"
+              className="w-[5vw] h-fit pointer-events-auto cursor-pointer"
             />
-            <div className="h-[100px] w-[1px] bg-white"></div>
+            <div className="h-[70px] w-[1px] bg-white"></div>
             <Image
               src={
                 (isChecked && position) || isChecked
