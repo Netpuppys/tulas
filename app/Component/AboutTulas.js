@@ -196,7 +196,7 @@ function AboutTulas() {
                 }}
                 inputStyle={{
                   width: "100%",
-                  borderRadius: "0.375rem",
+                  borderRadius: "3px",
                   border: "none",
                   fontSize: "1rem",
                   lineHeight: "1.5rem",
