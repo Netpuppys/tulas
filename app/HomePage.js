@@ -41,7 +41,7 @@ export default function HomePage() {
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar setState={setIsChecked} />
         <BannerHome isChecked={isChecked} />
-        <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-[70%] px-8 mx-auto">
+        <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-full md:max-w-[70%] px-8 mx-auto">
           <h3 className="text-2xl uppercase font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-center mb-6">
             Tula's Institute
           </h3>

@@ -205,7 +205,7 @@ function CardCourses() {
         <Fade delay={300} className="w-[90%] md:w-fit">
           <div
             key={index}
-            className={`w-full md:w-[18vw] group card-group h-[400px] md:h-full overflow-hidden shadow-lg transform transition-all duration-500`}
+            className={`w-full md:w-[17vw] group card-group h-[400px] md:h-full overflow-hidden shadow-lg transform transition-all duration-500`}
           >
             <Image
               src={image.src}

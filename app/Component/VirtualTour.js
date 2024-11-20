@@ -11,7 +11,7 @@ import Image from "next/image";
 function VirtualTour() {
   const [inView, setInView] = useState(false);
   const [stats, setStats] = useState([
-    { img: students, start: 1000, end: 2000, title: "BRIGHT STUDENTS" },
+    { img: students, start: 2000, end: 3000, title: "BRIGHT STUDENTS" },
     { img: faculty, start: 0, end: 150, title: "FACULTY MEMBERS" },
     { img: experience, start: 0, end: 17, title: "YEARS OF EXPERIENCE" },
     { img: alumni, start: 6000, end: 7000, title: "GLORIUS ALUMNI" },
@@ -85,7 +85,10 @@ function VirtualTour() {
         ref={statsRef}
       >
         {stats.map((stat, index) => (
-          <div key={index} className="w-1/2 md:w-[25%] flex flex-col items-center">
+          <div
+            key={index}
+            className="w-1/2 md:w-[25%] flex flex-col items-center"
+          >
             <Image src={stat.img} alt={stat.title} />
             <h3
               className="text-[30px] md:text-[40px] text-white font-[TTChocolatesBold]"
