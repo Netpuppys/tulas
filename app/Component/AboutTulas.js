@@ -150,14 +150,14 @@ function AboutTulas() {
   return (
     <div
       id="2"
-      className="bg-transparent flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-20 items-center"
+      className="bg-transparent flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-10 items-center"
     >
       <div className="w-full px-6 md:px-0 md:w-[50%] py-10 md:py-20">
         <h3 className="text-[#fff] text-justify font-[TTChocolates] font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>
-      <div className="w-full md:w-[50%] py-8 md:py-20 flex flex-col justify-center items-center">
+      <div className="w-full md:w-[50%] py-8 md:py-5 flex flex-col justify-center items-center">
         <div className="max-w-[478px] w-full bg-[#D9d9d9] overflow-hidden bg-opacity-20 backdrop-blur-xl h-fit mx-auto border-2 border-white rounded-2xl">
           <form
             className="w-full h-full bg-black bg-opacity-25 px-5"
