@@ -5,8 +5,9 @@ import BackgroundCourses from "../../public/Homepage/Courses/Courses.png";
 import BackgroundLeaf from "../../public/Homepage/Courses/CoursesLeaf.png";
 import CoursesLeafMobile from "../../public/Homepage/Courses/CoursesLeafMobile.png";
 import CardCourses from "./CardCourses";
-import Accreditation from "./Accreditation";
 import { useMobile } from "@/component/IsMobileContext";
+import Stars from "../../public/Homepage/Accreditation/Stars.png";
+import Image from "next/image";
 
 function Courses({ parentRef }) {
   const [scale, setScale] = useState(1);
@@ -67,7 +68,7 @@ function Courses({ parentRef }) {
 
   return (
     <div ref={childRef} className="w-full h-fit">
-      <div className="w-full h-[250vh] relative bg-[#3D001B] overflow-hidden">
+      <div className="w-full h-[350vh] md:h-[222vh] relative bg-[#3D001B] overflow-hidden">
         <div
           className={`${
             scrollY > 0 && scrollY < componentHeight && opacity !== 0
@@ -103,8 +104,9 @@ function Courses({ parentRef }) {
             </span>
           </h3>
         </div>
+        
 
-        <div
+        {/* <div
           className={`w-full h-[100vh] flex flex-col gap-2 justify-end items-center transition-opacity duration-300 ease-in-out 
           ${isInView ? "absolute bottom-0" : "fixed"} ${
             opacity < 0.09 ? "opacity-100 translate-in" : "opacity-0"
@@ -129,20 +131,24 @@ function Courses({ parentRef }) {
               }`}
             ></div>
           </div>
-        </div>
-      </div>
-
-      <div
+        </div> */}
+        <div
         ref={ref}
-        className="w-full h-fit md:h-[75vh] z-40 bg-[#3D001B] relative flex flex-col items-center"
+        className="w-full h-fit z-40 absolute bottom-0 md:bottom-[22vh] flex flex-col items-center"
       >
-        <div className="w-[1px] md:min-h-[20vh] bg-white"></div>
+        {/* <div className="w-[1px] md:min-h-[20vh] bg-white"></div> */}
         <div className="w-full mx-auto py-8 md:py-0 md:pt-8">
           <CardCourses />
         </div>
+        <Image
+        src={Stars}
+        className="hidden md:block absolute bottom-0 translate-y-14 z-50 left-0 w-32 pointer-events-none"
+        alt=""
+      />
       </div>
-
-      <Accreditation />
+        
+      </div>
+      
     </div>
   );
 }

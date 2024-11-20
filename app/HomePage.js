@@ -14,6 +14,7 @@ import CampusLife from "./Component/CampusLife";
 import Testimonials from "./Component/Testimonials";
 import RankBanner from "./Component/RankBanner";
 import Awards from "./Component/Awards";
+import Accreditation from "./Component/Accreditation";
 
 const bannerText = (
   <>
@@ -57,6 +58,7 @@ export default function HomePage() {
         <AboutTulas />
         <WhyTulasScroll parentRef={parentRef} />
         <Courses parentRef={parentRef} />
+        <Accreditation />
         <Virtual />
         <VirtualTour />
         <Video />

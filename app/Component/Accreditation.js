@@ -7,13 +7,9 @@ import RecordMobile from "../../public/Homepage/Accreditation/RecordMobile.png";
 import { Fade } from "react-awesome-reveal";
 function Accreditation() {
   return (
-    <div className="w-full">
-      <Image
-        src={Stars}
-        className="hidden md:block absolute -translate-y-14 z-50 left-0 w-32 pointer-events-none"
-        alt=""
-      />
-      <div className="flex flex-col md:flex-row justify-between py-4 md:pt-[8rem] gap-4 self-center md:pl-16 w-full md:items-center">
+    <div className="w-full bg-white sticky z-10 h-full">
+      
+      <div className="flex flex-col md:flex-row  justify-between py-4 gap-4 self-center md:pl-16 w-full md:items-center">
         <Fade>
           <div className="flex items-center gap-4">
             <div className="w-[4rem] h-[1px] bg-[#E69706]"></div>

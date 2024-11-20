@@ -18,8 +18,27 @@ function CardCourses() {
           link: "/btech/",
           branches: [
             {
+              name: "Civil Engineering",
+              linkTo: "/courses/btech/civil-engineering/",
+            },
+            {
               name: "Computer Science & Engineering",
               linkTo: "/courses/btech/computer-science/",
+            },
+            {
+              name: "Computer Science & Engineering (AI&ML)",
+              linkTo:
+                "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/",
+            },
+            {
+              name: "Computer Science & Engineering (Cyber Security)",
+              linkTo:
+                "/courses/btech/computer-science-engineering-cyber-security/",
+            },
+            {
+              name: "Computer Science & Engineering( Data Science)",
+              linkTo:
+                "/courses/btech/computer-science-engineering-data-science/",
             },
             {
               name: "Electronics & Communication Engineering",
@@ -33,32 +52,28 @@ function CardCourses() {
               name: "Mechanical Engineering",
               linkTo: "/courses/btech/mechanical-engineering/",
             },
-            {
-              name: "Civil Engineering",
-              linkTo: "/courses/btech/civil-engineering/",
-            },
           ],
         },
         {
           name: "M.Tech",
           link: "/mtech/",
           branches: [
-            {
-              name: "Civil Engineering",
-              linkTo: "/mtech/",
-            },
-            {
-              name: "Thermal Engineering",
-              linkTo: "/mtech/",
-            },
-            {
-              name: "Computer Science and Engineering",
-              linkTo: "/mtech/",
-            },
+            // {
+            //   name: "Civil Engineering",
+            //   linkTo: "/mtech/",
+            // },
+            // {
+            //   name: "Thermal Engineering",
+            //   linkTo: "/mtech/",
+            // },
+            // {
+            //   name: "Computer Science and Engineering",
+            //   linkTo: "/mtech/",
+            // },
           ],
         },
         {
-          name: "Polytechnic",
+          name: "Diploma",
           branches: [
             {
               name: "Computer Science Engineering",
@@ -202,7 +217,7 @@ function CardCourses() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center w-full h-fit gap-4">
       {cardsCourses.map((image, index) => (
-        <Fade delay={300} className="w-[90%] md:w-fit">
+        <div className="w-[90%] md:w-fit">
           <div
             key={index}
             className={`w-full md:w-[17vw] group card-group h-[400px] md:h-full overflow-hidden shadow-lg transform transition-all duration-500`}
@@ -238,7 +253,7 @@ function CardCourses() {
               ))}
             </div>
           </div>
-        </Fade>
+        </div>
       ))}
     </div>
   );
