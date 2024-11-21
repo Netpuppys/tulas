@@ -48,10 +48,10 @@ function Contact() {
   ];
   const cardData = [
     {
-      title: "ADMISSION HELPLINE",
+      title: "PLACEMENT HELPLINE",
       image: phone,
-      description: "+91-9837983721",
-      link: "tel:+91-9837983721",
+      description: "+91-74549 04594",
+      link: "tel:+91-74549 04594",
     },
     {
       title: "EMAIL",
@@ -86,9 +86,9 @@ function Contact() {
       button: "+91 98379 83721",
     },
     {
-      title: "PLACEMENT HELPLINE NUMBER",
-      link: "tel:+91-7454904594",
-      button: "+91 74549 04594",
+      title: "ADMISSION HELPLINE NUMBER",
+      link: "tel:+91-9837983721",
+      button: "+91 9837983721",
     },
     {
       title: "BIHAR ADMISSION HELPLINE",

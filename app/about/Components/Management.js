@@ -19,7 +19,7 @@ const cards = [
   {
     image: sunil,
     name: "Sunil Kumar Jain",
-    profile: "Chairman - TULA's Group",
+    profile: "Chairman - TULA'S Group",
     description:
       "Let me take this opportunity on behalf of the faculty and staff, to welcome you all to realize a convincing path with us. “There is not one blade of grass, there is no color in this world that is not intended to make us rejoice”, said by John Calvin. Tula’s vision stands on our beliefs and vows to change every student into an ambassador for their own semblance. Education is not only a way of learning new things but also looking at the world in a different way.",
     desc2:
@@ -34,7 +34,7 @@ const cards = [
   },
   {
     image: silky,
-    name: "Silky Jain",
+    name: "Silky Jain Marwah",
     profile: "Executive Director",
     description:
       "On behalf of the management, faculty, staff and Tulaites, I would like to welcome you all to Tula’s where not only will you get opportunities to shine in your future but also have the most memorable journey while you are on your golden path to attain success. Opportunities are many, future is great but to make the most of it you have to strive hard and give your best and I assure that we will be guiding you at every step and help you cross all impediments that come your way.",
@@ -292,13 +292,13 @@ function Management() {
         className="w-full h-fit flex flex-col justify-center items-center"
       >
         <h3
-          className={`font-[CarotSlab] text-white text-[32px] md:text-[52px] px-10 md:px-0 text-center md:text-left ${
+          className={`font-[CarotSlab] text-white text-[32px] md:text-[52px] px-10 md:px-0 leading-none text-center md:text-left ${
             inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
           MEET OUR MANAGEMENT
         </h3>
-        <h5
+        {/* <h5
           className={`font-[Rothwood] pt-8 md:pt-0 text-white text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify max-w-[665px] px-10 md:px-0 italic md:text-center font-medium ${
             inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
@@ -307,13 +307,13 @@ function Management() {
           with well-equipped laboratories, a modern computer centre, spacious
           and well-furnished classrooms, seminar hall, library, workshop, and
           fully airconditioned &amp; spacious auditorium.
-        </h5>
+        </h5> */}
       </div>
       <div className="w-full pt-10 md:pt-20 block">
         {[cards, cardsFaculty].map((cardGroup, groupIndex) => (
           <div
             key={groupIndex}
-            className="w-full flex justify-center  flex-wrap px-4 gap-4 gap-y-10 md:gap-5 md:px-20 py-4"
+            className="w-full flex justify-center flex-wrap px-4 gap-4 pb-16 md:gap-5 md:px-20"
           >
             {cardGroup.map((card, index) => (
               <div
@@ -331,7 +331,7 @@ function Management() {
                     className="rounded-xl md:rounded-3xl mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
                   />
                 </Fade>
-                <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[37px] text-center">
+                <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[30px] leading-[1.2] text-center">
                   {card.name}
                 </h2>
                 <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">

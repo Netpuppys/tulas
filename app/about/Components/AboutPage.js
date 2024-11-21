@@ -43,13 +43,13 @@ export default function AboutPage() {
       description: "QUALIFIED TEACHERS",
     },
     {
-      start: 1800,
-      end: 2000,
+      start: 2850,
+      end: 3000,
       description: "STUDENTS ENROLLED",
     },
     {
       start: 0,
-      end: 17,
+      end: 18,
       description: "YEARS OF EXPERIENCE",
     },
   ]);
@@ -79,7 +79,7 @@ export default function AboutPage() {
         stats.forEach((stat, index) => {
           let start = stat.start;
           const end = stat.end;
-          const duration = 2000; // 2 seconds
+          const duration = 1000; // 2 seconds
           const stepTime = Math.abs(Math.floor(duration / (end - start)));
 
           const timer = setInterval(() => {
@@ -117,7 +117,7 @@ export default function AboutPage() {
       <Banner
         title={
           <>
-            OUR <span className="text-[#007A83]">STORY</span>
+            ABOUT <span className="text-[#007A83]">TULA'S</span>
           </>
         }
         image={BannerImg}
@@ -174,6 +174,7 @@ export default function AboutPage() {
                     {cards.animatedStatNo || cards.start}
                     {index === 1 && <>+</>}
                     {index === 2 && <>+</>}
+                    {index === 3 && <>+</>}
                   </h3>
                   <h2 className="text-white font-[TTChocolates] text-[14px] md:text-[18px] font-normal">
                     {cards.description}
@@ -183,7 +184,7 @@ export default function AboutPage() {
             ))}
           </div>
           <div className="w-full md:w-1/2 flex items-center justify-start h-full px-6 md:px-0 md:pr-20 md:py-12">
-            <div className="bg-white w-full md:h-full py-8 md:min-h-[50rem] max-w-[40rem] flex items-start justify-center flex-col px-8 md:px-12 rounded-xl md:rounded-none md:rounded-r-xl">
+            <div className="bg-white w-full md:h-full py-8 md:min-h-[50rem] max-w-[40rem] flex items-start justify-center flex-col px-8 md:px-12 ">
               <p className="text-[#760135] font-medium font-[TTChocolates] text-[1.4rem] md:text-[2.5rem] text-wrap tracking-widest">
                 <span className="font-bold font-[TTChocolatesBold]">
                   TULA'S

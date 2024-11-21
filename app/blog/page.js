@@ -25,7 +25,7 @@ function Blog() {
         <Banner
           title={
             <>
-              Our <span className="text-[#007A83]">Blog</span>
+               <span className="text-[#007A83]">Blogs</span>
             </>
           }
           image={BannerImg}

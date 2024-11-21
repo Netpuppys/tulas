@@ -14,7 +14,7 @@ function VirtualTour() {
   const [stats, setStats] = useState([
     { img: students, start: 2000, end: 3000, title: "BRIGHT STUDENTS" },
     { img: faculty, start: 0, end: 150, title: "FACULTY MEMBERS" },
-    { img: experience, start: 0, end: 17, title: "YEARS OF EXPERIENCE" },
+    { img: experience, start: 0, end: 18, title: "YEARS OF EXPERIENCE" },
     { img: alumni, start: 6000, end: 7000, title: "GLORIUS ALUMNI" },
   ]);
   const statsRef = useRef(null);

@@ -133,19 +133,19 @@ export default async function SlugPage({ params }) {
           </h4>
         </div>
       </div>
-      <div className="blog-page-content">
+      <div className="blog-page-content !text-black">
         <>
-          <h6>Published on {formattedDate}</h6>
-          <div dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }} />
+          <h6 className="text-black">Published on {formattedDate}</h6>
+          <div className="text-black" dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }} />
         </>
       </div>
-      <div className="w-full relative overflow-hidden">
+      {/* <div className="w-full relative overflow-hidden">
         <Image
           src={background}
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
-      </div>
+      </div> */}
       <Footer color={true} />
     </>
   );

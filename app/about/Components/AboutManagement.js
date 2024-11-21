@@ -32,8 +32,7 @@ function AboutManagement() {
             <Image
               src={section.imgSrc}
               alt=""
-              className="max-w-[659px] max-h-[700px] w-full h-full
-            object-cover"
+              className="max-w-[659px] max-h-[700px] w-full h-full object-cover"
             />
           </Fade>
           <div className="w-fit">

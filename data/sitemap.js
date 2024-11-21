@@ -11,7 +11,7 @@ const sitemap = [
     linkTo: "/about/",
     nestedLinks: [
       {
-        title: "About",
+        title: "About Tula's",
         linkTo: "/about/",
       },
       {
@@ -19,7 +19,7 @@ const sitemap = [
         linkTo: "/about/management-messages",
       },
       {
-        title: "Approval",
+        title: "Approvals",
         linkTo: "/about/approval/",
       },
       {
@@ -27,7 +27,7 @@ const sitemap = [
         linkTo: "/about-dehradun/",
       },
       {
-        title: "Contact",
+        title: "Contact Us",
         linkTo: "/contact/",
       },
       {
@@ -35,7 +35,7 @@ const sitemap = [
         linkTo: "/about/why-tulas/",
       },
       {
-        title: "Blog",
+        title: "Blogs",
         linkTo: "/blog/",
       },
     ],
@@ -206,19 +206,7 @@ const sitemap = [
         linkTo:
           "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view",
       },
-      {
-        title: "ERP",
-        superNestedLinks: [
-          {
-            title: "Teacher Login",
-            linkTo: "https://teacher.camu.in/",
-          },
-          {
-            title: "Student Login",
-            linkTo: "https://student.camu.in/",
-          },
-        ],
-      },
+      
     ],
   },
   {
@@ -418,6 +406,19 @@ const sitemap = [
       {
         title: "Degree Request Form",
         linkTo: "/degree-request-form/",
+      },
+    ],
+  },
+  {
+    title: "ERP",
+    nestedLinks: [
+      {
+        title: "Teacher Login",
+        linkTo: "https://teacher.camu.in/",
+      },
+      {
+        title: "Student Login",
+        linkTo: "https://student.camu.in/",
       },
     ],
   },

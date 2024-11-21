@@ -9,7 +9,7 @@ import background from "../../public/AboutDehradun/background.png";
 import trainImage from "../../public/AboutDehradun/train.png";
 import planeImage from "../../public/AboutDehradun/plane.png";
 import roadImage from "../../public/AboutDehradun/road.png";
-import hillsImage from "../../public/AboutDehradun/hills.png";
+import hillsImage from "../../public/Homepage/BannerHome/BannerImage1.jpg";
 import Cards from "./components/Cards";
 import { Fade } from "react-awesome-reveal";
 const title = (
@@ -31,7 +31,7 @@ const cardData = [
       "Dehradun is connected with an effective rail network with the rest of the country. Most of the major trains are available to Dehradun daily. It is well connected with all the metro cities of India. There are also trains to other important places such as Varanasi, Lucknow, Mussoorie etc.",
   },
   {
-    title: "By Plane",
+    title: "By Flight",
     image: planeImage,
     description:
       "The capital city Dehradun is connected by air to India’s capital New Delhi. Dehradun has a domestic airport. Located in the outskirts of the city, the airport lies only 25kms away.",
@@ -89,29 +89,27 @@ function Contact() {
               ))}
             </div>
             <div className="w-full p-5 md:p-10 md:pb-40">
-              <div className="w-full overflow-hidden h-fit md:h-[51vw] rounded-3xl shadow-2xl bg-white bg-opacity-20 backdrop-blur-lg flex flex-col-reverse md:flex-row items-center">
+              <div className="w-full overflow-hidden h-fit md:h-[40vw] rounded-3xl shadow-2xl bg-white bg-opacity-20 backdrop-blur-lg flex flex-col-reverse md:flex-row items-center">
                 <div
                   // ref={compRef}
                   className="w-full md:w-1/2 py-10 md:py-20 px-6 md:pl-10 md:pr-5 md:border-r-2 border-white"
                 >
-                  <p className="text-white mb-5 text-[30px] md:text-[clamp(20px,2.2vw,50px)] font-[CarotSlab] font-semibold">
+                  <p className="text-white mb-5 text-[30px] md:text-[clamp(20px,2.2vw,50px)] leading-[1.2] font-[CarotSlab] ">
                     Soothe your senses with the beautiful aesthetics offered at{" "}
-                    <span className="text-[#E69706]">
-                      Tula&apos;s Institute
-                    </span>
+                    Tula&apos;s Institute
                   </p>
-                  <div className="text-[#D1D1D1] text-justify font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] md:pr-10 text-pretty font-[TTChocolates]">
+                  <div className="text-[#D1D1D1] text-justify font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,20px)] md:pr-10 text-pretty font-[TTChocolates]">
                     <Fade delay={500}>{mainDescription}</Fade>
                   </div>
                 </div>
 
                 <div
-                  className={`w-full md:w-1/2 h-[70vh] md:md:h-[51vw] overflow-hidden`}
+                  className={`w-full md:w-1/2 h-[70vh] md:md:h-[40vw] overflow-hidden`}
                 >
-                  <Fade delay={300}>
+                  <Fade delay={300} className="bg-black">
                     <Image
                       src={hillsImage}
-                      className="w-full h-[70vh] md:md:h-[51vw] object-cover rounded-3xl"
+                      className="w-full h-[70vh] md:md:h-[40vw] object-right rounded-r-3xl opacity-90"
                       alt="bg"
                     />
                   </Fade>
