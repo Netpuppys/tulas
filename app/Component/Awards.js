@@ -14,7 +14,7 @@ const Checkpoint = ({ image, setCount, marginTop, expand, flipped=false, title})
 
     return (
         <div 
-            onClick={() => setCount(marginTop)} 
+            onClick={() => setCount(marginTop+1)} 
             style={isMobile? { left: `${marginTop}%`} : { top: `${marginTop}%`}}
             className={`absolute ${expand? "w-10 border border-[#007A83] animate-expandCheckpoint" : "w-4 hover:w-10 hover:border hover:border-[#007A83] hover:animate-expandCheckpoint"} group cursor-pointer shadow-2xl aspect-square left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center rounded-full bg-gray-400`}
         >
@@ -164,7 +164,7 @@ const Awards = () => {
     <div ref={ref} className='w-full md:h-screen flex md:flex-row flex-col relative md:-mb-[6vh]'>
         <div className='w-full md:w-1/2 h-80 via-zinc-50 md:h-full flex items-center justify-start md:justify-center bg-[#230512] md:py-20 relative'>
             
-            <p className='md:hidden absolute top-4 left-1/2 -translate-x-1/2 text-3xl '>
+            <p className='md:hidden absolute top-4 left-1/2 -translate-x-1/2 text-3xl font-[carotSlab]'>
                 Awards
             </p>
 
@@ -208,7 +208,7 @@ const Awards = () => {
                 alt=''
             />
 
-            <p className='absolute z-50 top-12 left-1/2 -translate-x-1/2 text-5xl text-white font-[carotSlab]'>
+            <p className='absolute z-50 top-12 left-1/2 -translate-x-1/2 hidden md:block text-5xl text-white font-[carotSlab]'>
                 Awards
             </p>
 
