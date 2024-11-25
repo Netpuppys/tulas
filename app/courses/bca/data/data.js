@@ -249,7 +249,10 @@ export const semesterData = [
       },
       { code: "PRACTICAL" },
       { code: "BCAP 31", title: "Computer Based Numerical Techniques" },
-      { code: "BCAP 32", title: "Data Base Management System" },
+      {
+        code: "BCAP 32",
+        title: "Data Base Management System Programme Structure",
+      },
     ],
   },
   {
@@ -278,7 +281,7 @@ export const semesterData = [
         title: ".NET Technology",
       },
       { code: "PRACTICAL" },
-      { code: "BCAP 51", title: "Web Programming using JAVA" },
+      { code: "BCAP 51", title: "Programming in JAVA" },
       { code: "BCAP 52", title: ".NET Technology" },
     ],
   },
