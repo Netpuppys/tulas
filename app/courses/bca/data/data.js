@@ -5,8 +5,27 @@ import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import bcaDocument from "../../../../public/courses/bca/BCA.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
-import divyanegi from "../../../../public/courses/bca/facultyData/divyanegi.webp";
+import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
+import PriyaResume from "../../../../public/courses/mca/facultyData/PriyaResume.pdf";
+import aizaz from "../../../../public/courses/bca/facultyData/aizaz.webp";
+import aizazResume from "../../../../public/courses/bca/facultyData/aizazResume.pdf";
 import anuj from "../../../../public/courses/bca/facultyData/anuj.webp";
+import anujResume from "../../../../public/courses/bca/facultyData/anujResume.pdf";
+import devendraSoo from "../../../../public/courses/bca/facultyData/devendraSoo.webp";
+import devendraSooResume from "../../../../public/courses/bca/facultyData/devendraSooResume.pdf";
+import DivyaNegi from "../../../../public/courses/bca/facultyData/DivyaNegi.webp";
+import DivyaNegiResume from "../../../../public/courses/bca/facultyData/DivyaNegiResume.pdf";
+import Hemlata from "../../../../public/courses/bca/facultyData/Hemlata.webp";
+import HemlataResume from "../../../../public/courses/bca/facultyData/HemlataResume.pdf";
+import NishGupta from "../../../../public/courses/bca/facultyData/NishGupta.webp";
+import NishGuptaResume from "../../../../public/courses/bca/facultyData/NishGuptaResume.pdf";
+import Mursleen from "../../../../public/courses/bca/facultyData/Mursleen.webp";
+import MursleenResume from "../../../../public/courses/bca/facultyData/MursleenResume.pdf";
+import PayalManwal from "../../../../public/courses/bca/facultyData/PayalManwal.webp";
+import PayalManwalResume from "../../../../public/courses/bca/facultyData/PayalManwalResume.pdf";
+import vaibhavi from "../../../../public/courses/bca/facultyData/vaibhavi.webp";
+import vaibhaviResume from "../../../../public/courses/bca/facultyData/vaibhaviResume.pdf";
+
 import Link from "next/link";
 
 export const images = [
@@ -299,19 +318,94 @@ export const semesterData = [
 ];
 export const facultyData = [
   {
-    name: "Ms. Divya Negi",
-    education: "MCA",
-    experience: "01 Years",
-    designation: "Assistant Professor",
-    publications: "1",
-    imageUrl: divyanegi, // Add the path for the image
+    name: "Dr Priya Matta",
+    designation: "Associate Professor & HoD",
+    education: "Ph.d",
+    publications: "67",
+    experience: "20",
+    imageUrl: Priya,
+    resume: PriyaResume,
   },
   {
-    name: "Mr. Anuj Kumar",
-    education: "MCA",
-    experience: "02 Years",
+    name: "Mr. Aizaz Ahmad",
     designation: "Assistant Professor",
+    education: "MCA Ph.d (P)",
+    publications: "0",
+    experience: "8",
+    imageUrl: aizaz,
+    resume: aizazResume,
+  },
+  {
+    name: "Ms.Vaibhavi Panuily",
+    designation: "Assistant Professor",
+    education: "MCA Ph.d (P)",
+    publications: "3",
+    experience: "3",
+    imageUrl: vaibhavi,
+    resume: vaibhaviResume,
+  },
+  {
+    name: "Mr. Devendra Sood",
+    designation: "Assistant Professor",
+    education: "M.Tech Ph.d (P)",
+    publications: "8",
+    experience: "8",
+    imageUrl: devendraSoo,
+    resume: devendraSooResume,
+  },
+  {
+    name: "Mohd. Murshleen",
+    designation: "Assistant Professor",
+    education: "M.Tech Ph.d (P)",
+    publications: "13",
+    experience: "11",
+    imageUrl: Mursleen,
+    resume: MursleenResume,
+  },
+  {
+    name: "Ms Hemlata",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "2",
+    experience: "3",
+    imageUrl: Hemlata,
+    resume: HemlataResume,
+  },
+  {
+    name: "Ms. Divya Negi",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "1",
+    experience: "3",
+    imageUrl: DivyaNegi,
+    resume: DivyaNegiResume,
+  },
+  {
+    name: "Mr.Anuj Singh Rajput",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "2",
+    experience: "3",
     imageUrl: anuj,
+    resume: anujResume,
+  },
+  {
+    name: "Ms. Nisha Gupta",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "0",
+    experience: "3",
+    imageUrl: NishGupta,
+    resume: NishGuptaResume,
+  },
+  {
+    name: "Ms Payal Manwal",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "0",
+    experience: "1",
+    imageUrl: PayalManwal,
+    resume: PayalManwalResume,
   },
 ];
 export const itemsClubs = [

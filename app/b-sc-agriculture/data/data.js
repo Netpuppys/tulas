@@ -3,19 +3,33 @@ import irrigation from "../../../public/bsc-agriculture/irrigation.png";
 import tractor from "../../../public/bsc-agriculture/tractor.png";
 import DepartmentalVission from "../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../public/courses/bjmc/departmentalMission.png";
-import drSatendra from "../../../public/bsc-agriculture/facultyData/drSatendra.webp";
-import PrernaBadoni from "../../../public/bsc-agriculture/facultyData/PrernaBadoni.webp";
-import AgriAshishUpadhyay from "../../../public/bsc-agriculture/facultyData/AgriAshishUpadhyay.webp";
-import DrPremSinghVerma from "../../../public/bsc-agriculture/facultyData/DrPremSinghVerma.webp";
-import DrRupinder from "../../../public/bsc-agriculture/facultyData/DrRupinder.webp";
-import drrekha from "../../../public/bsc-agriculture/facultyData/drrekha.webp";
-import DrShivangi from "../../../public/bsc-agriculture/facultyData/DrShivangi.webp";
-import BhawnaGahtori from "../../../public/bsc-agriculture/facultyData/BhawnaGahtori.webp";
-import AgriDivyaRawat from "../../../public/bsc-agriculture/facultyData/AgriDivyaRawat.webp";
-import AniketSharma from "../../../public/bsc-agriculture/facultyData/AniketSharma.webp";
-import PankajSingh from "../../../public/bsc-agriculture/facultyData/PankajSingh.webp";
-import shivendra from "../../../public/bsc-agriculture/facultyData/shivendra.webp";
-import rupalikaushik from "../../../public/bsc-agriculture/facultyData/rupalikaushik.webp";
+import anushka from "../../../public/bsc-agriculture/facultyData/anushka.webp";
+import anushkaResume from "../../../public/bsc-agriculture/facultyData/anushkaResume.pdf";
+import ASHISHUPADHYAY from "../../../public/bsc-agriculture/facultyData/ASHISHUPADHYAY.webp";
+import ASHISHUPADHYAYResume from "../../../public/bsc-agriculture/facultyData/ASHISHUPADHYAYResume.pdf";
+import divya from "../../../public/bsc-agriculture/facultyData/divya.webp";
+import divyaResume from "../../../public/bsc-agriculture/facultyData/divyaResume.pdf";
+import Mukesh from "../../../public/bsc-agriculture/facultyData/Mukesh.webp";
+import MukeshResume from "../../../public/bsc-agriculture/facultyData/MukeshResume.pdf";
+import pankajNegi from "../../../public/bsc-agriculture/facultyData/pankajNegi.webp";
+import pankajNegiResume from "../../../public/bsc-agriculture/facultyData/pankajNegiResume.pdf";
+import Prem from "../../../public/bsc-agriculture/facultyData/Prem.webp";
+import PremResume from "../../../public/bsc-agriculture/facultyData/PremResume.pdf";
+import RekhaDhani from "../../../public/bsc-agriculture/facultyData/RekhaDhani.webp";
+import RekhaDhaniResume from "../../../public/bsc-agriculture/facultyData/RekhaDhaniResume.pdf";
+import Rupali from "../../../public/bsc-agriculture/facultyData/Rupali.webp";
+import RupaliResume from "../../../public/bsc-agriculture/facultyData/RupaliResume.pdf";
+import RupendraKaur from "../../../public/bsc-agriculture/facultyData/RupendraKaur.webp";
+import RupendraKaurResume from "../../../public/bsc-agriculture/facultyData/RupendraKaurResume.pdf";
+import shivangi from "../../../public/bsc-agriculture/facultyData/shivangi.webp";
+import shivangiResume from "../../../public/bsc-agriculture/facultyData/shivangiResume.pdf";
+import shivaniSharma from "../../../public/bsc-agriculture/facultyData/shivaniSharma.webp";
+import shivaniSharmaResume from "../../../public/bsc-agriculture/facultyData/shivaniSharmaResume.pdf";
+import ShivendraMishra from "../../../public/bsc-agriculture/facultyData/ShivendraMishra.webp";
+import ShivendraMishraResume from "../../../public/bsc-agriculture/facultyData/ShivendraMishraResume.pdf";
+import Suresh from "../../../public/bsc-agriculture/facultyData/Suresh.webp";
+import SureshResume from "../../../public/bsc-agriculture/facultyData/SureshResume.pdf";
+
 import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
@@ -400,111 +414,121 @@ export const semesterData = [
 ];
 export const facultyData = [
   {
-    name: "Dr. Satendra",
-    education: "Ph.D.",
-    experience: "14 Years",
-    designation: "Assistant Professor",
-    specialization: "Lycopersicon esculantum Mill",
-    publications: "04",
-    imageUrl: drSatendra, // Add the path for the image
-  },
-  {
-    name: "Dr. Prerana Badoni",
-    education: "Ph.D.",
-    experience: "10 Years (Academics, Research and Industry)",
-    designation: "Associate Professor",
-    specialization: "Microbiology",
-    publications: "12",
-    imageUrl: PrernaBadoni,
-  },
-  {
     name: "Mr. Ashish Upadhyay",
-    education: "M.Sc., Ph.D. (P)",
-    experience: "14 Years",
-    designation: "Assistant Professor",
-    specialization: "Plant Breeding",
-    publications: "11",
-    imageUrl: AgriAshishUpadhyay,
-  },
-  {
-    name: "Dr. Prem Singh Verma",
-    education: "Ph.D.",
-    experience: "14 Years",
-    designation: "Assistant Professor",
-    specialization: "Animal Nutrition.",
-    publications: "",
-    imageUrl: DrPremSinghVerma,
+    designation: "Asst Prof",
+    education: "M.sc P.hd (P)",
+    publications: "23",
+    experience: "13",
+    imageUrl: ASHISHUPADHYAY,
+    resume: ASHISHUPADHYAYResume,
   },
   {
     name: "Dr. Rupinder Kaur",
-    education: "Ph.D.",
-    experience: "10 Years",
-    designation: "Associate Professor",
-    specialization: "Botany",
-    publications: "16",
-    imageUrl: DrRupinder,
+    designation: "Assoct Prof",
+    education: "P.hd",
+    publications: "26",
+    experience: "11",
+    imageUrl: RupendraKaur,
+    resume: RupendraKaurResume,
   },
   {
     name: "Dr. Rekha Dhanai",
-    education: "Ph.D. NET(ICAR).",
-    experience: "11 Years",
-    designation: "Associate Professor",
-    specialization: "Agricultural Extension",
-    publications: "34",
-    imageUrl: drrekha,
+    designation: "Assoct Prof",
+    education: "P.hd",
+    publications: "40",
+    experience: "11",
+    imageUrl: RekhaDhani,
+    resume: RekhaDhaniResume,
   },
   {
-    name: "Dr. Shivangi Negi",
-    education: "M.Sc., Ph.D.",
-    experience: "2 Years",
-    designation: "Assistant Professor",
-    specialization: "Seed Science and Technology",
-    publications: "24",
-    imageUrl: DrShivangi,
+    name: "Dr. Prem Singh Verma",
+    designation: "Asst Prof",
+    education: "P.hd",
+    publications: "12",
+    experience: "16",
+    imageUrl: Prem,
+    resume: PremResume,
   },
   {
-    name: "Ms. Bhawana Gahtori",
-    education: "M.Sc.,",
-    experience: "5 Years",
-    designation: "Assistant Professor",
-    specialization: "Agriculture",
-    publications: "11",
-    imageUrl: BhawnaGahtori,
-  },
-  {
-    name: "Ms. Divya Rawat",
-    education: "M.Sc., Entomology",
-    designation: "Assistant Professor",
-    specialization: "Entomology",
-    imageUrl: AgriDivyaRawat,
-  },
-  {
-    name: "Mr. Anikesh Sharma",
-    education: "M.Sc., Environmental Science.",
-    designation: "Assistant Professor",
-    specialization: "Natural resource management",
-    imageUrl: AniketSharma,
+    name: "Dr. Suresh Kumar",
+    designation: "Asst Prof",
+    education: "P.hd",
+    publications: "2",
+    experience: "6",
+    imageUrl: Suresh,
+    resume: SureshResume,
   },
   {
     name: "Mr. Pankaj Singh Negi",
-    education: "M.Sc., Environmental science.",
-    designation: "Assistant Professor",
-    specialization: "Environmental science",
-    imageUrl: PankajSingh,
+    designation: "Asst Prof",
+    education: "M.sc",
+    publications: "1",
+    experience: "3",
+    imageUrl: pankajNegi,
+    resume: pankajNegiResume,
   },
   {
     name: "Mr. Shivendra Mishra",
-    education: "M.Sc., Agronomy.",
-    designation: "Assistant Professor",
-    specialization: "Agronomy",
-    imageUrl: shivendra,
+    designation: "Asst Prof",
+    education: "M.sc P.hd (P)",
+    publications: "7",
+    experience: "3",
+    imageUrl: ShivendraMishra,
+    resume: ShivendraMishraResume,
   },
   {
     name: "Ms. Rupali Kaushik",
-    education: "M.Sc., Ph.D.(P)",
-    designation: "Assistant Professor",
-    specialization: "Plant Pathology",
-    imageUrl: rupalikaushik,
+    designation: "Asst Prof",
+    education: "M.sc P.hd (P)",
+    publications: "4",
+    experience: "2",
+    imageUrl: Rupali,
+    resume: RupaliResume,
+  },
+  {
+    name: "Ms. Divya Rawat",
+    designation: "Asst Prof",
+    education: "M.sc P.hd (P)",
+    publications: "4",
+    experience: "4",
+    imageUrl: divya,
+    resume: divyaResume,
+  },
+  {
+    name: "Ms. Shivani Sharma",
+    designation: "Asst Prof",
+    education: "M.sc",
+    publications: "2",
+    experience: "2",
+    imageUrl: shivaniSharma,
+    resume: shivaniSharmaResume,
+  },
+  {
+    name: "Dr. Mukesh Kumar",
+    designation: "Asst Prof",
+    education: "P.hd",
+    publications: "7",
+    experience: "2",
+    imageUrl: Mukesh,
+    resume: MukeshResume,
+  },
+  {
+    name: "Dr. Shivangi Negi",
+    designation: "Asst Prof",
+    education: "P.hd",
+    publications: "31",
+    experience: "4",
+    imageUrl: shivangi,
+    resume: shivangiResume,
+  },
+  {
+    name: "Ms. Anushka Kala",
+    designation: "Asst Prof",
+    education: "M.sc P.hd (P)",
+    publications: "2",
+    experience: "4",
+    imageUrl: anushka,
+    resume: anushkaResume,
   },
 ];
 const careers = [

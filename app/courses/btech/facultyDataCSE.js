@@ -1,363 +1,268 @@
-import AnandKumar from "../../../public/courses/btech/computer-science/facultyData/AnandKumar.webp";
-import SandipVijay from "../../../public/courses/btech/computer-science/facultyData/SandipVijay.jpg";
-import raghav from "../../../public/courses/btech/computer-science/facultyData/raghav.webp";
-import PriyaMatta from "../../../public/courses/btech/computer-science/facultyData/PriyaMatta.webp";
-import SandeepKumar from "../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-import sanjeev from "../../../public/courses/btech/computer-science/facultyData/drsanjeev.webp";
-import ahmadjamal from "../../../public/courses/btech/computer-science/facultyData/ahmadjamal.webp";
-import Tripuresh from "../../../public/courses/btech/computer-science/facultyData/Tripuresh.webp";
-import bhartikalra from "../../../public/courses/btech/computer-science/facultyData/bhartikalra.webp";
-import ashishGupta from "../../../public/courses/btech/computer-science/facultyData/ashishGupta.webp";
-import drmurseedvaqar from "../../../public/courses/btech/computer-science/facultyData/drmurseedvaqar.webp";
-import nirmenderbadoriya from "../../../public/courses/btech/computer-science/facultyData/nirmenderbadoriya.webp";
-import shikhatayal from "../../../public/courses/btech/computer-science/facultyData/shikhatayal.webp";
-import drpriyabhardaj from "../../../public/courses/btech/computer-science/facultyData/drpriyabhardaj.webp";
-import gauravGupta from "../../../public/courses/btech/computer-science/facultyData/gauravGupta.webp";
-import RituPal from "../../../public/courses/btech/computer-science/facultyData/RituPal.webp";
+import AnandGupta from "../../../public/courses/btech/computer-science/facultyData/AnandGupta.webp";
+import AnandGuptaResume from "../../../public/courses/btech/computer-science/facultyData/AnandGuptaResume.pdf";
+import AhmadJmal from "../../../public/courses/btech/computer-science/facultyData/AhmadJmal.webp";
+import AhmadJmalResume from "../../../public/courses/btech/computer-science/facultyData/AhmadJmalResume.pdf";
+import akanksha from "../../../public/courses/btech/computer-science/facultyData/akanksha.webp";
+import akankshaResume from "../../../public/courses/btech/computer-science/facultyData/akankshaResume.pdf";
+import anita from "../../../public/courses/btech/computer-science/facultyData/anita.webp";
+import anitaResume from "../../../public/courses/btech/computer-science/facultyData/anitaResume.pdf";
+import anju from "../../../public/courses/btech/computer-science/facultyData/anju.webp";
+import anjuResume from "../../../public/courses/btech/computer-science/facultyData/anjuResume.pdf";
+import AshishGupta from "../../../public/courses/btech/computer-science/facultyData/AshishGupta.webp";
+import AshishGuptaResume from "../../../public/courses/btech/computer-science/facultyData/AshishGuptaResume.pdf";
+import BhartiKalra from "../../../public/courses/btech/computer-science/facultyData/BhartiKalra.webp";
+import BhartiKalraResume from "../../../public/courses/btech/computer-science/facultyData/BhartiKalraResume.pdf";
 import BKSharma from "../../../public/courses/btech/computer-science/facultyData/BKSharma.webp";
-import girishsinghbisht from "../../../public/courses/btech/computer-science/facultyData/girishsinghbisht.webp";
-import devendersood from "../../../public/courses/btech/computer-science/facultyData/devendersood.webp";
-import aizazahamad from "../../../public/courses/btech/computer-science/facultyData/aizazahamad.webp";
-import vaibhavi from "../../../public/courses/btech/computer-science/facultyData/vaibhavi.webp";
-import saradpratapsingh from "../../../public/courses/btech/computer-science/facultyData/saradpratapsingh.webp";
-import akanshashri from "../../../public/courses/btech/computer-science/facultyData/akanshashri.webp";
-import nishagupta from "../../../public/courses/btech/computer-science/facultyData/nishagupta.webp";
-import divyanegi from "../../../public/courses/btech/computer-science/facultyData/divyanegi.webp";
-import prashantchaudhary from "../../../public/courses/btech/computer-science/facultyData/prashantchaudhary.webp";
-import SiddharthSharma from "../../../public/courses/btech/computer-science/facultyData/SiddharthSharma.webp";
-import shivalicse from "../../../public/courses/btech/computer-science/facultyData/shivalicse.jpg";
-import anujcse from "../../../public/courses/btech/computer-science/facultyData/anujcse.webp";
-import RimpiUpadhyay from "../../../public/courses/btech/computer-science/facultyData/RimpiUpadhyay.webp";
-import Murshleen from "../../../public/courses/btech/computer-science/facultyData/Murshleen.webp";
-import GauravMittal from "../../../public/courses/btech/computer-science/facultyData/GauravMittal.webp";
-import javed from "../../../public/courses/btech/computer-science/facultyData/javed.webp";
-import nehachauhan from "../../../public/courses/btech/computer-science/facultyData/nehachauhan.webp";
-import Rashmimishra from "../../../public/courses/btech/computer-science/facultyData/Rashmimishra.webp";
-import shuchi from "../../../public/courses/btech/computer-science/facultyData/shuchi.webp";
-import yashpal from "../../../public/courses/btech/computer-science/facultyData/yashpal.webp";
-import Aarti from "../../../public/courses/btech/computer-science/facultyData/Aarti.webp";
-import santawana from "../../../public/courses/btech/computer-science/facultyData/santawana.webp";
-import rakeshKumar from "../../../public/courses/btech/computer-science/facultyData/rakeshKumar.webp";
-import santoshJoshi from "../../../public/courses/btech/computer-science/facultyData/santoshJoshi.webp";
+import BKSharmaResume from "../../../public/courses/btech/computer-science/facultyData/BKSharmaResume.pdf";
+import GauravGupta from "../../../public/courses/btech/computer-science/facultyData/GauravGupta.webp";
+import GauravGuptaResume from "../../../public/courses/btech/computer-science/facultyData/GauravGuptaResume.pdf";
+import GirishSinghBisht from "../../../public/courses/btech/computer-science/facultyData/GirishSinghBisht.webp";
+import GirishSinghBishtResume from "../../../public/courses/btech/computer-science/facultyData/GirishSinghBishtResume.pdf";
+import HemaRawat from "../../../public/courses/btech/computer-science/facultyData/HemaRawat.webp";
+import HemaRawatResume from "../../../public/courses/btech/computer-science/facultyData/HemaRawatResume.pdf";
+import Kshitiz from "../../../public/courses/btech/computer-science/facultyData/Kshitiz.webp";
+import KshitizResume from "../../../public/courses/btech/computer-science/facultyData/KshitizResume.pdf";
+import Nirmendra from "../../../public/courses/btech/computer-science/facultyData/Nirmendra.webp";
+import NirmendraResume from "../../../public/courses/btech/computer-science/facultyData/NirmendraResume.pdf";
+import PrakharGoel from "../../../public/courses/btech/computer-science/facultyData/PrakharGoel.webp";
+import PrakharGoelResume from "../../../public/courses/btech/computer-science/facultyData/PrakharGoelResume.pdf";
+import PrashantKumar from "../../../public/courses/btech/computer-science/facultyData/PrashantKumar.webp";
+import PrashantKumarResume from "../../../public/courses/btech/computer-science/facultyData/PrashantKumarResume.pdf";
+import rajul from "../../../public/courses/btech/computer-science/facultyData/rajul.webp";
+import rajulResume from "../../../public/courses/btech/computer-science/facultyData/rajulResume.pdf";
+import RituPal from "../../../public/courses/btech/computer-science/facultyData/RituPal.webp";
+import RituPalResume from "../../../public/courses/btech/computer-science/facultyData/RituPalResume.pdf";
+import SandeepKumar from "../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
+import SandeepKumarResume from "../../../public/courses/btech/computer-science/facultyData/SandeepKumarResume.pdf";
+import saradsingh from "../../../public/courses/btech/computer-science/facultyData/saradsingh.webp";
+import saradsinghResume from "../../../public/courses/btech/computer-science/facultyData/saradsinghResume.pdf";
+import shivaliPundir from "../../../public/courses/btech/computer-science/facultyData/shivaliPundir.webp";
+import shivaliPundirResume from "../../../public/courses/btech/computer-science/facultyData/shivaliPundirResume.pdf";
+import SumanRana from "../../../public/courses/btech/computer-science/facultyData/SumanRana.webp";
+import SumanRanaResume from "../../../public/courses/btech/computer-science/facultyData/SumanRanaResume.pdf";
+import SunilSemwal from "../../../public/courses/btech/computer-science/facultyData/SunilSemwal.webp";
+import SunilSemwalResume from "../../../public/courses/btech/computer-science/facultyData/SunilSemwalResume.pdf";
+import TripureshJoshi from "../../../public/courses/btech/computer-science/facultyData/TripureshJoshi.webp";
+import TripureshJoshiResume from "../../../public/courses/btech/computer-science/facultyData/TripureshJoshiResume.pdf";
+import UpendraKumar from "../../../public/courses/btech/computer-science/facultyData/UpendraKumar.webp";
+import UpendraKumarResume from "../../../public/courses/btech/computer-science/facultyData/UpendraKumarResume.pdf";
+import AsiaKhatoon from "../../../public/courses/btech/computer-science/facultyData/AsiaKhatoon.webp";
+import AsiaKhatoonResume from "../../../public/courses/btech/computer-science/facultyData/AsiaKhatoonResume.pdf";
+
 export const facultyDataCSE = [
   {
-    name: "Dr. Sandip Vijay",
-    education: "Ph.D.",
-    experience: "28 Yrs.",
-    designation: "Professor",
-    publications: "180+",
-    imageUrl: SandipVijay, // Add the path for the image
-  },
-  {
     name: "Dr. Anand Kumar Gupta",
-    education: "Ph.D.",
-    experience: "12 Yrs.",
-    designation: "Associate Professor",
+    designation: "Associate Professor & HoD",
+    education: "Ph.d",
     publications: "10",
-    imageUrl: AnandKumar, // Add the path for the image
+    experience: "13",
+    imageUrl: AnandGupta,
+    resume: AnandGuptaResume,
   },
   {
-    name: "Dr. Raghav Garg",
-    education: "B.Tech, M.S., Ph.D, M.B.A.",
-    experience: "9 Yrs.",
-    designation: "Associate Professor",
-    publications: "10",
-    imageUrl: raghav, // Add the path for the image
+    name: "Dr. Sunil Semwal",
+    designation: "Dean Research",
+    education: "Ph.d",
+    experience: "",
+    imageUrl: SunilSemwal,
+    resume: SunilSemwalResume,
   },
   {
-    name: "Dr. Priya Matta",
-    education: "Ph.D.",
-    experience: "19 Yrs.",
-    designation: "Associate Professor",
-    publications: "62",
-    imageUrl: PriyaMatta, // Add the path for the image
+    name: "Dr. Trupresh Joshi",
+    designation: "Research Coordinator",
+    education: "Ph.d",
+    experience: "",
+    imageUrl: TripureshJoshi,
+    resume: TripureshJoshiResume,
   },
   {
     name: "Dr. Sandeep Kumar",
-    education: "Ph.D.",
-    experience: "12.5 Yrs.",
-    designation: "Assistant Professor",
-    publications: "10",
-    imageUrl: SandeepKumar, // Add the path for the image
-  },
-  {
-    name: "Dr. Sanjeev Kumar",
-    education: "Ph.D. (CSE)",
-    experience: "17 Yrs.",
-    designation: "Professor",
-    publications: "51",
-    imageUrl: sanjeev, // Add the path for the image
-  },
-  {
-    name: "Dr. Ahamd Jamal",
-    education: "Ph.D.",
-    experience: "11 Yrs.",
     designation: "Associate Professor",
-    publications: "9",
-    imageUrl: ahmadjamal, // Add the path for the image
-  },
-  {
-    name: "Dr. Tripuresh Joshi",
-    education: "B.Tech, M.Tech, Ph.D.",
-    experience: "11 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Solid State Devices, TFET, Optoelectronics",
-    publications: "15",
-    imageUrl: Tripuresh, // Add the path for the image
+    education: "Ph.d",
+    publications: "10",
+    experience: "12.5",
+    imageUrl: SandeepKumar,
+    resume: SandeepKumarResume,
   },
   {
     name: "Dr. Bharti Kalra",
-    education: "Ph.D.",
-    experience: "12.5 Yrs.",
     designation: "Associate Professor",
-    publications: "18",
-    imageUrl: bhartikalra, // Add the path for the image
+    education: "Ph.d",
+    publications: "19",
+    experience: "16.5",
+    imageUrl: BhartiKalra,
+    resume: BhartiKalraResume,
+  },
+  {
+    name: "Dr. Ahmad jamal",
+    designation: "Associate Professor",
+    education: "Ph.d",
+    publications: "9",
+    experience: "9",
+    imageUrl: AhmadJmal,
+    resume: AhmadJmalResume,
   },
   {
     name: "Dr. Ashish Gupta",
-    education: "M.Tech, Ph.D.",
-    experience: "13.5 Yrs.",
     designation: "Associate Professor",
-    publications: "13",
-    imageUrl: ashishGupta, // Add the path for the image
+    education: "Ph.d",
+    publications: "17",
+    experience: "13.5",
+    imageUrl: AshishGupta,
+    resume: AshishGuptaResume,
   },
   {
-    name: "Dr. Musheer Vaqar",
-    education: "Ph.D.",
-    experience: "17 Yrs.",
-    designation: "Associate Professor",
-    publications: "22",
-    imageUrl: drmurseedvaqar, // Add the path for the image
-  },
-  {
-    name: "Dr. Nirmendra Singh",
-    education: "Ph.D.",
-    experience: "7 Yrs.",
-    designation: "Associate Professor",
-    publications: "3",
-    imageUrl: nirmenderbadoriya, // Add the path for the image
-  },
-  {
-    name: "Dr. Shikha Tayal Aeron",
-    education: "Ph.D.",
-    experience: "13 Yrs.",
+    name: "Dr. Nirmendar Bhadauriya",
     designation: "Assistant Professor",
+    education: "Ph.d",
     publications: "5",
-    imageUrl: shikhatayal, // Add the path for the image
+    experience: "19",
+    imageUrl: Nirmendra,
+    resume: NirmendraResume,
   },
   {
-    name: "Dr. Priya Bhardwaj",
-    education: "Ph.D.",
-    experience: "13 Yrs.",
+    name: "Dr . Ritu Pal",
     designation: "Assistant Professor",
-    publications: "7",
-    imageUrl: drpriyabhardaj, // Add the path for the image
+    education: "Ph.d",
+    publications: "9",
+    experience: "11",
+    imageUrl: RituPal,
+    resume: RituPalResume,
+  },
+  {
+    name: "Dr. Prashant chaudhary",
+    designation: "Assistant Professor",
+    education: "Ph.d",
+    publications: "12",
+    experience: "16.5",
+    imageUrl: PrashantKumar,
+    resume: PrashantKumarResume,
+  },
+  {
+    name: "Mr. B. K Sharma",
+    designation: "Assistant Professor",
+    education: "M.Tech, (Ph.d P)",
+    experience: "30",
+    imageUrl: BKSharma,
+    resume: BKSharmaResume,
+  },
+  {
+    name: "Mr. Prakhar Goyal",
+    designation: "Assistant Professor",
+    education: "M.Tech, (Ph.d P)",
+    experience: "1",
+    imageUrl: PrakharGoel,
+    resume: PrakharGoelResume,
   },
   {
     name: "Mr. Gaurav Gupta",
-    education: "M.Tech",
-    experience: "11 Yrs.",
     designation: "Assistant Professor",
-    publications: "4",
-    imageUrl: gauravGupta, // Add the path for the image
-  },
-  {
-    name: "Mrs. Ritu Pal",
-    education: "M.Tech (CSE), Ph.D (P)",
-    experience: "11 Yrs.",
-    designation: "Assistant Professor",
-    publications: "9",
-    imageUrl: RituPal, // Add the path for the image
-  },
-  {
-    name: "Mr. Brajendra Kumar Sharma",
-    education: "M.Tech, Ph.D. (P)",
-    experience: "26+ Yrs.",
-    designation: "Assistant Professor",
-    imageUrl: BKSharma, // Add the path for the image
+    education: "M.Tech ",
+    publications: "5",
+    experience: "16",
+    imageUrl: GauravGupta,
+    resume: GauravGuptaResume,
   },
   {
     name: "Mr. Girish Singh Bisht",
-    education: "M.Tech (CSE)",
-    experience: "6 Yrs.",
     designation: "Assistant Professor",
-    publications: "2",
-    imageUrl: girishsinghbisht, // Add the path for the image
-  },
-  {
-    name: "Mr. Devendra Sood",
-    education: "MCA",
-    experience: "3 Yrs.",
-    designation: "Assistant Professor",
-    publications: "2",
-    imageUrl: devendersood, // Add the path for the image
-  },
-  {
-    name: "Mr. Aizaz Ahmad",
-    education: "MCA",
-    experience: "3.5 Yrs.",
-    designation: "Assistant Professor",
+    education: "M.Tech ",
     publications: "3",
-    imageUrl: aizazahamad, // Add the path for the image
-  },
-  {
-    name: "Ms. Vaibhavi Painuly",
-    education: "MCA",
-    experience: "3.5 Yrs.",
-    designation: "Assistant Professor",
-    publications: "1",
-    imageUrl: vaibhavi, // Add the path for the image
-  },
-  {
-    name: "Mr. Sharad Pratap",
-    education: "M.Tech, Ph.D (P)",
-    experience: "13.5 Yrs.",
-    designation: "Assistant Professor",
-    publications: "3",
-    imageUrl: saradpratapsingh, // Add the path for the image
-  },
-  {
-    name: "Ms. Akanksha Srivastav",
-    education: "Ph.D. (P)",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    publications: "8",
-    imageUrl: akanshashri, // Add the path for the image
-  },
-  {
-    name: "Ms. Nisha Gupta",
-    education: "MCA",
-    experience: "3 Yrs.",
-    designation: "Assistant Professor",
-    imageUrl: nishagupta, // Add the path for the image
-  },
-  {
-    name: "Ms. Divya Negi",
-    education: "MCA",
-    experience: "1 Yr.",
-    designation: "Assistant Professor",
-    publications: "1",
-    imageUrl: divyanegi, // Add the path for the image
-  },
-  {
-    name: "Mr. Prashant",
-    education: "Ph.D. (P)",
-    experience: "16 Yrs.",
-    designation: "Assistant Professor",
-    publications: "11",
-    imageUrl: prashantchaudhary, // Add the path for the image
-  },
-  {
-    name: "Mr. Siddhartha",
-    education: "Ph.D. (P)",
-    experience: "12 Yrs.",
-    designation: "Assistant Professor",
-    publications: "2",
-    imageUrl: SiddharthSharma, // Add the path for the image
+    experience: "6",
+    imageUrl: GirishSinghBisht,
+    resume: GirishSinghBishtResume,
   },
   {
     name: "Ms. Shivali Pundir",
-    education: "M.Tech (CSE)",
-    experience: "10.5 Yrs.",
     designation: "Assistant Professor",
-    publications: "3",
-    imageUrl: shivalicse, // Add the path for the image
+    education: "M.Tech, (Ph.d P)",
+    publications: "2",
+    experience: "6",
+    imageUrl: shivaliPundir,
+    resume: shivaliPundirResume,
   },
   {
-    name: "Mr. Anuj Kumar",
-    education: "MCA",
-    experience: "2 Yrs.",
+    name: "Mr. Sharad",
     designation: "Assistant Professor",
-    imageUrl: anujcse, // Add the path for the image
-  },
-  {
-    name: "Ms. Rimpi Upadhyay",
-    education: "M.Tech",
-    experience: "2 Yrs.",
-    designation: "Associate Professor",
-    imageUrl: RimpiUpadhyay, // Add the path for the image
-  },
-  {
-    name: "Mr. Mohd. Murshleen",
-    education: "M.Tech.",
-    experience: "4.5 Yrs.",
-    designation: "Assistant Professor",
-    publications: "11",
-    imageUrl: Murshleen, // Add the path for the image
-  },
-  {
-    name: "Mr. Gaurav Mittal",
-    education: "M.Tech",
-    experience: "3 Yrs.",
-    designation: "Assistant Professor",
-    publications: "3",
-    imageUrl: GauravMittal, // Add the path for the image
-  },
-  {
-    name: "Mr. Javed Moazzam",
-    education: "Ph.D. (P)",
-    experience: "8 Yrs.",
-    designation: "Assistant Professor",
+    education: "M.Tech, (Ph.d P)",
     publications: "4",
-    imageUrl: javed, // Add the path for the image
+    experience: "10",
+    imageUrl: saradsingh,
+    resume: saradsinghResume,
   },
   {
-    name: "Mrs. Neha Chauhan",
-    education: "M.Tech",
-    experience: "10 Yrs.",
+    name: "Mr. kshitij",
     designation: "Assistant Professor",
-    publications: "4",
-    imageUrl: nehachauhan, // Add the path for the image
+    education: "M.Tech, (Ph.d P)",
+    publications: "14",
+    experience: "10",
+    imageUrl: Kshitiz,
+    resume: KshitizResume,
   },
   {
-    name: "Ms. Rashmi Mishra",
-    education: "M.Tech",
-    experience: "5 Yrs.",
+    name: "Ms. Akanksha",
     designation: "Assistant Professor",
-    publications: "11",
-    imageUrl: Rashmimishra, // Add the path for the image
+    education: "M.Tech, (Ph.d P)",
+    publications: "8",
+    experience: "6",
+    imageUrl: akanksha,
+    resume: akankshaResume,
   },
   {
-    name: "Ms. Shuchi Jain",
-    education: "M. Tech",
-    experience: "12 Yrs.",
+    name: "Ms. Aasiya Khatoon",
     designation: "Assistant Professor",
-    imageUrl: shuchi, // Add the path for the image
+    education: "M.Tech ",
+    publications: "6",
+    experience: "9",
+    imageUrl: AsiaKhatoon,
+    resume: AsiaKhatoonResume,
   },
   {
-    name: "Mr. Kumar Yashpal Sinha",
-    education: "M. Tech",
-    experience: "10 Yrs.",
+    name: "Ms. Hema Rawat",
     designation: "Assistant Professor",
-    imageUrl: yashpal, // Add the path for the image
+    education: "Mca",
+    experience: "3",
+    imageUrl: HemaRawat,
+    resume: HemaRawatResume,
   },
   {
-    name: "Mrs. Arti Goel",
+    name: "Dr. Upendra Verma",
+    designation: "Assistant Professor",
+    education: "Ph.d",
+    publications: "12",
+    experience: "14.5",
+    imageUrl: UpendraKumar,
+    resume: UpendraKumarResume,
+  },
+  {
+    name: "Ms. Anju",
+    designation: "Assistant Professor",
+    education: "M.Tech ",
+    experience: "0",
+    imageUrl: anju,
+    resume: anjuResume,
+  },
+  {
+    name: "Ms. Suman Rana",
+    designation: "Assistant Professor",
     education: "MCA",
-    experience: "5 Yrs.",
-    designation: "Assistant Professor",
-    imageUrl: Aarti, // Add the path for the image
+    imageUrl: SumanRana,
+    resume: SumanRanaResume,
   },
   {
-    name: "Mrs. Santawana Goel",
+    name: "Ms. Anita",
+    designation: "Assistant Professor",
     education: "MCA",
-    experience: "4 Yrs.",
-    designation: "Assistant Professor",
-    imageUrl: santawana, // Add the path for the image
+    experience: "1.5",
+    imageUrl: anita,
+    resume: anitaResume,
   },
   {
-    name: "Mr. Rakesh Kumar",
-    education: "M. Tech. CSE, Ph.D (P)",
-    experience: "14 Yrs.",
+    name: "Mr. Rajul",
     designation: "Assistant Professor",
-    publications: "7",
-    imageUrl: rakeshKumar, // Add the path for the image
-  },
-  {
-    name: "Mr. Santosh Kumar Joshi",
-    education: "M. Tech. CSE",
-    experience: "13 Yrs.",
-    designation: "Assistant Professor",
-    imageUrl: santoshJoshi, // Add the path for the image
+    education: "MCA",
+    experience: "0",
+    imageUrl: rajul,
+    resume: rajulResume,
   },
 ];

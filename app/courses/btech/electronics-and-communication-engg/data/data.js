@@ -5,18 +5,30 @@ import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import EceDocument from "../../../../../public/courses/btech/electronics-and-communication/ECE.pdf";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
-import AbhishekChakravorty from "../../../../../public/courses/btech/electronics-and-communication/facultyData/AbhishekChakravorty.webp";
-import NishantSaxena from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NishantSaxena.webp";
-import SunilSemwal from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SunilSemwal.webp";
-import Mukesh from "../../../../../public/courses/btech/electronics-and-communication/facultyData/Mukesh.webp";
-import TripureshJoshi from "../../../../../public/courses/btech/electronics-and-communication/facultyData/TripureshJoshi.webp";
-import sandeepgautam from "../../../../../public/courses/btech/electronics-and-communication/facultyData/sandeepgautam.webp";
-import VaibhavKumar from "../../../../../public/courses/btech/electronics-and-communication/facultyData/VaibhavKumar.webp";
-import MohitKumar from "../../../../../public/courses/btech/electronics-and-communication/facultyData/MohitKumar.webp";
-import SandeepKhantwal from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SandeepKhantwal.webp";
-import himani from "../../../../../public/courses/btech/electronics-and-communication/facultyData/himani.webp";
-import RahulNegi from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RahulNegi.webp";
-import ParwatiBhandari from "../../../../../public/courses/btech/electronics-and-communication/facultyData/ParwatiBhandari.webp";
+import abhishekchakrovarty from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/abhishekchakrovarty.webp";
+import NISHANT from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NISHANT.webp";
+import NISHANTResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NISHANTResume.pdf";
+import VAIBHAVKUMAR from "../../../../../public/courses/btech/electronics-and-communication/facultyData/VAIBHAVKUMAR.webp";
+import VAIBHAVKUMARResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/VAIBHAVKUMARResume.pdf";
+import MukeshPathela from "../../../../../public/courses/btech/electronics-and-communication/facultyData/MukeshPathela.webp";
+import MukeshPathelaResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/MukeshPathelaResume.pdf";
+import SANDEEPKHANTWAL from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SANDEEPKHANTWAL.webp";
+import SANDEEPKHANTWALResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SANDEEPKHANTWALResume.pdf";
+import RAHULNEGI from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RAHULNEGI.webp";
+import RAHULNEGIResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RAHULNEGIResume.pdf";
+import NANSE from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NANSE.webp";
+import NANSEResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NANSEResume.pdf";
+import SandeepKumar from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SandeepKumar.webp";
+import SandeepKumarResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SandeepKumarResume.pdf";
+import HimaniRawat from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawat.webp";
+import HimaniRawatResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawatResume.pdf";
+import Lokesh from "../../../../../public/courses/btech/electronics-and-communication/facultyData/Lokesh.webp";
+import LokeshResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/LokeshResume.pdf";
+import Rajni from "../../../../../public/courses/btech/electronics-and-communication/facultyData/Rajni.webp";
+import RajniResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RajniResume.pdf";
+import swati from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swati.webp";
+import swatiResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swatiResume.pdf";
+
 import Link from "next/link";
 
 export const images = [
@@ -407,116 +419,109 @@ export const hod = [
     email: "eee.hod@tulas.edu.in",
     designation: "Head of the Department,",
     department: "Electronics and Communication Engineering",
-    imageUrl: AbhishekChakravorty, // Replace with the actual image path
+    imageUrl: abhishekchakrovarty, // Replace with the actual image path
   },
 ];
 
 export const facultyData = [
   {
     name: "Dr. Nishant Saxena",
-    education: "B.Tech, M.Tech., Ph.D.",
-    experience: "20 Yrs.",
-    designation: "Professor and Dean Academics",
-    specialization: "Biomedical Electronics",
-    publications:
-      "35+ Research publications in reputed journals and conferences",
-    imageUrl: NishantSaxena,
-  },
-  {
-    name: "Dr. Sunil Semwal",
-    education: "B.Tech, M.E., Ph.D.",
-    experience: "14 Yrs.",
-    designation: "Associate Professor and Dean R&D",
-    specialization:
-      "Artificial Intelligence, Smart Metering Systems, Machine Learning",
-    publications:
-      "31 Research publications in reputed journals and conferences",
-    imageUrl: SunilSemwal,
-  },
-  {
-    name: "Mr. Mukesh Pathela",
-    education: "B.E., M.Tech., Ph.D. (Pursuing)",
-    experience: "17 Yrs.",
-    designation: "Assistant Professor",
-    specialization:
-      "Analog Circuits, Digital Communication, Digital Image Processing",
-    publications:
-      "14 Research publications in reputed journals and conferences",
-    imageUrl: Mukesh,
-  },
-  {
-    name: "Dr. Tripuresh Joshi",
-    education: "B.Tech, M.Tech, Ph.D.",
-    experience: "11 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Soilid State Devices, TFET, Optoelectronics",
-    publications:
-      "15 Research publications in reputed journals and conferences",
-    imageUrl: TripureshJoshi,
-  },
-  {
-    name: "Mr. Sandeep Gautam",
-    education: "Ph.D. (Pursuing)",
-    experience: "12 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Instrumentation and Automation",
-    publications: "9 Research publications in reputed journals and conferences",
-    imageUrl: sandeepgautam,
+    designation: "PROFESSOR",
+    education: "P.hd ",
+    publications: "35",
+    experience: "25",
+    imageUrl: NISHANT,
+    resume: NISHANTResume,
   },
   {
     name: "Mr. Vaibhav Kumar",
-    education: "B.Tech, M.Tech",
-    experience: "10 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Wireless Mobile Communication",
-    publications: "4 Research publications in reputed journals and conferences",
-    imageUrl: VaibhavKumar,
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "2",
+    experience: "10",
+    imageUrl: VAIBHAVKUMAR,
+    resume: VAIBHAVKUMARResume,
   },
   {
-    name: "Mr. Mohit Kumar",
-    education: "B.Tech, M.Tech",
-    experience: "10 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Artificial Intelligence and Bio-Medical",
-    publications: "3 Research publications in reputed journals and conferences",
-    imageUrl: MohitKumar,
+    name: "Mr. Mukesh Pathela",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech P.hd (P)",
+    publications: "15",
+    experience: "17",
+    imageUrl: MukeshPathela,
+    resume: MukeshPathelaResume,
   },
   {
     name: "Mr. Sandeep Khantwal",
-    education: "B.Tech, M.Tech, Ph.D. (Pursuing)",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "VLSI",
-    publications:
-      "16 Research publications in reputed journals and conferences",
-    imageUrl: SandeepKhantwal,
-  },
-  {
-    name: "Ms. Himani Rawat",
-    education: "B.Tech, M.Tech",
-    experience: "3 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Communication Systems, Machine Learning",
-    publications: "3",
-    imageUrl: himani,
+    designation: "ASST PROFESSOR",
+    education: "M.Tech P.hd (P)",
+    publications: "47",
+    experience: "8",
+    imageUrl: SANDEEPKHANTWAL,
+    resume: SANDEEPKHANTWALResume,
   },
   {
     name: "Mr. Rahul Negi",
-    education: "B.Tech, M.Tech",
-    experience: "3 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Instrumentation and Control",
-    publications: "2 Research publications in reputed journals and conferences",
-    imageUrl: RahulNegi,
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "4",
+    experience: "4",
+    imageUrl: RAHULNEGI,
+    resume: RAHULNEGIResume,
   },
   {
-    name: "Ms. Parvati Bhandari",
-    education: "B.Tech, M.Tech",
-    experience: "4 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Wireless and Mobile Communication",
-    publications: "1 Research publication in reputed journals and conferences",
-    imageUrl: ParwatiBhandari,
+    name: "Ms. Nanse",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech P.hd (P)",
+    publications: "2",
+    experience: "5",
+    imageUrl: NANSE,
+    resume: NANSEResume,
+  },
+  {
+    name: "Mr. Sandeep Gotam",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech P.hd (P)",
+    publications: "4",
+    experience: "15",
+    imageUrl: SandeepKumar,
+    resume: SandeepKumarResume,
+  },
+  {
+    name: "Ms. Himani Rawat",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "0",
+    experience: "2",
+    imageUrl: HimaniRawat,
+    resume: HimaniRawatResume,
+  },
+  {
+    name: "Mr Lokesh Bhargava",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "2",
+    experience: "5",
+    imageUrl: Lokesh,
+    resume: LokeshResume,
+  },
+  {
+    name: "Ms Ragini shukla",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "6",
+    experience: "10",
+    imageUrl: Rajni,
+    resume: RajniResume,
+  },
+  {
+    name: "Ms Swati Joshi",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "4",
+    experience: "3",
+    imageUrl: swati,
+    resume: swatiResume,
   },
 ];
 

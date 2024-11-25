@@ -66,7 +66,7 @@ function TableProgram({
             <HOD hod={hod} HODcontent={HODcontent} />
           )}
           {selectedCard === 4 && specialization && (
-            <div className="bg-white rounded-3xl text-[#3D0018] px-4 md:px-8 py-4 md:py-8 text-[14px] md:text-[20px]">
+            <div className="bg-white rounded-3xl text-justify text-[#3D0018] px-4 md:px-8 py-4 md:py-8 text-[14px] md:text-[20px]">
               {specialization}
             </div>
           )}

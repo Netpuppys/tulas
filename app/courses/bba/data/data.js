@@ -5,12 +5,27 @@ import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import bbaDocument from "../../../../public/courses/bba/BBA.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
-import DrRanitKishore from "../../../../public/courses/bba/facultyData/DrRanitKishore.webp";
-import Emmanuel from "../../../../public/courses/bba/facultyData/EmanuelGabriel.webp";
-import AnupamNautiyal from "../../../../public/courses/bba/facultyData/AnupamNautiyal.webp";
-import MeghaAhuja from "../../../../public/courses/bba/facultyData/MeghaAhuja.webp";
-import SonalBahuguna from "../../../../public/courses/bba/facultyData/SonalBahuguna.webp";
+import Megha from "../../../../public/courses/bba/facultyData/Megha.webp";
+import MeghaResume from "../../../../public/courses/bba/facultyData/MeghaResume.pdf";
 import BharatBhushan from "../../../../public/courses/bba/facultyData/BharatBhushan.webp";
+import BharatBhushanResume from "../../../../public/courses/bba/facultyData/BharatBhusanResume.pdf";
+import Durgesh from "../../../../public/courses/bba/facultyData/Durgesh.webp";
+import DurgeshResume from "../../../../public/courses/bba/facultyData/DurgeshResume.pdf";
+import Monalsha from "../../../../public/courses/bba/facultyData/Monalsha.webp";
+import MonalshaResume from "../../../../public/courses/bba/facultyData/MonalshaResume.pdf";
+import Nitika from "../../../../public/courses/bba/facultyData/Nitika.webp";
+import NeetikaResume from "../../../../public/courses/bba/facultyData/NeetikaResume.pdf";
+import Nandani from "../../../../public/courses/bba/facultyData/Nandani.webp";
+import NandiniResume from "../../../../public/courses/bba/facultyData/NandiniResume.pdf";
+import Akanksha from "../../../../public/courses/bba/facultyData/Akanksha.webp";
+import AkankshaResume from "../../../../public/courses/bba/facultyData/AkankshaResume.pdf";
+import Ranvijay from "../../../../public/courses/bba/facultyData/Ranvijay.webp";
+import RanvijayResume from "../../../../public/courses/bba/facultyData/RanvijayResume.pdf";
+import Kanika from "../../../../public/courses/bba/facultyData/Kanika.webp";
+import KanikaResume from "../../../../public/courses/bba/facultyData/KanikaResume.pdf";
+import Dipankar from "../../../../public/courses/bba/facultyData/Dipankar.webp";
+import DipankarResume from "../../../../public/courses/bba/facultyData/DipankarResume.pdf";
+
 import Link from "next/link";
 
 export const images = [
@@ -287,59 +302,94 @@ export const semesterData = [
 ];
 export const facultyData = [
   {
-    name: "Dr Ranit Kishore",
-    education: "B.Com, MBA , Ph.D.",
-    experience: "23 Years",
-    designation: "Dean",
-    specialization: "Marketing and Information Technology",
-    publications: "22+",
-    imageUrl: DrRanitKishore, // Add the path for the image
+    name: "Ms. Megha Ahuja",
+    designation: "ASST PROFESSOR",
+    education: "MBA",
+    publications: "0",
+    experience: "8",
+    imageUrl: Megha,
+    resume: MeghaResume,
   },
   {
-    name: "Emmanuel Elgin Gabriel",
-    education: "MBA, Ph.D.(P)",
-    experience: "07 Years",
-    designation: "Assistant Professor",
-    specialization: "Finance and Marketing",
-    publications: "02",
-    imageUrl: Emmanuel,
-  },
-  {
-    name: "Anupam Nautiyal",
-    education: "MBA, Ph.D.(P)",
-    experience: "07 Years",
-    designation: "Assistant Professor",
-    specialization: "MBA HR",
-    publications: "1",
-    imageUrl: AnupamNautiyal,
-  },
-  {
-    name: "Megha Ahuja",
-    education:
-      "MBA (Educational Leadership) from Finland, M.Com., PGDBA (Finance), IPTE from Finland",
-    experience: "7 Years",
-    designation: "Assistant Professor (Finance)",
-    specialization: "Finance",
-    publications: "",
-    imageUrl: MeghaAhuja,
-  },
-  {
-    name: "Sonal Bahuguna",
-    education: "MBA, PhD(P)",
-    experience: "03 Years",
-    designation: "Assistant professor",
-    specialization: "Finance and Marketing",
-    publications: "",
-    imageUrl: SonalBahuguna,
-  },
-  {
-    name: "Mr. Bharat Bhushan",
-    education: "MBA, Ph.D.(P)",
-    experience: "01 Years",
-    designation: "Assistant Professor",
-    specialization: "HRM",
-    publications: "",
+    name: "Mr. Bharat Bhusan",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "2",
+    experience: "6",
     imageUrl: BharatBhushan,
+    resume: BharatBhushanResume,
+  },
+  {
+    name: "Mr. Durgesh Bahuguna",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "1",
+    experience: "15",
+    imageUrl: Durgesh,
+    resume: DurgeshResume,
+  },
+  {
+    name: "Ms. Monalsha Chand",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "4",
+    experience: "1",
+    imageUrl: Monalsha,
+    resume: MonalshaResume,
+  },
+  {
+    name: "Ms. Neetika Gupta",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "0",
+    experience: "9",
+    imageUrl: Nitika,
+    resume: NeetikaResume,
+  },
+  {
+    name: "Ms. Nandini Dhyani",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "3",
+    experience: "6",
+    imageUrl: Nandani,
+    resume: NandiniResume,
+  },
+  {
+    name: "Ms. Akanksha Pal",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "2",
+    experience: "5",
+    imageUrl: Akanksha,
+    resume: AkankshaResume,
+  },
+  {
+    name: "Dr. Rajvijay Singh",
+    designation: "ASST PROFESSOR",
+    education: "Ph.D",
+    publications: "4",
+    experience: "5",
+    imageUrl: Ranvijay,
+    resume: RanvijayResume,
+  },
+  {
+    name: "Ms. Kanika Pharasi",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "0",
+    experience: "1",
+    imageUrl: Kanika,
+    resume: KanikaResume,
+  },
+  {
+    name: "Mr. Dipankar Dutta",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "7",
+    experience: "5",
+    imageUrl: Dipankar,
+    resume: DipankarResume,
   },
 ];
 const bbacourse = [

@@ -5,14 +5,21 @@ import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import mcaDocument from "../../../../public/courses/mca/MCA.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
-import drsanjeev from "../../../../public/courses/mca/facultyData/drsanjeev.webp";
-import drahmad from "../../../../public/courses/mca/facultyData/drahmad.webp";
+import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
+import PriyaResume from "../../../../public/courses/mca/facultyData/PriyaResume.pdf";
+import RASHMI from "../../../../public/courses/mca/facultyData/RASHMI.webp";
+import RASHMIResume from "../../../../public/courses/mca/facultyData/RASHMIResume.pdf";
+import sidhartha from "../../../../public/courses/mca/facultyData/sidhartha.webp";
+import sidharthaResume from "../../../../public/courses/mca/facultyData/sidharthaResume.pdf";
 import RakeshKumar from "../../../../public/courses/mca/facultyData/RakeshKumar.webp";
-import MohdMurshleen from "../../../../public/courses/mca/facultyData/MohdMurshleen.webp";
-import GauravMittal from "../../../../public/courses/mca/facultyData/GauravMittal.webp";
-import RashmiMishra from "../../../../public/courses/mca/facultyData/RashmiMishra.webp";
-import nishagupta from "../../../../public/courses/mca/facultyData/nishagupta.webp";
-import AnandKumar from "../../../../public/courses/mca/facultyData/AnandKumar.webp";
+import RakeshKumarResume from "../../../../public/courses/mca/facultyData/RakeshKumarResume.pdf";
+import ShikaTayal from "../../../../public/courses/mca/facultyData/ShikaTayal.webp";
+import ShikaTayalResume from "../../../../public/courses/mca/facultyData/ShikaTayalResume.pdf";
+import Musheer from "../../../../public/courses/mca/facultyData/Musheer.webp";
+import MusheerResume from "../../../../public/courses/mca/facultyData/MusheerResume.pdf";
+import SanjeevKumnar from "../../../../public/courses/mca/facultyData/SanjeevKumnar.webp";
+import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf";
+import AnandKumar from "../../../../public/courses/btech/computer-science/facultyData/AnandGupta.webp";
 import Link from "next/link";
 
 export const images = [
@@ -350,58 +357,68 @@ export const semesterData = [
 
 export const facultyData = [
   {
-    name: "Dr. Sanjeev Kumar",
-    education: "Ph.D (CSE)",
-    experience: "17 Years",
-    designation: "Professor",
-    publications: "51",
-    imageUrl: drsanjeev, // Replace with the actual image path
-  },
-  {
-    name: "Dr. Ahamd Jamal",
-    education: "Ph.D",
-    experience: "9 Years",
-    designation: "Associate Professor",
-    publications: "08",
-    imageUrl: drahmad, // Replace with the actual image path
+    name: "Dr Priya Matta",
+    designation: "Associate Professor & HoD",
+    education: "Ph.d",
+    publications: "67",
+    experience: "20",
+    imageUrl: Priya,
+    resume: PriyaResume,
   },
   {
     name: "Mr. Rakesh Kumar",
-    education: "M. Tech. CSE, Ph.D (P)",
-    experience: "14 Years",
     designation: "Assistant Professor",
-    publications: "7",
-    imageUrl: RakeshKumar, // Replace with the actual image path
+    education: "M.Tech Ph.d (P)",
+    publications: "10",
+    experience: "19",
+    imageUrl: RakeshKumar,
+    resume: RakeshKumarResume,
   },
   {
-    name: "Mr. Mohd. Mursleen",
-    education: "M. Tech.",
-    experience: "4.5 Years",
-    designation: "Assistant Professor",
-    publications: "11",
-    imageUrl: MohdMurshleen, // Replace with the actual image path
+    name: "Dr. Sanjeev Kumar",
+    designation: "Professor",
+    education: "Ph.d",
+    publications: "61",
+    experience: "18",
+    imageUrl: SanjeevKumnar,
+    resume: SanjeevKumnarResume,
   },
   {
-    name: "Mr. Gaurav Mittal",
-    education: "M. Tech",
-    experience: "3 Years",
+    name: "Dr Musheer Vaqur",
+    designation: "Associate Professor",
+    education: "Ph.d",
+    publications: "24",
+    experience: "18",
+    imageUrl: Musheer,
+    resume: MusheerResume,
+  },
+  {
+    name: "Dr. Shikha Tayal Aeron",
     designation: "Assistant Professor",
-    publications: "03",
-    imageUrl: GauravMittal, // Replace with the actual image path
+    education: "Ph.d",
+    publications: "6",
+    experience: "13",
+    imageUrl: ShikaTayal,
+    resume: ShikaTayalResume,
+  },
+
+  {
+    name: "Mr. Siddharth Sharma",
+    designation: "Assistant Professor",
+    education: "MCA",
+    publications: "",
+    experience: "13",
+    imageUrl: sidhartha,
+    resume: sidharthaResume,
   },
   {
     name: "Ms. Rashmi Mishra",
-    education: "M. Tech (CSE)",
     designation: "Assistant Professor",
-    publications: "NA", // Not available in image
-    imageUrl: RashmiMishra, // Replace with the actual image path
-  },
-  {
-    name: "Ms. Nisha Gupta",
-    education: "M. Tech (CSE)",
-    designation: "Assistant Professor",
+    education: "MCA",
     publications: "2",
-    imageUrl: nishagupta, // Replace with the actual image path
+    experience: "8",
+    imageUrl: RASHMI,
+    resume: RASHMIResume,
   },
 ];
 export const hod = [

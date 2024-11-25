@@ -31,7 +31,7 @@ function FacultyData({ facultyData }) {
             <h3 className="text-[#FFE0EE] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">
               {faculty.name}
             </h3>
-            {faculty.experience && (
+            {faculty.education && (
               <p className="text-[14px] md:text-[16px]">
                 <strong>Education:- </strong>
                 {faculty.education}

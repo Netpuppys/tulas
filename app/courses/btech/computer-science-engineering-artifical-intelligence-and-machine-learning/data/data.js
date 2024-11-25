@@ -4,7 +4,7 @@ import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
-import AnandKumar from "../../../../../public/courses/btech/computer-science/facultyData/AnandKumar.webp";
+import AnandKumar from "../../../../../public/courses/btech/computer-science/facultyData/AnandGupta.webp";
 export const images = [
   aiml,
   // Add more image paths as needed

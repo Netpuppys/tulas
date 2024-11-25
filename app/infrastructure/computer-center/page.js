@@ -14,7 +14,7 @@ import Vision from "@/component/Programs/Vision";
 function ComputerScience() {
   const sections = [
     {
-      title: "World Class IT Infrastructure to facilitate e-learning",
+      title: "World Class IT Infrastructure to facilitate E-Learning",
       description:
         "The institute has chosen a system based on high end servers and work stations under Windows and Linux, which provide the interconnection and exchange of information between the various systems thereby providing the students and faculty a work environment adapted to their requirements and latest technology reflecting the standards of the computer industry.",
       image: it,

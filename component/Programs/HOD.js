@@ -41,7 +41,7 @@ function HOD({ hod, HODcontent }) {
         ))}
       </div>
       <div className="z-[9] bg-transparent h-fit relative pl-4">
-        <h5 className="w-full text-white  px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
+        <h5 className="w-full text-white text-justify px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
           {HODcontent}
         </h5>
       </div>

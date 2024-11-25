@@ -1,7 +1,7 @@
 import diplomaComputer from "../../../public/diploma-computer-science-engineering/diploma-computer-science-engineering.png";
 import DepartmentalVission from "../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../public/courses/bjmc/departmentalMission.png";
-import AnandKumar from "../../../public/courses/btech/computer-science/facultyData/AnandKumar.webp";
+import AnandKumar from "../../../public/courses/btech/computer-science/facultyData/AnandGupta.webp";
 
 export const images = [
   diplomaComputer,

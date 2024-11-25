@@ -4,16 +4,20 @@ import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
-import Kothari from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/Kothari.webp";
-import SunilSemwal from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/SunilSemwal.webp";
-import MukeshPathela from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/MukeshPathela.webp";
-import AbhishekChakravorty from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/AbhishekChakravorty.webp";
-import Nanse from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/Nanse.webp";
-import Rashmi from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/Rashmi.webp";
-import VrijMohan from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/VrijMohan.webp";
-import sushmaMam from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/sushmaMam.webp";
-import amitUniyal from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/amitUniyal.webp";
-
+import virjmohanvidhyarthy from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/virjmohanvidhyarthy.webp";
+import virjmohanvidhyarthyResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/virjmohanvidhyarthyResume.pdf";
+import abhishekchakrovarty from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/abhishekchakrovarty.webp";
+import abhishekchakrovartyResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/abhishekchakrovartyResume.pdf";
+import NarendraKumar from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/NarendraKumar.webp";
+import NarendraKumarResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/NarendraKumarResume.pdf";
+import priyanka from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/priyanka.webp";
+import priyankaResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/priyankaResume.pdf";
+import rajkumar from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/rajkumar.webp";
+import rajkumarResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/rajkumarResume.pdf";
+import RASHMIDHAUNDIYAL from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/RASHMIDHAUNDIYAL.webp";
+import RASHMIDHAUNDIYALResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/RASHMIDHAUNDIYALResume.pdf";
+import shushma from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/shushma.webp";
+import shushmaResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/shushmaResume.pdf";
 import EEEpdf from "../../../../../public/courses/btech/electrical-and-electronics/EEE.pdf";
 import Link from "next/link";
 export const images = [
@@ -393,96 +397,73 @@ export const hod = [
     email: "eee.hod@tulas.edu.in",
     designation: "Head of the Department,",
     department: "Electrical and Electronics Engineering",
-    imageUrl: AbhishekChakravorty, // Replace with the actual image path
+    imageUrl: abhishekchakrovarty, // Replace with the actual image path
   },
 ];
 
 export const facultyData = [
   {
-    name: "Dr. D.P. Kothari",
-    education: "B.Tech, M.Tech., Ph.D.",
-    experience: "53 Yrs.",
-    designation: "Adjunct Professor",
-    specialization: "Power System, Electrical Machines, Networks theory",
-    publications:
-      "840 Research publications in reputed journals and conferences",
-    imageUrl: Kothari,
-  },
-  {
-    name: "Dr. Sunil Semwal",
-    education: "B.Tech, M.E., Ph.D.",
-    experience: "14 Yrs.",
-    designation: "Associate Professor and Dean R&D",
-    specialization:
-      "Artificial Intelligence, Smart Metering Systems, Machine Learning",
-    publications:
-      "31 Research publications in reputed journals and conferences",
-    imageUrl: SunilSemwal,
-  },
-  {
-    name: "Mr. Mukesh Pathela",
-    education: "B.E., M.Tech., Ph.D. (Pursuing)",
-    experience: "17 Yrs.",
-    designation: "Assistant Professor and HoD",
-    specialization:
-      "Analog Circuits, Digital Communication, Digital Image Processing",
-    publications: "14",
-    imageUrl: MukeshPathela,
-  },
-  {
     name: "Mr. Abhishek Chakravorty",
-    education: "B.Tech, M.Tech",
-    experience: "10 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Instrumentation and Control",
-    publications: "7 Research publications in reputed journals and conferences",
-    imageUrl: AbhishekChakravorty,
-  },
-  {
-    name: "Ms. Nanse",
-    education: "B.Tech, M.Tech",
-    experience: "4 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Instrumentation",
-    publications: "2 Research publications in reputed journals and conferences",
-    imageUrl: Nanse,
-  },
-  {
-    name: "Ms. Rashmi Dhaundiyal",
-    education: "B.Tech, M.Tech",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Power System",
-    publications: "2 Research publications in reputed journals and conferences",
-    imageUrl: Rashmi,
+    designation: "ASST PROFESSOR",
+    education: "M.Tech ",
+    publications: "10",
+    experience: "12",
+    imageUrl: abhishekchakrovarty,
+    resume: abhishekchakrovartyResume,
   },
   {
     name: "Mr. Vrij Mohan Vidyarthi",
-    education: "B.Tech, M.Tech",
-    experience: "8 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Power Electronics",
-    publications: "5 Research publications in reputed journals and conferences",
-    imageUrl: VrijMohan,
+    designation: "ASST PROFESSOR",
+    education: "M.Tech ",
+    publications: "7",
+    experience: "10",
+    imageUrl: virjmohanvidhyarthy,
+    resume: virjmohanvidhyarthyResume,
   },
   {
-    name: "Mrs. Sushma",
-    education: "B.Tech, M.Tech",
-    experience: "12 Yrs.",
-    designation: "Assistant Professor",
-    specialization: "Control System",
-    publications: "7 Research publications in reputed journals and conferences",
-    imageUrl: sushmaMam,
+    name: "Ms. Rashmi Dhaundiyal",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech ",
+    publications: "3",
+    experience: "8",
+    imageUrl: RASHMIDHAUNDIYAL,
+    resume: RASHMIDHAUNDIYALResume,
   },
   {
-    name: "Mr. Amit Unial",
-    education: "B.Tech, M.Tech",
-    experience: "5 Yrs.",
-    designation: "Assistant Professor",
-    specialization:
-      "Power System Optimization, Power Electronic Converters, EV",
-    publications: "N/A",
-    imageUrl: amitUniyal,
+    name: "Ms. Sushma",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech ",
+    publications: "7",
+    experience: "12",
+    imageUrl: shushma,
+    resume: shushmaResume,
+  },
+  {
+    name: "Mr. Rajkumar singh",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech ",
+    publications: "4",
+    experience: "7",
+    imageUrl: rajkumar,
+    resume: rajkumarResume,
+  },
+  {
+    name: "Ms. Priyanka Raturi Semwal",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech P.hd (P)",
+    publications: "6",
+    experience: "10",
+    imageUrl: priyanka,
+    resume: priyankaResume,
+  },
+  {
+    name: "Mr. Narendra Kuamr",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech ",
+    publications: "2",
+    experience: "2",
+    imageUrl: NarendraKumar,
+    resume: NarendraKumarResume,
   },
 ];
 

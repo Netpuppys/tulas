@@ -11,21 +11,17 @@ import PreetiKumar from "../../../../../public/courses/btech/civil-engineering/f
 import PreetiKumarResume from "../../../../../public/courses/btech/civil-engineering/facultyData/PreetiKumarResume.pdf";
 import AshishKumar from "../../../../../public/courses/btech/civil-engineering/facultyData/AshishKumar.webp";
 import AshishKumarResume from "../../../../../public/courses/btech/civil-engineering/facultyData/AshishKumarResume.pdf";
-import SunnySaini from "../../../../../public/courses/btech/civil-engineering/facultyData/SunnySaini.webp";
-import SunnyResume from "../../../../../public/courses/btech/civil-engineering/facultyData/SunnyResume.pdf";
 import mohitSharma from "../../../../../public/courses/btech/civil-engineering/facultyData/mohitSharma.webp";
 import MohitSharmaResume from "../../../../../public/courses/btech/civil-engineering/facultyData/MohitSharmaResume.pdf";
-import vishal from "../../../../../public/courses/btech/civil-engineering/facultyData/vishal.png";
+import vishal from "../../../../../public/courses/btech/civil-engineering/facultyData/vishal.webp";
 import vishalResume from "../../../../../public/courses/btech/civil-engineering/facultyData/vishalResume.pdf";
 import ankitavats from "../../../../../public/courses/btech/civil-engineering/facultyData/ankitavats.webp";
 import AnkitaResume from "../../../../../public/courses/btech/civil-engineering/facultyData/AnkitaResume.pdf";
-import shipra from "../../../../../public/courses/btech/civil-engineering/facultyData/shipra.webp";
-import ShipraResume from "../../../../../public/courses/btech/civil-engineering/facultyData/ShipraResume.pdf";
 import MohitBisht from "../../../../../public/courses/btech/civil-engineering/facultyData/MohitBisht.webp";
 import MohitBishtResume from "../../../../../public/courses/btech/civil-engineering/facultyData/MohitBishtResume.pdf";
-import Archit from "../../../../../public/courses/btech/civil-engineering/facultyData/Archit.png";
+import Archit from "../../../../../public/courses/btech/civil-engineering/facultyData/Archit.webp";
 import ArchitResume from "../../../../../public/courses/btech/civil-engineering/facultyData/ArchitResume.pdf";
-import Bhumika from "../../../../../public/courses/btech/civil-engineering/facultyData/Bhumika.png";
+import Bhumika from "../../../../../public/courses/btech/civil-engineering/facultyData/Bhumika.webp";
 import BhumikaResume from "../../../../../public/courses/btech/civil-engineering/facultyData/BhumikaResume.pdf";
 import ArunAgarwal from "../../../../../public/courses/btech/civil-engineering/facultyData/ArunAgarwal.webp";
 import Prashant from "../../../../../public/courses/btech/civil-engineering/facultyData/PrashantGussain.webp";
@@ -194,18 +190,21 @@ export const selectedCardTable = [
       <>
         a. Passed Diploma examination with at least 45% marks (40% marks in case
         of candidates belonging to reserved category) in ANY branch of
-        Engineering and Technology. <br/>b. Passed B.Sc. Degree from a recognized
-        University as defined by UGC, with at least 45% marks (40% marks in case
-        of candidates belonging to reserved category) and passed 10+2
-        examination with Mathematics as a subject. <br/>c. Provided that the students
-        belonging to B.Sc. Stream, shall clear the subjects Engineering
-        Graphics/ Engineering Drawing and Engineering Mechanics of the First
-        Year Engineering Programme along with the Second year subjects. <br/>d.
-        Provided that the students belonging to B.Sc. Stream shall be considered
-        only after filling the supernumerary seats in this category with
-        students belonging to the Diploma stream. <br/>e. Passed D.Voc. Stream in the
-        same or allied sector. <br/>f. In the above cases, a suitable bridge Courses,
-        if required such as in Mathematics may be conducted.
+        Engineering and Technology. <br />
+        b. Passed B.Sc. Degree from a recognized University as defined by UGC,
+        with at least 45% marks (40% marks in case of candidates belonging to
+        reserved category) and passed 10+2 examination with Mathematics as a
+        subject. <br />
+        c. Provided that the students belonging to B.Sc. Stream, shall clear the
+        subjects Engineering Graphics/ Engineering Drawing and Engineering
+        Mechanics of the First Year Engineering Programme along with the Second
+        year subjects. <br />
+        d. Provided that the students belonging to B.Sc. Stream shall be
+        considered only after filling the supernumerary seats in this category
+        with students belonging to the Diploma stream. <br />
+        e. Passed D.Voc. Stream in the same or allied sector. <br />
+        f. In the above cases, a suitable bridge Courses, if required such as in
+        Mathematics may be conducted.
       </>
     ),
   },
@@ -405,59 +404,30 @@ export const facultyData = [
   {
     name: "Dr. Tripti Khanduri",
     education: "Ph.D",
-    experience: "16 Yrs.",
+    experience: "12 Yrs.",
     designation: "Associate Professor & Head of Department",
-    publications: "11",
+    publications: "21",
     imageUrl: Tripti, // Add the path for the image
     resume: TriptiResume,
   },
   {
-    name: "Ms. Preeti Kumari",
-    education: "M.Tech.",
-    experience: "6 Yrs.",
+    name: "Mr. Mohit Sharma",
+    education: "M.tech P.hd (P)",
+    experience: "9 Yrs.",
     designation: "Assistant Professor",
-    publications: "2",
-    imageUrl: PreetiKumar, // Add the path for the image
-    resume: PreetiKumarResume,
+    publications: "4",
+    imageUrl: mohitSharma, // Add the path for the image
+    resume: MohitSharmaResume,
   },
   {
     name: "Mr. Ashish Kumar",
-    education: "M.Tech.",
+    education: "M.tech P.hd (P)",
     experience: "6.5 Yrs.",
     designation: "Assistant Professor",
     publications: "2",
     imageUrl: AshishKumar, // Add the path for the image
     resume: AshishKumarResume,
   },
-  
-  {
-    name: "Mr. Mohit Sharma",
-    education: "M.Tech.",
-    experience: "7 Yrs.",
-    designation: "Assistant Professor",
-    publications: "3",
-    imageUrl: mohitSharma, // Add the path for the image
-    resume: MohitSharmaResume,
-  },
-  {
-    name: "Vishal Chauhan",
-    education: "M.Tech.",
-    experience: "7 Yrs.",
-    designation: "Assistant Professor",
-    publications: "2",
-    imageUrl: vishal, // Add the path for the image
-    resume: vishalResume,
-  },
-  {
-    name: "Ms. Ankita Vats",
-    education: "M.Tech.",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    publications: "2",
-    imageUrl: ankitavats, // Add the path for the image
-    resume: AnkitaResume,
-  },
- 
   {
     name: "Mr. Mohit Bisht",
     education: "M.Tech.",
@@ -468,22 +438,13 @@ export const facultyData = [
     resume: MohitBishtResume,
   },
   {
-    name: "Mr. Archit Priyadarshi",
-    education: "M.Tech.",
+    name: "Ms. Preeti Kumari",
+    education: "M.tech P.hd (P)",
     experience: "6 Yrs.",
     designation: "Assistant Professor",
     publications: "2",
-    imageUrl: Archit, // Add the path for the image
-    resume: ArchitResume,
-  },
-  {
-    name: "Ms. Bhumika Joshi",
-    education: "M.Tech.",
-    experience: "1.5 Yrs.",
-    designation: "Assistant Professor",
-    publications: "2",
-    imageUrl: Bhumika, // Add the path for the image
-    resume: BhumikaResume,
+    imageUrl: PreetiKumar, // Add the path for the image
+    resume: PreetiKumarResume,
   },
   {
     name: "Mr. Prashant Gusain",
@@ -494,15 +455,52 @@ export const facultyData = [
     imageUrl: Prashant, // Add the path for the image
     resume: PrashantResume,
   },
+  {
+    name: "Mr. Archit Priyadarshi",
+    education: "M.Tech.",
+    experience: "6 Yrs.",
+    designation: "Assistant Professor",
+    publications: "4",
+    imageUrl: Archit, // Add the path for the image
+    resume: ArchitResume,
+  },
+  {
+    name: "Ms. Ankita Vats",
+    education: "M.Tech.",
+    experience: "6 Yrs.",
+    designation: "Assistant Professor",
+    publications: "2",
+    imageUrl: ankitavats, // Add the path for the image
+    resume: AnkitaResume,
+  },
+  {
+    name: "Vishal Chauhan",
+    education: "M.Tech.",
+    experience: "3 Yrs.",
+    designation: "Assistant Professor",
+    publications: "2",
+    imageUrl: vishal, // Add the path for the image
+    resume: vishalResume,
+  },
+
+  {
+    name: "Ms. Bhumika Joshi",
+    education: "M.Tech.",
+    experience: "1.5 Yrs.",
+    designation: "Assistant Professor",
+    publications: "4",
+    imageUrl: Bhumika, // Add the path for the image
+    resume: BhumikaResume,
+  },
 ];
 
 export const hod = [
   {
-    name: "Dr. Arun Agarwal",
+    name: "Dr. Tripti Khanduri",
     email: "civil.hod@tulas.edu.in",
     designation: "Head of the Department,",
     department: "Civil Engineering Department",
-    imageUrl: ArunAgarwal, // Replace with the actual image path
+    imageUrl: Tripti, // Add the path for the image
   },
 ];
 export const HODcontent =

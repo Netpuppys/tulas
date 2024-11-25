@@ -6,16 +6,25 @@ import Link from "next/link";
 import mbaDocument from "../../../../public/courses/mba/MBA.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
-import DrRanitKishore from "../../../../public/courses/mba/facultyData/DrRanitKishore.webp";
-import araghyaSarkar from "../../../../public/courses/mba/facultyData/araghyaSarkar.png";
-import AnantLakshedra from "../../../../public/courses/mba/facultyData/AnantLakshedra.png";
-import LalitGoel from "../../../../public/courses/mba/facultyData/LalitGoel.png";
-import ShikhaDabral from "../../../../public/courses/mba/facultyData/ShikhaDabral.png";
-import JasmeetKaur from "../../../../public/courses/mba/facultyData/JasmeetKaur.png";
-import AbdalAhemad from "../../../../public/courses/mba/facultyData/AbdalAhemad.png";
-import AnupamNautiyal from "../../../../public/courses/mba/facultyData/AnupamNautiyal.png";
-import Emmanuel from "../../../../public/courses/mba/facultyData/Emmanuel.png";
-import BharatBhushan from "../../../../public/courses/mba/facultyData/BharatBhushan.png";
+import AbdalAhmed from "../../../../public/courses/mba/facultyData/AbdalAhmed.webp";
+import AbdalAhmedResume from "../../../../public/courses/mba/facultyData/AbdalAhmedResume.pdf";
+import Akansha from "../../../../public/courses/mba/facultyData/Akansha.webp";
+import AkanshaResume from "../../../../public/courses/mba/facultyData/AkanshaResume.pdf";
+import AnantLakshendra from "../../../../public/courses/mba/facultyData/AnantLakshendra.webp";
+import AnantLakshendraResume from "../../../../public/courses/mba/facultyData/AnantLakshendraResume.pdf";
+import AnupamNautiyal from "../../../../public/courses/mba/facultyData/AnupamNautiyal.webp";
+import AnupamNautiyalResume from "../../../../public/courses/mba/facultyData/AnupamNautiyalResume.pdf";
+import ArghyaSarkar from "../../../../public/courses/mba/facultyData/ArghyaSarkar.webp";
+import ArghyaSarkarResume from "../../../../public/courses/mba/facultyData/ArghyaSarkarResume.pdf";
+import Emmanuel from "../../../../public/courses/mba/facultyData/Emmanuel.webp";
+import EmmanuelResume from "../../../../public/courses/mba/facultyData/EmmanuelResume.pdf";
+import LalitGoyal from "../../../../public/courses/mba/facultyData/LalitGoyal.webp";
+import LalitGoyalResume from "../../../../public/courses/mba/facultyData/LalitGoyalResume.pdf";
+import ShikhaDabral from "../../../../public/courses/mba/facultyData/ShikhaDabral.webp";
+import ShikhaDabralResume from "../../../../public/courses/mba/facultyData/ShikhaDabralResume.pdf";
+import SwatiYadav from "../../../../public/courses/mba/facultyData/SwatiYadav.webp";
+import SwatiYadavResume from "../../../../public/courses/mba/facultyData/SwatiYadavResume.pdf";
+
 export const images = [
   mba,
   // Add more image paths as needed
@@ -417,94 +426,85 @@ export const semesterData = [
 ];
 export const facultyData = [
   {
-    name: "Dr Ranit Kishore",
-    education: "B.Com, MBA , Ph.D.",
-    experience: "23 Years",
-    designation: "Dean",
-    specialization: "Marketing and Information Technology",
-    publications: "22+",
-    imageUrl: DrRanitKishore, // Add the path for the image
+    name: "Dr. Arghya Sarkar",
+    designation: "Associate Professor & HoD",
+    education: "PH.D",
+    publications: "15",
+    experience: "16",
+    imageUrl: ArghyaSarkar,
+    resume: ArghyaSarkarResume,
   },
   {
-    name: "Dr. Agroha Sarkar",
-    education: "MBA, Ph.D.",
-    experience: "11 Years",
-    designation: "Assistant Professor",
-    specialization: "",
-    publications: "09",
-    imageUrl: araghyaSarkar,
-  },
-  {
-    name: "Dr. Anant Lakshendra",
-    education: "MBA, Ph.D.",
-    experience: "15 Years",
+    name: "Dr. Lalit Goyal",
     designation: "Associate Professor",
-    specialization: "",
-    publications: "03",
-    imageUrl: AnantLakshedra,
-  },
-  {
-    name: "Dr. Lalit Goel",
-    education: "MBA, Ph.D.",
-    experience: "18 Years",
-    designation: "Associate Professor & ACOE",
-    specialization: "",
-    publications: "6",
-    imageUrl: LalitGoel,
+    education: "Ph.D",
+    publications: "22",
+    experience: "20",
+    imageUrl: LalitGoyal,
+    resume: LalitGoyalResume,
   },
   {
     name: "Dr. Shikha Dabral",
-    education: "MBA, Ph.D.",
-    experience: "4 Years",
-    designation: "Assistant Professor",
-    specialization: "",
-    publications: "8",
+    designation: "ASST PROFESSOR",
+    education: "Ph.D",
+    publications: "0",
+    experience: "8",
     imageUrl: ShikhaDabral,
+    resume: ShikhaDabralResume,
   },
   {
-    name: "Dr. Jasmeet Kaur",
-    education: "MBA, Ph.D.",
-    experience: "4 Years",
-    designation: "Assistant Professor",
-    specialization: "",
-    publications: "5",
-    imageUrl: JasmeetKaur,
+    name: "Dr. Anant Lakshendra",
+    designation: "Associate Professor",
+    education: "Ph.D",
+    publications: "11",
+    experience: "24",
+    imageUrl: AnantLakshendra,
+    resume: AnantLakshendraResume,
   },
   {
     name: "Dr. Abdal Ahmad",
-    education: "MBA, Ph.D.",
-    experience: "8 Years",
-    designation: "Assistant Professor",
-    specialization: "",
-    publications: "29",
-    imageUrl: AbdalAhemad,
+    designation: "ASST PROFESSOR",
+    education: "Ph.D",
+    publications: "37",
+    experience: "14",
+    imageUrl: AbdalAhmed,
+    resume: AbdalAhmedResume,
   },
   {
-    name: "Mr. Anupam Nautiyal",
-    education: "MBA, Ph.D.(P)",
-    experience: "09 Years",
-    designation: "Assistant Professor",
-    specialization: "",
+    name: "Mr. Anupum Nautiyal",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
     publications: "3",
+    experience: "11",
     imageUrl: AnupamNautiyal,
+    resume: AnupamNautiyalResume,
   },
   {
     name: "Mr. Emmanuel Gabriel",
-    education: "MBA, Ph.D.(P)",
-    experience: "06 Years",
-    designation: "Assistant Professor",
-    specialization: "",
-    publications: "02",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "3",
+    experience: "9",
     imageUrl: Emmanuel,
+    resume: EmmanuelResume,
   },
   {
-    name: "Mr. Bharat Bhushan",
-    education: "MBA, Ph.D.(P)",
-    experience: "03 Years",
-    designation: "Assistant Professor",
-    specialization: "",
-    publications: "02",
-    imageUrl: BharatBhushan,
+    name: "Ms. Swati Yadav",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "2",
+    experience: "5",
+    imageUrl: SwatiYadav,
+    resume: SwatiYadavResume,
+  },
+  {
+    name: "Dr. Akansha Gautam",
+    designation: "ASST PROFESSOR",
+    education: "Ph.D",
+    publications: "27",
+    experience: "9",
+    imageUrl: Akansha,
+    resume: AkanshaResume,
   },
 ];
 export const itemsClubs = [
