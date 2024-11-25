@@ -285,6 +285,13 @@ export const semesterData = [
       { code: "CAT-014", title: "Graph Theory" },
       { code: "CAT-015", title: "Software Engineering" },
       { code: "CAT-0XX", title: "Program Elective 1" },
+      { code: "Program Elective" },
+      { code: "CAT-16", title: "Big Data Analytics" },
+      { code: "CAT-17", title: "Soft Computing" },
+      { code: "CAT-18", title: "Internet of Things" },
+      { code: "CAT-19", title: "Compiler Design" },
+      { code: "CAT-20", title: "Cloud Computing" },
+      { code: "CAT-21", title: "Multimedia" },
       { code: "AHT-313", title: "Universal Human Values" },
       {
         code: "MCAT-305",
@@ -293,15 +300,17 @@ export const semesterData = [
       { code: "MCAT-306", title: "Universal Human Values" },
       {
         code: "MCAT-307",
-        title: "Any Online Course specified by AICTE on latest technology",
+        title: (
+          <>
+            Any Online Course specified by AICTE on latest technology
+            <br />
+            Not Credit Course – must be completed (in 2nd Year)
+            <br />
+            to award the MCA Degree
+          </>
+        ),
       },
-      { code: "Program Elective" },
-      { code: "CAT-16", title: "Big Data Analytics" },
-      { code: "CAT-17", title: "Soft Computing" },
-      { code: "CAT-18", title: "Internet of Things" },
-      { code: "CAT-19", title: "Compiler Design" },
-      { code: "CAT-20", title: "Cloud Computing" },
-      { code: "CAT-21", title: "Multimedia" },
+
       { code: "PRACTICAL" },
       { code: "CAP-008", title: "Software Engineering" },
       { code: "CAP-009", title: "Seminar" },
@@ -312,15 +321,16 @@ export const semesterData = [
     semester: "MCA IV SEMESTER",
     subjects: [
       { code: "CAT-022", title: "Network Security" },
-      { code: "MCAP 403", title: "Major Project" },
+
       { code: "MCAT 42X", title: "Program Elective 2" },
-      { code: "MCAT 43X", title: "Program Elective 3" },
+
       { code: "Program Elective 2" },
       { code: "CAT-023", title: "Simulation & Modeling" },
       { code: "CAT-024", title: "Neural Networks" },
       { code: "CAT-025", title: "Advanced Java" },
       { code: "CAT-026", title: "Data Science" },
       { code: "CAT-027", title: "Machine Learning" },
+      { code: "MCAT 43X", title: "Program Elective 3" },
       { code: "Program Elective 3" },
       { code: "CAT-028", title: "Digital Image Processing" },
       {
@@ -333,7 +343,8 @@ export const semesterData = [
       },
       { code: "CAT-031", title: "Block Chain Architecture" },
       { code: "CAT-032", title: "Natural Language Processing" },
-      { code: "Program Elective" },
+      { code: "MCAP 403", title: "Major Project" },
+      { code: "PRACTICAL" },
       { code: "CAP-011", title: "Network Security" },
       { code: "CAP-012", title: "Open Elective 2" },
       { code: "CAP 013", title: "Major Project" },

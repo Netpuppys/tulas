@@ -31,15 +31,26 @@ export const images = [
 ];
 export const content = (
   <>
-    The Department of Applied Sciences & Humanities is an initiating and
-    supporting department for the Institute’s engineering and other departments.
-    Mathematics, Physics, Chemistry, Environmental Science, foundation of
-    Engineering and Professional Communication are among the core courses
-    covered by the department. The department boasts a highly qualified and
-    knowledgeable faculty, as well as well-equipped laboratories. The
-    department, which was established in 2006 as one of the faculty’s
-    departments, participates in the institute’s B.Tech., MCA, BCA, B.Sc.
-    Agriculture, and Polytechnic programs.
+    Established to foster a holistic educational experience, our department
+    ensures that students are equipped with theoretical understanding and the
+    practical skills necessary to thrive in modern, technology-driven careers by
+    providing them with foundational knowledge and practical skills that bridge
+    theory and real-world application. Our dedicated faculty is committed to
+    creating an engaging learning environment through innovative teaching
+    methods, continuous guidance, and a student-centred approach. Each faculty
+    member brings expertise in their respective disciplines, helping students
+    develop a strong base in science and communication that is vital for
+    technical and professional success.
+    <br />
+    <br />
+    The Department of Applied Sciences and Humanities has state-of-the-art
+    laboratories, including Physics, Chemistry, and language labs designed to
+    enhance students' communication skills.
+    <br />
+    <br />
+    In addition to academic excellence, we encourage students to participate in
+    extracurricular activities, seminars, and workshops that broaden their
+    perspectives and enhance their soft skills.
   </>
 );
 export const items = [

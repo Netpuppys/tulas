@@ -2,7 +2,6 @@ import diplomaCivil from "../../../public/diploma-in-civil-engineering/diploma-i
 import DepartmentalVission from "../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../public/courses/bjmc/departmentalMission.png";
 import AshishKumar from "../../../public/courses/btech/civil-engineering/facultyData/AshishKumar.webp";
-import SunnySaini from "../../../public/courses/btech/civil-engineering/facultyData/SunnySaini.webp";
 import mohitSharma from "../../../public/courses/btech/civil-engineering/facultyData/mohitSharma.webp";
 import PreetiKumari from "../../../public/courses/btech/civil-engineering/facultyData/PreetiKumar.webp";
 import PrashantGussain from "../../../public/courses/btech/civil-engineering/facultyData/PrashantGussain.webp";
@@ -167,13 +166,7 @@ export const facultyData = [
     publications: "2",
     imageUrl: AshishKumar, // Add the path for the image
   },
-  {
-    name: "Mr. Sunny Saini",
-    education: "M.Tech (Structural Engineering)",
-    experience: "5 Yrs.",
-    designation: "Assistant Professor",
-    imageUrl: SunnySaini, // Add the path for the image
-  },
+  
   {
     name: "Mr. Mohit Sharma",
     education: "M.Tech (Construction Planning & Management)",

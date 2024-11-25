@@ -26,10 +26,13 @@ function BAJMC() {
     <>
       <head>
         <title>
-          Department of Applied Sciences & Humanities | Best Engineering
-          College in Dehradun, Uttarakhand | Tula's Institute
+          Department of Applied Sciences & Humanities | Best Engineering College
+          in Dehradun, Uttarakhand | Tula's Institute
         </title>
-        <meta name="description" content="Explore the Department of Applied Sciences & Humanities at Tula’s Institute, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty." />
+        <meta
+          name="description"
+          content="Explore the Department of Applied Sciences & Humanities at Tula’s Institute, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty."
+        />
       </head>
       <body>
         <div ref={parentRef}>
@@ -41,12 +44,12 @@ function BAJMC() {
             title=<>
               Department of{" "}
               <span className="text-[#760135]">
-                Applied Sciences & Humanities
+                Applied Science and Humanities
               </span>
             </>
             titleColor={""}
             description={
-              "The Department of Applied Sciences & Humanities is an initiating and supporting department for the Institute’s engineering and other departments. Mathematics, Physics, Chemistry, Environmental Science, foundation of Engineering and Professional Communication are among the core courses covered by the department."
+              "Department of Applied Sciences and Humanities at Tula's Institute, Dehradun, is a foundational learning and interdisciplinary growth hub. The Department caters to introductory science courses like Physics, Chemistry, Mathematics, Environmental studies, and English, laying the groundwork for students across engineering and management programs to excel in their chosen fields."
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />

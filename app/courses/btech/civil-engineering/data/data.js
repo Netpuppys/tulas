@@ -429,14 +429,7 @@ export const facultyData = [
     imageUrl: AshishKumar, // Add the path for the image
     resume: AshishKumarResume,
   },
-  {
-    name: "Mr. Sunny Saini",
-    education: "M.Tech.",
-    experience: "5 Yrs.",
-    designation: "Assistant Professor",
-    imageUrl: SunnySaini, // Add the path for the image
-    resume: SunnyResume,
-  },
+  
   {
     name: "Mr. Mohit Sharma",
     education: "M.Tech.",
@@ -464,15 +457,7 @@ export const facultyData = [
     imageUrl: ankitavats, // Add the path for the image
     resume: AnkitaResume,
   },
-  {
-    name: "Ms. Shipra Thapliyal",
-    education: "M.Tech.",
-    experience: "4 Yrs.",
-    designation: "Assistant Professor",
-    publications: "1",
-    imageUrl: shipra, // Add the path for the image
-    resume: ShipraResume,
-  },
+ 
   {
     name: "Mr. Mohit Bisht",
     education: "M.Tech.",

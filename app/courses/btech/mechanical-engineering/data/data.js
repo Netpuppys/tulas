@@ -55,14 +55,19 @@ export const items = [
   {
     title: "USP",
     description: [
-      "50+ Add-On Certification and 30+ Short Term Courses (STC) for holistic development of the students.",
-      "Practical oriented teaching with hands on experience i.e. Project Based Learning and frequent Industrial Visits are the salient features of the teaching learning process.",
-      "Two research funded projects from TEQIP-III, Uttarakhand Technical University have been recently completed.",
+      "60+ Add-On Certification and 45+ Short Term Courses (STC) for the holistic development of the students.",
+      "Practical-oriented teaching with hands-on experience, i.e. Project Based Learning and frequent Industrial Visits, are the salient features of the teaching-learning process.",
+      "Two research-funded projects from TEQIP-III, Uttarakhand Technical University, have been completed.",
     ],
     image: USP,
     points: [
-      "60+ Publications of research papers in reputed journals and conferences.",
-      "4 Patents have been filed by the faculty members and students of the department.",
+      "Strong inclination towards research by faculty members & students, 85+ Publications of research papers in reputed journals and conferences.",
+      "The department has contributed and published some national and international collaborative research papers.",
+      "The faculty members and students of the department have filed patents.",
+      "Practical-based Curriculum to fulfil the modern day industrial requirement.",
+      "Conduction of Industrial Tours/Guest Lectures/ Expert Talk by Experienced & qualified Faculty Members and Industry Experts regularly.",
+      "Our primary focus is on Alumni student interaction, as it directly impacts students for their career perspective.",
+      "500+ Alumni working in Government Sectors and reputed MNCs.",
     ],
   },
   {
