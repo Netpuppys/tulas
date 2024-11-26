@@ -49,7 +49,7 @@ import TarunKumarResume from "./../../../../public/courses/applied-science/facul
 import Tikaram from "./../../../../public/courses/applied-science/facultyData/Tikaram.webp";
 import TikaramResume from "./../../../../public/courses/applied-science/facultyData/TikaramResume.pdf";
 import Vijay from "./../../../../public/About/vijay.png";
-// import VijayResume from "./../../../../public/courses/applied-science/facultyData/VijayResume.pdf";
+import VijayResume from "./../../../../public/courses/applied-science/facultyData/VijayResume.pdf";
 import Link from "next/link";
 export const images = [
   appliedScience,
@@ -153,7 +153,7 @@ export const facultyData = [
     experience: "17",
     linkTo: "/about/management-messages/#2",
     imageUrl: Vijay,
-    resume: "/about/management-messages/#2",
+    resume: VijayResume,
   },
   {
     name: "Dr. Tarun Kumar",
