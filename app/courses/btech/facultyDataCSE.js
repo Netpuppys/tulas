@@ -10,13 +10,13 @@ import anju from "../../../public/courses/btech/computer-science/facultyData/anj
 import anjuResume from "../../../public/courses/btech/computer-science/facultyData/anjuResume.pdf";
 import AshishGupta from "../../../public/courses/btech/computer-science/facultyData/Ashish.webp";
 import AshishGuptaResume from "../../../public/courses/btech/computer-science/facultyData/AshishGuptaResume.pdf";
-import BhartiKalra from "../../../public/courses/btech/computer-science/facultyData/BhartiKalra.webp";
+import BhartiKalra from "../../../public/courses/btech/computer-science/facultyData/Bharti.webp";
 import BhartiKalraResume from "../../../public/courses/btech/computer-science/facultyData/BhartiKalraResume.pdf";
 import BKSharma from "../../../public/courses/btech/computer-science/facultyData/BKSharma.webp";
 import BKSharmaResume from "../../../public/courses/btech/computer-science/facultyData/BKSharmaResume.pdf";
-import GauravGupta from "../../../public/courses/btech/computer-science/facultyData/GauravGupta.webp";
+import GauravGupta from "../../../public/courses/btech/computer-science/facultyData/Gaurav.webp";
 import GauravGuptaResume from "../../../public/courses/btech/computer-science/facultyData/GauravGuptaResume.pdf";
-import GirishSinghBisht from "../../../public/courses/btech/computer-science/facultyData/GirishSinghBisht.webp";
+import GirishSinghBisht from "../../../public/courses/btech/computer-science/facultyData/GirishSingh.webp";
 import GirishSinghBishtResume from "../../../public/courses/btech/computer-science/facultyData/GirishSinghBishtResume.pdf";
 import HemaRawat from "../../../public/courses/btech/computer-science/facultyData/HemaRawat.webp";
 import HemaRawatResume from "../../../public/courses/btech/computer-science/facultyData/HemaRawatResume.pdf";
