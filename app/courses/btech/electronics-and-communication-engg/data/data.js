@@ -430,6 +430,7 @@ export const facultyData = [
     education: "P.hd ",
     publications: "35",
     experience: "25",
+    linkTo: "/about/management-messages/#4",
     imageUrl: NISHANT,
     resume: NISHANTResume,
   },

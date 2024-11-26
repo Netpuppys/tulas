@@ -14,6 +14,7 @@ import { useInView } from "react-intersection-observer";
 import { Fade } from "react-awesome-reveal";
 import Modal from "./Modal";
 import AboutFacultyModal from "./AboutFacultyModal";
+import { useRouter } from "next/router";
 
 const cards = [
   {
@@ -84,6 +85,7 @@ const cards = [
 const cardsFaculty = [
   {
     image: sandip,
+    id: 1,
     name: "Prof. Sandip Vijay",
     profile: "Director",
     description:
@@ -159,6 +161,7 @@ const cardsFaculty = [
   },
   {
     image: vijay,
+    id: 2,
     name: "Dr. Vijay Kumar Upadhyay",
     profile: "Registrar",
     description:
@@ -182,6 +185,7 @@ const cardsFaculty = [
   {
     image: sunilSemwal,
     name: "Dr. Sunil Semwal",
+    id: 3,
     profile: "Dean R&D",
     description:
       "Tula’s Institute is dedicated to societal requirements through research and innovation. Challenges such as sustainable development, water conservation, energy and environment, and many others are addressed with innovation-friendly atmosphere which encourages industry-academic collaborations. Tula’s Institute’s Research and Development cell promotes research in a variety of areas in sciences, engineering, agriculture and management domains to support our research vision. Quality publications are encouraged with an attractive Research Policy, which incentivise the good researchers and propels faculty members to pursue quality research.",
@@ -207,6 +211,7 @@ const cardsFaculty = [
     image: nishant,
     name: "Prof. Nishant Saxena",
     profile: "Dean Academics",
+    id: 4,
     description:
       "From a modest beginning in 2006, Tula’s Institute has now grown into a fully integrated engineering and management college. The guiding philosophy of the institute has been the creation of awareness among students so they can face the challenges globally. Tula’s Institute through its various development programmes gives students an edge over their counterparts in enabling them to prepare themselves for a world that is yet to be created, for jobs yet to be invented, and technologies yet undreamt of. In short, we create skilled individuals who are industry-ready. ",
     desc2: (
@@ -272,6 +277,19 @@ function Management() {
     );
     setIsModalOpen(true);
   };
+
+  // Open profile modal based on URL hash
+  useEffect(() => {
+    const hash = window.location.hash.slice(1); // Get the hash value without the "#"
+    if (hash) {
+      const profile = cardsFaculty.find(
+        (card) => card.id && String(card.id).includes(hash)
+      ); // Ensure id exists and is converted to string
+      if (profile) {
+        setActiveProfile({ profile: profile, related: cardsFaculty });
+      }
+    }
+  }, []); // Run the effect whenever the path changes
 
   const handleCloseModal = () => {
     setIsModalOpen(false);

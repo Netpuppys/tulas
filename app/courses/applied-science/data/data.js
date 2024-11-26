@@ -4,7 +4,52 @@ import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import ASCdocument from "../../../../public/courses/applied-science/ASC.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
-
+import AanchalBaniyal from "./../../../../public/courses/applied-science/facultyData/AanchalBaniyal.webp";
+import AanchalBaniyalResume from "./../../../../public/courses/applied-science/facultyData/AanchalBaniyalResume.pdf";
+import AshishMishra from "./../../../../public/courses/applied-science/facultyData/AshishMishra.webp";
+import AshishMishraResume from "./../../../../public/courses/applied-science/facultyData/AshishMishraResume.pdf";
+import Chandrashekhar from "./../../../../public/courses/applied-science/facultyData/Chandrashekhar.webp";
+import ChandrashekharResume from "./../../../../public/courses/applied-science/facultyData/ChandrashekharResume.pdf";
+import DeepakChandola from "./../../../../public/courses/applied-science/facultyData/DeepakChandola.webp";
+import DeepakChandolaResume from "./../../../../public/courses/applied-science/facultyData/DeepakChandolaResume.pdf";
+import Dimpal from "./../../../../public/courses/applied-science/facultyData/Dimpal.webp";
+import DimpalResume from "./../../../../public/courses/applied-science/facultyData/DimpalResume.pdf";
+import GurleenKaur from "./../../../../public/courses/applied-science/facultyData/GurleenKaur.webp";
+import GurleenKaurResume from "./../../../../public/courses/applied-science/facultyData/GurleenKaurResume.pdf";
+import Neelima from "./../../../../public/courses/applied-science/facultyData/Neelima.webp";
+import NeelimaResume from "./../../../../public/courses/applied-science/facultyData/NeelimaResume.pdf";
+import NidhiTiwari from "./../../../../public/courses/applied-science/facultyData/NidhiTiwari.webp";
+import NidhiTiwariResume from "./../../../../public/courses/applied-science/facultyData/NidhiTiwariResume.pdf";
+import Niharika from "./../../../../public/courses/applied-science/facultyData/Niharika.webp";
+import NiharikaResume from "./../../../../public/courses/applied-science/facultyData/NiharikaResume.pdf";
+import RachnaSharma from "./../../../../public/courses/applied-science/facultyData/RachnaSharma.webp";
+import RachnaSharmaResume from "./../../../../public/courses/applied-science/facultyData/RachnaSharmaResume.pdf";
+import RiyaDariyal from "./../../../../public/courses/applied-science/facultyData/RiyaDariyal.webp";
+import RiyaDariyalResume from "./../../../../public/courses/applied-science/facultyData/RiyaDariyalResume.pdf";
+import RuchikaAttri from "./../../../../public/courses/applied-science/facultyData/RuchikaAttri.webp";
+import RuchikaAttriResume from "./../../../../public/courses/applied-science/facultyData/RuchikaAttriResume.pdf";
+import SagarPundir from "./../../../../public/courses/applied-science/facultyData/SagarPundir.webp";
+import SagarPundirResume from "./../../../../public/courses/applied-science/facultyData/SagarPundirResume.pdf";
+import SanketKumar from "./../../../../public/courses/applied-science/facultyData/SanketKumar.webp";
+import SanketKumarResume from "./../../../../public/courses/applied-science/facultyData/SanketKumarResume.pdf";
+import SanojKumar from "./../../../../public/courses/applied-science/facultyData/SanojKumar.webp";
+import SanojKumarResume from "./../../../../public/courses/applied-science/facultyData/SanojKumarResume.pdf";
+import ShaistaHasan from "./../../../../public/courses/applied-science/facultyData/ShaistaHasan.webp";
+import ShaistaHasanResume from "./../../../../public/courses/applied-science/facultyData/ShaistaHasanResume.pdf";
+import Shalini from "./../../../../public/courses/applied-science/facultyData/Shalini.webp";
+import ShaliniResume from "./../../../../public/courses/applied-science/facultyData/ShaliniResume.pdf";
+import ShubhamJoshi from "./../../../../public/courses/applied-science/facultyData/ShubhamJoshi.webp";
+import ShubhamJoshiResume from "./../../../../public/courses/applied-science/facultyData/ShubhamJoshiResume.pdf";
+import SugamGupta from "./../../../../public/courses/applied-science/facultyData/SugamGupta.webp";
+import SugamGuptaResume from "./../../../../public/courses/applied-science/facultyData/SugamGuptaResume.pdf";
+import Tanuja from "./../../../../public/courses/applied-science/facultyData/Tanuja.webp";
+import TanujaResume from "./../../../../public/courses/applied-science/facultyData/TanujaResume.pdf";
+import TarunKumar from "./../../../../public/courses/applied-science/facultyData/TarunKumar.webp";
+import TarunKumarResume from "./../../../../public/courses/applied-science/facultyData/TarunKumarResume.pdf";
+import Tikaram from "./../../../../public/courses/applied-science/facultyData/Tikaram.webp";
+import TikaramResume from "./../../../../public/courses/applied-science/facultyData/TikaramResume.pdf";
+import Vijay from "./../../../../public/About/vijay.png";
+// import VijayResume from "./../../../../public/courses/applied-science/facultyData/VijayResume.pdf";
 import Link from "next/link";
 export const images = [
   appliedScience,
@@ -103,9 +148,12 @@ export const facultyData = [
   {
     name: "Dr. Vijay Upadhaya",
     designation: "Professor",
-    education: "",
+    education: "Ph.d",
     publications: "",
     experience: "",
+    linkTo: "/about/management-messages/#2",
+    imageUrl: Vijay,
+    // resume: VijayResume,
   },
   {
     name: "Dr. Tarun Kumar",
@@ -113,6 +161,8 @@ export const facultyData = [
     education: "Ph.d",
     publications: "9",
     experience: "18",
+    imageUrl: TarunKumar,
+    resume: TarunKumarResume,
   },
   {
     name: "Dr. Ashish Mishra",
@@ -120,6 +170,8 @@ export const facultyData = [
     education: "Ph.d",
     publications: "15",
     experience: "6",
+    imageUrl: AshishMishra,
+    resume: AshishMishraResume,
   },
   {
     name: "Dr. Sugam Gupta",
@@ -127,6 +179,8 @@ export const facultyData = [
     education: "Ph.d",
     publications: "15",
     experience: "5",
+    imageUrl: SugamGupta,
+    resume: SugamGuptaResume,
   },
   {
     name: "Mr. Sanoj Mandal",
@@ -134,6 +188,8 @@ export const facultyData = [
     education: "M.Sc",
     publications: "0",
     experience: "4.5",
+    imageUrl: SanojKumar,
+    resume: SanojKumarResume,
   },
   {
     name: "Dr. Sanket Kumar Saxena",
@@ -141,6 +197,8 @@ export const facultyData = [
     education: "Ph.d",
     publications: "8",
     experience: "17",
+    imageUrl: SanketKumar,
+    resume: SanketKumarResume,
   },
   {
     name: "Dr. Rachna Sharma",
@@ -148,6 +206,8 @@ export const facultyData = [
     education: "Ph.d",
     publications: "13",
     experience: "5",
+    imageUrl: RachnaSharma,
+    resume: RachnaSharmaResume,
   },
   {
     name: "Ms. Shaista Hasan",
@@ -155,6 +215,8 @@ export const facultyData = [
     education: "MA",
     publications: "0",
     experience: "15",
+    imageUrl: ShaistaHasan,
+    resume: ShaistaHasanResume,
   },
   {
     name: "Mr. Tikaram",
@@ -162,6 +224,8 @@ export const facultyData = [
     education: "M.sc Ph.d (P)",
     publications: "2",
     experience: "8",
+    imageUrl: Tikaram,
+    resume: TikaramResume,
   },
   {
     name: "Mr Deepak Chandola",
@@ -169,6 +233,8 @@ export const facultyData = [
     education: "M.sc Ph.d (P)",
     publications: "0",
     experience: "5",
+    imageUrl: DeepakChandola,
+    resume: DeepakChandolaResume,
   },
   {
     name: "Ms. Nidhi Tiwari",
@@ -176,6 +242,8 @@ export const facultyData = [
     education: "M.sc Ph.d (P)",
     publications: "0",
     experience: "0",
+    imageUrl: NidhiTiwari,
+    resume: NidhiTiwariResume,
   },
   {
     name: "Ms. Gurleen kaur",
@@ -183,6 +251,8 @@ export const facultyData = [
     education: "M.Sc",
     publications: "0",
     experience: "0",
+    imageUrl: GurleenKaur,
+    resume: GurleenKaurResume,
   },
   {
     name: "Mr Sagar Pundir",
@@ -190,6 +260,8 @@ export const facultyData = [
     education: "M.Sc",
     publications: "0",
     experience: "1",
+    imageUrl: SagarPundir,
+    resume: SagarPundirResume,
   },
   {
     name: "Dr. Ruchika Attri",
@@ -197,6 +269,8 @@ export const facultyData = [
     education: "Ph.d",
     publications: "8",
     experience: "7",
+    imageUrl: RuchikaAttri,
+    resume: RuchikaAttriResume,
   },
   {
     name: "Mr. Chandrashekhar",
@@ -204,6 +278,8 @@ export const facultyData = [
     education: "M.Sc",
     publications: "0",
     experience: "5",
+    imageUrl: Chandrashekhar,
+    resume: ChandrashekharResume,
   },
   {
     name: "Dr. Neelima Bangwal",
@@ -211,6 +287,8 @@ export const facultyData = [
     education: "Ph.d",
     publications: "11",
     experience: "8",
+    imageUrl: Neelima,
+    resume: NeelimaResume,
   },
   {
     name: "Mr. Shubham Joshi",
@@ -218,6 +296,8 @@ export const facultyData = [
     education: "M.Sc",
     publications: "0",
     experience: "2",
+    imageUrl: ShubhamJoshi,
+    resume: ShubhamJoshiResume,
   },
   {
     name: "Ms. Aanchal Baniyal",
@@ -225,6 +305,8 @@ export const facultyData = [
     education: "M.sc Ph.d (P)",
     publications: "0",
     experience: "3",
+    imageUrl: AanchalBaniyal,
+    resume: AanchalBaniyalResume,
   },
   {
     name: "Ms. Niharika Parashar",
@@ -232,6 +314,8 @@ export const facultyData = [
     education: "M.sc Ph.d (P)",
     publications: "0",
     experience: "2",
+    imageUrl: Niharika,
+    resume: NiharikaResume,
   },
   {
     name: "Dr. Dimpal",
@@ -239,6 +323,8 @@ export const facultyData = [
     education: "Ph.d",
     publications: "0",
     experience: "2.5",
+    imageUrl: Dimpal,
+    resume: DimpalResume,
   },
   {
     name: "Ms. Tanuja Uniyal",
@@ -246,6 +332,8 @@ export const facultyData = [
     education: "M.sc Ph.d (P)",
     publications: "12",
     experience: "8",
+    imageUrl: Tanuja,
+    resume: TanujaResume,
   },
   {
     name: "Ms. Shalini Binjola",
@@ -253,6 +341,8 @@ export const facultyData = [
     education: "MA Ph.d (P)",
     publications: "2",
     experience: "15",
+    imageUrl: Shalini,
+    resume: ShaliniResume,
   },
   {
     name: "Ms. Riya Dariyal",
@@ -260,5 +350,7 @@ export const facultyData = [
     education: "MA",
     publications: "0",
     experience: "10",
+    imageUrl: RiyaDariyal,
+    resume: RiyaDariyalResume,
   },
 ];
