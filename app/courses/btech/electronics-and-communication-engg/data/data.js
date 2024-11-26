@@ -8,13 +8,13 @@ import DepartmentalMission from "../../../../../public/courses/bjmc/departmental
 import abhishekchakrovarty from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/abhishekchakrovarty.webp";
 import NISHANT from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NISHANT.webp";
 import NISHANTResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NISHANTResume.pdf";
-import VAIBHAVKUMAR from "../../../../../public/courses/btech/electronics-and-communication/facultyData/VAIBHAVKUMAR.webp";
+import VAIBHAVKUMAR from "../../../../../public/courses/btech/electronics-and-communication/facultyData/VaibhavKumar.webp";
 import VAIBHAVKUMARResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/VAIBHAVKUMARResume.pdf";
 import MukeshPathela from "../../../../../public/courses/btech/electronics-and-communication/facultyData/MukeshPathela.webp";
 import MukeshPathelaResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/MukeshPathelaResume.pdf";
-import SANDEEPKHANTWAL from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SANDEEPKHANTWAL.webp";
+import SANDEEPKHANTWAL from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SandeepKhantwalL.webp";
 import SANDEEPKHANTWALResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SANDEEPKHANTWALResume.pdf";
-import RAHULNEGI from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RAHULNEGI.webp";
+import RAHULNEGI from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RahulNegi.webp";
 import RAHULNEGIResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RAHULNEGIResume.pdf";
 import NANSE from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NANSE.webp";
 import NANSEResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NANSEResume.pdf";

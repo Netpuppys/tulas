@@ -8,7 +8,7 @@ import anita from "../../../public/courses/btech/computer-science/facultyData/an
 import anitaResume from "../../../public/courses/btech/computer-science/facultyData/anitaResume.pdf";
 import anju from "../../../public/courses/btech/computer-science/facultyData/anju.webp";
 import anjuResume from "../../../public/courses/btech/computer-science/facultyData/anjuResume.pdf";
-import AshishGupta from "../../../public/courses/btech/computer-science/facultyData/AshishGupta.webp";
+import AshishGupta from "../../../public/courses/btech/computer-science/facultyData/Ashish.webp";
 import AshishGuptaResume from "../../../public/courses/btech/computer-science/facultyData/AshishGuptaResume.pdf";
 import BhartiKalra from "../../../public/courses/btech/computer-science/facultyData/BhartiKalra.webp";
 import BhartiKalraResume from "../../../public/courses/btech/computer-science/facultyData/BhartiKalraResume.pdf";

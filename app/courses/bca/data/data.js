@@ -13,7 +13,7 @@ import anuj from "../../../../public/courses/bca/facultyData/anuj.webp";
 import anujResume from "../../../../public/courses/bca/facultyData/anujResume.pdf";
 import devendraSoo from "../../../../public/courses/bca/facultyData/devendraSoo.webp";
 import devendraSooResume from "../../../../public/courses/bca/facultyData/devendraSooResume.pdf";
-import DivyaNegi from "../../../../public/courses/bca/facultyData/DivyaNegi.webp";
+import DivyaNegi from "../../../../public/courses/bca/facultyData/Divya.webp";
 import DivyaNegiResume from "../../../../public/courses/bca/facultyData/DivyaNegiResume.pdf";
 import Hemlata from "../../../../public/courses/bca/facultyData/Hemlata.webp";
 import HemlataResume from "../../../../public/courses/bca/facultyData/HemlataResume.pdf";
