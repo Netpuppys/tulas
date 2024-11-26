@@ -10,6 +10,8 @@ import {
   cards,
   content,
   facultyData,
+  hod,
+  HODcontent,
   images,
   sections,
   selectedCardTable,
@@ -56,6 +58,8 @@ function BSCAgriculture() {
             cards={cards}
             selectedCardTable={selectedCardTable}
             semesterData={semesterData}
+            hod={hod}
+            HODcontent={HODcontent}
             facultyData={facultyData}
           />
           <TopRecruiter />
