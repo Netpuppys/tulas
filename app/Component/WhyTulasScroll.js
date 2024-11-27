@@ -105,7 +105,19 @@ function WhyTulasScroll({ parentRef }) {
   const [componentHeight, setComponentHeight] = useState(0);
   const [distanceFromTop, setDistanceFromTop] = useState(0);
   const { isMobile } = useMobile();
-  const windowWidth = window.innerWidth;
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    // Update window width only on the client side
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    handleResize(); // Set initial width
+    window.addEventListener("resize", handleResize); // Update on resize
+
+    return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
+  }, []);
   const width = isMobile ? windowWidth - 96 : 352;
   useEffect(() => {
     const handleScroll = () => {
