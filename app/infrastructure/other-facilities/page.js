@@ -20,7 +20,7 @@ const sections = [
     description: (
       <>
         Availability of 24Hrs Wi-Fi internet access in the campus with 1 Gbps
-        speed and Comprehensive e-learning environment provided in the campus,
+        speed and Comprehensive E-Learning environment provided in the campus,
         enables all the students and faculty members to be connected which is
         essential for effective learning.
         <br />

@@ -292,7 +292,7 @@ function Sports() {
             <div className="w-full px-5 py-20 flex flex-col items-center justify-center gap-6">
               <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white text-opacity-90 text-center max-w-[57rem]">
                 Availability of 24Hrs Wi-Fi internet access in the campus with
-                205 mbps speed and Comprehensive e-learning environment provided
+                205 mbps speed and Comprehensive E-Learning environment provided
                 in the campus, enables all the students and faculty members to
                 be connected which is essential for effective learning.
               </p>
