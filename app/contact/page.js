@@ -4,7 +4,7 @@ import Navbar from "@/component/Navbar/Navbar";
 import React from "react";
 import Link from "next/link";
 import BannerImg from "../../public/Components/Banner/bannerImg.png";
-import background from "../../public/AboutDehradun/background.png";
+import background from "../../public/Contact/background.png";
 import Footer from "@/component/Footer";
 import Image from "next/image";
 import phone from "../../public/Contact/phone.png";
@@ -17,6 +17,9 @@ import TulasFooter from "../../public/Components/Footer/tulasFooter.png";
 import { FaBicycle, FaCar, FaTrain, FaWalking } from "react-icons/fa";
 import ContactForm from "./Component/form";
 import { Fade } from "react-awesome-reveal";
+import bihar from "../../public/Contact/bihar.png";
+import admission from "../../public/Contact/admission.png";
+import nepal from "../../public/Contact/nepal.png";
 const title = (
   <>
     CONTACT <span className="text-[#007A83]">US</span>
@@ -84,16 +87,19 @@ function Contact() {
       title: "NEPAL ADMISSION HELPLINE",
       link: "tel:+91-9837983721",
       button: "+91 98379 83721",
+      image: nepal,
     },
     {
       title: "ADMISSION HELPLINE NUMBER",
       link: "tel:+91-9837983721",
       button: "+91 9837983721",
+      image: admission,
     },
     {
       title: "BIHAR ADMISSION HELPLINE",
       link: "tel:+91-9837983721",
       button: "+91 98379 83721",
+      image: bihar,
     },
   ];
   return (
@@ -153,12 +159,12 @@ function Contact() {
                 <Fade delay={300}>
                   <div
                     key={index}
-                    className="w-fit h-fit text-center flex flex-col items-center justify-center gap-4 md:gap-14"
+                    className="w-fit h-fit text-center flex flex-col items-center justify-center gap-6"
                   >
+                    <Image src={mobileContact.image} alt="" />
                     <h4 className="max-w-[257px] text-white font-[TTChocolatesBold] font-extrabold text-[22px]">
                       {mobileContact.title}
                     </h4>
-
                     <Link href={mobileContact.link}>
                       <button className="w-fit text-wrap px-10 py-2 font-semibold font-[TTChocolatesBold] text-[14px] text-[#760135] bg-white rounded-full flex gap-2 items-center ">
                         <FiPhoneCall />
