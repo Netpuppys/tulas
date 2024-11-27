@@ -8,12 +8,42 @@ import Footer from "@/component/Footer";
 import background from "../../../../public/research/r-and-cell/journal/background.png";
 import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
-
+import event1 from "../../../../public/research/institute-innovation-council-iic/iic-events/event1.png";
+import event2 from "../../../../public/research/institute-innovation-council-iic/iic-events/event2.png";
+import event3 from "../../../../public/research/institute-innovation-council-iic/iic-events/event3.png";
+import event4 from "../../../../public/research/institute-innovation-council-iic/iic-events/event4.png";
+import event5 from "../../../../public/research/institute-innovation-council-iic/iic-events/event5.png";
+import event6 from "../../../../public/research/institute-innovation-council-iic/iic-events/event6.png";
+import event7 from "../../../../public/research/institute-innovation-council-iic/iic-events/event7.png";
+import event8 from "../../../../public/research/institute-innovation-council-iic/iic-events/event8.png";
+import event9 from "../../../../public/research/institute-innovation-council-iic/iic-events/event9.png";
+import event10 from "../../../../public/research/institute-innovation-council-iic/iic-events/event10.png";
+import event11 from "../../../../public/research/institute-innovation-council-iic/iic-events/event11.png";
+import event12 from "../../../../public/research/institute-innovation-council-iic/iic-events/event12.png";
+import event13 from "../../../../public/research/institute-innovation-council-iic/iic-events/event13.png";
+import event14 from "../../../../public/research/institute-innovation-council-iic/iic-events/event14.png";
+import SlidingCarousel from "../../intellectual-property-rights-ipr-cell/patent/components/SlidingCarousel";
 function IICEvents() {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
   });
+  const crouselImages = [
+    event1,
+    event2,
+    event3,
+    event4,
+    event5,
+    event6,
+    event7,
+    event8,
+    event9,
+    event10,
+    event11,
+    event12,
+    event13,
+    event14,
+  ];
 
   return (
     <>
@@ -72,7 +102,14 @@ function IICEvents() {
               <TableComponent />
             </div>
           </div>
-
+          <div className="px-8 md:px-32 w-full flex flex-col items-center justify-center">
+            <h3 className="font-[CarotSlab] text-[clamp(25px,3vw,75px)]">
+              EVENT by IIC(CIRE)
+            </h3>
+          </div>
+          <div className="w-full">
+            <SlidingCarousel items={crouselImages} />
+          </div>
           <div className="w-full h-fit z-50">
             <Footer color={true} />
           </div>
