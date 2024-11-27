@@ -3,10 +3,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ScrollTulas from "../../public/Homepage/ScrollSection/WhyTulas.png";
 import Image from "next/image";
-import {
-  IoArrowForwardCircleOutline,
-  IoArrowBackCircleOutline,
-} from "react-icons/io5";
 import Card1 from "../../public/Homepage/ScrollSection/Card1.png";
 import Card2 from "../../public/Homepage/ScrollSection/Card2.png";
 import Card3 from "../../public/Homepage/ScrollSection/Card3.png";
