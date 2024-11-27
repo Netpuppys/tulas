@@ -365,15 +365,7 @@ export const facultyData = [
     imageUrl: Priya,
     resume: PriyaResume,
   },
-  {
-    name: "Mr. Rakesh Kumar",
-    designation: "Assistant Professor",
-    education: "M.Tech Ph.d (P)",
-    publications: "10",
-    experience: "19",
-    imageUrl: RakeshKumar,
-    resume: RakeshKumarResume,
-  },
+
   {
     name: "Dr. Sanjeev Kumar",
     designation: "Professor",
@@ -401,7 +393,15 @@ export const facultyData = [
     imageUrl: ShikaTayal,
     resume: ShikaTayalResume,
   },
-
+  {
+    name: "Mr. Rakesh Kumar",
+    designation: "Assistant Professor",
+    education: "M.Tech Ph.d (P)",
+    publications: "10",
+    experience: "19",
+    imageUrl: RakeshKumar,
+    resume: RakeshKumarResume,
+  },
   {
     name: "Mr. Siddharth Sharma",
     designation: "Assistant Professor",
