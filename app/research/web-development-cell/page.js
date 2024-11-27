@@ -69,7 +69,7 @@ function WebDevelopmentCell() {
               various online tools and platforms to enhance communication,
               collaboration, and user engagement. This may include integrating
               social media platforms, implementing online chat systems, or
-              incorporating e-learning platforms within the website.
+              incorporating E-Learning platforms within the website.
             </li>
           </ul>
         </>

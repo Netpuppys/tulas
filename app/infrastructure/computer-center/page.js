@@ -85,7 +85,7 @@ function ComputerScience() {
                 access vital data and information easily at the click of a
                 button. Having understood the importance, Tula’s Institute has
                 invested heavily towards developing World Class IT
-                Infrastructure to facilitate e-learning in today’s day and age
+                Infrastructure to facilitate E-Learning in today’s day and age
                 and is thus regarded amongst the ‘best engineering colleges in
                 Dehradun’.
               </p>
