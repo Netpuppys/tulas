@@ -159,7 +159,11 @@ const SlidingCarousel = ({ items }) => {
               activeIndex === index ? "md:animate-scaleUp md:scale-110" : ""
             }`}
           >
-            <Image src={card} className="w-full h-[27rem] md:h-full object-cover" alt="" />
+            <Image
+              src={card}
+              className="w-full h-[27rem] md:h-full object-cover"
+              alt=""
+            />
           </div>
         ))}
       </div>

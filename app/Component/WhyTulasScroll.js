@@ -15,31 +15,102 @@ import Card5 from "../../public/Homepage/ScrollSection/Card5.png";
 import Card6 from "../../public/Homepage/ScrollSection/Card6.png";
 import Card7 from "../../public/Homepage/ScrollSection/Card7.png";
 import Card8 from "../../public/Homepage/ScrollSection/Card8.png";
+import Card9 from "../../public/Homepage/ScrollSection/Card9.png";
+import Card10 from "../../public/Homepage/ScrollSection/Card10.png";
+import Card11 from "../../public/Homepage/ScrollSection/Card11.png";
+import Card12 from "../../public/Homepage/ScrollSection/Card12.png";
+import Card13 from "../../public/Homepage/ScrollSection/Card13.png";
+import Card14 from "../../public/Homepage/ScrollSection/Card14.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useMobile } from "@/component/IsMobileContext";
 
-const title = "WHY TULA’S";
-const paragraph =
-  "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
+const title = "14 REASONS TO CHOOSE TULA’S";
+// const paragraph =
+//   "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
 const images = [
-  { src: Card1, text: "Distinguished Faculty Credited with Numerous Patents" },
-  { src: Card2, text: "Well Stocked Library with E-books and E-journals" },
-  { src: Card3, text: "Sports Complex" },
-  { src: Card4, text: "Industry Driven Curriculum" },
-  { src: Card5, text: "22 Acre of Lush Green Campus" },
-  { src: Card6, text: "Corporate Interaction" },
-  { src: Card7, text: "Separate Boys’ & Girl’s Hostels" },
-  { src: Card8, text: "36.5 LPA Highest Salary Package" },
+  {
+    src: Card1,
+    title: "CIRE",
+    text: "Industry-Supported Center for Innovation, Research & Entrepreneurship (CIRE).",
+  },
+  {
+    src: Card2,
+    title: "Patents & Awards",
+    text: "2000+ highly cited research papers, 30+ patents, 15+ government-funded projects, and 20+ prestigious awards.",
+  },
+  {
+    src: Card3,
+    title: "Incubator",
+    text: "Tula’s Technology Business Incubator Foundation (TTBIF) approved by MSME, Government of India & StartUP Uttarakhand.",
+  },
+  {
+    src: Card4,
+    title: "Placement Drive",
+    text: "700+ campus placement drives and 25+ industrial tie-ups.",
+  },
+  {
+    src: Card5,
+    title: "Faculty",
+    text: "Highly esteemed faculty recognized for innovation in teaching, novel research, and patents.",
+  },
+  {
+    src: Card6,
+    title: "Alumni",
+    text: "7000+ successful alumni across the world.",
+  },
+  {
+    src: Card7,
+    title: "NCC",
+    text: "NCC 29 UK battalion at Tula’s led by the Government of India, Ministry of Defence.",
+  },
+  {
+    src: Card8,
+    title: "FDPs & IEEE",
+    text: "100+ FDPs and IEEE conferences each year",
+  },
+  {
+    src: Card9,
+    title: "Library",
+    text: "Library equipped with 70,000+ books, 2,500+ journals, copies of original manuscripts, 1,500+ recorded lectures, advanced recording studio, and 600+ high-end computers with digitally equipped learning resources available 16×7.",
+  },
+  {
+    src: Card10,
+    title: "Rankings",
+    text: "University rankers, students from 6+ countries/25+ states, 8 student clubs, and 7 technical student societies and councils.",
+  },
+  {
+    src: Card11,
+    title: "NSS",
+    text: "NSS Unit at Tula’s led by the Government of India, Ministry of Youth Affairs & Sports.",
+  },
+  {
+    src: Card12,
+    title: "Wifi Facility",
+    text: "24×7 on-campus medical assistance with qualified doctors and medical insurance for all.",
+  },
+  {
+    src: Card13,
+    title: "Sports",
+    text: "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned &amp; spacious auditorium.",
+  },
+  {
+    src: Card14,
+    title: "Yoga Kendra",
+    text: "Tula’s Heartfulness Yoga Kendra.",
+  },
 ];
 
 function WhyTulasScroll({ parentRef }) {
-  const scrollRef = useRef();
+  // const scrollRef = useRef();
   const childRef = useRef(null);
   const [index, setIndex] = useState(0);
-  const [width, setWidth] = useState();
+  // const [width, setWidth] = useState(352);
   const [scrollY, setScrollY] = useState(0);
   const [componentHeight, setComponentHeight] = useState(0);
   const [distanceFromTop, setDistanceFromTop] = useState(0);
-
+  const { isMobile } = useMobile();
+  const windowWidth = window.innerWidth;
+  const width = isMobile ? windowWidth - 96 : 352;
   useEffect(() => {
     const handleScroll = () => {
       if (parentRef.current && childRef.current) {
@@ -82,18 +153,18 @@ function WhyTulasScroll({ parentRef }) {
     };
   }, []);
 
-  useEffect(() => {
-    const updateWidth = () => {
-      if (scrollRef.current) {
-        setWidth(scrollRef.current.offsetWidth);
-      }
-    };
+  // useEffect(() => {
+  //   const updateWidth = () => {
+  //     if (scrollRef.current) {
+  //       setWidth(scrollRef.current.offsetWidth);
+  //     }
+  //   };
 
-    updateWidth();
-    window.addEventListener("resize", updateWidth);
+  //   updateWidth();
+  //   window.addEventListener("resize", updateWidth);
 
-    return () => window.removeEventListener("resize", updateWidth);
-  }, []);
+  //   return () => window.removeEventListener("resize", updateWidth);
+  // }, []);
 
   const handleForwardClick = () => {
     if (index > 0) {
@@ -137,15 +208,15 @@ function WhyTulasScroll({ parentRef }) {
             changePosition() ? "fixed" : "absolute"
           } top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
         >
-          <div className="mt-14 md:mt-0 relative w-full h-full flex flex-col justify-center items-center">
-            <h3 className="font-[CarotSlab] text-[clamp(20px,7vw,55px)] md:text-[70px] h-[75px] text-[#E69706] w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
+          <div className="relative w-full h-full flex flex-col justify-center items-center">
+            <h3 className="mt-[12vh] font-[CarotSlab] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#E69706] w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
               {title}
             </h3>
-            <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-semibold font-[TTChocolates] absolute top-3 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[25vw] mx-auto text-center text-white">
+            {/* <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-semibold font-[TTChocolates] absolute top-3 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[25vw] mx-auto text-center text-white">
               {paragraph}
-            </h4>
+            </h4> */}
             {/* card scroll btns */}
-            <div className="absolute w-fit top-[42%] z-30 mt-[340px] md:mt-0 mx-auto  md:ml-0 md:mr-auto md:left-0 flex items-center justify-start">
+            <div className="absolute w-fit top-[50%] -translate-y-1/2 z-30 mt-[340px] md:mt-0 mx-auto  md:ml-0 md:mr-auto md:left-0 flex items-center justify-start">
               <div className="flex w-full md:w-40 md:flex-col text-[30px] gap-3 items-center justify-center">
                 <button
                   className={`pointer-events-auto aspect-square p-3 rounded-full border-2 border-white text-white shadow-2xl ${
@@ -173,27 +244,35 @@ function WhyTulasScroll({ parentRef }) {
             </div>
 
             {/* cards container */}
-            <div className="w-[calc(100%-3rem)] top-[32%] md:w-[calc(100%-10rem)]  right-0 absolute py-10 innerText">
+            <div className="w-[calc(100%-3rem)] md:w-[calc(100%-10rem)]  right-0 absolute py-10 innerText">
               <div
-                style={{ transform: `translateX(-${index * (width + 48)}px)` }}
+                style={{
+                  transform: `translateX(-${index * (width + 48)}px)`,
+                  transition: "transform 0.5s ease-in-out",
+                }}
                 className="w-fit"
               >
                 <div className="flex w-fit h-fit gap-12">
                   {images.map((image, index) => (
                     <div
-                      ref={scrollRef}
+                      // ref={scrollRef}
                       key={index}
-                      className="group rounded-xl w-[20rem] h-full aspect-[16/11] overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-110"
+                      className="group flex flex-col items-center justify-center w-[calc(100vw-96px)] md:w-[22rem] shadow-lg transform transition-all duration-500 md:hover:scale-110"
                     >
                       <Image
                         src={image.src}
                         alt=""
-                        className="z-20 object-cover w-full h-full"
+                        className="z-20 rounded-xl object-cover w-full h-full aspect-square"
                         layout="responsive"
                       />
-                      <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
-                      <div className="text-white hidden group-hover:flex absolute z-30 w-fit text-center p-2 bottom-0">
-                        {image.text}
+                      {/* <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div> */}
+                      <div className="text-white md:hidden group-hover:flex flex-col absolute z-30 w-fit p-2 bottom-[70px] translate-y-[100%]">
+                        <h2 className="text-center font-[TTChocolatesBold] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]">
+                          {image.title}
+                        </h2>
+                        <h6 className="text-justify font-[TTChocolates] text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
+                          {image.text}
+                        </h6>
                       </div>
                     </div>
                   ))}

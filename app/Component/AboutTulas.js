@@ -48,7 +48,7 @@ function AboutTulas() {
       ...prev,
       [key]: value,
     }));
-    console.log(formData);
+
     if (key === "MobileNumber") {
       setIsPhoneValid(value.length >= 10 && /^\d+$/.test(value)); // Example validation for length and digits only
     }
@@ -72,60 +72,74 @@ function AboutTulas() {
   };
 
   const sendOtp = async () => {
-    try {
-      const response = await axios.post(
+    // try {
+    //   const response = await 
+      axios.post(
         "http://api.msg91.com/api/sendotp.php",
         {
           authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
-          mobile: formData.MobileNumber,
-          message: `Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.`, // Replace with your SMS template
+          mobile: formData.MobileNumber, // Replace with dynamic mobile number
+          message:
+            "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
           sender: "TULASD", // Replace with your MSG91 Sender ID
-          otp_expiry: "3",
+          otp_expiry: "3", // OTP expiry time
           DLT_TE_ID: "1007161822185716704", // Replace with your DLT Template ID
+        },
+        {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            Cookie: "PHPSESSID=cdd580jghjh4k3e1smunsmmsv7", // Replace with your PHPSESSID if needed
+          },
         }
-      );
-      if (response.data.type === "success") {
-        setIsOtpSent(true);
-        setMessage("OTP sent successfully!");
-      } else {
-        setMessage("Failed to send OTP. Please try again.");
-      }
-    } catch (error) {
-      setMessage("Error while sending OTP.");
-      console.error(error);
-    }
-    //   axios.post("http://api.msg91.com/api/sendotp.php",
-    //       {
-    //         authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
-    //         mobile: formData.MobileNumber,
-    //         message: `Hello, ##OTP## is your One Time Password (OTP) for Tulas. This OTP is valid for 3 minutes.`, // Replace with your SMS template
-    //         sender: "TULASD", // Replace with your MSG91 Sender ID
-    //         otp_expiry: "3",
-    //         DLT_TE_ID: "1007161822185716704", // Replace with your DLT Template ID
-    //       })
-    //       .then(res => console.log(res))
-    //       .catch(err => console.error(err))
+      )
+      .then(res => {
+        const response = res;
+        if (response.data.type === "success") {
+          setIsOtpSent(true);
+          setMessage("OTP sent successfully!");
+        } else {
+          setMessage("Failed to send OTP. Please try again.");
+        }
+      })
+      .catch(error => {
+        setMessage("OTP failed to send");
+        console.error(error);
+      })
+
+      
+    // } catch (error) {
+      
+    // }
   };
 
-  const verifyOtp = async () => {
+  
+  const verifyOtp = async (otp) => {
     try {
       const response = await axios.get(
         `https://control.msg91.com/api/v5/otp/verify?mobile=${formData.MobileNumber}&otp=${otp}`,
         {
-          headers: { authkey: "412590AKveCHLSBnd4658bcea0P1" }, // Replace with your MSG91 Auth Key
+          params: {
+            mobile: formData.MobileNumber, // Mobile number with country code
+            otp: otp,            // OTP received on the phone
+          },
+          headers: {
+            authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
+          },
         }
       );
+  
       if (response.data.type === "success") {
-        setMessage("OTP verified successfully!");
+        console.log("OTP verified successfully!");
+        // Handle successful OTP verification
       } else {
-        setMessage("OTP verification failed. Please try again.");
+        console.error("OTP verification failed:", response.data.message);
+        // Handle failed OTP verification
       }
     } catch (error) {
-      setMessage("Error while verifying OTP.");
-      console.error(error);
+      console.error("Error while verifying OTP:", error);
+      // Handle error during the request
     }
   };
-
   const resendOtp = async () => {
     try {
       const response = await axios.get(
