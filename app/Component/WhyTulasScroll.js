@@ -95,23 +95,16 @@ function WhyTulasScroll({ parentRef }) {
   const [ changePositionValue, setChangePositionValue ] = useState()
 
   useEffect(() => {
-    // Function to handle resizing
-    const handleResize = () => {
-      if (typeof window !== "undefined") {
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
         setWindowWidth(window.innerWidth);
-      }
-    };
-
-    // Call initially if on the client
-    handleResize();
-
-    // Add event listener
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      };
+  
+      handleResize(); // Set initial width
+      window.addEventListener("resize", handleResize); // Update on resize
+  
+      return () => window.removeEventListener("resize", handleResize); // Cleanup
+    }
   }, []);
   const width = isMobile ? windowWidth - 96 : 352;
   useEffect(() => {
