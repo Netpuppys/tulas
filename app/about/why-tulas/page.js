@@ -19,114 +19,114 @@ import Vision from "@/component/Programs/Vision";
 import WhyTulasScroll from "@/app/Component/WhyTulasScroll";
 import { useRef } from "react";
 
-const sectionData = [
-  {
-    image: iso,
-    title: "ISO 9001:2008 Certified",
-    description:
-      "The institute is affiliated to Uttarakhand Technical University and approved by AICTE, Ministry of HRD, Govt. of India. Tula’s Institute has also been awarded ISO 9001:2008 for quality management services.",
-  },
-  {
-    image: curriculum,
-    title: "Industry Oriented Curriculum",
-    description: (
-      <>
-        Tula's Institute is India's top engineering college known for its
-        excellence teaching. We use a set of tailor-made curriculum that connect
-        and integrate knowledge of students according to industry demand. Tula’s
-        aims to bridge the gap between of the industry and is aligned towards
-        imparting contemporary knowledge to the students.
-        <br />
-        An optimal mix of learning methods ensures a holistic personality
-        development of the students. The curriculum encourages students to apply
-        theoretical learning to real-life scenarios by advent of a unique
-        corporate interface that the institute boasts of.
-      </>
-    ),
-  },
-  {
-    image: Collaboration,
-    title: "Corporate Collaboration",
-    description: (
-      <>
-        Tula's Institute is the only college in Uttarakhand which have strategic
-        tie-ups with some of the world class companies like Redhat, Microsoft.
-        Bentley, D-Link etc… to offer study programs that would help the
-        students and faculty gain an international perspective in their chosen
-        field of study.
-        <br />
-        We are enabling host of long-term benefits for the overall development
-        of students and to enhance their career opportunities too.
-        <br />
-        <br />
-        <ul className="list-disc ml-5">
-          <li>Microsoft innovation center (MIC)</li>
-          <li>Redhat</li>
-          <li>Autodesk club</li>
-          <li>
-            India's first Remote Robotics lab in association with APS Labs
-            Aachen, Germany.
-          </li>
-          <li>D- Link academy</li>
-          <li>Bentley Lab</li>
-          <li>TedX Delhi</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    image: tieUps,
-    title: "Academic Tie-Ups",
-    description: (
-      <>
-        Academic collaborations can help you meet your career goals if
-        approached right. Tula's, the best private engineering college in
-        Uttarakhand, has established academic tie-ups with various international
-        institutions. The aim is to establish mutual cooperation to develop
-        academic and cultural exchange to offer the best knowledge to our
-        students.
-        <br />
-        <br />
-        <ul className="list-disc ml-5">
-          <li>Virtual Labs in association with IIT Roorkee</li>
-          <li>Collaboration with IIT Bombay on spoken tutorial project-FOSS</li>
-          <li>IEEE Student Chapter</li>
-          <li>ACM Student Chapter</li>
-          <li>Power and Engineering Society (PES)</li>
-          <li>BJMC Public Relation Society of India (PRSI)</li>
-          <li>
-            International Association of Students in Agriculture and Related
-            Sciences (IAAS)
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    image: Academics,
-    title: "Academics",
-    description:
-      "We offer wide range of undergraduate and postgraduate programs in different specializations. Our tailor-made curriculum plays a vital role in providing a better future and industry exposure to our students. We provide a fantastic campus environment to nurture the innovations of young minds. “ Tula’s associated with many educational institutions from various parts of globe for academic excellence, joint events & conferences like University of Andorra, Europe, Inter American University, Argentina and so on.”",
-  },
-  {
-    image: Placement,
-    title: "Placements",
-    description:
-      "Tula's institute has been focused in placing the right student at the right job. Placements have been an integral part of the institute. Tula has best placements records in association with 750+ big companies including Sterlite, Adobe, Deutsche Bank, Oracle, etc. Tula’s is the first college who has been focusing on getting the core companies to the campus and assuring the students with 100% placement assistance. Our aim is to place maximum number of students in top notch companies with high salary package. Today we are known as one of the best academic institution with best campus placement in Dehradun.",
-  },
-  {
-    image: Innovative,
-    title: "Innovative Methodologies",
-    description:
-      "We believe that innovative teaching method boosts the learning skills rapidly in students. Our expert uses innovative training techniques to train students so that they sound strong in their knowledge of a particular subject. We don’t believe in only theoretical knowledge that’s why we try to impart quality education through intense theoretical & practical sessions at Tula’s.",
-  },
-  {
-    image: ratio,
-    title: "Student Faculty Ratio 2:1",
-    description:
-      "Tula's institute has competitive faculty members, on whose shoulders lies the responsibility of taking their students to greater heights. The student and the faculty ratio are 12:1, which helps students to get mentored and catered effectively.",
-  },
-];
+// const sectionData = [
+//   {
+//     image: iso,
+//     title: "ISO 9001:2008 Certified",
+//     description:
+//       "The institute is affiliated to Uttarakhand Technical University and approved by AICTE, Ministry of HRD, Govt. of India. Tula’s Institute has also been awarded ISO 9001:2008 for quality management services.",
+//   },
+//   {
+//     image: curriculum,
+//     title: "Industry Oriented Curriculum",
+//     description: (
+//       <>
+//         Tula's Institute is India's top engineering college known for its
+//         excellence teaching. We use a set of tailor-made curriculum that connect
+//         and integrate knowledge of students according to industry demand. Tula’s
+//         aims to bridge the gap between of the industry and is aligned towards
+//         imparting contemporary knowledge to the students.
+//         <br />
+//         An optimal mix of learning methods ensures a holistic personality
+//         development of the students. The curriculum encourages students to apply
+//         theoretical learning to real-life scenarios by advent of a unique
+//         corporate interface that the institute boasts of.
+//       </>
+//     ),
+//   },
+//   {
+//     image: Collaboration,
+//     title: "Corporate Collaboration",
+//     description: (
+//       <>
+//         Tula's Institute is the only college in Uttarakhand which have strategic
+//         tie-ups with some of the world class companies like Redhat, Microsoft.
+//         Bentley, D-Link etc… to offer study programs that would help the
+//         students and faculty gain an international perspective in their chosen
+//         field of study.
+//         <br />
+//         We are enabling host of long-term benefits for the overall development
+//         of students and to enhance their career opportunities too.
+//         <br />
+//         <br />
+//         <ul className="list-disc ml-5">
+//           <li>Microsoft innovation center (MIC)</li>
+//           <li>Redhat</li>
+//           <li>Autodesk club</li>
+//           <li>
+//             India's first Remote Robotics lab in association with APS Labs
+//             Aachen, Germany.
+//           </li>
+//           <li>D- Link academy</li>
+//           <li>Bentley Lab</li>
+//           <li>TedX Delhi</li>
+//         </ul>
+//       </>
+//     ),
+//   },
+//   {
+//     image: tieUps,
+//     title: "Academic Tie-Ups",
+//     description: (
+//       <>
+//         Academic collaborations can help you meet your career goals if
+//         approached right. Tula's, the best private engineering college in
+//         Uttarakhand, has established academic tie-ups with various international
+//         institutions. The aim is to establish mutual cooperation to develop
+//         academic and cultural exchange to offer the best knowledge to our
+//         students.
+//         <br />
+//         <br />
+//         <ul className="list-disc ml-5">
+//           <li>Virtual Labs in association with IIT Roorkee</li>
+//           <li>Collaboration with IIT Bombay on spoken tutorial project-FOSS</li>
+//           <li>IEEE Student Chapter</li>
+//           <li>ACM Student Chapter</li>
+//           <li>Power and Engineering Society (PES)</li>
+//           <li>BJMC Public Relation Society of India (PRSI)</li>
+//           <li>
+//             International Association of Students in Agriculture and Related
+//             Sciences (IAAS)
+//           </li>
+//         </ul>
+//       </>
+//     ),
+//   },
+//   {
+//     image: Academics,
+//     title: "Academics",
+//     description:
+//       "We offer wide range of undergraduate and postgraduate programs in different specializations. Our tailor-made curriculum plays a vital role in providing a better future and industry exposure to our students. We provide a fantastic campus environment to nurture the innovations of young minds. “ Tula’s associated with many educational institutions from various parts of globe for academic excellence, joint events & conferences like University of Andorra, Europe, Inter American University, Argentina and so on.”",
+//   },
+//   {
+//     image: Placement,
+//     title: "Placements",
+//     description:
+//       "Tula's institute has been focused in placing the right student at the right job. Placements have been an integral part of the institute. Tula has best placements records in association with 750+ big companies including Sterlite, Adobe, Deutsche Bank, Oracle, etc. Tula’s is the first college who has been focusing on getting the core companies to the campus and assuring the students with 100% placement assistance. Our aim is to place maximum number of students in top notch companies with high salary package. Today we are known as one of the best academic institution with best campus placement in Dehradun.",
+//   },
+//   {
+//     image: Innovative,
+//     title: "Innovative Methodologies",
+//     description:
+//       "We believe that innovative teaching method boosts the learning skills rapidly in students. Our expert uses innovative training techniques to train students so that they sound strong in their knowledge of a particular subject. We don’t believe in only theoretical knowledge that’s why we try to impart quality education through intense theoretical & practical sessions at Tula’s.",
+//   },
+//   {
+//     image: ratio,
+//     title: "Student Faculty Ratio 2:1",
+//     description:
+//       "Tula's institute has competitive faculty members, on whose shoulders lies the responsibility of taking their students to greater heights. The student and the faculty ratio are 12:1, which helps students to get mentored and catered effectively.",
+//   },
+// ];
 
 const pageDescription = (
   <>
@@ -203,10 +203,10 @@ const page = () => {
               <div className="w-full h-full bg-[linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),linear-gradient(0deg,rgba(61,0,27,0.72),rgba(61,0,27,0.72))] bg-cover bg-no-repeat bg-lightgray" />
             </div>
           </div>
-          {/* <div className="-z-10">
+          <div className="-z-10">
             <WhyTulasScroll parentRef={parentRef} />
-          </div> */}
-          <Vision sections={sectionData.slice(0, 4)} />
+          </div>
+          {/* <Vision sections={sectionData.slice(0, 4)} /> */}
           <div className="w-full h-full relative z-50 bg-white py-8 md:py-20 flex flex-col items-center justify-center">
             <p className="text-[#3D001B] font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-8 px-4">
               World Class Infrastructure
@@ -224,7 +224,7 @@ const page = () => {
             </p>
           </div>
 
-          <Vision sections={sectionData.slice(4)} />
+          {/* <Vision sections={sectionData.slice(4)} /> */}
 
           <div className="w-full h-full relative z-[60] md:pt-[6vh] bg-white md:-mt-[6vh]">
             <Footer color={true} />
