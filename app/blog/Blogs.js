@@ -2,19 +2,19 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import loader from "../../public/loader.svg";
-
+import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]); // Initialize as an empty array
   const [page, setPage] = useState(1);
   const [allBlogsLoaded, setAllBlogsLoaded] = useState(false);
   const [loading, setLoading] = useState(true); // Set loading to true initially
   const [loadingMore, setLoadingMore] = useState(false);
-  
+
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
         const response = await fetch(
-          `https://tulas.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=18`
+          `https://tulasblogs.tis.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=18`
         );
         const posts = await response.json();
 
@@ -89,7 +89,12 @@ const Blogs = () => {
                     <Image
                       width="400"
                       height="250"
-                      src={blog.yoast_head_json.og_image?.[0]?.url}
+                      src={
+                        blog.yoast_head_json?.og_image &&
+                        blog.yoast_head_json.og_image.length > 0
+                          ? blog.yoast_head_json.og_image[0].url
+                          : school
+                      }
                       className="w-full h-52 object-cover"
                       alt=""
                     />
