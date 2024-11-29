@@ -50,11 +50,6 @@ export default function HomePage() {
             {bannerText}
           </h4>
         </div>
-        {/* <div className="w-full py-16 flex items-center justify-center px-10">
-          <p className="text-[#404040] text-[clamp(15px,4.5vw,30px)] text-justify md:text-xl font-[TTChocolates] max-w-[40rem] text-wrap">
-            {bannerText}
-          </p>
-        </div> */}
         <AboutTulas />
         <Courses parentRef={parentRef} />
         <WhyTulasScroll parentRef={parentRef} />
