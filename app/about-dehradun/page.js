@@ -9,7 +9,7 @@ import background from "../../public/AboutDehradun/background.png";
 import trainImage from "../../public/AboutDehradun/train.png";
 import planeImage from "../../public/AboutDehradun/plane.png";
 import roadImage from "../../public/AboutDehradun/road.png";
-import hillsImage from "../../public/Homepage/BannerHome/BannerImage1.jpg";
+import hillsImage from "../../public/Homepage/BannerHome/BannerImage3.webp";
 import Cards from "./components/Cards";
 import { Fade } from "react-awesome-reveal";
 const title = (
