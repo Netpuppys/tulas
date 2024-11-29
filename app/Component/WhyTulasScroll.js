@@ -92,17 +92,17 @@ function WhyTulasScroll({ parentRef }) {
   const [distanceFromTop, setDistanceFromTop] = useState(0);
   const { isMobile } = useMobile();
   const [windowWidth, setWindowWidth] = useState(0);
-  const [ changePositionValue, setChangePositionValue ] = useState()
+  const [changePositionValue, setChangePositionValue] = useState();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleResize = () => {
         setWindowWidth(window.innerWidth);
       };
-  
+
       handleResize(); // Set initial width
       window.addEventListener("resize", handleResize); // Update on resize
-  
+
       return () => window.removeEventListener("resize", handleResize); // Cleanup
     }
   }, []);
@@ -162,17 +162,23 @@ function WhyTulasScroll({ parentRef }) {
   };
 
   const changePosition = () => {
-    if (!window) {
-      return
-    }
-    const compHeight = window.innerHeight*2.5
-    if (scrollY > 0 && scrollY < compHeight) {
-      console.log("true")
-      return true;
-    }
-
-    console.log("false")
-    return false;
+    useEffect(() => {
+      if (typeof window === "undefined") return; // Guard against SSR
+      
+      const compHeight = window.innerHeight * 2.5;
+      const handleScroll = () => {
+        if (window.scrollY > 0 && window.scrollY < compHeight) {
+          console.log("true");
+          return true;
+        }
+        console.log("false");
+        return false;
+      };
+  
+      // Attach scroll event listener
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll); // Clean up on unmount
+    }, []); // Empty dependency array ensures this runs once when the component mounts
   };
 
   return (
