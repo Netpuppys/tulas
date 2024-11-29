@@ -10,7 +10,7 @@ import Link from "next/link";
 function CardCourses() {
   const cardsCourses = [
     {
-      src: Engineering,
+      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image.png",
       title: "DEPARTMENT OF ENGINEERING",
       degrees: [
         {
@@ -92,7 +92,7 @@ function CardCourses() {
       ],
     },
     {
-      src: Business,
+      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image-1.png",
       title: "GRADUATE SCHOOL OF BUSINESS",
       degrees: [
         {
@@ -156,7 +156,7 @@ function CardCourses() {
       ],
     },
     {
-      src: Agriculture,
+      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/Rectangle+22705.png",
       title: "DEPARTMENT OF AGRICULTURE",
       degrees: [
         {
@@ -172,7 +172,7 @@ function CardCourses() {
       ],
     },
     {
-      src: MassCoummunication,
+      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image-2.png",
       title: "DEPARTMENT OF MASS COMUNICATION",
       degrees: [
         {
@@ -188,7 +188,7 @@ function CardCourses() {
       ],
     },
     {
-      src: computerApplication,
+      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image-3.png",
       title: "DEPARTMENT OF COMPUTER APPLICATION",
       degrees: [
         {
@@ -226,7 +226,10 @@ function CardCourses() {
               src={image.src}
               alt=""
               className="z-50 object-cover w-full h-full group-hover:brightness-50"
+              width={270}
+              height={510}
             />
+            <div className="w-[120%] opacity-100 md:opacity-0 h-full bg-gradient-custom-black absolute bottom-0 left-1/2 -translate-x-1/2 rounded-3xl z-20"></div>
             <div className="absolute w-full h-fit overflow-scroll z-30 bottom-0 p-2 flex flex-col gap-4">
               <div className="text-white slide-in w-fit text-left font-[BenchNine] text-3xl">
                 {image.title}

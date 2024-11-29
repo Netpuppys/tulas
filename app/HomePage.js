@@ -56,15 +56,15 @@ export default function HomePage() {
           </p>
         </div> */}
         <AboutTulas />
-        <WhyTulasScroll parentRef={parentRef} />
         <Courses parentRef={parentRef} />
+        <WhyTulasScroll parentRef={parentRef} />
         <Accreditation />
         <Virtual />
         <VirtualTour />
         <Video />
         <CampusLife />
         <Testimonials />
-        <RankBanner />
+        {/* <RankBanner /> */}
         <Awards />
         <Footer />
       </div>

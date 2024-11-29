@@ -15,13 +15,25 @@ const CampusLife = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
-    if (contRef.current) {
-      const height = contRef.current.getBoundingClientRect().height;
-      const width = contRef.current.getBoundingClientRect().width;
-      setContHeight(height);
-      setContWidth(width);
-      console.log("jehwfdqk" + height);
-    }
+    const updateDimensions = () => {
+      if (contRef.current) {
+        const { height, width } = contRef.current.getBoundingClientRect();
+        setContHeight(height);
+        setContWidth(width);
+        console.log(`Height: ${height}, Width: ${width}`);
+      }
+    };
+
+    // Initial setting of dimensions
+    updateDimensions();
+
+    // Adding event listener for window resize
+    window.addEventListener("resize", updateDimensions);
+
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener("resize", updateDimensions);
+    };
   }, []);
 
   const handleAlbumIndex = (index) => {
@@ -86,12 +98,12 @@ const CampusLife = () => {
                   >
                     <Image
                       src={image}
-                      width={contWidth}
-                      height={contHeight}
+                      width={1920}
+                      height={1080}
                       className="w-full h-full object-cover"
                       alt=""
                     />
-                    <div className="absolute top-0 left-0 w-full h-full z-10 bg-[#007A83] bg-opacity-30"></div>
+                    <div className="absolute top-0 left-0 w-full h-full z-10 bg-[#007A83] bg-opacity-10"></div>
                     <div className="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-40"></div>
                   </div>
                 ))}

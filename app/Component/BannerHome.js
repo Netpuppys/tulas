@@ -11,10 +11,10 @@ const paragraph =
     "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, Dehradun with the vision of offering excellent academics along with fostering the professional and personal personas of every student of the institute.";
 
 const images = [
-    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage1.webp",
-    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
     "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
-    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage4.webp",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+1.jpg",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+4.jpg",
     "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage5.webp",
   ];
   // ${fade ? "opacity-20" : "opacity-100" }
@@ -127,9 +127,9 @@ function BannerHome({ isChecked }) {
         <h2 className="text-[38px] md:text-[clamp(20px,4.2vw,70px)] text-white z-10 font-[CarotSlab]">
           {title}
         </h2>
-        <h4 className="w-full text-justify md:max-w-[800px] text-[clamp(15px,4.5vw,30px)] text-white md:text-[clamp(12px,1.2vw,30px)] font-[TTChocolates]">
+        {/* <h4 className="w-full text-justify md:max-w-[800px] text-[clamp(15px,4.5vw,30px)] text-white md:text-[clamp(12px,1.2vw,30px)] font-[TTChocolates]">
           {paragraph}
-        </h4>
+        </h4> */}
       </div>
       <button
         onClick={handleScrollArrow}

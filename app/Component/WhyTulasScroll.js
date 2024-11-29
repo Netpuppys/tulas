@@ -3,20 +3,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ScrollTulas from "../../public/Homepage/ScrollSection/WhyTulas.png";
 import Image from "next/image";
-import Card1 from "../../public/Homepage/ScrollSection/Card1.png";
-import Card2 from "../../public/Homepage/ScrollSection/Card2.png";
-import Card3 from "../../public/Homepage/ScrollSection/Card3.png";
-import Card4 from "../../public/Homepage/ScrollSection/Card4.png";
-import Card5 from "../../public/Homepage/ScrollSection/Card5.png";
-import Card6 from "../../public/Homepage/ScrollSection/Card6.png";
-import Card7 from "../../public/Homepage/ScrollSection/Card7.png";
-import Card8 from "../../public/Homepage/ScrollSection/Card8.png";
-import Card9 from "../../public/Homepage/ScrollSection/Card9.png";
-import Card10 from "../../public/Homepage/ScrollSection/Card10.png";
-import Card11 from "../../public/Homepage/ScrollSection/Card11.png";
-import Card12 from "../../public/Homepage/ScrollSection/Card12.png";
-import Card13 from "../../public/Homepage/ScrollSection/Card13.png";
-import Card14 from "../../public/Homepage/ScrollSection/Card14.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useMobile } from "@/component/IsMobileContext";
 
@@ -25,72 +11,72 @@ const title = "14 REASONS TO CHOOSE TULA’S";
 //   "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
 const images = [
   {
-    src: Card1,
-    title: "CIRE",
-    text: "Industry-Supported Center for Innovation, Research & Entrepreneurship (CIRE).",
-  },
-  {
-    src: Card2,
-    title: "Patents & Awards",
-    text: "2000+ highly cited research papers, 30+ patents, 15+ government-funded projects, and 20+ prestigious awards.",
-  },
-  {
-    src: Card3,
-    title: "Incubator",
-    text: "Tula’s Technology Business Incubator Foundation (TTBIF) approved by MSME, Government of India & StartUP Uttarakhand.",
-  },
-  {
-    src: Card4,
-    title: "Placement Drive",
-    text: "700+ campus placement drives and 25+ industrial tie-ups.",
-  },
-  {
-    src: Card5,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-4.png",
     title: "Faculty",
     text: "Highly esteemed faculty recognized for innovation in teaching, novel research, and patents.",
   },
   {
-    src: Card6,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-2+(1).png",
+    title: "Incubator",
+    text: "Tula’s Technology Business Incubator Foundation (TTBIF) approved by MSME, Government of India & StartUP Uttarakhand.",
+  },
+  {
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-3+(1).png",
+    title: "Placement Drive",
+    text: "700+ campus placement drives and 25+ industrial tie-ups.",
+  },
+  {
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-1+(1).png",
+    title: "Patents & Awards",
+    text: "2000+ highly cited research papers, 30+ patents, 15+ government-funded projects, and 20+ prestigious awards.",
+  },
+  {
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-5.png",
     title: "Alumni",
     text: "7000+ successful alumni across the world.",
   },
   {
-    src: Card7,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-6.png",
     title: "NCC",
     text: "NCC 29 UK battalion at Tula’s led by the Government of India, Ministry of Defence.",
   },
   {
-    src: Card8,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-7.png",
     title: "FDPs & IEEE",
     text: "100+ FDPs and IEEE conferences each year",
   },
   {
-    src: Card9,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-8.png",
     title: "Library",
     text: "Library equipped with 70,000+ books, 2,500+ journals, copies of original manuscripts, 1,500+ recorded lectures, advanced recording studio, and 600+ high-end computers with digitally equipped learning resources available 16×7.",
   },
   {
-    src: Card10,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image+(1).png",
+    title: "CIRE",
+    text: "Industry-Supported Center for Innovation, Research & Entrepreneurship (CIRE).",
+  },
+  {
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-9.png",
     title: "Rankings",
     text: "University rankers, students from 6+ countries/25+ states, 8 student clubs, and 7 technical student societies and councils.",
   },
   {
-    src: Card11,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-10.png",
     title: "NSS",
     text: "NSS Unit at Tula’s led by the Government of India, Ministry of Youth Affairs & Sports.",
   },
   {
-    src: Card12,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-11.png",
     title: "Wifi Facility",
     text: "24×7 on-campus medical assistance with qualified doctors and medical insurance for all.",
   },
   {
-    src: Card13,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-12.png",
     title: "Sports",
     text: "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned &amp; spacious auditorium.",
   },
   {
-    src: Card14,
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-13.png",
     title: "Yoga Kendra",
     text: "Tula’s Heartfulness Yoga Kendra.",
   },
@@ -106,6 +92,7 @@ function WhyTulasScroll({ parentRef }) {
   const [distanceFromTop, setDistanceFromTop] = useState(0);
   const { isMobile } = useMobile();
   const [windowWidth, setWindowWidth] = useState(0);
+  const [ changePositionValue, setChangePositionValue ] = useState()
 
   useEffect(() => {
     // Update window width only on the client side
@@ -161,19 +148,6 @@ function WhyTulasScroll({ parentRef }) {
     };
   }, []);
 
-  // useEffect(() => {
-  //   const updateWidth = () => {
-  //     if (scrollRef.current) {
-  //       setWidth(scrollRef.current.offsetWidth);
-  //     }
-  //   };
-
-  //   updateWidth();
-  //   window.addEventListener("resize", updateWidth);
-
-  //   return () => window.removeEventListener("resize", updateWidth);
-  // }, []);
-
   const handleForwardClick = () => {
     if (index > 0) {
       setIndex((prev) => prev - 1);
@@ -187,17 +161,19 @@ function WhyTulasScroll({ parentRef }) {
   };
 
   const changePosition = () => {
-    const distAndHeight = distanceFromTop + componentHeight;
-    if (scrollY > 0 && scrollY < distAndHeight) {
+    const compHeight = window.innerHeight*2.5
+    if (scrollY > 0 && scrollY < compHeight) {
+      console.log("true")
       return true;
     }
 
+    console.log("false")
     return false;
   };
 
   return (
     <div className="bg-white w-full h-full">
-      <div ref={childRef} className="relative w-full h-[250vh]">
+      <div ref={childRef} className="relative w-full min-h-[250vh]">
         <div
           className={`${
             changePosition() ? "fixed" : "absolute"
@@ -217,12 +193,9 @@ function WhyTulasScroll({ parentRef }) {
           } top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
         >
           <div className="relative w-full h-full flex flex-col justify-center items-center">
-            <h3 className="mt-[12vh] font-[CarotSlab] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#E69706] w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
+            <h3 className="mt-[12vh] font-[CarotSlab] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
               {title}
             </h3>
-            {/* <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-semibold font-[TTChocolates] absolute top-3 z-10 pt-[calc(5vh+3rem)] md:pt-[calc(5vh+5rem)] h-[calc(23vh-5rem)] w-full px-6 md:px-[25vw] mx-auto text-center text-white">
-              {paragraph}
-            </h4> */}
             {/* card scroll btns */}
             <div className="absolute w-fit top-[50%] -translate-y-1/2 z-30 mt-[340px] md:mt-0 mx-auto  md:ml-0 md:mr-auto md:left-0 flex items-center justify-start">
               <div className="flex w-full md:w-40 md:flex-col text-[30px] gap-3 items-center justify-center">
@@ -265,16 +238,19 @@ function WhyTulasScroll({ parentRef }) {
                     <div
                       // ref={scrollRef}
                       key={index}
-                      className="group flex flex-col items-center justify-center w-[calc(100vw-96px)] md:w-[22rem] shadow-lg transform transition-all duration-500 md:hover:scale-110"
+                      className="group relative flex flex-col items-center justify-center w-[calc(100vw-96px)] md:w-[22rem] shadow-lg transform transition-all duration-500 md:hover:scale-110"
                     >
                       <Image
                         src={image.src}
                         alt=""
-                        className="z-20 rounded-xl object-cover w-full h-full aspect-square"
+                        className="z-20 rounded-3xl object-cover bg-[#3D001B] w-full h-full aspect-square"
                         layout="responsive"
+                        width={1000}
+                        height={1000}
                       />
+                      <div className="w-full opacity-100 md:opacity-0 md:group-hover:opacity-100 h-full bg-gradient-custom-black absolute bottom-0 left-0 rounded-3xl z-20"></div>
                       {/* <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div> */}
-                      <div className="text-white md:hidden group-hover:flex flex-col absolute z-30 w-fit p-2 bottom-[70px] translate-y-[100%]">
+                      <div className="text-white md:hidden group-hover:flex flex-col absolute z-30 w-fit p-2 bottom-[60px] translate-y-[100%]">
                         <h2 className="text-center font-[TTChocolatesBold] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]">
                           {image.title}
                         </h2>

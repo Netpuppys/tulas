@@ -18,6 +18,7 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        'gradient-custom-black': 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 28.22%, #000 100%)',
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
