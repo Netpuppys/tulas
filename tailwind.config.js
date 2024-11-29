@@ -43,6 +43,8 @@ module.exports = {
         swipeLeft: "swipeLeft 0.8s ease 1s",
         awardHover: "awardHover 0.5s ease",
         awardImageHover: "awardImageHover 0.5s ease 0.5s",
+        bannerImageFadeShow: "bannerImageFadeShow 0.8s linear",
+        bannerImageFadeHide: "bannerImageFadeHide 0.8s linear",
       },
       keyframes: {
         expandCheckpoint: {
@@ -54,6 +56,26 @@ module.exports = {
           }, "100%": {
             width: "2.5rem",
             border: "1px solid #007A83"
+          }
+        },
+        bannerImageFadeShow: {
+          "0%": {
+            // zIndex: 10,
+            opacity: 0
+          }, 
+          "100%": {
+            // zIndex: 20,
+            opacity: 1
+          }
+        },
+        bannerImageFadeHide: {
+          "0%": {
+            // zIndex: 20,
+            opacity: 1
+          }, 
+          "100%": {
+            // zIndex: 10,
+            opacity: 0
           }
         },
         awardHover: {

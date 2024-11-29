@@ -1,41 +1,40 @@
 "use client";
-import Image from "next/image";
+
 import React, { useState, useRef, useEffect } from "react";
-// import Banner1 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
-// import Banner2 from "../../public/Homepage/BannerHome/BannerImage2.jpg";
-// import Banner3 from "../../public/Homepage/BannerHome/BannerImage3.jpg";
-// import Banner4 from "../../public/Homepage/BannerHome/BannerImage4.jpg";
-// import Banner5 from "../../public/Homepage/BannerHome/BannerImage5.jpg";
+import Image from "next/image";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
-function BannerHome({ isChecked }) {
-  const title = (
-    <>
-      <span className="text-[#007A83]">UNLOCK</span> NEW <br />
-      PATHWAYS TO <span className="text-[#007A83]">SUCCESS</span>
-    </>
-  );
-  const paragraph =
+
+const maxSections = 13;
+
+const paragraph =
     "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, Dehradun with the vision of offering excellent academics along with fostering the professional and personal personas of every student of the institute.";
-  const images = [
+
+const images = [
     "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage1.webp",
     "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
     "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
     "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage4.webp",
     "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage5.webp",
   ];
-  const [currentIndex, setCurrentIndex] = useState(2);
-  const [fade, setFade] = useState(false);
-  const containerRef = useRef(null);
+  // ${fade ? "opacity-20" : "opacity-100" }
+const title = (
+    <>
+      <span className="text-[#007A83]">UNLOCK</span> NEW <br />
+      PATHWAYS TO <span className="text-[#007A83]">SUCCESS</span>
+    </>
+  );
+
+function BannerHome({ isChecked }) {
   const intervalRef = useRef(null);
-  const maxSections = 13;
+  const containerRef = useRef(null);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [scrollToSection, setScrollToSection] = useState(1);
 
   const changeImage = (index) => {
-    setFade(true);
     setTimeout(() => {
       setCurrentIndex(index);
-      setFade(false);
     }, 300); // Duration of fade out/in
   };
 
@@ -53,7 +52,7 @@ function BannerHome({ isChecked }) {
     clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -85,17 +84,18 @@ function BannerHome({ isChecked }) {
     >
       {/* background */}
       <div
-        className={`-z-10 w-full h-full inset-0 transition-all duration-300 ease-in overflow-hidden ${
-          fade ? "opacity-20" : "opacity-100"
-        }`}
+        className={`-z-10 w-full h-full inset-0 transition-all relative duration-300 ease-in overflow-hidden `}
       >
-        <Image
-          src={images[currentIndex]}
-          alt=""
-          width={6000}
-          height={2000}
-          className="object-cover w-full h-screen"
-        />
+        {images.map((item, index) => (
+          <Image
+            key={index}
+            src={item}
+            className={`absolute w-full h-full object-cover top-0 left-0 ${currentIndex===index? "animate-bannerImageFadeShow opacity-100" : "animate-bannerImageFadeHide opacity-0"}`}
+            alt={index}
+            width={6000}
+            height={2000}
+          />
+        ))}
       </div>
       <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
         {images.map((_, index) => (
@@ -118,6 +118,7 @@ function BannerHome({ isChecked }) {
           </div>
         ))}
       </div>
+
       <div
         className={`bottom-4 md:bottom-10 md:pr-[140px] z-10 absolute mx-4 md:ml-16 ${
           isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"
