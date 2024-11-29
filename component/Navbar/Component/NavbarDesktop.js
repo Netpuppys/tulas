@@ -52,8 +52,8 @@ function NavbarDesktop({
       <div
         className={`hidden mdNavbar:block w-[440px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
           isChecked
-            ? "animate-translateLeftMenu left-0"
-            : "animate-translateRightMenu left-[-100%]"
+            ? "animate-translateLeftMenu opacity-100 left-0"
+            : "animate-translateRightMenu opacity-0 left-[-100%]"
         }`}
       >
         <div className="w-full h-[calc(100vh-350px)]  relative top-[180px] overflow-auto">
