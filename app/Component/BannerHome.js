@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
-import Banner1 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
-import Banner2 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
-import Banner3 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
-import Banner4 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
-import Banner5 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
+// import Banner1 from "../../public/Homepage/BannerHome/BannerImage1.jpg";
+// import Banner2 from "../../public/Homepage/BannerHome/BannerImage2.jpg";
+// import Banner3 from "../../public/Homepage/BannerHome/BannerImage3.jpg";
+// import Banner4 from "../../public/Homepage/BannerHome/BannerImage4.jpg";
+// import Banner5 from "../../public/Homepage/BannerHome/BannerImage5.jpg";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
 function BannerHome({ isChecked }) {
@@ -17,7 +17,13 @@ function BannerHome({ isChecked }) {
   );
   const paragraph =
     "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, Dehradun with the vision of offering excellent academics along with fostering the professional and personal personas of every student of the institute.";
-  const images = [Banner1, Banner2, Banner3, Banner4, Banner5];
+  const images = [
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage1.webp",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage4.webp",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage5.webp",
+  ];
   const [currentIndex, setCurrentIndex] = useState(2);
   const [fade, setFade] = useState(false);
   const containerRef = useRef(null);
@@ -75,17 +81,19 @@ function BannerHome({ isChecked }) {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen relative flex items-start z-0"
+      className="w-full h-screen relative bg-black bg-opacity-50 flex items-start z-0"
     >
       {/* background */}
       <div
-        className={`-z-10 w-full h-full inset-0 transition-opacity duration-500 overflow-hidden ${
+        className={`-z-10 w-full h-full inset-0 transition-all duration-300 ease-in overflow-hidden ${
           fade ? "opacity-20" : "opacity-100"
         }`}
       >
         <Image
           src={images[currentIndex]}
           alt=""
+          width={6000}
+          height={2000}
           className="object-cover w-full h-screen"
         />
       </div>
