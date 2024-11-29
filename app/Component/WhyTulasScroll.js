@@ -162,17 +162,19 @@ function WhyTulasScroll({ parentRef }) {
   };
 
   const changePosition = () => {
-    // if (!window) {
-    //   return;
-    // }
-    const compHeight = window.innerHeight * 2.5;
-    if (scrollY > 0 && scrollY < compHeight) {
-      console.log("true");
-      return true;
-    }
+    if (typeof window !== "undefined") {
+      // if (!window) {
+      //   return;
+      // }
+      const compHeight = window.innerHeight * 2.5;
+      if (scrollY > 0 && scrollY < compHeight) {
+        console.log("true");
+        return true;
+      }
 
-    console.log("false");
-    return false;
+      console.log("false");
+      return false;
+    }
   };
 
   return (
