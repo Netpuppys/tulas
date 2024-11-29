@@ -15,6 +15,7 @@ import Testimonials from "./Component/Testimonials";
 import RankBanner from "./Component/RankBanner";
 import Awards from "./Component/Awards";
 import Accreditation from "./Component/Accreditation";
+import AwardsCrousel from "./Component/AwardsCrousel";
 
 const bannerText = (
   <>
@@ -60,8 +61,13 @@ export default function HomePage() {
         <CampusLife />
         <Testimonials />
         {/* <RankBanner /> */}
-        <Awards />
-        <Footer />
+        <div className="pb-[6vh] relative">
+          <AwardsCrousel />
+        </div>
+        {/* <Awards /> */}
+        <div className="-mt-[6vh]">
+          <Footer />
+        </div>
       </div>
     </>
   );

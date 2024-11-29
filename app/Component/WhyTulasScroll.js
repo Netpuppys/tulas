@@ -199,7 +199,7 @@ function WhyTulasScroll({ parentRef }) {
           } top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
         >
           <div className="relative w-full h-full flex flex-col justify-center items-center">
-            <h3 className="mt-[12vh] font-[CarotSlab] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
+            <h3 className="mt-10 md:mt-[12vh] font-[CarotSlab] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
               {title}
             </h3>
             {/* card scroll btns */}
