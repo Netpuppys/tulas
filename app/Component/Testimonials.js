@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useMobile } from "@/component/IsMobileContext";
 import { ThreeDots } from "react-loader-spinner";
 
@@ -30,14 +30,37 @@ const Testimonials = () => {
 
   const videoRefs = useRef([]);
 
+  useEffect(() => {
+    // Add event listeners to update isPlaying state when a video plays or pauses
+    videoRefs.current.forEach((video) => {
+      if (video) {
+        video.addEventListener("play", () => setIsPlaying(true));
+        video.addEventListener("pause", () => setIsPlaying(false));
+      }
+    });
+
+    // Cleanup event listeners
+    return () => {
+      videoRefs.current.forEach((video) => {
+        if (video) {
+          video.removeEventListener("play", () => setIsPlaying(true));
+          video.removeEventListener("pause", () => setIsPlaying(false));
+        }
+      });
+    };
+  }, [videoRefs]);
+
   const handlePlayToggle = () => {
     setIsPlaying((prev) => !prev);
+
     videoRefs.current.forEach((video, index) => {
       if (video) {
-        if (isPlaying) {
-          video.pause();
-        } else if (index === activeIndex) {
-          video.play();
+        if (index === activeIndex) {
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
         }
       }
     });
@@ -88,10 +111,11 @@ const Testimonials = () => {
         </button>
 
         <div className="w-full h-full flex items-center justify-center px-8 md:px-0 relative">
-          {isBuffering &&
-          <div className="absolute top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2">
-            <ThreeDots color="#007A83" height={30} />
-          </div>}
+          {isBuffering && (
+            <div className="absolute top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2">
+              <ThreeDots color="#007A83" height={30} />
+            </div>
+          )}
 
           {/* Swiper Carousel */}
           <Swiper
@@ -99,7 +123,21 @@ const Testimonials = () => {
             slidesPerView={isMobile ? 1 : 3}
             centeredSlides={true}
             loop={true}
-            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+            onSlideChange={(swiper) => {
+              const newIndex = swiper.realIndex;
+              setActiveIndex(newIndex);
+
+              // Pause all videos except the one at the current index
+              videoRefs.current.forEach((video, index) => {
+                if (video) {
+                  if (index === newIndex && isPlaying) {
+                    video.play();
+                  } else {
+                    video.pause();
+                  }
+                }
+              });
+            }}
             navigation={{
               prevEl: "#swiper-prev",
               nextEl: "#swiper-next",
@@ -110,7 +148,9 @@ const Testimonials = () => {
               <SwiperSlide key={index}>
                 <div
                   className={`transition-transform duration-500 ${
-                    activeIndex === index ? "scale-100 blur-none" : "scale-75 blur-sm"
+                    activeIndex === index
+                      ? "scale-100 blur-none"
+                      : "scale-75 blur-sm"
                   }`}
                 >
                   <video
