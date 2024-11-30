@@ -217,9 +217,8 @@ function CardCourses() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center w-full h-fit gap-4">
       {cardsCourses.map((image, index) => (
-        <div className="w-[90%] md:w-fit">
+        <div className="w-[90%] md:w-fit" key={index}>
           <div
-            key={index}
             className={`w-full md:w-[17vw] group card-group h-[400px] md:h-full overflow-hidden shadow-lg transform transition-all duration-500`}
           >
             <Image
@@ -246,10 +245,8 @@ function CardCourses() {
                     {degree.name}
                   </Link>
                   {degree.branches.map((branches, branchesIndex) => (
-                    <Link href={branches.linkTo || "#"}>
-                      <h3 className="text-xs" key={branchesIndex}>
-                        {branches.name}
-                      </h3>
+                    <Link href={branches.linkTo || "#"} key={branchesIndex}>
+                      <h3 className="text-xs">{branches.name}</h3>
                     </Link>
                   ))}
                 </div>
