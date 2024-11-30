@@ -20,7 +20,7 @@ const CampusLife = () => {
         const { height, width } = contRef.current.getBoundingClientRect();
         setContHeight(height);
         setContWidth(width);
-        console.log(`Height: ${height}, Width: ${width}`);
+        // console.log(`Height: ${height}, Width: ${width}`);
       }
     };
 

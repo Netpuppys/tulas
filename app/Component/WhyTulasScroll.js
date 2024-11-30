@@ -168,11 +168,11 @@ function WhyTulasScroll({ parentRef }) {
       // }
       const compHeight = window.innerHeight * 2.5;
       if (scrollY > 0 && scrollY < compHeight) {
-        console.log("true");
+        // console.log("true");
         return true;
       }
 
-      console.log("false");
+      // console.log("false");
       return false;
     }
   };

@@ -39,7 +39,7 @@ function Courses({ parentRef }) {
     if (childRef.current) {
       const compHeight = childRef.current.getBoundingClientRect().height;
       setComponentHeight(compHeight);
-      console.log(compHeight);
+      // console.log(compHeight);
     }
   }, []);
 
