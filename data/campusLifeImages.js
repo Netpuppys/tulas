@@ -4,11 +4,11 @@ const campusLifeImages = [
     {
         title: "Infrastructure",
         images: [
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/infra1.JPG",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/infra2.JPG",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/infra3.JPG",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/infra4.JPG",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/infra5.png",
         ]
     },
     {
@@ -24,8 +24,8 @@ const campusLifeImages = [
     {
         title: "HOSTEL LIFE",
         images: [
-            placeholder,
-            placeholder,
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/hostel1.png",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/hostel2.png",
             placeholder,
             placeholder,
             placeholder
@@ -34,11 +34,11 @@ const campusLifeImages = [
     {
         title: "Sports",
         images: [
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder,
-            placeholder
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/sports1.png",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/sports2.png",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/sports3.png",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/sports4.png",
+            "https://tulas-assets.s3.ap-south-1.amazonaws.com/campus-life/sports5.JPG",
         ]
     },
 ]

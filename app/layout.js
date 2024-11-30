@@ -18,6 +18,18 @@ export default function RootLayout({ children }) {
           name="robots"
           content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
         />
+        <meta property="og:title" content="Tula's Institute, Dehradun" />
+        <meta
+          property="og:description"
+          content="Looking for the Top Engineering and Degree College in Dehradun(Uttarakhand)? Look No Further Than Tula's Institute. We Offer the Best Engineering Courses Across India. Visit Now!"
+        />
+        <meta
+          property="og:image"
+          content="https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp"
+        />
+        <meta property="og:image:alt" content="Tula's Institute, Dehradun" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </head>
       <body className={inter.className}>
         <MobileProvider>{children}</MobileProvider>

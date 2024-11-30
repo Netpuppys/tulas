@@ -39,7 +39,7 @@ function Courses({ parentRef }) {
     if (childRef.current) {
       const compHeight = childRef.current.getBoundingClientRect().height;
       setComponentHeight(compHeight);
-      console.log(compHeight);
+      // console.log(compHeight);
     }
   }, []);
 
@@ -141,10 +141,10 @@ function Courses({ parentRef }) {
           <CardCourses />
         </div>
         <Image
-        src={Stars}
-        className="hidden md:block absolute bottom-0 translate-y-14 z-50 left-0 w-32 pointer-events-none"
-        alt=""
-      />
+          src={Stars}
+          className="hidden md:block absolute bottom-0 translate-y-14 z-50 left-0 w-32 pointer-events-none"
+          alt=""
+        />
       </div>
         
       </div>

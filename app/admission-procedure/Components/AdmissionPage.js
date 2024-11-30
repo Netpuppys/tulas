@@ -187,8 +187,10 @@ function AdmissionPage() {
                   <div className="w-full flex flex-col justify-center items-center gap-2">
                     <button
                       onClick={() => {
-                        window.location.href =
-                          "https://pages.razorpay.com/pl_EemYzSuH4dRF2e/view";
+                        window.open(
+                          "https://pages.razorpay.com/pl_EemYzSuH4dRF2e/view",
+                          "_blank"
+                        );
                       }}
                       className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
                     >
@@ -196,8 +198,10 @@ function AdmissionPage() {
                     </button>
                     <button
                       onClick={() => {
-                        window.location.href =
-                          "https://pages.razorpay.com/pl_Eemb9cp24Dac8R/view";
+                        window.open(
+                          "https://pages.razorpay.com/pl_Eemb9cp24Dac8R/view",
+                          "_blank"
+                        );
                       }}
                       className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
                     >
@@ -219,8 +223,10 @@ function AdmissionPage() {
                   <div className="flex flex-col justify-center items-center w-full gap-2">
                     <button
                       onClick={() => {
-                        window.location.href =
-                          "https://pages.razorpay.com/pl_Ef8FofNuC4SR5C/view";
+                        window.open(
+                          "https://pages.razorpay.com/pl_Ef8FofNuC4SR5C/view",
+                          "_blank"
+                        );
                       }}
                       className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
                     >
@@ -228,8 +234,10 @@ function AdmissionPage() {
                     </button>
                     <button
                       onClick={() => {
-                        window.location.href =
-                          "https://pages.razorpay.com/pl_EfCHelq0PvHmwp/view";
+                        window.open(
+                          "https://pages.razorpay.com/pl_EfCHelq0PvHmwp/view",
+                          "_blank"
+                        );
                       }}
                       className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
                     >

@@ -8,18 +8,19 @@ import Footer from "@/component/Footer";
 import "../Blog.css";
 import background from "../../public/AboutDehradun/background.png";
 import { notFound } from "next/navigation"; // Import notFound function
+import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
 
 export const revalidate = 80; // ISR revalidation every 60 seconds
 
 export async function generateStaticParams() {
   const response1 = await fetch(
-    "https://tulas.edu.in/wp-json/wp/v2/posts?page=1&per_page=18"
+    "https://tulasblogs.tis.edu.in/wp-json/wp/v2/posts?page=1&per_page=18"
   );
   const response2 = await fetch(
-    "https://tulas.edu.in/wp-json/wp/v2/posts?page=2&per_page=18"
+    "https://tulasblogs.tis.edu.in/wp-json/wp/v2/posts?page=2&per_page=18"
   );
   const response3 = await fetch(
-    "https://tulas.edu.in/wp-json/wp/v2/posts?page=3&per_page=18"
+    "https://tulasblogs.tis.edu.in/wp-json/wp/v2/posts?page=3&per_page=18"
   );
   const data1 = await response1.json();
   const data2 = await response2.json();
@@ -38,7 +39,7 @@ export async function generateStaticParams() {
 // Fetch the blog data based on the slug
 async function fetchBlogData(slug) {
   const res = await fetch(
-    `https://tulas.edu.in/wp-json/wp/v2/posts?slug=${slug}`
+    `https://tulasblogs.tis.edu.in/wp-json/wp/v2/posts?slug=${slug}`
   );
 
   if (!res.ok) {
@@ -112,16 +113,16 @@ export default async function SlugPage({ params }) {
   return (
     <>
       <Navbar />
-      <div className="md:min-h-screen w-full z-40 bg-white">
-        <div className="h-[240px] md:h-[71vh] w-full bg-black relative">
-          {/* Pseudo-element for the background image with opacity */}
+      <div className="w-full z-40 bg-white">
+        {/* <div className="h-[240px] md:h-[71vh] w-full bg-black relative">
+           
           <div
             style={{
               backgroundImage: `url(${headerImg})`,
             }}
             className="absolute top-0 left-0 right-0 bottom-0 opacity-30 z-0 bg-no-repeat bg-cover"
           ></div>
-        </div>
+        </div> */}
 
         <div className="min-h-fit py-6 md:py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-6 mx-auto">
           <h3 className="text-[30px] md:text-[clam(20px,3.5vw,60px)] text-[#000] z-10 font-[CarotSlab]">
@@ -136,7 +137,10 @@ export default async function SlugPage({ params }) {
       <div className="blog-page-content !text-black">
         <>
           <h6 className="text-black">Published on {formattedDate}</h6>
-          <div className="text-black" dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }} />
+          <div
+            className="text-black"
+            dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }}
+          />
         </>
       </div>
       {/* <div className="w-full relative overflow-hidden">

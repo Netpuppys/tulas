@@ -27,7 +27,7 @@ function Program({ parentRef, images, content }) {
     if (childRef.current) {
       const compHeight = childRef.current.getBoundingClientRect().height;
       setComponentHeight(compHeight);
-      console.log(compHeight);
+      // console.log(compHeight);
     }
   }, []);
 

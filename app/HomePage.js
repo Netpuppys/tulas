@@ -15,6 +15,7 @@ import Testimonials from "./Component/Testimonials";
 import RankBanner from "./Component/RankBanner";
 import Awards from "./Component/Awards";
 import Accreditation from "./Component/Accreditation";
+import AwardsCrousel from "./Component/AwardsCrousel";
 
 const bannerText = (
   <>
@@ -50,23 +51,23 @@ export default function HomePage() {
             {bannerText}
           </h4>
         </div>
-        {/* <div className="w-full py-16 flex items-center justify-center px-10">
-          <p className="text-[#404040] text-[clamp(15px,4.5vw,30px)] text-justify md:text-xl font-[TTChocolates] max-w-[40rem] text-wrap">
-            {bannerText}
-          </p>
-        </div> */}
         <AboutTulas />
-        <WhyTulasScroll parentRef={parentRef} />
         <Courses parentRef={parentRef} />
+        <WhyTulasScroll parentRef={parentRef} />
         <Accreditation />
         <Virtual />
         <VirtualTour />
         <Video />
         <CampusLife />
         <Testimonials />
-        <RankBanner />
-        <Awards />
-        <Footer />
+        {/* <RankBanner /> */}
+        <div className="pb-[6vh] relative">
+          <AwardsCrousel />
+        </div>
+        {/* <Awards /> */}
+        <div className="-mt-[6vh]">
+          <Footer />
+        </div>
       </div>
     </>
   );
