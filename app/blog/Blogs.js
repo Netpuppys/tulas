@@ -14,7 +14,7 @@ const Blogs = () => {
     const fetchBlogs = async () => {
       try {
         const response = await fetch(
-          `https://tulasblogs.tis.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=18`
+          `https://oldblog.tulas.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=18`
         );
         const posts = await response.json();
 
@@ -89,12 +89,7 @@ const Blogs = () => {
                     <Image
                       width="400"
                       height="250"
-                      src={
-                        blog.yoast_head_json?.og_image &&
-                        blog.yoast_head_json.og_image.length > 0
-                          ? blog.yoast_head_json.og_image[0].url
-                          : school
-                      }
+                      src={blog.yoast_head_json.og_image[0].url}
                       className="w-full h-52 object-cover"
                       alt=""
                     />

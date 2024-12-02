@@ -6,6 +6,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "tulas.edu.in",
+        port: "",
+        pathname: "/**", // Allow all paths within the domain
+      },
+      {
+        protocol: "https",
         hostname: "tulas-assets.s3.ap-south-1.amazonaws.com",
         port: "",
         pathname: "/**", // Allow all paths within the domain

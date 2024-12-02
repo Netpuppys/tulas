@@ -1,41 +1,32 @@
-'use client'
+"use client";
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
-import bannerImage1 from "../../public/Homepage/BannerHome/BannerImage1.webp"
-import bannerImage2 from "../../public/Homepage/BannerHome/BannerImage2.webp"
-import bannerImage3 from "../../public/Homepage/BannerHome/BannerImage3.webp"
-import bannerImage4 from "../../public/Homepage/BannerHome/BannerImage4.webp"
-import bannerImage5 from "../../public/Homepage/BannerHome/BannerImage5.webp"
+import bannerImage1 from "../../public/Homepage/BannerHome/BannerImage1.webp";
+import bannerImage2 from "../../public/Homepage/BannerHome/BannerImage2.webp";
+import bannerImage3 from "../../public/Homepage/BannerHome/BannerImage3.webp";
+import bannerImage4 from "../../public/Homepage/BannerHome/BannerImage4.webp";
+import bannerImage5 from "../../public/Homepage/BannerHome/BannerImage5.webp";
 
-// const maxSections = 13;
-
-// const bannerImages = [
-//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
-//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
-//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+1.jpg",
-//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+4.jpg",
-//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage5.webp",
-// ];
 const bannerImages = [
   bannerImage1,
   bannerImage2,
   bannerImage3,
   bannerImage4,
-  bannerImage5
-]
+  bannerImage5,
+];
 const title = (
-    <>
-      <span className="text-[#007A83]">UNLOCK</span> NEW <br />
-      PATHWAYS TO <span className="text-[#007A83]">SUCCESS</span>
-    </>
-  );
+  <>
+    <span className="text-[#007A83]">UNLOCK</span> NEW <br />
+    PATHWAYS TO <span className="text-[#007A83]">SUCCESS</span>
+  </>
+);
 
 function BannerHome({ isChecked }) {
-  const [ currentIndex, setCurrentIndex ] = useState(0);
-  const [ currentImage, setCurrentImage ] = useState(bannerImages[0])
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentImage, setCurrentImage] = useState(bannerImages[0]);
   // const [ scrollToSection, setScrollToSection ] = useState(1);
 
   useEffect(() => {
@@ -49,8 +40,8 @@ function BannerHome({ isChecked }) {
   }, [bannerImages]);
 
   useEffect(() => {
-    setCurrentImage(bannerImages[currentIndex])
-  }, [currentIndex])
+    setCurrentImage(bannerImages[currentIndex]);
+  }, [currentIndex]);
 
   const handleScrollArrow = () => {
     if (scrollToSection < maxSections) {
@@ -66,49 +57,32 @@ function BannerHome({ isChecked }) {
   };
 
   return (
-    <div 
-    
-      className="w-full h-screen relative bg-black bg-opacity-50 flex items-start z-0"
-    >
+    <div className="w-full h-screen relative bg-black bg-opacity-50 flex items-start z-0">
       {/* background */}
-      <div 
-      style={{ 
-        backgroundImage: `url(${currentImage.src})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+      <div
+        style={{
+          backgroundImage: `url(${currentImage.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
         className={`z-10 w-full h-screen relative duration-300 ease-in overflow-hidden `}
-      >
-        {/* {bannerImages.map((item, index) => (
-          <Image
-            key={index}
-            src={item}
-            className={`absolute w-full h-full object-cover top-0 left-0 
-            ${currentIndex===index? "animae-bannerImageFadeShow opacity-100" : "animae-bannerImageFadeHide opacity-0"}
-            `}
-            alt=""
-            // width={1920}
-            // height={1080}
-          />
-        ))} */}
-        {/* <Image
-          src={bannerImage1}
-          className="object-cover w-full h-screen"
-          alt=""
-        /> */}
-      </div>
+      ></div>
       <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
         {bannerImages.map((_, index) => (
           <div
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`${
-              index === currentIndex? "border-2 border-white p-[2px] rounded-full" : "border-none"
+              index === currentIndex
+                ? "border-2 border-white p-[2px] rounded-full"
+                : "border-none"
             } `}
           >
             <div
               className={`w-[10px] h-[10px] md:w-[15px] z-10 md:h-[15px] rounded-full flex items-center justify-center cursor-pointer ${
-                index === currentIndex? " bg-white" : " bg-gray-400 blur-[0.6px]"
+                index === currentIndex
+                  ? " bg-white"
+                  : " bg-gray-400 blur-[0.6px]"
               }`}
             ></div>
           </div>
@@ -207,7 +181,7 @@ export default BannerHome;
 
 //   const resetInterval = () => {
 //     clearInterval(intervalRef.current);
-  
+
 //     intervalRef.current = setInterval(() => {
 //       setCurrentIndex((prevIndex) =>
 //         prevIndex < bannerImages.length - 1 ? prevIndex + 1 : 0
