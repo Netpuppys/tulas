@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import formBanner from "../../public/Homepage/aboutTulas/formBanner.png";
 import { cities, courses, specializations, state } from "@/data/courses";
 import axios from "axios";
-
+import formPopup from "../../public/Homepage/aboutTulas/formPopup.png";
 const aboutTulas = (
   <>
     Tula's Institute was established in 2006, under the aegis of Rishabh
@@ -73,8 +73,9 @@ function AboutTulas() {
 
   const sendOtp = async () => {
     // try {
-    //   const response = await 
-      axios.post(
+    //   const response = await
+    axios
+      .post(
         "http://api.msg91.com/api/sendotp.php",
         {
           authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
@@ -92,7 +93,7 @@ function AboutTulas() {
           },
         }
       )
-      .then(res => {
+      .then((res) => {
         const response = res;
         if (response.data.type === "success") {
           setIsOtpSent(true);
@@ -101,18 +102,17 @@ function AboutTulas() {
           setMessage("Failed to send OTP. Please try again.");
         }
       })
-      .catch(error => {
+      .catch((error) => {
+        setIsOtpSent(true);
         setMessage("OTP failed to send");
         console.error(error);
-      })
+      });
 
-      
     // } catch (error) {
-      
+
     // }
   };
 
-  
   const verifyOtp = async (otp) => {
     try {
       const response = await axios.get(
@@ -120,14 +120,14 @@ function AboutTulas() {
         {
           params: {
             mobile: formData.MobileNumber, // Mobile number with country code
-            otp: otp,            // OTP received on the phone
+            otp: otp, // OTP received on the phone
           },
           headers: {
             authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
           },
         }
       );
-  
+
       if (response.data.type === "success") {
         console.log("OTP verified successfully!");
         // Handle successful OTP verification
@@ -140,6 +140,19 @@ function AboutTulas() {
       // Handle error during the request
     }
   };
+
+  useEffect(() => {
+    if (isOtpSent) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOtpSent]);
+
   const resendOtp = async () => {
     try {
       const response = await axios.get(
@@ -166,6 +179,22 @@ function AboutTulas() {
       id="2"
       className="bg-transparent flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-10 items-center"
     >
+      {isOtpSent && (
+        <div className="fixed w-screen h-screen bg-black bg-opacity-50 top-0 left-0 z-50 flex items-center justify-center flex-col">
+          <div className="p-8 rounded-2xl overflow-hidden relative">
+            <Image
+              src={formPopup}
+              alt=""
+              className="absolute top-0 w-full h-full -z-10 left-0 object-cover"
+            />
+            <h3 className="text-white z-20 text-2xl font-[TTChocolatesBold] font-bold">Verify Mobile Number</h3>
+            <h4 className="max-w-[415px] text-[15px] font-[TTChocolatesBold] ">
+              OTP has been sent to you on your mobile number, Please enter it
+              below
+            </h4>
+          </div>
+        </div>
+      )}
       <div className="w-full px-6 md:px-0 md:w-[50%] py-10 md:py-20">
         <h3 className="text-[#fff] text-justify font-[TTChocolates] font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
           {aboutTulas}
@@ -242,33 +271,6 @@ function AboutTulas() {
                 Send OTP
               </button>
             </div>
-            {isOtpSent && (
-              <input
-                type="text"
-                placeholder="Enter OTP"
-                value={otp}
-                onChange={(e) => setOtp(e.target.value)}
-                className="w-full px-5 py-3 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
-              />
-            )}
-            {isOtpSent && (
-              <div className="flex gap-3">
-                <button
-                  type="button"
-                  className="bg-[#007A83] text-white px-5 py-3 rounded-[3px]"
-                  onClick={verifyOtp}
-                >
-                  Verify OTP
-                </button>
-                <button
-                  type="button"
-                  className="bg-[#007A83] text-white px-5 py-3 rounded-[3px]"
-                  onClick={resendOtp}
-                >
-                  Resend OTP
-                </button>
-              </div>
-            )}
             {message && <p className="text-white mt-3">{message}</p>}
             <div className="flex flex-col md:flex-row gap-3 mb-3">
               <select

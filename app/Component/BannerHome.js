@@ -13,13 +13,13 @@ function BannerHome({ isChecked }) {
   );
   const paragraph =
     "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, Dehradun with the vision of offering excellent academics along with fostering the professional and personal personas of every student of the institute.";
-    const images = [
-      "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
-      "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
-      "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+1.jpg",
-      "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+4.jpg",
-      "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage5.webp",
-    ];
+  const images = [
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+1.jpg",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+4.jpg",
+    "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage5.webp",
+  ];
   const [currentIndex, setCurrentIndex] = useState(2);
   const [fade, setFade] = useState(false);
   const containerRef = useRef(null);
@@ -88,6 +88,8 @@ function BannerHome({ isChecked }) {
         <Image
           src={images[currentIndex]}
           alt=""
+          width={2000}
+          height={1000}
           className="object-cover w-full h-screen"
         />
       </div>
