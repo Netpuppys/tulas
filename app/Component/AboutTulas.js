@@ -7,6 +7,7 @@ import formBanner from "../../public/Homepage/aboutTulas/formBanner.png";
 import { cities, courses, specializations, state } from "@/data/courses";
 import axios from "axios";
 import formPopup from "../../public/Homepage/aboutTulas/formPopup.png";
+import OtpInput from "react-otp-input";
 const aboutTulas = (
   <>
     Tula's Institute was established in 2006, under the aegis of Rishabh
@@ -42,6 +43,9 @@ function AboutTulas() {
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [message, setMessage] = useState("");
   const [isPhoneValid, setIsPhoneValid] = useState(false);
+  const [verified, setVerified] = useState(false);
+  const mobileInputRef = React.useRef(null);
+  const [timer, setTimer] = useState(30); // Timer for the Resend OTP button
 
   const handleChange = (key, value) => {
     setFormData((prev) => ({
@@ -62,6 +66,7 @@ function AboutTulas() {
       Center: "",
     }));
   };
+
   const handleStateChange = (e) => {
     const selectedState = e.target.value;
     setFormData((prev) => ({
@@ -71,9 +76,81 @@ function AboutTulas() {
     }));
   };
 
+  const handleChangeNumber = () => {
+    setFormData((prev) => ({
+      ...prev,
+      MobileNumber: "+91",
+    }));
+    setIsOtpSent(false);
+  };
+
+  useEffect(() => {
+    if (isOtpSent) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOtpSent]);
+
+  const startTimer = () => {
+    setTimer(30); // Reset the timer to 30 seconds
+    const countdown = setInterval(() => {
+      setTimer((prev) => {
+        if (prev <= 1) {
+          clearInterval(countdown); // Stop the timer when it reaches 0
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  };
+
+  useEffect(() => {
+    if (isOtpSent && timer > 0) {
+      const countdown = setInterval(() => {
+        setTimer((prev) => {
+          if (prev <= 1) {
+            clearInterval(countdown); // Stop the timer when it reaches 0
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+
+      return () => clearInterval(countdown); // Clean up the interval on unmount
+    }
+  }, [isOtpSent]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", formData)
+      .then(() => {
+        alert("Enquiry Submitted Successfully");
+        setFormData({
+          AuthToken: "TULAS-27-12-2023",
+          Source: "tulas",
+          FirstName: "",
+          Email: "",
+          MobileNumber: "",
+          LeadSource: "25",
+          LeadChannel: "2",
+          Course: "",
+          Center: "",
+          State: "",
+          City: "",
+        });
+      })
+      .catch((error) => {
+        alert.error(error);
+      });
+  };
+
   const sendOtp = async () => {
-    // try {
-    //   const response = await
     axios
       .post(
         "http://api.msg91.com/api/sendotp.php",
@@ -93,24 +170,15 @@ function AboutTulas() {
           },
         }
       )
-      .then((res) => {
-        const response = res;
-        if (response.data.type === "success") {
-          setIsOtpSent(true);
-          setMessage("OTP sent successfully!");
-        } else {
-          setMessage("Failed to send OTP. Please try again.");
-        }
+      .then(() => {
+        setVerified(true);
+        setIsOtpSent(true);
+        setMessage("OTP sent successfully!");
+        startTimer();
       })
       .catch((error) => {
-        setIsOtpSent(true);
-        setMessage("OTP failed to send");
         console.error(error);
       });
-
-    // } catch (error) {
-
-    // }
   };
 
   const verifyOtp = async (otp) => {
@@ -129,49 +197,26 @@ function AboutTulas() {
       );
 
       if (response.data.type === "success") {
-        console.log("OTP verified successfully!");
-        // Handle successful OTP verification
+        setVerified(true);
+        setIsOtpSent(false);
+        alert("OTP verified Successfully");
       } else {
-        console.error("OTP verification failed:", response.data.message);
-        // Handle failed OTP verification
+        setMessage(response.data.message);
       }
     } catch (error) {
-      console.error("Error while verifying OTP:", error);
-      // Handle error during the request
-    }
-  };
-
-  useEffect(() => {
-    if (isOtpSent) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isOtpSent]);
-
-  const resendOtp = async () => {
-    try {
-      const response = await axios.get(
-        `https://control.msg91.com/api/v5/otp/retry?retrytype=text&mobile=${formData.MobileNumber}&authkey=412590AKveCHLSBnd4658bcea0P1`
-      );
-      if (response.data.type === "success") {
-        setMessage("OTP resent successfully!");
-      } else {
-        setMessage("Failed to resend OTP. Please try again.");
-      }
-    } catch (error) {
-      setMessage("Error while resending OTP.");
       console.error(error);
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted", formData);
+  const resendOtp = async () => {
+    try {
+      await axios.get(
+        `https://control.msg91.com/api/v5/otp/retry?retrytype=text&mobile=${formData.MobileNumber}&authkey=412590AKveCHLSBnd4658bcea0P1`
+      );
+      startTimer();
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -179,22 +224,76 @@ function AboutTulas() {
       id="2"
       className="bg-transparent flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-10 items-center"
     >
-      {isOtpSent && (
+      {/* {isOtpSent && (
         <div className="fixed w-screen h-screen bg-black bg-opacity-50 top-0 left-0 z-50 flex items-center justify-center flex-col">
-          <div className="p-8 rounded-2xl overflow-hidden relative">
+          <div
+            className="w-full h-screen z-10 absolute"
+            onClick={() => setIsOtpSent(false)}
+          ></div>
+          <div className="p-8 rounded-2xl pointer-events-auto z-20 overflow-hidden relative">
             <Image
               src={formPopup}
               alt=""
               className="absolute top-0 w-full h-full -z-10 left-0 object-cover"
             />
-            <h3 className="text-white z-20 text-2xl font-[TTChocolatesBold] font-bold">Verify Mobile Number</h3>
+            <h3 className="text-white z-20 text-2xl font-[TTChocolatesBold] font-bold mb-1">
+              Verify Mobile Number
+            </h3>
             <h4 className="max-w-[415px] text-[15px] font-[TTChocolatesBold] ">
               OTP has been sent to you on your mobile number, Please enter it
-              below
+              below{" "}
+              <button
+                onClick={handleChangeNumber}
+                className="bg-[#3D001B] mx-2 py-1 px-2"
+              >
+                Change Number
+              </button>
             </h4>
+            <div className="flex flex-col items-center justify-center">
+              <OtpInput
+                value={otp}
+                onChange={setOtp}
+                numInputs={4}
+                disabled={verified}
+                placeholder="XXXX"
+                renderInput={(props) => <input {...props} />}
+                inputStyle={{
+                  width: "3rem",
+                  height: "3rem",
+                  margin: "0.8rem 0.5rem 0rem 0.5rem",
+                  fontSize: "1.5rem",
+                  borderRadius: "0.5rem",
+                  border: "1px solid #ccc",
+                  textAlign: "center",
+                  color: "black",
+                  outline: "none",
+                }}
+                containerStyle={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              />
+              {message && <p className="text-[#FF0000]">{message}</p>}
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <button
+                className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[TTChocolatesBold] px-4 py-1 my-2"
+                onClick={resendOtp}
+                disabled={timer !== 0} // Disable resend if cooldown is active
+              >
+                Resend OTP
+              </button>
+              {timer > 0 && <p className="text-[15px]">{`${timer} Seconds`}</p>}
+            </div>
+            <button
+              onClick={verifyOtp}
+              className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[TTChocolatesBold] py-1"
+            >
+              Submit
+            </button>
           </div>
         </div>
-      )}
+      )} */}
       <div className="w-full px-6 md:px-0 md:w-[50%] py-10 md:py-20">
         <h3 className="text-[#fff] text-justify font-[TTChocolates] font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
           {aboutTulas}
@@ -227,7 +326,9 @@ function AboutTulas() {
             />
             <div className="mb-3 flex gap-3">
               <PhoneInput
+                ref={mobileInputRef}
                 country={"in"}
+                disabled={verified}
                 value={formData.MobileNumber}
                 onChange={(value) => handleChange("MobileNumber", value)}
                 placeholder="Enter Mobile No."
@@ -258,9 +359,9 @@ function AboutTulas() {
                   color: "black", // Flag icon color
                 }}
               />
-              <button
+              {/* <button
                 type="button"
-                disabled={!isPhoneValid}
+                disabled={!isPhoneValid && verified}
                 onClick={sendOtp}
                 className={`w-1/2 md:w-[40%] bg-white rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-[#007A83] ${
                   isPhoneValid
@@ -268,10 +369,10 @@ function AboutTulas() {
                     : "opacity-50 cursor-not-allowed"
                 }`}
               >
-                Send OTP
-              </button>
+                {verified ? "Verified" : "Send OTP"}
+              </button> */}
             </div>
-            {message && <p className="text-white mt-3">{message}</p>}
+
             <div className="flex flex-col md:flex-row gap-3 mb-3">
               <select
                 value={formData.State}
@@ -280,7 +381,7 @@ function AboutTulas() {
               >
                 <option value="">Select State</option>
                 {state
-                  .slice() // create a shallow copy to avoid modifying the original array
+                  .slice()
                   .sort((a, b) => a.name.localeCompare(b.name)) // sort by name alphabetically
                   .map((state) => (
                     <option key={state.id} value={state.id}>
@@ -357,7 +458,9 @@ function AboutTulas() {
 
             <button
               type="submit"
-              className="w-full bg-white text-[#007A83] py-3 rounded-[3px] font-semibold mb-10"
+              // disabled={!verified}
+              // title={verified ? "" : "Please Verify Mobile Number"}
+              className={`w-full bg-white text-[#007A83] cursor-pointer py-3 rounded-[3px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold mb-10`}
             >
               Submit
             </button>
