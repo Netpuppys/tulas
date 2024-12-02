@@ -149,19 +149,28 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
+import bannerImage1 from "../../public/Homepage/BannerHome/BannerImage1.webp"
+import bannerImage2 from "../../public/Homepage/BannerHome/BannerImage2.webp"
+import bannerImage3 from "../../public/Homepage/BannerHome/BannerImage3.webp"
+import bannerImage4 from "../../public/Homepage/BannerHome/BannerImage4.webp"
+import bannerImage5 from "../../public/Homepage/BannerHome/BannerImage5.webp"
 
 const maxSections = 13;
 
-const paragraph =
-    "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, Dehradun with the vision of offering excellent academics along with fostering the professional and personal personas of every student of the institute.";
-
+// const images = [
+//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
+//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
+//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+1.jpg",
+//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+4.jpg",
+//   "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage5.webp",
+// ];
 const images = [
-  "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
-  "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage2.webp",
-  "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+1.jpg",
-  "https://tulas-assets.s3.ap-south-1.amazonaws.com/banner+4.jpg",
-  "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage5.webp",
-];
+  bannerImage1,
+  bannerImage2,
+  bannerImage3,
+  bannerImage4,
+  bannerImage5
+]
   // ${fade ? "opacity-20" : "opacity-100" }
 const title = (
     <>
