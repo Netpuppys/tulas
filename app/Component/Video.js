@@ -28,16 +28,30 @@ function Video() {
           />
 
           <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] w-[90%] md:w-[60%] font-[TTChocolates] mx-auto text-justify md:text-center text-black py-8 md:py-20">
-            <span className="font-medium text-[#007A83]">Tula's Institute</span>{" "}
-            was established in 2006, under the aegis of Rishabh Educational
-            Trust, Dehradun with the vision of offering excellent academics
-            along with fostering the professional and personal personas of every
-            student of the institute.
-            <span className="font-medium text-[#007A83]">
-              Tula's Institute
-            </span>{" "}
-            is dedicated to serve the communities by recognizing the diverse
-            needs of individuals.
+            At our institution, versatility is at the heart of our academic
+            offerings. Whatever be your ambition, we have a path to match! For
+            those passionate about technology, we offer{" "}
+            <strong className="text-[#007A83]">
+              BCA and MCA in Computer Applications.{" "}
+            </strong>
+            Engineering enthusiasts can choose from{" "}
+            <strong className="text-[#007A83]">
+              B.Tech, M.Tech, and Diploma programs{" "}
+            </strong>
+            across various disciplines. If you’re business-inclined or have a
+            knack for leadership, our{" "}
+            <strong className="text-[#007A83]">
+              MBA, BBA, and B.Com (Hons) programs{" "}
+            </strong>{" "}
+            are designed for you. Aspiring agriculturalists can explore
+            opportunities with{" "}
+            <strong className="text-[#007A83]">
+              B.Sc (Hons) Agriculture,{" "}
+            </strong>
+            while creative minds can pursue their calling through our{" "}
+            <strong className="text-[#007A83]">
+              Mass Communication course (BAJMC).
+            </strong>
           </p>
         </div>
       </div>
