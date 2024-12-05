@@ -36,7 +36,7 @@ function CardCourses() {
                 "/courses/btech/computer-science-engineering-cyber-security/",
             },
             {
-              name: "Computer Science & Engineering( Data Science)",
+              name: "Computer Science & Engineering (Data Science)",
               linkTo:
                 "/courses/btech/computer-science-engineering-data-science/",
             },
@@ -104,7 +104,7 @@ function CardCourses() {
               linkTo: "/courses/mba/",
             },
             {
-              name: "Human Resource Managment",
+              name: "Human Resource Management",
               linkTo: "/courses/mba/",
             },
             {
@@ -140,7 +140,7 @@ function CardCourses() {
           link: "/courses/bba/",
           branches: [
             {
-              name: "Human Resource Managment",
+              name: "Human Resource Management",
               linkTo: "/courses/bba/",
             },
             {
@@ -173,14 +173,14 @@ function CardCourses() {
     },
     {
       src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image-2.png",
-      title: "DEPARTMENT OF MASS COMUNICATION",
+      title: "DEPARTMENT OF MASS COMMUNICATION",
       degrees: [
         {
           name: "BAJMC",
           link: "/courses/bjmc/",
           branches: [
             {
-              name: "BA (Hons.) of Journalism and Mass Communications",
+              name: "BA (Hons.) of Journalism and Mass Communication",
               linkTo: "/courses/bjmc/",
             },
           ],

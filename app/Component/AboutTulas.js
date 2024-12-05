@@ -10,18 +10,27 @@ import formPopup from "../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 const aboutTulas = (
   <>
-    Tula's Institute was established in 2006, under the aegis of Rishabh
-    Educational Trust, Dehradun with the vision of offering excellent academics
-    along with fostering the professional and personal personas of every student
-    of the institute. Tula’s Institute is dedicated to serve the communities by
-    recognizing the diverse needs of individuals.
+    Tula's Institute is dedicated to providing top-notch education, preparing
+    students for success in their professional careers
+    <br />
+    This commitment to excellence has earned Tula’s Institute prestigious
+    accolades:
     <br />
     <br />
-    With this vision, Tula’s Institute has been ranked in Top 50 Private
-    Engineering college of India for the last 6 years consecutively (from
-    2016-2021) and also has been ranked in Top 20 Private Engineering college of
-    North India for the past 3 years by “The Times of India-Engineering Survey”,
-    ranked AA+ by “Career 360”.
+    <ul className="list-disc ml-5">
+      <li>
+        Ranked among the Top 50 Private Colleges in India for eight consecutive
+        years (2016–2024)
+      </li>
+      <li>
+        Secured a spot in the Top 20 Private Engineering Colleges of North India
+        for the past three years, as per The Times of India Engineering Survey
+      </li>
+      <li>
+        Awarded an AA+ rating by Career360, cementing its reputation as a
+        leading educational institution
+      </li>
+    </ul>
   </>
 );
 
@@ -153,7 +162,7 @@ function AboutTulas() {
   const sendOtp = async () => {
     axios
       .post(
-        "http://api.msg91.com/api/sendotp.php",
+        "https://api.msg91.com/api/sendotp.php",
         {
           authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
           mobile: formData.MobileNumber, // Replace with dynamic mobile number

@@ -1,5 +1,3 @@
-import AnandGupta from "../../../public/courses/btech/computer-science/facultyData/AnandGupta.webp";
-import AnandGuptaResume from "../../../public/courses/btech/computer-science/facultyData/AnandGuptaResume.pdf";
 import AhmadJmal from "../../../public/courses/btech/computer-science/facultyData/AhmadJmal.webp";
 import AhmadJmalResume from "../../../public/courses/btech/computer-science/facultyData/AhmadJmalResume.pdf";
 import akanksha from "../../../public/courses/btech/computer-science/facultyData/akanksha.webp";
@@ -51,34 +49,27 @@ import AsiaKhatoonResume from "../../../public/courses/btech/computer-science/fa
 
 export const facultyDataCSE = [
   {
-    name: "Dr. Anand Kumar Gupta",
-    designation: "Associate Professor & HoD",
-    education: "Ph.d",
-    publications: "10",
-    experience: "13",
-    imageUrl: AnandGupta,
-    resume: AnandGuptaResume,
-  },
-  {
     name: "Dr. Sunil Semwal",
     designation: "Dean Research",
-    education: "Ph.d",
-    experience: "",
+    education: "Ph.D.",
+    experience: "14",
+    publications: "6",
     imageUrl: SunilSemwal,
     resume: SunilSemwalResume,
   },
   {
     name: "Dr. Trupresh Joshi",
     designation: "Research Coordinator",
-    education: "Ph.d",
-    experience: "",
+    education: "Ph.D.",
+    experience: "10",
+    publications: "8",
     imageUrl: TripureshJoshi,
     resume: TripureshJoshiResume,
   },
   {
     name: "Dr. Sandeep Kumar",
-    designation: "Associate Professor",
-    education: "Ph.d",
+    designation: "Associate Professor & HoD",
+    education: "Ph.D.",
     publications: "10",
     experience: "12.5",
     imageUrl: SandeepKumar,
@@ -87,7 +78,7 @@ export const facultyDataCSE = [
   {
     name: "Dr. Bharti Kalra",
     designation: "Associate Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "19",
     experience: "16.5",
     imageUrl: BhartiKalra,
@@ -96,7 +87,7 @@ export const facultyDataCSE = [
   {
     name: "Dr. Ahmad jamal",
     designation: "Associate Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "9",
     experience: "9",
     imageUrl: AhmadJmal,
@@ -105,7 +96,7 @@ export const facultyDataCSE = [
   {
     name: "Dr. Ashish Gupta",
     designation: "Associate Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "17",
     experience: "13.5",
     imageUrl: AshishGupta,
@@ -114,7 +105,7 @@ export const facultyDataCSE = [
   {
     name: "Dr. Nirmendar Bhadauriya",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "5",
     experience: "19",
     imageUrl: Nirmendra,
@@ -123,7 +114,7 @@ export const facultyDataCSE = [
   {
     name: "Dr . Ritu Pal",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "9",
     experience: "11",
     imageUrl: RituPal,
@@ -132,7 +123,7 @@ export const facultyDataCSE = [
   {
     name: "Dr. Prashant chaudhary",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "12",
     experience: "16.5",
     imageUrl: PrashantKumar,
@@ -141,7 +132,7 @@ export const facultyDataCSE = [
   {
     name: "Mr. B. K Sharma",
     designation: "Assistant Professor",
-    education: "M.Tech, (Ph.d P)",
+    education: "M.Tech, (Ph.D. P)",
     experience: "30",
     imageUrl: BKSharma,
     resume: BKSharmaResume,
@@ -149,7 +140,7 @@ export const facultyDataCSE = [
   {
     name: "Mr. Prakhar Goyal",
     designation: "Assistant Professor",
-    education: "M.Tech, (Ph.d P)",
+    education: "M.Tech, (Ph.D. P)",
     experience: "1",
     imageUrl: PrakharGoel,
     resume: PrakharGoelResume,
@@ -175,7 +166,7 @@ export const facultyDataCSE = [
   {
     name: "Ms. Shivali Pundir",
     designation: "Assistant Professor",
-    education: "M.Tech, (Ph.d P)",
+    education: "M.Tech, (Ph.D. P)",
     publications: "2",
     experience: "6",
     imageUrl: shivaliPundir,
@@ -184,7 +175,7 @@ export const facultyDataCSE = [
   {
     name: "Mr. Sharad",
     designation: "Assistant Professor",
-    education: "M.Tech, (Ph.d P)",
+    education: "M.Tech, (Ph.D. P)",
     publications: "4",
     experience: "10",
     imageUrl: saradsingh,
@@ -193,7 +184,7 @@ export const facultyDataCSE = [
   {
     name: "Mr. kshitij",
     designation: "Assistant Professor",
-    education: "M.Tech, (Ph.d P)",
+    education: "M.Tech, (Ph.D. P)",
     publications: "14",
     experience: "10",
     imageUrl: Kshitiz,
@@ -202,7 +193,7 @@ export const facultyDataCSE = [
   {
     name: "Ms. Akanksha",
     designation: "Assistant Professor",
-    education: "M.Tech, (Ph.d P)",
+    education: "M.Tech, (Ph.D. P)",
     publications: "8",
     experience: "6",
     imageUrl: akanksha,
@@ -228,7 +219,7 @@ export const facultyDataCSE = [
   {
     name: "Dr. Upendra Verma",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "12",
     experience: "14.5",
     imageUrl: UpendraKumar,

@@ -372,7 +372,7 @@ export const facultyData = [
   },
   {
     name: "Dr. Sanjay Sharma",
-    education: "Ph.D",
+    education: "Ph.D.",
     experience: "33 Yrs.",
     designation: "Prof ME & Dean Student Welfare",
     publications: "12",

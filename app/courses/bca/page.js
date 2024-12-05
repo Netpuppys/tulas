@@ -15,6 +15,8 @@ import {
   cards,
   content,
   facultyData,
+  hod,
+  HODcontent,
   images,
   items,
   itemsClubs,
@@ -65,6 +67,8 @@ function BBA() {
             selectedCardTable={selectedCardTable}
             semesterData={semesterData}
             facultyData={facultyData}
+            hod={hod}
+            HODcontent={HODcontent}
           />
           <TopRecruiter />
           <CarouselProgram

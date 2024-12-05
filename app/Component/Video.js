@@ -9,16 +9,15 @@ function Video() {
             BEST ENGINEERING COLLEGE IN DEHRADUN
           </h2> */}
           <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] w-[90%] md:w-[60%] font-[TTChocolates] mx-auto text-justify md:text-center text-black py-8 md:py-20">
-            <span className="font-medium text-[#007A83]">Tula's Institute</span>{" "}
-            was established in 2006, under the aegis of Rishabh Educational
-            Trust, Dehradun with the vision of offering excellent academics
-            along with fostering the professional and personal personas of every
-            student of the institute.
-            <span className="font-medium text-[#007A83]">
-              Tula's Institute
-            </span>{" "}
-            is dedicated to serve the communities by recognizing the diverse
-            needs of individuals.
+            Tula’s Institute isn’t just about books and exams—it’s a launchpad
+            for your entire future. Here, it’s all about shaping you into a
+            well-rounded individual, blending top-tier education with real-world
+            experiences. From leadership workshops and hands-on projects to
+            sports and cultural events, Tula’s ensures that every student is
+            equipped to thrive beyond the classroom. You won’t just graduate
+            with a degree; you’ll leave as a confident, capable individual,
+            ready to make a mark in the world with a unique blend of skills,
+            values, and experiences that set you apart.
           </p>
           <video
             autoPlay

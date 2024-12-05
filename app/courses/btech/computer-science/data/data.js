@@ -5,7 +5,7 @@ import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import cseDocument from "../../../../../public/courses/btech/computer-science/CSE.pdf";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
-import AnandGupta from "../../../../../public/courses/btech/computer-science/facultyData/AnandGupta.webp";
+import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
 import CseDrishti from "../../../../../public/courses/btech/computer-science/CseDrishti.pdf";
 import CseDrishtiOctDec from "../../../../../public/courses/btech/computer-science/CseDrishtiOct-Dec.pdf";
 import CseDrishtiJulSep from "../../../../../public/courses/btech/computer-science/CseDrishtiJul-Sep.pdf";
@@ -389,11 +389,11 @@ export const semesterData = [
 
 export const hod = [
   {
-    name: "Dr. Anand Kumar Gupta",
+    name: "Dr. Sandeep Kumar",
     email: "cse.hod@tulas.edu.in",
     designation: "Head of the Department,",
     department: "Computer Applications",
-    imageUrl: AnandGupta, // Replace with the actual image path
+    imageUrl: SandeepKumar, // Replace with the actual image path
   },
 ];
 

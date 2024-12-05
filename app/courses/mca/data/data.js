@@ -359,7 +359,7 @@ export const facultyData = [
   {
     name: "Dr Priya Matta",
     designation: "Associate Professor & HoD",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "67",
     experience: "20",
     imageUrl: Priya,
@@ -369,7 +369,7 @@ export const facultyData = [
   {
     name: "Dr. Sanjeev Kumar",
     designation: "Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "61",
     experience: "18",
     imageUrl: SanjeevKumnar,
@@ -378,7 +378,7 @@ export const facultyData = [
   {
     name: "Dr Musheer Vaqur",
     designation: "Associate Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "24",
     experience: "18",
     imageUrl: Musheer,
@@ -387,7 +387,7 @@ export const facultyData = [
   {
     name: "Dr. Shikha Tayal Aeron",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "6",
     experience: "13",
     imageUrl: ShikaTayal,
@@ -396,7 +396,7 @@ export const facultyData = [
   {
     name: "Mr. Rakesh Kumar",
     designation: "Assistant Professor",
-    education: "M.Tech Ph.d (P)",
+    education: "M.Tech Ph.D. (P)",
     publications: "10",
     experience: "19",
     imageUrl: RakeshKumar,
@@ -423,11 +423,11 @@ export const facultyData = [
 ];
 export const hod = [
   {
-    name: "Dr. Anand Kumar Gupta",
-    email: "cse.hod@tulas.edu.in",
+    name: "Dr Priya Matta",
+    email: "mca.hod@tulas.edu.in",
     designation: "Head of the Department,",
     department: "Computer Applications",
-    imageUrl: AnandKumar, // Replace with the actual image path
+    imageUrl: Priya, // Replace with the actual image path
   },
 ];
 export const HODcontent = (

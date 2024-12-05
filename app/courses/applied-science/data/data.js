@@ -148,7 +148,7 @@ export const facultyData = [
   {
     name: "Dr. Vijay Upadhaya",
     designation: "Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "28",
     experience: "17",
     linkTo: "/about/management-messages/#2",
@@ -158,7 +158,7 @@ export const facultyData = [
   {
     name: "Dr. Tarun Kumar",
     designation: "Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "9",
     experience: "18",
     imageUrl: TarunKumar,
@@ -167,7 +167,7 @@ export const facultyData = [
   {
     name: "Dr. Ashish Mishra",
     designation: "Associate Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "15",
     experience: "6",
     imageUrl: AshishMishra,
@@ -176,7 +176,7 @@ export const facultyData = [
   {
     name: "Dr. Sugam Gupta",
     designation: "Associate Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "15",
     experience: "5",
     imageUrl: SugamGupta,
@@ -194,7 +194,7 @@ export const facultyData = [
   {
     name: "Dr. Sanket Kumar Saxena",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "8",
     experience: "17",
     imageUrl: SanketKumar,
@@ -203,7 +203,7 @@ export const facultyData = [
   {
     name: "Dr. Rachna Sharma",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "13",
     experience: "5",
     imageUrl: RachnaSharma,
@@ -221,7 +221,7 @@ export const facultyData = [
   {
     name: "Mr. Tikaram",
     designation: "Assistant Professor",
-    education: "M.sc Ph.d (P)",
+    education: "M.sc Ph.D. (P)",
     publications: "2",
     experience: "8",
     imageUrl: Tikaram,
@@ -230,7 +230,7 @@ export const facultyData = [
   {
     name: "Mr Deepak Chandola",
     designation: "Assistant Professor",
-    education: "M.sc Ph.d (P)",
+    education: "M.sc Ph.D. (P)",
     publications: "0",
     experience: "5",
     imageUrl: DeepakChandola,
@@ -239,7 +239,7 @@ export const facultyData = [
   {
     name: "Ms. Nidhi Tiwari",
     designation: "Assistant Professor",
-    education: "M.sc Ph.d (P)",
+    education: "M.sc Ph.D. (P)",
     publications: "0",
     experience: "0",
     imageUrl: NidhiTiwari,
@@ -266,7 +266,7 @@ export const facultyData = [
   {
     name: "Dr. Ruchika Attri",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "8",
     experience: "7",
     imageUrl: RuchikaAttri,
@@ -284,7 +284,7 @@ export const facultyData = [
   {
     name: "Dr. Neelima Bangwal",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "11",
     experience: "8",
     imageUrl: Neelima,
@@ -302,7 +302,7 @@ export const facultyData = [
   {
     name: "Ms. Aanchal Baniyal",
     designation: "Assistant Professor",
-    education: "M.sc Ph.d (P)",
+    education: "M.sc Ph.D. (P)",
     publications: "0",
     experience: "3",
     imageUrl: AanchalBaniyal,
@@ -311,7 +311,7 @@ export const facultyData = [
   {
     name: "Ms. Niharika Parashar",
     designation: "Assistant Professor",
-    education: "M.sc Ph.d (P)",
+    education: "M.sc Ph.D. (P)",
     publications: "0",
     experience: "2",
     imageUrl: Niharika,
@@ -320,7 +320,7 @@ export const facultyData = [
   {
     name: "Dr. Dimpal",
     designation: "Assistant Professor",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "0",
     experience: "2.5",
     imageUrl: Dimpal,
@@ -329,7 +329,7 @@ export const facultyData = [
   {
     name: "Ms. Tanuja Uniyal",
     designation: "Assistant Professor",
-    education: "M.sc Ph.d (P)",
+    education: "M.sc Ph.D. (P)",
     publications: "12",
     experience: "8",
     imageUrl: Tanuja,
@@ -338,7 +338,7 @@ export const facultyData = [
   {
     name: "Ms. Shalini Binjola",
     designation: "Assistant Professor",
-    education: "MA Ph.d (P)",
+    education: "MA Ph.D. (P)",
     publications: "2",
     experience: "15",
     imageUrl: Shalini,

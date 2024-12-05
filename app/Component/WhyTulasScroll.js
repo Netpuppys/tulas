@@ -5,11 +5,16 @@ import ScrollTulas from "../../public/Homepage/ScrollSection/WhyTulas.png";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useMobile } from "@/component/IsMobileContext";
-
-const title = "14 REASONS TO CHOOSE TULA’S";
+import ComputerCenter from "../../public/Homepage/ScrollSection/ComputerCenter.png";
+const title = "15 REASONS TO CHOOSE TULA’S";
 // const paragraph =
 //   "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
 const images = [
+  {
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-9.png",
+    title: "Ranking",
+    text: "Ranked among the Top 50 Private Colleges in India for 8 consecutive years.",
+  },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-4.png",
     title: "Faculty",
@@ -18,23 +23,29 @@ const images = [
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-2+(1).png",
     title: "Incubator",
-    text: "Tula’s Technology Business Incubator Foundation (TTBIF) approved by MSME, Government of India & StartUP Uttarakhand.",
+    text: "Tula’s Technology Business Incubator Foundation (TTBIF) approved by MSME & StartUP Uttarakhand for innovation and startups.",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-3+(1).png",
-    title: "Placement Drive",
-    text: "700+ campus placement drives and 25+ industrial tie-ups.",
+    title: "Placement",
+    text: "700+ campus placement drives and 25+ industrial tie-ups ensuring high-quality recruitment opportunities.",
+  },
+  {
+    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-5.png",
+    title: "Alumni",
+    text: "A global network of 7,000+ successful alumni.",
+  },
+  {
+    src: ComputerCenter,
+    title: "Infrastructure",
+    text: "ICT facilities with modern labs, classrooms, and air-conditioned auditoriums.",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-1+(1).png",
     title: "Patents & Awards",
     text: "2000+ highly cited research papers, 30+ patents, 15+ government-funded projects, and 20+ prestigious awards.",
   },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-5.png",
-    title: "Alumni",
-    text: "7000+ successful alumni across the world.",
-  },
+
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-6.png",
     title: "NCC",
@@ -43,23 +54,19 @@ const images = [
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-7.png",
     title: "FDPs & IEEE",
-    text: "100+ FDPs and IEEE conferences each year",
+    text: "100+ FDPs and IEEE conferences conducted annually",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-8.png",
     title: "Library",
-    text: "Library equipped with 70,000+ books, 2,500+ journals, copies of original manuscripts, 1,500+ recorded lectures, advanced recording studio, and 600+ high-end computers with digitally equipped learning resources available 16×7.",
+    text: "Library with 70,000+ books, 2,500+ journals,1,500+ recorded lectures and excellent digital resources.",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image+(1).png",
     title: "CIRE",
     text: "Industry-Supported Center for Innovation, Research & Entrepreneurship (CIRE).",
   },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-9.png",
-    title: "Rankings",
-    text: "University rankers, students from 6+ countries/25+ states, 8 student clubs, and 7 technical student societies and councils.",
-  },
+
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-10.png",
     title: "NSS",
@@ -67,18 +74,18 @@ const images = [
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-11.png",
-    title: "Wifi Facility",
+    title: "Medical assistance",
     text: "24×7 on-campus medical assistance with qualified doctors and medical insurance for all.",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-12.png",
     title: "Sports",
-    text: "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned &amp; spacious auditorium.",
+    text: "Comprehensive indoor and outdoor sports infrastructure.",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-13.png",
     title: "Yoga Kendra",
-    text: "Tula’s Heartfulness Yoga Kendra.",
+    text: "Heartfulness Yoga Kendra for mindfulness and wellness.",
   },
 ];
 
@@ -203,7 +210,7 @@ function WhyTulasScroll({ parentRef }) {
               {title}
             </h3>
             {/* card scroll btns */}
-            <div className="absolute w-fit top-[50%] -translate-y-1/2 z-30 mt-[340px] md:mt-0 mx-auto  md:ml-0 md:mr-auto md:left-0 flex items-center justify-start">
+            <div className="absolute w-fit top-[50%] -translate-y-1/2 z-30 mt-[30vh] md:mt-0 mx-auto  md:ml-0 md:mr-auto md:left-0 flex items-center justify-start">
               <div className="flex w-full md:w-40 md:flex-col text-[30px] gap-3 items-center justify-center">
                 <button
                   className={`pointer-events-auto aspect-square p-3 rounded-full border-2 border-white text-white shadow-2xl ${
@@ -249,12 +256,12 @@ function WhyTulasScroll({ parentRef }) {
                       <Image
                         src={image.src}
                         alt=""
-                        className="z-20 rounded-3xl object-cover bg-[#3D001B] w-full h-full aspect-square"
+                        className="z-20 rounded-xl md:rounded-3xl object-cover bg-[#3D001B] w-full h-full aspect-square"
                         layout="responsive"
                         width={1000}
                         height={1000}
                       />
-                      <div className="w-full opacity-100 md:opacity-0 md:group-hover:opacity-100 h-full bg-gradient-custom-black absolute bottom-0 left-0 rounded-3xl z-20"></div>
+                      <div className="w-full opacity-100 md:opacity-0 md:group-hover:opacity-100 h-full bg-gradient-custom-black absolute bottom-0 left-0 rounded-xl md:rounded-3xl z-20"></div>
                       {/* <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div> */}
                       <div className="text-white md:hidden group-hover:flex flex-col absolute z-30 w-fit p-2 bottom-[60px] translate-y-[100%]">
                         <h2 className="text-center font-[TTChocolatesBold] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]">

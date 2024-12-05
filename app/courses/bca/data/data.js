@@ -217,6 +217,7 @@ export const cards = [
   { title: "Eligibility" },
   { title: "Curriculum" },
   { title: "Senior Faculty" },
+  { title: "From the Desk of HOD" },
 ];
 
 export const selectedCardTable = [
@@ -228,6 +229,33 @@ export const selectedCardTable = [
       "Passed XII or equivalent course in any discipline from any recognized Board / Council / University with minimum 45% marks for general (open) category and 40% marks for students of SC and ST category.",
   },
 ];
+export const hod = [
+  {
+    name: "Dr Priya Matta",
+    email: "mca.hod@tulas.edu.in",
+    designation: "Head of the Department,",
+    department: "Computer Applications",
+    imageUrl: Priya, // Replace with the actual image path
+  },
+];
+export const HODcontent = (
+  <>
+    Greetings! On behalf of the faculty members, staff, and students of the
+    Department of Computer Application at Tula’s Institute, Dehradun, I welcome
+    you all to the creative world of computer application. The Department has a
+    team of well qualified and experienced faculty members. The Department lays
+    maximum stress on student outcomes through industry based curriculum,
+    effective teaching learning methods and counselling of students through
+    Mentor-Mentee Program.
+    <br />
+    <br />I believe the computer application discipline has been widely
+    recognized as an essential source and technique for the advancements in
+    software industry. We prepare our students to meet increasing global
+    challenges of ever evolving technologies so as to make them acceptable to
+    both industries and higher institution of learning. In Tula’s Institute all
+    the students get the opportunity to excel in their academic activities.
+  </>
+);
 export const semesterData = [
   {
     semester: "I SEMESTER",
@@ -320,7 +348,7 @@ export const facultyData = [
   {
     name: "Dr Priya Matta",
     designation: "Associate Professor & HoD",
-    education: "Ph.d",
+    education: "Ph.D.",
     publications: "67",
     experience: "20",
     imageUrl: Priya,
@@ -329,7 +357,7 @@ export const facultyData = [
   {
     name: "Mr. Aizaz Ahmad",
     designation: "Assistant Professor",
-    education: "MCA Ph.d (P)",
+    education: "MCA Ph.D. (P)",
     publications: "0",
     experience: "8",
     imageUrl: aizaz,
@@ -338,7 +366,7 @@ export const facultyData = [
   {
     name: "Ms.Vaibhavi Panuily",
     designation: "Assistant Professor",
-    education: "MCA Ph.d (P)",
+    education: "MCA Ph.D. (P)",
     publications: "3",
     experience: "3",
     imageUrl: vaibhavi,
@@ -347,7 +375,7 @@ export const facultyData = [
   {
     name: "Mr. Devendra Sood",
     designation: "Assistant Professor",
-    education: "M.Tech Ph.d (P)",
+    education: "M.Tech Ph.D. (P)",
     publications: "8",
     experience: "8",
     imageUrl: devendraSoo,
@@ -356,7 +384,7 @@ export const facultyData = [
   {
     name: "Mohd. Murshleen",
     designation: "Assistant Professor",
-    education: "M.Tech Ph.d (P)",
+    education: "M.Tech Ph.D. (P)",
     publications: "13",
     experience: "11",
     imageUrl: Mursleen,

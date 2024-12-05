@@ -76,7 +76,7 @@ const cards = [
       "Vice President Technology",
       "B.Tech CS (VIT, Vellore)",
       "M.S. (University of Texas at Dallas)",
-      "Ph.D (Banasthali University)",
+      "Ph.D. (Banasthali University)",
       "MBA (IIMK)",
     ],
   },

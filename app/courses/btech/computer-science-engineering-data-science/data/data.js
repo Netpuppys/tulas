@@ -4,7 +4,7 @@ import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
-import AnandKumar from "../../../../../public/courses/btech/computer-science/facultyData/AnandGupta.webp";
+import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
 export const images = [
   dataScience,
   // Add more image paths as needed
@@ -163,11 +163,11 @@ export const selectedCardTable = [
 
 export const hod = [
   {
-    name: "Dr. Anand Kumar Gupta",
+    name: "Dr. Sandeep Kumar",
     email: "cse.hod@tulas.edu.in",
     designation: "Head of the Department,",
     department: "Computer Applications",
-    imageUrl: AnandKumar, // Replace with the actual image path
+    imageUrl: SandeepKumar, // Replace with the actual image path
   },
 ];
 

@@ -403,7 +403,7 @@ export const semesterData = [
 export const facultyData = [
   {
     name: "Dr. Tripti Khanduri",
-    education: "Ph.D",
+    education: "Ph.D.",
     experience: "12 Yrs.",
     designation: "Associate Professor & Head of Department",
     publications: "21",

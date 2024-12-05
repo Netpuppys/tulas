@@ -153,7 +153,7 @@ export const selectedCardTable = [
 export const facultyData = [
   {
     name: "Dr. Arun Agarwal",
-    education: "Ph.D, M.Tech",
+    education: "Ph.D., M.Tech",
     experience: "36 Yrs.",
     designation: "Professor, HOD",
     imageUrl: ArunAgarwal, // Add the path for the image
@@ -166,7 +166,7 @@ export const facultyData = [
     publications: "2",
     imageUrl: AshishKumar, // Add the path for the image
   },
-  
+
   {
     name: "Mr. Mohit Sharma",
     education: "M.Tech (Construction Planning & Management)",

@@ -38,27 +38,29 @@ function Virtual() {
         </Link>
         <div className="w-full md:w-[70%] px-4 py-4 md:px-8 md:py-8 border-t-2 md:border-t-0 md:border-l-2 border-black font-[TTChocolates]">
           <h5 className="text-black text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]">
-            Being the capital city, Dehradun is well-connected by roads, rail
-            and air and is easily accessible from most parts of the country. It
-            is 235 km away from India’s capital, New Delhi. Dehradun is easy to
-            reach and an accessible destination that you can visit any time of
-            the year.
+            Dehradun, the capital city of Uttarakhand, boasts excellent
+            connectivity by road, rail, and air, making it a breeze to access
+            from most parts of India. Located just 235 km from New Delhi, it’s a
+            convenient getaway for travelers. Whether it’s summer, winter, or
+            the monsoon season, Dehradun welcomes you with open arms all year
+            round.
           </h5>
           <br />
           <h6 className="text-[#007A83] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates]">
-            Being the capital city, Dehradun is well-connected by roads, rail
-            and air and is easily accessible from most parts of the country. It
-            is 235 km away from India’s capital, New Delhi. Dehradun is easy to
-            reach and an accessible destination that you can visit any time of
-            the year.
+            Nestled in this vibrant city is Tula's campus, a perfect blend of
+            serene surroundings and modern amenities. The campus offers not just
+            a place to study but a gateway to endless opportunities. With
+            Dehradun’s seamless connectivity, your journey to Tula's is as
+            effortless as the enriching experience that awaits you here.
           </h6>
           <br />
 
           <h5 className="text-black font-[TTChocolatesBold] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]">
-            Get a detailed tour of our campus through our 360 Degree Tour
+            Experience a virtual walkthrough of our campus with our 360-degree
+            tour.
+            {/* <br />
             <br />
-            <br />
-            <Link href="/virtual-tour/index.html">Read More</Link>
+            <Link href="/virtual-tour/index.html">Read More</Link> */}
           </h5>
         </div>
       </div>

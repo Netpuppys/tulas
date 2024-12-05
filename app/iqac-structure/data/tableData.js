@@ -1,53 +1,47 @@
 import React from "react";
 
 const tableData = [
-  {
-    sno: 1,
-    name: "Prof.(Dr.) Sandip Vijay",
-    designation: "Director",
-  },
+  { sno: 1, name: "Prof. (Dr.) Sandip Vijay", designation: "Director" },
   {
     sno: 2,
-    name: "Prof.(Dr.).Nishant Saxena",
+    name: "Prof. (Dr.) Nishant Saxena",
     designation: "IQAC Coordinator",
   },
+  { sno: 3, name: "Dr. Vijay Kumar Upadhyay", designation: "Registrar" },
   {
-    sno: 3,
+    sno: 4,
     name: "Dr. Sanjeev Kumar",
     designation: "IQAC Co-Coordinator, Professor",
   },
   {
-    sno: 4,
-    name: "Dr. Anand Kumar Gupta",
-    designation: "IQAC Co-Coordinator, HOD, CSE",
-  },
-  {
     sno: 5,
-    name: "Dr. Arghya Sarker",
-    designation: "HOD, GSB",
+    name: "Mr. Abhishek Chakravorty",
+    designation: "IQAC Co-Coordinator, HoD, ECE/EEE",
   },
-  {
-    sno: 6,
-    name: "Mr. Mukesh Pathela",
-    designation: "HOD, Applied Science",
-  },
-  {
-    sno: 7,
-    name: "Mr. Ankit Jain",
-    designation: "HOD, Mechanical Engineering",
-  },
-
+  { sno: 6, name: "Dr. Raghav Garg", designation: "Management Representative" },
+  { sno: 7, name: "Dr. Sunil Semwal", designation: "Dean R&D" },
   {
     sno: 8,
-    name: "Dr. Tripti Khanduri",
-    designation: "HOD, Civil Engineering",
+    name: "Dr. Sanjay Sharma",
+    designation: "DSW, HoD, B. Sc. Agriculture",
   },
-  { sno: 9, name: "Mr. Abhishek Chakravorty", designation: "HOD, ECE / EEE" },
-  { sno: 10, name: "Mr. Tauseef Iqbal", designation: "HOD, JMC" },
-  { sno: 11, name: "Mr. Ashish Upadhyay", designation: "Director Nominee" },
-  { sno: 12, name: "Ms. Suchi Jain", designation: "Alumni" },
-  { sno: 13, name: "Dr. Arun Kumar", designation: "External Member, IQAC" },
-  { sno: 14, name: "Mr. Brijesh Sharma", designation: "Student Member, IQAC" },
+  { sno: 9, name: "Dr. Sandeep Kumar", designation: "HoD, CSE" },
+  { sno: 10, name: "Dr. Arghya Sarkar", designation: "HoD, GSB" },
+  { sno: 11, name: "Dr. Tripti Khanduri", designation: "HoD, CE" },
+  { sno: 12, name: "Mr. Mukesh Pathela", designation: "HoD, ASH" },
+  { sno: 13, name: "Mr. Ankit Jain", designation: "HoD, ME" },
+  { sno: 14, name: "Mr. Tauseef Iqbal", designation: "HoD, JMC" },
+  { sno: 15, name: "Ms. Suchi Jain", designation: "Alumni" },
+  {
+    sno: 16,
+    name: "Mr. Pravesh Kumar Chauhan",
+    designation: "External Member, IQAC",
+  },
+  {
+    sno: 17,
+    name: "Mr. Subhash Sharma",
+    designation: "Student Member, IQAC (B. Tech CSE-III)",
+  },
 ];
 
 const TableComponent = () => {

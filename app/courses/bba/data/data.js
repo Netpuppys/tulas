@@ -313,7 +313,7 @@ export const facultyData = [
   {
     name: "Mr. Bharat Bhusan",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "2",
     experience: "6",
     imageUrl: BharatBhushan,
@@ -322,7 +322,7 @@ export const facultyData = [
   {
     name: "Mr. Durgesh Bahuguna",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "1",
     experience: "15",
     imageUrl: Durgesh,
@@ -331,7 +331,7 @@ export const facultyData = [
   {
     name: "Ms. Monalsha Chand",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "4",
     experience: "1",
     imageUrl: Monalsha,
@@ -340,7 +340,7 @@ export const facultyData = [
   {
     name: "Ms. Neetika Gupta",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "0",
     experience: "9",
     imageUrl: Nitika,
@@ -349,7 +349,7 @@ export const facultyData = [
   {
     name: "Ms. Nandini Dhyani",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "3",
     experience: "6",
     imageUrl: Nandani,
@@ -358,7 +358,7 @@ export const facultyData = [
   {
     name: "Ms. Akanksha Pal",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "2",
     experience: "5",
     imageUrl: Akanksha,
@@ -367,7 +367,7 @@ export const facultyData = [
   {
     name: "Dr. Rajvijay Singh",
     designation: "ASST PROFESSOR",
-    education: "Ph.D",
+    education: "Ph.D.",
     publications: "4",
     experience: "5",
     imageUrl: Ranvijay,
@@ -376,7 +376,7 @@ export const facultyData = [
   {
     name: "Ms. Kanika Pharasi",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "0",
     experience: "1",
     imageUrl: Kanika,
@@ -385,7 +385,7 @@ export const facultyData = [
   {
     name: "Mr. Dipankar Dutta",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "7",
     experience: "5",
     imageUrl: Dipankar,

@@ -365,7 +365,7 @@ export const facultyData = [
   {
     name: "Prakash Bhatnager",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "1",
     experience: "6",
     imageUrl: PrakashBhatnagar,
@@ -383,7 +383,7 @@ export const facultyData = [
   {
     name: "Ms. Aishwarya Shah",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
+    education: "MBA, Ph.D.(P)",
     publications: "2",
     experience: "4",
     imageUrl: AishwaryaShah,
