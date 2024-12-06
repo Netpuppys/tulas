@@ -11,7 +11,7 @@ import OtpInput from "react-otp-input";
 const aboutTulas = (
   <>
     Tula's Institute is dedicated to providing top-notch education, preparing
-    students for success in their professional careers
+    students for success in their professional careers.
     <br />
     This commitment to excellence has earned Tula’s Institute prestigious
     accolades:
