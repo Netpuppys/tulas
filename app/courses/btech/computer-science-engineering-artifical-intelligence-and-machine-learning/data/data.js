@@ -178,7 +178,7 @@ export const hod = [
     name: "Dr. Sandeep Kumar",
     email: "cse.hod@tulas.edu.in",
     designation: "Head of the Department,",
-    department: "Computer Applications",
+    department: "Computer Science and Engineering",
     imageUrl: SandeepKumar, // Replace with the actual image path
   },
 ];

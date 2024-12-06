@@ -18,8 +18,7 @@ import ShikaTayalResume from "../../../../public/courses/mca/facultyData/ShikaTa
 import Musheer from "../../../../public/courses/mca/facultyData/Musheer.webp";
 import MusheerResume from "../../../../public/courses/mca/facultyData/MusheerResume.pdf";
 import SanjeevKumnar from "../../../../public/courses/mca/facultyData/SanjeevKumnar.webp";
-import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf";
-import AnandKumar from "../../../../public/courses/btech/computer-science/facultyData/AnandGupta.webp";
+import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf"
 import Link from "next/link";
 
 export const images = [

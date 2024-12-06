@@ -47,6 +47,23 @@ const sitemap = [
         title: "Department of Engineering",
         superNestedLinks: [
           {
+            title: "Diploma",
+            thirdNestedLinks: [
+              {
+                title: "Diploma in Civil Engineering",
+                linkTo: "/diploma-in-civil-engineering/",
+              },
+              {
+                title: "Diploma in Mechanical Engineering",
+                linkTo: "/diploma-mechanical-engineering/",
+              },
+              {
+                title: "Diploma in Computer Science Engineering",
+                linkTo: "/diploma-computer-science-engineering/",
+              },
+            ],
+          },
+          {
             title: "B.Tech",
             linkTo: "/btech/",
             thirdNestedLinks: [
@@ -87,29 +104,13 @@ const sitemap = [
               },
             ],
           },
-          {
-            title: "Diploma",
-            thirdNestedLinks: [
-              {
-                title: "Diploma in Civil Engineering",
-                linkTo: "/diploma-in-civil-engineering/",
-              },
-              {
-                title: "Diploma in Mechanical Engineering",
-                linkTo: "/diploma-mechanical-engineering/",
-              },
-              {
-                title: "Diploma in Computer Science Engineering",
-                linkTo: "/diploma-computer-science-engineering/",
-              },
-            ],
-          },
+
           {
             title: "M.Tech",
             linkTo: "/mtech/",
           },
           {
-            title: "Department of Applied Sciences and Engineering",
+            title: "Department of Applied Sciences and Humanities",
             linkTo: "/courses/applied-science/",
           },
         ],
@@ -140,12 +141,12 @@ const sitemap = [
             linkTo: "/courses/bba/",
           },
           {
-            title: "MBA",
-            linkTo: "/courses/mba/",
-          },
-          {
             title: "B.Com (Hons.)",
             linkTo: "/courses/bcom/",
+          },
+          {
+            title: "MBA",
+            linkTo: "/courses/mba/",
           },
         ],
       },
@@ -206,7 +207,6 @@ const sitemap = [
         linkTo:
           "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view",
       },
-      
     ],
   },
   {
