@@ -1,15 +1,16 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { ThreeDots } from "react-loader-spinner";
 const DegreeForm = ({ Degreeref, showForm }) => {
-  const serviceId = "service_p0danx3";
-  const templateId = "template_47k1cpk";
-  const publicKey = "cZ_xcJGz4SpnoKOE8";
-
+  const serviceId = "service_jnrgjfb";
+  const templateId = "template_i666a73";
+  const publicKey = "o2Jsamn0XRedAmc8d";
+  const [paymentSlip, setPaymentSlip] = useState();
+  const [submitLoader, setSubmitLoader] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     fatherName: "",
@@ -21,8 +22,8 @@ const DegreeForm = ({ Degreeref, showForm }) => {
     pinCode: "",
     mobile: "",
     email: "",
+    paid: "",
     paymentSlip: "",
-    consent: "",
   });
 
   const formRef = useRef();
@@ -34,75 +35,87 @@ const DegreeForm = ({ Degreeref, showForm }) => {
     }));
   };
 
+  const handleFileInput = (e) => {
+    const file = e.target.files[0];
+
+    if (file) {
+      if (file.size > 500 * 1024) {
+        e.target.value = "";
+        alert("File size should be 500KB or less.");
+        return;
+      }
+      const fileType = file.type;
+      const validFileTypes = ["application/pdf"];
+      if (!validFileTypes.includes(fileType)) {
+        e.target.value = "";
+        alert("Please upload a PDF file.");
+        return;
+      }
+      handleChange("paymentSlip", file);
+
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setPaymentSlip(reader.result);
+      };
+
+      reader.readAsDataURL(file);
+    } else {
+      e.target.value = "";
+      alert("No file selected.");
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.paid === "") {
-      toast.error("Please Select your fees Paid status");
-    }
-
-    const {
-      name,
-      fatherName,
-      enrollmentNumber,
-      collegeID,
-      branch,
-      otherBranch,
-      address,
-      pinCode,
-      mobile,
-      email,
-      paymentSlip,
-      consent,
-    } = formData;
-
-    const templateParams = {
-      name,
-      fatherName,
-      enrollmentNumber,
-      collegeID,
-      branch,
-      otherBranch,
-      address,
-      pinCode,
-      mobile,
-      email,
-      paymentSlip,
-      consent,
+    setSubmitLoader(true);
+    const emailData = {
+      name: formData.name,
+      fatherName: formData.fatherName,
+      enrollmentNumber: formData.enrollmentNumber,
+      collegeID: formData.collegeID,
+      branch: formData.branch,
+      otherBranch: formData.otherBranch,
+      address: formData.address,
+      pinCode: formData.pinCode,
+      mobile: formData.mobile,
+      email: formData.email,
+      paid: formData.paid,
+      paymentSlip: paymentSlip,
     };
-    if (formData.paid === "yes" || formData.paid === "no") {
-      emailjs
-        .send(serviceId, templateId, templateParams, {
-          publicKey: publicKey,
-        })
 
-        .then((response) => {
-          console.log("SUCCESS!", response.status, response.text);
-
-          // alert('Message sent successfully!');
-          toast.success(
-            "Thank you for showing interest. We shall get in touch soon."
-          );
-
-          setFormData({
-            name: "",
-            fatherName: "",
-            enrollmentNumber: "",
-            collegeID: "",
-            branch: "",
-            otherBranch: "",
-            address: "",
-            pinCode: "",
-            mobile: "",
-            email: "",
-            paymentSlip: "",
-            consent: "",
-          });
-        })
-        .catch((error) => {
-          console.log("FAILED...", error);
-          toast.error("Message failed to send.");
+    emailjs
+      .send(serviceId, templateId, emailData, {
+        publicKey: publicKey,
+      })
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        // alert('Message sent successfully!');
+        toast.success(
+          "Thank you for your Request. We will send your Degree to your respective address."
+        );
+        setSubmitLoader(false);
+        setFormData({
+          name: "",
+          fatherName: "",
+          enrollmentNumber: "",
+          collegeID: "",
+          branch: "",
+          otherBranch: "",
+          address: "",
+          pinCode: "",
+          mobile: "",
+          email: "",
+          paid: "",
+          paymentSlip: "",
         });
-    }
+      })
+      .catch((error) => {
+        console.log("FAILED...", error);
+        toast.error(
+          `Message failed to send. Error: ${error.text || error.message}`
+        );
+        setSubmitLoader(false);
+      });
   };
 
   return (
@@ -308,24 +321,26 @@ const DegreeForm = ({ Degreeref, showForm }) => {
 
               <div>
                 <label className="block mb-2">
-                  Handling and Posting Charges Receipt{" "}
+                  Handling and Posting Charges Receipt
                 </label>
-                <input
-                  type="file"
-                  required
-                  className="focus:outline-none  py-2 rounded-lg"
-                  onChange={(e) => {
-                    const file = e.target.files[0];
-                    if (file && file.size <= 500 * 1024) {
-                      // 500 KB limit
-                      handleChange("paymentSlip", file);
-                    } else {
-                      // Optionally clear the file input if file is too large
-                      e.target.value = "";
-                      alert("File size should be 500KB or less.");
-                    }
-                  }}
-                />
+                <div className="w-48 h-8 flex items-center justify-center bg-white rounded-lg relative overflow-hidden">
+                  <input
+                    type="file"
+                    required
+                    name="paymentSlip"
+                    // value={formData.paymentSlip}
+                    className="absolute top-0 -left-28 w-[30rem] scale-150 h-[20rem] z-10 cursor-pointer opacity-0"
+                    onChange={(e) => handleFileInput(e)}
+                  />
+                  <p className="text-[#007A83] text-sm font-medium z-0">
+                    Choose file
+                  </p>
+                </div>
+                <p className="text-sm font-medium">
+                  {formData.paymentSlip
+                    ? formData.paymentSlip.name
+                    : "No File Chosen"}
+                </p>
               </div>
             </div>
             <div className="w-full mt-4">
@@ -335,10 +350,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   type="checkbox"
                   name="consent"
                   className=""
-                  value="no"
                   required
-                  selected={formData.consent === "yes"}
-                  onChange={(e) => handleChange("consent", e.target.value)}
                 />
                 <label
                   for="consent"
@@ -357,7 +369,11 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                 type="submit"
                 className="w-fit px-14 py-1 md:px-44 md:py-2 bg-white text-[#760135] rounded-3xl text-[24px] md:hover:bg-[#59032f] md:hover:text-white transition duration-200"
               >
-                Submit
+                {submitLoader ? (
+                  <ThreeDots color="#007A83" height={30} />
+                ) : (
+                  "Submit"
+                )}
               </button>
             </div>
           </form>

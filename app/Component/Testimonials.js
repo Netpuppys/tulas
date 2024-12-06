@@ -158,7 +158,6 @@ const Testimonials = () => {
                     src={testimonial}
                     className="h-fit w-full aspect-[9/16]"
                     muted={isMuted}
-                    autoPlay={activeIndex === index && isPlaying}
                     loop
                     onWaiting={() => handleBuffering(true)}
                     onPlaying={() => handleBuffering(false)}

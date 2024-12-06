@@ -6,9 +6,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = ({ contactRef }) => {
-  const serviceId = "service_p0danx3";
-  const templateId = "template_47k1cpk";
-  const publicKey = "cZ_xcJGz4SpnoKOE8";
+  const serviceId = "service_jnrgjfb";
+  const templateId = "template_vaeep7h";
+  const publicKey = "o2Jsamn0XRedAmc8d";
 
   const [formData, setFormData] = useState({
     name: "",
