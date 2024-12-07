@@ -109,14 +109,15 @@ fbq('track', 'PageView');
             src="https://www.googletagmanager.com/ns.html?id=GTM-WX6R6WSL"
             height="0"
             width="0"
-            style="display:none;visibility:hidden"
+            className="hidden opacity-0"
+           
           ></iframe>
         </noscript>
         <noscript>
           <img
             height="1"
             width="1"
-            style="display:none"
+            className="hidden opacity-0"
             src="https://www.facebook.com/tr?id=1001916883544560&ev=PageView&noscript=1"
           />
         </noscript>
