@@ -37,7 +37,7 @@ function LectureTheater() {
             image={BannerImg}
             title={
               <>
-                OUR <span className="text-[#007A83]">LECTURE THEATRE</span>
+             <span className="text-[#007A83]">LECTURE THEATRE</span>
               </>
             }
             description={<></>}

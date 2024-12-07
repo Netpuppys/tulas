@@ -70,7 +70,7 @@ function Library() {
             image={BannerImg}
             title={
               <>
-                OUR <span className="text-[#007A83]">LIBRARY</span>
+               <span className="text-[#007A83]">LIBRARY</span>
               </>
             }
             description={<></>}

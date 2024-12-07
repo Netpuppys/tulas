@@ -6,63 +6,85 @@ import Vision from "@/component/Programs/Vision";
 import Image from "next/image";
 import Navbar from "@/component/Navbar/Navbar";
 import vibgyorMain from "../../../public/campus-life/vibgyor/vibgyorMain.png";
+import Footloose from "../../../public/campus-life/vibgyor/Footloose.webp";
+import Sargam from "../../../public/campus-life/vibgyor/Sargam.webp";
+import Manchan from "../../../public/campus-life/vibgyor/Manchan.webp";
+import Stylexa from "../../../public/campus-life/vibgyor/Stylexa.webp";
+import Meraki from "../../../public/campus-life/vibgyor/Meraki.webp";
+import PublicRelation from "../../../public/campus-life/vibgyor/PublicRelation.webp";
+import Backbone from "../../../public/campus-life/vibgyor/Backbone.webp";
+import Capture from "../../../public/campus-life/vibgyor/Capture.webp";
+import Technoocrats from "../../../public/campus-life/vibgyor/Technoocrats.webp";
+import Quill from "../../../public/campus-life/vibgyor/Quill.webp";
+import Expresso from "../../../public/campus-life/vibgyor/Expresso.webp";
 import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 function Vibgyor() {
   const sections = [
     {
-      title: "Footloose",
+      title: "Footloose – For the dancers who own the stage.",
       description:
         "Dance enthusiasts come together in Footloose, where rhythm and movement blend to create captivating performances. This club nurtures budding dancers and offers a stage to showcase their talent.",
+      image: Footloose,
     },
     {
-      title: "Sargam",
+      title: "Sargam – Where music and voices come alive.",
       description:
         "For those with a passion for music, Sargam is the perfect platform. This singing club brings together melodious voices and harmonizes talents, creating soulful musical experiences.",
+      image: Sargam,
     },
     {
-      title: "Manchan",
+      title: "Manchan – Theatre for the drama lovers.",
       description:
         "The theatre lovers’ haven, Manchan, is where drama and creativity take the spotlight. This club provides a stage for aspiring actors to express their theatrical flair and perform impactful plays.",
+      image: Manchan,
     },
     {
-      title: "Stylexa",
+      title: "Stylexa – Fashion, runway, and style.",
       description:
         "In Stylexa, the world of fashion comes alive. This fashion show club offers a runway for aspiring designers and models to flaunt their style and creativity, making every show a grand spectacle.",
+      image: Stylexa,
     },
     {
-      title: "Meraki",
+      title: "Meraki – Create art with passion.",
       description:
         "Art and craft find their expression in Meraki. This club encourages students to channel their artistic abilities and create beautiful, imaginative works that add colour to campus life.",
+      image: Meraki,
     },
     {
-      title: "Public Relations",
+      title: "Public Relations – Mastering events and connections.",
       description:
         "The PR club plays a crucial role in relationship building and event management. These students are the backbone of Vibgyor, ensuring seamless coordination and successful execution of all activities and events.",
+      image: PublicRelation,
     },
     {
-      title: "Backbone Crew",
+      title: "Backbone Crew – Running the show behind the scenes.",
       description:
         "Speaking of backbones, this club focuses on stage management, ensuring that all events run smoothly. From technical setups to behind-the-scenes operations, Backbone handles it all.",
+      image: Backbone,
     },
     {
-      title: "Capture",
+      title: "Capture – For those who capture every moment.",
       description:
         "Capture is the go-to club for photography and videography enthusiasts. These visual storytellers document every event and bring moments to life through their lenses.",
+      image: Capture,
     },
     {
-      title: "Technocrats",
+      title: "Technocrats – Tech wizards powering events.",
       description:
         "For those who love technology and consoles, Technocrats is the ideal club. They manage the technical aspects of events, ensuring everything is powered up and running flawlessly.",
+      image: Technoocrats,
     },
     {
-      title: "Quill",
+      title: "Quill – For those who love to write and tell stories.",
       description:
         "Literary minds gather in Quill, the literary club that celebrates the art of writing. From poetry and prose to discussions and debates, Quill offers a platform for literary expression.",
+      image: Quill,
     },
     {
-      title: "Expresso",
+      title: "Expresso – For aspiring speakers and anchors.",
       description:
         "Public speaking and anchoring talents are honed in Expresso. This club provides opportunities for students to develop their oratory skills and confidently take the stage as anchors.",
+      image: PublicRelation,
     },
   ];
   return (
@@ -84,15 +106,15 @@ function Vibgyor() {
               className="w-full h-full object-cover absolute"
             />
             <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-              <h3 className="text-[40px] md:text-[60px] text-[#007A83] z-10 font-[CarotSlab]">
-                Vibgyor
+              <h3 className="text-[40px] md:text-[60px] text-white z-10 font-[CarotSlab]">
+                Vibgyor- <span className="text-[#007A83]">Student Clubs</span>
               </h3>
             </div>
           </div>
         </div>
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
           <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
-            Vibgyor Student Council at Tula’s Institute
+            Meet Vibgyor – the heartbeat of Tula’s Institute!
           </h3>
           <Image
             src={vibgyorMain}
@@ -100,20 +122,13 @@ function Vibgyor() {
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
           <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
-            <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
-              Vibgyor,{" "}
-            </span>
-            the vibrant and dynamic student council of{" "}
-            <span className="font-black text-[#3D001B] font-[TTChocolatesBold]">
-              {" "}
-              Tula’s Institute,{" "}
-            </span>{" "}
-            is the heart and soul behind the extra and co-curricular activities
-            on campus. This dedicated body ensures students have a holistic and
-            enriching college experience, fostering talent and creativity across
-            various domains. Vibgyor is home to 11 diverse and exciting clubs,
-            each offering unique opportunities for students to explore their
-            passions and develop their skills.
+            This student council is all about ensuring that every student has an
+            unforgettable college experience. With 11 thrilling clubs, Vibgyor
+            brings together creativity, passion, and skill-building in ways that
+            go beyond the classroom. Whether you’re into music, drama, sports,
+            or tech, there’s a club here that’s perfect for you. Vibgyor isn’t
+            just a council; it’s your gateway to discovering new talents and
+            making lifelong memories.
           </p>
         </div>
 
@@ -126,6 +141,21 @@ function Vibgyor() {
           />
         </div>
         <Vision sections={sections} />
+        <div className="w-full h-fit flex flex-col justify-center items-center pb-8 md:pb-20">
+          <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-white">
+            Vibgyor is all about finding your passion, connecting with others,
+            and making the most of your college journey. Whether you're looking
+            to explore new interests, develop your skills, or just have a blast,
+            there's something here for everyone.
+            <br />
+            <br />
+            So, dive in, get involved, and let the experiences and memories roll
+            in.
+            <br />
+            <br />
+            Your college adventure is just getting started!
+          </p>
+        </div>
         <div className="w-full h-fit z-50">
           <Footer color={true} />
         </div>

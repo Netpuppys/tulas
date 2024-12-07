@@ -42,7 +42,7 @@ function Auditorium() {
             image={BannerImg}
             title={
               <>
-                OUR <span className="text-[#007A83]">AUDITORIUM</span>
+              <span className="text-[#007A83]">AUDITORIUM</span>
               </>
             }
             description={<></>}

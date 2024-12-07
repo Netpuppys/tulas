@@ -68,11 +68,11 @@ const sitemap = [
             linkTo: "/btech/",
             thirdNestedLinks: [
               {
-                title: "Civil Engineering",
+                title: "Civil Engineering (CE)",
                 linkTo: "/courses/btech/civil-engineering/",
               },
               {
-                title: "Computer Science & Engineering",
+                title: "Computer Science & Engineering (CSE)",
                 linkTo: "/courses/btech/computer-science/",
               },
               {
@@ -91,15 +91,15 @@ const sitemap = [
                   "/courses/btech/computer-science-engineering-data-science/",
               },
               {
-                title: "Electronics & Communication Engineering",
+                title: "Electronics & Communication Engineering (ECE)",
                 linkTo: "/courses/btech/electronics-and-communication-engg/",
               },
               {
-                title: "Electrical & Electronics Engineering",
+                title: "Electrical & Electronics Engineering (EEE)",
                 linkTo: "/courses/btech/electrical-and-electronics-engg/",
               },
               {
-                title: "Mechanical Engineering",
+                title: "Mechanical Engineering (ME)",
                 linkTo: "/courses/btech/mechanical-engineering/",
               },
             ],
@@ -221,7 +221,7 @@ const sitemap = [
         linkTo: "/campus-life/technical-fests",
       },
       {
-        title: "Sanskriti",
+        title: "Sanskriti- Cultural Fest",
         linkTo: "/campus-life/sanskriti",
       },
       {
@@ -233,11 +233,11 @@ const sitemap = [
         linkTo: "/campus-life/nss",
       },
       {
-        title: "Vibgyor",
+        title: "Vibgyor- Student Clubs",
         linkTo: "/campus-life/vibgyor",
       },
       {
-        title: "Victree",
+        title: "Victree- Sports Clubs",
         linkTo: "/campus-life/victree",
       },
     ],
@@ -338,7 +338,7 @@ const sitemap = [
     title: "Admissions",
     nestedLinks: [
       {
-        title: "Admission Procedure",
+        title: "Admission Procedure- Eligibility",
         linkTo: "/admission-procedure/",
       },
       {

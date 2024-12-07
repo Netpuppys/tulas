@@ -67,7 +67,7 @@ function ComputerScience() {
             image={BannerImg}
             title={
               <>
-                OUR COMPUTER <span className="text-[#007A83]">CENTRE</span>
+                COMPUTER <span className="text-[#007A83]">CENTRE</span>
               </>
             }
             description={<></>}
