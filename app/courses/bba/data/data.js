@@ -5,27 +5,32 @@ import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import bbaDocument from "../../../../public/courses/bba/BBA.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
+import ArghyaSarkar from "../../../../public/courses/mba/facultyData/ArghyaSarkar.webp";
+import ArghyaSarkarResume from "../../../../public/courses/mba/facultyData/ArghyaSarkarResume.pdf";
+import LalitGoyal from "../../../../public/courses/bba/facultyData/LalitGoyal.webp";
+import LalitGoyalResume from "../../../../public/courses/bba/facultyData/LalitGoyalResume.pdf";
+import ShikhaDabral from "../../../../public/courses/bba/facultyData/ShikhaDabral.webp";
+import ShikhaDabralResume from "../../../../public/courses/bba/facultyData/ShikhaDabralResume.pdf";
 import Megha from "../../../../public/courses/bba/facultyData/Megha.webp";
 import MeghaResume from "../../../../public/courses/bba/facultyData/MeghaResume.pdf";
-import BharatBhushan from "../../../../public/courses/bba/facultyData/BharatBhushan.webp";
-import BharatBhushanResume from "../../../../public/courses/bba/facultyData/BharatBhusanResume.pdf";
 import Durgesh from "../../../../public/courses/bba/facultyData/Durgesh.webp";
 import DurgeshResume from "../../../../public/courses/bba/facultyData/DurgeshResume.pdf";
 import Monalsha from "../../../../public/courses/bba/facultyData/Monalsha.webp";
 import MonalshaResume from "../../../../public/courses/bba/facultyData/MonalshaResume.pdf";
 import Nitika from "../../../../public/courses/bba/facultyData/Nitika.webp";
 import NeetikaResume from "../../../../public/courses/bba/facultyData/NeetikaResume.pdf";
-import Nandani from "../../../../public/courses/bba/facultyData/Nandani.webp";
-import NandiniResume from "../../../../public/courses/bba/facultyData/NandiniResume.pdf";
-import Akanksha from "../../../../public/courses/bba/facultyData/Akanksha.webp";
-import AkankshaResume from "../../../../public/courses/bba/facultyData/AkankshaResume.pdf";
+import Kajal from "../../../../public/courses/bba/facultyData/Kajal.webp";
+import KajalResume from "../../../../public/courses/bba/facultyData/KajalResume.pdf";
+import Vaishali from "../../../../public/courses/bba/facultyData/Vaishali.webp";
+import VaishaliResume from "../../../../public/courses/bba/facultyData/VaishaliResume.pdf";
 import Ranvijay from "../../../../public/courses/bba/facultyData/Ranvijay.webp";
 import RanvijayResume from "../../../../public/courses/bba/facultyData/RanvijayResume.pdf";
 import Kanika from "../../../../public/courses/bba/facultyData/Kanika.webp";
 import KanikaResume from "../../../../public/courses/bba/facultyData/KanikaResume.pdf";
 import Dipankar from "../../../../public/courses/bba/facultyData/Dipankar.webp";
 import DipankarResume from "../../../../public/courses/bba/facultyData/DipankarResume.pdf";
-
+import Aishwarya from "../../../../public/courses/bba/facultyData/Aishwarya.webp";
+import AishwaryaResume from "../../../../public/courses/bba/facultyData/AishwaryaResume.pdf";
 import Link from "next/link";
 
 export const images = [
@@ -302,67 +307,30 @@ export const semesterData = [
 ];
 export const facultyData = [
   {
-    name: "Ms. Megha Ahuja",
+    name: "Dr. Arghya Sarkar",
+    designation: "Associate Professor & HoD",
+    education: "Ph.D.",
+    publications: "15",
+    experience: "16",
+    imageUrl: ArghyaSarkar,
+    resume: ArghyaSarkarResume,
+  },
+  {
+    name: "Dr. Lalit Goyal",
+    designation: "Associate Professor",
+    education: "Ph.D.",
+    publications: "22",
+    experience: "20",
+    imageUrl: LalitGoyal,
+    resume: LalitGoyalResume,
+  },
+  {
+    name: "Dr. Shikha Dabral",
     designation: "ASST PROFESSOR",
-    education: "MBA",
-    publications: "0",
+    education: "Ph.D.",
     experience: "8",
-    imageUrl: Megha,
-    resume: MeghaResume,
-  },
-  {
-    name: "Mr. Bharat Bhusan",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "2",
-    experience: "6",
-    imageUrl: BharatBhushan,
-    resume: BharatBhushanResume,
-  },
-  {
-    name: "Mr. Durgesh Bahuguna",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "1",
-    experience: "15",
-    imageUrl: Durgesh,
-    resume: DurgeshResume,
-  },
-  {
-    name: "Ms. Monalsha Chand",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "4",
-    experience: "1",
-    imageUrl: Monalsha,
-    resume: MonalshaResume,
-  },
-  {
-    name: "Ms. Neetika Gupta",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "0",
-    experience: "9",
-    imageUrl: Nitika,
-    resume: NeetikaResume,
-  },
-  {
-    name: "Ms. Nandini Dhyani",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "3",
-    experience: "6",
-    imageUrl: Nandani,
-    resume: NandiniResume,
-  },
-  {
-    name: "Ms. Akanksha Pal",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "2",
-    experience: "5",
-    imageUrl: Akanksha,
-    resume: AkankshaResume,
+    imageUrl: ShikhaDabral,
+    resume: ShikhaDabralResume,
   },
   {
     name: "Dr. Rajvijay Singh",
@@ -374,13 +342,13 @@ export const facultyData = [
     resume: RanvijayResume,
   },
   {
-    name: "Ms. Kanika Pharasi",
+    name: "Mr. Durgesh Bahuguna",
     designation: "ASST PROFESSOR",
     education: "MBA, Ph.D.(P)",
-    publications: "0",
-    experience: "1",
-    imageUrl: Kanika,
-    resume: KanikaResume,
+    publications: "1",
+    experience: "15",
+    imageUrl: Durgesh,
+    resume: DurgeshResume,
   },
   {
     name: "Mr. Dipankar Dutta",
@@ -390,6 +358,68 @@ export const facultyData = [
     experience: "5",
     imageUrl: Dipankar,
     resume: DipankarResume,
+  },
+  {
+    name: "Ms. Neetika Gupta",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D.(P)",
+    publications: "0",
+    experience: "9",
+    imageUrl: Nitika,
+    resume: NeetikaResume,
+  },
+  {
+    name: "Ms. Megha Ahuja",
+    designation: "ASST PROFESSOR",
+    education: "MBA",
+    publications: "0",
+    experience: "8",
+    imageUrl: Megha,
+    resume: MeghaResume,
+  },
+  {
+    name: "Ms. Monalsha Chand",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D.(P)",
+    publications: "4",
+    experience: "1",
+    imageUrl: Monalsha,
+    resume: MonalshaResume,
+  },
+  {
+    name: "Vaishali Gaur",
+    designation: "ASST PROFESSOR",
+    education: "MBA",
+    publications: "3",
+    experience: "6",
+    imageUrl: Vaishali,
+    resume: VaishaliResume,
+  },
+  {
+    name: "Ms. Kajal GC",
+    designation: "ASST PROFESSOR",
+    education: "MBA",
+    experience: "5",
+    imageUrl: Kajal,
+    resume: KajalResume,
+  },
+  {
+    name: "Ms. Kanika Pharasi",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D.(P)",
+    publications: "0",
+    experience: "1",
+    imageUrl: Kanika,
+    resume: KanikaResume,
+  },
+  {
+    name: "Ms. Aishwarya Shah",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D.(P)",
+    publications: "2",
+    experience: "4",
+    imageUrl: Aishwarya,
+    resume: AishwaryaResume,
   },
 ];
 const bbacourse = [

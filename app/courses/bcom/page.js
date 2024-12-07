@@ -46,7 +46,7 @@ function BBA() {
             title={"B.COM"}
             titleColor={"(HONS)"}
             description={
-              "Bachelor of Journalism & Mass Communication is a three year interdisciplinary program in which students learn holistically about media and its various aspects. Students learn the underpinning theories related to media, its history, and its legal and ethical obligations."
+              "A three year B.Com. (Hons.) program offered by the Graduate School of Business is meticulously designed to empower students with the knowledge, skills, and abilities required to analyze and synthesize contemporary business realities. "
             }
           />
 

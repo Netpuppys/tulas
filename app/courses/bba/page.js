@@ -48,7 +48,7 @@ function BBA() {
             </>
             titleColor={""}
             description={
-              "The three-year Bachelor of Business Administration (BBA) program is designed keeping in mind the needs of the bright students who are looking for a career in entrepreneurship, management profession or towards higher education in business administration."
+              "A three-year Bachelor of Business Administration (BBA) program at the Graduate School of Business redefines traditional business education. The program offers a cutting-edge leadership curriculum, personalized mentorship, and hands-on projects, designed to tackle real-world business challenges."
             }
           />
 

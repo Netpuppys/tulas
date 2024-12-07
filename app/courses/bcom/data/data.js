@@ -5,18 +5,16 @@ import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import bcomDocument from "../../../../public/courses/bcom/Bcom.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
-import AishwaryaShah from "../../../../public/courses/bcom/facultyData/AishwaryaShah.webp";
-import AishwaryaShahResume from "../../../../public/courses/bcom/facultyData/AishwaryaShahResume.pdf";
-import Kajal from "../../../../public/courses/bcom/facultyData/Kajal.webp";
-import KajalResume from "../../../../public/courses/bcom/facultyData/KajalResume.pdf";
+import ArghyaSarkar from "../../../../public/courses/mba/facultyData/ArghyaSarkar.webp";
+import ArghyaSarkarResume from "../../../../public/courses/mba/facultyData/ArghyaSarkarResume.pdf";
+import Akanksha from "../../../../public/courses/bcom/facultyData/Akanksha.webp";
+import AkankshaResume from "../../../../public/courses/bcom/facultyData/AkankshaResume.pdf";
 import NiharikaNautiyal from "../../../../public/courses/bcom/facultyData/NiharikaNautiyal.webp";
 import NiharikaNautiyalResume from "../../../../public/courses/bcom/facultyData/NiharikaNautiyalResume.pdf";
 import PrakashBhatnagar from "../../../../public/courses/bcom/facultyData/PrakashBhatnagar.webp";
 import PrakashBhatnagarResume from "../../../../public/courses/bcom/facultyData/PrakashBhatnagarResume.pdf";
 import TarunSharma from "../../../../public/courses/bcom/facultyData/TarunSharma.webp";
 import TarunSharmaResume from "../../../../public/courses/bcom/facultyData/TarunSharmaResume.pdf";
-import VaishaliGaur from "../../../../public/courses/bcom/facultyData/VaishaliGaur.webp";
-import VaishaliGaurResume from "../../../../public/courses/bcom/facultyData/VaishaliGaurResume.pdf";
 
 import Link from "next/link";
 
@@ -345,22 +343,13 @@ export const semesterData = [
 
 export const facultyData = [
   {
-    name: "Ms. Kajal GC",
-    designation: "ASST PROFESSOR",
-    education: "MBA",
-    publications: "0",
-    experience: "5",
-    imageUrl: Kajal,
-    resume: KajalResume,
-  },
-  {
-    name: "Ms. Niharika Dutt Nautiyal",
-    designation: "ASST PROFESSOR",
-    education: "MBA",
-    publications: "0",
-    experience: "3",
-    imageUrl: NiharikaNautiyal,
-    resume: NiharikaNautiyalResume,
+    name: "Dr. Arghya Sarkar",
+    designation: "Associate Professor & HoD",
+    education: "Ph.D.",
+    publications: "15",
+    experience: "16",
+    imageUrl: ArghyaSarkar,
+    resume: ArghyaSarkarResume,
   },
   {
     name: "Prakash Bhatnager",
@@ -372,31 +361,29 @@ export const facultyData = [
     resume: PrakashBhatnagarResume,
   },
   {
+    name: "Ms. Akanksha Pal",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "2",
+    experience: "5",
+    imageUrl: Akanksha,
+    resume: AkankshaResume,
+  },
+  {
     name: "Mr. Tarun Kumar",
     designation: "ASST PROFESSOR",
     education: "MBA",
-    publications: "0",
     experience: "14",
     imageUrl: TarunSharma,
     resume: TarunSharmaResume,
   },
   {
-    name: "Ms. Aishwarya Shah",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "2",
-    experience: "4",
-    imageUrl: AishwaryaShah,
-    resume: AishwaryaShahResume,
-  },
-  {
-    name: "Vaishali Gaur",
+    name: "Ms. Niharika Dutt Nautiyal",
     designation: "ASST PROFESSOR",
     education: "MBA",
-    publications: "3",
-    experience: "6",
-    imageUrl: VaishaliGaur,
-    resume: VaishaliGaurResume,
+    experience: "3",
+    imageUrl: NiharikaNautiyal,
+    resume: NiharikaNautiyalResume,
   },
 ];
 export const itemsClubs = [

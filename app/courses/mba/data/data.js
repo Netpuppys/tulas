@@ -6,6 +6,10 @@ import Link from "next/link";
 import mbaDocument from "../../../../public/courses/mba/MBA.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
+import ArghyaSarkar from "../../../../public/courses/mba/facultyData/ArghyaSarkar.webp";
+import ArghyaSarkarResume from "../../../../public/courses/mba/facultyData/ArghyaSarkarResume.pdf";
+import AmitNautiyal from "../../../../public/courses/mba/facultyData/AmitNautiyal.webp";
+// import AmitNautiyalResume from "../../../../public/courses/mba/facultyData/AmitNautiyalResume.pdf";
 import AbdalAhmed from "../../../../public/courses/mba/facultyData/AbdalAhmed.webp";
 import AbdalAhmedResume from "../../../../public/courses/mba/facultyData/AbdalAhmedResume.pdf";
 import Akansha from "../../../../public/courses/mba/facultyData/Akansha.webp";
@@ -14,14 +18,12 @@ import AnantLakshendra from "../../../../public/courses/mba/facultyData/AnantLak
 import AnantLakshendraResume from "../../../../public/courses/mba/facultyData/AnantLakshendraResume.pdf";
 import AnupamNautiyal from "../../../../public/courses/mba/facultyData/AnupamNautiyal.webp";
 import AnupamNautiyalResume from "../../../../public/courses/mba/facultyData/AnupamNautiyalResume.pdf";
-import ArghyaSarkar from "../../../../public/courses/mba/facultyData/ArghyaSarkar.webp";
-import ArghyaSarkarResume from "../../../../public/courses/mba/facultyData/ArghyaSarkarResume.pdf";
 import Emmanuel from "../../../../public/courses/mba/facultyData/Emmanuel.webp";
 import EmmanuelResume from "../../../../public/courses/mba/facultyData/EmmanuelResume.pdf";
-import LalitGoyal from "../../../../public/courses/mba/facultyData/LalitGoyal.webp";
-import LalitGoyalResume from "../../../../public/courses/mba/facultyData/LalitGoyalResume.pdf";
-import ShikhaDabral from "../../../../public/courses/mba/facultyData/ShikhaDabral.webp";
-import ShikhaDabralResume from "../../../../public/courses/mba/facultyData/ShikhaDabralResume.pdf";
+import BharatBhushan from "../../../../public/courses/mba/facultyData/BharatBhushan.webp";
+import BharatBhushanResume from "../../../../public/courses/mba/facultyData/BharatBhushanResume.pdf";
+import Nandini from "../../../../public/courses/mba/facultyData/Nandini.webp";
+import NandiniResume from "../../../../public/courses/mba/facultyData/NandiniResume.pdf";
 import SwatiYadav from "../../../../public/courses/mba/facultyData/SwatiYadav.webp";
 import SwatiYadavResume from "../../../../public/courses/mba/facultyData/SwatiYadavResume.pdf";
 
@@ -435,13 +437,13 @@ export const facultyData = [
     resume: ArghyaSarkarResume,
   },
   {
-    name: "Dr. Lalit Goyal",
-    designation: "Associate Professor",
-    education: "Ph.D.",
-    publications: "22",
-    experience: "20",
-    imageUrl: LalitGoyal,
-    resume: LalitGoyalResume,
+    name: "Prof. Amit Nautiyal",
+    designation: "Professor",
+    education: "",
+    publications: "",
+    experience: "",
+    imageUrl: AmitNautiyal,
+    // resume: AmitNautiyalResume,
   },
   {
     name: "Dr. Anant Lakshendra",
@@ -453,16 +455,6 @@ export const facultyData = [
     resume: AnantLakshendraResume,
   },
   {
-    name: "Dr. Shikha Dabral",
-    designation: "ASST PROFESSOR",
-    education: "Ph.D.",
-    publications: "0",
-    experience: "8",
-    imageUrl: ShikhaDabral,
-    resume: ShikhaDabralResume,
-  },
-  
-  {
     name: "Dr. Abdal Ahmad",
     designation: "ASST PROFESSOR",
     education: "Ph.D.",
@@ -472,13 +464,13 @@ export const facultyData = [
     resume: AbdalAhmedResume,
   },
   {
-    name: "Mr. Anupum Nautiyal",
+    name: "Dr. Akansha Gautam",
     designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "3",
-    experience: "11",
-    imageUrl: AnupamNautiyal,
-    resume: AnupamNautiyalResume,
+    education: "Ph.D.",
+    publications: "27",
+    experience: "9",
+    imageUrl: Akansha,
+    resume: AkanshaResume,
   },
   {
     name: "Mr. Emmanuel Gabriel",
@@ -490,6 +482,25 @@ export const facultyData = [
     resume: EmmanuelResume,
   },
   {
+    name: "Mr. Anupum Nautiyal",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D.(P)",
+    publications: "3",
+    experience: "11",
+    imageUrl: AnupamNautiyal,
+    resume: AnupamNautiyalResume,
+  },
+  {
+    name: "Mr. Bharat Bhusan",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D(P)",
+    publications: "2",
+    experience: "6",
+    imageUrl: BharatBhushan,
+    resume: BharatBhushanResume,
+  },
+
+  {
     name: "Ms. Swati Yadav",
     designation: "ASST PROFESSOR",
     education: "MBA, Ph.D.(P)",
@@ -499,13 +510,13 @@ export const facultyData = [
     resume: SwatiYadavResume,
   },
   {
-    name: "Dr. Akansha Gautam",
+    name: "Ms. Nandini Dhyani",
     designation: "ASST PROFESSOR",
-    education: "Ph.D.",
-    publications: "27",
-    experience: "9",
-    imageUrl: Akansha,
-    resume: AkanshaResume,
+    education: "MBA, Ph.D.(P)",
+    publications: "3",
+    experience: "6",
+    imageUrl: Nandini,
+    resume: NandiniResume,
   },
 ];
 export const itemsClubs = [
