@@ -11,7 +11,7 @@ import Vision from "@/component/Programs/Vision";
 function TechnicalFest() {
   const sections = [
     {
-      title: "Technical Fests",
+      title: "Utkrisht",
       description: (
         <>
           Tula’ Institute proudly hosts Utkrisht, the highly anticipated annual
@@ -44,7 +44,7 @@ function TechnicalFest() {
           image={BannerImg}
           title={
             <>
-              Technical<span className="text-[#007A83]"> Fests</span>
+              Utkrisht-<span className="text-[#007A83]"> Technical Fests</span>
             </>
           }
           belowPara={

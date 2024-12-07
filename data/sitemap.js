@@ -217,7 +217,7 @@ const sitemap = [
         linkTo: "/campus-life/celebrities",
       },
       {
-        title: "Technical Fests",
+        title: "Utkrisht- Technical Fests",
         linkTo: "/campus-life/technical-fests",
       },
       {
