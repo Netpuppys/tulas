@@ -1,5 +1,4 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
@@ -22,7 +21,7 @@ function Vision({ sections }) {
                   : "md:ml-[5%]"
               } `}
             >
-              <Fade delay={300} className="w-full md:px-0 md:w-[45%]">
+              <div className="w-full md:px-0 md:w-[45%]">
                 <div className="w-full block">
                   <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 border-white">
                     {section.title}
@@ -32,8 +31,8 @@ function Vision({ sections }) {
                     {section.description}
                   </h5>
                 </div>
-              </Fade>
-              <Fade className="w-full md:w-[45%]">
+              </div>
+              <div className="w-full md:w-[45%]">
                 {section.image && (
                   <Image
                     src={section.image}
@@ -58,7 +57,7 @@ function Vision({ sections }) {
                     }`}
                   ></div>
                 )}
-              </Fade>
+              </div>
             </div>
           );
         })}
