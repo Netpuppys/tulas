@@ -5,7 +5,6 @@ import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/courses/bjmc/background.png";
 import Image from "next/image";
 import Footer from "@/component/Footer";
-import BannerProgram from "@/component/Programs/BannerProgram";
 import TopRecruiter from "../../../component/topRecruiter";
 import Program from "@/component/Programs/Program";
 import CarouselProgram from "@/component/Programs/CrouselProgram";
