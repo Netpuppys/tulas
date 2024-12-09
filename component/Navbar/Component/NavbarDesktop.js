@@ -56,7 +56,7 @@ function NavbarDesktop({
             : "animate-translateRightMenu opacity-0 left-[-100%]"
         }`}
       >
-        <div className="w-full h-[calc(100vh-350px)]  relative top-[180px] overflow-auto">
+        <div className="w-full h-[calc(100vh-280px)] relative top-[130px] overflow-auto">
           {sitemap.map((item, index) => (
             <div
               className="border-t last:border-b border-[#C5C5C5]   flex flex-col w-full h-fit"
@@ -108,7 +108,7 @@ function NavbarDesktop({
               : "animate-translateRightMenu -left-full"
           }`}
         >
-          <div className="h-fit w-full overflow-auto mt-[120px] py-[40px]">
+          <div className="h-fit w-full overflow-auto mt-[80px] py-[40px]">
             <p className="text-[#007A83] text-[clamp(24px,1.6vw,35px)] font-extrabold font-[CarotSlab] px-10 w-fit py-4 h-fit">
               {sitemap[activeLink].title}
             </p>

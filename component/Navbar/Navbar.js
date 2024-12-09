@@ -285,51 +285,72 @@ function Navbar({ setState, position = false, fullBanner = false }) {
       {/* main navbar */}
       <div className="w-full pt-2 mdNavbar:pt-4 h-fit">
         <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
-          <a href="tel:+91-9837983721" className="footer-call-number">
-            <Image
-              src={phoneCallGif}
-              alt=""
-              className="footer-call-number-gif"
-            />
-            <div className="footer-call-number-text">
-              Admission Helpline No. +91-9837983721
-            </div>
-          </a>
-
-          {!scrolled && (
-            <Link href="/" className="z-[3333] mdNavbar:hidden animate-fadeIn">
+          <div className="hidden mdNavbar:block">
+            <a href="tel:+91-9837983721" className="footer-call-number">
               <Image
-                src={
-                  (isChecked && position) || isChecked
-                    ? TulasLogoGreen
-                    : position
-                    ? TulasLogoRed
-                    : TulasLogo
-                }
+                src={phoneCallGif}
                 alt=""
-                className="w-[120px] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
+                className="footer-call-number-gif"
               />
-            </Link>
-          )}
-
-          {scrolled && (
-            <Link
-              href="/"
-              className="z-[3333] mdNavbar:hidden animate-translateButton"
+              <div className="footer-call-number-text">
+                Admission Helpline No. +91-9837983721
+              </div>
+            </a>
+          </div>
+          <div className="flex mdNavbar:hidden mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
+            {/* menu button */}
+            <button
+              className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+              onClick={handleButtonClick}
             >
-              <Image
-                src={
-                  (isChecked && position) || isChecked
-                    ? TulasLogoGreen
-                    : position
-                    ? TulasLogoRed
-                    : TulasLogoGreen
-                }
-                alt=""
-                className="w-[120px] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
-              />
-            </Link>
-          )}
+              {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
+              <div
+                className={`p-[15px] mdNavbar:p-[20px] rounded-[50%] aspect-square border-r-transparent`}
+              >
+                <label
+                  className={
+                    isChecked
+                      ? "checked flex flex-col w-[30px] cursor-pointer"
+                      : "unCheck flex flex-col w-[30px] cursor-pointer"
+                  }
+                >
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
+                  ></span>
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
+                  ></span>
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
+                  ></span>
+                </label>
+              </div>
+            </button>
+            {/* apply now button */}
+            <button
+              className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+              onClick={() => (window.location.href = "/admissions2024/")}
+            >
+              <PiPencilSimpleLineLight />
+            </button>
+          </div>
+
+          <Link
+            href="/"
+            className="z-[3333] mdNavbar:hidden animate-translateButton"
+          >
+            <Image
+              src={
+                (isChecked && position) || isChecked
+                  ? TulasLogoGreen
+                  : position
+                  ? TulasLogoRed
+                  : TulasLogoGreen
+              }
+              alt=""
+              className="w-[120px] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
+            />
+          </Link>
         </div>
 
         <div
