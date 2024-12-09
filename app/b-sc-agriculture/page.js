@@ -1,10 +1,8 @@
 "use client";
 import React, { useRef } from "react";
-import BannerProgram from "@/component/Programs/BannerProgram";
 import BannerImg from "../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../public/bsc-agriculture/background.png";
-import Image from "next/image";
 import Footer from "@/component/Footer";
 import {
   cards,
