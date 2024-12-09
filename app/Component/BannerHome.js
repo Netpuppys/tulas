@@ -27,8 +27,8 @@ const title = (
 function BannerHome({ isChecked }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentImage, setCurrentImage] = useState(bannerImages[0]);
-  // const [ scrollToSection, setScrollToSection ] = useState(1);
-
+  const [scrollToSection, setScrollToSection] = useState(1);
+  const maxSections = 15;
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -57,16 +57,18 @@ function BannerHome({ isChecked }) {
   };
 
   return (
-    <div className="w-full h-screen relative bg-black bg-opacity-50 flex items-start z-0">
+    <div
+      style={{
+        backgroundImage: `url(${currentImage.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="w-full h-screen relative bg-black bg-opacity-50 flex items-start z-0"
+    >
       {/* background */}
-      <div
-        style={{
-          backgroundImage: `url(${currentImage.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+      {/* <div
         className={`z-10 w-full h-screen relative duration-300 ease-in overflow-hidden `}
-      ></div>
+      ></div> */}
       <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
         {bannerImages.map((_, index) => (
           <div
@@ -90,9 +92,9 @@ function BannerHome({ isChecked }) {
       </div>
 
       <div
-        className={`bottom-4 md:bottom-10 md:pr-[140px] z-10 absolute mx-4 md:ml-16 ${
-          isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"
-        }`}
+        className={`bottom-4 md:bottom-10 md:pr-[140px] z-10 absolute mx-4 md:ml-16 
+        ${isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"}
+        `}
       >
         <h2 className="text-[38px] md:text-[clamp(20px,4.2vw,70px)] text-white z-10 font-[CarotSlab]">
           {title}

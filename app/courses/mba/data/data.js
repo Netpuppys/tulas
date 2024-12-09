@@ -9,7 +9,7 @@ import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMis
 import ArghyaSarkar from "../../../../public/courses/mba/facultyData/ArghyaSarkar.webp";
 import ArghyaSarkarResume from "../../../../public/courses/mba/facultyData/ArghyaSarkarResume.pdf";
 import AmitNautiyal from "../../../../public/courses/mba/facultyData/AmitNautiyal.webp";
-// import AmitNautiyalResume from "../../../../public/courses/mba/facultyData/AmitNautiyalResume.pdf";
+import AmitNautiyalResume from "../../../../public/courses/mba/facultyData/AmitNautiyalResume.pdf";
 import AbdalAhmed from "../../../../public/courses/mba/facultyData/AbdalAhmed.webp";
 import AbdalAhmedResume from "../../../../public/courses/mba/facultyData/AbdalAhmedResume.pdf";
 import Akansha from "../../../../public/courses/mba/facultyData/Akansha.webp";
@@ -443,7 +443,7 @@ export const facultyData = [
     publications: "",
     experience: "",
     imageUrl: AmitNautiyal,
-    // resume: AmitNautiyalResume,
+    resume: AmitNautiyalResume,
   },
   {
     name: "Dr. Anant Lakshendra",
