@@ -55,8 +55,8 @@ function Program({ parentRef, images, content }) {
 
   return (
     <div ref={childRef} className="w-full h-fit">
-      <div className="w-full h-[200vh] relative bg-transparent overflow-hidden">
-        <div
+      <div className="w-full relative  overflow-hidden">
+        {/* <div
           className={`${
             scrollY > 0 && opacity === 0
               ? "absolute"
@@ -69,11 +69,11 @@ function Program({ parentRef, images, content }) {
             transform: `scale(${scaleLeaf})`,
             opacity: opacity,
           }}
-        ></div>
+        ></div> */}
       </div>
 
       <div ref={ref} className="z-[9] bg-transparent h-fit relative pl-4">
-        <h5 className="w-full text-white md:max-w-[1000px] text-justify px-4 mx-auto py-10 md:py-20 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] font-normal">
+        <h5 className="w-full text-black md:max-w-[80%] text-justify px-4 mx-auto py-10 md:py-20 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] font-normal">
           {content}
         </h5>
       </div>

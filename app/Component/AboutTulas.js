@@ -231,7 +231,7 @@ function AboutTulas() {
   return (
     <div
       id="2"
-      className="bg-transparent flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-10 items-center"
+      className="bg-[#3d001b] flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-10 items-center"
     >
       {/* {isOtpSent && (
         <div className="fixed w-screen h-screen bg-black bg-opacity-50 top-0 left-0 z-50 flex items-center justify-center flex-col">
@@ -304,7 +304,7 @@ function AboutTulas() {
         </div>
       )} */}
       <div className="w-full px-6 md:px-0 md:w-[50%] py-10 md:py-20">
-        <h3 className="text-[#fff] text-justify font-[TTChocolates] font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
+        <h3 className="text-[#fff] text-justify font-[TTChocolates] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>
@@ -478,11 +478,11 @@ function AboutTulas() {
       </div>
 
       {/* bg image */}
-      <Image
+      {/* <Image
         src={formBanner}
         className="w-full h-full absolute top-0 left-0 -z-10 object-cover"
         alt="Form background image"
-      />
+      /> */}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import BannerImg from "../../../../public/bsc-agriculture/bannerImg.png";
+import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../../public/bsc-agriculture/background.png";
 import Image from "next/image";
@@ -24,6 +24,7 @@ import {
   semesterData,
 } from "./data/data";
 import { facultyDataCSE } from "../facultyDataCSE";
+import Banner from "@/component/Banner";
 function BAJMC() {
   const parentRef = useRef(null);
 
@@ -42,13 +43,13 @@ function BAJMC() {
       <body>
         <div ref={parentRef}>
           <div className="w-full h-fit bg-white">
-            <Navbar position={true} />
+            <Navbar />
           </div>
-          <BannerProgram
+          <Banner
             image={BannerImg}
             title=<>
               COMPUTER SCIENCE{" "}
-              <span className="text-[#760135]">& ENGINEERING</span>
+              <span className="text-[#760135]">& ENGINEERING (CSE)</span>
             </>
             titleColor={""}
             description={
@@ -62,7 +63,7 @@ function BAJMC() {
             color={true}
             background={background}
           />
-          <Vision sections={sections} />
+          <Vision color={true} sections={sections} />
           <TableProgram
             cards={cards}
             selectedCardTable={selectedCardTable}
@@ -78,14 +79,14 @@ function BAJMC() {
             background={background}
             color={true}
           />
-          <div className="w-full relative overflow-hidden">
+          {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
-          </div>
-          <Footer color={true} />
+          </div> */}
+          <Footer />
         </div>
       </body>
     </>

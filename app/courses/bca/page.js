@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import BannerImg from "../../../public/bsc-agriculture/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/courses/bjmc/background.png";
 import Image from "next/image";
@@ -24,6 +24,7 @@ import {
   selectedCardTable,
   semesterData,
 } from "./data/data";
+import Banner from "@/component/Banner";
 function BBA() {
   const parentRef = useRef(null);
 
@@ -41,9 +42,9 @@ function BBA() {
       <body>
         <div ref={parentRef}>
           <div className="w-full h-fit bg-white">
-            <Navbar position={true} />
+            <Navbar />
           </div>
-          <BannerProgram
+          <Banner
             image={BannerImg}
             title=<>
               Bachelor of Computer{" "}
@@ -51,7 +52,7 @@ function BBA() {
             </>
             titleColor={""}
             description={
-              "The Bachelor of Computer Applications (BCA) is a dynamic, cutting-edge program designed for aspiring tech professionals who want to dive into the fast-paced world of information technology. This three-year course blends the fundamentals of computer science with hands-on training in software development, data management, web design, and networking. From learning the latest programming languages to mastering database management and exploring the intricacies of artificial intelligence, BCA opens doors to countless possibilities. Whether you're dreaming of becoming a software developer, a cybersecurity specialist, or even an entrepreneur with your own tech start-up, BCA offers the perfect foundation to kickstart your journey in the digital age."
+              "The Bachelor of Computer Applications (BCA) is a three-year program blending computer science fundamentals with practical training in software development, web design, and networking. It covers programming, database management, and AI, preparing students for roles like software developer or cybersecurity specialist. BCA lays a strong foundation for careers in IT or tech entrepreneurship."
             }
           />
 
@@ -61,7 +62,7 @@ function BBA() {
             items={items}
             background={background}
           />
-          <Vision sections={sections} />
+          <Vision color={true} sections={sections} />
           <TableProgram
             cards={cards}
             selectedCardTable={selectedCardTable}
@@ -76,13 +77,13 @@ function BBA() {
             items={itemsClubs}
             background={background}
           />
-          <div className="w-full relative overflow-hidden">
+          {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
-          </div>
+          </div> */}
           <Footer />
         </div>
       </body>

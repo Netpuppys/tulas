@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import BannerProgram from "@/component/Programs/BannerProgram";
-import BannerImg from "../../public/bsc-agriculture/bannerImg.png";
+import BannerImg from "../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../public/bsc-agriculture/background.png";
 import Image from "next/image";
@@ -21,6 +21,7 @@ import Program from "@/component/Programs/Program";
 import Vision from "@/component/Programs/Vision";
 import TableProgram from "@/component/Programs/tableProgram";
 import TopRecruiter from "@/component/topRecruiter";
+import Banner from "@/component/Banner";
 
 function BSCAgriculture() {
   const parentRef = useRef(null);
@@ -39,9 +40,9 @@ function BSCAgriculture() {
       <body>
         <div ref={parentRef}>
           <div className="w-full h-fit bg-white">
-            <Navbar position={true} />
+            <Navbar />
           </div>
-          <BannerProgram
+          <Banner
             image={BannerImg}
             title=<>
               DIPLOMA IN{" "}
@@ -53,7 +54,7 @@ function BSCAgriculture() {
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />
-          <Vision sections={sections} />
+          <Vision color={true} sections={sections} />
           <TableProgram
             cards={cards}
             selectedCardTable={selectedCardTable}
@@ -63,14 +64,14 @@ function BSCAgriculture() {
             facultyData={facultyData}
           />
           <TopRecruiter />
-          <div className="w-full relative overflow-hidden">
+          {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
-          </div>
-          <Footer color={true} />
+          </div> */}
+          <Footer />
         </div>
       </body>
     </>

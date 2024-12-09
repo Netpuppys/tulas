@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import BannerImg from "../../../public/bsc-agriculture/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/courses/bjmc/background.png";
 import Image from "next/image";
@@ -22,6 +22,7 @@ import {
   selectedCard1,
   semesterData,
 } from "./data/data";
+import Banner from "@/component/Banner";
 function MBA() {
   const parentRef = useRef(null);
 
@@ -36,12 +37,12 @@ function MBA() {
           content="Tula's Institute is leading in Best MBA College in Dehradun. We are recognized as Top private MBA College in Dehradun. We have rated best Management and top B Schools of Dehradun India is looking for."
         />
       </head>
-      <body>
+      <body >
         <div ref={parentRef}>
           <div className="w-full h-fit bg-white">
-            <Navbar position={true} />
+            <Navbar />
           </div>
-          <BannerProgram
+          <Banner
             image={BannerImg}
             title=<>
               MB<span className="text-[#760135]">A</span>
@@ -57,7 +58,7 @@ function MBA() {
             items={items}
             background={background}
           />
-          <Vision sections={sections} />
+          <Vision color={true} sections={sections} />
           <TableProgram
             cards={cards}
             selectedCard1={selectedCard1}
@@ -71,13 +72,13 @@ function MBA() {
             background={background}
           />
 
-          <div className="w-full relative overflow-hidden">
+          {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
-          </div>
+          </div> */}
           <Footer />
         </div>
       </body>

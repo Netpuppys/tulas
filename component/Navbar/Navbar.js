@@ -85,18 +85,159 @@ function Navbar({ setState, position = false, fullBanner = false }) {
     <div
       className={`px-2 mdNavbar:px-10 w-full max-w-[500px] mdNavbar:max-w-full ${
         position ? "relative pb-6" : "fixed"
-      } flex flex-col justify-center z-[9999]`}
+      } flex flex-col justify-center z-[999]`}
     >
       {/* top bar */}
-      <div className="hidden h-[80px] w-full mdNavbar:flex justify-between items-center z-[9999]">
-        <a href="tel:+91-9837983721" className="footer-call-number">
-          <Image src={phoneCallGif} alt="" className="footer-call-number-gif" />
-          <div className="footer-call-number-text">
-            Admission Helpline No. +91-9837983721
-          </div>
-        </a>
+      <div className="hidden h-[90px] w-full mdNavbar:flex  pt-6 justify-between items-start z-[9999]">
         {!scrolled && (
-          <div className="flex z-[3333] animate-fadeIn pt-16 pr-6 items-center justify-center gap-6">
+          <div className="flex mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
+            {/* menu button */}
+            <button
+              className="flex flex-row justify-between items-center cursor-pointer relative z-[9999]"
+              onClick={handleButtonClick}
+            >
+              <div
+                className={`p-[15px] mdNavbar:p-[20px] border-2 rounded-[50%] aspect-square border-r-transparent ${
+                  (isChecked && position) || isChecked
+                    ? "border-black"
+                    : position
+                    ? "border-[#760135]"
+                    : "border-white"
+                }`}
+              >
+                <label
+                  className={
+                    isChecked
+                      ? "checked flex flex-col w-[30px] cursor-pointer"
+                      : "unCheck flex flex-col w-[30px] cursor-pointer"
+                  }
+                >
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-1/2
+                     ${
+                       (isChecked && position) || isChecked
+                         ? "bg-black"
+                         : position
+                         ? "bg-[#760135]"
+                         : "bg-white"
+                     }`}
+                  ></span>
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-full ${
+                      (isChecked && position) || isChecked
+                        ? "bg-black"
+                        : position
+                        ? "bg-[#760135]"
+                        : "bg-white"
+                    }`}
+                  ></span>
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
+                      (isChecked && position) || isChecked
+                        ? "bg-black"
+                        : position
+                        ? "bg-[#760135]"
+                        : "bg-white"
+                    }`}
+                  ></span>
+                </label>
+              </div>
+              <h3
+                style={{ fontFamily: "Zilla Slab" }}
+                className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
+                  (isChecked && position) || isChecked
+                    ? "text-black"
+                    : position
+                    ? "text-[#760135]"
+                    : "text-white"
+                }`}
+              >
+                {!isChecked ? "Menu" : "Close"}
+              </h3>
+            </button>
+            {/* apply now button */}
+            <button
+              className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
+              onClick={() => (window.location.href = "/admissions2024/")}
+            >
+              <div
+                className={`p-[15px] mdNavbar:p-[20px] border-2 ${
+                  (isChecked && position) || isChecked
+                    ? "border-black"
+                    : position
+                    ? "border-[#760135]"
+                    : "border-white"
+                } rounded-[50%] aspect-square border-r-transparent`}
+              >
+                <FaPen
+                  className={`w-[30px] h-[30px] ${
+                    (isChecked && position) || isChecked
+                      ? "text-black"
+                      : position
+                      ? "text-[#760135]"
+                      : "text-white"
+                  }`}
+                />
+              </div>
+              <h3
+                style={{ fontFamily: "Zilla Slab" }}
+                className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
+                  (isChecked && position) || isChecked
+                    ? "text-black"
+                    : position
+                    ? "text-[#760135]"
+                    : "text-white"
+                }`}
+              >
+                Apply Now
+              </h3>
+            </button>
+          </div>
+        )}
+
+        {/* minimal buttons after scrolling */}
+        {scrolled && (
+          <div className="flex mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
+            {/* menu button */}
+            <button
+              className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+              onClick={handleButtonClick}
+            >
+              {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
+              <div
+                className={`p-[15px] mdNavbar:p-[20px] rounded-[50%] aspect-square border-r-transparent`}
+              >
+                <label
+                  className={
+                    isChecked
+                      ? "checked flex flex-col w-[30px] cursor-pointer"
+                      : "unCheck flex flex-col w-[30px] cursor-pointer"
+                  }
+                >
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
+                  ></span>
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
+                  ></span>
+                  <span
+                    className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
+                  ></span>
+                </label>
+              </div>
+            </button>
+            {/* apply now button */}
+            <button
+              className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+              onClick={() => (window.location.href = "/admissions2024/")}
+            >
+              <PiPencilSimpleLineLight />
+            </button>
+          </div>
+        )}
+
+        {!scrolled && (
+          <div className="flex z-[3333] animate-fadeIn pr-6 items-center justify-center gap-6">
             <Image
               src={NBA}
               alt=""
@@ -106,7 +247,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
             <Image
               src={NAAC}
               alt=""
-              className="w-[5vw] h-fit pointer-events-auto cursor-pointer"
+              className="w-[8vw] h-fit pointer-events-auto cursor-pointer"
             />
             <div className="h-[70px] w-[1px] bg-white"></div>
             <Image
@@ -125,10 +266,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
         )}
 
         {scrolled && (
-          <Link
-            href="/"
-            className="z-[3333] animate-translateButton pt-16 pr-6"
-          >
+          <Link href="/" className="z-[3333] animate-translateButton pr-6">
             <Image
               src={
                 (isChecked && position) || isChecked
@@ -143,155 +281,20 @@ function Navbar({ setState, position = false, fullBanner = false }) {
           </Link>
         )}
       </div>
-      {/* main navbar */}
-      <div className="w-full pt-2 mdNavbar:pt-0 h-fit">
-        <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
-          {!scrolled && (
-            <div className="flex mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
-              {/* menu button */}
-              <button
-                className="flex flex-row justify-between items-center cursor-pointer relative z-[9999]"
-                onClick={handleButtonClick}
-              >
-                <div
-                  className={`p-[15px] mdNavbar:p-[20px] border-2 rounded-[50%] aspect-square border-r-transparent ${
-                    (isChecked && position) || isChecked
-                      ? "border-black"
-                      : position
-                      ? "border-[#760135]"
-                      : "border-white"
-                  }`}
-                >
-                  <label
-                    className={
-                      isChecked
-                        ? "checked flex flex-col w-[30px] cursor-pointer"
-                        : "unCheck flex flex-col w-[30px] cursor-pointer"
-                    }
-                  >
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-1/2
-                     ${
-                       (isChecked && position) || isChecked
-                         ? "bg-black"
-                         : position
-                         ? "bg-[#760135]"
-                         : "bg-white"
-                     }`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-full ${
-                        (isChecked && position) || isChecked
-                          ? "bg-black"
-                          : position
-                          ? "bg-[#760135]"
-                          : "bg-white"
-                      }`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
-                        (isChecked && position) || isChecked
-                          ? "bg-black"
-                          : position
-                          ? "bg-[#760135]"
-                          : "bg-white"
-                      }`}
-                    ></span>
-                  </label>
-                </div>
-                <h3
-                  style={{ fontFamily: "Zilla Slab" }}
-                  className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                    (isChecked && position) || isChecked
-                      ? "text-black"
-                      : position
-                      ? "text-[#760135]"
-                      : "text-white"
-                  }`}
-                >
-                  {!isChecked ? "Menu" : "Close"}
-                </h3>
-              </button>
-              {/* apply now button */}
-              <button
-                className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
-                onClick={() => (window.location.href = "/admissions2024/")}
-              >
-                <div
-                  className={`p-[15px] mdNavbar:p-[20px] border-2 ${
-                    (isChecked && position) || isChecked
-                      ? "border-black"
-                      : position
-                      ? "border-[#760135]"
-                      : "border-white"
-                  } rounded-[50%] aspect-square border-r-transparent`}
-                >
-                  <FaPen
-                    className={`w-[30px] h-[30px] ${
-                      (isChecked && position) || isChecked
-                        ? "text-black"
-                        : position
-                        ? "text-[#760135]"
-                        : "text-white"
-                    }`}
-                  />
-                </div>
-                <h3
-                  style={{ fontFamily: "Zilla Slab" }}
-                  className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                    (isChecked && position) || isChecked
-                      ? "text-black"
-                      : position
-                      ? "text-[#760135]"
-                      : "text-white"
-                  }`}
-                >
-                  Apply Now
-                </h3>
-              </button>
-            </div>
-          )}
 
-          {/* minimal buttons after scrolling */}
-          {scrolled && (
-            <div className="flex mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
-              {/* menu button */}
-              <button
-                className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-                onClick={handleButtonClick}
-              >
-                {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
-                <div
-                  className={`p-[15px] mdNavbar:p-[20px] rounded-[50%] aspect-square border-r-transparent`}
-                >
-                  <label
-                    className={
-                      isChecked
-                        ? "checked flex flex-col w-[30px] cursor-pointer"
-                        : "unCheck flex flex-col w-[30px] cursor-pointer"
-                    }
-                  >
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
-                    ></span>
-                  </label>
-                </div>
-              </button>
-              {/* apply now button */}
-              <button
-                className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-                onClick={() => (window.location.href = "/admissions2024/")}
-              >
-                <PiPencilSimpleLineLight />
-              </button>
+      {/* main navbar */}
+      <div className="w-full pt-2 mdNavbar:pt-4 h-fit">
+        <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
+          <a href="tel:+91-9837983721" className="footer-call-number">
+            <Image
+              src={phoneCallGif}
+              alt=""
+              className="footer-call-number-gif"
+            />
+            <div className="footer-call-number-text">
+              Admission Helpline No. +91-9837983721
             </div>
-          )}
+          </a>
 
           {!scrolled && (
             <Link href="/" className="z-[3333] mdNavbar:hidden animate-fadeIn">
@@ -328,6 +331,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
             </Link>
           )}
         </div>
+
         <div
           onClick={handleOutsideClick}
           className={`${
@@ -336,6 +340,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
               : ""
           } transition-all duration-100 ease-linear`}
         ></div>
+
         <NavbarMobile isChecked={isChecked} />
         <NavbarDesktop
           setExpandedIndex={setExpandedIndex}

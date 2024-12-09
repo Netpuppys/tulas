@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import BannerImg from "../../../public/bsc-agriculture/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/bsc-agriculture/background.png";
 import Image from "next/image";
@@ -22,6 +22,7 @@ import {
   selectedCard1,
   semesterData,
 } from "./data/data";
+import Banner from "@/component/Banner";
 function BBA() {
   const parentRef = useRef(null);
 
@@ -39,9 +40,9 @@ function BBA() {
       <body>
         <div ref={parentRef}>
           <div className="w-full h-fit bg-white">
-            <Navbar position={true} />
+            <Navbar />
           </div>
-          <BannerProgram
+          <Banner
             image={BannerImg}
             title=<>
               BB<span className="text-[#760135]">A</span>
@@ -59,7 +60,7 @@ function BBA() {
             color={true}
             background={background}
           />
-          <Vision sections={sections} />
+          <Vision color={true} sections={sections} />
           <TableProgram
             cards={cards}
             selectedCard1={selectedCard1}
@@ -73,14 +74,14 @@ function BBA() {
             color={true}
             background={background}
           />
-          <div className="w-full relative overflow-hidden">
+          {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
-          </div>
-          <Footer color={true} />
+          </div> */}
+          <Footer />
         </div>
       </body>
     </>

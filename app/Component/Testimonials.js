@@ -24,7 +24,7 @@ const testimonials = [
 const Testimonials = () => {
   const { isMobile } = useMobile();
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const [isBuffering, setIsBuffering] = useState(false);
 

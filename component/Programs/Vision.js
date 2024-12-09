@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
-function Vision({ sections }) {
+function Vision({ sections, color = false }) {
   return (
     <div>
       <div className="py-8 md:py-20 bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
@@ -23,11 +23,21 @@ function Vision({ sections }) {
             >
               <div className="w-full md:px-0 md:w-[45%]">
                 <div className="w-full block">
-                  <h3 className="px-4 md:px-10 text-white font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 border-white">
+                  <h3
+                    className={`px-4 md:px-10 ${
+                      color
+                        ? "text-black border-black"
+                        : "text-white border-white"
+                    } font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 `}
+                  >
                     {section.title}
                   </h3>
                   <br />
-                  <h5 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify font-[TTChocolates] text-white">
+                  <h5
+                    className={`text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify font-[TTChocolates] ${
+                      color ? "text-black" : "text-white"
+                    }`}
+                  >
                     {section.description}
                   </h5>
                 </div>

@@ -190,12 +190,12 @@ function WhyTulasScroll({ parentRef }) {
         <div
           className={`${
             changePosition() ? "fixed" : "absolute"
-          } w-full z-40 top-0 h-full flex pt-[30vh] justify-center pointer-events-none`}
+          } w-full z-40 top-0 h-screen flex justify-center items-center pointer-events-none`}
         >
           <Image
             src={ScrollTulas}
             alt=""
-            className="z-10 w-fit h-[40vh] rotatingImage"
+            className="z-10 w-fit h-[350px] rotatingImage"
           />
         </div>
 

@@ -8,15 +8,15 @@ function HOD({ hod, HODcontent }) {
         {hod.map((faculty, index) => (
           <div
             key={index}
-            className="flex w-fit bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl overflow-hidden items-start"
+            className="flex w-fit bg-black bg-opacity-20 backdrop-blur-lg rounded-3xl overflow-hidden items-start"
           >
             <Image
               src={faculty.imageUrl}
               alt=""
               className="rounded-2xl w-[40%] md:w-[225px] h-full object-cover"
             />
-            <div className="px-4 text-white py-4 md:px-8 flex flex-col gap-2 md:gap-4">
-              <h3 className="text-[#EAFEFF] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">
+            <div className="px-4 text-black py-4 md:px-8 flex flex-col gap-2 md:gap-4">
+              <h3 className="text-[#760135] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">
                 {faculty.name}
               </h3>
               {faculty.email && (
@@ -41,7 +41,7 @@ function HOD({ hod, HODcontent }) {
         ))}
       </div>
       <div className="z-[9] bg-transparent h-fit relative pl-4">
-        <h5 className="w-full text-white text-justify px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
+        <h5 className="w-full text-black text-justify px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
           {HODcontent}
         </h5>
       </div>

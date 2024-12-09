@@ -8,7 +8,7 @@ const SemesterTable = ({ semesterData }) => {
           key={index}
           className="flex flex-col items-center justify-center gap-4 md:gap-6"
         >
-          <h2 className="px-20 py-1 text-[#3D0018] font-[TTChocolatesBold] bg-white text-center rounded-full text-[18px] md:text-[25px]">
+          <h2 className="px-20 py-1 text-white font-[TTChocolatesBold] bg-[#3D0018] text-center rounded-full text-[18px] md:text-[25px]">
             {semester.semester}
           </h2>
           <table className="w-full mb-4 md:mb-20">
@@ -21,8 +21,15 @@ const SemesterTable = ({ semesterData }) => {
             <tbody>
               {semester.subjects.map((subject, idx) => (
                 <tr key={idx} className="tracking-[0.1rem] font-[700]">
-                  <td colSpan={subject.title ? "1" : "2"}>{subject.code}</td>
-                  {subject.title && <td>{subject.title}</td>}
+                  <td
+                    className="text-black border-black"
+                    colSpan={subject.title ? "1" : "2"}
+                  >
+                    {subject.code}
+                  </td>
+                  {subject.title && (
+                    <td className="text-black border-black">{subject.title}</td>
+                  )}
                 </tr>
               ))}
             </tbody>

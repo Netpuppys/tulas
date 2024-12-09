@@ -56,7 +56,7 @@ const CarouselProgram = ({ heading, items, background, color }) => {
       setActiveIndex(0); // Handle edge case for the first item
     }
   };
-  
+
   const handleItemClick = (index) => {
     setDisabled(true);
     setActiveIndex(index);
@@ -142,12 +142,12 @@ const CarouselProgram = ({ heading, items, background, color }) => {
         />
       )}
 
-      {heading &&
-      <div className="flex w-full justify-between items-center px-0 md:px-[5%]">
-        <h8 className="text-[80px] w-full text-center md:text-start md:text-[200px] leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_20px_0px_0_black]">
-          {heading}
-        </h8>
-        {/* <button className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]">
+      {heading && (
+        <div className="flex w-full justify-between items-center px-0 md:px-[5%]">
+          <h8 className="text-[80px] w-full text-center md:text-start md:text-[12vw] leading-none font-[Arapey] text-black [text-shadow:_5px_0px_0_#760135] md:[text-shadow:_1vw_0px_0_#760135]">
+            {heading}
+          </h8>
+          {/* <button className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]">
           <h3 className="font-inter text-left text-[18px] md:text-[25px] -mr-4 font-light transition-color">
             See More
           </h3>
@@ -155,7 +155,8 @@ const CarouselProgram = ({ heading, items, background, color }) => {
             <PiArrowRight />
           </div>
         </button> */}
-      </div>}
+        </div>
+      )}
       <div className="flex flex-col md:flex-row justify-between items-center pl-4 md:pl-10 py-10 w-full overflow-hidden h-full">
         {/* Left side text and scroll */}
         <div className="px-4 w-80">
@@ -166,12 +167,12 @@ const CarouselProgram = ({ heading, items, background, color }) => {
                 onClick={() => handleItemClick(index)}
                 className={`cursor-pointer font-[TTChocolates] text-xl md:text-2xl flex gap-2 items-center ${
                   activeIndex === index
-                    ? "text-white font-[TTChocolatesBold] font-semibold"
-                    : "text-[#DCDCDC]"
+                    ? "text-black font-[TTChocolatesBold] font-semibold"
+                    : "text-black"
                 }`}
               >
                 {activeIndex === index && (
-                  <p className="w-4 bg-white h-[1px]"></p>
+                  <p className="w-4 bg-black h-[1px]"></p>
                 )}
                 {item?.title}
               </li>
@@ -222,7 +223,7 @@ const CarouselProgram = ({ heading, items, background, color }) => {
             <button
               disabled={disabled}
               onClick={handlePrev}
-              className={`py-2 bg-white px-2 text-black disabled:opacity-50 disabled:cursor-not-allowed rounded-full ${
+              className={`py-2 bg-[#3d001b] px-2 text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full ${
                 activeIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
@@ -231,7 +232,7 @@ const CarouselProgram = ({ heading, items, background, color }) => {
             <button
               disabled={disabled}
               onClick={handleNext}
-              className={`py-2 bg-white px-2 text-black disabled:opacity-50 disabled:cursor-not-allowed rounded-full ${
+              className={`py-2 bg-[#3d001b] px-2 text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full ${
                 activeIndex === items.length - 1
                   ? "opacity-50 cursor-not-allowed"
                   : ""

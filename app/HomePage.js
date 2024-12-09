@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "@/component/Navbar/Navbar";
 import AboutTulas from "./Component/AboutTulas";
 import Video from "./Component/Video";
@@ -35,12 +35,27 @@ const bannerText = (
 
 export default function HomePage() {
   const parentRef = useRef(null);
+
   const [isChecked, setIsChecked] = useState(false);
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLoader(false);
+    }, 1000);
+  }, []);
 
   return (
     <>
-      {/* <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tulas/ee-form-widget/form-14/widget.js" /> */}
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
+        {/* {showLoader && (
+          <div className="w-screen min-h-screen h-screen fixed top-0 left-0 flex items-center justify-center z-[9999] bg-white">
+            <p className="text-[10rem] font-bold text-[#760135]">
+              Tula's
+            </p>
+          </div>
+        )} */}
+
         <Navbar setState={setIsChecked} />
         <BannerHome isChecked={isChecked} />
         <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-full md:max-w-[70%] px-8 mx-auto">

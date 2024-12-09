@@ -19,14 +19,14 @@ function TableProgram({
   return (
     <>
       <div className="pb-8 md:pb-20 px-4 w-full max-w-[1200px] mx-auto relative z-[20]">
-        <div className="md:rounded-full md:bg-white py-1 px-1 overflow-hidden flex flex-col md:flex-row gap-2 md:gap-0 items-center">
+        <div className="md:rounded-full md:bg-[#3D001B] py-1 px-1 overflow-hidden flex flex-col md:flex-row gap-2 md:gap-0 items-center">
           {cards.map((card, index) => (
             <div
               key={card.id}
               className={`w-full py-1 rounded-full px-1 flex  items-center justify-center cursor-pointer ${
                 selectedCard === index
-                  ? "text-white bg-[#3D001B]"
-                  : "text-[#3D001B] bg-white"
+                  ? "text-[#3D001B] bg-white"
+                  : "text-white bg-[#3D001B]"
               }`}
               onClick={() => setSelectedCard(index)}
             >
@@ -66,7 +66,7 @@ function TableProgram({
             <HOD hod={hod} HODcontent={HODcontent} />
           )}
           {selectedCard === 4 && specialization && (
-            <div className="bg-white rounded-3xl text-justify text-[#3D0018] px-4 md:px-8 py-4 md:py-8 text-[14px] md:text-[20px]">
+            <div className="bg-[#3D0018] rounded-3xl text-justify text-white px-4 md:px-8 py-4 md:py-8 text-[14px] md:text-[20px]">
               {specialization}
             </div>
           )}

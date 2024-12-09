@@ -9,7 +9,7 @@ function FacultyData({ facultyData }) {
       {facultyData.map((faculty, index) => (
         <div
           key={index}
-          className={`flex w-full  md:w-[48%] bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl overflow-hidden items-start ${
+          className={`flex w-full  md:w-[48%] bg-black bg-opacity-20 backdrop-blur-lg rounded-3xl overflow-hidden items-start ${
             faculty.linkTo ? "cursor-pointer" : ""
           }`}
         >
@@ -27,7 +27,7 @@ function FacultyData({ facultyData }) {
             {faculty.resume && (
               <button
                 onClick={() => (window.location.href = faculty.resume)}
-                className="absolute cursor-pointer w-full pointer-events-auto flex gap-3 justify-center items-center bg-white py-1 text-[20px] text-[#760135] font-[TTChocolatesBold] font-[600]"
+                className="absolute cursor-pointer w-full pointer-events-auto flex gap-3 justify-center items-center bg-[#760135] py-1 text-[20px] text-white font-[TTChocolatesBold] font-[600]"
               >
                 Resume
                 <FaRegFilePdf />
@@ -40,9 +40,9 @@ function FacultyData({ facultyData }) {
                 window.location.href = `${faculty.linkTo}`;
               }
             }}
-            className="px-4 text-white py-4 md:px-8 flex flex-col gap-2 md:gap-4"
+            className="px-4 text-black py-4 md:px-8 flex flex-col gap-2 md:gap-4"
           >
-            <h3 className="text-[#FFE0EE] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">
+            <h3 className="text-[#760135] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">
               {faculty.name}
             </h3>
             {faculty.education && (
