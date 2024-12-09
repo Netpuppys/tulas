@@ -51,26 +51,26 @@ export const content = (
     <br />
     <br />
     <ul className="ml-5 list-disc">
-      <li>Comprehend and Apply Principles from Various Fields of Trade</li>
-      <li>Discuss and Implement Commerce Concepts and Procedures</li>
+      <li>Comprehend and apply principles from various fields of trade</li>
+      <li>Discuss and implement commerce concepts and procedures</li>
       <li>
-        Utilize Professional Literature to Enhance Research, Communication, and
-        Presentation Skills
+        Utilize professional literature to enhance research, communication, and
+        presentation skills
       </li>
       <li>
-        Demonstrate a Combination of Knowledge and Professional Skills in
-        Specialized Areas
+        Demonstrate a combination of knowledge and professional skills in
+        specialized areas
       </li>
-      <li>Promote Ethical and Sustainable Business Practices</li>
-      <li>Foster Global Business Awareness</li>
-      <li>Develop Entrepreneurial and Managerial Competencies</li>
-      <li>Develop Core Competence in Commerce</li>
+      <li>Promote ethical and sustainable business practices</li>
+      <li>Foster global business awareness</li>
+      <li>Develop entrepreneurial and managerial competencies</li>
+      <li>Develop core competence in commerce</li>
     </ul>
   </>
 );
 export const items = [
   {
-    title: "USP's",
+    title: "USPs",
     description: [
       "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
       "MoU’s with several companies to assist students in their needs of training, placement and internships.",
@@ -393,7 +393,7 @@ export const itemsClubs = [
     image: USP,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "A Versatile degree.",
       "Personal Development.",

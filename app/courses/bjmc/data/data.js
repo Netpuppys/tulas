@@ -59,7 +59,7 @@ export const content = (
     comprehensive role in society.
     <br />
     <br />
-    The Department enhances the learning experience by organizing outdoor
+    The department enhances the learning experience by organizing outdoor
     photography excursions, educational trips, film screenings followed by
     discussions, spontaneous extemporaneous speaking events, and interactive
     sessions with industry professionals. These activities enrich students'
@@ -75,7 +75,7 @@ export const content = (
 );
 export const items = [
   {
-    title: "USP's",
+    title: "USPs",
     description: [
       "Qualified Faculty members from all verticals of Media, Journalism & Mass communication",
       "State of the art Electronic Media Production Centre (EMPC)",
@@ -160,7 +160,7 @@ export const sections = [
   {
     title: "Departmental Vision",
     description:
-      "To emerge as a leading hub for teaching, research, creative endeavor and pioneering approaches to promote ethical and socially responsible communication practices in Media and Journalism.",
+      "To emerge as a leading hub for teaching, research, creative endeavor and pioneering approaches to promote ethical and socially responsible communication practices in media and journalism.",
     image: DepartmentalVission,
   },
   {
@@ -423,7 +423,7 @@ export const itemsClubs = [
     image: USP,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "In 21st Century, the media landscape is evolving at an unprecedented pace, and a BAJMC degree equips students with a distinct advantage in this dynamic environment. Graduates emerge with a profound understanding of societal trends, market dynamics, and governance, enriched by historical context and cultural diversity. Coupled with advanced communication skills, they are prepared to navigate the complexities of modern media.",
     ],

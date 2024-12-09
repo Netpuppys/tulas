@@ -27,7 +27,7 @@ export const content = (
     students about computer applications and systems in order to prepare them
     for a career in the IT industry. In this program, students learn about
     programming languages, digital and analogue electronic equipment,
-    networking, Design and development of computer software and hardware and
+    networking, design and development of computer software and hardware and
     various forms of communication engineering. Students who have analytical and
     logical reasoning skills, as well as an interest in software development,
     testing, and programming, should consider a career in this field.
@@ -46,11 +46,11 @@ export const content = (
     <br />
     The program emphasis on practical and hands-on training that strengthens the
     theoretical foundations of computer science engineering students. It is the
-    job of a computer engineer/ software engineer to design and develop software
+    job of a computer engineer or software engineer to design and develop software
     to meet the needs of a business or individual. Today’s cutting-edge
     technologies can be traced back to CSE. These include Artificial
-    Intelligence/Machine Learning/Big Data/Internet of Things/Quantum
-    Computing/Block-Chain/Industry 4.0/AR & VR/Android-IOS development etc.
+    Intelligence, Machine Learning, Big Data, Internet of Things, Quantum
+    Computing, Block-Chain, Industry 4.0, AR & VR, Android-IOS development etc.
     <br />
     <br />
     Students at Tula’s, one of most prestigious engineering institute of the
@@ -62,7 +62,7 @@ export const content = (
 );
 export const items = [
   {
-    title: "USP's",
+    title: "USPs",
     description: [
       "Practice based Curriculum to fit into the industry requirements.",
       "Mentoring & Content Delivery by Experienced & qualified Faculty Members and Industry Experts by holding Guest Lectures/ Expert Talks).",
@@ -519,7 +519,7 @@ export const itemsClubs = [
     ],
   },
   {
-    title: "News Letter / Magazine",
+    title: "Newsletter / Magazine",
     description: [
       <Link href={CseDrishti}>डिजिटल DRISHTI | JAN-MAR(2024)</Link>,
       <Link href={CseDrishtiOctDec}>डिजिटल DRISHTI | OCT-DEC (2023)</Link>,
@@ -534,7 +534,7 @@ export const itemsClubs = [
     image: Course,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "Maximum number of students of Computer Science and Engineering are hired by prominent companies through campus placements.",
       "Attractive salary packages are available for B. Tech. Computer Science graduates.",

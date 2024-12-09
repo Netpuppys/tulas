@@ -90,7 +90,7 @@ export const content = (
 );
 export const items = [
   {
-    title: "USP's",
+    title: "USPs",
     description: [
       "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
       "Wide practical field exposure with individual allotment of working areas to various modules of Agriculture viz Hydroponics, Aeroponics, Mushroom Cultivation, Apiculture, Crop Cafeteria and many more designed in house by the students.",

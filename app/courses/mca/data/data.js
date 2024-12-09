@@ -18,7 +18,7 @@ import ShikaTayalResume from "../../../../public/courses/mca/facultyData/ShikaTa
 import Musheer from "../../../../public/courses/mca/facultyData/Musheer.webp";
 import MusheerResume from "../../../../public/courses/mca/facultyData/MusheerResume.pdf";
 import SanjeevKumnar from "../../../../public/courses/mca/facultyData/SanjeevKumnar.webp";
-import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf"
+import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf";
 import Link from "next/link";
 
 export const images = [
@@ -27,9 +27,9 @@ export const images = [
 ];
 export const content = (
   <>
-    <center className="italic font-black">
+    {/* <center className="italic font-black">
       Elevate Your Career in Technology
-    </center>
+    </center> */}
     <br />
     The Master of Computer Applications (MCA) is a postgraduate pathway to
     advanced, specialized tech roles for aspiring tech leaders, offering
@@ -47,16 +47,14 @@ export const content = (
     to the education sector.
     <br />
     <br />
-    <italic className="italic font-black">
-      "With an MCA, you’re not just keeping up with technology—you’re leading
-      it. Step into a future filled with opportunities, and make your mark in
-      the ever-expanding digital world.""
-    </italic>
+    With an MCA, you’re not just keeping up with technology—you’re leading it.
+    Step into a future filled with opportunities, and make your mark in the
+    ever-expanding digital world.
   </>
 );
 export const items = [
   {
-    title: "USP - Your Pathway to Excellence in Technology",
+    title: "USPs",
     description: [
       "Here’s why Tula’s Institute stands out as the ideal place to pursue your Master of Computer Applications:",
       <ul className="list-disc ml-5">
@@ -187,7 +185,7 @@ export const sections = [
             highest global standards.
           </li>
           <li>
-            To Collaborate with software industry and adopting technology for
+            To collaborate with software industry and adopting technology for
             achieving quality of technical education.
           </li>
           <li>

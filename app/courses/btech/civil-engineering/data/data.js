@@ -36,8 +36,8 @@ export const images = [
 
 export const content = (
   <>
-    <p className="text-center italic">"We are the nation builders!"</p>
-    <br />
+    {/* <p className="text-center italic">"We are the nation builders!"</p>
+    <br /> */}
     The Civil Engineering Department of Tula’s Institute came into existence in
     the year 2011. The department offers Diploma, Undergraduate, and
     Postgraduate programs in civil engineering. The Department of civil
@@ -53,7 +53,7 @@ export const content = (
 
 export const items = [
   {
-    title: "USP's",
+    title: "USPs",
     description: [
       "The programs emphasize on industry and research based projects, which would enhance skills to become successful professionals.",
       "A team of qualified faculty members with ample teaching and industry experience is the highlight of the department of civil engineering.",
@@ -507,7 +507,7 @@ export const HODcontent =
   "I would like to welcome you at Tula’s Civil Engineering Department where students are encouraged to engage in extra-curricular and co-curricular activities which are essential for their personality development as well as development of organizational skills. Our faculty members are dedicated, highly qualified with vast industry experience in diverse fields of civil engineering. Our main objective is to nurture our students to make them industry-ready in the field of construction & designing so as to serve the nation.";
 export const itemsClubs = [
   {
-    title: "Work carried out by Civil Engineer",
+    title: "Work Carried Out by Civil Engineer",
     description: [
       "There is an opportunity for Civil Engineers to get a job in government, public & private sectors. Some job titles are listed here:",
       "Civil Engineer",
@@ -530,7 +530,7 @@ export const itemsClubs = [
     image: Course,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "The infrastructure sector has become the biggest focus area for the Government of India.",
       "The Govt. is providing special allocations in budget to complement infrastructure growth and housing for all schemes which in turn generates employment for the civil engineers. Also, India and Japan have joined hands for infrastructure development in India’s Northeast states to undertake strategic infrastructure projects for the region.",

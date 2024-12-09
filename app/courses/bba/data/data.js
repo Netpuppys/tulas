@@ -68,7 +68,7 @@ export const content = (
     symposiums, etc.
     <br />
     <br />
-    The BBA curriculum is designed by Academia and Industry experts in such a
+    The BBA curriculum is designed by academia and industry experts in such a
     way that the students get ample industry exposure and training. It helps
     students to prepare for real-world experiences and reach smart business
     conclusions through empirical analysis, such as planning how an organization
@@ -89,15 +89,15 @@ export const content = (
       </li>
       <li>Demonstrate a combination of knowledge and professional skills.</li>
       <li>
-        Enhance critical thinking and Problem-solving skill and also foster
-        leadership and Teamwork
+        Enhance critical thinking and problem-solving skill and also foster
+        leadership and teamwork
       </li>
     </ul>
   </>
 );
 export const items = [
   {
-    title: "USP's",
+    title: "USPs",
     description: [
       "Fully equipped modern amphitheatre kind classrooms for better reach and visibility.",
       "200+ alumni network in various startups, Entrepreneurship, governmental and blue-chip companies.",
@@ -442,7 +442,7 @@ export const itemsClubs = [
     image: USP,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "A Versatile degree",
       "Personal Development",

@@ -80,6 +80,9 @@ export const content = (
         specialization, one can learn the basics to advanced aspects of Training
         and development, recruiting, Compensation, leadership, etc., and can
         gain access to entry-level to advanced positions in an organization.
+      </li>
+      <br />
+      <li>
         Finance: With Finance as a specialization, the students learn the basics
         to advanced aspects of corporate finance, financial management,
         financial accounting, and analysis, etc., and get easy access to the
@@ -91,11 +94,15 @@ export const content = (
         Export and Import Management, International Marketing, Foreign Exchange
         Management, International Finance International Logistics, etc., and can
         give the entry-level position in jobs and business opportunities beyond
-        the borders of the nation. Entrepreneurship and Venture development: The
-        management specialization on Entrepreneurship & Venture development
-        provides a diverse set of options for students to hone their
-        entrepreneurial skills and access immense possibilities of setting up
-        their own business based upon their requirements and market situation.
+        the borders of the nation.
+      </li>
+      <br />
+      <li>
+        Entrepreneurship and Venture development: The management specialization
+        on Entrepreneurship & Venture development provides a diverse set of
+        options for students to hone their entrepreneurial skills and access
+        immense possibilities of setting up their own business based upon their
+        requirements and market situation.
       </li>
       <br />
       <li>
@@ -117,14 +124,14 @@ export const content = (
         serves as a corporate asset, giving them a competitive edge. Business
         analytics also allows companies to optimize and even automate business
         processes. Business analytics gives a company important competitive
-        advantages, such as Faster answers to business questions Answers based
-        on information instead of guesswork Insights into customer behaviour
-        Discovering opportunities for cross-selling and up-selling On-demand
+        advantages, such as faster answers to business questions, answers based
+        on information instead of guesswork, insights into customer behaviour,
+        discovering opportunities for cross-selling and up-selling on-demand
         business metrics reports.
       </li>
       <br />
       <li>
-        Health Care and Hospital Management,:- hospital administration and
+        Health Care and Hospital Management: Hospital administration and
         healthcare services are committed to providing top-notch patient care
         via effective operations, cutting-edge technology, and caring
         assistance. From staff hiring and regulatory compliance to patient
@@ -138,21 +145,7 @@ export const content = (
       </li>
       <br />
       <li>
-        Health Care and Hospital Management,:- hospital administration and
-        healthcare services are committed to providing top-notch patient care
-        via effective operations, cutting-edge technology, and caring
-        assistance. From staff hiring and regulatory compliance to patient
-        admissions and quality control, we concentrate on streamlining every
-        facet of healthcare facilities. Our method guarantees that patients
-        receive safe, efficient, and individualised care since we are dedicated
-        to innovation and on-going development. Our goal is to develop a
-        healthcare environment that satisfies the requirements of patients today
-        while planning for the future by combining clinical competence with
-        strategic planning and technology.
-      </li>
-      <br />
-      <li>
-        FinTech,- The way we handle, invest, and deal with money is being
+        FinTech: The way we handle, invest, and deal with money is being
         completely transformed by fintech, or financial technology. Fintech
         solutions enable banking, payments, lending, and investing faster,
         safer, and easier than ever before by fusing technology and financial
@@ -169,8 +162,8 @@ export const content = (
       </li>
       <br />
       <li>
-        Supply Chain Management: - Supply chains that are robust and efficient
-        are essential for business success in the fast-paced world of today.
+        Supply Chain Management: Supply chains that are robust and efficient are
+        essential for business success in the fast-paced world of today.
         Optimizing each stage of the supply chain, from locating raw materials
         to shipping completed goods to clients, is the goal of supply chain
         management, or SCM. Our supply chain management (SCM) solutions combine
@@ -187,7 +180,7 @@ export const content = (
       </li>
       <br />
       <li>
-        Rural Development:- Enhancing rural communities' social infrastructure,
+        Rural Development: Enhancing rural communities' social infrastructure,
         economic health, and quality of life are the main goals of rural
         development. Rural development seeks to generate opportunities and
         enable communities to prosper through focused efforts in infrastructure,
@@ -201,23 +194,24 @@ export const content = (
         streams by encouraging entrepreneurship and skill development. Our rural
         development programs, which are dedicated to sustainable growth,
         prioritize resilience-building to assist communities in adapting to
-        climate change, renewable energy, and environmental conservation. With
-        the appropriate tools and collaborations
+        climate change, renewable energy, and environmental conservation. 
+        {/* With
+        the appropriate tools and collaborations */}
       </li>
-      <br />
+      {/* <br />
       <ul className="list-disc ml-5">
         <li>Faster answers to business questions</li>
         <li>Answers based on information instead of guesswork</li>
         <li>Insights into customer behaviour</li>
         <li>Discovering opportunities for cross-selling and up-selling</li>
         <li>On-demand business metrics reports</li>
-      </ul>
+      </ul> */}
     </ul>
   </>
 );
 export const items = [
   {
-    title: "USP's",
+    title: "USPs",
     description: [
       "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
       "200+ alumni network in various startups, Entrepreneurships, governmental and blue-chip companies.",
@@ -526,7 +520,7 @@ export const itemsClubs = [
     image: USP,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "A Versatile degree",
       "An MBA can help with career advancement",

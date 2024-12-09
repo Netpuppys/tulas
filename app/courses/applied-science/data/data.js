@@ -81,7 +81,7 @@ export const content = (
 );
 export const items = [
   {
-    title: "STRENGTHS AND USP’S OF THE DEPARTMENT",
+    title: "USPs",
     description: [
       "The department is dedicated to educational and soft-skills excellence.",
       "The department strives to make new student accustomed to the new college environment and make them comfortable at new home away from home.",

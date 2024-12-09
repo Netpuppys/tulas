@@ -53,7 +53,7 @@ function BAJMC() {
             </>
             titleColor={""}
             description={
-              "Bachelor of Technology in Computer Science & Engineering (B.Tech. CSE) is one of the most sought-after engineering degrees. The program teaches students about computer applications and systems in order to prepare them for a career in the IT industry."
+              "Computer Science & Engineering (Cyber Security) empowers you to secure the digital frontier. In this program, you’ll gain expertise in protecting systems, networks, and data from cyber threats while developing practical skills through hands-on experience."
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />

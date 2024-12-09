@@ -71,7 +71,7 @@ export const sections = [
 ];
 export const items = [
   {
-    title: "USP's",
+    title: "USPs",
     description: [
       "The programs emphasize on industry and research based projects, which would enhance skills to become successful professionals.",
       "A team of qualified faculty members with ample teaching and industry experience is the highlight of the department of civil engineering.",

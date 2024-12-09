@@ -34,9 +34,9 @@ export const images = [
 ];
 export const content = (
   <>
-    <center className="italic font-black">
+    {/* <center className="italic font-black">
       Your Gateway to the Digital World
-    </center>
+    </center> */}
     <br />
     BCA is a three-year bachelor’s degree program in computer applications. The
     need for computer professionals is constantly rising globally due to the
@@ -200,7 +200,7 @@ export const sections = [
             highest global standards.
           </li>
           <li>
-            To Collaborate with software industry and adopting technology for
+            To collaborate with software industry and adopting technology for
             achieving quality of technical education.
           </li>
           <li>

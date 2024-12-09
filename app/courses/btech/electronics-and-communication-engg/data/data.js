@@ -72,7 +72,7 @@ export const content = (
 );
 export const items = [
   {
-    title: "USP of the of Electronics and Communication Engineering",
+    title: "USPs",
     description: [
       "Industry-led & Practice Based Curriculum.",
       "Content Delivery & Mentoring by Professionally Trained Faculty & Industry Experts (Guest Lectures/ Expert Talks)",
@@ -90,7 +90,7 @@ export const items = [
     ],
   },
   {
-    title: "COURSE OUTCOMES",
+    title: "Course Outcomes",
     description: [<Link href={EceDocument}>B.Tech ECE</Link>],
     image: Course,
   },
@@ -598,7 +598,7 @@ export const itemsClubs = [
     image: USP,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "Recently the union cabinet of Indian government sanctioned the INR 76,000 Crores incentive scheme for semiconductors. Under this scheme, India will set up more than 20 semiconductor design, components manufacturing and display fabrication units. The scheme has been named the “Programme for Development of Semiconductors and Display Manufacturing Ecosystem.”",
       "The plan envisages training 85,000 semiconductor engineers to make it a complete C to S (chips to start-ups) ecosystem (including design, fabrication, testing and packaging). Govt clears 3 semiconductor projects worth Rs 1.3 Lakh cr by ",

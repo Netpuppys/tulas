@@ -43,14 +43,14 @@ export const content = (
     energy efficient (Green and Clean energy). It will strive to become a hub of
     research excellence in cutting edge, state of the art, and contemporary
     areas of national and international relevance. The department also envisions
-    itself as a Centre of excellence in teaching to create a well-educated,
+    itself as a centre of excellence in teaching to create a well-educated,
     technically competent, and socially responsible workforce for meaningful,
     inclusive, and overall societal development of India and the world.
   </>
 );
 export const items = [
   {
-    title: "USP of the Electrical and Electronics Engineering",
+    title: "USPs",
     description: [
       "Industry-led and Practice Based Curriculum.",
       "Content Delivery and Mentoring by Professionally Trained Faculty and Industry Experts (Guest Lectures/ Expert Talks)",
@@ -66,7 +66,7 @@ export const items = [
     ],
   },
   {
-    title: "COURSE OUTCOMES",
+    title: "Course Outcomes",
     description: [<Link href={EEEpdf}>B.Tech EEE</Link>],
     image: Program,
   },
@@ -91,7 +91,7 @@ export const items = [
     ],
   },
   {
-    title: "PROGRAM SPECIFIC OUTCOMES",
+    title: "Program Specific Outcomes",
     description: [
       "To identify, develop, construct, and explore complex engineering issues involving electric circuits, control systems, electrical machines, and power systems, apply the fundamentals of science, mathematics, and engineering.",
       "To analyze and identify novel solutions to real-world problems involving power grids, renewable energy systems, industrial automation, electromechanical devices.",
@@ -102,7 +102,7 @@ export const items = [
     ],
   },
   {
-    title: "Programme Educational Objectives",
+    title: "Program Educational Objectives",
     description: [
       "To prepare students to learn and apply cutting-edge technologies in the field of Electrical and Electronic engineering.",
       "To encourage graduates to pursue higher education to address the diverse needs of the Electrical and Electronics industries, academia, and research.",
@@ -120,7 +120,7 @@ export const sections = [
   {
     title: "Departmental Vision",
     description:
-      "To be recognized as a center of excellence in producing competent power, network, testing, production, quality control Engineers capable of fostering innovation for societal advancement.",
+      "To be recognized as a center of excellence in producing competent power, network, testing, production, quality control engineers capable of fostering innovation for societal advancement.",
     image: DepartmentalVission,
   },
   {
@@ -504,7 +504,7 @@ export const itemsClubs = [
     image: USP,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "The Overall employment of electrical and electronics engineers is projected to grow 7 percent from 2020 to 2030, about as fast as the average for all occupations.",
       "With the emergence of Electric vehicles- India’s EV market to grow by 90% to touch $150 billion by 2030.",

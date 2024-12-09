@@ -53,7 +53,7 @@ export const content = (
 );
 export const items = [
   {
-    title: "USP",
+    title: "USPs",
     description: [
       "60+ Add-On Certification and 45+ Short Term Courses (STC) for the holistic development of the students.",
       "Practical-oriented teaching with hands-on experience, i.e. Project Based Learning and frequent Industrial Visits, are the salient features of the teaching-learning process.",
@@ -71,7 +71,7 @@ export const items = [
     ],
   },
   {
-    title: "COURSE OUTCOMES",
+    title: "Course Outcomes",
     description: [<Link href={MEDocument}>B.Tech Mechanical</Link>],
     image: Course,
   },
@@ -134,7 +134,7 @@ export const sections = [
         <ul className="list-disc ml-5">
           <li>
             To provide strong fundamentals and technical skills in Mechanical
-            Engineering through effective teaching-learning Methodologies.
+            Engineering through effective teaching-learning methodologies.
           </li>
           <li>
             To nurture students to excel professionally and personally to serve
@@ -142,7 +142,7 @@ export const sections = [
           </li>
           <li>
             To maintain a collegial, supportive, and diverse environment that
-            encourages Students, faculty, and staff to achieve the best
+            encourages students, faculty, and staff to achieve the best
             innovation & research.
           </li>
           <li>To promote inter-disciplinary research.</li>
@@ -560,7 +560,7 @@ export const itemsClubs = [
     image: USP,
   },
   {
-    title: "Edge over others",
+    title: "Edge Over Others",
     description: [
       "As per Make in India newsletter 2016, there were 280,800 mechanical engineers working in various industries in India and the number is expected to grow by 20% (approximately) by 2026. The contracting services from companies will continue to add to the growth in mechanical engineering services.",
     ],
