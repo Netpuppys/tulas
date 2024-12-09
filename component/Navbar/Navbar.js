@@ -83,12 +83,12 @@ function Navbar({ setState, position = false, fullBanner = false }) {
   };
   return (
     <div
-      className={`px-2 mdNavbar:px-10 w-full max-w-[500px] mdNavbar:max-w-full ${
+      className={`mdNavbar:px-10 w-full max-w-[500px] mdNavbar:w-fit ${
         position ? "relative pb-6" : "fixed"
       } flex flex-col justify-center z-[999]`}
     >
       {/* top bar */}
-      <div className="hidden h-[90px] w-full mdNavbar:flex  pt-6 justify-between items-start z-[9999]">
+      <div className="hidden h-[90px] w-full mdNavbar:flex pt-6 justify-between items-start z-[9999]">
         {!scrolled && (
           <div className="flex mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
             {/* menu button */}
@@ -237,7 +237,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
         )}
 
         {!scrolled && (
-          <div className="flex z-[3333] animate-fadeIn pr-6 items-center justify-center gap-6">
+          <div className="flex fixed right-10 z-[3333] animate-fadeIn items-center justify-center gap-6">
             <Image
               src={NBA}
               alt=""
@@ -266,7 +266,10 @@ function Navbar({ setState, position = false, fullBanner = false }) {
         )}
 
         {scrolled && (
-          <Link href="/" className="z-[3333] animate-translateButton pr-6">
+          <Link
+            href="/"
+            className="z-[3333] fixed right-10 animate-translateButton"
+          >
             <Image
               src={
                 (isChecked && position) || isChecked
@@ -283,8 +286,8 @@ function Navbar({ setState, position = false, fullBanner = false }) {
       </div>
 
       {/* main navbar */}
-      <div className="w-full pt-2 mdNavbar:pt-4 h-fit">
-        <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
+      <div className="w-full mdNavbar:w-fit p-3 h-fit">
+        <div className="flex w-full mdNavbar:w-fit flex-row-reverse items-center mdNavbar:flex-row justify-between">
           <div className="hidden mdNavbar:block">
             <a href="tel:+91-9837983721" className="footer-call-number">
               <Image
@@ -334,7 +337,6 @@ function Navbar({ setState, position = false, fullBanner = false }) {
               <PiPencilSimpleLineLight />
             </button>
           </div>
-
           <Link
             href="/"
             className="z-[3333] mdNavbar:hidden animate-translateButton"
@@ -357,7 +359,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
           onClick={handleOutsideClick}
           className={`${
             isChecked
-              ? "w-full h-screen pointer-events-auto absolute left-0 top-0 bg-opacity-40 bg-black"
+              ? "w-screen h-screen pointer-events-auto absolute left-0 top-0 bg-opacity-40 bg-black"
               : ""
           } transition-all duration-100 ease-linear`}
         ></div>
