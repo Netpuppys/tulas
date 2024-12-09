@@ -12,50 +12,48 @@ function Victree() {
     {
       title: "Table Tennis",
       description:
-        "Test your reflexes and precision in fast-paced table tennis matches.",
+        "Quick reflexes, sharp focus—this game is all about precision.",
     },
-    {
-      title: "Badminton",
-      description:
-        " Enjoy thrilling rallies and sharpen your agility with badminton.",
-    },
+
     {
       title: "Chess",
-      description:
-        "Engage in strategic battles and enhance your cognitive skills with chess.",
+      description: "Outsmart your opponent, one strategic move at a time.",
     },
     {
       title: "Carrom",
-      description:
-        "Showcase your carrom skills and enjoy this classic tabletop game.",
+      description: "A classic game where skill and finesse meet in every shot.",
     },
+
     {
       title: "Squash",
-      description: "Push your limits in the high-energy game of squash.",
+      description: "A fast-paced challenge where every shot counts.",
     },
     {
       title: "Cricket",
-      description:
-        "Join our cricket team and experience the thrill of hitting sixes and taking wickets.",
+      description: "Swing for the fences or bowl a perfect delivery.",
     },
     {
       title: "Football",
       description:
-        "Show off your dribbling and goal-scoring prowess on the football field.",
+        "Sprint, pass, and score—football’s where the real action is.",
     },
     {
       title: "Basketball",
       description:
-        "Dunk, dribble, and shoot your way to victory in our basketball matches.",
+        "Sprint down the court, make the play, and score when it counts.",
     },
     {
       title: "Volleyball",
-      description: "Enjoy the teamwork and excitement of volleyball.",
+      description: "Jump, spike, and work as a team to claim victory.",
+    },
+    {
+      title: "Badminton",
+      description: "Fast rallies and lightning moves to keep you on your toes.",
     },
     {
       title: "Athletics",
       description:
-        "Participate in track and field events to test your speed, endurance, and strength.",
+        "Push your limits in races and field events that test strength and speed.",
     },
   ];
   return (
@@ -77,15 +75,15 @@ function Victree() {
               className="w-full h-full object-cover absolute"
             />
             <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-              <h3 className="text-[40px] md:text-[60px] text-[#007A83] z-10 font-[CarotSlab]">
-                Victree
+              <h3 className="text-[40px] md:text-[60px] text-white z-10 font-[CarotSlab]">
+                Victree <span className="text-[#007A83]">- Sports Club</span>
               </h3>
             </div>
           </div>
         </div>
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
           <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
-            Victree Sports Club at Tula’s Institute
+            Victree Sports Club - Where the Game’s Always On!
           </h3>
           <Image
             src={vibgyorMain}
@@ -93,20 +91,17 @@ function Victree() {
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
           <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
-            <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
-              Victree,{" "}
-            </span>
-            the vibrant sports club of{" "}
-            <span className="font-black text-[#3D001B] font-[TTChocolatesBold]">
-              {" "}
-              Tula’s Institute,{" "}
-            </span>{" "}
-            is where athletic passion meets unparalleled dedication. This
-            dynamic club is at the heart of promoting physical fitness,
-            teamwork, and sportsmanship among students. Whether you're an
-            enthusiastic athlete or just looking to stay active, Victree offers
-            a plethora of indoor and outdoor games to cater to all interests and
-            skill levels.
+            At Tula’s Institute, Victree Sports Club is where energy,
+            competition, and camaraderie collide. With over 10 sports available,
+            students can dive into everything from strategy-driven indoor games
+            to action-packed outdoor matches.
+            <br />
+            <br />
+            Our campus is built for everyone who loves sports. With expansive
+            fields, courts, and activity spaces, it’s the perfect place to
+            engage in your favorite sports. The infrastructure here allows each
+            student to challenge themselves, connect with others, and celebrate
+            the spirit of sports.
           </p>
         </div>
 
@@ -121,18 +116,20 @@ function Victree() {
         <h3 className="text-[30px] pt-8 md:pt-20 md:text-[42px] text-center w-full font-[CarotSlab] text-white">
           Indoor Games
         </h3>
-        <Vision sections={sections.slice(0, 4)} />
+        <Vision sections={sections.slice(0, 3)} />
         <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-white">
           Outdoor Games
         </h3>
-        <Vision sections={sections.slice(4)} />
+        <Vision sections={sections.slice(3)} />
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
           <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
-            Victree Sports Club not only promotes physical well-being but also
-            fosters a sense of community and camaraderie among students. Our
-            club regularly organizes tournaments, practice sessions, and
-            friendly matches to keep the competitive spirit alive and ensure
-            that every student can pursue their athletic interests.
+            At Victree, it's not just about playing—it's about being part of
+            something that brings out the best in you. With every match, every
+            practice, you’ll find new ways to challenge yourself, connect with
+            others, and simply enjoy the game. Here, every moment counts, and
+            every game is a chance to grow, laugh, and make memories. So, step
+            in and be part of the journey—because at Victree, the best is yet to
+            come.
           </p>
         </div>
         <div className="w-full h-fit z-50">

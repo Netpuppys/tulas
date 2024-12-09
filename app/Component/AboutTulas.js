@@ -180,7 +180,6 @@ function AboutTulas() {
         }
       )
       .then(() => {
-        setVerified(true);
         setIsOtpSent(true);
         setMessage("OTP sent successfully!");
         startTimer();

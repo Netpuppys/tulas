@@ -122,13 +122,15 @@ function Vibgyor() {
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
           <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
-            This student council is all about ensuring that every student has an
-            unforgettable college experience. With 11 thrilling clubs, Vibgyor
+            This student council is all about making sure every student has an
+            unforgettable college experience. With 11 exciting clubs, Vibgyor
             brings together creativity, passion, and skill-building in ways that
-            go beyond the classroom. Whether you’re into music, drama, sports,
-            or tech, there’s a club here that’s perfect for you. Vibgyor isn’t
-            just a council; it’s your gateway to discovering new talents and
-            making lifelong memories.
+            extend beyond the classroom. Whether you’re into music, drama,
+            sports, or tech, our campus provides specialized spaces and
+            top-notch facilities, offering the perfect environment to explore
+            your interests. Vibgyor isn’t just a council; it’s your chance to
+            discover new talents, make lasting memories, and thrive in a place
+            designed for creativity and growth.
           </p>
         </div>
 
