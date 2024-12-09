@@ -84,7 +84,7 @@ function Vibgyor() {
       title: "Expresso – For aspiring speakers and anchors.",
       description:
         "Public speaking and anchoring talents are honed in Expresso. This club provides opportunities for students to develop their oratory skills and confidently take the stage as anchors.",
-      image: PublicRelation,
+      image: Expresso,
     },
   ];
   return (
