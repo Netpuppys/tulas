@@ -64,13 +64,13 @@ function Library() {
         />
       </head>
       <body>
+        <Navbar />
         <div className="flex flex-col items-center overflow-hidden">
-          <Navbar />
           <Banner
             image={BannerImg}
             title={
               <>
-               <span className="text-[#007A83]">LIBRARY</span>
+                <span className="text-[#007A83]">LIBRARY</span>
               </>
             }
             description={<></>}

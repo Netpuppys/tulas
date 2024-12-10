@@ -40,7 +40,7 @@ function BAJMC() {
       </head>
       <body>
         <div ref={parentRef}>
-          <div className="w-full h-fit bg-white">
+          <div className="w-full h-fit">
             <Navbar />
           </div>
           <Banner

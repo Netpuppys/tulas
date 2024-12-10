@@ -28,8 +28,8 @@ function RAndDConferenceOrganized() {
         />
       </head>
       <body>
+        <Navbar />
         <div className="flex flex-col items-center overflow-hidden">
-          <Navbar />
           <Banner
             image={BannerImg}
             title={

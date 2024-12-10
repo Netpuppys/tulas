@@ -41,7 +41,7 @@ function BAJMC() {
       </head>
       <body>
         <div className="max-w-full" ref={parentRef}>
-          <div className="w-full h-fit bg-white">
+          <div className="w-full h-fit">
             <Navbar />
           </div>
           <Banner

@@ -21,7 +21,6 @@ import CarouselProgram from "@/component/Programs/CrouselProgram";
 import SlidingCarousel from "./components/SlidingCarousel";
 
 function Patent() {
-  
   const patentImages = [
     patent1,
     patent2,
@@ -48,8 +47,8 @@ function Patent() {
         />
       </head>
       <body>
+        <Navbar />
         <div className="w-full flex flex-col items-center overflow-hidden">
-          <Navbar />
           <Banner
             image={BannerImg}
             title={<>Patents</>}

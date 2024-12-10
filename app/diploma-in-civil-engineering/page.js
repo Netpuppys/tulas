@@ -33,7 +33,7 @@ function BAJMC() {
       </head>
       <body>
         <div ref={parentRef}>
-          <div className="w-full relative bg-white">
+          <div className="w-full relative">
             <Navbar />
           </div>
           <Banner

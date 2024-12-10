@@ -22,8 +22,8 @@ function RAndDFunded() {
         />
       </head>
       <body>
+        <Navbar />
         <div className="flex flex-col items-center overflow-hidden">
-          <Navbar />
           <Banner
             image={BannerImg}
             title={
@@ -59,9 +59,13 @@ function RAndDFunded() {
               alt=""
             />
           </div>
-          <div className="p-8 md:p-32">
-            <div className="h-[90vh] px-5 overflow-auto w-[100vw] md:w-auto flex items-start justify-start">
-              <TableComponent />
+          <div className="p-8 md:p-32 w-full">
+            <div>
+              {/* <TableComponent /> */}
+              <iframe
+                className="h-[90vh] px-5 overflow-auto w-full mx-auto md:w-[65vw] flex items-start justify-center"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBKPOOfj3CNTfcv7o3fObHitzKNciKJ0ST7pjfLFtqSMhDU5TxQu99iTdZMGOlvUPEUFH6x4TQixAa/pubhtml?gid=0&single=true&widget=true&headers=false"
+              />
             </div>
           </div>
 

@@ -137,8 +137,8 @@ function OtherFacilities() {
         />
       </head>
       <body>
+        <Navbar />
         <div className="flex flex-col items-center">
-          <Navbar />
           <Banner
             image={BannerImg}
             title={
