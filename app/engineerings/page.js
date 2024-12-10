@@ -81,7 +81,7 @@ const page = () => {
             <p className="text-[2rem] tracking-wider font-light text-[#373737] text-center">
               COLLEGES
             </p>
-            <p className="text-black text-justify text-lg font-light tracking-wide px-10 pt-5">
+            <p className="text-black text-lg font-light tracking-wide px-10 pt-5">
               Nestled in the beautiful Niagara Region, our stunning 90-acre
               campus is a home-away-from-home for our students to learn, grow
               and thrive. We offer a global education anchored in Canadian

@@ -194,7 +194,7 @@ export default function AboutPage() {
                   COLLEGE
                 </span>
               </p>
-              <p className="text-[#404040] text-justify text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-medium font-[TTChocolates] leading-tight">
+              <p className="text-[#404040] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-medium font-[TTChocolates] leading-tight">
                 Tula's Institute believes in providing the{" "}
                 <span className="font-[TTChocolatesBold] font-black">
                   best possible facilities

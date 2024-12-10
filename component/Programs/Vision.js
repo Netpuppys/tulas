@@ -34,7 +34,7 @@ function Vision({ sections, color = false }) {
                   </h3>
                   <br />
                   <h5
-                    className={`text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify font-[TTChocolates] ${
+                    className={`text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] ${
                       color ? "text-black" : "text-white"
                     }`}
                   >

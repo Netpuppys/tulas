@@ -67,7 +67,7 @@ const ActiveCardModal = ({
                   {card?.description?.map((item, index) => (
                     <p
                       key={index}
-                      className=" text-[#1b1b1b] text-justify text-wrap text-[clamp(14px,1vw,40px)] font-light mt-6"
+                      className=" text-[#1b1b1b] text-wrap text-[clamp(14px,1vw,40px)] font-light mt-6"
                     >
                       {item}
                     </p>
@@ -86,7 +86,7 @@ const ActiveCardModal = ({
               {card?.points?.map((item, index) => (
                 <p
                   key={index}
-                  className=" text-[#1b1b1b] text-justify text-wrap text-[clamp(14px,1vw,40px)] font-light mt-6"
+                  className=" text-[#1b1b1b] text-wrap text-[clamp(14px,1vw,40px)] font-light mt-6"
                 >
                   {item}
                 </p>

@@ -303,7 +303,7 @@ function AboutTulas() {
         </div>
       )} */}
       <div className="w-full px-6 md:px-0 md:w-[50%] py-10 md:py-20">
-        <h3 className="text-[#fff] text-justify font-[TTChocolates] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
+        <h3 className="text-[#fff] font-[TTChocolates] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>

@@ -55,7 +55,7 @@ const AboutFacultyModal = ({
               <p className="capitalize italic text-xl text-[#007A83] font-bold font-[rothwood]">
                 {activeProfile?.profile}
               </p>
-              <p className=" text-[#1b1b1b] text-justify text-wrap text-lg font-light mt-6">
+              <p className=" text-[#1b1b1b] text-wrap text-lg font-light mt-6">
                 {activeProfile?.description}
               </p>
             </div>

@@ -219,7 +219,7 @@ const page = () => {
               className="py-4 md:py-8 w-[95%] md:w-[80%] h-fit"
               alt=""
             />
-            <p className="text-[#262626] text-justify md:text-center text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] px-4 w-[90%] md:w-[75%]">
+            <p className="text-[#262626] md:text-center text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] px-4 w-[90%] md:w-[75%]">
               {bannerText}
             </p>
           </div>

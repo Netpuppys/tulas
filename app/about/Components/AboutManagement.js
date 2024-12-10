@@ -39,7 +39,7 @@ function AboutManagement() {
             <h3 className="text-[36px] md:text-[60px] pb-6 font-[CarotSlab] text-white">
               {section.title}
             </h3>
-            <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-justify font-[TTChocolates] text-white max-w-[659px]">
+            <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white max-w-[659px]">
               {section.description}
             </h4>
           </div>

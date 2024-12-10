@@ -267,7 +267,7 @@ function WhyTulasScroll({ parentRef }) {
                         <h2 className="text-center font-[TTChocolatesBold] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]">
                           {image.title}
                         </h2>
-                        <h6 className="text-justify font-[TTChocolates] text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
+                        <h6 className="font-[TTChocolates] text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
                           {image.text}
                         </h6>
                       </div>

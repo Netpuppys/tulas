@@ -98,7 +98,7 @@ function Contact() {
                     Soothe your senses with the beautiful aesthetics offered at{" "}
                     Tula&apos;s Institute
                   </p>
-                  <div className="text-[#D1D1D1] text-justify font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,20px)] md:pr-10 text-pretty font-[TTChocolates]">
+                  <div className="text-[#D1D1D1] font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,20px)] md:pr-10 text-pretty font-[TTChocolates]">
                     <Fade delay={500}>{mainDescription}</Fade>
                   </div>
                 </div>

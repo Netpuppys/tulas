@@ -89,7 +89,7 @@ function DegreeRequestForm() {
                 Degree Request Form
               </button>
             </div>
-            <ul className="list-disc text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-white font-[TTChocolates] w-full max-w-[1200px] mx-auto text-justify px-8">
+            <ul className="list-disc text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-white font-[TTChocolates] w-full max-w-[1200px] mx-auto px-8">
               <li>
                 <strong>Payment of mailing fee:</strong> A nominal fee of Rs
                 800/- (Eight Hundred Only) for domestic and Rs  2300/- (Two
