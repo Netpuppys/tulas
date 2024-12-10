@@ -63,7 +63,7 @@ function RAndDFunded() {
             <div>
               {/* <TableComponent /> */}
               <iframe
-                className="h-[90vh] px-5 overflow-auto w-full mx-auto md:w-[65vw] flex items-start justify-center"
+                className="h-[90vh] md:px-5 overflow-auto w-full mx-auto md:max-w-[1223px] flex items-start justify-center"
                 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBKPOOfj3CNTfcv7o3fObHitzKNciKJ0ST7pjfLFtqSMhDU5TxQu99iTdZMGOlvUPEUFH6x4TQixAa/pubhtml?gid=0&single=true&widget=true&headers=false"
               />
             </div>
