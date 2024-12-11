@@ -6,12 +6,13 @@ import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/HostelMess/background.png";
-import { Fade } from "react-awesome-reveal";
-import biggestAuditorium from "../../../public/infrastructure/auditorium/biggestAuditorium.png";
 import { useInView } from "react-intersection-observer";
 import hostel from "../../../public/infrastructure/HostelMess/hostel.png";
 import vibgyor from "../../../public/infrastructure/HostelMess/vibgyor.png";
-import multiUse from "../../../public/infrastructure/auditorium/multiUse.png";
+import medical from "../../../public/infrastructure/Other/medical.png";
+import atm from "../../../public/infrastructure/Other/atm.png";
+import multiUse from "../../../public/infrastructure/HostelMess/cafeteria.png";
+import mess from "../../../public/infrastructure/HostelMess/mess.png";
 import Vision from "@/component/Programs/Vision";
 
 function LectureTheater() {
@@ -25,12 +26,12 @@ function LectureTheater() {
       description: (
         <>
           <ul className="list-disc ml-4">
-            <li>24-hour WIFI facility</li>
+            <li>24-hour Wi-Fi facility</li>
             <li>Separate table and chair for every hosteler</li>
-            <li>Separate Book Shelves</li>
-            <li>Attached Balcony for each room</li>
+            <li>Separate book shelves</li>
+            <li>Attached balcony for each room</li>
             <li>Solar heated water 24×7</li>
-            <li>Single & Double occupancy rooms are available</li>
+            <li>Single & double occupancy rooms are available</li>
           </ul>
           <br />
           Hostel life is an excellent opportunity for the development and
@@ -38,44 +39,59 @@ function LectureTheater() {
           Institute is known for being the best engineering college in Dehradun
           for providing 24×7 security for the students living in the hostel and
           making a living on campus safe and comfortable.
-          <br />
-          <br />
-          A fully qualified MBBS Doctor is available at the campus.
-          <br />
-          <br />
-          Add-on facilities for students living on campus:
-          <br />
-          <ul className="list-disc ml-4">
-            <li>Foreign Language learning</li>
-            <li>Personality Development classes</li>
-            <li>Cricket Ground</li>
-            <li>Volley Ball Court</li>
-            <li>Basket Ball Court</li>
-            <li>Table Tennis Football / Hockey Ground</li>
-            <li>Recreation Room for Indoor Games</li>
-            <li>Modern Gymnasium</li>
-            <li>Television Room</li>
-            <li>Yoga/ Meditation Room</li>
-          </ul>
         </>
       ),
       image: hostel,
     },
     {
-      title: "Mess (Only Vegetarian)",
+      title: "ATM Facility",
       description:
-        "The students in the hostels roll only have the right to enter into mess premises. The students are required to come to the mess during their specified timing only, not before or after. The students govern mess Committee; the mess committee makes sure that students’ health and nutrition is well taken care of. Mess serves breakfast, lunch, evening tea and dinner every day and the weekly menu (Chinese, North and South Indian cuisines) is available with mess in-charge; the students make menu, and the cuisine is changed twice a month.",
-      image: biggestAuditorium,
+        "24/7 ATM runs within the Oriental Bank of Commerce campus, making transactions as quick as the blink of an eye. Parents or guardians of students can transfer money online to students, which they can receive immediately. Money transactions can never be an obstacle in a student’s life at Tula’s.",
+      image: atm,
     },
+    {
+      title: "Medical",
+      description: (
+        <>
+          A fully qualified MBBS Doctor is available at the campus.
+          <br />
+          <br />
+          <ul className="list-disc ml-4">
+            <li>
+              First aid boxes have been kept in the labs, workshop, hostel
+              blocks and with the receptionist.
+            </li>
+            <li>
+              An ambulance with a driver has been kept stand-by so as to cater
+              to the emergent demand of students.
+            </li>
+            <li>
+              The in-house medical facility comprises of basic amenities
+              providing treatment by a specialized medical staff within the
+              campus. A qualified physician who is our full time medical
+              consultant is also available 24×7 on call. An infirmary in the
+              campus caters to small ailments.
+            </li>
+            <li>Hospitals of repute have been kept on the panel.</li>
+            <li>
+              To keep a check on diseases administration of insecticides is done
+              to ensure clean & hygienic ambience avoiding several health
+              hazards.
+            </li>
+          </ul>
+        </>
+      ),
+      image: medical,
+    },
+
     {
       title: "Cafeteria",
       description: (
         <>
           A favorite spot for any student in any college is always the
-          Cafeteria. It is the place where one can drop by in any frame of mind
+          cafeteria. It is the place where one can drop by in any frame of mind
           and still have a great time. It is here that success is enjoyed and
-          victory is celebrated; friends interact the most, solace given and
-          basically a place to chill out. College cafeteria not only serve basic
+          victory is celebrated. College cafeteria not only serve basic
           cuisines but also serves students favorite pasta, macaroni, dim sums,
           pizza, shakes etc at reasonable price. Snacks, soft drinks and fresh
           juices are also available. It functions during Morning 8:30 to Evening
@@ -83,10 +99,16 @@ function LectureTheater() {
           <br />
           <br />
           Maggie Point (next to the junior hostel) is open for 11:00PM to 2:30AM
-          daily
+          daily.
         </>
       ),
       image: multiUse,
+    },
+    {
+      title: "Mess (Only Vegetarian)",
+      description:
+        "The students in the hostels roll only have the right to enter into mess premises. The students are required to come to the mess during their specified timing only, not before or after. The students govern mess Committee; the mess committee makes sure that students’ health and nutrition is well taken care of. Mess serves breakfast, lunch, evening tea and dinner every day and the weekly menu (Chinese, North and South Indian cuisines) is available with mess in-charge; the students make menu, and the cuisine is changed twice a month.",
+      image: mess,
     },
   ];
   return (
@@ -126,7 +148,7 @@ function LectureTheater() {
             />
           </div>
           <Vision sections={sections.slice(0, 1)} />
-          <div
+          {/* <div
             ref={ref}
             className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"
           >
@@ -160,7 +182,7 @@ function LectureTheater() {
               trips. This Committee also focuses on keeping the secular harmony
               among the students by celebrating major religious festivals.
             </h4>
-          </div>
+          </div> */}
           <Vision sections={sections.slice(1)} />
           <div className="w-full h-fit z-50">
             <Footer color={true} />

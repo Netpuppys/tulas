@@ -16,7 +16,7 @@ function Auditorium() {
     {
       title: "Biggest Auditorium",
       description:
-        "Tula’s Institute takes pride in exhibiting a state of art auditorium, located at the heart of the campus. It has been constructed keeping in mind the smallest of details and is well equipped with the latest technology. It portraits a perfect example of modern Architecture and is certainly one of its kind in the entire Northern India. As a result of the world-class infrastructure Tula’s Institute over the years has been ranked among the ‘Top 10 engineering college in Uttarakhand’.",
+        "Tula’s Institute takes pride in exhibiting a state of art auditorium, located at the heart of the campus. It has been constructed keeping in mind the smallest of details and is well equipped with the latest technology. It portraits a perfect example of modern architecture and is certainly one of its kind in the entire Northern India. As a result of the world-class infrastructure Tula’s Institute over the years has been ranked among the ‘Top 10 engineering college in Uttarakhand’.",
       image: biggestAuditorium,
     },
     {

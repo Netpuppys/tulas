@@ -38,12 +38,6 @@ export const content = (
     sectors. Its full-time, two-year degree is affiliated with Veer Madho Singh
     Bhandari Uttarakhand Technical University Dehradun,
     <br />
-    <br />
-    The MBA program at Tula’s offers a comprehensive and well-rounded curriculum
-    designed to prepare students for various managerial roles across multiple
-    sectors. Its full-time, two-year degree is affiliated with Veer Madho Singh
-    Bhandari Uttarakhand Technical University Dehradun,
-    <br />
     <br />A Master in Business Administration degree is the entryway to
     different open positions in countless regions like Marketing, Finance, Human
     Resource, Internal Business, Agri-Business Management, Health Care and
@@ -194,7 +188,7 @@ export const content = (
         streams by encouraging entrepreneurship and skill development. Our rural
         development programs, which are dedicated to sustainable growth,
         prioritize resilience-building to assist communities in adapting to
-        climate change, renewable energy, and environmental conservation. 
+        climate change, renewable energy, and environmental conservation.
         {/* With
         the appropriate tools and collaborations */}
       </li>

@@ -1,44 +1,40 @@
 "use client";
 import React from "react";
 import filmFestival from "../../../public/campus-life/celebrities/filmFestival.png";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../public/campus-life/celebrities/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/campus-life/celebrities/background.png";
 import Image from "next/image";
 import Vision from "@/component/Programs/Vision";
-import talkShows from "../../../public/campus-life/celebrities/talkShows.png";
-import starNights from "../../../public/campus-life/celebrities/starNights.png";
+import filmFestival1 from "../../../public/campus-life/celebrities/filmFestival.webp";
+import filmFestival2 from "../../../public/campus-life/celebrities/filmFestival2.webp";
 
 import Footer from "@/component/Footer";
 function Celebrities() {
   const sections = [
     {
-      title: "Talk Shows",
+      title: "",
       description:
-        "The Celebrity Talk Show at Tula’s Institute is a canvas event where celebrities from various industries, particularly Bollywood, grace our campus to share their invaluable experiences with students. This unique interaction provides a supreme opportunity for students to gain insights into the lives and careers of their idols. From directors and actors to producers and singers, these celebrated guests engage in candid conversations, offering wisdom, inspiration, and a glimpse into the glamorous world of entertainment.",
-      image: talkShows,
+        "The Dehradun International Film Festival at Tula’s Institute is more than just an event—it’s a culturally enriching experience for students. Workshops, film screenings, and panel discussions provide valuable insights into the technical and creative processes behind filmmaking. Students are encouraged to think critically, develop new skills, and gain a deeper understanding of the industry's evolving trends.",
+      image: filmFestival1,
     },
     {
-      title: "Star Nights",
+      title: "",
       description: (
         <>
-          At Tula’s Institute, Celebrity Nights during the annual cultural fest,
-          Sanskriti, are nothing short of spectacular. Each year, this grand
-          event features performances by some of Bollywood’s most renowned
-          singers, transforming our campus into a hub of electrifying music and
-          unforgettable memories.
+          The festival also serves as a learning opportunity by enabling
+          students with:
           <br />
           <br />
-          These star-studded evenings bring an unmatched level of excitement, as
-          students gather to witness their favorite artists perform live. From
-          soulful songs to high-energy tracks, the diverse musical genres cater
-          to all tastes, ensuring an enthralling experience for everyone.
-          Celebrity Nights not only provide entertainment but also inspire
-          students by showcasing the incredible talent and dedication of these
-          celebrated performers.{" "}
+          <ul className="list-disc ml-5">
+            <li>Cultural Awareness</li>
+            <li>Creativity and Critical Thinking</li>
+            <li>Event Management Skills</li>
+            <li>Networking Opportunities</li>
+          </ul>
         </>
       ),
-      image: starNights,
+      image: filmFestival2,
     },
   ];
   return (
@@ -63,16 +59,17 @@ function Celebrities() {
               className="w-full h-full object-cover absolute"
             />
             <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-              <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-[#007A83] z-10 font-[CarotSlab]">
-                Celebrities
+              <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-white z-10 font-[CarotSlab]">
+                Dehradun International{" "}
+                <span className="text-[#007A83]">Film Festival</span>
               </h3>
             </div>
           </div>
         </div>
         <div className="bg-white w-full h-fit flex flex-col justify-center items-center py-8 md:py-20">
-          <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
+          {/* <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
             DEHRADUN INTERNATIONAL FILM FESTIVAL
-          </h3>
+          </h3> */}
           <Image
             src={filmFestival}
             alt=""

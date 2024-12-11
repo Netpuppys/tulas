@@ -213,7 +213,7 @@ const sitemap = [
     title: "Campus Life",
     nestedLinks: [
       {
-        title: "Celebrities",
+        title: "Dehradun International Film Festival",
         linkTo: "/campus-life/celebrities",
       },
       {

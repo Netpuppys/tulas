@@ -12,6 +12,7 @@ import Image from "next/image";
 import NavbarMobile from "./Component/NavbarMobile";
 import NavbarDesktop from "./Component/NavbarDesktop";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
+import { IoCall } from "react-icons/io5";
 
 function Navbar({ setState, position = false, fullBanner = false }) {
   const [isChecked, setIsChecked] = useState(false);
@@ -155,9 +156,47 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                 {!isChecked ? "Menu" : "Close"}
               </h3>
             </button>
+            {/* Contact button */}
+            {!isChecked && (
+              <button
+                title="Admission Helpline No. +91-9837983721"
+                className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
+                onClick={() => (window.location.href = "tel:+91-9837983721")}
+              >
+                <div
+                  className={`p-[15px] mdNavbar:p-[15px] border-2 ${
+                    (isChecked && position) || isChecked
+                      ? "border-black"
+                      : position
+                      ? "border-[#760135]"
+                      : "border-white"
+                  } rounded-[50%] aspect-square border-r-transparent`}
+                >
+                  <div className="w-[40px] h-[40px]">
+                    <Image
+                      src={phoneCallGif}
+                      alt=""
+                      className="w-full h-full"
+                    />
+                  </div>
+                </div>
+                <h3
+                  style={{ fontFamily: "Zilla Slab" }}
+                  className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
+                    (isChecked && position) || isChecked
+                      ? "text-black"
+                      : position
+                      ? "text-[#760135]"
+                      : "text-white"
+                  }`}
+                >
+                  Contact
+                </h3>
+              </button>
+            )}
             {/* apply now button */}
             <button
-              className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
+              className="flex w-full flex-row justify-between items-center cursor-pointer relative z-[3333]"
               onClick={() => (window.location.href = "/admissions2024/")}
             >
               <div
@@ -181,7 +220,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
               </div>
               <h3
                 style={{ fontFamily: "Zilla Slab" }}
-                className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
+                className={`hidden mdNavbar:block text-nowrap text-left text-[25px] -ml-4 font-semibold transition-color ${
                   (isChecked && position) || isChecked
                     ? "text-black"
                     : position
@@ -226,6 +265,16 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                 </label>
               </div>
             </button>
+            {/* Contact button */}
+            <button
+              title="Admission Helpline No. +91-9837983721"
+              className="bg-[#E69706] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+              onClick={() => (window.location.href = "tel:+91-9837983721")}
+            >
+              <div className="w-[40px] h-[40px]">
+                <Image src={phoneCallGif} alt="" className="w-full h-full" />
+              </div>
+            </button>
             {/* apply now button */}
             <button
               className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
@@ -247,7 +296,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
             <Image
               src={NAAC}
               alt=""
-              className="w-[8vw] h-fit pointer-events-auto cursor-pointer"
+              className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
             />
             <div className="h-[70px] w-[1px] bg-white"></div>
             <Image
@@ -286,20 +335,16 @@ function Navbar({ setState, position = false, fullBanner = false }) {
       </div>
 
       {/* main navbar */}
-      <div className="w-full mdNavbar:w-fit p-3 h-fit">
-        <div className="flex w-full mdNavbar:w-fit flex-row-reverse items-center mdNavbar:flex-row justify-between">
-          <div className="hidden mdNavbar:block">
-            <a href="tel:+91-9837983721" className="footer-call-number">
-              <Image
-                src={phoneCallGif}
-                alt=""
-                className="footer-call-number-gif"
-              />
+      <div className="w-full p-3 h-fit">
+        <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
+          {/* <div className="hidden mdNavbar:block">
+            <a href="tel:+91-9837983721" className="">
+              <Image src={phoneCallGif} alt="" className="footer-call-number-gif" />
               <div className="footer-call-number-text">
                 Admission Helpline No. +91-9837983721
               </div>
             </a>
-          </div>
+          </div> */}
           <div className="flex mdNavbar:hidden mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
             {/* menu button */}
             <button
@@ -327,6 +372,15 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                     className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
                   ></span>
                 </label>
+              </div>
+            </button>
+            {/* Contact button */}
+            <button
+              className="bg-[#E69706] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+              onClick={() => (window.location.href = "tel:+91-9837983721")}
+            >
+              <div className="w-[35px] h-[35px]">
+                <Image src={phoneCallGif} alt="" className="w-full h-full" />
               </div>
             </button>
             {/* apply now button */}

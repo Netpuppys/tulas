@@ -29,7 +29,7 @@ function Library() {
           digital libraries.
           <br />
           <br />
-          Our Digital library has over 18383+ e-books and 3338 + e-Journals
+          Our digital library has over 18383+ e-books and 3338 + e-Journals
           available round the clock through a FTP server on the intranet,
           whereby students can access the material and books anytime from
           anywhere on the campus.
@@ -41,10 +41,10 @@ function Library() {
       title: "Reference Library",
       description: (
         <>
-          The Institute has an altogether a separate reference library which is
-          spread on an area of more than 448 sq m with varied books on Basic
-          Sciences, Engineering and Technology, Humanities, Social Sciences and
-          Management.
+          The institute has an altogether a separate reference library which is
+          spread on an area of more than 448 sq m with varied books on basic
+          sciences, engineering and technology, humanities, social sciences and
+          management.
         </>
       ),
       image: library2,
@@ -76,29 +76,19 @@ function Library() {
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              <p className="text-sm md:text-lg">
-                <strong>With</strong> over{" "}
-                <strong className="text-[#007A83]">60000</strong> volumes
-                library is a veritable{" "}
-                <strong className="text-[#007A83]">
-                  powerhouse of knowledge.
-                </strong>{" "}
-                It provides a vast and constantly updated resource to its
-                students to ensure their overall development. The aim of the
-                Library is to serve the needs of Tula’s faculty, Research
-                Scholars, Students and Members of the Library. In terms of
-                infrastructure,{" "}
-                <strong className="text-[#007A83]">Tula’s Institute </strong>has
-                time and again been a preferred destination for students from
-                across the country for it has been rated by various independent
-                surveys amongst the{" "}
-                <strong className="text-[#007A83]">
-                  ‘Top 10 Engineering colleges in Dehradun’.
-                </strong>{" "}
-                Library at Tula’s is no exception, for we believe that it is the
-                heart of the institution and acts as a{" "}
-                <strong className="text-[#007A83]">center</strong> of knowledge
-                for varied subjects.
+              <p>
+                With over 60000 volumes library is a veritable powerhouse of
+                knowledge. It provides a vast and constantly updated resource to
+                its students to ensure their overall development. The aim of the
+                library is to serve the needs of Tula’s faculty, research
+                scholars, students and members of the library. In terms of
+                infrastructure, Tula’s Institute has time and again been a
+                preferred destination for students from across the country for
+                it has been rated by various independent surveys amongst the
+                ‘Top 10 Engineering colleges in Dehradun’. Library at Tula’s is
+                no exception, for we believe that it is the heart of the
+                institution and acts as acenter of knowledge for varied
+                subjects.
               </p>
             }
           />

@@ -87,11 +87,11 @@ function Research() {
           belowTitle={<></>}
           belowPara={
             <>
-              Tula’s Institute is dedicated to advancing Research and
-              Development initiatives, driven by a clear vision and mission to
+              Tula’s Institute is dedicated to advancing research and
+              development initiatives, driven by a clear vision and mission to
               explore and advance research in cutting-edge technologies and
-              various fields of Engineering. To foster an environment conducive
-              to such pursuits, the Institute has established the Centre for
+              various fields of engineering. To foster an environment conducive
+              to such pursuits, the institute has established the Centre for
               Innovation, Research, and Entrepreneurship (CIRE). The primary
               objective of CIRE is to nurture a culture of innovation, research,
               and entrepreneurship. It oversees the Institute’s research and

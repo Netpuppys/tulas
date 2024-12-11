@@ -14,7 +14,7 @@ import Vision from "@/component/Programs/Vision";
 function ComputerScience() {
   const sections = [
     {
-      title: "World Class IT Infrastructure to facilitate E-Learning",
+      title: "World Class IT Infrastructure To Facilitate E-Learning",
       description:
         "The institute has chosen a system based on high end servers and work stations under Windows and Linux, which provide the interconnection and exchange of information between the various systems thereby providing the students and faculty a work environment adapted to their requirements and latest technology reflecting the standards of the computer industry.",
       image: it,
@@ -42,7 +42,7 @@ function ComputerScience() {
               disposal.
             </li>
             <li>
-              The commissioning of the Campus Area Network has been done for
+              The commissioning of the campus area network has been done for
               650+ nodes.
             </li>
           </ul>
@@ -61,7 +61,7 @@ function ComputerScience() {
         />
       </head>
       <body>
-      <Navbar />
+        <Navbar />
         <div className="flex flex-col items-center">
           <Banner
             image={BannerImg}
@@ -73,10 +73,10 @@ function ComputerScience() {
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              <p className="text-sm md:text-lg">
+              <p>
                 Information Technology is unarguably the defining force of this
                 millennium, and Tula’s Institute is poised to break new ground
-                as the most e-enabled Engineering cum Business School in
+                as the most E-enabled engineering cum business school in
                 Uttarakhand. Wireless technology has emerged as a vital and
                 indispensable means of communication in the twenty first
                 century. Irrespective of the size of an organization, its
@@ -84,8 +84,8 @@ function ComputerScience() {
                 networking systems that enables both the students and faculty to
                 access vital data and information easily at the click of a
                 button. Having understood the importance, Tula’s Institute has
-                invested heavily towards developing World Class IT
-                Infrastructure to facilitate E-Learning in today’s day and age
+                invested heavily towards developing world class IT
+                infrastructure to facilitate E-Learning in today’s day and age
                 and is thus regarded amongst the ‘best engineering colleges in
                 Dehradun’.
               </p>

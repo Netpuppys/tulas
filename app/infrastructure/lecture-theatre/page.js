@@ -15,7 +15,7 @@ function LectureTheater() {
     {
       title: "Lecture Theatre",
       description:
-        "TULA’S Institute is having spacious and fully equipped lecture halls which are unique of their kind, these lecture halls can accommodate 70 students. These are designed to provide complete comfort for the intense hours of the classroom teaching and interaction.",
+        "Tula's Institute is having spacious and fully equipped lecture halls which are unique of their kind, these lecture halls can accommodate 70 students. These are designed to provide complete comfort for the intense hours of the classroom teaching and interaction.",
       image: lecture,
     },
   ];

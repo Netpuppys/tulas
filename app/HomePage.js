@@ -50,9 +50,7 @@ export default function HomePage() {
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         {/* {showLoader && (
           <div className="w-screen min-h-screen h-screen fixed top-0 left-0 flex items-center justify-center z-[9999] bg-white">
-            <p className="text-[10rem] font-bold text-[#760135]">
-              Tula's
-            </p>
+            
           </div>
         )} */}
 
