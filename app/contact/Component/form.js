@@ -90,7 +90,7 @@ const ContactForm = ({ contactRef }) => {
               value={formData.name}
               onChange={(e) => handleChange("name", e.target.value)}
               required
-              className="w-full px-4 py-2 border rounded-lg text-black"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none text-black"
             />
           </div>
           <div>
@@ -101,18 +101,18 @@ const ContactForm = ({ contactRef }) => {
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
               required
-              className="w-full px-4 py-2 border rounded-lg text-black"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none text-black"
             />
           </div>
           <div>
             <label className="block mb-2">Mobile No.</label>
             <input
-              type="number"
+              type="tel"
               placeholder="Phone"
               value={formData.mobile}
               onChange={(e) => handleChange("mobile", e.target.value)}
               required
-              className="w-full px-4 py-2 border rounded-lg text-black"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none text-black"
             />
           </div>
           <div>
@@ -123,7 +123,7 @@ const ContactForm = ({ contactRef }) => {
               value={formData.subject}
               onChange={(e) => handleChange("subject", e.target.value)}
               required
-              className="w-full px-4 py-2 border rounded-lg text-black"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none text-black"
             />
           </div>
         </div>
@@ -134,7 +134,7 @@ const ContactForm = ({ contactRef }) => {
             type="text"
             value={formData.message}
             onChange={(e) => handleChange("message", e.target.value)}
-            className="w-full px-4 py-2 border rounded-lg text-black"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none text-black"
             placeholder="(Optional)"
             rows="3"
           />

@@ -41,8 +41,8 @@ function AboutTulas() {
     FirstName: "",
     Email: "",
     MobileNumber: "",
-    LeadSource: "25",
-    LeadChannel: "2",
+    LeadSource: 25,
+    LeadChannel: 2,
     Course: "",
     Center: "",
     State: "",
@@ -68,20 +68,20 @@ function AboutTulas() {
   };
 
   const handleCourseChange = (e) => {
-    const selectedCourse = e.target.value;
+    const selectedCourseId = parseInt(e.target.value, 10); // Ensure it's an integer
     setFormData((prev) => ({
       ...prev,
-      Course: selectedCourse,
-      Center: "",
+      Course: selectedCourseId,
+      Center: "", // Reset Center if Course changes
     }));
   };
 
   const handleStateChange = (e) => {
-    const selectedState = e.target.value;
+    const selectedStateId = parseInt(e.target.value, 10); // Ensure it's an integer
     setFormData((prev) => ({
       ...prev,
-      State: selectedState,
-      City: "",
+      State: selectedStateId,
+      City: "", // Reset City if State changes
     }));
   };
 
@@ -146,8 +146,8 @@ function AboutTulas() {
           FirstName: "",
           Email: "",
           MobileNumber: "",
-          LeadSource: "25",
-          LeadChannel: "2",
+          LeadSource: 25,
+          LeadChannel: 2,
           Course: "",
           Center: "",
           State: "",
@@ -169,7 +169,7 @@ function AboutTulas() {
           message:
             "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
           sender: "TULASD", // Replace with your MSG91 Sender ID
-          otp_expiry: "3", // OTP expiry time
+          otp_expiry: 3, // OTP expiry time
           DLT_TE_ID: "1007161822185716704", // Replace with your DLT Template ID
         },
         {

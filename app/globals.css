@@ -26,6 +26,14 @@
   font-family: "ExtraWide";
   src: url(../public/fonts/fonnts.com-Roc_Grotesk_ExtraWide_Medium.otf);
 }
+@font-face {
+  font-family: "Helvetica";
+  src: url(../public/fonts/HelveticaNowDisplay-Light.ttf);
+}
+@font-face {
+  font-family: "GoudyCatalogue";
+  src: url(../public/fonts/GoudyCatalogueMTProItalic.TTF);
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
