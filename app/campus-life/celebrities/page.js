@@ -13,13 +13,13 @@ import Footer from "@/component/Footer";
 function Celebrities() {
   const sections = [
     {
-      title: "",
+      title: "Lights, Camera, Festival!",
       description:
         "The Dehradun International Film Festival at Tula’s Institute is more than just an event—it’s a culturally enriching experience for students. Workshops, film screenings, and panel discussions provide valuable insights into the technical and creative processes behind filmmaking. Students are encouraged to think critically, develop new skills, and gain a deeper understanding of the industry's evolving trends.",
       image: filmFestival1,
     },
     {
-      title: "",
+      title: "How the Cine-World Inspires Learning",
       description: (
         <>
           The festival also serves as a learning opportunity by enabling
