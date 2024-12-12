@@ -33,9 +33,9 @@ function Location() {
           inView ? "md:animate-translateRight" : "opacity-0"
         }`}
       >
-        Dehradun is located 255 km north of India’s capital New Delhi. The Doon
-        Valley has a sub-tropical climate with moderate Winters, pleasant
-        Spring, hot Summers and heavy Monsoons. Tula’s Institute is a friendly,
+        Dehradun is located 255 Km north of India’s capital New Delhi. The Doon
+        Valley has a sub-tropical climate with moderate winters, pleasant
+        spring, hot summers and heavy monsoons. Tula’s Institute is a friendly,
         welcoming place to study with a good reputation for offering outstanding
         support to our students for their holistic development.
       </p>

@@ -12,8 +12,26 @@ function Sanskriti() {
   const sections = [
     {
       title: "Sanskriti",
-      description:
-        "Sanskriti is the vibrant and highly anticipated annual cultural fest of Tula's Institute, Dehradun, bringing together students, faculty, and renowned artists from bollywood in a joyous fusion of creativity and talent. The fest features a diverse display of cultural programs, from dance, singing, fashion show performances, as well as star-studded celebrity shows where popular singers and musicians mesmerize the audience with their exceptional talents. Sanskriti is more than just an event; its a platform for students to explore their creative potential, gain new experiences, and create lasting memories, celebrating culture, talent, and the spirit of togetherness.",
+      description: (
+        <>
+          Sanskriti is much more than just an event; it’s a platform where
+          students can showcase their creativity and push their artistic
+          boundaries. With performances that span from dance and singing to
+          fashion shows, the fest is an explosion of talent and energy. The
+          star-studded celebrity shows add an extra touch of magic, as Bollywood
+          singers and musicians captivate the audience with their incredible
+          performances.
+          <br />
+          <br />
+          Look out for:
+          <br />
+          <ul className="ml-5 list-disc">
+            <li>Spectacular dance and music performances</li>
+            <li>Glamorous fashion shows</li>
+            <li>Interactive workshops to explore new creative skills</li>
+          </ul>
+        </>
+      ),
       image: sanskriti,
     },
   ];
@@ -40,7 +58,7 @@ function Sanskriti() {
           description={<></>}
           belowTitle={<></>}
           belowPara={
-            "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
+            "Sanskriti – the annual cultural fest at Tula's Institute, Dehradun – is the ultimate celebration of creativity, talent, and excitement! A lively fusion of students, faculty, and Bollywood stars, it promises an unforgettable mix of music, dance, and dazzling performances."
           }
         />
         {/* fixed background */}

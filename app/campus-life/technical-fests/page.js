@@ -14,19 +14,34 @@ function TechnicalFest() {
       title: "Utkrisht",
       description: (
         <>
-          Tula’ Institute proudly hosts Utkrisht, the highly anticipated annual
-          technical fest. This inter-college event attracts students from across
-          the country, eager to showcase their innovative projects and compete
-          in thrilling technical challenges. Participants engage in various
-          activities, including model displays, robot wars, coding competitions,
-          and technical quizzes.
+          This isn't just your average technical fest – it’s a playground for
+          the curious, a platform for the bold, and a space where groundbreaking
+          ideas come to life. At Utkrisht, you’ll dive into a wide array of
+          challenges that push the boundaries of what’s possible. Whether you’re
+          building futuristic robots, developing complex software, or solving
+          real-world tech problems, there’s something for every aspiring
+          technologist.
           <br />
           <br />
-          Utkrisht provides a platform for young minds to demonstrate their
-          technical ability, foster creativity, and collaborate on
-          groundbreaking ideas. It’s an exciting opportunity for students to
-          learn from each other, gain exposure to cutting-edge technologies, and
-          network with industry experts.
+          Why Utkrisht?
+          <br />
+          <br />
+          Collaborate and Compete: Take part in team-based challenges, and
+          collaborate with peers from across India.
+          <br />
+          <br />
+          Real-World Impact: Engage with projects that aren’t just theoretical —
+          they’re designed to solve real-life problems.
+          <br />
+          <br />
+          Inspiring and Educating: Attend workshops, panel discussions, and
+          talks from industry leaders who will share the knowledge shaping the
+          future of tech.
+          <br />
+          <br />
+          Celebrate Innovation: Whether you're a coder, builder, or inventor,
+          this is where you’ll see technology take on new forms and new
+          possibilities.
         </>
       ),
       image: fest,
@@ -36,7 +51,10 @@ function TechnicalFest() {
     <>
       <head>
         <title>Technical Fests - Utkrisht at Tula’s Institute, Dehradun</title>
-        <meta name="description" content="Join the excitement of Utkrisht, Tula’s Institute’s annual technical fest. Engage in robot wars, coding competitions, technical quizzes, and more. A platform for students to showcase innovative projects, learn from experts, and explore cutting-edge technologies." />
+        <meta
+          name="description"
+          content="Join the excitement of Utkrisht, Tula’s Institute’s annual technical fest. Engage in robot wars, coding competitions, technical quizzes, and more. A platform for students to showcase innovative projects, learn from experts, and explore cutting-edge technologies."
+        />
       </head>
       <body>
         <Navbar />
@@ -44,11 +62,12 @@ function TechnicalFest() {
           image={BannerImg}
           title={
             <>
-              Utkrisht-<span className="text-[#007A83]"> Technical Fests</span>
+              Technical<span className="text-[#007A83]"> Fests</span>
             </>
           }
+          belowTitle={"Utkrisht – The Ultimate Technical Challenge"}
           belowPara={
-            "Tula’ Institute proudly hosts Utkrisht, the highly anticipated annual technical fest. This inter-college event attracts students from across the country, eager to showcase their innovative projects and compete in thrilling technical challenges. Participants engage in various activities, including model displays, robot wars, coding competitions, and technical quizzes."
+            "Welcome to Utkrisht, the ultimate gathering for tech enthusiasts, innovators, and problem-solvers. Every year, students from across the nation come together to compete, collaborate, and celebrate the ever-evolving world of technology."
           }
         />
         {/* fixed background */}

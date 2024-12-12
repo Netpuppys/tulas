@@ -35,22 +35,22 @@ export default function AboutPage() {
     {
       start: 0,
       end: 22,
-      description: "ACRE WIFI CAMPUS",
+      description: "Acre Wi-Fi Enabled Campus",
     },
     {
       start: 0,
       end: 150,
-      description: "QUALIFIED TEACHERS",
+      description: "Qualified Faculty Members",
     },
     {
       start: 2850,
       end: 3000,
-      description: "STUDENTS ENROLLED",
+      description: "Students Enrolled",
     },
     {
       start: 0,
-      end: 18,
-      description: "YEARS OF EXPERIENCE",
+      end: 19,
+      description: "Years of Excellence in Education",
     },
   ]);
 
@@ -122,17 +122,18 @@ export default function AboutPage() {
         }
         image={BannerImg}
         description={
-          "Tula's Institute is dedicated to serve the community by recognizing the diverse needs of the individuals. We encourage personal and professional development through respect, appreciation and a commitment to general education, as a foundation for life-long learning. Tula’s Institute is the Ranked as No. 9 College in the North India"
+          "Tula’s Institute, proudly ranked as the 9th best college in North India, is a hub for innovation, personal growth, and lifelong learning. We are committed to recognizing individual potential and helping students transform it into success stories. We create an environment of respect, encouragement, and lifelong learning to help students achieve their dreams."
         }
         belowTitle={"Sunil Kumar Jain, Founder"}
         belowPara={
           <>
-            <span className="text-[#760135] text-[30px]">“</span>
-            Education is not only a way of learning new things but also looking
-            at the world differently. My 35 Years of Experience in Business,
-            Social & Public space has enabled me to provide an ECO system that
-            will help you make a correct decision in matters of careers & life.
-            <span className="text-[#760135] text-[30px]">“</span>
+            <span className="text-[#760135] text-[30px] leading-none">“</span>
+            Education is not just about learning new things, but about seeing
+            the world in a different light. With over 35 years of experience in
+            business, social, and public spaces, I have built an ecosystem
+            designed to guide students in making the right decisions for their
+            career and life.
+            <span className="text-[#760135] text-[30px] leading-none">“</span>
           </>
         }
       />
@@ -185,25 +186,17 @@ export default function AboutPage() {
           </div>
           <div className="w-full md:w-1/2 flex items-center justify-start h-full px-6 md:px-0 md:pr-20 md:py-12">
             <div className="bg-white w-full md:h-full py-8 md:min-h-[50rem] max-w-[40rem] flex items-start justify-center flex-col px-8 md:px-12 ">
-              <p className="text-[#760135] font-medium font-[TTChocolates] text-[1.4rem] md:text-[2.5rem] text-wrap tracking-widest">
-                <span className="font-bold font-[TTChocolatesBold]">
-                  TULA'S
-                </span>{" "}
-                IS AN INSPIRING{" "}
-                <span className="font-bold font-[TTChocolatesBold]">
-                  COLLEGE
-                </span>
+              <p className="text-[#760135] font-medium font-[TTChocolatesBold] text-[1.4rem] md:text-[2.5rem] text-wrap tracking-widest">
+                Innovate, Create, Lead – The Tula’s Way
               </p>
               <p className="text-[#404040] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-medium font-[TTChocolates] leading-tight">
-                Tula's Institute believes in providing the{" "}
-                <span className="font-[TTChocolatesBold] font-black">
-                  best possible facilities
-                </span>{" "}
-                to its students. We endeavour to create a congenial atmosphere
-                to nurture talent through the support and{" "}
-                <span className="font-[TTChocolatesBold] font-bold">
-                  guidance of experienced faculty members
-                </span>
+                Tula’s Institute is where the future of education is being
+                reimagined. It’s not just about textbooks and lectures; it’s
+                about creating a playground for innovation. At Tula’s, every
+                project is an opportunity to challenge norms, every idea is a
+                step towards something groundbreaking, and every student is
+                empowered to redefine what's possible. It’s education that
+                sparks curiosity and drives change.
               </p>
             </div>
           </div>

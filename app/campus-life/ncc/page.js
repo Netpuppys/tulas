@@ -55,7 +55,7 @@ function NCC() {
           image={BannerImg}
           title={<span className="text-[#007A83]">NCC</span>}
           belowPara={
-            "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
+            "At Tula’s, the NCC isn’t just a program—it’s a transformative journey! Behind every great leader is a story of discipline, resilience, and purpose—this is what NCC at Tula’s delivers."
           }
         />
         {/* fixed background */}
