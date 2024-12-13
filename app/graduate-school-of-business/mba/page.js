@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
-import NavbarLandingPage from "./Component/NavbarLandingPage";
-import BannerLandingPage from "./Component/BannerLandingPage";
-import FormLandingPage from "./Component/FormLandingPage";
-import CarouselContent from "./Component/CarouselContent";
-import CuttingEdge from "./Component/CuttingEdge";
-import WhyChoose from "./Component/WhyChoose";
-import AtGlance from "./Component/AtGlance";
-import Accreditations from "./Component/Accreditations";
+import NavbarLandingPage from "../Component/NavbarLandingPage";
+import BannerLandingPage from "../Component/BannerLandingPage";
+import FormLandingPage from "../Component/FormLandingPage";
+import CarouselContent from "../Component/CarouselContent";
+import CuttingEdge from "../Component/CuttingEdge";
+import WhyChoose from "../Component/WhyChoose";
+import AtGlance from "../Component/AtGlance";
+import Accreditations from "../Component/Accreditations";
+import Placement from "../Component/Placement";
 
 const page = () => {
   return (
@@ -37,6 +38,8 @@ const page = () => {
           <AtGlance />
           {/* Accreditations */}
           <Accreditations />
+          {/* Placement */}
+          <Placement />
         </div>
       </body>
     </>

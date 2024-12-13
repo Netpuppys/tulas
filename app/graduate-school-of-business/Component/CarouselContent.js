@@ -18,7 +18,7 @@ function CarouselContent() {
       value: "22",
       name: (
         <>
-          ACRES <strong>WI-FI</strong> CAMPUS
+          ACRES <strong>WI-FI</strong> ENABLED CAMPUS
         </>
       ),
     },
@@ -27,7 +27,7 @@ function CarouselContent() {
       value: "150",
       name: (
         <>
-          QUALIFIED <strong>TEACHERS</strong>
+          QUALIFIED FACULTY <strong>MEMBERS</strong>
         </>
       ),
     },
@@ -54,15 +54,11 @@ function CarouselContent() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrevClick = () => {
-    if (activeIndex > 0) {
-      swiperRef.current.swiper.slidePrev();
-    }
+    swiperRef.current.swiper.slidePrev();
   };
 
   const handleNextClick = () => {
-    if (activeIndex < cards.length - 1) {
-      swiperRef.current.swiper.slideNext();
-    }
+    swiperRef.current.swiper.slideNext();
   };
   return (
     <div className="relative flex flex-col items-center justify-center pt-8 md:pt-20">
@@ -85,31 +81,33 @@ function CarouselContent() {
         ensures that students are not only equipped with theoretical knowledge
         but also practical experience.
       </h6>
-      <div className="flex w-[80%] md:max-w-[70%] py-8 md:py-20 md:gap-[10%] items-center justify-center mx-auto">
+      <div className="flex w-[80%] md:max-w-[70%] overflow-visible py-8 md:py-20 md:pb-10 md:gap-[10%] items-center justify-center mx-auto">
         <button
           onClick={handlePrevClick}
-          className={`hidden pointer-events-auto shadow-2xl text-white h-[60px] min-w-[60px] max-w-[60px] bg-[#007A83] rounded-full md:flex items-center justify-center text-[40px] ${
-            activeIndex === 0
-              ? "cursor-not-allowed opacity-50"
-              : "active:scale-90"
-          }`}
-          disabled={activeIndex === 0}
+          className={`hidden pointer-events-auto shadow-2xl text-white h-[60px] min-w-[60px] max-w-[60px] bg-[#007A83] rounded-full md:flex items-center justify-center text-[40px] 
+            active:scale-90
+          `}
         >
           <PiCaretLeftThin />
         </button>
         <Swiper
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           ref={swiperRef}
+          loop={true}
           slidesPerView={isMobile ? 2 : 3}
           spaceBetween={isMobile ? "10%" : "10%"}
+          // style={{
+          //   overflow: "visible",
+          //   width: "70%",
+          // }}
         >
           {cards.map((card, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="overflow-visible">
               <div
                 style={{
                   boxShadow: "0px 32.744px 57.6px 0px rgba(0, 0, 0, 0.15)",
                 }}
-                className="bg-[#E7F1F2] md:min-w-[206px] p-2 md:p-5 aspect-square flex gap-20"
+                className="bg-[#E7F1F2] overflow-visible md:min-w-[206px] p-2 md:p-5 aspect-square flex gap-20"
               >
                 <div className="flex flex-col justify-center items-center w-full h-full">
                   <h3 className="text-[40px] md:text-[51px] leading-tight text-[#007A83] font-extrabold">
@@ -128,12 +126,7 @@ function CarouselContent() {
         </Swiper>
         <button
           onClick={handleNextClick}
-          className={`hidden pointer-events-auto shadow-2xl text-white h-[60px] min-w-[60px] max-w-[60px] bg-[#007A83] rounded-full md:flex items-center justify-center text-[40px] ${
-            activeIndex >= cards.length - 3
-              ? "cursor-not-allowed opacity-50"
-              : "active:scale-90"
-          }`}
-          disabled={activeIndex === cards.length - 1}
+          className={`hidden pointer-events-auto shadow-2xl text-white h-[60px] min-w-[60px] max-w-[60px] bg-[#007A83] rounded-full md:flex items-center justify-center text-[40px] active:scale-90`}
         >
           <PiCaretRightThin />
         </button>
@@ -143,16 +136,14 @@ function CarouselContent() {
           <div
             key={index}
             onClick={() => {
-              setActiveIndex(index); // Manually change index on dot click
-              swiperRef.current.swiper.slideTo(index); // Swipe to the corresponding slide
+              swiperRef.current.swiper.slideToLoop(index); // Correctly navigate to logical index
+              setActiveIndex(index); // Update active index state
             }}
-            className={`cursor-pointer ${
-              index === activeIndex ? "active" : ""
-            }`}
+            className={`cursor-pointer`}
           >
             <div
-              className={`w-[10px] h-[10px] md:w-[19px] md:h-[19px] rounded-full ${
-                index === activeIndex
+              className={`w-[7px] h-[7px] md:w-[12px] md:h-[12px] rounded-full ${
+                activeIndex === index
                   ? "bg-[#3D001B] bg-opacity-100"
                   : "bg-[#760135] bg-opacity-70"
               }`}

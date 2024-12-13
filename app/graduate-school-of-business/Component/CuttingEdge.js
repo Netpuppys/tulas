@@ -61,7 +61,7 @@ function CuttingEdge() {
         <div className="w-full h-full flex flex-col py-8 md:py-20 md:pb-14 gap-8 md:gap-20 items-center ">
           <h8 className="text-white flex flex-col md:flex-row items-center justify-center leading-none gap-6 text-[40px] md:text-[clamp(20px,3vw,100px)] font-[Helvetica] font-light">
             <span>
-              <strong className="font-bold">Tula’s </strong>cutting edge
+              <strong className="font-bold">Tula’s </strong>Cutting Edge
             </span>
             <span className="text-[40px] md:text-[clamp(20px,3.2vw,100px)] font-[GoudyCatalogue] ">
               Specialisations
