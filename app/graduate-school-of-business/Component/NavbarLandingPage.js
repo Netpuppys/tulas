@@ -54,7 +54,7 @@ function NavbarLandingPage() {
             onClick={() => (window.location.href = "tel:+91-9837983721")}
           >
             <div
-              className={`p-[15px] border-2 rounded-[50%] aspect-square border-r-transparent`}
+              className={`w-16 md:w-[74px] flex items-center justify-center border-2 rounded-[50%] aspect-square border-r-transparent`}
             >
               <div className="w-[40px] h-[40px]">
                 <Image src={phoneCallGif} alt="" className="w-full h-full" />
@@ -78,7 +78,7 @@ function NavbarLandingPage() {
         <div className="fixed flex animate-fadeIn items-center justify-center gap-[5%] right-0 z-50 pt-[8vw] pr-[8vw] md:pt-[2.5vw] md:pr-[2.5vw]">
           <button
             title="Admission Helpline No. +91-9837983721"
-            className="bg-[#E69706] rounded-full text-3xl shadow-lg w-16 md:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+            className="bg-[#E69706] rounded-full text-3xl shadow-lg w-16 md:w-[74px] aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
             onClick={() => (window.location.href = "tel:+91-9837983721")}
           >
             <div className="w-[40px] h-[40px]">
@@ -92,7 +92,7 @@ function NavbarLandingPage() {
           (window.location.href =
             "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
         }
-        className="fixed bottom-[8vw] flex justify-center items-center right-[8vw] md:bottom-[2.5vw] md:right-[2.5vw] text-[#760135B2] z-50 w-16 md:w-20 bg-white aspect-square rounded-full"
+        className="fixed bottom-[8vw] flex justify-center items-center right-[8vw] md:bottom-[2.5vw] md:right-[2.5vw] text-[#760135B2] z-50 w-16 md:w-[74px] bg-white aspect-square rounded-full"
       >
         <FaWhatsapp className="w-[40px] h-[40px]" />
       </button>
