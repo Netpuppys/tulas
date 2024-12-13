@@ -70,7 +70,7 @@ function WhyChoose() {
                 <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-4 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] leading-none text-wrap font-[TTChocolatesBold] font-normal">
                   {card.title}
                 </h3>
-                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-2 text-[clamp(10px,4vw,30px)] md:text-[clamp(15px,1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
+                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-2 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
                   {card.description}
                 </h3>
               </div>

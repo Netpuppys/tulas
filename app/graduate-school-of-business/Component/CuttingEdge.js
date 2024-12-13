@@ -50,7 +50,7 @@ function CuttingEdge() {
       <Image
         src={mbaImage}
         alt=""
-        className="w-full max-w-[1140px] rounded-xl -z-10 mx-auto h-fit -mb-[39px]"
+        className="w-full md:max-w-[60vw] rounded-xl -z-10 mx-auto h-fit -mb-[39px]"
       />
       <div className="relative w-[95%] md:w-full rounded-xl overflow-hidden z-20 h-full">
         <Image

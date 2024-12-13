@@ -214,28 +214,28 @@ function FormLandingPage() {
             </p>
             <a
               href="tel:+91-9837983721"
-              className="flex text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
             >
               <IoCall />
               98379 83721
             </a>
             <a
               href="mailTo:info@tulas.edu.in"
-              className="flex text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
             >
               <IoMail />
               info@tulas.edu.in
             </a>
             <a
               href="https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D"
-              className="flex text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
             >
               <IoLocation className="min-w-[16px] h-[16px]" />
               Tula's Institute, Dhoolkot Near Selaqui, Dhulkot Rd,
               Dehradun, Uttarakhand
             </a>
             <div className="w-full flex justify-end">
-              <Image src={tulasLogo} alt="" className="mt-4 w-[114px]" />
+              <Image src={tulasLogo} alt="" className="mt-4 max-w-[114px]" />
             </div>
           </div>
           <form className="p-7 w-full" onSubmit={handleSubmit}>

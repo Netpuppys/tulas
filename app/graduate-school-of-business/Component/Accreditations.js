@@ -56,7 +56,7 @@ function Accreditations() {
             <h3 className="text-[#007A83] text-center text-[clamp(15px,3.6vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold]">
               {card.title}
             </h3>
-            <h3 className="text-[#000] text-center text-[clamp(7px,3vw,30px)] md:text-[clamp(15px,1vw,45px)] font-[Helvetica]">
+            <h3 className="text-[#000] text-center text-[clamp(7px,3vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[Helvetica]">
               {card.desc}
             </h3>
           </div>
