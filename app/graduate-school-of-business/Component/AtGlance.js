@@ -10,7 +10,7 @@ function AtGlance() {
   const images = [glance1, glance2, glance3, glance4, glance5, glance6];
   return (
     <div className="pb-8 px-4 md:px-6 md:pb-20 flex flex-col items-center justify-center w-full">
-      <h8 className="text-[#646464] flex items-center justify-center leading-none gap-6 text-[40px] md:text-[clamp(20px,3vw,100px)] font-[Helvetica] font-light">
+      <h8 className="text-[#646464] flex flex-col md:flex-row items-center justify-center leading-none gap-6 text-[40px] md:text-[clamp(20px,3vw,100px)] font-[Helvetica] font-light">
         At a
         <span className="text-[40px] text-[#007A83] md:text-[clamp(20px,3.2vw,100px)] font-[GoudyCatalogue] ">
           Glance

@@ -40,6 +40,7 @@ function Placement() {
     icici,
     extraMark,
     wipro,
+    sbi,
   ];
   const swiperRef = useRef();
   const [activeIndex, setActiveIndex] = useState(0);
@@ -112,11 +113,11 @@ function Placement() {
             ))}
           </div>
         </div>
-        <div className="py-8 px-4 md:px-6 md:py-20 w-full flex flex-col justify-center items-center">
+        <div className="py-8 px-4 md:px-6 md:py-20 w-full md:w-[80%] mx-auto flex flex-col justify-center items-center">
           <Image
             src={placementInternship}
             alt=""
-            className="w-full max-w-[1140px] relative z-10 rounded-xl mx-auto h-fit -mb-[39px]"
+            className="w-full md:max-w-[60vw] relative z-10 rounded-xl mx-auto h-fit -mb-[39px]"
           />
           <div className="relative w-[95%] bg-[#FFFFFF] md:w-full rounded-xl overflow-hidden z-20 h-full">
             <div className="w-full h-full flex flex-col py-8 md:py-20 md:pb-10 gap-10 items-center ">
@@ -126,7 +127,7 @@ function Placement() {
                   Internships
                 </span>
               </h8>
-              <h4 className="px-8 md:px-0 w-full md:max-w-[55%] font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(12px,1.3vw,45px)] text-black">
+              <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(12px,1.3vw,45px)] text-black">
                 The primary objective of the Training and Placement Cell at
                 Tula’s Institute is to prepare and empower students for
                 successful campus recruitment. Our goal is to equip students
@@ -134,10 +135,10 @@ function Placement() {
                 and secure rewarding career opportunities. We provide training
                 that focuses on:
               </h4>
-              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[55%] font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(12px,1.3vw,45px)] text-black justify-between">
+              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(12px,1.3vw,45px)] text-black justify-between">
                 <li>Communication Skills</li>
-                <li>Aptitude Development</li>
                 <li>Personal and Professional Grooming</li>
+                <li>Aptitude Development</li>
               </ul>
               <button
                 style={{
@@ -151,18 +152,18 @@ function Placement() {
             </div>
           </div>
         </div>
-        <div className="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-center gap-3 md:gap-[10%]">
+        <div className="w-[80%] px-4 md:px-6 mx-auto flex flex-col md:flex-row gap-3 md:gap-[10%]">
           {internship.map((card, index) => (
             <div
               key={index}
-              className="w-full px-5 py-3 h-fit bg-[#F5F5F5] rounded-md overflow-hidden"
+              className="w-full px-5 py-3 bg-[#F5F5F5] rounded-md overflow-hidden"
             >
               <div className="w-full h-fit flex gap-20 justify-between items-center">
                 <div>
-                  <h3 className="text-[35px] md:text-[45px] leading-tight text-[#830C44] font-bold">
+                  <h3 className="text-[25px] md:text-[clamp(20px,2vw,100px)] leading-tight text-[#830C44] font-bold">
                     {card.value}
                   </h3>
-                  <h3 className="font-[TTChocolatesBold] text-[16px] md:text-[20px] leading-tight text-[#000000] font-extrabold">
+                  <h3 className="font-[TTChocolatesBold] text-[14px] md:text-[20px] leading-tight text-[#000000] font-extrabold">
                     {card.title}
                   </h3>
                 </div>
