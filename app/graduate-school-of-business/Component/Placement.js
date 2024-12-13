@@ -159,17 +159,17 @@ function Placement() {
               className="w-full px-5 py-3 bg-[#F5F5F5] rounded-md overflow-hidden"
             >
               <div className="w-full h-fit flex gap-20 justify-between items-center">
-                <div>
-                  <h3 className="text-[25px] md:text-[clamp(20px,2vw,100px)] leading-tight text-[#830C44] font-bold">
+                <div className="w-full">
+                  <h3 className="text-[25px] md:text-[clamp(10px,1.7vw,100px)] leading-tight text-[#830C44] font-bold">
                     {card.value}
                   </h3>
-                  <h3 className="font-[TTChocolatesBold] text-[14px] md:text-[20px] leading-tight text-[#000000] font-extrabold">
+                  <h3 className="font-[TTChocolatesBold] text-[14px] md:text-[clamp(10px,1vw,100px)] leading-tight text-[#000000] font-extrabold">
                     {card.title}
                   </h3>
                 </div>
-                <Image src={card.icon} alt="" className="w-[65px] h-fit" />
+                <Image src={card.icon} alt="" className="w-[65px] md:w-[3vw] h-fit" />
               </div>
-              <h3 className="font-[TTChocolatesBold] mt-2 text-[14px] md:text-[16px] leading-tight text-[#000000] font-normal">
+              <h3 className="font-[TTChocolatesBold] mt-2 text-[14px] md:text-[clamp(10px,1vw,100px)] leading-tight text-[#000000] font-normal">
                 {card.desc}
               </h3>
             </div>
