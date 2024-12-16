@@ -18,17 +18,17 @@ import bookBank from "../../../public/infrastructure/Other/bookBank.png";
 import Vision from "@/component/Programs/Vision";
 const sections = [
   {
-    title: "Wifi Facility",
+    title: "Wi-Fi Facility",
     description: (
       <>
-        Availability of 24Hrs Wi-Fi internet access in the campus with 1 Gbps
-        speed and Comprehensive E-Learning environment provided in the campus,
+        Availability of 24 hours Wi-Fi internet access in the campus with 1 Gbps
+        speed and comprehensive E-Learning environment provided in the campus,
         enables all the students and faculty members to be connected which is
         essential for effective learning.
         <br />
         <br />
         Our Digital library has over 59000+ e-books available round the clock
-        through a FTP server on the intranet. Students can access the material
+        through a FTP server on the internet. Students can access the material
         and books anytime from anywhere on the campus.
       </>
     ),
@@ -46,16 +46,16 @@ const sections = [
       "The institute provides guest room facilities within the campus for students’ parents, relatives and guests coming to meet their wards. They can avail the facility for a brief stay along with meals from the hostel mess, and cafeteria. However they are charged a nominal amount for the same.",
     image: guestHouse,
   },
-  {
-    title: "Gymnasium",
-    description:
-      "The students have access to a well-equipped gymnasium, allowing them to work out at a time convenient to them. The gym is open in the morning and in the evening. Various equipment like Treadmill, Rowing machine, Cycle, Cross trainer, Twister, Steppers, Ab rollers etc. have been provided. Special trainers have also been employed for the gym. This has been done keeping in mind that a healthy mind can only exist in a healthy body.",
-    image: Gymnasium,
-  },
+  // {
+  //   title: "Gymnasium",
+  //   description:
+  //     "The students have access to a well-equipped gymnasium, allowing them to work out at a time convenient to them. The gym is open in the morning and in the evening. Various equipment like Treadmill, Rowing machine, Cycle, Cross trainer, Twister, Steppers, Ab rollers etc. have been provided. Special trainers have also been employed for the gym. This has been done keeping in mind that a healthy mind can only exist in a healthy body.",
+  //   image: Gymnasium,
+  // },
   {
     title: "Shopping Arcade",
     description:
-      "A shopping arcade has been set up within the campus. It has the facility of laundry, a barber’s shop, stationary and a tuck shop. Reprographic facility is also available. First aid boxes have been kept in the Labs, workshop, hostel blocks and with the receptionist. An Ambulance with a driver has been kept stand-by so as to cater to the emergent demand of students. The in-house medical facility comprises of basic amenities providing treatment by a specialized medical staff within the campus. A qualified physician who is our full time medical consultant is also available 24×7 on call. An infirmary in the campus caters to small ailments.",
+      "There’s a shopping arcade right on campus! You’ll find everything you need here—a laundry service, a barber’s shop to keep you looking sharp, a stationery store for all your supplies, and a tuck shop to grab snacks and treats. Plus, there’s a reprographic facility to take care of all your printing and copying needs.",
     image: shopping,
   },
   {
@@ -91,42 +91,35 @@ const sections = [
     ),
     image: medical,
   },
-  {
-    title: "Play Ground",
-    description:
-      "A play ground facility is available for sports like cricket, football, volley ball, throw ball, basket ball, badminton and many other outdoor games.A play ground facility is available for sports like cricket, football, volley ball, throw ball, basket ball, badminton and many other outdoor games.",
-    image: playGround,
-  },
+  // {
+  //   title: "Play Ground",
+  //   description:
+  //     "A play ground facility is available for sports like cricket, football, volley ball, throw ball, basket ball, badminton and many other outdoor games.A play ground facility is available for sports like cricket, football, volley ball, throw ball, basket ball, badminton and many other outdoor games.",
+  //   image: playGround,
+  // },
   {
     title: "Transportation",
     description: (
       <>
-        The college offers transportation to all students and members of faculty
-        to the prime locations. Safe and comfortable transportation buses are
-        provided by the Tula`s Institute. Students are picked up and dropped at
-        fixed points within 500 metre radius of their residences.
+        Tula’s Institute offers safe and reliable transportation, ensuring a
+        stress-free commute for students and faculty. With pick-up and drop-off
+        points conveniently located within a 500-meter radius of residences, the
+        service prioritizes both comfort and efficiency.
         <br />
         <br />
-        The Institute provides transportation facilities to students. The
-        parents who want to send their children to Institute by Institute l bus
-        should apply for it at the beginning of the academic year. Bus fees will
-        be collected in three instalments. The Institute bus facility should be
-        availed for an entire term. One months’ notice in writing should be
-        given for discontinuance of the bus facility. Requests for change of
-        boarding points must be made in writing one month in advance. Nobody
-        without a valid bus pass will be allowed to board the bus.
+        Riding the Institute bus isn’t just about transportation—it’s an
+        opportunity to build life skills. Students develop habits like patience,
+        teamwork, and respect for others, making every journey meaningful.
         <br />
         <br />
-        Loss of the pass shall be reported promptly at the Institute office.
-        Commuting by Institute bus is an occasion for the pupils to cultivate
-        good habits like patience, forbearance, tolerance, sympathy, team
-        spirit, cooperation and consideration for others. Gentlemanly and
-        exemplary behaviour is expected of all the students in the bus and at
-        the boarding points where they wait for the bus. Strong and prompt
-        disciplinary action will be taken against the students who misbehave. If
-        the Institute bus fails to ply on any day on account of some unforeseen
-        difficulty, the students should come to Institute by other means. No
-        complaint will be entertained on such issues.
+        Parents can apply for the bus service at the beginning of the academic
+        year. Fees are collected in three easy installments, and a one-month
+        written notice is required to discontinue or modify the service. Only
+        students with valid passes are allowed to board, and lost passes must be
+        reported immediately.
+        <br />
+        <br />
+        With Tula’s, every ride is safe, convenient, and comfortable.
       </>
     ),
     image: TulasTransportation,
@@ -164,13 +157,13 @@ function OtherFacilities() {
             image={BannerImg}
             title={
               <>
-                OTHER <span className="text-[#007A83]">FACILITIES</span>
+                Campus <span className="text-[#007A83]">FACILITIES</span>
               </>
             }
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit."
+              "Set against a backdrop of natural beauty, Tula’s Institute offers an environment that inspires growth and discovery. From thoughtfully planned spaces to an environment that balances focus and recreation, the campus sets the stage for holistic growth. It’s where innovation meets comfort, creating the perfect backdrop for academic and personal journeys."
             }
           />
           {/* fixed background */}

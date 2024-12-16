@@ -38,14 +38,11 @@ function BAJMC() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              DIPLOMA IN{" "}
-              <span className="text-[#760135]">CIVIL ENGINEERING</span>
-            </>
+            title=<>DIPLOMA IN CIVIL ENGINEERING</>
             titleColor={""}
-            description={
-              "Department of Civil engineering Offers Diploma in Civil Engineering of a duration of 3 years. With rapidly booming infrastructure developments all around, civil engineers today are in much higher demand than ever before."
-            }
+            // description={
+            //   "Department of Civil engineering Offers Diploma in Civil Engineering of a duration of 3 years. With rapidly booming infrastructure developments all around, civil engineers today are in much higher demand than ever before."
+            // }
           />
           <Program parentRef={parentRef} images={images} content={content} />
 

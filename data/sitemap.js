@@ -191,7 +191,7 @@ const sitemap = [
         linkTo: "/infrastructure/hostel-and-mess/",
       },
       {
-        title: "Other Facilities",
+        title: "Campus Facilities",
         linkTo: "/infrastructure/other-facilities/",
       },
       {
@@ -379,15 +379,15 @@ const sitemap = [
       //   linkTo: "/placements/industries-tie-up/",
       // },
       {
-        title: "Career Innovation Centre",
+        title: "Placement at Tula’s",
         linkTo: "/placements/career-innovation-centre/",
       },
       {
-        title: "Technical Department",
+        title: "Technical Placement Record",
         linkTo: "/placements/technical-department/",
       },
       {
-        title: "Non - Technical Department",
+        title: " Non-Technical Placement Record",
         linkTo: "/placements/non-technical-department/",
       },
     ],

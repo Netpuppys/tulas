@@ -75,27 +75,15 @@ const TableComponent = () => {
   );
 };
 
-const TealText = ({ children }) => {
-  return (
-    <span className="text-[#007A83] font-[TTChocolatesBold] font-semibold">
-      {children}
-    </span>
-  );
-};
-
 const description = (
   <>
-    <TealText>Career Innovation Centre (CIC)</TealText> at Tula’s Institute is a
-    dynamic hub dedicated to revolutionizing career planning and development for
-    students. The CIC serves as a bridge between{" "}
-    <TealText>academic learning</TealText> and{" "}
-    <TealText>real-world employment</TealText>, equipping students with the
-    skills and insights necessary to excel in their chosen fields.
-    <br />
-    <br />
-    <TealText>Our mission</TealText> is to foster a forward-thinking approach to
-    career growth by integrating cutting-edge tools, personalized guidance, and
-    industry connections.
+    The Technical Department at Tula’s stands as a cornerstone of our placement
+    success, ensuring students are equipped with the technical expertise
+    required by top recruiters. Through rigorous training, state-of-the-art
+    resources, and a commitment to excellence, the department has consistently
+    contributed to producing industry-ready professionals. Its impactful efforts
+    are evident in the impressive placement records achieved by our students
+    across various technical domains.
   </>
 );
 
@@ -110,11 +98,7 @@ const page = () => {
 
       <Navbar />
       <Banner
-        title={
-          <>
-            TECHNICAL <span className="text-[#007A83]">PLACEMENT RECORD</span>
-          </>
-        }
+        title={"Technical Placement Record"}
         image={bannerImage}
         belowPara={description}
       />

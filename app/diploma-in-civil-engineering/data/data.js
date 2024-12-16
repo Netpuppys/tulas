@@ -15,13 +15,10 @@ export const images = [
 ];
 export const content = (
   <>
-    Department of Civil engineering Offers Diploma in Civil Engineering of a
-    duration of 3 years. With rapidly booming infrastructure developments all
-    around, civil engineers today are in much higher demand than ever before.
-    Civil diploma holders can make building plans, devise solutions for building
-    materials, and work onsite as an assistant to the supervisor and site
-    manager. Students are taught various skills and learning during the course,
-    which make them proficient at what they do.
+    The Department of Civil Engineering offers a 3-year diploma designed for
+    today’s booming infrastructure industry. With civil engineers in high
+    demand, this course equips you to design building plans, solve material
+    challenges, and gain hands-on site experience for a successful career.
   </>
 );
 

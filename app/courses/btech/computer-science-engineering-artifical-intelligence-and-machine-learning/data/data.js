@@ -11,6 +11,15 @@ export const images = [
 ];
 export const content = (
   <>
+    CSE (AI & ML) at Tula’s Institute blends the fundamentals of computer
+    science with advanced techniques in artificial intelligence and machine
+    learning. This program equips students with the skills to develop
+    intelligent systems, analyze data, and innovate across industries like
+    robotics, healthcare, and automation. With a strong focus on hands-on
+    learning and real-world applications, students are prepared to excel in the
+    rapidly evolving tech landscape and lead future advancements.
+    <br />
+    <br />
     The program objectives include:
     <ul className="list-disc ml-5">
       <li>

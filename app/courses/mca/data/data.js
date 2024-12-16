@@ -27,10 +27,6 @@ export const images = [
 ];
 export const content = (
   <>
-    {/* <center className="italic font-black">
-      Elevate Your Career in Technology
-    </center> */}
-    <br />
     The Master of Computer Applications (MCA) is a postgraduate pathway to
     advanced, specialized tech roles for aspiring tech leaders, offering
     in-depth training in software development, data science, AI, and

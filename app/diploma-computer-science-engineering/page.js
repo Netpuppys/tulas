@@ -43,15 +43,12 @@ function BAJMC() {
           <Banner
             image={BannerImg}
             title=<>
-              DIPLOMA IN{" "}
-              <span className="text-[#760135]">
-                COMPUTER SCIENCE ENGINEERING
-              </span>
+              DIPLOMA IN COMPUTER SCIENCE ENGINEERING
             </>
             titleColor={""}
-            description={
-              "The Diploma program in Computer Science and Engineering program is a three-year undergraduate program. The Diploma program in Computer Science & Engineering stands out as one of the most coveted engineering program, shaping individuals for thriving careers in the IT industry."
-            }
+            // description={
+            //   "The Diploma program in Computer Science and Engineering program is a three-year undergraduate program. The Diploma program in Computer Science & Engineering stands out as one of the most coveted engineering program, shaping individuals for thriving careers in the IT industry."
+            // }
           />
           <Program parentRef={parentRef} images={images} content={content} />
 

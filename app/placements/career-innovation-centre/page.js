@@ -14,163 +14,149 @@ const section = [
     title: "Career Innovation Centre (CIC)",
     description: (
       <>
-        The Career Innovation Centre (CIC) at Tula's Institute is a dynamic hub
-        aimed at transforming students' career planning and development. Acting
-        as a bridge between academic knowledge and real-world employment, the
-        CIC is dedicated to equipping students with the necessary skills and
-        insights to excel in their chosen professions.
+        Worried about what’s next after college? Wondering how to land your
+        dream job or prepare for competitive exams? Don’t worry, we’ve got your
+        back! The Career Innovation Centre (CIC) at Tula’s is here to help you
+        turn your career goals into reality.
         <br />
         <br />
-        Our mission is to promote a progressive approach to career development
-        by integrating advanced tools, personalised guidance, and strong
-        industry connections. The CIC offers an extensive range of services,
-        including career counselling, skills assessment, and CV-building
-        support. We host innovative workshops and seminars that provide students
-        with current industry trends, interview techniques, and effective
-        networking strategies.
+        <strong>Career Counselling:</strong> Struggling to figure out what comes
+        next? Our personalised guidance helps you choose the right path, whether
+        it’s a job or further studies.
         <br />
         <br />
-        In collaboration with leading companies and industry experts, we ensure
-        that our students are well-prepared to navigate the constantly evolving
-        job market. Furthermore, we emphasise entrepreneurial development,
-        encouraging students to explore and launch their own business ventures.
-        By leveraging our extensive resources and networks, the CIC empowers
-        students to transform their aspirations into actionable career pathways.
+        <strong>Skill Development:</strong> Need to make your resume stand out
+        or ace that interview? We’ll teach you how to build the skills that
+        employers look for.
         <br />
         <br />
-        At Tula's Institute's Career Innovation Centre, we are committed to
-        unlocking the full potential of each student, ensuring they are not
-        merely job-ready but prepared for long-term career success.
+        <strong>Higher Education Support:</strong> Planning for exams like GRE,
+        GATE, or CAT? We’ll help you prepare and guide you through the entire
+        process.
+        <br />
+        <br />
+        <strong>Industry Insights:</strong> Want to know the latest trends in
+        the job market? Our workshops and seminars keep you up to date with
+        industry knowledge and networking tips.
+        <br />
+        <br />
+        <strong>Connections with Recruiters:</strong> Want to work with the
+        finest organisation in your field? We connect you with top recruiters to
+        give your career a head start.
+      </>
+    ),
+    image: hostel,
+  },
+  // {
+  //   title: "Career Innovation Centre",
+  //   description: (
+  //     <>
+  //       The Career Innovation Centre, supported by faculty members from various
+  //       departments, delivers effective career guidance services to students.
+  //       This includes counselling for higher education, such as GRE, GATE, CAT,
+  //       among others. Each year, the AMCAT exam is administered for 5th and
+  //       7th-semester students to evaluate their readiness for the job market,
+  //       providing tailored guidance based on their sectoral fit.
+  //       <br />
+  //       <br />
+  //       Roles and Responsibilities
+  //       <ul className="list-disc ml-5">
+  //         <li>
+  //           To provide guidance on educational and vocational/career matters
+  //           through individual and group counselling sessions.
+  //         </li>
+  //         <li>
+  //           To offer pre-placement guidance and counselling for postgraduate
+  //           studies.
+  //         </li>
+  //         <li>
+  //           To assist students in making informed decisions about their
+  //           education and career trajectories.
+  //         </li>
+  //         <li>
+  //           To help students understand that career management is a lifelong
+  //           process requiring continual development.
+  //         </li>
+  //         <li>
+  //           To educate students on the influence of technological trends on
+  //           career management and progression.
+  //         </li>
+  //         <li>
+  //           To promote student independence and self-confidence in career
+  //           decision-making.
+  //         </li>
+  //         <li>
+  //           To raise awareness of the wide range of opportunities available to
+  //           students following graduation, whether in higher education or career
+  //           development.
+  //         </li>
+  //       </ul>
+  //     </>
+  //   ),
+  //   image: hostel,
+  // },
+  {
+    title: "The Training Department",
+    description: (
+      <>
+        The Training Department offers an immersive{" "}
+        <strong>Personality Development program</strong> integrated into the
+        regular curriculum to prepare students for their professional careers.
+        Through weekly four-hour sessions, students enhance their soft skills,
+        aptitude, and attitude—essential for securing employment.
+        <br />
+        <br />
+        The department focuses on developing students holistically, ensuring
+        they are equipped to tackle corporate challenges post-graduation.{" "}
+        <strong>The School of Lifelong Learning</strong> organizes workshops,
+        group discussions, debates, and job fairs to boost engagement and
+        skill-building.
+        <br />
+        <br />
+        For 6th-semester students, the{" "}
+        <strong>"Campus to Corporate" program</strong> connects academic
+        knowledge with industry expectations, featuring top industry trainers
+        for high-quality professional development.
       </>
     ),
     image: hostel,
   },
   {
-    title: "Career Innovation Centre",
+    title: "The Placement Department",
     description: (
       <>
-        The Career Innovation Centre, supported by faculty members from various
-        departments, delivers effective career guidance services to students.
-        This includes counselling for higher education, such as GRE, GATE, CAT,
-        among others. Each year, the AMCAT exam is administered for 5th and
-        7th-semester students to evaluate their readiness for the job market,
-        providing tailored guidance based on their sectoral fit.
+        The Placement Department at CIC is the bridge between students and
+        leading organizations, creating opportunities for internships and
+        placements. We connect academic talent with industry needs, ensuring
+        students are ready for the professional world.
         <br />
         <br />
-        Roles and Responsibilities
+        <strong>What We Do:</strong>
+        <br />
         <ul className="list-disc ml-5">
           <li>
-            To provide guidance on educational and vocational/career matters
-            through individual and group counselling sessions.
+            Bring top-tier companies to you by building strong industry ties.
           </li>
           <li>
-            To offer pre-placement guidance and counselling for postgraduate
-            studies.
+            Create partnerships (MoUs) with leading companies for job
+            placements.
+          </li>
+          <li>Help you connect with industry professionals</li>
+          <li>
+            Invite companies to campus so you can show them what you’ve got.
           </li>
           <li>
-            To assist students in making informed decisions about their
-            education and career trajectories.
+            Organize field visits to let you experience different industries up
+            close.
           </li>
           <li>
-            To help students understand that career management is a lifelong
-            process requiring continual development.
+            Set up workshops and job fairs to get you face-to-face with
+            employers.
           </li>
           <li>
-            To educate students on the influence of technological trends on
-            career management and progression.
-          </li>
-          <li>
-            To promote student independence and self-confidence in career
-            decision-making.
-          </li>
-          <li>
-            To raise awareness of the wide range of opportunities available to
-            students following graduation, whether in higher education or career
-            development.
+            Find both on-campus and off-campus job opportunities just for you.
           </li>
         </ul>
-      </>
-    ),
-    image: hostel,
-  },
-  {
-    title: "Training Department",
-    description: (
-      <>
-        Roles and Responsibilities
-        <br />
-        <br />
-        The Training Department provides a structured Personality Development
-        programme, integrated into the regular curriculum, to prepare students
-        for their professional journeys. Core to securing employment, subjects
-        such as soft skills development, aptitude enhancement, and attitude
-        building are delivered through weekly sessions lasting four hours.
-        <br />
-        <br />
-        The Training Department is committed to developing students in multiple
-        dimensions, ensuring they can confidently face the challenges of the
-        corporate world upon graduation. The School of Lifelong Learning
-        organises activities such as presentation skills workshops, group
-        discussions, debates, and job fairs to enhance student engagement and
-        skill development.
-        <br />
-        <br />
-        For students in the 6th semester, the department runs a specialised
-        industry-focused programme, "Campus to Corporate", which bridges
-        academic learning with corporate expectations. The department also
-        collaborates with top industry trainers to deliver these modules,
-        ensuring students receive the highest standard of professional
-        development training.
-      </>
-    ),
-    image: hostel,
-  },
-  {
-    title: "Placement Department",
-    description: (
-      <>
-        The CIC actively collaborates with prominent organisations to facilitate
-        internships and placement opportunities for students. Acting as a
-        liaison between students, alumni, and the employment community, the
-        department bridges the gap between industry expectations and academic
-        preparation.
-        <br />
-        <br />
-        Roles and Responsibilities
-        <br />
-        <ul>
-          <li>
-            To establish a robust interface between the institution and the
-            industry.
-          </li>
-          <li>
-            To formalise Memoranda of Understanding (MoUs) with leading
-            companies for academic collaboration and student placements.
-          </li>
-          <li>
-            To provide industrial connections for both students and faculty
-            members.
-          </li>
-          <li>
-            To encourage industries to engage with the institution, enhancing
-            familiarisation with the academic environment.
-          </li>
-          <li>
-            To organise industrial visits for students, providing practical
-            exposure to various sectors.
-          </li>
-          <li>
-            To facilitate corporate-student engagement activities such as
-            workshops and recruitment drives.
-          </li>
-          <li>
-            To generate on-campus and off-campus employment opportunities for
-            students.
-          </li>
-        </ul>
-        This strategic focus ensures that students are well-prepared to
-        transition smoothly into the workforce, aligning their academic
-        achievements with industry demands.
       </>
     ),
     image: hostel,
@@ -191,17 +177,11 @@ const Highlight = ({ children }) => {
 
 const description = (
   <>
-    <Highlight>{"Career Innovation Centre (CIC)"}</Highlight> at Tula's
-    Institute is a dynamic hub dedicated to revolutionizing career planning and
-    development for students. The CIC serves as a bridge between{" "}
-    <Highlight>academic learning</Highlight> and{" "}
-    <Highlight>real-world employment</Highlight>, equipping students with the
-    skills and insights necessary to excel in their chosen fields.
-    <br />
-    <br />
-    <Highlight>Our mission</Highlight> is to foster a forward-thinking approach
-    to career growth by integrating cutting-edge tools, personalized guidance,
-    and industry connections.
+    Your time at Tula’s Institute is just the beginning. With connections to
+    top-tier companies, expert career guidance, and real-world experiences, we
+    ensure you transition smoothly from classroom to career. It’s not just about
+    landing a job — it’s about stepping into the right role, and we’re here to
+    guide you every step of the way!
   </>
 );
 
@@ -222,7 +202,7 @@ const page = () => {
       <body>
         <Navbar />
         <Banner
-          title={"CAREER INNOVATION CENTRE"}
+          title={"Placement at Tula’s"}
           belowPara={description}
           image={bannerImage}
         />

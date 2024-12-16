@@ -132,7 +132,26 @@ function Sports() {
             }
             description={<></>}
             belowTitle="SPORTS INFRASTRUCTURE"
-            belowPara="Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit.Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit.Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers and management graduates. 6 hostels are located in Tula’s campus, out of which 4 are boy’s hostels and 2 are girl’s hostels. Each room is on twin sharing; rooms are spacious, ventilated, airy, and well lit.Tula’s Institute is one of the best engineering colleges in Dehradun, which provides the best hostel life; the hostel atmosphere forms an essential part of the young budding engineers"
+            belowPara=<>
+              We all have dreams don't we? To continue playing the sports we
+              played as school kids or to finally find a sport that gets our
+              adrenaline pumping? But then college happens and our dreams fizzle
+              out.
+              <br />
+              <br />
+              But not at Tula's!
+              <br />
+              <br />
+              Here we have a 22-acre campus designed with everything the sports
+              lover in you has ever dreamt of. We go beyond academics because we
+              understand confident and successful students are built when an
+              equal amount of time is spent in and beyond classrooms.
+              <br />
+              <br />
+              Craving for a field or pitch that brings out the finest in you?
+              Join Tula's, an institution that nurtures and nourishes all parts
+              of you!
+            </>
           />
 
           <div className="relative min-h-screen h-fit">
@@ -141,11 +160,24 @@ function Sports() {
               className="fixed top-0 -z-10 left-0 w-full h-full object-cover"
               alt=""
             />
-
             <div
               ref={contactRef}
               className="w-screen absolute top-[100vh] h-[calc(100%-200vh)] opacity-0"
             ></div>
+            <div className="w-full px-5 py-20 flex flex-col items-center justify-center gap-6">
+              <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white text-opacity-90 text-center max-w-[57rem]">
+                The Perfect Indoor Space for Play and Progress
+                <br />
+                <br />
+                Having the right space to relax, have fun, and grow is super
+                important. With the great facilities at Tula’s, indoor
+                activities become more than just games—they help you sharpen
+                your mind, improve focus, and work on your skills. Whether it's
+                planning your next move in chess, reacting quickly in table
+                tennis, or enjoying a friendly game of carrom, these spaces make
+                it easy for students to learn, play, and have a blast!
+              </p>
+            </div>
 
             <div
               className={`${
@@ -287,15 +319,6 @@ function Sports() {
                   <Image src={bubble8} className="w-full h-fit" alt="bubble" />
                 </div>
               </div>
-            </div>
-
-            <div className="w-full px-5 py-20 flex flex-col items-center justify-center gap-6">
-              <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white text-opacity-90 text-center max-w-[57rem]">
-                Availability of 24Hrs Wi-Fi internet access in the campus with
-                205 mbps speed and Comprehensive E-Learning environment provided
-                in the campus, enables all the students and faculty members to
-                be connected which is essential for effective learning.
-              </p>
             </div>
           </div>
         </div>

@@ -45,12 +45,11 @@ function BBA() {
           <Banner
             image={BannerImg}
             title=<>
-              Bachelor of Computer{" "}
-              <span className="text-[#760135]"> Applications (BCA)</span>
+              Bachelor of Computer Applications (BCA)
             </>
             titleColor={""}
             description={
-              "The Bachelor of Computer Applications (BCA) is a three-year program blending computer science fundamentals with practical training in software development, web design, and networking. It covers programming, database management, and AI, preparing students for roles like software developer or cybersecurity specialist. BCA lays a strong foundation for careers in IT or tech entrepreneurship."
+              ""
             }
           />
 

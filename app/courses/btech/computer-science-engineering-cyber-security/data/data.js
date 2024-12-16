@@ -11,6 +11,12 @@ export const images = [
 ];
 export const content = (
   <>
+    Computer Science & Engineering (Cyber Security) empowers you to secure the
+    digital frontier. In this program, you’ll gain expertise in protecting
+    systems, networks, and data from cyber threats while developing practical
+    skills through hands-on experience.
+    <br />
+    <br />
     The program objectives of a B.Tech in Cyber Security are designed to equip
     students with the necessary knowledge, skills, and capabilities to thrive in
     the dynamic field of cybersecurity. These objectives typically include:

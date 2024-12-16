@@ -34,13 +34,12 @@ export const images = [
 ];
 export const content = (
   <>
-    {/* <center className="italic font-black">
-      Your Gateway to the Digital World
-    </center> */}
-    <br />
-    BCA is a three-year bachelor’s degree program in computer applications. The
-    need for computer professionals is constantly rising globally due to the
-    rapid expansion of the IT industry.
+    The Bachelor of Computer Applications (BCA) is a three-year program blending
+    computer science fundamentals with practical training in software
+    development, web design, and networking. It covers programming, database
+    management, and AI, preparing students for roles like software developer or
+    cybersecurity specialist. BCA lays a strong foundation for careers in IT or
+    tech entrepreneurship.
     <br />
     <br />
     As the IT industry expands, this creates more career options for computer

@@ -62,28 +62,10 @@ const TableComponent = () => {
   );
 };
 
-const TealText = ({ children }) => {
-  return (
-    <span className="text-[#007A83] font-[TTChocolatesBold] font-semibold">
-      {children}
-    </span>
-  );
-};
+
 
 const description = (
-  <>
-    <TealText>Career Innovation Centre (CIC)</TealText> at Tula’s Institute is a
-    dynamic hub dedicated to revolutionizing career planning and development for
-    students. The CIC serves as a bridge between{" "}
-    <TealText>academic learning</TealText> and{" "}
-    <TealText>real-world employment</TealText>, equipping students with the
-    skills and insights necessary to excel in their chosen fields.
-    <br />
-    <br />
-    <TealText>Our mission</TealText> is to foster a forward-thinking approach to
-    career growth by integrating cutting-edge tools, personalized guidance, and
-    industry connections.
-  </>
+  "The Non-Technical Department at Tula’s focuses on delivering comprehensive education in areas such as management, humanities, and commerce. With a curriculum designed to align with industry standards, the department equips students with the knowledge and skills needed to excel in their chosen fields. Through practical learning, expert guidance, and a commitment to academic excellence, the Non-Technical Department prepares students for thriving careers in professional environments."
 );
 
 const page = () => {
@@ -98,10 +80,7 @@ const page = () => {
       <Navbar />
       <Banner
         title={
-          <>
-            NON - TECHNICAL{" "}
-            <span className="text-[#007A83]">PLACEMENT RECORD</span>
-          </>
+          "Non-Technical Placement Record"
         }
         image={bannerImage}
         belowPara={description}

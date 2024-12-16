@@ -46,12 +46,12 @@ function BAJMC() {
           <Banner
             image={BannerImg}
             title=<>
-              Department of Electrical{" "}
-              <span className="text-[#760135]">& Electronics Engineering</span>
+              Department of Electrical & Electronics Engineering (EEE)
+             
             </>
             titleColor={""}
             description={
-              "Department of Electrical and Electronics Engineering started since inception of the institute i.e. 2006, with a vision to become a leading Centre of Excellence for Education for creating employability in field of  Power Systems, Power Electronics, Automation, VLSI, Control Systems, Electric Vehicles, Computer Vision, and Artificial Intelligence, Renewable Energy resources, Smart Grids and IoT networks."
+              ""
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />

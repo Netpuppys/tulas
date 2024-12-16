@@ -47,11 +47,11 @@ function BAJMC() {
           <Banner
             image={BannerImg}
             title=<>
-              BA(Hons.) <span className="text-[#760135]">JMC</span>
+              BA(Hons.) JMC
             </>
             titleColor={""}
             description={
-              "The BA (Hons.) of Journalism & Mass Communication (BAJMC) is a three-year interdisciplinary program designed to give students a comprehensive understanding of media and its various facets. The course covers core theories in media, explores its historical development, and delves into the legal and ethical responsibilities associated with the field."
+              ""
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />

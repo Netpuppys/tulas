@@ -25,30 +25,26 @@ function ICTFacilities() {
       title: "ICT Facilities",
       description: (
         <>
-          In addition to traditional method of teaching, the faculty members are
-          using the IT enabled learning tools such as PPT, Video clippings,
-          online classes, online sources, to expose the students for advanced
-          knowledge and practical learning. Internet with capacity of over 205
-          Mbps is made available.
+          Tula’s Institute integrates traditional teaching with IT-enabled
+          learning tools such as PPTs, video clippings, online classes, and
+          digital resources to enhance practical learning and advanced
+          knowledge. With over 205 Mbps internet connectivity, students have
+          seamless access to online resources.
           <br />
           <br />
-          Classrooms & Seminar halls with ICT enabled facilities Tula's
-          Institute has a state-of-the-art infrastructure, creating an ideal
-          environment for progressive learning and resource development. To meet
-          the academic needs of the students we have well equipped Classrooms,
-          Tutorial rooms and laboratories that meet the AICTE specifications.
-          With an aim to fill the gap between the curriculum and the industry
-          expectations from a graduate engineer the college has provided, apart
-          from the regular Laboratories, industry tie-ups etc.
+          The institute offers state-of-the-art infrastructure, including
+          ICT-enabled classrooms, seminar halls, tutorial rooms, and
+          AICTE-compliant laboratories. To bridge the gap between academic
+          curriculum and industry expectations, the college collaborates with
+          industries and provides advanced laboratories.
           <br />
           <br />
-          Labs are equipped with adequate hardware and licensed software to run
-          curriculum specific programs. Adequate numbers of personal computers
-          are available for the smooth conduct of the Labs.
+          The labs are equipped with modern hardware, licensed software, and
+          ample personal computers to ensure smooth lab operations and
+          curriculum-specific learning.
           <br />
           <br />
-          Institute consists of the adequate numbers of Seminar Halls and class
-          rooms with ICT enabled facilities like:
+          Some of ICT enabled facilities in the campus are:
         </>
       ),
       image: ICTImage,
@@ -107,7 +103,7 @@ function ICTFacilities() {
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "Tula’s has implemented ICT to support advanced learning and assessment. The institute has adequate classrooms to meet the need of the various programs being run. Presently all lecture rooms, tutorial rooms and seminar halls are equipped with projectors and Wi-Fi/LAN connectivity for the use of ICT during teaching.Computer assisted learning and digital materials are made available to the students to supplementclassroom teaching."
+              "Tula’s has implemented ICT to support advanced learning and assessment. The institute has adequate classrooms to meet the need of the various programs being run. Presently all lecture rooms, tutorial rooms and seminar halls are equipped with projectors and Wi-Fi/LAN connectivity for the use of ICT during teaching. Computer assisted learning and digital materials are made available to the students to supplement classroom teaching."
             }
           />
           <div className="w-full relative overflow-hidden">

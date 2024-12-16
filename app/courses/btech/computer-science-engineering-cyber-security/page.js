@@ -44,15 +44,10 @@ function BAJMC() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              COMPUTER SCIENCE{" "}
-              <span className="text-[#760135]">
-                & ENGINEERING (CYBER SECURITY)
-              </span>
-            </>
+            title=<>COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)</>
             titleColor={""}
             description={
-              "Computer Science & Engineering (Cyber Security) empowers you to secure the digital frontier. In this program, you’ll gain expertise in protecting systems, networks, and data from cyber threats while developing practical skills through hands-on experience."
+              ""
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />
@@ -84,7 +79,7 @@ function BAJMC() {
               alt=""
             />
           </div> */}
-          <Footer  />
+          <Footer />
         </div>
       </body>
     </>

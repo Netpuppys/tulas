@@ -40,18 +40,11 @@ function BAJMC() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              Department of{" "}
-              <span className="text-[#760135]">
-                Applied Science and Humanities
-              </span>
-            </>
+            title=<>Department of Applied Science and Humanities</>
             titleColor={""}
-            description={
-              "Department of Applied Sciences and Humanities at Tula's Institute, Dehradun, is a foundational learning and interdisciplinary growth hub. The Department caters to introductory science courses like Physics, Chemistry, Mathematics, Environmental studies, and English, laying the groundwork for students across engineering and management programs to excel in their chosen fields."
-            }
+            description={""}
           />
-          <Program  parentRef={parentRef} images={images} content={content} />
+          <Program parentRef={parentRef} images={images} content={content} />
           <CarouselProgram
             heading={"Discover"}
             items={items}

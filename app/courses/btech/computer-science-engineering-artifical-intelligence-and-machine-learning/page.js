@@ -44,14 +44,11 @@ function BAJMC() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              COMPUTER SCIENCE{" "}
-              <span className="text-[#760135]">& ENGINEERING (AI & ML)</span>
-            </>
+            title=<>COMPUTER SCIENCE & ENGINEERING (AI & ML)</>
             titleColor={""}
-            description={
-              "AI and ML Fundamentals: Introduce students to the fundamental principles and techniques of artificial intelligence and machine learning, covering areas like supervised and unsupervised learning, deep learning, reinforcement learning, and natural language processing."
-            }
+            // description={
+            //   "AI and ML Fundamentals: Introduce students to the fundamental principles and techniques of artificial intelligence and machine learning, covering areas like supervised and unsupervised learning, deep learning, reinforcement learning, and natural language processing."
+            // }
           />
           <Program parentRef={parentRef} images={images} content={content} />
           <CarouselProgram

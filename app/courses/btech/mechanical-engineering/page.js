@@ -46,13 +46,12 @@ function BAJMC() {
           <Banner
             image={BannerImg}
             title=<>
-              Department of{" "}
-              <span className="text-[#760135]">MECHANICAL ENGINEERING</span>
+              Department of MECHANICAL ENGINEERING (ME)
             </>
             titleColor={""}
-            description={
-              "The Mechanical Engineering Department of Tula’s Institute is one of the oldest department since its inception in 2006. The department offers Diploma, Undergraduate, and Postgraduate programs in mechanical engineering. The main goal of the curriculum is to impart quality education to the students to develop technical skills, improve their problem-solving abilities, and encourage them to become a competitive mechanical engineer. "
-            }
+            // description={
+            //   "The Mechanical Engineering Department of Tula’s Institute is one of the oldest department since its inception in 2006. The department offers Diploma, Undergraduate, and Postgraduate programs in mechanical engineering. The main goal of the curriculum is to impart quality education to the students to develop technical skills, improve their problem-solving abilities, and encourage them to become a competitive mechanical engineer. "
+            // }
           />
           <Program parentRef={parentRef} images={images} content={content} />
           <CarouselProgram

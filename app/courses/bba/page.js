@@ -42,12 +42,10 @@ function BBA() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              BB<span className="text-[#760135]">A</span>
-            </>
+            title=<>BBA</>
             titleColor={""}
             description={
-              "A three-year Bachelor of Business Administration (BBA) program at the Graduate School of Business redefines traditional business education. The program offers a cutting-edge leadership curriculum, personalized mentorship, and hands-on projects, designed to tackle real-world business challenges."
+              ""
             }
           />
 

@@ -38,21 +38,17 @@ function AdmissionPage() {
       title: "E - Prospectus",
       description: (
         <>
-          The institute also provides the facilities of downloading e-prospectus
-          by the following procedure:
+          Accessing the institute’s e-prospectus is quick and easy:
           <br />
           <ul className="list-disc ml-5">
+            <li>Fill out the form provided below with the required details.</li>
             <li>
-              Student will be required to fill all the details given in the form
-              available below.
+              Upon successful registration, you will receive an email at your
+              registered email ID.
             </li>
             <li>
-              After successful registration, a mail will be sent to student’s
-              registered e-mail ID.
-            </li>
-            <li>
-              The e-mail will be comprised of e-prospectus of the institute that
-              may be downloaded.
+              The email will contain the e-prospectus, which you can download
+              for your reference.
             </li>
           </ul>
         </>
@@ -60,16 +56,27 @@ function AdmissionPage() {
       image: eProspectus,
     },
   ];
-  const [expandedSection, setExpandedSection] = useState(null);
   const bankRef = useRef(null);
+  const admissionRef = useRef(null);
   useEffect(() => {
     if (window.location.pathname === "/bank-details/" && bankRef.current) {
       bankRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
-  const handleButtonClick = (section) => {
-    setExpandedSection(expandedSection === section ? null : section);
-  };
+  useEffect(() => {
+    if (
+      window.location.pathname === "/admission-procedure/" &&
+      admissionRef.current
+    ) {
+      const timer = setTimeout(() => {
+        admissionRef.current.scrollIntoView({ behavior: "smooth" });
+      }, 5000); // 5000 milliseconds = 5 seconds
+
+      // Cleanup timer on component unmount
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
   const feesRef = useRef(null);
   useEffect(() => {
     if (window.location.pathname === "/pay-fee-online/" && feesRef.current) {
@@ -95,7 +102,7 @@ function AdmissionPage() {
         description={<></>}
         belowTitle={<></>}
         belowPara={
-          "Education is not only a way of learning new things but also looking at the world differently. My 35 Years of Experience in Business, Social & Public space has enabled me to provide an ECO system that will help you make a correct decision in matters of careers & life."
+          "Thinking about your next big step? Tula’s Institute is where ambitions meet opportunities, and students like you turn dreams into achievements. Let’s begin this exciting journey together!"
         }
       />
 
@@ -106,7 +113,7 @@ function AdmissionPage() {
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
-        <div className="py-10 md:py-20">
+        <div ref={admissionRef} className="py-10 md:py-20">
           <div className="w-full items-center flex flex-col gap-8 justify-center">
             <h3 className="text-white font-[TTChocolatesBold] md:text-[40px] border-b-2 border-white">
               Admission Eligibility
@@ -177,75 +184,29 @@ function AdmissionPage() {
           >
             <div className="w-full">
               <button
-                onClick={() => handleButtonClick("academic")}
+                onClick={() => {
+                  window.open(
+                    "https://axisbpayments.razorpay.com/tulas-existing-fee-payments",
+                    "_blank"
+                  );
+                }}
                 className="font-[TTChocolatesBold] mb-8 bg-[#760135] rounded-full text-white text-[15px] md:text-[24px] text-center items-center py-2 w-full"
               >
-                Pay Academic Fee
+                Payment for Existing Student
               </button>
-              {expandedSection === "academic" && (
-                <div className="w-full">
-                  <div className="w-full flex flex-col justify-center items-center gap-2">
-                    <button
-                      onClick={() => {
-                        window.open(
-                          "https://pages.razorpay.com/pl_EemYzSuH4dRF2e/view",
-                          "_blank"
-                        );
-                      }}
-                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
-                    >
-                      Payment for Existing Student
-                    </button>
-                    <button
-                      onClick={() => {
-                        window.open(
-                          "https://pages.razorpay.com/pl_Eemb9cp24Dac8R/view",
-                          "_blank"
-                        );
-                      }}
-                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
-                    >
-                      Payment for New Student
-                    </button>
-                  </div>
-                </div>
-              )}
             </div>
             <div className="w-full">
               <button
-                onClick={() => handleButtonClick("hostels")}
+                onClick={() => {
+                  window.open(
+                    "https://axisbpayments.razorpay.com/tulas-new-fee-payments",
+                    "_blank"
+                  );
+                }}
                 className="font-[TTChocolatesBold] mb-8 bg-[#760135] rounded-full text-white text-[15px] md:text-[24px] text-center items-center py-2 w-full"
               >
-                Pay Hostel Fee
+                Payment for New Student
               </button>
-              {expandedSection === "hostels" && (
-                <div className="w-full">
-                  <div className="flex flex-col justify-center items-center w-full gap-2">
-                    <button
-                      onClick={() => {
-                        window.open(
-                          "https://pages.razorpay.com/pl_Ef8FofNuC4SR5C/view",
-                          "_blank"
-                        );
-                      }}
-                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
-                    >
-                      Payment for Existing Student
-                    </button>
-                    <button
-                      onClick={() => {
-                        window.open(
-                          "https://pages.razorpay.com/pl_EfCHelq0PvHmwp/view",
-                          "_blank"
-                        );
-                      }}
-                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
-                    >
-                      Payment for New Student
-                    </button>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>

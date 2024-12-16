@@ -91,7 +91,7 @@ function DegreeRequestForm() {
             </div>
             <ul className="list-disc text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-white font-[TTChocolates] w-full max-w-[1200px] mx-auto px-8">
               <li>
-                <strong>Payment of mailing fee:</strong> A nominal fee of Rs
+                <strong>Payment of mailing fee: </strong>A nominal fee of Rs
                 800/- (Eight Hundred Only) for domestic and Rs  2300/- (Two
                 thousand three Hundred only) where 300 is the degree fee and
                 rest for  International postage and handling of your degree will
@@ -103,7 +103,7 @@ function DegreeRequestForm() {
               </li>
               <br />
               <li>
-                <strong>Shipment tracking:</strong>
+                <strong>Shipment tracking: </strong>
                 Upon dispatching your degree through DTDC most preferably, we
                 will  provide you with a tracking number or a shipment reference
                 code. This will enable you to  monitor the progress of your
@@ -113,14 +113,14 @@ function DegreeRequestForm() {
               </li>
               <br />
               <li>
-                <strong>Estimated delivery time:</strong>
+                <strong>Estimated delivery time: </strong>
                 In most cases, domestic deliveries can be expected within
                 5-10  business days, while international shipments may take
                 longer due to customs and local postal  services.
               </li>
               <br />
               <li>
-                <strong>Delivery confirmation:</strong>
+                <strong>Delivery confirmation: </strong>
                 Once your degree is delivered, we kindly request that you
                 acknowledge  the receipt by notifying the administration office
                 via email or phone call. Your confirmation will  help us ensure
@@ -128,7 +128,7 @@ function DegreeRequestForm() {
               </li>
               <br />
               <li>
-                <strong>Re-issuance and lost packages:</strong>
+                <strong>Re-issuance and lost packages: </strong>
                 In the unfortunate event that your degree is lost or
                 damaged  during transit, please contact the administration
                 office immediately. We will initiate the  necessary procedures

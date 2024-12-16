@@ -43,6 +43,13 @@ export const images = [
 ];
 export const content = (
   <>
+    B.Sc. Agriculture is a four-year UG (Undergraduate) degree program that
+    focuses on theoretical and practical training in various agricultural
+    techniques. B.Sc. Agriculture offers a wide range of opportunities for
+    graduates to work in various sectors of agriculture, from technical aspects
+    to commercial opportunities, and from production to sales.
+    <br />
+    <br />
     A bachelor’s degree in agriculture is a broad-based program with a lot of
     promise. It covers topics such as food production, gardening, animal
     husbandry, rural economy and development, environmental health and so on.

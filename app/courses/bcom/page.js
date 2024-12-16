@@ -42,10 +42,10 @@ function BBA() {
           </div>
           <Banner
             image={BannerImg}
-            title={"B.COM"}
-            titleColor={"(HONS)"}
+            title={"B.COM (HONS)"}
+            titleColor={""}
             description={
-              "A three year B.Com. (Hons.) program offered by the Graduate School of Business is meticulously designed to empower students with the knowledge, skills, and abilities required to analyze and synthesize contemporary business realities. "
+              ""
             }
           />
 

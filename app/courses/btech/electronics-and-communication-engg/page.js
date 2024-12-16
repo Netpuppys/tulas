@@ -47,14 +47,12 @@ function BAJMC() {
           <Banner
             image={BannerImg}
             title=<>
-              Department of Electronics{" "}
-              <span className="text-[#760135]">
-                & Communication Engineering
-              </span>
+              Department of Electronics & Communication Engineering (ECE)
+              
             </>
             titleColor={""}
             description={
-              "The department started since inception of the institute i.e. 2006, with a vision to become a leading Centre of Excellence for Education, and Research.  Since then, it has been widely recognized for its excellent research and teaching capabilities. We offer Bachelor of Technology (B.Tech.) degree program in Electronics and Communication Engineering. "
+              ""
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />

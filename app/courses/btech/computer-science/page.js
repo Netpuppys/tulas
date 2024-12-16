@@ -45,14 +45,11 @@ function BAJMC() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              COMPUTER SCIENCE{" "}
-              <span className="text-[#760135]">& ENGINEERING (CSE)</span>
-            </>
+            title=<>COMPUTER SCIENCE & ENGINEERING (CSE)</>
             titleColor={""}
-            description={
-              "Bachelor of Technology in Computer Science & Engineering (B.Tech. CSE) is one of the most sought-after engineering degrees. The program teaches students about computer applications and systems in order to prepare them for a career in the IT industry."
-            }
+            // description={
+            //   "Bachelor of Technology in Computer Science & Engineering (B.Tech. CSE) is one of the most sought-after engineering degrees. The program teaches students about computer applications and systems in order to prepare them for a career in the IT industry."
+            // }
           />
           <Program parentRef={parentRef} images={images} content={content} />
           <CarouselProgram

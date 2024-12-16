@@ -43,11 +43,11 @@ function MBA() {
           <Banner
             image={BannerImg}
             title=<>
-              MB<span className="text-[#760135]">A</span>
+              MBA
             </>
             titleColor={""}
             description={
-              "A two year MBA (Master of Business Administration) program at the Graduate School of Business is not merely a degree—it’s a transformative journey that empowers you with the knowledge, skills, and confidence to thrive in the competitive and ever evolving world of business."
+              ""
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />

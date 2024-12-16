@@ -44,16 +44,11 @@ function BAJMC() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              COMPUTER SCIENCE{" "}
-              <span className="text-[#760135]">
-                & ENGINEERING (Data Science)
-              </span>
-            </>
+            title=<>COMPUTER SCIENCE & ENGINEERING (Data Science)</>
             titleColor={""}
-            description={
-              "The B.Tech in Computer Science and Engineering(Data Science) program is a four-year undergraduate degree that is focused on providing students with a strong foundation in data science."
-            }
+            // description={
+            //   "The B.Tech in Computer Science and Engineering(Data Science) program is a four-year undergraduate degree that is focused on providing students with a strong foundation in data science."
+            // }
           />
           <Program parentRef={parentRef} images={images} content={content} />
           <CarouselProgram

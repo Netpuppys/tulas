@@ -57,6 +57,13 @@ export const images = [
 ];
 export const content = (
   <>
+    Department of Applied Sciences and Humanities at Tula's Institute, Dehradun,
+    is a foundational learning and interdisciplinary growth hub. The Department
+    caters to introductory science courses like Physics, Chemistry, Mathematics,
+    Environmental studies, and English, laying the groundwork for students
+    across engineering and management programs to excel in their chosen fields.
+    <br />
+    <br />
     Established to foster a holistic educational experience, our department
     ensures that students are equipped with theoretical understanding and the
     practical skills necessary to thrive in modern, technology-driven careers by

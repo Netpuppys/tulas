@@ -46,15 +46,11 @@ function BAJMC() {
           </div>
           <Banner
             image={BannerImg}
-            title={
-              <>
-                CIVIL <span className="text-[#760135]">ENGINEERING (CE)</span>
-              </>
-            }
+            title={<>CIVIL ENGINEERING (CE)</>}
             titleColor={""}
-            description={
-              "The Civil Engineering Department of Tula's Institute came into existence in the year 2011. The department offers Diploma, Undergraduate, and Postgraduate programs in civil engineering."
-            }
+            // description={
+            //   "The Civil Engineering Department of Tula's Institute came into existence in the year 2011. The department offers Diploma, Undergraduate, and Postgraduate programs in civil engineering."
+            // }
           />
           <Program parentRef={parentRef} images={images} content={content} />
 

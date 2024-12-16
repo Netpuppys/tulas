@@ -30,15 +30,15 @@ function AlumniTestimonials() {
           }
           image={BannerImg}
           description={<></>}
-          belowTitle={<></>}
+          belowTitle={<>Hear it from our very own</>}
           belowPara={
             <>
-              We are thrilled to inform you that we have streamlined our  degree
-              collection process for your convenience. You no longer need to
-              make the journey back  to the institute to obtain your degree.
-              Instead, we are now offering a hassle-free service where  your
-              degree will be posted directly to your residence. All you need to
-              do is pay a minimal  degree fee
+              At Tula's Institute, we take pride in the achievements of our
+              alumni, who continue to make remarkable strides in their
+              respective fields. Their success stories are a testament to the
+              foundation of knowledge, skills, and values they gained during
+              their time with us. Explore their experiences and see how Tula's
+              has been a stepping stone to their continued growth and impact!
             </>
           }
         />

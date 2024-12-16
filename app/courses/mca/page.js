@@ -44,13 +44,10 @@ function MBA() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              Master of Computer{" "}
-              <span className="text-[#760135]">Applications (MCA)</span>
-            </>
+            title=<>Master of Computer Applications (MCA)</>
             titleColor={""}
             description={
-              "The Master of Computer Applications (MCA) is a postgraduate pathway to advanced, specialized tech roles for aspiring tech leaders, offering in-depth training in software development, data science, AI, and cybersecurity. With fast growing global digitalization, the demand for computer applications specialists is constantly expanding."
+              ""
             }
           />
           <Program parentRef={parentRef} images={images} content={content} />

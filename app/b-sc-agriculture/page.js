@@ -44,10 +44,10 @@ function BSCAgriculture() {
           <Banner
             image={BannerImg}
             title=<>
-              BSc. <span className="text-[#760135]">Agriculture</span>
+              BSc. Agriculture
             </>
             description={
-              "B.Sc. Agriculture is a four-year UG (Undergraduate) degree program that focuses on theoretical and practical training in various agricultural techniques. B.Sc. Agriculture offers a wide range of opportunities for graduates to work in various sectors of agriculture, from technical aspects to commercial opportunities, and from production to sales."
+              ""
             }
           />
 

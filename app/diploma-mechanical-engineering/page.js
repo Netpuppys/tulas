@@ -41,14 +41,11 @@ function BSCAgriculture() {
           </div>
           <Banner
             image={BannerImg}
-            title=<>
-              DIPLOMA IN{" "}
-              <span className="text-[#760135]">MECHANICAL ENGINEERING</span>
-            </>
+            title=<>DIPLOMA IN MECHANICAL ENGINEERING</>
             titleColor={""}
-            description={
-              "The Mechanical Engineering department of Tula’s Institute offers a three-year diploma in Mechanical Engineering, approved by AICTE and affiliated to Uttarakhand Board of Technical Education, Roorkee."
-            }
+            // description={
+            //   "The Mechanical Engineering department of Tula’s Institute offers a three-year diploma in Mechanical Engineering, approved by AICTE and affiliated to Uttarakhand Board of Technical Education, Roorkee."
+            // }
           />
           <Program parentRef={parentRef} images={images} content={content} />
           <Vision color={true} sections={sections} />
