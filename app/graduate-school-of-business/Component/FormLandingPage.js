@@ -5,7 +5,7 @@ import tulasLogo from "../../../public/graduate-school-of-business/mba/tulasLogo
 import Image from "next/image";
 import { IoCall, IoLocation, IoMail } from "react-icons/io5";
 import PhoneInput from "react-phone-input-2";
-import { cities, state } from "@/data/courses";
+import { cities, courses, specializations, state } from "@/data/courses";
 import axios from "axios";
 import "react-phone-input-2/lib/style.css";
 import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
@@ -19,6 +19,8 @@ function FormLandingPage() {
     MobileNumber: "",
     LeadSource: 25,
     LeadChannel: 2,
+    Course: 11,
+    Center: "",
     State: "",
     City: "",
   });
@@ -41,11 +43,33 @@ function FormLandingPage() {
     }
   };
 
-  const handleStateChange = (e) => {
-    const selectedStateId = parseInt(e.target.value, 10); // Ensure it's an integer
+  const handleCourseChange = (e) => {
+    const selectedCourseId = e.target.value; // Ensure it's an integer
     setFormData((prev) => ({
       ...prev,
-      State: selectedStateId,
+      Course: Number(selectedCourseId),
+      Center: "", // Reset Center if Course changes
+    }));
+  };
+
+  const handleCenterChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      Center: Number(value),
+    }));
+  };
+  const handleCityChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      City: Number(value),
+    }));
+  };
+
+  const handleStateChange = (e) => {
+    const selectedStateId = e.target.value; // Ensure it's an integer
+    setFormData((prev) => ({
+      ...prev,
+      State: Number(selectedStateId),
       City: "", // Reset City if State changes
     }));
   };
@@ -105,6 +129,7 @@ function FormLandingPage() {
       .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", formData)
       .then(() => {
         alert("Enquiry Submitted Successfully");
+        setVerified(false);
         setFormData({
           AuthToken: "TULAS-27-12-2023",
           Source: "tulas",
@@ -113,6 +138,8 @@ function FormLandingPage() {
           MobileNumber: "",
           LeadSource: 25,
           LeadChannel: 2,
+          Course: 11,
+          Center: "",
           State: "",
           City: "",
         });
@@ -121,74 +148,55 @@ function FormLandingPage() {
         alert.error(error);
       });
   };
-
   const sendOtp = async () => {
     axios
-      .post(
-        "https://api.msg91.com/api/sendotp.php",
-        {
-          authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
-          mobile: formData.MobileNumber, // Replace with dynamic mobile number
-          message:
-            "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
-          sender: "TULASD", // Replace with your MSG91 Sender ID
-          otp_expiry: "3", // OTP expiry time
-          DLT_TE_ID: "1007161822185716704", // Replace with your DLT Template ID
-        },
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            Cookie: "PHPSESSID=cdd580jghjh4k3e1smunsmmsv7", // Replace with your PHPSESSID if needed
-          },
-        }
-      )
+      .post("https://tulas-backend.onrender.com/send-otp", {
+        mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
+        message:
+          "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
+      })
       .then(() => {
         setIsOtpSent(true);
-        setMessage("OTP sent successfully!");
         startTimer();
       })
       .catch((error) => {
-        console.error(error);
+        alert("Error while Sending Otp");
       });
   };
 
-  const verifyOtp = async (otp) => {
-    try {
-      const response = await axios.get(
-        `https://control.msg91.com/api/v5/otp/verify?mobile=${formData.MobileNumber}&otp=${otp}`,
-        {
-          params: {
-            mobile: formData.MobileNumber, // Mobile number with country code
-            otp: otp, // OTP received on the phone
-          },
-          headers: {
-            authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
-          },
-        }
-      );
-
-      if (response.data.type === "success") {
+  const verifyOtp = async () => {
+    axios
+      .post("https://tulas-backend.onrender.com/verify-otp", {
+        mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
+        otp: otp,
+      })
+      .then((response) => {
         setVerified(true);
         setIsOtpSent(false);
-        alert("OTP verified Successfully");
-      } else {
-        setMessage(response.data.message);
-      }
-    } catch (error) {
-      console.error(error);
-    }
+        alert(response.data.message); // Corrected this to access response.data.message
+      })
+      .catch((error) => {
+        setMessage("Wrong Otp Entered");
+      });
   };
 
   const resendOtp = async () => {
-    try {
-      await axios.get(
-        `https://control.msg91.com/api/v5/otp/retry?retrytype=text&mobile=${formData.MobileNumber}&authkey=412590AKveCHLSBnd4658bcea0P1`
-      );
-      startTimer();
-    } catch (error) {
-      console.error(error);
-    }
+    axios
+      .post("https://tulas-backend.onrender.com/retry-otp", {
+        mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
+      })
+      .then((response) => {
+        startTimer();
+        setMessage("OTP sent successfully!");
+        alert(response.data.message); // Corrected this to access response.data.message
+      })
+      .catch((error) => {
+        alert(
+          error.response ? error.response.data.message : "An error occurred"
+        ); // Handle error message properly
+      });
   };
+
   return (
     <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 -mt-[80%] md:-mt-[20%]">
       <div className="w-full flex flex-col justify-center items-center">
@@ -249,7 +257,7 @@ function FormLandingPage() {
                 value={formData.FirstName}
                 onChange={(e) => handleChange("FirstName", e.target.value)}
                 required
-                className="w-full px-5 py-3 border-none focus:outline-none rounded-[8px] text-white bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#D9D9D9] mb-3"
+                className="w-full px-5 py-3 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#3D001B] placeholder:opacity-50 mb-3"
               />
               <input
                 type="email"
@@ -257,7 +265,7 @@ function FormLandingPage() {
                 value={formData.Email}
                 onChange={(e) => handleChange("Email", e.target.value)}
                 required
-                className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[8px] text-white bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#D9D9D9] mb-3"
+                className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#3D001B] placeholder:opacity-50 mb-3"
               />
             </div>
             <div className="mb-3 flex gap-3 md:gap-7">
@@ -282,7 +290,7 @@ function FormLandingPage() {
                   lineHeight: "1.5rem",
                   backgroundColor: "rgba(255, 255, 255, 0.50)",
                   padding: "1.50rem 3.25rem",
-                  color: "#D9D9D9",
+                  color: "#3D001B",
                   outline: "none",
                 }}
                 containerStyle={{
@@ -295,24 +303,24 @@ function FormLandingPage() {
                   color: "black", // Flag icon color
                 }}
               />
-              {/* <button
+              <button
                 type="button"
-                disabled={!isPhoneValid && verified}
+                disabled={verified || !isPhoneValid}
                 onClick={sendOtp}
                 className={`w-1/2 md:w-[40%] rounded-[8px] flex items-center justify-center md:px-4 py-3 font-bold text-white bg-[#007A83] ${
-                  isPhoneValid
+                  isPhoneValid && !verified
                     ? " cursor-pointer"
                     : "opacity-50 cursor-not-allowed"
                 }`}
               >
                 {verified ? "Verified" : "Send OTP"}
-              </button> */}
+              </button>
             </div>
             <div className="flex flex-col md:flex-row gap-3 md:gap-7 mb-3">
               <select
                 value={formData.State}
                 onChange={handleStateChange}
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#D9D9D9] bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#D9D9D9]"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50"
               >
                 <option value="">Select State</option>
                 {state
@@ -327,7 +335,7 @@ function FormLandingPage() {
               <select
                 value={formData.City}
                 onChange={(e) => handleChange("City", e.target.value)}
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#D9D9D9] bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#D9D9D9]"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50"
                 disabled={!formData.State}
               >
                 <option value="">Select City</option>
@@ -343,21 +351,40 @@ function FormLandingPage() {
               </select>
             </div>
             <div className="flex flex-col md:flex-row gap-3 md:gap-7 mb-3">
-              <input
-                type="text"
-                placeholder="Enter Captcha"
-                className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[8px] text-white bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#D9D9D9]"
-              />
-              <input
-                type="text"
-                placeholder="ca8557"
-                className="w-full md:w-[40%] px-5 py-3 text-base border-none focus:outline-none rounded-[8px] text-white bg-[#007A83] placeholder:text-[#D9D9D9]"
-              />
+              <select
+                value={formData.Course}
+                onChange={handleCourseChange}
+                required
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50"
+              >
+                <option value="">Select Course</option>
+                {courses.map((Course) => (
+                  <option key={Course.id} value={Course.id}>
+                    {Course.name}
+                  </option>
+                ))}
+              </select>
+              <select
+                value={formData.Center}
+                onChange={(e) => handleCenterChange(e.target.value)}
+                required
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50"
+                disabled={!formData.Course}
+              >
+                <option value="">Select Specialization</option>
+                {formData.Course &&
+                  specializations[formData.Course].map((spec, index) => (
+                    <option key={index} value={spec.id}>
+                      {spec.name}
+                    </option>
+                  ))}
+              </select>
             </div>
+
             <button
               type="submit"
-              // disabled={!verified}
-              // title={verified ? "" : "Please Verify Mobile Number"}
+              disabled={!verified}
+              title={verified ? "" : "Please Verify Mobile Number"}
               style={{
                 boxShadow:
                   "8.247px 13.401px 25.77px 0px rgba(255, 255, 255, 0.50)",
@@ -368,7 +395,7 @@ function FormLandingPage() {
             </button>
           </form>
         </div>
-        {/* {isOtpSent && (
+        {isOtpSent && (
           <div className="fixed w-screen h-screen bg-black bg-opacity-50 top-0 left-0 z-50 flex items-center justify-center flex-col">
             <div
               className="w-full h-screen z-10 absolute"
@@ -439,7 +466,7 @@ function FormLandingPage() {
               </button>
             </div>
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );
