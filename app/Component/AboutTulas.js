@@ -68,19 +68,32 @@ function AboutTulas() {
   };
 
   const handleCourseChange = (e) => {
-    const selectedCourseId = parseInt(e.target.value, 10); // Ensure it's an integer
+    const selectedCourseId = e.target.value; // Ensure it's an integer
     setFormData((prev) => ({
       ...prev,
-      Course: selectedCourseId,
+      Course: Number(selectedCourseId),
       Center: "", // Reset Center if Course changes
     }));
   };
 
-  const handleStateChange = (e) => {
-    const selectedStateId = parseInt(e.target.value, 10); // Ensure it's an integer
+  const handleCenterChange = (value) => {
     setFormData((prev) => ({
       ...prev,
-      State: selectedStateId,
+      Center: Number(value),
+    }));
+  };
+  const handleCityChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      City: Number(value),
+    }));
+  };
+
+  const handleStateChange = (e) => {
+    const selectedStateId = e.target.value; // Ensure it's an integer
+    setFormData((prev) => ({
+      ...prev,
+      State: Number(selectedStateId),
       City: "", // Reset City if State changes
     }));
   };
@@ -140,6 +153,7 @@ function AboutTulas() {
       .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", formData)
       .then(() => {
         alert("Enquiry Submitted Successfully");
+        setVerified(false);
         setFormData({
           AuthToken: "TULAS-27-12-2023",
           Source: "tulas",
@@ -161,70 +175,51 @@ function AboutTulas() {
 
   const sendOtp = async () => {
     axios
-      .post(
-        "https://api.msg91.com/api/sendotp.php",
-        {
-          authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
-          mobile: formData.MobileNumber, // Replace with dynamic mobile number
-          message:
-            "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
-          sender: "TULASD", // Replace with your MSG91 Sender ID
-          otp_expiry: 3, // OTP expiry time
-          DLT_TE_ID: "1007161822185716704", // Replace with your DLT Template ID
-        },
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            Cookie: "PHPSESSID=cdd580jghjh4k3e1smunsmmsv7", // Replace with your PHPSESSID if needed
-          },
-        }
-      )
+      .post("https://localhost:5000/send-otp", {
+        mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
+        message:
+          "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
+      })
       .then(() => {
         setIsOtpSent(true);
-        setMessage("OTP sent successfully!");
         startTimer();
       })
       .catch((error) => {
-        console.error(error);
+        alert("Error while Sending Otp");
       });
   };
 
-  const verifyOtp = async (otp) => {
-    try {
-      const response = await axios.get(
-        `https://control.msg91.com/api/v5/otp/verify?mobile=${formData.MobileNumber}&otp=${otp}`,
-        {
-          params: {
-            mobile: formData.MobileNumber, // Mobile number with country code
-            otp: otp, // OTP received on the phone
-          },
-          headers: {
-            authkey: "412590AKveCHLSBnd4658bcea0P1", // Replace with your MSG91 Auth Key
-          },
-        }
-      );
-
-      if (response.data.type === "success") {
+  const verifyOtp = async () => {
+    axios
+      .post("https://localhost:5000/verify-otp", {
+        mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
+        otp: otp,
+      })
+      .then((response) => {
         setVerified(true);
         setIsOtpSent(false);
-        alert("OTP verified Successfully");
-      } else {
-        setMessage(response.data.message);
-      }
-    } catch (error) {
-      console.error(error);
-    }
+        alert(response.data.message); // Corrected this to access response.data.message
+      })
+      .catch((error) => {
+        setMessage("Wrong Otp Entered");
+      });
   };
 
   const resendOtp = async () => {
-    try {
-      await axios.get(
-        `https://control.msg91.com/api/v5/otp/retry?retrytype=text&mobile=${formData.MobileNumber}&authkey=412590AKveCHLSBnd4658bcea0P1`
-      );
-      startTimer();
-    } catch (error) {
-      console.error(error);
-    }
+    axios
+      .post("https://localhost:5000/retry-otp", {
+        mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
+      })
+      .then((response) => {
+        startTimer();
+        setMessage("OTP sent successfully!");
+        alert(response.data.message); // Corrected this to access response.data.message
+      })
+      .catch((error) => {
+        alert(
+          error.response ? error.response.data.message : "An error occurred"
+        ); // Handle error message properly
+      });
   };
 
   return (
@@ -369,11 +364,11 @@ function AboutTulas() {
               />
               {/* <button
                 type="button"
-                disabled={!isPhoneValid && verified}
+                disabled={verified || !isPhoneValid}
                 onClick={sendOtp}
                 className={`w-1/2 md:w-[40%] bg-white rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-[#007A83] ${
-                  isPhoneValid
-                    ? " cursor-pointer"
+                  isPhoneValid && !verified
+                    ? "cursor-pointer"
                     : "opacity-50 cursor-not-allowed"
                 }`}
               >
@@ -399,7 +394,7 @@ function AboutTulas() {
               </select>
               <select
                 value={formData.City}
-                onChange={(e) => handleChange("City", e.target.value)}
+                onChange={(e) => handleCityChange(e.target.value)}
                 className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
                 disabled={!formData.State}
               >
@@ -431,7 +426,7 @@ function AboutTulas() {
               </select>
               <select
                 value={formData.Center}
-                onChange={(e) => handleChange("Center", e.target.value)}
+                onChange={(e) => handleCenterChange(e.target.value)}
                 required
                 className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
                 disabled={!formData.Course}
