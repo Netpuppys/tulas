@@ -175,7 +175,7 @@ function AboutTulas() {
 
   const sendOtp = async () => {
     axios
-      .post("https://localhost:5000/send-otp", {
+      .post("http://localhost:5000/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         message:
           "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
@@ -191,7 +191,7 @@ function AboutTulas() {
 
   const verifyOtp = async () => {
     axios
-      .post("https://localhost:5000/verify-otp", {
+      .post("http://localhost:5000/verify-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         otp: otp,
       })
@@ -207,7 +207,7 @@ function AboutTulas() {
 
   const resendOtp = async () => {
     axios
-      .post("https://localhost:5000/retry-otp", {
+      .post("http://localhost:5000/retry-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
       })
       .then((response) => {
