@@ -65,7 +65,7 @@ function CarouselContent() {
         ensures that students are not only equipped with theoretical knowledge
         but also practical experience.
       </h6>
-      <div className="flex flex-wrap w-full md:max-w-[70%] py-8 md:py-20 md:pb-10 gap-3 md:gap-[8%] items-center justify-center mx-auto">
+      <div className="flex flex-wrap w-full md:max-w-[90%] py-8 md:py-20 md:pb-10 gap-3 md:gap-[8%] items-center justify-center mx-auto">
         {cards.map((card, index) => (
           <div key={index}>
             <div
