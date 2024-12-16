@@ -49,56 +49,58 @@ function NavbarDesktop({
   };
   return (
     <>
-      <div
-        className={`hidden mdNavbar:block w-[440px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
-          isChecked
-            ? "animate-translateLeftMenu opacity-100 left-0"
-            : "animate-translateRightMenu opacity-0 left-[-100%]"
-        }`}
-      >
-        <div className="w-full h-[calc(100vh-280px)] relative top-[120px] overflow-auto">
-          {sitemap.map((item, index) => (
-            <div
-              className="border-t last:border-b border-[#C5C5C5]   flex flex-col w-full h-fit"
-              key={index}
-            >
-              <span
-                className={`flex items-center justify-between cursor-pointer hover:bg-[#E3E3E3] ${
-                  expandedIndex === index ? "bg-[#E3E3E3]" : "bg-white"
-                } transition-all duration-300 ease-linear h-full min-h-[6vh]`}
+      {isChecked && (
+        <div
+          className={`hidden mdNavbar:block w-[440px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
+            isChecked
+              ? "animate-translateLeftMenu opacity-100 left-0"
+              : "animate-translateRightMenu opacity-0 left-[-100%]"
+          }`}
+        >
+          <div className="w-full h-[calc(100vh-280px)] relative top-[120px] overflow-auto">
+            {sitemap.map((item, index) => (
+              <div
+                className="border-t last:border-b border-[#C5C5C5]   flex flex-col w-full h-fit"
+                key={index}
               >
-                <Link
-                  href={item.linkTo || "#"}
-                  className="flex-auto font-[TTChocolatesMedium] font-black px-10 py-1 flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83]"
+                <span
+                  className={`flex items-center justify-between cursor-pointer hover:bg-[#E3E3E3] ${
+                    expandedIndex === index ? "bg-[#E3E3E3]" : "bg-white"
+                  } transition-all duration-300 ease-linear h-full min-h-[6vh]`}
                 >
-                  {item.title}
-                </Link>
-                {item.nestedLinks && (
-                  <div
-                    onClick={() => handleExpandNestedLinks(index)}
-                    className={`w-fit !h-full min-h-[6vh] aspect-square bg-[#E3E3E3] ${
-                      expandedIndex === index ? "bg-[#919191]" : ""
-                    } flex justify-center items-center`}
+                  <Link
+                    href={item.linkTo || "#"}
+                    className="flex-auto font-[TTChocolatesMedium] font-black px-10 py-1 flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83]"
                   >
-                    {expandedIndex === index ? (
-                      <FiX
-                        className={`text-[clamp(18px,1.6vw,25px)] ${
-                          expandedIndex === index
-                            ? "animate-scrollSpinExpand text-white"
-                            : ""
-                        }`}
-                      />
-                    ) : (
-                      <FiPlus className="text-[#007A83] text-[clamp(18px,1.6vw,25px)]" />
-                    )}
-                  </div>
-                )}
-              </span>
-            </div>
-          ))}
+                    {item.title}
+                  </Link>
+                  {item.nestedLinks && (
+                    <div
+                      onClick={() => handleExpandNestedLinks(index)}
+                      className={`w-fit !h-full min-h-[6vh] aspect-square bg-[#E3E3E3] ${
+                        expandedIndex === index ? "bg-[#919191]" : ""
+                      } flex justify-center items-center`}
+                    >
+                      {expandedIndex === index ? (
+                        <FiX
+                          className={`text-[clamp(18px,1.6vw,25px)] ${
+                            expandedIndex === index
+                              ? "animate-scrollSpinExpand text-white"
+                              : ""
+                          }`}
+                        />
+                      ) : (
+                        <FiPlus className="text-[#007A83] text-[clamp(18px,1.6vw,25px)]" />
+                      )}
+                    </div>
+                  )}
+                </span>
+              </div>
+            ))}
+          </div>
+          <QuickLinks />
         </div>
-        <QuickLinks />
-      </div>
+      )}
 
       {activeLink !== null && (
         <div

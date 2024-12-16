@@ -10,15 +10,16 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "mdNavbar": "880px",
+        mdNavbar: "880px",
       },
       boxShadow: {
-        awardsImage: '0px 9px 40px 4px rgba(0, 0, 0, 0.75)',
+        awardsImage: "0px 9px 40px 4px rgba(0, 0, 0, 0.75)",
         awardsLine: "0px 0px 20px 2px rgba(255,255,255,0.6)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        'gradient-custom-black': 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 28.22%, #000 100%)',
+        "gradient-custom-black":
+          "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 67.3%, #000 100%)",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
@@ -50,56 +51,60 @@ module.exports = {
       keyframes: {
         expandCheckpoint: {
           "0%": {
-            width: "1rem"
-          }, "80%": {
+            width: "1rem",
+          },
+          "80%": {
             width: "2.7rem",
-            border: "1.5px solid #007A83"
-          }, "100%": {
+            border: "1.5px solid #007A83",
+          },
+          "100%": {
             width: "2.5rem",
-            border: "1px solid #007A83"
-          }
+            border: "1px solid #007A83",
+          },
         },
         bannerImageFadeShow: {
           "0%": {
             // zIndex: 10,
-            opacity: 0
-          }, 
+            opacity: 0,
+          },
           "100%": {
             // zIndex: 20,
-            opacity: 1
-          }
+            opacity: 1,
+          },
         },
         bannerImageFadeHide: {
           "0%": {
             // zIndex: 20,
-            opacity: 1
-          }, 
+            opacity: 1,
+          },
           "100%": {
             // zIndex: 10,
-            opacity: 0
-          }
+            opacity: 0,
+          },
         },
         awardHover: {
           from: {
             maxHeight: "25rem",
             height: "25rem",
-            overflow: "hidden"
-          }, to: {
+            overflow: "hidden",
+          },
+          to: {
             maxHeight: "40rem",
             height: "40rem",
-            overflow: "hidden"
-          }
+            overflow: "hidden",
+          },
         },
         awardImageHover: {
           from: {
             objectFit: "cover",
             borderRadius: "20px",
-            dropShadow: "none"
-          }, to: {
+            dropShadow: "none",
+          },
+          to: {
             objectFit: "contain",
             borderRadius: "20px",
-            dropShadow: "0px 9px 40px 4px rgba(0, 0, 0, 0.75)"
-          }
+            dropShadow: "0px 9px 40px 4px rgba(0, 0, 0, 0.75)",
+          },
         },
         swipeRight: {
           from: {
@@ -107,25 +112,27 @@ module.exports = {
             width: "100%",
             zIndex: 10,
             top: 0,
-            right: 0
-          }, to: {
+            right: 0,
+          },
+          to: {
             position: "relative",
             width: "50%",
-            zIndex: 0
-          }
+            zIndex: 0,
+          },
         },
         swipeLeft: {
           from: {
             position: "relative",
             width: "50%",
-            zIndex: 0
-          }, to: {
+            zIndex: 0,
+          },
+          to: {
             position: "absolute",
             width: "100%",
             zIndex: 10,
             top: 0,
-            right: 0
-          }
+            right: 0,
+          },
         },
         scaleUp: {
           from: {
@@ -250,7 +257,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-
-  ],
+  plugins: [],
 };

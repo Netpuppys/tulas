@@ -130,6 +130,7 @@ function FormLandingPage() {
       .then(() => {
         alert("Enquiry Submitted Successfully");
         setVerified(false);
+        setIsPhoneValid(false);
         setFormData({
           AuthToken: "TULAS-27-12-2023",
           Source: "tulas",
@@ -225,7 +226,7 @@ function FormLandingPage() {
               className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
             >
               <IoCall />
-              98379 83721
+              +91-98379 83721
             </a>
             <a
               href="mailTo:info@tulas.edu.in"
@@ -257,7 +258,7 @@ function FormLandingPage() {
                 value={formData.FirstName}
                 onChange={(e) => handleChange("FirstName", e.target.value)}
                 required
-                className="w-full px-5 py-3 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#3D001B] placeholder:opacity-50 mb-3"
+                className="w-full px-5 py-3 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF] placeholder:text-[#3D001B] placeholder:opacity-60 mb-3"
               />
               <input
                 type="email"
@@ -265,7 +266,7 @@ function FormLandingPage() {
                 value={formData.Email}
                 onChange={(e) => handleChange("Email", e.target.value)}
                 required
-                className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50 placeholder:text-[#3D001B] placeholder:opacity-50 mb-3"
+                className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF] placeholder:text-[#3D001B] placeholder:opacity-60 mb-3"
               />
             </div>
             <div className="mb-3 flex gap-3 md:gap-7">
@@ -284,11 +285,11 @@ function FormLandingPage() {
                 }}
                 inputStyle={{
                   width: "100%",
-                  borderRadius: "8px",
+                  borderRadius: "3px",
                   border: "none",
                   fontSize: "1rem",
                   lineHeight: "1.5rem",
-                  backgroundColor: "rgba(255, 255, 255, 0.50)",
+                  backgroundColor: "#FFFFFF",
                   padding: "1.50rem 3.25rem",
                   color: "#3D001B",
                   outline: "none",
@@ -303,11 +304,19 @@ function FormLandingPage() {
                   color: "black", // Flag icon color
                 }}
               />
+              {/* <input
+                type="tel"
+                placeholder="Enter Mobile No."
+                value={formData.MobileNumber}
+                onChange={(value) => handleChange("MobileNumber", value)}
+                required
+                className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF] placeholder:text-[#3D001B] placeholder:opacity-60 mb-3"
+              /> */}
               <button
                 type="button"
                 disabled={verified || !isPhoneValid}
                 onClick={sendOtp}
-                className={`w-1/2 md:w-[40%] rounded-[8px] flex items-center justify-center md:px-4 py-3 font-bold text-white bg-[#007A83] ${
+                className={`w-1/2 md:w-[40%] rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-white bg-[#007A83] ${
                   isPhoneValid && !verified
                     ? " cursor-pointer"
                     : "opacity-50 cursor-not-allowed"
@@ -320,7 +329,7 @@ function FormLandingPage() {
               <select
                 value={formData.State}
                 onChange={handleStateChange}
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
               >
                 <option value="">Select State</option>
                 {state
@@ -335,7 +344,7 @@ function FormLandingPage() {
               <select
                 value={formData.City}
                 onChange={(e) => handleChange("City", e.target.value)}
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
                 disabled={!formData.State}
               >
                 <option value="">Select City</option>
@@ -355,7 +364,7 @@ function FormLandingPage() {
                 value={formData.Course}
                 onChange={handleCourseChange}
                 required
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
               >
                 <option value="">Select Course</option>
                 {courses.map((Course) => (
@@ -368,7 +377,7 @@ function FormLandingPage() {
                 value={formData.Center}
                 onChange={(e) => handleCenterChange(e.target.value)}
                 required
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[8px] text-[#3D001B] bg-[#FFFFFF] bg-opacity-50"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
                 disabled={!formData.Course}
               >
                 <option value="">Select Specialization</option>
@@ -389,14 +398,14 @@ function FormLandingPage() {
                 boxShadow:
                   "8.247px 13.401px 25.77px 0px rgba(255, 255, 255, 0.50)",
               }}
-              className={`w-full md:w-[40%] mx-auto bg-white text-[#007A83] cursor-pointer py-3 rounded-[8px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold`}
+              className={`w-full md:w-[40%] mx-auto bg-white text-[#007A83] cursor-pointer py-3 rounded-[3px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold`}
             >
               Submit
             </button>
           </form>
         </div>
         {isOtpSent && (
-          <div className="fixed w-screen h-screen bg-black bg-opacity-50 top-0 left-0 z-50 flex items-center justify-center flex-col">
+          <div className="fixed w-screen h-screen bg-black top-0 left-0 z-50 flex items-center justify-center flex-col">
             <div
               className="w-full h-screen z-10 absolute"
               onClick={() => setIsOtpSent(false)}

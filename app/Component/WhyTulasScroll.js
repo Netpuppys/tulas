@@ -261,13 +261,13 @@ function WhyTulasScroll({ parentRef }) {
                         width={1000}
                         height={1000}
                       />
-                      <div className="w-full opacity-100 md:opacity-0 md:group-hover:opacity-100 h-full bg-gradient-custom-black absolute bottom-0 left-0 rounded-xl md:rounded-3xl z-20"></div>
+                      <div className="w-full opacity-100 h-full bg-gradient-custom-black absolute bottom-0 left-0 rounded-xl md:rounded-3xl z-20"></div>
                       {/* <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div> */}
-                      <div className="text-white md:hidden group-hover:flex flex-col absolute z-30 w-fit p-2 bottom-[42px] translate-y-[100%]">
+                      <div className="text-white flex flex-col absolute z-30 w-fit p-2 bottom-[42px] translate-y-[100%]">
                         <h2 className="text-center font-[TTChocolatesBold] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)]">
                           {image.title}
                         </h2>
-                        <h6 className="font-[TTChocolates] text-center text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
+                        <h6 className="font-[TTChocolates] md:hidden group-hover:block text-center text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
                           {image.text}
                         </h6>
                       </div>
