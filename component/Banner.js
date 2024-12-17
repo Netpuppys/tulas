@@ -24,7 +24,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
         </div>
       </div>
       {(belowPara || belowTitle) && (
-        <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-[900px] px-8 mx-auto">
+        <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-[1000px] px-8 mx-auto">
           <h3 className="text-2xl font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-left mb-3">
             {belowTitle}
           </h3>

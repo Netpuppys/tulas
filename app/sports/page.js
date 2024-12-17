@@ -4,109 +4,162 @@ import Banner from "@/component/Banner";
 import BannerImg from "../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
-import bubble1 from "../../public/sports/bubbles/bubble1.webp";
-import bubble2 from "../../public/sports/bubbles/bubble2.webp";
-import bubble3 from "../../public/sports/bubbles/bubble3.webp";
-import bubble4 from "../../public/sports/bubbles/bubble4.webp";
-import bubble5 from "../../public/sports/bubbles/bubble5.webp";
-import bubble6 from "../../public/sports/bubbles/bubble6.webp";
-import bubble7 from "../../public/sports/bubbles/bubble7.webp";
-import bubble8 from "../../public/sports/bubbles/bubble8.webp";
+import squash from "../../public/sports/squash.png";
+import athletics from "../../public/sports/athletics.png";
+import badminton from "../../public/sports/badminton.png";
+import basketball from "../../public/sports/basketball.png";
+import cricket from "../../public/sports/cricket.png";
+import football from "../../public/sports/football.png";
+import volleyball from "../../public/sports/volleyball.png";
+import chess from "../../public/sports/chess.png";
+import tableTennis from "../../public/sports/tableTennis.png";
+import carrom from "../../public/sports/carrom.png";
 import background from "../../public/infrastructure/HostelMess/background.png";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { useMobile } from "@/component/IsMobileContext";
+import GalleryCrousel from "@/component/GalleryCrousel";
+import Vision from "@/component/Programs/Vision";
 
-const TextBanner = ({ filledText }) => {
-  return (
-    <div className="w-screen h-screen flex items-center justify-center bg-transparent">
-      <p
-        style={
-          filledText
-            ? {
-                color: "#ffffff",
-                textShadow: "0px 0.83px 8.295px rgba(0, 0, 0, 0.40)",
-              }
-            : {
-                color: "transparent",
-                WebkitTextStrokeColor: "#fff",
-                WebkitTextStrokeWidth: "0.1px",
-              }
-        }
-        className="font-[TTChocolatesbold] text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-[4rem] md:leading-[2.38494rem]"
-      >
-        EXPLORE MORE
-        <span className="text-[4.5rem] md:text-[7rem] block md:leading-[7.64388rem]">
-          Sports
-        </span>
-      </p>
-    </div>
-  );
-};
+// const TextBanner = ({ filledText }) => {
+//   return (
+//     <div className="w-screen h-screen flex items-center justify-center bg-transparent">
+//       <p
+//         style={
+//           filledText
+//             ? {
+//                 color: "#ffffff",
+//                 textShadow: "0px 0.83px 8.295px rgba(0, 0, 0, 0.40)",
+//               }
+//             : {
+//                 color: "transparent",
+//                 WebkitTextStrokeColor: "#fff",
+//                 WebkitTextStrokeWidth: "0.1px",
+//               }
+//         }
+//         className="font-[TTChocolatesbold] text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-[4rem] md:leading-[2.38494rem]"
+//       >
+//         EXPLORE MORE
+//         <span className="text-[4.5rem] md:text-[7rem] block md:leading-[7.64388rem]">
+//           Sports
+//         </span>
+//       </p>
+//     </div>
+//   );
+// };
 
 function Sports() {
-  const parentRef = useRef(null);
-  const contactRef = useRef(null);
+  const images = [
+    { title: "Chess", image: chess },
+    { title: "Table Tennis", image: tableTennis },
+    { title: "Carrom", image: carrom },
+  ];
+  const sections = [
+    {
+      title: "Squash",
+      image: squash,
+      description:
+        "Our squash courts are ready for action, with the perfect flooring and lighting for fast games. It’s the ideal place to practice and improve your skills while having fun!",
+    },
+    {
+      title: "Cricket",
+      image: cricket,
+      description:
+        "We’ve got well-kept cricket pitches and practice nets where you can perfect your batting and bowling. Whether you’re just starting or playing competitively, you’ll have the space to grow.",
+    },
+    {
+      title: "Football",
+      image: football,
+      description:
+        "Our football field is equipped with top-notch turf and markings, making it perfect for practice or a friendly match. It’s designed to help you improve your game and enjoy every kick.",
+    },
+    {
+      title: "Basketball",
+      image: basketball,
+      description:
+        "Our basketball courts are spacious, with great flooring and hoops for smooth, fast games. Whether you're practicing or playing with friends, it’s the best place to sharpen your skills.",
+    },
+    {
+      title: "Atheletics",
+      image: athletics,
+      description:
+        "Our athletics track is perfect for running, jumping, and all your field events. With great markings and top facilities, it’s designed to help you train and perform at your best.",
+    },
+    {
+      title: "Badminton",
+      image: badminton,
+      description:
+        "Our badminton courts are ready for quick rallies, with perfect flooring and lighting to make every game enjoyable. It’s the best spot to work on your reflexes and have fun!",
+    },
+    {
+      title: "Volleyball",
+      image: volleyball,
+      description:
+        "Our volleyball courts are built for fun and competition, with the right surface and net height. It’s a great space to practice, improve, and enjoy every game",
+    },
+  ];
+  // const parentRef = useRef(null);
+  // const contactRef = useRef(null);
 
-  const { isMobile } = useMobile();
+  // const { isMobile } = useMobile();
 
-  const [isInView, setIsInView] = useState(false);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  // const [isInView, setIsInView] = useState(false);
+  // const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, []);
 
-  function mouseMove(event) {
-    const newX = Math.floor((event.clientX * 100) / window.innerWidth);
-    const newY = Math.floor((event.clientY * 100) / window.innerHeight);
-    setPosition({ x: newX, y: newY });
-  }
+  // function mouseMove(event) {
+  //   const newX = Math.floor((event.clientX * 100) / window.innerWidth);
+  //   const newY = Math.floor((event.clientY * 100) / window.innerHeight);
+  //   setPosition({ x: newX, y: newY });
+  // }
 
-  useEffect(() => {
-    window.addEventListener("mousemove", mouseMove);
+  // useEffect(() => {
+  //   window.addEventListener("mousemove", mouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("mousemove", mouseMove);
+  //   };
+  // }, []);
 
-  const calculateMovement = (axis, direction, distance) => {
-    return axis === "x" ? direction * distance : direction * distance;
-  };
+  // const calculateMovement = (axis, direction, distance) => {
+  //   return axis === "x" ? direction * distance : direction * distance;
+  // };
 
-  const movementFactor = 15;
+  // const movementFactor = 15;
 
-  const movementX =
-    !isMobile && calculateMovement("x", 1, position.x / movementFactor);
+  // const movementX =
+  //   !isMobile && calculateMovement("x", 1, position.x / movementFactor);
 
-  const movementY =
-    !isMobile && calculateMovement("y", 1, position.y / movementFactor);
+  // const movementY =
+  //   !isMobile && calculateMovement("y", 1, position.y / movementFactor);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsInView(entry.isIntersecting);
-      },
-      {
-        root: null, // uses viewport as root
-        threshold: 0, // adjust as needed
-      }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       setIsInView(entry.isIntersecting);
+  //     },
+  //     {
+  //       root: null, // uses viewport as root
+  //       threshold: 0, // adjust as needed
+  //     }
+  //   );
 
-    if (contactRef.current) {
-      observer.observe(contactRef.current);
-    }
+  //   if (contactRef.current) {
+  //     observer.observe(contactRef.current);
+  //   }
 
-    return () => {
-      if (contactRef.current) {
-        observer.unobserve(contactRef.current);
-      }
-    };
-  }, []);
+  //   return () => {
+  //     if (contactRef.current) {
+  //       observer.unobserve(contactRef.current);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <>
@@ -121,7 +174,10 @@ function Sports() {
         />
       </head>
       <body>
-        <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
+        <div
+          // ref={parentRef}
+          className="w-full h-fit overflow-x-hidden"
+        >
           <Navbar />
           <Banner
             image={BannerImg}
@@ -160,15 +216,15 @@ function Sports() {
               className="fixed top-0 -z-10 left-0 w-full h-full object-cover"
               alt=""
             />
-            <div
+            {/* <div
               ref={contactRef}
               className="w-screen absolute top-[100vh] h-[calc(100%-200vh)] opacity-0"
-            ></div>
-            <div className="w-full px-5 py-20 flex flex-col items-center justify-center gap-6">
-              <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white text-opacity-90 text-center max-w-[57rem]">
+            ></div> */}
+            <div className="w-full px-5 py-8 md:py-20 flex flex-col items-center justify-center gap-6">
+              <h3 className=" text-center text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-4 md:underline-offset-[15px]">
                 The Perfect Indoor Space for Play and Progress
-                <br />
-                <br />
+              </h3>
+              <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
                 Having the right space to relax, have fun, and grow is super
                 important. With the great facilities at Tula’s, indoor
                 activities become more than just games—they help you sharpen
@@ -179,7 +235,7 @@ function Sports() {
               </p>
             </div>
 
-            <div
+            {/* <div
               className={`${
                 isInView ? "fixed" : "absolute"
               } top-0 left-0 z-[10]`}
@@ -319,7 +375,20 @@ function Sports() {
                   <Image src={bubble8} className="w-full h-fit" alt="bubble" />
                 </div>
               </div>
+            </div> */}
+            <GalleryCrousel images={images} />
+            <div className="w-full px-5 py-8 md:py-20 flex flex-col items-center justify-center gap-6">
+              <h3 className=" text-center text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-4 md:underline-offset-[15px]">
+                Spaces Built for Sports Under the Sky
+              </h3>
+              <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
+                The outdoor sports facilities at Tula’ are designed to give
+                students the perfect space for all kinds of action. With
+                well-maintained fields and tracks, it's the ideal environment to
+                train, compete, and enjoy the outdoors
+              </p>
             </div>
+            <Vision sections={sections}/>
           </div>
         </div>
         <Footer color={true} />
