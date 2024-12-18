@@ -83,6 +83,10 @@ function AdmissionPage() {
       feesRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
+  const [expandedSection, setExpandedSection] = useState(null);
+  const handleButtonClick = (section) => {
+    setExpandedSection(expandedSection === section ? null : section);
+  };
   const prospectusRef = useRef(null);
   useEffect(() => {
     if (
@@ -184,29 +188,75 @@ function AdmissionPage() {
           >
             <div className="w-full">
               <button
-                onClick={() => {
-                  window.open(
-                    "https://axisbpayments.razorpay.com/tulas-existing-fee-payments",
-                    "_blank"
-                  );
-                }}
+                onClick={() => handleButtonClick("academic")}
                 className="font-[TTChocolatesBold] mb-8 bg-[#760135] rounded-full text-white text-[15px] md:text-[24px] text-center items-center py-2 w-full"
               >
-                Payment for Existing Student
+                Pay Academic Fee
               </button>
+              {expandedSection === "academic" && (
+                <div className="w-full">
+                  <div className="w-full flex flex-col justify-center items-center gap-2">
+                    <button
+                      onClick={() => {
+                        window.open(
+                          "https://pages.razorpay.com/pl_EemYzSuH4dRF2e/view",
+                          "_blank"
+                        );
+                      }}
+                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
+                    >
+                      Payment for Existing Student
+                    </button>
+                    <button
+                      onClick={() => {
+                        window.open(
+                          "https://pages.razorpay.com/pl_Eemb9cp24Dac8R/view",
+                          "_blank"
+                        );
+                      }}
+                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
+                    >
+                      Payment for New Student
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
             <div className="w-full">
               <button
-                onClick={() => {
-                  window.open(
-                    "https://axisbpayments.razorpay.com/tulas-new-fee-payments",
-                    "_blank"
-                  );
-                }}
+                onClick={() => handleButtonClick("hostels")}
                 className="font-[TTChocolatesBold] mb-8 bg-[#760135] rounded-full text-white text-[15px] md:text-[24px] text-center items-center py-2 w-full"
               >
-                Payment for New Student
+                Pay Hostel Fee
               </button>
+              {expandedSection === "hostels" && (
+                <div className="w-full">
+                  <div className="flex flex-col justify-center items-center w-full gap-2">
+                    <button
+                      onClick={() => {
+                        window.open(
+                          "https://pages.razorpay.com/pl_Ef8FofNuC4SR5C/view",
+                          "_blank"
+                        );
+                      }}
+                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
+                    >
+                      Payment for Existing Student
+                    </button>
+                    <button
+                      onClick={() => {
+                        window.open(
+                          "https://pages.razorpay.com/pl_EfCHelq0PvHmwp/view",
+                          "_blank"
+                        );
+                      }}
+                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
+                    >
+                      Payment for New Student
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
