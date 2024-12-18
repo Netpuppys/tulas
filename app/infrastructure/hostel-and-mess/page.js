@@ -8,7 +8,10 @@ import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/HostelMess/background.png";
 import { useInView } from "react-intersection-observer";
 import hostel from "../../../public/infrastructure/HostelMess/hostel.png";
-import vibgyor from "../../../public/infrastructure/HostelMess/vibgyor.png";
+import img1 from "../../../public/infrastructure/HostelMess/img1.png";
+import img3 from "../../../public/infrastructure/HostelMess/img3.png";
+import img2 from "../../../public/infrastructure/HostelMess/img2.png";
+import GalleryCrousel from "@/component/GalleryCrousel";
 import medical from "../../../public/infrastructure/Other/medical.png";
 import atm from "../../../public/infrastructure/Other/atm.png";
 import multiUse from "../../../public/infrastructure/HostelMess/cafeteria.png";
@@ -91,11 +94,11 @@ function LectureTheater() {
           A favorite spot for any student in any college is always the
           cafeteria. It is the place where one can drop by in any frame of mind
           and still have a great time. It is here that success is enjoyed and
-          victory is celebrated. College cafeteria not only serve basic
-          cuisines but also serves students favorite pasta, macaroni, dim sums,
-          pizza, shakes etc at reasonable price. Snacks, soft drinks and fresh
-          juices are also available. It functions during Morning 8:30 to Evening
-          10:15 which extends to 2:30AM during examinations.
+          victory is celebrated. College cafeteria not only serve basic cuisines
+          but also serves students favorite pasta, macaroni, dim sums, pizza,
+          shakes etc at reasonable price. Snacks, soft drinks and fresh juices
+          are also available. It functions during Morning 8:30 to Evening 10:15
+          which extends to 2:30AM during examinations.
           <br />
           <br />
           Maggie Point (next to the junior hostel) is open for 11:00PM to 2:30AM
@@ -110,6 +113,11 @@ function LectureTheater() {
         "The students in the hostels roll only have the right to enter into mess premises. The students are required to come to the mess during their specified timing only, not before or after. The students govern mess Committee; the mess committee makes sure that students’ health and nutrition is well taken care of. Mess serves breakfast, lunch, evening tea and dinner every day and the weekly menu (Chinese, North and South Indian cuisines) is available with mess in-charge; the students make menu, and the cuisine is changed twice a month.",
       image: mess,
     },
+  ];
+  const images = [
+    { title: "Cricket Ground", image: img3 },
+    { title: "Foreign Language learning", image: img1 },
+    { title: "Personality Development Classes", image: img2 },
   ];
   return (
     <>
@@ -148,6 +156,14 @@ function LectureTheater() {
             />
           </div>
           <Vision sections={sections.slice(0, 1)} />
+          <h3
+            className={`px-4 md:px-10 text-center text-white border-white font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 `}
+          >
+            Add On Facilities
+          </h3>
+          <div className="pt-8 md:pt-20 w-full h-fit">
+            <GalleryCrousel images={images} />
+          </div>
           {/* <div
             ref={ref}
             className="w-full h-fit py-8 md:py-20 bg-white px-6 md:px-[15%] flex flex-col gap-5 md:gap-0 md:flex-row justify-between items-center"

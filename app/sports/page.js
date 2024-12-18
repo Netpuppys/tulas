@@ -53,6 +53,9 @@ function Sports() {
     { title: "Chess", image: chess },
     { title: "Table Tennis", image: tableTennis },
     { title: "Carrom", image: carrom },
+    // { title: "Carrom", image: carrom },
+    // { title: "Carrom", image: carrom },
+    // { title: "Carrom", image: carrom },
   ];
   const sections = [
     {
@@ -388,7 +391,7 @@ function Sports() {
                 train, compete, and enjoy the outdoors
               </p>
             </div>
-            <Vision sections={sections}/>
+            <Vision sections={sections} />
           </div>
         </div>
         <Footer color={true} />

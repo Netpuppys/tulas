@@ -6,8 +6,9 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import { useMobile } from "@/component/IsMobileContext";
 import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
+import { FreeMode } from "swiper/modules";
 function GalleryCrousel({ images }) {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
   const { isMobile } = useMobile();
   const swiperRef = useRef();
   const handlePrevClick = () => {
@@ -26,13 +27,15 @@ function GalleryCrousel({ images }) {
   return (
     <div className="overflow-hidden px-8 md:px-0 w-full">
       <Swiper
-        loop={true}
+        // loop={true}
+        freeMode={true}
+        modules={FreeMode}
         slidesPerView={isMobile ? 1 : 2.5}
         spaceBetween={"4%"}
         centeredSlides={true}
         grabCursor={true}
         ref={swiperRef}
-        // initialSlide={1}
+        initialSlide={1}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
         {images.map((item, index) => (

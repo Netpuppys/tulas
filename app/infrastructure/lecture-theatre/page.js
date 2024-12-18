@@ -6,7 +6,10 @@ import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/lectureTheater/background.png";
-import { Fade } from "react-awesome-reveal";
+import img1 from "../../../public/infrastructure/lectureTheater/img1.png";
+import img3 from "../../../public/infrastructure/lectureTheater/img3.png";
+import img2 from "../../../public/infrastructure/lectureTheater/img2.png";
+import GalleryCrousel from "@/component/GalleryCrousel";
 import lecture from "../../../public/infrastructure/lectureTheater/lecture.png";
 import Vision from "@/component/Programs/Vision";
 
@@ -19,6 +22,7 @@ function LectureTheater() {
       image: lecture,
     },
   ];
+  const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
       <head>
@@ -55,6 +59,14 @@ function LectureTheater() {
             />
           </div>
           <Vision sections={sections} />
+          <h3
+            className={`px-4 md:px-10 text-center text-white border-white font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 `}
+          >
+            Gallery
+          </h3>
+          <div className="py-8 md:py-20 w-full h-fit">
+            <GalleryCrousel images={images} />
+          </div>
           <div className="w-full h-fit z-50">
             <Footer />
           </div>

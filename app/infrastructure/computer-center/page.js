@@ -6,10 +6,15 @@ import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/computerScience/background.png";
+import img1 from "../../../public/infrastructure/computerScience/img1.png";
+import img2 from "../../../public/infrastructure/computerScience/img2.png";
+import img3 from "../../../public/infrastructure/computerScience/img3.png";
+
 import { Fade } from "react-awesome-reveal";
 import it from "../../../public/infrastructure/computerScience/it.png";
 import sdc from "../../../public/infrastructure/computerScience/sdc.png";
 import Vision from "@/component/Programs/Vision";
+import GalleryCrousel from "@/component/GalleryCrousel";
 
 function ComputerScience() {
   const sections = [
@@ -51,6 +56,7 @@ function ComputerScience() {
       image: sdc,
     },
   ];
+  const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
       <head>
@@ -100,6 +106,14 @@ function ComputerScience() {
             />
           </div>
           <Vision sections={sections} />
+          <h3
+            className={`px-4 md:px-10 text-center text-white border-white font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 `}
+          >
+            Gallery
+          </h3>
+          <div className="py-8 md:py-20 w-full h-fit">
+            <GalleryCrousel images={images} />
+          </div>
           <div className="w-full h-fit z-50">
             <Footer />
           </div>
