@@ -76,10 +76,13 @@ function Navbar({ setState, position = false, fullBanner = false }) {
       setThirdExpandedIndex(null);
       setNestedLinksVisible(false);
       setIsChecked(false);
-      setIsChecked(false);
     }
     if (nestedLinksVisible) {
+      setExpandedIndex(null);
+      setSuperExpandedIndex(null);
+      setThirdExpandedIndex(null);
       setNestedLinksVisible(false);
+      setIsChecked(false);
     }
   };
   return (
@@ -409,27 +412,26 @@ function Navbar({ setState, position = false, fullBanner = false }) {
           </Link>
         </div>
 
-        <div
-          onClick={handleOutsideClick}
-          className={`${
-            isChecked
-              ? "w-screen h-screen pointer-events-auto absolute left-0 top-0 bg-opacity-40 bg-black"
-              : ""
-          } transition-all duration-100 ease-linear`}
-        ></div>
-
-        <NavbarMobile isChecked={isChecked} />
-        <NavbarDesktop
-          setExpandedIndex={setExpandedIndex}
-          expandedIndex={expandedIndex}
-          isChecked={isChecked}
-          setNestedLinksVisible={setNestedLinksVisible}
-          nestedLinksVisible={nestedLinksVisible}
-          superExpandedIndex={superExpandedIndex}
-          setSuperExpandedIndex={setSuperExpandedIndex}
-          thirdExpandedIndex={thirdExpandedIndex}
-          setThirdExpandedIndex={setThirdExpandedIndex}
-        />
+        {isChecked && (
+          <>
+            <div
+              onClick={handleOutsideClick}
+              className="w-screen h-screen flex pointer-events-auto absolute left-0 top-0 bg-opacity-40 bg-black transition-all duration-100 ease-linear"
+            ></div>
+            <NavbarMobile isChecked={isChecked} />
+            <NavbarDesktop
+              setExpandedIndex={setExpandedIndex}
+              expandedIndex={expandedIndex}
+              isChecked={isChecked}
+              setNestedLinksVisible={setNestedLinksVisible}
+              nestedLinksVisible={nestedLinksVisible}
+              superExpandedIndex={superExpandedIndex}
+              setSuperExpandedIndex={setSuperExpandedIndex}
+              thirdExpandedIndex={thirdExpandedIndex}
+              setThirdExpandedIndex={setThirdExpandedIndex}
+            />
+          </>
+        )}
       </div>
     </div>
   );

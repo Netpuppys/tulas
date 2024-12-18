@@ -157,7 +157,7 @@ function OtherFacilities() {
             image={BannerImg}
             title={
               <>
-                Campus <span className="text-[#007A83]">FACILITIES</span>
+                Campus <span className="text-[#007A83]">Facilities</span>
               </>
             }
             description={<></>}
