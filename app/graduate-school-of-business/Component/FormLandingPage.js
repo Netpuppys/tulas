@@ -17,8 +17,9 @@ function FormLandingPage() {
     FirstName: "",
     Email: "",
     MobileNumber: "+91",
-    LeadSource: 25,
-    LeadChannel: 2,
+    LeadSource: 52,
+    LeadCampaign: "",
+    LeadChannel: 7,
     Course: 11,
     Center: "",
     State: "",
@@ -125,8 +126,31 @@ function FormLandingPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Extract UTM parameters from the URL
+    const searchParams = new URLSearchParams(window.location.search);
+    const utmSource = searchParams.get("utm_source");
+    const utmCampaign = searchParams.get("utm_campaign");
+
+    // Update LeadSource and LeadCampaign based on UTM parameters
+    setFormData((prev) => ({
+      ...prev,
+      LeadSource: utmSource || 52,
+      LeadCampaign: utmCampaign || "",
+    }));
+
+    // Prepare the form data for submission
+    const updatedFormData = {
+      ...formData,
+      LeadSource: utmSource || 52,
+      LeadCampaign: utmCampaign || "",
+    };
+    
     axios
-      .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", formData)
+      .post(
+        "https://thirdpartyapi.extraaedge.com/api/SaveRequest",
+        updatedFormData
+      )
       .then(() => {
         alert("Enquiry Submitted Successfully");
         setVerified(false);
@@ -137,8 +161,9 @@ function FormLandingPage() {
           FirstName: "",
           Email: "",
           MobileNumber: "+91",
-          LeadSource: 25,
-          LeadChannel: 2,
+          LeadSource: 52,
+          LeadCampaign: "",
+          LeadChannel: 7,
           Course: 11,
           Center: "",
           State: "",
@@ -200,7 +225,7 @@ function FormLandingPage() {
   };
 
   return (
-    <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 -mt-[80%] md:-mt-[20%]">
+    <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 -mt-[85%] sm:-mt-[65%] md:-mt-[30%] lg:-mt-[25%] 2xl:-mt-[20%]">
       <div className="w-full flex flex-col justify-center items-center">
         <Image src={mba} className="w-fit h-fit " alt="" />
         <h1 className="font-[TTChocolatesBold] leading-tight my-4 text-center font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)]">
@@ -270,7 +295,7 @@ function FormLandingPage() {
                 className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF] placeholder:text-[#3D001B] placeholder:opacity-60 mb-3"
               />
             </div>
-            <div className="mb-3 flex gap-3 md:gap-7">
+            <div className="mb-3 flex flex-col xl:flex-row gap-3 xl:gap-7">
               <PhoneInput
                 ref={mobileInputRef}
                 country={"in"}
@@ -317,7 +342,7 @@ function FormLandingPage() {
                 type="button"
                 disabled={verified || !isPhoneValid}
                 onClick={sendOtp}
-                className={`w-1/2 md:w-[40%] rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-white bg-[#007A83] ${
+                className={`w-full xl:w-[40%] rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-white bg-[#007A83] ${
                   isPhoneValid && !verified
                     ? " cursor-pointer"
                     : "opacity-50 cursor-not-allowed"
@@ -330,6 +355,7 @@ function FormLandingPage() {
               <select
                 value={formData.State}
                 onChange={handleStateChange}
+                required
                 className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
               >
                 <option value="">Select State</option>
@@ -344,9 +370,10 @@ function FormLandingPage() {
               </select>
               <select
                 value={formData.City}
+                required
                 onChange={(e) => handleChange("City", e.target.value)}
                 className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
-                disabled={!formData.State}
+                title={!formData.State ? "Please Select state first" : ""}
               >
                 <option value="">Select City</option>
                 {formData.State &&
@@ -399,16 +426,16 @@ function FormLandingPage() {
                 boxShadow:
                   "8.247px 13.401px 25.77px 0px rgba(255, 255, 255, 0.50)",
               }}
-              className={`w-full md:w-[40%] mx-auto bg-white text-[#007A83] cursor-pointer py-3 rounded-[3px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold`}
+              className={`w-full xl:w-[40%] mx-auto bg-white text-[#007A83] cursor-pointer py-3 rounded-[3px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold`}
             >
               Submit
             </button>
           </form>
         </div>
         {isOtpSent && (
-          <div className="fixed w-screen h-screen bg-black top-0 left-0 z-50 flex items-center justify-center flex-col">
+          <div className="fixed w-screen h-screen top-0 left-0 z-50 flex items-center justify-center flex-col">
             <div
-              className="w-full h-screen z-10 absolute"
+              className="w-full h-screen pointer-events-auto z-10 absolute bg-black bg-opacity-50"
               onClick={() => setIsOtpSent(false)}
             ></div>
             <div className="p-8 rounded-2xl pointer-events-auto z-20 overflow-hidden relative">

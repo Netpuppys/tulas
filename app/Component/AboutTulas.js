@@ -229,9 +229,9 @@ function AboutTulas() {
       className="bg-[#3d001b] flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-10 items-center"
     >
       {isOtpSent && (
-        <div className="fixed w-screen h-screen bg-black bg-opacity-50 top-0 left-0 z-50 flex items-center justify-center flex-col">
+        <div className="fixed w-screen h-screen top-0 left-0 z-50 flex items-center justify-center flex-col">
           <div
-            className="w-full h-screen z-10 absolute"
+            className="w-full h-screen bg-black bg-opacity-50 pointer-events-auto z-10 absolute"
             onClick={() => setIsOtpSent(false)}
           ></div>
           <div className="p-8 rounded-2xl pointer-events-auto z-20 overflow-hidden relative">
@@ -328,7 +328,7 @@ function AboutTulas() {
               required
               className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
             />
-            <div className="mb-3 flex gap-3">
+            <div className="mb-3 flex flex-col xl:flex-row gap-3 xl:gap-7">
               <PhoneInput
                 ref={mobileInputRef}
                 country={"in"}
@@ -367,7 +367,7 @@ function AboutTulas() {
                 type="button"
                 disabled={verified || !isPhoneValid}
                 onClick={sendOtp}
-                className={`w-1/2 md:w-[40%] bg-white rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-[#007A83] ${
+                className={`w-full xl:w-[40%] bg-white rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-[#007A83] ${
                   isPhoneValid && !verified
                     ? "cursor-pointer"
                     : "opacity-50 cursor-not-allowed"
@@ -381,6 +381,7 @@ function AboutTulas() {
               <select
                 value={formData.State}
                 onChange={handleStateChange}
+                required
                 className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
               >
                 <option value="">Select State</option>
@@ -396,6 +397,7 @@ function AboutTulas() {
               <select
                 value={formData.City}
                 onChange={(e) => handleCityChange(e.target.value)}
+                required
                 className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
                 disabled={!formData.State}
               >

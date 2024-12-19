@@ -433,9 +433,9 @@ export const facultyData = [
   {
     name: "Prof. Amit Nautiyal",
     designation: "Professor",
-    education: "",
-    publications: "",
-    experience: "",
+    education: "Ph.D.",
+    publications: "19",
+    experience: "12.5",
     imageUrl: AmitNautiyal,
     resume: AmitNautiyalResume,
   },
