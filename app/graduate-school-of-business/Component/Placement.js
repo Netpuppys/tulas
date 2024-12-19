@@ -1,9 +1,24 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import mbaBackground from "../../../public/graduate-school-of-business/mba/mbaBackground.png";
+import placement1 from "../../../public/graduate-school-of-business/mba/placement1.webp";
+import placement2 from "../../../public/graduate-school-of-business/mba/placement2.webp";
 import placement3 from "../../../public/graduate-school-of-business/mba/placement3.webp";
 import placement4 from "../../../public/graduate-school-of-business/mba/placement4.webp";
 import placement5 from "../../../public/graduate-school-of-business/mba/placement5.webp";
+import placement6 from "../../../public/graduate-school-of-business/mba/placement6.webp";
+import placement7 from "../../../public/graduate-school-of-business/mba/placement7.webp";
+import placement8 from "../../../public/graduate-school-of-business/mba/placement8.webp";
+import placement9 from "../../../public/graduate-school-of-business/mba/placement9.webp";
+import place1 from "../../../public/graduate-school-of-business/mba/place1.webp";
+import place2 from "../../../public/graduate-school-of-business/mba/place2.webp";
+import place3 from "../../../public/graduate-school-of-business/mba/place3.webp";
+import place4 from "../../../public/graduate-school-of-business/mba/place4.webp";
+import place5 from "../../../public/graduate-school-of-business/mba/place5.webp";
+import place6 from "../../../public/graduate-school-of-business/mba/place6.webp";
+import place7 from "../../../public/graduate-school-of-business/mba/place7.webp";
+import place8 from "../../../public/graduate-school-of-business/mba/place8.webp";
+import place9 from "../../../public/graduate-school-of-business/mba/place9.webp";
 import byjus from "../../../public/graduate-school-of-business/mba/byjus.png";
 import tcs from "../../../public/graduate-school-of-business/mba/tcs.png";
 import kpmg from "../../../public/graduate-school-of-business/mba/kpmg.png";
@@ -20,14 +35,37 @@ import placementInternship from "../../../public/graduate-school-of-business/mba
 import placements from "../../../public/graduate-school-of-business/mba/placements.png";
 import highest from "../../../public/graduate-school-of-business/mba/highest.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules"; // Updated import for modules
 import "swiper/css";
+import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/autoplay"; // Import for autoplay
-import SwiperCore, { Autoplay } from "swiper";
+import { useMobile } from "@/component/IsMobileContext";
 
 function Placement() {
-  SwiperCore.use([Autoplay]);
-  const placement = [placement3, placement4, placement5];
+  const { isMobile } = useMobile();
+  const placement = [
+    placement1,
+    placement2,
+    placement3,
+    placement4,
+    placement5,
+    placement6,
+    placement7,
+    placement8,
+    placement9,
+  ];
+  const placementDesktop = [
+    place1,
+    place2,
+    place3,
+    place4,
+    place5,
+    place6,
+    place7,
+    place8,
+    place9,
+  ];
+  const selectedPlacement = isMobile ? placement : placementDesktop;
   const logo = [
     byjus,
     tcs,
@@ -79,12 +117,18 @@ function Placement() {
             ref={swiperRef}
             loop={true}
             autoplay={{
-              delay: 5000, // 5-second delay
-              disableOnInteraction: false, // Autoplay continues after interaction
+              delay: 3000,
+              disableOnInteraction: true,
             }}
+            navigation={{
+              prevEl: ".prev-btn",
+              nextEl: ".next-btn",
+            }}
+            modules={[Pagination, Navigation, Autoplay]}
+            className="mySwiper"
             slidesPerView={1}
           >
-            {placement.map((card, index) => (
+            {selectedPlacement.map((card, index) => (
               <SwiperSlide key={index}>
                 <div className="w-full h-fit flex gap-20">
                   <Image src={card} alt="" className="w-full h-full" />
@@ -93,7 +137,7 @@ function Placement() {
             ))}
           </Swiper>
           <div className="flex w-fit mx-auto pt-8 md:pt-10 gap-2 self-center items-center">
-            {placement.map((_, index) => (
+            {selectedPlacement.map((_, index) => (
               <div
                 key={index}
                 onClick={() => {
@@ -167,7 +211,11 @@ function Placement() {
                     {card.title}
                   </h3>
                 </div>
-                <Image src={card.icon} alt="" className="w-[65px] md:w-[3vw] h-fit" />
+                <Image
+                  src={card.icon}
+                  alt=""
+                  className="w-[65px] md:w-[3vw] h-fit"
+                />
               </div>
               <h3 className="font-[TTChocolatesBold] mt-2 text-[14px] md:text-[clamp(10px,1vw,100px)] leading-tight text-[#000000] font-normal">
                 {card.desc}
