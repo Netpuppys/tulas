@@ -3,57 +3,79 @@ import React from "react";
 import background from "../../../public/campus-life/victree/background.png";
 import Footer from "@/component/Footer";
 import Vision from "@/component/Programs/Vision";
+import Banner from "@/component/Banner";
 import Image from "next/image";
 import Navbar from "@/component/Navbar/Navbar";
-import vibgyorMain from "../../../public/campus-life/victree/victreeMain.png";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
+import vibgyorMain from "../../../public/campus-life/victree/sports.png";
+import BannerImg from "../../../public/campus-life/victree/bannerImg.png";
+import tableTennis from "../../../public/campus-life/victree/tableTennis.png";
+import chess from "../../../public/campus-life/victree/chess.png";
+import carrom from "../../../public/campus-life/victree/carrom.png";
+import squash from "../../../public/campus-life/victree/squash.png";
+import cricket from "../../../public/campus-life/victree/cricket.png";
+import football from "../../../public/campus-life/victree/football.png";
+import basketball from "../../../public/campus-life/victree/basketball.png";
+import volleyball from "../../../public/campus-life/victree/volleyball.png";
+import badminton from "../../../public/campus-life/victree/badminton.png";
+import athletics from "../../../public/campus-life/victree/athletics.png"
+
 function Victree() {
   const sections = [
     {
       title: "Table Tennis",
       description:
         "Quick reflexes, sharp focus—this game is all about precision.",
+      image: tableTennis,
     },
 
     {
       title: "Chess",
       description: "Outsmart your opponent, one strategic move at a time.",
+      image: chess,
     },
     {
       title: "Carrom",
       description: "A classic game where skill and finesse meet in every shot.",
+      image: carrom,
     },
 
     {
       title: "Squash",
       description: "A fast-paced challenge where every shot counts.",
+      image: squash,
     },
     {
       title: "Cricket",
       description: "Swing for the fences or bowl a perfect delivery.",
+      image: cricket,
     },
     {
       title: "Football",
       description:
         "Sprint, pass, and score—football’s where the real action is.",
+      image: football,
     },
     {
       title: "Basketball",
       description:
         "Sprint down the court, make the play, and score when it counts.",
+      image: basketball,
     },
     {
       title: "Volleyball",
       description: "Jump, spike, and work as a team to claim victory.",
+      image: volleyball
     },
     {
       title: "Badminton",
       description: "Fast rallies and lightning moves to keep you on your toes.",
+      image: badminton
     },
     {
       title: "Athletics",
       description:
         "Push your limits in races and field events that test strength and speed.",
+        image: athletics
     },
   ];
   return (
@@ -67,20 +89,14 @@ function Victree() {
       </head>
       <body>
         <Navbar />
-        <div className="h-fit w-full z-40 bg-white">
-          <div className="h-[80vh] md:h-[71vh] w-full relative">
-            <Image
-              src={BannerImg}
-              alt=""
-              className="w-full h-full object-cover absolute"
-            />
-            <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-              <h3 className="text-[40px] md:text-[60px] text-white z-10 font-[CarotSlab]">
-                Victree <span className="text-[#007A83]">- Sports Club</span>
-              </h3>
-            </div>
-          </div>
-        </div>
+        <Banner
+          image={BannerImg}
+          title={
+            <>
+              Victree <span className="text-[#007A83]">- Sports Club</span>
+            </>
+          }
+        />
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
           <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
             Victree Sports Club - Where the Game’s Always On!

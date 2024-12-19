@@ -16,7 +16,7 @@ function FormLandingPage() {
     Source: "tulas",
     FirstName: "",
     Email: "",
-    MobileNumber: "",
+    MobileNumber: "+91",
     LeadSource: 25,
     LeadChannel: 2,
     Course: 11,
@@ -136,7 +136,7 @@ function FormLandingPage() {
           Source: "tulas",
           FirstName: "",
           Email: "",
-          MobileNumber: "",
+          MobileNumber: "+91",
           LeadSource: 25,
           LeadChannel: 2,
           Course: 11,
@@ -144,6 +144,7 @@ function FormLandingPage() {
           State: "",
           City: "",
         });
+        setOtp("");
       })
       .catch((error) => {
         alert.error(error);
@@ -151,7 +152,7 @@ function FormLandingPage() {
   };
   const sendOtp = async () => {
     axios
-      .post("https://tulas-backend.onrender.com/send-otp", {
+      .post("https://otp.tulas.edu.in/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         message:
           "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
@@ -167,7 +168,7 @@ function FormLandingPage() {
 
   const verifyOtp = async () => {
     axios
-      .post("https://tulas-backend.onrender.com/verify-otp", {
+      .post("https://otp.tulas.edu.in/verify-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         otp: otp,
       })
@@ -183,7 +184,7 @@ function FormLandingPage() {
 
   const resendOtp = async () => {
     axios
-      .post("https://tulas-backend.onrender.com/retry-otp", {
+      .post("https://otp.tulas.edu.in/retry-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
       })
       .then((response) => {

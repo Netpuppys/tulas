@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../public/courses/bba/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/bsc-agriculture/background.png";
 import Footer from "@/component/Footer";

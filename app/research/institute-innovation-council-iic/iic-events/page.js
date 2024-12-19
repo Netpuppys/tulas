@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Banner from "@/component/Banner";
-import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../../public/research/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
@@ -58,8 +58,8 @@ function IICEvents() {
         />
       </head>
       <body>
+        <Navbar />
         <div className="flex flex-col items-center overflow-hidden">
-          <Navbar />
           <Banner
             image={BannerImg}
             title={

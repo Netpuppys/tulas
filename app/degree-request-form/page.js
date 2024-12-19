@@ -2,7 +2,7 @@
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
 import React, { useState, useRef, useEffect } from "react";
-import BannerImg from "../../public/Components/Banner/bannerImg.png";
+import BannerImg from "../../public/research/bannerImg.png";
 import background from "../../public/AboutDehradun/background.png";
 import Footer from "@/component/Footer";
 import Image from "next/image";

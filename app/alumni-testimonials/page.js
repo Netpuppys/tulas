@@ -2,7 +2,7 @@ import Banner from "@/component/Banner";
 import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
-import BannerImg from "../../public/Components/Banner/bannerImg.png";
+import BannerImg from "../../public/alumni/bannerImg.png";
 import background from "../../public/alumni/background.png";
 import Testimonials from "../Component/Testimonials";
 import Testimonial from "./testimonials/testimonial";

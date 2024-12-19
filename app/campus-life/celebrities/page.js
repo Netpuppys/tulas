@@ -8,8 +8,12 @@ import Image from "next/image";
 import Vision from "@/component/Programs/Vision";
 import filmFestival1 from "../../../public/campus-life/celebrities/filmFestival.webp";
 import filmFestival2 from "../../../public/campus-life/celebrities/filmFestival2.webp";
-
+import img1 from "../../../public/campus-life/sanskriti/img1.png";
+import img2 from "../../../public/campus-life/sanskriti/img2.png";
+import img3 from "../../../public/campus-life/sanskriti/img3.png";
 import Footer from "@/component/Footer";
+import GalleryCrousel from "@/component/GalleryCrousel";
+import Banner from "@/component/Banner";
 function Celebrities() {
   const sections = [
     {
@@ -37,6 +41,8 @@ function Celebrities() {
       image: filmFestival2,
     },
   ];
+  const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
+
   return (
     <>
       <head>
@@ -51,21 +57,16 @@ function Celebrities() {
       </head>
       <body>
         <Navbar />
-        <div className="h-fit w-full z-40 bg-white">
-          <div className="h-[80vh] md:h-[71vh] w-full relative">
-            <Image
-              src={BannerImg}
-              alt=""
-              className="w-full h-full object-cover absolute"
-            />
-            <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-              <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-white z-10 font-[CarotSlab]">
-                Dehradun International{" "}
-                <span className="text-[#007A83]">Film Festival</span>
-              </h3>
-            </div>
-          </div>
-        </div>
+        <Banner
+          image={BannerImg}
+          title={
+            <>
+              Dehradun International{" "}
+              <span className="text-[#007A83]">Film Festival</span>
+            </>
+          }
+        />
+
         <div className="bg-white w-full h-fit flex flex-col justify-center items-center py-8 md:py-20">
           {/* <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
             DEHRADUN INTERNATIONAL FILM FESTIVAL
@@ -109,6 +110,9 @@ function Celebrities() {
           />
         </div>
         <Vision sections={sections} />
+        <div className="pb-8 md:pb-20">
+          <GalleryCrousel images={images} />
+        </div>
         <div className="w-full h-fit z-50">
           <Footer />
         </div>

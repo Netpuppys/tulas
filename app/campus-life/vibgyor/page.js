@@ -3,6 +3,7 @@ import React from "react";
 import background from "../../../public/campus-life/vibgyor/background.png";
 import Footer from "@/component/Footer";
 import Vision from "@/component/Programs/Vision";
+import Banner from "@/component/Banner";
 import Image from "next/image";
 import Navbar from "@/component/Navbar/Navbar";
 import vibgyorMain from "../../../public/campus-life/vibgyor/vibgyorMain.png";
@@ -17,7 +18,7 @@ import Capture from "../../../public/campus-life/vibgyor/Capture.webp";
 import Technoocrats from "../../../public/campus-life/vibgyor/Technoocrats.webp";
 import Quill from "../../../public/campus-life/vibgyor/Quill.webp";
 import Expresso from "../../../public/campus-life/vibgyor/Expresso.webp";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../public/campus-life/vibgyor/bannerImg.png";
 function Vibgyor() {
   const sections = [
     {
@@ -98,20 +99,15 @@ function Vibgyor() {
       </head>
       <body>
         <Navbar />
-        <div className="h-fit w-full z-40 bg-white">
-          <div className="h-[80vh] md:h-[71vh] w-full relative">
-            <Image
-              src={BannerImg}
-              alt=""
-              className="w-full h-full object-cover absolute"
-            />
-            <div className="bottom-4 md:bottom-10 z-10 absolute mx-4 md:ml-16">
-              <h3 className="text-[40px] md:text-[60px] text-white z-10 font-[CarotSlab]">
-                Vibgyor- <span className="text-[#007A83]">Student Clubs</span>
-              </h3>
-            </div>
-          </div>
-        </div>
+        <Banner
+          image={BannerImg}
+          title={
+            <>
+              Vibgyor- <span className="text-[#007A83]">Student Clubs</span>
+            </>
+          }
+        />
+
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
           <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
             Meet Vibgyor – the heartbeat of Tula’s Institute!

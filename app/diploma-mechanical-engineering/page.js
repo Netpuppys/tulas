@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import BannerImg from "../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../public/diploma-in-mechanical-engineering/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import {
