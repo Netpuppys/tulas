@@ -248,11 +248,11 @@ function FormLandingPage() {
               horizons.
             </p>
             <a
-              href="tel:+91-9837983721"
+              href="tel:+91-8069204028"
               className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
             >
               <IoCall />
-              +91-98379 83721
+              +91-80692 04028
             </a>
             <a
               href="mailTo:info@tulas.edu.in"

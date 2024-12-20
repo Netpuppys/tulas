@@ -49,9 +49,9 @@ function NavbarLandingPage() {
       {!scrolled && (
         <div className="fixed z-50 flex items-center justify-center gap-[5%] right-0 pt-[8vw] pr-[8vw] md:pt-[2.5vw] md:pr-[2.5vw]">
           <button
-            title="Admission Helpline No. +91-9837983721"
+            title="Admission Helpline No. +91-8069204028"
             className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
-            onClick={() => (window.location.href = "tel:+91-9837983721")}
+            onClick={() => (window.location.href = "tel:+91-8069204028")}
           >
             <div
               className={`w-16 md:w-[74px] flex items-center justify-center border-2 rounded-[50%] aspect-square border-r-transparent`}
@@ -77,9 +77,9 @@ function NavbarLandingPage() {
       {scrolled && (
         <div className="fixed flex animate-fadeIn items-center justify-center gap-[5%] right-0 z-50 pt-[8vw] pr-[8vw] md:pt-[2.5vw] md:pr-[2.5vw]">
           <button
-            title="Admission Helpline No. +91-9837983721"
+            title="Admission Helpline No. +91-8069204028"
             className="bg-[#E69706] rounded-full text-3xl shadow-lg w-16 md:w-[74px] aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-            onClick={() => (window.location.href = "tel:+91-9837983721")}
+            onClick={() => (window.location.href = "tel:+91-8069204028")}
           >
             <div className="w-[40px] h-[40px]">
               <Image src={phoneCallGif} alt="" className="w-full h-full" />
