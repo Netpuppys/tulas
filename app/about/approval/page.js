@@ -203,6 +203,8 @@ function Approval() {
               >
                 <Link
                   href={approval.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex justify-between items-center"
                 >
                   <div className="flex w-full h-full items-center gap-2 md:gap-10">

@@ -260,7 +260,7 @@ export const items = [
   {
     title: "Course Outcomes",
     description: [
-      <Link href={mbaDocument}>
+      <Link href={mbaDocument} target="_blank">
         Click here to download MBA Course Outcomes
       </Link>,
     ],

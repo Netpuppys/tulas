@@ -70,7 +70,17 @@ function NavbarDesktop({
                   } transition-all duration-300 ease-linear h-full min-h-[6vh]`}
                 >
                   <Link
-                    href={`${item.linkTo}${utmParams}`}
+                    href={
+                      item.target
+                        ? `${item.linkTo}`
+                        : `${item.linkTo}${utmParams}`
+                    }
+                    target={item.target ? "_blank" : ""}
+                    rel={
+                      item.target === "_blank"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="flex-auto font-[TTChocolatesMedium] font-black px-10 py-1 flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83]"
                   >
                     {item.title}
@@ -122,7 +132,17 @@ function NavbarDesktop({
               >
                 <span className="flex items-center bg-white group hover:bg-[#919191] transition-all duration-300 ease-linear justify-between cursor-pointer h-full min-h-[6vh]">
                   <Link
-                    href={`${nestedLinks.linkTo}${utmParams}`}
+                    href={
+                      nestedLinks.target
+                        ? `${nestedLinks.linkTo}`
+                        : `${nestedLinks.linkTo}${utmParams}`
+                    }
+                    target={nestedLinks.target ? "_blank" : ""}
+                    rel={
+                      nestedLinks.target === "_blank"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-medium flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                   >
                     {nestedLinks.title}
@@ -158,7 +178,17 @@ function NavbarDesktop({
                         <span className="flex items-center justify-between bg-[#919191] hover:bg-[#2c2c2c] cursor-pointer w-full h-full min-h-[6vh]">
                           <Link
                             key={index}
-                            href={`${superNestedLinks.linkTo}${utmParams}`}
+                            href={
+                              superNestedLinks.target
+                                ? `${superNestedLinks.linkTo}`
+                                : `${superNestedLinks.linkTo}${utmParams}`
+                            }
+                            target={superNestedLinks.target ? "_blank" : ""}
+                            rel={
+                              superNestedLinks.target === "_blank"
+                                ? "noopener noreferrer"
+                                : undefined
+                            }
                             className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-medium flex items-center h-full text-[20px] text-white"
                           >
                             {superNestedLinks.title}
@@ -194,7 +224,19 @@ function NavbarDesktop({
                                 <span className="flex items-center justify-between cursor-pointer w-full h-full min-h-[6vh]">
                                   <Link
                                     key={index}
-                                    href={`${thirdNestedLinks.linkTo}${utmParams}`}
+                                    href={
+                                      thirdNestedLinks.target
+                                        ? `${thirdNestedLinks.linkTo}`
+                                        : `${thirdNestedLinks.linkTo}${utmParams}`
+                                    }
+                                    target={
+                                      thirdNestedLinks.target ? "_blank" : ""
+                                    }
+                                    rel={
+                                      thirdNestedLinks.target === "_blank"
+                                        ? "noopener noreferrer"
+                                        : undefined
+                                    }
                                     className="flex-auto font-[TTChocolates] px-14 py-1 font-normal flex items-center h-full text-[18px] text-white group-hover:text-[#2c2c2c]"
                                   >
                                     {thirdNestedLinks.title}

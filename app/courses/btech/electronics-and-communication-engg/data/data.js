@@ -91,7 +91,7 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={EceDocument}>B.Tech ECE</Link>],
+    description: [<Link href={EceDocument} target="_blank">B.Tech ECE</Link>],
     image: Course,
   },
   {

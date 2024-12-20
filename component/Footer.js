@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import {
   FaFacebookF,
@@ -25,62 +25,100 @@ import { FiPhone } from "react-icons/fi";
 import { RiFlightLandLine } from "react-icons/ri";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { MdMail } from "react-icons/md";
+import { UtmContext } from "./utmParams";
 const subTitle =
   "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India";
 
 const Footer = ({ set = false, color = false }) => {
   const keyLinks = [
-    { title: "Anti-ragging", linkTo: ANTIRAGGING0001 },
+    { title: "Anti-ragging", linkTo: ANTIRAGGING0001, target: "_blank" },
     { title: "Grievance", linkTo: "/grievance/" },
-    { title: "Holiday Calendar", linkTo: HolidayCalendar },
-    { title: "Exam Details", linkTo: Examination },
+    { title: "Holiday Calendar", linkTo: HolidayCalendar, target: "_blank" },
+    { title: "Exam Details", linkTo: Examination, target: "_blank" },
     { title: "Career", linkTo: "/careers/" },
-    { title: "ICC", linkTo: ICC },
-    { title: "Mandatory Disclosure", linkTo: MadatoryDisclosure },
-    { title: "Handbook", linkTo: HandBook },
-    { title: "Research Policy", linkTo: NewResearchPolicy },
-    { title: "Plagiarism Policy", linkTo: Plagiarism },
+    { title: "ICC", linkTo: ICC, target: "_blank" },
+    {
+      title: "Mandatory Disclosure",
+      linkTo: MadatoryDisclosure,
+      target: "_blank",
+    },
+    { title: "Handbook", linkTo: HandBook, target: "_blank" },
+    { title: "Research Policy", linkTo: NewResearchPolicy, target: "_blank" },
+    { title: "Plagiarism Policy", linkTo: Plagiarism, target: "_blank" },
     {
       title: "QuillBot Software",
       linkTo: "https://quillbot.com/login?returnUrl=/app/chrome-extension",
+      target: "_blank",
     },
     { title: "NAAC", linkTo: "/naac/" },
     { title: "IQAC", linkTo: "/iqac/" },
   ];
   const keyLinks2 = [
-    { title: "AICTE", linkTo: "https://www.aicte-india.org/" },
-    { title: "AISHE", linkTo: "https://aishe.gov.in/" },
+    {
+      title: "AICTE",
+      linkTo: "https://www.aicte-india.org/",
+      target: "_blank",
+    },
+    { title: "AISHE", linkTo: "https://aishe.gov.in/", target: "_blank" },
     {
       title: "Uttarakhand Technical University",
       linkTo: "https://uktech.ac.in/en",
+      target: "_blank",
     },
     {
       title: "Sri Devsuman Uttarakhand University",
       linkTo: "https://www.sdsuv.ac.in/",
+      target: "_blank",
     },
-    { title: "UBTER", linkTo: "https://ubter.in/" },
+    { title: "UBTER", linkTo: "https://ubter.in/", target: "_blank" },
     {
       title: "National Scholarship Portal",
       linkTo: "https://scholarships.gov.in/",
+      target: "_blank",
     },
-    { title: "National Career Service", linkTo: "https://www.ncs.gov.in/" },
+    {
+      title: "National Career Service",
+      linkTo: "https://www.ncs.gov.in/",
+      target: "_blank",
+    },
     { title: "NIRF Ranking", linkTo: "/nirf-ranking/" },
-    { title: "Internshala", linkTo: "https://internshala.com/" },
-    { title: "Turnitin", linkTo: "https://www.turnitin.com/login_page.asp" },
-    { title: "Academic Calendar", linkTo: ACADEMICCALENDER },
-    { title: "Code Of Conduct", linkTo: codeOfConduct },
+    {
+      title: "Internshala",
+      linkTo: "https://internshala.com/",
+      target: "_blank",
+    },
+    {
+      title: "Turnitin",
+      linkTo: "https://www.turnitin.com/login_page.asp",
+      target: "_blank",
+    },
+    { title: "Academic Calendar", linkTo: ACADEMICCALENDER, target: "_blank" },
+    { title: "Code Of Conduct", linkTo: codeOfConduct, target: "_blank" },
     {
       title: "Innovation and Startup Policy",
       linkTo: innovationAndStartupPolicy,
+      target: "_blank",
     },
   ];
 
   const socialMediaLinks = [
-    { href: "#", icon: <FaFacebookF /> },
-    { href: "#", icon: <FaTwitter /> },
-    { href: "#", icon: <FaInstagram /> },
-    { href: "#", icon: <FaLinkedinIn /> },
-    { href: "#", icon: <FaYoutube /> },
+    {
+      href: "https://www.facebook.com/tulasinstitutedehradun/",
+      icon: <FaFacebookF />,
+    },
+    { href: "https://twitter.com/tulas_institute", icon: <FaTwitter /> },
+    {
+      href: "https://www.instagram.com/tulasinstitutedehradun/",
+      icon: <FaInstagram />,
+    },
+    {
+      href: "https://www.linkedin.com/school/tula's-institute/",
+      icon: <FaLinkedinIn />,
+    },
+    {
+      href: "https://www.youtube.com/@TulasInstitutedehradune",
+      icon: <FaYoutube />,
+    },
   ];
   const cardsData = [
     {
@@ -90,7 +128,14 @@ const Footer = ({ set = false, color = false }) => {
     {
       leftText: (
         <>
-          Designed and Managed By <a href="https://netpuppys.com">NetPuppys</a>
+          Designed and Managed By{" "}
+          <a
+            href="https://netpuppys.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            NetPuppys
+          </a>
         </>
       ),
     },
@@ -109,6 +154,7 @@ const Footer = ({ set = false, color = false }) => {
       ],
     },
   ];
+  const { utmParams } = useContext(UtmContext);
 
   return (
     <footer className="min-h-screen w-full text-white overflow-hidden z-40">
@@ -141,6 +187,8 @@ const Footer = ({ set = false, color = false }) => {
               <Link
                 key={index}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#fff] rounded-lg bg-opacity-[0.8] text-[#808080] p-[3%] text-[20px] md:text-[clamp(8px,1.3vw,25px)]"
               >
                 {social.icon}
@@ -174,7 +222,9 @@ const Footer = ({ set = false, color = false }) => {
               key={index}
               className="text-[20px] md:text-[clamp(10px,1.3vw,25px)] p-2 md:p-[0.5%] rounded-full backdrop:blur-3xl bg-opacity-20 bg-white"
             >
-              <a href={social.href}>{social.icon}</a>
+              <a href={social.href} target="_blank" rel="noopener noreferrer">
+                {social.icon}
+              </a>
             </li>
           ))}
         </ul>
@@ -213,7 +263,17 @@ const Footer = ({ set = false, color = false }) => {
                 {keyLinks.map((link, index) => (
                   <li key={index} className="">
                     <Link
-                      href={link.linkTo}
+                      href={
+                        link.target
+                          ? `${link.linkTo}`
+                          : `${link.linkTo}${utmParams}`
+                      }
+                      target={link.target ? "_blank" : ""}
+                      rel={
+                        link.target === "_blank"
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
                       className="flex gap-2 text-[14px] md:text-[clamp(10px,1.1vw,20px)] w-fit"
                     >
                       <span className="text-[#E69706]">{"> "}</span>
@@ -226,7 +286,17 @@ const Footer = ({ set = false, color = false }) => {
                 {keyLinks2.map((link, index) => (
                   <li key={index} className="">
                     <Link
-                      href={link.linkTo}
+                      href={
+                        link.target
+                          ? `${link.linkTo}`
+                          : `${link.linkTo}${utmParams}`
+                      }
+                      target={link.target ? "_blank" : ""}
+                      rel={
+                        link.target === "_blank"
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
                       className="flex gap-2 text-[14px] md:text-[clamp(10px,1.1vw,20px)] w-fit"
                     >
                       <span className="text-[#E69706]">{"> "}</span>
@@ -325,7 +395,7 @@ const Footer = ({ set = false, color = false }) => {
                 {btnGroup.buttons.map((btn, btnIndex) => (
                   <React.Fragment key={btnIndex}>
                     <Link
-                      href={btn.linkTo}
+                      href={`${btn.linkTo}${utmParams}`}
                       className={`px-1 text-[12px] md:text-[clamp(10px,0.8vw,20px)] font-light md:font-normal md:px-2 ${
                         btnIndex < btnGroup.buttons.length - 1
                           ? "border-r-2 border-white last:border-r-0"

@@ -29,7 +29,6 @@ import ShivendraMishra from "../../../public/bsc-agriculture/facultyData/Shivend
 import ShivendraMishraResume from "../../../public/bsc-agriculture/facultyData/ShivendraMishraResume.pdf";
 import Suresh from "../../../public/bsc-agriculture/facultyData/Suresh.webp";
 import SureshResume from "../../../public/bsc-agriculture/facultyData/SureshResume.pdf";
-
 import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
@@ -117,7 +116,7 @@ export const items = [
   {
     title: "Course Outcomes",
     description: [
-      <Link href={AGRICULTURE}>
+      <Link href={AGRICULTURE} target="_blank" rel="noopener noreferrer">
         Click here to download AGRICULTURE Course Outcomes
       </Link>,
     ],

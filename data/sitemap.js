@@ -211,6 +211,7 @@ const sitemap = [
         title: "Institute Video",
         linkTo:
           "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view",
+          target: "_blank",
       },
     ],
   },
@@ -287,14 +288,17 @@ const sitemap = [
           {
             title: "Research Policy",
             linkTo: NewResearchPolicy,
+            target: "_blank",
           },
           {
             title: "Plagiarism Policy",
             linkTo: Plagiarism,
+            target: "_blank",
           },
           {
             title: "Research Remuneration",
             linkTo: Research_Remuneration_Form,
+            target: "_blank",
           },
         ],
       },
@@ -337,6 +341,7 @@ const sitemap = [
       {
         title: "Tula’s Technology and Incubator (TTBI)",
         linkTo: "https://www.tulasincubator.com/",
+        target: "_blank",
       },
     ],
   },
@@ -407,6 +412,7 @@ const sitemap = [
       {
         title: "Alumni Login",
         linkTo: "https://alumni.tulas.edu.in/",
+        target: "_blank",
       },
       {
         title: "Alumni Testimonials",
@@ -425,10 +431,12 @@ const sitemap = [
       {
         title: "Teacher Login",
         linkTo: "https://teacher.camu.in/",
+        target: "_blank",
       },
       {
         title: "Student Login",
         linkTo: "https://student.camu.in/",
+        target: "_blank",
       },
     ],
   },

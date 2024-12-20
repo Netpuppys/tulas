@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { SiRazorpay } from "react-icons/si";
 import { Md360, MdOutlineArticle, MdOutlinePrivacyTip } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import Link from "next/link";
+import { UtmContext } from "@/component/utmParams";
 function QuickLinks() {
+    const { utmParams } = useContext(UtmContext);
   const quickLinks = [
     { title: "Pay Online", linkTo: "/pay-fee-online", icon: <SiRazorpay /> },
     {
@@ -31,7 +33,7 @@ function QuickLinks() {
       <div className="flex items-center justify-start gap-4 flex-wrap">
         {quickLinks.map((item, index) => (
           <Link
-            href={item.linkTo}
+            href={`${item.linkTo}${utmParams}`}
             key={index}
             className="flex items-center justify-center gap-1"
           >

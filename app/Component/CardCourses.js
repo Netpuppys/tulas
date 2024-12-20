@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Engineering from "../../public/Homepage/Courses/Engineering.png";
 import Business from "../../public/Homepage/Courses/Business.png";
 import Agriculture from "../../public/Homepage/Courses/Agriculture.png";
@@ -7,6 +7,7 @@ import computerApplication from "../../public/Homepage/Courses/ComputerApplicati
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
+import { UtmContext } from "@/component/utmParams";
 function CardCourses() {
   const cardsCourses = [
     {
@@ -74,6 +75,7 @@ function CardCourses() {
         },
         {
           name: "Diploma",
+          link: "#",
           branches: [
             {
               name: "Computer Science Engineering",
@@ -214,6 +216,7 @@ function CardCourses() {
       ],
     },
   ];
+  const { utmParams } = useContext(UtmContext);
   return (
     <div className="flex flex-col md:flex-row items-center justify-center w-full h-fit gap-4">
       {cardsCourses.map((image, index) => (
@@ -239,13 +242,16 @@ function CardCourses() {
                   className="hidden slide-in text-white w-fit text-left"
                 >
                   <Link
-                    href={degree.link || "#"}
+                    href={`${degree.link}${utmParams}`}
                     className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] text-2xl"
                   >
                     {degree.name}
                   </Link>
                   {degree.branches.map((branches, branchesIndex) => (
-                    <Link href={branches.linkTo || "#"} key={branchesIndex}>
+                    <Link
+                      href={`${branches.linkTo}${utmParams}`}
+                      key={branchesIndex}
+                    >
                       <h3 className="text-xs">{branches.name}</h3>
                     </Link>
                   ))}

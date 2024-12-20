@@ -1,12 +1,15 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import Link from "next/link";
 import { TbView360Number } from "react-icons/tb";
+import { UtmContext } from "@/component/utmParams";
 function Virtual() {
+  const { utmParams } = useContext(UtmContext);
   return (
     <div className="py-8 md:py-24 h-fit w-full flex flex-col justify-center items-center px-4 md:px-[10%]">
       <div className="flex flex-col md:flex-row justify-between items-center md:gap-16">
         <Link
-          href="/virtual-tour/index.html"
+          href={`/virtual-tour/index.html${utmParams}`}
           className="w-[80%] md:w-[30%] aspect-square relative bg-black rounded-2xl overflow-hidden mb-8 md:mb-0"
         >
           <iframe

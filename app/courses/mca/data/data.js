@@ -118,7 +118,7 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={mcaDocument}>MCA</Link>],
+    description: [<Link href={mcaDocument} target="_blank">MCA</Link>],
     image: Course,
   },
   {

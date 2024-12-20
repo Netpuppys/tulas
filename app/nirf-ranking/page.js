@@ -122,7 +122,7 @@ function NIRFRanking() {
                 {button.title}
               </h3>
               {button.nestedLink.map((nested, index) => (
-                <Link key={index} href={nested.linkTo}>
+                <Link key={index} href={nested.linkTo} target="_blank">
                   <ul className="flex justify-between items-center ml-5 list-disc gap-2 underline text-[clamp(15px,1vw,50px)]">
                     <li>{nested.title}</li>
                     <GoDownload />

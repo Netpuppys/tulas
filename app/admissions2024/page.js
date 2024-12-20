@@ -35,7 +35,8 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState, useLayoutEffect } from "react";
+import { useRef, useState, useLayoutEffect, useContext } from "react";
+import { UtmContext } from "@/component/utmParams";
 
 const programsOffered = [
   "B.TECH",
@@ -133,7 +134,7 @@ const placements = [
 const page = () => {
   const carouselRef = useRef();
   const [scrolled, setScrolled] = useState(false);
-
+  const { utmParams } = useContext(UtmContext);
   const handleScrollForward = () => {
     if (carouselRef.current) {
       const scrollAmount = carouselRef.current.offsetWidth;
@@ -192,7 +193,10 @@ const page = () => {
       <body>
         {/* <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tulas/ee-form-widget/form-15/widget.js" /> */}
         <div className="w-full min-h-screen relative font-[TTChocolatesBold]">
-          <Link href={"/"} className="absolute top-10 left-10 z-20 w-48">
+          <Link
+            href={`/${utmParams}`}
+            className="absolute top-10 left-10 z-20 w-48"
+          >
             <Image src={tulasLogo} className="w-full" alt="" />
           </Link>
 

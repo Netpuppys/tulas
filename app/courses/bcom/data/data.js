@@ -124,7 +124,7 @@ export const items = [
 
   {
     title: "Course Outcomes",
-    description: [<Link href={bcomDocument}>B.com</Link>],
+    description: [<Link href={bcomDocument} target="_blank">B.com</Link>],
     image: Course,
   },
 

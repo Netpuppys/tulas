@@ -56,7 +56,7 @@ function IICEvents() {
                 are IEEE WIE Affinity Group, IEEE Computer Society, IEEE PES,
                 IEEE Sensors Council etc. To know more visit:
                 <br />
-                <a href="https://edu.ieee.org/in-tiemc/">
+                <a href="https://edu.ieee.org/in-tiemc/" target="_blank">
                   https://edu.ieee.org/in-tiemc/
                 </a>
               </>

@@ -23,7 +23,13 @@ function NavbarMobile({ isChecked, utmParams }) {
             <div className="site-map-header" key={index}>
               <Link
                 className="site-map-link"
-                href={`${item.linkTo}${utmParams}`}
+                href={
+                  item.target ? `${item.linkTo}` : `${item.linkTo}${utmParams}`
+                }
+                target={item.target ? "_blank" : ""}
+                rel={
+                  item.target === "_blank" ? "noopener noreferrer" : undefined
+                }
               >
                 {item.title}
               </Link>
@@ -72,7 +78,17 @@ function NavbarMobile({ isChecked, utmParams }) {
                     <div className="site-map-sub-header">
                       <Link
                         className="site-map-sub-link"
-                        href={`${subItem.linkTo}${utmParams}`}
+                        href={
+                          subItem.target
+                            ? `${subItem.linkTo}`
+                            : `${subItem.linkTo}${utmParams}`
+                        }
+                        target={subItem.target ? "_blank" : ""}
+                        rel={
+                          subItem.target === "_blank"
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
                       >
                         {subItem.title}
                       </Link>
@@ -125,7 +141,17 @@ function NavbarMobile({ isChecked, utmParams }) {
                             <div className="site-map-ss-header">
                               <Link
                                 className="site-map-ss-link"
-                                href={`${subsubItem.linkTo}${utmParams}`}
+                                href={
+                                  subsubItem.target
+                                    ? `${subsubItem.linkTo}`
+                                    : `${subsubItem.linkTo}${utmParams}`
+                                }
+                                target={subsubItem.target ? "_blank" : ""}
+                                rel={
+                                  subsubItem.target === "_blank"
+                                    ? "noopener noreferrer"
+                                    : undefined
+                                }
                               >
                                 {subsubItem.title}
                               </Link>
@@ -179,7 +205,19 @@ function NavbarMobile({ isChecked, utmParams }) {
                                   (subsubsubItem) => (
                                     <Link
                                       className="site-map-sss-link"
-                                      href={`${subsubsubItem.linkTo}${utmParams}`}
+                                      href={
+                                        subsubsubItem.target
+                                          ? `${subsubsubItem.linkTo}`
+                                          : `${subsubsubItem.linkTo}${utmParams}`
+                                      }
+                                      target={
+                                        subsubsubItem.target ? "_blank" : ""
+                                      }
+                                      rel={
+                                        subsubsubItem.target === "_blank"
+                                          ? "noopener noreferrer"
+                                          : undefined
+                                      }
                                     >
                                       {subsubsubItem.title}
                                     </Link>

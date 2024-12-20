@@ -86,7 +86,7 @@ export const items = [
       "In-house Newspaper (Tula’s Tabloid) publication and Electronic Media News dissemination platforms to facilitate students with industrial exposure before entering into job market",
       "Preparation of professionals for the different media fields which would work closely with different stakeholders of civil society, media, and other democratic institutions, thereby contributing prominently towards overall national and regional development.",
       "Opportunities for students to engage in hands-on projects, such as running Departmental Social Media Pages (Instagram & YouTube Channel), fostering creativity and teamwork",
-      <Link href={"https://www.instagram.com/masscommunication_tulas/"}>
+      <Link href={"https://www.instagram.com/masscommunication_tulas/"} target="_blank">
         Click Here to Visit Instagram Page:
       </Link>,
     ],
@@ -108,7 +108,7 @@ export const items = [
   {
     title: "Course Outcomes",
     description: [
-      <Link href={BJMC}>Click here to download BA.JMC Course Outcomes</Link>,
+      <Link href={BJMC} target="_blank">Click here to download BA.JMC Course Outcomes</Link>,
     ],
     image: Course,
   },

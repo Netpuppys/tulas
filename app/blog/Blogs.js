@@ -1,8 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import loader from "../../public/loader.svg";
 import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
+import { UtmContext } from "@/component/utmParams";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]); // Initialize as an empty array
   const [page, setPage] = useState(1);
@@ -65,7 +66,7 @@ const Blogs = () => {
       </div>
     ); // Display loader if still loading and no blogs are fetched
   }
-
+const { utmParams } = useContext(UtmContext);
   return (
     <>
       {loading && (
@@ -83,7 +84,7 @@ const Blogs = () => {
               .replace(/&#8221;/g, "”")
               .replace(/&#038;/g, "&");
             return (
-              <a href={`/${blog.slug}`} key={blog.slug}>
+              <a href={`/${blog.slug}${utmParams}`} key={blog.slug}>
                 <div>
                   <div className="shadow-2xl bg-black bg-opacity-40  rounded-xl overflow-hidden transition-all duration-300">
                     <Image

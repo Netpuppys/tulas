@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   tableBTech,
   tableBTechLateral,
@@ -14,8 +14,10 @@ import {
   tableBCom,
 } from "./data";
 import Link from "next/link";
+import { UtmContext } from "@/component/utmParams";
 
 function TableRender({ tableData }) {
+    const { utmParams } = useContext(UtmContext);
   return (
     <div className="flex flex-col items-center justify-center gap-4 md:gap-6 overflow-x-scroll">
       <table className="w-full mb-4 md:mb-20 ">
@@ -38,7 +40,7 @@ function TableRender({ tableData }) {
               <td>{subject.seat}</td>
               <td>{subject.duration}</td>
               <td>
-                <Link href={"/admissions2024"}>Apply Now</Link>
+                <Link href={`/admissions2024${utmParams}`}>Apply Now</Link>
               </td>
             </tr>
           ))}

@@ -46,8 +46,8 @@ export const content = (
     <br />
     The program emphasis on practical and hands-on training that strengthens the
     theoretical foundations of computer science engineering students. It is the
-    job of a computer engineer or software engineer to design and develop software
-    to meet the needs of a business or individual. Today’s cutting-edge
+    job of a computer engineer or software engineer to design and develop
+    software to meet the needs of a business or individual. Today’s cutting-edge
     technologies can be traced back to CSE. These include Artificial
     Intelligence, Machine Learning, Big Data, Internet of Things, Quantum
     Computing, Block-Chain, Industry 4.0, AR & VR, Android-IOS development etc.
@@ -82,7 +82,7 @@ export const items = [
   {
     title: "Course Outcomes",
     description: [
-      <Link href={cseDocument}>
+      <Link href={cseDocument} target="_blank">
         Click here to Download B.Tech Computer Science Course Outcomes
       </Link>,
     ],
@@ -521,15 +521,33 @@ export const itemsClubs = [
   {
     title: "Newsletter / Magazine",
     description: [
-      <Link href={CseDrishti}>डिजिटल DRISHTI | JAN-MAR(2024)</Link>,
-      <Link href={CseDrishtiOctDec}>डिजिटल DRISHTI | OCT-DEC (2023)</Link>,
-      <Link href={CseDrishtiJulSep}>डिजिटल DRISHTI | JULY-SEPT (2023)</Link>,
-      <Link href={CseDrishtiApr}>डिजिटल DRISHTI | APRIL-JUNE(2023)</Link>,
-      <Link href={CseDrishtiJan}>डिजिटल DRISHTI | JAN-MARCH(2023)</Link>,
-      <Link href={CseDrishtiOct}>डिजिटल DRISHTI | OCT-DEC(2022)</Link>,
-      <Link href={CseDrishtiJul}>डिजिटल DRISHTI | JULY-SEPT (2022)</Link>,
-      <Link href={CseDrishtiAprJun}>डिजिटल DRISHTI | APRIL-JUNE(2022)</Link>,
-      <Link href={CseDrishtiJulMar}>डिजिटल DRISHTI | JULY-MAR (2021)</Link>,
+      <Link href={CseDrishti} target="_blank">
+        डिजिटल DRISHTI | JAN-MAR(2024)
+      </Link>,
+      <Link href={CseDrishtiOctDec} target="_blank">
+        डिजिटल DRISHTI | OCT-DEC (2023)
+      </Link>,
+      <Link href={CseDrishtiJulSep} target="_blank">
+        डिजिटल DRISHTI | JULY-SEPT (2023)
+      </Link>,
+      <Link href={CseDrishtiApr} target="_blank">
+        डिजिटल DRISHTI | APRIL-JUNE(2023)
+      </Link>,
+      <Link href={CseDrishtiJan} target="_blank">
+        डिजिटल DRISHTI | JAN-MARCH(2023)
+      </Link>,
+      <Link href={CseDrishtiOct} target="_blank">
+        डिजिटल DRISHTI | OCT-DEC(2022)
+      </Link>,
+      <Link href={CseDrishtiJul} target="_blank">
+        डिजिटल DRISHTI | JULY-SEPT (2022)
+      </Link>,
+      <Link href={CseDrishtiAprJun} target="_blank">
+        डिजिटल DRISHTI | APRIL-JUNE(2022)
+      </Link>,
+      <Link href={CseDrishtiJulMar} target="_blank">
+        डिजिटल DRISHTI | JULY-MAR (2021)
+      </Link>,
     ],
     image: Course,
   },
@@ -556,7 +574,7 @@ export const itemsClubs = [
   {
     title: "Innovation in Teaching & Learning",
     description: [
-      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdpKpjox_H2-p59YtbwHwohIV0ApP-v-MgyuSSUqXZJyMbxGw">
+      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdpKpjox_H2-p59YtbwHwohIV0ApP-v-MgyuSSUqXZJyMbxGw" target="_blank">
         Submit Feedback for Innovation in Teaching & Learning
       </Link>,
     ],

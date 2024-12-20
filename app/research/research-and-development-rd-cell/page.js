@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Banner from "@/component/Banner";
 import BannerImg from "../../../public/research/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
@@ -12,8 +12,10 @@ import Collaborators from "./Component/Collaborators";
 import graph1 from "../../../public/research/r-and-cell/graph1.png";
 import graph2 from "../../../public/research/r-and-cell/graph2.png";
 import Vision from "@/component/Programs/Vision";
+import { UtmContext } from "@/component/utmParams";
 
 function RAndCell() {
+  const { utmParams } = useContext(UtmContext);
   const sections = [
     {
       title: "R&D Cell",
@@ -51,22 +53,30 @@ function RAndCell() {
           Publications are as follows are as follows: <br />
           <ul className="list-disc ml-5">
             <li>
-              <Link href="/research/research-and-development-rd-cell/funded-projects-and-grants/">
+              <Link
+                href={`/research/research-and-development-rd-cell/funded-projects-and-grants${utmParams}`}
+              >
                 Funded Projects and Grants
               </Link>
             </li>
             <li>
-              <Link href="/research/research-and-development-rd-cell/journal-publications/">
+              <Link
+                href={`/research/research-and-development-rd-cell/journal-publications${utmParams}`}
+              >
                 Journal Publications
               </Link>
             </li>
             <li>
-              <Link href="/research/research-and-development-rd-cell/conference-publications/">
+              <Link
+                href={`/research/research-and-development-rd-cell/conference-publications${utmParams}`}
+              >
                 Conference Publications
               </Link>
             </li>
             <li>
-              <Link href="/research/research-and-development-rd-cell/conferences-organized/">
+              <Link
+                href={`/research/research-and-development-rd-cell/conferences-organized${utmParams}`}
+              >
                 Conferences Organized
               </Link>
             </li>

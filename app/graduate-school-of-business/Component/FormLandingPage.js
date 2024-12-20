@@ -263,6 +263,7 @@ function FormLandingPage() {
             </a>
             <a
               href="https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
               className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
             >
               <IoLocation className="min-w-[16px] h-[16px]" />

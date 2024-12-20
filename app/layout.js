@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { MobileProvider } from "@/component/IsMobileContext";
 import Script from "next/script";
+import { UtmProvider } from "@/component/utmParams";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -110,7 +111,6 @@ fbq('track', 'PageView');
             height="0"
             width="0"
             className="hidden opacity-0"
-           
           ></iframe>
         </noscript>
         <noscript>
@@ -122,7 +122,9 @@ fbq('track', 'PageView');
           />
         </noscript>
 
-        <MobileProvider>{children}</MobileProvider>
+        <MobileProvider>
+          <UtmProvider>{children}</UtmProvider>
+        </MobileProvider>
       </body>
     </html>
   );

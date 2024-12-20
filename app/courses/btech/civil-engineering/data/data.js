@@ -70,7 +70,7 @@ export const items = [
   {
     title: "Course Outcomes",
     description: [
-      <Link className="hover:text-[#3D001B]" href={civilDocument}>
+      <Link className="hover:text-[#3D001B]" href={civilDocument} target="_blank">
         Download B.Tech Civil Course Outcomes
       </Link>,
     ],

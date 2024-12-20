@@ -1,7 +1,7 @@
 "use client";
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
-import React from "react";
+import React, { useContext } from "react";
 import BannerImg from "../../public/research/bannerImg.png";
 import background from "../../public/research/r-and-cell/background.png";
 import Image from "next/image";
@@ -9,49 +9,59 @@ import Footer from "@/component/Footer";
 import Link from "next/link";
 import CIRE from "../../public/research/CIRE.png";
 import Vision from "@/component/Programs/Vision";
+import { UtmContext } from "@/component/utmParams";
 function Research() {
+  const { utmParams } = useContext(UtmContext);
   const sections = [
     {
       title: "Sections Under CIRE",
       description: (
         <ul className="list-disc ml-5 underline">
           <li>
-            <Link href={"/research/research-and-development-rd-cell/"}>
+            <Link
+              href={`/research/research-and-development-rd-cell${utmParams}`}
+            >
               Research and Development (R&D) Cell
             </Link>
           </li>
           <li>
-            <Link href={"/research/intellectual-property-rights-ipr-cell/"}>
+            <Link
+              href={`/research/intellectual-property-rights-ipr-cell${utmParams}`}
+            >
               Intellectual Property Rights (IPR) Cell
             </Link>
           </li>
           <li>
-            <Link href={"/research/entrepreneurship-development-cell/"}>
+            <Link
+              href={`/research/entrepreneurship-development-cell${utmParams}`}
+            >
               Entrepreneurship Development Cell
             </Link>
           </li>
           <li>
-            <Link href={"/research/institute-innovation-council-iic/"}>
+            <Link
+              href={`/research/institute-innovation-council-iic${utmParams}`}
+            >
               Institute Innovation Council (IIC)
             </Link>
           </li>
           <li>
-            <Link href={"/research/web-development-cell/"}>
+            <Link href={`/research/web-development-cell${utmParams}`}>
               Web Development Cell
             </Link>
           </li>
           <li>
-            <Link href={"/research/ieee-student-branch-stb17561/"}>
+            <Link href={`/research/ieee-student-branch-stb17561${utmParams}`}>
               IEEE Student Branch
             </Link>
           </li>
           <li>
-            <Link href={"/research/iaas-student-branch/"}>
+            <Link href={`/research/iaas-student-branch${utmParams}`}>
               IAAS Student Chapter
             </Link>
           </li>
           <li>
-            <Link href={"https://www.tulasincubator.com/"}>
+            <Link href={"https://www.tulasincubator.com"} target="_blank">
               Tula’s Technology and Business Incubator (TTBIF)
             </Link>
           </li>

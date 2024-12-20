@@ -105,7 +105,7 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={ASCdocument}>B.Tech 1st Year</Link>],
+    description: [<Link href={ASCdocument} target="_blank">B.Tech 1st Year</Link>],
     image: Course,
   },
 ];

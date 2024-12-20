@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import TulasLogoGreen from "../../public/Components/Navbar/TulasLogoGreen.png";
@@ -13,6 +13,7 @@ import NavbarMobile from "./Component/NavbarMobile";
 import NavbarDesktop from "./Component/NavbarDesktop";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import { IoCall } from "react-icons/io5";
+import { UtmContext } from "../utmParams";
 
 function Navbar({ setState, position = false, fullBanner = false }) {
   const [isChecked, setIsChecked] = useState(false);
@@ -21,15 +22,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
   const [thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
   const [nestedLinksVisible, setNestedLinksVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [utmParams, setUtmParams] = useState("");
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const utmParamsString = params.toString();
-    if (utmParamsString) {
-      setUtmParams(`?${utmParamsString}`);
-    }
-  }, []);
+  const { utmParams } = useContext(UtmContext);
 
   // useEffect to check if the page is scrolled
   useEffect(() => {
@@ -320,7 +313,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
                   : TulasLogo
               }
               alt=""
-              onClick={() => (window.location.href = "/")}
+              onClick={() => (window.location.href = `/${utmParams}`)}
               className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
             />
           </div>
@@ -328,7 +321,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
 
         {scrolled && (
           <Link
-            href="/"
+            href={`/${utmParams}`}
             className="z-[3333] fixed right-10 animate-translateButton"
           >
             <Image
@@ -404,7 +397,7 @@ function Navbar({ setState, position = false, fullBanner = false }) {
             </button>
           </div>
           <Link
-            href="/"
+            href={`/${utmParams}`}
             className="z-[3333] mdNavbar:hidden animate-translateButton"
           >
             <Image

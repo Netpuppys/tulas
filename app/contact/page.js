@@ -141,6 +141,7 @@ function Contact() {
                 <Fade delay={200}>
                   <Link
                     href={card.link}
+                    target="_blank"
                     key={index}
                     className="w-fit font-[TTChocolates] font-semibold text-[14px] h-fit text-center flex flex-col items-center justify-center gap-3"
                   >
@@ -204,6 +205,7 @@ function Contact() {
                 {icons.map(({ icon, key, link }) => (
                   <Link
                     href={link}
+                    target="_blank"
                     key={key}
                     className="text-[30px] md:text-[40px] hover:text-[#007A83] cursor-pointer transition-colors ease-in duration-300"
                   >

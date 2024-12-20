@@ -1,7 +1,7 @@
 "use client";
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import BannerImg from "../../../public/Components/Banner/bannerImg.png";
 import background from "../../../public/AboutDehradun/background.png";
 import Footer from "@/component/Footer";
@@ -10,6 +10,7 @@ import Table from "./Table";
 import eProspectus from "../../../public/admission-procedure/e-prospectus.png";
 import { Fade } from "react-awesome-reveal";
 import Vision from "@/component/Programs/Vision";
+import { UtmContext } from "@/component/utmParams";
 const title = (
   <>
     <span className="text-[#007A83]">ADMISSIONS</span>
@@ -17,6 +18,7 @@ const title = (
 );
 
 function AdmissionPage() {
+  const { utmParams } = useContext(UtmContext);
   const academicFees = [
     {
       for: "For Academic Fee",
@@ -124,7 +126,7 @@ function AdmissionPage() {
             </h3>
             <button
               onClick={() => {
-                window.location.href = "/admissions2024";
+                window.location.href = `/admissions2024${utmParams}`;
               }}
               className="font-[TTChocolatesBold] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32"
             >
@@ -133,7 +135,7 @@ function AdmissionPage() {
             <Table />
             <button
               onClick={() => {
-                window.location.href = "/admissions2024";
+                window.location.href = `/admissions2024${utmParams}`;
               }}
               className="font-[TTChocolatesBold] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32"
             >
