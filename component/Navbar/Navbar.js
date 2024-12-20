@@ -21,6 +21,15 @@ function Navbar({ setState, position = false, fullBanner = false }) {
   const [thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
   const [nestedLinksVisible, setNestedLinksVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [utmParams, setUtmParams] = useState("");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const utmParamsString = params.toString();
+    if (utmParamsString) {
+      setUtmParams(`?${utmParamsString}`);
+    }
+  }, []);
 
   // useEffect to check if the page is scrolled
   useEffect(() => {
@@ -418,11 +427,12 @@ function Navbar({ setState, position = false, fullBanner = false }) {
               onClick={handleOutsideClick}
               className="w-screen h-screen flex pointer-events-auto absolute left-0 top-0 bg-opacity-40 bg-black transition-all duration-100 ease-linear"
             ></div>
-            <NavbarMobile isChecked={isChecked} />
+            <NavbarMobile isChecked={isChecked} utmParams={utmParams} />
             <NavbarDesktop
               setExpandedIndex={setExpandedIndex}
               expandedIndex={expandedIndex}
               isChecked={isChecked}
+              utmParams={utmParams}
               setNestedLinksVisible={setNestedLinksVisible}
               nestedLinksVisible={nestedLinksVisible}
               superExpandedIndex={superExpandedIndex}

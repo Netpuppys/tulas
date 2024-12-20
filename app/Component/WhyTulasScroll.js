@@ -113,7 +113,7 @@ function WhyTulasScroll({ parentRef }) {
       return () => window.removeEventListener("resize", handleResize); // Cleanup
     }
   }, []);
-  const width = isMobile ? windowWidth - 96 : 352;
+  const width = isMobile ? windowWidth - 96 : windowWidth / 5;
   useEffect(() => {
     const handleScroll = () => {
       if (parentRef.current && childRef.current) {
@@ -173,7 +173,7 @@ function WhyTulasScroll({ parentRef }) {
       // if (!window) {
       //   return;
       // }
-      const compHeight = window.innerHeight * 2.5;
+      const compHeight = window.innerHeight * 3;
       if (scrollY > 0 && scrollY < compHeight) {
         // console.log("true");
         return true;
@@ -186,7 +186,7 @@ function WhyTulasScroll({ parentRef }) {
 
   return (
     <div className="bg-white w-full h-full">
-      <div ref={childRef} className="relative w-full min-h-[250vh]">
+      <div ref={childRef} className="relative w-full min-h-[300vh]">
         <div
           className={`${
             changePosition() ? "fixed" : "absolute"
@@ -238,11 +238,11 @@ function WhyTulasScroll({ parentRef }) {
             </div>
 
             {/* cards container */}
-            <div className="w-[calc(100%-3rem)] md:w-[calc(100%-10rem)]  right-0 absolute py-10 innerText">
+            <div className="w-[calc(100%-3rem)] md:w-[calc(100%-10rem)] right-0 absolute py-10 innerText">
               <div
                 style={{
                   transform: `translateX(-${index * (width + 48)}px)`,
-                  transition: "transform 0.5s ease-in-out",
+                  transition: "transform 0.3s ease-in-out",
                 }}
                 className="w-fit"
               >
@@ -251,7 +251,7 @@ function WhyTulasScroll({ parentRef }) {
                     <div
                       // ref={scrollRef}
                       key={index}
-                      className="group relative flex flex-col items-center justify-center w-[calc(100vw-96px)] md:w-[22rem] shadow-lg transform transition-all duration-500 md:hover:scale-110"
+                      className="group relative flex flex-col items-center justify-center w-[calc(100vw-96px)] md:w-[20vw] shadow-lg transform transition-all duration-500 md:hover:scale-110"
                     >
                       <Image
                         src={image.src}

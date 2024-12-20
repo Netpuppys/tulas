@@ -42,12 +42,15 @@ const sitemap = [
   },
   {
     title: "Programs",
+    linkTo: "#",
     nestedLinks: [
       {
         title: "Department of Engineering",
+        linkTo: "#",
         superNestedLinks: [
           {
             title: "Diploma",
+            linkTo: "#",
             thirdNestedLinks: [
               {
                 title: "Diploma in Civil Engineering",
@@ -104,7 +107,6 @@ const sitemap = [
               },
             ],
           },
-
           {
             title: "M.Tech",
             linkTo: "/mtech/",
@@ -117,6 +119,7 @@ const sitemap = [
       },
       {
         title: "Department of Agriculture",
+        linkTo: "#",
         superNestedLinks: [
           {
             title: "B.Sc Agriculture",
@@ -126,6 +129,7 @@ const sitemap = [
       },
       {
         title: "Department of Mass Communiations",
+        linkTo: "#",
         superNestedLinks: [
           {
             title: "BAJMC",
@@ -135,6 +139,7 @@ const sitemap = [
       },
       {
         title: "Graduate School of Business",
+        linkTo: "#",
         superNestedLinks: [
           {
             title: "BBA",
@@ -152,7 +157,7 @@ const sitemap = [
       },
       {
         title: "Department of Computer Applications",
-        linkTo: "",
+        linkTo: "#",
         superNestedLinks: [
           {
             title: "BCA",
@@ -168,7 +173,7 @@ const sitemap = [
   },
   {
     title: "Infrastructure",
-    // linkTo: "/infrastructure/",
+    linkTo: "#",
     nestedLinks: [
       {
         title: "Library",
@@ -211,6 +216,7 @@ const sitemap = [
   },
   {
     title: "Campus Life",
+    linkTo: "#",
     nestedLinks: [
       {
         title: "Dehradun International Film Festival",
@@ -336,6 +342,7 @@ const sitemap = [
   },
   {
     title: "Admissions",
+    linkTo: "#",
     nestedLinks: [
       {
         title: "Admission Procedure- Eligibility",
@@ -357,6 +364,7 @@ const sitemap = [
   },
   {
     title: "Placements",
+    linkTo: "#",
     nestedLinks: [
       // {
       //   title: "Placements Activities",
@@ -394,6 +402,7 @@ const sitemap = [
   },
   {
     title: "Alumni",
+    linkTo: "#",
     nestedLinks: [
       {
         title: "Alumni Login",
@@ -411,6 +420,7 @@ const sitemap = [
   },
   {
     title: "ERP",
+    linkTo: "#",
     nestedLinks: [
       {
         title: "Teacher Login",

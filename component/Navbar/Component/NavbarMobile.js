@@ -5,7 +5,7 @@ import { FiMinus, FiPlus } from "react-icons/fi";
 import "../Component/NavbarMobile.css";
 import Link from "next/link";
 import QuickLinks from "./QuickLinks";
-function NavbarMobile({ isChecked }) {
+function NavbarMobile({ isChecked, utmParams }) {
   const [showSubHeaders, setShowSubHeaders] = useState();
   const [showSubSubHeaders, setShowSubSubHeaders] = useState();
   const [showSubSubSubHeaders, setShowSubSubSubHeaders] = useState();
@@ -21,7 +21,10 @@ function NavbarMobile({ isChecked }) {
         {sitemap.map((item, index) => (
           <>
             <div className="site-map-header" key={index}>
-              <Link className="site-map-link" href={item.linkTo || "#"}>
+              <Link
+                className="site-map-link"
+                href={`${item.linkTo}${utmParams}`}
+              >
                 {item.title}
               </Link>
               {item.nestedLinks && (
@@ -69,7 +72,7 @@ function NavbarMobile({ isChecked }) {
                     <div className="site-map-sub-header">
                       <Link
                         className="site-map-sub-link"
-                        href={subItem.linkTo || "#"}
+                        href={`${subItem.linkTo}${utmParams}`}
                       >
                         {subItem.title}
                       </Link>
@@ -122,7 +125,7 @@ function NavbarMobile({ isChecked }) {
                             <div className="site-map-ss-header">
                               <Link
                                 className="site-map-ss-link"
-                                href={subsubItem.linkTo || "#"}
+                                href={`${subsubItem.linkTo}${utmParams}`}
                               >
                                 {subsubItem.title}
                               </Link>
@@ -176,7 +179,7 @@ function NavbarMobile({ isChecked }) {
                                   (subsubsubItem) => (
                                     <Link
                                       className="site-map-sss-link"
-                                      href={subsubsubItem.linkTo || "#"}
+                                      href={`${subsubsubItem.linkTo}${utmParams}`}
                                     >
                                       {subsubsubItem.title}
                                     </Link>

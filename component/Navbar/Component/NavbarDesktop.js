@@ -13,6 +13,7 @@ function NavbarDesktop({
   thirdExpandedIndex,
   setThirdExpandedIndex,
   nestedLinksVisible,
+  utmParams,
   setNestedLinksVisible,
 }) {
   const [activeLink, setActiveLink] = useState(null);
@@ -69,7 +70,7 @@ function NavbarDesktop({
                   } transition-all duration-300 ease-linear h-full min-h-[6vh]`}
                 >
                   <Link
-                    href={item.linkTo || "#"}
+                    href={`${item.linkTo}${utmParams}`}
                     className="flex-auto font-[TTChocolatesMedium] font-black px-10 py-1 flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83]"
                   >
                     {item.title}
@@ -121,7 +122,7 @@ function NavbarDesktop({
               >
                 <span className="flex items-center bg-white group hover:bg-[#919191] transition-all duration-300 ease-linear justify-between cursor-pointer h-full min-h-[6vh]">
                   <Link
-                    href={nestedLinks.linkTo || "#"}
+                    href={`${nestedLinks.linkTo}${utmParams}`}
                     className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-medium flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                   >
                     {nestedLinks.title}
@@ -157,7 +158,7 @@ function NavbarDesktop({
                         <span className="flex items-center justify-between bg-[#919191] hover:bg-[#2c2c2c] cursor-pointer w-full h-full min-h-[6vh]">
                           <Link
                             key={index}
-                            href={superNestedLinks.linkTo || "#"}
+                            href={`${superNestedLinks.linkTo}${utmParams}`}
                             className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-medium flex items-center h-full text-[20px] text-white"
                           >
                             {superNestedLinks.title}
@@ -193,7 +194,7 @@ function NavbarDesktop({
                                 <span className="flex items-center justify-between cursor-pointer w-full h-full min-h-[6vh]">
                                   <Link
                                     key={index}
-                                    href={thirdNestedLinks.linkTo || "#"}
+                                    href={`${thirdNestedLinks.linkTo}${utmParams}`}
                                     className="flex-auto font-[TTChocolates] px-14 py-1 font-normal flex items-center h-full text-[18px] text-white group-hover:text-[#2c2c2c]"
                                   >
                                     {thirdNestedLinks.title}
