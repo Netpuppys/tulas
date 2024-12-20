@@ -16,6 +16,8 @@ import RankBanner from "./Component/RankBanner";
 import Awards from "./Component/Awards";
 import Accreditation from "./Component/Accreditation";
 import AwardsCrousel from "./Component/AwardsCrousel";
+import loader from "../public/loading.svg";
+import Image from "next/image";
 
 const bannerText = (
   <>
@@ -40,19 +42,31 @@ export default function HomePage() {
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const handlePageLoad = () => {
       setShowLoader(false);
-    }, 1000);
+    };
+
+    if (document.readyState === "complete") {
+      // Page has already loaded
+      handlePageLoad();
+    } else {
+      // Wait for the load event
+      window.addEventListener("load", handlePageLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handlePageLoad);
+    };
   }, []);
 
   return (
     <>
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
-        {/* {showLoader && (
-          <div className="w-screen min-h-screen h-screen fixed top-0 left-0 flex items-center justify-center z-[9999] bg-white">
-            
+        {showLoader && (
+          <div className="w-screen min-h-screen h-screen fixed top-0 left-0 flex items-center justify-center z-[9999] bg-white bg-opacity-80">
+            <Image src={loader} alt="" className="w-40" />
           </div>
-        )} */}
+        )}
 
         <Navbar setState={setIsChecked} />
         <BannerHome isChecked={isChecked} />
