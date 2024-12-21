@@ -1,10 +1,9 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import loader from "../../public/loader.svg";
 import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
-import { UtmContext } from "@/component/utmParams";
-const Blogs = () => {
+const Blogs = ({ utmParams }) => {
   const [blogs, setBlogs] = useState([]); // Initialize as an empty array
   const [page, setPage] = useState(1);
   const [allBlogsLoaded, setAllBlogsLoaded] = useState(false);
@@ -66,7 +65,7 @@ const Blogs = () => {
       </div>
     ); // Display loader if still loading and no blogs are fetched
   }
-const { utmParams } = useContext(UtmContext);
+
   return (
     <>
       {loading && (

@@ -1,13 +1,16 @@
+"use client";
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
-import React from "react";
+import React, { useContext } from "react";
 import BannerImg from "../../public/Components/Banner/bannerImg.png";
 import Blogs from "./Blogs";
 import Footer from "@/component/Footer";
 import background from "../../public/AboutDehradun/background.png";
 import Image from "next/image";
+import { UtmContext } from "@/component/utmParams";
 
 function Blog() {
+  const { utmParams } = useContext(UtmContext);
   return (
     <>
       <head>
@@ -25,7 +28,7 @@ function Blog() {
         <Banner
           title={
             <>
-               <span className="text-[#007A83]">Blogs</span>
+              <span className="text-[#007A83]">Blogs</span>
             </>
           }
           image={BannerImg}
@@ -41,7 +44,7 @@ function Blog() {
             </>
           }
         />
-        <Blogs />
+        <Blogs utmParams={utmParams} />
         <div className="w-full relative overflow-hidden">
           <Image
             src={background}
