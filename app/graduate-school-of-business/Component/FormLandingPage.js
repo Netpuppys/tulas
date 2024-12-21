@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import mba from "../../../public/graduate-school-of-business/mba/mba.png";
 import tulasLogo from "../../../public/graduate-school-of-business/mba/tulasLogo.png";
 import Image from "next/image";
@@ -10,7 +10,9 @@ import axios from "axios";
 import "react-phone-input-2/lib/style.css";
 import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
+import { UtmContext } from "@/component/utmParams";
 function FormLandingPage() {
+    const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
     AuthToken: "TULAS-27-12-2023",
     Source: "tulas",
@@ -152,7 +154,6 @@ function FormLandingPage() {
         updatedFormData
       )
       .then(() => {
-        alert("Enquiry Submitted Successfully");
         setVerified(false);
         setIsPhoneValid(false);
         setFormData({
@@ -170,6 +171,7 @@ function FormLandingPage() {
           City: "",
         });
         setOtp("");
+        window.location.href=`/graduate-school-of-business/mba/thank-you${utmParams}`
       })
       .catch((error) => {
         alert.error(error);
