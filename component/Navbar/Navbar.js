@@ -15,35 +15,42 @@ import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import { IoCall } from "react-icons/io5";
 import { UtmContext } from "../utmParams";
 
-function Navbar({ setState, position = false, fullBanner = false }) {
+function Navbar({
+  setState,
+  position = false,
+  fullBanner = false,
+  scroled = false,
+}) {
   const [isChecked, setIsChecked] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [superExpandedIndex, setSuperExpandedIndex] = useState(null);
   const [thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
   const [nestedLinksVisible, setNestedLinksVisible] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(scroled);
   const { utmParams } = useContext(UtmContext);
 
   // useEffect to check if the page is scrolled
   useEffect(() => {
-    const handleScroll = () => {
-      const threshold = fullBanner ? 1 : 0.5;
-      // 60vh in pixels
-      const sixtyVH = window.innerHeight * threshold;
+    if (!scroled) {
+      const handleScroll = () => {
+        const threshold = fullBanner ? 1 : 0.5;
+        // 60vh in pixels
+        const sixtyVH = window.innerHeight * threshold;
 
-      if (window.scrollY > sixtyVH) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+        if (window.scrollY > sixtyVH) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      // Cleanup the event listener when the component unmounts
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   const handleButtonClick = () => {
