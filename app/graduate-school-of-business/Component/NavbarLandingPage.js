@@ -78,7 +78,7 @@ function NavbarLandingPage() {
         <div className="fixed flex animate-fadeIn items-center justify-center gap-[5%] right-0 z-50 pt-[8vw] pr-[8vw] md:pt-[2.5vw] md:pr-[2.5vw]">
           <button
             title="Admission Helpline No. +91-8069204028"
-            className="bg-[#E69706] rounded-full text-3xl shadow-lg w-16 md:w-[74px] aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
+            className="bg-[#3D001B] rounded-full text-3xl shadow-lg w-16 md:w-[74px] aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
             onClick={() => (window.location.href = "tel:+91-8069204028")}
           >
             <div className="w-[40px] h-[40px]">

@@ -9,10 +9,20 @@ import WhyChoose from "../Component/WhyChoose";
 import AtGlance from "../Component/AtGlance";
 import Accreditations from "../Component/Accreditations";
 import Placement from "../Component/Placement";
+import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
 import FacultyData from "@/component/Programs/facultyData";
 import { facultyData } from "@/app/courses/mba/data/data";
+import { IoIosArrowRoundUp } from "react-icons/io";
+import Image from "next/image";
 
 const page = () => {
+  const handleScrollArrow = () => {
+    window.scrollTo({
+      top: 0, // Scroll to the top of the page
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  };
+
   return (
     <>
       <head>
@@ -58,6 +68,19 @@ const page = () => {
           <Accreditations />
           {/* Placement */}
           <Placement />
+          <button
+            onClick={handleScrollArrow}
+            className="hidden md:block bottom-10 left-10 fixed z-50 w-[100px] aspect-square"
+          >
+            <div className="relative w-full h-full flex justify-center items-center">
+              <Image
+                className="animate-scrollSpin absolute w-full h-fit"
+                src={ScrollImage}
+                alt=""
+              />
+              <IoIosArrowRoundUp className="absolute text-[40px] font-thin text-[#292929]" />
+            </div>
+          </button>
         </div>
       </body>
     </>
