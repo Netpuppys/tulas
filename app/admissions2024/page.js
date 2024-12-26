@@ -34,9 +34,9 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useRef, useState, useLayoutEffect, useContext } from "react";
 import { UtmContext } from "@/component/utmParams";
+import AwardsCrousel from "../Component/AwardsCrousel";
 
 const programsOffered = [
   "B.TECH",
@@ -499,33 +499,14 @@ const page = () => {
               development of the students.
             </p>
           </div>
-
-          {/* awards */}
-          <div className="w-full text-5xl bg-white h-[40rem] flex items-center justify-center font-[TTChocolatesBold] font-bold text-[#3D001B]">
-            Awards
-          </div>
-
-          {/* A Glimpse of TULA's */}
-          <div className="w-full bg-transparent py-24 flex flex-col items-center justify-center px-20">
-            <p className="text-white text-4xl font-semibold">
-              A Glimpse of TULA's
-            </p>
-
-            <div className="max-w-[65rem] bg-opacity-50 mt-12 w-full aspect-video bg-[#3D001B]"></div>
-
-            <div className="max-w-[50rem] w-full mx-auto flex mt-20 justify-center items-center">
-              <div className="w-3 h-3 rounded-full bg-[#fff] bg-opacity-55"></div>
-              <div className="w-full h-[2px] bg-[#fff] bg-opacity-55"></div>
-              <div className="w-3 h-3 rounded-full bg-[#fff] bg-opacity-55"></div>
-            </div>
-
-            <p className="text-[#DEDEDE] text-center text-2xl font-medium mt-8">
+          <div className="bg-white flex items-center justify-center">
+            <p className="text-black text-center text-2xl font-medium">
               © Copyright 2024 Tula's Institute All Right Reserved
             </p>
           </div>
 
           {/* background image */}
-          <div className="w-screen min-h-screen fixed top-0 left-0 -z-10 flex items-center justify-center">
+          <div className="w-screen h-screen fixed top-0 left-0 -z-10 flex items-center justify-center">
             <Image
               src={backgroundImage}
               className="w-full h-full object-cover"

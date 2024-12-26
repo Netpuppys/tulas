@@ -13,12 +13,12 @@ import { useMobile } from "@/component/IsMobileContext";
 import { ThreeDots } from "react-loader-spinner";
 
 const testimonials = [
-  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial1.mp4",
-  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial2.mp4",
-  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial3.mp4",
-  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial1.mp4",
-  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial2.mp4",
-  "https://tulasasset.s3.eu-north-1.amazonaws.com/testimonial3.mp4",
+  "https://assets.tulas.edu.in/testimonial1.mp4",
+  "https://assets.tulas.edu.in/testimonial2.mp4",
+  "https://assets.tulas.edu.in/testimonial3.mp4",
+  "https://assets.tulas.edu.in/testimonial1.mp4",
+  "https://assets.tulas.edu.in/testimonial2.mp4",
+  "https://assets.tulas.edu.in/testimonial3.mp4",
 ];
 
 const Testimonials = () => {
@@ -110,7 +110,7 @@ const Testimonials = () => {
           <HiOutlineChevronLeft />
         </button>
 
-        <div className="w-full h-full flex items-center justify-center px-8 md:px-0 relative">
+        <div className="w-[80%] h-full flex items-center justify-center px-8 md:px-0 relative">
           {isBuffering && (
             <div className="absolute top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2">
               <ThreeDots color="#007A83" height={30} />

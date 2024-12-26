@@ -51,7 +51,7 @@ function AwardsCrousel() {
         className="w-full absolute h-full top-0 left-0 -z-10 object-cover"
         alt=""
       />
-      <h3 className="font-[CarotSlab] pt-8 md:pt-16 px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-full whitespace-nowrap  z-10 text-center">
+      <h3 className="font-[CarotSlab] pt-8 md:pt-16 px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-fit whitespace-nowrap  z-10 text-center">
         RANKINGS & AWARDS
       </h3>
       <div className="w-full md:w-[85%] overflow-hidden">

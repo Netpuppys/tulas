@@ -24,7 +24,7 @@ function Video() {
             controls
             muted
             className="w-full aspect-[9/16] object-cover md:aspect-[12/4.8] md:w-[100%] mx-auto mb-4"
-            src="https://res.cloudinary.com/dwdqs0osd/video/upload/v1723530948/Campus_Tour___Tula_s_Institute___Dehradun_safmr2.mp4"
+            src="https://assets.tulas.edu.in/Campus_Tour___Tula_s_Institute___Dehradun_safmr2%20(1).mp4"
           />
 
           <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] w-[90%] md:w-[60%] font-[TTChocolates] mx-auto md:text-center text-black py-8 md:py-20">
