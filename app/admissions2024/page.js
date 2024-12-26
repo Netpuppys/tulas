@@ -193,12 +193,12 @@ const page = () => {
       <body>
         {/* <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tulas/ee-form-widget/form-15/widget.js" /> */}
         <div className="w-full min-h-screen relative font-[TTChocolatesBold]">
-          <Link
+          <a
             href={`/${utmParams}`}
             className="absolute top-10 left-10 z-20 w-48"
           >
             <Image src={tulasLogo} className="w-full" alt="" />
-          </Link>
+          </a>
 
           {/* banner */}
           <div className="w-screen h-[80vh] relative overflow-hidden flex items-center justify-center">
