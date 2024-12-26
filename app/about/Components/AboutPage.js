@@ -64,7 +64,7 @@ export default function AboutPage() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 1, // Trigger when at least 100% of the component is visible
+      threshold: 0.5, // Trigger when at least 50% of the component is visible
     });
     if (statsRef.current) {
       observer.observe(statsRef.current);
