@@ -12,7 +12,7 @@ import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { UtmContext } from "@/component/utmParams";
 function FormLandingPage() {
-    const { utmParams } = useContext(UtmContext);
+  const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
     AuthToken: "TULAS-27-12-2023",
     Source: "tulas",
