@@ -14,19 +14,26 @@ function TableProgram({
   HODcontent,
   specialization,
 }) {
-  const [selectedCard, setSelectedCard] = useState(0); // Index 1 is selected by default
+  const [selectedCard, setSelectedCard] = useState(0);
+  const marginLeft = 100/cards?.length;
 
   return (
     <>
       <div className="pb-8 md:pb-20 px-4 w-full max-w-[1200px] mx-auto relative z-[20]">
-        <div className="md:rounded-full md:bg-[#3D001B] py-1 px-1 overflow-hidden flex flex-col md:flex-row gap-2 md:gap-0 items-center">
+        <div className="md:rounded-full md:bg-[#3D001B] py-1 px-1 overflow-hidden flex flex-col md:flex-row gap-2 md:gap-0 items-center relative">
+          <div 
+            style={{ left: `${selectedCard*marginLeft}%`, width: `${100/cards.length}%`}} 
+            className={`absolute transition-all duration-300 top-0 h-full bg-transparent rounded-full overflow-hidden z-10 p-1`}
+          >
+            <div className="w-full h-full bg-white rounded-full"></div>
+          </div>
           {cards.map((card, index) => (
             <div
               key={card.id}
-              className={`w-full py-1 rounded-full px-1 flex  items-center justify-center cursor-pointer ${
+              className={`w-full py-1 rounded-full bg-transparent z-20 px-1 flex  items-center justify-center cursor-pointer ${
                 selectedCard === index
-                  ? "text-[#3D001B] bg-white"
-                  : "text-white bg-[#3D001B]"
+                  ? "text-[#3D001B]"
+                  : "text-white"
               }`}
               onClick={() => setSelectedCard(index)}
             >

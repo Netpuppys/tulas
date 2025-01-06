@@ -23,7 +23,7 @@ const ActiveCardModal = ({
     setActiveCard(item);
   };
   return (
-    <div className="w-full h-screen z-[999] pointer-events-auto top-0 left-0 fixed bg-black bg-opacity-40 backdrop-blur-sm flex items-start justify-end">
+    <div className="w-full h-screen z-[99999] pointer-events-auto top-0 left-0 fixed bg-black bg-opacity-40 backdrop-blur-sm flex items-start justify-end">
       <div
         onClick={() => setActiveCard(null)}
         className="cursor-pointer w-[55vw] h-full hidden md:block"

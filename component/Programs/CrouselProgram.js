@@ -4,9 +4,11 @@ import Image from "next/image";
 import { PiCaretLeftThin, PiCaretRightThin } from "react-icons/pi";
 import { RiArrowRightSFill } from "react-icons/ri";
 import ActiveCardModal from "./ActiveCardModal";
+import { FaDownload } from "react-icons/fa";
+import Link from "next/link";
 //import { PiArrowRight } from "react-icons/pi";
 
-const CarouselProgram = ({ heading, items, background, color }) => {
+const CarouselProgram = ({ heading, items, background, color, pdf }) => {
   const carouselRef = useRef(null);
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -217,6 +219,21 @@ const CarouselProgram = ({ heading, items, background, color }) => {
               </div>
             ))}
           </div>
+
+          {pdf &&
+          <div className="absolute -bottom-3 z-[9] left-0 md:right-20 flex space-x-4">
+            <Link
+              href={pdf}
+              target="blank"
+              className={`py-4 bg-[#3d001b] group relative px-10 flex items-center justify-center text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full `}
+            >
+
+              <div className="absolute z-10 bg-white w-1/2 h-1/2 opacity-0 group-hover:opacity-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:w-[calc(100%-4px)] group-hover:h-[calc(100%-4px)] transition-all duration-300 rounded-full "></div>
+              <p className="z-20 flex items-center text-white group-hover:text-[#3d001b] transition-all duration-200 justify-center gap-2">
+                Program Structure (D. Pharm) <FaDownload />
+              </p>
+            </Link>
+          </div>}
 
           {/* Navigation Controls */}
           <div className="absolute -bottom-6 z-[9] right-14 md:right-20 text-[30px] md:text-[50px] flex space-x-4">

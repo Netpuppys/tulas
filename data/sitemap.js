@@ -169,6 +169,20 @@ const sitemap = [
           },
         ],
       },
+      {
+        title: "Tula's institue of pharmacy",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "B.Pharma",
+            linkTo: "/courses/bpharma/",
+          },
+          {
+            title: "D.Pharma",
+            linkTo: "/courses/dpharma/",
+          },
+        ],
+      },
     ],
   },
   {
