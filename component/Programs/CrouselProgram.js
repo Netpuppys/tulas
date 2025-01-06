@@ -221,7 +221,7 @@ const CarouselProgram = ({ heading, items, background, color, pdf, downloadBtnTe
           </div>
 
           {pdf &&
-          <div className="absolute -bottom-3 z-[9] left-0 md:right-20 flex space-x-4">
+          <div className="md:absolute -bottom-3 z-[9] left-0 md:right-20 flex space-x-4">
             <Link
               href={pdf}
               target="blank"

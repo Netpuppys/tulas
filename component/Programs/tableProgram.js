@@ -30,14 +30,14 @@ function TableProgram({
           {cards.map((card, index) => (
             <div
               key={card.id}
-              className={`w-full py-1 rounded-full bg-transparent z-20 px-1 flex  items-center justify-center cursor-pointer ${
+              className={`w-full py-1 rounded-full bg-transparent z-20 px-1 flex items-center justify-center cursor-pointer ${
                 selectedCard === index
                   ? "text-[#3D001B]"
                   : "text-white"
               }`}
               onClick={() => setSelectedCard(index)}
             >
-              <button className="flex items-center font-[TTChocolatesBold] rounded-full py-1 md:py-2 text-[15px] md:text-[20px] justify-center gap-14">
+              <button className="flex items-center font-[TTChocolatesBold] rounded-full py-1 md:py-2 text-[20px] justify-center gap-14">
                 {card.title}
               </button>
             </div>

@@ -56,7 +56,7 @@ function DPharma() {
             pdf={programPdf}
             downloadBtnText={"Program Structure (D.Pharm)"}
           />
-          <div className="w-full h-40"></div>
+          <div className="w-full h-10 md:h-40"></div>
           <TableProgram
             cards={cards}
             hod={hod}
