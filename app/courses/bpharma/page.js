@@ -1,15 +1,17 @@
 "use client";
+
 import React, { useRef } from "react";
-import BannerImg from "../../../public/courses/bjmc/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/courses/bjmc/background.png";
-// import Image from "next/image";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../component/topRecruiter";
 import Program from "@/component/Programs/Program";
 import CarouselProgram from "@/component/Programs/CrouselProgram";
-// import Vision from "@/component/Programs/Vision";
+import pharmacyPdf from "../../../public/courses/bpharm/Program-Structure-B. Pharmacy.pdf"
+import bpharmacy from "../../../public/courses/bpharm/B.Pharm.pdf"
 import TableProgram from "@/component/Programs/tableProgram";
+import bpharmaBanner from "../../../public/courses/bpharm/bpharmaBanner.jpg"
+import Banner from "@/component/Banner";
 import {
   cards,
   content,
@@ -19,12 +21,9 @@ import {
   images,
   items,
   itemsClubs,
-  sections,
   selectedCard1,
   semesterData,
 } from "./data";
-import bjmcImage from "../../../public/courses/bjmc/bjmcImage.png";
-import Banner from "@/component/Banner";
 
 function BPharma() {
   const parentRef = useRef(null);
@@ -46,7 +45,7 @@ function BPharma() {
             <Navbar />
           </div>
           <Banner
-            image={BannerImg}
+            image={bpharmaBanner}
             title={<>Bachelor of Pharmacy (B. Pharm.)</>}
             titleColor={""}
             description={""}
@@ -56,13 +55,10 @@ function BPharma() {
             heading={"Discover"}
             items={items}
             background={background}
+            pdf={pharmacyPdf}
+            downloadBtnText={"Program Structure (B.Pharm)"}
           />
-          {/* <Vision color={true} sections={sections} /> */}
-          {/* <Image
-            src={bjmcImage}
-            alt=""
-            className="w-full h-fit mb-8 md:mb-20"
-          /> */}
+          <div className="w-full h-40"></div>
           <TableProgram
             cards={cards}
             hod={hod}
@@ -76,14 +72,9 @@ function BPharma() {
             heading={"Explore More"}
             items={itemsClubs}
             background={background}
+            pdf={bpharmacy}
+            downloadBtnText={"Bachelor in Pharmacy"}
           />
-          {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
           <Footer />
         </div>
       </body>

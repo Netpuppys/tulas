@@ -30,7 +30,7 @@ export const content = (
     D. Pharm. (Diploma in Pharmacy) is a course with an intake capacity of 60 seats. The student who has completed D. Pharm. can be employed as Registered Pharmacist in Hospital and Community Pharmacies for dispensing drugs and pharmaceuticals.
     <br/>
     <br/>
-    It has been made mandatory that at least one person employed in a pharmacy must be a qualified registered pharmacist. After completion of D. Pharm., one should complete the respective pharmacy council registration to become a registered pharmacist. A D. Pharm. holder can go for a professional degree (Under Graduate) course of B. Pharm. directly in second year, through lateral entry scheme.
+    It has been made mandatory that at least one person employed in a pharmacy must be a qualified registered pharmacist. After completion of Diploma in Pharmacy, one should complete the respective pharmacy council registration to become a registered pharmacist. A D. Pharm. holder can go for a professional degree (Under Graduate) course of B. Pharm. directly in second year, through lateral entry scheme.
   </>
 );
 

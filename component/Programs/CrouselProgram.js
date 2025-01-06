@@ -8,7 +8,7 @@ import { FaDownload } from "react-icons/fa";
 import Link from "next/link";
 //import { PiArrowRight } from "react-icons/pi";
 
-const CarouselProgram = ({ heading, items, background, color, pdf }) => {
+const CarouselProgram = ({ heading, items, background, color, pdf, downloadBtnText }) => {
   const carouselRef = useRef(null);
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -230,7 +230,7 @@ const CarouselProgram = ({ heading, items, background, color, pdf }) => {
 
               <div className="absolute z-10 bg-white w-1/2 h-1/2 opacity-0 group-hover:opacity-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:w-[calc(100%-4px)] group-hover:h-[calc(100%-4px)] transition-all duration-300 rounded-full "></div>
               <p className="z-20 flex items-center text-white group-hover:text-[#3d001b] transition-all duration-200 justify-center gap-2">
-                Program Structure (D. Pharm) <FaDownload />
+                {downloadBtnText} <FaDownload />
               </p>
             </Link>
           </div>}

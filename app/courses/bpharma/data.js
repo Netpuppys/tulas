@@ -23,6 +23,9 @@ import EMPCLAB4 from "../../../public/courses/bjmc/EMPC LAB (4).jpg";
 import EMPCLAB5 from "../../../public/courses/bjmc/EMPC LAB (5).jpg";
 import EMPCLAB6 from "../../../public/courses/bjmc/EMPC LAB (6).jpg";
 import EMPCLAB7 from "../../../public/courses/bjmc/EMPC LAB (7).jpg";
+import cardImage1 from "../../../public/courses/dpharm/cardImage1.png"
+import cardImage2 from "../../../public/courses/dpharm/cardImage2.png"
+import cardImage3 from "../../../public/courses/dpharm/cardImage3.png"
 import Link from "next/link";
 export const images = [
   bjmc,
@@ -30,199 +33,246 @@ export const images = [
 ];
 export const content = (
   <>
-    Bachelor of Pharmacy (B.Pharm) is an 4 years undergraduate Course focused on the properties and impacts of pharmaceutical drugs. The programme prepares students to develop the necessary skills to counsel patients about medications and the use of drugs. The curriculum of Bachelor of pharmacy Course at School of Pharmaceutical Sciences, Jigyasa University is designed according to Pharmacy Council of India (PCI) the statutory body governing the pharmacy profession in India.
-    <br/>
-    <br/>
-    The course equips students with a profound understanding of human anatomy, drug dosage, drug action and reaction, and active ingredients used in the formulation of the drugs and how to maintain their quality in the storage. Besides, the programme also concentrates on preparing the students and training them for industry-ready holistic pharmaceutical care in the practice setting. 
+    A Bachelor of Pharmacy (B. Pharma) is not just a degree, it's a gateway to the powerful
+world of pharmaceuticals and healthcare. This program equips students with a
+comprehensive understanding of drug formulation, development, and distribution, ensuring
+they are prepared to meet the growing demands of the pharmaceutical industry.
+<br/>
+From working in hospitals and pharmaceutical companies to venturing into research and
+entrepreneurship, B. Pharma graduates have a diverse and impactful career ahead.
+<br/>
+<br/>
+<p className="font-bold font-[TTChocolatesBold] pb-2">
+    The B. Pharma curriculum provides an in-depth understanding of:
+</p>
+● Drug preparation, formulation, and dispensing.
+<br/>
+● Pharmacology, pharmacognosy, and pharmaceutical chemistry.
+<br/>
+● Research and development techniques for new drug discovery.
+<br/>
+● Quality assurance and regulatory frameworks in pharmaceuticals.
+<br/>
+● Public health and community pharmacy practices.
+<br/>
+<br/>
+<p className="font-bold font-[TTChocolatesBold] pb-2">
+    Graduates of B. Pharma have access to:
+</p>
+● <span className="font-bold font-[TTChocolatesMedium]">Career Opportunities:</span> Roles in pharmaceutical production, hospital and community
+pharmacy, quality control, sales, and marketing.
+<br/>
+● <span className="font-bold font-[TTChocolatesMedium]">Higher Education:</span> Options like M. Pharm, Pharm. D, and specialized fields like
+bioinformatics, nanotechnology, and genetic engineering.
+<br/>
+● <span className="font-bold font-[TTChocolatesMedium]">Global Scope:</span> Opportunities for employment and advanced studies in developed
+countries.
+<br/>
+● <span className="font-bold font-[TTChocolatesMedium]">Entrepreneurship:</span> Establishing their own pharmacy, manufacturing units, or
+consultancy services.
+<br/>
+<br/>
+<p className="font-bold font-[TTChocolatesBold] pb-2">
+    The Primary Goal of This Program Is To:
+</p>
+● Train students in the principles and practices of pharmacy to ensure public health
+and safety.
+<br/>
+● Develop skilled professionals who can innovate, manufacture, and regulate
+pharmaceutical products.
+<br/>
+● Empower graduates to bridge the gap between healthcare providers and patients
+with expertise in drug therapy.
   </>
 );
 export const items = [
   {
-    title: "PEO (Program Educational Objectives)",
+    title: "Unique Selling Points (USPs)",
     description: [
-        "To produce Pharmacy graduates with vital base concepts and high technical competence in Pharmaceutical Sciences.",
-        "To bestow students with well defined understanding in the various fields of Pharmacy viz., pharmaceutics, pharmaceutical chemistry, pharmacology and pharmacognosy according to the requirement of pharmaceutical industries, community and Hospital Pharmacy.",
+        "Industry-oriented curriculum with a focus on cutting-edge technologies like AI, blockchain, and additive manufacturing in pharmaceuticals.",
+        "Opportunities for internships and hands-on training in hospitals and pharmaceutical industries.",
+        "A strong emphasis on research, quality control, and regulatory compliance.",
+        "Pathway to global recognition as a registered pharmacist."
     ],
-    image: USP,
-    points: [
-        "Promote research in various fields of Pharmaceutical Sciences and implement the knowledge in formulating best suitable medicines for the society",
-        "Develop a sense of teamwork and awareness amongst students towards the importance of interdisciplinary approach for developing attributes for solving complex problems in the area of Pharmaceutical Sciences.",
-        "Encourage the students to participate in life-long learning process for a highly productive career and to relate the concepts of Pharmaceutical Sciences towards serving the cause of the society.",
-    ],
+    image: cardImage1,
   },
   {
-    title: "PO's (Program Outcomes)",
-    image: EMPCLAB,
-    description: ["Illustrate knowledge and comprehension of the core and basic knowledge associated with the profession of pharmacy"],
-    points: [<div className="overflow-x-auto">
-    <table className="table-auto border-collapse border border-gray-300 text-black  w-full text-left">
-      <thead className="bg-gray-200">
-        <tr>
-          <th className="border border-gray-300 text-black px-4 py-2">PO</th>
-          {/* <th className="border border-gray-300 text-black px-4 py-2">Outcome</th> */}
-          <th className="border border-gray-300 text-black px-4 py-2">Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO1</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-                Pharmacy knowledge:
-            </span>
-            Illustrate knowledge and comprehension of the core and basic knowledge associated with the profession of pharmacy, including biomedical sciences; pharmaceutical sciences; behavioral, social, and administrative pharmacy sciences; and manufacturing practices.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO2</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-                Problem analysis: 
-            </span>
-            State & Utilize the principles of scientific enquiry, thinking analytically, clearly and critically, while solving problems and making decisions during daily practice. Recognize, analyze information systematically and shall make defensible decisions.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO3</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Development of solutions:
-            </span>
-            Demonstrate effective planning abilities including time management, resource management, delegation skills and organizational skills. Develop and implement plans and organize work to meet deadlines.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO4</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Conduct investigations of complex problems:
-            </span>
-            Use research-based knowledge including developing experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO5</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Modern tool usage:
-            </span>
-            Choose and Interpret appropriate methods and procedures, resources, and modern pharmacy-related computing tools with an understanding of the limitations.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO6</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            The Pharmacist and Society:
-            </span>
-            Apply reasoning informed by the contextual knowledge to assess societal, health, safety and legal issues and the consequent responsibilities relevant to the professional pharmacy practice.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO7</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Environment and sustainability:
-            </span>
-            Examine the impact of the professional pharmacy solutions in societal and environmental contexts and Appraise the knowledge and need for sustainable development.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO8</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Pharmaceutical Ethics:
-            </span>
-            Honor personal values and defend ethical principles in professional and social contexts. Develop behavior that recognizes cultural and personal variability in values, communication and lifestyles. Generate ethical frameworks; Justify ethical principles while making decisions and take responsibility for the outcomes associated with the decisions.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO9</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Individual and teamwork:
-            </span>
-            Plan effectively as an individual, and as a member or leader in teams, and gain multidisciplinary knowledge through innovative projects, industrial training.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO10</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-                Communication:
-            </span>
-            Communicate effectively with the pharmacy community and with society at large, such as, being able to Interpret and write effective reports, make effective presentations and documentation, and give and receive clear instructions.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO11</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Project management and finance:
-            </span>
-            Acquire knowledge and understanding of Pharmacy and management principles and apply these to one’s own work, as a member and leader in a team. Formulate projects in multidisciplinary environments.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO12</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Life-long learning:
-            </span>
-            Estimate the need for and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change. Self-access and interpret feedback effectively from others to predict learning needs and to satisfy these needs on an ongoing basis.
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>],
-  },
-  {
-    title: "PSO's (Program Specific Outcomes)",
+    title: "Course Outcomes",
+    image: cardImage2,
     description: [
-      <span className="block">The Graduate shall be able to:</span>,
-      <><span className="font-semibold mr-1">PSO1.</span> Apply the knowledge of pharmaceutical and allied sciences in design, manufacture and evaluation of drug delivery systems including cosmetics.</>,
-      <><span className="font-semibold mr-1">PSO2.</span> Be able to perform classical and modern analysis of APIs and formulations in their quality control and enforce quality assurance standards.</>,
+        "Comprehensive knowledge of drug formulation, quality assurance, and distribution.",
+        "Ability to evaluate and advise on prescription drug use.",
+        "Expertise in ensuring the ethical and safe use of pharmaceutical products."
     ],
-    image: Course,
-    points: [
-        <><span className="font-semibold mr-1">PSO3.</span> Appreciate the mechanism of action of drugs including their kinetics and adverse actions. Be able to do basic evaluation of bioactivity of drugs in in- silico models.</>,
-        <><span className="font-semibold mr-1">PSO4.</span> Apply the knowledge of medicinal chemistry, natural drugs in drug design and synthesis. Appreciate the importance of drugs derived from natural sources.</>,
-        <><span className="font-semibold mr-1">PSO5.</span> Act responsibly towards environment, follow ethical principles, be able to comprehend, interpret and apply laws pertinent to all spheres of pharmaceutical and allied domains.</>    
-    ]
+//     points: [<div className="overflow-x-auto">
+//     <table className="table-auto border-collapse border border-gray-300 text-black  w-full text-left">
+//       <thead className="bg-gray-200">
+//         <tr>
+//           <th className="border border-gray-300 text-black px-4 py-2">PO</th>
+//           {/* <th className="border border-gray-300 text-black px-4 py-2">Outcome</th> */}
+//           <th className="border border-gray-300 text-black px-4 py-2">Description</th>
+//         </tr>
+//       </thead>
+//       <tbody>
+//         <tr className="bg-white">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO1</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//                 Pharmacy knowledge:
+//             </span>
+//             Illustrate knowledge and comprehension of the core and basic knowledge associated with the profession of pharmacy, including biomedical sciences; pharmaceutical sciences; behavioral, social, and administrative pharmacy sciences; and manufacturing practices.
+//           </td>
+//         </tr>
+//         <tr className="bg-gray-50">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO2</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//                 Problem analysis: 
+//             </span>
+//             State & Utilize the principles of scientific enquiry, thinking analytically, clearly and critically, while solving problems and making decisions during daily practice. Recognize, analyze information systematically and shall make defensible decisions.
+//           </td>
+//         </tr>
+//         <tr className="bg-white">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO3</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             Development of solutions:
+//             </span>
+//             Demonstrate effective planning abilities including time management, resource management, delegation skills and organizational skills. Develop and implement plans and organize work to meet deadlines.
+//           </td>
+//         </tr>
+//         <tr className="bg-gray-50">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO4</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             Conduct investigations of complex problems:
+//             </span>
+//             Use research-based knowledge including developing experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.
+//           </td>
+//         </tr>
+//         <tr className="bg-white">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO5</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             Modern tool usage:
+//             </span>
+//             Choose and Interpret appropriate methods and procedures, resources, and modern pharmacy-related computing tools with an understanding of the limitations.
+//           </td>
+//         </tr>
+//         <tr className="bg-gray-50">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO6</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             The Pharmacist and Society:
+//             </span>
+//             Apply reasoning informed by the contextual knowledge to assess societal, health, safety and legal issues and the consequent responsibilities relevant to the professional pharmacy practice.
+//           </td>
+//         </tr>
+//         <tr className="bg-white">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO7</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             Environment and sustainability:
+//             </span>
+//             Examine the impact of the professional pharmacy solutions in societal and environmental contexts and Appraise the knowledge and need for sustainable development.
+//           </td>
+//         </tr>
+//         <tr className="bg-gray-50">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO8</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             Pharmaceutical Ethics:
+//             </span>
+//             Honor personal values and defend ethical principles in professional and social contexts. Develop behavior that recognizes cultural and personal variability in values, communication and lifestyles. Generate ethical frameworks; Justify ethical principles while making decisions and take responsibility for the outcomes associated with the decisions.
+//           </td>
+//         </tr>
+//         <tr className="bg-white">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO9</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             Individual and teamwork:
+//             </span>
+//             Plan effectively as an individual, and as a member or leader in teams, and gain multidisciplinary knowledge through innovative projects, industrial training.
+//           </td>
+//         </tr>
+//         <tr className="bg-gray-50">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO10</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//                 Communication:
+//             </span>
+//             Communicate effectively with the pharmacy community and with society at large, such as, being able to Interpret and write effective reports, make effective presentations and documentation, and give and receive clear instructions.
+//           </td>
+//         </tr>
+//         <tr className="bg-white">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO11</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             Project management and finance:
+//             </span>
+//             Acquire knowledge and understanding of Pharmacy and management principles and apply these to one’s own work, as a member and leader in a team. Formulate projects in multidisciplinary environments.
+//           </td>
+//         </tr>
+//         <tr className="bg-gray-50">
+//           <td className="border border-gray-300 text-black px-4 py-2">PO12</td>
+//           <td className="border border-gray-300 text-black px-4 py-2">
+//             <span className="font-bold mr-1">
+//             Life-long learning:
+//             </span>
+//             Estimate the need for and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change. Self-access and interpret feedback effectively from others to predict learning needs and to satisfy these needs on an ongoing basis.
+//           </td>
+//         </tr>
+//       </tbody>
+//     </table>
+//   </div>],
   },
   {
     title: "Program Outcomes",
     description: [
-      "PO1- Shall acquire fundamental knowledge of Mass communication & Journalism and related study area.",
-      "PO2- Shall acquire the knowledge related to media and its impact.",
-      "PO3- Shall be competent enough to undertake a professional job as per demands and requirements of M & E Industry.",
+        "Demonstrate proficiency in pharmaceutical sciences and healthcare practices.",
+        "Analyze and solve problems related to drug development and patient care.",
+        "Contribute to public health initiatives and community wellness.",
+        "Mastery of advanced techniques in drug discovery and development.",
     ],
-    image: Program,
+    image: cardImage3,
     points: [
-      "PO4- Shall empower themselves by communication, professional and life skills.",
-      "PO5- Shall be able to enhance the ability of leadership.",
-      "PO6- Shall become socially responsible citizen with global vision",
-      "PO7- Shall be equipped with ICTs competencies including digital literacy.",
-      "PO8- Shall become ethically committed media professionals and entrepreneurs adhering to the human values, the Indian culture and the Global culture.",
-      "PO9- Shall have an understanding of acquiring knowledge throughout life.",
-      "PO10- Shall acquire the primary research skills, understand the importance of innovation, entrepreneurship and incubation abilities.",
-      "PO11- Shall acquire the understanding of importance of cooperation and teamwork.",
-    ],
+        "Proficiency in regulatory frameworks governing the pharmaceutical industry.",
+        "Ability to apply emerging technologies to improve drug formulation and delivery.",
+    ]
   },
-  {
-    title: "Program Specific Outcome",
-    description: [
-      <Link target="blank" href="https://docs.google.com/document/d/1dtriEqJouqU0vKTZEJSusW1zuyoEFNr3/edit">Click to view PDF</Link>
-    ],
-    image: Course,
-  },
-  {
-    title: "Program Educational Objective",
-    description: [
-        <Link target="blank" href="https://docs.google.com/document/d/1dtriEqJouqU0vKTZEJSusW1zuyoEFNr3/edit">Click to view PDF</Link>
-    ],
-    image: Program,
-  },
+//   {
+//     title: "Program Outcomes",
+//     description: [
+//       "PO1- Shall acquire fundamental knowledge of Mass communication & Journalism and related study area.",
+//       "PO2- Shall acquire the knowledge related to media and its impact.",
+//       "PO3- Shall be competent enough to undertake a professional job as per demands and requirements of M & E Industry.",
+//     ],
+//     image: Program,
+//     points: [
+//       "PO4- Shall empower themselves by communication, professional and life skills.",
+//       "PO5- Shall be able to enhance the ability of leadership.",
+//       "PO6- Shall become socially responsible citizen with global vision",
+//       "PO7- Shall be equipped with ICTs competencies including digital literacy.",
+//       "PO8- Shall become ethically committed media professionals and entrepreneurs adhering to the human values, the Indian culture and the Global culture.",
+//       "PO9- Shall have an understanding of acquiring knowledge throughout life.",
+//       "PO10- Shall acquire the primary research skills, understand the importance of innovation, entrepreneurship and incubation abilities.",
+//       "PO11- Shall acquire the understanding of importance of cooperation and teamwork.",
+//     ],
+//   },
+//   {
+//     title: "Program Specific Outcome",
+//     description: [
+//       <Link target="blank" href="https://docs.google.com/document/d/1dtriEqJouqU0vKTZEJSusW1zuyoEFNr3/edit">Click to view PDF</Link>
+//     ],
+//     image: Course,
+//   },
+//   {
+//     title: "Program Educational Objective",
+//     description: [
+//         <Link target="blank" href="https://docs.google.com/document/d/1dtriEqJouqU0vKTZEJSusW1zuyoEFNr3/edit">Click to view PDF</Link>
+//     ],
+//     image: Program,
+//   },
 
   // Add other carousel items here
 ];
@@ -272,10 +322,10 @@ export const selectedCard1 = (
         <span className="font-[Arapey]">Admission Eligibility</span> <br />
         <ul className="font-[TTChocolates] list-disc ml-5 text-[14px] md:text-[23px] text-black">
             <li>
-                Passed in 10+2 examination with Physics and Chemistry as compulsory subjects, along with one of the following subjects:-Mathematics/Biology.
+                Successful completion of 10+2 with Physics and Chemistry as compulsory subjects, along with Mathematics or Biology.
             </li>
             <li>
-                Candidate shall complete the age of 17 on or before 31st December 2025. The age shall be determined as per entry in the Matriculation / Higher Secondary or its Equivalent Certificate.
+            Candidates must be at least 17 years old on or before 31st December 2025, as per matriculation or equivalent records.
             </li>
         </ul>
     </>
@@ -500,37 +550,30 @@ export const itemsClubs = [
     ],
   },
   {
-    title: "Beyond Curriculum",
-    description: [
-      "At Department of Mass Communication Tula’s , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
-      "Besides a wide variety of extracurricular activities, workshops, and industry partnerships, there are also many opportunities for students to acquire additional know-how and proficiencies.",
-    ],
-    image: Program,
-    points: [
-      "Internships and Field Projects: Such opportunities develop students from a theoretical knowledge base to the application of such learning toward practical experiences and connections within a profession.",
-      "Guest Lectures and Seminars: Hosting more regular sessions and presentations from industry experts and other alumni provides our students with exposure to their specific experiences and insights, further enriching their understanding of current trends and practices.",
-      "Student-run media initiatives: Opportunities for students to engage in hands-on projects, such as running Departmental Social Media Pages (Instagram & YouTube Channel), producing newsletters, fostering creativity and teamwork.",
-      "Workshops and skill development programs: Specialized training sessions on emerging technologies, digital media tools, and soft skills that prepare students for the challenges of the media industry.",
-      "Add-on Courses: In addition to our core curriculum, we offer a range of add-on courses that allow students to specialize in specific areas of interest. These courses cover topics such as digital marketing, photography, content creation and video production, equipping students with the expertise to excel in their chosen fields.",
-      "Finally, by going beyond the curriculum, we want to foster professionals who are fully equipped with theoretical knowledge but also adept at all the complexities of the media world.",
-      "Join us for a meaningful impact on the next generation in communication.",
-    ],
-  },
-  {
     title: "Career Prospects",
     description: [
-      "With a BAJMC degree, students can explore a wide range of career opportunities, including:",
-      "Journalism: Graduates can pursue careers as reporters, editors, and correspondents in print, broadcast, and digital media, where they investigate and report on current events, shaping public discourse.",
-      "Public Relations: A career in PR allows graduates to manage communications for organizations, build brand awareness, and handle crisis communication, ensuring that the public perception aligns with organizational goals.",
-    ],
+        <p className="font-semibold font-[TTChocolatesBold]">
+          A B. Pharma degree opens up a range of promising career opportunities, including:
+        </p>,
+        "- Production & Manufacturing",
+        "- Research & Development (R&D)",
+        "- Quality Control (QC) & Quality Assurance (QA)",
+        "- Hospital Pharmacy",
+        "- Community Pharmacy",
+        "- Academics & Education",
+        "- Regulatory Affairs",
+        "- Sales & Marketing",
+        "- Opportunities Overseas",
+        "- Entrepreneurship",
+        "- Digital Therapeutics",
+        "- Consultancy Services",
+        "- Documentation & Pharma Journalism",
+        "- Additive Manufacturing & AI Applications",
+    ],      
     image: USP,
     points: [
-      "Advertising and Marketing: Graduates can work in advertising agencies, creating impactful campaigns and strategies that resonate with target audiences across various platforms.",
-      "Media Production: Opportunities abound in film, television, and radio production, where graduates can take on roles as producers, directors, and content creators, bringing stories to life through various media.",
-      "Digital Media and Content Creation: In an increasingly digital world, there is a high demand for skilled professionals in content creation, social media management, and digital marketing, allowing graduates to engage audiences online effectively.",
-      "Corporate Communication: Graduates can work in internal and external communications, helping organizations effectively convey their messages to stakeholders and maintain a positive image.",
-      "The program also encourages students to engage with diverse communities, fostering valuable networking opportunities with industry professionals, cultural groups, and influential figures. Through internships, hands-on projects, and extracurricular activities, students gain practical experience that enhances their employability and prepares them for the challenges of the media industry.",
-      "As the demand for innovative and skilled media professionals continues to rise, graduates of the BAJMC program are well-positioned to make a significant impact in their chosen fields, leading the charge in shaping the future of communication.",
+        "- Niche Specializations (e.g., Genetic Engineering, Nutraceuticals, Bioinformatics, Nanotechnology, Nuclear Pharmacology)",
+        "- Pharmacy professionals also enjoy global career opportunities, with lucrative roles in countries where pharmacists are highly regarded for their expertise in healthcare systems.",
     ],
   },
 
