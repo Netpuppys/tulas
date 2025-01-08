@@ -30,6 +30,7 @@ import placement4 from "../../public/admissions/placements/placement4.png";
 import placement5 from "../../public/admissions/placements/placement5.png";
 import placement6 from "../../public/admissions/placements/placement6.png";
 import backgroundImage from "../../public/bsc-agriculture/background.png";
+import RecordMobile from "../../public/Homepage/Accreditation/RecordMobile.png";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
@@ -131,24 +132,55 @@ const placements = [
   },
 ];
 
+const placementsMobile = [
+    placement1,
+    placement2,
+    placement3,
+    placement4,
+    placement5,
+    placement6,
+];
+
 const page = () => {
   const carouselRef = useRef();
-  const [scrolled, setScrolled] = useState(false);
+  const mobileCarouselRef = useRef();
+
+  const [ scrolled, setScrolled ] = useState(false);
+
   const { utmParams } = useContext(UtmContext);
+
   const handleScrollForward = () => {
     if (carouselRef.current) {
-      const scrollAmount = carouselRef.current.offsetWidth;
+      const scrollAmount = window.innerWidth;
       // Scroll forward by the width of the carousel
       carouselRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
       setScrolled(true);
     }
   };
 
+  const handleScrollForwardMobile = () => {
+    if (mobileCarouselRef.current) {
+      const scrollAmount = window.innerWidth;
+      // Scroll forward by the width of the carousel
+      mobileCarouselRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      setScrolled(true);
+    }
+  };
+
   const handleScrollBack = () => {
     if (carouselRef.current) {
-      const scrollAmount = carouselRef.current.offsetWidth;
+      const scrollAmount = window.innerWidth;
       // Scroll back by the width of the carousel
       carouselRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      setScrolled(false);
+    }
+  };
+
+  const handleScrollBackMobile = () => {
+    if (mobileCarouselRef.current) {
+      const scrollAmount = window.innerWidth;
+      // Scroll back by the width of the carousel
+      mobileCarouselRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
       setScrolled(false);
     }
   };
@@ -192,7 +224,7 @@ const page = () => {
       </head>
       <body>
         {/* <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tulas/ee-form-widget/form-15/widget.js" /> */}
-        <div className="w-full min-h-screen relative font-[TTChocolatesBold]">
+        <div className="w-full min-h-screen overflow-x-hidden relative font-[TTChocolatesBold]">
           <a
             href={`/${utmParams}`}
             className="absolute top-10 left-10 z-20 w-48"
@@ -213,7 +245,7 @@ const page = () => {
           </div>
 
           {/* banner text */}
-          <div className="w-full bg-white pt-12 pb-24 flex items-center justify-center">
+          <div className="w-full bg-white pt-12 pb-24 px-4 md:px-0 flex items-center justify-center">
             <div className="text-left max-w-[45rem]">
               <p className="text-[#760135] text-4xl pb-4 font-medium font-[CarotSlab]">
                 ABOUT TULA'S
@@ -235,14 +267,14 @@ const page = () => {
           </div>
 
           {/* programs offered */}
-          <div className="w-full pb-28 flex flex-col justify-center items-center">
-            <p className="text-white text-4xl font-[TTChocolatesBold] font-semibold pt-16">
+          <div className="w-full pb-10 md:pb-28 px-6 md:px-0 flex flex-col justify-center items-center">
+            <p className="text-white text-3xl md:text-4xl font-[TTChocolatesBold] font-semibold pt-10 md:pt-16">
               Programs Offered at TULA's
             </p>
-            <div className="flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-10 px-24 mt-16">
+            <div className="flex w-full flex-wrap items-center justify-center gap-x-4 gap-4 md:gap-y-10 md:px-24 mt-8 md:mt-16">
               {programsOffered.map((item, index) => (
                 <div
-                  className="w-[calc(33%-0.5rem)] rounded-xl h-16 bg-white flex items-center justify-center text-[1.55rem] font-medium text-[#760135]"
+                  className="w-[calc(50%-0.5rem)] md:w-[calc(33%-0.5rem)] rounded-xl h-10 md:h-16 bg-white flex items-center justify-center md:text-[1.55rem] font-medium text-[#760135]"
                   key={index}
                 >
                   {item}
@@ -252,20 +284,20 @@ const page = () => {
           </div>
 
           {/* INDUSTRY COLLABORATIONS */}
-          <div className="w-full bg-white text-center pt-20 pb-20 flex flex-col justify-center items-center">
-            <p className="underline-offset-4 underline text-[#760135] font-[CarotSlab] text-3xl font-medium">
+          <div className="w-full bg-white text-center pt-20 pb-20 px-6 md:px-0 flex flex-col justify-center items-center">
+            <p className="underline-offset-4 underline text-[#760135] text-center md:text-left font-[CarotSlab] text-3xl font-medium">
               INDUSTRY COLLABORATIONS
             </p>
-            <div className="w-full mt-12 flex items-center justify-center gap-5">
+            <div className="w-full mt-12 flex flex-row flex-wrap items-center justify-center gap-5">
               {collaboraters.map((image, id) => (
-                <Image src={image} key={id} className="scale-75" alt="" />
+                <Image src={image} key={id} className="w-[calc(50%-0.8rem)] md:w-fit scale-75" alt="" />
               ))}
             </div>
           </div>
 
           {/* why tula's */}
-          <div className="w-full h-[40rem] flex items-center justify-between px-40 font-[TTChocolates]">
-            <div className="w-3/5">
+          <div className="w-full md:h-[40rem] flex flex-col md:flex-row items-center justify-between pt-8 md:py-0 px-6 md:px-40 font-[TTChocolates]">
+            <div className="w-full md:w-3/5 ">
               <p className="text-white text-4xl font-semibold">| Why TULA's</p>
               <p className="text-[#D9D9D9] mt-6 text-xl">
                 Tula’s institute has been focused in placing the right student
@@ -275,16 +307,16 @@ const page = () => {
                 Bank, Oracle, etc.
               </p>
             </div>
-            <div className="2/5 h-full pt-16">
+            <div className="2/5 h-full md:pt-16">
               <Image src={girl} className="h-full object-contain" alt="" />
             </div>
           </div>
 
           {/* icon carousel */}
-          <div className="w-full bg-white pt-24 flex flex-col items-center justify-center px-20 pb-6 relative">
+          <div className="w-full hidden bg-white pt-24 md:flex flex-col items-center justify-center px-20 pb-10 relative">
             <div
               ref={carouselRef}
-              className="max-w-[70rem] w-full flex overflow-x-scroll"
+              className="md:max-w-[70rem] w-fit md:w-full flex overflow-x-scroll"
             >
               {iconCarousel.map((item, index) => (
                 <div
@@ -300,7 +332,8 @@ const page = () => {
                 </div>
               ))}
             </div>
-            <div className="flex gap-2 mt-16">
+
+            <div className="gap-2 mt-16">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="112"
@@ -381,22 +414,58 @@ const page = () => {
             )}
           </div>
 
+          <div className="w-full max-w-[100vw] bg-white pt-10 md:hidden pb-4">
+            <div ref={mobileCarouselRef} className="w-full overflow-x-auto">
+              <div className="w-fit md:w-full flex justify-start">
+                {iconCarousel.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex w-[calc(50vw)] text-center px-6 flex-col items-center justify-start"
+                  >
+                    <Image
+                      src={item.icon}
+                      className="h-16 w-fit max-h-16 mb-6"
+                      alt=""
+                    />
+                    <p className="text-center text-[#746470]">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex w-full items-center justify-center gap-2 pt-12 px-10 py-6">
+              <button
+                onClick={handleScrollBackMobile}
+                className="bg-[#007B83] h-10 flex items-center justify-center px-4 rounded-l-full text-2xl"
+              >
+                <HiChevronLeft />
+              </button>
+
+              <button
+                onClick={handleScrollForwardMobile}
+                className="bg-[#007B83] h-10 flex items-center justify-center px-4 rounded-r-full text-2xl"
+              >
+                <HiChevronRight />
+              </button>
+            </div>
+          </div>
+
           {/* tulas ranking */}
-          <div className="flex flex-col items-center justify-start pt-20 pb-24">
-            <p className="text-white text-6xl font-semibold">Tula's Rankings</p>
+          <div className="flex flex-col items-center justify-start pt-10 md:pt-20 pb-8 md:pb-24">
+            <p className="text-white text-3xl md:text-6xl font-semibold">Tula's Rankings</p>
             <div className="w-80 mt-3 mb-6 h-1 bg-white"></div>
-            <p className="max-w-[40rem] text-[#D9D9D9] text-xl text-center ">
+            <p className="max-w-[40rem] text-[#D9D9D9] md:text-xl text-center px-4 md:px-0">
               Join a top-rated institute: Tula's Institute constantly endeavours
               to innovate a business learning environment. Down the line, our
               accomplishments have been recognised by noteworthy global rankings
               including:
             </p>
-            <div className="flex gap-8 mt-20 relative">
-              <div className="w-[calc(100%-8rem)] h-[3px] -translate-x-1/2 absolute bg-[#ECCAE3] rounded-full top-[calc(3rem-1.5px)] left-1/2"></div>
+            <div className="flex flex-col md:flex-row gap-8 mt-10 md:mt-20 relative">
+              <div className="md:w-[calc(100%-8rem)] md:h-[3px] hidden md:block -translate-x-1/2 absolute bg-[#ECCAE3] rounded-full top-[calc(3rem-1.5px)] left-1/2"></div>
               {rankings.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center justify-start gap-6"
+                  className="flex flex-row md:flex-col  items-center justify-start gap-6"
                 >
                   <div
                     className={`w-24 relative shadow-[0px_4px_53.3px_5px_rgba(0,0,0,0.8)] group transition-all ease-linear duration-300 aspect-square rounded-full flex items-center justify-center border-2 border-white ${
@@ -418,13 +487,32 @@ const page = () => {
                 </div>
               ))}
             </div>
+
+            {/* desktop */}
             <Image
               src={rankingsBanner}
-              className="w-full mt-40 object-contain h-fit"
+              className="w-full hidden md:block mt-40 object-contain h-fit"
               alt=""
             />
-            <div className="pb-10 mt-32 w-full flex items-center justify-center px-20 relative">
-              <div className="flex w-full max-w-[70rem] items-center justify-center gap-10">
+
+            {/* mobile */}
+            <div className="flex md:hidden flex-col md:flex-row py-4 md:pt-[8rem] gap-4 self-center md:pl-16 w-full items-center">
+              <div className="flex items-center gap-4">
+                <div className="w-[4rem] h-[1px] bg-[#E69706]"></div>
+                  <h4 className="text-white text-[30px] md:text-[60px] w-fit font-[Oswald] right-0 tracking-[3px] leading-normal md:leading-[74px]">
+                    RECORD BREAKING PLACEMENTS
+                  </h4>
+                </div>
+              </div>
+              <Image
+                src={RecordMobile}
+                alt=""
+                className="block md:hidden w-full h-fit"
+              />
+
+            <div className="md:pb-10 mt-10 md:mt-32 w-full flex items-center justify-center md:px-20 relative">
+              {/* desktop */}
+              <div className="hidden md:flex w-full max-w-[70rem] items-center justify-center gap-10">
                 <button className="prev-btn border-2 absolute top-1/2 -translate-y-1/2 left-20 border-white rounded-full w-16 aspect-square bg-transparent text-white hover:text-[#007A83] hover:bg-white text-3xl flex items-center justify-center">
                   <BsArrowLeft />
                 </button>
@@ -470,23 +558,62 @@ const page = () => {
                   <BsArrowRight />
                 </button>
               </div>
+              {/* mobile */}
+              <div className="flex w-full md:hidden max-w-[70rem] items-center justify-center gap-10">
+                <button className="prev-btn border-2 absolute top-1/2 -translate-y-1/2 left-20 border-white rounded-full w-16 aspect-square bg-transparent text-white hover:text-[#007A83] hover:bg-white text-3xl flex items-center justify-center">
+                  <BsArrowLeft />
+                </button>
+                <div className="max-w-[80rem] w-full relative">
+                  <Swiper
+                    autoplay={{
+                      delay: 4000,
+                      disableOnInteraction: true,
+                    }}
+                    loop={true}
+                    navigation={{
+                      prevEl: ".prev-btn",
+                      nextEl: ".next-btn",
+                    }}
+                    modules={[Pagination, Navigation, Autoplay]}
+                    className="mySwiper"
+                  >
+                    {placementsMobile.map((item, index) => (
+                      <SwiperSlide key={index} className="w-full">
+                        <div className="flex w-full h-fit items-center justify-center gap-8">
+                          <div className="w-full h-80 flex items-center justify-center bg-white shadow-lg overflow-hidden">
+                            {/* Left Card Content */}
+                            <Image
+                              src={item}
+                              className="w-full h-full object-cover"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
+                <button className="next-btn border-2 absolute top-1/2 -translate-y-1/2 right-20 border-white rounded-full w-16 aspect-square bg-transparent text-white hover:text-[#007A83] hover:bg-white text-3xl flex items-center justify-center">
+                  <BsArrowRight />
+                </button>
+              </div>
             </div>
           </div>
 
           {/* life at tula's */}
-          <div className="bg-white w-full pt-10 pb-16 flex flex-col items-center justify-start px-10">
+          <div className="bg-white w-full pt-10 pb-10 md:pb-16 flex flex-col items-center justify-start px-4 md:px-0">
             <p className="text-5xl text-[#3D001B] text-center font-semibold">
               Life At TULA's
             </p>
             <div className="w-80 h-[3px] bg-[#3D001B] rounded-full"></div>
-            <div className="max-w-[70rem] w-full h-fit mt-12">
+            <div className="w-full mt-8 md:mt-12 h-[40rem] flex items-center justify-center overflow-hidden">
               <Image
                 src={lifeAtTulas}
-                className="w-full object-cover h-fit"
+                className="w-full object-cover h-60 md:h-fit"
                 alt=""
               />
             </div>
-            <p className="max-w-[70rem] mt-14 w-full text-wrap text-center text-[#434343] text-2xl font-[TTChocolates]">
+            <p className="max-w-[70rem] mt-8 md:mt-14 w-full text-wrap text-center text-[#434343] text-2xl font-[TTChocolates]">
               <span className="font-[TTChocolatesBold] font-bold text-[#007A83]">
                 Tula's Institute
               </span>{" "}
@@ -500,7 +627,7 @@ const page = () => {
             </p>
           </div>
           <div className="bg-white flex items-center justify-center">
-            <p className="text-black text-center text-2xl font-medium">
+            <p className="text-black text-center text-sm md:text-2xl font-medium">
               © Copyright 2024 Tula's Institute All Right Reserved
             </p>
           </div>

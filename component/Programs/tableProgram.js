@@ -14,7 +14,7 @@ function TableProgram({
   HODcontent,
   specialization,
 }) {
-  const [selectedCard, setSelectedCard] = useState(0);
+  const [ selectedCard, setSelectedCard ] = useState(0);
   const marginLeft = 100/cards?.length;
 
   return (
