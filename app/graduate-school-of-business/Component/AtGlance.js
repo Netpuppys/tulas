@@ -25,13 +25,17 @@ function AtGlance() {
         {images.map((card, index) => (
           <div
             key={index}
-            className={` ${
+            className={`relative overflow-hidden ${
               index === 2 || index === 3
                 ? "w-full md:w-[calc(33.33%-12px)]"
                 : "w-1/2 md:w-[calc(33.33%-12px)]"
             }`}
           >
-            <Image src={card} alt="" className="w-full h-fit" />
+            <Image
+              src={card}
+              alt=""
+              className="w-full h-fit hover:scale-110 transition-all duration-300 ease-in"
+            />
           </div>
         ))}
       </div>
