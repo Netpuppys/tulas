@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import TulasLogo from "../public/Components/Navbar/TulasLogoGreen.png";
 import tick from "../public/graduate-school-of-business/mba/tick.svg";
 import Image from "next/image";
@@ -10,7 +10,9 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { UtmContext } from "./utmParams";
 function ThankYou() {
+  const { utmParams } = useContext(UtmContext);
   const socialMediaLinks = [
     {
       href: "https://www.facebook.com/tulasinstitutedehradun/",
@@ -79,7 +81,7 @@ function ThankYou() {
               Visit Our Website
             </h3>{" "}
             <button
-              onClick={() => (window.location.href = "/")}
+              onClick={() => (window.location.href = `/${utmParams}`)}
               className="text-white text-[clamp(18px,1.3vw,45px)] bg-[#007A83] py-3 px-14 font-bold font-[TTChocolatesBold]"
             >
               Website

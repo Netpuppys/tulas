@@ -224,7 +224,7 @@ const CarouselProgram = ({ heading, items, background, color, pdf, downloadBtnTe
           <div className="md:absolute -bottom-3 z-[9] left-0 md:right-20 flex space-x-4">
             <Link
               href={pdf}
-              target="blank"
+              target="_blank"
               className={`py-4 bg-[#3d001b] group relative px-10 flex items-center justify-center text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full `}
             >
 

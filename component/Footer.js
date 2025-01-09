@@ -170,10 +170,20 @@ const Footer = ({ set = false, color = false }) => {
             WANT TO LEARN MORE ABOUT TULA’S?
           </h3>
           <div className="flex w-fit gap-4">
-            <button className="text-[clamp(9px,0.8vw,18px)] bg-transparent hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-white">
+            <button
+              onClick={() => {
+                window.location.href = `/apply-now${utmParams}`;
+              }}
+              className="text-[clamp(9px,0.8vw,18px)] bg-transparent hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-white"
+            >
               ENQUIRY NOW
             </button>
-            <button className="bg-[#E69706] border-2 text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent ">
+            <button
+              onClick={() => {
+                window.location.href = `/apply-now${utmParams}`;
+              }}
+              className="bg-[#E69706] border-2 text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
+            >
               APPLY TODAY
             </button>
           </div>

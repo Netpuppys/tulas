@@ -3,12 +3,14 @@ import Banner from "@/component/Banner";
 import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import BannerImg from "../../public/infrastructure/library/bannerImg.png";
 import background from "../../public/research/r-and-cell/background.png";
 import BestPractices from "../../public/FooterPDf/BestPractices.pdf";
+import { UtmContext } from "@/component/utmParams";
 
 function IQAC() {
+  const { utmParams } = useContext(UtmContext);
   const button = [
     { title: "About", linkTo: "/about-iqac/" },
     { title: "Vision & Mission", linkTo: "/iqac-vision-mission/" },
@@ -69,7 +71,9 @@ function IQAC() {
           {button.map((button, index) => (
             <button
               key={index}
-              onClick={() => (window.location.href = `${button.linkTo}`)}
+              onClick={() =>
+                (window.location.href = `${button.linkTo}${utmParams}`)
+              }
               className="py-2 w-[210px] md:w-[400px] rounded-full bg-white text-[clamp(15px,1.2vw,50px)] text-[#760135]"
             >
               {button.title}

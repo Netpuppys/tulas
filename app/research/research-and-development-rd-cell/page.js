@@ -133,7 +133,7 @@ function RAndCell() {
             <Image src={graph2} alt="" className="w-[80%] md:w-[40%]" />
           </div>
           <Link
-            href="/research/research-and-development-rd-cell/funded-projects-and-grants/"
+            href={`/research/research-and-development-rd-cell/funded-projects-and-grants/${utmParams}`}
             className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
           >
             Funded Projects and Grants

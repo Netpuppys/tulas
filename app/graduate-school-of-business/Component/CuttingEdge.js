@@ -10,7 +10,7 @@ import InternationalBusiness from "../../../public/graduate-school-of-business/m
 import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBusiness.png";
 import healthCare from "../../../public/graduate-school-of-business/mba/healthCare.png";
 import Image from "next/image";
-function CuttingEdge() {
+function CuttingEdge({ scrollRef }) {
   const department = [
     {
       title: "Marketing",
@@ -91,6 +91,12 @@ function CuttingEdge() {
               boxShadow:
                 "10.677px 17.349px 33.364px 0px rgba(0, 122, 131, 0.51)",
             }}
+            onClick={() =>
+              scrollRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }
             className={`w-[calc(100%-32px)] md:w-[30%] mx-auto max-w-[400px] bg-[#007A83] text-[#FFFFFF] cursor-pointer py-3 rounded-[8px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold`}
           >
             Apply Now

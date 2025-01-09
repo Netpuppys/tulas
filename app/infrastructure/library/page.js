@@ -12,6 +12,7 @@ import library2 from "../../../public/infrastructure/library/library2.png";
 import NPTEL from "../../../public/infrastructure/library/NPTEL.png";
 import { useInView } from "react-intersection-observer";
 import Vision from "@/component/Programs/Vision";
+import Link from "next/link";
 
 function Library() {
   const { ref, inView } = useInView({
@@ -130,14 +131,13 @@ function Library() {
             </h4>
           </div>
           <Vision sections={sections.slice(1)} />
-          <button
-            onClick={() => {
-              window.location.href = "https://tulas-opac.kohacloud.in/";
-            }}
+          <Link
+            target="_blank"
+            href="https://tulas-opac.kohacloud.in/"
             className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
           >
             TULA’S Library Resources
-          </button>
+          </Link>
 
           <div className="w-full h-fit z-50">
             <Footer color={true} />

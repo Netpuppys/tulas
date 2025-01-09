@@ -10,6 +10,7 @@ import AQAR from "../../public/FooterPDf/AQAR.pdf";
 import SSR from "../../public/FooterPDf/SSR.pdf";
 import IIQA from "../../public/FooterPDf/IIQA.pdf";
 import STRATEGIC from "../../public/FooterPDf/STRATEGIC.pdf";
+import Link from "next/link";
 
 function NAAC() {
   const button = [
@@ -50,13 +51,14 @@ function NAAC() {
         </div>
         <div className="py-8 md:py-20 w-full bg-transparent overflow-hidden px-3 md:px-0 flex flex-col justify-center items-center gap-4">
           {button.map((button, index) => (
-            <button
+            <Link
+              target="_blank"
               key={index}
-              onClick={() => (window.location.href = `${button.linkTo}`)}
+              href={`${button.linkTo}`}
               className="py-2 w-[210px] md:w-[400px] rounded-full bg-white text-[clamp(15px,1.2vw,50px)] text-[#007A83]"
             >
               {button.title}
-            </button>
+            </Link>
           ))}
         </div>
         <div className="w-full h-fit z-50">

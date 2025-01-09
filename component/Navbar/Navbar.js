@@ -209,7 +209,7 @@ function Navbar({
             {/* apply now button */}
             <button
               className="flex w-full flex-row justify-between items-center cursor-pointer relative z-[3333]"
-              onClick={() => (window.location.href = "/admissions2024/")}
+              onClick={() => (window.location.href = `/apply-now${utmParams}`)}
             >
               <div
                 className={`p-[15px] mdNavbar:p-[20px] border-2 ${
@@ -290,7 +290,7 @@ function Navbar({
             {/* apply now button */}
             <button
               className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-              onClick={() => (window.location.href = "/admissions2024/")}
+              onClick={() => (window.location.href = `/apply-now${utmParams}`)}
             >
               <PiPencilSimpleLineLight />
             </button>
@@ -398,7 +398,7 @@ function Navbar({
             {/* apply now button */}
             <button
               className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-              onClick={() => (window.location.href = "/admissions2024/")}
+              onClick={() => (window.location.href = `/apply-now${utmParams}`)}
             >
               <PiPencilSimpleLineLight />
             </button>

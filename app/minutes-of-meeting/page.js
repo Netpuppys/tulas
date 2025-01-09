@@ -45,6 +45,7 @@ import Meeting36 from "../../public/FooterPDf/Meeting36.pdf";
 import Meeting37 from "../../public/FooterPDf/Meeting37.pdf";
 import Meeting38 from "../../public/FooterPDf/Meeting38.pdf";
 import Meeting39 from "../../public/FooterPDf/Meeting39.pdf";
+import Link from "next/link";
 
 function MinuteOfMeeting() {
   const button = [
@@ -276,13 +277,14 @@ function MinuteOfMeeting() {
         </div>
         <div className="py-8 px-4 md:px-20 md:py-20 w-full bg-transparent overflow-hidden flex flex-wrap justify-center items-center gap-4">
           {button.map((button, index) => (
-            <button
+            <Link
               key={index}
-              onClick={() => (window.location.href = `${button.linkTo}`)}
+              target="_blank"
+              href={`${button.linkTo}`}
               className="py-2 w-[170px] md:w-[30%] text-[14px] underline md:text-[clamp(15px,1vw,50px)] text-white"
             >
               {button.title}
-            </button>
+            </Link>
           ))}
         </div>
         <div className="w-full h-fit z-50">

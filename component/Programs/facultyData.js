@@ -1,9 +1,12 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 
 import Image from "next/image";
 import { FaRegFilePdf } from "react-icons/fa";
+import Link from "next/link";
+import { UtmContext } from "../utmParams";
 function FacultyData({ facultyData }) {
+  const { utmParams } = useContext(UtmContext);
   return (
     <div className="bg-transparent flex justify-center flex-wrap gap-4 md:gap-8 w-full">
       {facultyData.map((faculty, index) => (
@@ -17,7 +20,7 @@ function FacultyData({ facultyData }) {
             <Image
               onClick={() => {
                 if (faculty.linkTo) {
-                  window.location.href = `${faculty.linkTo}`;
+                  window.location.href = `${faculty.linkTo}${utmParams}`;
                 }
               }}
               src={faculty.imageUrl}
@@ -25,19 +28,20 @@ function FacultyData({ facultyData }) {
               className="rounded-2xl w-full h-full object-cover"
             />
             {faculty.resume && (
-              <button
-                onClick={() => (window.location.href = faculty.resume)}
+              <Link
+                href={faculty.resume}
+                target="_blank"
                 className="absolute cursor-pointer w-full pointer-events-auto flex gap-3 justify-center items-center bg-[#760135] py-1 text-[20px] text-white font-[TTChocolatesBold] font-[600]"
               >
                 Resume
                 <FaRegFilePdf />
-              </button>
+              </Link>
             )}
           </div>
           <div
             onClick={() => {
               if (faculty.linkTo) {
-                window.location.href = `${faculty.linkTo}`;
+                window.location.href = `${faculty.linkTo}${utmParams}`;
               }
             }}
             className="px-4 text-black py-4 md:px-8 flex flex-col gap-2 md:gap-4"

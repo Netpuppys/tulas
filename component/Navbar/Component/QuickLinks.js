@@ -5,7 +5,7 @@ import { IoMdContact } from "react-icons/io";
 import Link from "next/link";
 import { UtmContext } from "@/component/utmParams";
 function QuickLinks() {
-    const { utmParams } = useContext(UtmContext);
+  const { utmParams } = useContext(UtmContext);
   const quickLinks = [
     { title: "Pay Online", linkTo: "/pay-fee-online", icon: <SiRazorpay /> },
     {

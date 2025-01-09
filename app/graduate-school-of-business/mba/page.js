@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import NavbarLandingPage from "../Component/NavbarLandingPage";
 import BannerLandingPage from "../Component/BannerLandingPage";
 import FormLandingPage from "../Component/FormLandingPage";
@@ -22,7 +22,7 @@ const page = () => {
       behavior: "smooth", // Smooth scrolling effect
     });
   };
-
+  const scrollRef = useRef(null);
   return (
     <>
       <head>
@@ -39,11 +39,13 @@ const page = () => {
           {/* banner */}
           <BannerLandingPage />
           {/* Form */}
-          <FormLandingPage />
+          <div ref={scrollRef}>
+            <FormLandingPage />
+          </div>
           {/* Content One */}
           <CarouselContent />
           {/* Cutting Edge */}
-          <CuttingEdge />
+          <CuttingEdge scrollRef={scrollRef} />
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}
@@ -67,7 +69,7 @@ const page = () => {
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
-          <Placement />
+          <Placement scrollRef={scrollRef} />
           <button
             onClick={handleScrollArrow}
             className="hidden md:block bottom-10 left-10 fixed z-50 w-[100px] aspect-square"

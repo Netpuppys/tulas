@@ -9,6 +9,7 @@ import background from "../../public/research/r-and-cell/background.png";
 import AuditStatement2022 from "../../public/FooterPDf/AuditStatement2022.pdf";
 import AuditStatement2021 from "../../public/FooterPDf/AuditStatement2021.pdf";
 import AuditStatement2020 from "../../public/FooterPDf/AuditStatement2020.pdf";
+import Link from "next/link";
 
 function AuditStatement() {
   const button = [
@@ -52,13 +53,14 @@ function AuditStatement() {
         </div>
         <div className="py-8 md:py-20 w-full bg-transparent overflow-hidden px-3 md:px-0 flex flex-col justify-center items-center gap-4">
           {button.map((button, index) => (
-            <button
+            <Link
               key={index}
-              onClick={() => (window.location.href = `${button.linkTo}`)}
+              target="_blank"
+              href={`${button.linkTo}`}
               className="py-2 w-[240px] md:w-[400px] rounded-full bg-white text-[clamp(14px,1.2vw,50px)] text-[#007A83]"
             >
               {button.title}
-            </button>
+            </Link>
           ))}
         </div>
         <div className="w-full h-fit z-50">

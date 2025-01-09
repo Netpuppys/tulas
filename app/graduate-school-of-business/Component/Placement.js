@@ -41,7 +41,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useMobile } from "@/component/IsMobileContext";
 
-function Placement() {
+function Placement({ scrollRef }) {
   const { isMobile } = useMobile();
   const placement = [
     placement1,
@@ -189,6 +189,12 @@ function Placement() {
                   boxShadow:
                     "10.677px 17.349px 33.364px 0px rgba(0, 122, 131, 0.51)",
                 }}
+                onClick={() =>
+                  scrollRef.current.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
                 className={`w-[calc(100%-32px)] md:w-[30%] mx-auto max-w-[400px] bg-[#007A83] text-[#FFFFFF] cursor-pointer py-3 rounded-[8px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.1vw,45px)]`}
               >
                 Apply Now
