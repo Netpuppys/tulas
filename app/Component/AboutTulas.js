@@ -8,6 +8,7 @@ import { cities, courses, specializations, state } from "@/data/courses";
 import axios from "axios";
 import formPopup from "../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
+import { ThreeDots } from "react-loader-spinner";
 const aboutTulas = (
   <>
     Tula's Institute is dedicated to providing top-notch education, preparing
@@ -55,6 +56,7 @@ function AboutTulas() {
   const [verified, setVerified] = useState(false);
   const mobileInputRef = React.useRef(null);
   const [timer, setTimer] = useState(30); // Timer for the Resend OTP button
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (key, value) => {
     setFormData((prev) => ({
@@ -132,26 +134,16 @@ function AboutTulas() {
   };
 
   useEffect(() => {
-    if (isOtpSent && timer > 0) {
-      const countdown = setInterval(() => {
-        setTimer((prev) => {
-          if (prev <= 1) {
-            clearInterval(countdown); // Stop the timer when it reaches 0
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-
-      return () => clearInterval(countdown); // Clean up the interval on unmount
-    }
-  }, [isOtpSent]);
+    startTimer(30);
+  }, []);
 
   const handleSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
     axios
       .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", formData)
       .then(() => {
+        setLoading(false);
         alert("Enquiry Submitted Successfully");
         setVerified(false);
         setFormData({
@@ -170,11 +162,13 @@ function AboutTulas() {
         setOtp("");
       })
       .catch((error) => {
+        setLoading(false);
         alert.error(error);
       });
   };
 
   const sendOtp = async () => {
+    setLoading(true);
     axios
       .post("https://otp.tulas.edu.in/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
@@ -182,41 +176,49 @@ function AboutTulas() {
           "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
       })
       .then(() => {
+        setLoading(false);
         setIsOtpSent(true);
         startTimer();
       })
       .catch((error) => {
+        setLoading(false);
         alert("Error while Sending Otp");
       });
   };
 
   const verifyOtp = async () => {
+    setLoading(true);
     axios
       .post("https://otp.tulas.edu.in/verify-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         otp: otp,
       })
       .then((response) => {
+        setLoading(false);
         setVerified(true);
         setIsOtpSent(false);
         alert(response.data.message); // Corrected this to access response.data.message
       })
       .catch((error) => {
+        setLoading(false);
         setMessage("Wrong Otp Entered");
       });
   };
 
   const resendOtp = async () => {
+    setLoading(true);
     axios
       .post("https://otp.tulas.edu.in/retry-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
       })
       .then((response) => {
+        setLoading(false);
         startTimer();
         setMessage("OTP sent successfully!");
         alert(response.data.message); // Corrected this to access response.data.message
       })
       .catch((error) => {
+        setLoading(false);
         alert(
           error.response ? error.response.data.message : "An error occurred"
         ); // Handle error message properly
@@ -474,12 +476,13 @@ function AboutTulas() {
         </div>
       </div>
 
-      {/* bg image */}
-      {/* <Image
-        src={formBanner}
-        className="w-full h-full absolute top-0 left-0 -z-10 object-cover"
-        alt="Form background image"
-      /> */}
+      {loading && (
+        <div className="fixed w-screen h-screen bg-black bg-opacity-50 backdrop-blur-sm top-0 left-0 z-[9999999] flex justify-center items-center">
+          <div className="">
+            <ThreeDots color="#FFF" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
