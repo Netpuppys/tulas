@@ -1,4 +1,6 @@
 import React from "react";
+import dynamic from "next/dynamic";
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 function Video() {
   return (
@@ -19,6 +21,34 @@ function Video() {
             ready to make a mark in the world with a unique blend of skills,
             values, and experiences that set you apart.
           </p>
+          {/* <div className="w-full aspect-[9/16] object-cover md:aspect-[12/4.8] mx-auto mb-4">
+            <Image
+              src={videoTest}
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div> */}
+          {/* <ReactPlayer
+              url={
+                "https://assets.tulas.edu.in/Campus_Tour___Tula_s_Institute___Dehradun_safmr2%20(1).mp4"
+              }
+              playing
+              muted
+              className="w-full h-full object-cover"
+              loop
+              width="100%"
+              height="100%"
+              playsinline
+              config={{
+                file: {
+                  attributes: {
+                    autoPlay: true,
+                    muted: true,
+                    playsInline: true,
+                  },
+                },
+              }}
+            /> */}
           <video
             autoPlay
             controls
