@@ -1,0 +1,40 @@
+
+/*
+.pageBanner-inner .carousel-item::after {
+	background: rgba(66, 66, 66, 0.15);
+}
+*/
+.feature-slider {
+    margin-top: -150px;
+}
+.rank-img {
+    border: 1px solid #b89739;
+    padding: 0 20px;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (min-width: 576px) {
+    .topInner-numbers .cuNumbers-section__in.number-highlights {
+        height: 100%;
+    } 
+    .pageBanner-inner_in {
+	padding: 127px 0 53px;
+}
+}
+@media only screen and (max-width: 767px) {
+    .rank-img {
+        width: 300px;
+        padding: 10px;
+    }  
+} 
+@media (max-width: 575px) {
+    .programHeader.sticky .cu-btn {
+        background: transparent;
+        display:none;
+    }
+    .programHeader.sticky .call-btn {
+         background: transparent !important;
+         display:block!important;
+}
+}
