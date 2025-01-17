@@ -8,38 +8,38 @@ const Blogs = ({ utmParams }) => {
   const [page, setPage] = useState(1);
   const [allBlogsLoaded, setAllBlogsLoaded] = useState(false);
   const [loading, setLoading] = useState(true); // Set loading to true initially
-  const [loadingMore, setLoadingMore] = useState(false);
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
         const response = await fetch(
-          `https://oldblog.tulas.edu.in/wp-json/wp/v2/posts?page=${page}&per_page=18`
+          `https://blog.tulas.edu.in/api/v1/post?page=${page}&per_page=18`
         );
-        const posts = await response.json();
+        const data = await response.json();
 
-        // Check if the response status is OK (200-299)
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+        if (data.success) {
+          const filteredBlogs = data.data.filter(
+            (blog) => blog.category && blog.category.name === "Blogs"
+          );
 
-        if (Array.isArray(posts) && posts.length > 0) {
-          // Assuming that the posts don't have a specific category structure in the response
-          setBlogs((prevBlogs) => {
-            const uniqueBlogs = posts.filter(
-              (newBlog) =>
-                !prevBlogs.some((prevBlog) => prevBlog.slug === newBlog.slug)
-            );
-            return [...prevBlogs, ...uniqueBlogs]; // Append only unique blogs
-          });
+          if (filteredBlogs.length === 0) {
+            setAllBlogsLoaded(true); // If no blogs are returned, set allBlogsLoaded to true
+          } else {
+            setBlogs((prevBlogs) => {
+              const uniqueBlogs = filteredBlogs.filter(
+                (newBlog) =>
+                  !prevBlogs.some((prevBlog) => prevBlog.slug === newBlog.slug)
+              );
+              return [...prevBlogs, ...uniqueBlogs]; // Append only unique blogs
+            });
+          }
         } else {
-          setAllBlogsLoaded(true); // If no blogs are returned, set allBlogsLoaded to true
+          console.error("Failed to fetch blogs:", data.message);
         }
       } catch (error) {
         console.error("Error fetching blogs:", error);
       } finally {
-        setLoading(false);
-        setLoadingMore(false); // Set loading to false regardless of success or failure
+        setLoading(false); // Set loading to false regardless of success or failure
       }
     };
 
@@ -53,7 +53,6 @@ const Blogs = ({ utmParams }) => {
 
   const handleLoadMore = () => {
     if (!allBlogsLoaded) {
-      setLoadingMore(true);
       setPage((prevPage) => prevPage + 1); // Increment page to fetch more blogs
     }
   };
@@ -69,15 +68,15 @@ const Blogs = ({ utmParams }) => {
   return (
     <>
       {loading && (
-        <div className="absolute-loader">
+        <div className="loader flex justify-center items-center w-full my-20">
           <Image src={loader} alt="Loading..." />
         </div>
       )}
       <div className="my-5 md:my-20 w-full px-5 md:px-0 md:w-[65%] mx-auto flex flex-col justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-[TTChocolatesBold]">
           {blogs.map((blog) => {
-            const formattedDate = formatDate(blog.date);
-            const formattedTitle = blog.title.rendered
+            const formattedDate = formatDate(blog.created_at);
+            const formattedTitle = blog.title
               .replace(/&#8217;/g, "'")
               .replace(/&#8220;/g, "“")
               .replace(/&#8221;/g, "”")
@@ -89,7 +88,7 @@ const Blogs = ({ utmParams }) => {
                     <Image
                       width="400"
                       height="250"
-                      src={blog.yoast_head_json.og_image[0].url}
+                      src={school}
                       className="w-full h-52 object-cover"
                       alt=""
                     />
@@ -114,12 +113,10 @@ const Blogs = ({ utmParams }) => {
           </button>
         ) : (
           <button
-            className={`mt-5 rounded-lg bg-[#007A83] text-[27px] py-1 px-16 ${
-              loadingMore ? "opacity-75 cursor-not-allowed" : ""
-            }`}
+            className="mt-5 rounded-lg bg-[#007A83] text-[27px] py-1 px-16"
             onClick={handleLoadMore}
           >
-            {loadingMore ? "Loading ..." : "Load More"}
+            Load More
           </button>
         )}
       </div>

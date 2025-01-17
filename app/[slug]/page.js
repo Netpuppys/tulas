@@ -2,30 +2,19 @@ import React from "react";
 import Image from "next/image";
 import loader from "../../public/loader.svg"; // Replace with your actual loader image path
 import "../globals.css";
-import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import "../Blog.css";
-import background from "../../public/AboutDehradun/background.png";
 import { notFound } from "next/navigation"; // Import notFound function
 import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
-
-export const revalidate = 80; // ISR revalidation every 60 seconds
+import TableOfContent from "@/component/TableOfContent";
+export const revalidate = 60; // ISR revalidation every 60 seconds
 
 export async function generateStaticParams() {
-  const response1 = await fetch(
-    "https://oldblog.tulas.edu.in/wp-json/wp/v2/posts?page=1&per_page=18"
-  );
-  const response2 = await fetch(
-    "https://oldblog.tulas.edu.in/wp-json/wp/v2/posts?page=2&per_page=18"
-  );
-  const response3 = await fetch(
-    "https://oldblog.tulas.edu.in/wp-json/wp/v2/posts?page=3&per_page=18"
-  );
-  const data1 = await response1.json();
-  const data2 = await response2.json();
-  const data3 = await response3.json();
-  const data = data1.concat(data2, data3);
+  const res = await fetch("https://blog.tulas.edu.in/api/v1/post", {
+    timeout: 20000,
+  });
+  const { data } = await res.json();
 
   if (!Array.isArray(data)) {
     return [];
@@ -36,57 +25,39 @@ export async function generateStaticParams() {
   }));
 }
 
-// Fetch the blog data based on the slug
 async function fetchBlogData(slug) {
-  const res = await fetch(
-    `https://oldblog.tulas.edu.in/wp-json/wp/v2/posts?slug=${slug}`
-  );
+  const res = await fetch(`https://blog.tulas.edu.in/api/v1/post/${slug}`);
 
   if (!res.ok) {
     throw new Error(`Failed to fetch data for slug: ${slug}`);
   }
 
-  const [blogData] = await res.json();
-  return blogData || null;
+  const { data } = await res.json();
+  return data || null;
 }
-
 export async function generateMetadata({ params }) {
   const { slug } = params;
   const blog = await fetchBlogData(slug);
 
   if (!blog) {
     return {
-      title: "Blog Not Found",
+      meta_title: "Blog Not Found",
       description: "The requested blog could not be found.",
     };
   }
 
   return {
-    title: blog?.yoast_head_json?.title,
-    description: blog?.yoast_head_json?.description,
+    title: blog.meta_title,
+    description: blog.meta_description,
+    keywords: blog.meta_keywords,
+    robots: blog.tags,
+    author: blog.author_name,
   };
 }
 
 export default async function SlugPage({ params }) {
   const { slug } = params;
-  let blog;
-  let isLoading = true;
-
-  try {
-    blog = await fetchBlogData(slug);
-    isLoading = false; // Set to false when data is successfully fetched
-  } catch (error) {
-    console.error("Error fetching blog data:", error);
-    isLoading = true; // Remain loading if an error occurs during fetching
-  }
-
-  if (isLoading) {
-    return (
-      <div className="loader">
-        <Image src={loader} alt="Loading..." />
-      </div>
-    );
-  }
+  const blog = await fetchBlogData(slug);
 
   if (!blog) {
     notFound(); // Render 404 page when no blog is found
@@ -97,31 +68,35 @@ export default async function SlugPage({ params }) {
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
 
-  const formattedDate = formatDate(blog.date);
-  const formattedTitle = blog.title.rendered
+  const formattedDate = formatDate(blog.created_at);
+  const formattedTitle = blog.title
     .replace(/&#8217;/g, "'")
     .replace(/&#8220;/g, "“")
     .replace(/&#8221;/g, "”")
     .replace(/&#038;/g, "&");
-  const headerImg = blog?.yoast_head_json?.og_image?.[0]?.url;
   const words = formattedTitle.split(" ");
+  const headerImg = blog.banner_img;
   const halfwayIndex = Math.ceil(words.length / 2); // Calculate halfway point, rounding up for odd lengths
-
   const firstHalf = words.slice(0, halfwayIndex).join(" ");
   const secondHalf = words.slice(halfwayIndex).join(" ");
+  const cleanContent = (content) => {
+    if (!content) return "";
+    // Replace empty <p></p> with <br /> tag
+    return content.replace(/<p><\/p>/g, "<br /><br />");
+  };
 
   return (
     <>
       <Navbar />
       <div className="w-full z-40 bg-white">
         <div className="h-[240px] md:h-[71vh] w-full bg-black relative">
-           
-          <div
-            style={{
-              backgroundImage: `url(${headerImg})`,
-            }}
-            className="absolute top-0 left-0 right-0 bottom-0 opacity-30 z-0 bg-no-repeat bg-cover"
-          ></div>
+          <Image
+            src={school}
+            alt=""
+            width={"10000"}
+            height={"100"}
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="min-h-fit py-6 md:py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-6 mx-auto">
@@ -136,10 +111,13 @@ export default async function SlugPage({ params }) {
       </div>
       <div className="blog-page-content !text-black">
         <>
-          <h6 className="text-black">Published on {formattedDate}</h6>
+          <h6 className="text-black">
+            Published on {formattedDate} by {blog.author_name}
+          </h6>
+          <TableOfContent slug={slug} />
           <div
             className="text-black"
-            dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }}
+            dangerouslySetInnerHTML={{ __html: cleanContent(blog?.content) }}
           />
         </>
       </div>
