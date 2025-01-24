@@ -47,8 +47,29 @@ module.exports = {
         awardImageHover: "awardImageHover 0.5s ease 0.5s",
         bannerImageFadeShow: "bannerImageFadeShow 0.8s linear",
         bannerImageFadeHide: "bannerImageFadeHide 0.8s linear",
+        banner: "banner 18s ease-in infinite",
       },
       keyframes: {
+        banner: {
+          "0%": {
+            backgroundImage: `url(../public/Homepage/BannerHome/BannerImage1.webp)`,
+          },
+          "20%": {
+            backgroundImage: `url(../public/Homepage/BannerHome/BannerImage2.webp)`,
+          },
+          "40%": {
+            backgroundImage: `url(../public/Homepage/BannerHome/BannerImage3.webp)`,
+          },
+          "60%": {
+            backgroundImage: `url(../public/Homepage/BannerHome/BannerImage4.webp)`,
+          },
+          "80%": {
+            backgroundImage: `url(../public/Homepage/BannerHome/BannerImage5.webp)`,
+          },
+          "100%": {
+            backgroundImage: `url(../public/Homepage/BannerHome/BannerImage6.webp)`,
+          },
+        },
         expandCheckpoint: {
           "0%": {
             width: "1rem",

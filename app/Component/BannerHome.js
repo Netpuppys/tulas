@@ -9,13 +9,14 @@ import bannerImage2 from "../../public/Homepage/BannerHome/BannerImage2.webp";
 import bannerImage3 from "../../public/Homepage/BannerHome/BannerImage3.webp";
 import bannerImage4 from "../../public/Homepage/BannerHome/BannerImage4.webp";
 import bannerImage5 from "../../public/Homepage/BannerHome/BannerImage5.webp";
-
+import bannerImage6 from "../../public/Homepage/BannerHome/BannerImage6.webp";
 const bannerImages = [
   bannerImage1,
   bannerImage2,
   bannerImage3,
   bannerImage4,
   bannerImage5,
+  bannerImage6,
 ];
 const title = (
   <>
@@ -63,12 +64,9 @@ function BannerHome({ isChecked }) {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full h-screen relative bg-black bg-opacity-50 flex items-start z-0"
+      className="w-full aspect-[1/1] md:aspect-auto md:h-screen transition-all duration-1000 relative bg-black bg-opacity-50 flex items-start z-0"
     >
-      {/* background */}
-      {/* <div
-        className={`z-10 w-full h-screen relative duration-300 ease-in overflow-hidden `}
-      ></div> */}
+      {/*  
       <div className="flex z-10 flex-col self-center items-center pt-4 absolute top-1/2 gap-2 transform -translate-y-1/2 right-2">
         {bannerImages.map((_, index) => (
           <div
@@ -96,10 +94,10 @@ function BannerHome({ isChecked }) {
         ${isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"}
         `}
       >
-        <h2 className="text-[38px] md:text-[clamp(20px,4.2vw,70px)] text-white z-10 font-[CarotSlab]">
+        <h2 className="text-[38px] md:text-[clamp(20px,4.2vw,70px)] text-white z-10 leading-[1.1] font-[CarotSlab]">
           {title}
         </h2>
-      </div>
+      </div>*/}
       <button
         onClick={handleScrollArrow}
         className="hidden md:block bottom-10 right-10 absolute z-10 w-[100px] aspect-square"

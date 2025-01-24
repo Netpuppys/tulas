@@ -92,6 +92,30 @@ span {
   width: 50%;
   transform: translate(13.5px, -4.5px) rotatez(45deg);
 }
+.banner-animation {
+  animation: banner-animate 40s ease-in infinite;
+}
+
+@keyframes banner-animate {
+  0% {
+    background-image: url("../public/Homepage/BannerHome/BannerImage1.webp");
+  }
+  20% {
+    background-image: url("../public/Homepage/BannerHome/BannerImage2.webp");
+  }
+  40% {
+    background-image: url("../public/Homepage/BannerHome/BannerImage3.webp");
+  }
+  60% {
+    background-image: url("../public/Homepage/BannerHome/BannerImage4.webp");
+  }
+  80% {
+    background-image: url("../public/Homepage/BannerHome/BannerImage5.webp");
+  }
+  100% {
+    background-image: url("../public/Homepage/BannerHome/BannerImage6.webp");
+  }
+}
 .backgroundScroll {
   background: linear-gradient(
       0deg,
