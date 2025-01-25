@@ -13,6 +13,7 @@ import Link from "next/link";
 
 function AnnualReport() {
   const button = [
+    // { title: "Annual Report 2023-2024", linkTo: AnnualReport2022 },
     { title: "Annual Report 2022-2023", linkTo: AnnualReport2022 },
     { title: "Annual Report 2021-2022", linkTo: AnnualReport2021 },
     { title: "Annual Report 2020-2021", linkTo: AnnualReport2020 },
@@ -55,7 +56,7 @@ function AnnualReport() {
               key={index}
               target="_blank"
               href={`${button.linkTo}`}
-              className="py-2 w-[210px] md:w-[400px] rounded-full bg-white text-[clamp(15px,1.2vw,50px)] text-[#007A83]"
+              className="py-2 w-[210px] md:w-[400px] rounded-full bg-white text-center text-[clamp(15px,1.2vw,50px)] text-[#007A83]"
             >
               {button.title}
             </Link>

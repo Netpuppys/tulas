@@ -1,6 +1,7 @@
 import Plagiarism from "../public/research/plagiarism-policy.pdf";
 import Research_Remuneration_Form from "../public/research/Research_Remuneration_Form.pdf";
 import NewResearchPolicy from "../public/research/NewResearchPolicy.pdf";
+import Organogram from "../public/FooterPDf/Organogram.pdf";
 const sitemap = [
   {
     title: "Home",
@@ -13,6 +14,11 @@ const sitemap = [
       {
         title: "About Tula's",
         linkTo: "/about/",
+      },
+      {
+        title: "Organogram",
+        linkTo: Organogram,
+        target: "_blank",
       },
       {
         title: "Management Messages",
@@ -225,7 +231,7 @@ const sitemap = [
         title: "Institute Video",
         linkTo:
           "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view",
-          target: "_blank",
+        target: "_blank",
       },
     ],
   },

@@ -7,6 +7,10 @@ import background from "../../public/footer/background.png";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import { GoDownload } from "react-icons/go";
+import Alumni23 from "../../public/FooterPDf/Alumni23.pdf";
+import Employers23 from "../../public/FooterPDf/Employers23.pdf";
+import students23 from "../../public/FooterPDf/students23.pdf";
+import Teacher23 from "../../public/FooterPDf/Teacher23.pdf";
 import Alumni22 from "../../public/FooterPDf/Alumni22.pdf";
 import Employers22 from "../../public/FooterPDf/Employers22.pdf";
 import students22 from "../../public/FooterPDf/students22.pdf";
@@ -37,6 +41,24 @@ import Link from "next/link";
 
 function Feedback() {
   const button = [
+    {
+      title: "Feedback 2023-2024",
+      nestedLink: [
+        { title: "Alumni Feedback", linkTo: Alumni23 },
+        {
+          title: "Employers Feedback",
+          linkTo: Employers23,
+        },
+        {
+          title: "Students Feedback",
+          linkTo: students23,
+        },
+        {
+          title: "Teachers Feedback",
+          linkTo: Teacher23,
+        },
+      ],
+    },
     {
       title: "Feedback 2022-2023",
       nestedLink: [
@@ -173,7 +195,7 @@ function Feedback() {
           {button.map((button, index) => (
             <div
               key={index}
-              className="py-8 w-[95%] md:w-[85%] px-[2%] md:px-[6%] border border-white rounded-2xl bg-transparent text-white"
+              className="py-8 w-[90%] md:w-[85%] px-[5%] md:px-[6%] border border-white rounded-2xl bg-transparent text-white"
             >
               <h3 className="border-l-2 md:border-l-4 border-white font-[TTChocolatesBold] font-medium mb-8 rounded-md px-2 md:px-4 text-[clamp(18px,2.5vw,50px)]">
                 {button.title}

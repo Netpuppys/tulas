@@ -6,7 +6,10 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import BannerImg from "../../public/infrastructure/library/bannerImg.png";
 import background from "../../public/research/r-and-cell/background.png";
-import BestPractices from "../../public/FooterPDf/BestPractices.pdf";
+import BestPractices21 from "../../public/FooterPDf/BestPractices21.pdf";
+import BestPractices22 from "../../public/FooterPDf/BestPractices22.pdf";
+import BestPractices23 from "../../public/FooterPDf/BestPractices23.pdf";
+
 import { UtmContext } from "@/component/utmParams";
 
 function IQAC() {
@@ -19,7 +22,9 @@ function IQAC() {
     { title: "Annual Report", linkTo: "/annual-report/" },
     { title: "Audited Statements", linkTo: "/audit-statements/" },
     { title: "Feedback", linkTo: "/feedback/" },
-    { title: "Best Practices", linkTo: BestPractices },
+    { title: "Best Practices 2021-22", linkTo: BestPractices21 },
+    { title: "Best Practices 2022-23", linkTo: BestPractices22 },
+    { title: "Best Practices 2023-24", linkTo: BestPractices23 },
   ];
   return (
     <>

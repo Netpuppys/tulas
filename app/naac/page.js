@@ -10,11 +10,13 @@ import AQAR from "../../public/FooterPDf/AQAR.pdf";
 import SSR from "../../public/FooterPDf/SSR.pdf";
 import IIQA from "../../public/FooterPDf/IIQA.pdf";
 import STRATEGIC from "../../public/FooterPDf/STRATEGIC.pdf";
+import STRATEGICplan from "../../public/FooterPDf/STRATEGICplan.pdf";
 import Link from "next/link";
 
 function NAAC() {
   const button = [
-    { title: "Strategic Plan", linkTo: STRATEGIC },
+    { title: "Strategic Plan 2023-24", linkTo: STRATEGICplan },
+    { title: "Strategic Plan 2022-23", linkTo: STRATEGIC },
     { title: "IIQA", linkTo: IIQA },
     { title: "SSR", linkTo: SSR },
     { title: "AQAR", linkTo: AQAR },
@@ -55,7 +57,7 @@ function NAAC() {
               target="_blank"
               key={index}
               href={`${button.linkTo}`}
-              className="py-2 w-[210px] md:w-[400px] rounded-full bg-white text-[clamp(15px,1.2vw,50px)] text-[#007A83]"
+              className="py-2 w-[210px] text-center md:w-[400px] rounded-full bg-white text-[clamp(15px,1.2vw,50px)] text-[#007A83]"
             >
               {button.title}
             </Link>
