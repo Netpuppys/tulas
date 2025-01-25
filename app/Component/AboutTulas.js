@@ -11,14 +11,14 @@ import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 const aboutTulas = (
   <>
-    Tula's Institute is dedicated to providing top-notch education, preparing
-    students for success in their professional careers.
+    <strong className="text-[#007A83]">Tula's Institute</strong> is dedicated to
+    providing top-notch education, preparing students for success in their
+    professional careers.
     <br />
-    This commitment to excellence has earned Tula’s Institute prestigious
+    This commitment to excellence has earned{" "}
+    <strong className="text-[#007A83]">Tula's Institute</strong> prestigious
     accolades:
-    <br />
-    <br />
-    <ul className="list-disc ml-5">
+    <ul className="list-disc ml-5 mt-3">
       <li>
         Ranked among the Top 50 Private Colleges in India for eight consecutive
         years (2016–2024)
@@ -228,7 +228,7 @@ function AboutTulas() {
   return (
     <div
       id="2"
-      className="bg-[#3d001b] flex flex-col-reverse md:flex-row  md:gap-0 relative justify-between px-4 md:px-8 py-8 lg:px-24 md:py-10 items-center"
+      className="flex flex-col-reverse md:flex-row md:gap-[13%] relative px-4 py-8 md:px-[10%] md:py-[4%] justify-between items-center"
     >
       {isOtpSent && (
         <div className="fixed w-screen h-screen top-0 left-0 z-50 flex items-center justify-center flex-col">
@@ -300,18 +300,21 @@ function AboutTulas() {
           </div>
         </div>
       )}
-      <div className="w-full px-6 md:px-0 md:w-[50%] py-10 md:py-20">
-        <h3 className="text-[#fff] font-[TTChocolates] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] ml-0 mr-auto">
+      <div className="w-full px-6 md:px-0 md:w-[50%] pt-8 md:py-0">
+        <h2 className="text-[#3A3A3A] text-[clamp(15px,6vw,30px)] pb-4 md:pb-[1%] font-[CarotSlab] md:text-[clamp(10px,2.5vw,50px)] leading-tight">
+          About <span className="text-[#760135]">TULA’s</span>
+        </h2>
+        <h3 className="text-[#6F6C6C] font-[TTChocolatesBold] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.2vw,45px)] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>
-      <div className="w-full md:w-[50%] py-8 md:py-5 flex flex-col justify-center items-center">
-        <div className="max-w-[478px] w-full bg-[#D9d9d9] overflow-hidden bg-opacity-20 backdrop-blur-xl h-fit mx-auto border-2 border-white rounded-2xl">
+      <div className="w-full md:w-[40%]  flex flex-col justify-center items-center">
+        <div className="w-full max-w-[500px] bg-[#760135] overflow-hidden backdrop-blur-xl h-fit mx-auto rounded-2xl">
           <form
             className="w-full h-full bg-black bg-opacity-25 px-5"
             onSubmit={handleSubmit}
           >
-            <h3 className="text-center text-white text-[clamp(18px,1.3vw,45px)] w-full py-10 pb-6">
+            <h3 className="text-center text-white text-[clamp(15px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.5vw,45px)] w-full py-6">
               Enquire Now
             </h3>
             <input
@@ -320,7 +323,7 @@ function AboutTulas() {
               value={formData.FirstName}
               onChange={(e) => handleChange("FirstName", e.target.value)}
               required
-              className="w-full px-5 py-3 border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
+              className="w-full px-5 py-2 border-none focus:outline-none rounded-[3px] text-[#161616] bg-[#E9E9E9] placeholder:text-[#161616] mb-2"
             />
             <input
               type="Email"
@@ -328,9 +331,9 @@ function AboutTulas() {
               value={formData.Email}
               onChange={(e) => handleChange("Email", e.target.value)}
               required
-              className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-white bg-[#007A83] placeholder:text-[#D9D9D9] mb-3"
+              className="w-full px-5 py-2 text-base border-none focus:outline-none rounded-[3px] text-[#161616] bg-[#E9E9E9] placeholder:text-[#161616] mb-2"
             />
-            <div className="mb-3 flex flex-col xl:flex-row gap-3 xl:gap-7">
+            <div className="mb-2 flex flex-col xl:flex-row gap-2">
               <PhoneInput
                 ref={mobileInputRef}
                 country={"in"}
@@ -350,9 +353,9 @@ function AboutTulas() {
                   border: "none",
                   fontSize: "1rem",
                   lineHeight: "1.5rem",
-                  backgroundColor: "#007A83",
-                  padding: "1.50rem 3.25rem",
-                  color: "#D9D9D9",
+                  backgroundColor: "#E9E9E9",
+                  padding: "1.25rem 3.25rem",
+                  color: "#161616",
                   outline: "none",
                 }}
                 containerStyle={{
@@ -362,6 +365,7 @@ function AboutTulas() {
                   backgroundColor: "white",
                   border: "none",
                   width: "40px",
+                  height: "2.5rem",
                   color: "black", // Flag icon color
                 }}
               />
@@ -369,22 +373,22 @@ function AboutTulas() {
                 type="button"
                 disabled={verified || !isPhoneValid}
                 onClick={sendOtp}
-                className={`w-full xl:w-[40%] bg-white rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-[#007A83] ${
+                className={`w-full xl:w-[40%] bg-black rounded-[3px] flex items-center justify-center xl:px-4 py-2 font-bold text-white ${
                   isPhoneValid && !verified
                     ? "cursor-pointer"
-                    : "opacity-50 cursor-not-allowed"
+                    : "opacity-100 cursor-not-allowed"
                 }`}
               >
                 {verified ? "Verified" : "Send OTP"}
               </button>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-3 mb-3">
+            <div className="flex flex-col md:flex-row gap-2 mb-2">
               <select
                 value={formData.State}
                 onChange={handleStateChange}
                 required
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
+                className="w-full md:w-1/2 classic px-5 py-2 h-10 border-none focus:outline-none rounded-[3px] text-[#161616] bg-[#E9E9E9] placeholder:text-[#161616]"
               >
                 <option value="">Select State</option>
                 {state
@@ -400,8 +404,9 @@ function AboutTulas() {
                 value={formData.City}
                 onChange={(e) => handleCityChange(e.target.value)}
                 required
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
                 disabled={!formData.State}
+                title={!formData.State ? "Please Select State" : ""}
+                className="w-full md:w-1/2 classic disabled:opacity-100 disabled:cursor-not-allowed px-5 py-2 h-10 border-none focus:outline-none rounded-[3px] text-[#161616] bg-[#E9E9E9] placeholder:text-[#161616]"
               >
                 <option value="">Select City</option>
                 {formData.State &&
@@ -415,12 +420,12 @@ function AboutTulas() {
                     ))}
               </select>
             </div>
-            <div className="flex flex-col md:flex-row gap-3 mb-3">
+            <div className="flex flex-col md:flex-row gap-2 mb-2">
               <select
                 value={formData.Course}
                 onChange={handleCourseChange}
                 required
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
+                className="w-full md:w-1/2 classic px-5 py-2 h-10 border-none focus:outline-none rounded-[3px] text-[#161616] bg-[#E9E9E9] placeholder:text-[#161616]"
               >
                 <option value="">Select Course</option>
                 {courses.map((Course) => (
@@ -433,8 +438,9 @@ function AboutTulas() {
                 value={formData.Center}
                 onChange={(e) => handleCenterChange(e.target.value)}
                 required
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#D9D9D9] bg-[#007A83] placeholder:text-[#D9D9D9]"
                 disabled={!formData.Course}
+                title={!formData.Course ? "Please Select Course" : ""}
+                className="w-full md:w-1/2 classic disabled:opacity-100 disabled:cursor-not-allowed px-5 py-2 h-10 border-none focus:outline-none rounded-[3px] text-[#161616] bg-[#E9E9E9] placeholder:text-[#161616]"
               >
                 <option value="">Select Specialization</option>
                 {formData.Course &&
@@ -446,7 +452,7 @@ function AboutTulas() {
               </select>
             </div>
 
-            <div className="flex items-center justify-center gap-4 mb-3">
+            <div className="flex items-center justify-center gap-2 py-[2%] mb-2">
               <input
                 id="consent1"
                 type="checkbox"
@@ -457,7 +463,7 @@ function AboutTulas() {
               />
               <label
                 for="consent1"
-                className="flex items-center cursor-pointer text-sm"
+                className="flex items-center cursor-pointer text-[clamp(5px,3vw,30px)] md:text-[clamp(6px,0.8vw,45px)]"
               >
                 I Agree to receive information regarding my submitted
                 application by signing up on Tula's Institute
@@ -468,7 +474,7 @@ function AboutTulas() {
               type="submit"
               disabled={!verified}
               title={verified ? "" : "Please Verify Mobile Number"}
-              className={`w-full bg-white text-[#007A83] cursor-pointer py-3 rounded-[3px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold mb-10`}
+              className={`w-full bg-white text-[#007A83] cursor-pointer py-2 rounded-[3px] disabled:opacity-100 disabled:cursor-not-allowed font-semibold mb-10`}
             >
               Submit
             </button>

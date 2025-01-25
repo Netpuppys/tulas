@@ -18,12 +18,32 @@ const bannerImages = [
   bannerImage5,
   bannerImage6,
 ];
-const title = (
-  <>
+const title = [
+  <p className="text-white">
+    <span className="text-[#E69706]">UNLOCK</span> NEW <br />
+    PATHWAYS TO <span className="text-[#E69706]">SUCCESS</span>
+  </p>,
+  <p className="text-black">
+    <span className="text-[#760135]">UNLOCK</span> NEW <br />
+    PATHWAYS TO <span className="text-[#760135]">SUCCESS</span>
+  </p>,
+  <p className="text-[#E69706]">
+    <span className="text-[#760135]">UNLOCK</span> NEW <br />
+    PATHWAYS TO <span className="text-[#760135]">SUCCESS</span>
+  </p>,
+  <p className="text-white">
     <span className="text-[#007A83]">UNLOCK</span> NEW <br />
     PATHWAYS TO <span className="text-[#007A83]">SUCCESS</span>
-  </>
-);
+  </p>,
+  <p className="text-white">
+    <span className="text-[#E69706]">UNLOCK</span> NEW <br />
+    PATHWAYS TO <span className="text-[#E69706]">SUCCESS</span>
+  </p>,
+  <p className="text-white">
+    <span className="text-[#007A83]">UNLOCK</span> NEW <br />
+    PATHWAYS TO <span className="text-[#007A83]">SUCCESS</span>
+  </p>,
+];
 
 function BannerHome({ isChecked }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,17 +107,17 @@ function BannerHome({ isChecked }) {
             ></div>
           </div>
         ))}
-      </div>
+      </div>*/}
 
       <div
         className={`bottom-4 md:bottom-10 md:pr-[140px] z-10 absolute mx-4 md:ml-16 
         ${isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"}
         `}
       >
-        <h2 className="text-[38px] md:text-[clamp(20px,4.2vw,70px)] text-white z-10 leading-[1.1] font-[CarotSlab]">
-          {title}
+        <h2 className="text-[clamp(20px,7vw,70px)] md:text-[clamp(20px,4.2vw,70px)] z-10 leading-[1.1] font-[CarotSlab]">
+          {title[currentIndex]}
         </h2>
-      </div>*/}
+      </div>
       <button
         onClick={handleScrollArrow}
         className="hidden md:block bottom-10 right-10 absolute z-10 w-[100px] aspect-square"
