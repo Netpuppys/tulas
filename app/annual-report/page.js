@@ -6,6 +6,7 @@ import Image from "next/image";
 import React from "react";
 import BannerImg from "../../public/infrastructure/library/bannerImg.png";
 import background from "../../public/footer/background.png";
+import AnnualReport2023 from "../../public/FooterPDf/AnnualReport2023.pdf";
 import AnnualReport2022 from "../../public/FooterPDf/AnnualReport2022.pdf";
 import AnnualReport2021 from "../../public/FooterPDf/AnnualReport2021.pdf";
 import AnnualReport2020 from "../../public/FooterPDf/AnnualReport2020.pdf";
@@ -13,7 +14,7 @@ import Link from "next/link";
 
 function AnnualReport() {
   const button = [
-    // { title: "Annual Report 2023-2024", linkTo: AnnualReport2022 },
+    { title: "Annual Report 2023-2024", linkTo: AnnualReport2023 },
     { title: "Annual Report 2022-2023", linkTo: AnnualReport2022 },
     { title: "Annual Report 2021-2022", linkTo: AnnualReport2021 },
     { title: "Annual Report 2020-2021", linkTo: AnnualReport2020 },
