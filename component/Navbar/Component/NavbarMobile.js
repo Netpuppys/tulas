@@ -11,7 +11,7 @@ function NavbarMobile({ isChecked, utmParams }) {
   const [showSubSubSubHeaders, setShowSubSubSubHeaders] = useState();
   return (
     <div
-      className={`block mdNavbar:hidden absolute w-full max-w-[500px] top-0 bg-white h-screen ${
+      className={`block mdNavbar:hidden pointer-events-auto absolute w-full max-w-[500px] top-0 bg-white h-screen ${
         isChecked
           ? "animate-translateLeftMenu left-0 block"
           : "animate-translateRightMenu left-[-100%] hidden"

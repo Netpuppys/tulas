@@ -52,13 +52,13 @@ function NavbarDesktop({
     <>
       {isChecked && (
         <div
-          className={`hidden mdNavbar:block w-[440px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
+          className={`hidden pointer-events-auto mdNavbar:block w-[440px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
             isChecked
               ? "animate-translateLeftMenu opacity-100 left-0"
               : "animate-translateRightMenu opacity-0 left-[-100%]"
           }`}
         >
-          <div className="w-full h-[calc(100vh-280px)] relative top-[155px] overflow-auto">
+          <div className="w-full h-[calc(100vh-280px)] relative top-[120px] overflow-auto">
             {sitemap.map((item, index) => (
               <div
                 className="border-t last:border-b border-[#C5C5C5]   flex flex-col w-full h-fit"
@@ -115,7 +115,7 @@ function NavbarDesktop({
 
       {activeLink !== null && (
         <div
-          className={`hidden mdNavbar:block w-[440px] min-w-[440px] bg-white absolute top-0 h-screen overflow-y-scroll ${
+          className={`hidden pointer-events-auto mdNavbar:block w-[440px] min-w-[440px] bg-white absolute top-0 h-screen overflow-y-scroll ${
             nestedLinksVisible
               ? "animate-translateLeftMenu left-[440px]"
               : "animate-translateRightMenu -left-full"

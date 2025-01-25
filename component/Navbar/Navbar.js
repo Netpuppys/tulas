@@ -109,8 +109,8 @@ function Navbar({
         </button>
       </div>
       <div
-        className={`mdNavbar:px-10 w-full h-full py-2 ${
-          !scrolled ? "md:bg-[#007A83] relative" : ""
+        className={`mdNavbar:px-10 w-full relative h-full py-2 ${
+          !scrolled ? "md:bg-[#007A83] " : ""
         }  flex flex-col justify-center`}
       >
         {/* top bar */}
