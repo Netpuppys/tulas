@@ -6,7 +6,8 @@ import BannerImg from "../../public/infrastructure/library/bannerImg.png";
 import background from "../../public/footer/background.png";
 import Image from "next/image";
 import Footer from "@/component/Footer";
-import AQAR from "../../public/FooterPDf/AQAR.pdf";
+import AQAR21 from "../../public/FooterPDf/AQAR21.pdf";
+import AQAR22 from "../../public/FooterPDf/AQAR22.pdf";
 import SSR from "../../public/FooterPDf/SSR.pdf";
 import IIQA from "../../public/FooterPDf/IIQA.pdf";
 import STRATEGIC from "../../public/FooterPDf/STRATEGIC.pdf";
@@ -19,7 +20,8 @@ function NAAC() {
     { title: "Strategic Plan 2022-23", linkTo: STRATEGIC },
     { title: "IIQA", linkTo: IIQA },
     { title: "SSR", linkTo: SSR },
-    { title: "AQAR", linkTo: AQAR },
+    { title: "AQAR 2021-22", linkTo: AQAR21 },
+    { title: "AQAR 2022-23", linkTo: AQAR22 },
   ];
   return (
     <>
