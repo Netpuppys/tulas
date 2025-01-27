@@ -157,6 +157,7 @@ const cardsFaculty = [
 ];
 
 const InternalSection = () => {
+
     return (
         <div className="w-full flex flex-col items-center justify-center gap-10 py-10 md:py-20 relative z-20">
             <div className="w-fit h-fit relative">
@@ -170,17 +171,15 @@ const InternalSection = () => {
                 {cards.map((card, index) => (
                     <div
                         key={index}
-                        // style={{ opacity: scrollY/1000 }}
                         className={`flex flex-col w-[45%] hover:opacity-90 grid-item hover:scale-105 transition-all ease-linear duration-300 md:max-w-[265px] cursor-pointer`}
-                        // onClick={() => handleCardClick(card)}
                     >
-                        <div className="rounded-xl md:rounded-3xl relative overflow- image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
+                        <div className="rounded-xl md:rounded-3xl relative image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
                             <Image
                                 src={card.image}
                                 alt=""
-                                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
+                                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover"
                             />
-                            <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
+                            <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
                                 <p className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[1.125rem] text-[#D9D9D9]">
                                     {card.description}
                                 </p>
@@ -200,17 +199,15 @@ const InternalSection = () => {
                 {cardsFaculty.map((card, index) => (
                     <div
                         key={index}
-                        // style={{ opacity: scrollY/1000 }}
                         className={`flex flex-col w-[45%] hover:opacity-90 grid-item hover:scale-105 transition-all ease-linear duration-300 md:max-w-[265px] cursor-pointer`}
-                        // onClick={() => handleCardClick(card)}
                     >
                         <div className="rounded-xl md:rounded-3xl relative overflow- image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
                             <Image
                                 src={card.image}
                                 alt=""
-                                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
+                                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover"
                             />
-                            <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
+                            <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
                                 <p className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[1.125rem] text-[#D9D9D9]">
                                     {card.description}
                                 </p>
@@ -234,44 +231,7 @@ function MeetOurManagement({ parentRef }) {
   const childRef = useRef(null);
 
   const { isMobile } = useMobile();
-
-  const [index, setIndex] = useState(0);
-  // const [width, setWidth] = useState(352);
-  const [scrollY, setScrollY] = useState(0);
-  const [componentHeight, setComponentHeight] = useState(0);
-  const [distanceFromTop, setDistanceFromTop] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(0);
-  const [changePositionValue, setChangePositionValue] = useState();
-  const width = isMobile ? windowWidth - 96 : windowWidth / 5;
   
-  const handleForwardClick = () => {
-    if (index > 0) {
-      setIndex((prev) => prev - 1);
-    }
-  };
-
-  const handleBackClick = () => {
-    if (index < images.length - 1) {
-      setIndex((prev) => prev + 1);
-    }
-  };
-
-  const changePosition = () => {
-    if (typeof window !== "undefined") {
-      // if (!window) {
-      //   return;
-      // }
-      const compHeight = window.innerHeight * 3;
-      if (scrollY > 0 && scrollY < compHeight) {
-        // console.log("true");
-        return true;
-      }
-
-      // console.log("false");
-      return false;
-    }
-  };
-
   const [clipPathValue, setClipPathValue] = useState(25); // Initial clip-path value
   
   const { ref, inView, entry } = useInView({
@@ -290,18 +250,29 @@ function MeetOurManagement({ parentRef }) {
       <div ref={childRef} className="relative w-full h-fit min-h-[100vh]">
         <section
             style={{
-                clipPath: `circle(${clipPathValue}% at center center)`,
+                clipPath: `circle(${clipPathValue*(isMobile? 1.5 : 1)}% at center center)`,
                 transition: "clip-path 0.3s ease-in-out", // Smooth transition for clip-path
             }}
             ref={ref}
-            className={`top-0 w-full h-fit hidden md:flex clip-circle-50px section backgroundScroll`}
+            className={`top-0 w-full h-fit flex clip-circle-50px section backgroundScroll`}
         >
             <InternalSection />
         </section>
 
-        <div className="md:hidden bg-[#760135] w-full h-fit">
+        {/* <section
+            style={{
+                clipPath: `circle(${clipPathValue*1.5}% at center center)`,
+                transition: "clip-path 0.3s ease-in-out", // Smooth transition for clip-path
+            }}
+            ref={ref}
+            className={`top-0 w-full h-fit flex md:hidden clip-circle-50px section backgroundScroll`}
+        >
             <InternalSection />
-        </div>
+        </section> */}
+
+        {/* <div className="hidden bg-[#760135] w-full h-fit">
+            <InternalSection />
+        </div> */}
       </div>
     </div>
   );
