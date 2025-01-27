@@ -4,6 +4,7 @@ import Business from "../../public/Homepage/Courses/Business.png";
 import Agriculture from "../../public/Homepage/Courses/Agriculture.png";
 import MassCoummunication from "../../public/Homepage/Courses/MassCommunication.png";
 import computerApplication from "../../public/Homepage/Courses/ComputerApplication.png";
+import Pharmacy from "../../public/Homepage/Courses/Pharmacy.png";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
@@ -215,6 +216,32 @@ function CardCourses() {
         },
       ],
     },
+    {
+      src: Pharmacy,
+      title: "TULA'S INSTITUTE OF PHARMACY",
+      degrees: [
+        {
+          name: "B.Pharma",
+          link: "/courses/bpharma/",
+          branches: [
+            {
+              name: "",
+              linkTo: "",
+            },
+          ],
+        },
+        {
+          name: "D.Pharma",
+          link: "/courses/dpharma/",
+          branches: [
+            {
+              name: "",
+              linkTo: "",
+            },
+          ],
+        },
+      ],
+    },
   ];
   const { utmParams } = useContext(UtmContext);
   return (
@@ -222,16 +249,16 @@ function CardCourses() {
       {cardsCourses.map((image, index) => (
         <div className="w-[90%] md:w-fit" key={index}>
           <div
-            className={`w-full md:w-[17vw] group card-group h-[400px] md:h-full overflow-hidden shadow-lg transform transition-all duration-500`}
+            className={`w-full md:w-[15vw] group card-group h-[400px] md:h-full overflow-hidden shadow-lg transform transition-all duration-500`}
           >
             <Image
               src={image.src}
               alt=""
-              className="z-50 object-cover w-full h-full group-hover:brightness-50"
+              className="z-50 object-cover w-full h-full brightness-50 md:brightness-100 md:group-hover:brightness-50"
               width={270}
               height={510}
             />
-            <div className="w-[120%] opacity-100 md:opacity-0 h-full bg-gradient-custom-black absolute bottom-0 left-1/2 -translate-x-1/2 rounded-3xl z-20"></div>
+            <div className="w-full opacity-100 md:opacity-0 h-full bg-gradient-custom-black absolute bottom-0 left-1/2 -translate-x-1/2 z-20"></div>
             <div className="absolute w-full h-fit overflow-scroll z-30 bottom-0 p-2 flex flex-col gap-4">
               <div className="text-white slide-in w-fit text-left font-[BenchNine] text-3xl">
                 {image.title}
@@ -239,7 +266,7 @@ function CardCourses() {
               {image.degrees.map((degree, degreeIndex) => (
                 <div
                   key={degreeIndex}
-                  className="hidden slide-in text-white w-fit text-left"
+                  className="md:hidden slide-in text-white w-fit text-left"
                 >
                   <Link
                     href={`${degree.link}${utmParams}`}

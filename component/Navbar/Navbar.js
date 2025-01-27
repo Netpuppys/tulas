@@ -95,23 +95,29 @@ function Navbar({
     }
   };
   return (
-    <div className="fixed w-full pointer-events-none z-[9999]">
-      <div className="w-full pointer-events-auto hidden mdNavbar:flex items-center justify-center gap-4 top-0 bg-[#3D001B] h-fit py-2">
-        <a
-          className="flex gap-2 items-center justify-center"
-          href="tel:+91-9837983721"
-        >
-          <Image src={phoneCallGif} alt="" className="w-5 h-full" />
-          Admissions Helpline Number - +91-9837983721
-        </a>
-        <button className="px-8 bg-white text-[#3D001B] rounded-full">
-          Enquire Now
-        </button>
+    <div className={`fixed w-full pointer-events-none z-[9999]`}>
+      <div className="w-full pointer-events-auto md:bg-[rgba(19,19,19,0.50)] md:backdrop-blur-xl hidden mdNavbar:flex">
+        <div className="w-[95%] mx-auto flex items-center justify-center gap-4 top-0 border-b-[0.5px] border-[#9A9A9A] h-fit py-2">
+          <a
+            className="flex gap-2 items-center justify-center"
+            href="tel:+91-9837983721"
+          >
+            <Image src={phoneCallGif} alt="" className="w-5 h-full" />
+            Admissions Helpline Number - +91-9837983721
+          </a>
+          <button
+            className={`px-8  ${
+              !scrolled ? "bg-white text-[#3D001B]" : "bg-[#007A83] text-white"
+            } rounded-full`}
+          >
+            Enquire Now
+          </button>
+        </div>
       </div>
       <div
-        className={`mdNavbar:px-10 w-full relative h-full py-2 ${
-          !scrolled ? "md:bg-[#007A83] " : ""
-        }  flex flex-col justify-center`}
+        className={`mdNavbar:px-10 w-full relative ${
+          !scrolled ? "md:bg-[rgba(19,19,19,0.50)] md:backdrop-blur-xl" : ""
+        } h-full py-2 flex flex-col justify-center`}
       >
         {/* top bar */}
         <div className="hidden h-fit w-full mdNavbar:flex justify-between items-center">

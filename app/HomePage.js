@@ -18,6 +18,7 @@ import Accreditation from "./Component/Accreditation";
 import AwardsCrousel from "./Component/AwardsCrousel";
 import loader from "../public/loading.svg";
 import Image from "next/image";
+import LifeAtTulas from "./Component/LifeAtTulas";
 
 const bannerText = (
   <>
@@ -42,8 +43,7 @@ export default function HomePage() {
   return (
     <>
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
-
-        <Navbar setState={setIsChecked} />
+        <Navbar setState={setIsChecked} fullBanner={true} />
         <BannerHome isChecked={isChecked} />
         {/* <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-full md:max-w-[70%] px-8 mx-auto">
           <h3 className="text-2xl uppercase font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-center mb-6">
@@ -54,6 +54,7 @@ export default function HomePage() {
           </h4>
         </div> */}
         <AboutTulas />
+        <LifeAtTulas />
         <Courses parentRef={parentRef} />
         <WhyTulasScroll parentRef={parentRef} />
         <Accreditation />

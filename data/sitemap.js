@@ -176,7 +176,7 @@ const sitemap = [
         ],
       },
       {
-        title: "Tula's institue of pharmacy",
+        title: "Tula's Institue of Pharmacy",
         linkTo: "#",
         superNestedLinks: [
           {
