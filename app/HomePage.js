@@ -19,6 +19,7 @@ import AwardsCrousel from "./Component/AwardsCrousel";
 import loader from "../public/loading.svg";
 import Image from "next/image";
 import LifeAtTulas from "./Component/LifeAtTulas";
+import MeetOurManagement from "./Component/MeetOurManagement";
 
 const bannerText = (
   <>
@@ -56,7 +57,8 @@ export default function HomePage() {
         <AboutTulas />
         <LifeAtTulas />
         <Courses parentRef={parentRef} />
-        <WhyTulasScroll parentRef={parentRef} />
+        {/* <WhyTulasScroll parentRef={parentRef} /> */}
+        <MeetOurManagement parentRef={parentRef} />
         <Accreditation />
         <Virtual />
         <VirtualTour />
