@@ -2,7 +2,6 @@
 
 import campusLifeImages from "@/data/campusLifeImages";
 import Image from "next/image";
-import { IoIosArrowRoundUp, IoIosArrowRoundDown } from "react-icons/io";
 import { useState, useRef, useEffect } from "react";
 
 const CampusLife = () => {
@@ -13,6 +12,7 @@ const CampusLife = () => {
   const [contWidth, setContWidth] = useState();
   const [albumIndex, setAlbumIndex] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
+  const [autoPlayActive, setAutoPlayActive] = useState(false); // New state for autoplay toggle
 
   useEffect(() => {
     const updateDimensions = () => {
@@ -20,7 +20,6 @@ const CampusLife = () => {
         const { height, width } = contRef.current.getBoundingClientRect();
         setContHeight(height);
         setContWidth(width);
-        // console.log(`Height: ${height}, Width: ${width}`);
       }
     };
 
@@ -36,25 +35,20 @@ const CampusLife = () => {
     };
   }, []);
 
-  const handleAlbumIndex = (index) => {
-    if (index < campusLifeImages.length) {
+  const handleAlbumIndex = (index, startAutoPlay = false) => {
+    setTimeout(() => {
       setAlbumIndex(index);
-      return;
+    }, 500);
+
+    if (index < campusLifeImages.length) {
+      // setImageIndex(0);
+      setAutoPlayActive(startAutoPlay); // Toggle autoplay if "Explore More" is clicked
     }
   };
 
   const handleNextImage = () => {
-    if (imageIndex < campusLifeImages[albumIndex].images.length) {
-      setImageIndex((prev) => prev + 1);
-      return;
-    }
-  };
-
-  const handlePrevImage = () => {
-    if (imageIndex !== 0) {
-      setImageIndex((prev) => prev - 1);
-      return;
-    }
+    const currentAlbumImages = campusLifeImages[albumIndex].images.length;
+    setImageIndex((prev) => (prev + 1) % currentAlbumImages); // Loop to the first image after the last one
   };
 
   useEffect(() => {
@@ -76,6 +70,14 @@ const CampusLife = () => {
       });
     }
   }, [imageIndex, scrollRef, contHeight]);
+
+  useEffect(() => {
+    const autoPlay = setInterval(() => {
+      handleNextImage();
+    }, 3000);
+
+    return () => clearInterval(autoPlay); // Clear interval on unmount
+  }, [albumIndex, imageIndex, autoPlayActive]);
 
   return (
     <div className="w-full flex flex-col items-center justify-start py-0">
@@ -103,82 +105,59 @@ const CampusLife = () => {
                       className="w-full h-full object-cover"
                       alt=""
                     />
-                    <div className="absolute top-0 left-0 w-full h-full z-10 bg-[#007A83] bg-opacity-10"></div>
-                    <div className="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-40"></div>
                   </div>
                 ))}
               </div>
             ))}
           </div>
           {/* up and down btns */}
-          <div className="w-14 z-30 h-fit flex items-center justify-center flex-col gap-2 absolute top-1/2 -translate-y-1/2 right-5 md:right-20">
-            <button
-              onClick={handlePrevImage}
-              disabled={imageIndex === 0 ? true : false}
-              className="w-full aspect-square shadow-2xl disabled:opacity-80 disabled:text-gray-600 rounded-full bg-white flex items-center justify-center text-black text-2xl"
-            >
-              <IoIosArrowRoundUp />
-            </button>
-            <button
-              onClick={handleNextImage}
-              disabled={
-                imageIndex === campusLifeImages[albumIndex].images.length - 1
-                  ? true
-                  : false
-              }
-              className="w-full aspect-square shadow-2xl disabled:opacity-80 disabled:text-gray-600 rounded-full bg-white flex items-center justify-center text-black text-2xl"
-            >
-              <IoIosArrowRoundDown />
-            </button>
-          </div>
         </div>
         {/* bottom selector */}
-        
       </div>
       <div className="w-full z-30 h-28 md:h-40 -mt-[80px] bg-transparent px-4 md:px-5 flex items-center justify-center">
-          <div className="shadow-2xl bg-white max-w-[85rem] w-full h-full flex flex-col items-center justify-center px-5 md:px-14 rounded-xl md:rounded-2xl relative">
-            <button className="absolute -top-8 left-5 uppercase tracking-widest text-xs">
-              explore more
-            </button>
+        <div className="shadow-2xl bg-white max-w-[85rem] w-full h-full flex flex-col items-center justify-center px-5 md:px-14 rounded-xl md:rounded-2xl relative">
+          <button className="absolute -top-8 left-5 uppercase tracking-widest text-xs">
+            explore more
+          </button>
 
-            <div className="w-full flex items-center justify-around">
-              {campusLifeImages.map((item, index) => (
+          <div className="w-full flex items-center justify-around">
+            {campusLifeImages.map((item, index) => (
+              <button
+                key={index}
+                onClick={() => handleAlbumIndex(index)}
+                style={{
+                  transform: `translateY(-5px)`,
+                }}
+                className={`uppercase text-[#050505] font-light text-[0.5rem] md:text-base text-nowrap
+                            w-1/2`}
+              >
+                {item.title}
+              </button>
+            ))}
+          </div>
+
+          <div className="w-full mt-6 relative bg-black bg-opacity-25 h-[0.15rem] rounded-full flex items-center justify-center">
+            <div
+              style={{ width: `${25 * (albumIndex + 1)}%` }}
+              className="h-full bg-black rounded-full absolute z-0 top-0 left-0"
+            ></div>
+            <div className="w-full flex items-center justify-around z-10 h-6 md:h-10">
+              {campusLifeImages.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => handleAlbumIndex(index)}
                   style={{
-                    transform: `translateY(-5px)`,
+                    borderWidth: `${albumIndex < index ? "0px" : "2px"}`,
                   }}
-                  className={`uppercase text-[#050505] font-light text-[0.5rem] md:text-base text-nowrap
-                            w-1/2`}
+                  className="h-full aspect-square rounded-full bg-white p-1 md:p-3 border-black hover:!border-2"
                 >
-                  {item.title}
+                  <div className="w-full h-full bg-black rounded-full"></div>
                 </button>
               ))}
             </div>
-
-            <div className="w-full mt-6 relative bg-black bg-opacity-25 h-[0.15rem] rounded-full flex items-center justify-center">
-              <div
-                style={{ width: `${25 * (albumIndex + 1)}%` }}
-                className="h-full bg-black rounded-full absolute z-0 top-0 left-0"
-              ></div>
-              <div className="w-full flex items-center justify-around z-10 h-6 md:h-10">
-                {campusLifeImages.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => handleAlbumIndex(index)}
-                    style={{
-                      borderWidth: `${albumIndex < index ? "0px" : "2px"}`,
-                    }}
-                    className="h-full aspect-square rounded-full bg-white p-1 md:p-3 border-black hover:!border-2"
-                  >
-                    <div className="w-full h-full bg-black rounded-full"></div>
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
+      </div>
     </div>
   );
 };

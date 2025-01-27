@@ -7,6 +7,7 @@ import students from "../../public/Homepage/Virtual/students.png";
 import faculty from "../../public/Homepage/Virtual/faculty.png";
 import experience from "../../public/Homepage/Virtual/experience.png";
 import alumni from "../../public/Homepage/Virtual/alumni.png";
+import acre from "../../public/Homepage/Virtual/acre.png";
 import Image from "next/image";
 
 function VirtualTour() {
@@ -16,6 +17,7 @@ function VirtualTour() {
     { img: faculty, start: 0, end: 150, title: "FACULTY MEMBERS" },
     { img: experience, start: 0, end: 19, title: "YEARS OF EXPERIENCE" },
     { img: alumni, start: 6000, end: 7000, title: "GLORIOUS ALUMNI" },
+    { img: acre, start: 0, end: 22, title: "ACRES CAMPUS" },
   ]);
   const statsRef = useRef(null);
 
@@ -68,22 +70,22 @@ function VirtualTour() {
 
   return (
     <div>
-      <div className="bg-black">
+      <div className="w-full h-full">
         <Image
-          className="w-full h-[70vh] md:h-screen -z-10 bg-black opacity-70 object-cover"
+          className="w-full h-[50vh] md:h-screen -z-10 object-cover"
           src={BackgroundVirtual}
           alt=""
         />
       </div>
-      <div className="relative w-full h-full">
+      <div className="relative -mt-[110px] w-full h-full">
         <div
-          className="flex -mt-[150px] justify-around backgroundVirtual mx-auto w-[95%] md:w-[80%] py-10 flex-wrap gap-y-5 mb-5"
+          className="flex justify-around backgroundVirtual mx-auto w-[95%] md:w-[80%] px-[4%] py-6 flex-wrap gap-y-5"
           ref={statsRef}
         >
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="w-1/2 md:w-[25%] flex flex-col items-center"
+              className="w-1/2 md:w-[15%] flex flex-col items-center"
             >
               <div className="px-4 py-4 rounded-full border-[#007A83] border shadow-[0px_4px_26px_2px_#007A83]">
                 <Image
@@ -92,11 +94,11 @@ function VirtualTour() {
                   className="w-[55px] h-[55px] "
                 />
               </div>
-              <h3 className="text-[30px] md:text-[40px] text-white textShadow font-[TTChocolatesBold]">
+              <h3 className="text-[clamp(8px,5.5vw,30px)] md:text-[clamp(10px,2.2vw,45px)] text-white textShadow font-[TTChocolatesBold]">
                 {stat.animatedStatNo || stat.start}
                 {"+"}
               </h3>
-              <h3 className="text-[16px] md:text-[18px] text-white font-[TTChocolatesBold]">
+              <h3 className="text-[clamp(8px,3.5vw,30px)] md:text-[clamp(10px,0.9vw,45px)] text-center text-white font-[TTChocolatesBold]">
                 {stat.title}
               </h3>
             </div>

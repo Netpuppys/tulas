@@ -20,6 +20,8 @@ import loader from "../public/loading.svg";
 import Image from "next/image";
 import LifeAtTulas from "./Component/LifeAtTulas";
 import MeetOurManagement from "./Component/MeetOurManagement";
+import Placement from "./Component/Placement";
+import Famous from "./Component/Famous";
 
 const bannerText = (
   <>
@@ -60,8 +62,10 @@ export default function HomePage() {
         {/* <WhyTulasScroll parentRef={parentRef} /> */}
         <MeetOurManagement parentRef={parentRef} />
         <Accreditation />
+        {/* <Placement /> */}
         <Virtual />
         <VirtualTour />
+        {/* <Famous /> */}
         <Video />
         <CampusLife />
         <Testimonials />

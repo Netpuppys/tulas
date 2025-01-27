@@ -93,7 +93,7 @@ const page = () => {
       <div className="w-full bg-white pb-1">
         <TopRecruiter crouselImages={logosArray} />
       </div>
-      <div className="w-full -mt-[6vh]">
+      <div className="w-full">
         <Footer />
       </div>
     </div>

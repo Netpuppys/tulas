@@ -78,30 +78,32 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="relative w-full pt-10 pb-20 md:pb-0 md:pt-0">
+    <div className="relative w-full pt-10 pb-[3.5%] md:pb-0 md:pt-[4%]">
       <div className="absolute bottom-5 w-full md:w-fit right-0 items-center justify-center md:right-5 z-50 flex gap-3">
         {/* Play/Pause Button */}
         <button
           onClick={handlePlayToggle}
-          className="bg-[#007A83] border-2 border-[#007A83] md:hover:bg-white md:hover:text-[#007A83] w-20 h-12 rounded-full flex items-center justify-center text-white text-2xl"
+          className="bg-[#007A83] border-2 border-[#007A83] md:hover:bg-white md:hover:text-[#007A83] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl"
         >
           {isPlaying ? <FaPause /> : <FaPlay />}
         </button>
-
         {/* Mute/Unmute Button */}
         <button
           onClick={handleMuteToggle}
-          className="bg-[#760135] border-2 border-[#760135] md:hover:bg-white md:hover:text-[#760135] w-20 h-12 rounded-full flex items-center justify-center text-white text-2xl"
+          className="bg-[#760135] border-2 border-[#760135] md:hover:bg-white md:hover:text-[#760135] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl"
         >
           {isMuted ? <IoVolumeMute /> : <IoVolumeHigh />}
         </button>
       </div>
 
-      <h3 className="text-[#007A83] text-center uppercase font-[CarotSlab] align-baseline md:pt-20 leading-[0.8] text-[clamp(30px,2.8vw,55px)]">
-        Video Testimonials
-      </h3>
+      <div className="w-full h-full flex items-center justify-center">
+        <h3 className="text-[#2A2A2A] w-fit text-center font-[CarotSlab] align-baseline leading-[0.8] text-[clamp(30px,2.8vw,55px)]">
+          Student Testimonials
+          <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
+        </h3>
+      </div>
 
-      <div className="w-full md:w-[80%] mt-5 md:mt-0 mx-auto h-fit flex items-center justify-center gap-10 md:px-40 md:py-20 relative">
+      <div className="w-full md:w-[80%] mx-auto h-fit flex items-center justify-center gap-10 md:px-[6%] py-6 md:py-[3.5%] relative">
         <button
           id="swiper-prev"
           onClick={() => setIsPlaying(false)}

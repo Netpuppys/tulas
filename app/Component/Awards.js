@@ -182,7 +182,7 @@ const Awards = () => {
   return (
     <div
       ref={ref}
-      className="w-full md:h-screen flex md:flex-row flex-col relative md:-mb-[6vh]"
+      className="w-full md:h-screen flex md:flex-row flex-col relative"
     >
       <div className="w-full md:w-1/2 h-80 via-zinc-50 md:h-full flex items-center justify-start md:justify-center bg-[#230512] md:py-20 relative">
         <p className="md:hidden absolute top-4 left-1/2 -translate-x-1/2 text-3xl font-[carotSlab]">

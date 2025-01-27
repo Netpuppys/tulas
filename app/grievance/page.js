@@ -296,7 +296,7 @@ function Grievance() {
       )}
       <ToastContainer closeButton closeOnClick={true} />
 
-      <div className="pt-[6vh] -mt-[6vh] w-full">
+      <div className=" w-full">
         <Footer />
       </div>
     </div>

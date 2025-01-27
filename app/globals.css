@@ -34,6 +34,14 @@
   font-family: "GoudyCatalogue";
   src: url(../public/fonts/GoudyCatalogueMTProItalic.TTF);
 }
+@font-face {
+  font-family: "LevSerif";
+  src: url(../public/fonts/LevSerif-Italic.ttf);
+}
+@font-face {
+  font-family: "LevSerifBold";
+  src: url(../public/fonts/LevSerif-BoldItalic.ttf);
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

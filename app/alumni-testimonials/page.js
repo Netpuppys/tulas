@@ -53,7 +53,7 @@ function AlumniTestimonials() {
             <Testimonial />
           </div>
         </div>
-        <div className="pb-[6vh] -mb-[6vh] bg-white">
+        <div className=" bg-white">
           <Testimonials />
         </div>
         <Footer />

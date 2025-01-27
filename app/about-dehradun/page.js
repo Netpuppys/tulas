@@ -69,7 +69,7 @@ function Contact() {
             }
           />
           {/* fixed background */}
-          <div className="w-full relative overflow-hidden md:-mb-[6vh]">
+          <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"

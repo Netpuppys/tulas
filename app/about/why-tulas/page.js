@@ -226,7 +226,7 @@ const page = () => {
 
           {/* <Vision sections={sectionData.slice(4)} /> */}
 
-          <div className="w-full h-full relative z-[60] md:pt-[6vh] bg-white md:-mt-[6vh]">
+          <div className="w-full h-full relative z-[60] bg-white">
             <Footer color={true} />
           </div>
         </div>

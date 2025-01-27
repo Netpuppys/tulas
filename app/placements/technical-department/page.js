@@ -110,7 +110,7 @@ const page = () => {
       <div className="w-full pb-1 bg-white">
         <TopRecruiter crouselImages={carouselImages} />
       </div>
-      <div className="w-full -mt-[6vh]">
+      <div className="w-full">
         <Footer />
       </div>
     </div>

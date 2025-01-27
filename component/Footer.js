@@ -162,9 +162,9 @@ const Footer = ({ set = false, color = false }) => {
       <div className="w-full h-fit md:h-[12vh] flex flex-col md:flex-row items-end bg-transparent">
         {/* black bar */}
         <div
-          className={`w-full md:w-[67%] h-full ${
+          className={`w-full h-full ${
             color ? "bg-[#00383D]" : "bg-[#120008]"
-          }  flex justify-between px-4 py-2 md:py-0 items-center z-40`}
+          }  flex justify-between px-4 md:px-[4%] py-2 md:py-0 items-center z-40`}
         >
           <h3 className="font-[Oswald] w-1/2 md:w-fit text-[16px] md:text-[clamp(10px,2vw,40px)]">
             WANT TO LEARN MORE ABOUT TULA’S?
@@ -174,7 +174,7 @@ const Footer = ({ set = false, color = false }) => {
               onClick={() => {
                 window.location.href = `/apply-now${utmParams}`;
               }}
-              className="text-[clamp(9px,0.8vw,18px)] bg-transparent hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-white"
+              className="text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-white"
             >
               ENQUIRY NOW
             </button>
@@ -189,7 +189,7 @@ const Footer = ({ set = false, color = false }) => {
           </div>
         </div>
         {/* gray social icons div */}
-        <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[5%] gap-[3%] flex justify-between items-center z-50">
+        {/* <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[5%] gap-[3%] flex justify-between items-center z-50">
           <h4 className="font-[Oswald] text-[clamp(20px,6.5vw,35px)] text-nowrap md:text-[clamp(12px,1.6vw,28px)] text-white ">
             CONNECT US
           </h4>
@@ -207,7 +207,7 @@ const Footer = ({ set = false, color = false }) => {
             ))}
           </ul>
           <button className="bg-[rgba(255, 255, 255, 0.08)] text-white"></button>
-        </div>
+        </div> */}
       </div>
       {set && <ContactForm />}
       {/* main footer */}
