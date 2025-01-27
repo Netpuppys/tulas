@@ -130,110 +130,113 @@ const cards = [
 ];
 
 const cardsFaculty = [
-    {
-        image: nishant,
-        name: "Prof. Nishant Saxena",
-        profile: "Dean Academics",
-        id: 4,
-        description:
-          "Academic success isn't about grades, it's about creating thinkers who make a difference.",
-    },
-    {
-      image: sandip,
-      id: 1,
-      name: "Prof. Sandip Vijay",
-      profile: "Director",
-      description:
-        "A great institution doesn't just teach—it transforms, empowers, and inspires.",
-    },
-    {
-      image: sunilSemwal,
-      name: "Dr. Sunil Semwal",
-      id: 3,
-      profile: "Dean R&D",
-      description:
-        "Research bridges the gap between imagination and reality, creating solutions that shape the world.",
-    },
+  {
+    image: nishant,
+    name: "Prof. Nishant Saxena",
+    profile: "Dean Academics",
+    id: 4,
+    description:
+      "Academic success isn't about grades, it's about creating thinkers who make a difference.",
+  },
+  {
+    image: sandip,
+    id: 1,
+    name: "Prof. Sandip Vijay",
+    profile: "Director",
+    description:
+      "A great institution doesn't just teach—it transforms, empowers, and inspires.",
+  },
+  {
+    image: sunilSemwal,
+    name: "Dr. Sunil Semwal",
+    id: 3,
+    profile: "Dean R&D",
+    description:
+      "Research bridges the gap between imagination and reality, creating solutions that shape the world.",
+  },
 ];
 
 const InternalSection = () => {
-
-    return (
-        <div className="w-full flex flex-col items-center justify-center gap-10 py-10 md:py-20 relative z-20">
-            <div className="w-fit h-fit relative">
+  return (
+    <div className="w-full flex flex-col items-center justify-center gap-10 py-10 md:py-20 relative z-20">
+      {/* <div className="w-fit h-fit relative">
                 <p className="font-[carotSlab] text-[2.6rem] text-center leading-tight font-medium ">
                     Meet Out Management
                 </p>
                 <div className="w-[60%] left-[20%] bg-[#E69706] rounded-full h-[0.25rem] absolute top-full"></div>
-            </div>
+            </div> */}
+      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-fit whitespace-nowrap leading-tight md:leading-none z-10">
+        Meet Out Management
+        <div className="h-[4px] bg-[#E69706] w-[80%] mx-auto rounded-full"></div>
+      </div>
 
-            <div className="w-full flex flex-row flex-wrap md:flex-row gap-2 gap-y-8 md:gap-y-10 items-center justify-center md:gap-10">
-                {cards.map((card, index) => (
-                    <div
-                        key={index}
-                        className={`flex flex-col w-[45%] hover:opacity-90 grid-item hover:scale-105 transition-all ease-linear duration-300 md:max-w-[265px] cursor-pointer`}
-                    >
-                        <div className="rounded-xl md:rounded-3xl relative image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
-                            <Image
-                                src={card.image}
-                                alt=""
-                                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover"
-                            />
-                            <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
-                                <p className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[1.125rem] text-[#D9D9D9]">
-                                    {card.description}
-                                </p>
-                            </div>
-                        </div>
-                        <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[30px] leading-[1.2] text-center">
-                        {card.name}
-                        </h2>
-                        <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
-                        {card.profile}
-                        </h4>
-                    </div>
-                ))}
+      <div className="w-full flex flex-row flex-wrap md:flex-row gap-2 gap-y-8 md:gap-y-10 items-center justify-center md:gap-10">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className={`flex flex-col w-[45%] hover:opacity-90 grid-item hover:scale-105 transition-all ease-linear duration-300 md:max-w-[265px] cursor-pointer`}
+          >
+            <div className="rounded-xl md:rounded-3xl relative image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
+              <Image
+                src={card.image}
+                alt=""
+                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover"
+              />
+              <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
+                <p className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[1.125rem] text-[#D9D9D9]">
+                  {card.description}
+                </p>
+              </div>
             </div>
+            <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[30px] leading-[1.2] text-center">
+              {card.name}
+            </h2>
+            <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
+              {card.profile}
+            </h4>
+          </div>
+        ))}
+      </div>
 
-            <div className="w-full flex flex-row flex-wrap md:flex-row gap-2 gap-y-8 md:gap-y-10 items-center justify-center md:gap-10">
-                {cardsFaculty.map((card, index) => (
-                    <div
-                        key={index}
-                        className={`flex flex-col w-[45%] hover:opacity-90 grid-item hover:scale-105 transition-all ease-linear duration-300 md:max-w-[265px] cursor-pointer`}
-                    >
-                        <div className="rounded-xl md:rounded-3xl relative overflow- image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
-                            <Image
-                                src={card.image}
-                                alt=""
-                                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover"
-                            />
-                            <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
-                                <p className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[1.125rem] text-[#D9D9D9]">
-                                    {card.description}
-                                </p>
-                            </div>
-                        </div>
-                        <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[30px] leading-[1.2] text-center">
-                        {card.name}
-                        </h2>
-                        <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
-                        {card.profile}
-                        </h4>
-                    </div>
-                ))}
+      <div className="w-full flex flex-row flex-wrap md:flex-row gap-2 gap-y-8 md:gap-y-10 items-center justify-center md:gap-10">
+        {cardsFaculty.map((card, index) => (
+          <div
+            key={index}
+            className={`flex flex-col w-[45%] hover:opacity-90 grid-item hover:scale-105 transition-all ease-linear duration-300 md:max-w-[265px] cursor-pointer`}
+          >
+            <div className="rounded-xl md:rounded-3xl relative overflow- image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
+              <Image
+                src={card.image}
+                alt=""
+                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover"
+              />
+              <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
+                <p className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[1.125rem] text-[#D9D9D9]">
+                  {card.description}
+                </p>
+              </div>
             </div>
-        </div>
-    )
-}
+            <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[30px] leading-[1.2] text-center">
+              {card.name}
+            </h2>
+            <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
+              {card.profile}
+            </h4>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 function MeetOurManagement({ parentRef }) {
   // const scrollRef = useRef();
   const childRef = useRef(null);
 
   const { isMobile } = useMobile();
-  
+
   const [clipPathValue, setClipPathValue] = useState(25); // Initial clip-path value
-  
+
   const { ref, inView, entry } = useInView({
     threshold: Array.from({ length: 11 }, (_, i) => i * 0.1), // Thresholds: 0.0, 0.1, ..., 1.0
   });
@@ -249,14 +252,16 @@ function MeetOurManagement({ parentRef }) {
     <div className="bg-white w-full h-full">
       <div ref={childRef} className="relative w-full h-fit min-h-[100vh]">
         <section
-            style={{
-                clipPath: `circle(${clipPathValue*(isMobile? 1.5 : 1)}% at center center)`,
-                transition: "clip-path 0.3s ease-in-out", // Smooth transition for clip-path
-            }}
-            ref={ref}
-            className={`top-0 w-full h-fit flex clip-circle-50px section backgroundScroll`}
+          style={{
+            clipPath: `circle(${
+              clipPathValue * (isMobile ? 1.5 : 1)
+            }% at center center)`,
+            transition: "clip-path 0.3s ease-in-out", // Smooth transition for clip-path
+          }}
+          ref={ref}
+          className={`top-0 w-full h-fit flex clip-circle-50px section backgroundScroll`}
         >
-            <InternalSection />
+          <InternalSection />
         </section>
 
         {/* <section

@@ -48,8 +48,26 @@ module.exports = {
         bannerImageFadeShow: "bannerImageFadeShow 0.8s linear",
         bannerImageFadeHide: "bannerImageFadeHide 0.8s linear",
         banner: "banner 18s ease-in infinite",
+        marquee: "marquee 6s infinite",
+        marqueeOpposite: "marqueeOpposite 6s infinite",
       },
       keyframes: {
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(-100%)",
+          },
+        },
+        marqueeOpposite: {
+          from: {
+            transform: "translateX(-100%)",
+          },
+          to: {
+            transform: "translateX(0%)",
+          },
+        },
         banner: {
           "0%": {
             backgroundImage: `url(../public/Homepage/BannerHome/BannerImage1.webp)`,

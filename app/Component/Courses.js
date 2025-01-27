@@ -68,7 +68,7 @@ function Courses({ parentRef }) {
 
   return (
     <div ref={childRef} className="w-full h-fit">
-      <div className="w-full h-[3500px] md:h-[222vh] relative bg-[#3D001B] overflow-hidden">
+      <div className="w-full h-[3900px] md:h-[222vh] relative bg-[#3D001B] overflow-hidden">
         <div
           className={`${
             scrollY > 0 && scrollY < componentHeight && opacity !== 0
@@ -104,7 +104,6 @@ function Courses({ parentRef }) {
             </span>
           </h3>
         </div>
-        
 
         {/* <div
           className={`w-full h-[100vh] flex flex-col gap-2 justify-end items-center transition-opacity duration-300 ease-in-out 
@@ -133,22 +132,20 @@ function Courses({ parentRef }) {
           </div>
         </div> */}
         <div
-        ref={ref}
-        className="w-full h-fit z-40 absolute bottom-0 md:bottom-[22vh] flex flex-col items-center"
-      >
-        {/* <div className="w-[1px] md:min-h-[20vh] bg-white"></div> */}
-        <div className="w-full mx-auto py-8 md:py-0 md:pt-8">
-          <CardCourses />
+          ref={ref}
+          className="w-full h-fit z-40 absolute bottom-0 md:bottom-[22vh] flex flex-col items-center"
+        >
+          {/* <div className="w-[1px] md:min-h-[20vh] bg-white"></div> */}
+          <div className="w-full mx-auto py-8 md:py-0 md:pt-8">
+            <CardCourses />
+          </div>
+          <Image
+            src={Stars}
+            className="hidden md:block absolute bottom-0 translate-y-14 z-50 left-0 w-32 pointer-events-none"
+            alt=""
+          />
         </div>
-        <Image
-          src={Stars}
-          className="hidden md:block absolute bottom-0 translate-y-14 z-50 left-0 w-32 pointer-events-none"
-          alt=""
-        />
       </div>
-        
-      </div>
-      
     </div>
   );
 }

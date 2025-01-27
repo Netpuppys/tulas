@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import placement1 from "../../public/Homepage/Placement/placement1.png";
 import placement2 from "../../public/Homepage/Placement/placement2.png";
+import placement3 from "../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../public/Homepage/Placement/placement4.png";
 import { Autoplay } from "swiper/modules";
 function Placement() {
   const features = [
@@ -13,8 +15,8 @@ function Placement() {
       image2: placement2,
     },
     {
-      image: placement1,
-      image2: placement2,
+      image: placement3,
+      image2: placement4,
     },
   ];
   const swiperRef = useRef();

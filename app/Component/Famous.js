@@ -144,49 +144,67 @@ function Famous() {
   const swiperRef = useRef();
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-none z-10">
+      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
         Influential Personalitites On Campus
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
       <h2 className="text-[#5F5F5F] text-center font-[CarotSlab] text-[clamp(20px,4.5vw,55px)] pt-6 md:text-[clamp(20px,1.5vw,55px)]">
         Sports Person/Social Media Influencers
       </h2>
-      <div className="w-full overflow-hidden py-6 md:py-[2%]">
-        <Swiper
-          ref={swiperRef}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: true,
-          }}
-          modules={[Autoplay]}
-          className="mySwiper"
-          slidesPerView={isMobile ? 2 : 5}
-          spaceBetween={10}
-        >
+      <div className="w-full h-full overflow-hidden whitespace-nowrap">
+        <div className="w-full animate-marquee hover:animate-none hover:overflow-auto py-6 flex gap-2 md:py-[2%]">
           {sports.map((sport, index) => (
-            <SwiperSlide
+            <div
               key={index}
-              className="relative flex flex-col md:flex-row h-full px-4 w-full md:px-0 mx-auto"
+              className="relative  flex flex-col overflow-hidden border border-[#494949] min-w-[60%] max-w-[60%] md:max-w-[20vw] md:min-w-[20vw] mx-auto"
             >
               <div className="w-full h-full relative flex flex-col justify-between">
                 <Image
                   src={jimmy}
                   alt=""
-                  className="rounded-xl w-full md:rounded-2xl h-full object-cover"
+                  className="w-full h-full aspect-[1.5/1] object-cover"
                 />
               </div>
-              <div className="absolute bottom-2 p-[4%]">
-                <h2 className="text-[clamp(10px,3.2vw,50px)] md:text-[clamp(10px,1.1vw,50px)] text-white font-[TTChocolates] font-extrabold">
+              <div className="p-[3%] w-full h-full">
+                <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1.1vw,50px)] text-[#494949] font-[TTChocolates] font-extrabold">
                   {sport.name}
                 </h2>
-                <p2 className="text-white text-[clamp(10px,2.5vw,50px)] md:text-[clamp(10px,0.8vw,50px)]">
+                <p2 className="text-[#494949] text-wrap text-[clamp(10px,2.5vw,50px)] md:text-[clamp(10px,0.8vw,50px)]">
                   {sport.description}
                 </p2>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+        </div>
+      </div>
+      <h2 className="text-[#5F5F5F] text-center font-[CarotSlab] text-[clamp(20px,4.5vw,55px)] pt-6 md:text-[clamp(20px,1.5vw,55px)]">
+        Leaders Of India
+      </h2>
+      <div className="w-full h-full overflow-hidden whitespace-nowrap">
+        <div className="w-full animate-marqueeOpposite hover:animate-none hover:overflow-auto py-6 flex gap-2 md:py-[2%]">
+          {leaders.map((sport, index) => (
+            <div
+              key={index}
+              className="relative flex flex-col overflow-hidden border border-[#494949] min-w-[60%] max-w-[60%] md:max-w-[20vw] md:min-w-[20vw] mx-auto"
+            >
+              <div className="w-full h-full relative flex flex-col justify-between">
+                <Image
+                  src={jimmy}
+                  alt=""
+                  className="w-full h-full aspect-[1.5/1] object-cover"
+                />
+              </div>
+              <div className="p-[3%] w-full h-full">
+                <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1.1vw,50px)] text-[#494949] font-[TTChocolates] font-extrabold">
+                  {sport.name}
+                </h2>
+                <p2 className="text-[#494949] text-wrap text-[clamp(10px,2.5vw,50px)] md:text-[clamp(10px,0.8vw,50px)]">
+                  {sport.description}
+                </p2>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

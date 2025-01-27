@@ -62,7 +62,7 @@ export default function HomePage() {
         {/* <WhyTulasScroll parentRef={parentRef} /> */}
         <MeetOurManagement parentRef={parentRef} />
         <Accreditation />
-        {/* <Placement /> */}
+        <Placement />
         <Virtual />
         <VirtualTour />
         {/* <Famous /> */}
