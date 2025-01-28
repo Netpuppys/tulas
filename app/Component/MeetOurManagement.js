@@ -102,7 +102,7 @@ const cards = [
   {
     image: sunil,
     name: "Sunil Kumar Jain",
-    profile: "Chairman - TULA'S Group",
+    profile: "Chairman - Tula's Group",
     description:
       "True leadership lies in empowering others to dream more, learn more, and achieve more.",
   },
@@ -116,14 +116,14 @@ const cards = [
   {
     image: raunak,
     name: "Raunak Jain",
-    profile: "Vice President",
+    profile: "Vice Chairman",
     description:
       "Greatness begins when we push boundaries and strive for excellence every single day.",
   },
   {
     image: raghav,
     name: "Dr. Raghav Garg",
-    profile: "Vice President",
+    profile: "Vice President Technology",
     description:
       "Technology is not the future of education, it's the present, driving innovation at every step.",
   },
@@ -158,72 +158,74 @@ const cardsFaculty = [
 
 const InternalSection = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-10 py-10 md:py-20 relative z-20">
+    <div className="w-full flex flex-col items-center justify-center relative z-20">
       {/* <div className="w-fit h-fit relative">
                 <p className="font-[carotSlab] text-[2.6rem] text-center leading-tight font-medium ">
                     Meet Out Management
                 </p>
                 <div className="w-[60%] left-[20%] bg-[#E69706] rounded-full h-[0.25rem] absolute top-full"></div>
             </div> */}
-      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-fit whitespace-nowrap leading-tight md:leading-none z-10">
+      <div className="font-[CarotSlab] text-center py-8 md:py-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-fit whitespace-nowrap leading-tight md:leading-none z-10">
         Meet Out Management
         <div className="h-[4px] bg-[#E69706] w-[80%] mx-auto rounded-full"></div>
       </div>
 
-      <div className="w-full flex flex-row flex-wrap md:flex-row gap-2 gap-y-8 md:gap-y-10 items-center justify-center md:gap-10">
-        {cards.map((card, index) => (
-          <div
-            key={index}
-            className={`flex flex-col w-[45%] hover:opacity-90 grid-item hover:scale-105 transition-all ease-linear duration-300 md:max-w-[265px] cursor-pointer`}
-          >
-            <div className="rounded-xl md:rounded-3xl relative image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
-              <Image
-                src={card.image}
-                alt=""
-                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover"
-              />
-              <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
-                <p className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[1.125rem] text-[#D9D9D9]">
-                  {card.description}
-                </p>
+      <div className="w-full h-full flex flex-col items-center justify-center gap-4 md:gap-[3%]">
+        <div className="w-[calc(100%-2rem)] md:w-[70%] mx-auto flex flex-row flex-wrap md:flex-row gap-4 md:gap-[2%] items-start justify-center">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className={`flex flex-col w-[calc(50%-1rem)] md:w-[20%] hover:opacity-90 grid-item md:hover:scale-105 transition-all ease-linear duration-300 cursor-pointer`}
+            >
+              <div className="rounded-xl relative image-overlay mb-2 w-full h-full object-cover">
+                <Image
+                  src={card.image}
+                  alt=""
+                  className="rounded-xl top-0 image-overlay w-full h-full object-cover"
+                />
+                <div className="rounded-xl absolute top-0 flip-image w-full h-full bg-[#760135] flex items-center justify-center px-2 md:px-[5%]">
+                  <h6 className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
+                    {card.description}
+                  </h6>
+                </div>
               </div>
+              <h2 className="font-[TTChocolatesBold] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
+                {card.name}
+              </h2>
+              <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center">
+                {card.profile}
+              </h4>
             </div>
-            <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[30px] leading-[1.2] text-center">
-              {card.name}
-            </h2>
-            <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
-              {card.profile}
-            </h4>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="w-full flex flex-row flex-wrap md:flex-row gap-2 gap-y-8 md:gap-y-10 items-center justify-center md:gap-10">
-        {cardsFaculty.map((card, index) => (
-          <div
-            key={index}
-            className={`flex flex-col w-[45%] hover:opacity-90 grid-item hover:scale-105 transition-all ease-linear duration-300 md:max-w-[265px] cursor-pointer`}
-          >
-            <div className="rounded-xl md:rounded-3xl relative overflow- image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover">
-              <Image
-                src={card.image}
-                alt=""
-                className="rounded-xl md:rounded-3xl absolute top-0 image-overlay mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] object-cover"
-              />
-              <div className="rounded-xl md:rounded-3xl absolute top-0 flip-image mb-2 w-full md:w-[265px] h-[250px] md:h-[372px] bg-[#760135] flex items-center justify-center px-6">
-                <p className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[1.125rem] text-[#D9D9D9]">
-                  {card.description}
-                </p>
+        <div className="w-[calc(100%-2rem)] md:w-[70%] mx-auto flex flex-row flex-wrap md:flex-row gap-4 md:gap-[2%] items-start justify-center pb-8 md:pb-[3%]">
+          {cardsFaculty.map((card, index) => (
+            <div
+              key={index}
+              className={`flex flex-col w-[calc(50%-1rem)] md:w-[20%] hover:opacity-90 grid-item md:hover:scale-105 transition-all ease-linear duration-300 cursor-pointer`}
+            >
+              <div className="rounded-xl relative image-overlay mb-2 w-full h-full object-cover">
+                <Image
+                  src={card.image}
+                  alt=""
+                  className="rounded-xl top-0 image-overlay w-full h-full object-cover"
+                />
+                <div className="rounded-xl absolute top-0 flip-image w-full h-full bg-[#760135] flex items-center justify-center px-2 md:px-[5%]">
+                  <h6 className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
+                    {card.description}
+                  </h6>
+                </div>
               </div>
+              <h2 className="font-[TTChocolatesBold] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
+                {card.name}
+              </h2>
+              <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center">
+                {card.profile}
+              </h4>
             </div>
-            <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[30px] leading-[1.2] text-center">
-              {card.name}
-            </h2>
-            <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
-              {card.profile}
-            </h4>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

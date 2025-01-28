@@ -20,7 +20,7 @@ const cards = [
   {
     image: sunil,
     name: "Sunil Kumar Jain",
-    profile: "Chairman - TULA'S Group",
+    profile: "Chairman - Tula's Group",
     description:
       "Let me take this opportunity on behalf of the faculty and staff, to welcome you all to realize a convincing path with us. “There is not one blade of grass, there is no color in this world that is not intended to make us rejoice”, said by John Calvin. Tula’s vision stands on our beliefs and vows to change every student into an ambassador for their own semblance. Education is not only a way of learning new things but also looking at the world in a different way.",
     desc2:
@@ -53,7 +53,7 @@ const cards = [
   {
     image: raunak,
     name: "Raunak Jain",
-    profile: "Vice President",
+    profile: "Vice Chairman",
     description:
       "Tula’s, as the name suggests, carefully weighs and maintains a balance that is not only enriching academically but also lays special emphasis on the overall development of every student. With this, I would like to take the opportunity to welcome you at Tula’s, a place where your dreams are not yours alone. We at Tula’s have a mission to create and impart quality education and knowledge by developing and widening the quest quotient of our students.",
     desc2:
@@ -67,7 +67,7 @@ const cards = [
   {
     image: raghav,
     name: "Dr. Raghav Garg",
-    profile: "Vice President",
+    profile: "Vice President Technology",
     description:
       "Tula’s, as the name suggests creates a balance and strives to develop and unearth the intrinsic potential and capability of the students, thereby preparing them to take on the global challenges. Our vision is to make Tula’s, a centre of excellence in learning, innovation, technology, agriculture, and management. Our students are groomed holistically to become industry ready and successful entrepreneurs. We at Tula’s envision our students to become employers and create jobs for others. At Tula’s, education is planned as an entire end-to-end process from the very first day. From making the student feel at home to equipping the student to be productive in industry and society.",
     desc2:
