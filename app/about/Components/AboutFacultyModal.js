@@ -48,19 +48,19 @@ const AboutFacultyModal = ({
         {/* profile content */}
         <div className="px-10 md:px-10 py-8 md:py-16 ">
           <div className="flex flex-col-reverse md:flex-row gap-6 justify-between">
-            <div className="">
-              <p className="capitalize text-[#760135] text-[2.2rem] pb-1 font-semibold underline">
+            <div className="md:w-[70%]">
+              <p className="capitalize text-[#760135] text-[clamp(8px,6.5vw,30px)] md:text-[clamp(10px,1.9vw,75px)] pb-1 font-semibold underline">
                 {activeProfile?.name}
               </p>
-              <p className="capitalize italic text-xl text-[#007A83] font-bold font-[rothwood]">
+              <p className="capitalize italic text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,0.9vw,45px)] text-[#007A83] font-bold font-[rothwood]">
                 {activeProfile?.profile}
               </p>
-              <p className=" text-[#1b1b1b] text-wrap text-lg font-light mt-6">
+              <p className=" text-[#1b1b1b] text-wrap text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,0.9vw,45px)] font-light mt-6">
                 {activeProfile?.description}
               </p>
             </div>
             {activeProfile?.image && (
-              <div className="bg-[#007a83] min-w-60 overflow-hidden mx-auto md:mx-0 w-60 min-h-[25rem] h-[25rem] rounded-xl shadow-2xl">
+              <div className="bg-[#007a83] overflow-hidden mx-auto md:mx-0 w-60 md:w-[30%] h-[25rem] md:h-full rounded-xl shadow-2xl">
                 <Image
                   src={activeProfile.image}
                   className="w-full h-full object-cover"
@@ -70,13 +70,16 @@ const AboutFacultyModal = ({
             )}
           </div>
           {activeProfile?.desc2 && (
-            <p className=" text-[#1b1b1b] text-wrap text-lg font-light mt-6">
+            <p className=" text-[#1b1b1b] text-wrap text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,0.9vw,45px)] font-light mt-6">
               {activeProfile.desc2}
             </p>
           )}
           <div className=" mt-8 flex flex-col gap-5">
             {activeProfile?.awards?.map((item, id) => (
-              <p key={id} className="text-[#007A83] text-xl font-bold">
+              <p
+                key={id}
+                className="text-[#007A83] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,0.9vw,45px)] font-bold"
+              >
                 {item}
               </p>
             ))}
@@ -90,11 +93,11 @@ const AboutFacultyModal = ({
             alt=""
             className="absolute w-full -z-10 top-0 h-full object-cover"
           />
-          <div className="px-4 md:px-12 py-5 md:py-10">
-            <p className=" font-[CarotSlab] text-2xl text-[#fbfbfb] font-medium">
+          <div className="px-4 md:px-[4%] py-5 md:py-10">
+            <p className="font-[CarotSlab] text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-[#fbfbfb] font-medium">
               Related Profiles
             </p>
-            <div className="w-full flex flex-wrap items-start justify-center gap-6 mt-5 md:mt-14">
+            <div className="w-full flex flex-wrap items-start justify-center gap-4 md:gap-[2%] mt-5 md:mt-14">
               {relatedProfiles?.map((card, groupIndex) => (
                 <div
                   key={groupIndex}
@@ -104,7 +107,7 @@ const AboutFacultyModal = ({
                       related: relatedProfiles,
                     })
                   }
-                  className={`cursor-pointer flex-col w-[calc(50%-1rem)] md:max-w-[calc(33%-1.5rem)] items-center justify-center gap-2 md:gap-5 ${
+                  className={`cursor-pointer flex-col w-[calc(50%-1rem)] md:max-w-[31%] items-center justify-center gap-2 ${
                     activeProfile.name === card.name ? "hidden" : "flex"
                   }`}
                 >
@@ -112,13 +115,13 @@ const AboutFacultyModal = ({
                     <Image
                       src={card.image}
                       alt=""
-                      className="rounded-xl md:rounded-3xl mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
+                      className="rounded-xl mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
                     />
                   </Fade>
-                  <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[37px] text-center">
+                  <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
                     {card.name}
                   </h2>
-                  <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
+                  <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center">
                     {card.profile}
                   </h4>
                 </div>

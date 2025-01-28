@@ -296,7 +296,7 @@ function Management() {
   };
 
   return (
-    <div className="w-full h-fit bg-transparent py-10 md:py-20 md:px-4">
+    <div className="w-full h-fit bg-transparent pt-8 md:pt-[4%] md:px-4">
       {activeProfile && (
         <AboutFacultyModal
           activeProfile={activeProfile.profile}
@@ -310,7 +310,7 @@ function Management() {
         className="w-full h-fit flex flex-col justify-center items-center"
       >
         <h3
-          className={`font-[CarotSlab] text-white text-[32px] md:text-[52px] px-10 md:px-0 leading-none text-center md:text-left ${
+          className={`font-[CarotSlab] text-white text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] px-10 md:px-0 leading-none text-center md:text-left ${
             inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
@@ -327,16 +327,16 @@ function Management() {
           fully airconditioned &amp; spacious auditorium.
         </h5> */}
       </div>
-      <div className="w-full pt-10 md:pt-20 block">
+      <div className="w-full pt-8 md:pt-[4%] block">
         {[cards, cardsFaculty].map((cardGroup, groupIndex) => (
           <div
             key={groupIndex}
-            className="w-full flex justify-center flex-wrap px-4 gap-4 pb-16 md:gap-5 md:px-20"
+            className="w-full md:w-[80%] mx-auto flex justify-center items-start flex-wrap px-4 gap-4 pb-5 md:pb-16 md:gap-5 md:px-20"
           >
             {cardGroup.map((card, index) => (
               <div
                 key={index}
-                className="flex flex-col w-[45%] hover:opacity-90 hover:scale-105 transition-all ease-linear duration-300 shadow-2xl md:shadow-none md:max-w-[265px] cursor-pointer"
+                className="flex flex-col w-[45%] md:w-[calc(20%-1.25rem)] hover:opacity-90 hover:scale-105 transition-all ease-linear duration-300 cursor-pointer"
                 onClick={() =>
                   setActiveProfile({ profile: card, related: cardGroup })
                 }
@@ -346,13 +346,13 @@ function Management() {
                   <Image
                     src={card.image}
                     alt=""
-                    className="rounded-xl md:rounded-3xl mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
+                    className="rounded-xl mb-2 w-full h-full object-cover"
                   />
                 </Fade>
-                <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[20px] md:text-[30px] leading-[1.2] text-center">
+                <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
                   {card.name}
                 </h2>
-                <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[14px] md:text-[22px] text-center">
+                <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center">
                   {card.profile}
                 </h4>
               </div>
