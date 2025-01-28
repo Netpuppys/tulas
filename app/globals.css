@@ -145,29 +145,7 @@ span {
     lightgray 50% / cover no-repeat;
 }
 
-/* linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    linear-gradient(
-      0deg,
-      rgba(0, 122, 131, 0.72) 0%,
-      rgba(0, 122, 131, 0.72) 100%
-    ), */
-
 .backgroundVirtual {
-  /* background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    url(../public/Homepage/Virtual/BackgroundVirtual.png) lightgray 0px -225.15px /
-      100% 130% no-repeat;
-  background-size: cover;
-  background-position: center; */
   border-radius: 25px;
   background: linear-gradient(
       0deg,
@@ -261,52 +239,6 @@ th {
   border-top: none;
 }
 
-.footer-call-number {
-  margin: 15px 0px;
-  height: fit-content;
-  background-image: linear-gradient(
-    to right,
-    #5d5d5d,
-    hsl(0 0% 48% / 1),
-    #525252,
-    #4d4c51
-  );
-  padding: 8px 20px;
-  background-size: 300% 100%;
-  box-shadow: rgba(0, 0, 0, 0) 0px 8px 24px;
-  border-radius: 9999px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: fit-content;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.footer-call-number:hover {
-  background-position: 100% 0;
-}
-
-.footer-call-number-gif {
-  display: flex;
-  height: fit-content;
-  width: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-call-number-text {
-  height: inherit;
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  font-family: TTChocolates;
-  font-size: 16px;
-  font-weight: 400;
-  flex-direction: column;
-}
 input[type="radio"]:checked + label span {
   background-color: white;
   box-shadow: 0px 0px 0px 2px white inset;

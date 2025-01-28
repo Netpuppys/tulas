@@ -95,380 +95,270 @@ function Navbar({
     }
   };
   return (
-    <div className={`fixed w-full pointer-events-none z-[9999]`}>
-      <div className="w-full pointer-events-auto md:bg-[rgba(19,19,19,0.50)] md:backdrop-blur-xl hidden mdNavbar:flex">
-        <div className="w-[95%] mx-auto flex items-center justify-center gap-4 top-0 border-b-[0.5px] border-[#9A9A9A] h-fit py-2">
-          <a
-            className="flex gap-2 items-center justify-center"
-            href="tel:+91-9837983721"
-          >
-            <Image src={phoneCallGif} alt="" className="w-5 h-full" />
-            Admissions Helpline Number - +91-9837983721
-          </a>
-          <button
-            className={`px-8  ${
-              !scrolled ? "bg-white text-[#3D001B]" : "bg-[#007A83] text-white"
-            } rounded-full`}
-          >
-            Enquire Now
-          </button>
-        </div>
-      </div>
-      <div
-        className={`mdNavbar:px-10 w-full relative ${
-          !scrolled ? "md:bg-[rgba(19,19,19,0.50)] md:backdrop-blur-xl" : ""
-        } h-full py-2 flex flex-col justify-center`}
-      >
+    <div className="fixed w-full z-[9999] pointer-events-none">
+      <div className={`z-[9999] relative`}>
         {/* top bar */}
-        <div className="hidden h-fit w-full mdNavbar:flex justify-between items-center">
-          {!scrolled && (
-            <div className="flex pointer-events-auto mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
-              {/* menu button */}
-              <button
-                className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
-                onClick={handleButtonClick}
-              >
-                <div
-                  className={`p-[15px] border-2 rounded-[50%] aspect-square border-r-transparent ${
-                    (isChecked && position) || isChecked
-                      ? "border-black"
-                      : position
-                      ? "border-[#760135]"
-                      : "border-white"
-                  }`}
-                >
-                  <label
-                    className={
-                      isChecked
-                        ? "checked flex flex-col w-[30px] cursor-pointer"
-                        : "unCheck flex flex-col w-[30px] cursor-pointer"
-                    }
-                  >
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-1/2
-                     ${
-                       (isChecked && position) || isChecked
-                         ? "bg-black"
-                         : position
-                         ? "bg-[#760135]"
-                         : "bg-white"
-                     }`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-full ${
-                        (isChecked && position) || isChecked
-                          ? "bg-black"
-                          : position
-                          ? "bg-[#760135]"
-                          : "bg-white"
-                      }`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
-                        (isChecked && position) || isChecked
-                          ? "bg-black"
-                          : position
-                          ? "bg-[#760135]"
-                          : "bg-white"
-                      }`}
-                    ></span>
-                  </label>
-                </div>
-                <h3
-                  style={{ fontFamily: "Zilla Slab" }}
-                  className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                    (isChecked && position) || isChecked
-                      ? "text-black"
-                      : position
-                      ? "text-[#760135]"
-                      : "text-white"
-                  }`}
-                >
-                  {!isChecked ? "Menu" : "Close"}
-                </h3>
-              </button>
-              {/* Contact button */}
-              {/* {!isChecked && (
+        <div
+          className={`w-full pointer-events-auto md:bg-[rgba(19,19,19,0.50)] md:backdrop-blur-xl hidden mdNavbar:flex`}
+        >
+          <div className="w-[95%] mx-auto flex items-center justify-center gap-4 top-0 border-b-[0.5px] border-[#9A9A9A] h-fit py-2">
+            <a
+              className="flex gap-2 items-center justify-center"
+              href="tel:+91-9837983721"
+            >
+              <Image src={phoneCallGif} alt="" className="w-5 h-full" />
+              Admissions Helpline Number - +91-9837983721
+            </a>
+            <button
+              className={`px-8  ${
+                !scrolled
+                  ? "bg-white text-[#3D001B]"
+                  : "bg-[#007A83] text-white"
+              } rounded-full`}
+            >
+              Enquire Now
+            </button>
+          </div>
+        </div>
+        <div
+          className={`mdNavbar:px-10 w-full relative ${
+            !scrolled && !isChecked
+              ? "md:bg-[rgba(19,19,19,0.50)] md:backdrop-blur-xl"
+              : ""
+          } h-full py-2 flex flex-col justify-center`}
+        >
+          <div className="hidden h-fit w-full mdNavbar:flex justify-between items-center">
+            {!scrolled && (
+              <div className="flex pointer-events-auto mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
+                {/* menu button */}
                 <button
-                  title="Admission Helpline No. +91-9837983721"
-                  className="flex flex-row justify-between items-center cursor-pointer relative z-[3333]"
-                  onClick={() => (window.location.href = "tel:+91-9837983721")}
+                  className="flex flex-row justify-between items-center cursor-pointer relative"
+                  onClick={handleButtonClick}
                 >
                   <div
-                    className={`p-[15px] mdNavbar:p-[15px] border-2 ${
-                      (isChecked && position) || isChecked
-                        ? "border-black"
-                        : position
-                        ? "border-[#760135]"
-                        : "border-white"
-                    } rounded-[50%] aspect-square border-r-transparent`}
+                    className={`p-[15px] border-2 rounded-[50%] aspect-square border-r-transparent ${
+                      isChecked ? "border-black" : "border-white"
+                    }`}
                   >
-                    <div className="w-[40px] h-[40px]">
-                      <Image
-                        src={phoneCallGif}
-                        alt=""
-                        className="w-full h-full"
-                      />
-                    </div>
+                    <label
+                      className={
+                        isChecked
+                          ? "checked flex flex-col w-[30px] cursor-pointer"
+                          : "unCheck flex flex-col w-[30px] cursor-pointer"
+                      }
+                    >
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-1/2
+                     ${isChecked ? "bg-black" : "bg-white"}`}
+                      ></span>
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-full ${
+                          isChecked ? "bg-black" : "bg-white"
+                        }`}
+                      ></span>
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
+                          isChecked ? "bg-black" : "bg-white"
+                        }`}
+                      ></span>
+                    </label>
                   </div>
                   <h3
                     style={{ fontFamily: "Zilla Slab" }}
                     className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                      (isChecked && position) || isChecked
-                        ? "text-black"
-                        : position
-                        ? "text-[#760135]"
-                        : "text-white"
+                      isChecked ? "text-black" : "text-white"
                     }`}
                   >
-                    Contact
+                    {!isChecked ? "Menu" : "Close"}
                   </h3>
                 </button>
-              )} */}
-              {/* apply now button */}
-              <button
-                className="flex w-full flex-row justify-between items-center cursor-pointer relative z-[3333]"
-                onClick={() =>
-                  (window.location.href = `/apply-now${utmParams}`)
-                }
-              >
-                <div
-                  className={`p-[15px] border-2 ${
-                    (isChecked && position) || isChecked
-                      ? "border-black"
-                      : position
-                      ? "border-[#760135]"
-                      : "border-white"
-                  } rounded-[50%] aspect-square border-r-transparent`}
+                {/* apply now button */}
+                <button
+                  className="flex w-full flex-row justify-between items-center cursor-pointer relative"
+                  onClick={() =>
+                    (window.location.href = `/apply-now${utmParams}`)
+                  }
                 >
-                  <FaPen
-                    className={`w-[30px] h-[30px] ${
-                      (isChecked && position) || isChecked
-                        ? "text-black"
-                        : position
-                        ? "text-[#760135]"
-                        : "text-white"
+                  <div
+                    className={`p-[15px] border-2 ${
+                      isChecked ? "border-black" : "border-white"
+                    } rounded-[50%] aspect-square border-r-transparent`}
+                  >
+                    <FaPen
+                      className={`w-[30px] h-[30px] ${
+                        isChecked ? "text-black" : "text-white"
+                      }`}
+                    />
+                  </div>
+                  <h3
+                    style={{ fontFamily: "Zilla Slab" }}
+                    className={`hidden mdNavbar:block text-nowrap text-left text-[25px] -ml-4 font-semibold transition-color ${
+                      isChecked ? "text-black" : "text-white"
                     }`}
-                  />
-                </div>
-                <h3
-                  style={{ fontFamily: "Zilla Slab" }}
-                  className={`hidden mdNavbar:block text-nowrap text-left text-[25px] -ml-4 font-semibold transition-color ${
-                    (isChecked && position) || isChecked
-                      ? "text-black"
-                      : position
-                      ? "text-[#760135]"
-                      : "text-white"
-                  }`}
-                >
-                  Apply Now
-                </h3>
-              </button>
-            </div>
-          )}
-
-          {/* minimal buttons after scrolling */}
-          {scrolled && (
-            <div className="flex pointer-events-auto mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
-              {/* menu button */}
-              <button
-                className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-                onClick={handleButtonClick}
-              >
-                {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
-                <div
-                  className={`p-[15px] rounded-[50%] aspect-square border-r-transparent`}
-                >
-                  <label
-                    className={
-                      isChecked
-                        ? "checked flex flex-col w-[30px] cursor-pointer"
-                        : "unCheck flex flex-col w-[30px] cursor-pointer"
-                    }
                   >
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
-                    ></span>
-                  </label>
-                </div>
-              </button>
-              {/* Contact button */}
-              {/* <button
-                title="Admission Helpline No. +91-9837983721"
-                className="bg-[#E69706] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-                onClick={() => (window.location.href = "tel:+91-9837983721")}
-              >
-                <div className="w-[40px] h-[40px]">
-                  <Image src={phoneCallGif} alt="" className="w-full h-full" />
-                </div>
-              </button> */}
-              {/* apply now button */}
-              <button
-                className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-                onClick={() =>
-                  (window.location.href = `/apply-now${utmParams}`)
-                }
-              >
-                <PiPencilSimpleLineLight />
-              </button>
-            </div>
-          )}
-
-          {!scrolled && (
-            <div className="flex pointer-events-auto relative right-10 z-[3333] animate-fadeIn items-center justify-center gap-6">
-              <Image
-                src={NBA}
-                alt=""
-                className="w-[5vw] h-fit pointer-events-auto cursor-pointer"
-              />
-              <div className="h-[60px] w-[1px] bg-white"></div>
-              <Image
-                src={NAAC}
-                alt=""
-                className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
-              />
-              <div className="h-[60px] w-[1px] bg-white"></div>
-              <Image
-                src={
-                  (isChecked && position) || isChecked
-                    ? TulasLogo
-                    : position
-                    ? TulasLogoRed
-                    : TulasLogo
-                }
-                alt=""
-                onClick={() => (window.location.href = `/${utmParams}`)}
-                className="w-[12vw] h-full pointer-events-auto cursor-pointer"
-              />
-            </div>
-          )}
-
-          {scrolled && (
-            <Link
-              href={`/${utmParams}`}
-              className="z-[3333] pointer-events-auto relative right-10 animate-translateButton"
-            >
-              <Image
-                src={
-                  (isChecked && position) || isChecked
-                    ? TulasLogoGreen
-                    : position
-                    ? TulasLogoRed
-                    : TulasLogoGreen
-                }
-                alt=""
-                className="w-[12vw] h-fit pointer-events-auto cursor-pointer"
-              />
-            </Link>
-          )}
-        </div>
-
-        {/* main navbar */}
-        <div className="w-full h-fit px-3">
-          <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
-            {/* <div className="hidden mdNavbar:block">
-            <a href="tel:+91-9837983721" className="">
-              <Image src={phoneCallGif} alt="" className="footer-call-number-gif" />
-              <div className="footer-call-number-text">
-                Admission Helpline No. +91-9837983721
+                    Apply Now
+                  </h3>
+                </button>
               </div>
-            </a>
-          </div> */}
-            <div className="flex mdNavbar:hidden mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
-              {/* menu button */}
-              <button
-                className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-                onClick={handleButtonClick}
-              >
-                {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
-                <div
-                  className={`p-[15px] rounded-[50%] aspect-square border-r-transparent`}
+            )}
+
+            {/* minimal buttons after scrolling */}
+            {scrolled && (
+              <div className="flex pointer-events-auto mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
+                {/* menu button */}
+                <button
+                  className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
+                  onClick={handleButtonClick}
                 >
-                  <label
-                    className={
-                      isChecked
-                        ? "checked flex flex-col w-[30px] cursor-pointer"
-                        : "unCheck flex flex-col w-[30px] cursor-pointer"
-                    }
+                  {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
+                  <div
+                    className={`p-[15px] rounded-[50%] aspect-square border-r-transparent`}
                   >
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
-                    ></span>
-                    <span
-                      className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
-                    ></span>
-                  </label>
-                </div>
-              </button>
-              {/* Contact button */}
-              {/* <button
-                className="bg-[#E69706] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-                onClick={() => (window.location.href = "tel:+91-9837983721")}
+                    <label
+                      className={
+                        isChecked
+                          ? "checked flex flex-col w-[30px] cursor-pointer"
+                          : "unCheck flex flex-col w-[30px] cursor-pointer"
+                      }
+                    >
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
+                      ></span>
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
+                      ></span>
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
+                      ></span>
+                    </label>
+                  </div>
+                </button>
+                {/* apply now button */}
+                <button
+                  className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
+                  onClick={() =>
+                    (window.location.href = `/apply-now${utmParams}`)
+                  }
+                >
+                  <PiPencilSimpleLineLight />
+                </button>
+              </div>
+            )}
+
+            {!scrolled && (
+              <div className="flex pointer-events-auto relative right-10 animate-fadeIn items-center justify-center gap-6">
+                <Image
+                  src={NBA}
+                  alt=""
+                  className="w-[5vw] h-fit pointer-events-auto cursor-pointer"
+                />
+                <div className="h-[60px] w-[1px] bg-white"></div>
+                <Image
+                  src={NAAC}
+                  alt=""
+                  className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
+                />
+                <div className="h-[60px] w-[1px] bg-white"></div>
+                <Image
+                  src={TulasLogo}
+                  alt=""
+                  onClick={() => (window.location.href = `/${utmParams}`)}
+                  className="w-[12vw] h-full pointer-events-auto cursor-pointer"
+                />
+              </div>
+            )}
+
+            {scrolled && (
+              <Link
+                href={`/${utmParams}`}
+                className="pointer-events-auto relative right-10 animate-translateButton"
               >
-                <div className="w-[35px] h-[35px]">
-                  <Image src={phoneCallGif} alt="" className="w-full h-full" />
-                </div>
-              </button> */}
-              {/* apply now button */}
-              <button
-                className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative z-[3333]"
-                onClick={() =>
-                  (window.location.href = `/apply-now${utmParams}`)
-                }
-              >
-                <PiPencilSimpleLineLight />
-              </button>
-            </div>
-            <Link
-              href={`/${utmParams}`}
-              className="z-[3333] mdNavbar:hidden animate-translateButton"
-            >
-              <Image
-                src={
-                  (isChecked && position) || isChecked
-                    ? TulasLogoGreen
-                    : position
-                    ? TulasLogoRed
-                    : TulasLogoGreen
-                }
-                alt=""
-                className="w-[50vw] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
-              />
-            </Link>
+                <Image
+                  src={TulasLogoGreen}
+                  alt=""
+                  className="w-[12vw] h-fit pointer-events-auto cursor-pointer"
+                />
+              </Link>
+            )}
           </div>
 
-          {isChecked && (
-            <>
-              <div
-                onClick={handleOutsideClick}
-                className="w-screen h-screen flex pointer-events-auto absolute left-0 top-0 bg-opacity-40 bg-black transition-all duration-100 ease-linear"
-              ></div>
-              <NavbarMobile isChecked={isChecked} utmParams={utmParams} />
-              <NavbarDesktop
-                setExpandedIndex={setExpandedIndex}
-                expandedIndex={expandedIndex}
-                isChecked={isChecked}
-                utmParams={utmParams}
-                setNestedLinksVisible={setNestedLinksVisible}
-                nestedLinksVisible={nestedLinksVisible}
-                superExpandedIndex={superExpandedIndex}
-                setSuperExpandedIndex={setSuperExpandedIndex}
-                thirdExpandedIndex={thirdExpandedIndex}
-                setThirdExpandedIndex={setThirdExpandedIndex}
-              />
-            </>
-          )}
+          {/*Mobile navbar */}
+          <div className="w-full h-fit px-3">
+            <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
+              <div className="flex mdNavbar:hidden mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
+                {/* menu button */}
+                <button
+                  className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
+                  onClick={handleButtonClick}
+                >
+                  {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
+                  <div
+                    className={`p-[15px] rounded-[50%] aspect-square border-r-transparent`}
+                  >
+                    <label
+                      className={
+                        isChecked
+                          ? "checked flex flex-col w-[30px] cursor-pointer"
+                          : "unCheck flex flex-col w-[30px] cursor-pointer"
+                      }
+                    >
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
+                      ></span>
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
+                      ></span>
+                      <span
+                        className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
+                      ></span>
+                    </label>
+                  </div>
+                </button>
+                {/* apply now button */}
+                <button
+                  className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
+                  onClick={() =>
+                    (window.location.href = `/apply-now${utmParams}`)
+                  }
+                >
+                  <PiPencilSimpleLineLight />
+                </button>
+              </div>
+              <Link
+                href={`/${utmParams}`}
+                className="mdNavbar:hidden animate-translateButton"
+              >
+                <Image
+                  src={TulasLogoGreen}
+                  alt=""
+                  className="w-[50vw] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
+                />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
+      {isChecked && (
+        <>
+          <div
+            onClick={handleOutsideClick}
+            className="w-screen h-screen flex pointer-events-auto absolute left-0 top-0 bg-opacity-40 bg-black transition-all duration-100 ease-linear"
+          ></div>
+          <NavbarMobile isChecked={isChecked} utmParams={utmParams} />
+          <NavbarDesktop
+            setExpandedIndex={setExpandedIndex}
+            expandedIndex={expandedIndex}
+            isChecked={isChecked}
+            utmParams={utmParams}
+            setNestedLinksVisible={setNestedLinksVisible}
+            nestedLinksVisible={nestedLinksVisible}
+            superExpandedIndex={superExpandedIndex}
+            setSuperExpandedIndex={setSuperExpandedIndex}
+            thirdExpandedIndex={thirdExpandedIndex}
+            setThirdExpandedIndex={setThirdExpandedIndex}
+          />
+        </>
+      )}
     </div>
   );
 }

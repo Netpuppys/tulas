@@ -52,16 +52,16 @@ function NavbarDesktop({
     <>
       {isChecked && (
         <div
-          className={`hidden pointer-events-auto mdNavbar:block w-[440px] absolute top-0 h-screen shadow-2xl z-50 bg-white ${
+          className={`hidden pointer-events-auto mdNavbar:block w-[440px] absolute top-0 h-screen shadow-2xl bg-white ${
             isChecked
               ? "animate-translateLeftMenu opacity-100 left-0"
               : "animate-translateRightMenu opacity-0 left-[-100%]"
           }`}
         >
-          <div className="w-full h-[calc(100vh-280px)] relative top-[120px] overflow-auto">
+          <div className="w-full h-[calc(100vh-280px)] relative top-[140px] overflow-auto">
             {sitemap.map((item, index) => (
               <div
-                className="border-t last:border-b border-[#C5C5C5]   flex flex-col w-full h-fit"
+                className="border-t last:border-b border-[#C5C5C5] flex flex-col w-full h-fit"
                 key={index}
               >
                 <span
@@ -81,14 +81,14 @@ function NavbarDesktop({
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="flex-auto font-[TTChocolatesMedium] font-black px-10 py-1 flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83]"
+                    className="flex-auto font-[TTChocolatesBold] font-normal px-10 py-1 flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83]"
                   >
                     {item.title}
                   </Link>
                   {item.nestedLinks && (
                     <div
                       onClick={() => handleExpandNestedLinks(index)}
-                      className={`w-fit !h-full min-h-[6vh] aspect-square bg-[#E3E3E3] ${
+                      className={`w-fit min-w-[6vh] h-full min-h-[6vh] aspect-square bg-[#E3E3E3] ${
                         expandedIndex === index ? "bg-[#919191]" : ""
                       } flex justify-center items-center`}
                     >
@@ -143,14 +143,14 @@ function NavbarDesktop({
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-medium flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                    className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-normal flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                   >
                     {nestedLinks.title}
                   </Link>
                   {nestedLinks.superNestedLinks && (
                     <div
                       onClick={() => handleExpandSuperNestedLinks(index)}
-                      className={`w-fit h-full min-h-[6vh] aspect-square bg-[#919191] ${
+                      className={`w-fit min-w-[6vh] h-full min-h-[6vh] aspect-square bg-[#919191] ${
                         superExpandedIndex === index ? "bg-[#2c2c2c]" : ""
                       } flex justify-center items-center`}
                     >
@@ -189,7 +189,7 @@ function NavbarDesktop({
                                 ? "noopener noreferrer"
                                 : undefined
                             }
-                            className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-medium flex items-center h-full text-[20px] text-white"
+                            className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-normal flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-white"
                           >
                             {superNestedLinks.title}
                           </Link>
@@ -198,7 +198,7 @@ function NavbarDesktop({
                               onClick={() =>
                                 handleExpandThirdNestedLinks(index)
                               }
-                              className="w-fit h-full min-h-[6vh] aspect-square bg-[#2c2c2c] flex justify-center items-center"
+                              className="w-fit min-w-[6vh] h-full min-h-[6vh] aspect-square bg-[#2c2c2c] flex justify-center items-center"
                             >
                               {thirdExpandedIndex === index ? (
                                 <FiX
@@ -237,7 +237,7 @@ function NavbarDesktop({
                                         ? "noopener noreferrer"
                                         : undefined
                                     }
-                                    className="flex-auto font-[TTChocolates] px-14 py-1 font-normal flex items-center h-full text-[18px] text-white group-hover:text-[#2c2c2c]"
+                                    className="flex-auto font-[TTChocolatesBold] px-14 py-1 font-normal flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-white group-hover:text-[#2c2c2c]"
                                   >
                                     {thirdNestedLinks.title}
                                   </Link>
