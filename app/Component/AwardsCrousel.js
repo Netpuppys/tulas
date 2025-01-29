@@ -13,19 +13,19 @@ function AwardsCrousel() {
     {
       image: Award1,
       name: "HNN awarded Tulas as Best Engineering college by Former Chief Minister Trivendra Singh Rawat",
-      date: "January 4, 2023",
+      date: "2023",
       name2: "Institute with best placements by Indian Education Awards",
-      date2: "March 26, 2024",
+      date2: "2024",
       image2: Award2,
     },
     {
       image: Award3,
       name: "Merit Awards awarded Tulas as Best Engineering college by famous Actress Kirron Kher",
-      date: "May 6, 2022",
+      date: "2022",
       name2:
         "Best Enginneering College in North India by Famous author Chetan Bhagat",
       image2: Award4,
-      date: "July 6, 2019",
+      date2: "2019",
     },
   ];
   const swiperRef = useRef();
@@ -79,7 +79,7 @@ function AwardsCrousel() {
                     <h2 className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535] font-[TTChocolates] font-extrabold border-b border-[#353535] py-2 md:py-4">
                       {feature.name2}
                     </h2>
-                    <p2 className="text-[#353535]">{feature.date}</p2>
+                    <p2 className="text-[#353535]">{feature.date2}</p2>
                   </div>
                 </div>
               </div>

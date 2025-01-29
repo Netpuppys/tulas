@@ -11,8 +11,8 @@ import { Autoplay } from "swiper/modules";
 function Placement() {
   const features = [
     {
-      image: placement1,
-      image2: placement2,
+      image: placement3,
+      image2: placement4,
     },
     {
       image: placement3,

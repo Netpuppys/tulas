@@ -70,13 +70,9 @@ export default function HomePage() {
         <MeetOurManagement parentRef={parentRef} />
         <Testimonials />
         {/* <RankBanner /> */}
-        <div className="pb-[6vh] relative">
-          <AwardsCrousel />
-        </div>
+        <AwardsCrousel />
         {/* <Awards /> */}
-        <div className="-mt-[6vh]">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   );
