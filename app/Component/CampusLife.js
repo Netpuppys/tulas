@@ -80,11 +80,11 @@ const CampusLife = () => {
   }, [albumIndex, imageIndex, autoPlayActive]);
 
   return (
-    <div className="w-full flex flex-col items-center justify-start py-0">
+    <div className="w-full pt-8 md:pt-[4%] flex flex-col items-center justify-start py-0">
       {/* <p className="uppercase text-4xl text-[#007A83] font-semibold tracking-[0.15em]">
         Campus Life
       </p> */}
-      <div className="w-full relative h-[40rem]">
+      <div className="w-full relative h-[45rem]">
         <div ref={contRef} className="w-full h-full relative">
           <div
             ref={scrollRef}
@@ -100,8 +100,6 @@ const CampusLife = () => {
                   >
                     <Image
                       src={image}
-                      width={1920}
-                      height={1080}
                       className="w-full h-full object-cover"
                       alt=""
                     />
@@ -114,7 +112,7 @@ const CampusLife = () => {
         </div>
         {/* bottom selector */}
       </div>
-      <div className="w-full z-30 h-28 md:h-40 -mt-[80px] bg-transparent px-4 md:px-5 flex items-center justify-center">
+      <div className="w-full z-30 h-28 -mt-[56px] bg-transparent px-4 md:px-5 flex items-center justify-center">
         <div className="shadow-2xl bg-white max-w-[85rem] w-full h-full flex flex-col items-center justify-center px-5 md:px-14 rounded-xl md:rounded-2xl relative">
           <button className="absolute -top-8 left-5 uppercase tracking-widest text-xs">
             explore more

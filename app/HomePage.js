@@ -60,9 +60,9 @@ export default function HomePage() {
         <LifeAtTulas />
         <Courses parentRef={parentRef} />
         {/* <WhyTulasScroll parentRef={parentRef} /> */}
-        <CampusLife />
         <Accreditation />
         <Placement />
+        <CampusLife />
         <Virtual />
         <VirtualTour />
         {/* <Famous /> */}
