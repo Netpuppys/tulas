@@ -60,14 +60,14 @@ export default function HomePage() {
         <LifeAtTulas />
         <Courses parentRef={parentRef} />
         {/* <WhyTulasScroll parentRef={parentRef} /> */}
-        <MeetOurManagement parentRef={parentRef} />
+        <CampusLife />
         <Accreditation />
         <Placement />
         <Virtual />
         <VirtualTour />
         {/* <Famous /> */}
         <Video />
-        <CampusLife />
+        <MeetOurManagement parentRef={parentRef} />
         <Testimonials />
         {/* <RankBanner /> */}
         <div className="pb-[6vh] relative">
