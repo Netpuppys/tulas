@@ -12,7 +12,7 @@ import { UtmContext } from "@/component/utmParams";
 function CardCourses() {
   const cardsCourses = [
     {
-      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image.png",
+      src: Engineering,
       title: "DEPARTMENT OF ENGINEERING",
       degrees: [
         {
@@ -95,7 +95,7 @@ function CardCourses() {
       ],
     },
     {
-      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image-1.png",
+      src: Business,
       title: "GRADUATE SCHOOL OF BUSINESS",
       degrees: [
         {
@@ -159,7 +159,7 @@ function CardCourses() {
       ],
     },
     {
-      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/Rectangle+22705.png",
+      src: Agriculture,
       title: "DEPARTMENT OF AGRICULTURE",
       degrees: [
         {
@@ -175,7 +175,7 @@ function CardCourses() {
       ],
     },
     {
-      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image-2.png",
+      src: MassCoummunication,
       title: "DEPARTMENT OF MASS COMMUNICATION",
       degrees: [
         {
@@ -191,7 +191,7 @@ function CardCourses() {
       ],
     },
     {
-      src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/our-courses/image-3.png",
+      src: computerApplication,
       title: "DEPARTMENT OF COMPUTER APPLICATION",
       degrees: [
         {
