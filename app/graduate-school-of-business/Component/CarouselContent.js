@@ -52,14 +52,14 @@ function CarouselContent() {
           Opportunity!
         </span>
       </h2>
-      <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-black">
+      <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
         Tula’s Institute, founded in 2006 under the Rishabh Educational Trust,
         is a premier institution in Dehradun dedicated to developing future
         leaders. We focus on providing a strong academic foundation while
         emphasizing critical thinking, strategic decision-making, and real-world
         skills—essential for success in today’s competitive world.
       </h4>
-      <h6 className="px-8 md:px-0 w-full md:max-w-[55%] font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-black">
+      <h6 className="px-8 md:px-0 w-full md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
         At Tula’s, we prepare students to navigate complex challenges, drive
         innovation, and lead with confidence. Our hands-on approach to learning
         ensures that students are not only equipped with theoretical knowledge
@@ -81,7 +81,7 @@ function CarouselContent() {
                 <h2 className="font-[TTChocolatesBold] text-[30px] md:text-[42px] leading-tight text-[#007A83] font-extrabold">
                   {card.value}
                 </h2>
-                <h3 className="text-[#343434] max-w-[140px] md:max-w-[180px] text-[16px] md:text-[20px] leading-tight text-wrap font-[TTChocolatesBold] font-normal text-center">
+                <h3 className="text-[#343434] max-w-[140px] md:max-w-[180px] text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolatesBold] font-normal text-center">
                   {card.name}
                 </h3>
               </div>

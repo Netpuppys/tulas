@@ -52,7 +52,7 @@ export default function HomePage() {
           <h3 className="text-2xl uppercase font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-center mb-6">
             Tula's Institute
           </h3>
-          <h4 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-center font-[TTChocolates] text-[#404040]">
+          <h4 className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center font-[TTChocolates] text-[#404040]">
             {bannerText}
           </h4>
         </div> */}

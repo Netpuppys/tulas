@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-{/* clarity */}
+        {/* clarity */}
         <script
           id="clarity"
           type="text/javascript"

@@ -92,7 +92,7 @@ const Blogs = ({ utmParams }) => {
                       className="w-full h-52 object-cover"
                       alt=""
                     />
-                    <div className="p-2 text-[clamp(15px,1.3vw,25px)] text-white">
+                    <div className="p-2 leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
                       <p className="text-[14px]">{formattedDate}</p>
                       <h5 className="h-[62.5px] md:h-[117px] line-clamp-3">
                         {formattedTitle}

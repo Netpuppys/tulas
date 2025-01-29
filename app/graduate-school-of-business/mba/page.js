@@ -58,7 +58,7 @@ const page = () => {
                 Professors
               </span>
             </h8>
-            <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] text-black">
+            <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
               With every lesson, professors are shaping minds and paving the way
               for future innovations.
             </h4>

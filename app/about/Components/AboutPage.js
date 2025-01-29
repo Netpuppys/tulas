@@ -151,7 +151,7 @@ export default function AboutPage() {
             <Fade key={index}>
               <button
                 key={index}
-                className="text-[#fff] font-bold text-[clamp(15px,4.5vw,30px)]  md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold] rounded-full py-2"
+                className="text-[#fff] font-bold leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolatesBold] rounded-full py-2"
               >
                 {button.title}
               </button>
@@ -189,7 +189,7 @@ export default function AboutPage() {
               <p className="text-[#760135] font-medium font-[TTChocolatesBold] text-[1.4rem] md:text-[2.5rem] text-wrap tracking-widest">
                 Innovate, Create, Lead – The Tula’s Way
               </p>
-              <p className="text-[#404040] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-medium font-[TTChocolates] leading-tight">
+              <p className="text-[#404040] text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-medium font-[TTChocolates] leading-tight">
                 Tula’s Institute is where the future of education is being
                 reimagined. It’s not just about textbooks and lectures; it’s
                 about creating a playground for innovation. At Tula’s, every

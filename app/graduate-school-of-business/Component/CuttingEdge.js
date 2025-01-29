@@ -79,7 +79,7 @@ function CuttingEdge({ scrollRef }) {
                     alt=""
                     className="bg-white p-2 w-[65px] aspect-square rounded-xl"
                   />
-                  <h3 className="text-[#FFFFFF] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] leading-tight text-wrap font-[Helvetica] font-normal">
+                  <h3 className="text-[#FFFFFF] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[Helvetica] font-normal">
                     {card.title}
                   </h3>
                 </div>

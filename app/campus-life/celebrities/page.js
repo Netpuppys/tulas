@@ -76,7 +76,7 @@ function Celebrities() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
-          <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
+          <p className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
             The{" "}
             <span className="font-black text-[#007A83] font-[TTChocolatesBold]">
               Tula's Institute{" "}

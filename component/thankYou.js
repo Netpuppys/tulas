@@ -56,7 +56,7 @@ function ThankYou() {
         </h5>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-[10vw] mt-[5vh] md:mt-[10vh] mb-4">
           <div className="flex flex-col justify-center items-center gap-4">
-            <h3 className="text-black text-[clamp(8px,4.5vw,100px)] md:text-[clamp(18px,1.3vw,45px)] font-bold font-[TTChocolatesBold]">
+            <h3 className="text-black leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-bold font-[TTChocolatesBold]">
               Contact With Us
             </h3>
             <ul className="flex gap-2 pt-[1%] w-full items-center justify-center">
@@ -77,12 +77,12 @@ function ThankYou() {
             </ul>
           </div>
           <div className="flex flex-col justify-center items-center gap-4">
-            <h3 className="text-black text-[clamp(8px,4.5vw,100px)] md:text-[clamp(18px,1.3vw,45px)] font-bold font-[TTChocolatesBold]">
+            <h3 className="text-black leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-bold font-[TTChocolatesBold]">
               Visit Our Website
             </h3>{" "}
             <button
               onClick={() => (window.location.href = `/${utmParams}`)}
-              className="text-white text-[clamp(18px,1.3vw,45px)] bg-[#007A83] py-3 px-14 font-bold font-[TTChocolatesBold]"
+              className="text-white leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] bg-[#007A83] py-3 px-14 font-bold font-[TTChocolatesBold]"
             >
               Website
             </button>

@@ -227,7 +227,7 @@ function Sports() {
               <h3 className=" text-center text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-4 md:underline-offset-[15px]">
                 The Perfect Indoor Space for Play and Progress
               </h3>
-              <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
+              <p className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
                 Having the right space to relax, have fun, and grow is super
                 important. With the great facilities at Tula’s, indoor
                 activities become more than just games—they help you sharpen
@@ -384,7 +384,7 @@ function Sports() {
               <h3 className=" text-center text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-4 md:underline-offset-[15px]">
                 Spaces Built for Sports Under the Sky
               </h3>
-              <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
+              <p className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
                 The outdoor sports facilities at Tula’ are designed to give
                 students the perfect space for all kinds of action. With
                 well-maintained fields and tracks, it's the ideal environment to

@@ -305,7 +305,7 @@ function AboutTulas() {
           <h2 className="text-[#3A3A3A] text-[clamp(15px,6vw,30px)] pb-4 md:pb-[1%] font-[CarotSlab] md:text-[clamp(10px,2.5vw,50px)] leading-tight">
             About <span className="text-[#760135]">TULA’s</span>
           </h2>
-          <h3 className="text-[#6F6C6C] font-[TTChocolatesBold] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.2vw,45px)] ml-0 mr-auto">
+          <h3 className="text-[#6F6C6C] font-[TTChocolatesBold] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] ml-0 mr-auto">
             {aboutTulas}
           </h3>
         </div>

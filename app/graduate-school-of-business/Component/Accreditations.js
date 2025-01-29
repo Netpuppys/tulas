@@ -53,7 +53,7 @@ function Accreditations() {
             className="flex flex-col gap-4 items-center justify-center p-4 w-[calc(50%-8px)] md:w-[calc(25%-12px)]"
           >
             <Image src={card.icon} alt="" className="w-fit h-fit" />
-            <h3 className="text-[#007A83] text-center text-[clamp(15px,3.6vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold]">
+            <h3 className="text-[#007A83] text-center leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolatesBold]">
               {card.title}
             </h3>
             <h3 className="text-[#000] text-center text-[clamp(7px,3vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[Helvetica]">

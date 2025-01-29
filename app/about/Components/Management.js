@@ -317,7 +317,7 @@ function Management() {
           MEET OUR MANAGEMENT
         </h3>
         {/* <h5
-          className={`font-[Rothwood] pt-8 md:pt-0 text-white text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] max-w-[665px] px-10 md:px-0 italic md:text-center font-medium ${
+          className={`font-[Rothwood] pt-8 md:pt-0 text-white leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] max-w-[665px] px-10 md:px-0 italic md:text-center font-medium ${
             inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >

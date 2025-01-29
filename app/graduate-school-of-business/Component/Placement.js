@@ -171,7 +171,7 @@ function Placement({ scrollRef }) {
                   Internships
                 </span>
               </h8>
-              <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(12px,1.3vw,45px)] text-black">
+              <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
                 The primary objective of the Training and Placement Cell at
                 Tula’s Institute is to prepare and empower students for
                 successful campus recruitment. Our goal is to equip students
@@ -179,7 +179,7 @@ function Placement({ scrollRef }) {
                 and secure rewarding career opportunities. We provide training
                 that focuses on:
               </h4>
-              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(12px,1.3vw,45px)] text-black justify-between">
+              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black justify-between">
                 <li>Communication Skills</li>
                 <li>Personal and Professional Grooming</li>
                 <li>Aptitude Development</li>
@@ -236,7 +236,7 @@ function Placement({ scrollRef }) {
               Recruiters
             </span>
           </h8>
-          <h4 className="px-8 md:px-0 text-center md:text-start w-full md:max-w-[55%] font-[Helvetica] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(12px,1.3vw,45px)] text-white">
+          <h4 className="px-8 md:px-0 text-center md:text-start w-full md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
             Give your career a boost with lucrative national & international
             internship and placement opportunities at Tula's Graduate School of
             Business.

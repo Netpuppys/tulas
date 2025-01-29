@@ -200,7 +200,7 @@ const Footer = ({ set = false, color = false }) => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#fff] rounded-lg bg-opacity-[0.8] text-[#808080] p-[3%] text-[20px] md:text-[clamp(8px,1.3vw,25px)]"
+                className="bg-[#fff] rounded-lg bg-opacity-[0.8] text-[#808080] p-[3%] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)]"
               >
                 {social.icon}
               </Link>
@@ -231,7 +231,7 @@ const Footer = ({ set = false, color = false }) => {
           {socialMediaLinks.map((social, index) => (
             <li
               key={index}
-              className="text-[20px] md:text-[clamp(10px,1.3vw,25px)] p-2 md:p-[0.5%] rounded-full backdrop:blur-3xl bg-opacity-20 bg-white"
+              className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] p-2 md:p-[0.5%] rounded-full backdrop:blur-3xl bg-opacity-20 bg-white"
             >
               <a href={social.href} target="_blank" rel="noopener noreferrer">
                 {social.icon}

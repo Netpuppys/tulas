@@ -10,7 +10,7 @@ function Video() {
           {/* <h2 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
             BEST ENGINEERING COLLEGE IN DEHRADUN
           </h2> */}
-          {/* <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] w-[90%] md:w-[60%] font-[TTChocolates] mx-auto md:text-center text-black py-8 md:py-20">
+          {/* <p className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[60%] font-[TTChocolates] mx-auto md:text-center text-black py-8 md:py-20">
             Tula’s Institute isn’t just about books and exams—it’s a launchpad
             for your entire future. Here, it’s all about shaping you into a
             well-rounded individual, blending top-tier education with real-world
@@ -57,7 +57,7 @@ function Video() {
             src="https://assets.tulas.edu.in/Campus_Tour___Tula_s_Institute___Dehradun_safmr2%20(1).mp4"
           />
 
-          {/* <p className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] w-[90%] md:w-[60%] font-[TTChocolates] mx-auto md:text-center text-black py-8 md:py-20">
+          {/* <p className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[60%] font-[TTChocolates] mx-auto md:text-center text-black py-8 md:py-20">
             At our institution, versatility is at the heart of our academic
             offerings. Whatever be your ambition, we have a path to match! For
             those passionate about technology, we offer{" "}
