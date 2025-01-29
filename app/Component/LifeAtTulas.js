@@ -1,8 +1,21 @@
 import React from "react";
-import love1 from "../../public/Homepage/LifeAtTulas/love1.png";
-import placement1 from "../../public/Homepage/LifeAtTulas/placement1.png";
-import event1 from "../../public/Homepage/LifeAtTulas/event1.png";
-import celebrities1 from "../../public/Homepage/LifeAtTulas/celebrities1.png";
+import love1 from "../../public/Homepage/LifeAtTulas/love1.webp";
+import love2 from "../../public/Homepage/LifeAtTulas/love2.webp";
+import love3 from "../../public/Homepage/LifeAtTulas/love3.webp";
+import love4 from "../../public/Homepage/LifeAtTulas/love4.webp";
+import placements1 from "../../public/Homepage/LifeAtTulas/placements1.webp";
+import placements2 from "../../public/Homepage/LifeAtTulas/placements2.webp";
+import placements3 from "../../public/Homepage/LifeAtTulas/placements3.webp";
+import placements4 from "../../public/Homepage/LifeAtTulas/placements4.webp";
+import events1 from "../../public/Homepage/LifeAtTulas/events1.webp";
+import events2 from "../../public/Homepage/LifeAtTulas/events2.webp";
+import events3 from "../../public/Homepage/LifeAtTulas/events3.webp";
+import events4 from "../../public/Homepage/LifeAtTulas/events4.webp";
+import celebrities1 from "../../public/Homepage/LifeAtTulas/celebrities1.webp";
+import celebrities2 from "../../public/Homepage/LifeAtTulas/celebrities2.webp";
+import celebrities3 from "../../public/Homepage/LifeAtTulas/celebrities3.webp";
+import celebrities4 from "../../public/Homepage/LifeAtTulas/celebrities4.webp";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
@@ -20,19 +33,19 @@ function LifeAtTulas() {
         title: "I Love TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: love1,
+        image: love2,
       },
       {
         title: "I Love TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: love1,
+        image: love3,
       },
       {
         title: "I Love TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: love1,
+        image: love4,
       },
     ],
     [
@@ -40,25 +53,25 @@ function LifeAtTulas() {
         title: "Placements At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: placement1,
+        image: placements1,
       },
       {
         title: "Placements At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: placement1,
+        image: placements2,
       },
       {
         title: "Placements At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: placement1,
+        image: placements3,
       },
       {
         title: "Placements At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: placement1,
+        image: placements4,
       },
     ],
     [
@@ -66,25 +79,25 @@ function LifeAtTulas() {
         title: "Events At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: event1,
+        image: events1,
       },
       {
         title: "Events At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: event1,
+        image: events2,
       },
       {
         title: "Events At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: event1,
+        image: events3,
       },
       {
         title: "Events At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust,",
-        image: event1,
+        image: events4,
       },
     ],
     [
@@ -98,19 +111,19 @@ function LifeAtTulas() {
         title: "Celebrities At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, ",
-        image: celebrities1,
+        image: celebrities2,
       },
       {
         title: "Celebrities At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, ",
-        image: celebrities1,
+        image: celebrities3,
       },
       {
         title: "Celebrities At TULA’s",
         description:
           "Tula’s Institute was established in 2006, under the aegis of Rishabh Educational Trust, ",
-        image: celebrities1,
+        image: celebrities4,
       },
     ],
   ];
