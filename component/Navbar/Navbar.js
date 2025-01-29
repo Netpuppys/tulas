@@ -14,6 +14,12 @@ import NavbarDesktop from "./Component/NavbarDesktop";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import { IoCall } from "react-icons/io5";
 import { UtmContext } from "../utmParams";
+import FormPopup from "../formPopup";
+import { SiGoogleforms } from "react-icons/si";
+import { BsWhatsapp } from "react-icons/bs";
+import logo360 from "../../public/Components/Navbar/logo360.png";
+import whatsapp from "../../public/Components/Navbar/whatsapp.png";
+import phoneLogo from "../../public/Components/Navbar/phoneLogo.png";
 
 function Navbar({
   setState,
@@ -23,6 +29,7 @@ function Navbar({
 }) {
   const [isChecked, setIsChecked] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const [formPopup, setFormPopup] = useState(false);
   const [superExpandedIndex, setSuperExpandedIndex] = useState(null);
   const [thirdExpandedIndex, setThirdExpandedIndex] = useState(null);
   const [nestedLinksVisible, setNestedLinksVisible] = useState(false);
@@ -77,6 +84,9 @@ function Navbar({
       document.body.style.overflow = "auto";
     };
   }, [isChecked]);
+  const handleFormPopup = () => {
+    setFormPopup(true);
+  };
 
   const handleOutsideClick = () => {
     if (isChecked) {
@@ -95,7 +105,7 @@ function Navbar({
     }
   };
   return (
-    <div className="fixed w-full z-[9999] pointer-events-none">
+    <div className="fixed w-full h-full z-[9999] pointer-events-none">
       <div className={`z-[9999] relative`}>
         {/* top bar */}
         <div
@@ -110,6 +120,7 @@ function Navbar({
               Admissions Helpline Number - +91-9837983721
             </a>
             <button
+              onClick={handleFormPopup}
               className={`px-8  ${
                 !scrolled
                   ? "bg-white text-[#3D001B]"
@@ -359,6 +370,69 @@ function Navbar({
           />
         </>
       )}
+      {formPopup && (
+        <FormPopup formPopup={formPopup} setFormPopup={setFormPopup} />
+      )}
+      <div
+        className={`w-full bottom-0 absolute pointer-events-auto bg-[#007A83] md:hidden`}
+      >
+        <div className="w-full mx-auto flex justify-between gap-4 h-fit py-2">
+          <a
+            className="flex w-[50%] text-white gap-2 items-center justify-center"
+            href="tel:+91-9837983721"
+          >
+            <IoCall />
+            +91-9837983721
+          </a>
+          <div className="w-[1px] bg-white"></div>
+          <button
+            onClick={handleFormPopup}
+            className={`px-8 w-[50%] gap-2 flex justify-center items-center text-white rounded-full`}
+          >
+            <SiGoogleforms /> Enquire Now
+          </button>
+        </div>
+      </div>
+      <div
+        className={`w-fit right-4 top-[50%] flex flex-col gap-2 -translate-y-1/2 absolute pointer-events-auto`}
+      >
+        <button
+          onClick={() =>
+            (window.location.href =
+              "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
+          }
+          className="bg-[#007A83] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+        >
+          <Image
+            src={whatsapp}
+            alt=""
+            className="w-[25px] h-[25px] md:w-[29px] md:h-[29px]"
+          />
+        </button>
+        <button
+          onClick={() =>
+            (window.location.href = `/virtual-tour/index.html${utmParams}`)
+          }
+          className="bg-[#760135] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+        >
+          <Image
+            src={logo360}
+            alt=""
+            className="w-[25px] h-[25px] md:w-[29px] md:h-[29px]"
+          />
+        </button>
+        <a
+          href="tel:+91-9837983721"
+          title="Admissions Helpline Number - +91-9837983721"
+          className="bg-[#E69706] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+        >
+          <Image
+            src={phoneCallGif}
+            alt=""
+            className="w-[25px] h-[25px] md:w-[29px] md:h-[29px]"
+          />
+        </a>
+      </div>
     </div>
   );
 }
