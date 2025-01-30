@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import AccreditationImg from "../../public/Homepage/Accreditation/accreditation.png";
-import AccreditationImgMobile from "../../public/Homepage/Accreditation/accreditationMobile.png";
+import AccreditationImgMobile from "../../public/Homepage/Accreditation/accreditationMobile.webp";
 function Accreditation() {
   return (
     <div className="w-full bg-white sticky z-10 h-full">
@@ -14,7 +14,7 @@ function Accreditation() {
         <Image
           src={AccreditationImgMobile}
           alt=""
-          className="md:hidden pt-8 w-full h-fit"
+          className="md:hidden w-full h-fit"
         />
       </div>
     </div>

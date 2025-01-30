@@ -376,9 +376,9 @@ function Navbar({
       <div
         className={`w-full bottom-0 absolute pointer-events-auto bg-[#007A83] md:hidden`}
       >
-        <div className="w-full mx-auto flex justify-between gap-4 h-fit py-2">
+        <div className="w-full mx-auto flex justify-between h-fit py-2">
           <a
-            className="flex w-[50%] text-white gap-2 items-center justify-center"
+            className="flex px-1 w-[calc(50%-0.5px)] text-white gap-2 items-center justify-center"
             href="tel:+91-9837983721"
           >
             <IoCall />
@@ -387,7 +387,7 @@ function Navbar({
           <div className="w-[1px] bg-white"></div>
           <button
             onClick={handleFormPopup}
-            className={`px-8 w-[50%] gap-2 flex justify-center items-center text-white rounded-full`}
+            className={`w-[calc(50%-0.5px)] gap-2 flex justify-center items-center text-white rounded-full`}
           >
             <SiGoogleforms /> Enquire Now
           </button>
