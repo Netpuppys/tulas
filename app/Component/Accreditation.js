@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import AccreditationImg from "../../public/Homepage/Accreditation/accreditation.png";
+import AccreditationImg from "../../public/Homepage/Accreditation/accreditation.webp";
 import AccreditationImgMobile from "../../public/Homepage/Accreditation/accreditationMobile.webp";
 function Accreditation() {
   return (

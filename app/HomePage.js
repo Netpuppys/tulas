@@ -65,7 +65,7 @@ export default function HomePage() {
         <CampusLife />
         <Virtual />
         <VirtualTour />
-        {/* <Famous /> */}
+        <Famous />
         <Video />
         <MeetOurManagement parentRef={parentRef} />
         <Testimonials />
