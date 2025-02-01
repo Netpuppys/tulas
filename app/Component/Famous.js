@@ -1,214 +1,312 @@
-import React from "react";
-import SakshiMalik from "../../public/Homepage/Famous/SakshiMalik.webp";
-import VisheshBhriguvanshi from "../../public/Homepage/Famous/VisheshBhriguvanshi.webp";
-import PrakashiTomar from "../../public/Homepage/Famous/PrakashiTomar.webp";
-import AbhishekVerma from "../../public/Homepage/Famous/AbhishekVerma.webp";
-import AditiGopichandSwami from "../../public/Homepage/Famous/AditiGopichandSwami.webp";
-import JeevanJyotSinghTeja from "../../public/Homepage/Famous/JeevanJyotSinghTeja.webp";
-import OjasPravinDeotale from "../../public/Homepage/Famous/OjasPravinDeotale.webp";
-import RajatChauhan from "../../public/Homepage/Famous/RajatChauhan.webp";
-import DevendraSinghBisht from "../../public/Homepage/Famous/DevendraSinghBisht.webp";
-import ManishMetani from "../../public/Homepage/Famous/ManishMetani.webp";
-import LaxmiAgarwal from "../../public/Homepage/Famous/LakshmiAgarwal.webp";
-import SaurabhJoshi from "../../public/Homepage/Famous/SaurabhJoshi.webp";
-import ArushiNishank from "../../public/Homepage/Famous/ArushiNishank.webp";
-import DhanSinghRawat from "../../public/Homepage/Famous/DhanSinghRawat.webp";
-import TrivendraSinghRawat from "../../public/Homepage/Famous/TrivendraSinghRawat.webp";
-import SubodhUniyal from "../../public/Homepage/Famous/SubodhUniyal.webp";
-import AnuragTripathi from "../../public/Homepage/Famous/AnuragTripathi.webp";
-import RameshPokhriyalNishank from "../../public/Homepage/Famous/RameshPokhriyalNishank.webp";
-import BhagatSinghKoshyari from "../../public/Homepage/Famous/BhagatSinghKoshyari.webp";
-import DharmendraPradhan from "../../public/Homepage/Famous/DharmendraPradhan.webp";
-import ArvindPandey from "../../public/Homepage/Famous/ArvindPandey.webp";
-import NamamiBansal from "../../public/Homepage/Famous/NamamiBansal.webp";
-import AbhinavKumar from "../../public/Homepage/Famous/AbhinavKumar.webp";
-import JanmejayaKhanduri from "../../public/Homepage/Famous/JanmejayaKhanduri.webp";
-import AshokKumar from "../../public/Homepage/Famous/AshokKumar.webp";
-import AmitKumarSinha from "../../public/Homepage/Famous/AmitKumarSinha.webp";
-import SunilUniyalGama from "../../public/Homepage/Famous/SunilUniyalGama.webp";
-import SahdevSinghPundir from "../../public/Homepage/Famous/SahdevSinghPundir.webp";
+import React, { useEffect, useRef } from "react";
+import ChitranshiRawat from "../../public/Homepage/Famous/ChitranshiRawat.webp";
+import DeeptiNaval from "../../public/Homepage/Famous/DeeptiNaval.webp";
+import DipikaChikhlia from "../../public/Homepage/Famous/DipikaChikhlia.webp";
+import EhsaanQureshi from "../../public/Homepage/Famous/EhsaanQureshi.webp";
+import GajendraChauhan from "../../public/Homepage/Famous/GajendraChauhan.webp";
+import HimaniShivpuri from "../../public/Homepage/Famous/HimaniShivpuri.webp";
+import IlaArun from "../../public/Homepage/Famous/IlaArun.webp";
+import MadhurBhandarker from "../../public/Homepage/Famous/MadhurBhandarker.webp";
+import ManishWadhwa from "../../public/Homepage/Famous/ManishWadhwa.webp";
+import PitabhashTripathi from "../../public/Homepage/Famous/PitabhashTripathi.webp";
+import PradeepRawat from "../../public/Homepage/Famous/PradeepRawat.webp";
+import RajeshSharma from "../../public/Homepage/Famous/RajeshSharma.webp";
+import Ranjeet from "../../public/Homepage/Famous/Ranjeet.webp";
+import VarunBadola from "../../public/Homepage/Famous/VarunBadola.webp";
+import VinayPathak from "../../public/Homepage/Famous/VinayPathak.webp";
+import BiswajitChatterjee from "../../public/Homepage/Famous/BiswajitChatterjee.webp";
+import DilipSen from "../../public/Homepage/Famous/DilipSen.webp";
+import DinoMorea from "../../public/Homepage/Famous/DinoMorea.webp";
+import HemantPandey from "../../public/Homepage/Famous/HemantPandey.webp";
+import JimmyShergil from "../../public/Homepage/Famous/JimmyShergil.webp";
+import KanwaljeetSingh from "../../public/Homepage/Famous/KanwaljeetSingh.webp";
+import Khayali from "../../public/Homepage/Famous/Khayali.webp";
+import KimSharma from "../../public/Homepage/Famous/KimSharma.webp";
+import MohanAgashe from "../../public/Homepage/Famous/MohanAgashe.webp";
+import MousmiChatterjee from "../../public/Homepage/Famous/MousmiChatterjee.webp";
+import NassarAbdullah from "../../public/Homepage/Famous/NassarAbdullah.webp";
+import NawabShah from "../../public/Homepage/Famous/NawabShah.webp";
+import PoojaBhatt from "../../public/Homepage/Famous/PoojaBhatt.webp";
+import PremChopra from "../../public/Homepage/Famous/PremChopra.webp";
+import RajaMurad from "../../public/Homepage/Famous/RajaMurad.webp";
+import RajeevNigam from "../../public/Homepage/Famous/RajeevNigam.webp";
+import RajendraGupta from "../../public/Homepage/Famous/RajendraGupta.webp";
+import RajpalYadav from "../../public/Homepage/Famous/RajpalYadav.webp";
+import RameshSippy from "../../public/Homepage/Famous/RameshSippy.webp";
+import RaunitRoy from "../../public/Homepage/Famous/RaunitRoy.webp";
+import RJKaavya from "../../public/Homepage/Famous/RJKaavya.webp";
+import RoopaGanguly from "../../public/Homepage/Famous/RoopaGanguly.webp";
+import SaurabhShukla from "../../public/Homepage/Famous/SaurabhShukla.webp";
+import SharmanJoshi from "../../public/Homepage/Famous/SharmanJoshi.webp";
+import SubhashGhai from "../../public/Homepage/Famous/SubhashGhai.webp";
+import SurendraPal from "../../public/Homepage/Famous/SurendraPal.webp";
+import SushmaSeth from "../../public/Homepage/Famous/SushmaSeth.webp";
+import ViveckVaswani from "../../public/Homepage/Famous/ViveckVaswani.webp";
+import YashpalSharma from "../../public/Homepage/Famous/YashpalSharma.webp";
 import Image from "next/image";
 function Famous() {
   const sports = [
     {
-      image: SakshiMalik,
-      name: "Sakshi Malik",
-      description:
-        "(First Indian wrestler to win medal in Rio 2016 Olympics, Olympics Bronze Medalist in Wrestling, Silver Medalist in 2014. Common Wealth Games, Rajeev Gandhi Khel Ratan Awardee 2016, Padma Shree Awardee 2017)",
+      image: ChitranshiRawat,
+      name: "Chitranshi Rawat",
+      description: "",
     },
     {
-      image: VisheshBhriguvanshi,
-      name: "Vishesh Bhriguvanshi",
-      description:
-        "(Indian Basketball Team Captain & Major FIBA Asia Championship Player. Under his Captaincy Team India won a 3x3 basketball Gold Medal at the Asian Beach Games in 2008)",
+      image: DeeptiNaval,
+      name: "Deepti Naval",
+      description: "",
     },
     {
-      image: PrakashiTomar,
-      name: "Prakashi Tomar & Late Ms Chandro Tomar",
-      description:
-        "(Based on their real life Bhumi Pednekar & Taapsee Pannu acted in the Biopic Movie “Saand ke Aakh” known as Shooter Dadi, 30 National Championship winner)",
-    },
-    // {
-    //   image: AnwarKhan,
-    //   name: "Anwar khan",
-    //   description: "(Indian team hockey player)",
-    // },
-    {
-      image: AbhishekVerma,
-      name: "Abhishek Verma",
-      description:
-        "(6th Highest World Ranking, Arjuna Awardee, Asian Game Gold Medalist in Archery 2013)",
+      image: DipikaChikhlia,
+      name: "Dipika Chikhlia",
+      description: "",
     },
     {
-      image: AditiGopichandSwami,
-      name: "Aditi Gopichand Swami",
-      description:
-        "(7th Highest World Ranking, Arjun Awardee, World Champion in Archery 2024)",
+      image: EhsaanQureshi,
+      name: "Ehsaan Qureshi",
+      description: "",
     },
     {
-      image: JeevanJyotSinghTeja,
-      name: "Jeevan Jyot Singh Teja",
-      description: "(Drona Chari Awardee in Archery 2022)",
+      image: GajendraChauhan,
+      name: "Gajendra Chauhan",
+      description: "",
     },
     {
-      image: OjasPravinDeotale,
-      name: "Ojus Devtale",
-      description:
-        "(9th Highest World Ranking, Arjun Awardee 2023 and current world champion in Archery)",
+      image: HimaniShivpuri,
+      name: "Himani Shivpuri",
+      description: "",
     },
     {
-      image: RajatChauhan,
-      name: "Rajat Chauhan",
-      description: "(5th Highest World Ranking Arjun Awardee 2016 in Archery)",
+      image: Ranjeet,
+      name: "Ranjeet",
+      description: "",
     },
     {
-      image: DevendraSinghBisht,
-      name: "Devendra Singh Bisht",
-      description: "(under 18 School Indian Football Team Selector)",
+      image: IlaArun,
+      name: "Ila Arun",
+      description: "",
     },
     {
-      image: ManishMetani,
-      name: "Manish Metani",
-      description: "(Indian Football Player)",
+      image: MadhurBhandarker,
+      name: "Madhur Bhandarker",
+      description: "",
     },
     {
-      image: SaurabhJoshi,
-      name: "Saurabh Joshi",
-      description: "(Influencer with 30 Million Subscribers on Youtube)",
+      image: ManishWadhwa,
+      name: "Manish Wadhwa",
+      description: "",
     },
     {
-      image: ArushiNishank,
-      name: "Arushi Nishank",
-      description:
-        "(Kathak dancer, actor, film producer, environmentalist, TEDx speaker, and National Convener of Sparsh Ganga",
+      image: PitabhashTripathi,
+      name: "Pitabhash Tripathi",
+      description: "",
     },
     {
-      image: LaxmiAgarwal,
-      name: "Laxmi Agarwal",
-      description:
-        "(International Women Empowerment Award from the Ministry of Women and Child Development, Founder and President of The Laxmi Foundation, a NGO dedicated to acid attack victims. Deepika Padukone acted in the Bip Pic Movie “Chappak” based on her)",
+      image: PradeepRawat,
+      name: "Pradeep Rawat",
+      description: "",
+    },
+    {
+      image: RajeshSharma,
+      name: "Rajesh Sharma",
+      description: "",
+    },
+    {
+      image: VarunBadola,
+      name: "Varun Badola",
+      description: "",
+    },
+    {
+      image: VinayPathak,
+      name: "Vinay Pathak",
+      description: "",
+    },
+    {
+      image: BiswajitChatterjee,
+      name: "Biswajit Chatterjee",
+      description: "",
+    },
+    {
+      image: DilipSen,
+      name: "Dilip Sen",
+      description: "",
+    },
+    {
+      image: DinoMorea,
+      name: "Dino Morea",
+      description: "",
+    },
+    {
+      image: HemantPandey,
+      name: "Hemant Pandey",
+      description: "",
+    },
+    {
+      image: JimmyShergil,
+      name: "Jimmy Shergil",
+      description: "",
+    },
+    {
+      image: KanwaljeetSingh,
+      name: "Kanwaljeet Singh",
+      description: "",
+    },
+    {
+      image: Khayali,
+      name: "Khayali",
+      description: "",
+    },
+    {
+      image: KimSharma,
+      name: "Kim Sharma",
+      description: "",
+    },
+    {
+      image: MohanAgashe,
+      name: "Mohan Agashe",
+      description: "",
+    },
+    {
+      image: MousmiChatterjee,
+      name: "Mousmi Chatterjee",
+      description: "",
+    },
+    {
+      image: NassarAbdullah,
+      name: "Nassar Abdullah",
+      description: "",
+    },
+    {
+      image: NawabShah,
+      name: "Nawab Shah",
+      description: "",
+    },
+    {
+      image: PoojaBhatt,
+      name: "Pooja Bhatt",
+      description: "",
+    },
+    {
+      image: PremChopra,
+      name: "Prem Chopra",
+      description: "",
+    },
+    {
+      image: RajaMurad,
+      name: "Raja Murad",
+      description: "",
+    },
+    {
+      image: RajeevNigam,
+      name: "Rajeev Nigam",
+      description: "",
+    },
+    {
+      image: RajendraGupta,
+      name: "Rajendra Gupta",
+      description: "",
+    },
+    {
+      image: RajpalYadav,
+      name: "Rajpal Yadav",
+      description: "",
+    },
+    {
+      image: RameshSippy,
+      name: "Ramesh Sippy",
+      description: "",
+    },
+    {
+      image: RaunitRoy,
+      name: "Raunit Roy",
+      description: "",
+    },
+    {
+      image: RJKaavya,
+      name: "RJ Kaavya",
+      description: "",
+    },
+    {
+      image: RoopaGanguly,
+      name: "Roopa Ganguly",
+      description: "",
+    },
+    {
+      image: SaurabhShukla,
+      name: "Saurabh Shukla",
+      description: "",
+    },
+    {
+      image: SharmanJoshi,
+      name: "Sharman Joshi",
+      description: "",
+    },
+    {
+      image: SubhashGhai,
+      name: "Subhash Ghai",
+      description: "",
+    },
+    {
+      image: SurendraPal,
+      name: "Surendra Pal",
+      description: "",
+    },
+    {
+      image: SushmaSeth,
+      name: "Sushma Seth",
+      description: "",
+    },
+    {
+      image: ViveckVaswani,
+      name: "Viveck Vaswani",
+      description: "",
+    },
+    {
+      image: YashpalSharma,
+      name: "Yashpal Sharma",
+      description: "",
     },
   ];
-  const leaders = [
-    {
-      image: DhanSinghRawat,
-      name: "Shri Dhan Singh Rawat Ji",
-      description: "(Minister of Higher Education, Uttarakhand)",
-    },
-    {
-      image: TrivendraSinghRawat,
-      name: "Shri Trivendra Singh Rawat Ji",
-      description:
-        "(Member of Parliament & Former Chief Minister, Uttarakhand)",
-    },
-    {
-      image: SubodhUniyal,
-      name: "Shri Subodh Uniyal Ji",
-      description: "(Technical Education and Forest Minister, Uttarakhand.)",
-    },
-    {
-      image: RameshPokhriyalNishank,
-      name: "Dr Ramesh Pokhriyal Nishank Ji",
-      description:
-        "(Former Union Cabinet Minister for Education, Government of India | Former Chief Minister of Uttarakhand)",
-    },
-    {
-      image: BhagatSinghKoshyari,
-      name: "Shri Bhagat Singh Koshyari Ji",
-      description:
-        "(Former governor of Maharashtra and Goa, Former Chief Minister of Uttarakhand)",
-    },
-    {
-      image: DharmendraPradhan,
-      name: "Shri Dharmendra Pradhan Ji",
-      description: "(Union Minister of Education for India.)",
-    },
-    {
-      image: AnuragTripathi,
-      name: "Shri Anurag Tripathi Ji",
-      description: "(CBSE Secretary Uttarakhand)",
-    },
-    {
-      image: ArvindPandey,
-      name: "Shri Arvind Pandey Ji",
-      description: "(MLA, Former Education Minister)",
-    },
-    {
-      image: NamamiBansal,
-      name: "Shri Namami Bansal Ji",
-      description: "(I.A.S Municipal Commissioner Uttarakhand)",
-    },
-    {
-      image: AbhinavKumar,
-      name: "Shri Abhinav Kumar Ji",
-      description: "(ADG and former DGP of Uttarakhand Police)",
-    },
-    {
-      image: JanmejayaKhanduri,
-      name: "Shri Janmejaya khanduri Ji",
-      description: "(IG Dehradun - Government of India)",
-    },
-    {
-      image: AshokKumar,
-      name: "Shri Ashok Kumar Ji",
-      description: "(Former DGP, Uttarakhand)",
-    },
-    {
-      image: AmitKumarSinha,
-      name: "Shri Amit Kumar Sinha Ji",
-      description: "(ADG, Principal Secretary Sports, Uttarakhand)",
-    },
-    {
-      image: SunilUniyalGama,
-      name: "Shri Sunil Uniyal Gama Ji",
-      description: "(Former Mayor Municipal Corp, Dehradun.)",
-    },
-    // {
-    //   image: AmandeepKaur,
-    //   name: "Shri Amandeep Kaur Ji",
-    //   description: "(IRS)",
-    // },
-    {
-      image: SahdevSinghPundir,
-      name: "Shri Sahdev Singh Pundir Ji",
-      description: "(MLA Sahaspur, Uttarakhand)",
-    },
-  ];
+  const scrollContainerRef = useRef(null);
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    let scrollAmount = 2; // Speed of scrolling
+    const scroll = () => {
+      if (scrollContainer) {
+        scrollContainer.scrollLeft += scrollAmount;
+        if (
+          scrollContainer.scrollLeft >=
+          scrollContainer.scrollWidth - scrollContainer.clientWidth
+        ) {
+          scrollContainer.scrollLeft = 0; // Reset to start for continuous effect
+        }
+      }
+    };
+    const interval = setInterval(scroll, 20); // Adjust speed here
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
-        Influential Personalitites On Campus
+        Bollywood Actors in Our Campus
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
-      <h2 className="text-[#5F5F5F] text-center leading-none font-[CarotSlab] text-[clamp(20px,4.5vw,55px)] pt-6 md:text-[clamp(20px,1.5vw,55px)]">
-        Sports Person/Social Media Influencers
-      </h2>
-      <div className="w-full h-full overflow-hidden whitespace-nowrap">
-        <div className="w-full animate-marquee hover:animate-none hover:overflow-auto py-6 flex gap-2 md:py-[3%]">
+
+      <div className="w-full h-full overflow-hidden ">
+        <div
+          ref={scrollContainerRef}
+          style={{
+            overflowX: "auto",
+            whiteSpace: "nowrap",
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+          className="w-full py-6 flex gap-2 md:py-[3%] whitespace-nowrap"
+        >
           {sports.map((sport, index) => (
             <div
               key={index}
-              className="relative flex flex-col items-end overflow-hidden border border-[#494949] min-w-[60%] max-w-[60%] md:max-w-[22vw] md:min-w-[22vw] mx-auto"
+              className="relative flex flex-col items-end overflow-hidden rounded-xl border border-[#494949] min-w-[60%] max-w-[60%] md:max-w-[22vw] md:min-w-[22vw] mx-auto"
             >
               <div className="w-full h-full flex flex-col justify-between">
                 <Image
@@ -218,32 +316,6 @@ function Famous() {
                 />
               </div>
               <div className="p-[3%] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_72.96%,rgba(0,0,0,0.70)_100%)] absolute bottom-0 z-20 flex items-end w-full h-full">
-                <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1.1vw,50px)] text-white font-[TTChocolates] font-extrabold">
-                  {sport.name}
-                </h2>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <h2 className="text-[#5F5F5F] leading-none text-center font-[CarotSlab] text-[clamp(20px,4.5vw,55px)] md:text-[clamp(20px,1.5vw,55px)]">
-        Leaders Of India
-      </h2>
-      <div className="w-full h-full overflow-hidden whitespace-nowrap">
-        <div className="w-full animate-marqueeOpposite hover:animate-none hover:overflow-auto py-6 flex gap-2 md:py-[3%]">
-          {leaders.map((sport, index) => (
-            <div
-              key={index}
-              className="relative flex flex-col overflow-hidden border border-[#494949] min-w-[60%] max-w-[60%] md:max-w-[22vw] md:min-w-[22vw] mx-auto"
-            >
-              <div className="w-full h-full relative flex flex-col justify-between">
-                <Image
-                  src={sport.image}
-                  alt=""
-                  className="w-full h-full aspect-[1.5/1] object-cover"
-                />
-              </div>
-              <div className="p-[3%] w-full absolute bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_72.96%,rgba(0,0,0,0.70)_100%)] bottom-0 z-20 flex items-end h-full">
                 <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1.1vw,50px)] text-white font-[TTChocolates] font-extrabold">
                   {sport.name}
                 </h2>
