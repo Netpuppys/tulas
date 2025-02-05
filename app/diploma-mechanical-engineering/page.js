@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../public/diploma-in-mechanical-engineering/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
@@ -22,8 +22,6 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 
 function BSCAgriculture() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -36,44 +34,24 @@ function BSCAgriculture() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <BannerProgram
-            image={BannerImg}
-            title=<>DIPLOMA IN MECHANICAL ENGINEERING</>
-            titleColor={""}
-            // description={
-            //   "The Mechanical Engineering department of Tula’s Institute offers a three-year diploma in Mechanical Engineering, approved by AICTE and affiliated to Uttarakhand Board of Technical Education, Roorkee."
-            // }
-          />
-          <Program
-            parentRef={parentRef}
-            images={images}
-            content={content}
-            belowSpace={true}
-          />
-          <Vision color={true} sections={sections} />
-          <TableProgram
-            cards={cards}
-            selectedCardTable={selectedCardTable}
-            semesterData={semesterData}
-            hod={hod}
-            HODcontent={HODcontent}
-            facultyData={facultyData}
-          />
-          <PlacementProgram />
-          <TopRecruiter />
-          {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
-          <Footer />
-        </div>
+        <Navbar />
+        <BannerProgram
+          image={BannerImg}
+          title=<>DIPLOMA IN MECHANICAL ENGINEERING</>
+        />
+        <Program images={images} content={content} belowSpace={true} />
+        <Vision color={true} sections={sections} />
+        <TableProgram
+          cards={cards}
+          selectedCardTable={selectedCardTable}
+          semesterData={semesterData}
+          hod={hod}
+          HODcontent={HODcontent}
+          facultyData={facultyData}
+        />
+        <PlacementProgram />
+        <TopRecruiter />
+        <Footer />
       </body>
     </>
   );

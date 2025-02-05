@@ -1,13 +1,15 @@
-import diplomaComputer from "../../../public/diploma-computer-science-engineering/diploma-computer-science-engineering.png";
-import DepartmentalVission from "../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../public/courses/bjmc/departmentalMission.png";
+import DepartmentalVission from "../../../public/diploma-computer-science-engineering/departmentalMission.png";
+import DepartmentalMission from "../../../public/diploma-computer-science-engineering/departmentalVision.png";
 import SandeepKumar from "../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-
-export const images = [
-  diplomaComputer,
-  // Add more image paths as needed
-];
-
+import content1 from "../../../public/diploma-computer-science-engineering/content1.png";
+import content2 from "../../../public/diploma-computer-science-engineering/content2.png";
+export const sideImages = [content1, content2];
+export const heading = (
+  <>
+    Best Computer Science and Engineering Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
     The Diploma program in Computer Science and Engineering program is a

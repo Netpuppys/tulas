@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../public/diploma-in-civil-engineering/banner.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
@@ -11,15 +11,12 @@ import {
   cards,
   content,
   facultyData,
-  images,
   sections,
   selectedCardTable,
 } from "./data/data";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -33,42 +30,21 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
-          <div className="w-full relative">
-            <Navbar />
-          </div>
-          <BannerProgram
-            image={BannerImg}
-            title=<>DIPLOMA IN CIVIL ENGINEERING</>
-            titleColor={""}
-            // description={
-            //   "Department of Civil engineering Offers Diploma in Civil Engineering of a duration of 3 years. With rapidly booming infrastructure developments all around, civil engineers today are in much higher demand than ever before."
-            // }
-          />
-          <Program
-            parentRef={parentRef}
-            images={images}
-            content={content}
-            belowSpace={true}
-          />
-          <Vision color={true} sections={sections} />
-          <TableProgram
-            cards={cards}
-            selectedCardTable={selectedCardTable}
-            facultyData={facultyData}
-          />
-          <PlacementProgram />
-          <TopRecruiter />
-
-          {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
-          <Footer />
-        </div>
+        <Navbar />
+        <BannerProgram
+          image={BannerImg}
+          title=<>DIPLOMA IN CIVIL ENGINEERING</>
+        />
+        <Program content={content} belowSpace={true} />
+        <Vision color={true} sections={sections} />
+        <TableProgram
+          cards={cards}
+          selectedCardTable={selectedCardTable}
+          facultyData={facultyData}
+        />
+        <PlacementProgram />
+        <TopRecruiter />
+        <Footer />
       </body>
     </>
   );

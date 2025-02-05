@@ -1,6 +1,5 @@
-import diplomaCivil from "../../../public/diploma-in-civil-engineering/diploma-in-civil-engineering.png";
-import DepartmentalVission from "../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../public/courses/bjmc/departmentalMission.png";
+import DepartmentalVission from "../../../public/diploma-in-civil-engineering/departmentalVision.png";
+import DepartmentalMission from "../../../public/diploma-in-civil-engineering/departmentalMission.png";
 import AshishKumar from "../../../public/courses/btech/civil-engineering/facultyData/AshishKumar.webp";
 import mohitSharma from "../../../public/courses/btech/civil-engineering/facultyData/mohitSharma.webp";
 import PreetiKumari from "../../../public/courses/btech/civil-engineering/facultyData/PreetiKumar.webp";
@@ -9,10 +8,6 @@ import ArunAgarwal from "../../../public/courses/btech/civil-engineering/faculty
 import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
-export const images = [
-  diplomaCivil,
-  // Add more image paths as needed
-];
 export const content = (
   <>
     The Department of Civil Engineering offers a 3-year diploma designed for
