@@ -53,8 +53,15 @@ function Video() {
             autoPlay
             controls
             muted
-            className="w-full aspect-[9/16] object-cover md:aspect-[12/4.8] md:w-[100%] mx-auto"
-            src="https://assets.tulas.edu.in/Campus_Tour___Tula_s_Institute___Dehradun_safmr2%20(1).mp4"
+            className="w-full h-full hidden md:block mx-auto"
+            src="https://assets.tulas.edu.in/tulasDesktop.mp4"
+          />
+          <video
+            autoPlay
+            controls
+            muted
+            className="w-full h-full md:hidden mx-auto"
+            src="https://assets.tulas.edu.in/tulasMobile.mp4"
           />
 
           {/* <p className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[60%] font-[TTChocolates] mx-auto md:text-center text-black py-8 md:py-20">
