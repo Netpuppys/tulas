@@ -55,7 +55,16 @@ export const content = (
     to excel in the dynamic field of computer science engineering.
   </>
 );
-
+export const quotes = (
+  <>
+    “Code, innovate, and transform the digital world with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s Diploma in Computer Science.
+    </strong>{" "}
+    Equipping future tech leaders with the skills to{" "}
+    <strong className="text-[#760135]">shape tomorrow’s technology.</strong>”
+  </>
+);
 export const sections = [
   {
     title: "Departmental Vision",

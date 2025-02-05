@@ -1,4 +1,3 @@
-import diplomaMech from "../../../public/diploma-in-mechanical-engineering/diploma-in-mechanical-engineering.png";
 import DepartmentalVission from "../../../public/diploma-in-mechanical-engineering/departmentalVision.png";
 import DepartmentalMission from "../../../public/diploma-in-mechanical-engineering/departmentalMission.png";
 import AnkitJain from "../../../public/courses/btech/mechanical-engineering/facultyData/AnkitJain.webp";
@@ -27,24 +26,64 @@ import Abhishek from "../../../public/courses/btech/mechanical-engineering/facul
 import AbhishekResume from "../../../public/courses/btech/mechanical-engineering/facultyData/AbhishekResume.pdf";
 import Manoj from "../../../public/courses/btech/mechanical-engineering/facultyData/Manoj.webp";
 import ManojResume from "../../../public/courses/btech/mechanical-engineering/facultyData/ManojResume.pdf";
+import content1 from "../../../public/diploma-in-mechanical-engineering/content1.png";
+import content2 from "../../../public/diploma-in-mechanical-engineering/content2.png";
 
-export const images = [
-  diplomaMech,
-  // Add more image paths as needed
-];
 export const content = (
   <>
-    The Mechanical Engineering department of Tula’s Institute offers a
-    three-year diploma in Mechanical Engineering, approved by AICTE and
-    affiliated to Uttarakhand Board of Technical Education, Roorkee. This branch
-    applies engineering, physics, and material science concepts for design,
-    manufacturing, operations, and maintenance of mechanical systems. The course
-    consists of 6 semesters. The student’s progress is monitored semester wise
-    through two Internal Sessional Exams and one End Semester Exam conducted by
-    the Board of Technical Education, Roorkee, Uttarakhand.
+    The Diploma in Mechanical Engineering is a three-year program designed to
+    provide students with in-depth knowledge of mechanical systems,
+    manufacturing processes, and engineering design. This industry-focused
+    curriculum equips students with the technical expertise needed to excel in
+    the automobile, aerospace, robotics, and manufacturing sectors.
+    <div className="mt-2 md:mt-[1%]"></div>
+    The program covers fundamental subjects such as thermodynamics, fluid
+    mechanics, strength of materials, machine design, CAD/CAM, and industrial
+    automation. Students gain hands-on experience with cutting-edge tools and
+    technologies, including 3D modeling software (AutoCAD, SolidWorks), CNC
+    machining, and advanced manufacturing techniques.
+    <div className="mt-2 md:mt-[1%]"></div>
+    Emphasizing practical learning, the curriculum integrates workshops, lab
+    experiments, industrial visits, and live projects to help students develop
+    problem-solving and analytical skills. Exposure to real-world challenges in
+    mechanical systems and production enhances their technical capabilities.
+    <div className="mt-2 md:mt-[1%]"></div>
+    In addition to core mechanical engineering concepts, students are trained in
+    quality control, maintenance management, and emerging fields like renewable
+    energy and mechatronics. The program also focuses on soft skills, teamwork,
+    and leadership, preparing students for a successful career in the
+    engineering industry.<div className="mt-2 md:mt-[1%]"></div>
+    Graduates of the Diploma in Mechanical Engineering have diverse career
+    opportunities in automobile manufacturing, heavy machinery industries, power
+    plants, aerospace, and research organizations. They can also opt for higher
+    studies in engineering or entrepreneurship in industrial production and
+    machine design.<div className="mt-2 md:mt-[1%]"></div>
+    At Tula's Institute, students receive industry-relevant training, practical
+    exposure, and mentorship from experienced faculty and industry
+    professionals, ensuring a strong foundation for a rewarding career in
+    mechanical engineering.
   </>
 );
-
+export const sideImages = [content1, content2];
+export const heading = (
+  <>
+    Best Engineering Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
+export const quotes = (
+  <>
+    “Innovate, create, and engineer the future with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s Diploma in Mechanical Engineering.
+    </strong>{" "}
+    Empowering aspiring engineers to build, design, and transform{" "}
+    <strong className="text-[#760135]">
+      industries with cutting-edge expertise.
+    </strong>
+    ”
+  </>
+);
 export const sections = [
   {
     title: "Departmental Vision",

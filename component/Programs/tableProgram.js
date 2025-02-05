@@ -76,7 +76,7 @@ function TableProgram({
             <HOD hod={hod} HODcontent={HODcontent} />
           )}
           {selectedCard === 4 && specialization && (
-            <div className="bg-[#007A83] max-w-[1200px] mx-auto rounded-3xl text-white px-4 md:px-8 py-4 md:py-8 text-[14px] md:text-[20px]">
+            <div className="bg-[#007A83] max-w-[1200px] mx-auto rounded-3xl text-white px-4 md:px-8 py-4 md:py-8 leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal">
               {specialization}
             </div>
           )}

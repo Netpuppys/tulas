@@ -10,7 +10,6 @@ import TableProgram from "@/component/Programs/tableProgram";
 import {
   cards,
   content,
-  images,
   sections,
   semesterData,
   hod,
@@ -18,6 +17,7 @@ import {
   heading,
   selectedCardTable,
   sideImages,
+  quotes,
 } from "./data/data";
 import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
@@ -42,11 +42,11 @@ function BAJMC() {
           title=<>DIPLOMA IN COMPUTER SCIENCE ENGINEERING</>
         />
         <Program
-          images={images}
           heading={heading}
           content={content}
-          belowSpace={true}
+          belowSpacequotes={true}
           sideImages={sideImages}
+          quotes={quotes}
         />
         <Vision color={true} sections={sections} />
         <TableProgram

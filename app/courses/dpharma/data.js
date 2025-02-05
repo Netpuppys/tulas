@@ -1,4 +1,3 @@
-import bjmc from "../../../public/courses/bjmc/bjmc.png";
 import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
@@ -14,34 +13,59 @@ import AnkitGhildiyal from "../../../public/courses/bjmc/facultyData/AnkitGhildi
 import AnkitGhildiyalResume from "../../../public/courses/bjmc/facultyData/AnkitGhildiyalResume.pdf";
 import Neha from "../../../public/courses/bjmc/facultyData/Neha.png";
 import NehaResume from "../../../public/courses/bjmc/facultyData/NehaResume.pdf";
-import EMPCLAB from "../../../public/courses/bjmc/EMPCLAB.jpg";
-import Link from "next/link";
 import cardImage1 from "../../../public/courses/dpharm/cardImage1.png";
 import cardImage2 from "../../../public/courses/dpharm/cardImage2.png";
 import cardImage3 from "../../../public/courses/dpharm/cardImage3.png";
-
-export const images = [
-  bjmc,
-  // Add more image paths as needed
-];
-
-export const content = (
+import content1 from "../../../public/courses/dpharm/content1.png";
+import content2 from "../../../public/courses/dpharm/content2.png";
+export const heading = (
   <>
-    D. Pharm. (Diploma in Pharmacy) is a course with an intake capacity of 60
-    seats. The student who has completed D. Pharm. can be employed as Registered
-    Pharmacist in Hospital and Community Pharmacies for dispensing drugs and
-    pharmaceuticals.
-    <br />
-    <br />
-    It has been made mandatory that at least one person employed in a pharmacy
-    must be a qualified registered pharmacist. After completion of Diploma in
-    Pharmacy, one should complete the respective pharmacy council registration
-    to become a registered pharmacist. A D. Pharm. holder can go for a
-    professional degree (Under Graduate) course of B. Pharm. directly in second
-    year, through lateral entry scheme.
+    Best Pharmacy (D.Pharma) Institute in{" "}
+    <span className="text-[#760135]">North India</span>
   </>
 );
-
+export const content = (
+  <>
+    The Diploma in Pharmacy (D.Pharma) is a two-year program designed to provide
+    students with comprehensive knowledge of pharmaceutical sciences, drug
+    formulation, and healthcare practices. With an intake capacity of 60 seats,
+    this course equips aspiring pharmacists with the necessary skills to
+    contribute effectively to the healthcare industry.
+    <div className="mt-2 md:mt-[1%]"></div>
+    The curriculum covers pharmaceutics, pharmacology, medicinal chemistry,
+    hospital & clinical pharmacy, and drug regulations. Students gain hands-on
+    training in dispensing, drug testing, patient counseling, and pharmaceutical
+    manufacturing. Practical learning is enhanced through laboratory
+    experiments, hospital training, and industry visits to ensure real-world
+    exposure.
+    <div className="mt-2 md:mt-[1%]"></div>
+    After completing D.Pharma, graduates can register with the State Pharmacy
+    Council to become licensed pharmacists. They are eligible for employment in
+    hospitals, retail and community pharmacies, pharmaceutical industries, and
+    regulatory bodies. Additionally, students can pursue higher education by
+    enrolling in B.Pharma through lateral entry (direct admission into the
+    second year), opening doors for advanced career opportunities in research,
+    clinical pharmacy, and pharmaceutical marketing.
+    <div className="mt-2 md:mt-[1%]"></div>
+    With the increasing demand for qualified pharmacists, this program ensures
+    students are industry-ready and equipped with the knowledge to excel in the
+    dynamic world of pharmaceutical sciences.
+  </>
+);
+export const quotes = (
+  <>
+    “Shape the future of healthcare with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s D.Pharma program.
+    </strong>{" "}
+    Empowering aspiring pharmacists with the skills to make a difference in{" "}
+    <strong className="text-[#760135]">
+      patient care and the pharmaceutical industry.
+    </strong>
+    ”
+  </>
+);
+export const sideImages =[content1, content2]
 export const items = [
   {
     title: "PEO (Program Educational Objectives)",

@@ -1,10 +1,16 @@
-import civil from "../../../../../public/courses/btech/civil-engineering/civil-engineering.png";
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../../../public/courses/btech/CourseOutcomes.png";
+import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../../../public/courses/btech/ProgramEducationalObjective.png";
+import clubs from "../../../../../public/courses/bjmc/clubs.png";
+import edge from "../../../../../public/courses/btech/civil-engineering/edge.png";
+import work from "../../../../../public/courses/btech/civil-engineering/work.png";
+import beyondCurriculum from "../../../../../public/courses/btech/civil-engineering/beyondCurriculum.png";
+import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
 import civilDocument from "../../../../../public/courses/btech/civil-engineering/civil.pdf";
-import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
+import DepartmentalVission from "../../../../../public/courses/btech/civil-engineering/departmentalVision.png";
+import DepartmentalMission from "../../../../../public/courses/btech/civil-engineering/departmentalMission.png";
 import Tripti from "../../../../../public/courses/btech/civil-engineering/facultyData/Tripti.webp";
 import TriptiResume from "../../../../../public/courses/btech/civil-engineering/facultyData/TriptiResume.pdf";
 import PreetiKumar from "../../../../../public/courses/btech/civil-engineering/facultyData/PreetiKumar.webp";
@@ -29,15 +35,8 @@ import PrashantResume from "../../../../../public/courses/btech/civil-engineerin
 
 import Link from "next/link";
 
-export const images = [
-  civil,
-  // Add more image paths as needed
-];
-
 export const content = (
   <>
-    {/* <p className="text-center italic">"We are the nation builders!"</p>
-    <br /> */}
     The Civil Engineering Department of Tula’s Institute came into existence in
     the year 2011. The department offers Diploma, Undergraduate, and
     Postgraduate programs in civil engineering. The Department of civil
@@ -70,11 +69,15 @@ export const items = [
   {
     title: "Course Outcomes",
     description: [
-      <Link className="hover:text-[#3D001B]" href={civilDocument} target="_blank">
+      <Link
+        className="hover:text-[#3D001B]"
+        href={civilDocument}
+        target="_blank"
+      >
         Download B.Tech Civil Course Outcomes
       </Link>,
     ],
-    image: Course,
+    image: CourseOutcomes,
   },
   {
     title: "Program Outcomes",
@@ -82,7 +85,7 @@ export const items = [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
       "Problem Analysis : Identify, formulate, research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
       "Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
@@ -102,7 +105,7 @@ export const items = [
       "PSO1 : Understanding and providing innovative and ethical solutions to problems of natural and built environment using fundamentals of applied science, structural, hydraulics, geotechnical, transportation, environmental, water resources engineering, geomatics and interdisciplinary areas.",
       "PSO2 : Able to design a system, component or process in civil engineering context with focus on sustainable development meeting the requirements of the industry and society.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
     points: [
       "PSO3 : Up-gradation to latest skills, techniques and materials in the field of civil engineering and allied areas.",
     ],
@@ -113,7 +116,7 @@ export const items = [
       "PEO1 : Civil Engineering Professionals: The graduates will be equipped with the theoretical concepts of civil engineering subjects like structural, hydraulics, geotechnical, transportation, environmental, water resources engineering, geomatics and their application in planning, analysis, design and construction of infrastructure and development in associated fields of civil engineering.",
       "PEO2 : Entrepreneurship and Leadership: The graduates of Civil Engineering program will be proficient to formulate analyze and solve engineering problems to become employable engineers and capable entrepreneurs.",
     ],
-    image: Program,
+    image: ProgramEducationalObjective,
     points: [
       "PEO3 : Lifelong learning: To develop technical and communication skills required in the field of civil engineering and overall personality development of the students, inculcating leadership and teamwork abilities in the students so that they can effectively interact and work with the socio-culturally diverse societies across the globe.",
       "PEO4 : Social awareness and Ethics: Graduates will understand ethical and professional practice issues and demonstrate a commitment to professional social awareness and continuing education in technical and management institutes of repute nationally and globally.",
@@ -517,7 +520,7 @@ export const itemsClubs = [
       "Maintenance & Service Engineer",
       "Assistant Engineers & Junior Engineers in state & Central government organizations",
     ],
-    image: USP,
+    image: work,
   },
   {
     title: "Clubs/Societies/ Memberships",
@@ -527,7 +530,7 @@ export const itemsClubs = [
       "VIBGYOR",
       "VICTREE",
     ],
-    image: Course,
+    image: clubs,
   },
   {
     title: "Edge Over Others",
@@ -535,7 +538,7 @@ export const itemsClubs = [
       "The infrastructure sector has become the biggest focus area for the Government of India.",
       "The Govt. is providing special allocations in budget to complement infrastructure growth and housing for all schemes which in turn generates employment for the civil engineers. Also, India and Japan have joined hands for infrastructure development in India’s Northeast states to undertake strategic infrastructure projects for the region.",
     ],
-    image: Program,
+    image: edge,
     points: [
       "It is the oldest branch of engineering & serves as the base of engineering.",
     ],
@@ -545,7 +548,7 @@ export const itemsClubs = [
     description: [
       "Apart from the regular curriculum as specified by the university, we also conducts various workshops/ seminar/ Short term courses/ Expert Talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips time to time for making students aware of the recent trends and advancements in the industries.",
     ],
-    image: Program,
+    image: beyondCurriculum,
   },
   {
     title: "Career Prospects",
@@ -553,7 +556,7 @@ export const itemsClubs = [
       "Civil engineers create and implement solutions to a wide range of challenges, increasing efficiency in a variety of sectors. You may expect outstanding employment opportunities, high income, and a variety of work areas if you major in civil engineering. Civil engineering abilities are transferrable, which means they will be valuable in a range of sectors and can help to gain additional employment opportunities. A civil engineering degree will equip you with a variety of abilities, including:",
       "Problem-solving – engineering is all about discovering better, more efficient methods to do things.",
     ],
-    image: Program,
+    image: careerProspectus,
     points: [
       "Team building– working in groups allows you to share expertise and build faster, more reliable solutions.",
       "Research and Innovation: The students of the department are encouraged to participate in the research activities. They are also encouraged to be an entrepreneur by providing them all necessary support to build their startups.",

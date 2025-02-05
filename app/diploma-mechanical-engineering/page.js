@@ -7,12 +7,14 @@ import {
   cards,
   content,
   facultyData,
+  heading,
   hod,
   HODcontent,
-  images,
+  quotes,
   sections,
   selectedCardTable,
   semesterData,
+  sideImages,
 } from "./data/data";
 import Program from "@/component/Programs/Program";
 import Vision from "@/component/Programs/Vision";
@@ -39,7 +41,13 @@ function BSCAgriculture() {
           image={BannerImg}
           title=<>DIPLOMA IN MECHANICAL ENGINEERING</>
         />
-        <Program images={images} content={content} belowSpace={true} />
+        <Program
+          content={content}
+          belowSpacequotes={true}
+          heading={heading}
+          sideImages={sideImages}
+          quotes={quotes}
+        />
         <Vision color={true} sections={sections} />
         <TableProgram
           cards={cards}

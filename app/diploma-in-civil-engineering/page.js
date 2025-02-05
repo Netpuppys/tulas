@@ -11,8 +11,11 @@ import {
   cards,
   content,
   facultyData,
+  heading,
+  quotes,
   sections,
   selectedCardTable,
+  sideImages,
 } from "./data/data";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
@@ -35,7 +38,13 @@ function BAJMC() {
           image={BannerImg}
           title=<>DIPLOMA IN CIVIL ENGINEERING</>
         />
-        <Program content={content} belowSpace={true} />
+        <Program
+          content={content}
+          sideImages={sideImages}
+          heading={heading}
+          quotes={quotes}
+          belowSpacequotes={true}
+        />
         <Vision color={true} sections={sections} />
         <TableProgram
           cards={cards}

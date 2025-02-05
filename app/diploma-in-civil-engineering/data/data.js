@@ -8,15 +8,84 @@ import ArunAgarwal from "../../../public/courses/btech/civil-engineering/faculty
 import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
+import content1 from "../../../public/diploma-in-civil-engineering/content1.png";
+import content2 from "../../../public/diploma-in-civil-engineering/content2.png";
 export const content = (
   <>
-    The Department of Civil Engineering offers a 3-year diploma designed for
-    today’s booming infrastructure industry. With civil engineers in high
-    demand, this course equips you to design building plans, solve material
-    challenges, and gain hands-on site experience for a successful career.
+    The <strong>Diploma in Civil Engineering</strong> is a{" "}
+    <strong>three-year</strong> comprehensive program designed to equip students
+    with the{" "}
+    <strong>
+      fundamentals of construction, design, and infrastructure development.
+    </strong>{" "}
+    This program provides a <strong>strong technical foundation</strong> while
+    integrating <strong>modern industry practices,</strong> ensuring students
+    are well-prepared for the evolving demands of the civil engineering sector.
+    <div className="mt-2 md:mt-[1%]"></div>
+    The curriculum covers <strong>core engineering principles,</strong>{" "}
+    including{" "}
+    <strong>
+      structural design, surveying, construction materials, hydraulics, and
+      geotechnical engineering.
+    </strong>{" "}
+    Students gain hands-on experience with{" "}
+    <strong>advanced software tools</strong> like{" "}
+    <strong>AutoCAD, STAAD Pro, and Revit,</strong> essential for designing and
+    analyzing civil structures.
+    <div className="mt-2 md:mt-[1%]"></div>
+    The program also emphasizes{" "}
+    <strong>
+      environmental sustainability, smart infrastructure, and emerging trends in
+      urban development.
+    </strong>{" "}
+    Students learn about <strong>contemporary construction techniques,</strong>{" "}
+    quality control, and project management to enhance their practical
+    knowledge.
+    <div className="mt-2 md:mt-[1%]"></div>
+    Beyond classroom learning, students participate in{" "}
+    <strong>
+      industrial visits, on-site training, workshops, and expert lectures by
+      industry professionals.
+    </strong>{" "}
+    These experiences provide a real-world understanding of{" "}
+    <strong>
+      construction processes, safety protocols, and regulatory standards.
+    </strong>
+    <div className="mt-2 md:mt-[1%]"></div>
+    Additionally, the program fosters{" "}
+    <strong>
+      critical thinking, problem-solving, and teamwork skills,
+    </strong>{" "}
+    essential for professional growth in civil engineering. Graduates can
+    explore career opportunities in{" "}
+    <strong>
+      government and private infrastructure projects, real estate, construction
+      firms, and consultancy services
+    </strong>{" "}
+    or pursue higher education in engineering.
+    <div className="mt-2 md:mt-[1%]"></div>Tula's Institute ensures a{" "}
+    <strong>dynamic and industry-relevant learning environment,</strong> where
+    students receive hands-on training to build resilient and sustainable
+    structures.
   </>
 );
-
+export const sideImages = [content1, content2];
+export const heading = (
+  <>
+    Best Engineering Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
+export const quotes = (
+  <>
+    “Build the future with{" "}
+    <strong className="text-[#760135]">
+      Tula's Institute's Diploma in Civil Engineering.
+    </strong>{" "}
+    Shaping aspiring engineers into skilled professionals to transform the world
+    of <strong className="text-[#760135]">infrastructure and design.</strong>”
+  </>
+);
 export const sections = [
   {
     title: "Departmental Vision",

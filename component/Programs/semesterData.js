@@ -12,7 +12,7 @@ const SemesterTable = ({ semesterData }) => {
             {semester.semester}
           </h2>
           <table
-            className={`w-full mb-4 ${
+            className={`w-full leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal mb-4 ${
               semesterData.length - 1 === index ? "" : "md:mb-[4%]"
             }`}
           >
