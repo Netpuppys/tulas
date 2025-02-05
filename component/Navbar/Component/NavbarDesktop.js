@@ -81,7 +81,7 @@ function NavbarDesktop({
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="flex-auto font-[TTChocolatesBold] font-normal px-10 py-1 flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83]"
+                    className="flex-auto font-[TTChocolatesBold] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
                   >
                     {item.title}
                   </Link>
@@ -143,7 +143,7 @@ function NavbarDesktop({
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="flex-auto font-[TTChocolatesBold] px-10 py-1 font-normal flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                    className="flex-auto font-[TTChocolatesBold] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                   >
                     {nestedLinks.title}
                   </Link>
@@ -189,7 +189,7 @@ function NavbarDesktop({
                                 ? "noopener noreferrer"
                                 : undefined
                             }
-                            className="flex-auto font-[TTChocolatesBold] px-12 py-1 font-normal flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-white"
+                            className="flex-auto font-[TTChocolates] px-[8.5%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white"
                           >
                             {superNestedLinks.title}
                           </Link>
@@ -237,7 +237,7 @@ function NavbarDesktop({
                                         ? "noopener noreferrer"
                                         : undefined
                                     }
-                                    className="flex-auto font-[TTChocolatesBold] px-14 py-1 font-normal flex items-center h-full text-[clamp(18px,1.6vw,25px)] text-white group-hover:text-[#2c2c2c]"
+                                    className="flex-auto font-[TTChocolates] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.2vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
                                   >
                                     {thirdNestedLinks.title}
                                   </Link>

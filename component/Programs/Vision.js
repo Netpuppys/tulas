@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 function Vision({ sections, color = false }) {
   return (
     <div>
-      <div className="py-8 md:py-20 bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
+      <div className="py-8 md:py-[4%] bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
         {sections.map((section, index) => {
           const { ref, inView } = useInView({
             triggerOnce: true,
@@ -15,20 +15,20 @@ function Vision({ sections, color = false }) {
             <div
               ref={ref}
               key={index}
-              className={`flex flex-col gap-8 md:gap-0 md:flex-row mb-8 md:mb-20 last:mb-0 justify-between w-full md:w-[95%] h-fit items-center ${
+              className={`flex flex-col gap-8 md:gap-0 md:flex-row md:mb-[4%] last:mb-0 justify-between w-full md:w-[95%] h-fit items-center ${
                 index % 2 !== 0
                   ? "md:flex-row-reverse md:mr-[5%]"
                   : "md:ml-[5%]"
               } `}
             >
-              <div className="w-full md:px-0 md:w-[45%]">
+              <div className="w-full md:px-0 md:w-[47%]">
                 <div className="w-full block">
                   <h3
-                    className={`px-4 md:px-10 ${
+                    className={` ${
                       color
-                        ? "text-black border-black"
-                        : "text-white border-white"
-                    } font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 `}
+                        ? "text-[#007A83] "
+                        : "text-white px-4 md:px-10 border-white border-l-4 "
+                    } font-[TTChocolatesBold] rounded-md font-semibold text-[30px] leading-tight md:text-[clamp(20px,2.5vw,50px)]`}
                   >
                     {section.title}
                   </h3>
@@ -42,7 +42,7 @@ function Vision({ sections, color = false }) {
                   </h5>
                 </div>
               </div>
-              <div className="w-full md:w-[45%]">
+              <div className="w-full md:w-[47%]">
                 {section.image && (
                   <Image
                     src={section.image}

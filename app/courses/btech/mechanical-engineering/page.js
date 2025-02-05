@@ -2,7 +2,8 @@
 import React, { useRef } from "react";
 import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
-import background from "../../../../public/bsc-agriculture/background.png";
+import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
+import exploreCrouselBackground from "../../../../public/courses/bjmc/exploreCrouselBackground.png";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../../component/topRecruiter";
 import Program from "@/component/Programs/Program";
@@ -23,7 +24,8 @@ import {
   facultyData,
   specialization,
 } from "./data/data";
-import Banner from "@/component/Banner";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
+import BannerProgram from "@/component/Programs/BannerProgram";
 function BAJMC() {
   const parentRef = useRef(null);
 
@@ -43,11 +45,9 @@ function BAJMC() {
           <div className="w-full h-fit">
             <Navbar />
           </div>
-          <Banner
+          <BannerProgram
             image={BannerImg}
-            title=<>
-              Department of MECHANICAL ENGINEERING (ME)
-            </>
+            title=<>Department of MECHANICAL ENGINEERING (ME)</>
             titleColor={""}
             // description={
             //   "The Mechanical Engineering Department of Tula’s Institute is one of the oldest department since its inception in 2006. The department offers Diploma, Undergraduate, and Postgraduate programs in mechanical engineering. The main goal of the curriculum is to impart quality education to the students to develop technical skills, improve their problem-solving abilities, and encourage them to become a competitive mechanical engineer. "
@@ -58,7 +58,8 @@ function BAJMC() {
             heading={"Discover"}
             items={items}
             color={true}
-            background={background}
+            background={CrouselBackground}
+            backgroundCrousel={CrouselBackground}
           />
           <Vision color={true} sections={sections} />
           <TableProgram
@@ -70,12 +71,14 @@ function BAJMC() {
             HODcontent={HODcontent}
             specialization={specialization}
           />
+          <PlacementProgram />
           <TopRecruiter />
           <CarouselProgram
             heading={"Explore More"}
             items={itemsClubs}
             color={true}
-            background={background}
+            background={exploreCrouselBackground}
+            backgroundCrousel={exploreCrouselBackground}
           />
           {/* <div className="w-full relative overflow-hidden">
             <Image

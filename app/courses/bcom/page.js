@@ -2,7 +2,8 @@
 import React, { useRef } from "react";
 import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
-import background from "../../../public/bsc-agriculture/background.png";
+import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
+import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../component/topRecruiter";
 import Program from "@/component/Programs/Program";
@@ -20,7 +21,8 @@ import {
   selectedCard1,
   semesterData,
 } from "./data/data";
-import Banner from "@/component/Banner";
+import BannerProgram from "@/component/Programs/BannerProgram";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BBA() {
   const parentRef = useRef(null);
 
@@ -37,16 +39,12 @@ function BBA() {
       </head>
       <body>
         <div ref={parentRef}>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <Banner
+          <Navbar />
+          <BannerProgram
             image={BannerImg}
             title={"B.COM (HONS)"}
             titleColor={""}
-            description={
-              ""
-            }
+            description={""}
           />
 
           <Program parentRef={parentRef} images={images} content={content} />
@@ -54,7 +52,8 @@ function BBA() {
             heading={"Discover"}
             items={items}
             color={true}
-            background={background}
+            background={CrouselBackground}
+            backgroundCrousel={CrouselBackground}
           />
           <Vision color={true} sections={sections} />
           <TableProgram
@@ -63,21 +62,17 @@ function BBA() {
             semesterData={semesterData}
             facultyData={facultyData}
           />
+          <PlacementProgram />
           <TopRecruiter />
           <CarouselProgram
             heading={"Explore More"}
             items={itemsClubs}
             color={true}
-            background={background}
+            background={exploreCrouselBackground}
+            backgroundCrousel={exploreCrouselBackground}
           />
-          {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
-          <Footer  />
+
+          <Footer />
         </div>
       </body>
     </>

@@ -39,7 +39,7 @@ function Collaborators() {
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [currentIndex, crouselImages.length]);
   return (
-    <div className="py-8 md:py-14 bg-white w-full h-fit mb-10 md:mb-20 flex flex-col items-center justify-center relative">
+    <div className="py-8 md:py-[4%] bg-white w-full h-fit flex flex-col items-center justify-center relative">
       <h3 className="text-[#760135] pb-8 md:pb-14 text-[25px] md:text-[40px] font-[CarotSlab]">
         Collaborators
       </h3>

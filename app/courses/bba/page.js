@@ -20,7 +20,10 @@ import {
   selectedCard1,
   semesterData,
 } from "./data/data";
-import Banner from "@/component/Banner";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
+import BannerProgram from "@/component/Programs/BannerProgram";
+import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
+import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
 function BBA() {
   const parentRef = useRef(null);
 
@@ -37,16 +40,12 @@ function BBA() {
       </head>
       <body>
         <div ref={parentRef}>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <Banner
+          <Navbar />
+          <BannerProgram
             image={BannerImg}
             title=<>BBA</>
             titleColor={""}
-            description={
-              ""
-            }
+            description={""}
           />
 
           <Program parentRef={parentRef} images={images} content={content} />
@@ -54,7 +53,8 @@ function BBA() {
             heading={"Discover"}
             items={items}
             color={true}
-            background={background}
+            background={CrouselBackground}
+            backgroundCrousel={CrouselBackground}
           />
           <Vision color={true} sections={sections} />
           <TableProgram
@@ -63,12 +63,14 @@ function BBA() {
             semesterData={semesterData}
             facultyData={facultyData}
           />
+          <PlacementProgram />
           <TopRecruiter />
           <CarouselProgram
             heading={"Explore More"}
             items={itemsClubs}
             color={true}
-            background={background}
+            background={exploreCrouselBackground}
+            backgroundCrousel={exploreCrouselBackground}
           />
           {/* <div className="w-full relative overflow-hidden">
             <Image

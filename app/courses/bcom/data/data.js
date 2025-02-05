@@ -177,9 +177,8 @@ export const cards = [
 ];
 export const selectedCard1 = (
   <>
-    {" "}
-    <span className="font-[Arapey]">Admission Eligibility</span> <br />
-    <ul className="list-disc ml-5 font-[TTChocolates] text-[14px] md:text-[23px] text-black">
+    <span className="font-[Arapey] pb-[1%] leading-tight">Admission Eligibility</span>
+    <ul className="list-disc ml-5 font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
       <li>
         Passed XII or equivalent course in any discipline from any recognized
         Board / Council / University with minimum 45% marks for general (open)

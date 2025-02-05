@@ -1,81 +1,43 @@
-"use client";
-
-import React, { useEffect, useRef, useState } from "react";
-function Program({ parentRef, images, content }) {
-  const [scaleLeaf, setScaleLeaf] = useState(1);
-  const [opacity, setOpacity] = useState(1);
-  const [scrollY, setScrollY] = useState(0);
-  const [randomImage, setRandomImage] = useState(images[0]);
-  // Function to pick a random image
-  const getRandomImage = () => {
-    const randomIndex = Math.floor(Math.random() * images.length);
-    return images[randomIndex];
-  };
-
-  // Change image on component mount and every specific event
-  useEffect(() => {
-    const randomImg = getRandomImage();
-    setRandomImage(randomImg);
-  }, []); // Run on mount, or you can trigger this on specific events (e.g., onClick)
-
-  const [componentHeight, setComponentHeight] = useState();
-
-  const ref = useRef(null);
-  const childRef = useRef(null);
-
-  useEffect(() => {
-    if (childRef.current) {
-      const compHeight = childRef.current.getBoundingClientRect().height;
-      setComponentHeight(compHeight);
-      // console.log(compHeight);
-    }
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (parentRef.current && childRef.current) {
-        const parentTop = parentRef.current.getBoundingClientRect().top;
-        const childTop = childRef.current.getBoundingClientRect().top;
-
-        const positionFromTop = childTop - parentTop;
-        const scrollValue = Math.max(window.scrollY - positionFromTop, 0);
-        const scroll = Math.min(scrollValue, componentHeight);
-
-        setScrollY(scroll);
-        setScaleLeaf(1 + scroll * 0.001);
-        setOpacity(Math.max(1 - scroll * 0.001, 0));
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [componentHeight]);
-
+import Image from "next/image";
+import React from "react";
+function Program({ heading, content, sideImages, quotes, belowSpace = false }) {
   return (
-    <div ref={childRef} className="w-full h-fit">
-      <div className="w-full relative  overflow-hidden">
-        {/* <div
-          className={`${
-            scrollY > 0 && opacity === 0
-              ? "absolute"
-              : scrollY > 0
-              ? "fixed"
-              : "absolute"
-          } top-0 left-0 w-full h-screen z-[9] bg-no-repeat bg-cover bg-center`}
-          style={{
-            backgroundImage: `url(${randomImage.src})`,
-            transform: `scale(${scaleLeaf})`,
-            opacity: opacity,
-          }}
-        ></div> */}
-      </div>
-
-      <div ref={ref} className="z-[9] bg-transparent h-fit relative pl-4">
-        <h5 className="w-full text-black md:max-w-[80%] px-4 mx-auto py-10 md:py-20 leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal">
-          {content}
-        </h5>
+    <div className="w-full h-fit">
+      <div className="w-[92%] mx-auto">
+        {heading && (
+          <h5 className="w-fit mx-auto text-black text-center px-4 py-8 md:py-[3%] leading-tight text-[clamp(15px,5.5vw,30px)] md:text-[clamp(10px,2.5vw,45px)] font-[CarotSlab] font-medium">
+            {heading}
+            <div className="h-[4px] bg-[#007A83] w-[55%] mx-auto rounded-full"></div>
+          </h5>
+        )}
+        <div
+          className={`flex flex-col md:flex-row justify-center w-full items-start gap-4 md:gap-[2%] ${
+            belowSpace ? "" : "pb-8 md:pb-[3%]"
+          }  ${heading ? "" : "pt-8 md:pt-[3%]"}`}
+        >
+          {sideImages && (
+            <Image
+              src={sideImages[0]}
+              alt=""
+              className="w-full aspect-[1/1.5] md:aspect-auto object-cover md:w-[21%] rounded-lg"
+            />
+          )}
+          <h5 className="w-full text-black md:w-[58%] px-4 text-justify mx-auto leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal">
+            {content}
+          </h5>
+          {sideImages && (
+            <Image
+              src={sideImages[1]}
+              alt=""
+              className="w-full aspect-[1/1.5] md:aspect-auto object-cover md:w-[21%] rounded-lg"
+            />
+          )}
+        </div>
+        {quotes && (
+          <h5 className="w-full pb-8 md:pb-[3%] text-black md:w-[70%] px-4 text-center mx-auto leading-tight text-[clamp(15px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[LevSerif] font-normal italic">
+            {quotes}
+          </h5>
+        )}
       </div>
     </div>
   );

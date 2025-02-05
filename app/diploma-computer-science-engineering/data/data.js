@@ -7,6 +7,7 @@ export const images = [
   diplomaComputer,
   // Add more image paths as needed
 ];
+
 export const content = (
   <>
     The Diploma program in Computer Science and Engineering program is a

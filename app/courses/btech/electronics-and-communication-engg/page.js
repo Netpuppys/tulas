@@ -2,7 +2,8 @@
 import React, { useRef } from "react";
 import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
-import background from "../../../../public/bsc-agriculture/background.png";
+import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
+import exploreCrouselBackground from "../../../../public/courses/bjmc/exploreCrouselBackground.png";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../../component/topRecruiter";
 import Program from "@/component/Programs/Program";
@@ -24,6 +25,8 @@ import {
   specialization,
 } from "./data/data";
 import Banner from "@/component/Banner";
+import BannerProgram from "@/component/Programs/BannerProgram";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
   const parentRef = useRef(null);
 
@@ -41,26 +44,22 @@ function BAJMC() {
       </head>
       <body>
         <div ref={parentRef}>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <Banner
+          <Navbar />
+          <BannerProgram
             image={BannerImg}
             title=<>
               Department of Electronics & Communication Engineering (ECE)
-              
             </>
             titleColor={""}
-            description={
-              ""
-            }
+            description={""}
           />
           <Program parentRef={parentRef} images={images} content={content} />
           <CarouselProgram
             heading={"Discover"}
             items={items}
             color={true}
-            background={background}
+            background={CrouselBackground}
+            backgroundCrousel={CrouselBackground}
           />
           <Vision color={true} sections={sections} />
           <TableProgram
@@ -72,12 +71,14 @@ function BAJMC() {
             HODcontent={HODcontent}
             specialization={specialization}
           />
+          <PlacementProgram />
           <TopRecruiter />
           <CarouselProgram
             heading={"Explore More"}
             items={itemsClubs}
             color={true}
-            background={background}
+            background={exploreCrouselBackground}
+            backgroundCrousel={exploreCrouselBackground}
           />
           {/* <div className="w-full relative overflow-hidden">
             <Image
@@ -86,7 +87,7 @@ function BAJMC() {
               alt=""
             />
           </div> */}
-          <Footer  />
+          <Footer />
         </div>
       </body>
     </>

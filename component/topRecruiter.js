@@ -45,7 +45,7 @@ function TopRecruiter() {
   }, [currentIndex, crouselImages.length]);
 
   return (
-    <div className="py-8 md:py-14 bg-white w-full h-fit mb-10 md:mb-20 flex flex-col items-center justify-center relative">
+    <div className="py-8 md:py-[3%] bg-white w-full h-fit flex flex-col items-center justify-center relative">
       <h3 className="text-[#760135] pb-8 md:pb-14 text-[25px] md:text-[40px] font-[CarotSlab]">
         TOP RECRUITERS
       </h3>

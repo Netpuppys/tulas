@@ -2,9 +2,9 @@ import React from "react";
 
 function SelectedCardTable({ selectedCardTable }) {
   return (
-    <div className="semester-container text-black">
+    <div className="semester-container max-w-[1200px] mx-auto text-black">
       <div className="flex flex-col items-center justify-center gap-4 md:gap-6">
-        <table className="w-full mb-4 md:mb-20 text-black">
+        <table className="w-full text-black">
           <thead>
             <tr className="font-[900]">
               <th className="w-[10%]">S.NO</th>

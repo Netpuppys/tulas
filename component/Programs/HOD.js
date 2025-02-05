@@ -4,7 +4,7 @@ import React from "react";
 function HOD({ hod, HODcontent }) {
   return (
     <>
-      <div className="bg-transparent flex justify-center items-center w-full">
+      <div className="bg-transparent max-w-[1200px] mx-auto flex justify-center items-center w-full">
         {hod.map((faculty, index) => (
           <div
             key={index}
@@ -16,23 +16,23 @@ function HOD({ hod, HODcontent }) {
               className="rounded-2xl w-[40%] md:w-[225px] h-full object-cover"
             />
             <div className="px-4 text-black py-4 md:px-8 flex flex-col gap-2 md:gap-4">
-              <h3 className="text-[#760135] font-[TTChocolatesBold] font-semibold text-[20px] md:text-[30px]">
+              <h3 className="text-[#760135] font-[TTChocolatesBold] leading-tight font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,45px)]">
                 {faculty.name}
               </h3>
               {faculty.email && (
-                <p className="text-[14px] md:text-[16px]">
+                <p className="text-[clamp(10px,3vw,30px)] md:text-[clamp(10px,0.8vw,45px)]">
                   <strong>Email ID:- </strong>
                   {faculty.email}
                 </p>
               )}
               {faculty.designation && (
-                <p className="text-[14px] md:text-[16px]">
+                <p className="text-[clamp(10px,3vw,30px)] md:text-[clamp(10px,0.8vw,45px)]">
                   {faculty.designation}
                 </p>
               )}
 
               {faculty.department && (
-                <p className="text-[14px] md:text-[16px]">
+                <p className="text-[clamp(10px,3vw,30px)] md:text-[clamp(10px,0.8vw,45px)]">
                   {faculty.department}
                 </p>
               )}
@@ -40,8 +40,8 @@ function HOD({ hod, HODcontent }) {
           </div>
         ))}
       </div>
-      <div className="z-[9] bg-transparent h-fit relative pl-4">
-        <h5 className="w-full text-black px-4 mx-auto py-10 md:py-20 text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
+      <div className="max-w-[1200px] mx-auto bg-transparent h-fit relative pl-4">
+        <h5 className="w-full text-black px-4 mx-auto pt-8 md:pt-[3%] text-[16px] md:text-[22px] font-[TTChocolates] font-normal">
           {HODcontent}
         </h5>
       </div>

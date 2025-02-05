@@ -18,7 +18,8 @@ import Program from "@/component/Programs/Program";
 import Vision from "@/component/Programs/Vision";
 import TableProgram from "@/component/Programs/tableProgram";
 import TopRecruiter from "@/component/topRecruiter";
-import Banner from "@/component/Banner";
+import BannerProgram from "@/component/Programs/BannerProgram";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 
 function BSCAgriculture() {
   const parentRef = useRef(null);
@@ -39,7 +40,7 @@ function BSCAgriculture() {
           <div className="w-full h-fit">
             <Navbar />
           </div>
-          <Banner
+          <BannerProgram
             image={BannerImg}
             title=<>DIPLOMA IN MECHANICAL ENGINEERING</>
             titleColor={""}
@@ -47,7 +48,12 @@ function BSCAgriculture() {
             //   "The Mechanical Engineering department of Tula’s Institute offers a three-year diploma in Mechanical Engineering, approved by AICTE and affiliated to Uttarakhand Board of Technical Education, Roorkee."
             // }
           />
-          <Program parentRef={parentRef} images={images} content={content} />
+          <Program
+            parentRef={parentRef}
+            images={images}
+            content={content}
+            belowSpace={true}
+          />
           <Vision color={true} sections={sections} />
           <TableProgram
             cards={cards}
@@ -57,6 +63,7 @@ function BSCAgriculture() {
             HODcontent={HODcontent}
             facultyData={facultyData}
           />
+          <PlacementProgram />
           <TopRecruiter />
           {/* <div className="w-full relative overflow-hidden">
             <Image

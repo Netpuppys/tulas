@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
-import background from "../../../public/courses/bjmc/background.png";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../component/topRecruiter";
 import Program from "@/component/Programs/Program";
@@ -20,7 +19,10 @@ import {
   selectedCard1,
   semesterData,
 } from "./data/data";
-import Banner from "@/component/Banner";
+import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
+import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
+import BannerProgram from "@/component/Programs/BannerProgram";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 function MBA() {
   const parentRef = useRef(null);
 
@@ -35,26 +37,21 @@ function MBA() {
           content="Tula's Institute is leading in Best MBA College in Dehradun. We are recognized as Top private MBA College in Dehradun. We have rated best Management and top B Schools of Dehradun India is looking for."
         />
       </head>
-      <body >
+      <body>
         <div ref={parentRef}>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <Banner
+          <Navbar />
+          <BannerProgram
             image={BannerImg}
-            title=<>
-              MBA
-            </>
+            title=<>MBA</>
             titleColor={""}
-            description={
-              ""
-            }
+            description={""}
           />
           <Program parentRef={parentRef} images={images} content={content} />
           <CarouselProgram
             heading={"Discover"}
             items={items}
-            background={background}
+            background={CrouselBackground}
+            backgroundCrousel={CrouselBackground}
           />
           <Vision color={true} sections={sections} />
           <TableProgram
@@ -63,20 +60,14 @@ function MBA() {
             semesterData={semesterData}
             facultyData={facultyData}
           />
+          <PlacementProgram/>
           <TopRecruiter />
           <CarouselProgram
             heading={"Explore More"}
             items={itemsClubs}
-            background={background}
+            background={exploreCrouselBackground}
+            backgroundCrousel={exploreCrouselBackground}
           />
-
-          {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
           <Footer />
         </div>
       </body>

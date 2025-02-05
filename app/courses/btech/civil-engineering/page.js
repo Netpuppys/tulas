@@ -3,12 +3,13 @@
 import React, { useRef } from "react";
 import BannerImg from "../../../../public/courses/btech/civil-engineering/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
-import background from "../../../../public/courses/bjmc/background.png";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../../component/topRecruiter";
 import Program from "@/component/Programs/Program";
 import CarouselProgram from "@/component/Programs/CrouselProgram";
 import Vision from "@/component/Programs/Vision";
+import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
+import exploreCrouselBackground from "../../../../public/courses/bjmc/exploreCrouselBackground.png";
 import TableProgram from "@/component/Programs/tableProgram";
 import {
   cards,
@@ -23,7 +24,8 @@ import {
   selectedCardTable,
   semesterData,
 } from "./data/data";
-import Banner from "@/component/Banner";
+import BannerProgram from "@/component/Programs/BannerProgram";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 
 function BAJMC() {
   const parentRef = useRef(null);
@@ -41,10 +43,8 @@ function BAJMC() {
       </head>
       <body>
         <div className="max-w-full" ref={parentRef}>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <Banner
+          <Navbar />
+          <BannerProgram
             image={BannerImg}
             title={<>CIVIL ENGINEERING (CE)</>}
             titleColor={""}
@@ -57,7 +57,8 @@ function BAJMC() {
           <CarouselProgram
             heading={"Discover"}
             items={items}
-            background={background}
+            background={CrouselBackground}
+            backgroundCrousel={CrouselBackground}
           />
 
           <Vision color={true} sections={sections} />
@@ -71,11 +72,13 @@ function BAJMC() {
               HODcontent={HODcontent}
             />
           </div>
+          <PlacementProgram />
           <TopRecruiter />
           <CarouselProgram
             heading={"Explore More"}
             items={itemsClubs}
-            background={background}
+            background={exploreCrouselBackground}
+            backgroundCrousel={exploreCrouselBackground}
           />
 
           {/* <div className="w-full relative overflow-hidden">

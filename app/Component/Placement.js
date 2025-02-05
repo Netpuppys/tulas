@@ -3,8 +3,6 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import placement1 from "../../public/Homepage/Placement/placement1.png";
-import placement2 from "../../public/Homepage/Placement/placement2.png";
 import placement3 from "../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../public/Homepage/Placement/placement4.png";
 import { Autoplay } from "swiper/modules";

@@ -16,9 +16,9 @@ import Neha from "../../../public/courses/bjmc/facultyData/Neha.png";
 import NehaResume from "../../../public/courses/bjmc/facultyData/NehaResume.pdf";
 import EMPCLAB from "../../../public/courses/bjmc/EMPCLAB.jpg";
 import Link from "next/link";
-import cardImage1 from "../../../public/courses/dpharm/cardImage1.png"
-import cardImage2 from "../../../public/courses/dpharm/cardImage2.png"
-import cardImage3 from "../../../public/courses/dpharm/cardImage3.png"
+import cardImage1 from "../../../public/courses/dpharm/cardImage1.png";
+import cardImage2 from "../../../public/courses/dpharm/cardImage2.png";
+import cardImage3 from "../../../public/courses/dpharm/cardImage3.png";
 
 export const images = [
   bjmc,
@@ -27,10 +27,18 @@ export const images = [
 
 export const content = (
   <>
-    D. Pharm. (Diploma in Pharmacy) is a course with an intake capacity of 60 seats. The student who has completed D. Pharm. can be employed as Registered Pharmacist in Hospital and Community Pharmacies for dispensing drugs and pharmaceuticals.
-    <br/>
-    <br/>
-    It has been made mandatory that at least one person employed in a pharmacy must be a qualified registered pharmacist. After completion of Diploma in Pharmacy, one should complete the respective pharmacy council registration to become a registered pharmacist. A D. Pharm. holder can go for a professional degree (Under Graduate) course of B. Pharm. directly in second year, through lateral entry scheme.
+    D. Pharm. (Diploma in Pharmacy) is a course with an intake capacity of 60
+    seats. The student who has completed D. Pharm. can be employed as Registered
+    Pharmacist in Hospital and Community Pharmacies for dispensing drugs and
+    pharmaceuticals.
+    <br />
+    <br />
+    It has been made mandatory that at least one person employed in a pharmacy
+    must be a qualified registered pharmacist. After completion of Diploma in
+    Pharmacy, one should complete the respective pharmacy council registration
+    to become a registered pharmacist. A D. Pharm. holder can go for a
+    professional degree (Under Graduate) course of B. Pharm. directly in second
+    year, through lateral entry scheme.
   </>
 );
 
@@ -38,155 +46,230 @@ export const items = [
   {
     title: "PEO (Program Educational Objectives)",
     description: [
-        "To produce Pharmacy graduates with vital base concepts and high technical competence in Pharmaceutical Sciences.",
-        "To bestow students with well defined understanding in the various fields of Pharmacy viz., pharmaceutics, pharmaceutical chemistry, pharmacology and pharmacognosy according to the requirement of pharmaceutical industries, community and Hospital Pharmacy.",
+      "To produce Pharmacy graduates with vital base concepts and high technical competence in Pharmaceutical Sciences.",
+      "To bestow students with well defined understanding in the various fields of Pharmacy viz., pharmaceutics, pharmaceutical chemistry, pharmacology and pharmacognosy according to the requirement of pharmaceutical industries, community and Hospital Pharmacy.",
     ],
     image: cardImage1,
     points: [
-        "Promote research in various fields of Pharmaceutical Sciences and implement the knowledge in formulating best suitable medicines for the society",
-        "Develop a sense of teamwork and awareness amongst students towards the importance of interdisciplinary approach for developing attributes for solving complex problems in the area of Pharmaceutical Sciences.",
-        "Encourage the students to participate in life-long learning process for a highly productive career and to relate the concepts of Pharmaceutical Sciences towards serving the cause of the society.",
+      "Promote research in various fields of Pharmaceutical Sciences and implement the knowledge in formulating best suitable medicines for the society",
+      "Develop a sense of teamwork and awareness amongst students towards the importance of interdisciplinary approach for developing attributes for solving complex problems in the area of Pharmaceutical Sciences.",
+      "Encourage the students to participate in life-long learning process for a highly productive career and to relate the concepts of Pharmaceutical Sciences towards serving the cause of the society.",
     ],
   },
   {
     title: "PO's (Program Outcomes)",
     image: cardImage2,
-    description: ["Illustrate knowledge and comprehension of the core and basic knowledge associated with the profession of pharmacy"],
-    points: [<div className="overflow-x-auto">
-    <table className="table-auto border-collapse border border-gray-300 text-black  w-full text-left">
-      <thead className="bg-gray-200">
-        <tr>
-          <th className="border border-gray-300 text-black px-4 py-2">PO</th>
-          {/* <th className="border border-gray-300 text-black px-4 py-2">Outcome</th> */}
-          <th className="border border-gray-300 text-black px-4 py-2">Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO1</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-                Pharmacy knowledge:
-            </span>
-            Illustrate knowledge and comprehension of the core and basic knowledge associated with the profession of pharmacy, including biomedical sciences; pharmaceutical sciences; behavioral, social, and administrative pharmacy sciences; and manufacturing practices.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO2</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-                Problem analysis: 
-            </span>
-            State & Utilize the principles of scientific enquiry, thinking analytically, clearly and critically, while solving problems and making decisions during daily practice. Recognize, analyze information systematically and shall make defensible decisions.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO3</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Development of solutions:
-            </span>
-            Demonstrate effective planning abilities including time management, resource management, delegation skills and organizational skills. Develop and implement plans and organize work to meet deadlines.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO4</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Conduct investigations of complex problems:
-            </span>
-            Use research-based knowledge including developing experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO5</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Modern tool usage:
-            </span>
-            Choose and Interpret appropriate methods and procedures, resources, and modern pharmacy-related computing tools with an understanding of the limitations.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO6</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            The Pharmacist and Society:
-            </span>
-            Apply reasoning informed by the contextual knowledge to assess societal, health, safety and legal issues and the consequent responsibilities relevant to the professional pharmacy practice.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO7</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Environment and sustainability:
-            </span>
-            Examine the impact of the professional pharmacy solutions in societal and environmental contexts and Appraise the knowledge and need for sustainable development.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO8</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Pharmaceutical Ethics:
-            </span>
-            Honor personal values and defend ethical principles in professional and social contexts. Develop behavior that recognizes cultural and personal variability in values, communication and lifestyles. Generate ethical frameworks; Justify ethical principles while making decisions and take responsibility for the outcomes associated with the decisions.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO9</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Individual and teamwork:
-            </span>
-            Plan effectively as an individual, and as a member or leader in teams, and gain multidisciplinary knowledge through innovative projects, industrial training.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO10</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-                Communication:
-            </span>
-            Communicate effectively with the pharmacy community and with society at large, such as, being able to Interpret and write effective reports, make effective presentations and documentation, and give and receive clear instructions.
-          </td>
-        </tr>
-        <tr className="bg-white">
-          <td className="border border-gray-300 text-black px-4 py-2">PO11</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Project management and finance:
-            </span>
-            Acquire knowledge and understanding of Pharmacy and management principles and apply these to one’s own work, as a member and leader in a team. Formulate projects in multidisciplinary environments.
-          </td>
-        </tr>
-        <tr className="bg-gray-50">
-          <td className="border border-gray-300 text-black px-4 py-2">PO12</td>
-          <td className="border border-gray-300 text-black px-4 py-2">
-            <span className="font-bold mr-1">
-            Life-long learning:
-            </span>
-            Estimate the need for and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change. Self-access and interpret feedback effectively from others to predict learning needs and to satisfy these needs on an ongoing basis.
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>],
+    description: [
+      "Illustrate knowledge and comprehension of the core and basic knowledge associated with the profession of pharmacy",
+    ],
+    points: [
+      <div className="overflow-x-auto">
+        <table className="table-auto border-collapse border border-gray-300 text-black  w-full text-left">
+          <thead className="bg-gray-200">
+            <tr>
+              <th className="border border-gray-300 text-black px-4 py-2">
+                PO
+              </th>
+              {/* <th className="border border-gray-300 text-black px-4 py-2">Outcome</th> */}
+              <th className="border border-gray-300 text-black px-4 py-2">
+                Description
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="bg-white">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO1
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">Pharmacy knowledge:</span>
+                Illustrate knowledge and comprehension of the core and basic
+                knowledge associated with the profession of pharmacy, including
+                biomedical sciences; pharmaceutical sciences; behavioral,
+                social, and administrative pharmacy sciences; and manufacturing
+                practices.
+              </td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO2
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">Problem analysis:</span>
+                State & Utilize the principles of scientific enquiry, thinking
+                analytically, clearly and critically, while solving problems and
+                making decisions during daily practice. Recognize, analyze
+                information systematically and shall make defensible decisions.
+              </td>
+            </tr>
+            <tr className="bg-white">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO3
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">
+                  Development of solutions:
+                </span>
+                Demonstrate effective planning abilities including time
+                management, resource management, delegation skills and
+                organizational skills. Develop and implement plans and organize
+                work to meet deadlines.
+              </td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO4
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">
+                  Conduct investigations of complex problems:
+                </span>
+                Use research-based knowledge including developing experiments,
+                analysis and interpretation of data, and synthesis of the
+                information to provide valid conclusions.
+              </td>
+            </tr>
+            <tr className="bg-white">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO5
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">Modern tool usage:</span>
+                Choose and Interpret appropriate methods and procedures,
+                resources, and modern pharmacy-related computing tools with an
+                understanding of the limitations.
+              </td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO6
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">
+                  The Pharmacist and Society:
+                </span>
+                Apply reasoning informed by the contextual knowledge to assess
+                societal, health, safety and legal issues and the consequent
+                responsibilities relevant to the professional pharmacy practice.
+              </td>
+            </tr>
+            <tr className="bg-white">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO7
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">
+                  Environment and sustainability:
+                </span>
+                Examine the impact of the professional pharmacy solutions in
+                societal and environmental contexts and Appraise the knowledge
+                and need for sustainable development.
+              </td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO8
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">Pharmaceutical Ethics:</span>
+                Honor personal values and defend ethical principles in
+                professional and social contexts. Develop behavior that
+                recognizes cultural and personal variability in values,
+                communication and lifestyles. Generate ethical frameworks;
+                Justify ethical principles while making decisions and take
+                responsibility for the outcomes associated with the decisions.
+              </td>
+            </tr>
+            <tr className="bg-white">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO9
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">Individual and teamwork:</span>
+                Plan effectively as an individual, and as a member or leader in
+                teams, and gain multidisciplinary knowledge through innovative
+                projects, industrial training.
+              </td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO10
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">Communication:</span>
+                Communicate effectively with the pharmacy community and with
+                society at large, such as, being able to Interpret and write
+                effective reports, make effective presentations and
+                documentation, and give and receive clear instructions.
+              </td>
+            </tr>
+            <tr className="bg-white">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO11
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">
+                  Project management and finance:
+                </span>
+                Acquire knowledge and understanding of Pharmacy and management
+                principles and apply these to one’s own work, as a member and
+                leader in a team. Formulate projects in multidisciplinary
+                environments.
+              </td>
+            </tr>
+            <tr className="bg-gray-50">
+              <td className="border border-gray-300 text-black px-4 py-2">
+                PO12
+              </td>
+              <td className="border border-gray-300 text-black px-4 py-2">
+                <span className="font-bold mr-1">Life-long learning:</span>
+                Estimate the need for and have the preparation and ability to
+                engage in independent and life-long learning in the broadest
+                context of technological change. Self-access and interpret
+                feedback effectively from others to predict learning needs and
+                to satisfy these needs on an ongoing basis.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>,
+    ],
   },
   {
     title: "PSO's (Program Specific Outcomes)",
     description: [
       <span className="block">The Graduate shall be able to:</span>,
-      <><span className="font-semibold mr-1">PSO1.</span> Apply the knowledge of pharmaceutical and allied sciences in design, manufacture and evaluation of drug delivery systems including cosmetics.</>,
-      <><span className="font-semibold mr-1">PSO2.</span> Be able to perform classical and modern analysis of APIs and formulations in their quality control and enforce quality assurance standards.</>,
+      <>
+        <span className="font-semibold mr-1">PSO1.</span> Apply the knowledge of
+        pharmaceutical and allied sciences in design, manufacture and evaluation
+        of drug delivery systems including cosmetics.
+      </>,
+      <>
+        <span className="font-semibold mr-1">PSO2.</span> Be able to perform
+        classical and modern analysis of APIs and formulations in their quality
+        control and enforce quality assurance standards.
+      </>,
     ],
     image: cardImage3,
     points: [
-        <><span className="font-semibold mr-1">PSO3.</span> Appreciate the mechanism of action of drugs including their kinetics and adverse actions. Be able to do basic evaluation of bioactivity of drugs in in- silico models.</>,
-        <><span className="font-semibold mr-1">PSO4.</span> Apply the knowledge of medicinal chemistry, natural drugs in drug design and synthesis. Appreciate the importance of drugs derived from natural sources.</>,
-        <><span className="font-semibold mr-1">PSO5.</span> Act responsibly towards environment, follow ethical principles, be able to comprehend, interpret and apply laws pertinent to all spheres of pharmaceutical and allied domains.</>    
-    ]
+      <>
+        <span className="font-semibold mr-1">PSO3.</span> Appreciate the
+        mechanism of action of drugs including their kinetics and adverse
+        actions. Be able to do basic evaluation of bioactivity of drugs in in-
+        silico models.
+      </>,
+      <>
+        <span className="font-semibold mr-1">PSO4.</span> Apply the knowledge of
+        medicinal chemistry, natural drugs in drug design and synthesis.
+        Appreciate the importance of drugs derived from natural sources.
+      </>,
+      <>
+        <span className="font-semibold mr-1">PSO5.</span> Act responsibly
+        towards environment, follow ethical principles, be able to comprehend,
+        interpret and apply laws pertinent to all spheres of pharmaceutical and
+        allied domains.
+      </>,
+    ],
   },
 ];
 
@@ -229,22 +312,25 @@ export const sections = [
   },
 ];
 
-export const cards = [
-  { title: "Eligibility" },
-];
+export const cards = [{ title: "Eligibility" }];
 
 export const selectedCard1 = (
-    <>
-        <span className="font-[Arapey]">Admission Eligibility</span> <br />
-        <ul className="font-[TTChocolates] list-disc ml-5 text-[14px] md:text-[23px] text-black">
-            <li>
-                Passed in 10+2 examination with Physics and Chemistry as compulsory subjects, along with one of the following subjects:-Mathematics/Biology.
-            </li>
-            <li>
-                Candidate shall complete the age of 17 on or before 31st December 2025. The age shall be determined as per entry in the Matriculation / Higher Secondary or its Equivalent Certificate.
-            </li>
-        </ul>
-    </>
+  <>
+    <span className="font-[Arapey] pb-[1%] leading-tight">
+      Admission Eligibility
+    </span>
+    <ul className="font-[TTChocolates] list-disc ml-5 leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+      <li>
+        Passed in 10+2 examination with Physics and Chemistry as compulsory
+        subjects, along with one of the following subjects:-Mathematics/Biology.
+      </li>
+      <li>
+        Candidate shall complete the age of 17 on or before 31st December 2025.
+        The age shall be determined as per entry in the Matriculation / Higher
+        Secondary or its Equivalent Certificate.
+      </li>
+    </ul>
+  </>
 );
 
 export const semesterData = [

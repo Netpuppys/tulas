@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import BannerImg from "../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../public/diploma-computer-science-engineering/banner.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../component/topRecruiter";
@@ -15,10 +15,12 @@ import {
   semesterData,
   hod,
   HODcontent,
+  heading,
   selectedCardTable,
 } from "./data/data";
 import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
-import Banner from "@/component/Banner";
+import BannerProgram from "@/component/Programs/BannerProgram";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
   const parentRef = useRef(null);
 
@@ -40,17 +42,21 @@ function BAJMC() {
           <div className="w-full h-fit">
             <Navbar />
           </div>
-          <Banner
+          <BannerProgram
             image={BannerImg}
-            title=<>
-              DIPLOMA IN COMPUTER SCIENCE ENGINEERING
-            </>
+            title=<>DIPLOMA IN COMPUTER SCIENCE ENGINEERING</>
             titleColor={""}
             // description={
             //   "The Diploma program in Computer Science and Engineering program is a three-year undergraduate program. The Diploma program in Computer Science & Engineering stands out as one of the most coveted engineering program, shaping individuals for thriving careers in the IT industry."
             // }
           />
-          <Program parentRef={parentRef} images={images} content={content} />
+          <Program
+            parentRef={parentRef}
+            images={images}
+            heading={heading}
+            content={content}
+            belowSpace={true}
+          />
 
           <Vision color={true} sections={sections} />
           <TableProgram
@@ -61,6 +67,7 @@ function BAJMC() {
             hod={hod}
             HODcontent={HODcontent}
           />
+          <PlacementProgram />
           <TopRecruiter />
 
           {/* <div className="w-full relative overflow-hidden">

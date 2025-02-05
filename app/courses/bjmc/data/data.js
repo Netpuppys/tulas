@@ -1,7 +1,13 @@
 import bjmc from "../../../../public/courses/bjmc/bjmc.png";
-import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../../public/courses/bjmc/usp.png";
+import Course from "../../../../public/courses/bjmc/courseOutcomes.png";
+import Program from "../../../../public/courses/bjmc/programOutcomes.png";
+import ProgramSpecific from "../../../../public/courses/bjmc/programSpecificOutcomes.png";
+import ProgramEducational from "../../../../public/courses/bjmc/ProgramEducational.png";
+import clubs from "../../../../public/courses/bjmc/clubs.png";
+import edge from "../../../../public/courses/bjmc/edge.png";
+import beyondCurriculum from "../../../../public/courses/bjmc/beyondCurriculum.png";
+import careerProspectus from "../../../../public/courses/bjmc/careerProspectus.png";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
 import TauseefIqbal from "../../../../public/courses/bjmc/facultyData/TauseefIqbal.webp";
@@ -15,7 +21,7 @@ import AnkitGhildiyalResume from "../../../../public/courses/bjmc/facultyData/An
 import Neha from "../../../../public/courses/bjmc/facultyData/Neha.png";
 import NehaResume from "../../../../public/courses/bjmc/facultyData/NehaResume.pdf";
 import BJMC from "../../../../public/courses/bjmc/BJMC.pdf";
-import EMPCLAB from "../../../../public/courses/bjmc/EMPCLAB.jpg";
+import EMPCLAB from "../../../../public/courses/bjmc/epmc.png";
 import EMPCLAB1 from "../../../../public/courses/bjmc/EMPC LAB (1).jpg";
 import EMPCLAB2 from "../../../../public/courses/bjmc/EMPC LAB (2).jpg";
 import EMPCLAB3 from "../../../../public/courses/bjmc/EMPC LAB (3).jpg";
@@ -23,11 +29,16 @@ import EMPCLAB4 from "../../../../public/courses/bjmc/EMPC LAB (4).jpg";
 import EMPCLAB5 from "../../../../public/courses/bjmc/EMPC LAB (5).jpg";
 import EMPCLAB6 from "../../../../public/courses/bjmc/EMPC LAB (6).jpg";
 import EMPCLAB7 from "../../../../public/courses/bjmc/EMPC LAB (7).jpg";
+import content1 from "../../../../public/courses/bjmc/content1.png";
+import content2 from "../../../../public/courses/bjmc/content2.png";
 import Link from "next/link";
-export const images = [
-  bjmc,
-  // Add more image paths as needed
-];
+export const sideImages = [content1, content2];
+export const heading = (
+  <>
+    Best MassCommunication Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
     The Bachelor of Journalism & Mass Communication is a three-year
@@ -35,42 +46,47 @@ export const content = (
     a comprehensive understanding of media and its multifaceted nature. This
     curriculum encompasses essential theories related to media, its historical
     evolution, and its legal and ethical responsibilities in today’s digital
-    age.
-    <br />
-    <br />
-    Students learn how to craft news stories, create compelling headlines, and
-    navigate the intricacies of various media platforms. They delve into media
-    laws, constitutional frameworks, and other pertinent regulations essential
-    for a career in journalism and public communication. Additionally, the
-    program emphasizes the cultivation of creativity, offering training in
-    photography, filmmaking, design, editing, and other critical components of
-    visual storytelling, such as screenwriting and storyboarding.
-    <br />
-    <br />
+    age. <div className="mt-2 md:mt-[1%]"></div>Students learn how to craft news
+    stories, create compelling headlines, and navigate the intricacies of
+    various media platforms. They delve into media laws, constitutional
+    frameworks, and other pertinent regulations essential for a career in
+    journalism and public communication. Additionally, the program emphasizes
+    the cultivation of creativity, offering training in photography, filmmaking,
+    design, editing, and other critical components of visual storytelling, such
+    as screenwriting and storyboarding.
+    <div className="mt-2 md:mt-[1%]"></div>
     For those interested in advertising and public relations, the curriculum
     covers historical and theoretical foundations in these fields. Key subjects
     like Development Communication, Visual Communication, and Media Research
     equip students with the knowledge and skills needed to thrive in an
     ever-changing media landscape.
-    <br />
-    <br />
+    <div className="mt-2 md:mt-[1%]"></div>
     Moreover, this program not only sharpens media-specific competencies but
     also fosters a profound understanding of media's historical context and
     comprehensive role in society.
-    <br />
-    <br />
+    <div className="mt-2 md:mt-[1%]"></div>
     The department enhances the learning experience by organizing outdoor
     photography excursions, educational trips, film screenings followed by
     discussions, spontaneous extemporaneous speaking events, and interactive
     sessions with industry professionals. These activities enrich students'
     social engagement and practical knowledge.
-    <br />
-    <br />
+    <div className="mt-2 md:mt-[1%]"></div>
     Additionally, students connect with diverse communities, including media
     professionals, cultural groups, regional artists, film stars, award-winning
     athletes, and reformers, through various engagement initiatives. This
     exposure helps cultivate a well-rounded perspective on media's impact in the
     21st century.
+  </>
+);
+export const quotes = (
+  <>
+    “Unleash your creative potential with{" "}
+    <strong className="text-[#760135]">
+      Tula's Institute's BAJMC program.
+    </strong>{" "}
+    Empowering future media leaders to shape perspectives and make a mark in the
+    world of{" "}
+    <strong className="text-[#760135]">journalism and communication.</strong>”
   </>
 );
 export const items = [
@@ -80,14 +96,18 @@ export const items = [
       "Qualified Faculty members from all verticals of Media, Journalism & Mass communication",
       "State of the art Electronic Media Production Centre (EMPC)",
       "Tie ups with prominent media houses",
+      "In-house Newspaper (Tula’s Tabloid) publication and Electronic Media News dissemination platforms to facilitate students with industrial exposure before entering into job market",
+      "Preparation of professionals for the different media fields which would work closely with different stakeholders of civil society, media, and other democratic institutions, thereby contributing prominently towards overall national and regional development.",
     ],
     image: USP,
     points: [
-      "In-house Newspaper (Tula’s Tabloid) publication and Electronic Media News dissemination platforms to facilitate students with industrial exposure before entering into job market",
-      "Preparation of professionals for the different media fields which would work closely with different stakeholders of civil society, media, and other democratic institutions, thereby contributing prominently towards overall national and regional development.",
       "Opportunities for students to engage in hands-on projects, such as running Departmental Social Media Pages (Instagram & YouTube Channel), fostering creativity and teamwork",
-      <Link href={"https://www.instagram.com/masscommunication_tulas/"} target="_blank">
-        Click Here to Visit Instagram Page:
+      <Link
+        href={"https://www.instagram.com/masscommunication_tulas/"}
+        className="underline underline-offset-4 text-[#007A83]"
+        target="_blank"
+      >
+        Click Here to Visit Instagram Page
       </Link>,
     ],
   },
@@ -108,7 +128,9 @@ export const items = [
   {
     title: "Course Outcomes",
     description: [
-      <Link href={BJMC} target="_blank">Click here to download BA.JMC Course Outcomes</Link>,
+      <Link href={BJMC} target="_blank">
+        Click here to download BA.JMC Course Outcomes
+      </Link>,
     ],
     image: Course,
   },
@@ -138,7 +160,7 @@ export const items = [
       "PSO-2  Apply critical thinking and analytical skills to evaluate media content, ethical implications, and societal impact within the context of journalism and mass communication.",
       "PSO-3 Utilize diverse communication technologies effectively to produce and disseminate information in alignment with professional standards and audience preferences in the fields of journalism and mass communication.",
     ],
-    image: Course,
+    image: ProgramSpecific,
   },
   {
     title: "Program Educational Objective",
@@ -147,7 +169,7 @@ export const items = [
       "PEO-2: To enlighten the students about the core challenges of Media Industry.",
       "PEO-3: To familiarize the students with the media sector and media professionals.",
     ],
-    image: Program,
+    image: ProgramEducational,
     points: [
       "PEO-4: To inculcate the values and ethics of modern mass media.",
       "PEO-5: To impart Journalistic knowledge as per the best of academics and media industry.",
@@ -202,8 +224,10 @@ export const cards = [
 ];
 export const selectedCard1 = (
   <>
-    <span className="font-[Arapey]">Admission Eligibility</span> <br />
-    <ul className="font-[TTChocolates] list-disc ml-5 text-[14px] md:text-[23px] text-black">
+    <span className="font-[Arapey] pb-[1%] leading-tight">
+      Admission Eligibility
+    </span>
+    <ul className="font-[TTChocolates] list-disc ml-5 leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
       <li>
         A candidate having passed the Intermediate (10+2) or equivalent
         Examination in any discipline, from a recognized Examination Board,
@@ -420,14 +444,14 @@ export const itemsClubs = [
       "Vibgyor (Extra Curricular Students Club)",
       "Victree (Sports Club)",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Edge Over Others",
     description: [
       "In 21st Century, the media landscape is evolving at an unprecedented pace, and a BAJMC degree equips students with a distinct advantage in this dynamic environment. Graduates emerge with a profound understanding of societal trends, market dynamics, and governance, enriched by historical context and cultural diversity. Coupled with advanced communication skills, they are prepared to navigate the complexities of modern media.",
     ],
-    image: Course,
+    image: edge,
     points: [
       "Our program fosters creativity, enabling students to produce compelling media content that resonates across various platforms, addressing the needs for information, awareness, and entertainment in both popular and high culture.",
       "At Tula’s Department of Journalism & Mass Communication, we offer cutting-edge infrastructure designed to prepare students for diverse media engagements and research. Our state-of-the-art Electronic Media and Production Centre, along with a comprehensive library and supportive learning environment, empowers students to hone their skills and gain practical experience.",
@@ -440,7 +464,7 @@ export const itemsClubs = [
       "At Department of Mass Communication Tula’s , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
       "Besides a wide variety of extracurricular activities, workshops, and industry partnerships, there are also many opportunities for students to acquire additional know-how and proficiencies.",
     ],
-    image: Program,
+    image: beyondCurriculum,
     points: [
       "Internships and Field Projects: Such opportunities develop students from a theoretical knowledge base to the application of such learning toward practical experiences and connections within a profession.",
       "Guest Lectures and Seminars: Hosting more regular sessions and presentations from industry experts and other alumni provides our students with exposure to their specific experiences and insights, further enriching their understanding of current trends and practices.",
@@ -458,7 +482,7 @@ export const itemsClubs = [
       "Journalism: Graduates can pursue careers as reporters, editors, and correspondents in print, broadcast, and digital media, where they investigate and report on current events, shaping public discourse.",
       "Public Relations: A career in PR allows graduates to manage communications for organizations, build brand awareness, and handle crisis communication, ensuring that the public perception aligns with organizational goals.",
     ],
-    image: USP,
+    image: careerProspectus,
     points: [
       "Advertising and Marketing: Graduates can work in advertising agencies, creating impactful campaigns and strategies that resonate with target audiences across various platforms.",
       "Media Production: Opportunities abound in film, television, and radio production, where graduates can take on roles as producers, directors, and content creators, bringing stories to life through various media.",

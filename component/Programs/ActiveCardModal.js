@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useRef } from "react";
+import { HiPlus } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 import { RiArrowRightSFill } from "react-icons/ri";
 
@@ -23,14 +24,14 @@ const ActiveCardModal = ({
     setActiveCard(item);
   };
   return (
-    <div className="w-full h-screen z-[99999] pointer-events-auto top-0 left-0 fixed bg-black bg-opacity-40 backdrop-blur-sm flex items-start justify-end">
+    <div className="w-full h-screen z-[9999] pointer-events-auto top-0 left-0 fixed bg-black bg-opacity-40 backdrop-blur-sm flex items-start justify-end">
       <div
         onClick={() => setActiveCard(null)}
         className="cursor-pointer w-[55vw] h-full hidden md:block"
       ></div>
       <div
         ref={scrollRef}
-        className="animate-translateRight pointer-events-auto overflow-y-scroll z-[999] bg-white w-full md:w-[45vw] h-full"
+        className="animate-translateRight relative pointer-events-auto overflow-y-scroll z-[9999] bg-white w-full md:w-[45vw] h-full"
       >
         {/* top bar */}
         <div
@@ -38,7 +39,7 @@ const ActiveCardModal = ({
             color ? "bg-[#007A83]" : "bg-[#760135]"
           } flex items-center justify-between px-[1.3rem] py-4`}
         >
-          <p className="font-[CarotSlab] text-[1.6rem] font-medium">
+          <p className="font-[CarotSlab] text-[clamp(10px,5vw,40px)] md:text-[clamp(10px,1.5vw,40px)] leading-tight font-medium">
             {heading}
           </p>
           <button
@@ -53,24 +54,24 @@ const ActiveCardModal = ({
 
         {/* content div */}
         {!card.imagesArray && (
-          <div className="px-10 py-16">
+          <div className="px-[4%] py-[5%]">
             <div className="flex-col-reverse md:flex-row items-center md:items-start flex gap-6 justify-between">
               <div className="">
                 <p
                   className={`${
                     color ? "text-[#007A83]" : "text-[#760135]"
-                  } underline underline-offset-8 text-[clamp(20px,1.5vw,40px)] font-[CarotSlab] font-medium`}
+                  } underline underline-offset-8 text-[clamp(10px,4.5vw,40px)] md:text-[clamp(10px,1.3vw,40px)] font-[CarotSlab] font-medium`}
                 >
                   {card?.title}
                 </p>
-                <p className="mt-6">
+                <p className="mt-[1.5%]">
                   {card?.description?.map((item, index) => (
-                    <p
+                    <h2
                       key={index}
-                      className=" text-[#1b1b1b] text-wrap text-[clamp(14px,1vw,40px)] font-light mt-6"
+                      className=" text-[#1b1b1b] text-wrap text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-snug font-light mt-[1.5%]"
                     >
                       {item}
-                    </p>
+                    </h2>
                   ))}
                 </p>
               </div>
@@ -82,14 +83,14 @@ const ActiveCardModal = ({
                 />
               </div>
             </div>
-            <div className="mt-6">
+            <div className="">
               {card?.points?.map((item, index) => (
-                <p
+                <h2
                   key={index}
-                  className=" text-[#1b1b1b] text-wrap text-[clamp(14px,1vw,40px)] font-light mt-6"
+                  className=" text-[#1b1b1b] text-wrap text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-snug font-light mt-[1.5%]"
                 >
                   {item}
-                </p>
+                </h2>
               ))}
             </div>
           </div>
@@ -126,23 +127,23 @@ const ActiveCardModal = ({
 
         {/* explore more */}
         <div
-          className={`px-4 md:px-12 w-full py-3 md:py-10 relative text-center flex flex-col items-center justify-start`}
+          className={`px-4 w-full py-3 md:py-10 relative text-center flex flex-col items-center justify-start`}
         >
           <Image
             src={background}
             alt=""
             className="absolute w-full -z-10 top-0 h-full object-cover"
           />
-          <p className="text-[clamp(2.5rem,4vw,4.5rem)] text-center leading-none font-[Arapey] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_0.4vw_0vw_0_black]">
+          <p className="text-[clamp(2.5rem,3vw,4.5rem)] text-center leading-none font-[CarotSlab] text-white [text-shadow:_5px_0px_0_black] md:[text-shadow:_0.2vw_0vw_0_black]">
             {heading}
           </p>
 
-          <div className="w-full flex flex-wrap items-center justify-center gap-3 md:gap-10 py-10">
+          <div className="w-full flex flex-wrap items-center justify-center gap-3 md:gap-6 py-10">
             {items.map((item, index) => (
               <div
                 key={index}
                 onClick={() => handleCardChange(item)}
-                className={`relative w-[calc(50%-0.75rem)] md:w-[calc(50%-2.5rem)] group transition-all text-left duration-500 ease-in-out ${
+                className={`relative w-[calc(50%-0.75rem)] md:w-[calc(33%-1.5rem)] aspect-[1/1.2] group transition-all text-left duration-500 ease-in-out ${
                   item.title === card.title ? "hidden" : "block"
                 } `}
               >
@@ -152,20 +153,19 @@ const ActiveCardModal = ({
                   className="w-full h-full object-cover"
                 />
 
-                <div className="absolute group-hover:animate-overlay inset-0 group-hover:bg-white group-hover:opacity-60"></div>
-                <div className="absolute block group-hover:hidden inset-0 bg-black opacity-60"></div>
-
-                <div className="w-full text-left absolute bottom-0 p-2">
-                  <h3 className="text-wrap flex items-center gap-1 text-[16px] md:text-[30px] font-[TTChocolatesBold] w-full border border-b-white group-hover:border-b-black border-transparent text-white group-hover:text-black">
-                    <RiArrowRightSFill />
-                    <span className="line-clamp-1">{item.title}</span>
+                <div className="absolute block inset-0 bg-[linear-gradient(288deg,rgba(0,0,0,0.00)_5.32%,rgba(0,0,0,0.70)_97.09%)]"></div>
+                <div className="w-full absolute top-0 p-4">
+                  <h3 className="flex flex-col w-fit text-[clamp(15px,4.3vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight font-[TTChocolatesBold] text-white">
+                    <span className="line-clamp-1">{item?.title}</span>
+                    <div className="h-[4px] bg-[#E69706] w-[80px] rounded-full"></div>
                   </h3>
-                  <ul className="ml-5 list-disc">
-                    <li className="text-wrap text-[10px] md:text-[15px] line-clamp-1 pt-2 text-white group-hover:text-black">
-                      {item.description}
-                    </li>
-                  </ul>
                 </div>
+                <button className="w-full absolute bottom-0 flex justify-center items-center gap-4 py-3 bg-white text-[#007A83]">
+                  Click to Expand{" "}
+                  <span className="bg-[#007A83] text-white p-1 rounded-full aspect-square">
+                    <HiPlus />
+                  </span>
+                </button>
               </div>
             ))}
           </div>
