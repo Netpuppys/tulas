@@ -45,14 +45,11 @@ function WhyChoose() {
     },
   ];
   return (
-    <div className="pb-8 px-4 md:px-6 md:pb-20 flex flex-col items-center justify-center w-full">
-      <h8 className="text-[#646464] flex flex-col md:flex-row items-center justify-center leading-none gap-6 text-[40px] md:text-[clamp(20px,3vw,100px)] font-[Helvetica] font-light">
-        Why Choose
-        <span className="text-[40px] text-[#007A83] md:text-[clamp(20px,3.2vw,100px)] font-[GoudyCatalogue] ">
-          TULA’s
-        </span>
+    <div className="px-4 md:px-6 flex flex-col items-center justify-center w-full">
+      <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+        Why Choose TULA’s
       </h8>
-      <div className="w-full h-fit mt-4 rounded-xl p-8 md:p-20 bg-[#007A83]">
+      <div className="w-full h-fit mt-4 rounded-xl p-8 md:p-[4%] bg-[#007A83]">
         <div className="flex flex-wrap gap-8 w-full md:w-[90%] mx-auto items-end">
           {whyData.map((card, index) => (
             <div
@@ -74,7 +71,7 @@ function WhyChoose() {
                   {card.description}
                 </h3>
               </div>
-              <div className="bg-white w-[calc(100%-32px)] md:w-[calc(100%-80px)] mx-auto mt-[8%] h-[1px]"></div>
+              <div className="bg-white w-[calc(100%-32px)] md:w-[calc(100%-80px)] mx-auto mt-[5%] h-[1px]"></div>
             </div>
           ))}
         </div>

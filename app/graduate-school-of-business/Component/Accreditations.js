@@ -40,10 +40,10 @@ function Accreditations() {
   ];
   return (
     <div className="pb-8 px-4 md:px-6 md:pb-20 flex flex-col items-center justify-center w-full">
-      <h8 className="text-[40px] text-[#007A83] md:text-[clamp(20px,3.2vw,100px)] font-[GoudyCatalogue] leading-none gap-6 font-light">
+      <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
         Accreditations
       </h8>
-      <div className="w-[95%] pt-8 md:pt-20 md:w-[70%] flex flex-wrap gap-2 md:gap-3">
+      <div className="w-[95%] pt-8 md:pt-[4%] md:w-[70%] flex flex-wrap gap-2 md:gap-3">
         {card.map((card, index) => (
           <div
             style={{

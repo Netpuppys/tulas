@@ -109,7 +109,7 @@ function Navbar({
       <div className={`z-[9999] relative`}>
         {/* top bar */}
         <div
-          className={`w-full pointer-events-auto md:bg-[rgba(19,19,19,0.50)] md:backdrop-blur-xl hidden mdNavbar:flex`}
+          className={`w-full pointer-events-auto mdNavbar:bg-[rgba(19,19,19,0.50)] mdNavbar:backdrop-blur-xl hidden mdNavbar:flex`}
         >
           <div className="w-[95%] mx-auto flex items-center justify-center gap-4 top-0 border-b-[0.5px] border-[#9A9A9A] h-fit py-2">
             <a
@@ -134,7 +134,7 @@ function Navbar({
         <div
           className={`mdNavbar:px-10 w-full relative ${
             !scrolled && !isChecked
-              ? "md:bg-[rgba(19,19,19,0.50)] md:backdrop-blur-xl"
+              ? "mdNavbar:bg-[rgba(19,19,19,0.50)] mdNavbar:backdrop-blur-xl"
               : ""
           } h-full py-2 flex flex-col justify-center`}
         >
@@ -374,7 +374,7 @@ function Navbar({
         <FormPopup formPopup={formPopup} setFormPopup={setFormPopup} />
       )}
       <div
-        className={`w-full bottom-0 absolute pointer-events-auto bg-[#007A83] md:hidden`}
+        className={`w-full bottom-0 absolute pointer-events-auto bg-[#007A83] mdNavbar:hidden`}
       >
         <div className="w-full mx-auto flex justify-between h-fit py-2">
           <a
@@ -406,7 +406,7 @@ function Navbar({
           <Image
             src={whatsapp}
             alt=""
-            className="w-[25px] h-[25px] md:w-[29px] md:h-[29px]"
+            className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
           />
         </button>
         <button
@@ -418,7 +418,7 @@ function Navbar({
           <Image
             src={logo360}
             alt=""
-            className="w-[25px] h-[25px] md:w-[29px] md:h-[29px]"
+            className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
           />
         </button>
         <a
@@ -429,7 +429,7 @@ function Navbar({
           <Image
             src={phoneCallGif}
             alt=""
-            className="w-[25px] h-[25px] md:w-[29px] md:h-[29px]"
+            className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
           />
         </a>
       </div>

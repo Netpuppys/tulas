@@ -4,6 +4,9 @@ import "swiper/css/navigation";
 import { PiStudentFill } from "react-icons/pi";
 import { GiGraduateCap } from "react-icons/gi";
 import { FaBusinessTime, FaWifi } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import campus from "../../../public/graduate-school-of-business/mba/campus1.webp";
+import Image from "next/image";
 function CarouselContent() {
   const cards = [
     {
@@ -17,7 +20,7 @@ function CarouselContent() {
     },
     {
       icon: <PiStudentFill />,
-      value: "150",
+      value: "200",
       name: (
         <>
           QUALIFIED FACULTY <strong>MEMBERS</strong>
@@ -35,7 +38,7 @@ function CarouselContent() {
     },
     {
       icon: <FaBusinessTime />,
-      value: "19",
+      value: "20",
       name: (
         <>
           YEARS OF <strong>EXCELLENCE</strong>
@@ -44,28 +47,74 @@ function CarouselContent() {
     },
   ];
 
+  const sections = [
+    {
+      title: "About Tula's",
+      description: (
+        <>
+          Tula’s Institute, founded in 2006 under the Rishabh Educational Trust,
+          is a premier institution in Dehradun dedicated to developing future
+          leaders. We focus on providing a strong academic foundation while
+          emphasizing critical thinking, strategic decision-making, and
+          real-world skills—essential for success in today’s competitive world.
+          <div className="mt-4 md:mt-[1%]"></div>
+          At Tula’s, we prepare students to navigate complex challenges, drive
+          innovation, and lead with confidence. Our hands-on approach to
+          learning ensures that students are not only equipped with theoretical
+          knowledge but also practical experience.
+        </>
+      ),
+      image: campus,
+    },
+  ];
+
   return (
-    <div className="relative flex flex-col items-center justify-center pt-8 md:pt-20">
-      <h2 className="text-black flex flex-col md:flex-row md:gap-6 text-[40px] text-center md:text-[clamp(20px,3vw,100px)] font-[Helvetica] font-light">
-        Here Excellence Meets{" "}
-        <span className="text-[#007A83] text-[40px] md:text-[clamp(20px,3.2vw,100px)] font-[GoudyCatalogue] ">
-          Opportunity!
-        </span>
-      </h2>
-      <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
-        Tula’s Institute, founded in 2006 under the Rishabh Educational Trust,
-        is a premier institution in Dehradun dedicated to developing future
-        leaders. We focus on providing a strong academic foundation while
-        emphasizing critical thinking, strategic decision-making, and real-world
-        skills—essential for success in today’s competitive world.
-      </h4>
-      <h6 className="px-8 md:px-0 w-full md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
-        At Tula’s, we prepare students to navigate complex challenges, drive
-        innovation, and lead with confidence. Our hands-on approach to learning
-        ensures that students are not only equipped with theoretical knowledge
-        but also practical experience.
-      </h6>
-      <div className="flex flex-wrap w-full md:max-w-[90%] py-8 md:py-20 md:pb-10 gap-3 md:gap-[8%] items-center justify-center mx-auto">
+    <div className="relative flex flex-col items-center justify-center">
+      <div className="py-8 md:py-[4%] bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
+        {sections.map((section, index) => {
+          const { ref, inView } = useInView({
+            triggerOnce: true,
+            threshold: 0.3,
+          });
+          return (
+            <div
+              ref={ref}
+              key={index}
+              className={`flex flex-col gap-8 md:gap-0 md:flex-row md:mb-[4%] last:mb-0 justify-between w-full md:w-[95%] h-fit items-center md:ml-[5%]`}
+            >
+              <div className="w-full md:px-0 md:w-[47%]">
+                <div className="w-full block">
+                  <h3
+                    className={`
+                      text-[#007A83] px-4 text-center font-[GoudyCatalogue] md:text-start rounded-md font-semibold text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)]`}
+                  >
+                    {section.title}
+                  </h3>
+                  <h5
+                    className={`leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[Helvetica] text-black`}
+                  >
+                    {section.description}
+                  </h5>
+                </div>
+              </div>
+              <div className="w-full md:w-[47%]">
+                {section.image && (
+                  <Image
+                    src={section.image}
+                    alt=""
+                    className={`w-full h-fit  ${
+                      inView
+                        ? "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-s-3xl"
+                        : "rounded-xl md:opacity-0"
+                    }`}
+                  />
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="flex flex-wrap w-full md:max-w-[90%] gap-3 md:gap-[4%] items-center justify-center mx-auto">
         {cards.map((card, index) => (
           <div key={index}>
             <div
@@ -78,7 +127,7 @@ function CarouselContent() {
                 <h3 className="text-[40px] md:text-[51px] leading-tight text-[#007A83] font-extrabold">
                   {card.icon}
                 </h3>
-                <h2 className="font-[TTChocolatesBold] text-[30px] md:text-[42px] leading-tight text-[#007A83] font-extrabold">
+                <h2 className="font-[TTChocolatesBold] text-[clamp(10px,7vw,45px)] md:text-[clamp(10px,2.5vw,45px)] leading-tight text-[#007A83] font-extrabold">
                   {card.value}
                 </h2>
                 <h3 className="text-[#343434] max-w-[140px] md:max-w-[180px] text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolatesBold] font-normal text-center">

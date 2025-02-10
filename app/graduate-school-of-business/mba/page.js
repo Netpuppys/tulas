@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import NavbarLandingPage from "../Component/NavbarLandingPage";
 import BannerLandingPage from "../Component/BannerLandingPage";
 import FormLandingPage from "../Component/FormLandingPage";
@@ -10,10 +10,12 @@ import AtGlance from "../Component/AtGlance";
 import Accreditations from "../Component/Accreditations";
 import Placement from "../Component/Placement";
 import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
-import FacultyData from "@/component/Programs/facultyData";
 import { facultyData } from "@/app/courses/mba/data/data";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import Image from "next/image";
+import NavbarLanding from "../Component/NavbarLanding";
+import CampusLife from "@/app/Component/CampusLife";
+import FacultyDataLandingPage from "../Component/FacultyDataLandingPage";
 
 const page = () => {
   const handleScrollArrow = () => {
@@ -23,6 +25,26 @@ const page = () => {
     });
   };
   const scrollRef = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const threshold = 0.3;
+      const sixtyVH = window.innerHeight * threshold;
+
+      if (window.scrollY > sixtyVH) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <head>
@@ -35,7 +57,8 @@ const page = () => {
       <body>
         <div className="w-full min-h-screen h-full relative">
           {/* Navbar */}
-          <NavbarLandingPage />
+          <NavbarLanding handleScrollArrow={handleScrollArrow} />
+          {/* <NavbarLandingPage /> */}
           {/* banner */}
           <BannerLandingPage />
           {/* Form */}
@@ -49,40 +72,40 @@ const page = () => {
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}
-          <AtGlance />
+          {/* <AtGlance /> */}
+          <CampusLife />
           {/*Faculty */}
-          <div className="px-4 md:px-6 flex flex-col items-center justify-center w-full">
-            <h8 className="text-[#646464] flex flex-col md:flex-row items-center justify-center leading-none gap-6 text-[40px] md:text-[clamp(20px,3vw,100px)] font-[Helvetica] font-light">
-              Our
-              <span className="text-[40px] text-[#007A83] md:text-[clamp(20px,3.2vw,100px)] font-[GoudyCatalogue] ">
-                Professors
-              </span>
+          <div className="pt-8 md:pt-[4%] px-4 md:px-6 flex flex-col items-center justify-center w-full">
+            <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+              Our Professors
             </h8>
-            <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
               With every lesson, professors are shaping minds and paving the way
               for future innovations.
             </h4>
           </div>
-          <div className="pb-8 md:pb-20 px-4 w-full max-w-[1200px] mx-auto">
-            <FacultyData facultyData={facultyData} />
+          <div className="pb-8 md:pb-[4%] px-4 w-full">
+            <FacultyDataLandingPage facultyData={facultyData} />
           </div>
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
           <Placement scrollRef={scrollRef} />
-          <button
-            onClick={handleScrollArrow}
-            className="hidden md:block bottom-10 left-10 fixed z-50 w-[100px] aspect-square"
-          >
-            <div className="relative w-full h-full flex justify-center items-center">
-              <Image
-                className="animate-scrollSpin absolute w-full h-fit"
-                src={ScrollImage}
-                alt=""
-              />
-              <IoIosArrowRoundUp className="absolute text-[40px] font-thin text-[#292929]" />
-            </div>
-          </button>
+          {scrolled && (
+            <button
+              onClick={handleScrollArrow}
+              className="hidden md:block bottom-10 left-10 fixed z-50 w-[100px] aspect-square"
+            >
+              <div className="relative w-full h-full flex justify-center items-center">
+                <Image
+                  className="animate-scrollSpin absolute w-full h-fit"
+                  src={ScrollImage}
+                  alt=""
+                />
+                <IoIosArrowRoundUp className="absolute text-[40px] font-thin text-[#292929]" />
+              </div>
+            </button>
+          )}
         </div>
       </body>
     </>

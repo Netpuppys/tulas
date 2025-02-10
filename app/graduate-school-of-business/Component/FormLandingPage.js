@@ -26,7 +26,6 @@ function FormLandingPage() {
     Course: 11,
     Center: "",
     State: "",
-    City: "",
   });
   const [otp, setOtp] = useState("");
   const [isOtpSent, setIsOtpSent] = useState(false);
@@ -63,19 +62,12 @@ function FormLandingPage() {
       Center: Number(value),
     }));
   };
-  const handleCityChange = (value) => {
-    setFormData((prev) => ({
-      ...prev,
-      City: Number(value),
-    }));
-  };
 
   const handleStateChange = (e) => {
     const selectedStateId = e.target.value; // Ensure it's an integer
     setFormData((prev) => ({
       ...prev,
       State: Number(selectedStateId),
-      City: "", // Reset City if State changes
     }));
   };
 
@@ -160,7 +152,6 @@ function FormLandingPage() {
           Course: 11,
           Center: "",
           State: "",
-          City: "",
         });
         setOtp("");
         window.location.href = `/graduate-school-of-business/mba/thank-you${utmParams}`;
@@ -229,19 +220,19 @@ function FormLandingPage() {
   };
 
   return (
-    <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 -mt-[85%] sm:-mt-[65%] md:-mt-[30%] lg:-mt-[25%] 2xl:-mt-[20%]">
+    <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 -mt-[50%] md:-mt-[10%]">
       <div className="w-full flex flex-col justify-center items-center">
-        <Image src={mba} className="w-fit h-fit " alt="" />
+        {/* <Image src={mba} className="w-fit h-fit " alt="" />
         <h1 className="font-[TTChocolatesBold] leading-tight my-4 text-center font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)]">
           Get the skills. Gain the edge.
           <br />
           <span className="text-[#007A83]">
             Own the future with an MBA from Tula’s.
           </span>
-        </h1>
+        </h1> */}
         <div
           style={{ boxShadow: "0px -7px 69.127px 0px rgba(0, 0, 0, 0.25)" }}
-          className="flex pointer-events-auto bg-[#3D001B] w-[95%] md:w-full h-full mx-auto z-30 rounded-3xl overflow-hidden items-center"
+          className="flex pointer-events-auto bg-[#3D001B] w-[95%] md:w-full mx-auto z-30 rounded-3xl overflow-hidden"
         >
           <div className="hidden bg-white md:flex flex-col rounded-r-3xl px-7 py-7 pb-4 max-w-[410px]">
             <h3 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold] text-black">
@@ -350,18 +341,18 @@ function FormLandingPage() {
                 className={`w-full xl:w-[40%] rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-white bg-[#007A83] ${
                   isPhoneValid && !verified
                     ? " cursor-pointer"
-                    : "opacity-50 cursor-not-allowed"
+                    : "opacity-100 cursor-not-allowed"
                 }`}
               >
                 {verified ? "Verified" : "Send OTP"}
               </button>
             </div>
-            <div className="flex flex-col md:flex-row gap-3 md:gap-7 mb-3">
+            <div className="w-full mb-3">
               <select
                 value={formData.State}
                 onChange={handleStateChange}
                 required
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
+                className="w-full classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
               >
                 <option value="">Select State</option>
                 {state
@@ -372,24 +363,6 @@ function FormLandingPage() {
                       {state.name}
                     </option>
                   ))}
-              </select>
-              <select
-                value={formData.City}
-                required
-                onChange={(e) => handleChange("City", e.target.value)}
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
-                title={!formData.State ? "Please Select state first" : ""}
-              >
-                <option value="">Select City</option>
-                {formData.State &&
-                  cities[formData.State]
-                    .slice()
-                    .sort((a, b) => a.name.localeCompare(b.name))
-                    .map((city, index) => (
-                      <option key={index} value={city.id}>
-                        {city.name}
-                      </option>
-                    ))}
               </select>
             </div>
             <div className="flex flex-col md:flex-row gap-3 md:gap-7 mb-3">
@@ -431,7 +404,7 @@ function FormLandingPage() {
                 boxShadow:
                   "8.247px 13.401px 25.77px 0px rgba(255, 255, 255, 0.50)",
               }}
-              className={`w-full xl:w-[40%] mx-auto bg-white text-[#007A83] cursor-pointer py-3 rounded-[3px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold`}
+              className={`w-full xl:w-[40%] mx-auto bg-white text-[#007A83] cursor-pointer py-3 rounded-[3px] disabled:opacity-100 disabled:cursor-not-allowed font-semibold`}
             >
               Submit
             </button>

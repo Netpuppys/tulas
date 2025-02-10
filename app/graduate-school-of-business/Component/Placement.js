@@ -1,24 +1,8 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import mbaBackground from "../../../public/graduate-school-of-business/mba/mbaBackground.png";
-import placement1 from "../../../public/graduate-school-of-business/mba/placement1.webp";
-import placement2 from "../../../public/graduate-school-of-business/mba/placement2.webp";
-import placement3 from "../../../public/graduate-school-of-business/mba/placement3.webp";
-import placement4 from "../../../public/graduate-school-of-business/mba/placement4.webp";
-import placement5 from "../../../public/graduate-school-of-business/mba/placement5.webp";
-import placement6 from "../../../public/graduate-school-of-business/mba/placement6.webp";
-import placement7 from "../../../public/graduate-school-of-business/mba/placement7.webp";
-import placement8 from "../../../public/graduate-school-of-business/mba/placement8.webp";
-import placement9 from "../../../public/graduate-school-of-business/mba/placement9.webp";
-import place1 from "../../../public/graduate-school-of-business/mba/place1.webp";
-import place2 from "../../../public/graduate-school-of-business/mba/place2.webp";
-import place3 from "../../../public/graduate-school-of-business/mba/place3.webp";
-import place4 from "../../../public/graduate-school-of-business/mba/place4.webp";
-import place5 from "../../../public/graduate-school-of-business/mba/place5.webp";
-import place6 from "../../../public/graduate-school-of-business/mba/place6.webp";
-import place7 from "../../../public/graduate-school-of-business/mba/place7.webp";
-import place8 from "../../../public/graduate-school-of-business/mba/place8.webp";
-import place9 from "../../../public/graduate-school-of-business/mba/place9.webp";
+import placement3 from "../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../public/Homepage/Placement/placement4.png";
 import byjus from "../../../public/graduate-school-of-business/mba/byjus.png";
 import tcs from "../../../public/graduate-school-of-business/mba/tcs.png";
 import kpmg from "../../../public/graduate-school-of-business/mba/kpmg.png";
@@ -40,32 +24,20 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useMobile } from "@/component/IsMobileContext";
+import Accreditation from "@/app/Component/Accreditation";
 
 function Placement({ scrollRef }) {
   const { isMobile } = useMobile();
-  const placement = [
-    placement1,
-    placement2,
-    placement3,
-    placement4,
-    placement5,
-    placement6,
-    placement7,
-    placement8,
-    placement9,
+  const features = [
+    {
+      image: placement3,
+      image2: placement4,
+    },
+    {
+      image: placement3,
+      image2: placement4,
+    },
   ];
-  const placementDesktop = [
-    place1,
-    place2,
-    place3,
-    place4,
-    place5,
-    place6,
-    place7,
-    place8,
-    place9,
-  ];
-  const selectedPlacement = isMobile ? placement : placementDesktop;
   const logo = [
     byjus,
     tcs,
@@ -110,66 +82,51 @@ function Placement({ scrollRef }) {
         alt=""
         className="w-full h-full absolute object-cover -z-10"
       />
-      <div className="relative z-20 ">
-        <div className="pt-8 md:pt-10 w-full">
+      <div className="relative z-20">
+        <div className="w-full md:w-[85%] mx-auto overflow-hidden">
           <Swiper
-            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             ref={swiperRef}
             loop={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: true,
             }}
-            navigation={{
-              prevEl: ".prev-btn",
-              nextEl: ".next-btn",
-            }}
-            modules={[Pagination, Navigation, Autoplay]}
+            modules={[Autoplay]}
             className="mySwiper"
             slidesPerView={1}
           >
-            {selectedPlacement.map((card, index) => (
+            {features.map((feature, index) => (
               <SwiperSlide key={index}>
-                <div className="w-full h-fit flex gap-20">
-                  <Image src={card} alt="" className="w-full h-full" />
+                <div className="flex flex-col md:flex-row pt-4 md:pt-[2%] h-full px-4 w-full md:w-[85%] md:px-0 gap-4 md:gap-12 mx-auto">
+                  <div className="w-full md:w-[50%] h-full relative flex flex-col justify-between">
+                    <Image
+                      src={feature.image}
+                      alt=""
+                      className="rounded-xl md:rounded-2xl h-fit object-cover"
+                    />
+                  </div>
+                  <div className="w-full md:w-[50%] flex flex-col justify-between">
+                    <Image
+                      src={feature.image2}
+                      alt=""
+                      className="rounded-xl md:rounded-3xl h-fit object-cover"
+                    />
+                  </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="flex w-fit mx-auto pt-8 md:pt-10 gap-2 self-center items-center">
-            {selectedPlacement.map((_, index) => (
-              <div
-                key={index}
-                onClick={() => {
-                  swiperRef.current.swiper.slideToLoop(index); // Correctly navigate to logical index
-                  setActiveIndex(index); // Update active index state
-                }}
-                className={`cursor-pointer`}
-              >
-                <div
-                  className={`w-[10px] h-[10px] md:w-[12px] md:h-[12px] rounded-full ${
-                    activeIndex === index
-                      ? "bg-[#FFFFFF] bg-opacity-100"
-                      : "bg-[#C5C5C5] bg-opacity-50"
-                  }`}
-                ></div>
-              </div>
-            ))}
-          </div>
         </div>
-        <div className="py-8 px-4 md:px-6 md:py-20 w-full md:w-[80%] mx-auto flex flex-col justify-center items-center">
+        <div className="py-8 px-4 md:px-6 md:py-[4%] w-full md:w-[80%] mx-auto flex flex-col justify-center items-center">
           <Image
             src={placementInternship}
             alt=""
-            className="w-full md:max-w-[60vw] relative z-10 rounded-xl mx-auto h-fit -mb-[39px]"
+            className="w-full md:max-w-[60vw] aspect-[1.6/1] md:aspect-auto object-cover relative z-10 rounded-xl mx-auto h-fit -mb-4 md:-mb-[39px]"
           />
           <div className="relative w-[95%] bg-[#FFFFFF] md:w-full rounded-xl overflow-hidden z-20 h-full">
-            <div className="w-full h-full flex flex-col py-8 md:py-20 md:pb-10 gap-10 items-center ">
-              <h8 className="text-[#101010] flex flex-col md:flex-row items-center justify-center leading-none gap-6 text-[40px] md:text-[clamp(20px,3vw,100px)] font-[Helvetica] font-light">
-                Placements &
-                <span className="text-[40px] md:text-[clamp(20px,3.2vw,100px)] text-[#007A83] font-[GoudyCatalogue] ">
-                  Internships
-                </span>
+            <div className="w-full h-full flex flex-col py-8 md:py-[4%] md:pb-[2%] gap-6 items-center ">
+              <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight  md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+                Placements & Internships
               </h8>
               <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
                 The primary objective of the Training and Placement Cell at
@@ -179,7 +136,7 @@ function Placement({ scrollRef }) {
                 and secure rewarding career opportunities. We provide training
                 that focuses on:
               </h4>
-              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black justify-between">
+              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[TTChocolates] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black justify-between">
                 <li>Communication Skills</li>
                 <li>Personal and Professional Grooming</li>
                 <li>Aptitude Development</li>
@@ -202,7 +159,7 @@ function Placement({ scrollRef }) {
             </div>
           </div>
         </div>
-        <div className="w-[80%] px-4 md:px-6 mx-auto flex flex-col md:flex-row gap-3 md:gap-[10%]">
+        {/* <div className="w-[80%] px-4 md:px-6 mx-auto flex flex-col md:flex-row gap-3 md:gap-[10%]">
           {internship.map((card, index) => (
             <div
               key={index}
@@ -228,21 +185,9 @@ function Placement({ scrollRef }) {
               </h3>
             </div>
           ))}
-        </div>
-        <div className="w-full h-full flex flex-col py-8 md:py-20 md:pb-10 gap-4 md:gap-10 items-center ">
-          <h8 className="text-[#FFFFFF] flex flex-col md:flex-row items-center justify-center leading-none gap-6 text-[40px] md:text-[clamp(20px,3vw,100px)] font-[Helvetica] font-light">
-            Our
-            <span className="text-[40px] md:text-[clamp(20px,3.2vw,100px)] text-[#FFFFFF] font-[GoudyCatalogue] ">
-              Recruiters
-            </span>
-          </h8>
-          <h4 className="px-8 md:px-0 text-center md:text-start w-full md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
-            Give your career a boost with lucrative national & international
-            internship and placement opportunities at Tula's Graduate School of
-            Business.
-          </h4>
-        </div>
-        <div className="flex px-4 pr-1 md:px-6 md:pr-3 flex-wrap gap-3 w-full h-full py-8 md:py-20 md:pb-14">
+        </div> */}
+
+        {/* <div className="flex px-4 pr-1 md:px-6 md:pr-3 flex-wrap gap-3 w-full h-full py-8 md:py-20 md:pb-14">
           {logo.map((card, index) => (
             <div
               key={index}
@@ -254,8 +199,8 @@ function Placement({ scrollRef }) {
               <Image src={card} alt="" className="w-full h-fit" />
             </div>
           ))}
-        </div>
-        <h4 className="px-8 md:px-0 text-center w-full pb-8 font-[Helvetica] text-[clamp(15px,4vw,30px)] md:text-[clamp(12px,1vw,45px)] text-white">
+        </div> */}
+        <h4 className="px-8 md:px-0 text-center w-full pb-16 md:pb-8 font-[Helvetica] text-[clamp(15px,4vw,30px)] md:text-[clamp(12px,1vw,45px)] text-white">
           Copyright ©2024 All Rights Reserved for TULAS
         </h4>
       </div>
