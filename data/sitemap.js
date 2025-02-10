@@ -16,6 +16,10 @@ const sitemap = [
         linkTo: "/about/",
       },
       {
+        title: "Vision & Mission",
+        linkTo: "/vision-mission/",
+      },
+      {
         title: "Organogram",
         linkTo: Organogram,
         target: "_blank",
