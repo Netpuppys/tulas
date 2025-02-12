@@ -12,7 +12,7 @@ import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { UtmContext } from "@/component/utmParams";
 import { ThreeDots } from "react-loader-spinner";
-function FormLandingPage() {
+function FormLandingPage({course}) {
   const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
     AuthToken: "TULAS-27-12-2023",
@@ -23,7 +23,7 @@ function FormLandingPage() {
     LeadSource: 52,
     LeadCampaign: "",
     LeadChannel: 7,
-    Course: 11,
+    Course: course,
     Center: "",
     State: "",
   });
@@ -149,7 +149,7 @@ function FormLandingPage() {
           LeadSource: 52,
           LeadCampaign: "",
           LeadChannel: 7,
-          Course: 11,
+          Course: course,
           Center: "",
           State: "",
         });

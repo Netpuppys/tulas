@@ -1,29 +1,19 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import NavbarLandingPage from "../Component/NavbarLandingPage";
-import BannerLandingPage from "../Component/BannerLandingPage";
-import FormLandingPage from "../Component/FormLandingPage";
-import CarouselContent from "../Component/CarouselContent";
-import CuttingEdge from "../Component/CuttingEdge";
-import WhyChoose from "../Component/WhyChoose";
-import AtGlance from "../Component/AtGlance";
-import Accreditations from "../Component/Accreditations";
-import Placement from "../Component/Placement";
 import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
-import { facultyData } from "@/app/courses/mba/data/data";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import Image from "next/image";
-import NavbarLanding from "../Component/NavbarLanding";
 import CampusLife from "@/app/Component/CampusLife";
-import FacultyDataLandingPage from "../Component/FacultyDataLandingPage";
-import marketingIcon from "../../../public/graduate-school-of-business/mba/marketingIcon.png";
-import finance from "../../../public/graduate-school-of-business/mba/finance.png";
-import entreprenurship from "../../../public/graduate-school-of-business/mba/entreprenurship.png";
-import BusinessAnalytics from "../../../public/graduate-school-of-business/mba/BusinessAnalytics.png";
-import HumanResource from "../../../public/graduate-school-of-business/mba/HumanResource.png";
-import InternationalBusiness from "../../../public/graduate-school-of-business/mba/InternationalBusiness.png";
-import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBusiness.png";
-import healthCare from "../../../public/graduate-school-of-business/mba/healthCare.png";
+import NavbarLanding from "@/app/graduate-school-of-business/Component/NavbarLanding";
+import BannerLandingPage from "@/app/graduate-school-of-business/Component/BannerLandingPage";
+import FormLandingPage from "@/app/graduate-school-of-business/Component/FormLandingPage";
+import CarouselContent from "@/app/graduate-school-of-business/Component/CarouselContent";
+import CuttingEdge from "@/app/graduate-school-of-business/Component/CuttingEdge";
+import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
+import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
+import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
+import Placement from "@/app/graduate-school-of-business/Component/Placement";
+import { facultyData } from "@/app/courses/bca/data/data";
 const page = () => {
   const handleScrollArrow = () => {
     window.scrollTo({
@@ -52,40 +42,7 @@ const page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const department = [
-    {
-      title: "Marketing",
-      icon: marketingIcon,
-    },
-    {
-      title: "Finance",
-      icon: finance,
-    },
-    {
-      title: "Entreprenuership",
-      icon: entreprenurship,
-    },
-    {
-      title: "Business Analytics",
-      icon: BusinessAnalytics,
-    },
-    {
-      title: "Human Resource",
-      icon: HumanResource,
-    },
-    {
-      title: "International Business",
-      icon: InternationalBusiness,
-    },
-    {
-      title: "Agri- Business ",
-      icon: AgriBusiness,
-    },
-    {
-      title: "Health Care",
-      icon: healthCare,
-    },
-  ];
+
   return (
     <>
       <head>
@@ -104,16 +61,12 @@ const page = () => {
           <BannerLandingPage />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={11} />
+            <FormLandingPage course={7} />
           </div>
           {/* Content One */}
           <CarouselContent />
           {/* Cutting Edge */}
-          <CuttingEdge
-            scrollRef={scrollRef}
-            heading={"Tula’s MBA Specialisations"}
-            department={department}
-          />
+          <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BCA"} />
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}

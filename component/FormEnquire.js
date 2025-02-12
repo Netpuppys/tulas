@@ -139,8 +139,8 @@ function FormEnquire({ formPopup }) {
     const searchQuery = searchParams.get("search_query");
     const updatedFormData = {
       ...formData,
-      LeadChannel: utmParams ? 26 : 25,
-      LeadSource: utmParams ? utmSource || 88 : 2,
+      LeadChannel: utmParams ? 26 : 2,
+      LeadSource: utmParams ? utmSource || 88 : 25,
       LeadCampaign: utmParams
         ? utmCampaign || "Enquire Now Ads"
         : "Enquire Now Organic",

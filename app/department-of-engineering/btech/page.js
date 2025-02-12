@@ -1,21 +1,18 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import NavbarLandingPage from "../Component/NavbarLandingPage";
-import BannerLandingPage from "../Component/BannerLandingPage";
-import FormLandingPage from "../Component/FormLandingPage";
-import CarouselContent from "../Component/CarouselContent";
-import CuttingEdge from "../Component/CuttingEdge";
-import WhyChoose from "../Component/WhyChoose";
-import AtGlance from "../Component/AtGlance";
-import Accreditations from "../Component/Accreditations";
-import Placement from "../Component/Placement";
 import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
-import { facultyData } from "@/app/courses/mba/data/data";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import Image from "next/image";
-import NavbarLanding from "../Component/NavbarLanding";
 import CampusLife from "@/app/Component/CampusLife";
-import FacultyDataLandingPage from "../Component/FacultyDataLandingPage";
+import NavbarLanding from "@/app/graduate-school-of-business/Component/NavbarLanding";
+import BannerLandingPage from "@/app/graduate-school-of-business/Component/BannerLandingPage";
+import FormLandingPage from "@/app/graduate-school-of-business/Component/FormLandingPage";
+import CarouselContent from "@/app/graduate-school-of-business/Component/CarouselContent";
+import CuttingEdge from "@/app/graduate-school-of-business/Component/CuttingEdge";
+import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
+import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
+import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
+import Placement from "@/app/graduate-school-of-business/Component/Placement";
 import marketingIcon from "../../../public/graduate-school-of-business/mba/marketingIcon.png";
 import finance from "../../../public/graduate-school-of-business/mba/finance.png";
 import entreprenurship from "../../../public/graduate-school-of-business/mba/entreprenurship.png";
@@ -24,6 +21,7 @@ import HumanResource from "../../../public/graduate-school-of-business/mba/Human
 import InternationalBusiness from "../../../public/graduate-school-of-business/mba/InternationalBusiness.png";
 import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBusiness.png";
 import healthCare from "../../../public/graduate-school-of-business/mba/healthCare.png";
+import { facultyDataCSE } from "@/app/courses/btech/facultyDataCSE";
 const page = () => {
   const handleScrollArrow = () => {
     window.scrollTo({
@@ -54,35 +52,35 @@ const page = () => {
   }, []);
   const department = [
     {
-      title: "Marketing",
+      title: "Civil Engineering",
       icon: marketingIcon,
     },
     {
-      title: "Finance",
+      title: "Computer Science & Engineering",
       icon: finance,
     },
     {
-      title: "Entreprenuership",
+      title: "Data Science",
       icon: entreprenurship,
     },
     {
-      title: "Business Analytics",
+      title: "Cyber Security",
       icon: BusinessAnalytics,
     },
     {
-      title: "Human Resource",
+      title: "Artificial Intelligence & Machine Learning",
       icon: HumanResource,
     },
     {
-      title: "International Business",
+      title: "Electronics & Communication Engineering",
       icon: InternationalBusiness,
     },
     {
-      title: "Agri- Business ",
+      title: "Electrical & Electronics Engineering",
       icon: AgriBusiness,
     },
     {
-      title: "Health Care",
+      title: "Mechanical Engineering",
       icon: healthCare,
     },
   ];
@@ -104,14 +102,14 @@ const page = () => {
           <BannerLandingPage />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={11} />
+            <FormLandingPage course={3} />
           </div>
           {/* Content One */}
           <CarouselContent />
           {/* Cutting Edge */}
           <CuttingEdge
             scrollRef={scrollRef}
-            heading={"Tula’s MBA Specialisations"}
+            heading={"Tula’s B.Tech Specialisations"}
             department={department}
           />
           {/* Why Choose Tulas */}
@@ -130,7 +128,7 @@ const page = () => {
             </h4>
           </div>
           <div className="pb-8 md:pb-[4%] px-4 w-full">
-            <FacultyDataLandingPage facultyData={facultyData} />
+            <FacultyDataLandingPage facultyData={facultyDataCSE} />
           </div>
           {/* Accreditations */}
           <Accreditations />
