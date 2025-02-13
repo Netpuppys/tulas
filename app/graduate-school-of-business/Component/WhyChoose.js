@@ -49,14 +49,14 @@ function WhyChoose() {
       <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
         Why Choose TULA’s
       </h8>
-      <div className="w-full h-fit mt-4 rounded-xl p-8 md:p-[4%] bg-[#007A83]">
-        <div className="flex flex-wrap gap-8 w-full md:w-[90%] mx-auto items-end">
+      <div className="w-full h-fit mt-4 rounded-xl p-8 md:pt-[3%] bg-[#007A83]">
+        <div className="flex flex-wrap gap-8 w-full md:w-[90%] mx-auto">
           {whyData.map((card, index) => (
             <div
               key={index}
-              className="w-full md:w-[calc(33.33%-2rem)] h-full relative gap-20"
+              className="w-full md:w-[calc(33.33%-2rem)] mb-[2%] relative"
             >
-              <div className="flex flex-col  items-start w-full h-full">
+              <div className="flex flex-col items-start w-full h-full">
                 <div className="rounded-md px-4 md:px-10 font-semibold border-l-4">
                   <Image
                     src={card.icon}
@@ -64,14 +64,14 @@ function WhyChoose() {
                     className="w-[90px] aspect-square"
                   />
                 </div>
-                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-4 leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[TTChocolatesBold] font-normal">
+                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[TTChocolatesBold] font-normal">
                   {card.title}
                 </h3>
-                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-2 text-[clamp(10px,3.8vw,30px)] md:text-[clamp(10px,0.8vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
+                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-2 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
                   {card.description}
                 </h3>
               </div>
-              <div className="bg-white w-[calc(100%-32px)] md:w-[calc(100%-80px)] mx-auto mt-[5%] h-[1px]"></div>
+              <div className="bg-white w-[calc(100%-32px)] md:w-[calc(100%-80px)] mx-auto mt-2 h-[1px]"></div>
             </div>
           ))}
         </div>
