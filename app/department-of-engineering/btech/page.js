@@ -21,6 +21,7 @@ import HumanResource from "../../../public/graduate-school-of-business/mba/Human
 import InternationalBusiness from "../../../public/graduate-school-of-business/mba/InternationalBusiness.png";
 import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBusiness.png";
 import healthCare from "../../../public/graduate-school-of-business/mba/healthCare.png";
+import btechBannerImg from "../../../public/landingPage/btechBannerImg.webp";
 import { facultyDataCSE } from "@/app/courses/btech/facultyDataCSE";
 import { UtmContext } from "@/component/utmParams";
 const page = () => {
@@ -98,13 +99,16 @@ const page = () => {
       <body>
         <div className="w-full min-h-screen h-full relative">
           {/* Navbar */}
-          <NavbarLanding handleScrollArrow={handleScrollArrow} />
+          <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage />
+          <BannerLandingPage bannerImg={btechBannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={3} thankYOu={`/department-of-engineering/btech/thank-you/${utmParams}`} />
+            <FormLandingPage
+              course={3}
+              thankYOu={`/department-of-engineering/btech/thank-you/${utmParams}`}
+            />
           </div>
           {/* Content One */}
           <CarouselContent />

@@ -15,6 +15,8 @@ import Accreditations from "@/app/graduate-school-of-business/Component/Accredit
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
 import { facultyData } from "@/app/courses/mca/data/data";
 import { UtmContext } from "@/component/utmParams";
+import mcaBannerImg from "../../../public/landingPage/mcaBannerImg.webp";
+
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -60,7 +62,7 @@ const page = () => {
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage />
+          <BannerLandingPage bannerImg={mcaBannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
             <FormLandingPage course={12} thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`} />

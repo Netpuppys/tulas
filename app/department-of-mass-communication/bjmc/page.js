@@ -14,6 +14,8 @@ import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/
 import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
 import { facultyData } from "@/app/courses/bjmc/data/data";
+import bjmcBannerImg from "../../../public/landingPage/bjmcBannerImg.webp";
+
 import { UtmContext } from "@/component/utmParams";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -60,7 +62,7 @@ const page = () => {
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage />
+          <BannerLandingPage bannerImg={bjmcBannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
             <FormLandingPage course={5} thankYOu={`/department-of-mass-communication/bjmc/thank-you/${utmParams}`} />
