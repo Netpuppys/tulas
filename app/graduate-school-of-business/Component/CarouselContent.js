@@ -127,10 +127,10 @@ function CarouselContent() {
                 <h3 className="text-[40px] md:text-[51px] leading-tight text-[#007A83] font-extrabold">
                   {card.icon}
                 </h3>
-                <h2 className="font-[TTChocolatesBold] text-[clamp(10px,7vw,45px)] md:text-[clamp(10px,2.5vw,45px)] leading-tight text-[#007A83] font-extrabold">
+                <h2 className="font-[MontserratMedium] text-[clamp(10px,7vw,45px)] md:text-[clamp(10px,2.5vw,45px)] leading-tight text-[#007A83] font-extrabold">
                   {card.value}
                 </h2>
-                <h3 className="text-[#343434] max-w-[140px] md:max-w-[180px] text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolatesBold] font-normal text-center">
+                <h3 className="text-[#343434] max-w-[140px] md:max-w-[180px] text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[MontserratMedium] font-normal text-center">
                   {card.name}
                 </h3>
               </div>

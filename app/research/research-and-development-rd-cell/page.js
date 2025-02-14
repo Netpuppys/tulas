@@ -134,7 +134,7 @@ function RAndCell() {
           </div>
           <Link
             href={`/research/research-and-development-rd-cell/funded-projects-and-grants/${utmParams}`}
-            className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
+            className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[MontserratMedium] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
           >
             Funded Projects and Grants
           </Link>

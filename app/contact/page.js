@@ -143,7 +143,7 @@ function Contact() {
                     href={card.link}
                     target="_blank"
                     key={index}
-                    className="w-fit font-[TTChocolates] font-semibold text-[14px] h-fit text-center flex flex-col items-center justify-center gap-3"
+                    className="w-fit font-[MontserratLight] leading-tight font-semibold text-[14px] h-fit text-center flex flex-col items-center justify-center gap-3"
                   >
                     <Image src={card.image} alt="" className="w-[48px] h-fit" />
                     {card.title}
@@ -163,11 +163,11 @@ function Contact() {
                     className="w-fit h-fit text-center flex flex-col items-center justify-center gap-6"
                   >
                     <Image src={mobileContact.image} alt="" />
-                    <h4 className="max-w-[257px] text-white font-[TTChocolatesBold] font-extrabold text-[22px]">
+                    <h4 className="max-w-[257px] text-white font-[MontserratMedium] font-extrabold text-[22px]">
                       {mobileContact.title}
                     </h4>
                     <Link href={mobileContact.link}>
-                      <button className="w-fit text-wrap px-10 py-2 font-semibold font-[TTChocolatesBold] text-[14px] text-[#760135] bg-white rounded-full flex gap-2 items-center ">
+                      <button className="w-fit text-wrap px-10 py-2 font-semibold font-[MontserratMedium] text-[14px] text-[#760135] bg-white rounded-full flex gap-2 items-center ">
                         <FiPhoneCall />
                         {mobileContact.button}
                       </button>

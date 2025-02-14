@@ -1902,7 +1902,7 @@ const TableComponent = () => {
         </tbody>
       </table>
       <div className="flex flex-col justify-center items-center w-full">
-        <div className="px-12 cursor-pointer md:px-20 w-full text-center py-2 bg-white text-[20px] md:text-[28px] font-[TTChocolatesBold] text-[#3D001B] hover:bg-[#3D001B] hover:text-white">
+        <div className="px-12 cursor-pointer md:px-20 w-full text-center py-2 bg-white text-[20px] md:text-[28px] font-[MontserratMedium] text-[#3D001B] hover:bg-[#3D001B] hover:text-white">
           Book/ Book Chapter
         </div>
         <table>

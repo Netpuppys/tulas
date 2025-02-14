@@ -102,7 +102,7 @@ const ActiveCardModal = ({
                 <p
                   className={`${
                     color ? "text-[#007A83]" : "text-[#760135]"
-                  } underline underline-offset-8 text-[clamp(20px,1.5vw,40px)] font-[CarotSlab] font-medium`}
+                  } underline underline-offset-8 text-[clamp(10px,1.5vw,40px)] font-[CarotSlab] font-medium`}
                 >
                   {card?.title}
                 </p>
@@ -155,7 +155,7 @@ const ActiveCardModal = ({
 
                 <div className="absolute block inset-0 bg-[linear-gradient(288deg,rgba(0,0,0,0.00)_5.32%,rgba(0,0,0,0.70)_97.09%)]"></div>
                 <div className="w-full absolute top-0 p-4">
-                  <h3 className="flex flex-col w-fit text-[clamp(15px,4.3vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight font-[TTChocolatesBold] text-white">
+                  <h3 className="flex flex-col w-fit text-[clamp(10px,4.3vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight font-[MontserratMedium] text-white">
                     <span className="line-clamp-1">{item?.title}</span>
                     <div className="h-[4px] bg-[#E69706] w-[80px] rounded-full"></div>
                   </h3>

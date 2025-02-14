@@ -190,7 +190,7 @@ const Footer = ({ set = false, color = false }) => {
         </div>
         {/* gray social icons div */}
         {/* <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[5%] gap-[3%] flex justify-between items-center z-50">
-          <h4 className="font-[Oswald] text-[clamp(20px,6.5vw,35px)] text-nowrap md:text-[clamp(12px,1.6vw,28px)] text-white ">
+          <h4 className="font-[Oswald] text-[clamp(10px,6.5vw,35px)] text-nowrap md:text-[clamp(10px,1.6vw,28px)] text-white ">
             CONNECT US
           </h4>
           <ul className="flex w-[60%] gap-[5%]">
@@ -200,7 +200,7 @@ const Footer = ({ set = false, color = false }) => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#fff] rounded-lg bg-opacity-[0.8] text-[#808080] p-[3%] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)]"
+                className="bg-[#fff] rounded-lg bg-opacity-[0.8] text-[#808080] p-[3%] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)]"
               >
                 {social.icon}
               </Link>
@@ -231,7 +231,7 @@ const Footer = ({ set = false, color = false }) => {
           {socialMediaLinks.map((social, index) => (
             <li
               key={index}
-              className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] p-2 md:p-[0.5%] rounded-full backdrop:blur-3xl bg-opacity-20 bg-white"
+              className="leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] p-2 md:p-[0.5%] rounded-full backdrop:blur-3xl bg-opacity-20 bg-white"
             >
               <a href={social.href} target="_blank" rel="noopener noreferrer">
                 {social.icon}
@@ -244,11 +244,11 @@ const Footer = ({ set = false, color = false }) => {
           <div className="max-w-full md:max-w-[25%] flex flex-col items-center md:block">
             <div className="items-center md:items-start justify-center flex flex-col">
               <div className="w-[40%] md:w-[15%] h-[2px] bg-[#E69706]"></div>
-              <h4 className="text-[24px] md:text-[clamp(15px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
+              <h4 className="text-[24px] md:text-[clamp(10px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
                 ADDRESS
               </h4>
             </div>
-            <p className="text-[20px] md:text-[clamp(10px,1.1vw,20px)] text-center md:text-start font-[TTChocolates] mb-8">
+            <p className="text-[clamp(10px,5vw,20px)] md:text-[clamp(10px,1vw,20px)] text-center md:text-start font-[MontserratLight] mb-8">
               Tula's Institute, Dhoolkot Near Selaqui, Dhulkot Rd, Dehradun,
               <strong className="text-[#E69706]"> Uttarakhand</strong>
             </p>
@@ -265,11 +265,11 @@ const Footer = ({ set = false, color = false }) => {
           <div className="mb-6 md:mb-0 md:w-[45%]">
             <div className="md:w-[80%] justify-center flex flex-col items-center text-center">
               <div className="w-[40%] md:w-[15%] h-[2px] bg-[#E69706]"></div>
-              <h4 className="text-[25px] md:text-[clamp(15px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
+              <h4 className="text-[25px] md:text-[clamp(10px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
                 KEY LINKS
               </h4>
             </div>
-            <h5 className="flex w-full max-w-full justify-between font-[TTChocolates]">
+            <h5 className="flex w-full max-w-full justify-between font-[MontserratLight]">
               <ul className="max-w-[40%] w-full">
                 {keyLinks.map((link, index) => (
                   <li key={index} className="">
@@ -285,7 +285,7 @@ const Footer = ({ set = false, color = false }) => {
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="flex gap-2 text-[14px] md:text-[clamp(10px,1.1vw,20px)] w-fit"
+                      className="flex gap-2 text-[clamp(10px,4vw,20px)] md:text-[clamp(10px,1vw,20px)] w-fit"
                     >
                       <span className="text-[#E69706]">{"> "}</span>
                       {link.title}
@@ -308,7 +308,7 @@ const Footer = ({ set = false, color = false }) => {
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="flex gap-2 text-[14px] md:text-[clamp(10px,1.1vw,20px)] w-fit"
+                      className="flex gap-2 text-[clamp(10px,4vw,20px)] md:text-[clamp(10px,1vw,20px)] w-fit"
                     >
                       <span className="text-[#E69706]">{"> "}</span>
                       {link.title}
@@ -323,11 +323,11 @@ const Footer = ({ set = false, color = false }) => {
             <div className="flex flex-col w-[33%] md:w-fit h-full">
               <div className="justify-center flex flex-col">
                 <div className="w-[40%] md:w-[65%] h-[2px] bg-[#E69706]"></div>
-                <h4 className="text-[25px] md:text-[clamp(15px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
+                <h4 className="text-[25px] md:text-[clamp(10px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
                   ADMISSION HELPLINE
                 </h4>
               </div>
-              <ul className="text-[14px] md:text-[clamp(10px,1.1vw,20px)] font-[TTChocolates]">
+              <ul className="text-[clamp(10px,4vw,20px)] md:text-[clamp(10px,1vw,20px)] font-[MontserratLight]">
                 <li>
                   <a
                     href="tel:+91-6366937159"
@@ -351,11 +351,11 @@ const Footer = ({ set = false, color = false }) => {
             <div className="flex flex-col w-[33%] md:w-fit h-full">
               <div className="md:mt-8 justify-center flex flex-col">
                 <div className="w-[40%] md:w-[35%] h-[2px] bg-[#E69706]"></div>
-                <h4 className="text-[25px] md:text-[clamp(15px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
+                <h4 className="text-[25px] md:text-[clamp(10px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
                   LANDLINE
                 </h4>
               </div>
-              <ul className="text-[14px] md:text-[clamp(10px,1.1vw,20px)] font-[TTChocolates]">
+              <ul className="text-[clamp(10px,4vw,20px)] md:text-[clamp(10px,1vw,20px)] font-[MontserratLight]">
                 <li>
                   <a
                     href="tel:0135-269930"
@@ -373,12 +373,12 @@ const Footer = ({ set = false, color = false }) => {
             <div className="flex-col flex w-[33%] md:w-fit h-full">
               <div className="md:mt-8 justify-center flex flex-col">
                 <div className="w-[40%] md:w-[15%] h-[2px] bg-[#E69706]"></div>
-                <h4 className="text-[25px] md:text-[clamp(15px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
+                <h4 className="text-[25px] md:text-[clamp(10px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
                   MAIL
                 </h4>
               </div>
 
-              <p className="text-[14px] md:text-[clamp(10px,1.1vw,20px)] font-[TTChocolates] flex gap-1 items-center">
+              <p className="text-[clamp(10px,4vw,20px)] md:text-[clamp(10px,1vw,20px)] font-[MontserratLight] flex gap-1 items-center">
                 <span className="text-[#E69706]">
                   <MdMail />
                 </span>

@@ -25,11 +25,11 @@ import Famous from "./Component/Famous";
 
 const bannerText = (
   <>
-    <span className=" font-[TTChocolatesBold] font-semibold">
+    <span className=" font-[MontserratMedium] font-semibold">
       Tula's Institute
     </span>{" "}
     was established in 2006, under the aegis of{" "}
-    <span className=" font-[TTChocolatesBold] font-semibold">
+    <span className=" font-[MontserratMedium] font-semibold">
       Rishabh Educational Trust
     </span>
     , Dehradun with the vision of offering excellent academics along with
@@ -48,18 +48,9 @@ export default function HomePage() {
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar setState={setIsChecked} fullBanner={true} />
         <BannerHome isChecked={isChecked} />
-        {/* <div className="min-h-fit py-16 h-fit md:min-h-[21vh] w-full overflow-hidden flex flex-col justify-center max-w-full md:max-w-[70%] px-8 mx-auto">
-          <h3 className="text-2xl uppercase font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-center mb-6">
-            Tula's Institute
-          </h3>
-          <h4 className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center font-[TTChocolates] text-[#404040]">
-            {bannerText}
-          </h4>
-        </div> */}
         <AboutTulas />
         <LifeAtTulas />
         <Courses parentRef={parentRef} />
-        {/* <WhyTulasScroll parentRef={parentRef} /> */}
         <Accreditation />
         <Placement />
         <CampusLife />
@@ -69,9 +60,7 @@ export default function HomePage() {
         <Video />
         <MeetOurManagement parentRef={parentRef} />
         <Testimonials />
-        {/* <RankBanner /> */}
         <AwardsCrousel />
-        {/* <Awards /> */}
         <Footer />
       </div>
     </>

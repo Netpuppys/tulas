@@ -128,7 +128,7 @@ function Placement({ scrollRef }) {
               <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight  md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
                 Placements & Internships
               </h8>
-              <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+              <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
                 The primary objective of the Training and Placement Cell at
                 Tula’s Institute is to prepare and empower students for
                 successful campus recruitment. Our goal is to equip students
@@ -136,7 +136,7 @@ function Placement({ scrollRef }) {
                 and secure rewarding career opportunities. We provide training
                 that focuses on:
               </h4>
-              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[TTChocolates] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black justify-between">
+              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[MontserratLight] leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-black justify-between">
                 <li>Communication Skills</li>
                 <li>Personal and Professional Grooming</li>
                 <li>Aptitude Development</li>
@@ -152,7 +152,7 @@ function Placement({ scrollRef }) {
                     block: "start",
                   })
                 }
-                className={`w-[calc(100%-32px)] md:w-[30%] mx-auto max-w-[400px] bg-[#007A83] text-[#FFFFFF] cursor-pointer py-3 rounded-[8px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.1vw,45px)]`}
+                className={`w-[calc(100%-32px)] md:w-[30%] mx-auto max-w-[400px] bg-[#007A83] text-[#FFFFFF] cursor-pointer py-3 rounded-[8px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.1vw,45px)]`}
               >
                 Apply Now
               </button>
@@ -170,7 +170,7 @@ function Placement({ scrollRef }) {
                   <h3 className="text-[25px] md:text-[clamp(10px,1.7vw,100px)] leading-tight text-[#830C44] font-bold">
                     {card.value}
                   </h3>
-                  <h3 className="font-[TTChocolatesBold] text-[14px] md:text-[clamp(10px,1vw,100px)] leading-tight text-[#000000] font-extrabold">
+                  <h3 className="font-[MontserratMedium] text-[14px] md:text-[clamp(10px,1vw,100px)] leading-tight text-[#000000] font-extrabold">
                     {card.title}
                   </h3>
                 </div>
@@ -180,7 +180,7 @@ function Placement({ scrollRef }) {
                   className="w-[65px] md:w-[3vw] h-fit"
                 />
               </div>
-              <h3 className="font-[TTChocolatesBold] mt-2 text-[14px] md:text-[clamp(10px,1vw,100px)] leading-tight text-[#000000] font-normal">
+              <h3 className="font-[MontserratMedium] mt-2 text-[14px] md:text-[clamp(10px,1vw,100px)] leading-tight text-[#000000] font-normal">
                 {card.desc}
               </h3>
             </div>
@@ -200,7 +200,7 @@ function Placement({ scrollRef }) {
             </div>
           ))}
         </div> */}
-        <h4 className="px-8 md:px-0 text-center w-full pb-16 md:pb-8 font-[Helvetica] text-[clamp(15px,4vw,30px)] md:text-[clamp(12px,1vw,45px)] text-white">
+        <h4 className="px-8 md:px-0 text-center w-full pb-16 md:pb-8 font-[Helvetica] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-white">
           Copyright ©2024 All Rights Reserved for TULAS
         </h4>
       </div>

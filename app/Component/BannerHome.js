@@ -114,7 +114,7 @@ function BannerHome({ isChecked }) {
         ${isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"}
         `}
       >
-        <h2 className="text-[clamp(20px,7vw,70px)] md:text-[clamp(20px,4.2vw,70px)] z-10 leading-[1.1] font-[CarotSlab]">
+        <h2 className="text-[clamp(10px,7vw,70px)] md:text-[clamp(10px,4.2vw,70px)] z-10 leading-[1.1] font-[CarotSlab]">
           {title[currentIndex]}
         </h2>
       </div>
@@ -276,10 +276,10 @@ export default BannerHome;
 //           isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"
 //         }`}
 //       >
-//         <h2 className="text-[38px] md:text-[clamp(20px,4.2vw,70px)] text-white z-10 font-[CarotSlab]">
+//         <h2 className="text-[38px] md:text-[clamp(10px,4.2vw,70px)] text-white z-10 font-[CarotSlab]">
 //           {title}
 //         </h2>
-//         {/* <h4 className="w-full md:max-w-[800px] text-[clamp(15px,4.5vw,30px)] text-white md:text-[clamp(12px,1.2vw,30px)] font-[TTChocolates]">
+//         {/* <h4 className="w-full md:max-w-[800px] text-[clamp(10px,4vw,30px)] text-white md:text-[clamp(10px,1vw,30px)] font-[MontserratLight] leading-tight">
 //           {paragraph}
 //         </h4> */}
 //       </div>

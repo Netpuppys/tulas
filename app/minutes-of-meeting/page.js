@@ -281,7 +281,7 @@ function MinuteOfMeeting() {
               key={index}
               target="_blank"
               href={`${button.linkTo}`}
-              className="py-2 w-[170px] md:w-[30%] text-[14px] underline md:text-[clamp(15px,1vw,50px)] text-white"
+              className="py-2 w-[170px] md:w-[30%] text-[14px] underline md:text-[clamp(10px,1vw,50px)] text-white"
             >
               {button.title}
             </Link>

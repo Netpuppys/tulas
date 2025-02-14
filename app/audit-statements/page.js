@@ -59,7 +59,7 @@ function AuditStatement() {
               key={index}
               target="_blank"
               href={`${button.linkTo}`}
-              className="py-2 w-[240px] md:w-[400px] text-center rounded-full bg-white text-[clamp(14px,1.2vw,50px)] text-[#007A83]"
+              className="py-2 w-[240px] md:w-[400px] text-center rounded-full bg-white text-[clamp(10px,1.2vw,50px)] text-[#007A83]"
             >
               {button.title}
             </Link>

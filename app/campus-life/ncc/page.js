@@ -77,7 +77,7 @@ function NCC() {
           />
         </div>
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
+          <h3 className="text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.3vw,50px)] text-center w-full font-[CarotSlab] leading-tight text-[#007A83] mb-4">
             NATIONAL CADET CORPS
           </h3>
           <Image
@@ -85,7 +85,7 @@ function NCC() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
-          <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight w-[90%] md:w-[70%] font-[MontserratLight] mx-auto text-center text-black">
             The National Cadet Corps (NCC) at Tula’s Institute plays a pivotal
             role in shaping disciplined and responsible citizens. Our NCC unit
             is dedicated to fostering qualities of leadership, patriotism, and

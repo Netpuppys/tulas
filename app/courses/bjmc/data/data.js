@@ -226,7 +226,7 @@ export const selectedCard1 = (
     <span className="font-[Arapey] pb-[1%] leading-tight">
       Admission Eligibility
     </span>
-    <ul className="font-[TTChocolates] list-disc ml-5 leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+    <ul className="font-[MontserratLight] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-black">
       <li>
         A candidate having passed the Intermediate (10+2) or equivalent
         Examination in any discipline, from a recognized Examination Board,

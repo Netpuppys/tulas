@@ -8,11 +8,11 @@ const SemesterTable = ({ semesterData }) => {
           key={index}
           className="flex flex-col items-center justify-center gap-4 md:gap-6"
         >
-          <h2 className="px-20 py-1 text-white font-[TTChocolatesBold] bg-[#007A83] text-center rounded-full text-[18px] md:text-[25px]">
+          <h2 className="px-20 py-1 text-white font-[MontserratMedium] bg-[#007A83] text-center rounded-full text-[clamp(10px,4.5vw,45px)] md:text-[clamp(10px,1.2vw,45px)]">
             {semester.semester}
           </h2>
           <table
-            className={`w-full leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal mb-4 ${
+            className={`w-full leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] font-normal mb-4 ${
               semesterData.length - 1 === index ? "" : "md:mb-[4%]"
             }`}
           >

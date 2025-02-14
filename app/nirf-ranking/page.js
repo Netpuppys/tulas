@@ -112,18 +112,18 @@ function NIRFRanking() {
             alt=""
           />
         </div>
-        <div className="py-8 md:py-20 font-[TTChocolates] w-full bg-transparent overflow-hidden px-3 md:px-0 flex flex-col justify-center items-center gap-4">
+        <div className="py-8 md:py-20 font-[MontserratLight] w-full bg-transparent overflow-hidden px-3 md:px-0 flex flex-col justify-center items-center gap-4">
           {button.map((button, index) => (
             <div
               key={index}
               className="py-8 w-[95%] md:w-[85%] px-[2%] md:px-[6%] border border-white rounded-2xl bg-transparent text-white"
             >
-              <h3 className="border-l-2 md:border-l-4 border-white font-[TTChocolatesBold] font-medium mb-8 rounded-md px-2 md:px-4 text-[clamp(18px,2.5vw,50px)]">
+              <h3 className="border-l-2 md:border-l-4 border-white font-[MontserratMedium] font-medium mb-8 rounded-md px-2 md:px-4 text-[clamp(10px,2.5vw,50px)]">
                 {button.title}
               </h3>
               {button.nestedLink.map((nested, index) => (
                 <Link key={index} href={nested.linkTo} target="_blank">
-                  <ul className="flex justify-between items-center ml-5 list-disc gap-2 underline text-[clamp(15px,1vw,50px)]">
+                  <ul className="flex justify-between items-center ml-5 list-disc gap-2 underline text-[clamp(10px,1vw,50px)]">
                     <li>{nested.title}</li>
                     <GoDownload />
                   </ul>

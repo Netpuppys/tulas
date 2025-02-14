@@ -157,12 +157,12 @@ function EntrepreneurshipDevelopmentCell() {
           <Link
             href={innovationAndStartupPolicy}
             target="_blank"
-            className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[TTChocolatesBold] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
+            className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[MontserratMedium] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
           >
             Innovation and Startup Policy
           </Link>
           <div className="px-8 md:px-32 w-full flex flex-col items-center justify-center">
-            <h3 className="font-[CarotSlab] text-[clamp(25px,3vw,75px)]">
+            <h3 className="font-[CarotSlab] text-[clamp(10px,3vw,75px)]">
               Startup & Entrepreneurship development Cell
             </h3>
           </div>

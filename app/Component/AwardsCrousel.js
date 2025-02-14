@@ -45,7 +45,7 @@ function AwardsCrousel() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h3 className="font-[CarotSlab] pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap  z-10 text-center">
+      <h3 className="font-[CarotSlab] pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap  z-10 text-center">
         RANKINGS & AWARDS
       </h3>
       <div className="w-full md:w-[85%] overflow-hidden">
@@ -63,7 +63,7 @@ function AwardsCrousel() {
                     className="rounded-xl md:rounded-2xl h-fit object-cover"
                   />
                   <div>
-                    <h2 className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535] font-[TTChocolates] font-extrabold border-b border-[#353535] py-2 md:py-4">
+                    <h2 className="leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1vw,45px)] text-[#353535] font-[MontserratLight] font-extrabold border-b border-[#353535] py-2 md:py-4">
                       {feature.name}
                     </h2>
                     <p2 className="text-[#353535]">{feature.date}</p2>
@@ -76,7 +76,7 @@ function AwardsCrousel() {
                     className="rounded-xl md:rounded-3xl h-fit object-cover"
                   />
                   <div>
-                    <h2 className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535] font-[TTChocolates] font-extrabold border-b border-[#353535] py-2 md:py-4">
+                    <h2 className="leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1vw,45px)] text-[#353535] font-[MontserratLight] font-extrabold border-b border-[#353535] py-2 md:py-4">
                       {feature.name2}
                     </h2>
                     <p2 className="text-[#353535]">{feature.date2}</p2>

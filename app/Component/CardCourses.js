@@ -270,7 +270,7 @@ function CardCourses() {
                 >
                   <Link
                     href={`${degree.link}/${utmParams}`}
-                    className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] text-2xl"
+                    className="border-t-2 border-b-2 border-[#E69706] w-fit font-[MontserratLight] leading-tight tracking-tight text-2xl"
                   >
                     {degree.name}
                   </Link>
@@ -279,7 +279,7 @@ function CardCourses() {
                       href={`${branches.linkTo}/${utmParams}`}
                       key={branchesIndex}
                     >
-                      <h3 className="text-xs">{branches.name}</h3>
+                      <h3 className="text-xs mt-[2px]">{branches.name}</h3>
                     </Link>
                   ))}
                 </div>

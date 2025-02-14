@@ -50,7 +50,7 @@ function GalleryCrousel({ images }) {
                 alt=""
                 className="w-full h-full object-cover rounded-2xl"
               />
-              <h3 className="text-center py-6 text-[30px] md:text-[clamp(20px,2.5vw,50px)] font-[TTChocolatesBold]">
+              <h3 className="text-center py-6 text-[30px] md:text-[clamp(10px,2.5vw,50px)] font-[MontserratMedium]">
                 {item.title}
               </h3>
             </div>

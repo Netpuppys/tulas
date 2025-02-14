@@ -96,7 +96,7 @@ function Courses({ parentRef }) {
             opacity: opacity,
           }}
         >
-          <h3 className="font-[Dynalight] text-[40px] leading-none md:text-[clamp(30px,3vw,120px)] text-white z-20 text-center md:leading-[5.8vw]">
+          <h3 className="font-[Dynalight] text-[40px] leading-none md:text-[clamp(10px,3vw,120px)] text-white z-20 text-center md:leading-[5.8vw]">
             Our
             <br />
             <span className="font-[DKAppelstroop] text-white text-[80px] md:text-[clamp(70px,8vw,250px)] font-normal">
@@ -116,7 +116,7 @@ function Courses({ parentRef }) {
           </div>
           <div className="bg-white w-[1px] h-[8vh]"></div>
           <h5
-            className={`w-full px-4 max-w-[50rem] text-white font-[TTChocolates] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center transition-opacity duration-300 ease-in-out ${
+            className={`w-full px-4 max-w-[50rem] text-white font-[MontserratLight] leading-tight leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center transition-opacity duration-300 ease-in-out ${
               opacity < 0.001 ? "opacity-100 translate-in" : "opacity-0"
             }`}
           >

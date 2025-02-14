@@ -157,7 +157,7 @@ function LectureTheater() {
           </div>
           <Vision sections={sections.slice(0, 1)} />
           <h3
-            className={`px-4 md:px-10 text-center text-white border-white font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 `}
+            className={`px-4 md:px-10 text-center text-white border-white font-[MontserratMedium] rounded-md font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] border-l-4 `}
           >
             Add On Facilities
           </h3>
@@ -187,7 +187,7 @@ function LectureTheater() {
               </div>
             </div>
             <h4
-              className={`text-black max-w-[669px] w-full text-[16px] md:text-[22px] font-[TTChocolates] font-medium ${
+              className={`text-black max-w-[669px] w-full text-[16px] md:text-[22px] font-[MontserratLight] font-medium ${
                 inView ? "animate-translateRight" : "opacity-0"
               }`}
             >

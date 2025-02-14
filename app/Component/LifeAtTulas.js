@@ -129,7 +129,7 @@ function LifeAtTulas() {
   ];
   return (
     <div className="flex h-full w-full flex-col justify-center items-center">
-      <div className="text-[#3A3A3A] w-fit pb-[3%] font-[CarotSlab] px-4 text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] leading-none">
+      <div className="text-[#3A3A3A] w-fit pb-[3%] font-[CarotSlab] px-4 text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] leading-none">
         Life At Tulas
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
@@ -161,7 +161,7 @@ function LifeAtTulas() {
                       className="w-full -z-10 h-full object-cover"
                     />
                     <div className="absolute z-20 left-[5%] top-[6%]">
-                      <div className="text-white w-fit font-[TTChocolatesBold] text-[clamp(15px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,50px)] leading-tight">
+                      <div className="text-white w-fit font-[MontserratMedium] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,50px)] leading-tight">
                         {slide.title}
                         <div className="h-[2px] bg-[#E69706] w-[50%] rounded-full"></div>
                       </div>

@@ -103,7 +103,7 @@ function IICEvents() {
             </div>
           </div>
           <div className="px-8 md:px-32 w-full flex flex-col items-center justify-center">
-            <h3 className="font-[CarotSlab] text-[clamp(25px,3vw,75px)]">
+            <h3 className="font-[CarotSlab] text-[clamp(10px,3vw,75px)]">
               EVENT by IIC(CIRE)
             </h3>
           </div>

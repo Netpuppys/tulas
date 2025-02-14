@@ -73,7 +73,7 @@ const Blogs = ({ utmParams }) => {
         </div>
       )}
       <div className="my-5 md:my-20 w-full px-5 md:px-0 md:w-[65%] mx-auto flex flex-col justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-[TTChocolatesBold]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-[MontserratMedium]">
           {blogs.map((blog) => {
             const formattedDate = formatDate(blog.created_at);
             const formattedTitle = blog.title
@@ -92,7 +92,7 @@ const Blogs = ({ utmParams }) => {
                       className="w-full h-52 object-cover"
                       alt=""
                     />
-                    <div className="p-2 leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
+                    <div className="p-2 leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
                       <p className="text-[14px]">{formattedDate}</p>
                       <h5 className="h-[62.5px] md:h-[117px] line-clamp-3">
                         {formattedTitle}

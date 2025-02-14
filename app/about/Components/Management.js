@@ -310,14 +310,14 @@ function Management() {
         className="w-full h-fit flex flex-col justify-center items-center"
       >
         <h3
-          className={`font-[CarotSlab] text-white text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] px-10 md:px-0 leading-none text-center md:text-left ${
+          className={`font-[CarotSlab] text-white text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] px-10 md:px-0 leading-none text-center md:text-left ${
             inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
           MEET OUR MANAGEMENT
         </h3>
         {/* <h5
-          className={`font-[Rothwood] pt-8 md:pt-0 text-white leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] max-w-[665px] px-10 md:px-0 italic md:text-center font-medium ${
+          className={`font-[Rothwood] pt-8 md:pt-0 text-white leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] max-w-[665px] px-10 md:px-0 italic md:text-center font-medium ${
             inView ? "md:animate-translateBottom overflow-hidden" : "opacity-0"
           }`}
         >
@@ -349,10 +349,10 @@ function Management() {
                     className="rounded-xl mb-2 w-full h-full object-cover"
                   />
                 </Fade>
-                <h2 className="font-[TTChocolatesBold] text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
+                <h2 className="font-[MontserratMedium] text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-tight text-center">
                   {card.name}
                 </h2>
-                <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center">
+                <h4 className="font-[MontserratLight] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-center">
                   {card.profile}
                 </h4>
               </div>

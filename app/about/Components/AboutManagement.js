@@ -13,7 +13,7 @@ function AboutManagement() {
           2004, he formed a Trust in the name of Rishabh Educational Trust. He
           established Tula’s Institute in 2006, under Rishabh Educational Trust
           and today Tula’s Institute is recognized as one of the{" "}
-          <span className="font-[TTChocolatesBold]">
+          <span className="font-[MontserratMedium]">
             ‘Top engineering colleges in Uttarakhand.’
           </span>{" "}
           Known for its excellence in academic programs from undergraduate to
@@ -54,7 +54,7 @@ function AboutManagement() {
             <h3 className="text-[36px] md:text-[60px] pb-6 font-[CarotSlab] text-white">
               {section.title}
             </h3>
-            <h4 className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-white max-w-[659px]">
+            <h4 className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] text-white max-w-[659px]">
               {section.description}
             </h4>
           </div>

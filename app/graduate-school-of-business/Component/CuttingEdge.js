@@ -63,7 +63,7 @@ function CuttingEdge({ scrollRef, heading, department }) {
         <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
           Our Recruiters
         </h8>
-        <h4 className="px-8 text-center w-full font-[Helvetica] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+        <h4 className="px-8 text-center w-full font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
           Give your career a boost with lucrative national & international
           internship and placement opportunities at Tula's Graduate School of
           Business.

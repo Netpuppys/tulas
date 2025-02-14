@@ -136,7 +136,7 @@ const CarouselProgram = ({
                 />
                 <div className="absolute block inset-0 bg-[linear-gradient(288deg,rgba(0,0,0,0.00)_5.32%,rgba(0,0,0,0.70)_97.09%)]"></div>
                 <div className="w-full absolute top-0 p-6">
-                  <h3 className="flex flex-col w-fit text-[clamp(15px,4.3vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight font-[TTChocolatesBold] text-white">
+                  <h3 className="flex flex-col w-fit text-[clamp(10px,4.3vw,30px)] md:text-[clamp(10px,1.3vw,45px)] leading-tight font-[MontserratMedium] text-white">
                     <span className="line-clamp-1">{item?.title}</span>
                     <div className="h-[4px] bg-[#E69706] w-[80px] rounded-full"></div>
                   </h3>
@@ -154,7 +154,9 @@ const CarouselProgram = ({
           {pdf && (
             <div
               className={`relative pt-3  z-[9] flex space-x-4 ${
-                items.length > 4 ? "pl-8 md:pl-[5%]" : "pl-8 md:pl-0 md:justify-center"
+                items.length > 4
+                  ? "pl-8 md:pl-[5%]"
+                  : "pl-8 md:pl-0 md:justify-center"
               }`}
             >
               <Link

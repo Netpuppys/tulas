@@ -24,7 +24,7 @@ function PlacementProgram() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-none z-10">
+      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-none z-10">
         Top Placed <span className="text-[#760135]">Students</span>
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
@@ -69,7 +69,7 @@ function PlacementProgram() {
           alt=""
           className="w-full h-full absolute top-0 -z-10 object-cover"
         />
-        <h5 className="w-full text-white md:w-[70%] px-4 text-center mx-auto leading-tight text-[clamp(15px,4.8vw,30px)] md:text-[clamp(10px,1.5vw,45px)] font-[LevSerif] font-normal italic">
+        <h5 className="w-full text-white md:w-[70%] px-4 text-center mx-auto leading-tight text-[clamp(10px,4.8vw,30px)] md:text-[clamp(10px,1.5vw,45px)] font-[LevSerif] font-normal italic">
           <strong>World’s Leading Brands</strong> Hire Our Talented Students
         </h5>
       </div>

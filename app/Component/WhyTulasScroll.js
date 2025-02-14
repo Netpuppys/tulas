@@ -206,7 +206,7 @@ function WhyTulasScroll({ parentRef }) {
           } top-0 w-full h-screen flex clip-circle-50px section backgroundScroll`}
         >
           <div className="relative w-full h-full flex flex-col justify-center items-center">
-            <h3 className="mt-10 md:mt-[12vh] font-[CarotSlab] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
+            <h3 className="mt-10 md:mt-[12vh] font-[CarotSlab] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-white w-full whitespace-nowrap absolute top-0  z-10 pt-10 text-center">
               {title}
             </h3>
             {/* card scroll btns */}
@@ -264,10 +264,10 @@ function WhyTulasScroll({ parentRef }) {
                       <div className="w-full opacity-100 h-full bg-gradient-custom-black absolute bottom-0 left-0 rounded-xl md:rounded-3xl z-20"></div>
                       {/* <div className="absolute inset-0 bg-[#760135] opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div> */}
                       <div className="text-white flex flex-col absolute z-30 w-fit p-2 bottom-[42px] translate-y-[100%]">
-                        <h2 className="text-center font-[TTChocolatesBold] leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)]">
+                        <h2 className="text-center font-[MontserratMedium] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)]">
                           {image.title}
                         </h2>
-                        <h6 className="font-[TTChocolates] md:hidden group-hover:block text-center text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
+                        <h6 className="font-[MontserratLight] md:hidden group-hover:block text-center text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,0.9vw,45px)] leading-tight">
                           {image.text}
                         </h6>
                       </div>

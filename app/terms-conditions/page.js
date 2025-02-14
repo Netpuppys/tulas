@@ -16,14 +16,14 @@ function TermsAndCondition() {
             className="h-full -z-10 w-full absolute object-cover"
           />
           <div className="py-8 md:py-14">
-            <h3 className="text-[30px] md:text-[clamp(20px,2.5vw,50px)] font-[CarotSlab] text-white">
-            Terms & Conditions
+            <h3 className="text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.5vw,50px)] font-[CarotSlab] text-white">
+              Terms & Conditions
             </h3>
           </div>
         </div>
       </div>
-      <div className="w-full px-8 md:px-0 md:w-[80%] mx-auto text-black py-8 md:py-20 text-[clamp(15px,4.5vw,30px)] md:text-[clamp(15px,1.1vw,45px)] font-[TTChocolates]">
-        <h3 className="font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2vw,50px)] leading-none">
+      <div className="w-full px-8 md:px-0 md:w-[80%] mx-auto text-black py-8 md:py-20 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight font-[MontserratLight]">
+        <h3 className="font-[MontserratMedium] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2vw,50px)] leading-none">
           What this Privacy Policy Covers
         </h3>
         <br />
@@ -33,7 +33,7 @@ function TermsAndCondition() {
         fees, related to your violation of this Agreement or use of the Site.
         <br />
         <br />
-        <h3 className="font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2vw,50px)] leading-none">
+        <h3 className="font-[MontserratMedium] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2vw,50px)] leading-none">
           Non-Transferable
         </h3>
         <br />
@@ -41,7 +41,7 @@ function TermsAndCondition() {
         given to you to obtain information or documents is not transferable.
         <br />
         <br />
-        <h3 className="font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2vw,50px)] leading-none">
+        <h3 className="font-[MontserratMedium] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2vw,50px)] leading-none">
           Disclaimer
         </h3>
         <br />
@@ -61,7 +61,7 @@ function TermsAndCondition() {
         representation or guarantee not expressly stated in this agreement.
         <br />
         <br />
-        <h3 className="font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2vw,50px)] leading-none">
+        <h3 className="font-[MontserratMedium] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2vw,50px)] leading-none">
           Use of Information
         </h3>
         <br />
@@ -70,7 +70,7 @@ function TermsAndCondition() {
         by you in any manner consistent with our Privacy Policy.
         <br />
         <br />
-        <h3 className="font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2vw,50px)] leading-none">
+        <h3 className="font-[MontserratMedium] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2vw,50px)] leading-none">
           Privacy Policy
         </h3>
         <br />
@@ -78,7 +78,7 @@ function TermsAndCondition() {
         this Agreement.
         <br />
         <br />
-        <h3 className="font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2vw,50px)] leading-none">
+        <h3 className="font-[MontserratMedium] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2vw,50px)] leading-none">
           Links to Other Web Sites
         </h3>
         <br />
@@ -91,7 +91,7 @@ function TermsAndCondition() {
         at your own risk.
         <br />
         <br />
-        <h3 className="font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2vw,50px)] leading-none">
+        <h3 className="font-[MontserratMedium] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2vw,50px)] leading-none">
           Information and Press Releases
         </h3>
         <br />

@@ -17,7 +17,7 @@ import Link from "next/link";
 import { UtmContext } from "@/component/utmParams";
 
 function TableRender({ tableData }) {
-    const { utmParams } = useContext(UtmContext);
+  const { utmParams } = useContext(UtmContext);
   return (
     <div className="flex flex-col items-center justify-center gap-4 md:gap-6 overflow-x-scroll">
       <table className="w-full mb-4 md:mb-20 ">
@@ -79,7 +79,7 @@ function Table({}) {
               }`}
               onClick={() => setSelectedCard(index)}
             >
-              <button className="flex items-center  font-[TTChocolatesBold] rounded-full py-1 md:py-2 text-[15px] md:text-[20px] justify-center gap-14">
+              <button className="flex items-center  font-[MontserratMedium] rounded-full py-1 md:py-2 text-[15px] md:text-[20px] justify-center gap-14">
                 {card.title}
               </button>
             </div>

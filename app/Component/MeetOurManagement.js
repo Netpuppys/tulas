@@ -165,7 +165,7 @@ const InternalSection = () => {
                 </p>
                 <div className="w-[60%] left-[20%] bg-[#E69706] rounded-full h-[0.25rem] absolute top-full"></div>
             </div> */}
-      <div className="font-[CarotSlab] text-center py-8 md:py-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-white w-fit whitespace-nowrap leading-tight md:leading-none z-10">
+      <div className="font-[CarotSlab] text-center py-8 md:py-[3%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-white w-fit whitespace-nowrap leading-tight md:leading-none z-10">
         Meet Out Management
         <div className="h-[4px] bg-[#E69706] w-[80%] mx-auto rounded-full"></div>
       </div>
@@ -184,15 +184,15 @@ const InternalSection = () => {
                   className="rounded-xl top-0 image-overlay w-full h-full object-cover"
                 />
                 <div className="rounded-xl absolute top-0 flip-image w-full h-full bg-[#760135] flex items-center justify-center px-2 md:px-[5%]">
-                  <h6 className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
+                  <h6 className="textShow relative z-10 text-center text-wrap font-[MontserratLight] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-white">
                     {card.description}
                   </h6>
                 </div>
               </div>
-              <h2 className="font-[TTChocolatesBold] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
+              <h2 className="font-[MontserratMedium] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
                 {card.name}
               </h2>
-              <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center">
+              <h4 className="font-[MontserratLight] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-center">
                 {card.profile}
               </h4>
             </div>
@@ -212,15 +212,15 @@ const InternalSection = () => {
                   className="rounded-xl top-0 image-overlay w-full h-full object-cover"
                 />
                 <div className="rounded-xl absolute top-0 flip-image w-full h-full bg-[#760135] flex items-center justify-center px-2 md:px-[5%]">
-                  <h6 className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white">
+                  <h6 className="textShow relative z-10 text-center text-wrap font-[MontserratLight] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-white">
                     {card.description}
                   </h6>
                 </div>
               </div>
-              <h2 className="font-[TTChocolatesBold] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
+              <h2 className="font-[MontserratMedium] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-tight text-center">
                 {card.name}
               </h2>
-              <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center">
+              <h4 className="font-[MontserratLight] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-center">
                 {card.profile}
               </h4>
             </div>

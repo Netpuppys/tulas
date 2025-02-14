@@ -81,7 +81,7 @@ function NavbarDesktop({
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="flex-auto font-[TTChocolatesBold] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
+                    className="flex-auto font-[MontserratMedium] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
                   >
                     {item.title}
                   </Link>
@@ -94,14 +94,14 @@ function NavbarDesktop({
                     >
                       {expandedIndex === index ? (
                         <FiX
-                          className={`text-[clamp(18px,1.6vw,25px)] ${
+                          className={`text-[clamp(10px,1.6vw,25px)] ${
                             expandedIndex === index
                               ? "animate-scrollSpinExpand text-white"
                               : ""
                           }`}
                         />
                       ) : (
-                        <FiPlus className="text-[#007A83] text-[clamp(18px,1.6vw,25px)]" />
+                        <FiPlus className="text-[#007A83] text-[clamp(10px,1.6vw,25px)]" />
                       )}
                     </div>
                   )}
@@ -143,7 +143,7 @@ function NavbarDesktop({
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="flex-auto font-[TTChocolatesBold] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                    className="flex-auto font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                   >
                     {nestedLinks.title}
                   </Link>
@@ -156,14 +156,14 @@ function NavbarDesktop({
                     >
                       {superExpandedIndex === index ? (
                         <FiX
-                          className={`text-white text-[clamp(18px,1.6vw,25px)] ${
+                          className={`text-white text-[clamp(10px,1.6vw,25px)] ${
                             superExpandedIndex === index
                               ? "animate-scrollSpinExpand"
                               : ""
                           }`}
                         />
                       ) : (
-                        <FiPlus className="text-white text-[clamp(18px,1.6vw,25px)]" />
+                        <FiPlus className="text-white text-[clamp(10px,1.6vw,25px)]" />
                       )}
                     </div>
                   )}
@@ -189,7 +189,7 @@ function NavbarDesktop({
                                 ? "noopener noreferrer"
                                 : undefined
                             }
-                            className="flex-auto font-[TTChocolates] px-[8.5%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white"
+                            className="flex-auto font-[MontserratLight] px-[8.5%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white"
                           >
                             {superNestedLinks.title}
                           </Link>
@@ -202,14 +202,14 @@ function NavbarDesktop({
                             >
                               {thirdExpandedIndex === index ? (
                                 <FiX
-                                  className={`text-white text-[clamp(18px,1.6vw,25px)] ${
+                                  className={`text-white text-[clamp(10px,1.6vw,25px)] ${
                                     thirdExpandedIndex === index
                                       ? "animate-scrollSpinExpand"
                                       : ""
                                   }`}
                                 />
                               ) : (
-                                <FiPlus className="text-white text-[clamp(18px,1.6vw,25px)]" />
+                                <FiPlus className="text-white text-[clamp(10px,1.6vw,25px)]" />
                               )}
                             </div>
                           )}
@@ -237,7 +237,7 @@ function NavbarDesktop({
                                         ? "noopener noreferrer"
                                         : undefined
                                     }
-                                    className="flex-auto font-[TTChocolates] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.2vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
+                                    className="flex-auto font-[MontserratLight] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
                                   >
                                     {thirdNestedLinks.title}
                                   </Link>

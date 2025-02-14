@@ -12,7 +12,7 @@ function Program({
     <div className="w-full h-fit">
       <div className="w-[92%] mx-auto">
         {heading && (
-          <h5 className="w-fit mx-auto text-black text-center px-4 py-8 md:py-[3%] leading-tight text-[clamp(15px,5.5vw,30px)] md:text-[clamp(10px,2.5vw,45px)] font-[CarotSlab] font-medium">
+          <h5 className="w-fit mx-auto text-black text-center px-4 py-8 md:py-[3%] leading-tight text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,2.5vw,45px)] font-[CarotSlab] font-medium">
             {heading}
             <div className="h-[4px] bg-[#007A83] w-[55%] mx-auto rounded-full"></div>
           </h5>
@@ -29,7 +29,7 @@ function Program({
               className="w-full aspect-[1/1.5] md:aspect-auto object-cover md:w-[21%] rounded-lg"
             />
           )}
-          <h5 className="w-full text-black md:w-[58%] px-4 text-justify mx-auto leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal">
+          <h5 className="w-full text-black md:w-[58%] px-4 text-justify mx-auto leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] font-normal">
             {content}
           </h5>
           {sideImages && (
@@ -44,7 +44,7 @@ function Program({
           <h5
             className={`w-full ${
               belowSpacequotes ? "" : "pb-8 md:pb-[3%]"
-            } text-black md:w-[70%] px-4 text-center mx-auto leading-tight text-[clamp(15px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[LevSerif] font-normal italic`}
+            } text-black md:w-[70%] px-4 text-center mx-auto leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[LevSerif] font-normal italic`}
           >
             {quotes}
           </h5>

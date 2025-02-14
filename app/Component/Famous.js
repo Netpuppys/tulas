@@ -287,7 +287,7 @@ function Famous() {
   }, []);
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
+      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
         Bollywood Actors in Our Campus
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
@@ -316,7 +316,7 @@ function Famous() {
                 />
               </div>
               <div className="p-[3%] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_72.96%,rgba(0,0,0,0.70)_100%)] absolute bottom-0 z-20 flex items-end w-full h-full">
-                <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1.1vw,50px)] text-white font-[TTChocolates] font-extrabold">
+                <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1vw,50px)] text-white font-[MontserratLight] leading-tight font-extrabold">
                   {sport.name}
                 </h2>
               </div>

@@ -121,14 +121,14 @@ function AdmissionPage() {
         />
         <div ref={admissionRef} className="py-10 md:py-20">
           <div className="w-full items-center flex flex-col gap-8 justify-center">
-            <h3 className="text-white font-[TTChocolatesBold] md:text-[40px] border-b-2 border-white">
+            <h3 className="text-white font-[MontserratMedium] md:text-[40px] border-b-2 border-white">
               Admission Eligibility
             </h3>
             <button
               onClick={() => {
                 window.location.href = `/apply-now/${utmParams}`;
               }}
-              className="font-[TTChocolatesBold] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32"
+              className="font-[MontserratMedium] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32"
             >
               Apply Now
             </button>
@@ -137,7 +137,7 @@ function AdmissionPage() {
               onClick={() => {
                 window.location.href = `/apply-now/${utmParams}`;
               }}
-              className="font-[TTChocolatesBold] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32"
+              className="font-[MontserratMedium] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32"
             >
               Apply Now
             </button>
@@ -146,10 +146,10 @@ function AdmissionPage() {
       </div>
       <div ref={bankRef} className="w-full h-fit bg-white">
         <div className="py-10 md:py-20 px-2 max-w-[1000px] mx-auto">
-          <h3 className="text-[#3D001B] text-center font-[600] text-[clamp(25px,2.8vw,60px)]">
+          <h3 className="text-[#3D001B] text-center font-[600] text-[clamp(10px,2.8vw,60px)]">
             Bank Details
           </h3>
-          <h4 className="text-black text-center text-[clamp(15px,1vw,22px)]">
+          <h4 className="text-black text-center text-[clamp(10px,1vw,22px)]">
             The institute provides the facility of payment of respective fee
             (Academic & Hostel Fee) in the below mentioned accounts :
           </h4>
@@ -159,20 +159,20 @@ function AdmissionPage() {
                 key={index}
                 className="border rounded-3xl px-10 py-10 border-[#3D001B] group hover:bg-[#3D001B] flex flex-col gap-3 justify-around items-center transition-all ease-linear duration-300"
               >
-                <h3 className="text-[#3D001B] font-[600] group-hover:text-white text-[clamp(12px,1.9vw,35px)]">
+                <h3 className="text-[#3D001B] font-[600] group-hover:text-white text-[clamp(10px,1.9vw,35px)]">
                   {fees.for}
                 </h3>
                 <div className="text-center">
-                  <h3 className="text-[#3D001B] group-hover:text-white text-[clamp(12px,1vw,25px)]">
+                  <h3 className="text-[#3D001B] group-hover:text-white text-[clamp(10px,1vw,25px)]">
                     Bank: {fees.bank}
                   </h3>
-                  <h3 className="text-[#3D001B] group-hover:text-white text-[clamp(12px,1vw,25px)]">
+                  <h3 className="text-[#3D001B] group-hover:text-white text-[clamp(10px,1vw,25px)]">
                     Account Name: {fees.accountName}
                   </h3>
-                  <h3 className="text-[#3D001B] group-hover:text-white text-[clamp(12px,1vw,25px)]">
+                  <h3 className="text-[#3D001B] group-hover:text-white text-[clamp(10px,1vw,25px)]">
                     IFSC code: {fees.ifsc}
                   </h3>
-                  <h3 className="text-[#3D001B] group-hover:text-white text-[clamp(12px,1vw,25px)]">
+                  <h3 className="text-[#3D001B] group-hover:text-white text-[clamp(10px,1vw,25px)]">
                     Account Number: {fees.accountNo}
                   </h3>
                 </div>
@@ -191,7 +191,7 @@ function AdmissionPage() {
             <div className="w-full">
               <button
                 onClick={() => handleButtonClick("academic")}
-                className="font-[TTChocolatesBold] mb-8 bg-[#760135] rounded-full text-white text-[15px] md:text-[24px] text-center items-center py-2 w-full"
+                className="font-[MontserratMedium] mb-8 bg-[#760135] rounded-full text-white text-[15px] md:text-[24px] text-center items-center py-2 w-full"
               >
                 Pay Academic Fee
               </button>
@@ -205,7 +205,7 @@ function AdmissionPage() {
                           "_blank"
                         );
                       }}
-                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
+                      className="font-[MontserratMedium] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
                     >
                       Payment for Existing Student
                     </button>
@@ -216,7 +216,7 @@ function AdmissionPage() {
                           "_blank"
                         );
                       }}
-                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
+                      className="font-[MontserratMedium] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px] text-center items-center py-2 w-full"
                     >
                       Payment for New Student
                     </button>
@@ -227,7 +227,7 @@ function AdmissionPage() {
             <div className="w-full">
               <button
                 onClick={() => handleButtonClick("hostels")}
-                className="font-[TTChocolatesBold] mb-8 bg-[#760135] rounded-full text-white text-[15px] md:text-[24px] text-center items-center py-2 w-full"
+                className="font-[MontserratMedium] mb-8 bg-[#760135] rounded-full text-white text-[15px] md:text-[24px] text-center items-center py-2 w-full"
               >
                 Pay Hostel Fee
               </button>
@@ -241,7 +241,7 @@ function AdmissionPage() {
                           "_blank"
                         );
                       }}
-                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
+                      className="font-[MontserratMedium] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
                     >
                       Payment for Existing Student
                     </button>
@@ -252,7 +252,7 @@ function AdmissionPage() {
                           "_blank"
                         );
                       }}
-                      className="font-[TTChocolatesBold] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
+                      className="font-[MontserratMedium] bg-[#760135] rounded-full text-white text-[10px] md:text-[16px]  text-center items-center py-2 w-full"
                     >
                       Payment for New Student
                     </button>
@@ -271,7 +271,7 @@ function AdmissionPage() {
           onClick={() => {
             window.location.href = "";
           }}
-          className="font-[TTChocolatesBold] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32 font-[600]"
+          className="font-[MontserratMedium] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32 font-[600]"
         >
           Download E-Prospectus
         </button>

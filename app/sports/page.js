@@ -37,7 +37,7 @@ import Vision from "@/component/Programs/Vision";
 //                 WebkitTextStrokeWidth: "0.1px",
 //               }
 //         }
-//         className="font-[TTChocolatesbold] text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-[4rem] md:leading-[2.38494rem]"
+//         className="font-[MontserratMedium] text-center text-[3.5rem] md:text-[6rem] font-black tracking-[0.10369rem] leading-[4rem] md:leading-[2.38494rem]"
 //       >
 //         EXPLORE MORE
 //         <span className="text-[4.5rem] md:text-[7rem] block md:leading-[7.64388rem]">
@@ -224,10 +224,10 @@ function Sports() {
               className="w-screen absolute top-[100vh] h-[calc(100%-200vh)] opacity-0"
             ></div> */}
             <div className="w-full px-5 py-8 md:py-20 flex flex-col items-center justify-center gap-6">
-              <h3 className=" text-center text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-4 md:underline-offset-[15px]">
+              <h3 className=" text-center text-[30px] md:text-[clamp(10px,2.5vw,50px)] underline underline-offset-4 md:underline-offset-[15px]">
                 The Perfect Indoor Space for Play and Progress
               </h3>
-              <p className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
+              <p className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
                 Having the right space to relax, have fun, and grow is super
                 important. With the great facilities at Tula’s, indoor
                 activities become more than just games—they help you sharpen
@@ -381,10 +381,10 @@ function Sports() {
             </div> */}
             <GalleryCrousel images={images} />
             <div className="w-full px-5 py-8 md:py-20 flex flex-col items-center justify-center gap-6">
-              <h3 className=" text-center text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-4 md:underline-offset-[15px]">
+              <h3 className=" text-center text-[30px] md:text-[clamp(10px,2.5vw,50px)] underline underline-offset-4 md:underline-offset-[15px]">
                 Spaces Built for Sports Under the Sky
               </h3>
-              <p className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
+              <p className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
                 The outdoor sports facilities at Tula’ are designed to give
                 students the perfect space for all kinds of action. With
                 well-maintained fields and tracks, it's the ideal environment to

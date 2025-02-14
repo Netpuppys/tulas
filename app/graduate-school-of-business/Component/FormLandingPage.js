@@ -221,7 +221,7 @@ function FormLandingPage({ course, thankYOu }) {
     <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 -mt-[50%] md:-mt-[10%]">
       <div className="w-full flex flex-col justify-center items-center">
         {/* <Image src={mba} className="w-fit h-fit " alt="" />
-        <h1 className="font-[TTChocolatesBold] leading-tight my-4 text-center font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)]">
+        <h1 className="font-[MontserratMedium] leading-tight my-4 text-center font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)]">
           Get the skills. Gain the edge.
           <br />
           <span className="text-[#007A83]">
@@ -233,23 +233,23 @@ function FormLandingPage({ course, thankYOu }) {
           className="flex pointer-events-auto bg-[#3D001B] w-[95%] md:w-full mx-auto z-30 rounded-3xl overflow-hidden"
         >
           <div className="hidden bg-white md:flex flex-col rounded-r-3xl px-7 py-7 pb-4 max-w-[410px]">
-            <h3 className="text-[clamp(15px,4.5vw,30px)] md:text-[clamp(18px,1.3vw,45px)] font-[TTChocolatesBold] text-black">
+            <h3 className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[MontserratMedium] text-black">
               Enquire Now
             </h3>
-            <p className="text-sm font-[TTChocolates] text-black">
+            <p className="text-sm font-[MontserratLight] text-black">
               Subscribe to be notified about our latest endeavours, and your IT
               horizons.
             </p>
             <a
               href="tel:+91-8069204028"
-              className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[MontserratLight] text-black items-center justify-start mt-4 gap-4"
             >
               <IoCall />
               +91-80692 04028
             </a>
             <a
               href="mailTo:info@tulas.edu.in"
-              className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[MontserratLight] text-black items-center justify-start mt-4 gap-4"
             >
               <IoMail />
               info@tulas.edu.in
@@ -257,7 +257,7 @@ function FormLandingPage({ course, thankYOu }) {
             <a
               href="https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
-              className="flex text-sm font-[TTChocolates] text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[MontserratLight] text-black items-center justify-start mt-4 gap-4"
             >
               <IoLocation className="min-w-[16px] h-[16px]" />
               Tula's Institute, Dhoolkot Near Selaqui, Dhulkot Rd,
@@ -420,10 +420,10 @@ function FormLandingPage({ course, thankYOu }) {
                 alt=""
                 className="absolute top-0 w-full h-full -z-10 left-0 object-cover"
               />
-              <h3 className="text-white z-20 text-2xl font-[TTChocolatesBold] font-bold mb-1">
+              <h3 className="text-white z-20 text-2xl font-[MontserratMedium] font-bold mb-1">
                 Verify Mobile Number
               </h3>
-              <h4 className="max-w-[415px] text-[15px] font-[TTChocolatesBold] ">
+              <h4 className="max-w-[415px] text-[15px] font-[MontserratMedium] ">
                 OTP has been sent to you on your mobile number, Please enter it
                 below{" "}
                 <button
@@ -461,7 +461,7 @@ function FormLandingPage({ course, thankYOu }) {
               </div>
               <div className="flex items-center justify-center gap-2">
                 <button
-                  className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[TTChocolatesBold] px-4 py-1 my-2"
+                  className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[MontserratMedium] px-4 py-1 my-2"
                   onClick={resendOtp}
                   disabled={timer !== 0} // Disable resend if cooldown is active
                 >
@@ -473,7 +473,7 @@ function FormLandingPage({ course, thankYOu }) {
               </div>
               <button
                 onClick={verifyOtp}
-                className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[TTChocolatesBold] py-1"
+                className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[MontserratMedium] py-1"
               >
                 Submit
               </button>

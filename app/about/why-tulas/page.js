@@ -179,7 +179,7 @@ const page = () => {
       <body>
         <div
           ref={parentRef}
-          className="w-full min-h-screen font-[TTChocolates]"
+          className="w-full min-h-screen font-[MontserratLight]"
         >
           <Navbar />
 
@@ -208,10 +208,10 @@ const page = () => {
           </div>
           {/* <Vision sections={sectionData.slice(0, 4)} /> */}
           <div className="w-full h-full relative z-50 bg-white py-8 md:py-20 flex flex-col items-center justify-center">
-            <p className="text-[#3D001B] font-[TTChocolatesBold] font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] underline underline-offset-8 px-4">
+            <p className="text-[#3D001B] font-[MontserratMedium] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] underline underline-offset-8 px-4">
               World Class Infrastructure
             </p>
-            <p className="text-[#007A83] text-[clamp(20px,1.8vw,40px)] font-semibold">
+            <p className="text-[#007A83] text-[clamp(10px,1.8vw,40px)] font-semibold">
               Rated as #1 College Of Dehradun
             </p>
             <Image
@@ -219,7 +219,7 @@ const page = () => {
               className="py-4 md:py-8 w-[95%] md:w-[80%] h-fit"
               alt=""
             />
-            <p className="text-[#262626] md:text-center leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] px-4 w-[90%] md:w-[75%]">
+            <p className="text-[#262626] md:text-center leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] px-4 w-[90%] md:w-[75%]">
               {bannerText}
             </p>
           </div>

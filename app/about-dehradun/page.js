@@ -94,11 +94,11 @@ function Contact() {
                   // ref={compRef}
                   className="w-full md:w-1/2 py-10 md:py-20 px-6 md:pl-10 md:pr-5 md:border-r-2 border-white"
                 >
-                  <p className="text-white mb-5 text-[30px] md:text-[clamp(20px,2.2vw,50px)] leading-[1.2] font-[CarotSlab] ">
+                  <p className="text-white mb-5 text-[30px] md:text-[clamp(10px,2.2vw,50px)] leading-[1.2] font-[CarotSlab] ">
                     Soothe your senses with the beautiful aesthetics offered at{" "}
                     Tula&apos;s Institute
                   </p>
-                  <div className="text-[#D1D1D1] font-semibold leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] md:pr-10 text-pretty font-[TTChocolates]">
+                  <div className="text-[#D1D1D1] font-semibold leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] md:pr-10 text-pretty font-[MontserratLight]">
                     <Fade delay={500}>{mainDescription}</Fade>
                   </div>
                 </div>

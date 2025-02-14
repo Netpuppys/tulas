@@ -65,7 +65,7 @@ function Auditorium() {
           </div>
           <Vision sections={sections} />
           <h3
-            className={`px-4 md:px-10 text-center text-white border-white font-[TTChocolatesBold] rounded-md font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] border-l-4 `}
+            className={`px-4 md:px-10 text-center text-white border-white font-[MontserratMedium] rounded-md font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] border-l-4 `}
           >
             Gallery
           </h3>

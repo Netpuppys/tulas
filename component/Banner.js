@@ -15,10 +15,10 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           className="w-full h-full object-cover absolute"
         />
         <div className="bottom-8 px-8 md:bottom-10 z-10 absolute ">
-          <h3 className="font-semibold text-[30px] md:text-[clamp(20px,2.5vw,50px)] text-white z-10 font-[CarotSlab]">
+          <h3 className="font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] text-white z-10 font-[CarotSlab]">
             {title}
           </h3>
-          <h4 className="w-full md:w-[50%] text-white leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates]">
+          <h4 className="w-full md:w-[50%] text-white leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight]">
             {description}
           </h4>
         </div>
@@ -28,7 +28,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
           <h3 className="text-2xl font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-left mb-3">
             {belowTitle}
           </h3>
-          <h4 className="leading-tight text-[clamp(15px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
+          <h4 className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] text-[#404040]">
             {belowPara}
           </h4>
         </div>

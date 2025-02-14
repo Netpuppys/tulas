@@ -21,11 +21,11 @@ function Placement() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(20px,6.3vw,55px)] md:text-[clamp(20px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-none z-10">
+      <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-none z-10">
         Placements Overview
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
-      <h2 className="text-[#2F2F2F] text-center font-[LevSerif] text-[clamp(20px,4.5vw,55px)] pt-6 md:text-[clamp(20px,1.5vw,55px)]">
+      <h2 className="text-[#2F2F2F] text-center font-[LevSerif] text-[clamp(10px,4.5vw,55px)] pt-6 md:text-[clamp(10px,1.5vw,55px)]">
         <strong className="font-[LevSerifBold]"> World’s Leading Brands</strong>{" "}
         Hire Our Talented Students
       </h2>

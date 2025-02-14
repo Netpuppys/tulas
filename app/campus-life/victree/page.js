@@ -98,7 +98,7 @@ function Victree() {
           }
         />
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
+          <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] leading-tight text-[#007A83] mb-4">
             Victree Sports Club - Where the Game’s Always On!
           </h3>
           <Image
@@ -106,7 +106,7 @@ function Victree() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
-          <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] leading-tight mx-auto text-center text-black">
             At Tula’s Institute, Victree Sports Club is where energy,
             competition, and camaraderie collide. With over 10 sports available,
             students can dive into everything from strategy-driven indoor games
@@ -129,16 +129,16 @@ function Victree() {
             alt=""
           />
         </div>
-        <h3 className="text-[30px] pt-8 md:pt-20 md:text-[42px] text-center w-full font-[CarotSlab] text-white">
+        <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] pt-8 md:pt-20 text-center w-full font-[CarotSlab] text-white">
           Indoor Games
         </h3>
         <Vision sections={sections.slice(0, 3)} />
-        <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-white">
+        <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] text-white">
           Outdoor Games
         </h3>
         <Vision sections={sections.slice(3)} />
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] leading-tight mx-auto text-center text-black">
             At Victree, it's not just about playing—it's about being part of
             something that brings out the best in you. With every match, every
             practice, you’ll find new ways to challenge yourself, connect with

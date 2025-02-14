@@ -426,7 +426,7 @@ const CareersForm = () => {
         </div>
         <button
           type="submit"
-          className="w-full md:w-[55%] font-[TTChocolatesBold] text-[1.5rem] font-semibold h-14 rounded-lg bg-[#007A83] flex items-center justify-center"
+          className="w-full md:w-[55%] font-[MontserratMedium] text-[1.5rem] font-semibold h-14 rounded-lg bg-[#007A83] flex items-center justify-center"
         >
           {submitLoader ? <ThreeDots color="#FFFFFF" height={30} /> : "Submit"}
         </button>

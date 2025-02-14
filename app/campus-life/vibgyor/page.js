@@ -109,7 +109,7 @@ function Vibgyor() {
         />
 
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[30px] md:text-[42px] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
+          <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] leading-tight text-[#007A83] mb-4">
             Meet Vibgyor – the heartbeat of Tula’s Institute!
           </h3>
           <Image
@@ -117,7 +117,7 @@ function Vibgyor() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
-          <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-black">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] mx-auto text-center text-black leading-tight">
             This student council is all about making sure every student has an
             unforgettable college experience. With 11 exciting clubs, Vibgyor
             brings together creativity, passion, and skill-building in ways that
@@ -140,7 +140,7 @@ function Vibgyor() {
         </div>
         <Vision sections={sections} />
         <div className="w-full h-fit flex flex-col justify-center items-center pb-8 md:pb-20">
-          <p className="text-lg md:text-2xl w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-white">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] mx-auto text-center leading-tight text-white">
             Vibgyor is all about finding your passion, connecting with others,
             and making the most of your college journey. Whether you're looking
             to explore new interests, develop your skills, or just have a blast,

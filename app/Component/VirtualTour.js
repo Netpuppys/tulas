@@ -94,11 +94,11 @@ function VirtualTour() {
                   className="w-[55px] h-[55px] "
                 />
               </div>
-              <h3 className="text-[clamp(8px,5.5vw,30px)] md:text-[clamp(10px,2.2vw,45px)] text-white textShadow font-[TTChocolatesBold]">
+              <h3 className="text-[clamp(8px,5.5vw,30px)] md:text-[clamp(10px,2.2vw,45px)] text-white textShadow font-[MontserratMedium]">
                 {stat.animatedStatNo || stat.start}
                 {"+"}
               </h3>
-              <h3 className="text-[clamp(8px,3.5vw,30px)] md:text-[clamp(10px,0.9vw,45px)] text-center text-white font-[TTChocolatesBold]">
+              <h3 className="text-[clamp(8px,3.5vw,30px)] md:text-[clamp(10px,0.9vw,45px)] text-center text-white font-[MontserratMedium]">
                 {stat.title}
               </h3>
             </div>

@@ -8,7 +8,7 @@ function Virtual() {
   const { utmParams } = useContext(UtmContext);
   return (
     <div className="py-8 md:py-[4%] h-fit w-full flex flex-col justify-center items-center px-4 md:px-0">
-      <div className="font-[CarotSlab] pb-8 md:pb-[3%] px-4 text-wrap text-[clamp(20px,5.3vw,55px)] md:text-[clamp(20px,1.8vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-tight md:leading-none z-10 text-center">
+      <div className="font-[CarotSlab] pb-8 md:pb-[3%] px-4 text-wrap text-[clamp(10px,5.3vw,55px)] md:text-[clamp(10px,1.8vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-tight md:leading-none z-10 text-center">
         Virtual Walkthrough of Campus with 360-degree tour
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
