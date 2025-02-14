@@ -73,7 +73,7 @@ function NavbarDesktop({
                     href={
                       item.target
                         ? `${item.linkTo}`
-                        : `${item.linkTo}${utmParams}`
+                        : `${item.linkTo}/${utmParams}`
                     }
                     target={item.target ? "_blank" : ""}
                     rel={
@@ -135,7 +135,7 @@ function NavbarDesktop({
                     href={
                       nestedLinks.target
                         ? `${nestedLinks.linkTo}`
-                        : `${nestedLinks.linkTo}${utmParams}`
+                        : `${nestedLinks.linkTo}/${utmParams}`
                     }
                     target={nestedLinks.target ? "_blank" : ""}
                     rel={
@@ -181,7 +181,7 @@ function NavbarDesktop({
                             href={
                               superNestedLinks.target
                                 ? `${superNestedLinks.linkTo}`
-                                : `${superNestedLinks.linkTo}${utmParams}`
+                                : `${superNestedLinks.linkTo}/${utmParams}`
                             }
                             target={superNestedLinks.target ? "_blank" : ""}
                             rel={
@@ -227,7 +227,7 @@ function NavbarDesktop({
                                     href={
                                       thirdNestedLinks.target
                                         ? `${thirdNestedLinks.linkTo}`
-                                        : `${thirdNestedLinks.linkTo}${utmParams}`
+                                        : `${thirdNestedLinks.linkTo}/${utmParams}`
                                     }
                                     target={
                                       thirdNestedLinks.target ? "_blank" : ""

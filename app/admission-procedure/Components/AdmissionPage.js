@@ -126,7 +126,7 @@ function AdmissionPage() {
             </h3>
             <button
               onClick={() => {
-                window.location.href = `/apply-now${utmParams}`;
+                window.location.href = `/apply-now/${utmParams}`;
               }}
               className="font-[TTChocolatesBold] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32"
             >
@@ -135,7 +135,7 @@ function AdmissionPage() {
             <Table />
             <button
               onClick={() => {
-                window.location.href = `/apply-now${utmParams}`;
+                window.location.href = `/apply-now/${utmParams}`;
               }}
               className="font-[TTChocolatesBold] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32"
             >

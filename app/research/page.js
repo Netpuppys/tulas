@@ -19,44 +19,44 @@ function Research() {
         <ul className="list-disc ml-5 underline">
           <li>
             <Link
-              href={`/research/research-and-development-rd-cell${utmParams}`}
+              href={`/research/research-and-development-rd-cell/${utmParams}`}
             >
               Research and Development (R&D) Cell
             </Link>
           </li>
           <li>
             <Link
-              href={`/research/intellectual-property-rights-ipr-cell${utmParams}`}
+              href={`/research/intellectual-property-rights-ipr-cell/${utmParams}`}
             >
               Intellectual Property Rights (IPR) Cell
             </Link>
           </li>
           <li>
             <Link
-              href={`/research/entrepreneurship-development-cell${utmParams}`}
+              href={`/research/entrepreneurship-development-cell/${utmParams}`}
             >
               Entrepreneurship Development Cell
             </Link>
           </li>
           <li>
             <Link
-              href={`/research/institute-innovation-council-iic${utmParams}`}
+              href={`/research/institute-innovation-council-iic/${utmParams}`}
             >
               Institute Innovation Council (IIC)
             </Link>
           </li>
           <li>
-            <Link href={`/research/web-development-cell${utmParams}`}>
+            <Link href={`/research/web-development-cell/${utmParams}`}>
               Web Development Cell
             </Link>
           </li>
           <li>
-            <Link href={`/research/ieee-student-branch-stb17561${utmParams}`}>
+            <Link href={`/research/ieee-student-branch-stb17561/${utmParams}`}>
               IEEE Student Branch
             </Link>
           </li>
           <li>
-            <Link href={`/research/iaas-student-branch${utmParams}`}>
+            <Link href={`/research/iaas-student-branch/${utmParams}`}>
               IAAS Student Chapter
             </Link>
           </li>

@@ -269,14 +269,14 @@ function CardCourses() {
                   className="md:hidden slide-in text-white w-fit text-left"
                 >
                   <Link
-                    href={`${degree.link}${utmParams}`}
+                    href={`${degree.link}/${utmParams}`}
                     className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] text-2xl"
                   >
                     {degree.name}
                   </Link>
                   {degree.branches.map((branches, branchesIndex) => (
                     <Link
-                      href={`${branches.linkTo}${utmParams}`}
+                      href={`${branches.linkTo}/${utmParams}`}
                       key={branchesIndex}
                     >
                       <h3 className="text-xs">{branches.name}</h3>

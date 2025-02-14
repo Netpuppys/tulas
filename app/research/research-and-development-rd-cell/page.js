@@ -54,28 +54,28 @@ function RAndCell() {
           <ul className="list-disc ml-5">
             <li>
               <Link
-                href={`/research/research-and-development-rd-cell/funded-projects-and-grants${utmParams}`}
+                href={`/research/research-and-development-rd-cell/funded-projects-and-grants/${utmParams}`}
               >
                 Funded Projects and Grants
               </Link>
             </li>
             <li>
               <Link
-                href={`/research/research-and-development-rd-cell/journal-publications${utmParams}`}
+                href={`/research/research-and-development-rd-cell/journal-publications/${utmParams}`}
               >
                 Journal Publications
               </Link>
             </li>
             <li>
               <Link
-                href={`/research/research-and-development-rd-cell/conference-publications${utmParams}`}
+                href={`/research/research-and-development-rd-cell/conference-publications/${utmParams}`}
               >
                 Conference Publications
               </Link>
             </li>
             <li>
               <Link
-                href={`/research/research-and-development-rd-cell/conferences-organized${utmParams}`}
+                href={`/research/research-and-development-rd-cell/conferences-organized/${utmParams}`}
               >
                 Conferences Organized
               </Link>

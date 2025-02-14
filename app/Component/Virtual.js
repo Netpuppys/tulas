@@ -14,7 +14,7 @@ function Virtual() {
       </div>
       <div className="flex w-full md:w-[85%] flex-col md:flex-row justify-between items-center md:gap-16">
         <Link
-          href={`/virtual-tour/index.html${utmParams}`}
+          href={`/virtual-tour/index.html/${utmParams}`}
           className="w-full md:w-[85%] mx-auto h-[35vh] min-h-[250px] relative bg-black rounded-xl overflow-hidden mb-8 md:mb-0"
         >
           <iframe

@@ -40,7 +40,7 @@ function TableRender({ tableData }) {
               <td>{subject.seat}</td>
               <td>{subject.duration}</td>
               <td>
-                <Link href={`/apply-now${utmParams}`}>Apply Now</Link>
+                <Link href={`/apply-now/${utmParams}`}>Apply Now</Link>
               </td>
             </tr>
           ))}

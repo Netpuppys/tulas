@@ -172,7 +172,7 @@ const Footer = ({ set = false, color = false }) => {
           <div className="flex w-fit gap-4">
             <button
               onClick={() => {
-                window.location.href = `/apply-now${utmParams}`;
+                window.location.href = `/apply-now/${utmParams}`;
               }}
               className="text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-white"
             >
@@ -180,7 +180,7 @@ const Footer = ({ set = false, color = false }) => {
             </button>
             <button
               onClick={() => {
-                window.location.href = `/apply-now${utmParams}`;
+                window.location.href = `/apply-now/${utmParams}`;
               }}
               className="bg-[#E69706] border-2 text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
             >
@@ -277,7 +277,7 @@ const Footer = ({ set = false, color = false }) => {
                       href={
                         link.target
                           ? `${link.linkTo}`
-                          : `${link.linkTo}${utmParams}`
+                          : `${link.linkTo}/${utmParams}`
                       }
                       target={link.target ? "_blank" : ""}
                       rel={
@@ -300,7 +300,7 @@ const Footer = ({ set = false, color = false }) => {
                       href={
                         link.target
                           ? `${link.linkTo}`
-                          : `${link.linkTo}${utmParams}`
+                          : `${link.linkTo}/${utmParams}`
                       }
                       target={link.target ? "_blank" : ""}
                       rel={
@@ -406,7 +406,7 @@ const Footer = ({ set = false, color = false }) => {
                 {btnGroup.buttons.map((btn, btnIndex) => (
                   <React.Fragment key={btnIndex}>
                     <Link
-                      href={`${btn.linkTo}${utmParams}`}
+                      href={`${btn.linkTo}/${utmParams}`}
                       className={`px-1 text-[12px] md:text-[clamp(10px,0.8vw,20px)] font-light md:font-normal md:px-2 ${
                         btnIndex < btnGroup.buttons.length - 1
                           ? "border-r-2 border-white last:border-r-0"

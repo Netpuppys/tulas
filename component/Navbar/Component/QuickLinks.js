@@ -33,7 +33,7 @@ function QuickLinks() {
       <div className="flex items-center justify-start gap-4 flex-wrap">
         {quickLinks.map((item, index) => (
           <Link
-            href={`${item.linkTo}${utmParams}`}
+            href={`${item.linkTo}/${utmParams}`}
             key={index}
             className="flex items-center justify-center gap-1"
           >

@@ -38,7 +38,7 @@ function FacultyData({ facultyData }) {
             <Image
               onClick={() => {
                 if (faculty.linkTo) {
-                  window.location.href = `${faculty.linkTo}${utmParams}`;
+                  window.location.href = `${faculty.linkTo}/${utmParams}`;
                 }
               }}
               src={faculty.imageUrl}
@@ -49,7 +49,7 @@ function FacultyData({ facultyData }) {
           <div
             onClick={() => {
               if (faculty.linkTo) {
-                window.location.href = `${faculty.linkTo}${utmParams}`;
+                window.location.href = `${faculty.linkTo}/${utmParams}`;
               }
             }}
             className="px-4 text-black py-4 flex group-hover:opacity-0 flex-col transition-all ease-in duration-300 "
@@ -66,7 +66,7 @@ function FacultyData({ facultyData }) {
           <div
             onClick={() => {
               if (faculty.linkTo) {
-                window.location.href = `${faculty.linkTo}${utmParams}`;
+                window.location.href = `${faculty.linkTo}/${utmParams}`;
               }
             }}
             className="px-4 opacity-0 absolute pb-[40px] bg-[#007A83] w-full h-full text-white py-4 group-hover:opacity-100 flex flex-col justify-center gap-2 transition-all ease-in duration-300"

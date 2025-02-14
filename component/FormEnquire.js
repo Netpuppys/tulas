@@ -173,7 +173,7 @@ function FormEnquire({ formPopup }) {
           City: "",
         });
         setOtp("");
-        window.location.href = `/admission-thank-you${utmParams}`;
+        window.location.href = `/admission-thank-you/${utmParams}`;
       })
       .catch((error) => {
         setLoading(false);

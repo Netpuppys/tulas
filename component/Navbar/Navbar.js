@@ -187,7 +187,7 @@ function Navbar({
                 <button
                   className="flex w-full flex-row justify-between items-center cursor-pointer relative"
                   onClick={() =>
-                    (window.location.href = `/apply-now${utmParams}`)
+                    (window.location.href = `/apply-now/${utmParams}`)
                   }
                 >
                   <div
@@ -248,7 +248,7 @@ function Navbar({
                 <button
                   className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
                   onClick={() =>
-                    (window.location.href = `/apply-now${utmParams}`)
+                    (window.location.href = `/apply-now/${utmParams}`)
                   }
                 >
                   <PiPencilSimpleLineLight />
@@ -329,7 +329,7 @@ function Navbar({
                 <button
                   className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
                   onClick={() =>
-                    (window.location.href = `/apply-now${utmParams}`)
+                    (window.location.href = `/apply-now/${utmParams}`)
                   }
                 >
                   <PiPencilSimpleLineLight />
@@ -411,7 +411,7 @@ function Navbar({
         </button>
         <button
           onClick={() =>
-            (window.location.href = `/virtual-tour/index.html${utmParams}`)
+            (window.location.href = `/virtual-tour/index.html/${utmParams}`)
           }
           className="bg-[#760135] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
         >

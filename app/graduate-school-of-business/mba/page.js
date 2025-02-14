@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import NavbarLandingPage from "../Component/NavbarLandingPage";
 import BannerLandingPage from "../Component/BannerLandingPage";
 import FormLandingPage from "../Component/FormLandingPage";
@@ -24,7 +24,9 @@ import HumanResource from "../../../public/graduate-school-of-business/mba/Human
 import InternationalBusiness from "../../../public/graduate-school-of-business/mba/InternationalBusiness.png";
 import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBusiness.png";
 import healthCare from "../../../public/graduate-school-of-business/mba/healthCare.png";
+import { UtmContext } from "@/component/utmParams";
 const page = () => {
+  const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
     window.scrollTo({
       top: 0, // Scroll to the top of the page
@@ -104,7 +106,7 @@ const page = () => {
           <BannerLandingPage />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={11} />
+            <FormLandingPage course={11} thankYOu={`/graduate-school-of-business/mba/thank-you/${utmParams}`} />
           </div>
           {/* Content One */}
           <CarouselContent />

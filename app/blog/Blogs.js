@@ -82,7 +82,7 @@ const Blogs = ({ utmParams }) => {
               .replace(/&#8221;/g, "”")
               .replace(/&#038;/g, "&");
             return (
-              <a href={`/${blog.slug}${utmParams}`} key={blog.slug}>
+              <a href={`/${blog.slug}/${utmParams}`} key={blog.slug}>
                 <div>
                   <div className="shadow-2xl bg-black bg-opacity-40  rounded-xl overflow-hidden transition-all duration-300">
                     <Image
