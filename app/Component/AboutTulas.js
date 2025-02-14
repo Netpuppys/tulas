@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import formBanner from "../../public/Homepage/aboutTulas/formBanner.png";
@@ -9,6 +9,7 @@ import axios from "axios";
 import formPopup from "../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
+import { UtmContext } from "@/component/utmParams";
 const aboutTulas = (
   <>
     <strong className="text-[#007A83]">Tula's Institute</strong> is dedicated to
@@ -36,6 +37,7 @@ const aboutTulas = (
 );
 
 function AboutTulas() {
+  const {utmParams} = useContext(UtmContext);
   const [formData, setFormData] = useState({
     AuthToken: "TULAS-27-12-2023",
     Source: "tulas",
@@ -140,11 +142,30 @@ function AboutTulas() {
   const handleSubmit = (e) => {
     setLoading(true);
     e.preventDefault();
+    const searchParams = new URLSearchParams(window.location.search);
+    const utmSource = searchParams.get("utm_source");
+    const utmCampaign = searchParams.get("utm_campaign");
+    const utmTerm = searchParams.get("utm_term");
+    const searchQuery = searchParams.get("search_query");
+    const updatedFormData = {
+      ...formData,
+      LeadChannel: utmParams ? 26 : 2,
+      LeadSource: utmParams ? utmSource || 88 : 25,
+      LeadCampaign: utmParams
+        ? utmCampaign || "Enquire Now Ads"
+        : "Enquire Now Organic",
+      Field5: utmParams
+        ? utmTerm || "No Term Found"
+        : "Organic Lead Search Term not available",
+      Field6: utmParams
+        ? searchQuery || "No search Query Available"
+        : "Organic Lead Search Query not available",
+    };
     axios
-      .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", formData)
+      .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", updatedFormData)
       .then(() => {
         setLoading(false);
-        alert("Enquiry Submitted Successfully");
+        window.location.href = `/admission-thank-you/${utmParams}`;
         setVerified(false);
         setFormData({
           AuthToken: "TULAS-27-12-2023",

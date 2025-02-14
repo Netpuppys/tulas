@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import mba from "../../../public/graduate-school-of-business/mba/mba.png";
 import tulasLogo from "../../../public/graduate-school-of-business/mba/tulasLogo.png";
 import Image from "next/image";
@@ -11,7 +11,9 @@ import "react-phone-input-2/lib/style.css";
 import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
+import { UtmContext } from "@/component/utmParams";
 function FormLandingPage({ course, thankYOu }) {
+  const {utmParams} = useContext(UtmContext);
   const [formData, setFormData] = useState({
     AuthToken: "TULAS-27-12-2023",
     Source: "tulas",
@@ -114,19 +116,22 @@ function FormLandingPage({ course, thankYOu }) {
     const searchParams = new URLSearchParams(window.location.search);
     const utmSource = searchParams.get("utm_source");
     const utmCampaign = searchParams.get("utm_campaign");
-
-    // Update LeadSource and LeadCampaign based on UTM parameters
-    setFormData((prev) => ({
-      ...prev,
-      LeadSource: utmSource || 52,
-      LeadCampaign: utmCampaign || "",
-    }));
-
+    const utmTerm = searchParams.get("utm_term");
+    const searchQuery = searchParams.get("search_query");
     // Prepare the form data for submission
     const updatedFormData = {
       ...formData,
-      LeadSource: utmSource || 52,
-      LeadCampaign: utmCampaign || "",
+      LeadChannel: utmParams ? 7 : 2, 
+      LeadSource: utmParams ? utmSource || 52 : 25,
+      LeadCampaign: utmParams
+          ? utmCampaign || "Landing Page Ads"
+          : "Landing Page Organic",
+        Field5: utmParams
+          ? utmTerm || "No Term Found"
+          : "Organic Lead Search Term not available",
+        Field6: utmParams
+          ? searchQuery || "No search Query Available"
+          : "Organic Lead Search Query not available",
     };
 
     axios
