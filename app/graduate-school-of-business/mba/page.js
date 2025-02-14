@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import NavbarLandingPage from "../Component/NavbarLandingPage";
+import bannerImg from "../../../public/graduate-school-of-business/mba/bannerImg.webp";
 import BannerLandingPage from "../Component/BannerLandingPage";
 import FormLandingPage from "../Component/FormLandingPage";
 import CarouselContent from "../Component/CarouselContent";
@@ -103,10 +103,13 @@ const page = () => {
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage />
+          <BannerLandingPage bannerImg={bannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={11} thankYOu={`/graduate-school-of-business/mba/thank-you/${utmParams}`} />
+            <FormLandingPage
+              course={11}
+              thankYOu={`/graduate-school-of-business/mba/thank-you/${utmParams}`}
+            />
           </div>
           {/* Content One */}
           <CarouselContent />

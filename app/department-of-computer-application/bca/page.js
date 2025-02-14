@@ -15,6 +15,7 @@ import Accreditations from "@/app/graduate-school-of-business/Component/Accredit
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
 import { facultyData } from "@/app/courses/bca/data/data";
 import { UtmContext } from "@/component/utmParams";
+import bcaBannerImg from "../../../public/landingPage/bcaBannerImg.webp";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -60,10 +61,13 @@ const page = () => {
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage />
+          <BannerLandingPage bannerImg={bcaBannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={7} thankYOu={`/department-of-computer-application/bca/thank-you/${utmParams}`} />
+            <FormLandingPage
+              course={7}
+              thankYOu={`/department-of-computer-application/bca/thank-you/${utmParams}`}
+            />
           </div>
           {/* Content One */}
           <CarouselContent />
