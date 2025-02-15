@@ -1,10 +1,15 @@
-import computerScience from "../../../../../public/courses/btech/computer-science/computer-science.png";
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../../../public/courses/btech/CourseOutcomes.png";
+import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../../../public/courses/btech/ProgramEducationalObjective.png";
 import MEDocument from "../../../../../public/courses/btech/mechanical-engineering/ME.pdf";
-import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
+import clubs from "../../../../../public/courses/bjmc/clubs.png";
+import edge from "../../../../../public/courses/btech/mechanical-engineering/edge.webp";
+import beyondCurriculum from "../../../../../public/courses/btech/mechanical-engineering/beyondCurriculum.webp";
+import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
+import DepartmentalVission from "../../../../../public/courses/btech/mechanical-engineering/vision.webp";
+import DepartmentalMission from "../../../../../public/courses/btech/mechanical-engineering/mission.webp";
 import AnkitJain from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnkitJain.webp";
 import AnkitResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnkitJainResume.pdf";
 import Sanjay from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Sanjay.webp";
@@ -31,24 +36,49 @@ import Abhishek from "../../../../../public/courses/btech/mechanical-engineering
 import AbhishekResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AbhishekResume.pdf";
 import Manoj from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Manoj.webp";
 import ManojResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/ManojResume.pdf";
+import content1 from "../../../../../public/courses/btech/mechanical-engineering/content1.webp";
+import content2 from "../../../../../public/courses/btech/mechanical-engineering/content2.webp";
 import Link from "next/link";
-
-export const images = [
-  computerScience,
-  // Add more image paths as needed
-];
+export const heading = (
+  <>
+    Best Mechanical Engineering Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
+export const quotes = (
+  <>
+    “Innovate, design, and build the future with{" "}
+    <strong className="text-[#760135]">
+      Mechanical Engineering at Tula’s Institute.
+    </strong>
+    ”
+  </>
+);
+export const sideImages = [content1, content2];
 export const content = (
   <>
-    The Mechanical Engineering Department of Tula’s Institute is one of the
-    oldest department since its inception in 2006. The department offers
-    Diploma, Undergraduate, and Postgraduate programs in mechanical engineering.
-    The main goal of the curriculum is to impart quality education to the
-    students to develop technical skills, improve their problem-solving
-    abilities, and encourage them to become a competitive mechanical engineer.
-    The Department offers two specializations in the field of Robotics and
-    Energy Engineering. Mechanical engineering may be the programme of study for
-    you if you are seeking career in the field of design, development, quality,
-    manufacturing, installation and operation.
+    The Department of Mechanical Engineering at Tula’s Institute, established in
+    2006, is one of the oldest and most prestigious departments, dedicated to
+    academic excellence and research-driven innovation. Offering Diploma,
+    Undergraduate (B.Tech), and Postgraduate (M.Tech) programs, the department
+    focuses on developing technical expertise, analytical thinking, and
+    problem-solving abilities to prepare students for global engineering
+    challenges.
+    <div className="mt-2 md:mt-[1%]"></div>
+    The curriculum is designed to provide a strong foundation in mechanical
+    design, manufacturing, thermodynamics, robotics, and energy engineering. The
+    department offers specializations in Robotics and Energy Engineering,
+    equipping students with cutting-edge knowledge in automation, sustainable
+    energy, and advanced engineering systems. With state-of-the-art
+    laboratories, industry collaborations, and hands-on training, students gain
+    practical experience in real-world applications.
+    <div className="mt-2 md:mt-[1%]"></div>
+    Mechanical Engineering at Tula’s Institute opens diverse career
+    opportunities in design, development, quality control, manufacturing,
+    installation, and operations. The program ensures that graduates are
+    industry-ready, with skills that align with the demands of modern
+    engineering industries, including automotive, aerospace, renewable energy,
+    and robotics.
   </>
 );
 export const items = [
@@ -72,8 +102,12 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={MEDocument} target="_blank">B.Tech Mechanical</Link>],
-    image: Course,
+    description: [
+      <Link href={MEDocument} target="_blank">
+        B.Tech Mechanical
+      </Link>,
+    ],
+    image: CourseOutcomes,
   },
   {
     title: "Program Outcomes",
@@ -82,7 +116,7 @@ export const items = [
       "PO2 – Problem Analysis : Identify, formulate, research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
       "PO3 – Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "PO4 – Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
       "PO5 – Modern Tool usage : Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modelling to complex engineering activities with an understanding of the limitations.",
@@ -103,7 +137,7 @@ export const items = [
       "PSO2 : Ability to integrate major Mechanical Engineering streams with innovative activities ensuring high standards of professional ethics.",
       "PSO3 : Ensuring excellence in using managerial tools and techniques efficient manufacturing and in developing leadership skills with ethical and environmental practices.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
   },
   {
     title: "Program Educational Objectives",
@@ -112,7 +146,7 @@ export const items = [
       "PEO 2: Graduates will be able to develop leadership skills with high level of integrity and ethical values for team building.",
       "PEO 3: Graduates will be able to develop professional development through self-study and continuing education.",
     ],
-    image: Program,
+    image: ProgramEducationalObjective,
     points: [
       "PEO 4: Analyse, interpret and provide solutions to real life mechanical engineering and related problems.",
     ],
@@ -557,28 +591,28 @@ export const itemsClubs = [
       "VIBGYOR ",
       "VICTREE",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Edge Over Others",
     description: [
       "As per Make in India newsletter 2016, there were 280,800 mechanical engineers working in various industries in India and the number is expected to grow by 20% (approximately) by 2026. The contracting services from companies will continue to add to the growth in mechanical engineering services.",
     ],
-    image: Program,
+    image: edge,
   },
   {
     title: "Beyond Curriculum",
     description: [
       "Apart from the regular curriculum as specified by the affiliating university, we also conduct various hands – on – workshops/ seminars/ short term courses/ expert talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips time to time for making students aware of the recent trends and advancements in the industries.",
     ],
-    image: Program,
+    image: beyondCurriculum,
   },
   {
     title: "Career Prospects",
     description: [
       "Mechanical engineers create and implement solutions to a wide range of challenges, increasing efficiency in a variety of sectors. You may expect outstanding employment opportunities, great income, and a variety of work if you major in mechanical engineering. Mechanical engineering abilities are transferrable, which means they will be valuable in a range of sectors and can help you gain additional employment opportunities. A mechanical engineering degree will equip you with a variety of abilities, including:",
     ],
-    image: Program,
+    image: careerProspectus,
     points: [
       "problem-solving – engineering is all about discovering better, more efficient methods to do things.",
       "Team building– working in groups allows you to share expertise and build faster, more reliable solutions.",

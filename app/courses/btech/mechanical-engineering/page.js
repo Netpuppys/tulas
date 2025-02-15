@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../../public/courses/btech/mechanical-engineering/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../../public/courses/bjmc/exploreCrouselBackground.png";
@@ -23,6 +23,9 @@ import {
   semesterData,
   facultyData,
   specialization,
+  sideImages,
+  heading,
+  quotes,
 } from "./data/data";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import BannerProgram from "@/component/Programs/BannerProgram";
@@ -53,7 +56,12 @@ function BAJMC() {
             //   "The Mechanical Engineering Department of Tula’s Institute is one of the oldest department since its inception in 2006. The department offers Diploma, Undergraduate, and Postgraduate programs in mechanical engineering. The main goal of the curriculum is to impart quality education to the students to develop technical skills, improve their problem-solving abilities, and encourage them to become a competitive mechanical engineer. "
             // }
           />
-          <Program parentRef={parentRef} images={images} content={content} />
+          <Program
+            content={content}
+            sideImages={sideImages}
+            heading={heading}
+            quotes={quotes}
+          />
           <CarouselProgram
             heading={"Discover"}
             items={items}

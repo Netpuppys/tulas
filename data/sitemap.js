@@ -5,19 +5,19 @@ import Organogram from "../public/FooterPDf/Organogram.pdf";
 const sitemap = [
   {
     title: "Home",
-    linkTo: "/",
+    linkTo: "",
   },
   {
     title: "About Us",
-    linkTo: "/about/",
+    linkTo: "/about",
     nestedLinks: [
       {
         title: "About Tula's",
-        linkTo: "/about/",
+        linkTo: "/about",
       },
       {
         title: "Vision & Mission",
-        linkTo: "/vision-mission/",
+        linkTo: "/vision-mission",
       },
       {
         title: "Organogram",
@@ -30,23 +30,23 @@ const sitemap = [
       },
       {
         title: "Approvals",
-        linkTo: "/about/approval/",
+        linkTo: "/about/approval",
       },
       {
         title: "About Dehradun",
-        linkTo: "/about-dehradun/",
+        linkTo: "/about-dehradun",
       },
       {
         title: "Contact Us",
-        linkTo: "/contact/",
+        linkTo: "/contact",
       },
       {
         title: "Why Tula's",
-        linkTo: "/about/why-tulas/",
+        linkTo: "/about/why-tulas",
       },
       {
         title: "Blogs",
-        linkTo: "/blog/",
+        linkTo: "/blog",
       },
     ],
   },
@@ -64,66 +64,66 @@ const sitemap = [
             thirdNestedLinks: [
               {
                 title: "Diploma in Civil Engineering",
-                linkTo: "/diploma-in-civil-engineering/",
+                linkTo: "/diploma-in-civil-engineering",
               },
               {
                 title: "Diploma in Mechanical Engineering",
-                linkTo: "/diploma-mechanical-engineering/",
+                linkTo: "/diploma-mechanical-engineering",
               },
               {
                 title: "Diploma in Computer Science Engineering",
-                linkTo: "/diploma-computer-science-engineering/",
+                linkTo: "/diploma-computer-science-engineering",
               },
             ],
           },
           {
             title: "B.Tech",
-            linkTo: "/btech/",
+            linkTo: "/btech",
             thirdNestedLinks: [
               {
                 title: "Civil Engineering (CE)",
-                linkTo: "/courses/btech/civil-engineering/",
+                linkTo: "/courses/btech/civil-engineering",
               },
               {
                 title: "Computer Science & Engineering (CSE)",
-                linkTo: "/courses/btech/computer-science/",
+                linkTo: "/courses/btech/computer-science",
               },
               {
                 title: "Computer Science & Engineering (AI&ML)",
                 linkTo:
-                  "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/",
+                  "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning",
               },
               {
                 title: "Computer Science & Engineering (Cyber Security)",
                 linkTo:
-                  "/courses/btech/computer-science-engineering-cyber-security/",
+                  "/courses/btech/computer-science-engineering-cyber-security",
               },
               {
                 title: "Computer Science & Engineering( Data Science)",
                 linkTo:
-                  "/courses/btech/computer-science-engineering-data-science/",
+                  "/courses/btech/computer-science-engineering-data-science",
               },
               {
                 title: "Electronics & Communication Engineering (ECE)",
-                linkTo: "/courses/btech/electronics-and-communication-engg/",
+                linkTo: "/courses/btech/electronics-and-communication-engg",
               },
               {
                 title: "Electrical & Electronics Engineering (EEE)",
-                linkTo: "/courses/btech/electrical-and-electronics-engg/",
+                linkTo: "/courses/btech/electrical-and-electronics-engg",
               },
               {
                 title: "Mechanical Engineering (ME)",
-                linkTo: "/courses/btech/mechanical-engineering/",
+                linkTo: "/courses/btech/mechanical-engineering",
               },
             ],
           },
           {
             title: "M.Tech",
-            linkTo: "/mtech/",
+            linkTo: "/mtech",
           },
           {
             title: "Department of Applied Sciences and Humanities",
-            linkTo: "/courses/applied-science/",
+            linkTo: "/courses/applied-science",
           },
         ],
       },
@@ -133,7 +133,7 @@ const sitemap = [
         superNestedLinks: [
           {
             title: "B.Sc Agriculture",
-            linkTo: "/b-sc-agriculture/",
+            linkTo: "/b-sc-agriculture",
           },
         ],
       },
@@ -143,7 +143,7 @@ const sitemap = [
         superNestedLinks: [
           {
             title: "BAJMC",
-            linkTo: "/courses/bjmc/",
+            linkTo: "/courses/bjmc",
           },
         ],
       },
@@ -153,15 +153,15 @@ const sitemap = [
         superNestedLinks: [
           {
             title: "BBA",
-            linkTo: "/courses/bba/",
+            linkTo: "/courses/bba",
           },
           {
             title: "B.Com (Hons.)",
-            linkTo: "/courses/bcom/",
+            linkTo: "/courses/bcom",
           },
           {
             title: "MBA",
-            linkTo: "/courses/mba/",
+            linkTo: "/courses/mba",
           },
         ],
       },
@@ -171,11 +171,11 @@ const sitemap = [
         superNestedLinks: [
           {
             title: "BCA",
-            linkTo: "/courses/bca/",
+            linkTo: "/courses/bca",
           },
           {
             title: "MCA",
-            linkTo: "/courses/mca/",
+            linkTo: "/courses/mca",
           },
         ],
       },
@@ -185,11 +185,11 @@ const sitemap = [
         superNestedLinks: [
           {
             title: "B.Pharma",
-            linkTo: "/courses/bpharma/",
+            linkTo: "/courses/bpharma",
           },
           {
             title: "D.Pharma",
-            linkTo: "/courses/dpharma/",
+            linkTo: "/courses/dpharma",
           },
         ],
       },
@@ -201,35 +201,35 @@ const sitemap = [
     nestedLinks: [
       {
         title: "Library",
-        linkTo: "/infrastructure/library/",
+        linkTo: "/infrastructure/library",
       },
       {
         title: "Computer Center",
-        linkTo: "/infrastructure/computer-center/",
+        linkTo: "/infrastructure/computer-center",
       },
       {
         title: "Auditorium",
-        linkTo: "/infrastructure/auditorium/",
+        linkTo: "/infrastructure/auditorium",
       },
       {
         title: "Lecture Theatre",
-        linkTo: "/infrastructure/lecture-theatre/",
+        linkTo: "/infrastructure/lecture-theatre",
       },
       {
         title: "Hostel & Mess Facilities",
-        linkTo: "/infrastructure/hostel-and-mess/",
+        linkTo: "/infrastructure/hostel-and-mess",
       },
       {
         title: "Campus Facilities",
-        linkTo: "/infrastructure/other-facilities/",
+        linkTo: "/infrastructure/other-facilities",
       },
       {
         title: "Sports",
-        linkTo: "/sports/",
+        linkTo: "/sports",
       },
       {
         title: "ICT Facilities",
-        linkTo: "/ict-facilities/",
+        linkTo: "/ict-facilities",
       },
       {
         title: "Institute Video",
@@ -275,39 +275,39 @@ const sitemap = [
   },
   {
     title: "R&D (CIRE)",
-    linkTo: "/research/",
+    linkTo: "/research",
     nestedLinks: [
       {
         title: "Research and Development (R&D) Cell",
-        linkTo: "/research/research-and-development-rd-cell/",
+        linkTo: "/research/research-and-development-rd-cell",
         superNestedLinks: [
           // {
           //   title: "Funded Research Projects",
-          //   linkTo: "/research/research-and-development-rd-cell/",
+          //   linkTo: "/research/research-and-development-rd-cell",
           // },
           {
             title: "Funded Projects and Grants",
             linkTo:
-              "/research/research-and-development-rd-cell/funded-projects-and-grants/",
+              "/research/research-and-development-rd-cell/funded-projects-and-grants",
           },
           {
             title: "Journal Publications",
             linkTo:
-              "/research/research-and-development-rd-cell/journal-publications/",
+              "/research/research-and-development-rd-cell/journal-publications",
           },
           {
             title: "Conference Publications",
             linkTo:
-              "/research/research-and-development-rd-cell/conference-publications/",
+              "/research/research-and-development-rd-cell/conference-publications",
           },
           {
             title: "Conferences Organized",
             linkTo:
-              "/research/research-and-development-rd-cell/conferences-organized/",
+              "/research/research-and-development-rd-cell/conferences-organized",
           },
           {
             title: "FDPs and Workshops",
-            linkTo: "/research/fdps-workshops/",
+            linkTo: "/research/fdps-workshops",
           },
           {
             title: "Research Policy",
@@ -328,43 +328,43 @@ const sitemap = [
       },
       {
         title: "Intellectual Property Rights",
-        linkTo: "/research/intellectual-property-rights-ipr-cell/",
+        linkTo: "/research/intellectual-property-rights-ipr-cell",
         superNestedLinks: [
           {
             title: "Patents",
-            linkTo: "/research/intellectual-property-rights-ipr-cell/patent/",
+            linkTo: "/research/intellectual-property-rights-ipr-cell/patent",
           },
         ],
       },
       {
         title: "Entrepreneurship Development Cell",
-        linkTo: "/research/entrepreneurship-development-cell/",
+        linkTo: "/research/entrepreneurship-development-cell",
       },
       // {
       //   title: "Web Development Cell",
-      //   linkTo: "/research/web-development-cell/",
+      //   linkTo: "/research/web-development-cell",
       // },
       {
         title: "Institute Innovation Council",
-        linkTo: "/research/institute-innovation-council-iic/",
+        linkTo: "/research/institute-innovation-council-iic",
         superNestedLinks: [
           {
             title: "IIC Events",
-            linkTo: "/research/institute-innovation-council-iic/iic-events/",
+            linkTo: "/research/institute-innovation-council-iic/iic-events",
           },
           {
             title: "IAAS Student Branch",
-            linkTo: "/research/iaas-student-branch/",
+            linkTo: "/research/iaas-student-branch",
           },
           {
             title: "IEEE Student Branch",
-            linkTo: "/research/ieee-student-branch-stb17561/",
+            linkTo: "/research/ieee-student-branch-stb17561",
           },
         ],
       },
       {
         title: "Tula’s Technology and Incubator (TTBI)",
-        linkTo: "https://www.tulasincubator.com/",
+        linkTo: "https://www.tulasincubator.com",
         target: "_blank",
       },
     ],
@@ -375,19 +375,19 @@ const sitemap = [
     nestedLinks: [
       {
         title: "Admission Procedure- Eligibility",
-        linkTo: "/admission-procedure/",
+        linkTo: "/admission-procedure",
       },
       {
         title: "Bank Details",
-        linkTo: "/bank-details/",
+        linkTo: "/bank-details",
       },
       {
         title: "Pay Fee Online",
-        linkTo: "/pay-fee-online/",
+        linkTo: "/pay-fee-online",
       },
       {
         title: "E-Prospectus",
-        linkTo: "/download-e-prospectus/",
+        linkTo: "/download-e-prospectus",
       },
     ],
   },
@@ -397,35 +397,35 @@ const sitemap = [
     nestedLinks: [
       // {
       //   title: "Placements Activities",
-      //   linkTo: "/placements/placement-activites/",
+      //   linkTo: "/placements/placement-activites",
       // },
       // {
       //   title: "Corporate Relations",
-      //   linkTo: "/placements/corporate-relations/",
+      //   linkTo: "/placements/corporate-relations",
       // },
       // {
       //   title: "Placement Registration",
-      //   linkTo: "/placements/registration-placement/",
+      //   linkTo: "/placements/registration-placement",
       // },
       // {
       //   title: "Ujwal Bhavishya",
-      //   linkTo: "/ujjwal-bhavishya/",
+      //   linkTo: "/ujjwal-bhavishya",
       // },
       // {
       //   title: "Industries Tie-ups",
-      //   linkTo: "/placements/industries-tie-up/",
+      //   linkTo: "/placements/industries-tie-up",
       // },
       {
         title: "Placement at Tula’s",
-        linkTo: "/placements/career-innovation-centre/",
+        linkTo: "/placements/career-innovation-centre",
       },
       {
         title: "Technical Placement Record",
-        linkTo: "/placements/technical-department/",
+        linkTo: "/placements/technical-department",
       },
       {
         title: " Non-Technical Placement Record",
-        linkTo: "/placements/non-technical-department/",
+        linkTo: "/placements/non-technical-department",
       },
     ],
   },
@@ -435,16 +435,16 @@ const sitemap = [
     nestedLinks: [
       {
         title: "Alumni Login",
-        linkTo: "https://alumni.tulas.edu.in/",
+        linkTo: "https://alumni.tulas.edu.in",
         target: "_blank",
       },
       {
         title: "Alumni Testimonials",
-        linkTo: "/alumni-testimonials/",
+        linkTo: "/alumni-testimonials",
       },
       {
         title: "Degree Request Form",
-        linkTo: "/degree-request-form/",
+        linkTo: "/degree-request-form",
       },
     ],
   },
@@ -454,12 +454,12 @@ const sitemap = [
     nestedLinks: [
       {
         title: "Teacher Login",
-        linkTo: "https://teacher.camu.in/",
+        linkTo: "https://teacher.camu.in",
         target: "_blank",
       },
       {
         title: "Student Login",
-        linkTo: "https://student.camu.in/",
+        linkTo: "https://student.camu.in",
         target: "_blank",
       },
     ],

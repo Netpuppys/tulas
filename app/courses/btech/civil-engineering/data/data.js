@@ -32,24 +32,56 @@ import BhumikaResume from "../../../../../public/courses/btech/civil-engineering
 import ArunAgarwal from "../../../../../public/courses/btech/civil-engineering/facultyData/ArunAgarwal.webp";
 import Prashant from "../../../../../public/courses/btech/civil-engineering/facultyData/PrashantGussain.webp";
 import PrashantResume from "../../../../../public/courses/btech/civil-engineering/facultyData/PrashantResume.pdf";
+import content1 from "../../../../../public/courses/btech/civil-engineering/content1.webp";
+import content2 from "../../../../../public/courses/btech/civil-engineering/content2.webp";
 
 import Link from "next/link";
-
-export const content = (
+export const heading = (
   <>
-    The Civil Engineering Department of Tula’s Institute came into existence in
-    the year 2011. The department offers Diploma, Undergraduate, and
-    Postgraduate programs in civil engineering. The Department of civil
-    engineering offers specialization in the field of Structural Engineering in
-    PG program. Civil engineers work to sustain the natural environment while
-    creating and maintaining the built environment. Civil engineers are
-    essential to provide the necessities of human beings like water, shelter,
-    infrastructure and energy in more efficient and renewable ways. If one has
-    the zeal to take a new challenge every day, civil engineering will be the
-    right choice.
+    Best Civil Engineering Institute in{" "}
+    <span className="text-[#760135]">North India</span>
   </>
 );
-
+export const content = (
+  <>
+    The Department of Civil Engineering at Tula’s Institute is dedicated to
+    shaping future engineers who can design, build, and sustain the
+    infrastructure of tomorrow. Established in 2011, the department offers a
+    comprehensive B.Tech in Civil Engineering program, providing students with
+    in-depth knowledge of construction, structural analysis, geotechnical
+    engineering, environmental engineering, and transportation systems.
+    <div className="mt-2 md:mt-[1%]"></div>Civil engineers play a vital role in
+    improving modern society by designing roads, bridges, tunnels, skyscrapers,
+    and sustainable water systems. The curriculum at Tula’s Institute integrates
+    theoretical knowledge with hands-on practical learning through advanced
+    laboratories, industrial visits, live projects, and expert mentorship.
+    <div className="mt-2 md:mt-[1%]"></div>With a strong emphasis on
+    sustainability and innovation, students are trained to adopt eco-friendly
+    construction techniques and smart city solutions. The department fosters an
+    interdisciplinary learning approach, enabling students to develop
+    problem-solving skills and technical expertise required for a successful
+    career in civil engineering.<div className="mt-2 md:mt-[1%]"></div>
+    Graduates from the B.Tech Civil Engineering program at Tula’s Institute have
+    opportunities in government sectors, private construction firms, urban
+    planning agencies, and international infrastructure projects. The program
+    also lays a strong foundation for those aiming to pursue higher studies or
+    research in civil engineering disciplines.
+  </>
+);
+export const quotes = (
+  <>
+    “Build the foundations of tomorrow with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s B.Tech in Civil Engineering.
+    </strong>{" "}
+    Empowering future engineers with the skills to design,{" "}
+    <strong className="text-[#760135]">
+      innovate, and create a sustainable world.
+    </strong>
+    ”
+  </>
+);
+export const sideImages = [content1, content2];
 export const items = [
   {
     title: "USPs",

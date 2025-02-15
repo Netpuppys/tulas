@@ -15,13 +15,16 @@ import {
   cards,
   content,
   facultyData,
+  heading,
   hod,
   HODcontent,
   items,
   itemsClubs,
+  quotes,
   sections,
   selectedCardTable,
   semesterData,
+  sideImages,
 } from "./data/data";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
@@ -41,7 +44,12 @@ function BAJMC() {
       <body>
         <Navbar />
         <BannerProgram image={BannerImg} title={<>CIVIL ENGINEERING (CE)</>} />
-        <Program content={content} />
+        <Program
+          sideImages={sideImages}
+          content={content}
+          heading={heading}
+          quotes={quotes}
+        />
         <CarouselProgram
           heading={"Discover"}
           items={items}
