@@ -124,7 +124,11 @@ export const items = [
 
   {
     title: "Course Outcomes",
-    description: [<Link href={bcomDocument} target="_blank">B.com</Link>],
+    description: [
+      <Link href={bcomDocument} target="_blank">
+        B.com
+      </Link>,
+    ],
     image: Course,
   },
 
@@ -177,8 +181,10 @@ export const cards = [
 ];
 export const selectedCard1 = (
   <>
-    <span className="font-[Arapey] pb-[1%] leading-tight">Admission Eligibility</span>
-    <ul className="list-disc ml-5 font-[MontserratLight] leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-black">
+    <span className="font-[Arapey] pb-[1%] leading-tight">
+      Admission Eligibility
+    </span>
+    <ul className="list-disc ml-5 font-[MontserratLight] leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-[#353535]">
       <li>
         Passed XII or equivalent course in any discipline from any recognized
         Board / Council / University with minimum 45% marks for general (open)

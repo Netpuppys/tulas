@@ -23,7 +23,7 @@ const title = [
     <span className="text-[#E69706]">UNLOCK</span> NEW <br />
     PATHWAYS TO <span className="text-[#E69706]">SUCCESS</span>
   </p>,
-  <p className="text-black">
+  <p className="text-[#353535]">
     <span className="text-[#760135]">UNLOCK</span> NEW <br />
     PATHWAYS TO <span className="text-[#760135]">SUCCESS</span>
   </p>,

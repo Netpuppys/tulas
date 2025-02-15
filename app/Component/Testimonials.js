@@ -107,7 +107,7 @@ const Testimonials = () => {
         <button
           id="swiper-prev"
           onClick={() => setIsPlaying(false)}
-          className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 left-0 md:left-10 p-2 rounded-full md:hover:bg-black md:hover:bg-opacity-80 text-5xl text-black md:hover:text-white text-opacity-80 flex items-center justify-center"
+          className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 left-0 md:left-10 p-2 rounded-full md:hover:bg-black md:hover:bg-opacity-80 text-5xl text-[#353535] md:hover:text-white text-opacity-80 flex items-center justify-center"
         >
           <HiOutlineChevronLeft />
         </button>
@@ -173,7 +173,7 @@ const Testimonials = () => {
         <button
           id="swiper-next"
           onClick={() => setIsPlaying(false)}
-          className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 right-0 md:right-10 p-2 rounded-full md:hover:bg-black md:hover:bg-opacity-50 text-5xl text-black md:hover:text-white text-opacity-80 flex items-center justify-center"
+          className="bg-transparent z-50 absolute top-1/2 -translate-y-1/2 right-0 md:right-10 p-2 rounded-full md:hover:bg-black md:hover:bg-opacity-50 text-5xl text-[#353535] md:hover:text-white text-opacity-80 flex items-center justify-center"
         >
           <HiOutlineChevronRight />
         </button>

@@ -574,7 +574,10 @@ export const itemsClubs = [
   {
     title: "Innovation in Teaching & Learning",
     description: [
-      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdpKpjox_H2-p59YtbwHwohIV0ApP-v-MgyuSSUqXZJyMbxGw" target="_blank">
+      <Link
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdpKpjox_H2-p59YtbwHwohIV0ApP-v-MgyuSSUqXZJyMbxGw"
+        target="_blank"
+      >
         Submit Feedback for Innovation in Teaching & Learning
       </Link>,
     ],
@@ -595,20 +598,22 @@ export const itemsClubs = [
           <tbody>
             {innovations.map((data, index) => (
               <tr key={index}>
-                <td className="text-black border border-black">{data.sNo}</td>
-                <td className="text-black border border-black">
+                <td className="text-[#353535] border border-black">
+                  {data.sNo}
+                </td>
+                <td className="text-[#353535] border border-black">
                   {data.innovationUsed}
                 </td>
-                <td className="text-black border border-black">
+                <td className="text-[#353535] border border-black">
                   {data.courseUsed}
                 </td>
-                <td className="text-black border border-black">
+                <td className="text-[#353535] border border-black">
                   {data.description}
                 </td>
-                <td className="text-black border border-black">
+                <td className="text-[#353535] border border-black">
                   {data.impactOnLearning}
                 </td>
-                <td className="text-black border border-black">
+                <td className="text-[#353535] border border-black">
                   {data.academicYear}
                 </td>
               </tr>

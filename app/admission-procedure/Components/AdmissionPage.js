@@ -149,7 +149,7 @@ function AdmissionPage() {
           <h3 className="text-[#3D001B] text-center font-[600] text-[clamp(10px,2.8vw,60px)]">
             Bank Details
           </h3>
-          <h4 className="text-black text-center text-[clamp(10px,1vw,22px)]">
+          <h4 className="text-[#353535] text-center text-[clamp(10px,1vw,22px)]">
             The institute provides the facility of payment of respective fee
             (Academic & Hostel Fee) in the below mentioned accounts :
           </h4>

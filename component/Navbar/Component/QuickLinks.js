@@ -37,7 +37,7 @@ function QuickLinks() {
             key={index}
             className="flex items-center justify-center gap-1"
           >
-            <div className="text-[22px] text-black">{item.icon}</div>
+            <div className="text-[22px] text-[#353535]">{item.icon}</div>
             <h2 className="text-[#535353] text-[15px]">{item.title}</h2>
           </Link>
         ))}

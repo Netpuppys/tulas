@@ -91,7 +91,7 @@ function CarouselContent() {
                     {section.title}
                   </h3>
                   <h5
-                    className={`leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[Helvetica] text-black`}
+                    className={`text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-wrap font-[MontserratLight] text-[#4E4E4E]`}
                   >
                     {section.description}
                   </h5>

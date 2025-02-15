@@ -13,10 +13,19 @@ import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
 import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
 import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
-import { facultyData } from "@/app/courses/bba/data/data";
+import { facultyData, selectedCard1 } from "@/app/courses/bba/data/data";
 import { UtmContext } from "@/component/utmParams";
 import bbaBannerImg from "../../../public/landingPage/bbaBannerImg.webp";
-
+import marketingIcon from "../../../public/graduate-school-of-business/mba/marketingIcon.png";
+import finance from "../../../public/graduate-school-of-business/mba/finance.png";
+import HumanResource from "../../../public/graduate-school-of-business/mba/HumanResource.png";
+import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
+import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
+import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
+import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
+import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
+import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
+import TableProgram from "@/component/Programs/tableProgram";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -46,7 +55,57 @@ const page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const department = [
+    {
+      title: "Finance",
+      icon: finance,
+    },
+    {
+      title: "Marketing",
+      icon: marketingIcon,
+    },
+    {
+      title: "Human Resource Management",
+      icon: HumanResource,
+    },
+  ];
+  const journey = [
+    {
+      icon: comprehensiveCurriculam,
+      title: "Comprehensive Curriculum",
+      description: "Covers leadership, management, finance & marketing.",
+    },
+    {
+      icon: industryReleventSkills,
+      title: "Industry Relevant Skills",
+      description:
+        "Hands-on training through internships, projects & workshops.",
+    },
+    {
+      icon: highCareerDemand,
+      title: "High Career Demand",
+      description:
+        "Prepares for careers in corporate, entrepreneurship & business leadership.",
+    },
+    {
+      icon: paathwayToProfessionalCertification,
+      title: "Tech-Driven Learning",
+      description: "Engage in real-world case studies & business simulations",
+    },
+    {
+      icon: diverseIndustryApplications,
+      title: "Diverse Specializations",
+      description:
+        "Choose from Finance, Marketing, HRM, International Business & more.",
+    },
+    {
+      icon: globalAccredetation,
+      title: "Global Accreditation",
+      description: "NAAC A++, AICTE & UGC-approved program.",
+    },
+  ];
+  const journeyQuote =
+    "Step into the Corporate World with a BBA from Tula’s Institute!";
   return (
     <>
       <head>
@@ -65,23 +124,34 @@ const page = () => {
           <BannerLandingPage bannerImg={bbaBannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={6} thankYOu={`/graduate-school-of-business/bba/thank-you/${utmParams}`} />
+            <FormLandingPage
+              course={6}
+              thankYOu={`/graduate-school-of-business/bba/thank-you/${utmParams}`}
+            />
           </div>
           {/* Content One */}
           <CarouselContent />
           {/* Cutting Edge */}
-          <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BBA"} />
+          <CuttingEdge
+            scrollRef={scrollRef}
+            heading={"Tula’s BBA Specialisations"}
+            department={department}
+            journey={journey}
+            journeyHeading={"Your BBA Journey at Tula’s Institute"}
+            journeyQuote={journeyQuote}
+          />
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}
           {/* <AtGlance /> */}
           <CampusLife />
+          <TableProgram selectedCard1={selectedCard1} />
           {/*Faculty */}
           <div className="pt-8 md:pt-[4%] px-4 md:px-6 flex flex-col items-center justify-center w-full">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Professors
             </h8>
-            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
               With every lesson, professors are shaping minds and paving the way
               for future innovations.
             </h4>

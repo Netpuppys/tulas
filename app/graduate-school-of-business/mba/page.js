@@ -10,7 +10,7 @@ import AtGlance from "../Component/AtGlance";
 import Accreditations from "../Component/Accreditations";
 import Placement from "../Component/Placement";
 import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
-import { facultyData } from "@/app/courses/mba/data/data";
+import { facultyData, selectedCard1 } from "@/app/courses/mba/data/data";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import Image from "next/image";
 import NavbarLanding from "../Component/NavbarLanding";
@@ -24,7 +24,14 @@ import HumanResource from "../../../public/graduate-school-of-business/mba/Human
 import InternationalBusiness from "../../../public/graduate-school-of-business/mba/InternationalBusiness.png";
 import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBusiness.png";
 import healthCare from "../../../public/graduate-school-of-business/mba/healthCare.png";
+import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
+import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
+import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
+import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
+import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
+import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
 import { UtmContext } from "@/component/utmParams";
+import TableProgram from "@/component/Programs/tableProgram";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -56,38 +63,77 @@ const page = () => {
   }, []);
   const department = [
     {
-      title: "Marketing",
-      icon: marketingIcon,
-    },
-    {
       title: "Finance",
       icon: finance,
     },
     {
-      title: "Entreprenuership",
-      icon: entreprenurship,
+      title: "Marketing",
+      icon: marketingIcon,
     },
+    {
+      title: "Human Resource Management",
+      icon: HumanResource,
+    },
+    // {
+    //   title: "Entreprenuership",
+    //   icon: entreprenurship,
+    // },
     {
       title: "Business Analytics",
       icon: BusinessAnalytics,
     },
-    {
-      title: "Human Resource",
-      icon: HumanResource,
-    },
+
     {
       title: "International Business",
       icon: InternationalBusiness,
     },
     {
-      title: "Agri- Business ",
+      title: "Supply Chain Management",
       icon: AgriBusiness,
     },
+    // {
+    //   title: "Health Care",
+    //   icon: healthCare,
+    // },
+  ];
+  const journey = [
     {
-      title: "Health Care",
-      icon: healthCare,
+      icon: comprehensiveCurriculam,
+      title: "Comprehensive Business Curriculum",
+      description: "Master leadership, management, finance, marketing & more.",
+    },
+    {
+      icon: industryReleventSkills,
+      title: "Industry-Aligned Specializations",
+      description:
+        "Choose from Marketing, HR, Finance, Business Analytics, International Business, and more.",
+    },
+    {
+      icon: highCareerDemand,
+      title: "Hands-on Learning",
+      description:
+        "Gain real-world experience through case studies, internships & industry projects.",
+    },
+    {
+      icon: paathwayToProfessionalCertification,
+      title: "Global Business Exposure",
+      description:
+        " Learn from corporate leaders, participate in global seminars & industry visits.",
+    },
+    {
+      icon: diverseIndustryApplications,
+      title: "Diverse Career Opportunities",
+      description:
+        "Prepare for leadership roles in corporate, startups, and entrepreneurship.",
+    },
+    {
+      icon: globalAccredetation,
+      title: "Accredited & Recognized",
+      description: "NAAC A++, AICTE & UGC-approved program.",
     },
   ];
+  const journeyQuote =
+    "Transform Your Business Acumen with an MBA from Tula’s Institute!";
   return (
     <>
       <head>
@@ -118,18 +164,22 @@ const page = () => {
             scrollRef={scrollRef}
             heading={"Tula’s MBA Specialisations"}
             department={department}
+            journey={journey}
+            journeyHeading={"Your MBA Journey at Tula’s Institute"}
+            journeyQuote={journeyQuote}
           />
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}
           {/* <AtGlance /> */}
           <CampusLife />
+          <TableProgram selectedCard1={selectedCard1} />
           {/*Faculty */}
           <div className="pt-8 md:pt-[4%] px-4 md:px-6 flex flex-col items-center justify-center w-full">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Professors
             </h8>
-            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
               With every lesson, professors are shaping minds and paving the way
               for future innovations.
             </h4>

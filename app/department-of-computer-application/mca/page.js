@@ -13,9 +13,18 @@ import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
 import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
 import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
-import { facultyData } from "@/app/courses/mca/data/data";
+import { facultyData, selectedCardTable } from "@/app/courses/mca/data/data";
 import { UtmContext } from "@/component/utmParams";
 import mcaBannerImg from "../../../public/landingPage/mcaBannerImg.webp";
+import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
+import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
+import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
+import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
+import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
+import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
+import Accreditation from "@/app/Component/Accreditation";
+import Journey from "@/app/graduate-school-of-business/Component/Journey";
+import TableProgram from "@/component/Programs/tableProgram";
 
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -46,6 +55,43 @@ const page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const journey = [
+    {
+      icon: comprehensiveCurriculam,
+      title: "Advanced Tech Curriculum",
+      description:
+        "Specialize in AI, Data Science, Cybersecurity & Software Development.",
+    },
+    {
+      icon: industryReleventSkills,
+      title: "Industry-Oriented Learning",
+      description: "Gain hands-on experience in real-world tech challenges.",
+    },
+    {
+      icon: highCareerDemand,
+      title: "High-Growth Career Path",
+      description: "Unlock opportunities in IT, FinTech, EdTech & more.",
+    },
+    {
+      icon: paathwayToProfessionalCertification,
+      title: "Innovation & Research",
+      description:
+        "Work on live projects, coding competitions & industry collaborations.",
+    },
+    {
+      icon: diverseIndustryApplications,
+      title: "Cutting-Edge Facilities",
+      description:
+        "Access high-tech labs, cloud computing, and AI research centers.",
+    },
+    {
+      icon: globalAccredetation,
+      title: "Global Accreditation",
+      description: "NAAC A++, AICTE & UGC-approved program.",
+    },
+  ];
+  const journeyQuote =
+    "Lead the Digital Revolution with an MCA from Tula’s Institute!";
 
   return (
     <>
@@ -65,15 +111,37 @@ const page = () => {
           <BannerLandingPage bannerImg={mcaBannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={12} thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`} />
+            <FormLandingPage
+              course={12}
+              thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`}
+            />
           </div>
           {/* Content One */}
           <CarouselContent />
           {/* Cutting Edge */}
-          <CuttingEdge
+          {/* <CuttingEdge
             scrollRef={scrollRef}
             heading={"Tula’s MCA"}
+          /> */}
+          <div className="pt-8 md:pt-[4%]"></div>
+          <Journey
+            heading={"Your MCA Journey at Tula’s Institute"}
+            journey={journey}
+            journeyQuotes={journeyQuote}
           />
+          <TableProgram selectedCardTable={selectedCardTable} />
+          <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
+            <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+              Our Recruiters
+            </h8>
+            <h4 className="px-8 text-center w-full font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
+              Give your career a boost with lucrative national & international
+              internship and placement opportunities at Tula's Graduate School
+              of Business.
+            </h4>
+          </div>
+          <Accreditation />
+          <div className="pt-8 md:pt-[4%]"></div>
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}
@@ -84,7 +152,7 @@ const page = () => {
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Professors
             </h8>
-            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
               With every lesson, professors are shaping minds and paving the way
               for future innovations.
             </h4>

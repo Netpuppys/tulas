@@ -128,7 +128,7 @@ function Placement({ scrollRef }) {
               <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight  md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
                 Placements & Internships
               </h8>
-              <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+              <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
                 The primary objective of the Training and Placement Cell at
                 Tula’s Institute is to prepare and empower students for
                 successful campus recruitment. Our goal is to equip students
@@ -136,7 +136,7 @@ function Placement({ scrollRef }) {
                 and secure rewarding career opportunities. We provide training
                 that focuses on:
               </h4>
-              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[MontserratLight] leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-black justify-between">
+              <ul className="flex flex-col md:flex-row font-bold list-disc px-8 md:px-0 w-full md:max-w-[85%] font-[MontserratLight] leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-[#353535] justify-between">
                 <li>Communication Skills</li>
                 <li>Personal and Professional Grooming</li>
                 <li>Aptitude Development</li>
@@ -200,7 +200,7 @@ function Placement({ scrollRef }) {
             </div>
           ))}
         </div> */}
-        <h4 className="px-8 md:px-0 text-center w-full pb-16 md:pb-8 font-[Helvetica] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-white">
+        <h4 className="px-8 md:px-0 text-center w-full pb-16 md:pb-8 font-[MontserratLight] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-white">
           Copyright ©2024 All Rights Reserved for TULAS
         </h4>
       </div>

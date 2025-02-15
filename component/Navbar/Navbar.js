@@ -177,7 +177,7 @@ function Navbar({
                   <h3
                     style={{ fontFamily: "Zilla Slab" }}
                     className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                      isChecked ? "text-black" : "text-white"
+                      isChecked ? "text-[#353535]" : "text-white"
                     }`}
                   >
                     {!isChecked ? "Menu" : "Close"}
@@ -197,14 +197,14 @@ function Navbar({
                   >
                     <FaPen
                       className={`w-[30px] h-[30px] ${
-                        isChecked ? "text-black" : "text-white"
+                        isChecked ? "text-[#353535]" : "text-white"
                       }`}
                     />
                   </div>
                   <h3
                     style={{ fontFamily: "Zilla Slab" }}
                     className={`hidden mdNavbar:block text-nowrap text-left text-[25px] -ml-4 font-semibold transition-color ${
-                      isChecked ? "text-black" : "text-white"
+                      isChecked ? "text-[#353535]" : "text-white"
                     }`}
                   >
                     Apply Now

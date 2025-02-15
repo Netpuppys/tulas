@@ -210,10 +210,10 @@ function Approval() {
                     <div className="text-red-500 bg-white group-hover:bg-transparent rounded-r-xl min-w-[80px] max-w-[80px] md:min-w-[160px] md:max-w-[160px] h-[83px] flex items-center justify-center text-[40px] md:text-[52px]">
                       <BsFileEarmarkPdf />
                     </div>
-                    <p className="text-[18px] md:text-[25px] text-white group-hover:text-black  font-[MontserratMedium]">
+                    <p className="text-[18px] md:text-[25px] text-white group-hover:text-[#353535]  font-[MontserratMedium]">
                       {approval.title}
                     </p>
-                    <p className="text-[20px] md:text-[30px] text-white group-hover:text-black font-[MontserratMedium]">
+                    <p className="text-[20px] md:text-[30px] text-white group-hover:text-[#353535] font-[MontserratMedium]">
                       {approval.year}
                     </p>
                   </div>

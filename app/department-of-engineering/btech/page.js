@@ -23,7 +23,15 @@ import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBu
 import healthCare from "../../../public/graduate-school-of-business/mba/healthCare.png";
 import btechBannerImg from "../../../public/landingPage/btechBannerImg.webp";
 import { facultyDataCSE } from "@/app/courses/btech/facultyDataCSE";
+import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
+import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
+import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
+import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
+import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
+import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
 import { UtmContext } from "@/component/utmParams";
+import { selectedCardTable } from "@/app/courses/btech/computer-science/data/data";
+import TableProgram from "@/component/Programs/tableProgram";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -87,6 +95,43 @@ const page = () => {
       icon: healthCare,
     },
   ];
+  const journey = [
+    {
+      icon: comprehensiveCurriculam,
+      title: "Cutting-Edge Curriculum",
+      description:
+        "Covers core engineering disciplines with emerging technologies.",
+    },
+    {
+      icon: industryReleventSkills,
+      title: "Industry-Focused Learning",
+      description: "Hands-on training in AI, Robotics, IoT & Data Science.",
+    },
+    {
+      icon: highCareerDemand,
+      title: "High Career Demand",
+      description:
+        "Opens doors to top industries like IT, Automotive, and Manufacturing.",
+    },
+    {
+      icon: paathwayToProfessionalCertification,
+      title: "Innovation & Research",
+      description:
+        "Participate in live projects, hackathons & technical competitions.",
+    },
+    {
+      icon: diverseIndustryApplications,
+      title: "State-of-the-Art Facilities",
+      description: "Access 300+ advanced labs & modern research centers.",
+    },
+    {
+      icon: globalAccredetation,
+      title: "Global Accreditation",
+      description: "NAAC A++, AICTE & UGC-approved program.",
+    },
+  ];
+  const journeyQuote =
+    "Engineer the Future with a B.Tech from Tula’s Institute!";
   return (
     <>
       <head>
@@ -117,18 +162,22 @@ const page = () => {
             scrollRef={scrollRef}
             heading={"Tula’s B.Tech Specialisations"}
             department={department}
+            journey={journey}
+            journeyHeading={"Your B.Tech Journey at Tula’s Institute"}
+            journeyQuote={journeyQuote}
           />
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}
           {/* <AtGlance /> */}
           <CampusLife />
+          <TableProgram selectedCardTable={selectedCardTable} />
           {/*Faculty */}
           <div className="pt-8 md:pt-[4%] px-4 md:px-6 flex flex-col items-center justify-center w-full">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Professors
             </h8>
-            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
               With every lesson, professors are shaping minds and paving the way
               for future innovations.
             </h4>

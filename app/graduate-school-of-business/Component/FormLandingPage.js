@@ -238,23 +238,23 @@ function FormLandingPage({ course, thankYOu }) {
           className="flex pointer-events-auto bg-[#3D001B] w-[95%] md:w-full mx-auto z-30 rounded-3xl overflow-hidden"
         >
           <div className="hidden bg-white md:flex flex-col rounded-r-3xl px-7 py-7 pb-4 max-w-[410px]">
-            <h3 className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[MontserratMedium] text-black">
+            <h3 className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[MontserratMedium] text-[#353535]">
               Enquire Now
             </h3>
-            <p className="text-sm font-[MontserratMedium] text-black">
+            <p className="text-sm font-[MontserratMedium] text-[#353535]">
               Subscribe to be notified about our latest endeavours, and your IT
               horizons.
             </p>
             <a
               href="tel:+91-8069204028"
-              className="flex text-sm font-[MontserratMedium] text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[MontserratMedium] text-[#353535] items-center justify-start mt-4 gap-4"
             >
               <IoCall />
               +91-80692 04028
             </a>
             <a
               href="mailTo:info@tulas.edu.in"
-              className="flex text-sm font-[MontserratMedium] text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[MontserratMedium] text-[#353535] items-center justify-start mt-4 gap-4"
             >
               <IoMail />
               info@tulas.edu.in
@@ -262,7 +262,7 @@ function FormLandingPage({ course, thankYOu }) {
             <a
               href="https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
-              className="flex text-sm font-[MontserratMedium] text-black items-center justify-start mt-4 gap-4"
+              className="flex text-sm font-[MontserratMedium] text-[#353535] items-center justify-start mt-4 gap-4"
             >
               <IoLocation className="min-w-[16px] h-[16px]" />
               Tula's Institute, Dhoolkot Near Selaqui, Dhulkot Rd,

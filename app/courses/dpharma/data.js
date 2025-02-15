@@ -26,10 +26,10 @@ export const heading = (
 );
 export const content = (
   <>
-    The Diploma in Pharmacy (D.Pharma) is a two-year program designed to provide
-    students with comprehensive knowledge of pharmaceutical sciences, drug
-    formulation, and healthcare practices. With an intake capacity of 60 seats,
-    this course equips aspiring pharmacists with the necessary skills to
+    The Diploma in Pharmacy (D.Pharma.) is a two-year program designed to
+    provide students with comprehensive knowledge of pharmaceutical sciences,
+    drug formulation, and healthcare practices. With an intake capacity of 60
+    seats, this course equips aspiring pharmacists with the necessary skills to
     contribute effectively to the healthcare industry.
     <div className="mt-2 md:mt-[1%]"></div>
     The curriculum covers pharmaceutics, pharmacology, medicinal chemistry,
@@ -43,9 +43,9 @@ export const content = (
     Council to become licensed pharmacists. They are eligible for employment in
     hospitals, retail and community pharmacies, pharmaceutical industries, and
     regulatory bodies. Additionally, students can pursue higher education by
-    enrolling in B.Pharma through lateral entry (direct admission into the
-    second year), opening doors for advanced career opportunities in research,
-    clinical pharmacy, and pharmaceutical marketing.
+    enrolling in B. Pharma through lateral entry (direct admission into the
+    second year), opening doors for advanced career opportunities in drug
+    manufacturing, research, clinical pharmacy, and pharmaceutical marketing.
     <div className="mt-2 md:mt-[1%]"></div>
     With the increasing demand for qualified pharmacists, this program ensures
     students are industry-ready and equipped with the knowledge to excel in the
@@ -56,7 +56,7 @@ export const quotes = (
   <>
     “Shape the future of healthcare with{" "}
     <strong className="text-[#760135]">
-      Tula’s Institute’s D.Pharma program.
+      Tula’s Institute’s D. Pharma. program.
     </strong>{" "}
     Empowering aspiring pharmacists with the skills to make a difference in{" "}
     <strong className="text-[#760135]">
@@ -65,7 +65,7 @@ export const quotes = (
     ”
   </>
 );
-export const sideImages =[content1, content2]
+export const sideImages = [content1, content2];
 export const items = [
   {
     title: "PEO (Program Educational Objectives)",
@@ -88,24 +88,24 @@ export const items = [
     ],
     points: [
       <div className="overflow-x-auto">
-        <table className="table-auto border-collapse border border-gray-300 text-black  w-full text-left">
+        <table className="table-auto border-collapse border border-gray-300 text-[#353535]  w-full text-left">
           <thead className="bg-gray-200">
             <tr>
-              <th className="border border-gray-300 text-black px-4 py-2">
+              <th className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO
               </th>
-              {/* <th className="border border-gray-300 text-black px-4 py-2">Outcome</th> */}
-              <th className="border border-gray-300 text-black px-4 py-2">
+              {/* <th className="border border-gray-300 text-[#353535] px-4 py-2">Outcome</th> */}
+              <th className="border border-gray-300 text-[#353535] px-4 py-2">
                 Description
               </th>
             </tr>
           </thead>
           <tbody>
             <tr className="bg-white">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO1
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">Pharmacy knowledge:</span>
                 Illustrate knowledge and comprehension of the core and basic
                 knowledge associated with the profession of pharmacy, including
@@ -115,10 +115,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-gray-50">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO2
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">Problem analysis:</span>
                 State & Utilize the principles of scientific enquiry, thinking
                 analytically, clearly and critically, while solving problems and
@@ -127,10 +127,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-white">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO3
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">
                   Development of solutions:
                 </span>
@@ -141,10 +141,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-gray-50">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO4
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">
                   Conduct investigations of complex problems:
                 </span>
@@ -154,10 +154,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-white">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO5
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">Modern tool usage:</span>
                 Choose and Interpret appropriate methods and procedures,
                 resources, and modern pharmacy-related computing tools with an
@@ -165,10 +165,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-gray-50">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO6
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">
                   The Pharmacist and Society:
                 </span>
@@ -178,10 +178,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-white">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO7
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">
                   Environment and sustainability:
                 </span>
@@ -191,10 +191,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-gray-50">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO8
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">Pharmaceutical Ethics:</span>
                 Honor personal values and defend ethical principles in
                 professional and social contexts. Develop behavior that
@@ -205,10 +205,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-white">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO9
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">Individual and teamwork:</span>
                 Plan effectively as an individual, and as a member or leader in
                 teams, and gain multidisciplinary knowledge through innovative
@@ -216,10 +216,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-gray-50">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO10
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">Communication:</span>
                 Communicate effectively with the pharmacy community and with
                 society at large, such as, being able to Interpret and write
@@ -228,10 +228,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-white">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO11
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">
                   Project management and finance:
                 </span>
@@ -242,10 +242,10 @@ export const items = [
               </td>
             </tr>
             <tr className="bg-gray-50">
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 PO12
               </td>
-              <td className="border border-gray-300 text-black px-4 py-2">
+              <td className="border border-gray-300 text-[#353535] px-4 py-2">
                 <span className="font-bold mr-1">Life-long learning:</span>
                 Estimate the need for and have the preparation and ability to
                 engage in independent and life-long learning in the broadest
@@ -343,7 +343,7 @@ export const selectedCard1 = (
     <span className="font-[Arapey] pb-[1%] leading-tight">
       Admission Eligibility
     </span>
-    <ul className="font-[MontserratLight] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-black">
+    <ul className="font-[MontserratLight] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-[#353535]">
       <li>
         Passed in 10+2 examination with Physics and Chemistry as compulsory
         subjects, along with one of the following subjects:-Mathematics/Biology.

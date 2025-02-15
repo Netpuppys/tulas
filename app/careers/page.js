@@ -151,7 +151,7 @@ const CareersForm = () => {
             placeholder="Full Name"
             type="text"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.name}
             onChange={(e) => handleChange("name", e.target.value)}
           />
@@ -168,7 +168,7 @@ const CareersForm = () => {
                 .toISOString()
                 .split("T")[0]
             } // Today minus 18 years
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.date}
             onChange={(e) => handleChange("date", e.target.value)}
           />
@@ -181,8 +181,8 @@ const CareersForm = () => {
             name="gender"
             placeholder="Select"
             required
-            className={`rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium ${
-              !formData.gender ? "text-gray-400" : "text-black"
+            className={`rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium ${
+              !formData.gender ? "text-gray-400" : "text-[#353535]"
             }`}
             value={formData.gender}
             onChange={(e) => handleChange("gender", e.target.value)}
@@ -201,7 +201,7 @@ const CareersForm = () => {
             placeholder="Enter your Nationality"
             type="text"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.nationality}
             onChange={(e) => handleChange("nationality", e.target.value)}
           />
@@ -215,7 +215,7 @@ const CareersForm = () => {
             placeholder="Married/ Unmarried"
             type="text"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.maritalStatus}
             onChange={(e) => handleChange("maritalStatus", e.target.value)}
           />
@@ -227,7 +227,7 @@ const CareersForm = () => {
             placeholder="Phone Number"
             type="tel"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.phoneNumber}
             onChange={(e) => handleChange("phoneNumber", e.target.value)}
           />
@@ -241,7 +241,7 @@ const CareersForm = () => {
             placeholder="Enter your email ID"
             type="email"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.email}
             onChange={(e) => handleChange("email", e.target.value)}
           />
@@ -253,7 +253,7 @@ const CareersForm = () => {
             placeholder="Enter your Address"
             type="text"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.address}
             onChange={(e) => handleChange("address", e.target.value)}
           />
@@ -265,8 +265,8 @@ const CareersForm = () => {
           <select
             name="position"
             placeholder="Select"
-            className={`rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium ${
-              !formData.position ? "text-gray-400" : "text-black"
+            className={`rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium ${
+              !formData.position ? "text-gray-400" : "text-[#353535]"
             }`}
             required
             value={formData.position}
@@ -285,8 +285,8 @@ const CareersForm = () => {
           <select
             name="department"
             placeholder="Select"
-            className={`rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium ${
-              !formData.department ? "text-gray-400" : "text-black"
+            className={`rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium ${
+              !formData.department ? "text-gray-400" : "text-[#353535]"
             }`}
             required
             value={formData.department}
@@ -317,8 +317,8 @@ const CareersForm = () => {
           <select
             name="post"
             placeholder="Select"
-            className={`rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium ${
-              !formData.post ? "text-gray-400" : "text-black"
+            className={`rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium ${
+              !formData.post ? "text-gray-400" : "text-[#353535]"
             }`}
             required
             value={formData.post}
@@ -340,7 +340,7 @@ const CareersForm = () => {
             placeholder="Enter your Qualification"
             type="text"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.qualification}
             onChange={(e) => handleChange("qualification", e.target.value)}
           />
@@ -354,7 +354,7 @@ const CareersForm = () => {
             placeholder="Enter your Education Qualification"
             type="text"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.education}
             onChange={(e) => handleChange("education", e.target.value)}
           />
@@ -368,7 +368,7 @@ const CareersForm = () => {
             type="number"
             max={50}
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.experience}
             onChange={(e) => handleChange("experience", e.target.value)}
           />
@@ -383,7 +383,7 @@ const CareersForm = () => {
             type="number"
             required
             max={50}
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.experienceIndustry}
             onChange={(e) => handleChange("experienceIndustry", e.target.value)}
           />
@@ -396,7 +396,7 @@ const CareersForm = () => {
             placeholder="Enter N/A if 0 publications"
             type="text"
             required
-            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-black font-medium"
+            className="rounded-lg bg-white border-0 focus:outline w-full h-14 px-6 text-[#353535] font-medium"
             value={formData.publications}
             onChange={(e) => handleChange("publications", e.target.value)}
           />

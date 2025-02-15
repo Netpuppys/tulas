@@ -22,7 +22,7 @@ function TermsAndCondition() {
           </div>
         </div>
       </div>
-      <div className="w-full px-8 md:px-0 md:w-[80%] mx-auto text-black py-8 md:py-20 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight font-[MontserratLight]">
+      <div className="w-full px-8 md:px-0 md:w-[80%] mx-auto text-[#353535] py-8 md:py-20 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight font-[MontserratLight]">
         <h3 className="font-[MontserratMedium] font-semibold text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2vw,50px)] leading-none">
           What this Privacy Policy Covers
         </h3>

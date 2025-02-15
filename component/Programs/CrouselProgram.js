@@ -141,7 +141,7 @@ const CarouselProgram = ({
                     <div className="h-[4px] bg-[#E69706] w-[80px] rounded-full"></div>
                   </h3>
                 </div>
-                <button className="w-full absolute bottom-0 flex justify-center items-center gap-4 py-3 bg-white text-[#007A83]">
+                <button className="w-full text-[clamp(10px,3.5vw,30px)] md:text-[clamp(10px,0.9vw,45px)] absolute bottom-0 flex justify-center items-center gap-4 py-3 bg-white text-[#007A83]">
                   Click to Expand{" "}
                   <span className="bg-[#007A83] text-white p-1 rounded-full aspect-square">
                     <HiPlus />
@@ -162,10 +162,10 @@ const CarouselProgram = ({
               <Link
                 href={pdf}
                 target="_blank"
-                className={`py-4 bg-[#007A83] group relative px-10 flex items-center justify-center text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full `}
+                className={`py-3 bg-[#007A83] group relative px-10 flex items-center justify-center text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full `}
               >
                 <div className="absolute z-10 bg-white w-1/2 h-1/2 opacity-0 group-hover:opacity-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:w-[calc(100%-4px)] group-hover:h-[calc(100%-4px)] transition-all duration-300 rounded-full"></div>
-                <p className="z-20 flex items-center text-white group-hover:text-[#007A83] transition-all duration-200 justify-center gap-2">
+                <p className="z-20 flex items-center text-white group-hover:text-[#007A83] transition-all duration-200 justify-center gap-2 text-[clamp(10px,3.5vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
                   {downloadBtnText} <FaDownload />
                 </p>
               </Link>

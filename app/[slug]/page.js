@@ -109,14 +109,14 @@ export default async function SlugPage({ params }) {
           </h4>
         </div>
       </div>
-      <div className="blog-page-content !text-black">
+      <div className="blog-page-content !text-[#353535]">
         <>
-          <h6 className="text-black">
+          <h6 className="text-[#353535]">
             Published on {formattedDate} by {blog.author_name}
           </h6>
           <TableOfContent slug={slug} />
           <div
-            className="text-black"
+            className="text-[#353535]"
             dangerouslySetInnerHTML={{ __html: cleanContent(blog?.content) }}
           />
         </>

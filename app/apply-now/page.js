@@ -640,7 +640,7 @@ const page = () => {
             </p>
           </div>
           <div className="bg-white flex items-center justify-center">
-            <p className="text-black text-center text-sm md:text-2xl font-medium">
+            <p className="text-[#353535] text-center text-sm md:text-2xl font-medium">
               © Copyright 2024 Tula's Institute All Right Reserved
             </p>
           </div>

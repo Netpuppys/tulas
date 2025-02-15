@@ -22,7 +22,7 @@ function PrivacyPolicy() {
           </div>
         </div>
       </div>
-      <div className="w-full px-8 md:px-0 md:w-[80%] mx-auto text-black py-8 md:py-20 text-[clamp(10px,4vw,30px)] leading-tight md:text-[clamp(10px,1vw,45px)] font-[MontserratLight]">
+      <div className="w-full px-8 md:px-0 md:w-[80%] mx-auto text-[#353535] py-8 md:py-20 text-[clamp(10px,4vw,30px)] leading-tight md:text-[clamp(10px,1vw,45px)] font-[MontserratLight]">
         We respect the privacy of those who visit our web site. In accordance
         with this, we have created this policy in order to demonstrate our
         privacy commitment to our users:

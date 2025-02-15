@@ -118,7 +118,7 @@ function Library() {
               </Fade>
             </div>
             <h4
-              className={`text-black max-w-[669px] w-full text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight font-[MontserratLight] font-medium ${
+              className={`text-[#353535] max-w-[669px] w-full text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight font-[MontserratLight] font-medium ${
                 inView ? "animate-translateRight" : "opacity-0"
               }`}
             >

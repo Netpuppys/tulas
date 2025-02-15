@@ -7,7 +7,9 @@ function TableOfContent({ slug }) {
   const [blog, setBlog] = useState(null);
   useEffect(() => {
     const fetchPost = async () => {
-      const res = await axios.get(`https://blog.tulas.edu.in/api/v1/post/${slug}`);
+      const res = await axios.get(
+        `https://blog.tulas.edu.in/api/v1/post/${slug}`
+      );
       if (res?.data?.data) {
         setBlog(res.data.data);
         generateToc(res.data.data.content); // Generate TOC from content
@@ -60,7 +62,7 @@ function TableOfContent({ slug }) {
                    item.tagName === "h2"
                      ? "text-[24px] md:text-[32px] underline ml-5 md:ml-10"
                      : item.tagName === "h3"
-                     ? "text-[18px] font-semibold list-disc underline mt-4 text-black md:text-[24px] ml-10 md:ml-20"
+                     ? "text-[18px] font-semibold list-disc underline mt-4 text-[#353535] md:text-[24px] ml-10 md:ml-20"
                      : item.tagName === "h4"
                      ? "text-[16px] text-[#b90124] underline md:text-[20px] ml-14 md:ml-24"
                      : ""

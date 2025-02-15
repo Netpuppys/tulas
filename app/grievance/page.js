@@ -126,7 +126,7 @@ const GrievanceForm = ({ formState }) => {
           placeholder="First Name"
           type="text"
           required
-          className="rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-black font-medium"
+          className="rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-[#353535] font-medium"
           value={formData.firstName}
           onChange={(e) => handleChange("firstName", e.target.value)}
         />
@@ -134,7 +134,7 @@ const GrievanceForm = ({ formState }) => {
           name="lastName"
           placeholder="Last Name"
           type="text"
-          className="rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-black font-medium"
+          className="rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-[#353535] font-medium"
           value={formData.lastName}
           onChange={(e) => handleChange("lastName", e.target.value)}
         />
@@ -145,15 +145,15 @@ const GrievanceForm = ({ formState }) => {
           placeholder="Phone Number"
           type="tel"
           required
-          className="rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-black font-medium"
+          className="rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-[#353535] font-medium"
           value={formData.phoneNumber}
           onChange={(e) => handleChange("phoneNumber", e.target.value)}
         />
         <select
           name="gender"
           placeholder="Select"
-          className={`rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-black font-medium ${
-            !formData.gender ? "text-gray-400" : "text-black"
+          className={`rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-[#353535] font-medium ${
+            !formData.gender ? "text-gray-400" : "text-[#353535]"
           }`}
           value={formData.gender}
           onChange={(e) => handleChange("gender", e.target.value)}
@@ -171,15 +171,15 @@ const GrievanceForm = ({ formState }) => {
           placeholder="Enter your Department"
           type="text"
           required
-          className="rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-black font-medium"
+          className="rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-[#353535] font-medium"
           value={formData.department}
           onChange={(e) => handleChange("department", e.target.value)}
         />
         <select
           name="grievanceType"
           placeholder="Select grievance"
-          className={`rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-black font-medium ${
-            !formData.grievanceType ? "text-gray-400" : "text-black"
+          className={`rounded-lg bg-white border-0 focus:outline w-full md:w-[calc(50%-2rem)] h-14 px-6 text-[#353535] font-medium ${
+            !formData.grievanceType ? "text-gray-400" : "text-[#353535]"
           }`}
           value={formData.grievanceType}
           onChange={(e) => handleChange("grievanceType", e.target.value)}
@@ -200,7 +200,7 @@ const GrievanceForm = ({ formState }) => {
         placeholder="Grievance Message-"
         type="text"
         required
-        className="rounded-lg py-4 bg-white border-0 focus:outline w-full h-40 px-6 text-black font-medium"
+        className="rounded-lg py-4 bg-white border-0 focus:outline w-full h-40 px-6 text-[#353535] font-medium"
         value={formData.message}
         onChange={(e) => handleChange("message", e.target.value)}
       />

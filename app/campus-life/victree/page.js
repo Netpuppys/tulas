@@ -17,7 +17,7 @@ import football from "../../../public/campus-life/victree/football.png";
 import basketball from "../../../public/campus-life/victree/basketball.png";
 import volleyball from "../../../public/campus-life/victree/volleyball.png";
 import badminton from "../../../public/campus-life/victree/badminton.png";
-import athletics from "../../../public/campus-life/victree/athletics.png"
+import athletics from "../../../public/campus-life/victree/athletics.png";
 
 function Victree() {
   const sections = [
@@ -64,18 +64,18 @@ function Victree() {
     {
       title: "Volleyball",
       description: "Jump, spike, and work as a team to claim victory.",
-      image: volleyball
+      image: volleyball,
     },
     {
       title: "Badminton",
       description: "Fast rallies and lightning moves to keep you on your toes.",
-      image: badminton
+      image: badminton,
     },
     {
       title: "Athletics",
       description:
         "Push your limits in races and field events that test strength and speed.",
-        image: athletics
+      image: athletics,
     },
   ];
   return (
@@ -106,7 +106,7 @@ function Victree() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
-          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] leading-tight mx-auto text-center text-black">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] leading-tight mx-auto text-center text-[#353535]">
             At Tula’s Institute, Victree Sports Club is where energy,
             competition, and camaraderie collide. With over 10 sports available,
             students can dive into everything from strategy-driven indoor games
@@ -138,7 +138,7 @@ function Victree() {
         </h3>
         <Vision sections={sections.slice(3)} />
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] leading-tight mx-auto text-center text-black">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] leading-tight mx-auto text-center text-[#353535]">
             At Victree, it's not just about playing—it's about being part of
             something that brings out the best in you. With every match, every
             practice, you’ll find new ways to challenge yourself, connect with

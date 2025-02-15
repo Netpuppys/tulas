@@ -10,13 +10,10 @@ function AtGlance() {
   const images = [glance1, glance2, glance3, glance4, glance5, glance6];
   return (
     <div className="pb-8 px-4 md:px-6 md:pb-20 flex flex-col items-center justify-center w-full">
-      <h8 className="text-[#646464] flex flex-col md:flex-row items-center justify-center leading-none gap-6 text-[40px] md:text-[clamp(10px,3vw,100px)] font-[Helvetica] font-light">
-        At a
-        <span className="text-[40px] text-[#007A83] md:text-[clamp(10px,3.2vw,100px)] font-[GoudyCatalogue] ">
-          Glance
-        </span>
+      <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+        At a Glance
       </h8>
-      <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+      <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
         Here’s a glimpse of life at Tula’s! From academic milestones to moments
         of pure fun, this is where students thrive, grow, and make lasting
         memories.

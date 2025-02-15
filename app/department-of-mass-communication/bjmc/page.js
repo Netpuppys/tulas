@@ -13,10 +13,18 @@ import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
 import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
 import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
-import { facultyData } from "@/app/courses/bjmc/data/data";
+import { facultyData, selectedCard1 } from "@/app/courses/bjmc/data/data";
 import bjmcBannerImg from "../../../public/landingPage/bjmcBannerImg.webp";
-
+import Journey from "@/app/graduate-school-of-business/Component/Journey";
+import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
+import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
+import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
+import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
+import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
+import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
+import Accreditation from "@/app/Component/Accreditation";
 import { UtmContext } from "@/component/utmParams";
+import TableProgram from "@/component/Programs/tableProgram";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -47,6 +55,46 @@ const page = () => {
     };
   }, []);
 
+  const journey = [
+    {
+      icon: comprehensiveCurriculam,
+      title: "Comprehensive Media Curriculum",
+      description:
+        "Master journalism, digital media, advertising & public relations.",
+    },
+    {
+      icon: industryReleventSkills,
+      title: "Practical Industry Exposure",
+      description:
+        "Hands-on training in news writing, filmmaking, photography & media production.",
+    },
+    {
+      icon: highCareerDemand,
+      title: "Real-World Learning",
+      description:
+        "Engage in live projects, media internships & interactive sessions with industry experts.",
+    },
+    {
+      icon: paathwayToProfessionalCertification,
+      title: "Cutting-Edge Facilities",
+      description:
+        "Access modern studios, editing labs & state-of-the-art media equipment.",
+    },
+    {
+      icon: diverseIndustryApplications,
+      title: "Diverse Career Opportunities",
+      description:
+        "Build a future in journalism, broadcasting, PR, digital marketing & content creation.",
+    },
+    {
+      icon: globalAccredetation,
+      title: "Global Accreditation",
+      description: "NAAC A++, AICTE & UGC-approved program.",
+    },
+  ];
+  const journeyQuote =
+    "Turn Your Passion for Media into a Powerful Career with B.A (Hons.) JMC at Tula’s Institute!";
+
   return (
     <>
       <head>
@@ -65,12 +113,34 @@ const page = () => {
           <BannerLandingPage bannerImg={bjmcBannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
-            <FormLandingPage course={5} thankYOu={`/department-of-mass-communication/bjmc/thank-you/${utmParams}`} />
+            <FormLandingPage
+              course={5}
+              thankYOu={`/department-of-mass-communication/bjmc/thank-you/${utmParams}`}
+            />
           </div>
           {/* Content One */}
           <CarouselContent />
           {/* Cutting Edge */}
-          <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BA(Hons.)JMC"} />
+          {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BA(Hons.)JMC"} /> */}
+          <div className="pt-8 md:pt-[4%]"></div>
+          <Journey
+            heading={"Your B.A (Hons.) JMC Journey at Tula’s Institute"}
+            journey={journey}
+            journeyQuotes={journeyQuote}
+          />
+          <TableProgram selectedCard1={selectedCard1} />
+          <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
+            <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+              Our Recruiters
+            </h8>
+            <h4 className="px-8 text-center w-full font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
+              Give your career a boost with lucrative national & international
+              internship and placement opportunities at Tula's Graduate School
+              of Business.
+            </h4>
+          </div>
+          <Accreditation />
+          <div className="pt-8 md:pt-[4%]"></div>
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}
@@ -81,7 +151,7 @@ const page = () => {
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Professors
             </h8>
-            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[Helvetica] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-black">
+            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
               With every lesson, professors are shaping minds and paving the way
               for future innovations.
             </h4>

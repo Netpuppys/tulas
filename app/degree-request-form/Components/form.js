@@ -141,7 +141,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   value={formData.name}
                   onChange={(e) => handleChange("name", e.target.value)}
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 />
               </div>
               <div>
@@ -152,7 +152,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   value={formData.fatherName}
                   onChange={(e) => handleChange("fatherName", e.target.value)}
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 />
               </div>
               <div>
@@ -167,7 +167,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                     handleChange("enrollmentNumber", e.target.value)
                   }
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 />
               </div>
               <div>
@@ -178,7 +178,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   value={formData.collegeID}
                   onChange={(e) => handleChange("collegeID", e.target.value)}
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 />
               </div>
               <div>
@@ -187,7 +187,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   value={formData.branch}
                   onChange={(e) => handleChange("branch", e.target.value)}
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 >
                   <option value="" disabled selected>
                     Select
@@ -225,7 +225,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                       handleChange("otherBranch", e.target.value)
                     }
                     required={formData.branch === "Other" ? true : false}
-                    className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                    className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                   />
                 </div>
               )}
@@ -239,7 +239,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   value={formData.address}
                   onChange={(e) => handleChange("address", e.target.value)}
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 />
               </div>
               <div>
@@ -250,7 +250,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   value={formData.pinCode}
                   onChange={(e) => handleChange("pinCode", e.target.value)}
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 />
               </div>
               <div>
@@ -261,7 +261,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   value={formData.mobile}
                   onChange={(e) => handleChange("mobile", e.target.value)}
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 />
               </div>
               <div>
@@ -272,7 +272,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   value={formData.email}
                   onChange={(e) => handleChange("email", e.target.value)}
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-black focus:outline-none"
+                  className="w-full px-4 py-2 border rounded-lg text-[#353535] focus:outline-none"
                 />
               </div>
               <div>

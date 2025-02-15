@@ -187,7 +187,7 @@ function LectureTheater() {
               </div>
             </div>
             <h4
-              className={`text-black max-w-[669px] w-full text-[16px] md:text-[22px] font-[MontserratLight] font-medium ${
+              className={`text-[#353535] max-w-[669px] w-full text-[16px] md:text-[22px] font-[MontserratLight] font-medium ${
                 inView ? "animate-translateRight" : "opacity-0"
               }`}
             >

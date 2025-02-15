@@ -35,7 +35,7 @@ function Vision({ sections, color = false }) {
                   <br />
                   <h5
                     className={`leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] ${
-                      color ? "text-black" : "text-white"
+                      color ? "text-[#353535]" : "text-white"
                     }`}
                   >
                     {section.description}

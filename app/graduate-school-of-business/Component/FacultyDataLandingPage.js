@@ -35,7 +35,7 @@ function FacultyDataLandingPage({ facultyData }) {
                   className="rounded-xl w-full h-full object-cover"
                 />
               </div>
-              <div className="px-4 text-black py-4 flex group-hover:opacity-0 flex-col transition-all ease-in duration-300">
+              <div className="px-4 text-[#353535] py-4 flex group-hover:opacity-0 flex-col transition-all ease-in duration-300">
                 <h3 className="text-[#007A83] font-[MontserratMedium] leading-tight font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)]">
                   {faculty.name}
                 </h3>

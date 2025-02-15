@@ -316,8 +316,10 @@ export const cards = [
 ];
 export const selectedCard1 = (
   <>
-   <span className="font-[Arapey] pb-[1%] leading-tight">Admission Eligibility</span>
-    <ul className="font-[MontserratLight] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-black">
+    <span className="font-[Arapey] pb-[1%] leading-tight">
+      Admission Eligibility
+    </span>
+    <ul className="font-[MontserratLight] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-[#353535]">
       <li>Passed Bachelor Degree of minimum 3 years duration.</li>
       <li>
         Obtained at least 50% marks (45% marks in case of candidates belonging

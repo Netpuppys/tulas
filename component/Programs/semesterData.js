@@ -26,13 +26,15 @@ const SemesterTable = ({ semesterData }) => {
               {semester.subjects.map((subject, idx) => (
                 <tr key={idx} className="">
                   <td
-                    className="text-black border-black"
+                    className="text-[#353535] border-black"
                     colSpan={subject.title ? "1" : "2"}
                   >
                     {subject.code}
                   </td>
                   {subject.title && (
-                    <td className="text-black border-black">{subject.title}</td>
+                    <td className="text-[#353535] border-black">
+                      {subject.title}
+                    </td>
                   )}
                 </tr>
               ))}

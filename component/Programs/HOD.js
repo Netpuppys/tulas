@@ -15,7 +15,7 @@ function HOD({ hod, HODcontent }) {
               alt=""
               className="rounded-2xl w-[40%] md:w-[225px] h-full object-cover"
             />
-            <div className="px-4 text-black py-4 md:px-8 flex flex-col gap-2 md:gap-4">
+            <div className="px-4 text-[#353535] py-4 md:px-8 flex flex-col gap-2 md:gap-4">
               <h3 className="text-[#760135] font-[MontserratMedium] leading-tight font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,45px)]">
                 {faculty.name}
               </h3>
@@ -41,7 +41,7 @@ function HOD({ hod, HODcontent }) {
         ))}
       </div>
       <div className="max-w-[1200px] mx-auto bg-transparent h-fit relative pl-4">
-        <h5 className="w-full text-black px-4 mx-auto pt-8 md:pt-[3%] leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] font-normal">
+        <h5 className="w-full text-[#353535] px-4 mx-auto pt-8 md:pt-[3%] leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] font-normal">
           {HODcontent}
         </h5>
       </div>
