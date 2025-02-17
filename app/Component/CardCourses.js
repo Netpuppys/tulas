@@ -17,60 +17,60 @@ function CardCourses() {
       degrees: [
         {
           name: "B.Tech",
-          link: "/btech/",
+          link: "/btech",
           branches: [
             {
               name: "Civil Engineering",
-              linkTo: "/courses/btech/civil-engineering/",
+              linkTo: "/courses/btech/civil-engineering",
             },
             {
               name: "Computer Science & Engineering",
-              linkTo: "/courses/btech/computer-science/",
+              linkTo: "/courses/btech/computer-science",
             },
             {
               name: "Computer Science & Engineering (AI&ML)",
               linkTo:
-                "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/",
+                "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning",
             },
             {
               name: "Computer Science & Engineering (Cyber Security)",
               linkTo:
-                "/courses/btech/computer-science-engineering-cyber-security/",
+                "/courses/btech/computer-science-engineering-cyber-security",
             },
             {
               name: "Computer Science & Engineering (Data Science)",
               linkTo:
-                "/courses/btech/computer-science-engineering-data-science/",
+                "/courses/btech/computer-science-engineering-data-science",
             },
             {
               name: "Electronics & Communication Engineering",
-              linkTo: "/courses/btech/electronics-and-communication-engg/",
+              linkTo: "/courses/btech/electronics-and-communication-engg",
             },
             {
               name: "Electrical & Electronics Engineering",
-              linkTo: "/courses/btech/electrical-and-electronics-engg/",
+              linkTo: "/courses/btech/electrical-and-electronics-engg",
             },
             {
               name: "Mechanical Engineering",
-              linkTo: "/courses/btech/mechanical-engineering/",
+              linkTo: "/courses/btech/mechanical-engineering",
             },
           ],
         },
         {
           name: "M.Tech",
-          link: "/mtech/",
+          link: "/mtech",
           branches: [
             // {
             //   name: "Civil Engineering",
-            //   linkTo: "/mtech/",
+            //   linkTo: "/mtech",
             // },
             // {
             //   name: "Thermal Engineering",
-            //   linkTo: "/mtech/",
+            //   linkTo: "/mtech",
             // },
             // {
             //   name: "Computer Science and Engineering",
-            //   linkTo: "/mtech/",
+            //   linkTo: "/mtech",
             // },
           ],
         },
@@ -80,15 +80,15 @@ function CardCourses() {
           branches: [
             {
               name: "Computer Science Engineering",
-              linkTo: "/diploma-computer-science-engineering/",
+              linkTo: "/diploma-computer-science-engineering",
             },
             {
               name: "Civil Engineering",
-              linkTo: "/diploma-in-civil-engineering/",
+              linkTo: "/diploma-in-civil-engineering",
             },
             {
               name: "Mechanical Engineering",
-              linkTo: "/diploma-mechanical-engineering/",
+              linkTo: "/diploma-mechanical-engineering",
             },
           ],
         },
@@ -100,37 +100,37 @@ function CardCourses() {
       degrees: [
         {
           name: "MBA",
-          link: "/courses/mba/",
+          link: "/courses/mba",
           branches: [
             {
               name: "Finance",
-              linkTo: "/courses/mba/",
+              linkTo: "/courses/mba",
             },
             {
               name: "Human Resource Management",
-              linkTo: "/courses/mba/",
+              linkTo: "/courses/mba",
             },
             {
               name: "Marketing",
-              linkTo: "/courses/mba/",
+              linkTo: "/courses/mba",
             },
             {
               name: "Development",
-              linkTo: "/courses/mba/",
+              linkTo: "/courses/mba",
             },
             {
               name: "International Business",
-              linkTo: "/courses/mba/",
+              linkTo: "/courses/mba",
             },
             {
               name: "Business Analytics",
-              linkTo: "/courses/mba/",
+              linkTo: "/courses/mba",
             },
           ],
         },
         {
           name: "B.com. (Hons)",
-          link: "/courses/bcom/",
+          link: "/courses/bcom",
           branches: [
             {
               name: "",
@@ -140,19 +140,19 @@ function CardCourses() {
         },
         {
           name: "BBA",
-          link: "/courses/bba/",
+          link: "/courses/bba",
           branches: [
             {
               name: "Human Resource Management",
-              linkTo: "/courses/bba/",
+              linkTo: "/courses/bba",
             },
             {
               name: "Marketing",
-              linkTo: "/courses/bba/",
+              linkTo: "/courses/bba",
             },
             {
               name: "Finance",
-              linkTo: "/courses/bba/",
+              linkTo: "/courses/bba",
             },
           ],
         },
@@ -180,11 +180,11 @@ function CardCourses() {
       degrees: [
         {
           name: "BAJMC",
-          link: "/courses/bjmc/",
+          link: "/courses/bjmc",
           branches: [
             {
               name: "BA (Hons.) of Journalism and Mass Communication",
-              linkTo: "/courses/bjmc/",
+              linkTo: "/courses/bjmc",
             },
           ],
         },
@@ -196,7 +196,7 @@ function CardCourses() {
       degrees: [
         {
           name: "BCA",
-          link: "/courses/bca/",
+          link: "/courses/bca",
           branches: [
             {
               name: "",
@@ -206,7 +206,7 @@ function CardCourses() {
         },
         {
           name: "MCA",
-          link: "/courses/mca/",
+          link: "/courses/mca",
           branches: [
             {
               name: "",
@@ -222,7 +222,7 @@ function CardCourses() {
       degrees: [
         {
           name: "B.Pharma",
-          link: "/courses/bpharma/",
+          link: "/courses/bpharma",
           branches: [
             {
               name: "",
@@ -232,7 +232,7 @@ function CardCourses() {
         },
         {
           name: "D.Pharma",
-          link: "/courses/dpharma/",
+          link: "/courses/dpharma",
           branches: [
             {
               name: "",

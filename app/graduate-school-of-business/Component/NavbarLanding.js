@@ -43,7 +43,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
                 />
                 <button
                   title="Admission Helpline No. +91-8069204028"
-                  className="bg-[#3D001B] rounded-full text-3xl shadow-lg w-16 aspect-square flex md:hidden flex-row justify-center items-center cursor-pointer relative"
+                  className="bg-[#3D001B] pointer-events-auto rounded-full text-3xl shadow-lg w-16 aspect-square flex md:hidden flex-row justify-center items-center cursor-pointer relative"
                   onClick={() => (window.location.href = "tel:+91-8069204028")}
                 >
                   <div className="w-[40px] h-[40px]">
@@ -107,7 +107,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
           (window.location.href =
             "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
         }
-        className="fixed bottom-[8vw] flex justify-center items-center right-4 md:bottom-[2.5vw] md:right-[2.5vw] text-[#25D366] z-50 w-16 md:w-[74px] bg-white aspect-square rounded-full"
+        className="fixed bottom-[8vw] pointer-events-auto flex justify-center items-center right-4 md:bottom-[2.5vw] md:right-[2.5vw] text-[#25D366] z-50 w-16 md:w-[74px] bg-white aspect-square rounded-full"
       >
         <FaWhatsapp className="w-[40px] h-[40px] md:w-[50px] md:h-[50px]" />
       </button>
