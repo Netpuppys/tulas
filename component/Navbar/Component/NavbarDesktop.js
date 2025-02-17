@@ -273,7 +273,7 @@ function NavbarDesktop({
                           {checkCurrentPageOpen(superNestedLinks.linkTo)? (
                             <button
                               onClick={handleOutsideClick}
-                              className="flex-auto w-full font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                              className="flex-auto w-full font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
                             >
                               {superNestedLinks.title}
                             </button>
@@ -292,7 +292,7 @@ function NavbarDesktop({
                                   ? "noopener noreferrer"
                                   : undefined
                               }
-                              className="flex-auto font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                              className="flex-auto font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
                             >
                               {superNestedLinks.title}
                             </Link>
@@ -300,7 +300,7 @@ function NavbarDesktop({
                           {superNestedLinks.linkTo === "#" && (
                             <button
                               onClick={() => handleExpandThirdNestedLinks(index)}
-                              className="flex-auto w-full justify-start text-start font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                              className="flex-auto w-full justify-start text-start font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
                             >
                               {superNestedLinks.title}
                             </button>
