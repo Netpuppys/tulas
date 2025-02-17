@@ -592,6 +592,16 @@ function ProminentPersonalities() {
   ];
   const [selectedCategory, setSelectedCategory] = useState(categories[0]?.name);
   const [selectedItem, setSelectedItem] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(6); // Track visible cards
+
+  // Function to handle View More
+  const handleViewMore = () => {
+    const totalItems =
+      categories.find((category) => category.name === selectedCategory)
+        ?.subItems.length || 0;
+    setVisibleCount((prev) => Math.min(prev + 6, totalItems));
+  };
+
   useEffect(() => {
     if (selectedItem) {
       document.body.style.overflow = "hidden";
@@ -613,7 +623,10 @@ function ProminentPersonalities() {
             {categories.map((category, index) => (
               <button
                 key={index}
-                onClick={() => setSelectedCategory(category.name)}
+                onClick={() => {
+                  setSelectedCategory(category.name);
+                  setVisibleCount(6);
+                }}
                 className={`px-4 w-full md:w-[calc(25%-16px)] py-2 rounded-full shadow-[0px_4px_18.6px_0px_rgba(0,0,0,0.25)] text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1vw,50px)] border border-[#007a83] transition-all ${
                   selectedCategory === category.name
                     ? "bg-[#007a83] text-white"
@@ -629,7 +642,8 @@ function ProminentPersonalities() {
           <div className="flex py-8 flex-wrap justify-center md:py-[3%] gap-4">
             {categories
               .find((category) => category.name === selectedCategory)
-              ?.subItems.map((item, index) => (
+              ?.subItems.slice(0, visibleCount) // Show limited items
+              .map((item, index) => (
                 <div
                   key={index}
                   onClick={() => setSelectedItem(item)}
@@ -653,6 +667,19 @@ function ProminentPersonalities() {
                 </div>
               ))}
           </div>
+          {/* View More Button */}
+          {visibleCount <
+            (categories.find((category) => category.name === selectedCategory)
+              ?.subItems.length || 0) && (
+            <div className="flex w-full flex-wrap gap-4 pb-8 md:pb-[4%] justify-center">
+              <button
+                onClick={handleViewMore}
+                className="px-4 w-full md:w-[calc(25%-16px)] py-2 rounded-full shadow-[0px_4px_18.6px_0px_rgba(0,0,0,0.25)] text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1vw,50px)] border border-[#007a83] transition-all bg-[#007a83] text-white hover:bg-white hover:text-[#007a83] duration-300"
+              >
+                View More
+              </button>
+            </div>
+          )}
         </div>
       </div>
       {selectedItem && (
