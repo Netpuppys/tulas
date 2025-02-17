@@ -271,6 +271,10 @@ const sitemap = [
         title: "Victree- Sports Clubs",
         linkTo: "/campus-life/victree",
       },
+      {
+        title: "Prominent Personalities",
+        linkTo: "/campus-life/prominent-personalities",
+      },
     ],
   },
   {
