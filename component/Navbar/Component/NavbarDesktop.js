@@ -279,7 +279,7 @@ function NavbarDesktop({
                           {checkCurrentPageOpen(superNestedLinks.linkTo) ? (
                             <button
                               onClick={handleOutsideClick}
-                              className="flex-auto w-full font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
+                              className="flex-auto w-full font-[MontserratMedium] text-start px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
                             >
                               {superNestedLinks.title}
                             </button>
@@ -300,7 +300,7 @@ function NavbarDesktop({
                                       ? "noopener noreferrer"
                                       : undefined
                                   }
-                                  className="flex-auto font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
+                                  className="flex-auto font-[MontserratMedium] text-left px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
                                 >
                                   {superNestedLinks.title}
                                 </Link>
@@ -372,7 +372,7 @@ function NavbarDesktop({
                                   ) ? (
                                     <button
                                       onClick={handleOutsideClick}
-                                      className="flex-auto w-full font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                                      className="flex-auto text-start font-[MontserratLight] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
                                     >
                                       {thirdNestedLinks.title}
                                     </button>
