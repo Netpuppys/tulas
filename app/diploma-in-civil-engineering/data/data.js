@@ -8,8 +8,8 @@ import ArunAgarwal from "../../../public/courses/btech/civil-engineering/faculty
 import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
-import content1 from "../../../public/diploma-in-civil-engineering/content1.png";
-import content2 from "../../../public/diploma-in-civil-engineering/content2.png";
+import content1 from "../../../public/diploma-in-civil-engineering/content1.webp";
+import content2 from "../../../public/diploma-in-civil-engineering/content2.webp";
 export const content = (
   <>
     The <strong>Diploma in Civil Engineering</strong> is a{" "}

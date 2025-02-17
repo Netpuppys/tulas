@@ -16,8 +16,8 @@ import NehaResume from "../../../public/courses/bjmc/facultyData/NehaResume.pdf"
 import cardImage1 from "../../../public/courses/dpharm/cardImage1.png";
 import cardImage2 from "../../../public/courses/dpharm/cardImage2.png";
 import cardImage3 from "../../../public/courses/dpharm/cardImage3.png";
-import content1 from "../../../public/courses/dpharm/content1.png";
-import content2 from "../../../public/courses/dpharm/content2.png";
+import content1 from "../../../public/courses/dpharm/content1.webp";
+import content2 from "../../../public/courses/dpharm/content2.webp";
 export const heading = (
   <>
     Best Pharmacy (D.Pharma) Institute in{" "}
