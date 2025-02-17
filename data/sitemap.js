@@ -9,7 +9,7 @@ const sitemap = [
   },
   {
     title: "About Us",
-    linkTo: "/about",
+    linkTo: "/about/",
     nestedLinks: [
       {
         title: "About Tula's",
@@ -279,7 +279,7 @@ const sitemap = [
   },
   {
     title: "R&D (CIRE)",
-    linkTo: "/research",
+    linkTo: "/research/",
     nestedLinks: [
       {
         title: "Research and Development (R&D) Cell",
