@@ -29,6 +29,7 @@ module.exports = {
         translateLeft: "translateLeft 0.4s linear",
         translateLeftImage: "translateLeft 0.8s linear",
         translateLeftMenu: "translateLeftMenu 0.3s linear",
+        translateLeftSubMenu: "translateLeftSubMenu 0.3s linear",
         translateRight: "translateRight 0.4s linear",
         translateRightImage: "translateRight 0.8s linear",
         translateRightMenu: "translateRightMenu 0.3s linear",
@@ -264,6 +265,16 @@ module.exports = {
           },
           to: {
             left: "0px",
+            transform: "translateX(0%)",
+          },
+        },
+        translateLeftSubMenu: {
+          from: {
+            left: "0%",
+            transform: "translateX(-100%)",
+          },
+          to: {
+            left: "440px",
             transform: "translateX(0%)",
           },
         },

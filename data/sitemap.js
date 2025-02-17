@@ -5,7 +5,7 @@ import Organogram from "../public/FooterPDf/Organogram.pdf";
 const sitemap = [
   {
     title: "Home",
-    linkTo: "",
+    linkTo: "/",
   },
   {
     title: "About Us",

@@ -367,6 +367,7 @@ function Navbar({
             setSuperExpandedIndex={setSuperExpandedIndex}
             thirdExpandedIndex={thirdExpandedIndex}
             setThirdExpandedIndex={setThirdExpandedIndex}
+            handleOutsideClick={handleOutsideClick}
           />
         </>
       )}
