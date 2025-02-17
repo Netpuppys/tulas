@@ -20,32 +20,45 @@ import shushma from "../../../../../public/courses/btech/electrical-and-electron
 import shushmaResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/shushmaResume.pdf";
 import EEEpdf from "../../../../../public/courses/btech/electrical-and-electronics/EEE.pdf";
 import Link from "next/link";
-export const images = [
-  dataScience,
-  // Add more image paths as needed
-];
+export const heading = (
+  <>
+    Best Electrical & Electronics Engineering Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
-    <strong>About the Program</strong>
-    <br />
-    <br />
-    Department of Electrical and Electronics Engineering started since inception
-    of the institute i.e. 2006, with a vision to become a leading Centre of
-    Excellence for Education for creating employability in field of Power
-    Systems, Power Electronics, Automation, VLSI, Control Systems, Electric
-    Vehicles, Computer Vision, and Artificial Intelligence, Renewable Energy
-    resources, Smart Grids and IoT networks, Electric Vehicles, Industrial
-    Automation.
-    <br />
-    <br />
-    Department of Electrical and Electronics Engineering mainly focuses on
-    creating talented and socially responsible engineers to make our country
-    energy efficient (Green and Clean energy). It will strive to become a hub of
-    research excellence in cutting edge, state of the art, and contemporary
-    areas of national and international relevance. The department also envisions
-    itself as a centre of excellence in teaching to create a well-educated,
-    technically competent, and socially responsible workforce for meaningful,
-    inclusive, and overall societal development of India and the world.
+    The Department of Electrical & Electronics Engineering (EEE) at Tula’s
+    Institute, established in 2006, is committed to academic excellence,
+    research, and innovation. With a vision to become a leading center of
+    excellence, the department focuses on cutting-edge technologies and
+    industry-driven learning to create highly skilled and employable engineers
+    in the fields of Power Systems, Power Electronics, Automation, VLSI, Control
+    Systems, Electric Vehicles, Efficient Machines, Renewable Energy, Smart
+    Grids, and IoT networks. <div className="mt-2 md:mt-[1%]"></div>The EEE
+    program emphasizes sustainability and energy efficiency, equipping students
+    with the knowledge and skills to contribute to a clean and green energy
+    future. With state-of-the-art laboratories, research facilities, and
+    industry collaborations, students gain hands-on experience in modern
+    electrical systems, automation technologies, and emerging energy solutions.
+    The department is dedicated to developing responsible engineers who can
+    address global energy challenges, drive innovation, and contribute to
+    national and international development.
+    <div className="mt-2 md:mt-[1%]"></div>
+    Through practical exposure, industry training, and research-driven
+    education, graduates from the Department of Electrical & Electronics
+    Engineering at Tula’s Institute are well-prepared for careers in power
+    generation, renewable energy, industrial automation, smart grids, and
+    electric mobility.
+  </>
+);
+export const quotes = (
+  <>
+    “Power the future with innovation, sustainability, and technology at{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s B.Tech in Electrical & Electronics Engineering.
+    </strong>
+    ”
   </>
 );
 export const items = [
@@ -67,7 +80,11 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={EEEpdf} target="_blank">B.Tech EEE</Link>],
+    description: [
+      <Link href={EEEpdf} target="_blank">
+        B.Tech EEE
+      </Link>,
+    ],
     image: Program,
   },
   {

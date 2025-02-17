@@ -1,63 +1,49 @@
-import dataScience from "../../../../../public/courses/btech/computer-science-engineering-data-science/dataScience.png";
 import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-export const images = [
-  dataScience,
-  // Add more image paths as needed
-];
+export const heading = (
+  <>
+    Best Computer Science & Engineering (Data Science) Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
-    The B.Tech in Computer Science and Engineering(Data Science) program is a
-    four-year undergraduate degree that is focused on providing students with a
-    strong foundation in data science. During the program, students will learn
-    how to collect, store, process, and analyze large amounts of data using
-    advanced techniques and tools. They will also learn how to apply these
-    techniques to real-world problems in various industries.
-    <br />
-    <br />
-    The program is designed to equip students with the necessary knowledge and
-    skills to become successful data scientists. In this program, we offer a
-    comprehensive curriculum that covers the fundamentals of computer science,
-    mathematics, statistics, and data analysis.
-    <br />
-    <br />
-    The present era is full of technological advances in almost all spectrum of
-    life and we are flooded with enormous amount of data. There is an increasing
-    demand of capturing, analyzing, and synthesizing this large amount of data
-    sets in a number of application domains to better understand various
-    phenomena and to convert the information available in the data into
-    actionable strategies such as new scientific discoveries, business
-    applications, policy making, and healthcare etc.
-    <br />
-    <br />
-    Data science is the area where applications of various tools and techniques
-    from the disciplines of applied statistics,mathematics and computer science
-    are used to get greater insight and to make better and informed decisions
-    for various purposes by analysing a large amount of data.
-    <br />
-    <br />
-    The curriculum of this program includes courses such as programming, data
+    The B.Tech in Computer Science & Engineering (Data Science) at Tula’s
+    Institute is a comprehensive four-year undergraduate program designed to
+    equip students with a strong foundation in data science, artificial
+    intelligence, and big data analytics. This program covers essential concepts
+    such as data collection, storage, processing, and analysis, enabling
+    students to extract meaningful insights and drive data-driven
+    decision-making across industries.<div className="mt-2 md:mt-[1%]"></div>
+    With the exponential growth of data in today’s digital era, the demand for
+    skilled data scientists, analysts, and AI engineers has surged. The
+    program’s curriculum integrates computer science, applied mathematics,
+    statistics, and machine learning, ensuring students develop the technical
+    expertise needed to tackle real-world challenges. Courses include data
     structures, algorithms, machine learning, data mining, big data analytics,
-    and data visualization. Additionally, students will have the opportunity to
-    work on projects and participate in internships to gain practical experience
-    in the field of data science.
-    <br />
-    <br />
-    Upon completing this program, graduates will have a range of career
-    opportunities in industries such as healthcare, finance, e-commerce, and
-    many others. They can work as data analysts, data scientists, machine
-    learning engineers, and data engineers, among others.
-    <br />
-    <br />
-    Our program also emphasizes the importance of ethical considerations in data
-    science. We believe that responsible data science practices are crucial in
-    ensuring the ethical and fair use of data. As such, our program includes
-    courses that cover ethical considerations in data science, such as data
-    privacy, security, and bias.
+    and data visualization, providing a well-rounded education in the field.
+    Students also gain hands-on experience through industry projects,
+    internships, and practical applications in domains such as healthcare,
+    finance, e-commerce, and business intelligence.
+    <div className="mt-2 md:mt-[1%]"></div>
+    Furthermore, the program emphasizes the importance of ethical data science
+    practices, covering key topics such as data privacy, security, and bias
+    mitigation. Graduates of this program will be well-prepared for careers as
+    data analysts, data engineers, machine learning engineers, and AI
+    specialists, making a significant impact in today’s data-driven world.
+  </>
+);
+export const quotes = (
+  <>
+    “Transform raw data into powerful insights shape the future with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s B.Tech in CSE (Data Science).
+    </strong>
+    ”
   </>
 );
 export const items = [

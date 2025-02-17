@@ -105,7 +105,8 @@ const page = () => {
     {
       icon: industryReleventSkills,
       title: "Industry-Focused Learning",
-      description: "Hands-on training in AI, Robotics, IoT & Data Science.",
+      description:
+        "Hands-on training in AI, Robotics, IoT & Data Science and many more in the emerging areas as an ADD on courses.",
     },
     {
       icon: highCareerDemand,
@@ -117,17 +118,18 @@ const page = () => {
       icon: paathwayToProfessionalCertification,
       title: "Innovation & Research",
       description:
-        "Participate in live projects, hackathons & technical competitions.",
+        "Participate in live projects, hackathons, research publications & technical competitions and incentivized from the Tula’s research policy on every research activity performed.",
     },
     {
       icon: diverseIndustryApplications,
       title: "State-of-the-Art Facilities",
-      description: "Access 300+ advanced labs & modern research centers.",
+      description: "Access 30+ advanced labs & modern research centers.",
     },
     {
       icon: globalAccredetation,
       title: "Global Accreditation",
-      description: "NAAC A++, AICTE & UGC-approved program.",
+      description:
+        "NAAC A+ Accreditation, NBA Accreditation, AICTE & UGC-approved program.",
     },
   ];
   const journeyQuote =

@@ -1,84 +1,59 @@
-import aiml from "../../../../../public/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/computer-science-engineering-artifical-intelligence-and-machine-learning.png";
 import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-export const images = [
-  aiml,
-  // Add more image paths as needed
-];
+
+export const heading = (
+  <>
+    Best Computer Science & Engineering (AI & ML) Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
-    CSE (AI & ML) at Tula’s Institute blends the fundamentals of computer
-    science with advanced techniques in artificial intelligence and machine
-    learning. This program equips students with the skills to develop
-    intelligent systems, analyze data, and innovate across industries like
-    robotics, healthcare, and automation. With a strong focus on hands-on
-    learning and real-world applications, students are prepared to excel in the
-    rapidly evolving tech landscape and lead future advancements.
-    <br />
-    <br />
-    The program objectives include:
-    <ul className="list-disc ml-5">
-      <li>
-        Core Computer Science Knowledge: Provide a solid understanding of core
-        computer science concepts such as algorithms, data structures, computer
-        organization, and software engineering.
-      </li>
-      <li>
-        AI and ML Fundamentals: Introduce students to the fundamental principles
-        and techniques of artificial intelligence and machine learning, covering
-        areas like supervised and unsupervised learning, deep learning,
-        reinforcement learning, and natural language processing.
-      </li>
-      <li>
-        Programming Skills: Develop proficient programming skills in languages
-        commonly used in AI and ML applications, such as Python, and ensure the
-        ability to implement algorithms and models.
-      </li>
-      <li>
-        Problem Solving and Critical Thinking: Foster problem-solving skills and
-        critical thinking abilities, enabling students to analyze complex
-        problems and devise innovative AI/ML solutions.
-      </li>
-      <li>
-        Data Handling and Analytics: Equip students with skills in data
-        preprocessing, cleaning, and analysis, as well as an understanding of
-        big data technologies and tools.
-      </li>
-      <li>
-        Specialized AI and ML Applications: Provide in-depth knowledge of
-        specialized AI and ML applications, including computer vision, natural
-        language processing, speech recognition, and robotics.
-      </li>
-      <li>
-        Practical Experience: Offer hands-on experience through labs, projects,
-        and internships to ensure that students can apply theoretical concepts
-        to real-world problems.
-      </li>
-      <li>
-        Interdisciplinary Perspective: Encourage an interdisciplinary approach,
-        allowing students to integrate AI and ML techniques into various domains
-        such as healthcare, finance, and business.
-      </li>
-      <li>
-        Ethical and Responsible AI: Instill ethical considerations in AI and ML
-        development, emphasizing the responsible use of technology, fairness,
-        transparency, and privacy.
-      </li>
-      <li>
-        Industry Exposure: Facilitate exposure to industry practices, guest
-        lectures, and industry projects to bridge the gap between academic
-        knowledge and real-world applications.
-      </li>
-      <li>
-        By achieving these objectives, the program aims to produce graduates who
-        are well-rounded, technically proficient, and capable of contributing to
-        the advancement of AI and ML in various professional settings.
-      </li>
-    </ul>
+    The B.Tech in Computer Science & Engineering (Artificial Intelligence &
+    Machine Learning) at Tula’s Institute is a comprehensive program that blends
+    fundamental principles of computer science with state-of-the-art
+    methodologies in artificial intelligence (AI) and machine learning (ML).
+    This program is designed to equip students with the skills required to
+    develop intelligent systems, analyze complex data, and innovate across
+    domains such as robotics, automation, healthcare, and finance.
+    <div className="mt-2 md:mt-[1%]"></div>
+    Students gain a strong theoretical foundation in algorithms, data
+    structures, software engineering, and computational mathematics,
+    complemented by extensive hands-on experience in deep learning, natural
+    language processing (NLP), reinforcement learning, and computer vision. The
+    curriculum emphasizes a practical, applicationdriven approach through
+    dedicated AI/ML laboratories, industry-driven projects, and internships,
+    ensuring that students can seamlessly bridge theoretical concepts with
+    real-world problem-solving.
+    <div className="mt-2 md:mt-[1%]"></div>
+    To enhance technical proficiency, students develop expertise in Python,
+    AI-specific frameworks (such as TensorFlow, PyTorch, and Scikit-Learn), and
+    big data technologies, fostering competence in data-driven decision-making
+    and scalable AI solutions. Additionally, the program promotes an
+    interdisciplinary perspective, enabling students to apply AI/ML
+    methodologies to diverse sectors, including finance, healthcare,
+    manufacturing, and smart infrastructure.
+    <div className="mt-2 md:mt-[1%]"></div>A key focus of the curriculum is
+    ethical AI development and responsible innovation, preparing students to
+    navigate the societal and ethical implications of AI systems. Through
+    collaborations with industry partners, research opportunities, and exposure
+    to emerging trends, graduates are well-positioned to excel in cutting-edge
+    AI research, technology development, and industry roles, driving the future
+    of intelligent automation.
+  </>
+);
+export const quotes = (
+  <>
+    “"Shape the future with AI, master intelligent technologies, and lead the
+    next wave of innovation with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s B.Tech in CSE (AI & ML).
+    </strong>
+    ”
   </>
 );
 export const items = [

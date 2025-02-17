@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
@@ -14,11 +14,12 @@ import {
   cards,
   content,
   facultyData,
+  heading,
   hod,
   HODcontent,
-  images,
   items,
   itemsClubs,
+  quotes,
   sections,
   selectedCardTable,
   semesterData,
@@ -27,8 +28,6 @@ import {
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -41,50 +40,48 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <BannerProgram
-            image={BannerImg}
-            title=<>Department of Electrical & Electronics Engineering (EEE)</>
-            titleColor={""}
-            description={""}
-          />
-          <Program parentRef={parentRef} images={images} content={content} />
-          <CarouselProgram
-            heading={"Discover"}
-            items={items}
-            background={CrouselBackground}
-            backgroundCrousel={CrouselBackground}
-          />
-          <Vision color={true} sections={sections} />
-          <TableProgram
-            cards={cards}
-            selectedCardTable={selectedCardTable}
-            semesterData={semesterData}
-            facultyData={facultyData}
-            hod={hod}
-            HODcontent={HODcontent}
-            specialization={specialization}
-          />
-          <PlacementProgram />
-          <TopRecruiter />
-          <CarouselProgram
-            heading={"Explore More"}
-            items={itemsClubs}
-            background={exploreCrouselBackground}
-            backgroundCrousel={exploreCrouselBackground}
-          />
-          {/* <div className="w-full relative overflow-hidden">
+        <div className="w-full h-fit">
+          <Navbar />
+        </div>
+        <BannerProgram
+          image={BannerImg}
+          title=<>Department of Electrical & Electronics Engineering (EEE)</>
+          titleColor={""}
+          description={""}
+        />
+        <Program content={content} heading={heading} quotes={quotes} />
+        <CarouselProgram
+          heading={"Discover"}
+          items={items}
+          background={CrouselBackground}
+          backgroundCrousel={CrouselBackground}
+        />
+        <Vision color={true} sections={sections} />
+        <TableProgram
+          cards={cards}
+          selectedCardTable={selectedCardTable}
+          semesterData={semesterData}
+          facultyData={facultyData}
+          hod={hod}
+          HODcontent={HODcontent}
+          specialization={specialization}
+        />
+        <PlacementProgram />
+        <TopRecruiter />
+        <CarouselProgram
+          heading={"Explore More"}
+          items={itemsClubs}
+          background={exploreCrouselBackground}
+          backgroundCrousel={exploreCrouselBackground}
+        />
+        {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
           </div> */}
-          <Footer />
-        </div>
+        <Footer />
       </body>
     </>
   );

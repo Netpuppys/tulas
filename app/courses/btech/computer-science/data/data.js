@@ -16,48 +16,52 @@ import CseDrishtiJul from "../../../../../public/courses/btech/computer-science/
 import CseDrishtiAprJun from "../../../../../public/courses/btech/computer-science/CseDrishtiAprJun.pdf";
 import CseDrishtiJulMar from "../../../../../public/courses/btech/computer-science/CseDrishtiJulMar.pdf";
 import Link from "next/link";
-export const images = [
-  computerScience,
-  // Add more image paths as needed
-];
+
+export const heading = (
+  <>
+    Best Computer Science & Engineering Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
-    Bachelor of Technology in Computer Science & Engineering (B.Tech. CSE) is
-    one of the most sought-after engineering degrees. The program teaches
-    students about computer applications and systems in order to prepare them
-    for a career in the IT industry. In this program, students learn about
-    programming languages, digital and analogue electronic equipment,
-    networking, design and development of computer software and hardware and
-    various forms of communication engineering. Students who have analytical and
-    logical reasoning skills, as well as an interest in software development,
-    testing, and programming, should consider a career in this field.
-    <br />
-    <br />
-    The scope of computer engineer is to work with software systems to nurture a
-    business and meet the needs of new forms of innovation in the field of
-    technology. According to the definition of computer science engineering,
-    this branch of engineering also deals with designing and developing computer
-    algorithms in order to achieve specific business goals. In addition,
-    students who earn a degree from this institute will be prepared to work as
-    designers, developers, solution integrators, network administrators,
-    database administrators, domain consultants, and software engineers in some
-    of the world’s most prestigious companies.
-    <br />
-    <br />
-    The program emphasis on practical and hands-on training that strengthens the
-    theoretical foundations of computer science engineering students. It is the
-    job of a computer engineer or software engineer to design and develop
-    software to meet the needs of a business or individual. Today’s cutting-edge
-    technologies can be traced back to CSE. These include Artificial
-    Intelligence, Machine Learning, Big Data, Internet of Things, Quantum
-    Computing, Block-Chain, Industry 4.0, AR & VR, Android-IOS development etc.
-    <br />
-    <br />
-    Students at Tula’s, one of most prestigious engineering institute of the
-    state , can earn their degree in four years with full-time study. Dedicated
-    teaching & learning process and skill development are made possible by the
-    state of the art infrastructure with ICT facilities. When it comes to study
-    at Tula’s, quality is a top priority, so it gets done.
+    The B.Tech in Computer Science & Engineering (CSE) program at Tula’s
+    Institute is designed to create future-ready professionals in the IT
+    industry. This program is accredited by NBA in year 2024.This program
+    provides an in-depth understanding of software development, networking,
+    artificial intelligence, cybersecurity and cloud computing. With a strong
+    emphasis on practical learning, coding skills, and problem-solving
+    abilities, students are prepared for dynamic careers in leading tech
+    companies. <div className="mt-2 md:mt-[1%]"></div>Students gain hands-on
+    experience in programming languages, database management, blockchain
+    technology, machine learning, and IoT. The curriculum is aligned with
+    industry trends, ensuring graduates are well-equipped to handle real-world
+    challenges.
+    <div className="mt-2 md:mt-[1%]"></div>
+    <strong>Career Opportunities & Industry Demand</strong>
+    <div className="mt-2 md:mt-[1%]"></div>
+    The IT sector is one of the fastest-growing industries globally, offering a
+    high demand for skilled professionals. Graduates can explore careers as:
+    <ul className="ml-5">
+      <li>✔ Software Developers</li>
+      <li>✔ Data Scientists & AI Specialists</li>
+      <li>✔ Cybersecurity Experts</li>
+      <li>✔ Cloud Engineers & Network Administrators</li>
+      <li>✔ Blockchain & AR/VR Developers</li>
+    </ul>
+    <div className="mt-2 md:mt-[1%]"></div>
+    With India being a hub for top IT firms like Google, Microsoft, Amazon, and
+    Infosys, CSE graduates have limitless opportunities to work with
+    cutting-edge technologies and contribute to innovative solutions.
+  </>
+);
+export const quotes = (
+  <>
+    “Code your future, innovate with technology, and transform the world with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s B.Tech in Computer Science & Engineering.
+    </strong>
+    ”
   </>
 );
 export const items = [

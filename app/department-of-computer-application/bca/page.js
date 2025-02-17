@@ -57,40 +57,42 @@ const page = () => {
   const journey = [
     {
       icon: comprehensiveCurriculam,
-      title: "Comprehensive Curriculum",
-      description: "Covers software development, web design, AI & networking.",
+      title: "Cutting-Edge Curriculum",
+      description:
+        "Covers software development, web design, networking, cyber security, Artificial Intelligence any many more",
     },
     {
       icon: industryReleventSkills,
-      title: "Industry Relevant Skills",
+      title: "Industry-Focused Training",
       description:
-        "Hands-on training in programming, database management & cybersecurity.",
+        "Develop proficiency in software engineering, various programming languages, database management, and cybersecurity.",
     },
     {
       icon: highCareerDemand,
-      title: "High Career Demand",
+      title: "In-Demand Career Paths",
       description:
-        "Opens opportunities in IT, software development, and tech entrepreneurship.",
+        "Explore opportunities in IT, software development, and tech entrepreneurship.",
     },
     {
       icon: paathwayToProfessionalCertification,
-      title: "Tech Competitions",
-      description: "Participate in hackathons & coding challenges.",
+      title: "Competitive Edge",
+      description:
+        "Participate in hackathons, appathons, tech-quizzes and coding challenges to sharpen your skills.",
     },
     {
       icon: diverseIndustryApplications,
-      title: "Diverse Industry Applications",
+      title: "Versatile Applications",
       description:
-        "Essential skills for industries like finance, healthcare & e-commerce.",
+        "Gain knowledge applicable to finance, healthcare, e-commerce, digital electronics and more.",
     },
     {
       icon: globalAccredetation,
-      title: "Global Accreditation",
-      description: "NAAC A++, AICTE & UGC-approved program.",
+      title: "Globally Accredited Program",
+      description: "NAAC A+, AICTE, and UGC-approved for quality education.",
     },
   ];
   const journeyQuote =
-    "Build Your Future in IT with a BCA from Tula’s Institute!";
+    "Shape your tech career with Tula’s Institute – Where Innovation Meets Excellence";
   return (
     <>
       <head>

@@ -1,4 +1,3 @@
-import computerScience from "../../../../../public/courses/btech/computer-science/computer-science.png";
 import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
@@ -30,44 +29,48 @@ import swati from "../../../../../public/courses/btech/electronics-and-communica
 import swatiResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swatiResume.pdf";
 
 import Link from "next/link";
-
-export const images = [
-  computerScience,
-  // Add more image paths as needed
-];
+export const heading = (
+  <>
+    Best Electronics & Communication Engineering Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
-    <strong>About the Program</strong>
-    <br />
-    <br />
-    The department started since inception of the institute i.e. 2006, with a
-    vision to become a leading Centre of Excellence for Education, and Research.
-    Since then, it has been widely recognized for its excellent research and
-    teaching capabilities. We offer Bachelor of Technology (B.Tech.) degree
-    program in Electronics and Communication Engineering.
-    <br />
-    <br />
-    This department has established itself as an efficient, self-reliant and
-    quality conscious entity with the sole aim of producing the most energetic,
-    enthusiastic and professionally competent Electronics and Communication
-    Engineers with ability to take up the challenges of the field.
-    <br />
-    <br />
-    Electronics and Communication engineering deals with the electronic devices,
-    circuits, communication equipments like transmitter and receiver, integrated
-    circuits (IC) like microprocessors and microcontrollers etc. It also deals
-    with analog and digital communication of the information like audio and
-    video, satellite communication, microwave engineering, antenna and wave
-    propagation. It also deals with the latest communication protocols like 5G,
-    6G, and Voice over internet protocol (VoIP) as well as the latest technology
-    like, Internet of things (IoT), Robotics etc. It aims to deepen the
-    knowledge and skill of the students on the basic concepts and theories that
-    will equip them in their professional work involving analysis, systems
-    implementation, operation, production, and maintenance of the various
-    applications in the field of Electronics and Communications Engineering. It
-    now encompasses more areas than before, being thus a modern and important
-    profession for the industrial sector, the scientific fields and for
-    technological development.
+    The Department of Electronics & Communication Engineering (ECE) at Tula’s
+    Institute, established in 2006, has been a hub of academic excellence,
+    innovation, and research since the inception of the institute. With a vision
+    to become a leading center of excellence in education and research, the
+    department is recognized for its outstanding teaching methodologies,
+    advanced laboratories, and industry-oriented curriculum. The B.Tech in
+    Electronics & Communication Engineering program is designed to equip
+    students with technical expertise and hands-on experience to meet the
+    challenges of the ever-evolving field of electronics and communication.
+    <div className="mt-2 md:mt-[1%]"></div>
+    This program covers core areas such as electronic devices, circuits,
+    microprocessors, microcontrollers, analog & digital communication, microwave
+    engineering, and antenna & wave propagation. Students gain in-depth
+    knowledge of cutting-edge technologies like 5G, 6G, Voice over Internet
+    Protocol (VoIP), Internet of Things (IoT), and Robotics. With a strong focus
+    on practical learning, the curriculum ensures that students acquire the
+    analytical, design, and problem-solving skills required for careers in
+    telecommunications, automation, embedded systems, signal processing, and
+    semiconductor industries.
+    <div className="mt-2 md:mt-[1%]"></div>
+    The department fosters a research-driven environment, encouraging students
+    to engage in innovative projects, industrial training, and skill development
+    programs. Graduates from the ECE department at Tula’s Institute are
+    well-prepared for dynamic career opportunities in electronics,
+    telecommunications, automation, and emerging technologies.
+  </>
+);
+export const quotes = (
+  <>
+    “Innovate, connect, and revolutionize the world of technology with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s B.Tech in Electronics & Communication Engineering.
+    </strong>
+    ”
   </>
 );
 export const items = [
@@ -91,7 +94,11 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={EceDocument} target="_blank">B.Tech ECE</Link>],
+    description: [
+      <Link href={EceDocument} target="_blank">
+        B.Tech ECE
+      </Link>,
+    ],
     image: Course,
   },
   {

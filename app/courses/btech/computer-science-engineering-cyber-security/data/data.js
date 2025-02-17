@@ -1,79 +1,47 @@
-import computerScience from "../../../../../public/courses/btech/computer-science/computer-science.png";
 import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-export const images = [
-  computerScience,
-  // Add more image paths as needed
-];
+export const heading = (
+  <>
+    Best Computer Science & Engineering (Cyber Security) Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
-    Computer Science & Engineering (Cyber Security) empowers you to secure the
-    digital frontier. In this program, you’ll gain expertise in protecting
-    systems, networks, and data from cyber threats while developing practical
-    skills through hands-on experience.
-    <br />
-    <br />
-    The program objectives of a B.Tech in Cyber Security are designed to equip
-    students with the necessary knowledge, skills, and capabilities to thrive in
-    the dynamic field of cybersecurity. These objectives typically include:
-    <br />
-    <br />
-    <ul className="ml-5 list-disc">
-      <li>
-        Technical Proficiency: Acquire technical proficiency in various
-        cybersecurity domains, including network security, cryptography, ethical
-        hacking, digital forensics, and incident response.
-      </li>
-      <li>
-        Practical Skills: Develop hands-on skills through practical sessions,
-        lab exercises, and real-world projects to effectively apply
-        cybersecurity techniques in practical scenarios.
-      </li>
-      <li>
-        Industry-Relevant Knowledge: Stay abreast of the latest industry trends,
-        emerging threats, and cutting-edge technologies in the field of
-        cybersecurity.
-      </li>
-      <li>
-        Critical Thinking and Problem-Solving: Foster critical thinking and
-        problem-solving skills to analyze and mitigate security vulnerabilities
-        and incidents effectively.
-      </li>
-      <li>
-        Legal and Ethical Considerations: Understand the legal and ethical
-        aspects of cybersecurity, including compliance with laws and regulations
-        governing information security.
-      </li>
-      <li>
-        Collaboration and Communication: Develop effective communication and
-        collaboration skills to work seamlessly within interdisciplinary teams
-        and convey complex cybersecurity concepts to various stakeholders.
-      </li>
-      <li>
-        Incident Response Planning: Gain the ability to develop and implement
-        incident response plans, including detecting, responding to, and
-        recovering from cybersecurity incidents.
-      </li>
-      <li>
-        Cybersecurity Governance: Understand the principles of cybersecurity
-        governance and risk management, including creating and implementing
-        cybersecurity policies and practices.
-      </li>
-      <li>
-        Security Architecture Design: Learn to design secure systems and
-        architectures, considering both hardware and software components, to
-        protect information assets effectively.
-      </li>
-      <li>
-        Research and Innovation: Encourage research-oriented thinking,
-        innovation, and the ability to contribute to advancements in the field
-        of cybersecurity through original research and development.
-      </li>
-    </ul>
+    The B.Tech in Computer Science & Engineering (Cyber Security) at Tula’s
+    Institute prepares students to safeguard the digital world by developing
+    expertise in network security, cryptography, ethical hacking, digital
+    forensics, and incident response. This program equips students with a strong
+    technical foundation and hands-on experience to counter evolving cyber
+    threats in today’s interconnected world. With practical exposure to cyber
+    labs, industry projects, and real-world simulations, students gain
+    proficiency in penetration testing, security architecture design, and
+    cybersecurity governance.<div className="mt-2 md:mt-[1%]"></div>
+    The program emphasizes critical thinking, problem-solving, and risk
+    assessment to enable students to analyze and mitigate security
+    vulnerabilities effectively. Students learn to navigate legal and ethical
+    cybersecurity considerations, ensuring compliance with industry regulations
+    while working with interdisciplinary teams. The curriculum is designed to
+    align with the latest industry trends, emerging threats, and advanced
+    security technologies, allowing graduates to stay ahead in this fast-paced
+    field. Additionally, incident response planning, security policy
+    implementation, and innovation-driven research prepare students to become
+    leaders in cybersecurity, securing careers in government agencies, financial
+    institutions, IT security firms, and multinational corporations.
+  </>
+);
+export const quotes = (
+  <>
+    “Defend the digital world, master cyber security, and become the shield
+    against cyber threats with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s B.Tech in CSE (Cyber Security).
+    </strong>
+    ”
   </>
 );
 export const items = [

@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
@@ -13,11 +13,12 @@ import TableProgram from "@/component/Programs/tableProgram";
 import {
   cards,
   content,
+  heading,
   hod,
   HODcontent,
-  images,
   items,
   itemsClubs,
+  quotes,
   sections,
   selectedCardTable,
 } from "./data/data";
@@ -25,7 +26,6 @@ import { facultyDataCSE } from "../facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
-  const parentRef = useRef(null);
 
   return (
     <>
@@ -40,7 +40,6 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
           <div className="w-full h-fit">
             <Navbar />
           </div>
@@ -52,7 +51,7 @@ function BAJMC() {
             //   "The B.Tech in Computer Science and Engineering(Data Science) program is a four-year undergraduate degree that is focused on providing students with a strong foundation in data science."
             // }
           />
-          <Program parentRef={parentRef} images={images} content={content} />
+          <Program content={content} heading={heading} quotes={quotes} />
           <CarouselProgram
             heading={"Discover"}
             items={items}
@@ -83,7 +82,6 @@ function BAJMC() {
             />
           </div> */}
           <Footer />
-        </div>
       </body>
     </>
   );

@@ -13,11 +13,12 @@ import TableProgram from "@/component/Programs/tableProgram";
 import {
   cards,
   content,
+  heading,
   hod,
   HODcontent,
-  images,
   items,
   itemsClubs,
+  quotes,
   sections,
   selectedCardTable,
 } from "./data/data";
@@ -25,8 +26,6 @@ import { facultyDataCSE } from "../facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -40,50 +39,48 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <BannerProgram
-            image={BannerImg}
-            title=<>COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)</>
-            titleColor={""}
-            description={""}
-          />
-          <Program parentRef={parentRef} images={images} content={content} />
-          <CarouselProgram
-            heading={"Discover"}
-            items={items}
-            color={true}
-            background={CrouselBackground}
-            backgroundCrousel={CrouselBackground}
-          />
-          <Vision color={true} sections={sections} />
-          <TableProgram
-            cards={cards}
-            selectedCardTable={selectedCardTable}
-            facultyData={facultyDataCSE}
-            hod={hod}
-            HODcontent={HODcontent}
-          />
-          <PlacementProgram/>
-          <TopRecruiter />
-          <CarouselProgram
-            heading={"Explore More"}
-            items={itemsClubs}
-            color={true}
-            background={exploreCrouselBackground}
-            backgroundCrousel={exploreCrouselBackground}
-          />
-          {/* <div className="w-full relative overflow-hidden">
+        <div className="w-full h-fit">
+          <Navbar />
+        </div>
+        <BannerProgram
+          image={BannerImg}
+          title=<>COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)</>
+          titleColor={""}
+          description={""}
+        />
+        <Program content={content} heading={heading} quotes={quotes} />
+        <CarouselProgram
+          heading={"Discover"}
+          items={items}
+          color={true}
+          background={CrouselBackground}
+          backgroundCrousel={CrouselBackground}
+        />
+        <Vision color={true} sections={sections} />
+        <TableProgram
+          cards={cards}
+          selectedCardTable={selectedCardTable}
+          facultyData={facultyDataCSE}
+          hod={hod}
+          HODcontent={HODcontent}
+        />
+        <PlacementProgram />
+        <TopRecruiter />
+        <CarouselProgram
+          heading={"Explore More"}
+          items={itemsClubs}
+          color={true}
+          background={exploreCrouselBackground}
+          backgroundCrousel={exploreCrouselBackground}
+        />
+        {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
           </div> */}
-          <Footer />
-        </div>
+        <Footer />
       </body>
     </>
   );

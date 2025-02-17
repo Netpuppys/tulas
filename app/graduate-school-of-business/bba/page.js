@@ -90,7 +90,7 @@ const page = () => {
     {
       icon: paathwayToProfessionalCertification,
       title: "Tech-Driven Learning",
-      description: "Engage in real-world case studies & business simulations",
+      description: "Engage in real-world case studies & business simulations.",
     },
     {
       icon: diverseIndustryApplications,
@@ -101,7 +101,7 @@ const page = () => {
     {
       icon: globalAccredetation,
       title: "Global Accreditation",
-      description: "NAAC A++, AICTE & UGC-approved program.",
+      description: "NAAC A+, AICTE & UGC-approved program.",
     },
   ];
   const journeyQuote =
