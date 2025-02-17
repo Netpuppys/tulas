@@ -47,14 +47,14 @@ function FormLandingPage({ course, thankYOu }) {
     }
   };
 
-  const handleCourseChange = (e) => {
-    const selectedCourseId = e.target.value; // Ensure it's an integer
-    setFormData((prev) => ({
-      ...prev,
-      Course: Number(selectedCourseId),
-      Center: "", // Reset Center if Course changes
-    }));
-  };
+  // const handleCourseChange = (e) => {
+  //   const selectedCourseId = e.target.value; // Ensure it's an integer
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     Course: Number(selectedCourseId),
+  //     Center: "", // Reset Center if Course changes
+  //   }));
+  // };
 
   const handleCenterChange = (value) => {
     setFormData((prev) => ({
@@ -350,12 +350,12 @@ function FormLandingPage({ course, thankYOu }) {
                 {verified ? "Verified" : "Send OTP"}
               </button>
             </div>
-            <div className="w-full mb-3">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-7 mb-3">
               <select
                 value={formData.State}
                 onChange={handleStateChange}
                 required
-                className="w-full classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
               >
                 <option value="">Select State</option>
                 {state
@@ -366,21 +366,6 @@ function FormLandingPage({ course, thankYOu }) {
                       {state.name}
                     </option>
                   ))}
-              </select>
-            </div>
-            <div className="flex flex-col md:flex-row gap-3 md:gap-7 mb-3">
-              <select
-                value={formData.Course}
-                onChange={handleCourseChange}
-                required
-                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
-              >
-                <option value="">Select Course</option>
-                {courses.map((Course) => (
-                  <option key={Course.id} value={Course.id}>
-                    {Course.name}
-                  </option>
-                ))}
               </select>
               <select
                 value={formData.Center}
@@ -398,6 +383,22 @@ function FormLandingPage({ course, thankYOu }) {
                   ))}
               </select>
             </div>
+            {/* <div className="flex flex-col md:flex-row gap-3 md:gap-7 mb-3">
+               <select
+                value={formData.Course}
+                onChange={handleCourseChange}
+                required
+                className="w-full md:w-1/2 classic px-5 py-3 h-12 border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF]"
+              >
+                <option value="">Select Course</option>
+                {courses.map((Course) => (
+                  <option key={Course.id} value={Course.id}>
+                    {Course.name}
+                  </option>
+                ))}
+              </select> 
+              
+            </div>*/}
 
             <button
               type="submit"
