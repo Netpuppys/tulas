@@ -11,7 +11,7 @@ import axios from "axios";
 import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 import { UtmContext } from "./utmParams";
-
+import formPopupbackground from "../public/Homepage/aboutTulas/formPopup.png";
 function FormEnquire({ formPopup }) {
   const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
@@ -248,7 +248,7 @@ function FormEnquire({ formPopup }) {
           ></div>
           <div className="p-8 rounded-2xl pointer-events-auto z-20 overflow-hidden relative">
             <Image
-              src={formPopup}
+              src={formPopupbackground}
               alt=""
               className="absolute top-0 w-full h-full -z-10 left-0 object-cover"
             />
