@@ -397,7 +397,7 @@ const Footer = ({ set = false, color = false }) => {
               </div>
             ))}
           </div>
-          <div className="w-full flex md:flex-col items-center md:items-end justify-center md:px-10 md:py-4 pb-4 md:pb-0">
+          <div className="w-full flex md:flex-col items-center md:items-end justify-center md:px-10 md:py-4 pb-14 md:pb-0">
             {button.map((btnGroup, index) => (
               <div
                 key={index}
