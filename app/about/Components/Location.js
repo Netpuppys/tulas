@@ -29,7 +29,7 @@ function Location() {
         LOCATION
       </h3>
       <p
-        className={`font-[MontserratLight] font-normal text-[#007A83] transition-transform duration-1000 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] md:text-left px-10 md:px-20 max-w-[1000px] ${
+        className={`font-[TTChocolates] font-normal text-[#007A83] transition-transform duration-1000 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] md:text-left px-10 md:px-20 max-w-[1000px] ${
           inView ? "md:animate-translateRight" : "opacity-0"
         }`}
       >

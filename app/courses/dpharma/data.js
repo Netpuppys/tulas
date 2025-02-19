@@ -343,7 +343,7 @@ export const selectedCard1 = (
     <span className="font-[Arapey] pb-[1%] leading-tight">
       Admission Eligibility
     </span>
-    <ul className="font-[MontserratLight] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-[#353535]">
+    <ul className="font-[TTChocolates] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
       <li>
         Passed in 10+2 examination with Physics and Chemistry as compulsory
         subjects, along with one of the following subjects:-Mathematics/Biology.

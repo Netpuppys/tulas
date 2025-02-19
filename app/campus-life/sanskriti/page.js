@@ -53,7 +53,7 @@ function Sanskriti() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
-          <div className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] mx-auto text-[#353535] leading-tight">
+          <div className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-[#353535] leading-tight">
             Sanskriti is much more than just an event; it’s a platform where
             students can showcase their creativity and push their artistic
             boundaries. With performances that span from dance and singing to

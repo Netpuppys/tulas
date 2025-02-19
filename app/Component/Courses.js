@@ -116,7 +116,7 @@ function Courses({ parentRef }) {
           </div>
           <div className="bg-white w-[1px] h-[8vh]"></div>
           <h5
-            className={`w-full px-4 max-w-[50rem] text-white font-[MontserratLight] leading-tight leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center transition-opacity duration-300 ease-in-out ${
+            className={`w-full px-4 max-w-[50rem] text-white font-[TTChocolates] leading-tight leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center transition-opacity duration-300 ease-in-out ${
               opacity < 0.001 ? "opacity-100 translate-in" : "opacity-0"
             }`}
           >

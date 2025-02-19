@@ -25,11 +25,11 @@ import Famous from "./Component/Famous";
 
 const bannerText = (
   <>
-    <span className=" font-[MontserratMedium] font-semibold">
+    <span className=" font-[TTChocolatesMedium] font-semibold">
       Tula's Institute
     </span>{" "}
     was established in 2006, under the aegis of{" "}
-    <span className=" font-[MontserratMedium] font-semibold">
+    <span className=" font-[TTChocolatesMedium] font-semibold">
       Rishabh Educational Trust
     </span>
     , Dehradun with the vision of offering excellent academics along with

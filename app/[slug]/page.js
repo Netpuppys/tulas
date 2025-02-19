@@ -104,7 +104,7 @@ export default async function SlugPage({ params }) {
             {firstHalf}
             <span className="text-[#760135]"> {secondHalf}</span>
           </h3>
-          <h4 className="text-sm font-[MontserratLight] md:text-xl text-[#404040]">
+          <h4 className="text-sm font-[TTChocolates] md:text-xl text-[#404040]">
             {blog?.yoast_head_json?.description}
           </h4>
         </div>

@@ -230,7 +230,7 @@ const page = () => {
       </head>
       <body>
         {/* <script src="https://eeconfigstaticfiles.blob.core.windows.net/staticfiles/tulas/ee-form-widget/form-15/widget.js" /> */}
-        <div className="w-full min-h-screen overflow-x-hidden relative font-[MontserratMedium]">
+        <div className="w-full min-h-screen overflow-x-hidden relative font-[TTChocolatesMedium]">
           <a
             href={`/${utmParams}`}
             className="absolute top-10 left-10 z-20 w-48"
@@ -256,7 +256,7 @@ const page = () => {
               <p className="text-[#760135] text-4xl pb-4 font-medium font-[CarotSlab]">
                 ABOUT TULA'S
               </p>
-              <p className=" text-[#404040] text-xl font-[MontserratLight]">
+              <p className=" text-[#404040] text-xl font-[TTChocolates]">
                 Ranked amongst top colleges in India, Tula's Institute not only
                 offers the excellent academics but also a happening campus life.
                 Life at Tula’s is full of opportunities that provide freedom and
@@ -274,7 +274,7 @@ const page = () => {
 
           {/* programs offered */}
           <div className="w-full pb-10 md:pb-28 px-6 md:px-0 flex flex-col justify-center items-center">
-            <p className="text-white text-3xl md:text-4xl font-[MontserratMedium] font-semibold pt-10 md:pt-16">
+            <p className="text-white text-3xl md:text-4xl font-[TTChocolatesMedium] font-semibold pt-10 md:pt-16">
               Programs Offered at TULA's
             </p>
             <div className="flex w-full flex-wrap items-center justify-center gap-x-4 gap-4 md:gap-y-10 md:px-24 mt-8 md:mt-16">
@@ -307,7 +307,7 @@ const page = () => {
           </div>
 
           {/* why tula's */}
-          <div className="w-full md:h-[40rem] flex flex-col md:flex-row items-center justify-between pt-8 md:py-0 px-6 md:px-40 font-[MontserratLight]">
+          <div className="w-full md:h-[40rem] flex flex-col md:flex-row items-center justify-between pt-8 md:py-0 px-6 md:px-40 font-[TTChocolates]">
             <div className="w-full md:w-3/5 ">
               <p className="text-white text-4xl font-semibold">| Why TULA's</p>
               <p className="text-[#D9D9D9] mt-6 text-xl">
@@ -494,7 +494,7 @@ const page = () => {
                       {item.rank}
                     </p>
                   </div>
-                  <p className="text-center text-xl font-[MontserratLight] font-medium max-w-48">
+                  <p className="text-center text-xl font-[TTChocolates] font-medium max-w-48">
                     {item.title}
                   </p>
                 </div>
@@ -626,8 +626,8 @@ const page = () => {
                 alt=""
               />
             </div>
-            <p className="max-w-[70rem] mt-8 md:mt-14 w-full text-wrap text-center text-[#434343] text-2xl font-[MontserratLight]">
-              <span className="font-[MontserratMedium] font-bold text-[#007A83]">
+            <p className="max-w-[70rem] mt-8 md:mt-14 w-full text-wrap text-center text-[#434343] text-2xl font-[TTChocolates]">
+              <span className="font-[TTChocolatesMedium] font-bold text-[#007A83]">
                 Tula's Institute
               </span>{" "}
               is spread in 20 acres of lush green campus and has been rated as

@@ -79,7 +79,7 @@ const ContactForm = ({ contactRef }) => {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className=" h-fit w-full py-10 font-[MontserratLight] text-[16px] border-b-[1px] border-white"
+        className=" h-fit w-full py-10 font-[TTChocolates] text-[16px] border-b-[1px] border-white"
       >
         <div className="grid md:grid-cols-2 gap-4">
           <div>

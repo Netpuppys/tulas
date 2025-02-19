@@ -21,10 +21,10 @@ function Journey({ heading, journey, journeyQuotes }) {
                   className="w-[80px] aspect-square"
                 />
               </div>
-              <h3 className="text-[#4E4E4E] px-4 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1vw,45px)] text-wrap font-[MontserratMedium] font-normal">
+              <h3 className="text-[#4E4E4E] px-4 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1vw,45px)] text-wrap font-[TTChocolatesMedium] font-normal">
                 {card.title}
               </h3>
-              <h3 className="text-[#4E4E4E] px-4 mt-2 text-[clamp(10px,3.8vw,30px)] md:text-[clamp(10px,0.9vw,45px)] leading-tight text-wrap font-[MontserratLight] font-normal">
+              <h3 className="text-[#4E4E4E] px-4 mt-2 text-[clamp(10px,3.8vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
                 {card.description}
               </h3>
             </div>

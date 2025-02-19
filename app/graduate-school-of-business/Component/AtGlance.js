@@ -13,7 +13,7 @@ function AtGlance() {
       <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
         At a Glance
       </h8>
-      <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
+      <h4 className="px-8 md:px-0 w-full my-8 md:max-w-[55%] font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
         Here’s a glimpse of life at Tula’s! From academic milestones to moments
         of pure fun, this is where students thrive, grow, and make lasting
         memories.

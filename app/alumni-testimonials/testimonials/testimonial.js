@@ -229,7 +229,7 @@ function Testimonial() {
 
   return (
     <div>
-      <h3 className="text-white text-center font-[MontserratMedium] text-[clamp(30px,2.8vw,55px)]">
+      <h3 className="text-white text-center font-[TTChocolatesMedium] text-[clamp(30px,2.8vw,55px)]">
         Testimonials
       </h3>
       <div>
@@ -247,10 +247,10 @@ function Testimonial() {
                 />
                 <div className="border-[#E69706] bg-[#D9D9D9] bg-opacity-20 backdrop-blur-md w-full md:w-[80%] rounded-2xl mx-auto flex flex-col justify-evenly h-full md:h-[412px] border-2 px-4 md:px-8 py-4 md:py-0 cursor-pointer">
                   <div>
-                    <h2 className="text-[clamp(10px,2.4vw,50px)] md:leading-none text-white font-[MontserratMedium] font-extrabold text-left mb-2 md:mb-4">
+                    <h2 className="text-[clamp(10px,2.4vw,50px)] md:leading-none text-white font-[TTChocolatesMedium] font-extrabold text-left mb-2 md:mb-4">
                       {feature.name}
                     </h2>
-                    <h3 className="text-[clamp(10px,2vw,50px)] md:leading-none text-white font-[MontserratMedium] font-extrabold text-left mb-2 md:mb-4">
+                    <h3 className="text-[clamp(10px,2vw,50px)] md:leading-none text-white font-[TTChocolatesMedium] font-extrabold text-left mb-2 md:mb-4">
                       {feature.batch}
                     </h3>
                   </div>

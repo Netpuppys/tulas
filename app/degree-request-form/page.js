@@ -84,12 +84,12 @@ function DegreeRequestForm() {
             <div className="w-full items-center flex justify-center">
               <button
                 onClick={() => setShowForm(true)} // Show the form modal when clicked
-                className="font-[MontserratMedium] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-20"
+                className="font-[TTChocolatesMedium] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-20"
               >
                 Degree Request Form
               </button>
             </div>
-            <ul className="list-disc leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-white font-[MontserratLight] w-full max-w-[1200px] mx-auto px-8">
+            <ul className="list-disc leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-white font-[TTChocolates] w-full max-w-[1200px] mx-auto px-8">
               <li>
                 <strong>Payment of mailing fee: </strong>A nominal fee of Rs
                 800/- (Eight Hundred Only) for domestic and Rs  2300/- (Two

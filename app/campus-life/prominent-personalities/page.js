@@ -617,7 +617,7 @@ function ProminentPersonalities() {
       <Navbar />
       <BannerProgram image={bannerImg} title="Prominent Personalities" />
       <div className="w-full h-full pt-8 md:pt-[4%]">
-        <div className="w-[calc(100%-2rem)] font-[MontserratLight] md:w-[90%] mx-auto">
+        <div className="w-[calc(100%-2rem)] font-[TTChocolates] md:w-[90%] mx-auto">
           {/* Category Buttons */}
           <div className="flex w-full flex-wrap gap-4 justify-center">
             {categories.map((category, index) => (

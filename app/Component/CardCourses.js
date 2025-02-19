@@ -270,7 +270,7 @@ function CardCourses() {
                 >
                   <Link
                     href={`${degree.link}/${utmParams}`}
-                    className="border-t-2 border-b-2 border-[#E69706] w-fit font-[MontserratLight] leading-tight tracking-tight text-2xl"
+                    className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] leading-tight tracking-tight text-2xl"
                   >
                     {degree.name}
                   </Link>

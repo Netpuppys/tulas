@@ -7,12 +7,12 @@
   src: url(../public/fonts/Carot\ Slab\ Medium.ttf);
 }
 @font-face {
-  font-family: "MontserratLight";
-  src: url(../public/fonts/Montserrat-Regular.ttf);
+  font-family: "TTChocolates";
+  src: url(../public/fonts/TT-Chocolates-Regular.ttf);
 }
 @font-face {
-  font-family: "MontserratMedium";
-  src: url(../public/fonts/Montserrat-Medium.ttf);
+  font-family: "TTChocolatesMedium";
+  src: url(../public/fonts/TT-Chocolates-Medium.ttf);
 }
 @font-face {
   font-family: "DKAppelstroop";
@@ -59,7 +59,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
   color: white;
-  font-family: "MontserratLight";
+  font-family: "TTChocolates";
   overscroll-behavior: none;
 }
 ::-webkit-scrollbar {

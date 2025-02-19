@@ -179,7 +179,7 @@ const page = () => {
       <body>
         <div
           ref={parentRef}
-          className="w-full min-h-screen font-[MontserratLight]"
+          className="w-full min-h-screen font-[TTChocolates]"
         >
           <Navbar />
 
@@ -208,7 +208,7 @@ const page = () => {
           </div>
           {/* <Vision sections={sectionData.slice(0, 4)} /> */}
           <div className="w-full h-full relative z-50 bg-white py-8 md:py-20 flex flex-col items-center justify-center">
-            <p className="text-[#3D001B] font-[MontserratMedium] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] underline underline-offset-8 px-4">
+            <p className="text-[#3D001B] font-[TTChocolatesMedium] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] underline underline-offset-8 px-4">
               World Class Infrastructure
             </p>
             <p className="text-[#007A83] text-[clamp(10px,1.8vw,40px)] font-semibold">

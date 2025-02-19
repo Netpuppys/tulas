@@ -118,10 +118,10 @@ const AboutFacultyModal = ({
                       className="rounded-xl mb-2 w-full md:w-[265px] md:h-[372px] object-cover"
                     />
                   </Fade>
-                  <h2 className="font-[MontserratMedium] text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
+                  <h2 className="font-[TTChocolatesMedium] text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
                     {card.name}
                   </h2>
-                  <h4 className="font-[MontserratLight] text-[#C2C2C2] text-[clamp(8px,3.8vw,30px)] md:text-[clamp(10px,1vw,45px)] text-center">
+                  <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-center">
                     {card.profile}
                   </h4>
                 </div>

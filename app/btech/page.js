@@ -347,10 +347,10 @@ function BTech() {
               alt=""
               className="absolute top-0 w-full h-full -z-10 left-0 object-cover"
             />
-            <h3 className="text-white z-20 text-2xl font-[MontserratMedium] font-bold mb-1">
+            <h3 className="text-white z-20 text-2xl font-[TTChocolatesMedium] font-bold mb-1">
               Verify Mobile Number
             </h3>
-            <h4 className="max-w-[415px] text-[15px] font-[MontserratMedium] ">
+            <h4 className="max-w-[415px] text-[15px] font-[TTChocolatesMedium] ">
               OTP has been sent to you on your mobile number, Please enter it
               below{" "}
               <button
@@ -388,7 +388,7 @@ function BTech() {
             </div>
             <div className="flex items-center justify-center gap-2">
               <button
-                className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[MontserratMedium] px-4 py-1 my-2"
+                className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[TTChocolatesMedium] px-4 py-1 my-2"
                 onClick={resendOtp}
                 disabled={timer !== 0} // Disable resend if cooldown is active
               >
@@ -398,7 +398,7 @@ function BTech() {
             </div>
             <button
               onClick={verifyOtp}
-              className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[MontserratMedium] py-1"
+              className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[TTChocolatesMedium] py-1"
             >
               Submit
             </button>
@@ -429,7 +429,7 @@ function BTech() {
                     About the Course
                     <div className="h-[4px] bg-[#007A83] w-[55%] mx-auto rounded-full"></div>
                   </h5>
-                  <h5 className="w-full text-[#353535] md:w-full text-justify mx-auto leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] font-normal">
+                  <h5 className="w-full text-[#353535] md:w-full text-justify mx-auto leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal">
                     The Bachelor of Technology (B.Tech) is a four-year
                     undergraduate program designed to equip students with a
                     strong foundation in engineering principles, technical
@@ -664,10 +664,10 @@ function BTech() {
                       className="w-[80px] aspect-square"
                     />
                   </div>
-                  <h3 className="text-[#4E4E4E] px-4 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1vw,45px)] text-wrap font-[MontserratMedium] font-normal">
+                  <h3 className="text-[#4E4E4E] px-4 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1vw,45px)] text-wrap font-[TTChocolatesMedium] font-normal">
                     {card.title}
                   </h3>
-                  <h3 className="text-[#4E4E4E] px-4 mt-2 text-[clamp(10px,3.8vw,30px)] md:text-[clamp(10px,0.9vw,45px)] leading-tight text-wrap font-[MontserratLight] font-normal">
+                  <h3 className="text-[#4E4E4E] px-4 mt-2 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
                     {card.description}
                   </h3>
                 </div>
@@ -703,7 +703,7 @@ function BTech() {
                           alt=""
                           className="bg-white p-2 w-[65px] aspect-square rounded-xl"
                         />
-                        <h3 className="text-[#FFFFFF] group-hover:underline underline-offset-4 transition-all duration-200 leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[MontserratLight] font-normal">
+                        <h3 className="text-[#FFFFFF] group-hover:underline underline-offset-4 transition-all duration-200 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[TTChocolates] font-normal">
                           {card.title}
                         </h3>
                       </div>

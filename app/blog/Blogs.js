@@ -73,7 +73,7 @@ const Blogs = ({ utmParams }) => {
         </div>
       )}
       <div className="my-5 md:my-20 w-full px-5 md:px-0 md:w-[65%] mx-auto flex flex-col justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-[MontserratMedium]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-[TTChocolatesMedium]">
           {blogs.map((blog) => {
             const formattedDate = formatDate(blog.created_at);
             const formattedTitle = blog.title

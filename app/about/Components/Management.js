@@ -349,10 +349,10 @@ function Management() {
                     className="rounded-xl mb-2 w-full h-full object-cover"
                   />
                 </Fade>
-                <h2 className="font-[MontserratMedium] text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-tight text-center">
+                <h2 className="font-[TTChocolatesMedium] text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-tight text-center">
                   {card.name}
                 </h2>
-                <h4 className="font-[MontserratLight] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-center">
+                <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-center">
                   {card.profile}
                 </h4>
               </div>

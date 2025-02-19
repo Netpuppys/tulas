@@ -151,7 +151,7 @@ export default function AboutPage() {
             <Fade key={index}>
               <button
                 key={index}
-                className="text-[#fff] font-bold leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[MontserratMedium] rounded-full py-2"
+                className="text-[#fff] font-bold leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.2vw,45px)] font-[TTChocolatesMedium] rounded-full py-2"
               >
                 {button.title}
               </button>
@@ -171,13 +171,13 @@ export default function AboutPage() {
               >
                 <div className="border border-white shadow-inner rounded-full w-12 md:w-20 aspect-square"></div>
                 <div className="flex flex-col items-start justify-center gap-0">
-                  <h3 className="text-[#fff] font-[MontserratMedium] text-[28px] md:text-[45px] font-black">
+                  <h3 className="text-[#fff] font-[TTChocolatesMedium] text-[28px] md:text-[45px] font-black">
                     {cards.animatedStatNo || cards.start}
                     {index === 1 && <>+</>}
                     {index === 2 && <>+</>}
                     {index === 3 && <>+</>}
                   </h3>
-                  <h2 className="text-white font-[MontserratLight] text-[14px] md:text-[18px] font-normal">
+                  <h2 className="text-white font-[TTChocolates] text-[14px] md:text-[18px] font-normal">
                     {cards.description}
                   </h2>
                 </div>
@@ -186,10 +186,10 @@ export default function AboutPage() {
           </div>
           <div className="w-full md:w-1/2 flex items-center justify-start h-full px-6 md:px-0 md:pr-20 md:py-12">
             <div className="bg-white w-full md:h-full py-8 md:min-h-[50rem] max-w-[40rem] flex items-start justify-center flex-col px-8 md:px-12 ">
-              <p className="text-[#760135] font-medium font-[MontserratMedium] text-[1.4rem] md:text-[2.5rem] text-wrap tracking-widest">
+              <p className="text-[#760135] font-medium font-[TTChocolatesMedium] text-[1.4rem] md:text-[2.5rem] text-wrap tracking-widest">
                 Innovate, Create, Lead – The Tula’s Way
               </p>
-              <p className="text-[#404040] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-medium font-[MontserratLight] leading-tight">
+              <p className="text-[#404040] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-medium font-[TTChocolates] leading-tight">
                 Tula’s Institute is where the future of education is being
                 reimagined. It’s not just about textbooks and lectures; it’s
                 about creating a playground for innovation. At Tula’s, every

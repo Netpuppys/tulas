@@ -22,13 +22,13 @@ function PrivacyPolicy() {
           </div>
         </div>
       </div>
-      <div className="w-full px-8 md:px-0 md:w-[80%] mx-auto text-[#353535] py-8 md:py-20 text-[clamp(10px,4vw,30px)] leading-tight md:text-[clamp(10px,1vw,45px)] font-[MontserratLight]">
+      <div className="w-full px-8 md:px-0 md:w-[80%] mx-auto text-[#353535] py-8 md:py-20 text-[clamp(10px,4vw,30px)] leading-tight md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates]">
         We respect the privacy of those who visit our web site. In accordance
         with this, we have created this policy in order to demonstrate our
         privacy commitment to our users:
         <br />
         <br />
-        <h3 className="font-[MontserratMedium] font-semibold text-[30px] md:text-[clamp(10px,2vw,50px)] leading-none">
+        <h3 className="font-[TTChocolatesMedium] font-semibold text-[30px] md:text-[clamp(10px,2vw,50px)] leading-none">
           What this Privacy Policy Covers
         </h3>
         <br />
@@ -46,7 +46,7 @@ function PrivacyPolicy() {
           </li>
         </ul>
         <br />
-        <h3 className="font-[MontserratMedium] font-semibold text-[30px] md:text-[clamp(10px,2vw,50px)] leading-none">
+        <h3 className="font-[TTChocolatesMedium] font-semibold text-[30px] md:text-[clamp(10px,2vw,50px)] leading-none">
           Information Collection and Use
         </h3>
         <br />
@@ -76,7 +76,7 @@ function PrivacyPolicy() {
           </li>
         </ul>
         <br />
-        <h3 className="font-[MontserratMedium] font-semibold text-[30px] md:text-[clamp(10px,2vw,50px)] leading-none">
+        <h3 className="font-[TTChocolatesMedium] font-semibold text-[30px] md:text-[clamp(10px,2vw,50px)] leading-none">
           Information Sharing and Disclosure
         </h3>
         <br />
@@ -97,7 +97,7 @@ function PrivacyPolicy() {
           </li>
         </ul>
         <br />
-        <h3 className="font-[MontserratMedium] font-semibold text-[30px] md:text-[clamp(10px,2vw,50px)] leading-none">
+        <h3 className="font-[TTChocolatesMedium] font-semibold text-[30px] md:text-[clamp(10px,2vw,50px)] leading-none">
           Changes to this Privacy Policy
         </h3>
         <br />

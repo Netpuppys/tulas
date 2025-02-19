@@ -43,7 +43,7 @@ export const content = (
     impactful career ahead.
     <br />
     <br />
-    <p className="font-bold font-[MontserratMedium] pb-2">
+    <p className="font-bold font-[TTChocolatesMedium] pb-2">
       The B. Pharma curriculum provides an in-depth understanding of:
     </p>
     ● Drug preparation, formulation, and dispensing.
@@ -57,35 +57,35 @@ export const content = (
     ● Public health and community pharmacy practices.
     <br />
     <br />
-    <p className="font-bold font-[MontserratMedium] pb-2">
+    <p className="font-bold font-[TTChocolatesMedium] pb-2">
       Graduates of B. Pharma have access to:
     </p>
     ●{" "}
-    <span className="font-bold font-[MontserratMedium]">
+    <span className="font-bold font-[TTChocolatesMedium]">
       Career Opportunities:
     </span>{" "}
     Roles in pharmaceutical production, hospital and community pharmacy, quality
     control, sales, and marketing.
     <br />●{" "}
-    <span className="font-bold font-[MontserratMedium]">
+    <span className="font-bold font-[TTChocolatesMedium]">
       Higher Education:
     </span>{" "}
     Options like M. Pharm, Pharm. D, and specialized fields like bioinformatics,
     nanotechnology, and genetic engineering.
     <br />●{" "}
-    <span className="font-bold font-[MontserratMedium]">
+    <span className="font-bold font-[TTChocolatesMedium]">
       Global Scope:
     </span>{" "}
     Opportunities for employment and advanced studies in developed countries.
     <br />●{" "}
-    <span className="font-bold font-[MontserratMedium]">
+    <span className="font-bold font-[TTChocolatesMedium]">
       Entrepreneurship:
     </span>{" "}
     Establishing their own pharmacy, manufacturing units, or consultancy
     services.
     <br />
     <br />
-    <p className="font-bold font-[MontserratMedium] pb-2">
+    <p className="font-bold font-[TTChocolatesMedium] pb-2">
       The Primary Goal of This Program Is To:
     </p>
     ● Train students in the principles and practices of pharmacy to ensure
@@ -211,7 +211,7 @@ export const selectedCard1 = (
     <span className="font-[Arapey] pb-[1%] leading-tight">
       Admission Eligibility
     </span>
-    <ul className="font-[MontserratLight] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-[#353535]">
+    <ul className="font-[TTChocolates] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
       <li>
         Successful completion of 10+2 with Physics and Chemistry as compulsory
         subjects, along with Mathematics or Biology.
@@ -445,7 +445,7 @@ export const itemsClubs = [
   {
     title: "Career Prospects",
     description: [
-      <p className="font-semibold font-[MontserratMedium]">
+      <p className="font-semibold font-[TTChocolatesMedium]">
         A B. Pharma degree opens up a range of promising career opportunities,
         including:
       </p>,

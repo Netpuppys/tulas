@@ -64,10 +64,10 @@ function WhyChoose() {
                     className="w-[90px] aspect-square"
                   />
                 </div>
-                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[MontserratMedium] font-normal">
+                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[TTChocolatesMedium] font-normal">
                   {card.title}
                 </h3>
-                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-2 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-wrap font-[MontserratLight] font-normal">
+                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-2 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
                   {card.description}
                 </h3>
               </div>

@@ -256,7 +256,7 @@ function AboutTulas() {
         <h2 className="text-[#3A3A3A] text-[clamp(10px,6vw,30px)] pb-4 md:pb-[1%] font-[CarotSlab] md:text-[clamp(10px,2.5vw,50px)] leading-tight">
           About <span className="text-[#760135]">TULA’s</span>
         </h2>
-        <h3 className="text-[#6F6C6C] font-[MontserratMedium] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] ml-0 mr-auto">
+        <h3 className="text-[#6F6C6C] font-[TTChocolatesMedium] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] ml-0 mr-auto">
           {aboutTulas}
         </h3>
       </div>
@@ -442,10 +442,10 @@ function AboutTulas() {
               alt=""
               className="absolute top-0 w-full h-full -z-10 left-0 object-cover"
             />
-            <h3 className="text-white z-20 text-2xl font-[MontserratMedium] font-bold mb-1">
+            <h3 className="text-white z-20 text-2xl font-[TTChocolatesMedium] font-bold mb-1">
               Verify Mobile Number
             </h3>
-            <h4 className="max-w-[415px] text-[15px] font-[MontserratMedium] ">
+            <h4 className="max-w-[415px] text-[15px] font-[TTChocolatesMedium] ">
               OTP has been sent to you on your mobile number, Please enter it
               below{" "}
               <button
@@ -483,7 +483,7 @@ function AboutTulas() {
             </div>
             <div className="flex items-center justify-center gap-2">
               <button
-                className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[MontserratMedium] px-4 py-1 my-2"
+                className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[TTChocolatesMedium] px-4 py-1 my-2"
                 onClick={resendOtp}
                 disabled={timer !== 0} // Disable resend if cooldown is active
               >
@@ -493,7 +493,7 @@ function AboutTulas() {
             </div>
             <button
               onClick={verifyOtp}
-              className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[MontserratMedium] py-1"
+              className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[TTChocolatesMedium] py-1"
             >
               Submit
             </button>

@@ -28,13 +28,13 @@ function Vision({ sections, color = false }) {
                       color
                         ? "text-[#007A83] "
                         : "text-white px-4 md:px-10 border-white border-l-4 "
-                    } font-[MontserratMedium] rounded-md font-semibold text-[clamp(10px,7vw,50px)] leading-tight md:text-[clamp(10px,2.5vw,50px)]`}
+                    } font-[TTChocolatesMedium] rounded-md font-semibold text-[clamp(10px,7vw,50px)] leading-tight md:text-[clamp(10px,2.5vw,50px)]`}
                   >
                     {section.title}
                   </h3>
                   <br />
                   <h5
-                    className={`leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] ${
+                    className={`leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] ${
                       color ? "text-[#353535]" : "text-white"
                     }`}
                   >

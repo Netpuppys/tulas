@@ -117,7 +117,7 @@ function Vibgyor() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
-          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] mx-auto text-center text-[#353535] leading-tight">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-[#353535] leading-tight">
             This student council is all about making sure every student has an
             unforgettable college experience. With 11 exciting clubs, Vibgyor
             brings together creativity, passion, and skill-building in ways that
@@ -140,7 +140,7 @@ function Vibgyor() {
         </div>
         <Vision sections={sections} />
         <div className="w-full h-fit flex flex-col justify-center items-center pb-8 md:pb-20">
-          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] mx-auto text-center leading-tight text-white">
+          <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center leading-tight text-white">
             Vibgyor is all about finding your passion, connecting with others,
             and making the most of your college journey. Whether you're looking
             to explore new interests, develop your skills, or just have a blast,

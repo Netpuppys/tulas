@@ -161,7 +161,7 @@ function LifeAtTulas() {
                       className="w-full -z-10 h-full object-cover"
                     />
                     <div className="absolute z-20 left-[5%] top-[6%]">
-                      <div className="text-white w-fit font-[MontserratMedium] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,50px)] leading-tight">
+                      <div className="text-white w-fit font-[TTChocolatesMedium] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,50px)] leading-tight">
                         {slide.title}
                         <div className="h-[2px] bg-[#E69706] w-[50%] rounded-full"></div>
                       </div>

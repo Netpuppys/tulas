@@ -118,7 +118,7 @@ function Library() {
               </Fade>
             </div>
             <h4
-              className={`text-[#353535] max-w-[669px] w-full text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight font-[MontserratLight] font-medium ${
+              className={`text-[#353535] max-w-[669px] w-full text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight font-[TTChocolates] font-medium ${
                 inView ? "animate-translateRight" : "opacity-0"
               }`}
             >
@@ -134,7 +134,7 @@ function Library() {
           <Link
             target="_blank"
             href="https://tulas-opac.kohacloud.in/"
-            className="px-12 md:px-20 py-2 mb-20 bg-white text-[clamp(10px,5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[MontserratMedium] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
+            className="px-12 md:px-20 py-2 mb-20 bg-white text-[clamp(10px,5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[TTChocolatesMedium] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
           >
             TULA’S Library Resources
           </Link>

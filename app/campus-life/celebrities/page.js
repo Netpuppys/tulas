@@ -76,13 +76,13 @@ function Celebrities() {
             alt=""
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
-          <p className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] w-[90%] md:w-[70%] font-[MontserratLight] mx-auto text-center text-[#353535]">
+          <p className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-[#353535]">
             The{" "}
-            <span className="font-black text-[#007A83] font-[MontserratMedium]">
+            <span className="font-black text-[#007A83] font-[TTChocolatesMedium]">
               Tula's Institute{" "}
             </span>
             hosts the prestigious
-            <span className="font-black text-[#3D001B] font-[MontserratMedium]">
+            <span className="font-black text-[#3D001B] font-[TTChocolatesMedium]">
               {" "}
               Dehradun International Film Festival{" "}
             </span>
@@ -94,7 +94,7 @@ function Celebrities() {
             into the film industry, foster connections, and be inspired by the
             journeys of these celebrated figures. Its an annual celebration of
             regional cinema, creativity, and learning at
-            <span className="font-black text-[#007A83] font-[MontserratMedium]">
+            <span className="font-black text-[#007A83] font-[TTChocolatesMedium]">
               {" "}
               Tula's Institute.
             </span>

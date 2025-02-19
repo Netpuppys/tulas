@@ -27,7 +27,7 @@ function QuickLinks() {
   ];
   return (
     <div className="h-[150px] w-full rounded-t-3xl bg-[#d3d3d3] absolute bottom-0 px-5 py-5">
-      <h3 className="text-[#007A83] text-xl font-[MontserratMedium] font-semibold mb-2">
+      <h3 className="text-[#007A83] text-xl font-[TTChocolatesMedium] font-semibold mb-2">
         Quick Links
       </h3>
       <div className="flex items-center justify-start gap-4 flex-wrap">

@@ -94,7 +94,7 @@ function NavbarDesktop({
                   {checkCurrentPageOpen(item.linkTo) ? (
                     <button
                       onClick={handleOutsideClick}
-                      className="flex-auto font-[MontserratMedium] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
+                      className="flex-auto font-[TTChocolatesMedium] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
                     >
                       {item.title}
                     </button>
@@ -113,7 +113,7 @@ function NavbarDesktop({
                               ? "noopener noreferrer"
                               : undefined
                           }
-                          className="flex-auto font-[MontserratMedium] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
+                          className="flex-auto font-[TTChocolatesMedium] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
                         >
                           {item.title}
                         </Link>
@@ -121,7 +121,7 @@ function NavbarDesktop({
                       {item.linkTo === "#" && (
                         <button
                           onClick={() => handleExpandNestedLinks(index)}
-                          className="flex-auto font-[MontserratMedium] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
+                          className="flex-auto font-[TTChocolatesMedium] font-normal px-[7%] py-1 flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83]"
                         >
                           {item.title}
                         </button>
@@ -187,14 +187,14 @@ function NavbarDesktop({
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="flex-auto font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                    className="flex-auto font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                   >
                     {nestedLinks.title}
                   </Link> */}
                   {checkCurrentPageOpen(nestedLinks.linkTo) ? (
                     <button
                       onClick={handleOutsideClick}
-                      className="flex-auto w-full font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                      className="flex-auto w-full font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                     >
                       {nestedLinks.title}
                     </button>
@@ -213,7 +213,7 @@ function NavbarDesktop({
                               ? "noopener noreferrer"
                               : undefined
                           }
-                          className="flex-auto font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                          className="flex-auto font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                         >
                           {nestedLinks.title}
                         </Link>
@@ -221,7 +221,7 @@ function NavbarDesktop({
                       {nestedLinks.linkTo === "#" && (
                         <button
                           onClick={() => handleExpandSuperNestedLinks(index)}
-                          className="flex-auto w-full justify-start text-start font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                          className="flex-auto w-full justify-start text-start font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                         >
                           {nestedLinks.title}
                         </button>
@@ -272,14 +272,14 @@ function NavbarDesktop({
                                 ? "noopener noreferrer"
                                 : undefined
                             }
-                            className="flex-auto font-[MontserratLight] px-[8.5%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white"
+                            className="flex-auto font-[TTChocolates] px-[8.5%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white"
                           >
                             {superNestedLinks.title}
                           </Link> */}
                           {checkCurrentPageOpen(superNestedLinks.linkTo) ? (
                             <button
                               onClick={handleOutsideClick}
-                              className="flex-auto w-full font-[MontserratMedium] text-start px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
+                              className="flex-auto w-full font-[TTChocolatesMedium] text-start px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
                             >
                               {superNestedLinks.title}
                             </button>
@@ -300,7 +300,7 @@ function NavbarDesktop({
                                       ? "noopener noreferrer"
                                       : undefined
                                   }
-                                  className="flex-auto font-[MontserratMedium] text-left px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
+                                  className="flex-auto font-[TTChocolatesMedium] text-left px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
                                 >
                                   {superNestedLinks.title}
                                 </Link>
@@ -310,7 +310,7 @@ function NavbarDesktop({
                                   onClick={() =>
                                     handleExpandThirdNestedLinks(index)
                                   }
-                                  className="flex-auto w-full justify-start text-start font-[MontserratMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
+                                  className="flex-auto w-full justify-start text-start font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-white transition-all duration-300 ease-linear"
                                 >
                                   {superNestedLinks.title}
                                 </button>
@@ -363,7 +363,7 @@ function NavbarDesktop({
                                         ? "noopener noreferrer"
                                         : undefined
                                     }
-                                    className="flex-auto font-[MontserratLight] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
+                                    className="flex-auto font-[TTChocolates] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
                                   >
                                     {thirdNestedLinks.title}
                                   </Link> */}
@@ -372,7 +372,7 @@ function NavbarDesktop({
                                   ) ? (
                                     <button
                                       onClick={handleOutsideClick}
-                                      className="flex-auto text-start font-[MontserratLight] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
+                                      className="flex-auto text-start font-[TTChocolates] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.1vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
                                     >
                                       {thirdNestedLinks.title}
                                     </button>
@@ -392,7 +392,7 @@ function NavbarDesktop({
                                           ? "noopener noreferrer"
                                           : undefined
                                       }
-                                      className="flex-auto font-[MontserratLight] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
+                                      className="flex-auto font-[TTChocolates] px-[10%] py-1 font-normal flex items-center h-full text-[clamp(10px,1vw,100px)] leading-tight text-white group-hover:text-[#2c2c2c]"
                                     >
                                       {thirdNestedLinks.title}
                                     </Link>

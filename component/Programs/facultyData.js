@@ -54,7 +54,7 @@ function FacultyData({ facultyData }) {
             }}
             className="px-4 text-[#353535] py-4 flex group-hover:opacity-0 flex-col transition-all ease-in duration-300 "
           >
-            <h3 className="text-[#007A83] font-[MontserratMedium] leading-tight font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)]">
+            <h3 className="text-[#007A83] font-[TTChocolatesMedium] leading-tight font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)]">
               {faculty.name}
             </h3>
             {faculty.designation && (
@@ -71,7 +71,7 @@ function FacultyData({ facultyData }) {
             }}
             className="px-4 opacity-0 absolute pb-[40px] bg-[#007A83] w-full h-full text-white py-4 group-hover:opacity-100 flex flex-col justify-center gap-2 transition-all ease-in duration-300"
           >
-            <h3 className="text-white font-[MontserratMedium] leading-tight font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] w-fit border-b border-white">
+            <h3 className="text-white font-[TTChocolatesMedium] leading-tight font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] w-fit border-b border-white">
               {faculty.name}
             </h3>
             {faculty.designation && (
@@ -109,7 +109,7 @@ function FacultyData({ facultyData }) {
             <Link
               href={faculty.resume}
               target="_blank"
-              className="relative h-[40px] bottom-0 cursor-pointer w-full pointer-events-auto flex gap-3 justify-center items-center bg-[#007A83] group-hover:bg-white text-[clamp(10px,1.1vw,50px)] text-white group-hover:text-[#007A83] font-[MontserratMedium] transition-all ease-in duration-300 font-[600]"
+              className="relative h-[40px] bottom-0 cursor-pointer w-full pointer-events-auto flex gap-3 justify-center items-center bg-[#007A83] group-hover:bg-white text-[clamp(10px,1.1vw,50px)] text-white group-hover:text-[#007A83] font-[TTChocolatesMedium] transition-all ease-in duration-300 font-[600]"
             >
               Resume
               <FaRegFilePdf />

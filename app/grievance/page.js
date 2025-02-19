@@ -228,7 +228,7 @@ const GrievanceForm = ({ formState }) => {
         </div>
         <button
           type="submit"
-          className="w-full md:w-[55%] font-[MontserratMedium] text-[1.5rem] font-semibold h-14 rounded-lg bg-[#007A83] flex items-center justify-center"
+          className="w-full md:w-[55%] font-[TTChocolatesMedium] text-[1.5rem] font-semibold h-14 rounded-lg bg-[#007A83] flex items-center justify-center"
         >
           {submitLoader ? (
             <ThreeDots color="#FFFFFF" height={30} />
@@ -261,7 +261,7 @@ function Grievance() {
         <p className="font-[carotSlab] text-[2.6rem] font-medium text-[#760135] text-center">
           Grievance Form
         </p>
-        <p className="font-[MontserratLight] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-center text-[#404040]">
+        <p className="font-[TTChocolates] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-center text-[#404040]">
           Here are the Grievane Forms for Parents, Staff Members & Students
         </p>
         <div className="flex flex-col md:flex-row w-full items-center justify-center gap-4 md:gap-12 mt-8">
@@ -269,7 +269,7 @@ function Grievance() {
             <button
               key={id}
               onClick={() => setFormState(item)}
-              className="w-[22rem] h-12 bg-[#3D001B] rounded-full flex items-center justify-center text-white font-[MontserratMedium] text-[1.8rem] font-medium "
+              className="w-[22rem] h-12 bg-[#3D001B] rounded-full flex items-center justify-center text-white font-[TTChocolatesMedium] text-[1.8rem] font-medium "
             >
               {item}
             </button>
@@ -287,7 +287,7 @@ function Grievance() {
           ref={formRef}
           className="w-full h-fit flex flex-col items-center justify-start px-10 py-20 gap-10"
         >
-          <p className="text-white capitalize font-[MontserratMedium] font-semibold text-[2.6rem]">
+          <p className="text-white capitalize font-[TTChocolatesMedium] font-semibold text-[2.6rem]">
             {formState}
             <span className="block w-full bg-white h-1 rounded-full"></span>
           </p>

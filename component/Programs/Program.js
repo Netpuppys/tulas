@@ -29,7 +29,7 @@ function Program({
               className="w-full aspect-[1/1.5] md:aspect-auto object-cover md:w-[21%] rounded-lg"
             />
           )}
-          <h5 className="w-full text-[#353535] md:w-[58%] px-4 text-justify mx-auto leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[MontserratLight] font-normal">
+          <h5 className="w-full text-[#353535] md:w-[58%] px-4 text-justify mx-auto leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal">
             {content}
           </h5>
           {sideImages && (

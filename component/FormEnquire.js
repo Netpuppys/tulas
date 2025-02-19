@@ -252,10 +252,10 @@ function FormEnquire({ formPopup }) {
               alt=""
               className="absolute top-0 w-full h-full -z-10 left-0 object-cover"
             />
-            <h3 className="text-white z-20 text-2xl font-[MontserratMedium] font-bold mb-1">
+            <h3 className="text-white z-20 text-2xl font-[TTChocolatesMedium] font-bold mb-1">
               Verify Mobile Number
             </h3>
-            <h4 className="max-w-[415px] text-[15px] font-[MontserratMedium] ">
+            <h4 className="max-w-[415px] text-[15px] font-[TTChocolatesMedium] ">
               OTP has been sent to you on your mobile number, Please enter it
               below{" "}
               <button
@@ -293,7 +293,7 @@ function FormEnquire({ formPopup }) {
             </div>
             <div className="flex items-center justify-center gap-2">
               <button
-                className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[MontserratMedium] px-4 py-1 my-2"
+                className="bg-[#3D001B] disabled:opacity-60 cursor-pointer disabled:cursor-not-allowed text-[15px] font-[TTChocolatesMedium] px-4 py-1 my-2"
                 onClick={resendOtp}
                 disabled={timer !== 0} // Disable resend if cooldown is active
               >
@@ -303,7 +303,7 @@ function FormEnquire({ formPopup }) {
             </div>
             <button
               onClick={verifyOtp}
-              className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[MontserratMedium] py-1"
+              className="text-[#3D001B] bg-white w-full rounded-md text-2xl font-[TTChocolatesMedium] py-1"
             >
               Submit
             </button>

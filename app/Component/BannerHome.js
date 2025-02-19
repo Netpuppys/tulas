@@ -279,7 +279,7 @@ export default BannerHome;
 //         <h2 className="text-[38px] md:text-[clamp(10px,4.2vw,70px)] text-white z-10 font-[CarotSlab]">
 //           {title}
 //         </h2>
-//         {/* <h4 className="w-full md:max-w-[800px] text-[clamp(10px,4vw,30px)] text-white md:text-[clamp(10px,1vw,30px)] font-[MontserratLight] leading-tight">
+//         {/* <h4 className="w-full md:max-w-[800px] text-[clamp(10px,4vw,30px)] text-white md:text-[clamp(10px,1.1vw,30px)] font-[TTChocolates] leading-tight">
 //           {paragraph}
 //         </h4> */}
 //       </div>

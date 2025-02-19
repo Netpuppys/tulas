@@ -79,7 +79,7 @@ function Table({}) {
               }`}
               onClick={() => setSelectedCard(index)}
             >
-              <button className="flex items-center  font-[MontserratMedium] rounded-full py-1 md:py-2 text-[15px] md:text-[20px] justify-center gap-14">
+              <button className="flex items-center  font-[TTChocolatesMedium] rounded-full py-1 md:py-2 text-[15px] md:text-[20px] justify-center gap-14">
                 {card.title}
               </button>
             </div>

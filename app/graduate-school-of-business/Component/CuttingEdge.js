@@ -42,7 +42,7 @@ function CuttingEdge({
                       alt=""
                       className="bg-white p-2 w-[65px] aspect-square rounded-xl"
                     />
-                    <h3 className="text-[#FFFFFF] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[MontserratLight] font-normal">
+                    <h3 className="text-[#FFFFFF] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[TTChocolates] font-normal">
                       {card.title}
                     </h3>
                   </div>
@@ -77,7 +77,7 @@ function CuttingEdge({
         <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
           Our Recruiters
         </h8>
-        <h4 className="px-8 text-center w-full font-[MontserratLight] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
+        <h4 className="px-8 text-center w-full font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
           Give your career a boost with lucrative national & international
           internship and placement opportunities at Tula's Graduate School of
           Business.
