@@ -374,67 +374,69 @@ function Navbar({
       {formPopup && (
         <FormPopup formPopup={formPopup} setFormPopup={setFormPopup} />
       )}
-      <div
-        className={`w-full bottom-0 absolute pointer-events-auto bg-[#007A83] mdNavbar:hidden`}
-      >
-        <div className="w-full mx-auto flex justify-between h-fit py-2">
-          <a
-            className="flex px-1 w-[calc(50%-0.5px)] text-white gap-2 items-center justify-center"
-            href="tel:+91-9837983721"
-          >
-            <IoCall />
-            +91-9837983721
-          </a>
-          <div className="w-[1px] bg-white"></div>
-          <button
-            onClick={handleFormPopup}
-            className={`w-[calc(50%-0.5px)] gap-2 flex justify-center items-center text-white rounded-full`}
-          >
-            <SiGoogleforms /> Enquire Now
-          </button>
-        </div>
-      </div>
       {!isChecked && (
-        <div
-          className={`w-fit right-4 top-[50%] flex flex-col gap-2 -translate-y-1/2 absolute pointer-events-auto`}
-        >
-          <button
-            onClick={() =>
-              (window.location.href =
-                "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
-            }
-            className="bg-[#007A83] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+        <>
+          <div
+            className={`w-full bottom-0 absolute pointer-events-auto bg-[#007A83] mdNavbar:hidden`}
           >
-            <Image
-              src={whatsapp}
-              alt=""
-              className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
-            />
-          </button>
-          <button
-            onClick={() =>
-              (window.location.href = `/virtual-tour/index.html/${utmParams}`)
-            }
-            className="bg-[#760135] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+            <div className="w-full mx-auto flex justify-between h-fit py-2">
+              <a
+                className="flex px-1 w-[calc(50%-0.5px)] text-white gap-2 items-center justify-center"
+                href="tel:+91-9837983721"
+              >
+                <IoCall />
+                +91-9837983721
+              </a>
+              <div className="w-[1px] bg-white"></div>
+              <button
+                onClick={handleFormPopup}
+                className={`w-[calc(50%-0.5px)] gap-2 flex justify-center items-center text-white rounded-full`}
+              >
+                <SiGoogleforms /> Enquire Now
+              </button>
+            </div>
+          </div>
+          <div
+            className={`w-fit right-4 top-[50%] flex flex-col gap-2 -translate-y-1/2 absolute pointer-events-auto`}
           >
-            <Image
-              src={logo360}
-              alt=""
-              className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
-            />
-          </button>
-          <a
-            href="tel:+91-9837983721"
-            title="Admissions Helpline Number - +91-9837983721"
-            className="bg-[#E69706] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
-          >
-            <Image
-              src={phoneCallGif}
-              alt=""
-              className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
-            />
-          </a>
-        </div>
+            <button
+              onClick={() =>
+                (window.location.href =
+                  "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
+              }
+              className="bg-[#007A83] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+            >
+              <Image
+                src={whatsapp}
+                alt=""
+                className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
+              />
+            </button>
+            <button
+              onClick={() =>
+                (window.location.href = `/virtual-tour/index.html/${utmParams}`)
+              }
+              className="bg-[#760135] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+            >
+              <Image
+                src={logo360}
+                alt=""
+                className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
+              />
+            </button>
+            <a
+              href="tel:+91-9837983721"
+              title="Admissions Helpline Number - +91-9837983721"
+              className="bg-[#E69706] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+            >
+              <Image
+                src={phoneCallGif}
+                alt=""
+                className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
+              />
+            </a>
+          </div>
+        </>
       )}
     </div>
   );
