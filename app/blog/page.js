@@ -2,7 +2,7 @@
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
 import React, { useContext } from "react";
-import BannerImg from "../../public/Components/Banner/bannerImg.png";
+import BannerImg from "../../public/blogs/blogBanner.webp";
 import Blogs from "./Blogs";
 import Footer from "@/component/Footer";
 import background from "../../public/AboutDehradun/background.png";
@@ -26,11 +26,7 @@ function Blog() {
       <body>
         <Navbar />
         <Banner
-          title={
-            <>
-              <span className="text-[#007A83]">Blogs</span>
-            </>
-          }
+          title={"Blogs"}
           image={BannerImg}
           description={<></>}
           belowTitle={<></>}
