@@ -89,7 +89,7 @@ export default async function SlugPage({ params }) {
     <>
       <Navbar />
       <div className="w-full z-40 bg-white">
-        <div className="h-[240px] md:h-[71vh] w-full bg-black relative">
+        <div className="h-[240px] md:h-[85vh] w-full bg-black relative">
           <Image
             src={headerImg}
             alt=""
@@ -99,7 +99,7 @@ export default async function SlugPage({ params }) {
           />
         </div>
 
-        <div className="min-h-fit py-6 md:py-20 h-fit md:min-h-[29vh] w-full overflow-hidden flex flex-col justify-center max-w-[835px] px-6 mx-auto">
+        <div className="min-h-fit py-6 md:py-[1%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1100px] px-6 mx-auto">
           <h3 className="text-[30px] md:text-[clam(20px,3.5vw,60px)] text-[#000] z-10 font-[CarotSlab]">
             {firstHalf}
             <span className="text-[#760135]"> {secondHalf}</span>
