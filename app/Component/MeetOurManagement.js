@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import ScrollTulas from "../../public/Homepage/ScrollSection/WhyTulas.png";
 import Image from "next/image";
 import sunil from "../../public/About/sunil.png";
 import silky from "../../public/About/silky.png";
@@ -10,93 +9,8 @@ import raunak from "../../public/About/raunak.png";
 import sandip from "../../public/About/sandip.png";
 import sunilSemwal from "../../public/About/sunilSemwal.png";
 import nishant from "../../public/About/nishant.png";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useMobile } from "@/component/IsMobileContext";
-import ComputerCenter from "../../public/Homepage/ScrollSection/ComputerCenter.png";
 import { useInView } from "react-intersection-observer";
-
-const title = "15 REASONS TO CHOOSE TULA'S";
-// const paragraph =
-//   "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
-const images = [
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-9.png",
-    title: "Ranking",
-    text: "Ranked among the Top 50 Private Colleges in India for 8 consecutive years.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-4.png",
-    title: "Faculty",
-    text: "Highly esteemed faculty recognized for innovation in teaching, novel research, and patents.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-2+(1).png",
-    title: "Incubator",
-    text: "Tula’s Technology Business Incubator Foundation (TTBIF) approved by MSME & StartUP Uttarakhand for innovation and startups.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-3+(1).png",
-    title: "Placement",
-    text: "700+ campus placement drives and 25+ industrial tie-ups ensuring high-quality recruitment opportunities.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-5.png",
-    title: "Alumni",
-    text: "A global network of 7,000+ successful alumni.",
-  },
-  {
-    src: ComputerCenter,
-    title: "Infrastructure",
-    text: "ICT facilities with modern labs, classrooms, and air-conditioned auditoriums.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-1+(1).png",
-    title: "Patents & Awards",
-    text: "2000+ highly cited research papers, 30+ patents, 15+ government-funded projects, and 20+ prestigious awards.",
-  },
-
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-6.png",
-    title: "NCC",
-    text: "NCC 29 UK battalion at Tula’s led by the Government of India, Ministry of Defence.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-7.png",
-    title: "FDPs & IEEE",
-    text: "100+ FDPs and IEEE conferences conducted annually",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-8.png",
-    title: "Library",
-    text: "Library with 70,000+ books, 2,500+ journals,1,500+ recorded lectures and excellent digital resources.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image+(1).png",
-    title: "CIRE",
-    text: "Industry-Supported Center for Innovation, Research & Entrepreneurship (CIRE).",
-  },
-
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-10.png",
-    title: "NSS",
-    text: "NSS Unit at Tula’s led by the Government of India, Ministry of Youth Affairs & Sports.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-11.png",
-    title: "Medical assistance",
-    text: "24×7 on-campus medical assistance with qualified doctors and medical insurance for all.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-12.png",
-    title: "Sports",
-    text: "Comprehensive indoor and outdoor sports infrastructure.",
-  },
-  {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-13.png",
-    title: "Yoga Kendra",
-    text: "Heartfulness Yoga Kendra for mindfulness and wellness.",
-  },
-];
 
 const cards = [
   {
@@ -231,8 +145,7 @@ const InternalSection = () => {
   );
 };
 
-function MeetOurManagement({ parentRef }) {
-  // const scrollRef = useRef();
+function MeetOurManagement() {
   const childRef = useRef(null);
 
   const { isMobile } = useMobile();
@@ -265,21 +178,6 @@ function MeetOurManagement({ parentRef }) {
         >
           <InternalSection />
         </section>
-
-        {/* <section
-            style={{
-                clipPath: `circle(${clipPathValue*1.5}% at center center)`,
-                transition: "clip-path 0.3s ease-in-out", // Smooth transition for clip-path
-            }}
-            ref={ref}
-            className={`top-0 w-full h-fit flex md:hidden clip-circle-50px section backgroundScroll`}
-        >
-            <InternalSection />
-        </section> */}
-
-        {/* <div className="hidden bg-[#760135] w-full h-fit">
-            <InternalSection />
-        </div> */}
       </div>
     </div>
   );

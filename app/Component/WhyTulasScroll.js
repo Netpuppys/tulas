@@ -7,8 +7,6 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useMobile } from "@/component/IsMobileContext";
 import ComputerCenter from "../../public/Homepage/ScrollSection/ComputerCenter.png";
 const title = "15 REASONS TO CHOOSE TULA’S";
-// const paragraph =
-//   "The Institute provides excellent infrastructural and ICT facilities with well-equipped laboratories, a modern computer centre, spacious and well-furnished classrooms, seminar hall, library, workshop, and fully airconditioned & spacious auditorium.";
 const images = [
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-9.png",
