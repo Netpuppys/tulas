@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import loader from "../../public/loader.svg"; // Replace with your actual loader image path
+// import loader from "../../public/loader.svg"; // Replace with your actual loader image path
 import "../globals.css";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import "../Blog.css";
 import { notFound } from "next/navigation"; // Import notFound function
-import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
+// import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
 import TableOfContent from "@/component/TableOfContent";
 export const revalidate = 60; // ISR revalidation every 60 seconds
 
@@ -91,10 +91,10 @@ export default async function SlugPage({ params }) {
       <div className="w-full z-40 bg-white">
         <div className="h-[240px] md:h-[71vh] w-full bg-black relative">
           <Image
-            src={school}
+            src={headerImg}
             alt=""
             width={"10000"}
-            height={"100"}
+            height={"10000"}
             className="w-full h-full object-cover"
           />
         </div>

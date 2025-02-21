@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import loader from "../../public/loader.svg";
-import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
+// import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
 const Blogs = ({ utmParams }) => {
   const [blogs, setBlogs] = useState([]); // Initialize as an empty array
   const [page, setPage] = useState(1);
@@ -81,6 +81,7 @@ const Blogs = ({ utmParams }) => {
               .replace(/&#8220;/g, "“")
               .replace(/&#8221;/g, "”")
               .replace(/&#038;/g, "&");
+              const headerImg = blog.banner_img;
             return (
               <a href={`/${blog.slug}/${utmParams}`} key={blog.slug}>
                 <div>
@@ -88,7 +89,7 @@ const Blogs = ({ utmParams }) => {
                     <Image
                       width="400"
                       height="250"
-                      src={school}
+                      src={headerImg}
                       className="w-full h-52 object-cover"
                       alt=""
                     />
