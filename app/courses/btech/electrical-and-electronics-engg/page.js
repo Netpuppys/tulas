@@ -14,6 +14,7 @@ import {
   cards,
   content,
   facultyData,
+  features,
   heading,
   hod,
   HODcontent,
@@ -40,9 +41,7 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div className="w-full h-fit">
-          <Navbar />
-        </div>
+        <Navbar />
         <BannerProgram
           image={BannerImg}
           title=<>Department of Electrical & Electronics Engineering (EEE)</>
@@ -66,7 +65,7 @@ function BAJMC() {
           HODcontent={HODcontent}
           specialization={specialization}
         />
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram
           heading={"Explore More"}
@@ -74,13 +73,6 @@ function BAJMC() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
         <Footer />
       </body>
     </>

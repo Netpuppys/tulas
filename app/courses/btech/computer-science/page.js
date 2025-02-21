@@ -13,6 +13,7 @@ import TableProgram from "@/component/Programs/tableProgram";
 import {
   cards,
   content,
+  features,
   heading,
   hod,
   HODcontent,
@@ -40,16 +41,11 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div className="w-full h-fit">
-          <Navbar />
-        </div>
+        <Navbar />
         <BannerProgram
           image={BannerImg}
           title=<>COMPUTER SCIENCE & ENGINEERING (CSE)</>
           titleColor={""}
-          // description={
-          //   "Bachelor of Technology in Computer Science & Engineering (B.Tech. CSE) is one of the most sought-after engineering degrees. The program teaches students about computer applications and systems in order to prepare them for a career in the IT industry."
-          // }
         />
         <Program content={content} heading={heading} quotes={quotes} />
         <CarouselProgram
@@ -68,7 +64,7 @@ function BAJMC() {
           hod={hod}
           HODcontent={HODcontent}
         />
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram
           heading={"Explore More"}
@@ -77,13 +73,6 @@ function BAJMC() {
           backgroundCrousel={exploreCrouselBackground}
           color={true}
         />
-        {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
         <Footer />
       </body>
     </>

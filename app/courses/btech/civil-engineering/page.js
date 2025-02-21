@@ -15,6 +15,7 @@ import {
   cards,
   content,
   facultyData,
+  features,
   heading,
   hod,
   HODcontent,
@@ -67,7 +68,7 @@ function BAJMC() {
             HODcontent={HODcontent}
           />
         </div>
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram
           heading={"Explore More"}

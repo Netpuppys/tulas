@@ -25,6 +25,7 @@ import {
   sections,
   selectedCard1,
   semesterData,
+  features,
 } from "./data/data";
 import bjmcImage2Desktop from "../../../public/courses/bjmc/bjmcImage2Desktop.png";
 import bjmcImage2 from "../../../public/courses/bjmc/bjmcImage2.png";
@@ -43,7 +44,6 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div>
           <Navbar />
           <BannerProgram
             image={BannerImg}
@@ -81,7 +81,7 @@ function BAJMC() {
             semesterData={semesterData}
             facultyData={facultyData}
           />
-          <PlacementProgram />
+          <PlacementProgram features={features} />
           <TopRecruiter />
           <CarouselProgram
             heading={"Explore More"}
@@ -89,15 +89,7 @@ function BAJMC() {
             backgroundCrousel={exploreCrouselBackground}
             background={exploreCrouselBackground}
           />
-          {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
           <Footer />
-        </div>
       </body>
     </>
   );

@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
@@ -24,12 +24,11 @@ import {
   specialization,
   heading,
   quotes,
+  features,
 } from "./data/data";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -68,7 +67,7 @@ function BAJMC() {
           HODcontent={HODcontent}
           specialization={specialization}
         />
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram
           heading={"Explore More"}
@@ -77,13 +76,6 @@ function BAJMC() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
         <Footer />
       </body>
     </>

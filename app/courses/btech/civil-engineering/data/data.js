@@ -34,7 +34,18 @@ import Prashant from "../../../../../public/courses/btech/civil-engineering/facu
 import PrashantResume from "../../../../../public/courses/btech/civil-engineering/facultyData/PrashantResume.pdf";
 import content1 from "../../../../../public/courses/btech/civil-engineering/content1.webp";
 import content2 from "../../../../../public/courses/btech/civil-engineering/content2.webp";
-
+import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 import Link from "next/link";
 export const heading = (
   <>

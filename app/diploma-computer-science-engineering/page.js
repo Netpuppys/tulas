@@ -18,6 +18,7 @@ import {
   selectedCardTable,
   sideImages,
   quotes,
+  features,
 } from "./data/data";
 import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
@@ -57,7 +58,7 @@ function BAJMC() {
           hod={hod}
           HODcontent={HODcontent}
         />
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <Footer />
       </body>

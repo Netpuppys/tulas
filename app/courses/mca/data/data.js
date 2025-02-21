@@ -1,4 +1,3 @@
-import mca from "../../../../public/courses/mca/mca.png";
 import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
@@ -20,10 +19,17 @@ import MusheerResume from "../../../../public/courses/mca/facultyData/MusheerRes
 import SanjeevKumnar from "../../../../public/courses/mca/facultyData/SanjeevKumnar.webp";
 import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf";
 import Link from "next/link";
-
-export const images = [
-  mca,
-  // Add more image paths as needed
+import placement3 from "../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
 ];
 export const content = (
   <>
@@ -118,7 +124,11 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={mcaDocument} target="_blank">MCA</Link>],
+    description: [
+      <Link href={mcaDocument} target="_blank">
+        MCA
+      </Link>,
+    ],
     image: Course,
   },
   {

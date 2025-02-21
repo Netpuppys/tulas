@@ -1,4 +1,3 @@
-import bca from "../../../../public/courses/bca/bca.png";
 import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
@@ -25,12 +24,18 @@ import PayalManwal from "../../../../public/courses/bca/facultyData/PayalManwal.
 import PayalManwalResume from "../../../../public/courses/bca/facultyData/PayalManwalResume.pdf";
 import vaibhavi from "../../../../public/courses/bca/facultyData/vaibhavi.webp";
 import vaibhaviResume from "../../../../public/courses/bca/facultyData/vaibhaviResume.pdf";
-
 import Link from "next/link";
-
-export const images = [
-  bca,
-  // Add more image paths as needed
+import placement3 from "../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
 ];
 export const content = (
   <>

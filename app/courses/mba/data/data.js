@@ -1,4 +1,3 @@
-import mba from "../../../../public/courses/mba/mba.png";
 import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
@@ -26,10 +25,17 @@ import Nandini from "../../../../public/courses/mba/facultyData/Nandini.webp";
 import NandiniResume from "../../../../public/courses/mba/facultyData/NandiniResume.pdf";
 import SwatiYadav from "../../../../public/courses/mba/facultyData/SwatiYadav.webp";
 import SwatiYadavResume from "../../../../public/courses/mba/facultyData/SwatiYadavResume.pdf";
-
-export const images = [
-  mba,
-  // Add more image paths as needed
+import placement3 from "../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
 ];
 export const content = (
   <>

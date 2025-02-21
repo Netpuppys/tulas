@@ -1,4 +1,3 @@
-import dataScience from "../../../../../public/courses/btech/computer-science-engineering-data-science/dataScience.png";
 import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
@@ -20,6 +19,18 @@ import shushma from "../../../../../public/courses/btech/electrical-and-electron
 import shushmaResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/shushmaResume.pdf";
 import EEEpdf from "../../../../../public/courses/btech/electrical-and-electronics/EEE.pdf";
 import Link from "next/link";
+import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 export const heading = (
   <>
     Best Electrical & Electronics Engineering Institute in{" "}

@@ -1,4 +1,3 @@
-import bba from "../../../../public/courses/bba/bba.png";
 import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
@@ -31,11 +30,57 @@ import Dipankar from "../../../../public/courses/bba/facultyData/Dipankar.webp";
 import DipankarResume from "../../../../public/courses/bba/facultyData/DipankarResume.pdf";
 import Aishwarya from "../../../../public/courses/bba/facultyData/Aishwarya.webp";
 import AishwaryaResume from "../../../../public/courses/bba/facultyData/AishwaryaResume.pdf";
+import AbhishekPandy from "../../../../public/graduate-school-of-business/bba/AbhishekPandy.png";
+import AdilAhmed from "../../../../public/graduate-school-of-business/bba/AdilAhmed.png";
+import AdityaPandey from "../../../../public/graduate-school-of-business/bba/AdityaPandey.png";
+import DivyaShankar from "../../../../public/graduate-school-of-business/bba/DivyaShankar.png";
+import GautamSinghChauhan from "../../../../public/graduate-school-of-business/bba/GautamSinghChauhan.png";
+import JasmineBatham from "../../../../public/graduate-school-of-business/bba/JasmineBatham.png";
+import KumariPriya from "../../../../public/graduate-school-of-business/bba/KumariPriya.png";
+import NainseeSingh from "../../../../public/graduate-school-of-business/bba/NainseeSingh.png";
+import PriyankaDhiman from "../../../../public/graduate-school-of-business/bba/PriyankaDhiman.png";
+import RahulBauri from "../../../../public/graduate-school-of-business/bba/RahulBauri.png";
+import RajniMondi from "../../../../public/graduate-school-of-business/bba/RajniMondi.png";
+import RomaKumari from "../../../../public/graduate-school-of-business/bba/RomaKumari.png";
+import ShambhaviRajChauhan from "../../../../public/graduate-school-of-business/bba/ShambhaviRajChauhan.png";
+import SrishtiGupta from "../../../../public/graduate-school-of-business/bba/SrishtiGupta.png";
+import SushantTrivedi from "../../../../public/graduate-school-of-business/bba/SushantTrivedi.png";
+import UjjwalPratik from "../../../../public/graduate-school-of-business/bba/UjjwalPratik.png";
 import Link from "next/link";
 
-export const images = [
-  bba,
-  // Add more image paths as needed
+export const features = [
+  {
+    image: AbhishekPandy,
+    image2: AdilAhmed,
+  },
+  {
+    image: AdityaPandey,
+    image2: DivyaShankar,
+  },
+  {
+    image: GautamSinghChauhan,
+    image2: JasmineBatham,
+  },
+  {
+    image: KumariPriya,
+    image2: NainseeSingh,
+  },
+  {
+    image: PriyankaDhiman,
+    image2: RahulBauri,
+  },
+  {
+    image: RajniMondi,
+    image2: RomaKumari,
+  },
+  {
+    image: ShambhaviRajChauhan,
+    image2: SrishtiGupta,
+  },
+  {
+    image: SushantTrivedi,
+    image2: UjjwalPratik,
+  },
 ];
 export const content = (
   <>

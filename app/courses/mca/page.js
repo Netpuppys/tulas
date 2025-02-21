@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
@@ -12,7 +12,6 @@ import {
   cards,
   content,
   facultyData,
-  images,
   items,
   itemsClubs,
   sections,
@@ -20,14 +19,13 @@ import {
   hod,
   HODcontent,
   semesterData,
+  features,
 } from "./data/data";
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function MBA() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -40,50 +38,40 @@ function MBA() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
-          <Navbar />
-          <BannerProgram
-            image={BannerImg}
-            title=<>Master of Computer Applications (MCA)</>
-            titleColor={""}
-            description={""}
-          />
-          <Program parentRef={parentRef} images={images} content={content} />
-          <CarouselProgram
-            heading={"Discover"}
-            items={items}
-            color={true}
-            background={CrouselBackground}
-            backgroundCrousel={CrouselBackground}
-          />
-          <Vision color={true} sections={sections} />
-          <TableProgram
-            cards={cards}
-            selectedCardTable={selectedCardTable}
-            semesterData={semesterData}
-            facultyData={facultyData}
-            hod={hod}
-            HODcontent={HODcontent}
-          />
-          <PlacementProgram />
-          <TopRecruiter />
-          <CarouselProgram
-            heading={"Explore More"}
-            items={itemsClubs}
-            color={true}
-            background={exploreCrouselBackground}
-            backgroundCrousel={exploreCrouselBackground}
-          />
-
-          {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
-          <Footer />
-        </div>
+        <Navbar />
+        <BannerProgram
+          image={BannerImg}
+          title=<>Master of Computer Applications (MCA)</>
+          titleColor={""}
+          description={""}
+        />
+        <Program content={content} />
+        <CarouselProgram
+          heading={"Discover"}
+          items={items}
+          color={true}
+          background={CrouselBackground}
+          backgroundCrousel={CrouselBackground}
+        />
+        <Vision color={true} sections={sections} />
+        <TableProgram
+          cards={cards}
+          selectedCardTable={selectedCardTable}
+          semesterData={semesterData}
+          facultyData={facultyData}
+          hod={hod}
+          HODcontent={HODcontent}
+        />
+        <PlacementProgram features={features} />
+        <TopRecruiter />
+        <CarouselProgram
+          heading={"Explore More"}
+          items={itemsClubs}
+          color={true}
+          background={exploreCrouselBackground}
+          backgroundCrousel={exploreCrouselBackground}
+        />
+        <Footer />
       </body>
     </>
   );

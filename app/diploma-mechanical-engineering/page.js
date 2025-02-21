@@ -7,6 +7,7 @@ import {
   cards,
   content,
   facultyData,
+  features,
   heading,
   hod,
   HODcontent,
@@ -57,7 +58,7 @@ function BSCAgriculture() {
           HODcontent={HODcontent}
           facultyData={facultyData}
         />
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <Footer />
       </body>

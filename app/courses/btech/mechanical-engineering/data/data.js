@@ -39,6 +39,18 @@ import ManojResume from "../../../../../public/courses/btech/mechanical-engineer
 import content1 from "../../../../../public/courses/btech/mechanical-engineering/content1.webp";
 import content2 from "../../../../../public/courses/btech/mechanical-engineering/content2.webp";
 import Link from "next/link";
+import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 export const heading = (
   <>
     Best Mechanical Engineering Institute in{" "}

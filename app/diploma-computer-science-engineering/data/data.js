@@ -3,6 +3,18 @@ import DepartmentalMission from "../../../public/diploma-computer-science-engine
 import SandeepKumar from "../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
 import content1 from "../../../public/diploma-computer-science-engineering/content1.png";
 import content2 from "../../../public/diploma-computer-science-engineering/content2.png";
+import placement3 from "../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 export const sideImages = [content1, content2];
 export const heading = (
   <>

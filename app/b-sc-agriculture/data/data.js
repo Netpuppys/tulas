@@ -1,6 +1,3 @@
-import plant from "../../../public/bsc-agriculture/pLANT.png";
-import irrigation from "../../../public/bsc-agriculture/irrigation.png";
-import tractor from "../../../public/bsc-agriculture/tractor.png";
 import DepartmentalVission from "../../../public/bsc-agriculture/vision.png";
 import DepartmentalMission from "../../../public/bsc-agriculture/mission.png";
 import anushka from "../../../public/bsc-agriculture/facultyData/anushka.webp";
@@ -33,12 +30,19 @@ import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
 import AGRICULTURE from "../../../public/bsc-agriculture/AGRICULTURE.pdf";
+import placement3 from "../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../public/Homepage/Placement/placement4.png";
 import Link from "next/link";
-export const images = [
-  plant,
-  irrigation,
-  tractor,
-  // Add more image paths as needed
+
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
 ];
 export const content = (
   <>

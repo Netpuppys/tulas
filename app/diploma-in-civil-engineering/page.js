@@ -11,6 +11,7 @@ import {
   cards,
   content,
   facultyData,
+  features,
   heading,
   quotes,
   sections,
@@ -51,7 +52,7 @@ function BAJMC() {
           selectedCardTable={selectedCardTable}
           facultyData={facultyData}
         />
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <Footer />
       </body>

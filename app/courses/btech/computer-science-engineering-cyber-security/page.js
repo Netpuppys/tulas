@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
@@ -13,6 +13,7 @@ import TableProgram from "@/component/Programs/tableProgram";
 import {
   cards,
   content,
+  features,
   heading,
   hod,
   HODcontent,
@@ -39,9 +40,7 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div className="w-full h-fit">
-          <Navbar />
-        </div>
+        <Navbar />
         <BannerProgram
           image={BannerImg}
           title=<>COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)</>
@@ -64,7 +63,7 @@ function BAJMC() {
           hod={hod}
           HODcontent={HODcontent}
         />
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram
           heading={"Explore More"}
@@ -73,13 +72,6 @@ function BAJMC() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
         <Footer />
       </body>
     </>

@@ -27,7 +27,18 @@ import Rajni from "../../../../../public/courses/btech/electronics-and-communica
 import RajniResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RajniResume.pdf";
 import swati from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swati.webp";
 import swatiResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swatiResume.pdf";
-
+import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 import Link from "next/link";
 export const heading = (
   <>

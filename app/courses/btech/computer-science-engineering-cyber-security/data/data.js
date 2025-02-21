@@ -4,6 +4,18 @@ import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
+import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 export const heading = (
   <>
     Best Computer Science & Engineering (Cyber Security) Institute in{" "}

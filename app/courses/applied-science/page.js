@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
@@ -12,7 +12,7 @@ import {
   cards,
   content,
   facultyData,
-  images,
+  features,
   items,
   sections,
 } from "./data/data";
@@ -20,8 +20,6 @@ import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.pn
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -35,27 +33,25 @@ function BAJMC() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
-          <Navbar />
-          <BannerProgram
-            image={BannerImg}
-            title=<>Department of Applied Science and Humanities</>
-            titleColor={""}
-            description={""}
-          />
-          <Program parentRef={parentRef} images={images} content={content} />
-          <CarouselProgram
-            heading={"Discover"}
-            items={items}
-            background={CrouselBackground}
-            backgroundCrousel={CrouselBackground}
-          />
-          <Vision color={true} sections={sections} />
-          <TableProgram cards={cards} facultyData={facultyData} />
-          <PlacementProgram />
-          <TopRecruiter />
-          <Footer />
-        </div>
+        <Navbar />
+        <BannerProgram
+          image={BannerImg}
+          title=<>Department of Applied Science and Humanities</>
+          titleColor={""}
+          description={""}
+        />
+        <Program content={content} />
+        <CarouselProgram
+          heading={"Discover"}
+          items={items}
+          background={CrouselBackground}
+          backgroundCrousel={CrouselBackground}
+        />
+        <Vision color={true} sections={sections} />
+        <TableProgram cards={cards} facultyData={facultyData} />
+        <PlacementProgram features={features} />
+        <TopRecruiter />
+        <Footer />
       </body>
     </>
   );

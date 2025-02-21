@@ -22,7 +22,8 @@ import LifeAtTulas from "./Component/LifeAtTulas";
 import MeetOurManagement from "./Component/MeetOurManagement";
 import Placement from "./Component/Placement";
 import Famous from "./Component/Famous";
-
+import placement3 from "../public/Homepage/Placement/placement3.png";
+import placement4 from "../public/Homepage/Placement/placement4.png";
 const bannerText = (
   <>
     <span className=" font-[TTChocolatesMedium] font-semibold">
@@ -38,6 +39,16 @@ const bannerText = (
     diverse needs of individuals.
   </>
 );
+const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 
 export default function HomePage() {
   const parentRef = useRef(null);
@@ -52,7 +63,7 @@ export default function HomePage() {
         <LifeAtTulas />
         <Courses parentRef={parentRef} />
         <Accreditation />
-        <Placement />
+        <Placement features={features} />
         <CampusLife />
         <Virtual />
         <VirtualTour />

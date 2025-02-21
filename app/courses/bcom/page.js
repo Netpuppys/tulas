@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
@@ -14,7 +14,7 @@ import {
   cards,
   content,
   facultyData,
-  images,
+  features,
   items,
   itemsClubs,
   sections,
@@ -24,8 +24,6 @@ import {
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BBA() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -38,7 +36,6 @@ function BBA() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
           <Navbar />
           <BannerProgram
             image={BannerImg}
@@ -46,8 +43,7 @@ function BBA() {
             titleColor={""}
             description={""}
           />
-
-          <Program parentRef={parentRef} images={images} content={content} />
+          <Program content={content} />
           <CarouselProgram
             heading={"Discover"}
             items={items}
@@ -62,7 +58,7 @@ function BBA() {
             semesterData={semesterData}
             facultyData={facultyData}
           />
-          <PlacementProgram />
+          <PlacementProgram features={features} />
           <TopRecruiter />
           <CarouselProgram
             heading={"Explore More"}
@@ -71,9 +67,7 @@ function BBA() {
             background={exploreCrouselBackground}
             backgroundCrousel={exploreCrouselBackground}
           />
-
           <Footer />
-        </div>
       </body>
     </>
   );

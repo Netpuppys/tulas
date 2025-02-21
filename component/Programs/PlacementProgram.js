@@ -5,21 +5,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import placement1 from "../../public/Homepage/Placement/placement1.png";
 import placement2 from "../../public/Homepage/Placement/placement2.png";
-import placement3 from "../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../public/Homepage/Placement/placement4.png";
 import placementBackground from "../../public/courses/bjmc/placementBackground.png";
 import { Autoplay } from "swiper/modules";
-function PlacementProgram() {
-  const features = [
-    {
-      image: placement3,
-      image2: placement4,
-    },
-    {
-      image: placement3,
-      image2: placement4,
-    },
-  ];
+function PlacementProgram({ features }) {
   const swiperRef = useRef();
 
   return (

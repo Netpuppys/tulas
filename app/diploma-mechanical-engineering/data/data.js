@@ -28,7 +28,18 @@ import Manoj from "../../../public/courses/btech/mechanical-engineering/facultyD
 import ManojResume from "../../../public/courses/btech/mechanical-engineering/facultyData/ManojResume.pdf";
 import content1 from "../../../public/diploma-in-mechanical-engineering/content1.png";
 import content2 from "../../../public/diploma-in-mechanical-engineering/content2.png";
-
+import placement3 from "../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 export const content = (
   <>
     The Diploma in Mechanical Engineering is a three-year program designed to

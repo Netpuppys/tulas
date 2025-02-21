@@ -31,7 +31,19 @@ import EMPCLAB7 from "../../../../public/courses/bjmc/EMPC LAB (7).jpg";
 import content1 from "../../../../public/courses/bjmc/content1.png";
 import content2 from "../../../../public/courses/bjmc/content2.png";
 import Link from "next/link";
+import placement3 from "../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../public/Homepage/Placement/placement4.png";
 export const sideImages = [content1, content2];
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 export const heading = (
   <>
     Best MassCommunication Institute in{" "}

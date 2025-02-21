@@ -13,6 +13,7 @@ import {
   cards,
   content,
   facultyData,
+  features,
   heading,
   hod,
   HODcontent,
@@ -66,7 +67,7 @@ function DPharma() {
           semesterData={semesterData}
           facultyData={facultyData}
         />
-        <PlacementProgram />
+        <PlacementProgram features={features} />
         <TopRecruiter />
         <Footer />
       </body>

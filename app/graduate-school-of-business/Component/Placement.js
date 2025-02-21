@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import mbaBackground from "../../../public/graduate-school-of-business/mba/mbaBackground.png";
-import placement3 from "../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../public/Homepage/Placement/placement4.png";
 import byjus from "../../../public/graduate-school-of-business/mba/byjus.png";
 import tcs from "../../../public/graduate-school-of-business/mba/tcs.png";
 import kpmg from "../../../public/graduate-school-of-business/mba/kpmg.png";
@@ -19,25 +17,12 @@ import placementInternship from "../../../public/graduate-school-of-business/mba
 import placements from "../../../public/graduate-school-of-business/mba/placements.png";
 import highest from "../../../public/graduate-school-of-business/mba/highest.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules"; // Updated import for modules
+import { Autoplay } from "swiper/modules"; // Updated import for modules
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useMobile } from "@/component/IsMobileContext";
-import Accreditation from "@/app/Component/Accreditation";
 
-function Placement({ scrollRef }) {
-  const { isMobile } = useMobile();
-  const features = [
-    {
-      image: placement3,
-      image2: placement4,
-    },
-    {
-      image: placement3,
-      image2: placement4,
-    },
-  ];
+function Placement({ scrollRef, features }) {
   const logo = [
     byjus,
     tcs,
@@ -53,7 +38,6 @@ function Placement({ scrollRef }) {
     sbi,
   ];
   const swiperRef = useRef();
-  const [activeIndex, setActiveIndex] = useState(0);
   const internship = [
     {
       icon: intership,
@@ -102,14 +86,14 @@ function Placement({ scrollRef }) {
                     <Image
                       src={feature.image}
                       alt=""
-                      className="rounded-xl md:rounded-2xl h-fit object-cover"
+                      className="rounded-xl w-full md:rounded-2xl h-fit object-cover"
                     />
                   </div>
                   <div className="w-full md:w-[50%] flex flex-col justify-between">
                     <Image
                       src={feature.image2}
                       alt=""
-                      className="rounded-xl md:rounded-3xl h-fit object-cover"
+                      className="rounded-xl w-full md:rounded-3xl h-fit object-cover"
                     />
                   </div>
                 </div>

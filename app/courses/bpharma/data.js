@@ -1,4 +1,3 @@
-import bjmc from "../../../public/courses/bjmc/bjmc.png";
 import USP from "../../../public/courses/bpharm/usp.png";
 import DepartmentalVission from "../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../public/courses/bjmc/departmentalMission.png";
@@ -19,9 +18,17 @@ import cardImage2 from "../../../public/courses/bpharm/cardImage2.png";
 import cardImage3 from "../../../public/courses/bpharm/cardImage3.png";
 import content1 from "../../../public/courses/bpharm/sideImages1.png";
 import content2 from "../../../public/courses/bpharm/sideImages2.png";
-export const images = [
-  bjmc,
-  // Add more image paths as needed
+import placement3 from "../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
 ];
 export const heading = (
   <>

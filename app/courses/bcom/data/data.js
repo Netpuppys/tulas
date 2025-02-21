@@ -1,4 +1,3 @@
-import bcom from "../../../../public/courses/bcom/bcom.png";
 import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
@@ -15,12 +14,18 @@ import PrakashBhatnagar from "../../../../public/courses/bcom/facultyData/Prakas
 import PrakashBhatnagarResume from "../../../../public/courses/bcom/facultyData/PrakashBhatnagarResume.pdf";
 import TarunSharma from "../../../../public/courses/bcom/facultyData/TarunSharma.webp";
 import TarunSharmaResume from "../../../../public/courses/bcom/facultyData/TarunSharmaResume.pdf";
-
 import Link from "next/link";
-
-export const images = [
-  bcom,
-  // Add more image paths as needed
+import placement3 from "../../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
 ];
 export const content = (
   <>

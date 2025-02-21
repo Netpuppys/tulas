@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
@@ -12,7 +12,7 @@ import {
   cards,
   content,
   facultyData,
-  images,
+  features,
   items,
   itemsClubs,
   sections,
@@ -24,8 +24,6 @@ import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouse
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function MBA() {
-  const parentRef = useRef(null);
-
   return (
     <>
       <head>
@@ -38,38 +36,36 @@ function MBA() {
         />
       </head>
       <body>
-        <div ref={parentRef}>
-          <Navbar />
-          <BannerProgram
-            image={BannerImg}
-            title=<>MBA</>
-            titleColor={""}
-            description={""}
-          />
-          <Program parentRef={parentRef} images={images} content={content} />
-          <CarouselProgram
-            heading={"Discover"}
-            items={items}
-            background={CrouselBackground}
-            backgroundCrousel={CrouselBackground}
-          />
-          <Vision color={true} sections={sections} />
-          <TableProgram
-            cards={cards}
-            selectedCard1={selectedCard1}
-            semesterData={semesterData}
-            facultyData={facultyData}
-          />
-          <PlacementProgram/>
-          <TopRecruiter />
-          <CarouselProgram
-            heading={"Explore More"}
-            items={itemsClubs}
-            background={exploreCrouselBackground}
-            backgroundCrousel={exploreCrouselBackground}
-          />
-          <Footer />
-        </div>
+        <Navbar />
+        <BannerProgram
+          image={BannerImg}
+          title=<>MBA</>
+          titleColor={""}
+          description={""}
+        />
+        <Program content={content} />
+        <CarouselProgram
+          heading={"Discover"}
+          items={items}
+          background={CrouselBackground}
+          backgroundCrousel={CrouselBackground}
+        />
+        <Vision color={true} sections={sections} />
+        <TableProgram
+          cards={cards}
+          selectedCard1={selectedCard1}
+          semesterData={semesterData}
+          facultyData={facultyData}
+        />
+        <PlacementProgram features={features} />
+        <TopRecruiter />
+        <CarouselProgram
+          heading={"Explore More"}
+          items={itemsClubs}
+          background={exploreCrouselBackground}
+          backgroundCrousel={exploreCrouselBackground}
+        />
+        <Footer />
       </body>
     </>
   );

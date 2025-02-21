@@ -18,6 +18,18 @@ import cardImage2 from "../../../public/courses/dpharm/cardImage2.png";
 import cardImage3 from "../../../public/courses/dpharm/cardImage3.png";
 import content1 from "../../../public/courses/dpharm/content1.webp";
 import content2 from "../../../public/courses/dpharm/content2.webp";
+import placement3 from "../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../public/Homepage/Placement/placement4.png";
+export const features = [
+  {
+    image: placement3,
+    image2: placement4,
+  },
+  {
+    image: placement3,
+    image2: placement4,
+  },
+];
 export const heading = (
   <>
     Best Pharmacy (D.Pharma) Institute in{" "}

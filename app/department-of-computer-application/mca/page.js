@@ -25,7 +25,8 @@ import globalAccredetation from "../../../public/graduate-school-of-business/mba
 import Accreditation from "@/app/Component/Accreditation";
 import Journey from "@/app/graduate-school-of-business/Component/Journey";
 import TableProgram from "@/component/Programs/tableProgram";
-
+import placement3 from "../../../public/Homepage/Placement/placement3.png";
+import placement4 from "../../../public/Homepage/Placement/placement4.png";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -34,6 +35,16 @@ const page = () => {
       behavior: "smooth", // Smooth scrolling effect
     });
   };
+    const features = [
+      {
+        image: placement3,
+        image2: placement4,
+      },
+      {
+        image: placement3,
+        image2: placement4,
+      },
+    ];
   const scrollRef = useRef(null);
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -163,7 +174,7 @@ const page = () => {
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
-          <Placement scrollRef={scrollRef} />
+          <Placement scrollRef={scrollRef} features={features} />
           {scrolled && (
             <button
               onClick={handleScrollArrow}

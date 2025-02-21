@@ -13,6 +13,7 @@ import TableProgram from "@/component/Programs/tableProgram";
 import {
   cards,
   content,
+  features,
   heading,
   hod,
   HODcontent,
@@ -26,7 +27,6 @@ import { facultyDataCSE } from "../facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 function BAJMC() {
-
   return (
     <>
       <head>
@@ -40,48 +40,36 @@ function BAJMC() {
         />
       </head>
       <body>
-          <div className="w-full h-fit">
-            <Navbar />
-          </div>
-          <BannerProgram
-            image={BannerImg}
-            title=<>COMPUTER SCIENCE & ENGINEERING (Data Science)</>
-            titleColor={""}
-            // description={
-            //   "The B.Tech in Computer Science and Engineering(Data Science) program is a four-year undergraduate degree that is focused on providing students with a strong foundation in data science."
-            // }
-          />
-          <Program content={content} heading={heading} quotes={quotes} />
-          <CarouselProgram
-            heading={"Discover"}
-            items={items}
-            background={CrouselBackground}
-            backgroundCrousel={CrouselBackground}
-          />
-          <Vision color={true} sections={sections} />
-          <TableProgram
-            cards={cards}
-            selectedCardTable={selectedCardTable}
-            facultyData={facultyDataCSE}
-            hod={hod}
-            HODcontent={HODcontent}
-          />
-          <PlacementProgram />
-          <TopRecruiter />
-          <CarouselProgram
-            heading={"Explore More"}
-            items={itemsClubs}
-            background={exploreCrouselBackground}
-            backgroundCrousel={exploreCrouselBackground}
-          />
-          {/* <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div> */}
-          <Footer />
+        <Navbar />
+        <BannerProgram
+          image={BannerImg}
+          title=<>COMPUTER SCIENCE & ENGINEERING (Data Science)</>
+          titleColor={""}
+        />
+        <Program content={content} heading={heading} quotes={quotes} />
+        <CarouselProgram
+          heading={"Discover"}
+          items={items}
+          background={CrouselBackground}
+          backgroundCrousel={CrouselBackground}
+        />
+        <Vision color={true} sections={sections} />
+        <TableProgram
+          cards={cards}
+          selectedCardTable={selectedCardTable}
+          facultyData={facultyDataCSE}
+          hod={hod}
+          HODcontent={HODcontent}
+        />
+        <PlacementProgram features={features} />
+        <TopRecruiter />
+        <CarouselProgram
+          heading={"Explore More"}
+          items={itemsClubs}
+          background={exploreCrouselBackground}
+          backgroundCrousel={exploreCrouselBackground}
+        />
+        <Footer />
       </body>
     </>
   );
