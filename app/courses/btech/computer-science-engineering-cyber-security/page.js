@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
-import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../../public/courses/btech/computer-science-engineering-data-science/bannerImg.webp";
+import contentLeft from "../../../../public/courses/btech/computer-science-engineering-data-science/contentLeft.webp"
+import contentRight from "../../../../public/courses/btech/computer-science-engineering-data-science/contentRight.webp"
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../../public/courses/bjmc/exploreCrouselBackground.png";
@@ -26,7 +28,12 @@ import {
 import { facultyDataCSE } from "../facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
-function BAJMC() {
+
+const sideImages=[
+  contentLeft, contentRight
+]
+
+function page() {
   return (
     <>
       <head>
@@ -43,11 +50,16 @@ function BAJMC() {
         <Navbar />
         <BannerProgram
           image={BannerImg}
-          title=<>COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)</>
+          title={<>COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)</>}
           titleColor={""}
           description={""}
         />
-        <Program content={content} heading={heading} quotes={quotes} />
+        <Program 
+          content={content} 
+          heading={heading} 
+          quotes={quotes}
+          sideImages={sideImages}
+        />
         <CarouselProgram
           heading={"Discover"}
           items={items}
@@ -78,4 +90,4 @@ function BAJMC() {
   );
 }
 
-export default BAJMC;
+export default page;

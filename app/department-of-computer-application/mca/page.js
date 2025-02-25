@@ -1,52 +1,58 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
-import { IoIosArrowRoundUp } from "react-icons/io";
 import Image from "next/image";
-import CampusLife from "@/app/Component/CampusLife";
-import NavbarLanding from "@/app/graduate-school-of-business/Component/NavbarLanding";
-import BannerLandingPage from "@/app/graduate-school-of-business/Component/BannerLandingPage";
-import FormLandingPage from "@/app/graduate-school-of-business/Component/FormLandingPage";
-import CarouselContent from "@/app/graduate-school-of-business/Component/CarouselContent";
-import CuttingEdge from "@/app/graduate-school-of-business/Component/CuttingEdge";
-import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
-import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
-import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
-import Placement from "@/app/graduate-school-of-business/Component/Placement";
-import { facultyData, selectedCardTable } from "@/app/courses/mca/data/data";
+import { IoIosArrowRoundUp } from "react-icons/io";
 import { UtmContext } from "@/component/utmParams";
-import mcaBannerImg from "../../../public/landingPage/mcaBannerImg.webp";
-import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
-import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
-import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
-import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
-import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
-import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
+import CampusLife from "@/app/Component/CampusLife";
 import Accreditation from "@/app/Component/Accreditation";
-import Journey from "@/app/graduate-school-of-business/Component/Journey";
 import TableProgram from "@/component/Programs/tableProgram";
+import mcaBannerImg from "../../../public/landingPage/mcaBannerImg.webp";
+import Journey from "@/app/graduate-school-of-business/Component/Journey";
 import placement3 from "../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../public/Homepage/Placement/placement4.png";
+import { facultyData, selectedCardTable } from "@/app/courses/mca/data/data";
+import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
+import Placement from "@/app/graduate-school-of-business/Component/Placement";
+import CuttingEdge from "@/app/graduate-school-of-business/Component/CuttingEdge";
+import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
+import NavbarLanding from "@/app/graduate-school-of-business/Component/NavbarLanding";
+import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
+import FormLandingPage from "@/app/graduate-school-of-business/Component/FormLandingPage";
+import CarouselContent from "@/app/graduate-school-of-business/Component/CarouselContent";
+import BannerLandingPage from "@/app/graduate-school-of-business/Component/BannerLandingPage";
+import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
+import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
+import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
+import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
+import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
+import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
+import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
+
 const page = () => {
   const { utmParams } = useContext(UtmContext);
+
   const handleScrollArrow = () => {
     window.scrollTo({
       top: 0, // Scroll to the top of the page
       behavior: "smooth", // Smooth scrolling effect
     });
   };
-    const features = [
-      {
-        image: placement3,
-        image2: placement4,
-      },
-      {
-        image: placement3,
-        image2: placement4,
-      },
-    ];
+
+  const features = [
+    {
+      image: placement3,
+      image2: placement4,
+    },
+    {
+      image: placement3,
+      image2: placement4,
+    },
+  ];
+
   const scrollRef = useRef(null);
+
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const threshold = 0.3;
@@ -66,43 +72,44 @@ const page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const journey = [
     {
       icon: comprehensiveCurriculam,
       title: "Advanced Tech Curriculum",
       description:
-        "Specialize in AI, Data Science, Cybersecurity & Software Development.",
+        "Artificial Intelligence, Data Science, Cybersecurity, and Software Development.",
     },
     {
       icon: industryReleventSkills,
-      title: "Industry-Oriented Learning",
-      description: "Gain hands-on experience in real-world tech challenges.",
+      title: "Industry-Driven Learning",
+      description: "Live case studies, industry collaborations, and problem-solving exercises.",
     },
     {
       icon: highCareerDemand,
       title: "High-Growth Career Path",
-      description: "Unlock opportunities in IT, FinTech, EdTech & more.",
+      description: "IT, FinTech, EdTech, Healthcare Tech, and other emerging technology sectors.",
     },
     {
       icon: paathwayToProfessionalCertification,
       title: "Innovation & Research",
       description:
-        "Work on live projects, coding competitions & industry collaborations.",
+        "Work on live projects, compete in coding challenges, and collaborate with industry leaders.",
     },
     {
       icon: diverseIndustryApplications,
-      title: "Cutting-Edge Facilities",
+      title: "State-of-the-Art Facilities",
       description:
-        "Access high-tech labs, cloud computing, and AI research centers.",
+        "Access high-tech labs, cloud computing resources, AI research centres and high-performance computing (HPC) environments",
     },
     {
       icon: globalAccredetation,
-      title: "Global Accreditation",
-      description: "NAAC A++, AICTE & UGC-approved program.",
+      title: "Globally Recognized Accreditation",
+      description: "NAAC A+, AICTE, and UGC-approved program.",
     },
   ];
-  const journeyQuote =
-    "Lead the Digital Revolution with an MCA from Tula’s Institute!";
+
+  const journeyQuote = "Step into the digital revolution—advance your career with Tula's Institute!";
 
   return (
     <>

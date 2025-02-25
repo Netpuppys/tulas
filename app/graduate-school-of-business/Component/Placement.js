@@ -133,7 +133,7 @@ function Placement({ scrollRef, features }) {
                 onClick={() =>
                   scrollRef.current.scrollIntoView({
                     behavior: "smooth",
-                    block: "start",
+                    block: "center",
                   })
                 }
                 className={`w-[calc(100%-32px)] md:w-[30%] mx-auto max-w-[400px] bg-[#007A83] text-[#FFFFFF] cursor-pointer py-3 rounded-[8px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.1vw,45px)]`}

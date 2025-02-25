@@ -4,6 +4,7 @@ import cuttingEdgeBackground from "../../../public/graduate-school-of-business/m
 import Image from "next/image";
 import Accreditation from "@/app/Component/Accreditation";
 import Journey from "./Journey";
+
 function CuttingEdge({
   scrollRef,
   heading,
@@ -58,7 +59,7 @@ function CuttingEdge({
             onClick={() =>
               scrollRef.current.scrollIntoView({
                 behavior: "smooth",
-                block: "start",
+                block: "center",
               })
             }
             className={`w-[calc(100%-32px)] md:w-[30%] mx-auto max-w-[400px] bg-[#007A83] text-[#FFFFFF] cursor-pointer py-3 rounded-[8px] disabled:opacity-60 disabled:cursor-not-allowed font-semibold`}

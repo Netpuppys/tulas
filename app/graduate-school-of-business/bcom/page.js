@@ -27,14 +27,17 @@ import Accreditation from "@/app/Component/Accreditation";
 import TableProgram from "@/component/Programs/tableProgram";
 import placement3 from "../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../public/Homepage/Placement/placement4.png";
+
 const page = () => {
   const { utmParams } = useContext(UtmContext);
+
   const handleScrollArrow = () => {
     window.scrollTo({
       top: 0, // Scroll to the top of the page
       behavior: "smooth", // Smooth scrolling effect
     });
   };
+
   const features = [
     {
       image: placement3,
@@ -45,8 +48,11 @@ const page = () => {
       image2: placement4,
     },
   ];
+
   const scrollRef = useRef(null);
+
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const threshold = 0.3;
@@ -66,17 +72,18 @@ const page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const journey = [
     {
       icon: comprehensiveCurriculam,
       title: "Comprehensive Curriculum",
-      description: "Covers accounting, finance, banking & corporate law.",
+      description: "Accounting, Finance, Banking, and Corporate Law.",
     },
     {
       icon: industryReleventSkills,
       title: "Industry Relevant Skills",
       description:
-        "Hands-on learning in taxation, auditing & business management.",
+        "Practical applications in taxation, auditing, financial reporting, and business management.",
     },
     {
       icon: highCareerDemand,
@@ -87,21 +94,21 @@ const page = () => {
     {
       icon: paathwayToProfessionalCertification,
       title: "Pathway to Professional Certifications",
-      description: "Strong foundation for CA, CS & CFA aspirants.",
+      description: "Chartered Accountancy (CA), Company Secretary (CS), and Chartered Financial Analyst (CFA) exams.",
     },
     {
       icon: diverseIndustryApplications,
       title: "Diverse Industry Applications",
-      description: "Ideal for roles in public & private sectors.",
+      description: "Public and private sectors, including banking institutions, multinational corporations, regulatory bodies, and financial consulting firms.",
     },
     {
       icon: globalAccredetation,
       title: "Global Accreditation",
-      description: "NAAC A++, AICTE & UGC-approved program.",
+      description: "NAAC A+, AICTE & UGC-approved program.",
     },
   ];
-  const journeyQuote =
-    "Build a Strong Foundation in Business & Finance with a B.Com (Hons.) from Tula’s Institute!";
+
+  const journeyQuote = "Build a Strong Foundation in Business & Finance with a B.Com (Hons.) from Tula's Institute!";
 
   return (
     <>

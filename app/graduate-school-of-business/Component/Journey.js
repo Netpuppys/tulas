@@ -13,7 +13,7 @@ function Journey({ heading, journey, journeyQuotes }) {
             key={index}
             className="w-full flex flex-col md:flex-row md:w-[calc(16.66%-1rem)] mb-[2%] relative"
           >
-            <div className="flex flex-col justify-between items-start w-full h-full">
+            <div className="flex flex-col justify- items-start w-full h-full">
               <div className="rounded-md px-4 font-semibold">
                 <Image
                   src={card.icon}

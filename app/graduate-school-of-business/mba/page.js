@@ -36,12 +36,14 @@ import placement3 from "../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../public/Homepage/Placement/placement4.png";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
+
   const handleScrollArrow = () => {
     window.scrollTo({
       top: 0, // Scroll to the top of the page
       behavior: "smooth", // Smooth scrolling effect
     });
   };
+
   const features = [
     {
       image: placement3,
@@ -112,25 +114,24 @@ const page = () => {
     {
       icon: comprehensiveCurriculam,
       title: "Comprehensive Business Curriculum",
-      description: "Master leadership, management, finance, marketing & more.",
+      description: "Master leadership, management, finance, marketing & strategic decision-making.",
     },
     {
       icon: industryReleventSkills,
       title: "Industry-Aligned Specializations",
-      description:
-        "Choose from Marketing, HR, Finance, Business Analytics, International Business, and more.",
+      description: "Specialized tracks in Marketing, Human Resources, Finance, Business Analytics, International Business, and other emerging fields.",
     },
     {
       icon: highCareerDemand,
       title: "Hands-on Learning",
       description:
-        "Gain real-world experience through case studies, internships & industry projects.",
+        "Case studies, industry-driven projects, live simulations, and internships.",
     },
     {
       icon: paathwayToProfessionalCertification,
       title: "Global Business Exposure",
       description:
-        " Learn from corporate leaders, participate in global seminars & industry visits.",
+        "interactions with corporate leaders, participation in global seminars, industry visits, and collaborative research initiatives.",
     },
     {
       icon: diverseIndustryApplications,
@@ -141,11 +142,11 @@ const page = () => {
     {
       icon: globalAccredetation,
       title: "Accredited & Recognized",
-      description: "NAAC A++, AICTE & UGC-approved program.",
+      description: "NAAC A+, AICTE & UGC-approved program.",
     },
   ];
   const journeyQuote =
-    "Transform Your Business Acumen with an MBA from Tula’s Institute!";
+    "Transform Your Business Acumen with an MBA from Tula's Institute!";
   return (
     <>
       <head>

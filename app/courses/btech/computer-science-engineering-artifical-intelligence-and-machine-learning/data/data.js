@@ -1,11 +1,16 @@
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
+import USP from "../../../../../public/courses/btech/usp.png";
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
-import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import DepartmentalVission from "../../../../../public/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/departmentalVision.jpg";
+import DepartmentalMission from "../../../../../public/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/departmentalMission.webp";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
 import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+import clubs from "../../../../../public/courses/bjmc/clubs.png";
+import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
+
 export const features = [
   {
     image: placement3,
@@ -90,7 +95,7 @@ export const items = [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
       "Problem Analysis : Identify, formulate, research literature, and analyze complex Engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet t h e specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
       "Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
@@ -110,7 +115,7 @@ export const items = [
       "PSO1 : Provide Industry led/sponsor Teaching Learning facilities.",
       "PSO2 : Provide ability to design and develop solution machine learning via sponsor research project.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
   },
 
   // Add other carousel items here
@@ -213,7 +218,7 @@ export const itemsClubs = [
       "IEEE Computer Society",
       "Vibgyor and Victree",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Career Prospects",
@@ -221,7 +226,7 @@ export const itemsClubs = [
       "Machine Learning Engineer: Design, develop, and implement machine learning models and algorithms for specific applications, such as image recognition, natural language processing, and recommendation systems.",
       "Data Scientist:Analyze large datasets to extract meaningful insights and trends, and use statistical and machine learning techniques to solve complex business problems.",
     ],
-    image: Course,
+    image: careerProspectus,
     points: [
       "AI Research Scientist:Engage in cutting-edge research to advance the field of artificial intelligence, contributing to the development of new algorithms, models, and technologies.",
       "Computer Vision Engineer:Develop systems that enable computers to interpret and understand visual information, often used in applications like image and video analysis, object recognition, and augmented reality.",

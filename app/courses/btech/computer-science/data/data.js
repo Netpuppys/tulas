@@ -1,9 +1,18 @@
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
+import USP from "../../../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../../../public/courses/btech/CourseOutcomes.png";
+import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../../../public/courses/btech/ProgramEducationalObjective.png";
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
+import clubs from "../../../../../public/courses/bjmc/clubs.png";
+import edge from "../../../../../public/courses/btech/civil-engineering/edge.png";
+import work from "../../../../../public/courses/btech/civil-engineering/work.png";
+import beyondCurriculum from "../../../../../public/courses/btech/civil-engineering/beyondCurriculum.png";
+import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import cseDocument from "../../../../../public/courses/btech/computer-science/CSE.pdf";
-import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
+import DepartmentalVission from "../../../../../public/courses/btech/computer-science/departmentalVision.jpg";
+import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.jpg"
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
 import CseDrishti from "../../../../../public/courses/btech/computer-science/CseDrishti.pdf";
 import CseDrishtiOctDec from "../../../../../public/courses/btech/computer-science/CseDrishtiOct-Dec.pdf";
@@ -100,7 +109,7 @@ export const items = [
         Click here to Download B.Tech Computer Science Course Outcomes
       </Link>,
     ],
-    image: Course,
+    image: CourseOutcomes,
   },
   {
     title: "Program Outcomes",
@@ -108,7 +117,7 @@ export const items = [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
       "Problem Analysis : Identify, formulate, research literature, and analyze complex Engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet t h e specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
       "Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
@@ -128,7 +137,7 @@ export const items = [
       "PSO1 : Problem Solving Approach: Apply programming paradigms, architectural patterns, algorithmic techniques, relevant applications and augmentation to solve real-world complex problems.",
       "PSO2 : Analysis and Synthesis Techniques: Demonstrate the ability to analyse current systems to understand the solution, change or optimise the solution, and synthesise solutions based on new requirements using existing infrastructure and reusable components.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
     points: [
       "PS03 : Reusability and Adaptability Skills: Assimilate, appreciate, utilize, and  promote cutting-edge technology to improve reusability, adaptability, and scalability.",
     ],
@@ -139,7 +148,7 @@ export const items = [
       "PE01:Computer Science Professional : To equip students with theoretical and applied knowledge, enabling them to solve multidisciplinary real-life problems, becoming computer engineering professionals in programming skills  for technology development, deployment, and system implementation.",
       "PE02: Entrepreneurship and Leadership : To cultivate engineering practitioners and leaders, solving industry&#39;s technological problems, demonstrating leadership skills, identifying research gaps and becoming successful entrepreneurs.",
     ],
-    image: Program,
+    image: ProgramEducationalObjective,
     points: [
       "PE03:Lifelong learning: To equip students with creative project management skills that help them become lifelong learners by means of continuing education.",
       "PE04: Social awareness and Ethics: To foster awareness and, accountability and ethics that lead towards efficient collaboration, economic growth and multidisciplinary interactions.",
@@ -525,7 +534,7 @@ export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
     description: ["Society of Computer Science and Engineering."],
-    image: USP,
+    image: clubs,
     points: [
       "IEEE  Student Chapter",
       "IEEE Computer Society",
@@ -573,7 +582,7 @@ export const itemsClubs = [
       "Students of the Department are encouraged and facilitated to raise start-ups.",
       "Students are encouraged to participate in the research activities at priority.",
     ],
-    image: Program,
+    image: edge,
   },
   {
     title: "Beyond Curriculum",
@@ -583,7 +592,7 @@ export const itemsClubs = [
       "Personality Development Programs",
       "Add on certification programs",
     ],
-    image: Program,
+    image: beyondCurriculum,
   },
   {
     title: "Innovation in Teaching & Learning",
@@ -595,7 +604,7 @@ export const itemsClubs = [
         Submit Feedback for Innovation in Teaching & Learning
       </Link>,
     ],
-    image: Program,
+    image: careerProspectus,
     points: [
       <div className="w-full max-w-full overflow-scroll">
         <table className="overflow-x-scroll w-fit border border-black text-[clamp(10px,0.7vw,20px)]">
@@ -644,7 +653,7 @@ export const itemsClubs = [
       "A computer science engineer is responsible for designing, testing, implementing, and maintaining computer hardware and software.",
       "A computer science engineer is responsible for the smooth functioning of the components of the software programming as well as the components of the hardware systems.",
     ],
-    image: Program,
+    image: careerProspectus,
     points: [
       "A computer science engineer is responsible for managing the operating systems and also looks into the design, set up and testing of networks.",
       "Some job titles are listed here:",
