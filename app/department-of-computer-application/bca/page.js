@@ -25,8 +25,14 @@ import diverseIndustryApplications from "../../../public/graduate-school-of-busi
 import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
 import Accreditation from "@/app/Component/Accreditation";
 import TableProgram from "@/component/Programs/tableProgram";
-import placement3 from "../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../public/Homepage/Placement/placement4.png";
+import anshikaPundir from "../../../public/courses/bca/anshikaPundir.png";
+import ashutosh from "../../../public/courses/bca/ashutosh.png";
+import gauravSrivastava from "../../../public/courses/bca/gauravSrivastava.png";
+import prathamNautiyal from "../../../public/courses/bca/prathamNautiyal.png";
+import rohitKotnala from "../../../public/courses/bca/rohitKotnala.png";
+import saurabhRawat from "../../../public/courses/bca/saurabhRawat.png";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
+
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -37,12 +43,16 @@ const page = () => {
   };
   const features = [
     {
-      image: placement3,
-      image2: placement4,
+      image: anshikaPundir,
+      image2: ashutosh,
     },
     {
-      image: placement3,
-      image2: placement4,
+      image: gauravSrivastava,
+      image2: prathamNautiyal,
+    },
+    {
+      image: rohitKotnala,
+      image2: saurabhRawat,
     },
   ];
   const scrollRef = useRef(null);
@@ -125,6 +135,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={7}
+              formHeading={"BCA Admissions Open 2025"}
               thankYOu={`/department-of-computer-application/bca/thank-you/${utmParams}`}
             />
           </div>
@@ -172,7 +183,10 @@ const page = () => {
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
-          <Placement scrollRef={scrollRef} features={features} />
+          <div className="pb-8 md:pb-[3%]">
+            <PlacementProgram features={features} />
+          </div>
+          <Placement scrollRef={scrollRef} />
           {scrolled && (
             <button
               onClick={handleScrollArrow}

@@ -12,7 +12,7 @@ import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 import { UtmContext } from "@/component/utmParams";
-function FormLandingPage({ course, thankYOu }) {
+function FormLandingPage({ course, thankYOu, formHeading }) {
   const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
     AuthToken: "TULAS-27-12-2023",
@@ -235,9 +235,9 @@ function FormLandingPage({ course, thankYOu }) {
         </h1> */}
         <div
           style={{ boxShadow: "0px -7px 69.127px 0px rgba(0, 0, 0, 0.25)" }}
-          className="flex pointer-events-auto bg-[#3D001B] w-[95%] md:w-full mx-auto z-30 rounded-3xl overflow-hidden"
+          className="flex pointer-events-auto bg-[#3D001B] w-[95%] md:w-full mx-auto z-30 rounded-2xl overflow-hidden"
         >
-          <div className="hidden bg-white md:flex flex-col rounded-r-3xl px-7 py-7 pb-4 max-w-[410px]">
+          <div className="hidden bg-white md:flex flex-col rounded-r-2xl px-7 py-7 pb-4 max-w-[410px]">
             <h3 className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[TTChocolatesMedium] text-[#353535]">
               Enquire Now
             </h3>
@@ -272,11 +272,11 @@ function FormLandingPage({ course, thankYOu }) {
               <Image src={tulasLogo} alt="" className="mt-4 max-w-[114px]" />
             </div>
           </div>
-          <form className="p-7 w-full" onSubmit={handleSubmit}>
-            <h3 className="md:hidden text-center text-white text-[25px] pb-7 w-full">
-              Enquire Now
+          <form className="px-7 py-7 md:py-3 w-full" onSubmit={handleSubmit}>
+            <h3 className="text-center text-white text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] pb-4 w-full">
+              {formHeading}
             </h3>
-            <div className="md:flex items-center justify-between gap-7">
+            <div className="md:flex items-center justify-between gap-3">
               <input
                 type="text"
                 placeholder="Enter Full Name*"
@@ -294,7 +294,7 @@ function FormLandingPage({ course, thankYOu }) {
                 className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF] placeholder:text-[#3D001B] placeholder:opacity-60 mb-3"
               />
             </div>
-            <div className="mb-3 flex flex-col xl:flex-row gap-3 xl:gap-7">
+            <div className="mb-3 flex flex-col xl:flex-row gap-3 xl:gap-3">
               <PhoneInput
                 ref={mobileInputRef}
                 country={"in"}
@@ -350,7 +350,7 @@ function FormLandingPage({ course, thankYOu }) {
                 {verified ? "Verified" : "Send OTP"}
               </button>
             </div>
-            <div className="flex flex-col md:flex-row gap-3 md:gap-7 mb-3">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-3 mb-3">
               <select
                 value={formData.State}
                 onChange={handleStateChange}
@@ -406,7 +406,7 @@ function FormLandingPage({ course, thankYOu }) {
               title={verified ? "" : "Please Verify Mobile Number"}
               style={{
                 boxShadow:
-                  "8.247px 13.401px 25.77px 0px rgba(255, 255, 255, 0.50)",
+                  "4.247px 4.401px 10.77px 0px rgba(255, 255, 255, 0.50)",
               }}
               className={`w-full xl:w-[40%] mx-auto bg-white text-[#007A83] cursor-pointer py-3 rounded-[3px] disabled:opacity-100 disabled:cursor-not-allowed font-semibold`}
             >

@@ -42,6 +42,7 @@ import ShambhaviRajChauhan from "../../../public/graduate-school-of-business/bba
 import SrishtiGupta from "../../../public/graduate-school-of-business/bba/SrishtiGupta.png";
 import SushantTrivedi from "../../../public/graduate-school-of-business/bba/SushantTrivedi.png";
 import UjjwalPratik from "../../../public/graduate-school-of-business/bba/UjjwalPratik.png";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -176,6 +177,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={1}
+              formHeading={"BBA Admissions Open 2025"}
               thankYOu={`/graduate-school-of-business/bba/thank-you/${utmParams}`}
             />
           </div>
@@ -212,7 +214,10 @@ const page = () => {
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
-          <Placement features={features} scrollRef={scrollRef} />
+          <div className="pb-8 md:pb-[3%]">
+            <PlacementProgram features={features} />
+          </div>
+          <Placement scrollRef={scrollRef} />
           {scrolled && (
             <button
               onClick={handleScrollArrow}

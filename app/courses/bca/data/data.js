@@ -25,16 +25,24 @@ import PayalManwalResume from "../../../../public/courses/bca/facultyData/PayalM
 import vaibhavi from "../../../../public/courses/bca/facultyData/vaibhavi.webp";
 import vaibhaviResume from "../../../../public/courses/bca/facultyData/vaibhaviResume.pdf";
 import Link from "next/link";
-import placement3 from "../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+import anshikaPundir from "../../../../public/courses/bca/anshikaPundir.png";
+import ashutosh from "../../../../public/courses/bca/ashutosh.png";
+import gauravSrivastava from "../../../../public/courses/bca/gauravSrivastava.png";
+import prathamNautiyal from "../../../../public/courses/bca/prathamNautiyal.png";
+import rohitKotnala from "../../../../public/courses/bca/rohitKotnala.png";
+import saurabhRawat from "../../../../public/courses/bca/saurabhRawat.png";
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: anshikaPundir,
+    image2: ashutosh,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: gauravSrivastava,
+    image2: prathamNautiyal,
+  },
+  {
+    image: rohitKotnala,
+    image2: saurabhRawat,
   },
 ];
 export const content = (
@@ -153,7 +161,11 @@ export const items = [
   },
   {
     title: "Course Outcomes",
-    description: [<Link href={bcaDocument} target="_blank">BCA</Link>],
+    description: [
+      <Link href={bcaDocument} target="_blank">
+        BCA
+      </Link>,
+    ],
     image: Course,
   },
   {

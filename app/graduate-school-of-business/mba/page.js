@@ -34,6 +34,9 @@ import { UtmContext } from "@/component/utmParams";
 import TableProgram from "@/component/Programs/tableProgram";
 import placement3 from "../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../public/Homepage/Placement/placement4.png";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
+import AccreditationImg from "../../../public/Homepage/Accreditation/accreditationMBA.webp";
+import AccreditationImgMobile from "../../../public/Homepage/Accreditation/accreditationMobileMBA.webp";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
 
@@ -114,12 +117,14 @@ const page = () => {
     {
       icon: comprehensiveCurriculam,
       title: "Comprehensive Business Curriculum",
-      description: "Master leadership, management, finance, marketing & strategic decision-making.",
+      description:
+        "Master leadership, management, finance, marketing & strategic decision-making.",
     },
     {
       icon: industryReleventSkills,
       title: "Industry-Aligned Specializations",
-      description: "Specialized tracks in Marketing, Human Resources, Finance, Business Analytics, International Business, and other emerging fields.",
+      description:
+        "Specialized tracks in Marketing, Human Resources, Finance, Business Analytics, International Business, and other emerging fields.",
     },
     {
       icon: highCareerDemand,
@@ -167,6 +172,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={1}
+              formHeading={"MBA Admissions Open 2025"}
               thankYOu={`/graduate-school-of-business/mba/thank-you/${utmParams}`}
             />
           </div>
@@ -180,7 +186,22 @@ const page = () => {
             journey={journey}
             journeyHeading={"Your MBA Journey at Tula’s Institute"}
             journeyQuote={journeyQuote}
+            accreditation={false}
           />
+          <div className="w-full pb-8 md:pb-[4%] bg-white sticky z-10 h-full">
+            <div className="w-full">
+              <Image
+                src={AccreditationImg}
+                alt=""
+                className="w-full hidden md:flex h-fit"
+              />
+              <Image
+                src={AccreditationImgMobile}
+                alt=""
+                className="md:hidden w-full h-fit"
+              />
+            </div>
+          </div>
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}
@@ -203,7 +224,10 @@ const page = () => {
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
-          <Placement scrollRef={scrollRef} features={features} />
+          <div className="pb-8 md:pb-[3%]">
+            <PlacementProgram features={features} />
+          </div>
+          <Placement scrollRef={scrollRef} />
           {scrolled && (
             <button
               onClick={handleScrollArrow}

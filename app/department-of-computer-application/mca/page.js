@@ -27,6 +27,7 @@ import industryReleventSkills from "../../../public/graduate-school-of-business/
 import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
 import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
 import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -83,12 +84,14 @@ const page = () => {
     {
       icon: industryReleventSkills,
       title: "Industry-Driven Learning",
-      description: "Live case studies, industry collaborations, and problem-solving exercises.",
+      description:
+        "Live case studies, industry collaborations, and problem-solving exercises.",
     },
     {
       icon: highCareerDemand,
       title: "High-Growth Career Path",
-      description: "IT, FinTech, EdTech, Healthcare Tech, and other emerging technology sectors.",
+      description:
+        "IT, FinTech, EdTech, Healthcare Tech, and other emerging technology sectors.",
     },
     {
       icon: paathwayToProfessionalCertification,
@@ -109,7 +112,8 @@ const page = () => {
     },
   ];
 
-  const journeyQuote = "Step into the digital revolution—advance your career with Tula's Institute!";
+  const journeyQuote =
+    "Step into the digital revolution—advance your career with Tula's Institute!";
 
   return (
     <>
@@ -131,6 +135,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={7}
+              formHeading={"MCA Admissions Open 2025"}
               thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`}
             />
           </div>
@@ -181,7 +186,10 @@ const page = () => {
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
-          <Placement scrollRef={scrollRef} features={features} />
+          <div className="pb-8 md:pb-[3%]">
+            <PlacementProgram features={features} />
+          </div>
+          <Placement scrollRef={scrollRef} />
           {scrolled && (
             <button
               onClick={handleScrollArrow}

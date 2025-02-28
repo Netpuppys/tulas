@@ -12,9 +12,14 @@ function CuttingEdge({
   journey,
   journeyQuote,
   journeyHeading,
+  accreditation = true,
 }) {
   return (
-    <div className="py-8 px-4 md:px-6 md:py-[4%] w-full flex flex-col justify-center items-center">
+    <div
+      className={`px-4 md:px-6 ${
+        accreditation ? "py-8 md:py-[4%]" : "pt-8 md:pt-[4%]"
+      } w-full flex flex-col justify-center items-center`}
+    >
       <Image
         src={mbaImage}
         alt=""
@@ -84,7 +89,7 @@ function CuttingEdge({
           Business.
         </h4>
       </div>
-      <Accreditation />
+      {accreditation && <Accreditation />}
     </div>
   );
 }

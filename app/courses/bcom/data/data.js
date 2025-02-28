@@ -15,16 +15,12 @@ import PrakashBhatnagarResume from "../../../../public/courses/bcom/facultyData/
 import TarunSharma from "../../../../public/courses/bcom/facultyData/TarunSharma.webp";
 import TarunSharmaResume from "../../../../public/courses/bcom/facultyData/TarunSharmaResume.pdf";
 import Link from "next/link";
-import placement3 from "../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+import rishitaPatel from "../../../../public/courses/bcom/rishitaPatel.png";
+import santosiPanwar from "../../../../public/courses/bcom/santosiPanwar.png";
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
-  },
-  {
-    image: placement3,
-    image2: placement4,
+    image: rishitaPatel,
+    image2: santosiPanwar,
   },
 ];
 export const content = (

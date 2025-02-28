@@ -25,8 +25,9 @@ import diverseIndustryApplications from "../../../public/graduate-school-of-busi
 import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
 import Accreditation from "@/app/Component/Accreditation";
 import TableProgram from "@/component/Programs/tableProgram";
-import placement3 from "../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../public/Homepage/Placement/placement4.png";
+import rishitaPatel from "../../../public/courses/bcom/rishitaPatel.png";
+import santosiPanwar from "../../../public/courses/bcom/santosiPanwar.png";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -40,12 +41,8 @@ const page = () => {
 
   const features = [
     {
-      image: placement3,
-      image2: placement4,
-    },
-    {
-      image: placement3,
-      image2: placement4,
+      image: rishitaPatel,
+      image2: santosiPanwar,
     },
   ];
 
@@ -94,12 +91,14 @@ const page = () => {
     {
       icon: paathwayToProfessionalCertification,
       title: "Pathway to Professional Certifications",
-      description: "Chartered Accountancy (CA), Company Secretary (CS), and Chartered Financial Analyst (CFA) exams.",
+      description:
+        "Chartered Accountancy (CA), Company Secretary (CS), and Chartered Financial Analyst (CFA) exams.",
     },
     {
       icon: diverseIndustryApplications,
       title: "Diverse Industry Applications",
-      description: "Public and private sectors, including banking institutions, multinational corporations, regulatory bodies, and financial consulting firms.",
+      description:
+        "Public and private sectors, including banking institutions, multinational corporations, regulatory bodies, and financial consulting firms.",
     },
     {
       icon: globalAccredetation,
@@ -108,7 +107,8 @@ const page = () => {
     },
   ];
 
-  const journeyQuote = "Build a Strong Foundation in Business & Finance with a B.Com (Hons.) from Tula's Institute!";
+  const journeyQuote =
+    "Build a Strong Foundation in Business & Finance with a B.Com (Hons.) from Tula's Institute!";
 
   return (
     <>
@@ -130,6 +130,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={1}
+              formHeading={"B.Com Admissions Open 2025"}
               thankYOu={`/graduate-school-of-business/bcom/thank-you/${utmParams}`}
             />
           </div>
@@ -177,7 +178,10 @@ const page = () => {
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
-          <Placement scrollRef={scrollRef} features={features} />
+          <div className="pb-8 md:pb-[3%]">
+            <PlacementProgram features={features} />
+          </div>
+          <Placement scrollRef={scrollRef} />
           {scrolled && (
             <button
               onClick={handleScrollArrow}

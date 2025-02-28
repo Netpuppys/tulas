@@ -39,7 +39,7 @@ function Accreditations() {
     },
   ];
   return (
-    <div className="pb-8 px-4 md:px-6 md:pb-20 flex flex-col items-center justify-center w-full">
+    <div className="px-4 md:px-6 flex flex-col items-center justify-center w-full">
       <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
         Accreditations
       </h8>

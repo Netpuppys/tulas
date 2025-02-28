@@ -27,6 +27,7 @@ import { UtmContext } from "@/component/utmParams";
 import TableProgram from "@/component/Programs/tableProgram";
 import placement3 from "../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../public/Homepage/Placement/placement4.png";
+import PlacementProgram from "@/component/Programs/PlacementProgram";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
   const handleScrollArrow = () => {
@@ -127,6 +128,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={5}
+              formHeading={"BA.JMC Admissions Open 2025"}
               thankYOu={`/department-of-mass-communication/bjmc/thank-you/${utmParams}`}
             />
           </div>
@@ -174,7 +176,10 @@ const page = () => {
           {/* Accreditations */}
           <Accreditations />
           {/* Placement */}
-          <Placement scrollRef={scrollRef} features={features} />
+          <div className="pb-8 md:pb-[3%]">
+            <PlacementProgram features={features} />
+          </div>
+          <Placement scrollRef={scrollRef} />
           {scrolled && (
             <button
               onClick={handleScrollArrow}
