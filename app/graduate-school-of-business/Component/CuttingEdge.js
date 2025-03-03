@@ -25,7 +25,9 @@ function CuttingEdge({
       <Image
         src={mbaImage}
         alt=""
-        className="w-full md:max-w-[60vw] aspect-[1.3/1] md:aspect-auto object-cover rounded-xl -z-10 mx-auto h-fit -mb-4 md:-mb-[39px]"
+        className={`w-full md:max-w-[60vw] aspect-[1.3/1] md:aspect-auto object-cover rounded-xl -z-10 mx-auto h-fit ${
+          departments ? "" : "-mb-4 md:-mb-[39px]"
+        }`}
       />
       <div className="relative w-[95%] md:w-full rounded-xl overflow-hidden z-20 h-full">
         {department && (
@@ -35,7 +37,7 @@ function CuttingEdge({
             className="w-full absolute -z-10 h-full object-cover"
           />
         )}
-        <div className="w-full h-full flex flex-col py-8 md:py-[4%] gap-8 items-center ">
+        <div className="w-full h-full flex flex-col py-8 md:py-[3%] gap-8 items-center ">
           <h8
             className={`${
               departments ? "text-[#007A83] " : "text-white"
@@ -65,14 +67,14 @@ function CuttingEdge({
             </div>
           )}
           {departments && (
-            <div className="w-full mx-auto py-8 md:py-0">
+            <div className="w-full mx-auto ">
               <CardCourses linked={false} />
             </div>
           )}
           <button
             style={{
               boxShadow:
-                "10.677px 17.349px 33.364px 0px rgba(0, 122, 131, 0.51)",
+                "5.677px 10.349px 20.364px 0px rgba(0, 122, 131, 0.51)",
             }}
             onClick={() =>
               scrollRef.current.scrollIntoView({

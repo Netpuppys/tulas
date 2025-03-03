@@ -14,15 +14,7 @@ import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/
 import campus from "../../public/graduate-school-of-business/mba/campus1.webp";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
 import { UtmContext } from "@/component/utmParams";
-import bcomBannerImg from "../../public/landingPage/bcomBannerImg.webp";
-import bcaIcon from "../../public/admissions-open/bcaIcon.png";
-import bjmcIcon from "../../public/admissions-open/bjmcIcon.png";
-import bPharmaIcon from "../../public/admissions-open/bPharmaIcon.png";
-import dPharmaIcon from "../../public/admissions-open/dPharmaIcon.png";
-import bscIcon from "../../public/admissions-open/bscIcon.png";
-import mTechIcon from "../../public/admissions-open/mTechIcon.png";
-import bTechIcon from "../../public/admissions-open/bTechIcon.png";
-import managementIcon from "../../public/admissions-open/managementIcon.png";
+import bannerImg from "../../public/Homepage/BannerHome/BannerImage2.webp";
 import comprehensiveCurriculam from "../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
 import industryReleventSkills from "../../public/graduate-school-of-business/mba/industryReleventSkills.png";
 import highCareerDemand from "../../public/graduate-school-of-business/mba/highCareerDemand.png";
@@ -283,7 +275,7 @@ const page = () => {
           <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bcomBannerImg} />
+          <BannerLandingPage bannerImg={bannerImg} />
           {/* Form */}
           <div ref={scrollRef}>
             <FormLandingPage
