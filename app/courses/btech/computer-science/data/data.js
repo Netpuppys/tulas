@@ -11,8 +11,8 @@ import beyondCurriculum from "../../../../../public/courses/btech/civil-engineer
 import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
 import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import cseDocument from "../../../../../public/courses/btech/computer-science/CSE.pdf";
-import DepartmentalVission from "../../../../../public/courses/btech/computer-science/departmentalVision.jpg";
-import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.jpg"
+import DepartmentalVission from "../../../../../public/courses/btech/computer-science/departmentalVision.JPG";
+import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.JPG"
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
 import CseDrishti from "../../../../../public/courses/btech/computer-science/CseDrishti.pdf";
 import CseDrishtiOctDec from "../../../../../public/courses/btech/computer-science/CseDrishtiOct-Dec.pdf";

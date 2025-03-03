@@ -21,7 +21,7 @@ import icon4 from "../../public/admissions/icon4.png";
 import icon5 from "../../public/admissions/icon5.png";
 import icon6 from "../../public/admissions/icon6.png";
 import icon7 from "../../public/admissions/icon7.png";
-import rankingsBanner from "../../public/admissions/rankingsBanner.png";
+import rankingsBanner from "../../public/Homepage/Accreditation/accreditation.webp";
 import lifeAtTulas from "../../public/admissions/lifeAtTulas.png";
 import placement1 from "../../public/admissions/placements/placement1.png";
 import placement2 from "../../public/admissions/placements/placement2.png";
@@ -30,7 +30,7 @@ import placement4 from "../../public/admissions/placements/placement4.png";
 import placement5 from "../../public/admissions/placements/placement5.png";
 import placement6 from "../../public/admissions/placements/placement6.png";
 import backgroundImage from "../../public/bsc-agriculture/background.png";
-import RecordMobile from "../../public/Homepage/Accreditation/RecordMobile.png";
+import RecordMobile from "../../public/Homepage/Accreditation/accreditationMobile.webp";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
@@ -251,8 +251,8 @@ const page = () => {
           </div>
 
           {/* banner text */}
-          <div className="w-full bg-white pt-12 pb-24 px-4 md:px-0 flex items-center justify-center">
-            <div className="text-left max-w-[45rem]">
+          <div className="w-full bg-white pt-12 pb-14 px-4 md:px-0 flex items-center justify-center">
+            <div className="text-left max-w-[50rem]">
               <p className="text-[#760135] text-4xl pb-4 font-medium font-[CarotSlab]">
                 ABOUT TULA'S
               </p>
@@ -509,21 +509,21 @@ const page = () => {
             />
 
             {/* mobile */}
-            <div className="flex md:hidden flex-col md:flex-row py-4 md:pt-[8rem] gap-4 self-center md:pl-16 w-full items-center">
+            {/* <div className="flex md:hidden flex-col md:flex-row py-4 md:pt-[8rem] gap-4 self-center md:pl-16 w-full items-center">
               <div className="flex items-center gap-4">
                 <div className="w-[4rem] h-[1px] bg-[#E69706]"></div>
                 <h4 className="text-white text-[30px] md:text-[60px] w-fit font-[Oswald] right-0 tracking-[3px] leading-normal md:leading-[74px]">
                   RECORD BREAKING PLACEMENTS
                 </h4>
               </div>
-            </div>
+            </div> */}
             <Image
               src={RecordMobile}
               alt=""
-              className="block md:hidden w-full h-fit"
+              className="block md:hidden mt-8 w-full h-fit"
             />
 
-            <div className="md:pb-10 mt-10 md:mt-32 w-full flex items-center justify-center md:px-20 relative">
+            <div className="mt-8 md:mt-[4%] w-full flex items-center justify-center md:px-20 relative">
               {/* desktop */}
               <div className="hidden md:flex w-full max-w-[70rem] items-center justify-center gap-10">
                 <button className="prev-btn border-2 absolute top-1/2 -translate-y-1/2 left-20 border-white rounded-full w-16 aspect-square bg-transparent text-white hover:text-[#007A83] hover:bg-white text-3xl flex items-center justify-center">
@@ -619,7 +619,7 @@ const page = () => {
               Life At TULA's
             </p>
             <div className="w-80 h-[3px] bg-[#3D001B] rounded-full"></div>
-            <div className="w-full mt-8 md:mt-12 h-[40rem] flex items-center justify-center overflow-hidden">
+            <div className="w-full mt-8 md:mt-12 md:h-[40rem] flex items-center justify-center overflow-hidden">
               <Image
                 src={lifeAtTulas}
                 className="w-full object-cover h-60 md:h-fit"
