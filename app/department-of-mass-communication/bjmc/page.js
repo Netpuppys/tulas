@@ -174,7 +174,7 @@ const page = () => {
             <FacultyDataLandingPage facultyData={facultyData} />
           </div>
           {/* Accreditations */}
-          <Accreditations />
+          {/* <Accreditations /> */}
           {/* Placement */}
           <div className="pb-8 md:pb-[3%]">
             <PlacementProgram features={features} />

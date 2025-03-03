@@ -11,7 +11,7 @@ import CarouselContent from "@/app/graduate-school-of-business/Component/Carouse
 import CuttingEdge from "@/app/graduate-school-of-business/Component/CuttingEdge";
 import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
 import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
-import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
+import campus from "../../public/graduate-school-of-business/mba/campus1.webp";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
 import { UtmContext } from "@/component/utmParams";
 import bcomBannerImg from "../../public/landingPage/bcomBannerImg.webp";
@@ -55,6 +55,7 @@ import rohitKotnala from "../../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../../public/courses/bca/saurabhRawat.png";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
+import { useInView } from "react-intersection-observer";
 
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -140,80 +141,132 @@ const page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const department = [
+  const departments = [
     {
-      title: "Management",
-      icon: managementIcon,
+      title: "B.Tech",
+      description:
+        "Bachelor of Technology program aims to give students practical experience in a range of engineering fields as well as a solid technical foundation. Cyber Security, Data Science, Electronics & Communication Engineering (ECE), Electrical & Electronics Engineering (EEE), Mechanical Engineering (ME), Artificial Intelligence & Machine Learning (AI&ML), Civil Engineering, and Computer Science & Engineering (CSE) are among the specialisations available in the program. ",
     },
     {
-      title: "Agriculture",
-      icon: bscIcon,
+      title: "M.Tech",
+      description:
+        "A specialised postgraduate degree that enhances technical proficiency and research abilities is the Master of Technology program. Tula's Institute gives students a competitive edge in research, industry applications, and technological developments through its M.Tech specialisations in Computer Science & Engineering, Thermal Engineering, and Civil Engineering.",
     },
     {
-      title: "Engineering",
-      icon: bTechIcon,
+      title: "B.Com (Hons)",
+      description:
+        "This degree prepares students for professions in banking, taxes, and corporate sectors by giving them a thorough understanding of commerce, finance, and business management. It develops the strategic and analytical thinking abilities necessary for the changing financial environment.",
     },
     {
-      title: "Mass Communication",
-      icon: bjmcIcon,
+      title: "MBA",
+      description:
+        "This is a dynamic program that gives students superior leadership capabilities, strategic decision-making talents, and business acumen. Career progression and industry relevance are guaranteed by specialisations in marketing, finance, human resources, and information technology.",
     },
     {
-      title: "Computer Application",
-      icon: bcaIcon,
-    },
-
-    {
-      title: "B.Pharma",
-      icon: bPharmaIcon,
+      title: "BBA",
+      description:
+        "Designed for aspiring business leaders, the BBA program focuses on management principles, entrepreneurship, and leadership skills, offering a strong foundation for corporate roles or future MBA pursuits.",
     },
     {
-      title: "D.Pharma",
-      icon: dPharmaIcon,
+      title: "B.Sc Agriculture",
+      description:
+        "Agronomy, horticulture, soil science, and agricultural economics are all covered in the multidisciplinary B.Sc. Agriculture degree. Students are prepared for jobs in agricultural research, agribusiness, and sustainable farming.",
     },
     {
-      title: "Engineering (PG)",
-      icon: mTechIcon,
+      title: "BA (Hons) JMC",
+      description:
+        "A comprehensive program that blends journalism, digital media, and public relations, preparing students for careers in media houses, content creation, and corporate communication.",
+    },
+    {
+      title: "BCA",
+      description:
+        "A technology-driven course focusing on programming, web development, and database management, preparing students for careers in software development and IT industries.",
+    },
+    {
+      title: "MCA",
+      description:
+        "A postgraduate degree that honed skills in cloud computing, AI, advanced computing, and cybersecurity, leading to high-level IT positions.",
+    },
+    {
+      title: "B. Pharma",
+      description:
+        "This curriculum prepares students for employment in pharmacy, research, and healthcare management by giving them a thorough understanding of pharmaceuticals, drug development, and healthcare. ",
+    },
+    {
+      title: "D. Pharma",
+      description:
+        "This program focuses on pharmaceutical sciences, medical ethics, and clinical practices, ideal for those looking to enter the healthcare sector quickly.",
     },
   ];
 
   const journey = [
     {
       icon: comprehensiveCurriculam,
-      title: "Comprehensive Curriculum",
-      description: "Accounting, Finance, Banking, and Corporate Law.",
+      title: "Global Curriculum",
+      description:
+        "Stay ahead with our globally aligned curriculum that integrates the latest industry trends, technology, and practical applications.",
     },
     {
       icon: industryReleventSkills,
-      title: "Industry Relevant Skills",
+      title: "Market Skills",
       description:
-        "Practical applications in taxation, auditing, financial reporting, and business management.",
+        "Gain market-relevant skills through hands-on training, industry collaborations, and real-world problem-solving.",
     },
     {
       icon: highCareerDemand,
-      title: "High Career Demand",
+      title: "100% Placement Assistance",
       description:
-        "Prepares for careers in corporate finance, banking & commerce.",
+        "With thorough training and knowledgeable direction, our Career Innovation Centre (CIC) guarantees worldwide placement chances with leading MNCs.",
     },
     {
       icon: paathwayToProfessionalCertification,
-      title: "Pathway to Professional Certifications",
+      title: "Soft Skills Development",
       description:
-        "Chartered Accountancy (CA), Company Secretary (CS), and Chartered Financial Analyst (CFA) exams.",
+        "Build confidence, leadership, and communication skills essential for success in today’s competitive world.",
     },
     {
       icon: diverseIndustryApplications,
-      title: "Diverse Industry Applications",
+      title: "Campus Life",
       description:
-        "Public and private sectors, including banking institutions, multinational corporations, regulatory bodies, and financial consulting firms.",
+        "Take in a lively campus that perfectly balances extracurricular activities, academics, and a vibrant student body.",
     },
     {
       icon: globalAccredetation,
-      title: "Global Accreditation",
-      description: "NAAC A+, AICTE & UGC-approved program.",
+      title: "Entrepreneurship Development",
+      description:
+        "Turn ideas into reality with startup support, expert mentorship, and incubation programs at Tula’s Institute.",
     },
   ];
 
   const journeyQuote = "Build a Strong Foundation from Tula's Institute!";
+
+  const sections = [
+    {
+      title: "About Tula's",
+      description: (
+        <>
+          Tula’s Institute, founded in 2006 under the Rishabh Educational Trust,
+          is a premier hub for education in Dehradun. We are dedicated to
+          developing future leaders. From engineers, journalists to tech gurus,
+          we have all the courses you are looking for. We focus on providing a
+          strong academic foundation while emphasizing critical thinking,
+          strategic decision-making, and real-world skills, which are essential
+          for success in today’s competitive world. Our approach is simple, we
+          do not prepare you just for the industry, but for life.
+          <div className="mt-4 md:mt-[1%]"></div>
+          At Tula’s, we prepare students to navigate complex challenges, drive
+          innovation, and lead with confidence. All thanks to our hands-on
+          approach to learning which ensures that students are not only equipped
+          with theoretical knowledge but also practical experience. Tula’s
+          Institute Dehradun bridges the gap between the current job market and
+          the skill they look for in modern candidates. Ensure you get your
+          overall development at Tula’s Institute Dehradun. Get inspired, get
+          equipped, get started with Tula’s today!
+        </>
+      ),
+      image: campus,
+    },
+  ];
 
   return (
     <>
@@ -241,15 +294,59 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
+          <div className="py-8 md:py-[4%] bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
+            {sections.map((section, index) => {
+              const { ref, inView } = useInView({
+                triggerOnce: true,
+                threshold: 0.3,
+              });
+              return (
+                <div
+                  ref={ref}
+                  key={index}
+                  className={`flex flex-col gap-8 md:gap-0 md:flex-row md:mb-[4%] last:mb-0 justify-between w-full md:w-[95%] h-fit items-center md:ml-[5%]`}
+                >
+                  <div className="w-full md:px-0 md:w-[47%]">
+                    <div className="w-full block">
+                      <h3
+                        className={`
+                      text-[#007A83] px-4 text-center font-[GoudyCatalogue] md:text-start rounded-md font-semibold text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)]`}
+                      >
+                        {section.title}
+                      </h3>
+                      <h5
+                        className={`text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] text-[#4E4E4E]`}
+                      >
+                        {section.description}
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="w-full md:w-[47%]">
+                    {section.image && (
+                      <Image
+                        src={section.image}
+                        alt=""
+                        className={`w-full h-fit  ${
+                          inView
+                            ? "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-s-3xl"
+                            : "rounded-xl md:opacity-0"
+                        }`}
+                      />
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <CarouselContent section={false} />
           {/* Cutting Edge */}
           <CuttingEdge
             scrollRef={scrollRef}
             heading={"Courses we Offered"}
-            department={department}
+            departments={departments}
             journeyHeading={"Your Journey at Tula’s Institute"}
             journey={journey}
-            journeyQuotes={journeyQuote}
+            journeyQuote={journeyQuote}
           />
 
           {/* Why Choose Tulas */}
@@ -271,7 +368,7 @@ const page = () => {
             <FacultyDataLandingPage facultyData={facultyDataCSE} />
           </div>
           {/* Accreditations */}
-          <Accreditations />
+          {/* <Accreditations /> */}
           {/* Placement */}
           <div className="pb-8 md:pb-[3%]">
             <PlacementProgram features={features} />

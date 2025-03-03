@@ -6,10 +6,9 @@ import MassCoummunication from "../../public/Homepage/Courses/MassCommunication.
 import computerApplication from "../../public/Homepage/Courses/ComputerApplication.png";
 import Pharmacy from "../../public/Homepage/Courses/Pharmacy.png";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 import { UtmContext } from "@/component/utmParams";
-function CardCourses() {
+function CardCourses({ linked = true }) {
   const cardsCourses = [
     {
       src: Engineering,
@@ -268,19 +267,38 @@ function CardCourses() {
                   key={degreeIndex}
                   className="md:hidden slide-in text-white w-fit text-left"
                 >
-                  <Link
-                    href={`${degree.link}/${utmParams}`}
-                    className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] leading-tight tracking-tight text-2xl"
-                  >
-                    {degree.name}
-                  </Link>
-                  {degree.branches.map((branches, branchesIndex) => (
-                    <Link
-                      href={`${branches.linkTo}/${utmParams}`}
-                      key={branchesIndex}
+                  {!linked && (
+                    <div
+                      // href={`${degree.link}/${utmParams}`}
+                      className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] leading-tight tracking-tight text-2xl"
                     >
-                      <h3 className="text-xs mt-[2px]">{branches.name}</h3>
+                      {degree.name}
+                    </div>
+                  )}
+                  {linked && (
+                    <Link
+                      href={`${degree.link}/${utmParams}`}
+                      className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] leading-tight tracking-tight text-2xl"
+                    >
+                      {degree.name}
                     </Link>
+                  )}
+                  {degree.branches.map((branches, branchesIndex) => (
+                    <div>
+                      {!linked && (
+                        <div key={branchesIndex}>
+                          <h3 className="text-xs mt-[2px]">{branches.name}</h3>
+                        </div>
+                      )}
+                      {linked && (
+                        <Link
+                          href={`${branches.linkTo}/${utmParams}`}
+                          key={branchesIndex}
+                        >
+                          <h3 className="text-xs mt-[2px]">{branches.name}</h3>
+                        </Link>
+                      )}
+                    </div>
                   ))}
                 </div>
               ))}

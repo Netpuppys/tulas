@@ -4,12 +4,14 @@ import cuttingEdgeBackground from "../../../public/graduate-school-of-business/m
 import Image from "next/image";
 import Accreditation from "@/app/Component/Accreditation";
 import Journey from "./Journey";
+import CardCourses from "@/app/Component/CardCourses";
 
 function CuttingEdge({
   scrollRef,
   heading,
   department,
   journey,
+  departments,
   journeyQuote,
   journeyHeading,
   accreditation = true,
@@ -26,13 +28,19 @@ function CuttingEdge({
         className="w-full md:max-w-[60vw] aspect-[1.3/1] md:aspect-auto object-cover rounded-xl -z-10 mx-auto h-fit -mb-4 md:-mb-[39px]"
       />
       <div className="relative w-[95%] md:w-full rounded-xl overflow-hidden z-20 h-full">
-        <Image
-          src={cuttingEdgeBackground}
-          alt=""
-          className="w-full absolute -z-10 h-full object-cover"
-        />
+        {department && (
+          <Image
+            src={cuttingEdgeBackground}
+            alt=""
+            className="w-full absolute -z-10 h-full object-cover"
+          />
+        )}
         <div className="w-full h-full flex flex-col py-8 md:py-[4%] gap-8 items-center ">
-          <h8 className="text-white px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+          <h8
+            className={`${
+              departments ? "text-[#007A83] " : "text-white"
+            } px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold`}
+          >
             {heading}
           </h8>
           {department && (
@@ -56,6 +64,11 @@ function CuttingEdge({
               ))}
             </div>
           )}
+          {departments && (
+            <div className="w-full mx-auto py-8 md:py-0">
+              <CardCourses linked={false} />
+            </div>
+          )}
           <button
             style={{
               boxShadow:
@@ -73,7 +86,7 @@ function CuttingEdge({
           </button>
         </div>
       </div>
-      <div className="pt-8 md:pt-[4%]"></div>
+      {!departments && <div className="pt-8 md:pt-[4%]"></div>}
       <Journey
         heading={journeyHeading}
         journey={journey}
