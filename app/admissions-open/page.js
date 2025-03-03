@@ -227,7 +227,7 @@ const page = () => {
       <body>
         <div className="w-full min-h-screen h-full relative">
           {/* Navbar */}
-          <NavbarLanding handleScrollArrow={handleScrollArrow} />
+          <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
           <BannerLandingPage bannerImg={bcomBannerImg} />
