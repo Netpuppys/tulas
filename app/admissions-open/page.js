@@ -13,10 +13,16 @@ import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
 import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
 import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
-import { facultyData, selectedCard1 } from "@/app/courses/bcom/data/data";
 import { UtmContext } from "@/component/utmParams";
 import bcomBannerImg from "../../public/landingPage/bcomBannerImg.webp";
-import Journey from "../graduate-school-of-business/Component/Journey";
+import marketingIcon from "../../public/graduate-school-of-business/mba/marketingIcon.png";
+import finance from "../../public/graduate-school-of-business/mba/finance.png";
+import entreprenurship from "../../public/graduate-school-of-business/mba/entreprenurship.png";
+import BusinessAnalytics from "../../public/graduate-school-of-business/mba/BusinessAnalytics.png";
+import HumanResource from "../../public/graduate-school-of-business/mba/HumanResource.png";
+import InternationalBusiness from "../../public/graduate-school-of-business/mba/InternationalBusiness.png";
+import AgriBusiness from "../../public/graduate-school-of-business/mba/AgriBusiness.png";
+import healthCare from "../../public/graduate-school-of-business/mba/healthCare.png";
 import comprehensiveCurriculam from "../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
 import industryReleventSkills from "../../public/graduate-school-of-business/mba/industryReleventSkills.png";
 import highCareerDemand from "../../public/graduate-school-of-business/mba/highCareerDemand.png";
@@ -24,10 +30,10 @@ import paathwayToProfessionalCertification from "../../public/graduate-school-of
 import diverseIndustryApplications from "../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
 import globalAccredetation from "../../public/graduate-school-of-business/mba/globalAccredetation.png";
 import Accreditation from "@/app/Component/Accreditation";
-import TableProgram from "@/component/Programs/tableProgram";
 import rishitaPatel from "../../public/courses/bcom/rishitaPatel.png";
 import santosiPanwar from "../../public/courses/bcom/santosiPanwar.png";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
 
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -69,6 +75,41 @@ const page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const department = [
+    {
+      title: "Management",
+      icon: finance,
+    },
+    {
+      title: "Agriculture",
+      icon: marketingIcon,
+    },
+    {
+      title: "Engineering",
+      icon: HumanResource,
+    },
+    {
+      title: "Mass Communication",
+      icon: entreprenurship,
+    },
+    {
+      title: "Computer Application",
+      icon: BusinessAnalytics,
+    },
+
+    {
+      title: "B.Pharma",
+      icon: InternationalBusiness,
+    },
+    {
+      title: "D.Pharma",
+      icon: AgriBusiness,
+    },
+    {
+      title: "Engineering (PG)",
+      icon: healthCare,
+    },
+  ];
 
   const journey = [
     {
@@ -107,8 +148,7 @@ const page = () => {
     },
   ];
 
-  const journeyQuote =
-    "Build a Strong Foundation from Tula's Institute!";
+  const journeyQuote = "Build a Strong Foundation from Tula's Institute!";
 
   return (
     <>
@@ -138,15 +178,17 @@ const page = () => {
           {/* Content One */}
           <CarouselContent />
           {/* Cutting Edge */}
-          {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s B.Com"} /> */}
-          <div className="pt-8 md:pt-[4%]"></div>
-          <Journey
-            heading={"Your Journey at Tula’s Institute"}
+          <CuttingEdge
+            scrollRef={scrollRef}
+            heading={"Courses we Offered"}
+            department={department}
+            journeyHeading={"Your Journey at Tula’s Institute"}
             journey={journey}
             journeyQuotes={journeyQuote}
           />
-          {/* <TableProgram selectedCard1={selectedCard1} /> */}
-          <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
+          {/* <div className="pt-8 md:pt-[4%]"></div> */}
+          {/* <Journey /> */}
+          {/* <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Recruiters
             </h8>
@@ -156,7 +198,7 @@ const page = () => {
               of Business.
             </h4>
           </div>
-          <Accreditation />
+          <Accreditation /> */}
           <div className="pt-8 md:pt-[4%]"></div>
           {/* Why Choose Tulas */}
           <WhyChoose />
@@ -174,7 +216,7 @@ const page = () => {
             </h4>
           </div>
           <div className="pb-8 md:pb-[4%] px-4 w-full">
-            <FacultyDataLandingPage facultyData={facultyData} />
+            <FacultyDataLandingPage facultyData={facultyDataCSE} />
           </div>
           {/* Accreditations */}
           <Accreditations />
