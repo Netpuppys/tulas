@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import mbaBackground from "../../../public/graduate-school-of-business/mba/mbaBackground.png";
-import placementInternship from "../../../public/graduate-school-of-business/mba/placementInternship.png";
+import placementInternship from "../../../public/graduate-school-of-business/mba/placementInternship.webp";
 
 function Placement({ scrollRef }) {
   const swiperRef = useRef();

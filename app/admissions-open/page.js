@@ -15,23 +15,44 @@ import Accreditations from "@/app/graduate-school-of-business/Component/Accredit
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
 import { UtmContext } from "@/component/utmParams";
 import bcomBannerImg from "../../public/landingPage/bcomBannerImg.webp";
-import marketingIcon from "../../public/graduate-school-of-business/mba/marketingIcon.png";
-import finance from "../../public/graduate-school-of-business/mba/finance.png";
-import entreprenurship from "../../public/graduate-school-of-business/mba/entreprenurship.png";
-import BusinessAnalytics from "../../public/graduate-school-of-business/mba/BusinessAnalytics.png";
-import HumanResource from "../../public/graduate-school-of-business/mba/HumanResource.png";
-import InternationalBusiness from "../../public/graduate-school-of-business/mba/InternationalBusiness.png";
-import AgriBusiness from "../../public/graduate-school-of-business/mba/AgriBusiness.png";
-import healthCare from "../../public/graduate-school-of-business/mba/healthCare.png";
+import bcaIcon from "../../public/admissions-open/bcaIcon.png";
+import bjmcIcon from "../../public/admissions-open/bjmcIcon.png";
+import bPharmaIcon from "../../public/admissions-open/bPharmaIcon.png";
+import dPharmaIcon from "../../public/admissions-open/dPharmaIcon.png";
+import bscIcon from "../../public/admissions-open/bscIcon.png";
+import mTechIcon from "../../public/admissions-open/mTechIcon.png";
+import bTechIcon from "../../public/admissions-open/bTechIcon.png";
+import managementIcon from "../../public/admissions-open/managementIcon.png";
 import comprehensiveCurriculam from "../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
 import industryReleventSkills from "../../public/graduate-school-of-business/mba/industryReleventSkills.png";
 import highCareerDemand from "../../public/graduate-school-of-business/mba/highCareerDemand.png";
 import paathwayToProfessionalCertification from "../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
 import diverseIndustryApplications from "../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
 import globalAccredetation from "../../public/graduate-school-of-business/mba/globalAccredetation.png";
-import Accreditation from "@/app/Component/Accreditation";
+import AbhishekPandy from "../../public/graduate-school-of-business/bba/AbhishekPandy.png";
+import AdilAhmed from "../../public/graduate-school-of-business/bba/AdilAhmed.png";
+import AdityaPandey from "../../public/graduate-school-of-business/bba/AdityaPandey.png";
+import DivyaShankar from "../../public/graduate-school-of-business/bba/DivyaShankar.png";
+import GautamSinghChauhan from "../../public/graduate-school-of-business/bba/GautamSinghChauhan.png";
+import JasmineBatham from "../../public/graduate-school-of-business/bba/JasmineBatham.png";
+import KumariPriya from "../../public/graduate-school-of-business/bba/KumariPriya.png";
+import NainseeSingh from "../../public/graduate-school-of-business/bba/NainseeSingh.png";
+import PriyankaDhiman from "../../public/graduate-school-of-business/bba/PriyankaDhiman.png";
+import RahulBauri from "../../public/graduate-school-of-business/bba/RahulBauri.png";
+import RajniMondi from "../../public/graduate-school-of-business/bba/RajniMondi.png";
+import RomaKumari from "../../public/graduate-school-of-business/bba/RomaKumari.png";
+import ShambhaviRajChauhan from "../../public/graduate-school-of-business/bba/ShambhaviRajChauhan.png";
+import SrishtiGupta from "../../public/graduate-school-of-business/bba/SrishtiGupta.png";
+import SushantTrivedi from "../../public/graduate-school-of-business/bba/SushantTrivedi.png";
+import UjjwalPratik from "../../public/graduate-school-of-business/bba/UjjwalPratik.png";
 import rishitaPatel from "../../public/courses/bcom/rishitaPatel.png";
 import santosiPanwar from "../../public/courses/bcom/santosiPanwar.png";
+import anshikaPundir from "../../public/courses/bca/anshikaPundir.png";
+import ashutosh from "../../public/courses/bca/ashutosh.png";
+import gauravSrivastava from "../../public/courses/bca/gauravSrivastava.png";
+import prathamNautiyal from "../../public/courses/bca/prathamNautiyal.png";
+import rohitKotnala from "../../public/courses/bca/rohitKotnala.png";
+import saurabhRawat from "../../public/courses/bca/saurabhRawat.png";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
 
@@ -47,8 +68,52 @@ const page = () => {
 
   const features = [
     {
+      image: AbhishekPandy,
+      image2: AdilAhmed,
+    },
+    {
+      image: AdityaPandey,
+      image2: DivyaShankar,
+    },
+    {
+      image: GautamSinghChauhan,
+      image2: JasmineBatham,
+    },
+    {
+      image: KumariPriya,
+      image2: NainseeSingh,
+    },
+    {
+      image: PriyankaDhiman,
+      image2: RahulBauri,
+    },
+    {
+      image: RajniMondi,
+      image2: RomaKumari,
+    },
+    {
+      image: ShambhaviRajChauhan,
+      image2: SrishtiGupta,
+    },
+    {
+      image: SushantTrivedi,
+      image2: UjjwalPratik,
+    },
+    {
       image: rishitaPatel,
       image2: santosiPanwar,
+    },
+    {
+      image: anshikaPundir,
+      image2: ashutosh,
+    },
+    {
+      image: gauravSrivastava,
+      image2: prathamNautiyal,
+    },
+    {
+      image: rohitKotnala,
+      image2: saurabhRawat,
     },
   ];
 
@@ -78,36 +143,36 @@ const page = () => {
   const department = [
     {
       title: "Management",
-      icon: finance,
+      icon: managementIcon,
     },
     {
       title: "Agriculture",
-      icon: marketingIcon,
+      icon: bscIcon,
     },
     {
       title: "Engineering",
-      icon: HumanResource,
+      icon: bTechIcon,
     },
     {
       title: "Mass Communication",
-      icon: entreprenurship,
+      icon: bjmcIcon,
     },
     {
       title: "Computer Application",
-      icon: BusinessAnalytics,
+      icon: bcaIcon,
     },
 
     {
       title: "B.Pharma",
-      icon: InternationalBusiness,
+      icon: bPharmaIcon,
     },
     {
       title: "D.Pharma",
-      icon: AgriBusiness,
+      icon: dPharmaIcon,
     },
     {
       title: "Engineering (PG)",
-      icon: healthCare,
+      icon: mTechIcon,
     },
   ];
 
@@ -186,20 +251,7 @@ const page = () => {
             journey={journey}
             journeyQuotes={journeyQuote}
           />
-          {/* <div className="pt-8 md:pt-[4%]"></div> */}
-          {/* <Journey /> */}
-          {/* <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
-            <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
-              Our Recruiters
-            </h8>
-            <h4 className="px-8 text-center w-full font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
-              Give your career a boost with lucrative national & international
-              internship and placement opportunities at Tula's Graduate School
-              of Business.
-            </h4>
-          </div>
-          <Accreditation /> */}
-          <div className="pt-8 md:pt-[4%]"></div>
+
           {/* Why Choose Tulas */}
           <WhyChoose />
           {/* At a glance */}

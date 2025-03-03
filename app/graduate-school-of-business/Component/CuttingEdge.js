@@ -79,7 +79,7 @@ function CuttingEdge({
         journey={journey}
         journeyQuotes={journeyQuote}
       />
-      <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
+      <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[3%] md:pb-[2%] gap-4 items-center ">
         <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
           Our Recruiters
         </h8>

@@ -107,7 +107,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
           (window.location.href =
             "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
         }
-        className="fixed bottom-[8vw] pointer-events-auto flex justify-center items-center right-4 md:bottom-[2.5vw] md:right-[2.5vw] text-[#25D366] z-50 w-16 md:w-[74px] bg-white aspect-square rounded-full"
+        className="fixed bottom-[8vw] pointer-events-auto flex justify-center items-center right-4 md:bottom-[2.5vw] md:right-[2.5vw] text-[#25D366] z-50 w-16 md:w-[74px] bg-white aspect-square shadow-2xl rounded-full"
       >
         <FaWhatsapp className="w-[40px] h-[40px] md:w-[50px] md:h-[50px]" />
       </button>
