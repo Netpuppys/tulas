@@ -2,10 +2,11 @@
 
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import bannerImage from "../../public/About/whyTulasBanner.png";
 import Footer from "@/component/Footer";
 import formBackground from "../../public/grievance/formbackground.jpg";
+import career from "../../public/career.jpg";
 import Image from "next/image";
 import { ThreeDots } from "react-loader-spinner";
 import emailjs from "@emailjs/browser";
@@ -141,10 +142,10 @@ const CareersForm = () => {
     <form
       ref={formRef}
       onSubmit={handleSubmit}
-      className="w-full max-w-[60rem] flex flex-col gap-[1.75rem]"
+      className="w-full flex flex-col gap-[1.75rem]"
     >
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[1.75rem] md:gap-16">
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Full Name</label>
           <input
             name="name"
@@ -156,7 +157,7 @@ const CareersForm = () => {
             onChange={(e) => handleChange("name", e.target.value)}
           />
         </div>
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Date of Birth</label>
           <input
             name="date"
@@ -174,8 +175,8 @@ const CareersForm = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[1.75rem] md:gap-16">
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Select Gender</label>
           <select
             name="gender"
@@ -194,7 +195,7 @@ const CareersForm = () => {
             <option value="Female">Female</option>
           </select>
         </div>
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Nationality</label>
           <input
             name="nationality"
@@ -207,8 +208,8 @@ const CareersForm = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[1.75rem] md:gap-16">
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Marital Status</label>
           <input
             name="maritalStatus"
@@ -220,7 +221,7 @@ const CareersForm = () => {
             onChange={(e) => handleChange("maritalStatus", e.target.value)}
           />
         </div>
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Contact Number</label>
           <input
             name="phoneNumber"
@@ -233,8 +234,8 @@ const CareersForm = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[1.75rem] md:gap-16">
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Email</label>
           <input
             name="email"
@@ -246,7 +247,7 @@ const CareersForm = () => {
             onChange={(e) => handleChange("email", e.target.value)}
           />
         </div>
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Address</label>
           <input
             name="address"
@@ -259,8 +260,8 @@ const CareersForm = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[1.75rem] md:gap-16">
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Select Position</label>
           <select
             name="position"
@@ -280,7 +281,7 @@ const CareersForm = () => {
           </select>
         </div>
 
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Department</label>
           <select
             name="department"
@@ -311,8 +312,8 @@ const CareersForm = () => {
           </select>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[1.75rem] md:gap-16">
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Post Applied for</label>
           <select
             name="post"
@@ -333,7 +334,7 @@ const CareersForm = () => {
           </select>
         </div>
 
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Qualification (Highest Only)</label>
           <input
             name="qualification"
@@ -346,8 +347,8 @@ const CareersForm = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[1.75rem] md:gap-16">
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Education Qualification</label>
           <input
             name="education"
@@ -360,7 +361,7 @@ const CareersForm = () => {
           />
         </div>
 
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Experience in Teaching</label>
           <input
             name="experience"
@@ -374,8 +375,8 @@ const CareersForm = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-[1.75rem] md:gap-16">
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Experience in Industry</label>
           <input
             name="experienceIndustry"
@@ -389,7 +390,7 @@ const CareersForm = () => {
           />
         </div>
 
-        <div className="w-full md:w-[calc(50%-2rem)] flex flex-col">
+        <div className="w-full md:w-[calc(50%-1.25rem)] flex flex-col">
           <label>Publications (if any)</label>
           <input
             name="publications"
@@ -402,7 +403,7 @@ const CareersForm = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row md:items-center justify-between gap-[1.75rem] md:gap-16 md:mt-2">
+      <div className="w-full flex flex-col md:flex-row md:items-center justify-between gap-10 md:mt-2">
         <div className="flex max-w-[40%] items-center md:justify-center gap-6 md:mt-2 relative">
           <div>
             <label className="block mb-2">Resume</label>
@@ -487,13 +488,14 @@ function Careers() {
         alt=""
       />
 
-      <div className="w-full h-fit flex flex-col items-center justify-start px-10 py-20 gap-10">
+      <div className="w-full h-fit flex flex-col md:flex-row items-center justify-start px-10 py-20 gap-10">
+        <Image src={career} className="w-full md:w-[40%] h-fit" alt="" />
         <CareersForm />
       </div>
 
       <ToastContainer closeButton closeOnClick={true} />
 
-      <div className=" w-full">
+      <div className="w-full">
         <Footer />
       </div>
     </div>

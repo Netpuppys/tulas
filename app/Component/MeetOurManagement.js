@@ -7,6 +7,7 @@ import silky from "../../public/About/silky.png";
 import raghav from "../../public/About/raghav.png";
 import raunak from "../../public/About/raunak.png";
 import sandip from "../../public/About/sandip.png";
+import vijay from "../../public/About/vijay.png";
 import sunilSemwal from "../../public/About/sunilSemwal.png";
 import nishant from "../../public/About/nishant.png";
 import { useMobile } from "@/component/IsMobileContext";
@@ -45,14 +46,6 @@ const cards = [
 
 const cardsFaculty = [
   {
-    image: nishant,
-    name: "Prof. Nishant Saxena",
-    profile: "Dean Academics",
-    id: 4,
-    description:
-      "Academic success isn't about grades, it's about creating thinkers who make a difference.",
-  },
-  {
     image: sandip,
     id: 1,
     name: "Prof. Sandip Vijay",
@@ -61,12 +54,28 @@ const cardsFaculty = [
       "A great institution doesn't just teach—it transforms, empowers, and inspires.",
   },
   {
+    image: vijay,
+    id: 2,
+    name: "Dr. Vijay Kumar Upadhyay",
+    profile: "Registrar",
+    description:
+      "We believe education will play a significant role in accomplishing future productivity, economic goals, and higher standards of living throughout the world.",
+  },
+  {
     image: sunilSemwal,
     name: "Dr. Sunil Semwal",
     id: 3,
     profile: "Dean R&D",
     description:
       "Research bridges the gap between imagination and reality, creating solutions that shape the world.",
+  },
+  {
+    image: nishant,
+    name: "Prof. Nishant Saxena",
+    profile: "Dean Academics",
+    id: 4,
+    description:
+      "Academic success isn't about grades, it's about creating thinkers who make a difference.",
   },
 ];
 
