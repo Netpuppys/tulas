@@ -186,35 +186,10 @@ const cardsFaculty = [
     awards: [""],
   },
   {
-    image: sunilSemwal,
-    name: "Dr. Sunil Semwal",
-    id: 4,
-    profile: "Dean R&D",
-    description:
-      "Tula’s Institute is dedicated to societal requirements through research and innovation. Challenges such as sustainable development, water conservation, energy and environment, and many others are addressed with innovation-friendly atmosphere which encourages industry-academic collaborations. Tula’s Institute’s Research and Development cell promotes research in a variety of areas in sciences, engineering, agriculture and management domains to support our research vision. Quality publications are encouraged with an attractive Research Policy, which incentivise the good researchers and propels faculty members to pursue quality research.",
-    desc2: (
-      <>
-        Several government-funded research projects and initiatives are ongoing
-        at the institute. Faculty members collaborate with worldwide and
-        national research specialists to generate cutting-edge, innovative
-        research.
-        <br />
-        <br />
-        In confirmation with the above, the numbers of research papers, patents,
-        and funded projects are steadily increasing.
-      </>
-    ),
-    awards: [
-      "B.Tech., M.Tech., Ph.D.",
-      "Senior Member IEEE",
-      "30+ Publications, 5 Patents, 4 Funded Projects",
-    ],
-  },
-  {
     image: nishant,
     name: "Prof. Nishant Saxena",
     profile: "Dean Academics",
-    id: 5,
+    id: 4,
     description:
       "From a modest beginning in 2006, Tula’s Institute has now grown into a fully integrated engineering and management college. The guiding philosophy of the institute has been the creation of awareness among students so they can face the challenges globally. Tula’s Institute through its various development programmes gives students an edge over their counterparts in enabling them to prepare themselves for a world that is yet to be created, for jobs yet to be invented, and technologies yet undreamt of. In short, we create skilled individuals who are industry-ready. ",
     desc2: (
@@ -243,6 +218,31 @@ const cardsFaculty = [
       "B.Tech., M.Tech. ,Ph.D.",
       "MISTE,EMIAET",
       "25+ Publication ,Funded Project, 04 Patents",
+    ],
+  },
+  {
+    image: sunilSemwal,
+    name: "Dr. Sunil Semwal",
+    id: 5,
+    profile: "Dean R&D",
+    description:
+      "Tula’s Institute is dedicated to societal requirements through research and innovation. Challenges such as sustainable development, water conservation, energy and environment, and many others are addressed with innovation-friendly atmosphere which encourages industry-academic collaborations. Tula’s Institute’s Research and Development cell promotes research in a variety of areas in sciences, engineering, agriculture and management domains to support our research vision. Quality publications are encouraged with an attractive Research Policy, which incentivise the good researchers and propels faculty members to pursue quality research.",
+    desc2: (
+      <>
+        Several government-funded research projects and initiatives are ongoing
+        at the institute. Faculty members collaborate with worldwide and
+        national research specialists to generate cutting-edge, innovative
+        research.
+        <br />
+        <br />
+        In confirmation with the above, the numbers of research papers, patents,
+        and funded projects are steadily increasing.
+      </>
+    ),
+    awards: [
+      "B.Tech., M.Tech., Ph.D.",
+      "Senior Member IEEE",
+      "30+ Publications, 5 Patents, 4 Funded Projects",
     ],
   },
 ];

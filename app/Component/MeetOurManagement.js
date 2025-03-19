@@ -71,21 +71,22 @@ const cardsFaculty = [
       "We believe education will play a significant role in accomplishing future productivity, economic goals, and higher standards of living throughout the world.",
   },
   {
+    image: nishant,
+    name: "Prof. Nishant Saxena",
+    profile: "Dean Academics",
+    id: 4,
+    description:
+      "Academic success isn't about grades, it's about creating thinkers who make a difference.",
+  },
+  {
     image: sunilSemwal,
     name: "Dr. Sunil Semwal",
-    id: 4,
+    id: 5,
     profile: "Dean R&D",
     description:
       "Research bridges the gap between imagination and reality, creating solutions that shape the world.",
   },
-  {
-    image: nishant,
-    name: "Prof. Nishant Saxena",
-    profile: "Dean Academics",
-    id: 5,
-    description:
-      "Academic success isn't about grades, it's about creating thinkers who make a difference.",
-  },
+  
 ];
 
 const InternalSection = () => {
