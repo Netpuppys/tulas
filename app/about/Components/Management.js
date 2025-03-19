@@ -5,7 +5,8 @@ import sunil from "../../../public/About/sunil.png";
 import silky from "../../../public/About/silky.png";
 import raghav from "../../../public/About/raghav.png";
 import raunak from "../../../public/About/raunak.png";
-import sandip from "../../../public/About/sandip.png";
+import shailendra from "../../../public/About/shailendra.png";
+import deepak from "../../../public/About/deepak.png";
 import vijay from "../../../public/About/vijay.png";
 import sunilSemwal from "../../../public/About/sunilSemwal.png";
 import nishant from "../../../public/About/nishant.png";
@@ -84,84 +85,86 @@ const cards = [
 
 const cardsFaculty = [
   {
-    image: sandip,
+    image: shailendra,
     id: 1,
-    name: "Prof. Sandip Vijay",
+    name: "Prof. (Dr.) Shailendra Kumar Tiwary",
     profile: "Director",
     description:
-      "Tula’s Institute, Dehradun, established in 2006, is a thriving campus run by the Rishabh Educational Trust. Dehradun’s Tula’s Institute has established itself as a fully integrated technical and professional higher education institution. Our Vision for the institute is to emerge as an academic centre by creating and developing world-class professionals and promoting innovation and research. The goal of Tula’s Institute in Dehradun is to create professionals who are socially conscious, ethical, and responsible individuals who have a solid understanding of modern technical and professional principles.",
+      "It is my great pleasure to warmly greet you as you embark upon an exciting journey of higher professional education. At Tula’s Institute, we are committed to providing a transformative learning experience that equips our beloved students with the knowledge, skills, and ethical values, creativity which is essential to excel in your careers. Fueled by the passion and dedication to deliver quality education for the betterment of society and mankind, Tula’s Institute, Dehradun was established by the Rishabh Educational Trust in 2006.",
     desc2: (
       <>
-        The four pillars of high-quality education—teaching, training, research,
-        and incubation—are what make Tula’s Institute stand out among other
-        organisations. Tula’s Institute in Dehradun was founded on the strength
-        of these pillars.
+        Tula’s Institute aspires to prepare tomorrow’s successful professionals,
+        leaders and innovators by providing quality education based on
+        excellence, experiential learning and inclusiveness.
         <br />
         <br />
-        Future leaders who have the potential to change society are fostered and
-        developed by the Institute. The institution collaborates closely with
-        business, and it actively solicits business executives’ involvement in
-        research projects in newly emerging fields. Additionally, it enables us
-        to keep our services current and pertinent to the demands of the market.
+        Tula’s Institute is characterized by a vibrant academic atmosphere,
+        experienced faculty, the state- of-the-art facilities cum infrastructure
+        and an ecosystem to actively participate in co- and extra- curricular
+        activities. We take pride in fostering an environment that encourages
+        innovation, critical thinking, and holistic development of our students.
+        Whether you are pursuing a degree in Engineering, Management, Computer
+        Application, Agriculture, Journalism and Mass Communication, Pharmacy or
+        any other discipline, our academic programs are run and delivered by
+        accomplished experts to prepare you to face and overcome the challenges
+        of the future. At Tula’s Institute, we believe in the power of education
+        to shape your destiny. Our commitment to excellence extends beyond the
+        classroom, with a focus on knowledge, skills, research &amp; innovation,
+        entrepreneurship, and community service.
         <br />
         <br />
-        The main tenets of education at Tula’s Institute in Dehradun are the
-        creation of knowledge, the dissemination of knowledge, and the
-        application of knowledge. In their efforts to build new lives for
-        themselves through hard work and sacrifice, the Engineering, Management,
-        and Agriculture student batches have excelled beyond expectations and
-        frequently traversed unmarked terrain, making it simple for the future
-        batches to follow in their footsteps. This was made possible in great
-        part by the faculty at Tula’s Institute in Dehradun, which is a diverse,
-        knowledgeable, and dedicated group of professionals from many streams of
-        study.
-        <br />
-        <br />
-        Tula’s Institute, Dehradun, chooses intelligent people from a variety of
-        backgrounds who are committed to providing a participatory learning
-        process for its flagship UG and PG programs in Engineering, Management,
-        agriculture, and Computer Applications. The Tula’s Institute works to
-        instill in its students the high ethical standards and effective
-        professional practises that are crucial in the globalised world of
-        today. Our students participate in a variety of activities, including
-        social and developmental work in nearby towns. The positive
-        relationships between the teachers and students at Tula’s Institute
-        Dehradun have also led to the development and exploration of novel
-        solutions as well as the preparation of the students for the
-        increasingly difficult problems of the working world.
-        <br />
-        <br />
-        The school thinks that a comprehensive and all-encompassing student
-        experience will maximise learning chances. To do this, the school offers
-        a course curriculum that has been created to help students sharpen their
-        managerial abilities and familiarise themselves with recent advancements
-        in business. The faculty members’ use of pedagogical tools motivates
-        students to be competent, innovative, and creative. Our highly qualified
-        faculty’s instruction encourages students to instill in themselves the
-        ideals of independence, which will help them become great technocrats,
-        managers, and brand representatives for their organisations.
-        <br />
-        <br />
-        Tula’s Institute Dehradun is an example of a modern-day “Gurukul,” where
-        talent is developed, polished, and launched into the corporate world. It
-        is situated in an ecologically stimulating environment.
-        <br />
-        <br />
-        I’d like to use this chance to personally invite you to Tula’s Institute
-        in Dehradun to see how world leaders are developed there.
+        Once again, welcome and thank you for taking the time to visit. Please
+        feel free to explore our Institute through our website, social media
+        platforms and in person on our ever-growing campus.
       </>
     ),
     awards: [
-      "Ph.D. IIT Roorkee",
-      "Fellow of ACEEE, Finland",
-      "FIE, New Delhi",
-      "SMIEEE, USA",
-      "SMISoC, USA",
+      "B. E. (Civil), M. Tech. (Structural Engg.)",
+      "Ph. D. (Structural Engg.)",
+      "Chartered Engineer (I.E.I)",
+      "Member (I.E.I)",
     ],
   },
   {
-    image: vijay,
+    image: deepak,
     id: 2,
+    name: "Dr. Deepak Nanda",
+    profile: "Director of Pharmacy",
+    description:
+      "Tula’s Institute of Pharmacy remains steadfast in its mission to prepare students for the dynamic and ever-evolving field of pharmacy. Through rigorous academic program, cutting-edge research, and hands- on practical training, we aim to equip our students with the knowledge, skills, and values necessary to excel in a variety of professional settings, from clinical environments to research labs and beyond.",
+    desc2: (
+      <>
+        Pharmacy is a dynamic and essential field that plays a pivotal role in
+        the healthcare system. As we navigate an ever-changing landscape, we
+        ensure that our students are equipped with the knowledge, skills, and
+        mindset to not only succeed but to lead in this critical profession.
+        <br />
+        <br />
+        Our college is equipped with state-of-the-art facilities, dedicated
+        faculty, and a fortified curriculum designed to nurture critical
+        thinking, ethical practices, and a deep sense of responsibility toward
+        community well-being. We take pride in offering an environment that
+        encourages research, hands-on experience, and collaboration with
+        industry professionals.
+        <br />
+        <br />
+        We believe in a holistic approach to education, where academics,
+        extracurricular activities, and community engagement all play an
+        important role in the development of our students. Our goal is to
+        prepare graduates who are not only academically proficient but also
+        compassionate and ethical practitioners who can contribute to the health
+        and well-being of society.
+        <br />
+        <br />I invite you to explore the various programs, resources, and
+        opportunities available at our Institute, and certainly look forward to
+        the possibility of welcoming you into Tula’s Family.
+      </>
+    ),
+    awards: ["Email ID: registrar@tulas.edu.in"],
+  },
+  {
+    image: vijay,
+    id: 3,
     name: "Dr. Vijay Kumar Upadhyay",
     profile: "Registrar",
     description:
@@ -180,12 +183,12 @@ const cardsFaculty = [
         offered by Tula’s Institute.
       </>
     ),
-    awards: ["Email ID: registrar@tulas.edu.in"],
+    awards: [""],
   },
   {
     image: sunilSemwal,
     name: "Dr. Sunil Semwal",
-    id: 3,
+    id: 4,
     profile: "Dean R&D",
     description:
       "Tula’s Institute is dedicated to societal requirements through research and innovation. Challenges such as sustainable development, water conservation, energy and environment, and many others are addressed with innovation-friendly atmosphere which encourages industry-academic collaborations. Tula’s Institute’s Research and Development cell promotes research in a variety of areas in sciences, engineering, agriculture and management domains to support our research vision. Quality publications are encouraged with an attractive Research Policy, which incentivise the good researchers and propels faculty members to pursue quality research.",
@@ -211,7 +214,7 @@ const cardsFaculty = [
     image: nishant,
     name: "Prof. Nishant Saxena",
     profile: "Dean Academics",
-    id: 4,
+    id: 5,
     description:
       "From a modest beginning in 2006, Tula’s Institute has now grown into a fully integrated engineering and management college. The guiding philosophy of the institute has been the creation of awareness among students so they can face the challenges globally. Tula’s Institute through its various development programmes gives students an edge over their counterparts in enabling them to prepare themselves for a world that is yet to be created, for jobs yet to be invented, and technologies yet undreamt of. In short, we create skilled individuals who are industry-ready. ",
     desc2: (

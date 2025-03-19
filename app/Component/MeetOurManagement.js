@@ -6,7 +6,8 @@ import sunil from "../../public/About/sunil.png";
 import silky from "../../public/About/silky.png";
 import raghav from "../../public/About/raghav.png";
 import raunak from "../../public/About/raunak.png";
-import sandip from "../../public/About/sandip.png";
+import shailendra from "../../public/About/shailendra.png";
+import deepak from "../../public/About/deepak.png";
 import vijay from "../../public/About/vijay.png";
 import sunilSemwal from "../../public/About/sunilSemwal.png";
 import nishant from "../../public/About/nishant.png";
@@ -46,16 +47,24 @@ const cards = [
 
 const cardsFaculty = [
   {
-    image: sandip,
+    image: shailendra,
     id: 1,
-    name: "Prof. Sandip Vijay",
+    name: "Prof. (Dr.) Shailendra Kumar Tiwary",
     profile: "Director",
     description:
-      "A great institution doesn't just teach—it transforms, empowers, and inspires.",
+      "Tula’s Institute aspires to prepare tomorrow’s successful professionals, leaders and innovators",
+  },
+  {
+    image: deepak,
+    id: 2,
+    name: "Dr. Deepak Nanda",
+    profile: "Director of Pharmacy",
+    description:
+      "Tula’s Institute of Pharmacy remains steadfast in its mission to prepare students for the dynamic and ever-evolving field of pharmacy. ",
   },
   {
     image: vijay,
-    id: 2,
+    id: 3,
     name: "Dr. Vijay Kumar Upadhyay",
     profile: "Registrar",
     description:
@@ -64,7 +73,7 @@ const cardsFaculty = [
   {
     image: sunilSemwal,
     name: "Dr. Sunil Semwal",
-    id: 3,
+    id: 4,
     profile: "Dean R&D",
     description:
       "Research bridges the gap between imagination and reality, creating solutions that shape the world.",
@@ -73,7 +82,7 @@ const cardsFaculty = [
     image: nishant,
     name: "Prof. Nishant Saxena",
     profile: "Dean Academics",
-    id: 4,
+    id: 5,
     description:
       "Academic success isn't about grades, it's about creating thinkers who make a difference.",
   },
@@ -98,7 +107,7 @@ const InternalSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`flex flex-col w-[calc(50%-1rem)] md:w-[20%] hover:opacity-90 grid-item md:hover:scale-105 transition-all ease-linear duration-300 cursor-pointer`}
+              className={`flex flex-col w-[calc(50%-1rem)] md:w-[18%] hover:opacity-90 grid-item md:hover:scale-105 transition-all ease-linear duration-300 cursor-pointer`}
             >
               <div className="rounded-xl relative image-overlay mb-2 w-full h-full object-cover">
                 <Image
@@ -112,7 +121,7 @@ const InternalSection = () => {
                   </h6>
                 </div>
               </div>
-              <h2 className="font-[TTChocolatesMedium] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-[1.2] text-center">
+              <h2 className="font-[TTChocolatesMedium] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.4vw,75px)] leading-[1.2] text-center">
                 {card.name}
               </h2>
               <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-center">
@@ -126,7 +135,7 @@ const InternalSection = () => {
           {cardsFaculty.map((card, index) => (
             <div
               key={index}
-              className={`flex flex-col w-[calc(50%-1rem)] md:w-[20%] hover:opacity-90 grid-item md:hover:scale-105 transition-all ease-linear duration-300 cursor-pointer`}
+              className={`flex flex-col w-[calc(50%-1rem)] md:w-[18%] hover:opacity-90 grid-item md:hover:scale-105 transition-all ease-linear duration-300 cursor-pointer`}
             >
               <div className="rounded-xl relative image-overlay mb-2 w-full h-full object-cover">
                 <Image
@@ -140,7 +149,7 @@ const InternalSection = () => {
                   </h6>
                 </div>
               </div>
-              <h2 className="font-[TTChocolatesMedium] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.5vw,75px)] leading-tight text-center">
+              <h2 className="font-[TTChocolatesMedium] mt-2 text-white font-semibold text-[clamp(8px,5.2vw,30px)] md:text-[clamp(10px,1.4vw,75px)] leading-tight text-center">
                 {card.name}
               </h2>
               <h4 className="font-[TTChocolates] text-[#C2C2C2] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-center">

@@ -49,7 +49,7 @@ const AboutFacultyModal = ({
         <div className="px-10 md:px-10 py-8 md:py-16 ">
           <div className="flex flex-col-reverse md:flex-row gap-6 justify-between">
             <div className="md:w-[70%]">
-              <p className="capitalize text-[#760135] text-[clamp(8px,6.5vw,30px)] md:text-[clamp(10px,1.9vw,75px)] pb-1 font-semibold underline">
+              <p className="capitalize text-[#760135] text-[clamp(8px,6.5vw,30px)] md:text-[clamp(10px,1.7vw,75px)] pb-1 font-semibold underline">
                 {activeProfile?.name}
               </p>
               <p className="capitalize italic text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,0.9vw,45px)] text-[#007A83] font-bold font-[rothwood]">
