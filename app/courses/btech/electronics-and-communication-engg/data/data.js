@@ -11,8 +11,6 @@ import VAIBHAVKUMAR from "../../../../../public/courses/btech/electronics-and-co
 import VAIBHAVKUMARResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/VAIBHAVKUMARResume.pdf";
 import MukeshPathela from "../../../../../public/courses/btech/electronics-and-communication/facultyData/MukeshPathela.webp";
 import MukeshPathelaResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/MukeshPathelaResume.pdf";
-import SANDEEPKHANTWAL from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SandeepKhantwalL.webp";
-import SANDEEPKHANTWALResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SANDEEPKHANTWALResume.pdf";
 import RAHULNEGI from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RahulNegi.webp";
 import RAHULNEGIResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RAHULNEGIResume.pdf";
 import NANSE from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NANSE.webp";
@@ -469,15 +467,6 @@ export const facultyData = [
     experience: "17",
     imageUrl: MukeshPathela,
     resume: MukeshPathelaResume,
-  },
-  {
-    name: "Mr. Sandeep Khantwal",
-    designation: "ASST PROFESSOR",
-    education: "M.Tech P.hd (P)",
-    publications: "47",
-    experience: "8",
-    imageUrl: SANDEEPKHANTWAL,
-    resume: SANDEEPKHANTWALResume,
   },
   {
     name: "Mr. Rahul Negi",
