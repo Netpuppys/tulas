@@ -62,31 +62,26 @@ const TableComponent = () => {
   );
 };
 
-
-
-const description = (
-  "The Non-Technical Department at Tula’s focuses on delivering comprehensive education in areas such as management, humanities, and commerce. With a curriculum designed to align with industry standards, the department equips students with the knowledge and skills needed to excel in their chosen fields. Through practical learning, expert guidance, and a commitment to academic excellence, the Non-Technical Department prepares students for thriving careers in professional environments."
-);
+const description =
+  "The Non-Technical Department at Tula’s focuses on delivering comprehensive education in areas such as management, humanities, and commerce. With a curriculum designed to align with industry standards, the department equips students with the knowledge and skills needed to excel in their chosen fields. Through practical learning, expert guidance, and a commitment to academic excellence, the Non-Technical Department prepares students for thriving careers in professional environments.";
 
 const page = () => {
   return (
     <div className="w-full">
-      <Image
+      {/* <Image
         src={background}
         className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
         alt=""
-      />
+      /> */}
 
       <Navbar />
       <Banner
-        title={
-          "Non-Technical Placement Record"
-        }
+        title={"Non-Technical Placement Record"}
         image={bannerImage}
         belowPara={description}
       />
-      <div className="py-28 w-full flex items-center justify-center">
-        <div className="max-h-[90vh] max-w-[80rem] overflow-y-auto w-full px-10 flex items-center justify-start flex-col">
+      <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
+        <div className="h-full overflow-auto w-full">
           <TableComponent />
         </div>
       </div>

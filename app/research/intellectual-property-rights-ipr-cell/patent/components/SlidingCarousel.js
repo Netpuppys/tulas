@@ -128,7 +128,7 @@ const SlidingCarousel = ({ items }) => {
         <button
           onClick={handleScrollLeft}
           disabled={disabled}
-          className={`border-2 disabled:cursor-not-allowed border-white hover:bg-white hover:text-[#007A83] rounded-full w-16 aspect-square flex items-center justify-center text-3xl text-white
+          className={`border-2 disabled:cursor-not-allowed border-[#333333] hover:bg-[#333333] text-[#333333] hover:text-[#FFFFFF] rounded-full w-16 aspect-square flex items-center justify-center text-3xl
           ${activeIndex === 0 ? "cursor-not-allowed opacity-50" : ""}`}
         >
           <HiArrowLongLeft />
@@ -136,7 +136,7 @@ const SlidingCarousel = ({ items }) => {
         <button
           onClick={handleScrollRight}
           disabled={disabled}
-          className={`border-2 disabled:cursor-not-allowed border-white hover:bg-white hover:text-[#007A83] rounded-full w-16 aspect-square flex items-center justify-center text-3xl text-white
+          className={`border-2 disabled:cursor-not-allowed border-[#333333] hover:bg-[#333333] text-[#333333] hover:text-[#FFFFFF] rounded-full w-16 aspect-square flex items-center justify-center text-3xl
           ${
             activeIndex === items.length - 1
               ? "opacity-50 cursor-not-allowed"

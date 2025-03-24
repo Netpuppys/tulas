@@ -31,20 +31,19 @@ function IAQCStructure() {
             </>
           }
           description={<></>}
-          belowTitle={""}
           belowPara={
             "The Internal Quality Assurance Cell (IQAC) was established in 2014 at Tula’s Institute, Dehradun as an accreditation quality measure. The IQAC has been constituted as per the recommendations of the National Assessment and Accreditation Council (NAAC). The IQAC ensures the effective implementation of quality initiatives through continuous reviews and periodic meetings. The IQAC works towards attaining excellence in all academic and administrative endeavors of the institution."
           }
         />
-        <div className="w-full relative overflow-hidden">
+        {/* <div className="w-full relative overflow-hidden">
           <Image
             src={background}
             className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
             alt=""
           />
-        </div>
-        <div className="p-8 md:p-32">
-          <div className="h-full px-5 overflow-auto w-full md:w-auto flex flex-col items-start justify-start">
+        </div> */}
+        <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
+          <div className="h-full overflow-auto w-full">
             <TableComponent />
           </div>
         </div>

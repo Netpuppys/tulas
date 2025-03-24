@@ -32,8 +32,6 @@ function RAndDFunded() {
                 <span className="text-[#007A83]">Projects and Grants</span>
               </>
             }
-            description={<></>}
-            belowTitle={<></>}
             belowPara={
               <>
                 Research projects provide opportunities for academic individuals
@@ -52,20 +50,16 @@ function RAndDFunded() {
               </>
             }
           />
-          <div className="w-full relative overflow-hidden">
+          {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
-          </div>
-          <div className="p-8 md:p-32 w-full">
-            <div>
-              {/* <TableComponent /> */}
-              <iframe
-                className="h-[90vh] md:px-5 overflow-auto w-full mx-auto md:max-w-[1223px] flex items-start justify-center"
-                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBKPOOfj3CNTfcv7o3fObHitzKNciKJ0ST7pjfLFtqSMhDU5TxQu99iTdZMGOlvUPEUFH6x4TQixAa/pubhtml?gid=0&single=true&widget=true&headers=false"
-              />
+          </div> */}
+          <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
+            <div className="overflow-auto w-full flex">
+              <TableComponent />
             </div>
           </div>
 

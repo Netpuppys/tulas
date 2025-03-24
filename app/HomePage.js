@@ -22,8 +22,30 @@ import LifeAtTulas from "./Component/LifeAtTulas";
 import MeetOurManagement from "./Component/MeetOurManagement";
 import Placement from "./Component/Placement";
 import Famous from "./Component/Famous";
-import placement3 from "../public/Homepage/Placement/placement3.png";
-import placement4 from "../public/Homepage/Placement/placement4.png";
+import AbhishekPandy from "../public/graduate-school-of-business/bba/AbhishekPandy.png";
+import AdilAhmed from "../public/graduate-school-of-business/bba/AdilAhmed.png";
+import AdityaPandey from "../public/graduate-school-of-business/bba/AdityaPandey.png";
+import DivyaShankar from "../public/graduate-school-of-business/bba/DivyaShankar.png";
+import GautamSinghChauhan from "../public/graduate-school-of-business/bba/GautamSinghChauhan.png";
+import JasmineBatham from "../public/graduate-school-of-business/bba/JasmineBatham.png";
+import KumariPriya from "../public/graduate-school-of-business/bba/KumariPriya.png";
+import NainseeSingh from "../public/graduate-school-of-business/bba/NainseeSingh.png";
+import PriyankaDhiman from "../public/graduate-school-of-business/bba/PriyankaDhiman.png";
+import RahulBauri from "../public/graduate-school-of-business/bba/RahulBauri.png";
+import RajniMondi from "../public/graduate-school-of-business/bba/RajniMondi.png";
+import RomaKumari from "../public/graduate-school-of-business/bba/RomaKumari.png";
+import ShambhaviRajChauhan from "../public/graduate-school-of-business/bba/ShambhaviRajChauhan.png";
+import SrishtiGupta from "../public/graduate-school-of-business/bba/SrishtiGupta.png";
+import SushantTrivedi from "../public/graduate-school-of-business/bba/SushantTrivedi.png";
+import UjjwalPratik from "../public/graduate-school-of-business/bba/UjjwalPratik.png";
+import rishitaPatel from "../public/courses/bcom/rishitaPatel.png";
+import santosiPanwar from "../public/courses/bcom/santosiPanwar.png";
+import anshikaPundir from "../public/courses/bca/anshikaPundir.png";
+import ashutosh from "../public/courses/bca/ashutosh.png";
+import gauravSrivastava from "../public/courses/bca/gauravSrivastava.png";
+import prathamNautiyal from "../public/courses/bca/prathamNautiyal.png";
+import rohitKotnala from "../public/courses/bca/rohitKotnala.png";
+import saurabhRawat from "../public/courses/bca/saurabhRawat.png";
 const bannerText = (
   <>
     <span className=" font-[TTChocolatesMedium] font-semibold">
@@ -41,12 +63,52 @@ const bannerText = (
 );
 const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: AbhishekPandy,
+    image2: AdilAhmed,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: AdityaPandey,
+    image2: DivyaShankar,
+  },
+  {
+    image: GautamSinghChauhan,
+    image2: JasmineBatham,
+  },
+  {
+    image: KumariPriya,
+    image2: NainseeSingh,
+  },
+  {
+    image: PriyankaDhiman,
+    image2: RahulBauri,
+  },
+  {
+    image: RajniMondi,
+    image2: RomaKumari,
+  },
+  {
+    image: ShambhaviRajChauhan,
+    image2: SrishtiGupta,
+  },
+  {
+    image: SushantTrivedi,
+    image2: UjjwalPratik,
+  },
+  {
+    image: rishitaPatel,
+    image2: santosiPanwar,
+  },
+  {
+    image: anshikaPundir,
+    image2: ashutosh,
+  },
+  {
+    image: gauravSrivastava,
+    image2: prathamNautiyal,
+  },
+  {
+    image: rohitKotnala,
+    image2: saurabhRawat,
   },
 ];
 

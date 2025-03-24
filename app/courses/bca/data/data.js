@@ -16,8 +16,6 @@ import DivyaNegi from "../../../../public/courses/bca/facultyData/Divya.webp";
 import DivyaNegiResume from "../../../../public/courses/bca/facultyData/DivyaNegiResume.pdf";
 import Hemlata from "../../../../public/courses/bca/facultyData/Hemlata.webp";
 import HemlataResume from "../../../../public/courses/bca/facultyData/HemlataResume.pdf";
-import NishGupta from "../../../../public/courses/bca/facultyData/NishGupta.webp";
-import NishGuptaResume from "../../../../public/courses/bca/facultyData/NishGuptaResume.pdf";
 import Mursleen from "../../../../public/courses/bca/facultyData/Mursleen.webp";
 import MursleenResume from "../../../../public/courses/bca/facultyData/MursleenResume.pdf";
 import PayalManwal from "../../../../public/courses/bca/facultyData/PayalManwal.webp";
@@ -432,15 +430,6 @@ export const facultyData = [
     experience: "3",
     imageUrl: anuj,
     resume: anujResume,
-  },
-  {
-    name: "Ms. Nisha Gupta",
-    designation: "Assistant Professor",
-    education: "MCA ",
-    publications: "0",
-    experience: "3",
-    imageUrl: NishGupta,
-    resume: NishGuptaResume,
   },
   {
     name: "Ms Payal Manwal",

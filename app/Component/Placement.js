@@ -3,20 +3,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import placement3 from "../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../public/Homepage/Placement/placement4.png";
 import { Autoplay } from "swiper/modules";
-function Placement() {
-  const features = [
-    {
-      image: placement3,
-      image2: placement4,
-    },
-    {
-      image: placement3,
-      image2: placement4,
-    },
-  ];
+function Placement({ features }) {
   const swiperRef = useRef();
 
   return (

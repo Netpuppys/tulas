@@ -64,35 +64,35 @@ const ActiveCardModal = ({
                 >
                   {card?.title}
                 </p>
-                <p className="mt-[1.5%]">
+                <ul className="mt-[1.5%] list-disc ml-5">
                   {card?.description?.map((item, index) => (
-                    <h2
+                    <li
                       key={index}
                       className=" text-[#1b1b1b] text-wrap text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-snug font-light mt-[1.5%]"
                     >
                       {item}
-                    </h2>
+                    </li>
                   ))}
-                </p>
+                </ul>
               </div>
-              <div className="bg-[#007a83] min-w-60 overflow-hidden w-60 min-h-[20rem] h-[20rem] shadow-2xl">
+              {/* <div className="bg-[#007a83] min-w-60 overflow-hidden w-60 min-h-[20rem] h-[20rem] shadow-2xl">
                 <Image
                   src={card.image}
                   className="w-full h-full object-cover"
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
-            <div className="">
+            <ul className="list-disc ml-5">
               {card?.points?.map((item, index) => (
-                <h2
+                <li
                   key={index}
                   className=" text-[#1b1b1b] text-wrap text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-snug font-light mt-[1.5%]"
                 >
                   {item}
-                </h2>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         )}
         {card.imagesArray && (

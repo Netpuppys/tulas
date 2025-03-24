@@ -116,16 +116,10 @@ function RAndCell() {
               "The Research and Development (R&D) Cell at Tula’s Institute is an integral part of the Centre for Innovation, Research, and Entrepreneurship (CIRE). Its primary focus is to facilitate and drive cutting-edge research activities across various disciplines within the Institute."
             }
           />
-          <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div>
-          <Vision sections={sections} />
+
+          <Vision sections={sections} color={true} />
           <Collaborators />
-          <h3 className="text-white text-center text-[25px] md:text-[40px] font-[CarotSlab]">
+          <h3 className="text-[#00383D] pt-8 md:pt-[3%] text-center text-[25px] md:text-[40px] font-[CarotSlab]">
             Cumulative Citations
           </h3>
           <div className="flex items-center flex-col md:flex-row justify-center gap-6 md:gap-[10%] py-8 md:py-14">
@@ -134,7 +128,7 @@ function RAndCell() {
           </div>
           <Link
             href={`/research/research-and-development-rd-cell/funded-projects-and-grants/${utmParams}`}
-            className="px-12 md:px-20 py-2 mb-20 bg-white text-[20px] md:text-[28px] font-[TTChocolatesMedium] text-[#00383D] rounded-full hover:bg-[#00383D] hover:text-white"
+            className="px-12 md:px-20 py-2 mb-20 bg-[#00383D] text-[20px] md:text-[28px] font-[TTChocolatesMedium] text-[#FFFFFF] rounded-full border border-[#00383D] hover:bg-[#FFFFFF] hover:text-[#00383D] transition-all"
           >
             Funded Projects and Grants
           </Link>

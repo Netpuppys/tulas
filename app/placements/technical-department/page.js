@@ -90,11 +90,11 @@ const description = (
 const page = () => {
   return (
     <div className="w-full">
-      <Image
+      {/* <Image
         src={background}
         className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
         alt=""
-      />
+      /> */}
 
       <Navbar />
       <Banner
@@ -102,8 +102,8 @@ const page = () => {
         image={bannerImage}
         belowPara={description}
       />
-      <div className="py-28 w-full flex items-center justify-center">
-        <div className="max-h-[90vh] max-w-[80rem] overflow-y-auto w-full px-10 flex items-center justify-start flex-col">
+      <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
+        <div className="h-full overflow-auto w-full">
           <TableComponent />
         </div>
       </div>

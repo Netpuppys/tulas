@@ -121,11 +121,11 @@ const sitemap = [
             title: "M.Tech",
             linkTo: "/mtech",
           },
-          {
-            title: "Department of Applied Sciences and Humanities",
-            linkTo: "/courses/applied-science",
-          },
         ],
+      },
+      {
+        title: "Department of Applied Sciences and Humanities",
+        linkTo: "/courses/applied-science",
       },
       {
         title: "Department of Agriculture",

@@ -33,7 +33,6 @@ function IICEvents() {
               </>
             }
             description={<></>}
-            belowTitle={<></>}
             belowPara={
               <>
                 IEEE is the world’s largest professional association advancing
@@ -62,15 +61,15 @@ function IICEvents() {
               </>
             }
           />
-          <div className="w-full relative overflow-hidden">
+          {/* <div className="w-full relative overflow-hidden">
             <Image
               src={background}
               className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
               alt=""
             />
-          </div>
-          <div className="p-8 md:p-32">
-            <div className="h-[90vh] px-5 overflow-auto w-[100vw] md:w-auto flex items-start justify-start">
+          </div> */}
+          <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
+            <div className="h-full overflow-auto w-full">
               <TableComponent />
             </div>
           </div>
