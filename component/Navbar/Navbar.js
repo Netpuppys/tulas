@@ -121,11 +121,7 @@ function Navbar({
             </a>
             <button
               onClick={handleFormPopup}
-              className={`px-8  ${
-                !scrolled
-                  ? "bg-white text-[#3D001B]"
-                  : "bg-[#007A83] text-white"
-              } rounded-full`}
+              className={`px-8 bg-[#007A83] text-white rounded-full`}
             >
               Enquire Now
             </button>
@@ -133,95 +129,93 @@ function Navbar({
         </div>
         <div
           className={`mdNavbar:px-10 w-full relative ${
-            !scrolled && !isChecked
+            !isChecked
               ? "mdNavbar:bg-[rgba(19,19,19,0.50)] mdNavbar:backdrop-blur-xl"
               : ""
           } h-full py-2 flex flex-col justify-center`}
         >
           <div className="hidden h-fit w-full mdNavbar:flex justify-between items-center">
-            {!scrolled && (
-              <div className="flex pointer-events-auto mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
-                {/* menu button */}
-                <button
-                  className="flex flex-row justify-between items-center cursor-pointer relative"
-                  onClick={handleButtonClick}
+            {/* {!scrolled && ( */}
+            <div className="flex pointer-events-auto mdNavbar:w-fit flex-row-reverse animate-fadeIn mdNavbar:flex-row gap-2 mdNavbar:gap-12">
+              {/* menu button */}
+              <button
+                className="flex flex-row justify-between items-center cursor-pointer relative"
+                onClick={handleButtonClick}
+              >
+                <div
+                  className={`p-[15px] border-2 rounded-[50%] aspect-square border-r-transparent ${
+                    isChecked ? "border-black" : "border-white"
+                  }`}
                 >
-                  <div
-                    className={`p-[15px] border-2 rounded-[50%] aspect-square border-r-transparent ${
-                      isChecked ? "border-black" : "border-white"
-                    }`}
+                  <label
+                    className={
+                      isChecked
+                        ? "checked flex flex-col w-[30px] cursor-pointer"
+                        : "unCheck flex flex-col w-[30px] cursor-pointer"
+                    }
                   >
-                    <label
-                      className={
-                        isChecked
-                          ? "checked flex flex-col w-[30px] cursor-pointer"
-                          : "unCheck flex flex-col w-[30px] cursor-pointer"
-                      }
-                    >
-                      <span
-                        className={`my-[3px] rounded-lg h-[3px] w-1/2
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-1/2
                      ${isChecked ? "bg-black" : "bg-white"}`}
-                      ></span>
-                      <span
-                        className={`my-[3px] rounded-lg h-[3px] w-full ${
-                          isChecked ? "bg-black" : "bg-white"
-                        }`}
-                      ></span>
-                      <span
-                        className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
-                          isChecked ? "bg-black" : "bg-white"
-                        }`}
-                      ></span>
-                    </label>
-                  </div>
-                  <h3
-                    style={{ fontFamily: "Zilla Slab" }}
-                    className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                      isChecked ? "text-[#353535]" : "text-white"
-                    }`}
-                  >
-                    {!isChecked ? "Menu" : "Close"}
-                  </h3>
-                </button>
-                {/* apply now button */}
-                <button
-                  className="flex w-full flex-row justify-between items-center cursor-pointer relative"
-                  onClick={() =>
-                    (window.location.href = `/apply-now/${utmParams}`)
-                  }
-                >
-                  <div
-                    className={`p-[15px] border-2 ${
-                      isChecked ? "border-black" : "border-white"
-                    } rounded-[50%] aspect-square border-r-transparent`}
-                  >
-                    <FaPen
-                      className={`w-[30px] h-[30px] ${
-                        isChecked ? "text-[#353535]" : "text-white"
+                    ></span>
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-full ${
+                        isChecked ? "bg-black" : "bg-white"
                       }`}
-                    />
-                  </div>
-                  <h3
-                    style={{ fontFamily: "Zilla Slab" }}
-                    className={`hidden mdNavbar:block text-nowrap text-left text-[25px] -ml-4 font-semibold transition-color ${
+                    ></span>
+                    <span
+                      className={`my-[3px] rounded-lg h-[3px] w-3/4 ${
+                        isChecked ? "bg-black" : "bg-white"
+                      }`}
+                    ></span>
+                  </label>
+                </div>
+                <h3
+                  style={{ fontFamily: "Zilla Slab" }}
+                  className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
+                    isChecked ? "text-[#353535]" : "text-white"
+                  }`}
+                >
+                  {!isChecked ? "Menu" : "Close"}
+                </h3>
+              </button>
+              {/* apply now button */}
+              <button
+                className="flex w-full flex-row justify-between items-center cursor-pointer relative"
+                onClick={() =>
+                  (window.location.href = `/apply-now/${utmParams}`)
+                }
+              >
+                <div
+                  className={`p-[15px] border-2 ${
+                    isChecked ? "border-black" : "border-white"
+                  } rounded-[50%] aspect-square border-r-transparent`}
+                >
+                  <FaPen
+                    className={`w-[30px] h-[30px] ${
                       isChecked ? "text-[#353535]" : "text-white"
                     }`}
-                  >
-                    Apply Now
-                  </h3>
-                </button>
-              </div>
-            )}
+                  />
+                </div>
+                <h3
+                  style={{ fontFamily: "Zilla Slab" }}
+                  className={`hidden mdNavbar:block text-nowrap text-left text-[25px] -ml-4 font-semibold transition-color ${
+                    isChecked ? "text-[#353535]" : "text-white"
+                  }`}
+                >
+                  Apply Now
+                </h3>
+              </button>
+            </div>
+            {/* )} */}
 
             {/* minimal buttons after scrolling */}
-            {scrolled && (
+            {/* {scrolled && (
               <div className="flex pointer-events-auto mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
-                {/* menu button */}
                 <button
                   className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
                   onClick={handleButtonClick}
                 >
-                  {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
                   <div
                     className={`p-[15px] rounded-[50%] aspect-square border-r-transparent`}
                   >
@@ -244,7 +238,6 @@ function Navbar({
                     </label>
                   </div>
                 </button>
-                {/* apply now button */}
                 <button
                   className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
                   onClick={() =>
@@ -254,32 +247,32 @@ function Navbar({
                   <PiPencilSimpleLineLight />
                 </button>
               </div>
-            )}
+            )} */}
 
-            {!scrolled && (
-              <div className="flex pointer-events-auto relative right-10 animate-fadeIn items-center justify-center gap-6">
-                <Image
-                  src={NBA}
-                  alt=""
-                  className="w-[5vw] h-fit pointer-events-auto cursor-pointer"
-                />
-                <div className="h-[60px] w-[1px] bg-white"></div>
-                <Image
-                  src={NAAC}
-                  alt=""
-                  className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
-                />
-                <div className="h-[60px] w-[1px] bg-white"></div>
-                <Image
-                  src={TulasLogo}
-                  alt=""
-                  onClick={() => (window.location.href = `/${utmParams}`)}
-                  className="w-[12vw] h-full pointer-events-auto cursor-pointer"
-                />
-              </div>
-            )}
+            {/* {!scrolled && ( */}
+            <div className="flex pointer-events-auto relative right-10 animate-fadeIn items-center justify-center gap-6">
+              <Image
+                src={NBA}
+                alt=""
+                className="w-[5vw] h-fit pointer-events-auto cursor-pointer"
+              />
+              <div className="h-[60px] w-[1px] bg-white"></div>
+              <Image
+                src={NAAC}
+                alt=""
+                className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
+              />
+              <div className="h-[60px] w-[1px] bg-white"></div>
+              <Image
+                src={TulasLogo}
+                alt=""
+                onClick={() => (window.location.href = `/${utmParams}`)}
+                className="w-[12vw] h-full pointer-events-auto cursor-pointer"
+              />
+            </div>
+            {/* )} */}
 
-            {scrolled && (
+            {/* {scrolled && (
               <Link
                 href={`/${utmParams}`}
                 className="pointer-events-auto relative right-10 animate-translateButton"
@@ -290,7 +283,7 @@ function Navbar({
                   className="w-[12vw] h-fit pointer-events-auto cursor-pointer"
                 />
               </Link>
-            )}
+            )} */}
           </div>
 
           {/*Mobile navbar */}

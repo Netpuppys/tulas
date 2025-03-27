@@ -98,8 +98,9 @@ export const items = [
   {
     title: "Program Specific Outcomes",
     description: [
-      "PSO1 : Provide Industry led/sponsor Teaching Learning facilities.",
-      "PSO2 : Provide ability to design and develop solution machine learning via sponsor research project.",
+      "PSO1 : Problem Solving Approach: Apply programming paradigms, architectural patterns, algorithmic techniques, relevant applications and augmentation to solve real-world complex problems.",
+      "PSO2 : Analysis and Synthesis Techniques: Demonstrate the ability to analyse current systems to understand the solution, change or optimise the solution, and synthesise solutions based on new requirements using existing infrastructure and reusable components.",
+      "PS03 : Reusability and Adaptability Skills: Assimilate, appreciate, utilize, and promote cutting-edge technology to improve reusability, adaptability, and scalability.",
     ],
     image: Course,
   },

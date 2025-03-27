@@ -205,7 +205,124 @@ export const items = [
 
   // Add other carousel items here
 ];
-export const cards = [{ title: "Eligibility" }, { title: "Senior Faculty" }];
+export const cards = [
+  { title: "Eligibility" },
+  { title: "Curriculum" },
+  { title: "Senior Faculty" },
+];
+export const semesterData = [
+  {
+    semester: "I SEMESTER",
+    subjects: [
+      { code: "991001", title: "English And Communication Skills I" },
+      { code: "991002", title: "Applied Mathematics I" },
+      { code: "991003", title: "Applied Physics I" },
+      { code: "991004", title: "Applied Chemistry I" },
+      { code: "991005", title: "Computer Fundamentals" },
+      { code: "991006", title: "Engineering Drawing I" },
+      { code: "991007", title: "General Workshop Practice I" },
+      { code: "991051", title: "Disc/Game/Sca/Ncc/Nss#" },
+      {
+        code: "991052",
+        title: "Industrial Exposure(Assignment At Institute Level)",
+      },
+    ],
+  },
+  {
+    semester: "II SEMESTER",
+    subjects: [
+      { code: "992001", title: "English And Communication Skills II" },
+      { code: "992002", title: "Applied Mathematics II" },
+      { code: "992003", title: "Applied Physics II" },
+      { code: "992004", title: "Applied Chemistry II" },
+      { code: "992005", title: "Environmental Science & Energy Management" },
+      { code: "992006", title: "Engineering Graphics II" },
+      { code: "992007", title: "General Workshop Practice II" },
+      { code: "992051", title: "Disc / Game / Sca / Ncc / Nss#" },
+      {
+        code: "992052",
+        title: "Industrial Exposure(Assignment At Institute Level)",
+      },
+    ],
+  },
+  {
+    semester: "III SEMESTER",
+    subjects: [
+      { code: "023006", title: "Fluid Mechanics" },
+      { code: "023001", title: "Engineering Mechanics*" },
+      { code: "023002", title: "Basic Surveying" },
+      { code: "023004", title: "Building Material and Construction" },
+      { code: "023003", title: "Building Drawing" },
+      { code: "023005", title: "Electrical & Mechanical Engineering Systems" },
+      {
+        code: "023052",
+        title: "Industrial Exposure(Assessment at institute level)",
+      },
+      { code: "013054", title: "General Proficiency" },
+    ],
+  },
+  {
+    semester: "IV SEMESTER",
+    subjects: [
+      { code: "024001", title: "Advance Surveying" },
+      { code: "024005", title: "Mechanics of Structures" },
+      { code: "024006", title: "Water Supply & Waste Water Engineering" },
+      { code: "024004", title: "Irrigation Engineering" },
+      { code: "024002", title: "Concrete Technology" },
+      {
+        code: "024003",
+        title: "Environmental & Irrigation Engineering Drawing",
+      },
+      {
+        code: "024052",
+        title: "Industrial Exposure(Assessment at institute level)",
+      },
+      { code: "014054", title: "General Proficiency" },
+      { code: "024053", title: "Industrial Training" },
+    ],
+  },
+  {
+    semester: "V SEMESTER",
+    subjects: [
+      { code: "025003", title: "Reinforced Concrete Design" },
+      { code: "025005", title: "Highway & Airport Engineering" },
+      { code: "025006", title: "Railways, Bridges and Tunnel Engineering" },
+      { code: "025001", title: "Estimating & Costing" },
+      { code: "025002", title: "Geotechnical Engineering" },
+      { code: "025004", title: "Computer Application In Civil Engineering" },
+      {
+        code: "025052",
+        title: "Industrial Exposure (Assessment at institute level)",
+      },
+      { code: "025053", title: "Industrial Training" },
+      { code: "025054", title: "General Proficiency" },
+    ],
+  },
+  {
+    semester: "VI SEMESTER",
+    subjects: [
+      { code: "026003", title: "Steel Structure Design" },
+      { code: "026002", title: "Earthquake Resistant Building Construction" },
+      {
+        code: "026001",
+        title:
+          "Construction Management Accounts & Entrepreneurship Development",
+      },
+      { code: "026006", title: "Disaster Management" },
+      { code: "026007", title: "Repair and Rehabilitation of Buildings" },
+      { code: "026004", title: "Structural Drawing" },
+      { code: "026008", title: "Major Project Work" },
+      { code: "026005", title: "Survey Camp" },
+      {
+        code: "026052",
+        title: "Industrial Exposure(Assessment at institute level)",
+      },
+      { code: "016054", title: "General Proficiency" },
+      { code: "016055", title: "Employability Skills" },
+    ],
+  },
+];
+
 export const selectedCardTable = [
   {
     sno: 1,

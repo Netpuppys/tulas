@@ -29,7 +29,6 @@ import Archit from "../../../../../public/courses/btech/civil-engineering/facult
 import ArchitResume from "../../../../../public/courses/btech/civil-engineering/facultyData/ArchitResume.pdf";
 import Bhumika from "../../../../../public/courses/btech/civil-engineering/facultyData/Bhumika.webp";
 import BhumikaResume from "../../../../../public/courses/btech/civil-engineering/facultyData/BhumikaResume.pdf";
-import ArunAgarwal from "../../../../../public/courses/btech/civil-engineering/facultyData/ArunAgarwal.webp";
 import Prashant from "../../../../../public/courses/btech/civil-engineering/facultyData/PrashantGussain.webp";
 import PrashantResume from "../../../../../public/courses/btech/civil-engineering/facultyData/PrashantResume.pdf";
 import content1 from "../../../../../public/courses/btech/civil-engineering/content1.webp";
@@ -306,7 +305,7 @@ export const semesterData = [
       { code: "CEP 002", title: "Surveying" },
       { code: "CEP 003", title: "Strength of material" },
       { code: "CEP 004", title: "Internship-I/Mini Project-I" },
-      { code: "SCT 005", title: "Python Programming" },
+      { code: "CST 005", title: "Python Programming" },
     ],
   },
   {

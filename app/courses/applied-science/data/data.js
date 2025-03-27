@@ -41,6 +41,9 @@ import TarunKumar from "../../../../public/courses/applied-science/facultyData/T
 import TarunKumarResume from "../../../../public/courses/applied-science/facultyData/TarunKumarResume.pdf";
 import Tikaram from "../../../../public/courses/applied-science/facultyData/Tikaram.webp";
 import TikaramResume from "../../../../public/courses/applied-science/facultyData/TikaramResume.pdf";
+import AniketPal from "../../../../public/courses/applied-science/facultyData/AniketPal.webp";
+import AniketPalResume from "../../../../public/courses/applied-science/facultyData/AniketPalResume.pdf";
+import MukeshPathela from "../../../../public/courses/btech/electronics-and-communication/facultyData/MukeshPathela.webp";
 import Vijay from "../../../../public/About/vijay.png";
 import VijayResume from "../../../../public/courses/applied-science/facultyData/VijayResume.pdf";
 import Link from "next/link";
@@ -108,7 +111,7 @@ export const items = [
     title: "Course Outcomes",
     description: [
       <Link href={ASCdocument} target="_blank">
-        B.Tech 1st Year
+        Click here to Download B.Tech 1st Year Course Outcomes
       </Link>,
     ],
     image: Course,
@@ -154,7 +157,63 @@ export const sections = [
     image: DepartmentalMission,
   },
 ];
-export const cards = [{ title: "Senior Faculty" }];
+export const cards = [
+  { title: "Eligibility" },
+  { title: "Senior Faculty" },
+  // { title: "Curriculum" },
+  { title: "From the Desk of HOD" },
+];
+export const selectedCard1 = (
+  <>
+    <span className="font-[Arapey] pb-[1%] leading-tight">
+      Admission Eligibility
+    </span>
+    <ul className="font-[TTChocolates] list-disc ml-5 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
+      <li>
+        Passed 10+2 examination with Physics, Chemistry,
+        Mathematics/Biology/Agriculture Obtained at least 45% marks (40% marks
+        in case of candidates belonging to reserved category) in the above
+        subjects taken together.
+      </li>
+    </ul>
+  </>
+);
+export const hod = [
+  {
+    name: "Mr. Mukesh Pathela",
+    email: "ash.hod@tulas.edu.in",
+    designation: "Head of the Department,",
+    department: "Applied Sciences and Humanities",
+    imageUrl: MukeshPathela, // Replace with the actual image path
+  },
+];
+export const HODcontent = (
+  <>
+    Welcome to the Department of Applied Sciences & Humanities!
+    <br />
+    <br />
+    We are committed to fostering a dynamic and intellectually stimulating
+    environment that encourages innovation, discovery, and the practical
+    application of scientific principles. At our department, we recognize the
+    vital role that both scientific knowledge and the humanities play in shaping
+    well-rounded individuals and innovative thinkers. We strive to create an
+    academic environment where students are encouraged to explore the
+    intersection of scientific discovery and the rich cultural, ethical, and
+    philosophical dimensions of human experience.
+    <br />
+    <br />
+    Our goal is to produce graduates who not only excel in their chosen fields
+    but also contribute meaningfully to society by applying their knowledge in
+    ways that address global challenges.
+    <br />
+    <br />
+    Our dedicated faculty members are experts in their respective fields,
+    guiding students through hands-on experiences and research initiatives that
+    equip them with the knowledge and tools to succeed in a rapidly changing
+    world. We aim to cultivate graduates who are not only technically proficient
+    but also socially responsible, ethical, and globally aware.
+  </>
+);
 
 export const facultyData = [
   {
@@ -337,5 +396,14 @@ export const facultyData = [
     experience: "10",
     imageUrl: RiyaDariyal,
     resume: RiyaDariyalResume,
+  },
+  {
+    name: "Mr. Aniket Pal Gadariya",
+    designation: "Assistant professor",
+    education: "MSc",
+    publications: "0",
+    experience: "2",
+    imageUrl: AniketPal,
+    resume: AniketPalResume,
   },
 ];

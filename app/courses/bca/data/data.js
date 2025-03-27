@@ -91,77 +91,68 @@ export const items = [
     ],
     image: USP,
     points: [
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>In-Demand Skills for a Future-Ready Career</strong>
-          <br />
-          Gain mastery in the most sought-after programming languages, including
-          C, C++, Java, and Python. Learn core topics in web development,
-          database management, and networking from experienced faculty with
-          real-world expertise. At Tula’s, we don’t just teach technology; we
-          prepare you to thrive in it.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Unmatched Career Opportunities</strong>
-          <br />
-          Our BCA graduates step into fulfilling careers as software developers,
-          system analysts, database administrators, IT consultants, and more.
-          With the tech world expanding rapidly into areas like artificial
-          intelligence, data science, and cybersecurity, a degree from Tula’s
-          Institute positions you at the forefront of these advancements.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Practical, Hands-On Learning</strong>
-          <br />
-          With a curriculum that balances theory and practical application,
-          students at Tula’s gain valuable real-world experience. Through
-          industry projects, internships, and workshops, you’ll apply classroom
-          learning to solve real business challenges. By graduation, you’ll be
-          job-ready with an impressive portfolio of projects and practical
-          skills.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Pathways to Advanced Education</strong>
-          <br />
-          Tula's BCA program sets you up for success, whether you aim to pursue
-          an MCA, MBA, or any other advanced degree. Our program is designed to
-          equip you with the foundational knowledge and academic rigor necessary
-          to excel in higher education and beyond.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Entrepreneurial Empowerment</strong>
-          <br />
-          Our BCA program isn’t just about landing a job; it’s about building a
-          future. Whether you dream of launching your own tech start-up or
-          developing a groundbreaking app, Tula’s Institute equips you with the
-          skills, network, and confidence to succeed as a tech entrepreneur.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Vibrant, Supportive Campus Culture</strong>
-          <br />
-          Join a diverse community of ambitious students and skilled faculty in
-          a dynamic learning environment. Our campus offers state-of-the-art
-          facilities, modern labs, and numerous student clubs where you can
-          sharpen your skills, grow your network, and find lifelong mentors.
-        </li>
-      </ul>,
+      <>
+        <strong className="font-bold">
+          In-Demand Skills for a Future-Ready Career
+        </strong>
+        <br />
+        Gain mastery in the most sought-after programming languages, including
+        C, C++, Java, and Python. Learn core topics in web development, database
+        management, and networking from experienced faculty with real-world
+        expertise. At Tula’s, we don’t just teach technology; we prepare you to
+        thrive in it.
+      </>,
+      <>
+        <strong className="font-bold">Unmatched Career Opportunities</strong>
+        <br />
+        Our BCA graduates step into fulfilling careers as software developers,
+        system analysts, database administrators, IT consultants, and more. With
+        the tech world expanding rapidly into areas like artificial
+        intelligence, data science, and cybersecurity, a degree from Tula’s
+        Institute positions you at the forefront of these advancements.
+      </>,
+      <>
+        <strong className="font-bold">Practical, Hands-On Learning</strong>
+        <br />
+        With a curriculum that balances theory and practical application,
+        students at Tula’s gain valuable real-world experience. Through industry
+        projects, internships, and workshops, you’ll apply classroom learning to
+        solve real business challenges. By graduation, you’ll be job-ready with
+        an impressive portfolio of projects and practical skills.
+      </>,
+      <>
+        <strong className="font-bold">Pathways to Advanced Education</strong>
+        <br />
+        Tula's BCA program sets you up for success, whether you aim to pursue an
+        MCA, MBA, or any other advanced degree. Our program is designed to equip
+        you with the foundational knowledge and academic rigor necessary to
+        excel in higher education and beyond.
+      </>,
+      <>
+        <strong className="font-bold">Entrepreneurial Empowerment</strong>
+        <br />
+        Our BCA program isn’t just about landing a job; it’s about building a
+        future. Whether you dream of launching your own tech start-up or
+        developing a groundbreaking app, Tula’s Institute equips you with the
+        skills, network, and confidence to succeed as a tech entrepreneur.
+      </>,
+      <>
+        <strong className="font-bold">
+          Vibrant, Supportive Campus Culture
+        </strong>
+        <br />
+        Join a diverse community of ambitious students and skilled faculty in a
+        dynamic learning environment. Our campus offers state-of-the-art
+        facilities, modern labs, and numerous student clubs where you can
+        sharpen your skills, grow your network, and find lifelong mentors.
+      </>,
     ],
   },
   {
     title: "Course Outcomes",
     description: [
       <Link href={bcaDocument} target="_blank">
-        BCA
+        Click here to Download BCA Course Outcomes
       </Link>,
     ],
     image: Course,
@@ -449,43 +440,36 @@ export const itemsClubs = [
     ],
     image: USP,
     points: [
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Cutting-Edge Curriculum:</strong>
-          <br />
-          Gain proficiency in programming languages like Java, Python, C++, and
-          more. With courses in database management, networking, and software
-          development, BCA covers everything you need to excel in the tech
-          world.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Hands-On Projects:</strong>
-          <br />
-          Get practical experience through projects that solve real-world
-          problems, allowing you to build a portfolio that showcases your skills
-          to future employers.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Internships and Industrial Visits:</strong>
-          <br />
-          Experience firsthand how the industry operates through internships and
-          industrial visits that give you a clear picture of life in the tech
-          world.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Add-On Certifications:</strong>
-          <br />
-          Enhance your expertise with certifications in emerging fields like
-          cloud computing, data analytics, and cybersecurity. These additional
-          skills make you stand out and keep you ahead of industry trends.
-        </li>
-      </ul>,
+      <>
+        <strong className="font-bold">Cutting-Edge Curriculum:</strong>
+        <br />
+        Gain proficiency in programming languages like Java, Python, C++, and
+        more. With courses in database management, networking, and software
+        development, BCA covers everything you need to excel in the tech world.
+      </>,
+      <>
+        <strong className="font-bold">Hands-On Projects:</strong>
+        <br />
+        Get practical experience through projects that solve real-world
+        problems, allowing you to build a portfolio that showcases your skills
+        to future employers.
+      </>,
+      <>
+        <strong className="font-bold">
+          Internships and Industrial Visits:
+        </strong>
+        <br />
+        Experience firsthand how the industry operates through internships and
+        industrial visits that give you a clear picture of life in the tech
+        world.
+      </>,
+      <>
+        <strong className="font-bold">Add-On Certifications:</strong>
+        <br />
+        Enhance your expertise with certifications in emerging fields like cloud
+        computing, data analytics, and cybersecurity. These additional skills
+        make you stand out and keep you ahead of industry trends.
+      </>,
       "With a BCA, you’ll be equipped not just with technical knowledge, but with the problem-solving, analytical, and project management skills that today’s tech roles demand. Every experience prepares you to step confidently into a rewarding career.",
     ],
   },
@@ -496,42 +480,33 @@ export const itemsClubs = [
     ],
     image: Course,
     points: [
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Internship Opportunities:</strong>
-          <br />
-          Gain invaluable hands-on experience with internships in leading tech
-          companies, allowing you to apply classroom knowledge to real industry
-          projects.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Short-Term Courses:</strong>
-          <br />
-          Keep pace with the latest trends and tools through targeted short-term
-          courses designed to help you stay competitive and expand your skill
-          set.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Add-On Certification Courses:</strong>
-          <br />
-          Boost your expertise with specialized add-on certification courses,
-          equipping you with niche skills and advanced knowledge in key areas of
-          technology.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Industrial Visits:</strong>
-          <br />
-          Broaden your industry perspective with guided visits to top IT firms
-          and tech hubs, where you can see cutting-edge technology in action and
-          learn directly from industry professionals.
-        </li>
-      </ul>,
+      <>
+        <strong className="font-bold">Internship Opportunities:</strong>
+        <br />
+        Gain invaluable hands-on experience with internships in leading tech
+        companies, allowing you to apply classroom knowledge to real industry
+        projects.
+      </>,
+      <>
+        <strong className="font-bold">Short-Term Courses:</strong>
+        <br />
+        Keep pace with the latest trends and tools through targeted short-term
+        courses designed to help you stay competitive and expand your skill set.
+      </>,
+      <>
+        <strong className="font-bold">Add-On Certification Courses:</strong>
+        <br />
+        Boost your expertise with specialized add-on certification courses,
+        equipping you with niche skills and advanced knowledge in key areas of
+        technology.
+      </>,
+      <>
+        <strong className="font-bold">Industrial Visits:</strong>
+        <br />
+        Broaden your industry perspective with guided visits to top IT firms and
+        tech hubs, where you can see cutting-edge technology in action and learn
+        directly from industry professionals.
+      </>,
       "These additional offerings not only enhance your practical knowledge but also give you a competitive edge, making you stand out to employers and equipping you to succeed in the dynamic field of technology.",
     ],
   },
@@ -542,93 +517,74 @@ export const itemsClubs = [
     ],
     image: Program,
     points: [
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Software Developer</strong>
-          <br />
-          Transform ideas into reality by creating innovative software and
-          applications that make a difference. As a software developer, you’ll
-          be at the forefront of building tech solutions that people use every
-          day, from mobile apps to complex enterprise systems.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong> Web Developer & Designer</strong>
-          <br />
-          Shape the digital landscape as a web developer or designer, crafting
-          engaging and responsive websites that power e-commerce, media, and
-          entertainment. Use your creativity and technical skills to create
-          seamless online experiences for users worldwide.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong> Data Analyst</strong>
-          <br />
-          Dive into the world of data to help businesses make smarter,
-          data-driven decisions. Data analysts play a vital role in interpreting
-          trends, forecasting outcomes, and unlocking valuable insights that
-          drive company growth and innovation.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>System Analyst</strong>
-          <br />
-          Optimize business operations by identifying technology needs and
-          recommending the best solutions. As a system analyst, you’ll bridge
-          the gap between technology and business, ensuring organizations stay
-          competitive and efficient.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong> Database Administrator</strong>
-          <br />
-          Manage and safeguard the data that fuels today’s digital world.
-          Database administrators are responsible for organizing, securing, and
-          ensuring the accessibility of data, making it a critical role in every
-          industry.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Cybersecurity Specialist</strong>
-          <br />
-          Protect organizations from digital threats in this essential and
-          rapidly growing field. As a cybersecurity specialist, you’ll defend
-          systems and data from cyber attacks, safeguarding the digital future.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>IT Consultant</strong>
-          <br />
-          Provide expert advice to businesses on the best technologies to meet
-          their goals. IT consultants guide companies in making strategic tech
-          decisions, from selecting software to implementing secure systems.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Entrepreneur in Tech</strong>
-          <br />
-          Dream of building your own tech company? A BCA equips you with the
-          knowledge and skills to start your own venture, develop innovative
-          apps, or offer IT solutions as an entrepreneur.
-        </li>
-      </ul>,
-      <ul className="list-disc ml-5">
-        <li>
-          <strong>Further Studies – MCA and Beyond</strong>
-          <br />
-          For those who wish to deepen their expertise, pursuing a Master’s in
-          Computer Applications (MCA) or specialized certifications can take
-          your skills to an even higher level, opening doors to leadership
-          roles, teaching, and research.
-        </li>
-      </ul>,
+      <>
+        <strong className="font-bold">Software Developer</strong>
+        <br />
+        Transform ideas into reality by creating innovative software and
+        applications that make a difference. As a software developer, you’ll be
+        at the forefront of building tech solutions that people use every day,
+        from mobile apps to complex enterprise systems.
+      </>,
+      <>
+        <strong className="font-bold"> Web Developer & Designer</strong>
+        <br />
+        Shape the digital landscape as a web developer or designer, crafting
+        engaging and responsive websites that power e-commerce, media, and
+        entertainment. Use your creativity and technical skills to create
+        seamless online experiences for users worldwide.
+      </>,
+      <>
+        <strong className="font-bold"> Data Analyst</strong>
+        <br />
+        Dive into the world of data to help businesses make smarter, data-driven
+        decisions. Data analysts play a vital role in interpreting trends,
+        forecasting outcomes, and unlocking valuable insights that drive company
+        growth and innovation.
+      </>,
+      <>
+        <strong className="font-bold">System Analyst</strong>
+        <br />
+        Optimize business operations by identifying technology needs and
+        recommending the best solutions. As a system analyst, you’ll bridge the
+        gap between technology and business, ensuring organizations stay
+        competitive and efficient.
+      </>,
+      <>
+        <strong className="font-bold"> Database Administrator</strong>
+        <br />
+        Manage and safeguard the data that fuels today’s digital world. Database
+        administrators are responsible for organizing, securing, and ensuring
+        the accessibility of data, making it a critical role in every industry.
+      </>,
+      <>
+        <strong className="font-bold">Cybersecurity Specialist</strong>
+        <br />
+        Protect organizations from digital threats in this essential and rapidly
+        growing field. As a cybersecurity specialist, you’ll defend systems and
+        data from cyber attacks, safeguarding the digital future.
+      </>,
+      <>
+        <strong className="font-bold">IT Consultant</strong>
+        <br />
+        Provide expert advice to businesses on the best technologies to meet
+        their goals. IT consultants guide companies in making strategic tech
+        decisions, from selecting software to implementing secure systems.
+      </>,
+      <>
+        <strong className="font-bold">Entrepreneur in Tech</strong>
+        <br />
+        Dream of building your own tech company? A BCA equips you with the
+        knowledge and skills to start your own venture, develop innovative apps,
+        or offer IT solutions as an entrepreneur.
+      </>,
+      <>
+        <strong className="font-bold">Further Studies – MCA and Beyond</strong>
+        <br />
+        For those who wish to deepen their expertise, pursuing a Master’s in
+        Computer Applications (MCA) or specialized certifications can take your
+        skills to an even higher level, opening doors to leadership roles,
+        teaching, and research.
+      </>,
     ],
   },
 ];

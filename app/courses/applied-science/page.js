@@ -13,8 +13,11 @@ import {
   content,
   facultyData,
   features,
+  hod,
+  HODcontent,
   items,
   sections,
+  selectedCard1,
 } from "./data/data";
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
 import BannerProgram from "@/component/Programs/BannerProgram";
@@ -48,7 +51,13 @@ function BAJMC() {
           backgroundCrousel={CrouselBackground}
         />
         <Vision color={true} sections={sections} />
-        <TableProgram cards={cards} facultyData={facultyData} />
+        <TableProgram
+          cards={cards}
+          selectedCard1={selectedCard1}
+          facultyData={facultyData}
+          hod={hod}
+          HODcontent={HODcontent}
+        />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <Footer />

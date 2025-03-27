@@ -30,11 +30,11 @@ function FacultyData({ facultyData }) {
       {facultyData.map((faculty, index) => (
         <div
           key={index}
-          className={`flex group relative flex-col w-[calc(50%-1rem)] md:min-w-[15vw] md:max-w-[15vw] border border-[#323232] rounded-xl overflow-hidden items-start justify-center transition-all ease-in duration-300 ${
+          className={`flex group relative flex-col w-[calc(50%-1rem)] md:min-w-[15vw] md:max-w-[15vw] border border-[#323232] rounded-xl overflow-hidden items-start justify-between transition-all ease-in duration-300 ${
             faculty.linkTo ? "cursor-pointer" : ""
           }`}
         >
-          <div className="w-full !aspect-[0.75/1] h-full group-hover:opacity-0 flex flex-col justify-end items-center relative rounded-xl overflow-hidden transition-all ease-in duration-300">
+          <div className="w-full aspect-[0.75/1] group-hover:opacity-0 flex flex-col justify-end items-center relative rounded-xl overflow-hidden transition-all ease-in duration-300">
             <Image
               onClick={() => {
                 if (faculty.linkTo) {
@@ -43,7 +43,7 @@ function FacultyData({ facultyData }) {
               }}
               src={faculty.imageUrl}
               alt=""
-              className="rounded-xl  w-full h-full object-cover"
+              className="rounded-xl w-full h-full object-cover"
             />
           </div>
           <div

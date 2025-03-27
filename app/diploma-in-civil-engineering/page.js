@@ -16,6 +16,7 @@ import {
   quotes,
   sections,
   selectedCardTable,
+  semesterData,
   sideImages,
 } from "./data/data";
 import BannerProgram from "@/component/Programs/BannerProgram";
@@ -50,6 +51,7 @@ function BAJMC() {
         <TableProgram
           cards={cards}
           selectedCardTable={selectedCardTable}
+          semesterData={semesterData}
           facultyData={facultyData}
         />
         <PlacementProgram features={features} />

@@ -485,7 +485,7 @@ export const facultyData = [
     resume: priyankaResume,
   },
   {
-    name: "Mr. Narendra Kuamr",
+    name: "Mr. Narendra Kumar",
     designation: "ASST PROFESSOR",
     education: "M.Tech ",
     publications: "2",
