@@ -174,7 +174,7 @@ function NavbarDesktop({
                 className="border-t last:border-b border-[#C5C5C5] flex flex-col h-fit w-full overflow-auto"
                 key={`${activeLink}-${index}`}
               >
-                <span className="flex items-center bg-white group hover:bg-[#919191] transition-all duration-300 ease-linear justify-between cursor-pointer h-full min-h-[6vh]">
+                <span className="flex bg-white group hover:bg-[#919191] transition-all duration-300 ease-linear justify-between cursor-pointer h-full min-h-[6vh]">
                   {/* <Link
                     href={
                       nestedLinks.target
@@ -194,7 +194,7 @@ function NavbarDesktop({
                   {checkCurrentPageOpen(nestedLinks.linkTo) ? (
                     <button
                       onClick={handleOutsideClick}
-                      className="flex-auto w-full font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                      className="flex-auto w-full font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                     >
                       {nestedLinks.title}
                     </button>
@@ -213,7 +213,7 @@ function NavbarDesktop({
                               ? "noopener noreferrer"
                               : undefined
                           }
-                          className="flex-auto font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex items-center h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
+                          className="flex-auto font-[TTChocolatesMedium] px-[7%] py-1 font-normal flex h-full text-[clamp(10px,1.3vw,100px)] leading-tight text-[#007A83] group-hover:text-white transition-all duration-300 ease-linear"
                         >
                           {nestedLinks.title}
                         </Link>
