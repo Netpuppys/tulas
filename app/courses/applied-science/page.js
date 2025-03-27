@@ -36,7 +36,7 @@ function BAJMC() {
         <Navbar />
         <BannerProgram
           image={BannerImg}
-          title=<>Department of Applied Science and Humanities</>
+          title=<>Department of Applied Sciences and Humanities</>
           titleColor={""}
           description={""}
         />

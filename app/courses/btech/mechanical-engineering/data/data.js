@@ -30,8 +30,6 @@ import Rahul from "../../../../../public/courses/btech/mechanical-engineering/fa
 import RahulResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/RahulResume.pdf";
 import Himanshu from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Himanshu.webp";
 import HimanshuResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/HimanshuResume.pdf";
-import DeveshSharma from "../../../../../public/courses/btech/mechanical-engineering/facultyData/DeveshSharma.webp";
-import DeveshResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/DeveshSharmaResume.pdf";
 import Abhishek from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Abhishek.webp";
 import AbhishekResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AbhishekResume.pdf";
 import Manoj from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Manoj.webp";
@@ -469,15 +467,6 @@ export const facultyData = [
     publications: "6",
     imageUrl: Sachin,
     resume: SachinResume,
-  },
-  {
-    name: "Mr. Devesh Sharma",
-    education: "B.Tech, M.Tech",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    publications: "5",
-    imageUrl: DeveshSharma,
-    resume: DeveshResume,
   },
   {
     name: "Mr. Amit Moray",

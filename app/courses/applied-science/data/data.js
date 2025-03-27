@@ -11,22 +11,16 @@ import Chandrashekhar from "../../../../public/courses/applied-science/facultyDa
 import ChandrashekharResume from "../../../../public/courses/applied-science/facultyData/ChandrashekharResume.pdf";
 import DeepakChandola from "../../../../public/courses/applied-science/facultyData/DeepakChandola.webp";
 import DeepakChandolaResume from "../../../../public/courses/applied-science/facultyData/DeepakChandolaResume.pdf";
-import Dimpal from "../../../../public/courses/applied-science/facultyData/Dimpal.webp";
-import DimpalResume from "../../../../public/courses/applied-science/facultyData/DimpalResume.pdf";
 import GurleenKaur from "../../../../public/courses/applied-science/facultyData/GurleenKaur.webp";
 import GurleenKaurResume from "../../../../public/courses/applied-science/facultyData/GurleenKaurResume.pdf";
 import Neelima from "../../../../public/courses/applied-science/facultyData/Neelima.webp";
 import NeelimaResume from "../../../../public/courses/applied-science/facultyData/NeelimaResume.pdf";
-import NidhiTiwari from "../../../../public/courses/applied-science/facultyData/NidhiTiwari.webp";
-import NidhiTiwariResume from "../../../../public/courses/applied-science/facultyData/NidhiTiwariResume.pdf";
 import Niharika from "../../../../public/courses/applied-science/facultyData/Niharika.webp";
 import NiharikaResume from "../../../../public/courses/applied-science/facultyData/NiharikaResume.pdf";
 import RachnaSharma from "../../../../public/courses/applied-science/facultyData/RachnaSharma.webp";
 import RachnaSharmaResume from "../../../../public/courses/applied-science/facultyData/RachnaSharmaResume.pdf";
 import RiyaDariyal from "../../../../public/courses/applied-science/facultyData/RiyaDariyal.webp";
 import RiyaDariyalResume from "../../../../public/courses/applied-science/facultyData/RiyaDariyalResume.pdf";
-import RuchikaAttri from "../../../../public/courses/applied-science/facultyData/RuchikaAttri.webp";
-import RuchikaAttriResume from "../../../../public/courses/applied-science/facultyData/RuchikaAttriResume.pdf";
 import SagarPundir from "../../../../public/courses/applied-science/facultyData/SagarPundir.webp";
 import SagarPundirResume from "../../../../public/courses/applied-science/facultyData/SagarPundirResume.pdf";
 import SanketKumar from "../../../../public/courses/applied-science/facultyData/SanketKumar.webp";
@@ -255,15 +249,6 @@ export const facultyData = [
     resume: DeepakChandolaResume,
   },
   {
-    name: "Ms. Nidhi Tiwari",
-    designation: "Assistant Professor",
-    education: "M.sc Ph.D. (P)",
-    publications: "0",
-    experience: "0",
-    imageUrl: NidhiTiwari,
-    resume: NidhiTiwariResume,
-  },
-  {
     name: "Ms. Gurleen kaur",
     designation: "Assistant Professor",
     education: "M.Sc",
@@ -280,15 +265,6 @@ export const facultyData = [
     experience: "1",
     imageUrl: SagarPundir,
     resume: SagarPundirResume,
-  },
-  {
-    name: "Dr. Ruchika Attri",
-    designation: "Assistant Professor",
-    education: "Ph.D.",
-    publications: "8",
-    experience: "7",
-    imageUrl: RuchikaAttri,
-    resume: RuchikaAttriResume,
   },
   {
     name: "Mr. Chandrashekhar",
@@ -334,15 +310,6 @@ export const facultyData = [
     experience: "2",
     imageUrl: Niharika,
     resume: NiharikaResume,
-  },
-  {
-    name: "Dr. Dimpal",
-    designation: "Assistant Professor",
-    education: "Ph.D.",
-    publications: "0",
-    experience: "2.5",
-    imageUrl: Dimpal,
-    resume: DimpalResume,
   },
   {
     name: "Ms. Tanuja Uniyal",
