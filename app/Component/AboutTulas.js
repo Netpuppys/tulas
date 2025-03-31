@@ -193,7 +193,7 @@ function AboutTulas() {
   const sendOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tulas.edu.in/send-otp", {
+      .post("https://otp.tulas.edu.in/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         message:
           "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
@@ -212,7 +212,7 @@ function AboutTulas() {
   const verifyOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tulas.edu.in/verify-otp", {
+      .post("https://otp.tulas.edu.in/verify-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         otp: otp,
       })
@@ -231,7 +231,7 @@ function AboutTulas() {
   const resendOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tulas.edu.in/retry-otp", {
+      .post("https://otp.tulas.edu.in/retry-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
       })
       .then((response) => {
@@ -500,7 +500,7 @@ function AboutTulas() {
           </div>
         </div>
       )}
-      
+
       {loading && (
         <div className="fixed w-screen h-screen bg-black bg-opacity-50 backdrop-blur-sm top-0 left-0 z-[9999999] flex justify-center items-center">
           <div className="">
