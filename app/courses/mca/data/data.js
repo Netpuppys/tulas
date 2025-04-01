@@ -1,9 +1,14 @@
-import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../../public/courses/btech/CourseOutcomes.png";
+import ProgramOutcomes from "../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalOutcome from "../../../../public/courses/mca/ProgramEducationalOutcome.webp"
+import clubs from "../../../../public/courses/bjmc/clubs.png";
+import beyondCurriculum from "../../../../public/courses/bca/beyondCurriculum.webp";
+import careerProspectus from "../../../../public/courses/bjmc/careerProspectus.png";
 import mcaDocument from "../../../../public/courses/mca/MCA.pdf";
-import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
+import DepartmentalVission from "../../../../public/courses/mca/departmentVission.webp";
+import DepartmentalMission from "../../../../public/courses/mca/departmentMission.webp";
 import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
 import PriyaResume from "../../../../public/courses/mca/facultyData/PriyaResume.pdf";
 import RASHMI from "../../../../public/courses/mca/facultyData/RASHMI.webp";
@@ -21,6 +26,9 @@ import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/Sanj
 import Link from "next/link";
 import placement3 from "../../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+import content1 from "../../../../public/courses/mca/content1.webp";
+import content2 from "../../../../public/courses/mca/content2.webp";
+
 export const features = [
   {
     image: placement3,
@@ -31,6 +39,22 @@ export const features = [
     image2: placement4,
   },
 ];
+export const sideImages = [content1, content2];
+export const heading = (
+  <>
+    Best Master’s of Computer Applications Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
+export const quotes = (
+  <>
+    “Code your future, innovate with technology, and transform the world with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s Master’s of Computer Applications Program.
+    </strong>
+    ”
+  </>
+);
 export const content = (
   <>
     The Master of Computer Applications (MCA) is a postgraduate pathway to
@@ -115,7 +139,7 @@ export const items = [
         Click here to Download MCA Course Outcomes
       </Link>,
     ],
-    image: Course,
+    image: CourseOutcomes,
   },
   {
     title: "Program Outcomes",
@@ -123,7 +147,7 @@ export const items = [
       "PO1 (Foundation Knowledge): Apply knowledge of mathematics, programming logic and coding fundamentals for solution architecture and problem solving.",
       "PO2 (Problem Analysis): Identify, review, formulate and analyse problems for primarily focussing on customer requirements using critical thinking frameworks.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "PO3 (Development of Solutions): Design, develop and investigate problems with as an innovative approach for solutions incorporating ESG/SDG goals.",
       "PO4 (Modern Tool Usage): Select, adapt and apply modern computational tools such as development of algorithms with an understanding of the limitations including human biases.",
@@ -141,7 +165,7 @@ export const items = [
       "PEO 3: Global Competence and Lifelong Learning: Graduates will be equipped with a comprehensive education in computer applications, meeting the international standard, and continue a process of learning about new technologies and trends over time.",
       "PEO 4: Industry Collaboration and Research Excellence: All graduates will enjoy partnerships with the software industries and research institutes, thus having hands-on experiences in projects and research on advanced technology areas, improving their skills in collaborative and independent research.",
     ],
-    image: Course,
+    image: ProgramEducationalOutcome,
   },
   {
     title: "Program Specific Outcomes",
@@ -150,7 +174,7 @@ export const items = [
       "PSO 2: Analyze, design, develop, test and maintain the software applications with latest computing tools and technologies.",
       "PSO 3: Equipped with project management skills to plan, execute, and deliver software projects effectively, considering factors such as scope, time, cost, quality, and risk.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
   },
 
   // Add other carousel items here
@@ -451,7 +475,7 @@ export const itemsClubs = [
       "Technical Writer",
       "System Analyst",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Beyond the Curriculum – More Than Just a Degree",
@@ -464,7 +488,7 @@ export const itemsClubs = [
         challenges.
       </>,
     ],
-    image: Course,
+    image: beyondCurriculum,
     points: [
       <>
         <strong className="font-bold">Add-On Certifications:</strong>
@@ -507,7 +531,7 @@ export const itemsClubs = [
         industries.
       </>,
     ],
-    image: Program,
+    image: careerProspectus,
     points: [
       <>
         <strong className="font-bold">Data Scientist/Analyst: </strong>

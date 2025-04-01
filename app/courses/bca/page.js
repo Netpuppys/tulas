@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../public/courses/bca/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../component/topRecruiter";
@@ -20,6 +20,9 @@ import {
   sections,
   selectedCardTable,
   semesterData,
+  heading,
+  quotes,
+  sideImages,
 } from "./data/data";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import BannerProgram from "@/component/Programs/BannerProgram";
@@ -45,7 +48,12 @@ function BBA() {
           titleColor={""}
           description={""}
         />
-        <Program content={content} />
+        <Program
+          content={content}
+          heading={heading}
+          quotes={quotes}
+          sideImages={sideImages}
+        />
         <CarouselProgram
           heading={"Discover"}
           items={items}

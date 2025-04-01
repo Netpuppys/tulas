@@ -1,9 +1,13 @@
-import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../../public/courses/btech/CourseOutcomes.png";
+import ProgramOutcomes from "../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import clubs from "../../../../public/courses/bjmc/clubs.png";
+import beyondCurriculum from "../../../../public/courses/bca/beyondCurriculum.webp";
+import careerProspectus from "../../../../public/courses/bjmc/careerProspectus.png";
 import bcaDocument from "../../../../public/courses/bca/BCA.pdf";
-import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
+import DepartmentalVission from "../../../../public/courses/bca/departmentalVision.webp";
+import DepartmentalMission from "../../../../public/courses/bca/departmentalMission.webp";
 import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
 import PriyaResume from "../../../../public/courses/mca/facultyData/PriyaResume.pdf";
 import aizaz from "../../../../public/courses/bca/facultyData/aizaz.webp";
@@ -29,6 +33,8 @@ import gauravSrivastava from "../../../../public/courses/bca/gauravSrivastava.pn
 import prathamNautiyal from "../../../../public/courses/bca/prathamNautiyal.png";
 import rohitKotnala from "../../../../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../../../../public/courses/bca/saurabhRawat.png";
+import content1 from "../../../../public/courses/bca/content1.webp";
+import content2 from "../../../../public/courses/bca/content2.webp";
 export const features = [
   {
     image: anshikaPundir,
@@ -43,6 +49,12 @@ export const features = [
     image2: saurabhRawat,
   },
 ];
+export const heading = (
+  <>
+    Best Bachelor of Computer Applications Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const content = (
   <>
     The Bachelor of Computer Applications (BCA) is a three-year program blending
@@ -81,6 +93,16 @@ export const content = (
     computer application, of our institute, strive to create the best
     professionals possible by providing a conducive environment for study and
     research in various fields of computer science.
+  </>
+);
+export const sideImages = [content1, content2];
+export const quotes = (
+  <>
+    “Code your future, innovate with technology, and transform the world with{" "}
+    <strong className="text-[#760135]">
+      Tula’s Institute’s Bachelor of Computer Applications Program.
+    </strong>
+    ”
   </>
 );
 export const items = [
@@ -155,7 +177,7 @@ export const items = [
         Click here to Download BCA Course Outcomes
       </Link>,
     ],
-    image: Course,
+    image: CourseOutcomes,
   },
   {
     title: "Program Outcomes",
@@ -163,7 +185,7 @@ export const items = [
       "PO1 – Take Thinking : Take informed action after identifying the assumptions that frame our thinking and action, checking out the degree to which these assumptions are accurate and valid, and looking at our ideas and decisions (intellectual, organizational, and personals) from different perspectives.",
       "PO2 – Effective Communication : Speak, read, write and listen clearly in person and thought electronics media in English and in one Indian Language, and make meaning of the world by connecting people, ideas, book, media and technology.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "PO3 – Social Interaction : Elicit views of others, mediate disagreements and help reach conclusion in group settings.",
       "PO4 – Effective Citizenship : Demonstrate empathetic social concern and equity national development, and the ability to act with an informed awareness of issues and participate in civic life through volunteering.",
@@ -178,7 +200,7 @@ export const items = [
       "PSO 1 : Ability to build and perform career in data management and support IT industry.",
       "PSO 2 : Develop skills to design industry software and applications",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
   },
 
   // Add other carousel items here
@@ -438,7 +460,7 @@ export const itemsClubs = [
     description: [
       "Choosing a Bachelor of Computer Applications (BCA) opens up a world of learning and growth in one of the most sought-after fields today. As a BCA student, you’ll immerse yourself in a curriculum that combines technical skills with practical experiences, preparing you for a variety of exciting roles in technology. Here’s what you can look forward to during your BCA journey:",
     ],
-    image: USP,
+    image: clubs,
     points: [
       <>
         <strong className="font-bold">Cutting-Edge Curriculum:</strong>
@@ -478,7 +500,7 @@ export const itemsClubs = [
     description: [
       "At Tula’s Institute, we believe in empowering our students with real-world skills and experiences that extend far beyond the classroom. Our comprehensive approach includes a variety of additional opportunities to enrich your learning and career prospects:",
     ],
-    image: Course,
+    image: beyondCurriculum,
     points: [
       <>
         <strong className="font-bold">Internship Opportunities:</strong>
@@ -515,7 +537,7 @@ export const itemsClubs = [
     description: [
       "Completing a Bachelor of Computer Applications (BCA) opens the door to a world filled with dynamic and rewarding career paths. As a BCA graduate, you’ll be equipped with the skills and knowledge to thrive in an industry where technology is reshaping the future every day. Here are just some of the inspiring career opportunities available to BCA graduates:",
     ],
-    image: Program,
+    image: careerProspectus,
     points: [
       <>
         <strong className="font-bold">Software Developer</strong>
