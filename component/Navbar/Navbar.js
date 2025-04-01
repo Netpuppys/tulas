@@ -19,7 +19,7 @@ import { SiGoogleforms } from "react-icons/si";
 import { BsWhatsapp } from "react-icons/bs";
 import logo360 from "../../public/Components/Navbar/logo360.png";
 import whatsapp from "../../public/Components/Navbar/whatsapp.png";
-import phoneLogo from "../../public/Components/Navbar/phoneLogo.png";
+import Years20 from "../../public/graduate-school-of-business/mba/20Years.png";
 
 function Navbar({
   setState,
@@ -129,9 +129,7 @@ function Navbar({
         </div>
         <div
           className={`mdNavbar:px-10 w-full relative ${
-            !isChecked
-              ? "mdNavbar:bg-[rgba(19,19,19,0.50)] mdNavbar:backdrop-blur-xl"
-              : ""
+            !isChecked ? "bg-[rgba(19,19,19,0.50)] backdrop-blur-xl" : ""
           } h-full py-2 flex flex-col justify-center`}
         >
           <div className="hidden h-fit w-full mdNavbar:flex justify-between items-center">
@@ -269,6 +267,12 @@ function Navbar({
                 onClick={() => (window.location.href = `/${utmParams}`)}
                 className="w-[12vw] h-full pointer-events-auto cursor-pointer"
               />
+              <div className="h-[60px] w-[1px] bg-white"></div>
+              <Image
+                src={Years20}
+                alt=""
+                className="w-[8vw] h-fit pointer-events-auto cursor-pointer"
+              />
             </div>
             {/* )} */}
 
@@ -287,18 +291,16 @@ function Navbar({
           </div>
 
           {/*Mobile navbar */}
-          <div className="w-full pointer-events-auto h-fit px-3">
-            <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
+          <div className="w-full flex flex-col gap-2 pointer-events-auto h-fit px-3">
+            <div className="flex w-full flex-row-reverse items-start mdNavbar:flex-row justify-between">
               <div className="flex mdNavbar:hidden mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
                 {/* menu button */}
                 <button
-                  className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
+                  className="bg-[#007A83] rounded-full text-3xl shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
                   onClick={handleButtonClick}
                 >
                   {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
-                  <div
-                    className={`p-[15px] rounded-[50%] aspect-square border-r-transparent`}
-                  >
+                  <div className={`p-[11px] rounded-[50%] aspect-square`}>
                     <label
                       className={
                         isChecked
@@ -320,7 +322,7 @@ function Navbar({
                 </button>
                 {/* apply now button */}
                 <button
-                  className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
+                  className="bg-[#760135] rounded-full text-3xl shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
                   onClick={() =>
                     (window.location.href = `/apply-now/${utmParams}`)
                   }
@@ -333,11 +335,24 @@ function Navbar({
                 className="mdNavbar:hidden animate-translateButton"
               >
                 <Image
-                  src={TulasLogoGreen}
+                  src={TulasLogo}
                   alt=""
                   className="w-[50vw] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
                 />
               </Link>
+            </div>
+            <div className="w-fit flex mdNavbar:hidden relative items-center gap-3 md:gap-6">
+              <Image
+                src={Years20}
+                alt=""
+                className="w-[20vw] md:w-[7vw] h-fit"
+              />
+              <div className="h-[30px] md:h-[60px] w-[1px] bg-white"></div>
+
+              <Image src={NBA} alt="" className="w-[15vw] md:w-[5vw] h-fit" />
+              <div className="h-[30px] md:h-[60px] w-[1px] bg-white"></div>
+
+              <Image src={NAAC} alt="" className="w-[30vw] md:w-[10vw] h-fit" />
             </div>
           </div>
         </div>
