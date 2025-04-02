@@ -15,13 +15,8 @@ import bpharmaBanner from "../../../public/courses/bpharm/bpharmaBanner.jpg";
 import {
   cards,
   content,
-  facultyData,
-  hod,
-  HODcontent,
   items,
-  itemsClubs,
   selectedCard1,
-  semesterData,
   heading,
   sideImages,
   features,
@@ -59,14 +54,7 @@ function BPharma() {
           downloadBtnText={"Program Structure (B.Pharm)"}
         />
         <div className="w-full h-10 md:h-40"></div>
-        <TableProgram
-          cards={cards}
-          hod={hod}
-          HODcontent={HODcontent}
-          selectedCard1={selectedCard1}
-          semesterData={semesterData}
-          facultyData={facultyData}
-        />
+        <TableProgram cards={cards} selectedCard1={selectedCard1} />
         {bpharmacy && (
           <div
             className={`relative pt-3  z-[9] flex space-x-4 ${
