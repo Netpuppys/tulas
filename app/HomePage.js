@@ -25,16 +25,16 @@ import Famous from "./Component/Famous";
 import AbhishekPandy from "../public/graduate-school-of-business/bba/AbhishekPandy.png";
 import AdilAhmed from "../public/graduate-school-of-business/bba/AdilAhmed.png";
 import AdityaPandey from "../public/graduate-school-of-business/bba/AdityaPandey.png";
-import DivyaShankar from "../public/graduate-school-of-business/bba/DivyaShankar.png";
-import GautamSinghChauhan from "../public/graduate-school-of-business/bba/GautamSinghChauhan.png";
 import JasmineBatham from "../public/graduate-school-of-business/bba/JasmineBatham.png";
+import GautamSinghChauhan from "../public/graduate-school-of-business/bba/GautamSinghChauhan.png";
 import KumariPriya from "../public/graduate-school-of-business/bba/KumariPriya.png";
+import DivyaShankar from "../public/graduate-school-of-business/bba/DivyaShankar.png";
 import NainseeSingh from "../public/graduate-school-of-business/bba/NainseeSingh.png";
 import PriyankaDhiman from "../public/graduate-school-of-business/bba/PriyankaDhiman.png";
 import RahulBauri from "../public/graduate-school-of-business/bba/RahulBauri.png";
 import RajniMondi from "../public/graduate-school-of-business/bba/RajniMondi.png";
-import RomaKumari from "../public/graduate-school-of-business/bba/RomaKumari.png";
 import ShambhaviRajChauhan from "../public/graduate-school-of-business/bba/ShambhaviRajChauhan.png";
+import RomaKumari from "../public/graduate-school-of-business/bba/RomaKumari.png";
 import SrishtiGupta from "../public/graduate-school-of-business/bba/SrishtiGupta.png";
 import SushantTrivedi from "../public/graduate-school-of-business/bba/SushantTrivedi.png";
 import UjjwalPratik from "../public/graduate-school-of-business/bba/UjjwalPratik.png";
@@ -68,14 +68,14 @@ const features = [
   },
   {
     image: AdityaPandey,
-    image2: DivyaShankar,
-  },
-  {
-    image: GautamSinghChauhan,
     image2: JasmineBatham,
   },
   {
-    image: KumariPriya,
+    image: GautamSinghChauhan,    
+    image2: KumariPriya,
+  },
+  {
+    image: DivyaShankar,
     image2: NainseeSingh,
   },
   {
@@ -84,10 +84,10 @@ const features = [
   },
   {
     image: RajniMondi,
-    image2: RomaKumari,
+    image2: ShambhaviRajChauhan,
   },
   {
-    image: ShambhaviRajChauhan,
+    image: RomaKumari,
     image2: SrishtiGupta,
   },
   {
