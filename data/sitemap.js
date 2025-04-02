@@ -344,10 +344,6 @@ const sitemap = [
         title: "Entrepreneurship Development Cell",
         linkTo: "/research/entrepreneurship-development-cell",
       },
-      // {
-      //   title: "Web Development Cell",
-      //   linkTo: "/research/web-development-cell",
-      // },
       {
         title: "Institute Innovation Council",
         linkTo: "/research/institute-innovation-council-iic",
@@ -370,6 +366,10 @@ const sitemap = [
         title: "Tula’s Technology and Incubator (TTBI)",
         linkTo: "https://www.tulasincubator.com",
         target: "_blank",
+      },
+      {
+        title: "AICTE IDEA LAB",
+        linkTo: "/research/aicte-idea-lab",
       },
     ],
   },

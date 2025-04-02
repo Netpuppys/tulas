@@ -10,7 +10,7 @@ import { Fade } from "react-awesome-reveal";
 import intellectual from "../../../public/research/intellectual/intellectual.png";
 import Vision from "@/component/Programs/Vision";
 
-function WebDevelopmentCell() {
+function AICTEIDEALAB() {
   const sections = [
     {
       title: "Web Development Cell",
@@ -81,12 +81,12 @@ function WebDevelopmentCell() {
     <>
       <head>
         <title>
-          Web Development Cell | Best Engineering College in Dehradun,
-          Uttarakhand | Tula's Institute
+          AICTE IDEA Lab | Best Engineering College in Dehradun, Uttarakhand |
+          Tula's Institute
         </title>
         <meta
           name="description"
-          content="Explore the Web Development Cell at Tula's Institute, fostering innovation and skills in web technologies through collaborative projects, workshops, and expert guidance."
+          content="Explore the AICTE IDEA Lab at Tula's Institute, fostering innovation and skills in web technologies through collaborative projects, workshops, and expert guidance."
         />
       </head>
       <body>
@@ -96,23 +96,13 @@ function WebDevelopmentCell() {
             image={BannerImg}
             title={
               <>
-                Web <span className="text-[#007A83]">Development Cell</span>
+                AICTE IDEA <span className="text-[#007A83]">Lab</span>
               </>
             }
             description={<></>}
-            belowTitle={<></>}
-            belowPara={
-              "Tula’s Institute houses a dedicated Web Development Cell that plays a vital role in managing and maintaining the institute’s online presence and digital platforms. The Web Development Cell consists of a team of skilled professionals and enthusiastic students who work together to ensure an effective and engaging online experience for the institute’s stakeholders."
-            }
+            belowTitle={"Page Under Development"}
+            belowPara={""}
           />
-          <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div>
-          <Vision sections={sections} />
           <div className="w-full h-fit z-50">
             <Footer color={true} />
           </div>
@@ -122,4 +112,4 @@ function WebDevelopmentCell() {
   );
 }
 
-export default WebDevelopmentCell;
+export default AICTEIDEALAB;

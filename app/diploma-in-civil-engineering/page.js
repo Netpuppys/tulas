@@ -21,6 +21,7 @@ import {
 } from "./data/data";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import { hod, HODcontent } from "../courses/btech/civil-engineering/data/data";
 function BAJMC() {
   return (
     <>
@@ -51,6 +52,8 @@ function BAJMC() {
         <TableProgram
           cards={cards}
           selectedCardTable={selectedCardTable}
+          hod={hod}
+          HODcontent={HODcontent}
           semesterData={semesterData}
           facultyData={facultyData}
         />

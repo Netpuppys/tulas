@@ -209,6 +209,7 @@ export const cards = [
   { title: "Eligibility" },
   { title: "Curriculum" },
   { title: "Senior Faculty" },
+  { title: "From the Desk of HOD" },
 ];
 export const semesterData = [
   {
