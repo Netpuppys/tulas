@@ -412,7 +412,7 @@ function Navbar({
                 (window.location.href =
                   "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
               }
-              className="bg-[#007A83] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+              className="bg-[#00837d] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
             >
               <Image
                 src={whatsapp}
@@ -424,7 +424,7 @@ function Navbar({
               onClick={() =>
                 (window.location.href = `/virtual-tour/index.html/${utmParams}`)
               }
-              className="bg-[#760135] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+              className="bg-[#760135] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
             >
               <Image
                 src={logo360}
@@ -435,7 +435,7 @@ function Navbar({
             <a
               href="tel:+91-9837983721"
               title="Admissions Helpline Number - +91-9837983721"
-              className="bg-[#E69706] cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+              className="bg-[#E69706] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
             >
               <Image
                 src={phoneCallGif}

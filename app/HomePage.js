@@ -46,6 +46,7 @@ import gauravSrivastava from "../public/courses/bca/gauravSrivastava.png";
 import prathamNautiyal from "../public/courses/bca/prathamNautiyal.png";
 import rohitKotnala from "../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../public/courses/bca/saurabhRawat.png";
+import StatsAndNews from "./Component/LatestAction";
 const bannerText = (
   <>
     <span className=" font-[TTChocolatesMedium] font-semibold">
@@ -123,6 +124,7 @@ export default function HomePage() {
         <BannerHome isChecked={isChecked} />
         <AboutTulas />
         <LifeAtTulas />
+        <StatsAndNews/>
         <Courses parentRef={parentRef} />
         <Accreditation />
         <Placement features={features} />
