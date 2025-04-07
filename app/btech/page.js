@@ -224,11 +224,11 @@ function BTech() {
     const searchQuery = searchParams.get("search_query");
     const updatedFormData = {
       ...formData,
-      LeadChannel: utmParams ? 26 : 2,
-      LeadSource: utmParams ? utmSource || 88 : 25,
+      LeadChannel: utmParams ? 7 : 2,
+      LeadSource: utmParams ? utmSource || 31 : 25,
       LeadCampaign: utmParams
-        ? utmCampaign || "Enquire Now Ads"
-        : "Enquire Now Organic",
+        ? utmCampaign || "BTech page Ads"
+        : "BTech page Organic",
       Field5: utmParams
         ? utmTerm || "No Term Found"
         : "Organic Lead Search Term not available",

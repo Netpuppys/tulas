@@ -148,8 +148,8 @@ function AboutTulas() {
     const searchQuery = searchParams.get("search_query");
     const updatedFormData = {
       ...formData,
-      LeadChannel: utmParams ? 26 : 2,
-      LeadSource: utmParams ? utmSource || 88 : 25,
+      LeadChannel: utmParams ? 7 : 2,
+      LeadSource: utmParams ? utmSource || 31 : 25,
       LeadCampaign: utmParams
         ? utmCampaign || "Enquire Now Ads"
         : "Enquire Now Organic",

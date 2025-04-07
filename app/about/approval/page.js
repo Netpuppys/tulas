@@ -25,6 +25,7 @@ import AICTEApproval08 from "../../../public/About/Approvals/AprovalImages/AICTE
 import AICTEApproval07 from "../../../public/About/Approvals/AprovalImages/AICTEApproval(EOA)07-08.webp";
 import AICTEApproval06 from "../../../public/About/Approvals/AprovalImages/AICTEApproval(EOA)06-07.webp";
 import Link from "next/link";
+import AICTEApproval25Pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2025-26.pdf";
 import AICTEApprovalPdf from "../../../public/About/Approvals/ApprovalsPDF/EOAReport2023-24.pdf";
 import AICTEApproval22pdf from "../../../public/About/Approvals/ApprovalsPDF/EXTENSION-OF-APPROVAL-2022-23.pdf";
 import AICTEApproval21pdf from "../../../public/About/Approvals/ApprovalsPDF/EOA-Report-21-22.pdf";
@@ -52,6 +53,12 @@ export const metadata = {
 
 function Approval() {
   const approvalData = [
+    {
+      imageSrc: AICTEApproval06,
+      title: "AICTE Approval (EOA)",
+      year: "2025-26",
+      link: AICTEApproval25Pdf,
+    },
     {
       imageSrc: AICTEApproval,
       title: "AICTE Approval (EOA)",
