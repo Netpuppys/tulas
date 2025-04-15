@@ -149,17 +149,18 @@ function LifeAtTulas() {
                 disableOnInteraction: true,
               }}
               modules={[Autoplay]}
-              className="w-full h-full mySwiper"
+              className="w-full h-full mySwiper "
               slidesPerView={1}
             >
               {slides.map((slide, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="w-full h-full">
+                  <div className="w-full h-full bg-black">
                     <Image
                       src={slide.image}
                       alt=""
-                      className="w-full -z-10 h-full object-cover"
+                      className="w-full -z-10 h-full object-cover opacity-70"
                     />
+                    <div className=" absolute w-full h-full z-20"></div>
                     <div className="absolute z-20 left-[5%] top-[6%]">
                       <div className="text-white w-fit font-[TTChocolatesMedium] text-[clamp(10px,5vw,30px)] md:text-[clamp(10px,1.5vw,50px)] leading-tight">
                         {slide.title}
