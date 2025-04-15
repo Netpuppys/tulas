@@ -136,7 +136,7 @@ function LifeAtTulas() {
       <div className="w-[85%] mx-auto pb-[5%] flex flex-wrap gap-1 justify-center">
         {swiper.map((slides, index) => (
           <div
-            className={`aspect-[1.5/1] md:aspect-auto ${
+            className={`aspect-[1/1] md:aspect-auto ${
               index === 0 || index === 3
                 ? "w-full md:w-[calc(45%-4px)]"
                 : "w-full md:w-[calc(55%-4px)]"
@@ -161,11 +161,11 @@ function LifeAtTulas() {
                       className="w-full -z-10 h-full object-cover"
                     />
                     <div className="absolute z-20 left-[5%] top-[6%]">
-                      <div className="text-white w-fit font-[TTChocolatesMedium] text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,50px)] leading-tight">
+                      <div className="text-white w-fit font-[TTChocolatesMedium] text-[clamp(10px,5vw,30px)] md:text-[clamp(10px,1.5vw,50px)] leading-tight">
                         {slide.title}
                         <div className="h-[2px] bg-[#E69706] w-[50%] rounded-full"></div>
                       </div>
-                      <h3 className="text-[clamp(8px,3.5vw,30px)] md:text-[clamp(10px,0.9vw,45px)] md:max-w-[60%]">
+                      <h3 className="text-[clamp(8px,3.8vw,30px)] mt-2 md:text-[clamp(10px,1.05vw,45px)] md:max-w-[70%]">
                         {slide.description}
                       </h3>
                     </div>
