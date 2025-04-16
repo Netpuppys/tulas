@@ -6,7 +6,14 @@ import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
 import RankedBannerDesktop from "../../public/Homepage/BannerHome/RankedBannerDesktop.webp";
 import SanskritiBannerDesktop from "../../public/Homepage/BannerHome/SanskritiBannerDesktop.webp";
-const bannerImages = [RankedBannerDesktop, SanskritiBannerDesktop];
+const bannerImages = [
+  RankedBannerDesktop,
+  SanskritiBannerDesktop,
+  RankedBannerDesktop,
+  SanskritiBannerDesktop,
+  RankedBannerDesktop,
+  SanskritiBannerDesktop,
+];
 
 function BannerHomeDesktop({ isChecked }) {
   const [currentIndex, setCurrentIndex] = useState(0);

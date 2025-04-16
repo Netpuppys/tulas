@@ -6,7 +6,14 @@ import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
 import RankedBannerMobile from "../../public/Homepage/BannerHome/RankedBannerMobile.webp";
 import SanskritiBannerMobile from "../../public/Homepage/BannerHome/SanskritiBannerMobile.webp";
-const bannerImages = [RankedBannerMobile, SanskritiBannerMobile];
+const bannerImages = [
+  RankedBannerMobile,
+  SanskritiBannerMobile,
+  RankedBannerMobile,
+  SanskritiBannerMobile,
+  RankedBannerMobile,
+  SanskritiBannerMobile,
+];
 
 function BannerHomeMobile({ isChecked }) {
   const [currentIndex, setCurrentIndex] = useState(0);
