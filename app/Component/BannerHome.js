@@ -12,10 +12,11 @@ import bannerImage5 from "../../public/Homepage/BannerHome/BannerImage5.webp";
 import bannerImage6 from "../../public/Homepage/BannerHome/BannerImage6.webp";
 import RankedBannerMobile from "../../public/Homepage/BannerHome/RankedBannerMobile.webp";
 import RankedBannerDesktop from "../../public/Homepage/BannerHome/RankedBannerDesktop.webp";
+import SanskritiBannerMobile from "../../public/Homepage/BannerHome/SanskritiBannerMobile.webp";
 import SanskritiBannerDesktop from "../../public/Homepage/BannerHome/SanskritiBannerDesktop.webp";
 
 const bannerImagesDesktop = [RankedBannerDesktop, SanskritiBannerDesktop];
-const bannerImagesMobile = [RankedBannerMobile, SanskritiBannerDesktop];
+const bannerImagesMobile = [RankedBannerMobile, SanskritiBannerMobile];
 
 function BannerHome() {
   const [currentIndex, setCurrentIndex] = useState(0);
