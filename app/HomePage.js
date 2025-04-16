@@ -9,7 +9,6 @@ import VirtualTour from "./Component/VirtualTour";
 import Footer from "@/component/Footer";
 import Courses from "./Component/Courses";
 import WhyTulasScroll from "./Component/WhyTulasScroll";
-import BannerHome from "@/app/Component/BannerHome";
 import CampusLife from "./Component/CampusLife";
 import Testimonials from "./Component/Testimonials";
 import RankBanner from "./Component/RankBanner";
@@ -51,6 +50,8 @@ import CoursesNew from "./Component/CoursesNew";
 import AccreditationLogo from "./Component/AccreditationLogo";
 import EventsAndActivites from "./Component/EventsAndActivites";
 import { ThreeDots } from "react-loader-spinner";
+import BannerHomeDesktop from "@/app/Component/BannerHomeDesktop";
+import BannerHomeMobile from "./Component/BannerHomeMobile";
 const bannerText = (
   <>
     <span className=" font-[TTChocolatesMedium] font-semibold">
@@ -193,7 +194,12 @@ export default function HomePage() {
 
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar setState={setIsChecked} fullBanner={true} />
-        <BannerHome isChecked={isChecked} />
+        <div className="hidden md:block">
+          <BannerHomeDesktop isChecked={isChecked} />
+        </div>
+        <div className="block md:hidden">
+          <BannerHomeMobile isChecked={isChecked} />
+        </div>
         <div
           ref={scrollContainerRef}
           style={{
