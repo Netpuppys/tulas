@@ -13,6 +13,12 @@ const bannerImages = [
   SanskritiBannerDesktop,
   RankedBannerDesktop,
   SanskritiBannerDesktop,
+  RankedBannerDesktop,
+  SanskritiBannerDesktop,
+  RankedBannerDesktop,
+  SanskritiBannerDesktop,
+  RankedBannerDesktop,
+  SanskritiBannerDesktop,
 ];
 
 function BannerHomeDesktop({ isChecked }) {

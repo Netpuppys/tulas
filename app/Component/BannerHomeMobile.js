@@ -13,6 +13,12 @@ const bannerImages = [
   SanskritiBannerMobile,
   RankedBannerMobile,
   SanskritiBannerMobile,
+  RankedBannerMobile,
+  SanskritiBannerMobile,
+  RankedBannerMobile,
+  SanskritiBannerMobile,
+  RankedBannerMobile,
+  SanskritiBannerMobile,
 ];
 
 function BannerHomeMobile({ isChecked }) {

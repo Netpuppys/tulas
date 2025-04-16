@@ -8,15 +8,10 @@ import Virtual from "./Component/Virtual";
 import VirtualTour from "./Component/VirtualTour";
 import Footer from "@/component/Footer";
 import Courses from "./Component/Courses";
-import WhyTulasScroll from "./Component/WhyTulasScroll";
 import CampusLife from "./Component/CampusLife";
 import Testimonials from "./Component/Testimonials";
-import RankBanner from "./Component/RankBanner";
-import Awards from "./Component/Awards";
 import Accreditation from "./Component/Accreditation";
 import AwardsCrousel from "./Component/AwardsCrousel";
-import loader from "../public/loading.svg";
-import Image from "next/image";
 import LifeAtTulas from "./Component/LifeAtTulas";
 import MeetOurManagement from "./Component/MeetOurManagement";
 import Placement from "./Component/Placement";
@@ -49,24 +44,8 @@ import StatsAndNews from "./Component/LatestAction";
 import CoursesNew from "./Component/CoursesNew";
 import AccreditationLogo from "./Component/AccreditationLogo";
 import EventsAndActivites from "./Component/EventsAndActivites";
-import { ThreeDots } from "react-loader-spinner";
 import BannerHomeDesktop from "@/app/Component/BannerHomeDesktop";
 import BannerHomeMobile from "./Component/BannerHomeMobile";
-const bannerText = (
-  <>
-    <span className=" font-[TTChocolatesMedium] font-semibold">
-      Tula's Institute
-    </span>{" "}
-    was established in 2006, under the aegis of{" "}
-    <span className=" font-[TTChocolatesMedium] font-semibold">
-      Rishabh Educational Trust
-    </span>
-    , Dehradun with the vision of offering excellent academics along with
-    fostering the professional and personal personas of every student of the
-    Institution. Tula's is dedicated to serve the communities by recognizing the
-    diverse needs of individuals.
-  </>
-);
 const features = [
   {
     image: AbhishekPandy,
@@ -178,20 +157,9 @@ export default function HomePage() {
       title: "65th best Engineering Colleges in India by Outlook.",
     },
   ];
-  const [isClient, setIsClient] = useState(false);
-  useEffect(() => {
-    setIsClient(true); // Ensures the component renders only on the client
-  }, []);
+
   return (
     <>
-      {!isClient && (
-        <div className="fixed w-screen h-screen bg-black bg-opacity-60 backdrop-blur-sm top-0 left-0 z-[9999999] flex justify-center items-center">
-          <div className="">
-            <ThreeDots color="#FFF" />
-          </div>
-        </div>
-      )}
-
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar setState={setIsChecked} fullBanner={true} />
         <div className="hidden md:block">
