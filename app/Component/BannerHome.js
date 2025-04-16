@@ -4,19 +4,27 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
-import RankedBannerDesktop from "../../public/Homepage/BannerHome/RankedBannerDesktop.webp";
-import SanskritiBannerDesktop from "../../public/Homepage/BannerHome/SanskritiBannerDesktop.webp";
+import bannerImage1 from "../../public/Homepage/BannerHome/BannerImage1.webp";
+import bannerImage2 from "../../public/Homepage/BannerHome/BannerImage2.webp";
 import bannerImage3 from "../../public/Homepage/BannerHome/BannerImage3.webp";
 import bannerImage4 from "../../public/Homepage/BannerHome/BannerImage4.webp";
 import bannerImage5 from "../../public/Homepage/BannerHome/BannerImage5.webp";
 import bannerImage6 from "../../public/Homepage/BannerHome/BannerImage6.webp";
 const bannerImages = [
-  RankedBannerDesktop,
-  SanskritiBannerDesktop,
+  bannerImage1,
+  bannerImage2,
   bannerImage3,
   bannerImage4,
   bannerImage5,
   bannerImage6,
+];
+const title = [
+  <p className="text-white"></p>,
+  <p className="text-white"></p>,
+  <p className="text-white"></p>,
+  <p className="text-white"></p>,
+  <p className="text-white"></p>,
+  <p className="text-white"></p>,
 ];
 
 function BannerHome({ isChecked }) {
@@ -58,16 +66,16 @@ function BannerHome({ isChecked }) {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full mt-20 md:mt-10 aspect-[1/1] md:aspect-auto md:h-screen transition-all duration-1000 relative bg-black bg-opacity-50 flex items-start z-0"
+      className="w-full aspect-[1/1] md:aspect-auto md:h-screen transition-all duration-1000 relative bg-black bg-opacity-50 flex items-start z-0"
     >
       <div
         className={`bottom-4 md:bottom-10 md:pr-[140px] z-10 absolute mx-4 md:ml-16 
         ${isChecked ? "md:pl-[440px] md:animate-translateLeftMenu" : "pl-0"}
         `}
       >
-        {/* <h2 className="text-[clamp(10px,7vw,70px)] md:text-[clamp(10px,4.2vw,70px)] z-10 leading-[1.1] font-[CarotSlab]">
+        <h2 className="text-[clamp(10px,7vw,70px)] md:text-[clamp(10px,4.2vw,70px)] z-10 leading-[1.1] font-[CarotSlab]">
           {title[currentIndex]}
-        </h2> */}
+        </h2>
       </div>
       <button
         onClick={handleScrollArrow}
