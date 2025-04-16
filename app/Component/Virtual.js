@@ -32,7 +32,7 @@ function Virtual() {
             src="https://s3.ap-south-1.amazonaws.com/tulas.edu/tour.html"
           />
           <div className="absolute flex flex-col justify-center w-full h-full text-center items-center">
-            <Image src={icon360} className="text-white text-[80px]" />
+            <Image src={icon360} priority className="text-white text-[80px]" />
 
             <h5
               className="text-[31px] text-white"

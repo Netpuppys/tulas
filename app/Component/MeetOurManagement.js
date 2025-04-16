@@ -114,6 +114,7 @@ const InternalSection = () => {
                 <Image
                   src={card.image}
                   alt=""
+                  priority
                   className="rounded-xl top-0 image-overlay w-full h-full object-cover"
                 />
                 <div className="rounded-xl absolute top-0 flip-image w-full h-full bg-[#760135] flex items-center justify-center px-2 md:px-[5%]">
@@ -142,6 +143,7 @@ const InternalSection = () => {
                 <Image
                   src={card.image}
                   alt=""
+                  priority
                   className="rounded-xl top-0 image-overlay w-full h-full object-cover"
                 />
                 <div className="rounded-xl absolute top-0 flip-image w-full h-full bg-[#760135] flex items-center justify-center px-2 md:px-[5%]">

@@ -84,7 +84,7 @@ const CampusLife = () => {
       {/* <p className="uppercase text-4xl text-[#007A83] font-semibold tracking-[0.15em]">
         Campus Life
       </p> */}
-      <div className="w-full relative h-[45rem]">
+      <div className="w-full relative h-[30rem] md:h-[45rem]">
         <div ref={contRef} className="w-full h-full relative">
           <div
             ref={scrollRef}
@@ -101,6 +101,7 @@ const CampusLife = () => {
                     <Image
                       src={image}
                       className="w-full h-full object-cover"
+                      priority
                       alt=""
                     />
                   </div>

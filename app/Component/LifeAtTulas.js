@@ -133,7 +133,7 @@ function LifeAtTulas() {
         Life At Tulas
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
-      <div className="w-[85%] mx-auto pb-[5%] flex flex-wrap gap-1 justify-center">
+      <div className="w-[85%] mx-auto flex flex-wrap gap-1 justify-center">
         {swiper.map((slides, index) => (
           <div
             className={`aspect-[1/1] md:aspect-auto ${
@@ -158,6 +158,7 @@ function LifeAtTulas() {
                     <Image
                       src={slide.image}
                       alt=""
+                      priority
                       className="w-full -z-10 h-full object-cover opacity-70"
                     />
                     <div className=" absolute w-full h-full z-20"></div>

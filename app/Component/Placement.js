@@ -36,6 +36,7 @@ function Placement({ features }) {
                   <Image
                     src={feature.image}
                     alt=""
+                    priority
                     className="rounded-xl md:rounded-2xl h-fit object-cover"
                   />
                 </div>
@@ -43,6 +44,7 @@ function Placement({ features }) {
                   <Image
                     src={feature.image2}
                     alt=""
+                    priority
                     className="rounded-xl md:rounded-3xl h-fit object-cover"
                   />
                 </div>

@@ -11,12 +11,14 @@ function Video() {
             autoPlay
             controls
             muted
+            priority
             className="w-full h-full hidden md:block mx-auto"
             src="https://assets.tulas.edu.in/tulasDesktop.mp4"
           />
           <video
             autoPlay
             controls
+            priority
             muted
             className="w-full h-full md:hidden mx-auto"
             src="https://assets.tulas.edu.in/tulasMobile.mp4"

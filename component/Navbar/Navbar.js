@@ -261,17 +261,18 @@ function Navbar({
                 className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
               />
               <div className="h-[60px] w-[1px] bg-white"></div>
+
+              <Image
+                src={Years20}
+                alt=""
+                className="w-[8vw] h-fit pointer-events-auto cursor-pointer"
+              />
+              <div className="h-[60px] w-[1px] bg-white"></div>
               <Image
                 src={TulasLogo}
                 alt=""
                 onClick={() => (window.location.href = `/${utmParams}`)}
                 className="w-[12vw] h-full pointer-events-auto cursor-pointer"
-              />
-              <div className="h-[60px] w-[1px] bg-white"></div>
-              <Image
-                src={Years20}
-                alt=""
-                className="w-[8vw] h-fit pointer-events-auto cursor-pointer"
               />
             </div>
             {/* )} */}

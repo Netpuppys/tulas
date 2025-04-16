@@ -255,7 +255,7 @@ const Footer = ({ set = false, color = false }) => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.277785508504!2d77.8834027760641!3d30.343054304360063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929fa74538275%3A0x3cb757428c691de3!2sTula&#39;s%20Institute!5e0!3m2!1sen!2sin!4v1724739581831!5m2!1sen!2sin"
               allowfullscreen=""
-              loading="lazy"
+              priority
               className="rounded-2xl h-[20vh] w-full md:w-[20vw]"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>

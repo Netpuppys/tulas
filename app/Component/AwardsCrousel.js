@@ -59,6 +59,7 @@ function AwardsCrousel() {
                 <div className="w-full md:w-[50%] h-full relative flex flex-col justify-between">
                   <Image
                     src={feature.image}
+                    priority
                     alt=""
                     className="rounded-xl md:rounded-2xl h-fit object-cover"
                   />
@@ -72,6 +73,7 @@ function AwardsCrousel() {
                 <div className="w-full md:w-[50%] flex flex-col justify-between">
                   <Image
                     src={feature.image2}
+                    priority
                     alt=""
                     className="rounded-xl md:rounded-3xl h-fit object-cover"
                   />

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import ChitranshiRawat from "../../public/ProminentPersonalities/ChitranshiRawat.webp";
 import DeeptiNaval from "../../public/ProminentPersonalities/DeeptiNaval.webp";
 import DipikaChikhlia from "../../public/ProminentPersonalities/DipikaChikhlia.webp";
@@ -44,285 +44,206 @@ import SushmaSeth from "../../public/ProminentPersonalities/SushmaSeth.webp";
 import ViveckVaswani from "../../public/ProminentPersonalities/ViveckVaswani.webp";
 import YashpalSharma from "../../public/ProminentPersonalities/YashpalSharma.webp";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Autoplay } from "swiper/modules";
 function Famous() {
+  const swiperRef = useRef();
   const sports = [
     {
       image: ChitranshiRawat,
       name: "Chitranshi Rawat",
-      description: "",
-    },
-    {
-      image: DeeptiNaval,
-      name: "Deepti Naval",
-      description: "",
-    },
-    {
-      image: DipikaChikhlia,
-      name: "Dipika Chikhlia",
-      description: "",
+      image2: DeeptiNaval,
+      name2: "Deepti Naval",
+      image3: DipikaChikhlia,
+      name3: "Dipika Chikhlia",
     },
     {
       image: EhsaanQureshi,
       name: "Ehsaan Qureshi",
-      description: "",
-    },
-    {
-      image: GajendraChauhan,
-      name: "Gajendra Chauhan",
-      description: "",
-    },
-    {
-      image: HimaniShivpuri,
-      name: "Himani Shivpuri",
-      description: "",
+      image2: GajendraChauhan,
+      name2: "Gajendra Chauhan",
+      image3: HimaniShivpuri,
+      name3: "Himani Shivpuri",
     },
     {
       image: Ranjeet,
       name: "Ranjeet",
-      description: "",
-    },
-    {
-      image: IlaArun,
-      name: "Ila Arun",
-      description: "",
-    },
-    {
-      image: MadhurBhandarker,
-      name: "Madhur Bhandarker",
-      description: "",
+      image2: IlaArun,
+      name2: "Ila Arun",
+      image3: MadhurBhandarker,
+      name3: "Madhur Bhandarker",
     },
     {
       image: ManishWadhwa,
       name: "Manish Wadhwa",
-      description: "",
-    },
-    {
-      image: PitabhashTripathi,
-      name: "Pitabhash Tripathi",
-      description: "",
-    },
-    {
-      image: PradeepRawat,
-      name: "Pradeep Rawat",
-      description: "",
+      image2: PitabhashTripathi,
+      name2: "Pitabhash Tripathi",
+      image3: PradeepRawat,
+      name3: "Pradeep Rawat",
     },
     {
       image: RajeshSharma,
       name: "Rajesh Sharma",
-      description: "",
-    },
-    {
-      image: VarunBadola,
-      name: "Varun Badola",
-      description: "",
-    },
-    {
-      image: VinayPathak,
-      name: "Vinay Pathak",
-      description: "",
+      image2: VarunBadola,
+      name2: "Varun Badola",
+      image3: VinayPathak,
+      name3: "Vinay Pathak",
     },
     {
       image: BiswajitChatterjee,
       name: "Biswajit Chatterjee",
-      description: "",
-    },
-    {
-      image: DilipSen,
-      name: "Dilip Sen",
-      description: "",
-    },
-    {
-      image: DinoMorea,
-      name: "Dino Morea",
-      description: "",
+      image2: DilipSen,
+      name2: "Dilip Sen",
+      image3: DinoMorea,
+      name3: "Dino Morea",
     },
     {
       image: HemantPandey,
       name: "Hemant Pandey",
-      description: "",
-    },
-    {
-      image: JimmyShergil,
-      name: "Jimmy Shergil",
-      description: "",
-    },
-    {
-      image: KanwaljeetSingh,
-      name: "Kanwaljeet Singh",
-      description: "",
+      image2: JimmyShergil,
+      name2: "Jimmy Shergil",
+      image3: KanwaljeetSingh,
+      name3: "Kanwaljeet Singh",
     },
     {
       image: Khayali,
       name: "Khayali",
-      description: "",
-    },
-    {
-      image: KimSharma,
-      name: "Kim Sharma",
-      description: "",
-    },
-    {
-      image: MohanAgashe,
-      name: "Mohan Agashe",
-      description: "",
+      image2: KimSharma,
+      name2: "Kim Sharma",
+      image3: MohanAgashe,
+      name3: "Mohan Agashe",
     },
     {
       image: MousmiChatterjee,
       name: "Mousmi Chatterjee",
-      description: "",
-    },
-    {
-      image: NassarAbdullah,
-      name: "Nassar Abdullah",
-      description: "",
-    },
-    {
-      image: NawabShah,
-      name: "Nawab Shah",
-      description: "",
+      image2: NassarAbdullah,
+      name2: "Nassar Abdullah",
+      image3: NawabShah,
+      name3: "Nawab Shah",
     },
     {
       image: PoojaBhatt,
       name: "Pooja Bhatt",
-      description: "",
-    },
-    {
-      image: PremChopra,
-      name: "Prem Chopra",
-      description: "",
-    },
-    {
-      image: RajaMurad,
-      name: "Raja Murad",
-      description: "",
+      image2: PremChopra,
+      name2: "Prem Chopra",
+      image3: RajaMurad,
+      name3: "Raja Murad",
     },
     {
       image: RajeevNigam,
       name: "Rajeev Nigam",
-      description: "",
-    },
-    {
-      image: RajendraGupta,
-      name: "Rajendra Gupta",
-      description: "",
-    },
-    {
-      image: RajpalYadav,
-      name: "Rajpal Yadav",
-      description: "",
+      image2: RajendraGupta,
+      name2: "Rajendra Gupta",
+      image3: RajpalYadav,
+      name3: "Rajpal Yadav",
     },
     {
       image: RameshSippy,
       name: "Ramesh Sippy",
-      description: "",
-    },
-    {
-      image: RaunitRoy,
-      name: "Raunit Roy",
-      description: "",
-    },
-    {
-      image: RJKaavya,
-      name: "RJ Kaavya",
-      description: "",
+      image2: RaunitRoy,
+      name2: "Raunit Roy",
+      image3: RJKaavya,
+      name3: "RJ Kaavya",
     },
     {
       image: RoopaGanguly,
       name: "Roopa Ganguly",
-      description: "",
-    },
-    {
-      image: SaurabhShukla,
-      name: "Saurabh Shukla",
-      description: "",
-    },
-    {
-      image: SharmanJoshi,
-      name: "Sharman Joshi",
-      description: "",
+      image2: SaurabhShukla,
+      name2: "Saurabh Shukla",
+      image3: SharmanJoshi,
+      name3: "Sharman Joshi",
     },
     {
       image: SubhashGhai,
       name: "Subhash Ghai",
-      description: "",
-    },
-    {
-      image: SurendraPal,
-      name: "Surendra Pal",
-      description: "",
-    },
-    {
-      image: SushmaSeth,
-      name: "Sushma Seth",
-      description: "",
+      image2: SurendraPal,
+      name2: "Surendra Pal",
+      image3: SushmaSeth,
+      name3: "Sushma Seth",
     },
     {
       image: ViveckVaswani,
       name: "Viveck Vaswani",
-      description: "",
-    },
-    {
-      image: YashpalSharma,
-      name: "Yashpal Sharma",
-      description: "",
+      image2: YashpalSharma,
+      name2: "Yashpal Sharma",
+      image3: NawabShah,
+      name3: "Nawab Shah",
     },
   ];
-  const scrollContainerRef = useRef(null);
-  useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    let scrollAmount = 2; // Speed of scrolling
-    const scroll = () => {
-      if (scrollContainer) {
-        scrollContainer.scrollLeft += scrollAmount;
-        if (
-          scrollContainer.scrollLeft >=
-          scrollContainer.scrollWidth - scrollContainer.clientWidth
-        ) {
-          scrollContainer.scrollLeft = 0; // Reset to start for continuous effect
-        }
-      }
-    };
-    const interval = setInterval(scroll, 20); // Adjust speed here
-    return () => clearInterval(interval);
-  }, []);
+
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="font-[CarotSlab] text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
         Bollywood Actors in Our Campus
         <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
       </div>
-
-      <div className="w-full h-full overflow-hidden ">
-        <div
-          ref={scrollContainerRef}
-          style={{
-            overflowX: "auto",
-            whiteSpace: "nowrap",
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
+      <div className="py-6 flex gap-2 md:py-[3%] w-[90%] md:w-[95%] overflow-hidden">
+        <Swiper
+          ref={swiperRef}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: true,
           }}
-          className="w-full py-6 flex gap-2 md:py-[3%] whitespace-nowrap"
+          modules={[Autoplay]}
+          spaceBetween={20}
+          className="mySwiper"
+          slidesPerView={1}
         >
           {sports.map((sport, index) => (
-            <div
-              key={index}
-              className="relative flex flex-col items-end overflow-hidden rounded-xl border border-[#494949] min-w-[60%] max-w-[60%] md:max-w-[22vw] md:min-w-[22vw] mx-auto"
-            >
-              <div className="w-full h-full flex flex-col justify-between">
-                <Image
-                  src={sport.image}
-                  alt=""
-                  className="w-full h-full aspect-[1.5/1] object-cover"
-                />
+            <SwiperSlide key={index}>
+              <div className="flex flex-col md:flex-row gap-4 md:gap-[2%]">
+                <div className="relative flex overflow-hidden rounded-xl border border-[#494949] w-full mx-auto">
+                  <div className="w-full h-full flex flex-col justify-between">
+                    <Image
+                      src={sport.image}
+                      alt=""
+                      priority
+                      className="w-full h-full aspect-[1.5/1] object-cover"
+                    />
+                  </div>
+                  <div className="p-[3%] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_72.96%,rgba(0,0,0,0.70)_100%)] absolute bottom-0 z-20 flex items-end w-full h-full">
+                    <h2 className="text-[clamp(10px,4.5vw,50px)] text-wrap md:text-[clamp(10px,1.3vw,50px)] text-white font-[TTChocolates] leading-tight font-extrabold">
+                      {sport.name}
+                    </h2>
+                  </div>
+                </div>
+                <div className="relative flex overflow-hidden rounded-xl border border-[#494949] w-full mx-auto">
+                  <div className="w-full h-full flex flex-col justify-between">
+                    <Image
+                      src={sport.image2}
+                      alt=""
+                      priority
+                      className="w-full h-full aspect-[1.5/1] object-cover"
+                    />
+                  </div>
+                  <div className="p-[3%] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_72.96%,rgba(0,0,0,0.70)_100%)] absolute bottom-0 z-20 flex items-end w-full h-full">
+                    <h2 className="text-[clamp(10px,4.5vw,50px)] text-wrap md:text-[clamp(10px,1.3vw,50px)] text-white font-[TTChocolates] leading-tight font-extrabold">
+                      {sport.name2}
+                    </h2>
+                  </div>
+                </div>
+                <div className="relative flex overflow-hidden rounded-xl border border-[#494949] w-full mx-auto">
+                  <div className="w-full h-full flex flex-col justify-between">
+                    <Image
+                      src={sport.image3}
+                      alt=""
+                      priority
+                      className="w-full h-full aspect-[1.5/1] object-cover"
+                    />
+                  </div>
+                  <div className="p-[3%] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_72.96%,rgba(0,0,0,0.70)_100%)] absolute bottom-0 z-20 flex items-end w-full h-full">
+                    <h2 className="text-[clamp(10px,4.5vw,50px)] text-wrap md:text-[clamp(10px,1.3vw,50px)] text-white font-[TTChocolates] leading-tight font-extrabold">
+                      {sport.name3}
+                    </h2>
+                  </div>
+                </div>
               </div>
-              <div className="p-[3%] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_72.96%,rgba(0,0,0,0.70)_100%)] absolute bottom-0 z-20 flex items-end w-full h-full">
-                <h2 className="text-[clamp(10px,3.2vw,50px)] text-wrap md:text-[clamp(10px,1.1vw,50px)] text-white font-[TTChocolates] leading-tight font-extrabold">
-                  {sport.name}
-                </h2>
-              </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </div>
   );

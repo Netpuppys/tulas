@@ -47,6 +47,10 @@ import prathamNautiyal from "../public/courses/bca/prathamNautiyal.png";
 import rohitKotnala from "../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../public/courses/bca/saurabhRawat.png";
 import StatsAndNews from "./Component/LatestAction";
+import CoursesNew from "./Component/CoursesNew";
+import AccreditationLogo from "./Component/AccreditationLogo";
+import EventsAndActivites from "./Component/EventsAndActivites";
+import { ThreeDots } from "react-loader-spinner";
 const bannerText = (
   <>
     <span className=" font-[TTChocolatesMedium] font-semibold">
@@ -72,7 +76,7 @@ const features = [
     image2: JasmineBatham,
   },
   {
-    image: GautamSinghChauhan,    
+    image: GautamSinghChauhan,
     image2: KumariPriya,
   },
   {
@@ -116,26 +120,115 @@ const features = [
 export default function HomePage() {
   const parentRef = useRef(null);
   const [isChecked, setIsChecked] = useState(false);
+  const scrollContainerRef = useRef(null);
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    let scrollAmount = 2; // Speed of scrolling
+    const scroll = () => {
+      if (scrollContainer) {
+        scrollContainer.scrollLeft += scrollAmount;
+        if (
+          scrollContainer.scrollLeft >=
+          scrollContainer.scrollWidth - scrollContainer.clientWidth
+        ) {
+          scrollContainer.scrollLeft = 0; // Reset to start for continuous effect
+        }
+      }
+    };
+    const interval = setInterval(scroll, 20); // Adjust speed here
+    return () => clearInterval(interval);
+  }, []);
 
+  const name = [
+    {
+      title: "Ranked 86th by Times of B School in India.",
+    },
+    {
+      title: "Ranked Amongst Top 50 Private College in India.",
+    },
+    {
+      title: "NAAC A+ Highest Ranking in Uttrakhand.",
+    },
+    {
+      title: "65th best Engineering Colleges in India by Outlook.",
+    },
+    {
+      title: "Ranked 86th by Times of B School in India.",
+    },
+    {
+      title: "Ranked Amongst Top 50 Private College in India.",
+    },
+    {
+      title: "NAAC A+ Highest Ranking in Uttrakhand.",
+    },
+    {
+      title: "65th best Engineering Colleges in India by Outlook.",
+    },
+    {
+      title: "Ranked 86th by Times of B School in India.",
+    },
+    {
+      title: "Ranked Amongst Top 50 Private College in India.",
+    },
+    {
+      title: "NAAC A+ Highest Ranking in Uttrakhand.",
+    },
+    {
+      title: "65th best Engineering Colleges in India by Outlook.",
+    },
+  ];
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true); // Ensures the component renders only on the client
+  }, []);
   return (
     <>
+      {!isClient && (
+        <div className="fixed w-screen h-screen bg-black bg-opacity-60 backdrop-blur-sm top-0 left-0 z-[9999999] flex justify-center items-center">
+          <div className="">
+            <ThreeDots color="#FFF" />
+          </div>
+        </div>
+      )}
+
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar setState={setIsChecked} fullBanner={true} />
         <BannerHome isChecked={isChecked} />
+        <div
+          ref={scrollContainerRef}
+          style={{
+            overflowX: "auto",
+            whiteSpace: "nowrap",
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+          className="w-full py-2 md:py-6 flex gap-4 md:gap-[6%] whitespace-nowrap"
+        >
+          {name.map((item, index) => (
+            <div key={index} className="relative w-fit mx-auto">
+              <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] text-black font-[TTChocolates] leading-tight font-extrabold">
+                {item.title}
+              </h2>
+            </div>
+          ))}
+        </div>
+        <AccreditationLogo />
         <AboutTulas />
-        <LifeAtTulas />
-        <StatsAndNews/>
-        <Courses parentRef={parentRef} />
         <Accreditation />
         <Placement features={features} />
+        <StatsAndNews />
+        <Courses parentRef={parentRef} />
+        <CoursesNew />
+        <Famous />
+        <LifeAtTulas />
         <CampusLife />
         <Virtual />
         <VirtualTour />
-        <Famous />
-        <Video />
         <MeetOurManagement parentRef={parentRef} />
         <Testimonials />
+        <Video />
         <AwardsCrousel />
+        <EventsAndActivites />
         <Footer />
       </div>
     </>

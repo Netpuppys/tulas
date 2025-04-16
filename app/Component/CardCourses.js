@@ -259,10 +259,10 @@ function CardCourses({ linked = true }) {
             />
             <div className="w-full opacity-100 md:opacity-0 h-full bg-gradient-custom-black absolute bottom-0 left-1/2 -translate-x-1/2 z-20"></div>
             <div className="absolute w-full h-fit overflow-scroll z-30 bottom-0 p-2 flex flex-col gap-4">
-              <div className="text-white slide-in w-fit text-left font-[BenchNine] text-3xl">
+              <div className="text-white w-fit text-left font-[BenchNine] text-3xl md:text-4xl">
                 {image.title}
               </div>
-              {image.degrees.map((degree, degreeIndex) => (
+              {/* {image.degrees.map((degree, degreeIndex) => (
                 <div
                   key={degreeIndex}
                   className="md:hidden slide-in text-white w-fit text-left"
@@ -301,7 +301,7 @@ function CardCourses({ linked = true }) {
                     </div>
                   ))}
                 </div>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>

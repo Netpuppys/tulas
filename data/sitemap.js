@@ -138,7 +138,7 @@ const sitemap = [
         ],
       },
       {
-        title: "Department of Mass Communiations",
+        title: "Department of Mass Communications",
         linkTo: "#",
         superNestedLinks: [
           {

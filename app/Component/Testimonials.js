@@ -161,6 +161,7 @@ const Testimonials = () => {
                     className="h-fit w-full aspect-[9/16]"
                     muted={isMuted}
                     loop
+                    priority
                     onWaiting={() => handleBuffering(true)}
                     onPlaying={() => handleBuffering(false)}
                   />
