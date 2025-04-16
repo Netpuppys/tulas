@@ -8,6 +8,7 @@ import Virtual from "./Component/Virtual";
 import VirtualTour from "./Component/VirtualTour";
 import Footer from "@/component/Footer";
 import Courses from "./Component/Courses";
+import BannerHome from "@/app/Component/BannerHome";
 import CampusLife from "./Component/CampusLife";
 import Testimonials from "./Component/Testimonials";
 import Accreditation from "./Component/Accreditation";
@@ -44,8 +45,7 @@ import StatsAndNews from "./Component/LatestAction";
 import CoursesNew from "./Component/CoursesNew";
 import AccreditationLogo from "./Component/AccreditationLogo";
 import EventsAndActivites from "./Component/EventsAndActivites";
-import BannerHomeDesktop from "@/app/Component/BannerHomeDesktop";
-import BannerHomeMobile from "./Component/BannerHomeMobile";
+
 const features = [
   {
     image: AbhishekPandy,
@@ -157,17 +157,11 @@ export default function HomePage() {
       title: "65th best Engineering Colleges in India by Outlook.",
     },
   ];
-
   return (
     <>
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar setState={setIsChecked} fullBanner={true} />
-        <div className="hidden md:block">
-          <BannerHomeDesktop isChecked={isChecked} />
-        </div>
-        <div className="block md:hidden">
-          <BannerHomeMobile isChecked={isChecked} />
-        </div>
+        <BannerHome isChecked={isChecked} />
         <div
           ref={scrollContainerRef}
           style={{
