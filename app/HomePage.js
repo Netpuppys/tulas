@@ -199,7 +199,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        {/* <AccreditationLogo /> */}
+        <AccreditationLogo />
         <AboutTulasForm />
         <Accreditation />
         <Placement features={features} />
