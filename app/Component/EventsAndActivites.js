@@ -21,11 +21,11 @@ function EventsAndActivites() {
         Career & Skill Events at Tula's
         <div className="h-[4px] bg-white w-[80%] mx-auto rounded-full"></div>
       </div>
-      <div className="py-6 flex gap-2 md:py-[3%] w-[90%] overflow-hidden">
+      <div className="py-6 flex gap-2 md:py-[3%] w-[90%] overflow-scroll">
         {sports.map((sport, index) => (
           <div
             key={index}
-            className="w-full md:w-[calc(20%-0.5rem)] flex flex-col md:flex-row gap-4"
+            className="min-w-full max-w-full w-full md:min-w-auto md:max-w-auto md:w-[calc(20%-0.5rem)] flex flex-col md:flex-row gap-4"
           >
             <div className="relative p-2 overflow-hidden rounded-xl bg-white w-full h-full mx-auto">
               <div className="w-full h-full aspect-[2/1] flex flex-col justify-between">

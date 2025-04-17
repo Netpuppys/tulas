@@ -61,11 +61,11 @@ function StatsAndNews() {
         Latest News & Updates
         <div className="h-[4px] bg-white w-[80%] mx-auto rounded-full"></div>
       </div>
-      <div className="pt-6 flex gap-2 md:pt-[3%] w-[90%] overflow-hidden">
+      <div className="pt-6 flex gap-2 md:pt-[3%] w-[90%] overflow-scroll">
         {sports.slice(0, 4).map((sport, index) => (
           <div
             key={index}
-            className="w-full md:w-[calc(25%-0.5rem)] h-full flex flex-col md:flex-row gap-4"
+            className="min-w-full max-w-full w-full md:min-w-auto md:max-w-auto md:w-[calc(25%-0.5rem)] h-full flex flex-col md:flex-row gap-4"
           >
             <div className="relative p-2 overflow-hidden rounded-xl bg-white w-full h-full flex flex-col justify-between mx-auto">
               <div className="w-full h-fit aspect-[2/1] flex flex-col justify-between">
