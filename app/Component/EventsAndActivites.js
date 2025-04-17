@@ -32,7 +32,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
-import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 function EventsAndActivites() {
   const swiperRef = useRef();
   const sports = [

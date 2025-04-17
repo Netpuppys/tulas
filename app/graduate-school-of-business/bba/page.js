@@ -11,7 +11,6 @@ import CarouselContent from "@/app/graduate-school-of-business/Component/Carouse
 import CuttingEdge from "@/app/graduate-school-of-business/Component/CuttingEdge";
 import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
 import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
-import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
 import { facultyData, selectedCard1 } from "@/app/courses/bba/data/data";
 import { UtmContext } from "@/component/utmParams";

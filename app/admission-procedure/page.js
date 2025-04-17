@@ -1,7 +1,7 @@
 import React from "react";
 import AdmissionPage from "./Components/AdmissionPage";
 
-function page() {
+function AdmissionProcedure() {
   return (
     <>
       <head>
@@ -20,4 +20,4 @@ function page() {
   );
 }
 
-export default page;
+export default AdmissionProcedure;

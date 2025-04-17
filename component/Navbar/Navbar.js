@@ -21,12 +21,7 @@ import logo360 from "../../public/Components/Navbar/logo360.png";
 import whatsapp from "../../public/Components/Navbar/whatsapp.png";
 import Years20 from "../../public/graduate-school-of-business/mba/20Years.png";
 
-function Navbar({
-  setState,
-  position = false,
-  fullBanner = false,
-  scroled = false,
-}) {
+function Navbar({ fullBanner = false, scroled = false }) {
   const [isChecked, setIsChecked] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [formPopup, setFormPopup] = useState(false);
@@ -73,7 +68,6 @@ function Navbar({
   };
 
   useEffect(() => {
-    if (setState) setState(isChecked);
     if (isChecked) {
       document.body.style.overflow = "hidden";
     } else {

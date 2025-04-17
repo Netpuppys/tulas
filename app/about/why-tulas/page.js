@@ -165,7 +165,7 @@ const bannerText = (
   </>
 );
 
-const page = () => {
+const WhyTulas = () => {
   const parentRef = useRef(null);
   return (
     <>
@@ -235,4 +235,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default WhyTulas;

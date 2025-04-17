@@ -2,13 +2,12 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "@/component/Navbar/Navbar";
-import AboutTulas from "./Component/AboutTulas";
+import Footer from "@/component/Footer";
 import Video from "./Component/Video";
 import Virtual from "./Component/Virtual";
 import VirtualTour from "./Component/VirtualTour";
-import Footer from "@/component/Footer";
 import Courses from "./Component/Courses";
-import BannerHome from "@/app/Component/BannerHome";
+import BannerHome from "./Component/BannerHome";
 import CampusLife from "./Component/CampusLife";
 import Testimonials from "./Component/Testimonials";
 import Accreditation from "./Component/Accreditation";
@@ -45,61 +44,12 @@ import StatsAndNews from "./Component/LatestAction";
 import CoursesNew from "./Component/CoursesNew";
 import AccreditationLogo from "./Component/AccreditationLogo";
 import EventsAndActivites from "./Component/EventsAndActivites";
-
-const features = [
-  {
-    image: AbhishekPandy,
-    image2: AdilAhmed,
-  },
-  {
-    image: AdityaPandey,
-    image2: JasmineBatham,
-  },
-  {
-    image: GautamSinghChauhan,
-    image2: KumariPriya,
-  },
-  {
-    image: DivyaShankar,
-    image2: NainseeSingh,
-  },
-  {
-    image: PriyankaDhiman,
-    image2: RahulBauri,
-  },
-  {
-    image: RajniMondi,
-    image2: ShambhaviRajChauhan,
-  },
-  {
-    image: RomaKumari,
-    image2: SrishtiGupta,
-  },
-  {
-    image: SushantTrivedi,
-    image2: UjjwalPratik,
-  },
-  {
-    image: rishitaPatel,
-    image2: santosiPanwar,
-  },
-  {
-    image: anshikaPundir,
-    image2: ashutosh,
-  },
-  {
-    image: gauravSrivastava,
-    image2: prathamNautiyal,
-  },
-  {
-    image: rohitKotnala,
-    image2: saurabhRawat,
-  },
-];
+import BannerHomeMobile from "./Component/BannerHomeMobile";
+import AboutTulasForm from "./Component/AboutTulasForm";
+import { ThreeDots } from "react-loader-spinner";
 
 export default function HomePage() {
   const parentRef = useRef(null);
-  const [isChecked, setIsChecked] = useState(false);
   const scrollContainerRef = useRef(null);
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
@@ -118,6 +68,63 @@ export default function HomePage() {
     const interval = setInterval(scroll, 20); // Adjust speed here
     return () => clearInterval(interval);
   }, []);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
+  const features = [
+    {
+      image: AbhishekPandy,
+      image2: AdilAhmed,
+    },
+    {
+      image: AdityaPandey,
+      image2: JasmineBatham,
+    },
+    {
+      image: GautamSinghChauhan,
+      image2: KumariPriya,
+    },
+    {
+      image: DivyaShankar,
+      image2: NainseeSingh,
+    },
+    {
+      image: PriyankaDhiman,
+      image2: RahulBauri,
+    },
+    {
+      image: RajniMondi,
+      image2: ShambhaviRajChauhan,
+    },
+    {
+      image: RomaKumari,
+      image2: SrishtiGupta,
+    },
+    {
+      image: SushantTrivedi,
+      image2: UjjwalPratik,
+    },
+    {
+      image: rishitaPatel,
+      image2: santosiPanwar,
+    },
+    {
+      image: anshikaPundir,
+      image2: ashutosh,
+    },
+    {
+      image: gauravSrivastava,
+      image2: prathamNautiyal,
+    },
+    {
+      image: rohitKotnala,
+      image2: saurabhRawat,
+    },
+  ];
 
   const name = [
     {
@@ -159,9 +166,21 @@ export default function HomePage() {
   ];
   return (
     <>
+      {isLoading && (
+        <div className="fixed w-screen h-screen bg-black bg-opacity-50 backdrop-blur-sm top-0 left-0 z-[9999999] hidden md:flex justify-center items-center">
+          <div className="">
+            <ThreeDots color="#FFF" />
+          </div>
+        </div>
+      )}
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
-        <Navbar setState={setIsChecked} fullBanner={true} />
-        <BannerHome isChecked={isChecked} />
+        <Navbar fullBanner={true} />
+        <div className="hidden md:block">
+          <BannerHome />
+        </div>
+        <div className="block md:hidden">
+          <BannerHomeMobile />
+        </div>
         <div
           ref={scrollContainerRef}
           style={{
@@ -181,7 +200,7 @@ export default function HomePage() {
           ))}
         </div>
         {/* <AccreditationLogo /> */}
-        <AboutTulas />
+        <AboutTulasForm />
         <Accreditation />
         <Placement features={features} />
         <StatsAndNews />

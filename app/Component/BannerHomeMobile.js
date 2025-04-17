@@ -21,7 +21,7 @@ const bannerImages = [
   SanskritiBannerMobile,
 ];
 
-function BannerHomeMobile({ isChecked }) {
+function BannerHomeMobile() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentImage, setCurrentImage] = useState(bannerImages[0]);
   const [scrollToSection, setScrollToSection] = useState(1);

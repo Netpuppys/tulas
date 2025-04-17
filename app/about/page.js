@@ -6,12 +6,10 @@ export const metadata = {
   description:
     "Tula's Institute is one of the best Engineering colleges in Dehradun, India. Tula's Top Engineering Institute in Dehradun Uttarakhand. All technical programmes are rated the top engineering college in Dehradun on the basis of faculty, academics & placement.",
 };
-function About() {
+export default function About() {
   return (
     <>
       <AboutPage />
     </>
   );
 }
-
-export default About;

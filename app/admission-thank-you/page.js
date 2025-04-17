@@ -1,10 +1,8 @@
-import ThankYou from '@/component/thankYou'
-import React from 'react'
+import ThankYou from "@/component/thankYou";
+import React from "react";
 
 function page() {
-  return (
-    <ThankYou />
-  )
+  return <ThankYou />;
 }
 
-export default page
+export default page;
