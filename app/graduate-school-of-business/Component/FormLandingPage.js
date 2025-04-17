@@ -1,12 +1,14 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
-import mba from "../../../public/graduate-school-of-business/mba/mba.png";
 import tulasLogo from "../../../public/graduate-school-of-business/mba/tulasLogo.png";
 import Image from "next/image";
 import { IoCall, IoLocation, IoMail } from "react-icons/io5";
-import PhoneInput from "react-phone-input-2";
-import { cities, courses, specializations, state } from "@/data/courses";
+import { courses, specializations, state } from "@/data/courses";
 import axios from "axios";
+import {
+  getCountries,
+  getCountryCallingCode,
+} from "react-phone-number-input/input";
 import "react-phone-input-2/lib/style.css";
 import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
@@ -37,7 +39,8 @@ function FormLandingPage({
   const [message, setMessage] = useState("");
   const [isPhoneValid, setIsPhoneValid] = useState(false);
   const [verified, setVerified] = useState(false);
-  const mobileInputRef = React.useRef(null);
+  const [countryCode, setCountryCode] = useState(getCountryCallingCode("IN")); // Default to India
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [timer, setTimer] = useState(30); // Timer for the Resend OTP button
   const [loading, setLoading] = useState(false);
 
@@ -46,10 +49,25 @@ function FormLandingPage({
       ...prev,
       [key]: value,
     }));
+  };
 
-    if (key === "MobileNumber") {
-      setIsPhoneValid(value.length >= 10 && /^\d+$/.test(value)); // Example validation for length and digits only
-    }
+  const handleCountryCodeChange = (e) => {
+    const selectedCode = e.target.value;
+    setCountryCode(selectedCode);
+    setFormData({
+      ...formData,
+      MobileNumber: `${selectedCode}${phoneNumber}`,
+    });
+  };
+
+  const handlePhoneNumberChange = (e) => {
+    const number = e.target.value;
+    setIsPhoneValid(number.length >= 10 && /^\d+$/.test(number));
+    setPhoneNumber(number);
+    setFormData({
+      ...formData,
+      MobileNumber: `${countryCode}${number}`,
+    });
   };
 
   const handleCourseChange = (e) => {
@@ -299,56 +317,45 @@ function FormLandingPage({
                 className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF] placeholder:text-[#3D001B] placeholder:opacity-60 mb-3"
               />
             </div>
-            <div className="mb-3 flex flex-col xl:flex-row gap-3 xl:gap-3">
-              <PhoneInput
-                ref={mobileInputRef}
-                country={"in"}
-                disabled={verified}
-                value={formData.MobileNumber}
-                onChange={(value) => handleChange("MobileNumber", value)}
-                placeholder="Enter Mobile No."
-                inputProps={{
-                  name: "phone",
-                  id: "phone",
-                  required: true,
-                  autoFocus: false,
-                }}
-                inputStyle={{
-                  width: "100%",
-                  borderRadius: "3px",
-                  border: "none",
-                  fontSize: "1rem",
-                  lineHeight: "1.5rem",
-                  backgroundColor: "#FFFFFF",
-                  padding: "1.50rem 3.25rem",
-                  color: "#3D001B",
-                  outline: "none",
-                }}
-                containerStyle={{
-                  width: "100%",
-                }}
-                buttonStyle={{
-                  backgroundColor: "white",
-                  border: "none",
-                  width: "40px",
-                  color: "black", // Flag icon color
-                }}
-              />
-              {/* <input
-                type="tel"
-                placeholder="Enter Mobile No."
-                value={formData.MobileNumber}
-                onChange={(value) => handleChange("MobileNumber", value)}
-                required
-                className="w-full px-5 py-3 text-base border-none focus:outline-none rounded-[3px] text-[#3D001B] bg-[#FFFFFF] placeholder:text-[#3D001B] placeholder:opacity-60 mb-3"
-              /> */}
+            <div className="w-full mb-2 flex flex-col xl:flex-row gap-2">
+              <div className="flex w-full rounded-[3px] overflow-hidden">
+                <select
+                  value={countryCode}
+                  disabled={verified}
+                  onChange={handleCountryCodeChange}
+                  className="w-14 h-full text-center focus:outline-none bg-[#FFFFFF] text-[#3D001B] placeholder:text-[#3D001B]"
+                >
+                  <option value="91">{`+${getCountryCallingCode(
+                    "IN"
+                  )}`}</option>
+                  {getCountries()
+                    .filter((country) => country !== "IN") // Exclude India from the mapped options
+                    .map((country) => (
+                      <option
+                        key={country}
+                        value={getCountryCallingCode(country)}
+                      >
+                        {`(+${getCountryCallingCode(country)})`}
+                      </option>
+                    ))}
+                </select>
+                <input
+                  type="text"
+                  required
+                  disabled={verified}
+                  value={phoneNumber}
+                  onChange={handlePhoneNumberChange}
+                  placeholder="Enter your Mobile No...."
+                  className={`py-3 focus:outline-none w-full bg-[#FFFFFF] text-[#3D001B] disabled:opacity-100 disabled:cursor-not-allowed placeholder:text-[#3D001B]`}
+                />
+              </div>
               <button
                 type="button"
                 disabled={verified || !isPhoneValid}
                 onClick={sendOtp}
-                className={`w-full xl:w-[40%] rounded-[3px] flex items-center justify-center md:px-4 py-3 font-bold text-white bg-[#007A83] ${
+                className={`w-full xl:w-[40%] bg-black rounded-[3px] flex items-center justify-center xl:px-4 py-2 font-bold text-white ${
                   isPhoneValid && !verified
-                    ? " cursor-pointer"
+                    ? "cursor-pointer"
                     : "opacity-100 cursor-not-allowed"
                 }`}
               >
