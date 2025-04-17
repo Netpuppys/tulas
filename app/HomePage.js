@@ -186,7 +186,7 @@ export default function HomePage() {
         <Placement features={features} />
         <StatsAndNews />
         <Courses parentRef={parentRef} />
-        {/* <CoursesNew /> */}
+        <CoursesNew />
         <Famous />
         <LifeAtTulas />
         <CampusLife />
