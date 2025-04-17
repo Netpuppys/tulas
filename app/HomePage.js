@@ -184,9 +184,9 @@ export default function HomePage() {
         <AboutTulas />
         <Accreditation />
         <Placement features={features} />
-        {/* <StatsAndNews /> */}
+        <StatsAndNews />
         <Courses parentRef={parentRef} />
-        <CoursesNew />
+        {/* <CoursesNew /> */}
         <Famous />
         <LifeAtTulas />
         <CampusLife />
@@ -196,7 +196,7 @@ export default function HomePage() {
         <Testimonials />
         <Video />
         <AwardsCrousel />
-        {/* <EventsAndActivites /> */}
+        <EventsAndActivites />
         <Footer />
       </div>
     </>

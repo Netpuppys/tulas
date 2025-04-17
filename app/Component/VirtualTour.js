@@ -74,7 +74,6 @@ function VirtualTour() {
         <Image
           className="w-full h-[50vh] md:h-screen -z-10 object-cover"
           src={BackgroundVirtual}
-          priority
           alt=""
         />
       </div>

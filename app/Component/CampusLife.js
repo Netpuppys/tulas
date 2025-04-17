@@ -101,7 +101,6 @@ const CampusLife = () => {
                     <Image
                       src={image}
                       className="w-full h-full object-cover"
-                      priority
                       alt=""
                     />
                   </div>

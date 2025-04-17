@@ -200,7 +200,6 @@ function Famous() {
                     <Image
                       src={sport.image}
                       alt=""
-                      priority
                       className="w-full h-full aspect-[1.5/1] object-cover"
                     />
                   </div>
@@ -215,7 +214,6 @@ function Famous() {
                     <Image
                       src={sport.image2}
                       alt=""
-                      priority
                       className="w-full h-full aspect-[1.5/1] object-cover"
                     />
                   </div>
@@ -230,7 +228,6 @@ function Famous() {
                     <Image
                       src={sport.image3}
                       alt=""
-                      priority
                       className="w-full h-full aspect-[1.5/1] object-cover"
                     />
                   </div>

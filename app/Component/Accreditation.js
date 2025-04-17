@@ -9,13 +9,11 @@ function Accreditation() {
         <Image
           src={AccreditationImg}
           alt=""
-          priority
           className="w-full hidden md:flex h-fit"
         />
         <Image
           src={AccreditationImgMobile}
           alt=""
-          priority
           className="md:hidden w-full h-fit"
         />
       </div>

@@ -153,7 +153,6 @@ function CareerAndSkillEvents() {
                       <Image
                         src={item.image}
                         alt=""
-                        priority
                         className="w-full h-full object-contain rounded-xl"
                       />
                     </div>

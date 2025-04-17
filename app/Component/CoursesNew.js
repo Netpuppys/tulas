@@ -214,7 +214,6 @@ function CoursesNew() {
               <Image
                 src={news.image}
                 alt=""
-                priority
                 className="flex w-full rounded-lg h-fit object-cover transition-all duration-300 ease-in"
               />
               <div className="p-4">
@@ -273,7 +272,6 @@ function CoursesNew() {
             <Image
               src={news.image}
               alt=""
-              priority
               className="flex w-full rounded-lg h-fit object-cover transition-all duration-300 ease-in"
             />
             <div className="p-4 w-full h-fit">

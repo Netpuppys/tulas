@@ -141,7 +141,6 @@ function Courses({ parentRef }) {
           </div>
           <Image
             src={Stars}
-            priority
             className="hidden md:block absolute bottom-0 translate-y-14 z-50 left-0 w-32 pointer-events-none"
             alt=""
           />

@@ -240,7 +240,6 @@ function StatsAndNews() {
                     <Image
                       src={sport.image}
                       alt=""
-                      priority
                       className="w-full h-full object-contain rounded-xl"
                     />
                   </div>
@@ -300,7 +299,6 @@ function StatsAndNews() {
                     <Image
                       src={sport.image}
                       alt=""
-                      priority
                       className="w-full h-full object-contain rounded-xl"
                     />
                   </div>
