@@ -162,7 +162,7 @@ export default function HomePage() {
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar setState={setIsChecked} fullBanner={true} />
         <BannerHome isChecked={isChecked} />
-        {/* <div
+        <div
           ref={scrollContainerRef}
           style={{
             overflowX: "auto",
@@ -179,12 +179,12 @@ export default function HomePage() {
               </h2>
             </div>
           ))}
-        </div> */}
+        </div>
         {/* <AccreditationLogo /> */}
         <AboutTulas />
         <Accreditation />
         <Placement features={features} />
-        <StatsAndNews />
+        {/* <StatsAndNews /> */}
         <Courses parentRef={parentRef} />
         <CoursesNew />
         <Famous />
@@ -196,7 +196,7 @@ export default function HomePage() {
         <Testimonials />
         <Video />
         <AwardsCrousel />
-        <EventsAndActivites />
+        {/* <EventsAndActivites /> */}
         <Footer />
       </div>
     </>
