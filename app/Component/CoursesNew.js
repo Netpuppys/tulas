@@ -248,10 +248,10 @@ function CoursesNew() {
                           key={superNestedIndex}
                           className="flex gap-2 items-center"
                         >
-                          <MdKeyboardArrowRight color="blue" />
+                          <MdKeyboardArrowRight color="#353535" />
                           <a
                             href={superNestedLink.linkTo}
-                            className="text-blue-500 text-[clamp(10px,3.5vw,50px)] md:text-[clamp(10px,1vw,50px)] font-[TTChocolates] hover:underline"
+                            className="text-[#353535] text-[clamp(10px,3.5vw,50px)] md:text-[clamp(10px,1vw,50px)] font-[TTChocolates] hover:underline"
                           >
                             {superNestedLink.title}
                           </a>

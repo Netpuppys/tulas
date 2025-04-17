@@ -36,12 +36,14 @@ function Placement({ features }) {
                   <Image
                     src={feature.image}
                     alt=""
+                    loading="lazy"
                     className="rounded-xl md:rounded-2xl h-fit object-cover"
                   />
                 </div>
                 <div className="w-full md:w-[50%] flex flex-col justify-between">
                   <Image
                     src={feature.image2}
+                    loading="lazy"
                     alt=""
                     className="rounded-xl md:rounded-3xl h-fit object-cover"
                   />

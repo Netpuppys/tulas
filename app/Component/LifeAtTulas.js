@@ -158,6 +158,7 @@ function LifeAtTulas() {
                     <Image
                       src={slide.image}
                       alt=""
+                      loading="lazy"
                       className="w-full -z-10 h-full object-cover opacity-70"
                     />
                     <div className=" absolute w-full h-full z-20"></div>

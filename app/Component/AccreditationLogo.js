@@ -21,6 +21,7 @@ function AccreditationLogo() {
           <Image
             src={group}
             key={index}
+            loading="lazy"
             alt="Top Recruiter"
             className="w-[33.33%] md:w-[16.6%] h-fit object-cover"
           />

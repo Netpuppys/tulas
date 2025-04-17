@@ -1,21 +1,35 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import Navbar from "@/component/Navbar/Navbar";
-import Footer from "@/component/Footer";
-import Video from "./Component/Video";
-import Virtual from "./Component/Virtual";
-import VirtualTour from "./Component/VirtualTour";
-import Courses from "./Component/Courses";
-import BannerHome from "./Component/BannerHome";
-import CampusLife from "./Component/CampusLife";
-import Testimonials from "./Component/Testimonials";
-import Accreditation from "./Component/Accreditation";
-import AwardsCrousel from "./Component/AwardsCrousel";
-import LifeAtTulas from "./Component/LifeAtTulas";
-import MeetOurManagement from "./Component/MeetOurManagement";
-import Placement from "./Component/Placement";
-import Famous from "./Component/Famous";
+const Footer = dynamic(() => import("@/component/Footer"));
+const Video = dynamic(() => import("./Component/Video"));
+const Virtual = dynamic(() => import("./Component/Virtual"));
+const VirtualTour = dynamic(() => import("./Component/VirtualTour"));
+const Courses = dynamic(() => import("./Component/Courses"));
+const CampusLife = dynamic(() => import("./Component/CampusLife"));
+const Testimonials = dynamic(() => import("./Component/Testimonials"));
+const Accreditation = dynamic(() => import("./Component/Accreditation"));
+const AwardsCrousel = dynamic(() => import("./Component/AwardsCrousel"));
+const LifeAtTulas = dynamic(() => import("./Component/LifeAtTulas"));
+const MeetOurManagement = dynamic(() =>
+  import("./Component/MeetOurManagement")
+);
+const Famous = dynamic(() => import("./Component/Famous"));
+const Placement = dynamic(() => import("./Component/Placement"));
+const AccreditationLogo = dynamic(() =>
+  import("./Component/AccreditationLogo")
+);
+
+const EventsAndActivites = dynamic(() =>
+  import("./Component/EventsAndActivites")
+);
+const BannerHome = dynamic(() => import("./Component/BannerHome"));
+const BannerHomeMobile = dynamic(() => import("./Component/BannerHomeMobile"));
+const StatsAndNews = dynamic(() => import("./Component/LatestAction"));
+const CoursesNew = dynamic(() => import("./Component/CoursesNew"));
+const AboutTulasForm = dynamic(() => import("./Component/AboutTulasForm"));
 import AbhishekPandy from "../public/graduate-school-of-business/bba/AbhishekPandy.png";
 import AdilAhmed from "../public/graduate-school-of-business/bba/AdilAhmed.png";
 import AdityaPandey from "../public/graduate-school-of-business/bba/AdityaPandey.png";
@@ -40,12 +54,6 @@ import gauravSrivastava from "../public/courses/bca/gauravSrivastava.png";
 import prathamNautiyal from "../public/courses/bca/prathamNautiyal.png";
 import rohitKotnala from "../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../public/courses/bca/saurabhRawat.png";
-import StatsAndNews from "./Component/LatestAction";
-import CoursesNew from "./Component/CoursesNew";
-import AccreditationLogo from "./Component/AccreditationLogo";
-import EventsAndActivites from "./Component/EventsAndActivites";
-import BannerHomeMobile from "./Component/BannerHomeMobile";
-import AboutTulasForm from "./Component/AboutTulasForm";
 import { ThreeDots } from "react-loader-spinner";
 
 export default function HomePage() {
@@ -72,7 +80,11 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading(false);
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); // 1 second delay
+
+    return () => clearTimeout(timer);
   }, []);
 
   const features = [
@@ -127,42 +139,18 @@ export default function HomePage() {
   ];
 
   const name = [
-    {
-      title: "Ranked 86th by Times of B School in India.",
-    },
-    {
-      title: "Ranked Amongst Top 50 Private College in India.",
-    },
-    {
-      title: "NAAC A+ Highest Ranking in Uttrakhand.",
-    },
-    {
-      title: "65th best Engineering Colleges in India by Outlook.",
-    },
-    {
-      title: "Ranked 86th by Times of B School in India.",
-    },
-    {
-      title: "Ranked Amongst Top 50 Private College in India.",
-    },
-    {
-      title: "NAAC A+ Highest Ranking in Uttrakhand.",
-    },
-    {
-      title: "65th best Engineering Colleges in India by Outlook.",
-    },
-    {
-      title: "Ranked 86th by Times of B School in India.",
-    },
-    {
-      title: "Ranked Amongst Top 50 Private College in India.",
-    },
-    {
-      title: "NAAC A+ Highest Ranking in Uttrakhand.",
-    },
-    {
-      title: "65th best Engineering Colleges in India by Outlook.",
-    },
+    "Ranked 86th by Times of B School in India.",
+    "Ranked Amongst Top 50 Private College in India.",
+    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "65th best Engineering Colleges in India by Outlook.",
+    "Ranked 86th by Times of B School in India.",
+    "Ranked Amongst Top 50 Private College in India.",
+    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "65th best Engineering Colleges in India by Outlook.",
+    "Ranked 86th by Times of B School in India.",
+    "Ranked Amongst Top 50 Private College in India.",
+    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "65th best Engineering Colleges in India by Outlook.",
   ];
   return (
     <>
@@ -194,7 +182,7 @@ export default function HomePage() {
           {name.map((item, index) => (
             <div key={index} className="relative w-fit mx-auto">
               <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] text-black font-[TTChocolates] leading-tight font-extrabold">
-                {item.title}
+                {item}
               </h2>
             </div>
           ))}

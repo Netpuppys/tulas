@@ -60,6 +60,7 @@ function AwardsCrousel() {
                   <Image
                     src={feature.image}
                     alt=""
+                    loading="lazy"
                     className="rounded-xl md:rounded-2xl h-fit object-cover"
                   />
                   <div>
@@ -73,6 +74,7 @@ function AwardsCrousel() {
                   <Image
                     src={feature.image2}
                     alt=""
+                    loading="lazy"
                     className="rounded-xl md:rounded-3xl h-fit object-cover"
                   />
                   <div>

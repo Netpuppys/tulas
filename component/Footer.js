@@ -164,17 +164,17 @@ const Footer = ({ set = false, color = false }) => {
         <div
           className={`w-full h-full ${
             color ? "bg-[#00383D]" : "bg-[#120008]"
-          }  flex justify-between px-4 md:px-[4%] py-2 md:py-0 items-center z-40`}
+          }  flex flex-col md:flex-row gap-2 justify-between px-4 md:px-[4%] py-3 md:py-0 items-center z-40`}
         >
-          <h3 className="font-[Oswald] w-1/2 md:w-fit text-[16px] md:text-[clamp(10px,2vw,40px)]">
-            WANT TO LEARN MORE ABOUT TULA’S?
+          <h3 className="font-[Oswald] text-center w-full md:w-fit text-[clamp(10px,6vw,40px)] md:text-[clamp(10px,2vw,40px)]">
+            BE A PART OF TULA'S FAMILY
           </h3>
-          <div className="flex w-fit gap-4">
+          <div className="flex justify-center flex-wrap w-full md:w-fit gap-2">
             <button
               onClick={() => {
                 window.location.href = `/apply-now/${utmParams}`;
               }}
-              className="text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-white"
+              className="text-[clamp(10px,2.5vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-2 md:py-2 md:px-[1vw] text-white"
             >
               ENQUIRY NOW
             </button>
@@ -182,9 +182,17 @@ const Footer = ({ set = false, color = false }) => {
               onClick={() => {
                 window.location.href = `/apply-now/${utmParams}`;
               }}
-              className="bg-[#E69706] border-2 text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-1 px-1 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
+              className="bg-[#E69706] border-2 text-[clamp(10px,2.5vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-1 px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
             >
               APPLY TODAY
+            </button>
+            <button
+              onClick={() => {
+                window.location.href = `/apply-now/${utmParams}`;
+              }}
+              className="text-[clamp(10px,2.5vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-2 md:py-2 md:px-[1vw] text-white"
+            >
+              DOWNLOAD PROSPECTUS
             </button>
           </div>
         </div>

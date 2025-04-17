@@ -252,12 +252,12 @@ function CardCourses({ linked = true }) {
           >
             <Image
               src={image.src}
+              loading="lazy"
               alt=""
-              className="z-50 object-cover w-full h-full brightness-50 md:brightness-100 md:group-hover:brightness-50"
+              className="z-50 object-cover w-full h-full"
               width={270}
               height={510}
             />
-            <div className="w-full opacity-100 md:opacity-0 h-full bg-gradient-custom-black absolute bottom-0 left-1/2 -translate-x-1/2 z-20"></div>
             <div className="absolute w-full h-fit overflow-scroll z-30 bottom-0 p-2 flex flex-col gap-4">
               <div className="text-white w-fit text-left font-[BenchNine] text-3xl md:text-4xl">
                 {image.title}
