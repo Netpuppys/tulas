@@ -4,7 +4,7 @@ import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import React from "react";
-import BannerImg from "../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../public/infrastructure/library/bannerImg.webp";
 import background from "../../public/research/r-and-cell/background.png";
 import AuditStatement2023 from "../../public/FooterPDf/AuditStatement2023.pdf";
 import AuditStatement2022 from "../../public/FooterPDf/AuditStatement2022.pdf";

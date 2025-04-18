@@ -4,7 +4,7 @@ import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import React from "react";
-import BannerImg from "../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../public/infrastructure/library/bannerImg.webp";
 import background from "../../public/research/r-and-cell/background.png";
 import Meeting1 from "../../public/FooterPDf/1st.pdf";
 import Meeting2 from "../../public/FooterPDf/Meeting2.pdf";

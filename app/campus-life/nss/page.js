@@ -3,7 +3,7 @@ import React from "react";
 import background from "../../../public/campus-life/nss/background.png";
 import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import nss from "../../../public/campus-life/nss/nss.png";

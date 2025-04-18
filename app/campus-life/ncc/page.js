@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import background from "../../../public/campus-life/ncc/background.png";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Banner from "@/component/Banner";
 import Image from "next/image";

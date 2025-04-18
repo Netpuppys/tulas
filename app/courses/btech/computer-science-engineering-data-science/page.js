@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BannerImg from "../../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../../public/infrastructure/library/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../../public/courses/bjmc/exploreCrouselBackground.png";

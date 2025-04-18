@@ -66,14 +66,14 @@ function Contact() {
       title: "ADDRESS",
       image: address,
       description:
-        "Tula's Institute Mehre Ka Gaon PO Selaqui Dhoolkot Dehradun Uttarakhand 248011",
+        "Tula's Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road, Dehradun- 248011 Uttarakhand",
       link: "https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D",
     },
     {
       title: "COLLEGE LANDLINE",
       image: landline,
-      description: "+91-9837983721",
-      link: "tel:+91-9837983721",
+      description: "0135 2699300",
+      link: "tel:01352699300",
     },
     {
       title: "FAX",
@@ -119,9 +119,6 @@ function Contact() {
         <Banner
           image={BannerImg}
           title={title}
-          description={
-            "Tula’s Institute is dedicated to serve the community by recognizing the diverse needs of the individuals. We encourage personal and professional development through respect, appreciation and a commitment to general education, as a foundation for life-long learning. Tula’s Institute is the Ranked as No. 9 College in the North India"
-          }
           belowTitle={"CONTACT US"}
           belowPara={
             "Being the capital city, Dehradun is well-connected by roads, rail and air and is easily accessible from most parts of the country. It is 235 km away from India’s capital, New Delhi. Dehradun is easy to reach and an accessible destination that you can visit any time of the year."
@@ -195,8 +192,8 @@ function Contact() {
             <div className="bg-[#000] bg-opacity-80 h-fit md:h-[450px] text-[#D2D2D2] gap-5 absolute bottom-28 md:bottom-0 self-end md:right-16 w-full md:w-[300px] md:top-0 z-40 px-10 flex flex-col py-5 md:py-3 justify-center">
               <Image src={TulasFooter} alt="" />
               <h4 className="py-8 border-y-[1px] border-white font-[CarotSlab] text-[16px] md:text-[18px]">
-                Tula's Institute, Dhoolkot Near Selaqui, Dhulkot Rd, Dehradun,
-                Uttarakhand, 248011
+                Tula's Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road,
+                Dehradun- 248011 Uttarakhand
               </h4>
               <h3 className="font-[CarotSlab] md:text-[18px]">
                 Get Direction by:

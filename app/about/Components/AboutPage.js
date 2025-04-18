@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Banner from "@/component/Banner";
 import Image from "next/image";
-import BannerImg from "../../../public/About/bannerImg.png";
+import BannerImg from "../../../public/About/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import background from "../../../public/AboutDehradun/background.png";
@@ -121,9 +121,9 @@ export default function AboutPage() {
           </>
         }
         image={BannerImg}
-        description={
-          "Tula’s Institute, proudly ranked as the 9th best college in North India, is a hub for innovation, personal growth, and lifelong learning. We are committed to recognizing individual potential and helping students transform it into success stories. We create an environment of respect, encouragement, and lifelong learning to help students achieve their dreams."
-        }
+        // description={
+        //   "Tula’s Institute, proudly ranked as the 9th best college in North India, is a hub for innovation, personal growth, and lifelong learning. We are committed to recognizing individual potential and helping students transform it into success stories. We create an environment of respect, encouragement, and lifelong learning to help students achieve their dreams."
+        // }
         belowTitle={"Sunil Kumar Jain, Founder"}
         belowPara={
           <>

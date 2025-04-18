@@ -4,7 +4,7 @@ import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import React, { useContext } from "react";
-import BannerImg from "../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../public/infrastructure/library/bannerImg.webp";
 import background from "../../public/research/r-and-cell/background.png";
 import BestPractices21 from "../../public/FooterPDf/BestPractices21.pdf";
 import BestPractices22 from "../../public/FooterPDf/BestPractices22.pdf";

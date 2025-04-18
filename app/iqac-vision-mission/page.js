@@ -6,7 +6,7 @@ import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Vision from "@/component/Programs/Vision";
-import BannerImg from "../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../public/infrastructure/library/bannerImg.webp";
 import background from "../../public/research/r-and-cell/background.png";
 import Footer from "@/component/Footer";
 

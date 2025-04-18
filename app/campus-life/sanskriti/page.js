@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Banner from "@/component/Banner";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import background from "../../../public/campus-life/sanskriti/background.png";
 import img1 from "../../../public/campus-life/sanskriti/img1.png";

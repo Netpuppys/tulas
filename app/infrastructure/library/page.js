@@ -1,7 +1,7 @@
 "use client";
 
 import Banner from "@/component/Banner";
-import BannerImg from "../../../public/infrastructure/library/bannerImgLibrary.png";
+import BannerImg from "../../../public/infrastructure/library/bannerImgLibrary.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
