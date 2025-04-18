@@ -51,28 +51,6 @@ const nextConfig = {
 
     return config;
   },
-  async headers() {
-    return [
-      {
-        source: "/_next/static/(.*)", // next.js build files (JS, CSS)
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/static/(.*)", // your custom static files (images, videos, PDFs)
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-    ];
-  },
 };
 
 export default nextConfig;

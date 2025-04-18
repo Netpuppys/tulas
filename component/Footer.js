@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import {
   FaFacebookF,
@@ -23,10 +23,10 @@ import MadatoryDisclosure from "../public/research/MadatoryDisclosure.pdf";
 import ACADEMICCALENDER from "../public/research/ACADEMICCALENDER.pdf";
 import codeOfConduct from "../public/research/code-of-conduct.pdf";
 import { FiPhone } from "react-icons/fi";
-import { RiFlightLandLine } from "react-icons/ri";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { MdMail } from "react-icons/md";
 import { UtmContext } from "./utmParams";
+import FormPopup from "./formPopup";
 const subTitle =
   "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India";
 
@@ -156,7 +156,10 @@ const Footer = ({ set = false, color = false }) => {
     },
   ];
   const { utmParams } = useContext(UtmContext);
-
+  const [formPopup, setFormPopup] = useState(false);
+  const handleFormPopup = () => {
+    setFormPopup(true);
+  };
   return (
     <footer className="min-h-screen w-full text-white overflow-hidden z-40">
       <div className="w-full h-fit md:h-[12vh] flex flex-col md:flex-row items-end bg-transparent">
@@ -187,9 +190,7 @@ const Footer = ({ set = false, color = false }) => {
               APPLY TODAY
             </button>
             <button
-              onClick={() => {
-                window.location.href = `/apply-now/${utmParams}`;
-              }}
+              onClick={handleFormPopup}
               className="text-[clamp(10px,2.5vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-2 md:py-2 md:px-[1vw] text-white"
             >
               DOWNLOAD PROSPECTUS
@@ -429,6 +430,13 @@ const Footer = ({ set = false, color = false }) => {
           </div>
         </div>
       </div>
+      {formPopup && (
+        <FormPopup
+          formPopup={formPopup}
+          setFormPopup={setFormPopup}
+          download={true}
+        />
+      )}
     </footer>
   );
 };
