@@ -325,30 +325,38 @@ function Navbar({ fullBanner = false, scroled = false }) {
                   <PiPencilSimpleLineLight />
                 </button>
               </div>
-              <Link
-                href={`/${utmParams}`}
-                className="mdNavbar:hidden animate-translateButton"
-              >
+              {!isChecked && (
+                <Link
+                  href={`/${utmParams}`}
+                  className="mdNavbar:hidden animate-translateButton"
+                >
+                  <Image
+                    src={TulasLogo}
+                    alt=""
+                    className="w-[50vw] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
+                  />
+                </Link>
+              )}
+            </div>
+            {!isChecked && (
+              <div className="w-fit flex mdNavbar:hidden relative items-center gap-3 md:gap-6">
                 <Image
-                  src={TulasLogo}
+                  src={Years20}
                   alt=""
-                  className="w-[50vw] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
+                  className="w-[20vw] md:w-[7vw] h-fit"
                 />
-              </Link>
-            </div>
-            <div className="w-fit flex mdNavbar:hidden relative items-center gap-3 md:gap-6">
-              <Image
-                src={Years20}
-                alt=""
-                className="w-[20vw] md:w-[7vw] h-fit"
-              />
-              <div className="h-[30px] md:h-[60px] w-[1px] bg-white"></div>
+                <div className="h-[30px] md:h-[60px] w-[1px] bg-white"></div>
 
-              <Image src={NBA} alt="" className="w-[15vw] md:w-[5vw] h-fit" />
-              <div className="h-[30px] md:h-[60px] w-[1px] bg-white"></div>
+                <Image src={NBA} alt="" className="w-[15vw] md:w-[5vw] h-fit" />
+                <div className="h-[30px] md:h-[60px] w-[1px] bg-white"></div>
 
-              <Image src={NAAC} alt="" className="w-[30vw] md:w-[10vw] h-fit" />
-            </div>
+                <Image
+                  src={NAAC}
+                  alt=""
+                  className="w-[30vw] md:w-[10vw] h-fit"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
