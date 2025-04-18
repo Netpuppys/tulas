@@ -25,7 +25,7 @@ function EventsAndActivites() {
         {sports.map((sport, index) => (
           <div
             key={index}
-            className="min-w-full max-w-full w-full md:min-w-auto md:max-w-auto md:w-[calc(20%-0.5rem)] flex flex-col md:flex-row gap-4"
+            className="min-w-full max-w-full w-full md:min-w-10 md:w-[calc(20%-0.5rem)] flex flex-col md:flex-row gap-4"
           >
             <div className="relative p-2 overflow-hidden rounded-xl bg-white w-full h-full mx-auto">
               <div className="w-full h-full aspect-[2/1] flex flex-col justify-between">
