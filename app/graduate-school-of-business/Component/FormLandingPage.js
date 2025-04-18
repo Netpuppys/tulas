@@ -323,7 +323,7 @@ function FormLandingPage({
                   value={countryCode}
                   disabled={verified}
                   onChange={handleCountryCodeChange}
-                  className="w-14 h-full text-center focus:outline-none bg-[#FFFFFF] text-[#3D001B] placeholder:text-[#3D001B]"
+                  className="w-14 py-3 h-full text-center focus:outline-none bg-[#FFFFFF] text-[#3D001B] placeholder:text-[#3D001B]"
                 >
                   <option value="91">{`+${getCountryCallingCode(
                     "IN"
@@ -346,7 +346,7 @@ function FormLandingPage({
                   value={phoneNumber}
                   onChange={handlePhoneNumberChange}
                   placeholder="Enter your Mobile No...."
-                  className={`py-3 focus:outline-none w-full bg-[#FFFFFF] text-[#3D001B] disabled:opacity-100 disabled:cursor-not-allowed placeholder:text-[#3D001B]`}
+                  className={`py-3 px-1 focus:outline-none w-full bg-[#FFFFFF] text-[#3D001B] disabled:opacity-100 disabled:cursor-not-allowed placeholder:text-[#3D001B]`}
                 />
               </div>
               <button
