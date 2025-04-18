@@ -3,33 +3,33 @@
 import React, { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Navbar from "@/component/Navbar/Navbar";
-const Footer = dynamic(() => import("@/component/Footer"));
-const Video = dynamic(() => import("./Component/Video"));
-const Virtual = dynamic(() => import("./Component/Virtual"));
-const VirtualTour = dynamic(() => import("./Component/VirtualTour"));
-const Courses = dynamic(() => import("./Component/Courses"));
-const CampusLife = dynamic(() => import("./Component/CampusLife"));
-const Testimonials = dynamic(() => import("./Component/Testimonials"));
-const Accreditation = dynamic(() => import("./Component/Accreditation"));
-const AwardsCrousel = dynamic(() => import("./Component/AwardsCrousel"));
-const LifeAtTulas = dynamic(() => import("./Component/LifeAtTulas"));
+const Footer = dynamic(() => import("@/component/Footer"), { ssr: false });
+const Video = dynamic(() => import("./Component/Video"), { ssr: false });
+const Virtual = dynamic(() => import("./Component/Virtual"), { ssr: false });
+const VirtualTour = dynamic(() => import("./Component/VirtualTour"), { ssr: false });
+const Courses = dynamic(() => import("./Component/Courses"), { ssr: false });
+const CampusLife = dynamic(() => import("./Component/CampusLife"), { ssr: false });
+const Testimonials = dynamic(() => import("./Component/Testimonials"), { ssr: false });
+const Accreditation = dynamic(() => import("./Component/Accreditation"), { ssr: false });
+const AwardsCrousel = dynamic(() => import("./Component/AwardsCrousel"), { ssr: false });
+const LifeAtTulas = dynamic(() => import("./Component/LifeAtTulas"), { ssr: false });
 const MeetOurManagement = dynamic(() =>
-  import("./Component/MeetOurManagement")
+  import("./Component/MeetOurManagement"), { ssr: false }
 );
-const Famous = dynamic(() => import("./Component/Famous"));
-const Placement = dynamic(() => import("./Component/Placement"));
+const Famous = dynamic(() => import("./Component/Famous"), { ssr: false });
+const Placement = dynamic(() => import("./Component/Placement"), { ssr: false });
 const AccreditationLogo = dynamic(() =>
-  import("./Component/AccreditationLogo")
+  import("./Component/AccreditationLogo"), { ssr: false }
 );
 
 const EventsAndActivites = dynamic(() =>
-  import("./Component/EventsAndActivites")
+  import("./Component/EventsAndActivites"), { ssr: false }
 );
-const BannerHome = dynamic(() => import("./Component/BannerHome"));
-const BannerHomeMobile = dynamic(() => import("./Component/BannerHomeMobile"));
-const StatsAndNews = dynamic(() => import("./Component/LatestAction"));
-const CoursesNew = dynamic(() => import("./Component/CoursesNew"));
-const AboutTulasForm = dynamic(() => import("./Component/AboutTulasForm"));
+const BannerHome = dynamic(() => import("./Component/BannerHome"), { ssr: false });
+const BannerHomeMobile = dynamic(() => import("./Component/BannerHomeMobile"), { ssr: false });
+const StatsAndNews = dynamic(() => import("./Component/LatestAction"), { ssr: false });
+const CoursesNew = dynamic(() => import("./Component/CoursesNew"), { ssr: false });
+const AboutTulasForm = dynamic(() => import("./Component/AboutTulasForm"), { ssr: false });
 import AbhishekPandy from "../public/graduate-school-of-business/bba/AbhishekPandy.png";
 import AdilAhmed from "../public/graduate-school-of-business/bba/AdilAhmed.png";
 import AdityaPandey from "../public/graduate-school-of-business/bba/AdityaPandey.png";
