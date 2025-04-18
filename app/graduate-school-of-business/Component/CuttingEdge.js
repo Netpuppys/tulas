@@ -5,6 +5,7 @@ import Image from "next/image";
 import Accreditation from "@/app/Component/Accreditation";
 import Journey from "./Journey";
 import CardCourses from "@/app/Component/CardCourses";
+import CoursesNew from "@/app/Component/CoursesNew";
 
 function CuttingEdge({
   scrollRef,
@@ -69,6 +70,7 @@ function CuttingEdge({
           {departments && (
             <div className="w-full mx-auto ">
               <CardCourses linked={false} />
+              <CoursesNew/>
             </div>
           )}
           <button

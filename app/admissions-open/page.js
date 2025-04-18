@@ -49,7 +49,7 @@ import PlacementProgram from "@/component/Programs/PlacementProgram";
 import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
 import { useInView } from "react-intersection-observer";
 
-const page = () => {
+const AdmissionOpenPage = () => {
   const { utmParams } = useContext(UtmContext);
 
   const handleScrollArrow = () => {
@@ -387,4 +387,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AdmissionOpenPage;
