@@ -209,7 +209,7 @@ function CoursesNew() {
           {newsCard.map((news, index) => (
             <div
               key={index}
-              className={`rounded-lg hidden md:block bg-[#760135] overflow-hidden w-full p-2 h-fit`}
+              className={`rounded-lg hidden md:block bg-[#007A83] overflow-hidden w-full p-2 h-fit`}
             >
               <Image
                 src={news.image}
@@ -222,7 +222,7 @@ function CoursesNew() {
                   onClick={handleFormPopup}
                   className=" bg-[#000] px-4 py-2 text-sm rounded cursor-pointer"
                 >
-                  Read More →
+                  Apply Now →
                 </button>
               </div>
             </div>

@@ -1,9 +1,6 @@
-import Banner from "@/component/Banner";
-import bannerImage from "../../../public/Homepage/BannerHome/Banner1.webp";
-import Navbar from "@/component/Navbar/Navbar";
-import background from "../../../public/AboutDehradun/background.png";
-import Image from "next/image";
 import React from "react";
+import bannerImage from "../../../public/placements/bannerImg.webp";
+import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import tableData from "./tableData";
 import image1 from "../../../public/placements/technical/image1.jpg";
@@ -38,6 +35,7 @@ import image29 from "../../../public/placements/technical/image29.jpg";
 import image30 from "../../../public/placements/technical/image30.jpg";
 import image31 from "../../../public/placements/technical/image31.jpg";
 import TopRecruiter from "../components/TopRecruiters";
+import BannerProgram from "@/component/Programs/BannerProgram";
 
 const carouselImages = [
   [image1, image2, image3, image4, image5, image6, image7, image8],
@@ -90,18 +88,15 @@ const description = (
 const page = () => {
   return (
     <div className="w-full">
-      {/* <Image
-        src={background}
-        className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-        alt=""
-      /> */}
-
       <Navbar />
-      <Banner
-        title={"Technical Placement Record"}
-        image={bannerImage}
-        belowPara={description}
-      />
+      <BannerProgram title={"Technical Placement Record"} image={bannerImage} />
+      <div className="w-full bg-white">
+        <div className="min-h-fit py-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1000px] px-8 mx-auto">
+          <h4 className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
+            {description}
+          </h4>
+        </div>
+      </div>
       <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
         <div className="h-full overflow-auto w-full">
           <TableComponent />

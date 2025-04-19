@@ -28,7 +28,9 @@ import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.pn
 import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
-function MBA() {
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import MCAFee from "../../../public/FeeStructure/CSE.pdf";
+function MCA() {
   return (
     <>
       <head>
@@ -48,7 +50,12 @@ function MBA() {
           titleColor={""}
           description={""}
         />
-        <Program content={content} sideImages={sideImages} quotes={quotes} heading={heading} />
+        <Program
+          content={content}
+          sideImages={sideImages}
+          quotes={quotes}
+          heading={heading}
+        />
         <CarouselProgram
           heading={"Discover"}
           items={items}
@@ -65,6 +72,7 @@ function MBA() {
           hod={hod}
           HODcontent={HODcontent}
         />
+        <DownloadFeeStructure pdf={MCAFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram
@@ -80,4 +88,4 @@ function MBA() {
   );
 }
 
-export default MBA;
+export default MCA;

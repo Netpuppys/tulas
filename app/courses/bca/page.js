@@ -28,7 +28,9 @@ import PlacementProgram from "@/component/Programs/PlacementProgram";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
-function BBA() {
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import BCAFee from "../../../public/FeeStructure/BCA.pdf";
+function BCA() {
   return (
     <>
       <head>
@@ -69,6 +71,7 @@ function BBA() {
           hod={hod}
           HODcontent={HODcontent}
         />
+        <DownloadFeeStructure pdf={BCAFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram
@@ -83,4 +86,4 @@ function BBA() {
   );
 }
 
-export default BBA;
+export default BCA;

@@ -4,6 +4,7 @@ import AlumniInteractionSession from "../../public/Homepage/LatestNews/AlumniInt
 import AlumniInteractionSessionCSE from "../../public/Homepage/LatestNews/AlumniInteractionSessionCSE.webp";
 import AWSCloudPractitioner from "../../public/Homepage/LatestNews/AWSCloudPractiioner.webp";
 import CLEANLINESSDRIVESantalaDevi from "../../public/Homepage/LatestNews/CLEANLINESS DRIVE (Santala Devi).webp";
+import BakeryTraining from "../../public/Homepage/LatestNews/BakeryTraining.webp";
 import CleanlinessDrive from "../../public/Homepage/LatestNews/CleanlinessDrive.webp";
 import CleanlinessDriveRishikesh from "../../public/Homepage/LatestNews/CleanlinessDriveRishikesh.webp";
 import EventBannersTiMarch from "../../public/Homepage/LatestNews/EventBannersTiMarch.webp";
@@ -26,7 +27,7 @@ import WorkshopOnElectricVehicles from "../../public/Homepage/LatestNews/Worksho
 import WorkshopOnSpirituality from "../../public/Homepage/LatestNews/WorkshopOnSprituality.webp";
 import WorldHealthDay from "../../public/Homepage/LatestNews/WorldHealthDay.webp";
 import WorldHealthDayJuhi from "../../public/Homepage/LatestNews/WorldHealthDayJuhi.webp";
-import bannerImg from "../../public/ProminentPersonalities/bannerImg.webp";
+import bannerImg from "../../public/Homepage/LatestNews/bannerImageNews.webp";
 import Footer from "@/component/Footer";
 import Image from "next/image";
 import { IoClose } from "react-icons/io5";
@@ -36,6 +37,13 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 
 function LatestNews() {
   const sports = [
+    {
+      image: BakeryTraining,
+      name: "Tula's Institute is organizing a training program on Kneed to know Bakery Training",
+      date: "03-Apr - 04-Apr-2025",
+      time: "11:00 am Onwards",
+      location: "TRC Lab, Tula's Institute",
+    },
     {
       image: WorldHealthDay,
       name: "Internal Complaint Committee (ICC) is organizing an event on World Health Day by Dr. Neha Mahajan",

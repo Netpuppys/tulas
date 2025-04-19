@@ -3,7 +3,7 @@ import AlumniInteractionSession from "../../public/Homepage/Events/AlumniInterac
 import AlumniInteractionSessionFalguniGupta from "../../public/Homepage/Events/AlumniInteractionSessionFalguniGupta.webp";
 import AlumniInteractionSessionGSB from "../../public/Homepage/Events/AlumniInteractionSessionGSB.webp";
 import AndroidAppDevelopment from "../../public/Homepage/Events/AndroidAppDevelopment.webp";
-import BakeryTraining from "../../public/Homepage/Events/BakeryTraining.webp";
+import CampusPlacementDrive38 from "../../public/Homepage/Events/CampusPlacementDrive38.webp";
 import Image from "next/image";
 function EventsAndActivites() {
   const swiperRef = useRef();
@@ -12,7 +12,7 @@ function EventsAndActivites() {
     AlumniInteractionSessionFalguniGupta,
     AlumniInteractionSessionGSB,
     AndroidAppDevelopment,
-    BakeryTraining,
+    CampusPlacementDrive38,
   ];
 
   return (
@@ -39,7 +39,6 @@ function EventsAndActivites() {
           </div>
         ))}
       </div>
-
       <button
         onClick={() => (window.location.href = "/career-and-skill-events")}
         className="px-10 mb-6 md:mb-[3%] flex items-center bg-[#007A83] font-[TTChocolatesMedium] rounded-full py-1 md:py-2 text-[15px] md:text-[20px] justify-center gap-14 hover:bg-white hover:shadow-lg hover:text-[#007A83] transition-all duration-300 ease-in-out"

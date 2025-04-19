@@ -29,6 +29,8 @@ import {
 } from "./data/data";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import BannerProgram from "@/component/Programs/BannerProgram";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import BTechFee from "../../../../public/FeeStructure/BTech.pdf";
 function BAJMC() {
   return (
     <>
@@ -71,6 +73,7 @@ function BAJMC() {
           HODcontent={HODcontent}
           specialization={specialization}
         />
+        <DownloadFeeStructure pdf={BTechFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram

@@ -25,7 +25,8 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import { FaDownload } from "react-icons/fa";
 import Link from "next/link";
-
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import BPharmaFee from "../../../public/FeeStructure/BPharma.pdf";
 function BPharma() {
   return (
     <>
@@ -55,6 +56,7 @@ function BPharma() {
         />
         <div className="w-full h-10 md:h-40"></div>
         <TableProgram cards={cards} selectedCard1={selectedCard1} />
+        <DownloadFeeStructure pdf={BPharmaFee} />
         {bpharmacy && (
           <div
             className={`relative pt-3  z-[9] flex space-x-4 ${

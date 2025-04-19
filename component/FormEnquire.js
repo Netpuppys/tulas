@@ -12,8 +12,8 @@ import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 import { UtmContext } from "./utmParams";
 import formPopupbackground from "../public/Homepage/aboutTulas/formPopup.png";
-import Brouchure from "../public/FooterPDf/Brouchure.pdf";
-function FormEnquire({ formPopup, download }) {
+
+function FormEnquire({ formPopup, pdf }) {
   const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
     AuthToken: "TULAS-27-12-2023",
@@ -174,10 +174,9 @@ function FormEnquire({ formPopup, download }) {
           City: "",
         });
         setOtp("");
-        if (download) {
-          window.location.href = Brouchure;
-        }
-        if (!download) {
+        if (pdf) {
+          window.location.href = pdf;
+        } else {
           window.location.href = `/admission-thank-you/${utmParams}`;
         }
       })

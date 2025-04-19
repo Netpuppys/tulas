@@ -13,7 +13,7 @@ function Journey({ heading, journey, journeyQuotes }) {
             key={index}
             className="w-full flex flex-col md:flex-row md:w-[calc(16.66%-1rem)] mb-[2%] relative"
           >
-            <div className="flex flex-col justify- items-start w-full h-full">
+            <div className="flex flex-col items-center md:items-start w-full h-full">
               <div className="rounded-md px-4 font-semibold">
                 <Image
                   src={card.icon}
@@ -21,10 +21,10 @@ function Journey({ heading, journey, journeyQuotes }) {
                   className="w-[80px] aspect-square"
                 />
               </div>
-              <h3 className="text-[#4E4E4E] px-4 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1vw,45px)] text-wrap font-[TTChocolatesMedium] font-normal">
+              <h3 className="text-[#4E4E4E] text-center md:text-start px-4 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1vw,45px)] text-wrap font-[TTChocolatesMedium] font-normal">
                 {card.title}
               </h3>
-              <h3 className="text-[#4E4E4E] px-4 mt-2 text-[clamp(10px,3.8vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
+              <h3 className="text-[#4E4E4E] text-center md:text-start px-4 mt-2 text-[clamp(10px,3.8vw,30px)] md:text-[clamp(10px,1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
                 {card.description}
               </h3>
             </div>

@@ -31,6 +31,8 @@ import bjmcImage2Desktop from "../../../public/courses/bjmc/bjmcImage2Desktop.pn
 import bjmcImage2 from "../../../public/courses/bjmc/bjmcImage2.png";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import BAJMCFee from "../../../public/FeeStructure/BAJMC.pdf";
 function BAJMC() {
   return (
     <>
@@ -81,6 +83,7 @@ function BAJMC() {
             semesterData={semesterData}
             facultyData={facultyData}
           />
+          <DownloadFeeStructure pdf={BAJMCFee} />
           <PlacementProgram features={features} />
           <TopRecruiter />
           <CarouselProgram

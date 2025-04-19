@@ -34,6 +34,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { selectedCardTable } from "../courses/btech/civil-engineering/data/data";
 import TableProgram from "@/component/Programs/tableProgram";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import BTechFee from "../../public/FeeStructure/BTech.pdf";
 function BTech() {
   const whyData = [
     {
@@ -731,6 +733,7 @@ function BTech() {
           </div>
         </div>
         <TableProgram selectedCardTable={selectedCardTable} />
+        <DownloadFeeStructure pdf={BTechFee} />
         <div className="pt-8 md:pt-[3%]"></div>
         <Footer color={true} />
       </body>

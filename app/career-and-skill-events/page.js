@@ -4,7 +4,6 @@ import AlumniInteractionSession from "../../public/Homepage/Events/AlumniInterac
 import AlumniInteractionSessionFalguniGupta from "../../public/Homepage/Events/AlumniInteractionSessionFalguniGupta.webp";
 import AlumniInteractionSessionGSB from "../../public/Homepage/Events/AlumniInteractionSessionGSB.webp";
 import AndroidAppDevelopment from "../../public/Homepage/Events/AndroidAppDevelopment.webp";
-import BakeryTraining from "../../public/Homepage/Events/BakeryTraining.webp";
 import CampusInternshipDrive from "../../public/Homepage/Events/CampusInternshipDrive.webp";
 import CampusPlacementDrive24 from "../../public/Homepage/Events/CampusPlacementDrive24.webp";
 import CampusPlacementDrive25 from "../../public/Homepage/Events/CampusPlacementDrive25.webp";
@@ -27,97 +26,40 @@ import DataStructure from "../../public/Homepage/Events/DataStructure.webp";
 import GuestLectureOnExploringCareerOpportunities from "../../public/Homepage/Events/GuestLectureOnExploringCareerOptions.webp";
 import IndustrialVisit from "../../public/Homepage/Events/IndustrialVisit.webp";
 import NurseryManagement from "../../public/Homepage/Events/NurseryManagement.webp";
-import bannerImg from "../../public/ProminentPersonalities/bannerImg.webp";
+import bannerImg from "../../public/Homepage/Events/bannerImageEvent.webp";
 import Footer from "@/component/Footer";
 import Image from "next/image";
 import { IoClose } from "react-icons/io5";
 import Navbar from "@/component/Navbar/Navbar";
 import BannerProgram from "@/component/Programs/BannerProgram";
-import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
-
 function CareerAndSkillEvents() {
   const sports = [
-    {
-      image: AlumniInteractionSession,
-    },
-    {
-      image: AlumniInteractionSessionFalguniGupta,
-    },
-    {
-      image: AlumniInteractionSessionGSB,
-    },
-    {
-      image: AndroidAppDevelopment,
-    },
-    {
-      image: BakeryTraining,
-    },
-    {
-      image: CampusInternshipDrive,
-    },
-    {
-      image: CampusPlacementDrive24,
-    },
-    {
-      image: CampusPlacementDrive25,
-    },
-    {
-      image: CampusPlacementDrive26,
-    },
-    {
-      image: CampusPlacementDrive27,
-    },
-    {
-      image: CampusPlacementDrive38,
-    },
-    {
-      image: CampusPlacementDrive39,
-    },
-    {
-      image: CampusPlacementDrive40,
-    },
-    {
-      image: CampusPlacementDrive42,
-    },
-    {
-      image: CampusPlacementDrive43,
-    },
-    {
-      image: CertificationCourse,
-    },
-    {
-      image: CertificationCourseAfterEffects,
-    },
-    {
-      image: CertificationCourseECommerce,
-    },
-    {
-      image: CertificationCourseOnBuildingEstimation,
-    },
-    {
-      image: CertificationCourseOnCatiaSoftware,
-    },
-    {
-      image: CertificationCourseOnDataAnalysis,
-    },
-    {
-      image: CertificationCourseOnDataAnalytics,
-    },
-    {
-      image: CertificationCourseOnMongoDB,
-    },
-    {
-      image: DataStructure,
-    },
-    {
-      image: GuestLectureOnExploringCareerOpportunities,
-    },
-    {
-      image: IndustrialVisit,
-    },
-    {
-      image: NurseryManagement,
-    },
+    AlumniInteractionSession,
+    AlumniInteractionSessionFalguniGupta,
+    AlumniInteractionSessionGSB,
+    AndroidAppDevelopment,
+    CampusInternshipDrive,
+    CampusPlacementDrive24,
+    CampusPlacementDrive25,
+    CampusPlacementDrive26,
+    CampusPlacementDrive27,
+    CampusPlacementDrive38,
+    CampusPlacementDrive39,
+    CampusPlacementDrive40,
+    CampusPlacementDrive42,
+    CampusPlacementDrive43,
+    CertificationCourse,
+    CertificationCourseAfterEffects,
+    CertificationCourseECommerce,
+    CertificationCourseOnBuildingEstimation,
+    CertificationCourseOnCatiaSoftware,
+    CertificationCourseOnDataAnalysis,
+    CertificationCourseOnDataAnalytics,
+    CertificationCourseOnMongoDB,
+    DataStructure,
+    GuestLectureOnExploringCareerOpportunities,
+    IndustrialVisit,
+    NurseryManagement,
   ];
   const [selectedItem, setSelectedItem] = useState(false);
 
@@ -151,7 +93,7 @@ function CareerAndSkillEvents() {
                   <div className="relative p-2 overflow-hidden rounded-xl bg-[#007A83] w-full h-full mx-auto">
                     <div className="w-full h-full aspect-[2/1] flex flex-col justify-between">
                       <Image
-                        src={item.image}
+                        src={item}
                         alt=""
                         className="w-full h-full object-contain rounded-xl"
                       />

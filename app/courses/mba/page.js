@@ -23,6 +23,8 @@ import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.pn
 import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import MBAFee from "../../../public/FeeStructure/MBA.pdf";
 function MBA() {
   return (
     <>
@@ -57,6 +59,7 @@ function MBA() {
           semesterData={semesterData}
           facultyData={facultyData}
         />
+        <DownloadFeeStructure pdf={MBAFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram

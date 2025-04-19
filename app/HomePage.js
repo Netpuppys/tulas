@@ -6,30 +6,54 @@ import Navbar from "@/component/Navbar/Navbar";
 const Footer = dynamic(() => import("@/component/Footer"), { ssr: false });
 const Video = dynamic(() => import("./Component/Video"), { ssr: false });
 const Virtual = dynamic(() => import("./Component/Virtual"), { ssr: false });
-const VirtualTour = dynamic(() => import("./Component/VirtualTour"), { ssr: false });
+const VirtualTour = dynamic(() => import("./Component/VirtualTour"), {
+  ssr: false,
+});
 const Courses = dynamic(() => import("./Component/Courses"), { ssr: false });
-const CampusLife = dynamic(() => import("./Component/CampusLife"), { ssr: false });
-const Testimonials = dynamic(() => import("./Component/Testimonials"), { ssr: false });
-const Accreditation = dynamic(() => import("./Component/Accreditation"), { ssr: false });
-const AwardsCrousel = dynamic(() => import("./Component/AwardsCrousel"), { ssr: false });
-const LifeAtTulas = dynamic(() => import("./Component/LifeAtTulas"), { ssr: false });
-const MeetOurManagement = dynamic(() =>
-  import("./Component/MeetOurManagement"), { ssr: false }
+const CampusLife = dynamic(() => import("./Component/CampusLife"), {
+  ssr: false,
+});
+const Testimonials = dynamic(() => import("./Component/Testimonials"), {
+  ssr: false,
+});
+const Accreditation = dynamic(() => import("./Component/Accreditation"), {
+  ssr: false,
+});
+const AwardsCrousel = dynamic(() => import("./Component/AwardsCrousel"), {
+  ssr: false,
+});
+const LifeAtTulas = dynamic(() => import("./Component/LifeAtTulas"), {
+  ssr: false,
+});
+const MeetOurManagement = dynamic(
+  () => import("./Component/MeetOurManagement"),
+  { ssr: false }
 );
 const Famous = dynamic(() => import("./Component/Famous"), { ssr: false });
-const Placement = dynamic(() => import("./Component/Placement"), { ssr: false });
-const AccreditationLogo = dynamic(() =>
-  import("./Component/AccreditationLogo"), { ssr: false }
+const Placement = dynamic(() => import("./Component/Placement"), {
+  ssr: false,
+});
+const AccreditationLogo = dynamic(
+  () => import("./Component/AccreditationLogo"),
+  { ssr: false }
 );
 
-const EventsAndActivites = dynamic(() =>
-  import("./Component/EventsAndActivites"), { ssr: false }
+const EventsAndActivites = dynamic(
+  () => import("./Component/EventsAndActivites"),
+  { ssr: false }
 );
-const BannerHome = dynamic(() => import("./Component/BannerHome"), { ssr: false });
-const BannerHomeMobile = dynamic(() => import("./Component/BannerHomeMobile"), { ssr: false });
-const StatsAndNews = dynamic(() => import("./Component/LatestAction"), { ssr: false });
-const CoursesNew = dynamic(() => import("./Component/CoursesNew"), { ssr: false });
-const AboutTulasForm = dynamic(() => import("./Component/AboutTulasForm"), { ssr: false });
+const BannerHome = dynamic(() => import("./Component/BannerHome"), {
+  ssr: false,
+});
+const StatsAndNews = dynamic(() => import("./Component/LatestAction"), {
+  ssr: false,
+});
+const CoursesNew = dynamic(() => import("./Component/CoursesNew"), {
+  ssr: false,
+});
+const AboutTulasForm = dynamic(() => import("./Component/AboutTulasForm"), {
+  ssr: false,
+});
 import AbhishekPandy from "../public/graduate-school-of-business/bba/AbhishekPandy.png";
 import AdilAhmed from "../public/graduate-school-of-business/bba/AdilAhmed.png";
 import AdityaPandey from "../public/graduate-school-of-business/bba/AdityaPandey.png";
@@ -54,29 +78,18 @@ import gauravSrivastava from "../public/courses/bca/gauravSrivastava.png";
 import prathamNautiyal from "../public/courses/bca/prathamNautiyal.png";
 import rohitKotnala from "../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../public/courses/bca/saurabhRawat.png";
+import SanskritiBannerDesktop from "../public/Homepage/BannerHome/SanskritiBannerDesktop.webp";
+import RankedBannerDesktop from "../public/Homepage/BannerHome/RankedBannerDesktop.webp";
+import MahakumbhBannerDesktop from "../public/Homepage/BannerHome/MahakumbhBannerDesktop.webp";
+import PlacementBannerDesktop from "../public/Homepage/BannerHome/PlacementBannerDesktop.webp";
+import RankedBannerMobile from "../public/Homepage/BannerHome/RankedBannerMobile.webp";
+import SanskritiBannerMobile from "../public/Homepage/BannerHome/SanskritiBannerMobile.webp";
+import MahakumbhBannerMobile from "../public/Homepage/BannerHome/MahakumbhBannerMobile.webp";
+import PlacementBannerMobile from "../public/Homepage/BannerHome/PlacementBannerMobile.webp";
 import { ThreeDots } from "react-loader-spinner";
 
 export default function HomePage() {
   const parentRef = useRef(null);
-  const scrollContainerRef = useRef(null);
-  useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    let scrollAmount = 2; // Speed of scrolling
-    const scroll = () => {
-      if (scrollContainer) {
-        scrollContainer.scrollLeft += scrollAmount;
-        if (
-          scrollContainer.scrollLeft >=
-          scrollContainer.scrollWidth - scrollContainer.clientWidth
-        ) {
-          scrollContainer.scrollLeft = 0; // Reset to start for continuous effect
-        }
-      }
-    };
-    const interval = setInterval(scroll, 20); // Adjust speed here
-    return () => clearInterval(interval);
-  }, []);
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -138,6 +151,18 @@ export default function HomePage() {
     },
   ];
 
+  const bannerImagesDesktop = [
+    SanskritiBannerDesktop,
+    RankedBannerDesktop,
+    MahakumbhBannerDesktop,
+    PlacementBannerDesktop,
+  ];
+  const bannerImagesMobile = [
+    RankedBannerMobile,
+    SanskritiBannerMobile,
+    MahakumbhBannerMobile,
+    PlacementBannerMobile,
+  ];
   const name = [
     "Ranked 86th by Times of B School in India.",
     "Ranked Amongst Top 50 Private College in India.",
@@ -164,28 +189,28 @@ export default function HomePage() {
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar fullBanner={true} />
         <div className="hidden md:block">
-          <BannerHome />
+          <BannerHome bannerImages={bannerImagesDesktop} scrollButton={true} />
         </div>
         <div className="block md:hidden">
-          <BannerHomeMobile />
+          <BannerHome bannerImages={bannerImagesMobile} scrollButton={true} />
         </div>
-        <div
-          ref={scrollContainerRef}
-          style={{
-            overflowX: "auto",
-            whiteSpace: "nowrap",
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-          }}
-          className="w-full py-2 md:py-6 flex gap-4 md:gap-[6%] whitespace-nowrap"
-        >
-          {name.map((item, index) => (
-            <div key={index} className="relative w-fit mx-auto">
-              <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] text-black font-[TTChocolates] leading-tight font-extrabold">
-                {item}
-              </h2>
+
+        <div className="relative overflow-hidden">
+          {/* Blurred sides */}
+          <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10 blur-lg bg-gradient-to-r from-[#DEDEDE] to-transparent" />
+          <div className="pointer-events-none absolute top-0 right-0 w-[10%] h-full z-10 blur-lg bg-gradient-to-l from-[#DEDEDE] to-transparent" />
+          {/* Scrolling text */}
+          <marquee direction="left" scrollamount="10">
+            <div className="w-fit py-2 md:py-6 flex gap-4 md:gap-[2%] whitespace-nowrap">
+              {name.map((item, index) => (
+                <div key={index} className="relative w-fit mx-auto">
+                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] text-black font-[TTChocolates] leading-tight font-extrabold">
+                    {item}
+                  </h2>
+                </div>
+              ))}
             </div>
-          ))}
+          </marquee>
         </div>
         <AccreditationLogo />
         <AboutTulasForm />

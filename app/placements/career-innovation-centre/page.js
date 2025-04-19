@@ -1,13 +1,14 @@
 "use client";
-import Banner from "@/component/Banner";
+import React from "react";
 import Navbar from "@/component/Navbar/Navbar";
-import bannerImage from "../../../public/Homepage/BannerHome/Banner1.webp";
-import background from "../../../public/AboutDehradun/background.png";
-import hostel from "../../../public/infrastructure/HostelMess/hostel.png";
-import Image from "next/image";
+import bannerImage from "../../../public/placements/bannerImg.webp";
+import placement1 from "../../../public/placements/placement1.webp";
+import placement2 from "../../../public/placements/placement2.webp";
+import placement3 from "../../../public/placements/placement3.webp";
 import Footer from "@/component/Footer";
 import Vision from "@/component/Programs/Vision";
 import TopRecruiter from "@/component/topRecruiter";
+import BannerProgram from "@/component/Programs/BannerProgram";
 
 const section = [
   {
@@ -45,56 +46,8 @@ const section = [
         give your career a head start.
       </>
     ),
-    image: hostel,
+    image: placement1,
   },
-  // {
-  //   title: "Career Innovation Centre",
-  //   description: (
-  //     <>
-  //       The Career Innovation Centre, supported by faculty members from various
-  //       departments, delivers effective career guidance services to students.
-  //       This includes counselling for higher education, such as GRE, GATE, CAT,
-  //       among others. Each year, the AMCAT exam is administered for 5th and
-  //       7th-semester students to evaluate their readiness for the job market,
-  //       providing tailored guidance based on their sectoral fit.
-  //       <br />
-  //       <br />
-  //       Roles and Responsibilities
-  //       <ul className="list-disc ml-5">
-  //         <li>
-  //           To provide guidance on educational and vocational/career matters
-  //           through individual and group counselling sessions.
-  //         </li>
-  //         <li>
-  //           To offer pre-placement guidance and counselling for postgraduate
-  //           studies.
-  //         </li>
-  //         <li>
-  //           To assist students in making informed decisions about their
-  //           education and career trajectories.
-  //         </li>
-  //         <li>
-  //           To help students understand that career management is a lifelong
-  //           process requiring continual development.
-  //         </li>
-  //         <li>
-  //           To educate students on the influence of technological trends on
-  //           career management and progression.
-  //         </li>
-  //         <li>
-  //           To promote student independence and self-confidence in career
-  //           decision-making.
-  //         </li>
-  //         <li>
-  //           To raise awareness of the wide range of opportunities available to
-  //           students following graduation, whether in higher education or career
-  //           development.
-  //         </li>
-  //       </ul>
-  //     </>
-  //   ),
-  //   image: hostel,
-  // },
   {
     title: "The Training Department",
     description: (
@@ -119,7 +72,7 @@ const section = [
         for high-quality professional development.
       </>
     ),
-    image: hostel,
+    image: placement2,
   },
   {
     title: "The Placement Department",
@@ -159,21 +112,9 @@ const section = [
         </ul>
       </>
     ),
-    image: hostel,
+    image: placement3,
   },
 ];
-
-const content4 = {
-  para: "",
-  roles: [],
-  conclusion: "",
-};
-
-const content3 = <></>;
-
-const Highlight = ({ children }) => {
-  return <strong className="text-[#007A83] !font-bold">{children}</strong>;
-};
 
 const description = (
   <>
@@ -201,23 +142,18 @@ const page = () => {
       </head>
       <body>
         <Navbar />
-        <Banner
-          title={"Placement at Tula’s"}
-          belowPara={description}
-          image={bannerImage}
-        />
-        <div className="w-full relative overflow-hidden">
-          <Image
-            src={background}
-            className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-            alt=""
-          />
+        <BannerProgram title={"Placement at Tula’s"} image={bannerImage} />
+        <div className="w-full bg-white">
+          <div className="min-h-fit pt-8 md:pt-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1000px] px-8 mx-auto">
+            <h4 className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
+              {description}
+            </h4>
+          </div>
         </div>
-        <Vision sections={section.slice(0, 1)} />
 
-        <TopRecruiter />
-
-        <Vision sections={section.slice(1)} />
+        <Vision sections={section.slice(0, 1)} color={true} />
+        <TopRecruiter padding={true} />
+        <Vision sections={section.slice(1)} color={true} />
         <div className="w-full h-fit z-50">
           <Footer />
         </div>

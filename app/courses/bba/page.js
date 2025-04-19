@@ -23,6 +23,8 @@ import PlacementProgram from "@/component/Programs/PlacementProgram";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import BBAFee from "../../../public/FeeStructure/BBA.pdf";
 function BBA() {
   return (
     <>
@@ -58,6 +60,7 @@ function BBA() {
           semesterData={semesterData}
           facultyData={facultyData}
         />
+        <DownloadFeeStructure pdf={BBAFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram

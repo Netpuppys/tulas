@@ -23,6 +23,8 @@ import {
 } from "./data/data";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import BcomFee from "../../../public/FeeStructure/BCOM.pdf";
 function BBA() {
   return (
     <>
@@ -58,6 +60,7 @@ function BBA() {
           semesterData={semesterData}
           facultyData={facultyData}
         />
+        <DownloadFeeStructure pdf={BcomFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram

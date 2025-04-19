@@ -10,7 +10,13 @@ import { Fade } from "react-awesome-reveal";
 import Location from "./Location";
 import Management from "./Management";
 import AboutManagement from "./AboutManagement";
-
+import BannerHome from "@/app/Component/BannerHome";
+import BannerImage1 from "../../../public/Homepage/BannerHome/BannerImage1.webp";
+import BannerImage2 from "../../../public/Homepage/BannerHome/BannerImage2.webp";
+import BannerImage3 from "../../../public/Homepage/BannerHome/BannerImage3.webp";
+import BannerImage4 from "../../../public/Homepage/BannerHome/BannerImage4.webp";
+import BannerImage5 from "../../../public/Homepage/BannerHome/BannerImage5.webp";
+import BannerImage6 from "../../../public/Homepage/BannerHome/BannerImage6.webp";
 const button = [
   {
     title: "# Placements In Core Companies",
@@ -111,32 +117,41 @@ export default function AboutPage() {
     }
   }, []);
 
+  const bannerImages = [
+    BannerImage1,
+    BannerImage2,
+    BannerImage3,
+    BannerImage4,
+    BannerImage5,
+    BannerImage6,
+  ];
+
   return (
     <div className="max-w-[100vw] md:max-w-none overflow-x-hidden">
       <Navbar />
-      <Banner
-        title={
-          <>
-            ABOUT <span className="text-[#007A83]">TULA'S</span>
-          </>
-        }
-        image={BannerImg}
-        // description={
-        //   "Tula’s Institute, proudly ranked as the 9th best college in North India, is a hub for innovation, personal growth, and lifelong learning. We are committed to recognizing individual potential and helping students transform it into success stories. We create an environment of respect, encouragement, and lifelong learning to help students achieve their dreams."
-        // }
-        belowTitle={"Sunil Kumar Jain, Founder"}
-        belowPara={
-          <>
-            <span className="text-[#760135] text-[30px] leading-none">“</span>
-            Education is not just about learning new things, but about seeing
-            the world in a different light. With over 35 years of experience in
-            business, social, and public spaces, I have built an ecosystem
-            designed to guide students in making the right decisions for their
-            career and life.
-            <span className="text-[#760135] text-[30px] leading-none">“</span>
-          </>
-        }
+      <BannerHome
+        title={"ABOUT TULA'S"}
+        bannerImages={bannerImages}
+        screen={true}
       />
+      <div className="bg-white w-full">
+        <div className="min-h-fit py-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1000px] px-8 mx-auto">
+          <h3 className="text-2xl font-[CarotSlab] font-medium md:text-4xl text-[#760135] text-left mb-3">
+            Sunil Kumar Jain, Founder
+          </h3>
+          <h4 className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
+            <>
+              <span className="text-[#760135] text-[30px] leading-none">“</span>
+              Education is not just about learning new things, but about seeing
+              the world in a different light. With over 35 years of experience
+              in business, social, and public spaces, I have built an ecosystem
+              designed to guide students in making the right decisions for their
+              career and life.
+              <span className="text-[#760135] text-[30px] leading-none">“</span>
+            </>
+          </h4>
+        </div>
+      </div>
       {/* fixed background */}
       <Image
         src={background}

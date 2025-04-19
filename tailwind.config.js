@@ -61,6 +61,7 @@ module.exports = {
             transform: "translateX(-100%)",
           },
         },
+
         marqueeOpposite: {
           from: {
             transform: "translateX(-100%)",

@@ -7,26 +7,43 @@ import Award1 from "../../public/Homepage/awards/Award1.png";
 import Award2 from "../../public/Homepage/awards/Award2.png";
 import Award3 from "../../public/Homepage/awards/Award3.png";
 import Award4 from "../../public/Homepage/awards/Award4.png";
+import Ranking1 from "../../public/Homepage/awards/Ranking1.jpg";
+import Ranking2 from "../../public/Homepage/awards/Ranking2.jpg";
+import Ranking3 from "../../public/Homepage/awards/Ranking3.jpg";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 function AwardsCrousel() {
   const features = [
     {
-      image: Award1,
-      name: "HNN awarded Tulas as Best Engineering college by Former Chief Minister Trivendra Singh Rawat",
-      date: "2023",
+      image: Ranking1,
+      name: "Ranked 65th for Engineering by Outlook",
+      date: "2024",
       name2: "Institute with best placements by Indian Education Awards",
       date2: "2024",
       image2: Award2,
     },
     {
-      image: Award3,
-      name: "Merit Awards awarded Tulas as Best Engineering college by famous Actress Kirron Kher",
-      date: "2022",
+      image: Ranking2,
+      name: "Ranked Amongst Top 50 Private College in India",
+      date: "March 2025",
+      image2: Award1,
+      name2:
+        "HNN awarded Tulas as Best Engineering college by Former Chief Minister Trivendra Singh Rawat",
+      date2: "2023",
+    },
+    {
+      image: Ranking3,
+      name: "Tula's Ranked 86th by Times B School of India",
+      date: "2025",
       name2:
         "Best Enginneering College in North India by Famous author Chetan Bhagat",
       image2: Award4,
       date2: "2019",
     },
+    // {
+    //   image: Award3,
+    //   name: "Merit Awards awarded Tulas as Best Engineering college by famous Actress Kirron Kher",
+    //   date: "2022",
+    // },
   ];
   const swiperRef = useRef();
   const [activeIndex, setActiveIndex] = useState(0);
@@ -55,15 +72,15 @@ function AwardsCrousel() {
         >
           {features.map((feature, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col md:flex-row py-4 md:py-[4%] h-full px-4 w-full md:w-[85%] md:px-0 gap-4 md:gap-12 mx-auto">
-                <div className="w-full md:w-[50%] h-full relative flex flex-col justify-between">
+              <div className="flex flex-col md:flex-row py-4 md:py-[3%] px-4 w-full md:w-[85%] md:px-0 gap-4 md:gap-12 mx-auto">
+                <div className="w-full md:w-[50%] flex flex-col justify-between">
                   <Image
                     src={feature.image}
                     alt=""
                     loading="lazy"
                     className="rounded-xl md:rounded-2xl h-fit object-cover"
                   />
-                  <div>
+                  <div className="h-fit w-full">
                     <h2 className="leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535] font-[TTChocolates] font-extrabold border-b border-[#353535] py-2 md:py-4">
                       {feature.name}
                     </h2>
@@ -77,7 +94,7 @@ function AwardsCrousel() {
                     loading="lazy"
                     className="rounded-xl md:rounded-3xl h-fit object-cover"
                   />
-                  <div>
+                  <div className="h-fit w-full">
                     <h2 className="leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535] font-[TTChocolates] font-extrabold border-b border-[#353535] py-2 md:py-4">
                       {feature.name2}
                     </h2>
@@ -88,7 +105,7 @@ function AwardsCrousel() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="flex space-x-6 md:space-x-10 pb-8 md:pb-[3%] justify-center self-center">
+        <div className="flex space-x-6 md:space-x-10 justify-center self-center">
           <button
             onClick={handlePrevClick}
             className={`pointer-events-auto shadow-2xl text-white h-[60px] w-[60px] bg-[#760135] rounded-full flex items-center justify-center text-[40px] ${

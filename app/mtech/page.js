@@ -25,6 +25,8 @@ import entreprenurship from "../../public/graduate-school-of-business/mba/entrep
 import cuttingEdgeBackground from "../../public/graduate-school-of-business/mba/cuttingEdgeBackground.png";
 import Image from "next/image";
 import TableProgram from "@/component/Programs/tableProgram";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import MTechFee from "../../public/FeeStructure/MTEch.pdf";
 function MTech() {
   const whyData = [
     {
@@ -695,6 +697,7 @@ function MTech() {
             </>
           }
         />
+        <DownloadFeeStructure pdf={MTechFee} />
         <div className="pt-8 md:pt-[3%]"></div>
         <Footer color={true} />
       </body>

@@ -1,9 +1,6 @@
-import Banner from "@/component/Banner";
-import bannerImage from "../../../public/Homepage/BannerHome/Banner1.webp";
-import Navbar from "@/component/Navbar/Navbar";
-import background from "../../../public/AboutDehradun/background.png";
-import Image from "next/image";
 import React from "react";
+import bannerImage from "../../../public/placements/bannerImg.webp";
+import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import tableData from "./tableData";
 import logo1 from "../../../public/placements/nonTechnical/logo1.png";
@@ -28,6 +25,7 @@ import logo19 from "../../../public/placements/nonTechnical/logo19.png";
 import logo20 from "../../../public/placements/nonTechnical/logo20.png";
 import logo21 from "../../../public/placements/nonTechnical/logo21.png";
 import TopRecruiter from "../components/TopRecruiters";
+import BannerProgram from "@/component/Programs/BannerProgram";
 
 const logosArray = [
   [logo1, logo2, logo3, logo4, logo5, logo6, logo7],
@@ -75,11 +73,17 @@ const page = () => {
       /> */}
 
       <Navbar />
-      <Banner
+      <BannerProgram
         title={"Non-Technical Placement Record"}
         image={bannerImage}
-        belowPara={description}
       />
+      <div className="w-full bg-white">
+        <div className="min-h-fit py-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1000px] px-8 mx-auto">
+          <h4 className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
+            {description}
+          </h4>
+        </div>
+      </div>
       <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
         <div className="h-full overflow-auto w-full">
           <TableComponent />

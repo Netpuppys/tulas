@@ -56,18 +56,18 @@ function WhyChoose() {
               key={index}
               className="w-full md:w-[calc(33.33%-2rem)] mb-[2%] relative"
             >
-              <div className="flex flex-col items-start w-full h-full">
-                <div className="rounded-md px-4 md:px-10 font-semibold border-l-4">
+              <div className="flex flex-col items-center md:items-start w-full h-full">
+                <div className="rounded-md px-4 md:px-10 font-semibold md:border-l-4">
                   <Image
                     src={card.icon}
                     alt=""
                     className="w-[90px] aspect-square"
                   />
                 </div>
-                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[TTChocolatesMedium] font-normal">
+                <h3 className="text-[#FFFFFF] text-center md:text-start px-4 md:px-10 mt-4 leading-tight text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-wrap font-[TTChocolatesMedium] font-normal">
                   {card.title}
                 </h3>
-                <h3 className="text-[#FFFFFF] px-4 md:px-10 mt-2 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
+                <h3 className="text-[#FFFFFF] text-center md:text-start px-4 md:px-10 mt-2 text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] font-normal">
                   {card.description}
                 </h3>
               </div>

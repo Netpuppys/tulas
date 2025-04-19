@@ -27,6 +27,8 @@ import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { MdMail } from "react-icons/md";
 import { UtmContext } from "./utmParams";
 import FormPopup from "./formPopup";
+import Brouchure from "../public/FooterPDf/Brouchure.pdf";
+import FeeStructure from "../public/FooterPDf/FeeStructure.pdf";
 const subTitle =
   "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India";
 
@@ -157,9 +159,9 @@ const Footer = ({ set = false, color = false }) => {
   ];
   const { utmParams } = useContext(UtmContext);
   const [formPopup, setFormPopup] = useState(false);
-  const handleFormPopup = () => {
-    setFormPopup(true);
-  };
+  const [prospectus, setProspectus] = useState(false);
+  const [feesStructure, setFeesStructure] = useState(false);
+
   return (
     <footer className="min-h-screen w-full text-white overflow-hidden z-40">
       <div className="w-full h-fit md:h-[12vh] flex flex-col md:flex-row items-end bg-transparent">
@@ -177,7 +179,7 @@ const Footer = ({ set = false, color = false }) => {
               onClick={() => {
                 window.location.href = `/apply-now/${utmParams}`;
               }}
-              className="text-[clamp(10px,2.5vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-2 md:py-2 md:px-[1vw] text-white"
+              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
             >
               ENQUIRY NOW
             </button>
@@ -185,15 +187,27 @@ const Footer = ({ set = false, color = false }) => {
               onClick={() => {
                 window.location.href = `/apply-now/${utmParams}`;
               }}
-              className="bg-[#E69706] border-2 text-[clamp(10px,2.5vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-1 px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
+              className="w-[70%] rounded-full md:w-fit bg-[#E69706] border-2 text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
             >
               APPLY TODAY
             </button>
             <button
-              onClick={handleFormPopup}
-              className="text-[clamp(10px,2.5vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-1 px-2 md:py-2 md:px-[1vw] text-white"
+              onClick={() => {
+                setFormPopup(true);
+                setProspectus(true);
+              }}
+              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
             >
               DOWNLOAD PROSPECTUS
+            </button>
+            <button
+              onClick={() => {
+                setFormPopup(true);
+                setFeesStructure(true);
+              }}
+              className="w-[70%] rounded-full md:w-fit bg-[#E69706] border-2 text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
+            >
+              DOWNLOAD FEE STRUCTURE
             </button>
           </div>
         </div>
@@ -435,7 +449,7 @@ const Footer = ({ set = false, color = false }) => {
         <FormPopup
           formPopup={formPopup}
           setFormPopup={setFormPopup}
-          download={true}
+          pdf={prospectus ? Brouchure : feesStructure ? FeeStructure : ""}
         />
       )}
     </footer>

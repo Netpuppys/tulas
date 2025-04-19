@@ -79,7 +79,7 @@ const Testimonials = () => {
 
   return (
     <div className="relative w-full pt-10 pb-[3.5%] md:pb-0 md:pt-[4%]">
-      <div className="absolute bottom-5 w-full md:w-fit right-0 items-center justify-center md:right-5 z-50 flex gap-3">
+      <div className="absolute bottom-8 w-full items-center justify-center z-50 flex gap-3">
         {/* Play/Pause Button */}
         <button
           onClick={handlePlayToggle}

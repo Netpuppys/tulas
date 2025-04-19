@@ -27,14 +27,12 @@ import {
 import { facultyDataCSE } from "../facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
-import contentLeft from "../../../../public/courses/btech/computer-science/contentLeft.webp"
-import contentRight from "../../../../public/courses/btech/computer-science/contentRight.webp"
-import topBanner from "../../../../public/courses/btech/computer-science/topBanner.webp"
-
-const sideImages = [
-  contentLeft,
-  contentRight
-]
+import contentLeft from "../../../../public/courses/btech/computer-science/contentLeft.webp";
+import contentRight from "../../../../public/courses/btech/computer-science/contentRight.webp";
+import topBanner from "../../../../public/courses/btech/computer-science/topBanner.webp";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
+const sideImages = [contentLeft, contentRight];
 
 function page() {
   return (
@@ -80,6 +78,7 @@ function page() {
           hod={hod}
           HODcontent={HODcontent}
         />
+        <DownloadFeeStructure pdf={BTechFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram

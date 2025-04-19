@@ -3,7 +3,7 @@ import React from "react";
 import { IoClose } from "react-icons/io5";
 import FormEnquire from "./FormEnquire";
 
-function FormPopup({ formPopup, setFormPopup, download = false }) {
+function FormPopup({ formPopup, setFormPopup, pdf }) {
   return (
     <>
       <div className="w-full h-screen flex bg-black bg-opacity-75  items-center backdrop-blur-md fixed z-[99999] top-0 left-0 justify-center">
@@ -27,7 +27,7 @@ function FormPopup({ formPopup, setFormPopup, download = false }) {
             >
               <IoClose />
             </button>
-            <FormEnquire formPopup={formPopup} download={download} />
+            <FormEnquire formPopup={formPopup} pdf={pdf} />
           </div>
         </div>
       </div>

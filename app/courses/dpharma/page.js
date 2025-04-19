@@ -26,6 +26,8 @@ import {
 import BannerProgram from "@/component/Programs/BannerProgram";
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
+import DPharmaFee from "../../../public/FeeStructure/DPharma.pdf";
 function DPharma() {
   return (
     <>
@@ -67,6 +69,7 @@ function DPharma() {
           semesterData={semesterData}
           facultyData={facultyData}
         />
+        <DownloadFeeStructure pdf={DPharmaFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
         <Footer />

@@ -20,7 +20,7 @@ import hexaware from "../public/TopRecruiter/hexaware.png";
 import ais from "../public/TopRecruiter/ais.png";
 import Image from "next/image";
 
-function TopRecruiter() {
+function TopRecruiter({ padding = false }) {
   const crouselImages = [
     [amazon, Microsoft, hcl, lg, wipro, vivo, jbm, tata],
     [samsung, itc, oracle, cumins, aon, honda, hexaware, ais],
@@ -45,7 +45,11 @@ function TopRecruiter() {
   }, [currentIndex, crouselImages.length]);
 
   return (
-    <div className="py-8 md:py-[3%] bg-white w-full h-fit flex flex-col items-center justify-center relative">
+    <div
+      className={`${
+        padding ? "" : "py-8 md:py-[3%]"
+      }  bg-white w-full h-fit flex flex-col items-center justify-center relative`}
+    >
       <h3 className="text-[#760135] pb-8 md:pb-14 text-[25px] md:text-[40px] font-[CarotSlab]">
         TOP RECRUITERS
       </h3>

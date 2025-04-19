@@ -307,7 +307,7 @@ const AdmissionOpenPage = () => {
                         {section.title}
                       </h3>
                       <h5
-                        className={`text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] text-[#4E4E4E]`}
+                        className={`text-[clamp(10px,4vw,30px)] text-justify md:text-left md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] text-[#4E4E4E]`}
                       >
                         {section.description}
                       </h5>
