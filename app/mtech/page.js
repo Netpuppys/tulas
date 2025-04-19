@@ -26,7 +26,7 @@ import cuttingEdgeBackground from "../../public/graduate-school-of-business/mba/
 import Image from "next/image";
 import TableProgram from "@/component/Programs/tableProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
-import MTechFee from "../../public/FeeStructure/MTEch.pdf";
+import MTechFee from "../../public/FeeStructure/MTech.pdf";
 function MTech() {
   const whyData = [
     {
