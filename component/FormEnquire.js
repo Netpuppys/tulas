@@ -347,13 +347,14 @@ function FormEnquire({ formPopup, pdf }) {
               className="w-14 h-[42px] text-center focus:outline-none bg-[#F4F4F4] border-b-2 border-[#760135] text-[#4B4B4B] placeholder:text-[#4B4B4B]"
             >
               <option value="91">{`+${getCountryCallingCode("IN")}`}</option>
-              {getCountries()
+              <option value="977">{`+${getCountryCallingCode("NP")}`}</option>
+              {/* {getCountries()
                 .filter((country) => country !== "IN") // Exclude India from the mapped options
                 .map((country) => (
                   <option key={country} value={getCountryCallingCode(country)}>
                     {`(+${getCountryCallingCode(country)})`}
                   </option>
-                ))}
+                ))} */}
             </select>
             <input
               type="text"

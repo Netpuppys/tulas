@@ -525,16 +525,16 @@ function BTech() {
                           <option value="91">{`+${getCountryCallingCode(
                             "IN"
                           )}`}</option>
-                          {getCountries()
-                            .filter((country) => country !== "IN") // Exclude India from the mapped options
-                            .map((country) => (
-                              <option
-                                key={country}
-                                value={getCountryCallingCode(country)}
-                              >
-                                {`(+${getCountryCallingCode(country)})`}
-                              </option>
-                            ))}
+                          <option value="977">{`+${getCountryCallingCode(
+                            "NP"
+                          )}`}</option>
+                          {/* {getCountries()
+                                          .filter((country) => country !== "IN") // Exclude India from the mapped options
+                                          .map((country) => (
+                                            <option key={country} value={getCountryCallingCode(country)}>
+                                              {`(+${getCountryCallingCode(country)})`}
+                                            </option>
+                                          ))} */}
                         </select>
                         <input
                           type="text"
