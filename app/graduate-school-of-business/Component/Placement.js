@@ -22,7 +22,12 @@ function Placement({ scrollRef }) {
           />
           <div className="relative w-[95%] bg-[#FFFFFF] md:w-full rounded-xl overflow-hidden z-20 h-full">
             <div className="w-full h-full flex flex-col py-8 md:py-[4%] md:pb-[2%] gap-6 items-center ">
-              <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight  md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+              <h8
+                style={{
+                  textAlign: "center",
+                }}
+                className="text-[#007A83] px-4 text-[clamp(10px,7.5vw,50px)] leading-tight  md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold"
+              >
                 Placements & Internships
               </h8>
               <h4 className="px-8 md:px-0 w-full md:max-w-[85%] md:text-justify mx-auto font-[TTChocolates] leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
@@ -56,7 +61,12 @@ function Placement({ scrollRef }) {
             </div>
           </div>
         </div>
-        <h4 className="px-8 md:px-0 text-center w-full pb-16 md:pb-8 font-[TTChocolates] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-white">
+        <h4
+          style={{
+            textAlign: "center",
+          }}
+          className="px-8 md:px-0 w-full pb-16 md:pb-8 font-[TTChocolates] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] text-white"
+        >
           Copyright ©2024 All Rights Reserved for TULAS
         </h4>
       </div>

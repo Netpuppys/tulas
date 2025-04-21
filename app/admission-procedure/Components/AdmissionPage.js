@@ -8,7 +8,6 @@ import Footer from "@/component/Footer";
 import Image from "next/image";
 import Table from "./Table";
 import eProspectus from "../../../public/admission-procedure/e-prospectus.png";
-import { Fade } from "react-awesome-reveal";
 import Vision from "@/component/Programs/Vision";
 import { UtmContext } from "@/component/utmParams";
 const title = (

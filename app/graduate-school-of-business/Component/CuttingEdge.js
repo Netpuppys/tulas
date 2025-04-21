@@ -70,7 +70,7 @@ function CuttingEdge({
           {departments && (
             <div className="w-full mx-auto ">
               <CardCourses linked={false} />
-              <CoursesNew/>
+              <CoursesNew />
             </div>
           )}
           <button
@@ -97,10 +97,20 @@ function CuttingEdge({
         journeyQuotes={journeyQuote}
       />
       <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[3%] md:pb-[2%] gap-4 items-center ">
-        <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
+        <h8
+          style={{
+            textAlign: "center",
+          }}
+          className="text-[#007A83] px-4 text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold"
+        >
           Our Recruiters
         </h8>
-        <h4 className="px-8 text-center w-full font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
+        <h4
+          style={{
+            textAlign: "center",
+          }}
+          className="px-8 w-full font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]"
+        >
           Give your career a boost with lucrative national & international
           internship and placement opportunities at Tula's Graduate School of
           Business.
