@@ -312,7 +312,7 @@ const page = () => {
               alt=""
             />
             <div className="h-fit absolute top-1/2 -translate-y-1/2 right-[10vw]">
-              <div id="ee-form-15"></div>
+              <div ref={scrollRef} id="ee-form-15"></div>
             </div>
           </div>
 
