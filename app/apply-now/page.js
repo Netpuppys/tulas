@@ -311,7 +311,7 @@ const page = () => {
               className="w-full h-full object-cover"
               alt=""
             />
-            <div className="h-fit absolute top-1/2 -translate-y-1/2 right-[10vw]">
+            <div className="w-[90%] mx-auto md:w-fit h-fit absolute bottom-0 md:top-1/2 md:-translate-y-1/2 md:right-[10vw]">
               <div ref={scrollRef} id="ee-form-15"></div>
             </div>
           </div>
