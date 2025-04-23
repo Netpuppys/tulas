@@ -6,10 +6,8 @@ import ProgramEducationalObjective from "../../../../../public/courses/btech/Pro
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import clubs from "../../../../../public/courses/bjmc/clubs.png";
 import edge from "../../../../../public/courses/btech/civil-engineering/edge.png";
-import work from "../../../../../public/courses/btech/civil-engineering/work.png";
 import beyondCurriculum from "../../../../../public/courses/btech/civil-engineering/beyondCurriculum.png";
 import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import cseDocument from "../../../../../public/courses/btech/computer-science/CSE.pdf";
 import DepartmentalVission from "../../../../../public/courses/btech/computer-science/departmentalVision.JPG";
 import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.JPG"

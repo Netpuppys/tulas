@@ -1,6 +1,12 @@
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../../../public/courses/btech/CourseOutcomes.png";
+import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../../../public/courses/btech/ProgramEducationalObjective.png";
+import clubs from "../../../../../public/courses/bjmc/clubs.png";
+import beyondCurriculum from "../../../../../public/courses/btech/mechanical-engineering/beyondCurriculum.webp";
+import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
+import edge from "../../../../../public/courses/btech/civil-engineering/edge.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import virjmohanvidhyarthy from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/virjmohanvidhyarthy.webp";
@@ -21,6 +27,9 @@ import EEEpdf from "../../../../../public/courses/btech/electrical-and-electroni
 import Link from "next/link";
 import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+import contentLeft from "../../../../../public/courses/btech/electrical-and-electronics/contentLeft.webp";
+import contentRight from "../../../../../public/courses/btech/electrical-and-electronics/contentRight.webp";
+
 export const features = [
   {
     image: placement3,
@@ -37,6 +46,7 @@ export const heading = (
     <span className="text-[#760135]">North India</span>
   </>
 );
+export const sideImages = [contentLeft, contentRight];
 export const content = (
   <>
     The Department of Electrical & Electronics Engineering (EEE) at Tula’s
@@ -96,7 +106,7 @@ export const items = [
         B.Tech EEE
       </Link>,
     ],
-    image: Program,
+    image: CourseOutcomes,
   },
   {
     title: "Program Outcomes",
@@ -105,7 +115,7 @@ export const items = [
       "Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
       "Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
     ],
-    image: Course,
+    image: ProgramOutcomes,
     points: [
       "Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
       "Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
@@ -124,7 +134,7 @@ export const items = [
       "To identify, develop, construct, and explore complex engineering issues involving electric circuits, control systems, electrical machines, and power systems, apply the fundamentals of science, mathematics, and engineering.",
       "To analyze and identify novel solutions to real-world problems involving power grids, renewable energy systems, industrial automation, electromechanical devices.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
     points: [
       "To provide professional engineering solutions on society and the environment, as well as professional ethics, and communicate effectively.",
     ],
@@ -135,7 +145,7 @@ export const items = [
       "To prepare students to learn and apply cutting-edge technologies in the field of Electrical and Electronic engineering.",
       "To encourage graduates to pursue higher education to address the diverse needs of the Electrical and Electronics industries, academia, and research.",
     ],
-    image: Program,
+    image: ProgramEducationalObjective,
     points: [
       "To Provide good communication skills, lifelong learning abilities, honesty, teamwork, leadership traits, concern for the environment, and a commitment to safety, health, legal, and cultural issues in the field of Electrical & Electronics",
       "To prepare students to communicate effectively as team players to cope with building a Prospective career.",
@@ -529,7 +539,7 @@ export const itemsClubs = [
       // "IEEE Power and Energy Society (PES)",
       // "Vibgyor and Victree",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Edge Over Others",
@@ -537,7 +547,7 @@ export const itemsClubs = [
       "The Overall employment of electrical and electronics engineers is projected to grow 7 percent from 2020 to 2030, about as fast as the average for all occupations.",
       "With the emergence of Electric vehicles- India’s EV market to grow by 90% to touch $150 billion by 2030.",
     ],
-    image: Course,
+    image: edge,
     points: [
       "Emergence of Hybrid and Fuel cell based EV create huge job opportunities in the automotive sector",
       "The government is planning to provide incentives worth Rs 76,000 crore towards setting up over 20 semiconductor design, components manufacturing and display fabrication (fab) units over the next six years, in a bid to make India a hub for electronics.",
@@ -552,7 +562,7 @@ export const itemsClubs = [
     description: [
       "Apart from the regular curriculum as specified by the university, we also conduct various Workshops/ Seminars/ Short term courses/ Expert Talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips regularly to make students aware state of the art technologies used in the industries.",
     ],
-    image: Program,
+    image: beyondCurriculum,
     points: [
       "Add on certification programs on:",
       "1. IoT and Its applications",
@@ -567,7 +577,7 @@ export const itemsClubs = [
     description: [
       "An Electrical engineer determines how to design and improve electrical products along with the systems, evaluating systems’ safety, reliability, and performance. Electrical engineers work in many sectors including power and renewable energy companies, manufacturing and industrial production organizations spread over a range of products. Electrical engineers work on a variety of firms, such as computers, robots, cell phones, radars, navigation systems, wiring and lighting in buildings and other kinds of electrical systems.",
     ],
-    image: Program,
+    image: careerProspectus,
     points: [
       "There is an opportunity for EEE graduates to get central government jobs, state government jobs, public and private sectors as well. Some job titles are mentioned here:",
       "Electrical Engineer",

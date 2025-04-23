@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BannerImg from "../../public/bsc-agriculture/bannerImgbsc.png";
+import BannerImg from "../../public/bsc-agriculture/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import {

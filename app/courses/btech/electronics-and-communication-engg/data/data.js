@@ -1,6 +1,12 @@
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../../../public/courses/btech/CourseOutcomes.png";
+import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../../../public/courses/btech/ProgramEducationalObjective.png";
+import clubs from "../../../../../public/courses/bjmc/clubs.png";
+import beyondCurriculum from "../../../../../public/courses/btech/mechanical-engineering/beyondCurriculum.webp";
+import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
+import edge from "../../../../../public/courses/btech/civil-engineering/edge.png";
 import EceDocument from "../../../../../public/courses/btech/electronics-and-communication/ECE.pdf";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
@@ -27,6 +33,8 @@ import swati from "../../../../../public/courses/btech/electronics-and-communica
 import swatiResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swatiResume.pdf";
 import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+import content1 from "../../../../../public/courses/btech/electronics-and-communication/contentLeft.webp";
+import content2 from "../../../../../public/courses/btech/electronics-and-communication/contentRight.webp";
 export const features = [
   {
     image: placement3,
@@ -38,6 +46,7 @@ export const features = [
   },
 ];
 import Link from "next/link";
+export const sideImages = [content1, content2];
 export const heading = (
   <>
     Best Electronics & Communication Engineering Institute in{" "}
@@ -108,7 +117,7 @@ export const items = [
         B.Tech ECE
       </Link>,
     ],
-    image: Course,
+    image: CourseOutcomes,
   },
   {
     title: "Program Outcomes",
@@ -117,7 +126,7 @@ export const items = [
       "2. Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
       "3. Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "4. Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
       "5. Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.",
@@ -136,7 +145,7 @@ export const items = [
       "1. PSO1 : To develop the ability to apply concepts from electronics, communications, signal processing, VLSI, control systems, and other fields to the design, development, and implementation of application-oriented engineering systems.",
       "2. PSO2 : To identify and use the newest hardware and software technologies to isolate and solve complicated problems in the fields of electronics and communication.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
     points: [
       "3. PSO3 : Acquaintance with social and environmental awareness, as well as ethical duties, is essential for a successful career in real-world applications while staying current with technology advancements.",
     ],
@@ -147,7 +156,7 @@ export const items = [
       "To provide strong technical, hands-on, critical thinking, and team player abilities will enable them to pursue successful jobs in industry.",
       "To engage in continuous learning using cutting-edge technologies to solve societal problems through logical and flexible decision-making.",
     ],
-    image: Program,
+    image: ProgramEducationalObjective,
     points: [
       "To apply their resources, expertise, and experience to build, create, and develop new technologies as well as come up with original, inventive solutions to engineering challenges in a multidisciplinary work environment.",
       "To develop a lifelong learning mindset by implementing and adapting new ideas and technologies as their profession changes.",
@@ -602,7 +611,7 @@ export const itemsClubs = [
       "IEEE Memberships and IEEE Student Chapter( Power & Energy Society)",
       // "VIBGYOR",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Edge Over Others",
@@ -610,7 +619,7 @@ export const itemsClubs = [
       "Recently the union cabinet of Indian government sanctioned the INR 76,000 Crores incentive scheme for semiconductors. Under this scheme, India will set up more than 20 semiconductor design, components manufacturing and display fabrication units. The scheme has been named the “Programme for Development of Semiconductors and Display Manufacturing Ecosystem.”",
       "The plan envisages training 85,000 semiconductor engineers to make it a complete C to S (chips to start-ups) ecosystem (including design, fabrication, testing and packaging). Govt clears 3 semiconductor projects worth Rs 1.3 Lakh cr by ",
     ],
-    image: Program,
+    image: edge,
     points: [
       "1. Tata electronics Pvt Ltd in Dholera Gujrat",
       "2. Tata Semiconductor Assembly and Test Pvt Ltd in Morigaon Assam",
@@ -622,7 +631,7 @@ export const itemsClubs = [
     description: [
       "Apart from the regular curriculum as specified by the university, we also conduct various Workshops/ Seminars/ Short term courses/ Expert Talks as add on certifications to the students. These activities enhance the learning skills of the students and make them ready for the industry. We also conduct various industrial trips regularly to make students aware state of the art technologies used in the industries.",
     ],
-    image: Program,
+    image: beyondCurriculum,
     points: [
       "Add on certification programs on:",
       "1. IoT and Its applications",
@@ -637,7 +646,7 @@ export const itemsClubs = [
     description: [
       "CAREER PROSPECTS: Electronics and Communication Engineers are highly demanded in fields such as Network Engineering, Aeronautics Electronics Systems, Electronic Surveillance System, Mobile Communication, Embedded Systems, Power Industry, Software Development, etc. The department focuses on stimulating talent which is professionally superior in meeting global challenges of the industry. The faculty lays emphasis on both theory and practical aspects, industry-relevant knowledge which prepares students for challenging scenarios.",
     ],
-    image: Program,
+    image: careerProspectus,
     points: [
       "As an Electronics and Communication Engineer students can apply for central government job, state government job, and public & private sectors jobs. Some job titles are listed here:",
       "Electronics Engineer",

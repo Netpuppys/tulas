@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BannerImg from "../../../../public/infrastructure/library/bannerImg.webp";
+import BannerImg from "../../../../public/courses/btech/computer-science-engineering-data-science/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../../public/courses/bjmc/exploreCrouselBackground.png";
@@ -22,7 +22,9 @@ import {
   quotes,
   sections,
   selectedCardTable,
+  sideImages,
 } from "./data/data";
+
 import { facultyDataCSE } from "../facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
@@ -48,7 +50,12 @@ function BAJMC() {
           title=<>COMPUTER SCIENCE & ENGINEERING (Data Science)</>
           titleColor={""}
         />
-        <Program content={content} heading={heading} quotes={quotes} />
+        <Program
+          content={content}
+          heading={heading}
+          quotes={quotes}
+          sideImages={sideImages}
+        />
         <CarouselProgram
           heading={"Discover"}
           items={items}
