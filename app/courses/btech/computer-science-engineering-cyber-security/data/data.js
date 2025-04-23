@@ -4,16 +4,30 @@ import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+import AmaanAnsari from "../../../../../public/courses/btech/CSE-PlacementDesign/AmaanAnsari.webp";
+import AshutoshMalik from "../../../../../public/courses/btech/CSE-PlacementDesign/AshutoshMalik.webp";
+import HarshKahiwal from "../../../../../public/courses/btech/CSE-PlacementDesign/HarshKahiwal.webp";
+import MohitJaiswal from "../../../../../public/courses/btech/CSE-PlacementDesign/MohitJaiswal.webp";
+import RichaMunola from "../../../../../public/courses/btech/CSE-PlacementDesign/RichaMunola.webp";
+import SahilSah from "../../../../../public/courses/btech/CSE-PlacementDesign/SahilSah.webp";
+import SnehshishTiwari from "../../../../../public/courses/btech/CSE-PlacementDesign/SnehshishTiwari.webp";
+import VijayKumar from "../../../../../public/courses/btech/CSE-PlacementDesign/VijayKumar.webp";
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: AmaanAnsari,
+    image2: AshutoshMalik,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: HarshKahiwal,
+    image2: MohitJaiswal,
+  },
+  {
+    image: RichaMunola,
+    image2: SahilSah,
+  },
+  {
+    image: SnehshishTiwari,
+    image2: VijayKumar,
   },
 ];
 export const heading = (

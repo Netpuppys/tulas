@@ -25,16 +25,30 @@ import Nandini from "../../../../public/courses/mba/facultyData/Nandini.webp";
 import NandiniResume from "../../../../public/courses/mba/facultyData/NandiniResume.pdf";
 import SwatiYadav from "../../../../public/courses/mba/facultyData/SwatiYadav.webp";
 import SwatiYadavResume from "../../../../public/courses/mba/facultyData/SwatiYadavResume.pdf";
-import placement3 from "../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+import DiptanuDebnath from "../../../../public/courses/mba/PlacementDesign/DiptanuDebnath.webp";
+import MayankSrivastava from "../../../../public/courses/mba/PlacementDesign/MayankSrivastava.webp";
+import JatinSobti from "../../../../public/courses/mba/PlacementDesign/JatinSobti.webp";
+import TausifRaza from "../../../../public/courses/mba/PlacementDesign/TausifRaza.webp";
+import PrakharSrivastava from "../../../../public/courses/mba/PlacementDesign/PrakharShrivastava.webp";
+import PriyankaPriya from "../../../../public/courses/mba/PlacementDesign/PriyankaPriya.webp";
+import ShubhamSaxena from "../../../../public/courses/mba/PlacementDesign/ShubhamSaxena.webp";
+
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: DiptanuDebnath,
+    image2: MayankSrivastava,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: JatinSobti,
+    image2: TausifRaza,
+  },
+  {
+    image: PrakharSrivastava,
+    image2: PriyankaPriya,
+  },
+  {
+    image: ShubhamSaxena,
+    image2: TausifRaza,
   },
 ];
 export const content = (

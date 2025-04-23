@@ -30,18 +30,20 @@ import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
 import AGRICULTURE from "../../../public/bsc-agriculture/AGRICULTURE.pdf";
-import placement3 from "../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../public/Homepage/Placement/placement4.png";
+import Aanchal from "../../../public/bsc-agriculture//PlacementDesign/Aanchal.webp";
+import AnubhavMaithani from "../../../public/bsc-agriculture//PlacementDesign/AnubhavMaithani.webp";
+import ShristiSaumya from "../../../public/bsc-agriculture//PlacementDesign/ShristiSaumya.webp";
+
 import Link from "next/link";
 
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: Aanchal,
+    image2: AnubhavMaithani,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: ShristiSaumya,
+    image2: Aanchal,
   },
 ];
 export const content = (

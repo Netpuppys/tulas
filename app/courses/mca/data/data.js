@@ -2,7 +2,7 @@ import USP from "../../../../public/courses/btech/usp.png";
 import CourseOutcomes from "../../../../public/courses/btech/CourseOutcomes.png";
 import ProgramOutcomes from "../../../../public/courses/btech/ProgramOutcomes.png";
 import ProgramSpecificOutcome from "../../../../public/courses/btech/ProgramSpecificOutcome.png";
-import ProgramEducationalOutcome from "../../../../public/courses/mca/ProgramEducationalOutcome.webp"
+import ProgramEducationalOutcome from "../../../../public/courses/mca/ProgramEducationalOutcome.webp";
 import clubs from "../../../../public/courses/bjmc/clubs.png";
 import beyondCurriculum from "../../../../public/courses/bca/beyondCurriculum.webp";
 import careerProspectus from "../../../../public/courses/bjmc/careerProspectus.png";
@@ -24,19 +24,33 @@ import MusheerResume from "../../../../public/courses/mca/facultyData/MusheerRes
 import SanjeevKumnar from "../../../../public/courses/mca/facultyData/SanjeevKumnar.webp";
 import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf";
 import Link from "next/link";
-import placement3 from "../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../public/Homepage/Placement/placement4.png";
 import content1 from "../../../../public/courses/mca/content1.webp";
 import content2 from "../../../../public/courses/mca/content2.webp";
+import AayushRaj from "../../../../public/courses/mca/PlacementDesign/AayushRaj.webp";
+import DheerajKumar from "../../../../public/courses/mca/PlacementDesign/DheerajKumar.webp";
+import JyotiPriya from "../../../../public/courses/mca/PlacementDesign/JyotiPriya.webp";
+import Nitin from "../../../../public/courses/mca/PlacementDesign/Nitin.webp";
+import PriyankaKumari from "../../../../public/courses/mca/PlacementDesign/PriyankaKumari.webp";
+import RanjanKumar from "../../../../public/courses/mca/PlacementDesign/RanjanKumar.webp";
+import RishabhSingh from "../../../../public/courses/mca/PlacementDesign/RishabhSingh.webp";
+import TanyaChauhan from "../../../../public/courses/mca/PlacementDesign/TanyaChauhan.webp";
 
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: AayushRaj,
+    image2: DheerajKumar,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: JyotiPriya,
+    image2: Nitin,
+  },
+  {
+    image: PriyankaKumari,
+    image2: RanjanKumar,
+  },
+  {
+    image: RishabhSingh,
+    image2: TanyaChauhan,
   },
 ];
 export const sideImages = [content1, content2];

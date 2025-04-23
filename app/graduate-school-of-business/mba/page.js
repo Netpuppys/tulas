@@ -28,11 +28,17 @@ import diverseIndustryApplications from "../../../public/graduate-school-of-busi
 import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
 import { UtmContext } from "@/component/utmParams";
 import TableProgram from "@/component/Programs/tableProgram";
-import placement3 from "../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../public/Homepage/Placement/placement4.png";
+
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import AccreditationImg from "../../../public/Homepage/Accreditation/accreditationMBA.webp";
 import AccreditationImgMobile from "../../../public/Homepage/Accreditation/accreditationMobileMBA.webp";
+import DiptanuDebnath from "../../../public/courses/mba/PlacementDesign/DiptanuDebnath.webp";
+import MayankSrivastava from "../../../public/courses/mba/PlacementDesign/MayankSrivastava.webp";
+import JatinSobti from "../../../public/courses/mba/PlacementDesign/JatinSobti.webp";
+import TausifRaza from "../../../public/courses/mba/PlacementDesign/TausifRaza.webp";
+import PrakharSrivastava from "../../../public/courses/mba/PlacementDesign/PrakharShrivastava.webp";
+import PriyankaPriya from "../../../public/courses/mba/PlacementDesign/PriyankaPriya.webp";
+import ShubhamSaxena from "../../../public/courses/mba/PlacementDesign/ShubhamSaxena.webp";
 const page = () => {
   const { utmParams } = useContext(UtmContext);
 
@@ -45,12 +51,20 @@ const page = () => {
 
   const features = [
     {
-      image: placement3,
-      image2: placement4,
+      image: DiptanuDebnath,
+      image2: MayankSrivastava,
     },
     {
-      image: placement3,
-      image2: placement4,
+      image: JatinSobti,
+      image2: TausifRaza,
+    },
+    {
+      image: PrakharSrivastava,
+      image2: PriyankaPriya,
+    },
+    {
+      image: ShubhamSaxena,
+      image2: TausifRaza,
     },
   ];
   const scrollRef = useRef(null);
