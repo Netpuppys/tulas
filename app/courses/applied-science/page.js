@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
+import BannerImg from "../../../public/courses/applied-science/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../component/topRecruiter";
