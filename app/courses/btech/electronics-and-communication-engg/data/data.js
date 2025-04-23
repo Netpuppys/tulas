@@ -33,8 +33,8 @@ import swati from "../../../../../public/courses/btech/electronics-and-communica
 import swatiResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swatiResume.pdf";
 import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
-import content1 from "../../../../../public/courses/btech/electronics-and-communication/contentLeft.webp";
-import content2 from "../../../../../public/courses/btech/electronics-and-communication/contentRight.webp";
+import content1 from "../../../../../public/courses/btech/electronics-and-communication/ContentLeft.webp";
+import content2 from "../../../../../public/courses/btech/electronics-and-communication/ContentRight.webp";
 export const features = [
   {
     image: placement3,
