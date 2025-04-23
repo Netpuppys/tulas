@@ -90,7 +90,7 @@ function NavbarLandingPage() {
       <button
         onClick={() =>
           (window.location.href =
-            "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
+            "https://api.whatsapp.com/send/?phone=%2B919456540269&text&type=phone_number&app_absent=0")
         }
         className="fixed bottom-[8vw] flex justify-center items-center right-[8vw] md:bottom-[2.5vw] md:right-[2.5vw] text-[#760135B2] z-50 w-16 md:w-[74px] bg-white aspect-square rounded-full"
       >
