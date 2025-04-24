@@ -1,13 +1,13 @@
-import USP from "../../../../../public/courses/btech/usp.png";
-import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
 import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../../../public/courses/btech/ProgramEducationalObjective.png";
 import clubs from "../../../../../public/courses/bjmc/clubs.png";
 import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
 import content1 from "../../../../../public/courses/btech/computer-science-engineering-data-science/contentLeft.webp";
 import content2 from "../../../../../public/courses/btech/computer-science-engineering-data-science/contentRight.webp";
 import DepartmentalVission from "../../../../../public/courses/btech/computer-science/departmentalVision.JPG";
-import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.JPG"
+import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.JPG";
 import AmaanAnsari from "../../../../../public/courses/btech/CSE-PlacementDesign/AmaanAnsari.webp";
 import AshutoshMalik from "../../../../../public/courses/btech/CSE-PlacementDesign/AshutoshMalik.webp";
 import HarshKahiwal from "../../../../../public/courses/btech/CSE-PlacementDesign/HarshKahiwal.webp";
@@ -84,7 +84,7 @@ export const items = [
       "The objectives of a B.Tech in Data Science program are as follows:",
       "Develop a solid foundation in computer science, mathematics, statistics, and data analysis: The program aims to provide students with a strong foundation in these key areas to develop the necessary skills to become successful data scientists.",
     ],
-    image: USP,
+    image: ProgramEducationalObjective,
     points: [
       "Learn advanced techniques and tools in data science: The program aims to teach students the latest techniques and tools used in the field of data science, such as machine learning, data mining, big data analytics, and data visualization.",
       "Apply data science techniques to real-world problems: The program aims to provide students with hands-on experience in solving real-world problems using data science techniques.",

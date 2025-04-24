@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import BannerImg from "../../../../public/courses/btech/computer-science-engineering-data-science/bannerImg.webp";
-import contentLeft from "../../../../public/courses/btech/computer-science-engineering-data-science/contentLeft.webp"
-import contentRight from "../../../../public/courses/btech/computer-science-engineering-data-science/contentRight.webp"
+import BannerImg from "../../../../public/courses/btech/computer-science-engineering-cyber-security/bannerImg.webp";
+import contentLeft from "../../../../public/courses/btech/computer-science-engineering-cyber-security/contentLeft.webp";
+import contentRight from "../../../../public/courses/btech/computer-science-engineering-cyber-security/contentRight.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import CrouselBackground from "../../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../../public/courses/bjmc/exploreCrouselBackground.png";
@@ -30,9 +30,7 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
-const sideImages=[
-  contentLeft, contentRight
-]
+const sideImages = [contentLeft, contentRight];
 
 function page() {
   return (
@@ -55,9 +53,9 @@ function page() {
           titleColor={""}
           description={""}
         />
-        <Program 
-          content={content} 
-          heading={heading} 
+        <Program
+          content={content}
+          heading={heading}
           quotes={quotes}
           sideImages={sideImages}
         />
