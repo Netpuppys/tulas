@@ -7,9 +7,9 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { UtmContext } from "./utmParams";
 function ThankYou() {
   const { utmParams } = useContext(UtmContext);
@@ -18,7 +18,7 @@ function ThankYou() {
       href: "https://www.facebook.com/tulasinstitutedehradun/",
       icon: <FaFacebookF />,
     },
-    { href: "https://twitter.com/tulas_institute", icon: <FaTwitter /> },
+    { href: "https://twitter.com/tulas_institute", icon: <FaXTwitter /> },
     {
       href: "https://www.instagram.com/tulasinstitutedehradun/",
       icon: <FaInstagram />,
@@ -28,7 +28,7 @@ function ThankYou() {
       icon: <FaLinkedinIn />,
     },
     {
-      href: "https://www.youtube.com/@TulasInstitutedehradune",
+      href: "https://www.youtube.com/@TulasInstitutedehradun",
       icon: <FaYoutube />,
     },
   ];
