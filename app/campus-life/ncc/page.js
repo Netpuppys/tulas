@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
 import background from "../../../public/campus-life/ncc/background.png";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
+import BannerImg from "../../../public/campus-life/ncc/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Banner from "@/component/Banner";
 import Image from "next/image";
 import Footer from "@/component/Footer";
-import ncc from "../../../public/campus-life/ncc/ncc.png";
+import ncc from "../../../public/campus-life/ncc/ncc.webp";
 import Vision from "@/component/Programs/Vision";
-import img1 from "../../../public/campus-life/ncc/img1.png";
-import img2 from "../../../public/campus-life/ncc/img2.png";
-import img3 from "../../../public/campus-life/ncc/img3.png";
+import img1 from "../../../public/campus-life/ncc/img1.webp";
+import img2 from "../../../public/campus-life/ncc/img2.webp";
+import img3 from "../../../public/campus-life/ncc/img3.webp";
 import GalleryCrousel from "@/component/GalleryCrousel";
 
 function NCC() {
@@ -43,11 +43,7 @@ function NCC() {
   //     image: ncc,
   //   },
   // ];
-  const images = [
-    { title: "Football Ground", image: img1 },
-    { title: "Cricket Ground", image: img2 },
-    { title: "Atheletics", image: img3 },
-  ];
+  const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
       <head>
