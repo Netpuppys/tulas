@@ -178,16 +178,16 @@ function Contact() {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.2777855085124!2d77.8834027761828!3d30.343054304359832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929fa74538275%3A0x3cb757428c691de3!2sTula&#39;s%20Institute!5e0!3m2!1sen!2sin!4v1725008516487!5m2!1sen!2sin"
               className="w-full block md:hidden h-[1100px] z-20 relative"
-              allowfullscreen=""
+              allowFullScreen
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.2777855085124!2d77.8834027761828!3d30.343054304359832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929fa74538275%3A0x3cb757428c691de3!2sTula&#39;s%20Institute!5e0!3m2!1sen!2sin!4v1725008516487!5m2!1sen!2sin"
               className="hidden md:block w-full h-[450px] z-20 relative"
-              allowfullscreen=""
+              allowFullScreen
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <div className="bg-[#000] bg-opacity-80 h-fit md:h-[450px] text-[#D2D2D2] gap-5 absolute bottom-28 md:bottom-0 self-end md:right-16 w-full md:w-[300px] md:top-0 z-40 px-10 flex flex-col py-5 md:py-3 justify-center">
               <Image src={TulasFooter} alt="" />

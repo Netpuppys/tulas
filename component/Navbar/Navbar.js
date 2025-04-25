@@ -252,6 +252,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
               <Image
                 src={NAAC}
                 alt=""
+                priority
                 className="w-[10vw] h-fit pointer-events-auto cursor-pointer"
               />
               <div className="h-[60px] w-[1px] bg-white"></div>
@@ -353,6 +354,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
                 <Image
                   src={NAAC}
                   alt=""
+                  priority
                   className="w-[30vw] md:w-[10vw] h-fit"
                 />
               </div>

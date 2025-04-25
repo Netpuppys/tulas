@@ -136,6 +136,7 @@ function LifeAtTulas() {
       <div className="w-[85%] mx-auto flex flex-wrap gap-1 justify-center">
         {swiper.map((slides, index) => (
           <div
+            key={index}
             className={`aspect-[1/1] md:aspect-auto ${
               index === 0 || index === 3
                 ? "w-full md:w-[calc(45%-4px)]"
@@ -148,6 +149,8 @@ function LifeAtTulas() {
                 delay: 3000,
                 disableOnInteraction: true,
               }}
+              preloadImages={false}
+              lazy={{ loadPrevNext: true }}
               modules={[Autoplay]}
               className="w-full h-full mySwiper "
               slidesPerView={1}

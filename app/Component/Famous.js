@@ -200,6 +200,7 @@ function Famous() {
                     <Image
                       src={sport.image}
                       alt=""
+                      loading="lazy"
                       className="w-full h-full aspect-[1.5/1] object-cover"
                     />
                   </div>

@@ -89,6 +89,7 @@ import PlacementBannerMobile from "../public/Homepage/BannerHome/PlacementBanner
 import { ThreeDots } from "react-loader-spinner";
 
 export default function HomePage() {
+  console.log("HomePage");
   const parentRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -194,7 +195,6 @@ export default function HomePage() {
         <div className="block md:hidden">
           <BannerHome bannerImages={bannerImagesMobile} scrollButton={true} />
         </div>
-
         <div className="relative overflow-hidden">
           {/* Blurred sides */}
           <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10 blur-lg bg-gradient-to-r from-[#DEDEDE] to-transparent" />
@@ -214,7 +214,7 @@ export default function HomePage() {
         </div>
         <AccreditationLogo />
         <AboutTulasForm />
-        <Accreditation />
+        <Accreditation /> //check
         <Placement features={features} />
         <StatsAndNews />
         <Courses parentRef={parentRef} />

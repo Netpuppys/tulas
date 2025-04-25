@@ -75,6 +75,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
                 <Image
                   src={NAAC}
                   alt=""
+                  priority
                   className="w-[30vw] md:w-[10vw] h-fit"
                 />
               </div>

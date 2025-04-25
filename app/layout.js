@@ -1,4 +1,6 @@
 import { Inter } from "next/font/google";
+import Head from "next/head";
+
 import "./globals.css";
 import { MobileProvider } from "@/component/IsMobileContext";
 import Script from "next/script";
@@ -9,11 +11,15 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Dynalight&family=Oswald:wght@200..700&family=Reem+Kufi:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap&family=Fasthand&display=swap"
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Dynalight&family=Oswald:wght@200..700&family=Reem+Kufi:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap&family=Fasthand"
           rel="stylesheet"
         ></link>
         <meta
@@ -34,12 +40,14 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="630" />
         {/* Google Tag Manager */}
         <Script
-          strategy="afterInteractive"
+          // strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-WX6R6WSL"
         />
         <Script
           id="gtag-1"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
+          // strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -54,6 +62,7 @@ export default function RootLayout({ children }) {
         <script
           id="clarity"
           type="text/javascript"
+          strategy="lazyOnload"
           // strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -102,7 +111,8 @@ export default function RootLayout({ children }) {
         {/* Meta Pixel */}
         <Script
           id="meta-pixel"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
+          // strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -118,7 +128,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-      </head>
+      </Head>
       <body className={inter.className}>
         <noscript>
           <iframe
@@ -132,6 +142,7 @@ export default function RootLayout({ children }) {
           <img
             height="1"
             width="1"
+            alt=""
             className="hidden opacity-0"
             src="https://www.facebook.com/tr?id=1001916883544560&ev=PageView&noscript=1"
           />

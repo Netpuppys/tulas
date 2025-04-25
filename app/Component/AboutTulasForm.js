@@ -492,7 +492,7 @@ export default function AboutTulasForm() {
                 required
               />
               <label
-                for="consent1"
+                htmlFor="consent1"
                 className="flex items-center text-white cursor-pointer text-[clamp(5px,3vw,30px)] md:text-[clamp(6px,0.8vw,45px)]"
               >
                 I Agree to receive information regarding my submitted

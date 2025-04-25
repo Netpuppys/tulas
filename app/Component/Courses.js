@@ -14,8 +14,42 @@ function Courses({ parentRef }) {
   const [scaleLeaf, setScaleLeaf] = useState(1);
   const [opacity, setOpacity] = useState(1);
   const [scrollY, setScrollY] = useState(0);
-  const [isInView, setIsInView] = useState(false);
+  const scrollTimeout = useRef(null);
   const [componentHeight, setComponentHeight] = useState();
+
+  const updateScroll = () => {
+    if (parentRef.current && childRef.current) {
+      const parentTop = parentRef.current.getBoundingClientRect().top;
+      const childTop = childRef.current.getBoundingClientRect().top;
+
+      const positionFromTop = childTop - parentTop;
+      const scrollValue = Math.max(window.scrollY - positionFromTop, 0);
+      const scroll = Math.min(scrollValue, componentHeight);
+
+      setScrollY(scroll);
+      setScale(1 + scroll * 0.0001);
+      setScaleLeaf(1 + scroll * 0.001);
+      setOpacity(Math.max(1 - scroll * 0.001, 0));
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+      scrollTimeout.current = setTimeout(updateScroll, 10); // Debounce scroll updates
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+    };
+  }, [componentHeight]);
+  const [isInView, setIsInView] = useState(false);
   const { isMobile } = useMobile();
 
   const ref = useRef(null);
@@ -43,28 +77,28 @@ function Courses({ parentRef }) {
     }
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (parentRef.current && childRef.current) {
-        const parentTop = parentRef.current.getBoundingClientRect().top;
-        const childTop = childRef.current.getBoundingClientRect().top;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (parentRef.current && childRef.current) {
+  //       const parentTop = parentRef.current.getBoundingClientRect().top;
+  //       const childTop = childRef.current.getBoundingClientRect().top;
 
-        const positionFromTop = childTop - parentTop;
-        const scrollValue = Math.max(window.scrollY - positionFromTop, 0);
-        const scroll = Math.min(scrollValue, componentHeight);
+  //       const positionFromTop = childTop - parentTop;
+  //       const scrollValue = Math.max(window.scrollY - positionFromTop, 0);
+  //       const scroll = Math.min(scrollValue, componentHeight);
 
-        setScrollY(scroll);
-        setScale(1 + scroll * 0.0001);
-        setScaleLeaf(1 + scroll * 0.001);
-        setOpacity(Math.max(1 - scroll * 0.001, 0));
-      }
-    };
+  //       setScrollY(scroll);
+  //       setScale(1 + scroll * 0.0001);
+  //       setScaleLeaf(1 + scroll * 0.001);
+  //       setOpacity(Math.max(1 - scroll * 0.001, 0));
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [componentHeight]);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [componentHeight]);
 
   return (
     <div ref={childRef} className="w-full h-fit">

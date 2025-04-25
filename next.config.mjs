@@ -1,6 +1,17 @@
+import withBundleAnalyzer from "@next/bundle-analyzer";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/:path*", // Match all paths (e.g., /images/logo.png)
+  //       destination:
+  //         "https://cdn.jsdelivr.net/gh/vik-negi/my-assets@main/:path*", // jsDelivr URL
+  //     },
+  //   ];
+  // },
   images: {
     // Allow loading remote images from specific domains
     remotePatterns: [
@@ -53,4 +64,8 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default withBundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+  openAnalyzer: true, // Automatically opens the report in the browser
+})(nextConfig);
+// export default nextConfig;

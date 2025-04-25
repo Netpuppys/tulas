@@ -84,7 +84,7 @@ function AwardsCrousel() {
                     <h2 className="leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535] font-[TTChocolates] font-extrabold border-b border-[#353535] py-2 md:py-4">
                       {feature.name}
                     </h2>
-                    <p2 className="text-[#353535]">{feature.date}</p2>
+                    <p className="text-[#353535]">{feature.date}</p>
                   </div>
                 </div>
                 <div className="w-full md:w-[50%] flex flex-col justify-between">
@@ -98,7 +98,7 @@ function AwardsCrousel() {
                     <h2 className="leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535] font-[TTChocolates] font-extrabold border-b border-[#353535] py-2 md:py-4">
                       {feature.name2}
                     </h2>
-                    <p2 className="text-[#353535]">{feature.date2}</p2>
+                    <p className="text-[#353535]">{feature.date2}</p>
                   </div>
                 </div>
               </div>

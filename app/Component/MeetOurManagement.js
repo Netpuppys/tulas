@@ -171,12 +171,13 @@ function MeetOurManagement() {
   const [clipPathValue, setClipPathValue] = useState(25); // Initial clip-path value
 
   const { ref, inView, entry } = useInView({
-    threshold: Array.from({ length: 11 }, (_, i) => i * 0.1), // Thresholds: 0.0, 0.1, ..., 1.0
+    threshold: Array.from({ length: 19 }, (_, i) => i * 0.05), // Thresholds: 0.0, 0.1, ..., 1.0
   });
 
   useEffect(() => {
     if (inView && entry) {
       const scrollProgress = entry.intersectionRatio; // Intersection ratio ranges from 0 to 1
+      console.log("Scroll Progress:", 25 + scrollProgress * 70);
       setClipPathValue(25 + scrollProgress * 70); // Dynamically calculate the clip-path value
     }
   }, [entry, inView]);

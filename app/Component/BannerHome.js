@@ -65,6 +65,7 @@ function BannerHome({
             <Image
               className="animate-scrollSpin absolute w-full h-fit text-white"
               src={ScrollImage}
+              loading="lazy"
               alt=""
             />
             <IoIosArrowRoundDown className="absolute text-[40px] font-thin" />

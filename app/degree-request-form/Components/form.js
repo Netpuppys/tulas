@@ -276,7 +276,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                 />
               </div>
               <div>
-                <label for="paid" className="block mb-2">
+                <label htmlFor="paid" className="block mb-2">
                   Degree Handling and Posting Charges Paid
                 </label>
                 <div className="flex items-center justify-start gap-6">
@@ -291,7 +291,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                       onChange={(e) => handleChange("paid", e.target.value)}
                     />
                     <label
-                      for="radio1"
+                      htmlFor="radio1"
                       className="flex items-center cursor-pointer"
                     >
                       <span className="w-4 h-4 inline-block mr-1 border border-grey"></span>
@@ -309,7 +309,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                       onChange={(e) => handleChange("paid", e.target.value)}
                     />
                     <label
-                      for="radio2"
+                      htmlFor="radio2"
                       className="flex items-center cursor-pointer"
                     >
                       <span className="w-4 h-4 inline-block mr-1 border border-grey"></span>
@@ -353,7 +353,7 @@ const DegreeForm = ({ Degreeref, showForm }) => {
                   required
                 />
                 <label
-                  for="consent"
+                  htmlFor="consent"
                   className="flex items-center cursor-pointer"
                 >
                   I give Consent to Tula's Institute Dehradun , To send my
