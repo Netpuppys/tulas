@@ -1,7 +1,7 @@
 "use client";
 
 import Banner from "@/component/Banner";
-import BannerImg from "../../public/sports/bannerImg.png";
+import BannerImg from "../../public/sports/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import squash from "../../public/sports/squash.png";
@@ -184,11 +184,7 @@ function Sports() {
           <Navbar />
           <Banner
             image={BannerImg}
-            title={
-              <>
-                SPORTS <span className="text-[#007A83]">FACILITIES</span>
-              </>
-            }
+            title={<>SPORTS FACILITIES</>}
             description={<></>}
             belowTitle="SPORTS INFRASTRUCTURE"
             belowPara=<>

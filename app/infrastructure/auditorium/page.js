@@ -1,7 +1,7 @@
 "use client";
 
 import Banner from "@/component/Banner";
-import BannerImg from "../../../public/infrastructure/auditorium/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/auditorium/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
@@ -44,13 +44,7 @@ function Auditorium() {
         <div className="flex flex-col items-center">
           <Banner
             image={BannerImg}
-            title={
-              <>
-                <span className="text-[#007A83]">AUDITORIUM</span>
-              </>
-            }
-            description={<></>}
-            belowTitle={<></>}
+            title={"AUDITORIUM"}
             belowPara={
               "The auditorium at Tula's Institute in Dehradun is a modern facility designed to host a variety of events, including seminars, conferences, and cultural programs. It is equipped with state-of-the-art audio-visual technology, providing an ideal environment for both academic and extracurricular activities."
             }

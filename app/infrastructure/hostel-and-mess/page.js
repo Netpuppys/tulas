@@ -1,19 +1,19 @@
 "use client";
 
 import Banner from "@/component/Banner";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
+import BannerImg from "../../../public/infrastructure/HostelMess/bannerImgHostel.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/HostelMess/background.png";
 import { useInView } from "react-intersection-observer";
-import hostel from "../../../public/infrastructure/HostelMess/hostel.png";
+import hostel from "../../../public/infrastructure/HostelMess/img1.webp";
 import img1 from "../../../public/infrastructure/HostelMess/img1.png";
 import img3 from "../../../public/infrastructure/HostelMess/img3.png";
 import img2 from "../../../public/infrastructure/HostelMess/img2.png";
 import GalleryCrousel from "@/component/GalleryCrousel";
 import medical from "../../../public/infrastructure/Other/medical.png";
-import atm from "../../../public/infrastructure/Other/atm.png";
+import atm from "../../../public/infrastructure/HostelMess/atm.webp";
 import multiUse from "../../../public/infrastructure/HostelMess/cafeteria.png";
 import mess from "../../../public/infrastructure/HostelMess/mess.png";
 import Vision from "@/component/Programs/Vision";
@@ -138,7 +138,10 @@ function LectureTheater() {
             image={BannerImg}
             title={
               <>
-                HOSTEL & MESS <span className="text-[#007A83]">FACILITIES</span>
+                <span className="text-[#007A83]">
+                  {" "}
+                  HOSTEL & MESS FACILITIES
+                </span>
               </>
             }
             description={<></>}

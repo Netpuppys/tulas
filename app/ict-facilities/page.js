@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import Banner from "@/component/Banner";
-import BannerImg from "../../public/ict-facilities/bannerImg.png";
+import BannerImg from "../../public/ict-facilities/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../public/ict-facilities/background.png";
 import { Fade } from "react-awesome-reveal";
-import ICTImage from "../../public/ict-facilities/ict-facilities.png";
+import ICTImage from "../../public/ict-facilities/img1.webp";
 import { useInView } from "react-intersection-observer";
 import lcd from "../../public/ict-facilities/lcd.png";
 import lan from "../../public/ict-facilities/lan.png";

@@ -1,13 +1,13 @@
 "use client";
 
 import Banner from "@/component/Banner";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
+import BannerImg from "../../../public/infrastructure/Other/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/HostelMess/background.png";
-import wifi from "../../../public/infrastructure/Other/wifi.png";
-import atm from "../../../public/infrastructure/Other/atm.png";
+import wifi from "../../../public/infrastructure/HostelMess/wifi.webp";
+import atm from "../../../public/infrastructure/HostelMess/atm.webp";
 import Gymnasium from "../../../public/infrastructure/Other/gymnasium.png";
 import guestHouse from "../../../public/infrastructure/Other/guestHouse.png";
 import medical from "../../../public/infrastructure/Other/medical.png";

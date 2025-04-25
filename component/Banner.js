@@ -8,7 +8,7 @@ function Banner({ image, belowTitle, belowPara, title, description }) {
         belowPara || belowTitle ? "md:min-h-screen" : ""
       }  w-full z-40 bg-white`}
     >
-      <div className="h-[100vh] md:h-[85vh] w-full relative">
+      <div className="h-[85vh] md:h-[100vh] w-full relative">
         <Image
           src={image}
           alt=""

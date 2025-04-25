@@ -197,14 +197,13 @@ export default function HomePage() {
 
         <div className="relative overflow-hidden">
           {/* Blurred sides */}
-          <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10 blur-lg bg-gradient-to-r from-[#DEDEDE] to-transparent" />
-          <div className="pointer-events-none absolute top-0 right-0 w-[10%] h-full z-10 blur-lg bg-gradient-to-l from-[#DEDEDE] to-transparent" />
+          <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10 blur-lg bg-gradient-to-r from-[#007A83] to-transparent" />
           {/* Scrolling text */}
           <marquee direction="left" scrollamount="10">
             <div className="w-fit py-2 md:py-6 flex gap-4 md:gap-[2%] whitespace-nowrap">
               {name.map((item, index) => (
                 <div key={index} className="relative w-fit mx-auto">
-                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] text-black font-[TTChocolates] leading-tight font-extrabold">
+                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] bg-gradient-to-r from-[#E69706] via-[#760135] to-[#007A83] text-transparent bg-clip-text font-[TTChocolates] leading-tight font-extrabold">
                     {item}
                   </h2>
                 </div>

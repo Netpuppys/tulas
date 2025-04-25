@@ -1,16 +1,16 @@
 "use client";
 
 import Banner from "@/component/Banner";
-import BannerImg from "../../../public/infrastructure/lectureTheater/bannerImg.png";
+import BannerImg from "../../../public/infrastructure/lectureTheater/bannerImgLecture.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/lectureTheater/background.png";
-import img1 from "../../../public/infrastructure/lectureTheater/img1.png";
-import img3 from "../../../public/infrastructure/lectureTheater/img3.png";
-import img2 from "../../../public/infrastructure/lectureTheater/img2.png";
+import img1 from "../../../public/infrastructure/lectureTheater/img1.webp";
+import img2 from "../../../public/infrastructure/lectureTheater/img2.webp";
+import img3 from "../../../public/infrastructure/lectureTheater/img3.webp";
 import GalleryCrousel from "@/component/GalleryCrousel";
-import lecture from "../../../public/infrastructure/lectureTheater/lecture.png";
+import lecture from "../../../public/infrastructure/lectureTheater/img4.webp";
 import Vision from "@/component/Programs/Vision";
 
 function LectureTheater() {
@@ -39,13 +39,7 @@ function LectureTheater() {
         <div className="flex flex-col items-center">
           <Banner
             image={BannerImg}
-            title={
-              <>
-                <span className="text-[#007A83]">LECTURE THEATRE</span>
-              </>
-            }
-            description={<></>}
-            belowTitle={<></>}
+            title={<span className="text-[#007A83]">LECTURE THEATRE</span>}
             belowPara={
               "The lecture theatres at Tula's Institute are spacious and well-equipped with advanced audio-visual aids, offering an optimal setting for interactive learning and discussions. They are designed to facilitate a comfortable and engaging educational experience for students."
             }

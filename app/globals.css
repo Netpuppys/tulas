@@ -165,6 +165,9 @@ span {
 .textShadow {
   text-shadow: 0px 4px 40px #007a83;
 }
+.textShadowProgram {
+  text-shadow: 10px 10px 40px #000000;
+}
 @keyframes translateIn {
   from {
     transform: translateY(10vh);

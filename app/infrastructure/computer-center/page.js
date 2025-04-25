@@ -1,18 +1,16 @@
 "use client";
 
 import Banner from "@/component/Banner";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
+import BannerImg from "../../../public/infrastructure/computerScience/bannerImgComputer.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/infrastructure/computerScience/background.png";
-import img1 from "../../../public/infrastructure/computerScience/img1.png";
-import img2 from "../../../public/infrastructure/computerScience/img2.png";
-import img3 from "../../../public/infrastructure/computerScience/img3.png";
-
-import { Fade } from "react-awesome-reveal";
-import it from "../../../public/infrastructure/computerScience/it.png";
-import sdc from "../../../public/infrastructure/computerScience/sdc.png";
+import img1 from "../../../public/infrastructure/computerScience/img1.webp";
+import img2 from "../../../public/infrastructure/computerScience/img2.webp";
+import img3 from "../../../public/infrastructure/computerScience/img3.webp";
+import it from "../../../public/infrastructure/computerScience/img4.webp";
+import sdc from "../../../public/infrastructure/computerScience/img5.webp";
 import Vision from "@/component/Programs/Vision";
 import GalleryCrousel from "@/component/GalleryCrousel";
 
@@ -71,12 +69,7 @@ function ComputerScience() {
         <div className="flex flex-col items-center">
           <Banner
             image={BannerImg}
-            title={
-              <>
-                COMPUTER <span className="text-[#007A83]">CENTRE</span>
-              </>
-            }
-            description={<></>}
+            title={"COMPUTER CENTRE"}
             belowTitle={<></>}
             belowPara={
               <p>

@@ -51,7 +51,6 @@ function Library() {
       image: library2,
     },
   ];
-
   return (
     <>
       <head>
@@ -69,13 +68,7 @@ function Library() {
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
-            title={
-              <>
-                <span className="text-[#007A83]">LIBRARY</span>
-              </>
-            }
-            description={<></>}
-            belowTitle={<></>}
+            title={"LIBRARY"}
             belowPara={
               <p>
                 With over 60000 volumes library is a veritable powerhouse of
