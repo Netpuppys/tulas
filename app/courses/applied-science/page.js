@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
+import BannerImg from "../../../public/courses/applied-science/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import TopRecruiter from "../../../component/topRecruiter";
@@ -13,11 +13,14 @@ import {
   content,
   facultyData,
   features,
+  heading,
   hod,
   HODcontent,
   items,
+  quotes,
   sections,
   selectedCard1,
+  sideImages,
 } from "./data/data";
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
 import BannerProgram from "@/component/Programs/BannerProgram";
@@ -43,7 +46,12 @@ function BAJMC() {
           titleColor={""}
           description={""}
         />
-        <Program content={content} />
+        <Program
+          content={content}
+          sideImages={sideImages}
+          quotes={quotes}
+          heading={heading}
+        />
         <CarouselProgram
           heading={"Discover"}
           items={items}

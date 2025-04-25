@@ -1,19 +1,35 @@
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
+import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../../../public/courses/btech/ProgramEducationalObjective.png";
+import clubs from "../../../../../public/courses/bjmc/clubs.png";
+import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
 import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+import AmaanAnsari from "../../../../../public/courses/btech/CSE-PlacementDesign/AmaanAnsari.webp";
+import AshutoshMalik from "../../../../../public/courses/btech/CSE-PlacementDesign/AshutoshMalik.webp";
+import HarshKahiwal from "../../../../../public/courses/btech/CSE-PlacementDesign/HarshKahiwal.webp";
+import MohitJaiswal from "../../../../../public/courses/btech/CSE-PlacementDesign/MohitJaiswal.webp";
+import RichaMunola from "../../../../../public/courses/btech/CSE-PlacementDesign/RichaMunola.webp";
+import SahilSah from "../../../../../public/courses/btech/CSE-PlacementDesign/SahilSah.webp";
+import SnehshishTiwari from "../../../../../public/courses/btech/CSE-PlacementDesign/SnehshishTiwari.webp";
+import VijayKumar from "../../../../../public/courses/btech/CSE-PlacementDesign/VijayKumar.webp";
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: AmaanAnsari,
+    image2: AshutoshMalik,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: HarshKahiwal,
+    image2: MohitJaiswal,
+  },
+  {
+    image: RichaMunola,
+    image2: SahilSah,
+  },
+  {
+    image: SnehshishTiwari,
+    image2: VijayKumar,
   },
 ];
 export const heading = (
@@ -64,7 +80,7 @@ export const items = [
       "Develop a solid foundation in computer science, mathematics, statistics, and data analysis: The program aims to provide students with a strong foundation in these key areas to develop the necessary skills to become successful data scientists.",
       "Learn advanced techniques and tools in data science: The program aims to teach students the latest techniques and tools used in the field of data science, such as machine learning, data mining, big data analytics, and data visualization.",
     ],
-    image: USP,
+    image: ProgramEducationalObjective,
     points: [
       "Apply data science techniques to real-world problems: The program aims to provide students with hands-on experience in solving real-world problems using data science techniques.",
       "Develop critical thinking and problem-solving skills: The program aims to help students develop critical thinking and problem-solving skills necessary to succeed in the field of data science.",
@@ -79,7 +95,7 @@ export const items = [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
       "Problem Analysis : Identify, formulate, research literature, and analyze complex Engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
     ],
-    image: Course,
+    image: ProgramOutcomes,
     points: [
       "Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet t h e specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
       "Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
@@ -100,7 +116,7 @@ export const items = [
       "PSO2 : Analysis and Synthesis Techniques: Demonstrate the ability to analyse current systems to understand the solution, change or optimise the solution, and synthesise solutions based on new requirements using existing infrastructure and reusable components.",
       "PS03 : Reusability and Adaptability Skills: Assimilate, appreciate, utilize, and promote cutting-edge technology to improve reusability, adaptability, and scalability.",
     ],
-    image: Program,
+    image: ProgramSpecificOutcome,
   },
 
   // Add other carousel items here
@@ -204,7 +220,7 @@ export const itemsClubs = [
       "IEEE Computer Society",
       "Vibgyor and Victree",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Career Prospects",
@@ -212,7 +228,7 @@ export const itemsClubs = [
       "A B.Tech. in Computer Science and Engineering with a specialization in Cybersecurity opens up a diverse range of career prospects in a world where digital threats are constantly evolving. Graduates from this program are equipped with the knowledge and skills to secure computer systems, protect sensitive data, and counteract cyber threats. Here are some prominent career paths and roles for individuals with this specialization:",
       "Cybersecurity Analyst: Monitor computer systems for security breaches, conduct vulnerability assessments, and implement measures to safeguard against cyber threats.",
     ],
-    image: Course,
+    image: careerProspectus,
     points: [
       "Ethical Hacker/Penetration Tester:  Evaluate the security of computer systems by simulating cyber-attacks to identify vulnerabilities, weaknesses, and potential entry points.",
       "Security Consultant: Advise organizations on enhancing their overall cybersecurity posture, including recommending security policies, risk management strategies, and compliance measures.",

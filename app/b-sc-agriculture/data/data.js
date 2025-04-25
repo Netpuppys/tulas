@@ -26,24 +26,49 @@ import ShivendraMishra from "../../../public/bsc-agriculture/facultyData/Shivend
 import ShivendraMishraResume from "../../../public/bsc-agriculture/facultyData/ShivendraMishraResume.pdf";
 import Suresh from "../../../public/bsc-agriculture/facultyData/Suresh.webp";
 import SureshResume from "../../../public/bsc-agriculture/facultyData/SureshResume.pdf";
-import USP from "../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../public/bsc-agriculture/Crousel/Program.png";
+import USP from "../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../public/courses/btech/CourseOutcomes.png";
+import ProgramOutcomes from "../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../public/courses/btech/ProgramEducationalObjective.png";
+import clubs from "../../../public/courses/bjmc/clubs.png";
+import beyondCurriculum from "../../../public/courses/btech/civil-engineering/beyondCurriculum.png";
+import careerProspectus from "../../../public/courses/bjmc/careerProspectus.png";
 import AGRICULTURE from "../../../public/bsc-agriculture/AGRICULTURE.pdf";
-import placement3 from "../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../public/Homepage/Placement/placement4.png";
-import Link from "next/link";
+import Aanchal from "../../../public/bsc-agriculture/PlacementDesign/Aanchal.webp";
+import AnubhavMaithani from "../../../public/bsc-agriculture/PlacementDesign/AnubhavMaithani.webp";
+import ShristiSaumya from "../../../public/bsc-agriculture/PlacementDesign/ShristiSaumya.webp";
+import contentLeft from "../../../public/bsc-agriculture/contentLeft.webp";
+import contentRight from "../../../public/bsc-agriculture/contentRight.webp";
 
+import Link from "next/link";
+export const sideImages = [contentLeft, contentRight];
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: Aanchal,
+    image2: AnubhavMaithani,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: ShristiSaumya,
+    image2: Aanchal,
   },
 ];
+export const heading = (
+  <>
+    Best B.Sc. Agriculture Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
+export const quotes = (
+  <>
+    “Cultivating knowledge, growing innovation—{" "}
+    <strong className="text-[#760135]">
+      B.Sc. Agriculture empowers future leaders to feed the world sustainably
+      and shape the future of farming.
+    </strong>
+    ”
+  </>
+);
 export const content = (
   <>
     B.Sc. Agriculture is a four-year UG (Undergraduate) degree program that
@@ -124,7 +149,7 @@ export const items = [
         Click here to download AGRICULTURE Course Outcomes
       </Link>,
     ],
-    image: Course,
+    image: CourseOutcomes,
   },
   {
     title: "Program Outcomes",
@@ -132,7 +157,7 @@ export const items = [
       "PO1. Create, select, and apply appropriate techniques, resources, and modern tools and software for 	prediction and forecast of outcomes based on agricultural sciences",
       "PO2. To identify, review, formulate and analyze problems in various sectors of Agriculture &amp; 	Forestry.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "PO3. Design Solutions of various problems found in farming system with due consideration of farmers 	health and safety.",
       "PO4. To develop scientific aptitude which is beneficial for the society.",
@@ -147,7 +172,7 @@ export const items = [
       "PSO 1: Students make use of digital and farm technology to build models for enhancing farming industry.",
       "PSO 2: An ability to apply the acquired skills and knowledge to experiment, innovate and demonstrate 	sustainable agricultural practices at grass root level for rural upliftment.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
     points: [
       "PSO 3: Students develop entrepreneurial skills by applying knowledge gained through participation in 	workshops and start-up boot camps.",
     ],
@@ -162,7 +187,7 @@ export const items = [
       "PEO5: To explore future opportunities in higher studies.",
       "PEO6: To provide a base for independent and life-long learning in the domain of agricultural practices.",
     ],
-    image: Program,
+    image: ProgramEducationalObjective,
   },
 
   // Add other carousel items here
@@ -587,7 +612,7 @@ export const itemsClubs = [
       "Vibgyor",
       "Victree",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Beyond Curriculum",
@@ -615,12 +640,12 @@ export const itemsClubs = [
       "Conducting Events and Festivals",
       "And lots more to add to the overall bucket of beyond curriculum activities",
     ],
-    image: Course,
+    image: beyondCurriculum,
   },
   {
     title: "Career Prospects",
     description: [""],
-    image: Program,
+    image: careerProspectus,
     points: [
       <div className="w-full max-w-full overflow-scroll">
         <table className="overflow-x-scroll w-fit border border-black text-[clamp(10px,0.7vw,20px)]">

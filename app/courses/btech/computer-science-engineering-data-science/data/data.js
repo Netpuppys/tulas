@@ -1,19 +1,37 @@
-import USP from "../../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
-import DepartmentalVission from "../../../../../public/courses/bjmc/departmentalVision.png";
-import DepartmentalMission from "../../../../../public/courses/bjmc/departmentalMission.png";
+import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
+import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
+import ProgramEducationalObjective from "../../../../../public/courses/btech/ProgramEducationalObjective.png";
+import clubs from "../../../../../public/courses/bjmc/clubs.png";
+import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+import content1 from "../../../../../public/courses/btech/computer-science-engineering-data-science/contentLeft.webp";
+import content2 from "../../../../../public/courses/btech/computer-science-engineering-data-science/contentRight.webp";
+import DepartmentalVission from "../../../../../public/courses/btech/computer-science/departmentalVision.JPG";
+import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.JPG";
+import AmaanAnsari from "../../../../../public/courses/btech/CSE-PlacementDesign/AmaanAnsari.webp";
+import AshutoshMalik from "../../../../../public/courses/btech/CSE-PlacementDesign/AshutoshMalik.webp";
+import HarshKahiwal from "../../../../../public/courses/btech/CSE-PlacementDesign/HarshKahiwal.webp";
+import MohitJaiswal from "../../../../../public/courses/btech/CSE-PlacementDesign/MohitJaiswal.webp";
+import RichaMunola from "../../../../../public/courses/btech/CSE-PlacementDesign/RichaMunola.webp";
+import SahilSah from "../../../../../public/courses/btech/CSE-PlacementDesign/SahilSah.webp";
+import SnehshishTiwari from "../../../../../public/courses/btech/CSE-PlacementDesign/SnehshishTiwari.webp";
+import VijayKumar from "../../../../../public/courses/btech/CSE-PlacementDesign/VijayKumar.webp";
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: AmaanAnsari,
+    image2: AshutoshMalik,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: HarshKahiwal,
+    image2: MohitJaiswal,
+  },
+  {
+    image: RichaMunola,
+    image2: SahilSah,
+  },
+  {
+    image: SnehshishTiwari,
+    image2: VijayKumar,
   },
 ];
 export const heading = (
@@ -22,6 +40,7 @@ export const heading = (
     <span className="text-[#760135]">North India</span>
   </>
 );
+export const sideImages = [content1, content2];
 export const content = (
   <>
     The B.Tech in Computer Science & Engineering (Data Science) at Tula’s
@@ -65,7 +84,7 @@ export const items = [
       "The objectives of a B.Tech in Data Science program are as follows:",
       "Develop a solid foundation in computer science, mathematics, statistics, and data analysis: The program aims to provide students with a strong foundation in these key areas to develop the necessary skills to become successful data scientists.",
     ],
-    image: USP,
+    image: ProgramEducationalObjective,
     points: [
       "Learn advanced techniques and tools in data science: The program aims to teach students the latest techniques and tools used in the field of data science, such as machine learning, data mining, big data analytics, and data visualization.",
       "Apply data science techniques to real-world problems: The program aims to provide students with hands-on experience in solving real-world problems using data science techniques.",
@@ -81,7 +100,7 @@ export const items = [
       "Engineering Knowledge : Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
       "Problem Analysis : Identify, formulate, research literature, and analyze complex Engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.",
     ],
-    image: Program,
+    image: ProgramOutcomes,
     points: [
       "Design/development of Solutions : Design solutions for complex engineering problems and design system components or processes that meet t h e specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.",
       "Conduct Investigations of Complex Problems : Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.",
@@ -102,7 +121,7 @@ export const items = [
       "PSO2 : Analysis and Synthesis Techniques: Demonstrate the ability to analyse current systems to understand the solution, change or optimise the solution, and synthesise solutions based on new requirements using existing infrastructure and reusable components.",
       "PS03 : Reusability and Adaptability Skills: Assimilate, appreciate, utilize, and promote cutting-edge technology to improve reusability, adaptability, and scalability.",
     ],
-    image: Course,
+    image: ProgramSpecificOutcome,
   },
 
   // Add other carousel items here
@@ -205,7 +224,7 @@ export const itemsClubs = [
       "IEEE Computer Society",
       "Vibgyor and Victree",
     ],
-    image: USP,
+    image: clubs,
   },
   {
     title: "Career Prospects",
@@ -215,6 +234,6 @@ export const itemsClubs = [
       "Business Analyst",
       "Data Engineer",
     ],
-    image: Course,
+    image: careerProspectus,
   },
 ];

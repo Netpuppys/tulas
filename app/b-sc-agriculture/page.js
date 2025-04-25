@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BannerImg from "../../public/bsc-agriculture/bannerImgbsc.png";
+import BannerImg from "../../public/bsc-agriculture/bannerImg.webp";
 import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import {
@@ -8,11 +8,14 @@ import {
   content,
   facultyData,
   features,
+  heading,
   items,
   itemsClubs,
+  quotes,
   sections,
   selectedCard1,
   semesterData,
+  sideImages,
 } from "./data/data";
 import Program from "@/component/Programs/Program";
 import CarouselProgram from "@/component/Programs/CrouselProgram";
@@ -43,7 +46,12 @@ function BSCAgriculture() {
           description={""}
         />
 
-        <Program content={content} />
+        <Program
+          content={content}
+          sideImages={sideImages}
+          heading={heading}
+          quotes={quotes}
+        />
         <CarouselProgram
           heading={"Discover"}
           items={items}

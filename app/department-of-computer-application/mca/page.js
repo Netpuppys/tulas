@@ -8,15 +8,11 @@ import Accreditation from "@/app/Component/Accreditation";
 import TableProgram from "@/component/Programs/tableProgram";
 import mcaBannerImg from "../../../public/landingPage/mcaBannerImg.webp";
 import Journey from "@/app/graduate-school-of-business/Component/Journey";
-import placement3 from "../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../public/Homepage/Placement/placement4.png";
 import { facultyData, selectedCardTable } from "@/app/courses/mca/data/data";
 import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
 import Placement from "@/app/graduate-school-of-business/Component/Placement";
-import CuttingEdge from "@/app/graduate-school-of-business/Component/CuttingEdge";
 import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
 import NavbarLanding from "@/app/graduate-school-of-business/Component/NavbarLanding";
-import Accreditations from "@/app/graduate-school-of-business/Component/Accreditations";
 import FormLandingPage from "@/app/graduate-school-of-business/Component/FormLandingPage";
 import CarouselContent from "@/app/graduate-school-of-business/Component/CarouselContent";
 import BannerLandingPage from "@/app/graduate-school-of-business/Component/BannerLandingPage";
@@ -28,7 +24,16 @@ import comprehensiveCurriculam from "../../../public/graduate-school-of-business
 import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
 import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import AayushRaj from "../../../public/courses/mca/PlacementDesign/AayushRaj.webp";
+import DheerajKumar from "../../../public/courses/mca/PlacementDesign/DheerajKumar.webp";
+import JyotiPriya from "../../../public/courses/mca/PlacementDesign/JyotiPriya.webp";
+import Nitin from "../../../public/courses/mca/PlacementDesign/Nitin.webp";
+import PriyankaKumari from "../../../public/courses/mca/PlacementDesign/PriyankaKumari.webp";
+import RanjanKumar from "../../../public/courses/mca/PlacementDesign/RanjanKumar.webp";
+import RishabhSingh from "../../../public/courses/mca/PlacementDesign/RishabhSingh.webp";
+import TanyaChauhan from "../../../public/courses/mca/PlacementDesign/TanyaChauhan.webp";
 
+export
 const page = () => {
   const { utmParams } = useContext(UtmContext);
 
@@ -41,12 +46,20 @@ const page = () => {
 
   const features = [
     {
-      image: placement3,
-      image2: placement4,
+      image: AayushRaj,
+      image2: DheerajKumar,
     },
     {
-      image: placement3,
-      image2: placement4,
+      image: JyotiPriya,
+      image2: Nitin,
+    },
+    {
+      image: PriyankaKumari,
+      image2: RanjanKumar,
+    },
+    {
+      image: RishabhSingh,
+      image2: TanyaChauhan,
     },
   ];
 

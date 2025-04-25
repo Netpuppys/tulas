@@ -6,13 +6,11 @@ import ProgramEducationalObjective from "../../../../../public/courses/btech/Pro
 import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
 import clubs from "../../../../../public/courses/bjmc/clubs.png";
 import edge from "../../../../../public/courses/btech/civil-engineering/edge.png";
-import work from "../../../../../public/courses/btech/civil-engineering/work.png";
 import beyondCurriculum from "../../../../../public/courses/btech/civil-engineering/beyondCurriculum.png";
 import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import cseDocument from "../../../../../public/courses/btech/computer-science/CSE.pdf";
 import DepartmentalVission from "../../../../../public/courses/btech/computer-science/departmentalVision.JPG";
-import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.JPG"
+import DepartmentalMission from "../../../../../public/courses/btech/computer-science/departmentalMission.JPG";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
 import CseDrishti from "../../../../../public/courses/btech/computer-science/CseDrishti.pdf";
 import CseDrishtiOctDec from "../../../../../public/courses/btech/computer-science/CseDrishtiOct-Dec.pdf";
@@ -24,16 +22,30 @@ import CseDrishtiJul from "../../../../../public/courses/btech/computer-science/
 import CseDrishtiAprJun from "../../../../../public/courses/btech/computer-science/CseDrishtiAprJun.pdf";
 import CseDrishtiJulMar from "../../../../../public/courses/btech/computer-science/CseDrishtiJulMar.pdf";
 import Link from "next/link";
-import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
+import AmaanAnsari from "../../../../../public/courses/btech/CSE-PlacementDesign/AmaanAnsari.webp";
+import AshutoshMalik from "../../../../../public/courses/btech/CSE-PlacementDesign/AshutoshMalik.webp";
+import HarshKahiwal from "../../../../../public/courses/btech/CSE-PlacementDesign/HarshKahiwal.webp";
+import MohitJaiswal from "../../../../../public/courses/btech/CSE-PlacementDesign/MohitJaiswal.webp";
+import RichaMunola from "../../../../../public/courses/btech/CSE-PlacementDesign/RichaMunola.webp";
+import SahilSah from "../../../../../public/courses/btech/CSE-PlacementDesign/SahilSah.webp";
+import SnehshishTiwari from "../../../../../public/courses/btech/CSE-PlacementDesign/SnehshishTiwari.webp";
+import VijayKumar from "../../../../../public/courses/btech/CSE-PlacementDesign/VijayKumar.webp";
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: AmaanAnsari,
+    image2: AshutoshMalik,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: HarshKahiwal,
+    image2: MohitJaiswal,
+  },
+  {
+    image: RichaMunola,
+    image2: SahilSah,
+  },
+  {
+    image: SnehshishTiwari,
+    image2: VijayKumar,
   },
 ];
 export const heading = (

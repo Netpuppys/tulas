@@ -1,24 +1,35 @@
 import USP from "../../../../../public/courses/btech/usp.png";
-import Course from "../../../../../public/bsc-agriculture/Crousel/Course.png";
-import Program from "../../../../../public/bsc-agriculture/Crousel/Program.png";
 import ProgramSpecificOutcome from "../../../../../public/courses/btech/ProgramSpecificOutcome.png";
 import ProgramOutcomes from "../../../../../public/courses/btech/ProgramOutcomes.png";
 import DepartmentalVission from "../../../../../public/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/departmentalVision.jpg";
 import DepartmentalMission from "../../../../../public/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/departmentalMission.webp";
 import SandeepKumar from "../../../../../public/courses/btech/computer-science/facultyData/SandeepKumar.webp";
-import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
-import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
 import clubs from "../../../../../public/courses/bjmc/clubs.png";
 import careerProspectus from "../../../../../public/courses/bjmc/careerProspectus.png";
-
+import AmaanAnsari from "../../../../../public/courses/btech/CSE-PlacementDesign/AmaanAnsari.webp";
+import AshutoshMalik from "../../../../../public/courses/btech/CSE-PlacementDesign/AshutoshMalik.webp";
+import HarshKahiwal from "../../../../../public/courses/btech/CSE-PlacementDesign/HarshKahiwal.webp";
+import MohitJaiswal from "../../../../../public/courses/btech/CSE-PlacementDesign/MohitJaiswal.webp";
+import RichaMunola from "../../../../../public/courses/btech/CSE-PlacementDesign/RichaMunola.webp";
+import SahilSah from "../../../../../public/courses/btech/CSE-PlacementDesign/SahilSah.webp";
+import SnehshishTiwari from "../../../../../public/courses/btech/CSE-PlacementDesign/SnehshishTiwari.webp";
+import VijayKumar from "../../../../../public/courses/btech/CSE-PlacementDesign/VijayKumar.webp";
 export const features = [
   {
-    image: placement3,
-    image2: placement4,
+    image: AmaanAnsari,
+    image2: AshutoshMalik,
   },
   {
-    image: placement3,
-    image2: placement4,
+    image: HarshKahiwal,
+    image2: MohitJaiswal,
+  },
+  {
+    image: RichaMunola,
+    image2: SahilSah,
+  },
+  {
+    image: SnehshishTiwari,
+    image2: VijayKumar,
   },
 ];
 export const heading = (

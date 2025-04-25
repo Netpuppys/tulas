@@ -1,5 +1,5 @@
-import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
-import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
+import USP from "../../../../public/courses/btech/usp.png";
+import CourseOutcomes from "../../../../public/courses/btech/CourseOutcomes.png";
 import ASCdocument from "../../../../public/courses/applied-science/ASC.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
@@ -49,6 +49,16 @@ import VijayResume from "../../../../public/courses/applied-science/facultyData/
 import Link from "next/link";
 import placement3 from "../../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../../public/Homepage/Placement/placement4.png";
+import contentLeft from "../../../../public/courses/applied-science/contentLeft.webp";
+import contentRight from "../../../../public/courses/applied-science/contentRight.webp";
+
+export const sideImages = [contentLeft, contentRight];
+export const heading = (
+  <>
+    Best Applied Sciences and Humanities Institute in{" "}
+    <span className="text-[#760135]">North India</span>
+  </>
+);
 export const features = [
   {
     image: placement3,
@@ -90,6 +100,15 @@ export const content = (
     perspectives and enhance their soft skills.
   </>
 );
+export const quotes = (
+  <>
+    “Building strong foundations in science and{" "}
+    <strong className="text-[#760135]">
+      communication for a future of innovation and success.
+    </strong>
+    ”
+  </>
+);
 export const items = [
   {
     title: "USPs",
@@ -114,7 +133,7 @@ export const items = [
         Click here to Download B.Tech 1st Year Course Outcomes
       </Link>,
     ],
-    image: Course,
+    image: CourseOutcomes,
   },
 ];
 export const sections = [

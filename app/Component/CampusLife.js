@@ -80,7 +80,7 @@ const CampusLife = () => {
   }, [albumIndex, imageIndex, autoPlayActive]);
 
   return (
-    <div className="w-full pt-8 md:pt-[4%] flex flex-col items-center justify-start py-0">
+    <div className="w-full pt-1 flex flex-col items-center justify-start py-0">
       {/* <p className="uppercase text-4xl text-[#007A83] font-semibold tracking-[0.15em]">
         Campus Life
       </p> */}
