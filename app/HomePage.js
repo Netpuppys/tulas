@@ -195,11 +195,15 @@ export default function HomePage() {
           <BannerHome bannerImages={bannerImagesMobile} scrollButton={true} />
         </div>
 
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden ">
           {/* Blurred sides */}
-          <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10 blur-lg bg-gradient-to-r from-[#007A83] to-transparent" />
+          <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10  bg-gradient-to-r from-[#007A83] to-transparent" />
           {/* Scrolling text */}
-          <marquee direction="left" scrollamount="10">
+          <marquee
+            direction="left"
+            scrollamount="10"
+            className="ml-[7%] w-[93%]"
+          >
             <div className="w-fit py-2 md:py-6 flex gap-4 md:gap-[2%] whitespace-nowrap">
               {name.map((item, index) => (
                 <div key={index} className="relative w-fit mx-auto">
