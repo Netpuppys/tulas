@@ -185,7 +185,7 @@ export default function AboutTulasForm() {
   const sendOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tis.edu.in/send-otp", {
+      .post("https://otp.tulas.edu.in/send-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         message:
           "Hello, ##OTP## is your One Time Password(OTP) forTulas This OTP is valid till 3mins Tulas.", // Replace with your SMS template
@@ -205,7 +205,7 @@ export default function AboutTulasForm() {
   const verifyOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tis.edu.in/verify-otp", {
+      .post("https://otp.tulas.edu.in/verify-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         otp: otp,
         authkey: "412590AKveCHLSBnd4658bcea0P1",
@@ -225,7 +225,7 @@ export default function AboutTulasForm() {
   const resendOtp = async () => {
     setLoading(true);
     axios
-      .post("https://otpapi.tis.edu.in/retry-otp", {
+      .post("https://otp.tulas.edu.in/retry-otp", {
         mobileNumber: formData.MobileNumber, // Replace with dynamic mobile number
         authkey: "412590AKveCHLSBnd4658bcea0P1",
       })
