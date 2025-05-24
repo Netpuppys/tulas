@@ -394,10 +394,11 @@ export default function AboutTulasForm() {
                                   ))} */}
                 </select>
                 <input
-                  type="text"
+                  type="tel"
                   required
                   disabled={verified}
                   value={phoneNumber}
+                  maxLength={10}
                   onChange={handlePhoneNumberChange}
                   placeholder="Enter your Mobile No...."
                   className={`py-2 focus:outline-none w-full bg-[#F4F4F4] border-b-2 border-[#760135] text-[#4B4B4B] disabled:opacity-100 disabled:cursor-not-allowed placeholder:text-[#4B4B4B]`}
