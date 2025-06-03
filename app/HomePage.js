@@ -228,10 +228,12 @@ export default function HomePage() {
         <Virtual />
         <VirtualTour />
         <MeetOurManagement parentRef={parentRef} />
-        <Testimonials />
-        <Video />
         <AwardsCrousel />
         <EventsAndActivites />
+        {/*
+        <Testimonials />
+        <Video />
+        */}
         <Footer />
       </div>
     </>

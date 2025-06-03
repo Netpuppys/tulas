@@ -32,26 +32,26 @@ export const features = [
 ];
 export const heading = (
   <>
-    Best B.Pharma Institute in{" "}
+    Best B.Pharm. Institute in{" "}
     <span className="text-[#760135]">North India</span>
   </>
 );
 export const sideImages = [content1, content2];
 export const content = (
   <>
-    A Bachelor of Pharmacy (B. Pharma) is not just a degree, it's a gateway to
+    A Bachelor of Pharmacy (B. Pharm) is not just a degree, it's a gateway to
     the powerful world of pharmaceuticals and healthcare. This program equips
     students with a comprehensive understanding of drug formulation,
     development, and distribution, ensuring they are prepared to meet the
     growing demands of the pharmaceutical industry.
     <br />
     From working in hospitals and pharmaceutical companies to venturing into
-    research and entrepreneurship, B. Pharma graduates have a diverse and
+    research and entrepreneurship, B. Pharm graduates have a diverse and
     impactful career ahead.
     <br />
     <br />
     <p className="font-bold font-[TTChocolatesMedium] pb-2">
-      The B. Pharma curriculum provides an in-depth understanding of:
+      The B. Pharm curriculum provides an in-depth understanding of:
     </p>
     ● Drug preparation, formulation, and dispensing.
     <br />
@@ -65,7 +65,7 @@ export const content = (
     <br />
     <br />
     <p className="font-bold font-[TTChocolatesMedium] pb-2">
-      Graduates of B. Pharma have access to:
+      Graduates of B. Pharm have access to:
     </p>
     ●{" "}
     <span className="font-bold font-[TTChocolatesMedium]">

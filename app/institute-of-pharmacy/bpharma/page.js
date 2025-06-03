@@ -134,7 +134,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={122}
-              formHeading={"B.Pharma Admissions Open 2025"}
+              formHeading={" B.Pharm. Admissions Open 2025"}
               thankYOu={`/institute-of-pharmacy/bpharma/thank-you/${utmParams}`}
             />
           </div>
@@ -144,7 +144,7 @@ const page = () => {
           {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BCA"} /> */}
           <div className="pt-8 md:pt-[4%]"></div>
           <Journey
-            heading={"Your B.Pharma Journey at Tula’s Institute"}
+            heading={"Your  B.Pharm. Journey at Tula’s Institute"}
             journey={journey}
             journeyQuotes={journeyQuote}
           />
