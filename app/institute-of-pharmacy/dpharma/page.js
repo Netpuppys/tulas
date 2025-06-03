@@ -112,7 +112,7 @@ const page = () => {
     },
   ];
   const journeyQuote =
-    "D.Pharma at Tula’s Institute is where your journey into healthcare begins—with hands-on skills";
+    "D.Pharm. at Tula’s Institute is where your journey into healthcare begins—with hands-on skills";
   return (
     <>
       <head>
@@ -133,7 +133,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={123}
-              formHeading={"D.Pharma Admissions Open 2025"}
+              formHeading={"D.Pharm. Admissions Open 2025"}
               thankYOu={`/institute-of-pharmacy/dpharma/thank-you/${utmParams}`}
             />
           </div>
@@ -143,7 +143,7 @@ const page = () => {
           {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BCA"} /> */}
           <div className="pt-8 md:pt-[4%]"></div>
           <Journey
-            heading={"Your D.Pharma Journey at Tula’s Institute"}
+            heading={"Your D.Pharm. Journey at Tula’s Institute"}
             journey={journey}
             journeyQuotes={journeyQuote}
           />

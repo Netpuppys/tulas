@@ -4,8 +4,8 @@ export const courses = [
   { id: 3, name: "Engineering" },
   { id: 5, name: "Mass Communication" },
   { id: 7, name: "Computer Application" },
-  { id: 122, name: "B.Pharma" },
-  { id: 123, name: "D.Pharma" },
+  { id: 122, name: " B.Pharm." },
+  { id: 123, name: "D.Pharm." },
   { id: 127, name: "Engineering (PG)" },
   { id: 14, name: "Yet to decide" },
 ];
@@ -59,8 +59,8 @@ export const specializations = {
     { id: 21, name: "BCA" },
     { id: 37, name: "MCA" },
   ],
-  122: [{ id: 82, name: "B.Pharma" }],
-  123: [{ id: 83, name: "D.Pharma" }],
+  122: [{ id: 82, name: " B.Pharm." }],
+  123: [{ id: 83, name: "D.Pharm." }],
   127: [
     { id: 27, name: "M.Tech-Computer Science & Engineering" },
     { id: 28, name: "M.Tech-Civil Engineering" },

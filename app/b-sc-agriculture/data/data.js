@@ -55,7 +55,7 @@ export const features = [
 ];
 export const heading = (
   <>
-    Best B.Sc. Agriculture Institute in{" "}
+    Best B.Sc.(Hons.) Agriculture Institute in{" "}
     <span className="text-[#760135]">North India</span>
   </>
 );
@@ -63,19 +63,19 @@ export const quotes = (
   <>
     “Cultivating knowledge, growing innovation—{" "}
     <strong className="text-[#760135]">
-      B.Sc. Agriculture empowers future leaders to feed the world sustainably
-      and shape the future of farming.
+      B.Sc.(Hons.) Agriculture empowers future leaders to feed the world
+      sustainably and shape the future of farming.
     </strong>
     ”
   </>
 );
 export const content = (
   <>
-    B.Sc. Agriculture is a four-year UG (Undergraduate) degree program that
-    focuses on theoretical and practical training in various agricultural
-    techniques. B.Sc. Agriculture offers a wide range of opportunities for
-    graduates to work in various sectors of agriculture, from technical aspects
-    to commercial opportunities, and from production to sales.
+    B.Sc.(Hons.) Agriculture is a four-year UG (Undergraduate) degree program
+    that focuses on theoretical and practical training in various agricultural
+    techniques. B.Sc.(Hons.) Agriculture offers a wide range of opportunities
+    for graduates to work in various sectors of agriculture, from technical
+    aspects to commercial opportunities, and from production to sales.
     <br />
     <br />
     A bachelor’s degree in agriculture is a broad-based program with a lot of
@@ -88,7 +88,7 @@ export const content = (
     scope of agriculture.
     <br />
     <br />
-    A student pursuing B.Sc. Agriculture degree will study Agronomy, Soil
+    A student pursuing B.Sc.(Hons.) Agriculture degree will study Agronomy, Soil
     Science, Horticulture, Plant Breeding and Genetics, Entomology, Plant
     Pathology, Animal Science, Extension Education, Plant Biochemistry,
     Agriculture Economics and Fundamentals of Biotechnology, among other

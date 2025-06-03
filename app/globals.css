@@ -6,47 +6,58 @@
   font-family: "CarotSlab";
   src: url(../public/fonts/Carot\ Slab\ Medium.ttf);
 }
+
 @font-face {
   font-family: "TTChocolates";
   src: url(../public/fonts/TT-Chocolates-Regular.ttf);
 }
+
 @font-face {
   font-family: "TTChocolatesMedium";
   src: url(../public/fonts/TT-Chocolates-Medium.ttf);
 }
+
 @font-face {
   font-family: "DKAppelstroop";
   src: url(../public/fonts/DK\ Appelstroop.otf);
 }
+
 @font-face {
   font-family: "ExtraWide";
   src: url(../public/fonts/fonnts.com-Roc_Grotesk_ExtraWide_Medium.otf);
 }
+
 @font-face {
   font-family: "Helvetica";
   src: url(../public/fonts/HelveticaNowDisplay-Light.ttf);
 }
+
 @font-face {
   font-family: "GoudyCatalogue";
   src: url(../public/fonts/GoudyCatalogueMTProItalic.TTF);
 }
+
 @font-face {
   font-family: "LevSerif";
   src: url(../public/fonts/LevSerif-Italic.ttf);
 }
+
 @font-face {
   font-family: "LevSerifBold";
   src: url(../public/fonts/LevSerif-BoldItalic.ttf);
 }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
 .shadoww {
   box-shadow: 4px 4px 8px 10px rgba(0, 0, 0, 0.25);
   text-shadow: 4px 4px 8px 10px rgba(0, 0, 0, 0.25);
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -62,6 +73,7 @@ body {
   font-family: "TTChocolates";
   overscroll-behavior: none;
 }
+
 ::-webkit-scrollbar {
   width: 6px;
   --tw-bg-opacity: 0.8;
@@ -72,6 +84,7 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -81,6 +94,7 @@ body {
 span {
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
+
 .checked span:nth-of-type(1) {
   transform-origin: bottom;
   transform: rotatez(45deg) translate(3.5px, 0px);
@@ -96,6 +110,7 @@ span {
   width: 50%;
   transform: translate(13.5px, -4.3px) rotatez(45deg);
 }
+
 .banner-animation {
   animation: banner-animate 40s ease-in infinite;
 }
@@ -104,74 +119,75 @@ span {
   0% {
     background-image: url("../public/Homepage/BannerHome/BannerImage1.webp");
   }
+
   20% {
     background-image: url("../public/Homepage/BannerHome/BannerImage2.webp");
   }
+
   40% {
     background-image: url("../public/Homepage/BannerHome/BannerImage3.webp");
   }
+
   60% {
     background-image: url("../public/Homepage/BannerHome/BannerImage4.webp");
   }
+
   80% {
     background-image: url("../public/Homepage/BannerHome/BannerImage5.webp");
   }
+
   100% {
     background-image: url("../public/Homepage/BannerHome/BannerImage6.webp");
   }
 }
+
 .backgroundScroll {
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
+      rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    linear-gradient(
-      0deg,
+    linear-gradient(0deg,
       rgba(0, 122, 131, 0.8) 0%,
-      rgba(0, 122, 131, 0.8) 100%
-    ),
-    url(../public/Homepage/ScrollSection/BackgroundImageScroll.png) lightgray
-      50% / cover no-repeat;
+      rgba(0, 122, 131, 0.8) 100%),
+    url(../public/Homepage/ScrollSection/BackgroundImageScroll.png) lightgray 50% / cover no-repeat;
 }
+
 .backgroundScrollSports {
-  background: url(../public/infrastructure/computerScience/background.png)
-    lightgray 50% / cover no-repeat;
+  background: url(../public/infrastructure/computerScience/background.png) lightgray 50% / cover no-repeat;
 }
 
 .backgroundVirtual {
   border-radius: 25px;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
+      rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    linear-gradient(
-      0deg,
+    linear-gradient(0deg,
       rgba(0, 122, 131, 0.44) 0%,
-      rgba(0, 122, 131, 0.44) 100%
-    ),
+      rgba(0, 122, 131, 0.44) 100%),
     url(../public/Homepage/Virtual/stats.png) lightgray 50% / cover no-repeat;
   box-shadow: 0px 4px 25px 15px rgba(0, 0, 0, 0.25);
 }
+
 .textShadow {
   text-shadow: 0px 4px 40px #007a83;
 }
+
 .textShadowProgram {
   text-shadow: 10px 10px 40px #000000;
 }
+
 @keyframes translateIn {
   from {
     transform: translateY(10vh);
   }
+
   to {
     transform: translateY(0vh);
   }
@@ -192,12 +208,14 @@ span {
     transform: translateY(15vh);
     /* opacity: 0.5; */
   }
+
   to {
     display: block;
     transform: translateY(0);
     /* opacity: 1; */
   }
 }
+
 table {
   border-collapse: collapse;
   width: fit-content;
@@ -214,15 +232,18 @@ td {
   padding: 18px;
   text-align: left;
 }
+
 td {
   padding: 15px;
   color: black;
 }
+
 th {
   border: 1px solid #000;
   font-size: 18px;
   text-align: center;
 }
+
 th {
   color: #000;
 }
@@ -236,17 +257,19 @@ th {
   border-top: none;
 }
 
-input[type="radio"]:checked + label span {
+input[type="radio"]:checked+label span {
   background-color: white;
   box-shadow: 0px 0px 0px 2px white inset;
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"]:checked+label {
   color: white;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -255,6 +278,7 @@ select {
   -moz-appearance: none;
   appearance: none;
 }
+
 select.classic {
   background-image: linear-gradient(45deg, transparent 50%, #d9d9d9 50%),
     linear-gradient(135deg, #d9d9d9 50%, transparent 50%);
@@ -263,6 +287,7 @@ select.classic {
   background-size: 5px 5px, 5px 5px, 1px 2em;
   background-repeat: no-repeat;
 }
+
 select.classics {
   background-image: linear-gradient(45deg, transparent 50%, #404040 50%),
     linear-gradient(135deg, #404040 50%, transparent 50%);
@@ -271,18 +296,22 @@ select.classics {
   background-size: 5px 5px, 5px 5px, 1px 2em;
   background-repeat: no-repeat;
 }
+
 @media (max-width: 768px) {
   ::-webkit-scrollbar {
     display: none;
   }
+
   th,
   td {
     padding: 8px;
   }
+
   td {
     padding: 6px;
     font-size: 10px;
   }
+
   th {
     font-size: 12px;
   }
@@ -292,11 +321,13 @@ select.classics {
   perspective: 1000px;
   transition: all 0.4s ease-in;
 }
+
 .grid-item .image-overlay {
   backface-visibility: hidden;
   transition: transform 0.8s ease-in-out;
   justify-content: space-between;
 }
+
 .grid-item .flip-image {
   text-align: left;
   transition: transform 0.5s ease-in-out;
@@ -310,9 +341,11 @@ select.classics {
   animation: textFlip 800ms;
   transform: rotateY(180deg);
 }
+
 .grid-item:hover .image-overlay {
   transform: rotateY(180deg);
 }
+
 .grid-item:hover .flip-image {
   pointer-events: auto;
   transform: rotateY(0deg);
@@ -323,15 +356,18 @@ select.classics {
     opacity: 0;
     transform: rotateY(0deg);
   }
+
   60% {
     opacity: 0;
     transform: rotateY(180deg);
   }
+
   100% {
     opacity: 1;
     transform: rotateY(180deg);
   }
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

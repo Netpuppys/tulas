@@ -175,10 +175,10 @@ function CardCourses({ linked = true }) {
     },
     {
       src: MassCoummunication,
-      title: "DEPARTMENT OF MASS COMMUNICATION",
+      title: "Department of Journalism and Communications",
       degrees: [
         {
-          name: "BAJMC",
+          name: "BA.(Hons.) JMC",
           link: "/courses/bjmc",
           branches: [
             {
@@ -220,7 +220,7 @@ function CardCourses({ linked = true }) {
       title: "TULA'S INSTITUTE OF PHARMACY",
       degrees: [
         {
-          name: "B.Pharma",
+          name: "B.Pharm.",
           link: "/courses/bpharma",
           branches: [
             {
@@ -230,7 +230,7 @@ function CardCourses({ linked = true }) {
           ],
         },
         {
-          name: "D.Pharma",
+          name: "D.Pharm.",
           link: "/courses/dpharma",
           branches: [
             {

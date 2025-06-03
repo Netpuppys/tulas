@@ -211,26 +211,6 @@ const Footer = ({ set = false, color = false }) => {
             </button>
           </div>
         </div>
-        {/* gray social icons div */}
-        {/* <div className="w-full md:w-[33%] h-[6vh] bg-[#808080] px-[5%] gap-[3%] flex justify-between items-center z-50">
-          <h4 className="font-[Oswald] text-[clamp(10px,6.5vw,35px)] text-nowrap md:text-[clamp(10px,1.6vw,28px)] text-white ">
-            CONNECT US
-          </h4>
-          <ul className="flex w-[60%] gap-[5%]">
-            {socialMediaLinks.map((social, index) => (
-              <Link
-                key={index}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#fff] rounded-lg bg-opacity-[0.8] text-[#808080] p-[3%] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)]"
-              >
-                {social.icon}
-              </Link>
-            ))}
-          </ul>
-          <button className="bg-[rgba(255, 255, 255, 0.08)] text-white"></button>
-        </div> */}
       </div>
       {set && <ContactForm />}
       {/* main footer */}

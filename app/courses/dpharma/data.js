@@ -32,16 +32,16 @@ export const features = [
 ];
 export const heading = (
   <>
-    Best Pharmacy (D.Pharma) Institute in{" "}
+    Best Pharmacy (D.Pharm.) Institute in{" "}
     <span className="text-[#760135]">North India</span>
   </>
 );
 export const content = (
   <>
-    The Diploma in Pharmacy (D.Pharma.) is a two-year program designed to
-    provide students with comprehensive knowledge of pharmaceutical sciences,
-    drug formulation, and healthcare practices. With an intake capacity of 60
-    seats, this course equips aspiring pharmacists with the necessary skills to
+    The Diploma in Pharmacy (D.Pharm.) is a two-year program designed to provide
+    students with comprehensive knowledge of pharmaceutical sciences, drug
+    formulation, and healthcare practices. With an intake capacity of 60 seats,
+    this course equips aspiring pharmacists with the necessary skills to
     contribute effectively to the healthcare industry.
     <div className="mt-2 md:mt-[1%]"></div>
     The curriculum covers pharmaceutics, pharmacology, medicinal chemistry,
@@ -51,11 +51,11 @@ export const content = (
     experiments, hospital training, and industry visits to ensure real-world
     exposure.
     <div className="mt-2 md:mt-[1%]"></div>
-    After completing D.Pharma, graduates can register with the State Pharmacy
+    After completing D.Pharm., graduates can register with the State Pharmacy
     Council to become licensed pharmacists. They are eligible for employment in
     hospitals, retail and community pharmacies, pharmaceutical industries, and
     regulatory bodies. Additionally, students can pursue higher education by
-    enrolling in B. Pharma through lateral entry (direct admission into the
+    enrolling in B. Pharm through lateral entry (direct admission into the
     second year), opening doors for advanced career opportunities in drug
     manufacturing, research, clinical pharmacy, and pharmaceutical marketing.
     <div className="mt-2 md:mt-[1%]"></div>
@@ -68,7 +68,7 @@ export const quotes = (
   <>
     “Shape the future of healthcare with{" "}
     <strong className="text-[#760135]">
-      Tula’s Institute’s D. Pharma. program.
+      Tula’s Institute’s D. Pharm. program.
     </strong>{" "}
     Empowering aspiring pharmacists with the skills to make a difference in{" "}
     <strong className="text-[#760135]">
@@ -373,32 +373,32 @@ export const semesterData = [
   {
     semester: "Semester I",
     subjects: [
-      { code: "BAJMC-001", title: "Introduction to Journalism" },
+      { code: "BA.(Hons.) JMC-001", title: "Introduction to Journalism" },
       {
-        code: "BAJMC-002",
+        code: "BA.(Hons.) JMC-002",
         title: "Introduction to Media and Communication",
       },
       {
-        code: "BAJMC-003",
+        code: "BA.(Hons.) JMC-003",
         title: "Print Journalism and Production",
       },
-      { code: "BAJMC-004", title: "Environmental Science" },
+      { code: "BA.(Hons.) JMC-004", title: "Environmental Science" },
     ],
   },
   {
     semester: "Semester II",
     subjects: [
-      { code: "BAJMC-005", title: "Reporting & Editing" },
+      { code: "BA.(Hons.) JMC-005", title: "Reporting & Editing" },
       {
-        code: "BAJMC-006",
+        code: "BA.(Hons.) JMC-006",
         title: "Photography and Photojournalism",
       },
       {
-        code: "BAJMC-007",
+        code: "BA.(Hons.) JMC-007",
         title: "Economic Development and Planning",
       },
       {
-        code: "BAJMC-008",
+        code: "BA.(Hons.) JMC-008",
         title: "English / MIL Communication OR Hindi/ MIL Communication",
       },
     ],
@@ -406,15 +406,15 @@ export const semesterData = [
   {
     semester: "Semester III",
     subjects: [
-      { code: "BAJMC-009", title: "Media Laws and Ethics" },
-      { code: "BAJMC-010", title: "Television Production" },
-      { code: "BAJMC-011", title: "Design and Graphics" },
+      { code: "BA.(Hons.) JMC-009", title: "Media Laws and Ethics" },
+      { code: "BA.(Hons.) JMC-010", title: "Television Production" },
+      { code: "BA.(Hons.) JMC-011", title: "Design and Graphics" },
       {
-        code: "BAJMC-012",
+        code: "BA.(Hons.) JMC-012",
         title: "Radio Journalism and Production",
       },
       {
-        code: "BAJMC-013",
+        code: "BA.(Hons.) JMC-013",
         title: "Media and Intercultural Communication",
       },
     ],
@@ -423,29 +423,29 @@ export const semesterData = [
     semester: "Semester IV",
     subjects: [
       {
-        code: "BAJMC-014",
+        code: "BA.(Hons.) JMC-014",
         title: "Global Media and Communication",
       },
-      { code: "BAJMC-015", title: "Advertisement" },
+      { code: "BA.(Hons.) JMC-015", title: "Advertisement" },
       {
-        code: "BAJMC-016",
+        code: "BA.(Hons.) JMC-016",
         title: "New Media Technology and Journalism",
       },
-      { code: "BAJMC-017", title: "Development Communication" },
-      { code: "BAJMC-018", title: "Human Rights and Media" },
+      { code: "BA.(Hons.) JMC-017", title: "Development Communication" },
+      { code: "BA.(Hons.) JMC-018", title: "Human Rights and Media" },
     ],
   },
   {
     semester: "Semester V",
     subjects: [
-      { code: "BAJMC-019", title: "Film Appreciation" },
+      { code: "BA.(Hons.) JMC-019", title: "Film Appreciation" },
       {
-        code: "BAJMC-020",
+        code: "BA.(Hons.) JMC-020",
         title: "Public Relation and Corporate Communication",
       },
-      { code: "BAJMC-021", title: "Event Management" },
+      { code: "BA.(Hons.) JMC-021", title: "Event Management" },
       {
-        code: "BAJMC-022",
+        code: "BA.(Hons.) JMC-022",
         title: "Current Affairs and Writing for Mass Media",
       },
     ],
@@ -453,10 +453,10 @@ export const semesterData = [
   {
     semester: "Semester VI",
     subjects: [
-      { code: "BAJMC-023", title: "Media Management" },
-      { code: "BAJMC-024", title: "Communication Research" },
-      { code: "BAJMC-025", title: "Documentary Production" },
-      { code: "BAJMC-026", title: "Dissertation" },
+      { code: "BA.(Hons.) JMC-023", title: "Media Management" },
+      { code: "BA.(Hons.) JMC-024", title: "Communication Research" },
+      { code: "BA.(Hons.) JMC-025", title: "Documentary Production" },
+      { code: "BA.(Hons.) JMC-026", title: "Dissertation" },
     ],
   },
 ];
@@ -521,7 +521,7 @@ export const hod = [
     name: "Tauseef Iqbal",
     email: "jmc.hod@tulas.edu.in",
     designation: "Head of the Department,",
-    department: "BAJMC Department",
+    department: "BA.(Hons.) JMC Department",
     imageUrl: TauseefIqbal, // Replace with the actual image path
   },
 ];
@@ -583,19 +583,19 @@ export const itemsClubs = [
   {
     title: "Edge Over Others",
     description: [
-      "In 21st Century, the media landscape is evolving at an unprecedented pace, and a BAJMC degree equips students with a distinct advantage in this dynamic environment. Graduates emerge with a profound understanding of societal trends, market dynamics, and governance, enriched by historical context and cultural diversity. Coupled with advanced communication skills, they are prepared to navigate the complexities of modern media.",
+      "In 21st Century, the media landscape is evolving at an unprecedented pace, and a BA.(Hons.) JMC degree equips students with a distinct advantage in this dynamic environment. Graduates emerge with a profound understanding of societal trends, market dynamics, and governance, enriched by historical context and cultural diversity. Coupled with advanced communication skills, they are prepared to navigate the complexities of modern media.",
     ],
     image: Course,
     points: [
       "Our program fosters creativity, enabling students to produce compelling media content that resonates across various platforms, addressing the needs for information, awareness, and entertainment in both popular and high culture.",
       "At Tula’s Department of Journalism & Mass Communication, we offer cutting-edge infrastructure designed to prepare students for diverse media engagements and research. Our state-of-the-art Electronic Media and Production Centre, along with a comprehensive library and supportive learning environment, empowers students to hone their skills and gain practical experience.",
-      "As the demand for skilled media professionals continues to rise, our graduates are well-positioned to excel in various fields, from journalism and public relations to digital marketing and content creation. With a BAJMC from Tula’s, students are not just participants in the media industry; they are leaders poised to make a significant impact.",
+      "As the demand for skilled media professionals continues to rise, our graduates are well-positioned to excel in various fields, from journalism and public relations to digital marketing and content creation. With a BA.(Hons.) JMC from Tula’s, students are not just participants in the media industry; they are leaders poised to make a significant impact.",
     ],
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "At Department of Mass Communication Tula’s , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
+      "At Department of Journalism and Communications Tula’s , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
       "Besides a wide variety of extracurricular activities, workshops, and industry partnerships, there are also many opportunities for students to acquire additional know-how and proficiencies.",
     ],
     image: Program,
@@ -612,7 +612,7 @@ export const itemsClubs = [
   {
     title: "Career Prospects",
     description: [
-      "With a BAJMC degree, students can explore a wide range of career opportunities, including:",
+      "With a BA.(Hons.) JMC degree, students can explore a wide range of career opportunities, including:",
       "Journalism: Graduates can pursue careers as reporters, editors, and correspondents in print, broadcast, and digital media, where they investigate and report on current events, shaping public discourse.",
       "Public Relations: A career in PR allows graduates to manage communications for organizations, build brand awareness, and handle crisis communication, ensuring that the public perception aligns with organizational goals.",
     ],
@@ -623,7 +623,7 @@ export const itemsClubs = [
       "Digital Media and Content Creation: In an increasingly digital world, there is a high demand for skilled professionals in content creation, social media management, and digital marketing, allowing graduates to engage audiences online effectively.",
       "Corporate Communication: Graduates can work in internal and external communications, helping organizations effectively convey their messages to stakeholders and maintain a positive image.",
       "The program also encourages students to engage with diverse communities, fostering valuable networking opportunities with industry professionals, cultural groups, and influential figures. Through internships, hands-on projects, and extracurricular activities, students gain practical experience that enhances their employability and prepares them for the challenges of the media industry.",
-      "As the demand for innovative and skilled media professionals continues to rise, graduates of the BAJMC program are well-positioned to make a significant impact in their chosen fields, leading the charge in shaping the future of communication.",
+      "As the demand for innovative and skilled media professionals continues to rise, graduates of the BA.(Hons.) JMC program are well-positioned to make a significant impact in their chosen fields, leading the charge in shaping the future of communication.",
     ],
   },
 

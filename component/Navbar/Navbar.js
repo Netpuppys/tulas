@@ -1,25 +1,22 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
-import Link from "next/link";
-import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
-import TulasLogoGreen from "../../public/Components/Navbar/TulasLogoGreen.png";
-import TulasLogoRed from "../../public/Components/Navbar/TulasLogoRed.png";
-import NBA from "../../public/Components/Navbar/NBA.png";
-import { PiPencilSimpleLineLight } from "react-icons/pi";
-import NAAC from "../../public/Components/Navbar/NAAC.png";
-import { FaPen, FaPhone } from "react-icons/fa";
 import Image from "next/image";
-import NavbarMobile from "./Component/NavbarMobile";
-import NavbarDesktop from "./Component/NavbarDesktop";
-import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
+import Link from "next/link";
+import { useContext, useEffect, useState } from "react";
+import { FaPen } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
-import { UtmContext } from "../utmParams";
-import FormPopup from "../formPopup";
+import { PiPencilSimpleLineLight } from "react-icons/pi";
 import { SiGoogleforms } from "react-icons/si";
-import { BsWhatsapp } from "react-icons/bs";
 import logo360 from "../../public/Components/Navbar/logo360.png";
+import NAAC from "../../public/Components/Navbar/NAAC.png";
+import NBA from "../../public/Components/Navbar/NBA.png";
+import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
+import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import whatsapp from "../../public/Components/Navbar/whatsapp.png";
 import Years20 from "../../public/graduate-school-of-business/mba/20Years.png";
+import FormPopup from "../formPopup";
+import { UtmContext } from "../utmParams";
+import NavbarDesktop from "./Component/NavbarDesktop";
+import NavbarMobile from "./Component/NavbarMobile";
 
 function Navbar({ fullBanner = false, scroled = false }) {
   const [isChecked, setIsChecked] = useState(false);

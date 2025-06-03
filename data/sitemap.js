@@ -138,11 +138,11 @@ const sitemap = [
         ],
       },
       {
-        title: "Department of Mass Communications",
+        title: "Department of Journalism and Communications",
         linkTo: "#",
         superNestedLinks: [
           {
-            title: "BAJMC",
+            title: "BA.(Hons.) JMC",
             linkTo: "/courses/bjmc",
           },
         ],
@@ -180,15 +180,15 @@ const sitemap = [
         ],
       },
       {
-        title: "Tula's Institue of Pharmacy",
+        title: "Tula's Institute of Pharmacy",
         linkTo: "#",
         superNestedLinks: [
           {
-            title: "B.Pharma",
+            title: " B.Pharm.",
             linkTo: "/courses/bpharma",
           },
           {
-            title: "D.Pharma",
+            title: "D.Pharm.",
             linkTo: "/courses/dpharma",
           },
         ],

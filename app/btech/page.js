@@ -541,10 +541,10 @@ function BTech() {
                         </select>
                         <input
                           type="tel"
+                          maxLength={10}
                           required
                           disabled={verified}
                           value={phoneNumber}
-                          maxLength={10}
                           onChange={handlePhoneNumberChange}
                           placeholder="Enter your Mobile No...."
                           className={`py-2 focus:outline-none w-full bg-[#E9E9E9] text-[#161616] disabled:opacity-100 disabled:cursor-not-allowed placeholder:text-[#161616]`}

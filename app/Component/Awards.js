@@ -112,9 +112,9 @@ const Awards = () => {
       image: award3,
       provider: "The Times of india",
       date: "January 8, 2020",
-      title: "Tula's Institue has been ranked 32",
+      title: "Tula's Institute has been ranked 32",
       content:
-        "Tula's Institue has been ranked 32 among the private engineering colleges in India by Times Engineering Survey 2019.",
+        "Tula's Institute has been ranked 32 among the private engineering colleges in India by Times Engineering Survey 2019.",
     },
     {
       ref: fourthRef,

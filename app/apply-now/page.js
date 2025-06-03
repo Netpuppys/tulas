@@ -195,7 +195,7 @@ const page = () => {
     {
       title: "B.Sc Agriculture",
       description:
-        "Agronomy, horticulture, soil science, and agricultural economics are all covered in the multidisciplinary B.Sc. Agriculture degree. Students are prepared for jobs in agricultural research, agribusiness, and sustainable farming.",
+        "Agronomy, horticulture, soil science, and agricultural economics are all covered in the multidisciplinary B.Sc.(Hons.) Agriculture degree. Students are prepared for jobs in agricultural research, agribusiness, and sustainable farming.",
     },
     {
       title: "BA (Hons) JMC",
@@ -213,12 +213,12 @@ const page = () => {
         "A postgraduate degree that honed skills in cloud computing, AI, advanced computing, and cybersecurity, leading to high-level IT positions.",
     },
     {
-      title: "B. Pharma",
+      title: "B. Pharm",
       description:
         "This curriculum prepares students for employment in pharmacy, research, and healthcare management by giving them a thorough understanding of pharmaceuticals, drug development, and healthcare. ",
     },
     {
-      title: "D. Pharma",
+      title: "D. Pharm",
       description:
         "This program focuses on pharmaceutical sciences, medical ethics, and clinical practices, ideal for those looking to enter the healthcare sector quickly.",
     },
