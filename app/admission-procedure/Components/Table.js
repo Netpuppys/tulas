@@ -20,26 +20,26 @@ function TableRender({ tableData }) {
   const { utmParams } = useContext(UtmContext);
   return (
     <div className="flex flex-col items-center justify-center gap-4 md:gap-6 overflow-x-scroll">
-      <table className="w-full !text-white mb-4 md:mb-20 ">
+      <table className="w-full mb-4 md:mb-20 ">
         <thead>
           <tr className="font-[900]">
-            <th className="w-[5%]">S.NO</th>
-            <th className="w-[10%]">Program</th>
-            <th className="w-[70%]">ELIGIBILITY</th>
-            <th className="w-[5%]">SEATS</th>
-            <th className="w-[5%]">DURATION</th>
-            <th className="w-[5%]">APPLY</th>
+            <th className="w-[5%] text-white">S.NO</th>
+            <th className="w-[10%] text-white">Program</th>
+            <th className="w-[70%] text-white">ELIGIBILITY</th>
+            <th className="w-[5%] text-white">SEATS</th>
+            <th className="w-[5%] text-white">DURATION</th>
+            <th className="w-[5%] text-white">APPLY</th>
           </tr>
         </thead>
         <tbody>
           {tableData.map((subject, idx) => (
             <tr key={idx} className="tracking-[0.1rem] font-[700]">
-              <td>{subject.sno}</td>
-              <td>{subject.program}</td>
-              <td>{subject.eligibility}</td>
-              <td>{subject.seat}</td>
-              <td>{subject.duration}</td>
-              <td>
+              <td className="text-white">{subject.sno}</td>
+              <td className="text-white">{subject.program}</td>
+              <td className="text-white">{subject.eligibility}</td>
+              <td className="text-white">{subject.seat}</td>
+              <td className="text-white">{subject.duration}</td>
+              <td className="text-white">
                 <Link href={`/apply-now/${utmParams}`}>Apply Now</Link>
               </td>
             </tr>
