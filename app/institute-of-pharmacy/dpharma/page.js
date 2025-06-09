@@ -132,7 +132,7 @@ const page = () => {
           {/* Form */}
           <div ref={scrollRef}>
             <FormLandingPage
-              course={123}
+              course={122}
               formHeading={"D.Pharm. Admissions Open 2025"}
               thankYOu={`/institute-of-pharmacy/dpharma/thank-you/${utmParams}`}
             />
