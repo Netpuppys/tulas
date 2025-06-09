@@ -7,7 +7,6 @@ export const courses = [
   { id: 122, name: "Pharmacy" },
   { id: 127, name: "Engineering (PG)" },
   { id: 128, name: "Engineering (UG Lateral)"},
-  { id: 14, name: "Yet to decide" },
 ];
 export const specializations = {
   1: [
@@ -71,7 +70,6 @@ export const specializations = {
     },
     { id: 80, name: "B.Tech Lateral-Cyber Security" },
   ],
-  14: [{ id: 39, name: "Yet to decide" }],
 };
 export const state = [
   { id: 1, name: "Andaman and Nicobar Islands" },
