@@ -1,12 +1,12 @@
 export const courses = [
   { id: 1, name: "Management" },
   { id: 2, name: "Agriculture" },
-  { id: 3, name: "Engineering" },
+  { id: 3, name: "Engineering (UG)" },
   { id: 5, name: "Mass Communication" },
   { id: 7, name: "Computer Application" },
-  { id: 122, name: " B.Pharm." },
-  { id: 123, name: "D.Pharm." },
+  { id: 122, name: "Pharmacy" },
   { id: 127, name: "Engineering (PG)" },
+  { id: 128, name: "Engineering (UG Lateral)"},
   { id: 14, name: "Yet to decide" },
 ];
 export const specializations = {
@@ -33,38 +33,43 @@ export const specializations = {
     { id: 11, name: "B.Tech-Electronics & Communication Engineering" },
     { id: 12, name: "B.Tech-Electrical & Electronics Engineering" },
     { id: 13, name: "B.Tech-Mechanical Engineering" },
-    // { id: 14, name: "B.Tech Lateral-Civil Engineering" },
-    // { id: 15, name: "B.Tech Lateral-Computer Science & Engineering" },
-    // {
-    //   id: 16,
-    //   name: "B.Tech Lateral-Electronics & Communication Engineering",
-    // },
-    // { id: 17, name: "B.Tech Lateral-Electrical & Electronics Engineering" },
-    // { id: 18, name: "B.Tech Lateral-Mechanical Engineering" },
     { id: 22, name: "Diploma-Civil Engineering" },
     { id: 23, name: "Diploma-Computer Science & Engineering" },
     { id: 24, name: "Diploma-Mechanical Engineering" },
-    // { id: 25, name: "Diploma Lateral-Civil Engineering" },
-    // { id: 26, name: "Diploma Lateral-Mechanical Engineering" },
-
-    // { id: 53, name: "B.Tech Lateral-Data Science" },
-    // {
-    //   id: 79,
-    //   name: "B.Tech Lateral-Artificial Intelligence & Machine Learning",
-    // },
-    // { id: 80, name: "B.Tech Lateral-Cyber Security" },
   ],
   5: [{ id: 19, name: "BA(Hons)JMC" }],
   7: [
     { id: 21, name: "BCA" },
     { id: 37, name: "MCA" },
   ],
-  122: [{ id: 82, name: " B.Pharm." }],
-  123: [{ id: 83, name: "D.Pharm." }],
+  122: [
+    { id: 82, name: "B.Pharma" },
+    { id: 83, name: "D.Pharma" },
+  ],
   127: [
     { id: 27, name: "M.Tech-Computer Science & Engineering" },
     { id: 28, name: "M.Tech-Civil Engineering" },
     { id: 29, name: "M.Tech-Thermal" },
+  ],
+  128: [
+     { id: 14, name: "B.Tech Lateral-Civil Engineering" },
+    { id: 15, name: "B.Tech Lateral-Computer Science & Engineering" },
+    {
+      id: 16,
+      name: "B.Tech Lateral-Electronics & Communication Engineering",
+    },
+    { id: 17, name: "B.Tech Lateral-Electrical & Electronics Engineering" },
+    { id: 18, name: "B.Tech Lateral-Mechanical Engineering" },
+    { id: 86, name: "Diploma Lateral Computer Science"},
+    { id: 25, name: "Diploma Lateral-Civil Engineering" },
+    { id: 26, name: "Diploma Lateral-Mechanical Engineering" },
+
+    { id: 53, name: "B.Tech Lateral-Data Science" },
+    {
+      id: 79,
+      name: "B.Tech Lateral-Artificial Intelligence & Machine Learning",
+    },
+    { id: 80, name: "B.Tech Lateral-Cyber Security" },
   ],
   14: [{ id: 39, name: "Yet to decide" }],
 };
