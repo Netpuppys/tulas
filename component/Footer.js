@@ -185,7 +185,7 @@ const Footer = ({ set = false, color = false }) => {
             </button>
             <button
               onClick={() => {
-                window.location.href = `/apply-now?utm_source=google&utm_medium=cpc&utm_campaign=main_apply&utm_content=apply_cta&utm_term=direct+application`;
+                window.location.href = `/apply-now?`;
               }}
               className="w-[70%] rounded-full md:w-fit bg-[#E69706] border-2 text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
             >

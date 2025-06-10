@@ -172,7 +172,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
               <button
                 className="flex w-full flex-row justify-between items-center cursor-pointer relative"
                 onClick={() =>
-                  (window.location.href = `/apply-now?utm_source=google&utm_medium=cpc&utm_campaign=main_apply&utm_content=apply_cta&utm_term=direct+application`)
+                  (window.location.href = `/apply-now?`)
                 }
               >
                 <div
