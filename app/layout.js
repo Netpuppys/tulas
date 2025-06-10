@@ -118,6 +118,115 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CollegeOrUniversity",
+              name: "Tula's Institute",
+              url: "https://tulas.edu.in/",
+              logo: "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "0135-2699300",
+                contactType: "customer service",
+                areaServed: ["IN", "NP"],
+                availableLanguage: ["en", "Hindi"],
+              },
+              sameAs: [
+                "https://www.facebook.com/tulasinstitutedehradun/",
+                "https://twitter.com/tulas_institute",
+                "https://www.instagram.com/tulasinstitutedehradun/",
+                "https://www.youtube.com/@TulasInstitutedehradun",
+                "https://www.linkedin.com/school/tula's-institute/",
+              ],
+            }),
+          }}
+        />
+
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              name: "Tula's Institute",
+              url: "https://tulas.edu.in/",
+              potentialAction: {
+                "@type": "SearchAction",
+                target:
+                  "https://tulas.edu.in/{search_term_string}https://tulas.edu.in/apply-now/",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+
+        <Script
+          id="local-business-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Tula's Institute",
+              image:
+                "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
+              "@id": "",
+              url: "https://tulas.edu.in/",
+              telephone: "0135-2699300",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress:
+                  "Tula's Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road",
+                addressLocality: "Dehradun",
+                postalCode: "248011",
+                addressCountry: "IN",
+              },
+              sameAs: [
+                "https://www.facebook.com/tulasinstitutedehradun/",
+                "https://twitter.com/tulas_institute",
+                "https://www.instagram.com/tulasinstitutedehradun/",
+                "https://www.youtube.com/@TulasInstitutedehradun",
+                "https://www.linkedin.com/school/tula's-institute/",
+              ],
+            }),
+          }}
+        />
+        <Script
+          id="blogposting-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://tulas.edu.in/blog/"
+              },
+              "headline": "Best Engineering & Degree College in Dehradun, Uttarakhand | Tula's Institute",
+              "description": "Stay Updated With the Latest Insights, News, and Academic Advancements at Tula's Institute, the Best Engineering & Degree College in Dehradun, Uttarakhand. Explore Articles on Engineering, Technology, Student Life, Career Tips, and More from Our Expert Faculty and Students.",
+              "image": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
+              "author": {
+                "@type": "Organization",
+                "name": "Tula's Institute",
+                "url": "https://tulas.edu.in/"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Tula's Institute", // Should not be empty
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png" // Should not be empty
+                }
+              },
+              "datePublished": "2023-11-15", // Should include actual date
+              "dateModified": "2023-11-16" // Recommended to add
+            })
+          }}
+        />
       </head>
       <body className={inter.className}>
         <noscript>
