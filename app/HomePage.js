@@ -87,7 +87,7 @@ import SanskritiBannerMobile from "../public/Homepage/BannerHome/SanskritiBanner
 import MahakumbhBannerMobile from "../public/Homepage/BannerHome/MahakumbhBannerMobile.webp";
 import PlacementBannerMobile from "../public/Homepage/BannerHome/PlacementBannerMobile.webp";
 import Aictedeskstop from "../public/Homepage/BannerHome/Aictedeskstop.jpg";
-import Aicetemobile from "../public/Homepage/BannerHome/Aicetemobile.jpg";
+import Aictemobile from "../public/Homepage/BannerHome/Aictemobile.jpg";
 import { ThreeDots } from "react-loader-spinner";
 
 export default function HomePage() {
@@ -165,7 +165,7 @@ export default function HomePage() {
     SanskritiBannerMobile,
     MahakumbhBannerMobile,
     PlacementBannerMobile,
-    Aicetemobile,
+    Aictemobile,
   ];
   const name = [
     "Ranked 86th by Times of B School in India.",
