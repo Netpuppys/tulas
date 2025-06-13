@@ -141,7 +141,7 @@ export default function AboutTulasForm() {
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 7 : 2,
-      LeadSource: utmParams ? utmSource || 31 : 25,
+      LeadSource: utmParams ? utmSource || 144 : 25,
       LeadCampaign: utmParams
         ? utmCampaign || "Enquire Now Ads"
         : "Enquire Now Organic",
