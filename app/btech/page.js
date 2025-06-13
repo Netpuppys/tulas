@@ -244,7 +244,7 @@ function BTech() {
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 7 : 2,
-      LeadSource: utmParams ? utmSource || 31 : 25,
+      LeadSource: utmParams ? utmSource || 144 : 25,
       LeadCampaign: utmParams
         ? utmCampaign || "BTech page Ads"
         : "BTech page Organic",

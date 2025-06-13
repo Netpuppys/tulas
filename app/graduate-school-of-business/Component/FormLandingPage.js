@@ -27,7 +27,7 @@ function FormLandingPage({
     FirstName: "",
     Email: "",
     MobileNumber: "+91",
-    LeadSource: 52,
+    LeadSource: 144,
     LeadCampaign: "",
     LeadChannel: 7,
     Course: course,
@@ -145,7 +145,7 @@ function FormLandingPage({
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 7 : 2,
-      LeadSource: utmParams ? utmSource || 52 : 25,
+      LeadSource: utmParams ? utmSource || 144 : 25,
       LeadCampaign: utmParams
         ? utmCampaign || "Landing Page Ads"
         : "Landing Page Organic",
@@ -172,7 +172,7 @@ function FormLandingPage({
           FirstName: "",
           Email: "",
           MobileNumber: "+91",
-          LeadSource: 52,
+          LeadSource: 144,
           LeadCampaign: "",
           LeadChannel: 7,
           Course: course,

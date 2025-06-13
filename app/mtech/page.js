@@ -194,7 +194,7 @@ function MTech() {
     const updatedFormData = {
       ...formData,
       LeadChannel: utmParams ? 7 : 2,
-      LeadSource: utmParams ? utmSource || 31 : 25,
+      LeadSource: utmParams ? utmSource || 144 : 25,
       LeadCampaign: utmParams
         ? utmCampaign || "MTech page Ads"
         : "MTech page Organic",
