@@ -554,11 +554,10 @@ function BTech() {
                         type="button"
                         disabled={verified || !isPhoneValid}
                         onClick={sendOtp}
-                        className={`w-full xl:w-[40%] bg-black rounded-[3px] flex items-center justify-center xl:px-4 py-2 font-bold text-white ${
-                          isPhoneValid && !verified
+                        className={`w-full xl:w-[40%] bg-black rounded-[3px] flex items-center justify-center xl:px-4 py-2 font-bold text-white ${isPhoneValid && !verified
                             ? "cursor-pointer"
                             : "opacity-100 cursor-not-allowed"
-                        }`}
+                          }`}
                       >
                         {verified ? "Verified" : "Send OTP"}
                       </button>
