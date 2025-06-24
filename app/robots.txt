@@ -1,0 +1,61 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /Temp/
+Disallow: /tag/
+Disallow: /author/
+Disallow: /Comments/
+Disallow: /feed/
+
+User-agent: *
+Allow: /
+
+Allow:
+Allow: /category/
+Allow: /blogs/
+Allow: /blog/
+Allow: /wp-admin/*.css
+Allow: /wp-admin/*.js
+Allow: /wp-includes/*.css
+Allow: /wp-includes/*.js
+Allow: /wp-content/cache/
+Allow: /wp-content/
+Allow: /wp-admin/admin-ajax.php
+Allow: https://tulas.edu.in/sitemap.xml
+Allow: https://tulas.edu.in/sitemap_index.xml
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OpenAI
+Allow: /
+
+User-agent: AI Overview
+Allow: /
+
+User-agent: Generative Artificial Intelligence
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
