@@ -143,28 +143,29 @@ const page = () => {
       title="Tula's Institute: Nurturing the Future of Healthcare and Innovation"
       description={
         <>
+        <div className="mt-4 md:mt-[1%]"></div>
             <p>
 Established in 2006 under the Rishabh Educational Trust, Tula’s Institute is committed to
 excellence in professional education. With a growing focus on healthcare and
 pharmaceutical innovation, our B.Pharm program is designed to develop skilled
 professionals ready to make an impact in the medical and research fields.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
 As one of the leading BPharma colleges in Dehradun, Tula’s offers a curriculum that
 combines pharmaceutical science with practical lab work, clinical exposure, and ethical
 training. We prepare students not just for jobs—but for meaningful careers in drug
 development, healthcare, and biotech industries.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
 Recognized as a trusted pharmacy college in Uttarakhand, we emphasize research,
 innovation, and real-world application to ensure our graduates are equipped for both higher
 studies and immediate industry roles.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
-WWith BPharma admission 2025 now open, take your first step toward a career that saves
+With BPharma admission 2025 now open, take your first step toward a career that saves
 lives and shapes the future—only at Tula’s Institute.
       </p>
         </>

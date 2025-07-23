@@ -137,27 +137,28 @@ const page = () => {
       title="Tula's Institute: Crafting Communicators for a Changing World"
       description={
         <>
+                  <div className="mt-4 md:mt-[1%]"></div>
             <p>
 Since 2006, under the Rishabh Educational Trust, Tula’s Institute has stood for academic
 excellence and industry-driven learning. In an era where storytelling, media, and digital
 communication shape global narratives, our BA in Journalism and Mass Communication
 program equips students to lead, inform, and inspire.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
 Ranked among the top BA JMC colleges in Dehradun, Tula’s offers a rich blend of
 classroom learning, field assignments, studio experience, and internships. From news
 reporting and film production to digital content creation and public relations, we prepare
 students for diverse and dynamic careers in media.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
 With a curriculum designed to meet global standards, we are proud to be recognized for
 offering one of the most comprehensive mass communication courses in Uttarakhand. Our
 expert faculty and modern media labs foster creativity, critical thinking, and ethical
 journalism.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
 With journalism admission 2025 now open, aspiring media professionals can begin their
 journey at the best BA in Journalism & Media college—Tula’s Institute, where your voice

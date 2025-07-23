@@ -139,30 +139,31 @@ const page = () => {
       title="Tula's Institute: Building Strong Foundations in Commerce"
       description={
         <>
+        <div className="mt-4 md:mt-[1%]"></div>
             <p>
 Established in 2006 under the Rishabh Educational Trust, Tula's Institute has consistently
 delivered quality education with a future-forward vision. With a growing demand for business
 and finance professionals, our commerce programs are designed to equip students with
 analytical skills, ethical values, and practical knowledge.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
 As one of the leading BCom (Hons) colleges in Dehradun, we provide a curriculum that
 blends core concepts of accounting, finance, economics, and business law with hands-on
 learning experiences. Our mission is to prepare students for dynamic careers in commerce,
 entrepreneurship, and financial services.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
 Tula's is recognized among the best commerce colleges in Uttarakhand, offering a
 learning environment that encourages innovation, strategic thinking, and professional
 growth. As a private commerce college in Dehradun, we take pride in our personalized
 mentorship, industry exposure, and strong academic framework.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
 With BCom Hons admission 2025 now open, it's the perfect time to take the next step
-toward a successful career in commerce with Tula's Institute
+toward a successful career in commerce with Tula's Institute.
       </p>
         </>
       }

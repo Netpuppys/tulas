@@ -144,29 +144,30 @@ const page = () => {
       title="Tula’s Institute: Empowering the Next Generation of Tech Innovators"
       description={
         <>
+        <div className="mt-4 md:mt-[1%]"></div>
             <p>
         Since its inception in 2006 under the Rishabh Educational Trust, Tula’s Institute has been at
         the forefront of delivering industry-relevant education.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
         In today’s digital era, our Bachelor of Computer Applications (BCA) program is designed to
         develop tech-savvy professionals with the skills to thrive in a rapidly evolving IT landscape.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
         Recognized among the top BCA colleges in Dehradun, Tula’s combines strong academic
         foundations with hands-on training in programming, data structures, software development, and
         emerging technologies. We focus on real-world application to ensure students are industry-ready
         from day one.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
         As the best BCA college in Uttarakhand, we emphasize innovation, problem-solving, and a
         future-oriented mindset. With expert faculty, modern labs, and strong industry ties, our students
         gain a competitive edge in the tech world.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
         Admissions are now open for the BCA course admission 2025. If you're searching for reputed
         computer application colleges in Dehradun that deliver both knowledge and opportunity—Tula’s

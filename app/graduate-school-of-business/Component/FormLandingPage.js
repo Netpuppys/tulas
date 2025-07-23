@@ -264,13 +264,13 @@ function FormLandingPage({
           className="flex pointer-events-auto bg-[#3D001B] w-[95%] md:w-full mx-auto z-30 rounded-2xl overflow-hidden"
         >
           <div className="hidden bg-white md:flex flex-col rounded-r-2xl px-7 py-7 pb-4 max-w-[410px]">
-            <h3 className="text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] font-[TTChocolatesMedium] text-[#353535]">
+            <h3 className="text-[clamp(12px,4.8vw,36px)] md:text-[clamp(12px,1.3vw,50px)] font-[TTChocolatesMedium] text-[#353535]">
               Enquire Now
             </h3>
-            <p className="text-sm font-[TTChocolatesMedium] text-[#353535]">
+            {/* <p className="text-sm font-[TTChocolatesMedium] text-[#353535]">
               Subscribe to be notified about our latest endeavours, and your IT
               horizons.
-            </p>
+            </p> */}
             <a
               href="tel:+91-8069204028"
               className="flex text-sm font-[TTChocolatesMedium] text-[#353535] items-center justify-start mt-4 gap-4"

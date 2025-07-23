@@ -185,27 +185,28 @@ const page = () => {
       title="Tula's Institute: Developing Business Leaders of Tomorrow"
       description={
         <>
+        <div className="mt-4 md:mt-[1%]"></div>
             <p>
 Founded in 2006 under the Rishabh Educational Trust, Tula's Institute in Dehradun has
 emerged as a hub for nurturing future-ready professionals. With a focus on real-world
 learning, innovation, and leadership, our business programs empower students to take on
 the evolving challenges of the global market.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
 As one of the most sought-after BBA colleges in Dehradun, Tula's blends academic rigor
 with hands-on experience. Our BBA curriculum is crafted to build a strong foundation in
 management while enhancing decision-making, analytical thinking, and communication
 skills.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
 If you're looking for the best BBA college in Uttarakhand, Tula's Institute offers the perfect
 balance of quality education, experienced faculty, and career-oriented exposure. We don't
 just teach business—we build leaders who think strategically, act ethically, and adapt
 confidently.
       </p>
-
+<div className="mt-4 md:mt-[1%]"></div>
       <p>
 With BBA admission 2025 now open, this is the ideal time to join a community that believes
 in transforming ambition into achievement.

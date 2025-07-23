@@ -157,20 +157,21 @@ const page = () => {
       title="Tula's Institute: Advancing Tech Careers with Expert-Led MCA Programs"
       description={
         <>
+                  <div className="mt-4 md:mt-[1%]"></div>
             <p>
         Founded in 2006 under the Rishabh Educational Trust, Tula’s Institute has been a catalyst
 for academic and professional excellence. With the increasing demand for advanced IT
 professionals, our MCA program is structured to equip students with deep technical
 expertise, leadership skills, and the ability to innovate in the digital space.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
 As one of the leading MCA colleges in Dehradun, Tula’s offers a curriculum that blends
 core computing principles with real-world application. From software engineering and cloud
 computing to data analytics and AI, students gain exposure to the latest technologies
-shaping the tech industry
+shaping the tech industry.
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
 Recognized as the best MCA college in Uttarakhand, we are committed to empowering
 students with the knowledge and experience needed to thrive in high-growth tech careers.
@@ -178,10 +179,10 @@ Our strong industry connections, project-based learning, and career-focused appr
 us apart.
 
       </p>
-
+          <div className="mt-4 md:mt-[1%]"></div>
       <p>
 With MCA admission 2025 now open, this is your opportunity to join a program that turns
-ambition into achievement—only at Tula’s Institute
+ambition into achievement—only at Tula’s Institute.
       </p>
         </>
       }
