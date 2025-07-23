@@ -153,7 +153,39 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
+                      <CarouselContent
+      title="Tula's Institute: Advancing Tech Careers with Expert-Led MCA Programs"
+      description={
+        <>
+            <p>
+        Founded in 2006 under the Rishabh Educational Trust, Tula’s Institute has been a catalyst
+for academic and professional excellence. With the increasing demand for advanced IT
+professionals, our MCA program is structured to equip students with deep technical
+expertise, leadership skills, and the ability to innovate in the digital space.
+      </p>
+
+      <p>
+As one of the leading MCA colleges in Dehradun, Tula’s offers a curriculum that blends
+core computing principles with real-world application. From software engineering and cloud
+computing to data analytics and AI, students gain exposure to the latest technologies
+shaping the tech industry
+      </p>
+
+      <p>
+Recognized as the best MCA college in Uttarakhand, we are committed to empowering
+students with the knowledge and experience needed to thrive in high-growth tech careers.
+Our strong industry connections, project-based learning, and career-focused approach set
+us apart.
+
+      </p>
+
+      <p>
+With MCA admission 2025 now open, this is your opportunity to join a program that turns
+ambition into achievement—only at Tula’s Institute
+      </p>
+        </>
+      }
+    />
           {/* Cutting Edge */}
           {/* <CuttingEdge
             scrollRef={scrollRef}
@@ -165,7 +197,7 @@ const page = () => {
             journey={journey}
             journeyQuotes={journeyQuote}
           />
-          <TableProgram selectedCardTable={selectedCardTable} />
+          {/* <TableProgram selectedCardTable={selectedCardTable} /> */}
           <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Recruiters

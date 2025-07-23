@@ -135,8 +135,38 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
-          {/* Cutting Edge */}
+<CarouselContent
+      title="Tula's Institute: Building Strong Foundations in Commerce"
+      description={
+        <>
+            <p>
+Established in 2006 under the Rishabh Educational Trust, Tula's Institute has consistently
+delivered quality education with a future-forward vision. With a growing demand for business
+and finance professionals, our commerce programs are designed to equip students with
+analytical skills, ethical values, and practical knowledge.
+      </p>
+
+      <p>
+As one of the leading BCom (Hons) colleges in Dehradun, we provide a curriculum that
+blends core concepts of accounting, finance, economics, and business law with hands-on
+learning experiences. Our mission is to prepare students for dynamic careers in commerce,
+entrepreneurship, and financial services.
+      </p>
+
+      <p>
+Tula's is recognized among the best commerce colleges in Uttarakhand, offering a
+learning environment that encourages innovation, strategic thinking, and professional
+growth. As a private commerce college in Dehradun, we take pride in our personalized
+mentorship, industry exposure, and strong academic framework.
+      </p>
+
+      <p>
+With BCom Hons admission 2025 now open, it's the perfect time to take the next step
+toward a successful career in commerce with Tula's Institute
+      </p>
+        </>
+      }
+    />            {/* Cutting Edge */}
           {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s B.Com"} /> */}
           <div className="pt-8 md:pt-[4%]"></div>
           <Journey
@@ -144,7 +174,7 @@ const page = () => {
             journey={journey}
             journeyQuotes={journeyQuote}
           />
-          <TableProgram selectedCard1={selectedCard1} />
+          {/* <TableProgram selectedCard1={selectedCard1} /> */}
           <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Recruiters

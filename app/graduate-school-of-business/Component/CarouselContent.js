@@ -5,9 +5,22 @@ import { PiStudentFill } from "react-icons/pi";
 import { GiGraduateCap } from "react-icons/gi";
 import { FaBusinessTime, FaWifi } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-import campus from "../../../public/graduate-school-of-business/mba/campus1.webp";
 import Image from "next/image";
-function CarouselContent({ section = true }) {
+import campus from "../../../public/graduate-school-of-business/mba/campus1.webp";
+
+// ✅ DEFAULT values for title and description inside function parameters
+function CarouselContent({
+  section = true,
+  title = "About Tula's",
+  description = (
+    <>
+      Tula’s Institute, founded in 2006 under the Rishabh Educational Trust, is a premier institution in Dehradun dedicated to developing future leaders. We focus on providing a strong academic foundation while emphasizing critical thinking, strategic decision-making, and real-world skills—essential for success in today’s competitive world.
+      <br />
+      <br />
+      At Tula’s, we prepare students to navigate complex challenges, drive innovation, and lead with confidence. Our hands-on approach to learning ensures that students are not only equipped with theoretical knowledge but also practical experience.
+    </>
+  ),
+}) {
   const cards = [
     {
       icon: <FaWifi />,
@@ -47,75 +60,44 @@ function CarouselContent({ section = true }) {
     },
   ];
 
-  const sections = [
-    {
-      title: "About Tula's",
-      description: (
-        <>
-          Tula’s Institute, founded in 2006 under the Rishabh Educational Trust,
-          is a premier institution in Dehradun dedicated to developing future
-          leaders. We focus on providing a strong academic foundation while
-          emphasizing critical thinking, strategic decision-making, and
-          real-world skills—essential for success in today’s competitive world.
-          <div className="mt-4 md:mt-[1%]"></div>
-          At Tula’s, we prepare students to navigate complex challenges, drive
-          innovation, and lead with confidence. Our hands-on approach to
-          learning ensures that students are not only equipped with theoretical
-          knowledge but also practical experience.
-        </>
-      ),
-      image: campus,
-    },
-  ];
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
 
   return (
     <div className="relative flex flex-col items-center justify-center">
       {section && (
         <div className="py-8 md:py-[4%] bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
-          {sections.map((section, index) => {
-            const { ref, inView } = useInView({
-              triggerOnce: true,
-              threshold: 0.3,
-            });
-            return (
-              <div
-                ref={ref}
-                key={index}
-                className={`flex flex-col gap-8 md:gap-0 md:flex-row md:mb-[4%] last:mb-0 justify-between w-full md:w-[95%] h-fit items-center md:ml-[5%]`}
-              >
-                <div className="w-full md:px-0 md:w-[47%]">
-                  <div className="w-full block">
-                    <h3
-                      className={`
-                      text-[#007A83] px-4 text-center font-[GoudyCatalogue] md:text-start rounded-md font-semibold text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)]`}
-                    >
-                      {section.title}
-                    </h3>
-                    <h5
-                      className={`text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] text-[#4E4E4E]`}
-                    >
-                      {section.description}
-                    </h5>
-                  </div>
-                </div>
-                <div className="w-full md:w-[47%]">
-                  {section.image && (
-                    <Image
-                      src={section.image}
-                      alt=""
-                      className={`w-full h-fit  ${
-                        inView
-                          ? "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-s-3xl"
-                          : "rounded-xl md:opacity-0"
-                      }`}
-                    />
-                  )}
-                </div>
+          <div
+            ref={ref}
+            className="flex flex-col gap-8 md:gap-0 md:flex-row md:mb-[4%] last:mb-0 justify-between w-full md:w-[95%] h-fit items-center md:ml-[5%]"
+          >
+            <div className="w-full md:px-0 md:w-[47%]">
+              <div className="w-full block">
+                <h3 className="text-[#007A83] text-center font-[GoudyCatalogue] xl:text-start rounded-md font-semibold text-xl md:text-4xl leading-tight">
+                  {title}
+                </h3>
+                <h5 className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-wrap font-[TTChocolates] text-[#4E4E4E]">
+                  {description}
+                </h5>
               </div>
-            );
-          })}
+            </div>
+            <div className="w-full md:w-[47%]">
+              <Image
+                src={campus}
+                alt="Tula's campus"
+                className={`w-full h-fit ${
+                  inView
+                    ? "md:animate-translateRightImage rounded-xl md:rounded-none md:rounded-s-3xl"
+                    : "rounded-xl md:opacity-0"
+                }`}
+              />
+            </div>
+          </div>
         </div>
       )}
+
       <div className="flex flex-wrap w-full md:max-w-[90%] gap-3 md:gap-[4%] items-center justify-center mx-auto">
         {cards.map((card, index) => (
           <div key={index}>

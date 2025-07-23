@@ -187,8 +187,38 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
-          {/* Cutting Edge */}
+                      <CarouselContent
+      title="Tula's Institute: Shaping Future Engineers Since 2006"
+      description={
+        <>
+            <p>
+Established under the Rishabh Educational Trust, Tula's Institute has grown into one of the
+top BTech colleges in Dehradun, known for academic excellence and holistic development.
+As a leading private engineering college, we focus not just on imparting theoretical
+knowledge but on nurturing practical skills that prepare students for real-world challenges.
+      </p>
+
+      <p>
+With BTech admissions 2025 now open, aspiring engineers have the opportunity to join a
+campus that blends innovation, industry exposure, and a student-centric approach. Our
+curriculum is designed to foster critical thinking, strategic problem-solving, and leadership,
+traits essential in today's rapidly evolving tech landscape
+      </p>
+
+      <p>
+Recognized as the best engineering college in Uttarakhand, Tula's stands out for its
+commitment to quality education and career-focused learning. As a private BTech college
+with placements, we ensure that students are not only job-ready but future-ready, with top
+recruiters visiting us every year
+      </p>
+
+      <p>
+If you're exploring engineering colleges in Dehradun that offer a perfect blend of academics,
+infrastructure, and industry connections, Tula's Institute is your destination
+      </p>
+        </>
+      }
+    />          {/* Cutting Edge */}
           <CuttingEdge
             scrollRef={scrollRef}
             heading={"Tula’s B.Tech Specialisations"}

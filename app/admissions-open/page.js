@@ -237,23 +237,11 @@ const AdmissionOpenPage = () => {
       title: "About Tula's",
       description: (
         <>
-          Tula’s Institute, founded in 2006 under the Rishabh Educational Trust,
-          is a premier hub for education in Dehradun. We are dedicated to
-          developing future leaders. From engineers, journalists to tech gurus,
-          we have all the courses you are looking for. We focus on providing a
-          strong academic foundation while emphasizing critical thinking,
-          strategic decision-making, and real-world skills, which are essential
-          for success in today’s competitive world. Our approach is simple, we
-          do not prepare you just for the industry, but for life.
+          Tula’s Institute was established in 2006 with a vision to provide high-quality education that bridges the gap between academics and the real world. Built on a foundation of integrity, innovation, and excellence, the institute fosters an environment where students are encouraged to think critically, act ethically, and grow personally and professionally.
           <div className="mt-4 md:mt-[1%]"></div>
-          At Tula’s, we prepare students to navigate complex challenges, drive
-          innovation, and lead with confidence. All thanks to our hands-on
-          approach to learning which ensures that students are not only equipped
-          with theoretical knowledge but also practical experience. Tula’s
-          Institute Dehradun bridges the gap between the current job market and
-          the skill they look for in modern candidates. Ensure you get your
-          overall development at Tula’s Institute Dehradun. Get inspired, get
-          equipped, get started with Tula’s today!
+          We believe in nurturing minds through a balanced approach that blends theoretical knowledge with practical application. Our faculty comprises experienced educators and industry professionals dedicated to guiding students through a transformative educational journey.
+          <div className="mt-4 md:mt-[1%]"></div>
+          With state-of-the-art infrastructure, a vibrant campus culture, and a commitment to holistic development, Tula’s Institute is more than just an academic institution—it’s a community where curiosity is celebrated, leadership is cultivated, and success is redefined.
         </>
       ),
       image: campus,

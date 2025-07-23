@@ -139,8 +139,37 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
-          {/* Cutting Edge */}
+<CarouselContent
+      title="Tula's Institute: Nurturing the Future of Healthcare and Innovation"
+      description={
+        <>
+            <p>
+Established in 2006 under the Rishabh Educational Trust, Tula’s Institute is committed to
+excellence in professional education. With a growing focus on healthcare and
+pharmaceutical innovation, our B.Pharm program is designed to develop skilled
+professionals ready to make an impact in the medical and research fields.
+      </p>
+
+      <p>
+As one of the leading BPharma colleges in Dehradun, Tula’s offers a curriculum that
+combines pharmaceutical science with practical lab work, clinical exposure, and ethical
+training. We prepare students not just for jobs—but for meaningful careers in drug
+development, healthcare, and biotech industries.
+      </p>
+
+      <p>
+Recognized as a trusted pharmacy college in Uttarakhand, we emphasize research,
+innovation, and real-world application to ensure our graduates are equipped for both higher
+studies and immediate industry roles.
+      </p>
+
+      <p>
+WWith BPharma admission 2025 now open, take your first step toward a career that saves
+lives and shapes the future—only at Tula’s Institute.
+      </p>
+        </>
+      }
+    />            {/* Cutting Edge */}
           {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BCA"} /> */}
           <div className="pt-8 md:pt-[4%]"></div>
           <Journey
@@ -148,7 +177,7 @@ const page = () => {
             journey={journey}
             journeyQuotes={journeyQuote}
           />
-          <TableProgram selectedCard1={selectedCard1} />
+          {/* <TableProgram selectedCard1={selectedCard1} /> */}
           <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Recruiters

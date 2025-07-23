@@ -187,8 +187,37 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
-          {/* Cutting Edge */}
+<CarouselContent
+      title="Tula’s Institute: Shaping Visionary Business Leaders of Tomorrow"
+      description={
+        <>
+            <p>
+Established in 2006 under the Rishabh Educational Trust, Tula’s Institute has carved a niche
+in management education with a focus on leadership, strategy, and innovation. Our MBA
+program is designed to transform ambitious individuals into confident professionals ready to
+take on the global business world.
+      </p>
+
+      <p>
+Ranked among the top MBA colleges in Dehradun, Tula’s offers a dynamic learning
+environment where students gain in-depth business knowledge, hands-on experience, and
+exposure to real-time industry challenges. From marketing and finance to HR and analytics,
+our curriculum is tailored to meet the demands of a fast-changing market.
+      </p>
+
+      <p>
+As a top MBA college in Uttarakhand, we believe in blending classroom learning with
+corporate insights, mentorship, and networking opportunities. Our students graduate not just
+with a degree—but with the mindset and skill set to lead.
+      </p>
+
+      <p>
+With MBA admission 2025 now open, it's the perfect time to step into a future of endless
+possibilities—only at Tula’s Institute.
+      </p>
+        </>
+      }
+    />            {/* Cutting Edge */}
           <CuttingEdge
             scrollRef={scrollRef}
             heading={"Tula’s MBA Specialisations"}

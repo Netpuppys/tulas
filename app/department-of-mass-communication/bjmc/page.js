@@ -133,8 +133,39 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
-          {/* Cutting Edge */}
+<CarouselContent
+      title="Tula's Institute: Crafting Communicators for a Changing World"
+      description={
+        <>
+            <p>
+Since 2006, under the Rishabh Educational Trust, Tula’s Institute has stood for academic
+excellence and industry-driven learning. In an era where storytelling, media, and digital
+communication shape global narratives, our BA in Journalism and Mass Communication
+program equips students to lead, inform, and inspire.
+      </p>
+
+      <p>
+Ranked among the top BA JMC colleges in Dehradun, Tula’s offers a rich blend of
+classroom learning, field assignments, studio experience, and internships. From news
+reporting and film production to digital content creation and public relations, we prepare
+students for diverse and dynamic careers in media.
+      </p>
+
+      <p>
+With a curriculum designed to meet global standards, we are proud to be recognized for
+offering one of the most comprehensive mass communication courses in Uttarakhand. Our
+expert faculty and modern media labs foster creativity, critical thinking, and ethical
+journalism.
+      </p>
+
+      <p>
+With journalism admission 2025 now open, aspiring media professionals can begin their
+journey at the best BA in Journalism & Media college—Tula’s Institute, where your voice
+meets purpose.
+      </p>
+        </>
+      }
+    />           {/* Cutting Edge */}
           {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BA(Hons.)JMC"} /> */}
           <div className="pt-8 md:pt-[4%]"></div>
           <Journey
@@ -142,7 +173,7 @@ const page = () => {
             journey={journey}
             journeyQuotes={journeyQuote}
           />
-          <TableProgram selectedCard1={selectedCard1} />
+          {/* <TableProgram selectedCard1={selectedCard1} /> */}
           <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Recruiters

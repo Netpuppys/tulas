@@ -140,7 +140,41 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
+            <CarouselContent
+      title="Tula’s Institute: Empowering the Next Generation of Tech Innovators"
+      description={
+        <>
+            <p>
+        Since its inception in 2006 under the Rishabh Educational Trust, Tula’s Institute has been at
+        the forefront of delivering industry-relevant education.
+      </p>
+
+      <p>
+        In today’s digital era, our Bachelor of Computer Applications (BCA) program is designed to
+        develop tech-savvy professionals with the skills to thrive in a rapidly evolving IT landscape.
+      </p>
+
+      <p>
+        Recognized among the top BCA colleges in Dehradun, Tula’s combines strong academic
+        foundations with hands-on training in programming, data structures, software development, and
+        emerging technologies. We focus on real-world application to ensure students are industry-ready
+        from day one.
+      </p>
+
+      <p>
+        As the best BCA college in Uttarakhand, we emphasize innovation, problem-solving, and a
+        future-oriented mindset. With expert faculty, modern labs, and strong industry ties, our students
+        gain a competitive edge in the tech world.
+      </p>
+
+      <p>
+        Admissions are now open for the BCA course admission 2025. If you're searching for reputed
+        computer application colleges in Dehradun that deliver both knowledge and opportunity—Tula’s
+        Institute is your destination for success.
+      </p>
+        </>
+      }
+    />
           {/* Cutting Edge */}
           {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BCA"} /> */}
           <div className="pt-8 md:pt-[4%]"></div>
@@ -149,7 +183,7 @@ const page = () => {
             journey={journey}
             journeyQuotes={journeyQuote}
           />
-          <TableProgram selectedCardTable={selectedCardTable} />
+          {/* <TableProgram selectedCardTable={selectedCardTable} /> */}
           <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
             <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
               Our Recruiters
