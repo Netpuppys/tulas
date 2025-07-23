@@ -13,8 +13,8 @@ import Image from "next/image";
 function VirtualTour() {
   const [inView, setInView] = useState(false);
   const [stats, setStats] = useState([
-    { img: students, start: 2000, end: 3000, title: "BRIGHT STUDENTS" },
-    { img: faculty, start: 0, end: 150, title: "FACULTY MEMBERS" },
+    { img: students, start: 3000, end: 4000, title: "BRIGHT STUDENTS" },
+    { img: faculty, start: 0, end: 180, title: "FACULTY MEMBERS" },
     { img: experience, start: 0, end: 20, title: "YEARS OF EXPERIENCE" },
     { img: alumni, start: 6000, end: 7000, title: "GLORIOUS ALUMNI" },
     { img: acre, start: 0, end: 22, title: "ACRES CAMPUS" },

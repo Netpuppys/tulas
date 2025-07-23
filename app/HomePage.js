@@ -215,7 +215,7 @@ export default function HomePage() {
                     {item}
                   </h2>
                 </div>
-              ))}
+              ))} 
             </div>
           </marquee>
         </div>
