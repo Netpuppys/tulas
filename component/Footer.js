@@ -102,6 +102,7 @@ const Footer = ({ set = false, color = false }) => {
       linkTo: innovationAndStartupPolicy,
       target: "_blank",
     },
+    { title: "Tula's University", linkTo: "/tulas-university/" },
   ];
 
   const socialMediaLinks = [
