@@ -14,10 +14,10 @@ import Link from "next/link";
 
 function TulasUniversity() {
   const button = [
-    { title: "Details of State Govt, Act establishing the university", linkTo: TUSTATE },
-    { title: "Details of UGC's Recognition", linkTo: TUUGC },
-    { title: "All India Council for Technical Education", linkTo: TUDPR },
-    { title: "Detailed Project Report", linkTo: TUDC },
+    { title: "State Govt, Act", linkTo: TUSTATE },
+    { title: "UGC's Recognition", linkTo: TUUGC },
+    { title: "Approvals", linkTo: TUDC },
+    { title: "Detailed Project Report", linkTo: TUDPR },
   ];
   return (
     <>
