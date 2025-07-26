@@ -21,7 +21,7 @@ function BannerHome({
       setCurrentIndex((prevIndex) =>
         prevIndex < bannerImages.length - 1 ? prevIndex + 1 : 0
       );
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(intervalId);
   }, [bannerImages]);
@@ -35,11 +35,9 @@ function BannerHome({
       setScrollToSection((prev) => prev + 1);
     }
 
-    if (scrollToSection < maxSections) {
-      const element = document.getElementById(`${scrollToSection}`);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+    const element = document.getElementById(`${scrollToSection}`);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -54,12 +52,13 @@ function BannerHome({
         screen
           ? "h-[80vh] md:h-screen"
           : "aspect-[1088/1350] md:aspect-[2745/1329] mt-20 md:mt-14 md:h-full"
-      } transition-all duration-1000 bg-black bg-opacity-50 flex items-start z-0`}
+      } transition-all duration-1000 flex items-start z-0`}
     >
+      {/* Scroll Button */}
       {scrollButton && (
         <button
           onClick={handleScrollArrow}
-          className="hidden md:block bottom-10 right-10 absolute z-10 w-[100px] aspect-square"
+          className="absolute bottom-10 right-10 z-20 w-[100px] aspect-square"
         >
           <div className="relative w-full h-full flex justify-center items-center">
             <Image
@@ -71,13 +70,49 @@ function BannerHome({
           </div>
         </button>
       )}
+
+      {/* Title */}
       {title && (
-        <div className="absolute bottom-4 md:bottom-[2%] px-8 md:px-[2%]  w-full z-20">
-          <h3 className="w-fulll text-white z-10 font-[CarotSlab] leading-tight text-[clamp(10px,6.5vw,50px)] md:text-[clamp(10px,3vw,100px)] font-normal">
+        <div className="absolute bottom-4 md:bottom-[2%] px-8 md:px-[2%] w-full z-20">
+          <h3 className="text-white z-10 font-[CarotSlab] leading-tight text-[clamp(16px,7vw,60px)] md:text-[clamp(20px,4vw,120px)] font-semibold drop-shadow-md">
             {title}
           </h3>
         </div>
       )}
+
+      {/* Left & Right Arrows */}
+      <button
+        onClick={() =>
+          setCurrentIndex((prev) =>
+            prev === 0 ? bannerImages.length - 1 : prev - 1
+          )
+        }
+  className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white z-30 text-6xl font-thin"
+      >
+        ‹
+      </button>
+      <button
+        onClick={() =>
+          setCurrentIndex((prev) =>
+            prev === bannerImages.length - 1 ? 0 : prev + 1
+          )
+        }
+  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white z-30 text-6xl font-thin"
+      >
+        ›
+      </button>
+
+      {/* Dots */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-30">
+        {bannerImages.map((_, idx) => (
+          <div
+            key={idx}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              currentIndex === idx ? "bg-white" : "bg-gray-400 opacity-50"
+            }`}
+          />
+        ))}
+      </div>
     </div>
   );
 }

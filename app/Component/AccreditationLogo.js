@@ -5,10 +5,11 @@ import logo3 from "../../public/Homepage/AccreditationLogo/3.png";
 import logo4 from "../../public/Homepage/AccreditationLogo/4.png";
 import logo5 from "../../public/Homepage/AccreditationLogo/5.png";
 import logo6 from "../../public/Homepage/AccreditationLogo/6.png";
+import logo7 from "../../public/Homepage/AccreditationLogo/7.png";
 import Image from "next/image";
 
 function AccreditationLogo() {
-  const crouselImages = [logo1, logo2, logo3, logo4, logo5, logo6];
+  const crouselImages = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
   return (
     <div className="pt-8 md:pt-[3%] bg-white w-full h-fit flex flex-col items-center justify-center relative">
@@ -16,14 +17,14 @@ function AccreditationLogo() {
         Affiliations & Accreditations
       </h3>
       {/* Swiper for image carousel */}
-      <div className="w-full md:w-[90%] mx-auto flex items-center justify-center flex-wrap">
+      <div className="w-full md:w-[95%] mx-auto flex items-center justify-around flex-wrap">
         {crouselImages.map((group, index) => (
           <Image
             src={group}
             key={index}
             loading="lazy"
             alt="Top Recruiter"
-            className="w-[33.33%] md:w-[16.6%] h-fit object-cover"
+            className="w-[29.33%] md:w-[11%] h-fit object-cover"
           />
         ))}
       </div>

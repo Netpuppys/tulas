@@ -7,7 +7,7 @@ import { IoCall } from "react-icons/io5";
 import { PiPencilSimpleLineLight } from "react-icons/pi";
 import { SiGoogleforms } from "react-icons/si";
 import logo360 from "../../public/Components/Navbar/logo360.png";
-import NAAC from "../../public/Components/Navbar/NAAC.png";
+import NAAC from "../../public/Components/Navbar/Naac2.png";
 import NBA from "../../public/Components/Navbar/NBA.png";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";

@@ -88,6 +88,11 @@ import MahakumbhBannerMobile from "../public/Homepage/BannerHome/MahakumbhBanner
 import PlacementBannerMobile from "../public/Homepage/BannerHome/PlacementBannerMobile.webp";
 import Aictedeskstop from "../public/Homepage/BannerHome/Aictedeskstop.jpg";
 import Aictemobile from "../public/Homepage/BannerHome/Aictemobile.jpg";
+import desktopbanner1 from "../public/Homepage/BannerHome/desktopbanner1.jpg";
+import mobilebanner1 from "../public/Homepage/BannerHome/mobilebanner1.jpg";
+import desktopbanner2 from "../public/Homepage/BannerHome/desktopbanner2.jpg";
+import mobilebanner2 from "../public/Homepage/BannerHome/mobilebanner2.jpg";
+
 import { ThreeDots } from "react-loader-spinner";
 
 export default function HomePage() {
@@ -159,6 +164,8 @@ export default function HomePage() {
     MahakumbhBannerDesktop,
     PlacementBannerDesktop,
     Aictedeskstop,
+    desktopbanner1,
+    desktopbanner2,
   ];
   const bannerImagesMobile = [
     RankedBannerMobile,
@@ -166,6 +173,8 @@ export default function HomePage() {
     MahakumbhBannerMobile,
     PlacementBannerMobile,
     Aictemobile,
+    mobilebanner1,
+    mobilebanner2,
   ];
   const name = [
     "Ranked 86th by Times of B School in India.",
