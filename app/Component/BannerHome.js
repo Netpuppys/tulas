@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
@@ -12,48 +12,105 @@ function BannerHome({
   screen = false,
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentImage, setCurrentImage] = useState(bannerImages[0]);
+  const [prevIndex, setPrevIndex] = useState(null);
+  const [touchStartX, setTouchStartX] = useState(null);
   const [scrollToSection, setScrollToSection] = useState(1);
   const maxSections = 15;
+  const autoSlideRef = useRef(null);
+  const pauseTimeout = useRef(null);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex < bannerImages.length - 1 ? prevIndex + 1 : 0
-      );
+  // === AUTO SLIDE with pause on interaction ===
+  const startAutoSlide = () => {
+    autoSlideRef.current = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % bannerImages.length);
     }, 8000);
+  };
 
-    return () => clearInterval(intervalId);
-  }, [bannerImages]);
+  const stopAutoSlide = () => {
+    if (autoSlideRef.current) clearInterval(autoSlideRef.current);
+    if (pauseTimeout.current) clearTimeout(pauseTimeout.current);
+
+    pauseTimeout.current = setTimeout(() => {
+      startAutoSlide();
+    }, 15000); // restart after 15s idle
+  };
 
   useEffect(() => {
-    setCurrentImage(bannerImages[currentIndex]);
-  }, [currentIndex]);
+    startAutoSlide();
+    return () => clearInterval(autoSlideRef.current);
+  }, []);
 
+  // === SWIPE HANDLERS ===
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const swipeDistance = touchStartX - touchEndX;
+    const minSwipe = 50;
+    stopAutoSlide();
+
+    if (swipeDistance > minSwipe) {
+      goToNextSlide();
+    } else if (swipeDistance < -minSwipe) {
+      goToPrevSlide();
+    }
+
+    setTouchStartX(null);
+  };
+
+  // === SCROLL ARROW ===
   const handleScrollArrow = () => {
     if (scrollToSection < maxSections) {
       setScrollToSection((prev) => prev + 1);
     }
-
     const element = document.getElementById(`${scrollToSection}`);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // === SLIDE FUNCTIONS ===
+  const goToPrevSlide = () => {
+    setPrevIndex(currentIndex);
+    setCurrentIndex((prev) =>
+      prev === 0 ? bannerImages.length - 1 : prev - 1
+    );
+  };
+
+  const goToNextSlide = () => {
+    setPrevIndex(currentIndex);
+    setCurrentIndex((prev) => (prev + 1) % bannerImages.length);
+  };
+
+  const goToSlide = (idx) => {
+    setPrevIndex(currentIndex);
+    setCurrentIndex(idx);
+    stopAutoSlide();
   };
 
   return (
     <div
-      style={{
-        backgroundImage: `url(${currentImage.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-      className={`w-full relative ${
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      className={`w-full relative overflow-hidden ${
         screen
           ? "h-[80vh] md:h-screen"
           : "aspect-[1088/1350] md:aspect-[2745/1329] mt-20 md:mt-14 md:h-full"
-      } transition-all duration-1000 flex items-start z-0`}
+      }`}
     >
+      {/* Background Slides */}
+      {bannerImages.map((image, idx) => (
+        <div
+          key={idx}
+          className={`absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ${
+            idx === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+          style={{
+            backgroundImage: `url(${image.src})`,
+          }}
+        />
+      ))}
+
       {/* Scroll Button */}
       {scrollButton && (
         <button
@@ -80,24 +137,22 @@ function BannerHome({
         </div>
       )}
 
-      {/* Left & Right Arrows */}
+      {/* Arrows */}
       <button
-        onClick={() =>
-          setCurrentIndex((prev) =>
-            prev === 0 ? bannerImages.length - 1 : prev - 1
-          )
-        }
-  className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white z-30 text-6xl font-thin"
+        onClick={() => {
+          goToPrevSlide();
+          stopAutoSlide();
+        }}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white z-30 text-6xl font-thin"
       >
         ‹
       </button>
       <button
-        onClick={() =>
-          setCurrentIndex((prev) =>
-            prev === bannerImages.length - 1 ? 0 : prev + 1
-          )
-        }
-  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white z-30 text-6xl font-thin"
+        onClick={() => {
+          goToNextSlide();
+          stopAutoSlide();
+        }}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white z-30 text-6xl font-thin"
       >
         ›
       </button>
@@ -105,8 +160,9 @@ function BannerHome({
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-30">
         {bannerImages.map((_, idx) => (
-          <div
+          <button
             key={idx}
+            onClick={() => goToSlide(idx)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               currentIndex === idx ? "bg-white" : "bg-gray-400 opacity-50"
             }`}
