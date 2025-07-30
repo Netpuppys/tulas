@@ -105,7 +105,7 @@ function AICTEIDEALAB() {
             belowTitle={""}
             belowPara={""}
           />
-          <div className="container my-10">
+          <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
   <h1 className="text-2xl md:text-4xl font-bold mb-4 text-[#760135]">
     NOTICE INVITING TENDER
   </h1>
@@ -118,16 +118,17 @@ function AICTEIDEALAB() {
   <p className="my-3 text-[#000]">
     The tender document including item specifications, eligibility conditions, and terms, can be viewed and downloaded from the website of Tula's Institute, Dhoolkot, PO-Selaqui, Chakrata Road, Dehradun, Uttarakhand at www.tulas.edu.in
   </p>
-<a
-  href="/FooterPDf/idea-lab-tender.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-4 inline-block px-6 py-2 bg-[#760135] text-white rounded hover:opacity-90 transition"
->
-  Know More
-</a>
 
+  <a
+    href="/FooterPDf/idea-lab-tender.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-4 inline-block px-6 py-2 bg-[#760135] text-white rounded hover:opacity-90 transition"
+  >
+    Know More
+  </a>
 </div>
+
 
           <div className="w-full h-fit z-50">
             <Footer color={true} />
