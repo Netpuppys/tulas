@@ -9,6 +9,8 @@ import background from "../../../public/research/entrepreneurship-development-ce
 import { Fade } from "react-awesome-reveal";
 import intellectual from "../../../public/research/intellectual/intellectual.png";
 import Vision from "@/component/Programs/Vision";
+import Link from "next/link";
+// import ILT from "../../public/FooterPDf/idea-lab-tender.doc";
 
 function AICTEIDEALAB() {
   const sections = [
@@ -100,9 +102,33 @@ function AICTEIDEALAB() {
               </>
             }
             description={<></>}
-            belowTitle={"Page Under Development"}
+            belowTitle={""}
             belowPara={""}
           />
+          <div className="container my-10">
+  <h1 className="text-2xl md:text-4xl font-bold mb-4 text-[#760135]">
+    NOTICE INVITING TENDER
+  </h1>
+  <p className="mb-3 text-[#000]">
+    E-Tenders are invited in a two-bid system (Technical and Financial) for the supply/execution of the item(s)/stores/work as specified below. Submissions are invited from Original Equipment Manufacturers (OEMs) or their Authorized Distributors only, in accordance with the provisions of GFR 2017 and the terms and conditions outlined in the tender document.
+  </p>
+  <p className="my-3 text-[#000]">
+    The interested bidders should Courier/email/registered post the duly signed tender form and their bids along with scanned copies of all the relevant certificates, documents, etc., in support of their technical &amp; price bid all duly sealed and signed should be sent. The technical bids will be opened on 15/05/2025 at 5.00 P.M/ in the office of Officer in Charge (PURCHASE).
+  </p>
+  <p className="my-3 text-[#000]">
+    The tender document including item specifications, eligibility conditions, and terms, can be viewed and downloaded from the website of Tula's Institute, Dhoolkot, PO-Selaqui, Chakrata Road, Dehradun, Uttarakhand at www.tulas.edu.in
+  </p>
+<a
+  href="/FooterPDf/idea-lab-tender.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 inline-block px-6 py-2 bg-[#760135] text-white rounded hover:opacity-90 transition"
+>
+  Know More
+</a>
+
+</div>
+
           <div className="w-full h-fit z-50">
             <Footer color={true} />
           </div>
