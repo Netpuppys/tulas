@@ -138,7 +138,30 @@ const page = () => {
             />
           </div>
           {/* Content One */}
-          <CarouselContent />
+
+          <CarouselContent
+      title="About Us"
+      description={
+        <>
+        <div className="mt-4 md:mt-[1%]"></div>
+            <p>
+Tula's Institute has been a trusted name in quality education since its inception in 2006. With a commitment to shaping future healthcare professionals, our Diploma in Pharmacy program offers a strong foundation in pharmaceutical sciences, practical training, and ethical practices.
+      </p>
+<div className="mt-4 md:mt-[1%]"></div>
+      <p>
+Recognized among the leading pharmacy colleges in Dehradun, we focus on delivering hands-on experience through well-equipped labs, expert faculty, and industry-aligned curriculum. Whether you aim to work in hospitals, retail pharmacies, or pharmaceutical companies, our program prepares you for a rewarding career.
+      </p>
+<div className="mt-4 md:mt-[1%]"></div>
+      <p>
+If you're exploring options for D Pharma in Uttarakhand, Tula's Institute offers an ideal learning environment that blends academic excellence with real-world application. With pharmacy diploma admission now open, this is the perfect time to take the first step toward your professional journey.
+      </p>
+<div className="mt-4 md:mt-[1%]"></div>
+      <p>
+Don’t miss your chance—D Pharma admission 2025 at Tula's Institute is your gateway to a future in healthcare
+      </p>
+        </>
+      }
+    /> 
           {/* Cutting Edge */}
           {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BCA"} /> */}
           <div className="pt-8 md:pt-[4%]"></div>

@@ -56,7 +56,7 @@ export const features = [
 export const sideImages = [content1, content2];
 export const heading = (
   <>
-    Best Master’s of Computer Applications Institute in{" "}
+    Best Master of Computer Applications Institute in{" "}
     <span className="text-[#760135]">North India</span>
   </>
 );
@@ -197,7 +197,7 @@ export const sections = [
   {
     title: "Departmental Vision",
     description:
-      "To become centre of excellence in software development and research.",
+      "To be a centre of excellence in education of computer applications, software development, research, and technology services, while empowering the students to become innovative and responsible global professionals.",
     image: DepartmentalVission,
   },
   {
@@ -205,23 +205,11 @@ export const sections = [
     description: (
       <>
         <ul className="list-disc ml-5">
-          <li>To induce ethical values and spirit of social commitment.</li>
-          <li>
-            To provide a learning ambience to enhance innovations and problem
-            solving skills.
-          </li>
-          <li>
-            To provide a comprehensive education, benchmarked against the
-            highest global standards.
-          </li>
-          <li>
-            To collaborate with software industry and adopting technology for
-            achieving quality of technical education.
-          </li>
-          <li>
-            To promote research based projects / activities in the emerging
-            areas of technology convergence.
-          </li>
+          <li>To provide education that meets the evolving needs of the software development and technology services industry.</li>
+          <li>To nurture a thriving research ecosystem that inspires and supports interdisciplinary teamwork.</li>
+          <li>To focus on innovation, address real-world challenges, and link academic insights with practical applications.</li>
+          <li>To empower students by providing practical learning experiences, personalized mentorship, and opportunities for global engagements.</li>
+          <li>To instil ethical values and a spirit of social commitment.</li>
         </ul>
       </>
     ),
@@ -254,7 +242,7 @@ export const semesterData = [
       },
       {
         code: "CAT-002",
-        title: "Programming Fundamentals With ‘C’",
+        title: "Programming Fundamentals With 'C'",
       },
       {
         code: "CAT-003",
@@ -265,6 +253,7 @@ export const semesterData = [
       { code: "CAT-006", title: "Operating System" },
       { code: "CAT-007", title: "Computer Organization" },
       { code: "CAT-008", title: "Python Programming" },
+      { code: "AHT-303", title: "Technical Communication Skills" },
       { code: "PRACTICAL" },
       { code: "CAP-001", title: "Database Management System" },
       { code: "CAP-002", title: "Operating System" },
@@ -323,23 +312,27 @@ export const semesterData = [
       { code: "CAT-20", title: "Cloud Computing" },
       { code: "CAT-21", title: "Multimedia" },
       { code: "AHT-313", title: "Universal Human Values" },
-      {
-        code: "MCAT-305",
-        title: "Combinatorics and Graph Theory",
-      },
-      { code: "MCAT-306", title: "Universal Human Values" },
-      {
-        code: "MCAT-307",
-        title: (
-          <>
-            Any Online Course specified by AICTE on latest technology
-            <br />
-            Not Credit Course – must be completed (in 2nd Year)
-            <br />
-            to award the MCA Degree
-          </>
-        ),
-      },
+
+      { code: "AHT-311", title: "Open Elective 1" },
+      { code: "AHT-312", title: "Startup" },
+      { code: "AHT-313", title: "Principal Of Managment" },
+      // {
+      //   code: "MCAT-305",
+      //   title: "Combinatorics and Graph Theory",
+      // },
+      // { code: "MCAT-306", title: "Universal Human Values" },
+      // {
+      //   code: "MCAT-307",
+      //   title: (
+      //     <>
+      //       Any Online Course specified by AICTE on latest technology
+      //       <br />
+      //       Not Credit Course – must be completed (in 2nd Year)
+      //       <br />
+      //       to award the MCA Degree
+      //     </>
+      //   ),
+      // },
 
       { code: "PRACTICAL" },
       { code: "CAP-008", title: "Software Engineering" },
@@ -352,7 +345,7 @@ export const semesterData = [
     subjects: [
       { code: "CAT-022", title: "Network Security" },
 
-      { code: "MCAT 42X", title: "Program Elective 2" },
+      // { code: "MCAT 42X", title: "Program Elective 2" },
 
       { code: "Program Elective 2" },
       { code: "CAT-023", title: "Simulation & Modeling" },
@@ -360,7 +353,7 @@ export const semesterData = [
       { code: "CAT-025", title: "Advanced Java" },
       { code: "CAT-026", title: "Data Science" },
       { code: "CAT-027", title: "Machine Learning" },
-      { code: "MCAT 43X", title: "Program Elective 3" },
+      // { code: "MCAT 43X", title: "Program Elective 3" },
       { code: "Program Elective 3" },
       { code: "CAT-028", title: "Digital Image Processing" },
       {
