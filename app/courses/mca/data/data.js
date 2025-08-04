@@ -304,7 +304,7 @@ export const semesterData = [
       { code: "CAT-014", title: "Graph Theory" },
       { code: "CAT-015", title: "Software Engineering" },
       { code: "CAT-0XX", title: "Program Elective 1" },
-      { code: "Program Elective" },
+      { code: "List Of Program Electives 1" },
       { code: "CAT-16", title: "Big Data Analytics" },
       { code: "CAT-17", title: "Soft Computing" },
       { code: "CAT-18", title: "Internet of Things" },
@@ -312,8 +312,8 @@ export const semesterData = [
       { code: "CAT-20", title: "Cloud Computing" },
       { code: "CAT-21", title: "Multimedia" },
       { code: "AHT-313", title: "Universal Human Values" },
-
-      { code: "AHT-311", title: "Open Elective 1" },
+      { code: "Open Elective List" },
+      { code: "AHT-311", title: "Entrepreneurship" },
       { code: "AHT-312", title: "Startup" },
       { code: "AHT-313", title: "Principal Of Managment" },
       // {
@@ -366,7 +366,7 @@ export const semesterData = [
       },
       { code: "CAT-031", title: "Block Chain Architecture" },
       { code: "CAT-032", title: "Natural Language Processing" },
-      { code: "MCAP 403", title: "Major Project" },
+      // { code: "MCAP 403", title: "Major Project" },
       { code: "PRACTICAL" },
       { code: "CAP-011", title: "Network Security" },
       { code: "CAP-012", title: "Open Elective 2" },

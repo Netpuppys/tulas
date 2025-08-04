@@ -325,7 +325,7 @@ const sitemap = [
           },
           {
             title: "Research Remuneration",
-            linkTo: Research_Remuneration_Form,
+            linkTo: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:957d143a-c27f-4828-92d5-e9536adca5ce",
             target: "_blank",
           },
         ],

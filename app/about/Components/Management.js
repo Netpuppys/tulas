@@ -188,7 +188,7 @@ const cardsFaculty = [
   {
     image: nishant,
     name: "Prof. Nishant Saxena",
-    profile: "Dean Academics",
+    profile: "Addition Director",
     id: 4,
     description:
       "From a modest beginning in 2006, Tula’s Institute has now grown into a fully integrated engineering and management college. The guiding philosophy of the institute has been the creation of awareness among students so they can face the challenges globally. Tula’s Institute through its various development programmes gives students an edge over their counterparts in enabling them to prepare themselves for a world that is yet to be created, for jobs yet to be invented, and technologies yet undreamt of. In short, we create skilled individuals who are industry-ready. ",
