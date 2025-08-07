@@ -41,18 +41,7 @@ import hallfame9 from "/public/About/hallfame/Rishita Patel.png";
 import hallfame10 from "/public/About/hallfame/Shambhavi Raj Chauhan.png";
 import hallfame11 from "/public/About/hallfame/Shristi Saumya.png";
 import hallfame12 from "/public/About/hallfame/Srishti Gupta.png";
-import hallfame13 from "/public/About/hallfame/Untitled-1.png";
 
-
-import abtgallery from "/public/About/aboutgallery/lat1.jpg";
-import abtgallery1 from "/public/About/aboutgallery/lat2.jpg";
-import abtgallery2 from "/public/About/aboutgallery/lat3.jpg";
-import abtgallery3 from "/public/About/aboutgallery/lat4.jpg";
-import abtgallery4 from "/public/About/aboutgallery/lat5.jpg";
-import abtgallery5 from "/public/About/aboutgallery/lat6.jpg";
-import abtgallery6 from "/public/About/aboutgallery/lat7.jpg";
-import abtgallery7 from "/public/About/aboutgallery/lat8.jpg";
-import abtgallery8 from "/public/About/aboutgallery/lat9.jpg";
 import ImageGallery from "./ImageGallery";
 
 
@@ -92,25 +81,6 @@ const AboutGallery = dynamic(() => import("./AboutGallery"), {
     
   ];
 
-   const aboutimages = [
-    {
-      image: abtgallery,
-      image2: abtgallery1,
-      image3: abtgallery2 ,
-    },
-    {
-       image: abtgallery3,
-      image2: abtgallery4,
-      image3: abtgallery5 ,
-    },
-        {
-       image: abtgallery6,
-      image2: abtgallery7,
-      image3: abtgallery8 ,
-    },
-
-    
-  ];
 
 const button = [
   {
@@ -456,8 +426,6 @@ export default function AboutPage() {
         </div>
 
         <Virtual/>
-
-        {/* <AboutGallery aboutimages={aboutimages} />         */}
 
         <ImageGallery/>
 
