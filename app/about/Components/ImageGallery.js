@@ -82,7 +82,7 @@ export default function ImageGallery() {
         .swiper-slide.slide-custom:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) {
           clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 82%;
           transform: scale(0.9);
-          opacity: 0.5;
+          opacity: 0.6;
         }
       `}</style>
     </div>
