@@ -1,130 +1,129 @@
 "use client";
 import React from "react";
 import Navbar from "@/component/Navbar/Navbar";
-import bannerImage from "../../../public/placements/bannerImg.webp";
+import bannerImage from "../../../public/placements/placemnetnewbanner.png";
 import placement1 from "../../../public/placements/placement1.webp";
 import placement2 from "../../../public/placements/placement2.webp";
 import placement3 from "../../../public/placements/placement3.webp";
 import Footer from "@/component/Footer";
-import Vision from "@/component/Programs/Vision";
-import TopRecruiter from "@/component/topRecruiter";
-import BannerProgram from "@/component/Programs/BannerProgram";
+import { FaWifi, FaUserGraduate, FaBriefcase } from "react-icons/fa";
+import { PiStudentFill } from "react-icons/pi";
+import { FaIdBadge, FaHandshake, FaUserTie } from "react-icons/fa";
+import NewBannerProgram from "@/component/Programs/NewBannerProgram";
+import AccreditationLogo from "@/app/Component/AccreditationLogo";
+import HallFame from "@/app/about/Components/HallFame";
 
-const section = [
+import hallfame1 from "/public/About/hallfame1.png";
+import hallfame2 from "/public/About/hallfame2.png";
+import hallfame3 from "/public/About/hallfame3.png";
+import TopRecruiters from "@/app/about/Components/TopRecruiters";
+
+import {
+  FaClipboardList,
+  FaChalkboardTeacher,
+  FaBuilding,
+  FaCalendarAlt,
+  FaSearch,
+  FaEnvelopeOpenText,
+  FaHandsHelping,
+} from 'react-icons/fa';
+import PlacementProcess from "../components/PlacementProcess";
+
+   const features = [
+      {
+        image: hallfame1,
+        image2: hallfame2,
+        image3: hallfame3 ,
+      },
+      {
+         image: hallfame1,
+        image2: hallfame2,
+        image3: hallfame3 ,
+      },
+      
+    ];
+
+   const name = [
+    "Ranked 86th by Times of B School in India.",
+    "Ranked Amongst Top 50 Private College in India.",
+    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "65th best Engineering Colleges in India by Outlook.",
+    "Ranked 86th by Times of B School in India.",
+    "Ranked Amongst Top 50 Private College in India.",
+    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "65th best Engineering Colleges in India by Outlook.",
+    "Ranked 86th by Times of B School in India.",
+    "Ranked Amongst Top 50 Private College in India.",
+    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "65th best Engineering Colleges in India by Outlook.",
+  ];
+
+    const newstats = [
+    {
+      icon: <PiStudentFill className="text-[#760135] text-5xl mb-2" />,
+      value: "400+",
+      label: ["Overall Students placed"],
+    },
+    {
+      icon: <FaIdBadge className="text-[#760135] text-5xl mb-2" />,
+      value: "1.4 CR",
+      label: ["Top Packages"],
+    },
+    {
+      icon: <FaHandshake className="text-[#760135] text-6xl mb-2" />,
+      value: "79%",
+      label: ["Overall Placements"],
+    },
+    {
+      icon: <FaUserTie className="text-[#760135] text-5xl mb-2" />,
+      value: "700+",
+      label: ["Recruiters Tie-Ups"],
+    },
+  ];
+
+const stepsData = [
   {
-    title: "Career Innovation Centre (CIC)",
-    description: (
-      <>
-        Worried about what’s next after college? Wondering how to land your
-        dream job or prepare for competitive exams? Don’t worry, we’ve got your
-        back! The Career Innovation Centre (CIC) at Tula’s is here to help you
-        turn your career goals into reality.
-        <br />
-        <br />
-        <strong>Career Counselling:</strong> Struggling to figure out what comes
-        next? Our personalised guidance helps you choose the right path, whether
-        it’s a job or further studies.
-        <br />
-        <br />
-        <strong>Skill Development:</strong> Need to make your resume stand out
-        or ace that interview? We’ll teach you how to build the skills that
-        employers look for.
-        <br />
-        <br />
-        <strong>Higher Education Support:</strong> Planning for exams like GRE,
-        GATE, or CAT? We’ll help you prepare and guide you through the entire
-        process.
-        <br />
-        <br />
-        <strong>Industry Insights:</strong> Want to know the latest trends in
-        the job market? Our workshops and seminars keep you up to date with
-        industry knowledge and networking tips.
-        <br />
-        <br />
-        <strong>Connections with Recruiters:</strong> Want to work with the
-        finest organisation in your field? We connect you with top recruiters to
-        give your career a head start.
-      </>
-    ),
-    image: placement1,
+    placementtitle: 'Registration',
+    description: 'Students register for placement activities.',
+    icon: <FaClipboardList className="text-3xl text-[#74043D]" />,
   },
   {
-    title: "The Training Department",
-    description: (
-      <>
-        The Training Department offers an immersive{" "}
-        <strong>Personality Development program</strong> integrated into the
-        regular curriculum to prepare students for their professional careers.
-        Through weekly four-hour sessions, students enhance their soft skills,
-        aptitude, and attitude—essential for securing employment.
-        <br />
-        <br />
-        The department focuses on developing students holistically, ensuring
-        they are equipped to tackle corporate challenges post-graduation.{" "}
-        <strong>The School of Lifelong Learning</strong> organizes workshops,
-        group discussions, debates, and job fairs to boost engagement and
-        skill-building.
-        <br />
-        <br />
-        For 6th-semester students, the{" "}
-        <strong>"Campus to Corporate" program</strong> connects academic
-        knowledge with industry expectations, featuring top industry trainers
-        for high-quality professional development.
-      </>
-    ),
-    image: placement2,
+    placementtitle: 'Pre-Placement',
+    description: 'Skill-building sessions for job readiness.',
+    icon: <FaChalkboardTeacher className="text-3xl text-[#74043D]" />,
   },
   {
-    title: "The Placement Department",
-    description: (
-      <>
-        The Placement Department at CIC is the bridge between students and
-        leading organizations, creating opportunities for internships and
-        placements. We connect academic talent with industry needs, ensuring
-        students are ready for the professional world.
-        <br />
-        <br />
-        <strong>What We Do:</strong>
-        <br />
-        <ul className="list-disc ml-5">
-          <li>
-            Bring top-tier companies to you by building strong industry ties.
-          </li>
-          <li>
-            Create partnerships (MoUs) with leading companies for job
-            placements.
-          </li>
-          <li>Help you connect with industry professionals</li>
-          <li>
-            Invite companies to campus so you can show them what you’ve got.
-          </li>
-          <li>
-            Organize field visits to let you experience different industries up
-            close.
-          </li>
-          <li>
-            Set up workshops and job fairs to get you face-to-face with
-            employers.
-          </li>
-          <li>
-            Find both on-campus and off-campus job opportunities just for you.
-          </li>
-        </ul>
-      </>
-    ),
-    image: placement3,
+    placementtitle: 'Employer Engagement',
+    description: 'Companies invited for recruitment drives.',
+    icon: <FaBuilding className="text-3xl text-[#74043D]" />,
+  },
+  {
+    placementtitle: 'Date Allotment',
+    description: 'Recruitment dates scheduled with firms.',
+    icon: <FaCalendarAlt className="text-3xl text-[#74043D]" />,
+  },
+  {
+    placementtitle: 'Screening & Evaluation',
+    description: 'Eligibility check, tests, and GDs.',
+    icon: <FaSearch className="text-3xl text-[#74043D]" />,
+  },
+  {
+    placementtitle: 'Interviews',
+    description: 'Personal interviews with shortlisted candidates.',
+    icon: <FaUserTie className="text-3xl text-[#74043D]" />,
+  },
+  {
+    placementtitle: 'Offer Letters',
+    description: 'Job offers shared with selected students.',
+    icon: <FaEnvelopeOpenText className="text-3xl text-[#74043D]" />,
+  },
+  {
+    placementtitle: 'Post-Placement Support',
+    description: 'Joining help, documentation, and counseling.',
+    icon: <FaHandsHelping className="text-3xl text-[#74043D]" />,
   },
 ];
 
-const description = (
-  <>
-    Your time at Tula’s Institute is just the beginning. With connections to
-    top-tier companies, expert career guidance, and real-world experiences, we
-    ensure you transition smoothly from classroom to career. It’s not just about
-    landing a job — it’s about stepping into the right role, and we’re here to
-    guide you every step of the way!
-  </>
-);
 
 // Our mission is to foster a forward-thinking approach to career growth by integrating cutting-edge tools, personalized guidance, and industry connections."
 
@@ -142,18 +141,79 @@ const page = () => {
       </head>
       <body>
         <Navbar />
-        <BannerProgram title={"Placement at Tula’s"} image={bannerImage} />
-        <div className="w-full bg-white">
-          <div className="min-h-fit pt-8 md:pt-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1000px] px-8 mx-auto">
-            <h4 className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
-              {description}
-            </h4>
-          </div>
+        <NewBannerProgram image={bannerImage} mobileImage={bannerImage}/>
+
+              <div className="bg-white w-full px-3">
+        <div className="min-h-fit pt-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1200px] mx-auto">
+          <h3 className="text-2xl font-[] font-bold md:text-5xl text-[#760135] text-left mb-3">
+            <span className="text-[#000]">Placement at</span> TULA'S
+          </h3>
+          <h4 className="leading-tight text-[clamp(13px,4vw,30px)] md:text-[clamp(13px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
+            <>
+              Tula's Institute is dedicated to serve the community by recognizing the diverse needs of the individuals.  Tula's Institute is recognized as one of the 'Top Engineering Colleges in Uttarakhand. Known for its excellence in academic programs from undergraduate to postgraduate level, Tula's Institute attracts students from different states of India and neighbouring countries at priority. At Tula's Institute, we believe in maintaining a balance between academics and extra/co- curricular activities while keeping a healthy teacher-student ratio and in providing equal opportunities for all.
+            </>
+          </h4>
+        </div>
+      </div>
+
+      <AccreditationLogo/>
+
+                <div className="relative overflow-hidden my-8">
+          {/* Blurred sides */}
+          <div className="pointer-events-none absolute top-0 left-0 w-[7%] h-full z-10  bg-gradient-to-r from-[#760135] to-transparent" />
+          {/* Scrolling text */}
+          <marquee
+            direction="left"
+            scrollamount="10"
+            className="ml-[7%] w-[93%]"
+          >
+            <div className="w-fit py-2 md:py-6 flex gap-4 md:gap-[2%] whitespace-nowrap">
+              {name.map((item, index) => (
+                <div key={index} className="relative w-fit mx-auto">
+                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] bg-gradient-to-r from-[#E69706] via-[#760135] to-[#007A83] text-transparent bg-clip-text font-[TTChocolates] leading-tight font-extrabold">
+                    {item}
+                  </h2>
+                </div>
+              ))} 
+            </div>
+          </marquee>
+            <div className="pointer-events-none absolute top-0 right-0 w-[7%] h-full z-10 bg-gradient-to-l from-[#760135] to-transparent" />
+
         </div>
 
-        <Vision sections={section.slice(0, 1)} color={true} />
-        <TopRecruiter padding={true} />
-        <Vision sections={section.slice(1)} color={true} />
+
+<div className="bg-white py-5">
+  <div className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-6">
+    {newstats.map((item, idx) => (
+      <div
+        key={idx}
+        className="w-[250px] bg-white shadow-[0_2px_6px_rgba(16,105,103,0.2)] hover:shadow-[0_10px_25px_rgba(16,105,103,0.4)] transition-shadow duration-300 p-6 text-center rounded"
+      >
+        <div className="flex justify-center mb-2">{item.icon}</div>
+        <div className="text-[#760135] text-2xl font-bold">{item.value}</div>
+        <div className="text-sm text-black font-medium leading-tight mt-1">
+          <div>{item.label[0]}</div>
+          <div className="font-bold">{item.label[1]}</div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<h2 className="text-center pt-5 text-[clamp(24px,4vw,42px)] font-[Merriweather]">
+  <span className="font-bold text-[#760135]">World's Leading Brands</span>{' '}
+  <span className="font-light text-[#106967]">Hire Our Talented Students</span>
+</h2>
+
+
+    <HallFame features={features}/>
+
+    <TopRecruiters/>
+
+    <PlacementProcess steps={stepsData}/>
+    
+
+
         <div className="w-full h-fit z-50">
           <Footer />
         </div>
