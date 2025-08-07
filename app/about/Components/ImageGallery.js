@@ -8,14 +8,14 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
 const images = [
-  '/About/aboutgallery/lat1.jpg',
-  '/About/aboutgallery/lat2.jpg',
-  '/About/aboutgallery/lat3.jpg',
-  '/About/aboutgallery/lat4.jpg',
-  '/About/aboutgallery/lat5.jpg',
-  '/About/aboutgallery/lat6.jpg',
-  '/About/aboutgallery/lat7.jpg',
-  '/About/aboutgallery/lat8.jpg',
+  '/About/aboutgallery/newlat1.jpg',
+  '/About/aboutgallery/newlat2.jpg',
+  '/About/aboutgallery/newlat3.jpg',
+  '/About/aboutgallery/newlat4.jpg',
+  '/About/aboutgallery/newlat5.jpg',
+  '/About/aboutgallery/newlat6.jpg',
+  '/About/aboutgallery/newlat7.jpg',
+  '/About/aboutgallery/newlat8.jpg',
 ];
 
 export default function ImageGallery() {
