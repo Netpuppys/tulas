@@ -3,7 +3,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Autoplay } from "swiper/modules";
+import "swiper/css/pagination"; // ✅ Import pagination CSS
+import { Autoplay, Pagination } from "swiper/modules"; // ✅ Import Pagination
 
 function HallFame({ halltitle, features }) {
   const swiperRef = useRef();
@@ -31,7 +32,8 @@ function HallFame({ halltitle, features }) {
             delay: 3000,
             disableOnInteraction: true,
           }}
-          modules={[Autoplay]}
+          pagination={{ clickable: true }} // ✅ Add pagination
+          modules={[Autoplay, Pagination]} // ✅ Add module
           className="mySwiper"
           slidesPerView={1}
         >
@@ -84,6 +86,26 @@ function HallFame({ halltitle, features }) {
             )}
         </Swiper>
       </div>
+
+      {/* ✅ Pagination styles */}
+      <style jsx global>{`
+        .swiper-pagination {
+          position: relative;
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        .swiper-pagination-bullet {
+          background: #991e55;
+          opacity: 0.5;
+          transition: all 0.3s ease;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: #991e55;
+          opacity: 1;
+        }
+      `}</style>
     </div>
   );
 }

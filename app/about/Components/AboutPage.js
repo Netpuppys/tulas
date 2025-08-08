@@ -333,89 +333,91 @@ export default function AboutPage() {
   </div>
         </div>
 
-        <div className="bg-[#760135] text-white py-10 px-4">
+<div className="bg-[#760135] text-white py-10 px-4">
   <div className="max-w-7xl mx-auto">
     {/* Heading */}
-    <h2 className="text-center text-4xl font-extrabold mb-12">University Highlights</h2>
+    <h2 className="text-center text-4xl font-extrabold mb-12 text-shadow-sm">
+      University Highlights
+    </h2>
 
     {/* Grid */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
       
       {/* Box 1 */}
-      <div className="bg-[#11867D] rounded-xl py-5 px-4 flex items-center gap-4 text-left">
-        <div className="text-5xl font-extrabold leading-none">22</div>
-        <div className="text-base mt-2 font-medium">
+      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+        <div className="text-5xl font-extrabold leading-none text-shadow-sm ">22</div>
+        <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           <span className="text-sm">Years of</span><br />
           Excellence
         </div>
       </div>
 
       {/* Box 2 */}
-      <div className="bg-[#11867D] rounded-xl py-5 px-4 flex items-center gap-4 text-left">
-        <div className="text-5xl font-extrabold leading-none">₹60</div>
-        <div className="text-base mt-2 font-medium">
+      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+        <div className="text-5xl font-extrabold leading-none text-shadow-sm ">₹60</div>
+        <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           <span className="text-sm">LPA</span><br />
           Package
         </div>
       </div>
 
       {/* Box 3 */}
-      <div className="bg-[#11867D] rounded-xl py-5 px-4 flex items-center gap-4 text-left">
-        <div className="text-5xl font-extrabold leading-none">
+      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+        <div className="text-5xl font-extrabold leading-none text-shadow-sm">
           750<sup className="text-2xl align-super">+</sup>
         </div>
-        <div className="text-base mt-2 font-medium">
+        <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           Tie-Ups With<br />
           Companies
         </div>
       </div>
 
       {/* Box 4 */}
-      <div className="bg-[#11867D] rounded-xl py-5 px-4 flex items-center gap-4 text-left">
-        <div className="text-5xl font-extrabold leading-none">
+      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+        <div className="text-5xl font-extrabold leading-none text-shadow-sm">
           1.5<sup className="text-2xl align-super">+</sup>
         </div>
-        <div className="text-base mt-2 font-medium">
+        <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           Crore Funded<br />
           Projects
         </div>
       </div>
 
       {/* Box 5 */}
-      <div className="bg-[#11867D] rounded-xl py-5 px-4 flex items-center gap-4 text-left">
-        <div className="text-5xl font-extrabold leading-none">
+      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+        <div className="text-5xl font-extrabold leading-none text-shadow-sm">
           50<sup className="text-2xl align-super">+</sup>
         </div>
-        <div className="text-base mt-2 font-medium">
+        <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           Patents
         </div>
       </div>
 
       {/* Box 6 */}
-      <div className="bg-[#11867D] rounded-xl py-5 px-4 flex items-center gap-4 text-left">
-        <div className="text-sm font-semibold mb-1">Ranked</div>
-        <div className="text-5xl font-extrabold leading-none">9</div>
-        <div className="text-base mt-2 font-medium">
+      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+        <div className="text-sm font-semibold mb-1 text-shadow-sm font-serifbold">Ranked</div>
+        <div className="text-5xl font-extrabold leading-none text-shadow-sm">9</div>
+        <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           Private College<br />
           In North India
         </div>
       </div>
 
       {/* Box 7 */}
-      <div className="bg-[#11867D] rounded-xl py-5 px-4 flex items-center gap-4 text-left">
-        <div className="text-sm font-semibold mb-1">Ranked</div>
-        <div className="text-5xl font-extrabold leading-none">31</div>
-        <div className="text-base mt-2 font-medium">
+      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+        <div className="text-sm font-semibold mb-1 text-shadow-sm font-serifbold">Ranked</div>
+        <div className="text-5xl font-extrabold leading-none text-shadow-sm">31</div>
+        <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           Private College<br />
           In India
         </div>
       </div>
 
       {/* Box 8 */}
-      <div className="bg-[#11867D] rounded-xl py-5 px-4 flex items-center gap-4 text-left">
-        <div className="text-sm font-semibold mb-1">Ranked</div>
-        <div className="text-5xl font-extrabold leading-none">41</div>
-        <div className="text-base mt-2 font-medium">
+      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+        <div className="text-sm font-semibold mb-1 text-shadow-sm font-serifbold">Ranked</div>
+        <div className="text-5xl font-extrabold leading-none text-shadow-sm">41</div>
+        <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           Private College<br />
           For Placements
         </div>
@@ -423,7 +425,8 @@ export default function AboutPage() {
 
     </div>
   </div>
-        </div>
+</div>
+
 
         <Virtual/>
 

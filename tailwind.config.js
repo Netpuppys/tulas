@@ -9,6 +9,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        extrawide: ['ExtraWide', 'sans-serif'],
+        serifbold: ['LevSerifBold', 'serif'],
+        ttchocolates: ['TTChocolates', 'sans-serif'],
+        ttchocolatesMedium: ['TTChocolatesMedium', 'sans-serif'],
+        appelstroop: ['DKAppelstroop', 'cursive'],
+      },
       screens: {
         mdNavbar: "880px",
       },

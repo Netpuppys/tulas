@@ -377,3 +377,7 @@ input::-webkit-inner-spin-button {
 input[type="tel"] {
   --moz-appearance: textfield;
 }
+/* custom css */
+.text-shadow-sm {
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
