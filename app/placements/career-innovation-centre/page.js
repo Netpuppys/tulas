@@ -28,6 +28,7 @@ import {
   FaHandsHelping,
 } from 'react-icons/fa';
 import PlacementProcess from "../components/PlacementProcess";
+import TeamSection from "../components/TeamSection";
 
    const features = [
       {
@@ -206,11 +207,13 @@ const page = () => {
 </h2>
 
 
-    <HallFame features={features}/>
+    {/* <HallFame features={features}/>
 
     <TopRecruiters/>
 
     <PlacementProcess steps={stepsData}/>
+
+    <TeamSection/> */}
     
 
 
