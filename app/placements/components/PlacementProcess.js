@@ -12,7 +12,7 @@ export default function PlacementProcess({ steps = [] }) {
             className="relative flex flex-col items-center group"
           >
             {/* Number Outside (hover effect) */}
-            <div className="absolute-top-10 text-7xl font-extralight text-[#74043D] opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+            <div className="absolute-top-10 text-7xl font-bold text-[#74043D] opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
               {`0${index + 1}`}
             </div>
 

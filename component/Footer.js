@@ -20,7 +20,7 @@ import HolidayCalendar from "../public/research/holiday-calender-new.pdf";
 import Examination from "../public/research/Examination.pdf";
 import ICC from "../public/research/ICC.pdf";
 import MadatoryDisclosure from "../public/research/MadatoryDisclosure.pdf";
-import ACADEMICCALENDER from "../public/research/academic-calender-new.pdf";
+import ACADEMICCALENDER from "../public/research/Academic-calendar-semester2025-26.pdf";
 import codeOfConduct from "../public/research/code-of-conduct.pdf";
 import { FiPhone } from "react-icons/fi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";

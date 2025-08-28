@@ -13,9 +13,31 @@ import NewBannerProgram from "@/component/Programs/NewBannerProgram";
 import AccreditationLogo from "@/app/Component/AccreditationLogo";
 import HallFame from "@/app/about/Components/HallFame";
 
-import hallfame1 from "/public/About/hallfame1.png";
-import hallfame2 from "/public/About/hallfame2.png";
-import hallfame3 from "/public/About/hallfame3.png";
+import hallfame1 from "/public/About/hallfame/Aanchal.png";
+import hallfame2 from "/public/About/hallfame/ABHISHEK PANDY.png";
+import hallfame3 from "/public/About/hallfame/Dheeraj Kumar.png";
+import hallfame4 from "/public/About/hallfame/Divya Shankar.png";
+import hallfame5 from "/public/About/hallfame/Nainsee Singh.png";
+import hallfame6 from "/public/About/hallfame/Nitin.png";
+import hallfame7 from "/public/About/hallfame/Rahul Bauri.png";
+import hallfame8 from "/public/About/hallfame/Rishabh Singh Kathait.png";
+import hallfame9 from "/public/About/hallfame/Rishita Patel.png";
+import hallfame10 from "/public/About/hallfame/Shambhavi Raj Chauhan.png";
+import hallfame11 from "/public/About/hallfame/Shristi Saumya.png";
+import hallfame12 from "/public/About/hallfame/Srishti Gupta.png";
+
+import leader1 from "/public/placement-team/leader1.png";
+import leader2 from "/public/placement-team/leader2.png";
+import leader3 from "/public/placement-team/leader3.png";
+import leader4 from "/public/placement-team/leader4.png";
+import leader5 from "/public/placement-team/leader5.png";
+import leader6 from "/public/placement-team/leader6.png";
+import leader7 from "/public/placement-team/leader7.png";
+import leader8 from "/public/placement-team/leader8.png";
+import leader9 from "/public/placement-team/leader9.png";
+import leader10 from "/public/placement-team/leader10.png";
+
+
 import TopRecruiters from "@/app/about/Components/TopRecruiters";
 
 import {
@@ -29,17 +51,55 @@ import {
 } from 'react-icons/fa';
 import PlacementProcess from "../components/PlacementProcess";
 import TeamSection from "../components/TeamSection";
+import PlacementDrive from "../components/PlacementDrive";
+import Leaders from "../components/Leaders";
+import TopPlacements from "../components/TopPlacements";
+import YouTubeEmbed from "../components/YouTubeEmbed";
 
-   const features = [
+ const features = [
+    {
+      image: hallfame1,
+      image2: hallfame2,
+      image3: hallfame3 ,
+    },
+    {
+       image: hallfame4,
+      image2: hallfame5,
+      image3: hallfame6 ,
+    },
+        {
+       image: hallfame7,
+      image2: hallfame8,
+      image3: hallfame9 ,
+    },
+        {
+       image: hallfame10,
+      image2: hallfame11,
+      image3: hallfame12 ,
+    },
+    
+  ];
+
+       const leaders = [
       {
-        image: hallfame1,
-        image2: hallfame2,
-        image3: hallfame3 ,
+        image: leader1,
+        image2: leader2,
       },
       {
-         image: hallfame1,
-        image2: hallfame2,
-        image3: hallfame3 ,
+         image: leader3,
+        image2: leader4,
+      },
+      {
+         image: leader5,
+        image2: leader6,
+      },
+      {
+         image: leader7,
+        image2: leader8,
+      },
+      {
+         image: leader9,
+        image2: leader10,
       },
       
     ];
@@ -207,13 +267,21 @@ const page = () => {
 </h2>
 
 
-    {/* <HallFame features={features}/>
+    <HallFame features={features}/>
 
     <TopRecruiters/>
 
+    <Leaders features={leaders} halltitle={'Learners to Leaders'}/>
+
+    <TopPlacements/>
+
     <PlacementProcess steps={stepsData}/>
 
-    <TeamSection/> */}
+    <TeamSection/>
+
+    <YouTubeEmbed/>
+
+    <PlacementDrive/>
     
 
 
