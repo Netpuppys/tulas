@@ -55,7 +55,7 @@ import PlacementDrive from "../components/PlacementDrive";
 import Leaders from "../components/Leaders";
 import TopPlacements from "../components/TopPlacements";
 import YouTubeEmbed from "../components/YouTubeEmbed";
-import Placementbanner from "../components/Placementbanner";
+import Placementpagebanner from "../components/Placementpagebanner";
 
  const features = [
     {
@@ -203,7 +203,7 @@ const page = () => {
       </head>
       <body>
         <Navbar />
-        <Placementbanner image={bannerImage} mobileImage={bannerImage}/>
+        <Placementpagebanner image={bannerImage} mobileImage={bannerImage}/>
 
               <div className="bg-white w-full px-3">
         <div className="min-h-fit pt-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1200px] mx-auto">
