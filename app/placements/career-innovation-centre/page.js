@@ -203,6 +203,7 @@ const page = () => {
       </head>
       <body>
         <Navbar />
+        <NewBannerProgram image={bannerImage} mobileImage={bannerImage}/>
         <Placementpagebanner image={bannerImage} mobileImage={bannerImage}/>
 
               <div className="bg-white w-full px-3">
