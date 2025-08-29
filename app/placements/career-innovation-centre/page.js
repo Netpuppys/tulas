@@ -206,7 +206,7 @@ const page = () => {
 
               <div className="bg-white w-full px-3">
         <div className="min-h-fit pt-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1200px] mx-auto">
-          <h3 className="text-2xl font-[] font-bold md:text-5xl text-[#760135] text-left mb-3">
+          <h3 className="text-2xl font-[Merriweather] font-bold md:text-5xl text-[#760135] text-left mb-3">
             <span className="text-[#000]">Placement at</span> TULA'S
           </h3>
           <h4 className="leading-tight text-[clamp(13px,4vw,30px)] md:text-[clamp(13px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
