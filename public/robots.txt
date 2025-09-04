@@ -37,4 +37,4 @@ User-agent: Google-InspectionTool
 Allow: /
 
 # Sitemap location
-Sitemap: https://tulas.edu.in/robots.txt
+Sitemap: https://tulas.edu.in/sitemap.xml
