@@ -34,6 +34,10 @@ import PriyankaKumari from "../../../../public/courses/mca/PlacementDesign/Priya
 import RanjanKumar from "../../../../public/courses/mca/PlacementDesign/RanjanKumar.webp";
 import RishabhSingh from "../../../../public/courses/mca/PlacementDesign/RishabhSingh.webp";
 import TanyaChauhan from "../../../../public/courses/mca/PlacementDesign/TanyaChauhan.webp";
+import AhmadJmal from "../../../../public/courses/btech/computer-science/facultyData/AhmadJmal.webp";
+import AhmadJmalResume from "../../../../public/courses/btech/computer-science/facultyData/AhmadJmalResume.pdf";
+import aizaz from "../../../../public/courses/bca/facultyData/aizaz.webp";
+import aizazResume from "../../../../public/courses/bca/facultyData/aizazResume.pdf";
 
 export const features = [
   {
@@ -56,7 +60,7 @@ export const features = [
 export const sideImages = [content1, content2];
 export const heading = (
   <>
-    Best Master of Computer Applications Institute in{" "}
+    Best Masters in Computer Applications Institute in{" "}
     <span className="text-[#760135]">North India</span>
   </>
 );
@@ -71,7 +75,7 @@ export const quotes = (
 );
 export const content = (
   <>
-    The Master of Computer Applications (MCA) is a postgraduate pathway to
+    The Masters in Computer Applications (MCA) is a postgraduate pathway to
     advanced, specialized tech roles for aspiring tech leaders, offering
     in-depth training in software development, data science, AI, and
     cybersecurity. With fast growing global digitalization, the demand for
@@ -432,13 +436,22 @@ export const facultyData = [
     resume: sidharthaResume,
   },
   {
-    name: "Ms. Rashmi Mishra",
+    name: "Dr. Ahmad jamal",
+    designation: "Associate Professor",
+    education: "Ph.D.",
+    publications: "9",
+    experience: "9",
+    imageUrl: AhmadJmal,
+    resume: AhmadJmalResume,
+  },
+  {
+    name: "Mr. Aizaz Ahmad",
     designation: "Assistant Professor",
-    education: "MCA",
-    publications: "2",
+    education: "MCA Ph.D. (P)",
+    publications: "0",
     experience: "8",
-    imageUrl: RASHMI,
-    resume: RASHMIResume,
+    imageUrl: aizaz,
+    resume: aizazResume,
   },
 ];
 export const hod = [

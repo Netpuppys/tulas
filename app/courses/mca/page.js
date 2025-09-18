@@ -46,7 +46,7 @@ function MCA() {
         <Navbar />
         <BannerProgram
           image={BannerImg}
-          title=<>Master of Computer Applications (MCA)</>
+          title=<>Masters in Computer Applications (MCA)</>
           titleColor={""}
           description={""}
         />
