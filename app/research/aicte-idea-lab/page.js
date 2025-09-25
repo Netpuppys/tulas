@@ -113,10 +113,10 @@ function AICTEIDEALAB() {
     E-Tenders are invited in a two-bid system (Technical and Financial) for the supply/execution of the item(s)/stores/work as specified below. Submissions are invited from Original Equipment Manufacturers (OEMs) or their Authorized Distributors only, in accordance with the provisions of GFR 2017 and the terms and conditions outlined in the tender document.
   </p>
   <p className="my-3 text-[#000]">
-    The interested bidders should Courier/email/registered post the duly signed tender form and their bids along with scanned copies of all the relevant certificates, documents, etc., in support of their technical &amp; price bid all duly sealed and signed should be sent. The technical bids will be opened on 15/05/2025 at 5.00 P.M/ in the office of Officer in Charge (PURCHASE).
+    The interested bidders should Courier/email/registered post the duly signed tender form and their bids along with scanned copies of all the relevant certificates, documents, etc., in support of their technical &amp; price bid all duly sealed and signed should be sent. The technical bids will be opened on 30/09/2025 in the office of Dean research & development ,CIRE,Tula's institute Dehradun (PURCHASE).
   </p>
   <p className="my-3 text-[#000]">
-    The tender document including item specifications, eligibility conditions, and terms, can be viewed and downloaded from the website of Tula's Institute, Dhoolkot, PO-Selaqui, Chakrata Road, Dehradun, Uttarakhand at www.tulas.edu.in
+    The tender document including item specifications, eligibility conditions, and terms, can be viewed and downloaded from the website of Tula's Institute, Dhoolkot, PO-Selaqui, Chakrata Road, Dehradun, Uttarakhand at www.tulas.edu.in/research/aicte-idea-lab/
   </p>
 
   <a

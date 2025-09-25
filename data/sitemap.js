@@ -170,12 +170,18 @@ const sitemap = [
         linkTo: "#",
         superNestedLinks: [
           {
-            title: "BCA",
-            linkTo: "/courses/bca",
-          },
-          {
             title: "MCA",
             linkTo: "/courses/mca",
+          },
+        ],
+      },
+            {
+        title: "Graduate School of Computer Applications",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "BCA",
+            linkTo: "/courses/bca",
           },
         ],
       },

@@ -6,7 +6,7 @@ import ProgramEducationalOutcome from "../../../../public/courses/mca/ProgramEdu
 import clubs from "../../../../public/courses/bjmc/clubs.png";
 import beyondCurriculum from "../../../../public/courses/bca/beyondCurriculum.webp";
 import careerProspectus from "../../../../public/courses/bjmc/careerProspectus.png";
-import mcaDocument from "../../../../public/courses/mca/MCA.pdf";
+import mcaDocument from "../../../../public/courses/mca/mca-course-outcomes.pdf";
 import DepartmentalVission from "../../../../public/courses/mca/departmentVission.webp";
 import DepartmentalMission from "../../../../public/courses/mca/departmentMission.webp";
 import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
@@ -20,7 +20,7 @@ import RakeshKumarResume from "../../../../public/courses/mca/facultyData/Rakesh
 import ShikaTayal from "../../../../public/courses/mca/facultyData/ShikaTayal.webp";
 import ShikaTayalResume from "../../../../public/courses/mca/facultyData/ShikaTayalResume.pdf";
 import Musheer from "../../../../public/courses/mca/facultyData/Musheer.webp";
-import MusheerResume from "../../../../public/courses/mca/facultyData/MusheerResume.pdf";
+import MusheerResume from "../../../../public/courses/mca/facultyData/musheer-updated-resume.pdf";
 import SanjeevKumnar from "../../../../public/courses/mca/facultyData/SanjeevKumnar.webp";
 import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf";
 import Link from "next/link";
@@ -68,7 +68,7 @@ export const quotes = (
   <>
     “Code your future, innovate with technology, and transform the world with{" "}
     <strong className="text-[#760135]">
-      Tula’s Institute’s Master’s of Computer Applications Program.
+      Tula’s Institute’s Master’s in Computer Applications Program.
     </strong>
     ”
   </>
@@ -186,7 +186,7 @@ export const items = [
     image: ProgramEducationalOutcome,
   },
   {
-    title: "Program Specific Outcomes",
+    title: "Department Magazine",
     description: [
       "PSO 1: Understand and apply the computing techniques, mathematical principles and industrial concepts to effectively tackle real-time industrial challenges.",
       "PSO 2: Analyze, design, develop, test and maintain the software applications with latest computing tools and technologies.",
