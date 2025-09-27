@@ -119,14 +119,25 @@ function AICTEIDEALAB() {
     The tender document including item specifications, eligibility conditions, and terms, can be viewed and downloaded from the website of Tula's Institute, Dhoolkot, PO-Selaqui, Chakrata Road, Dehradun, Uttarakhand at www.tulas.edu.in/research/aicte-idea-lab/
   </p>
 
-  <a
-    href="/FooterPDf/idea-lab-tender.pdf"
+    <div className="w-full flex justify-start">
+      <Image
+        src="../../FooterPDf/tender-notice-new.jpg"
+        alt="Tender Notice"
+        width={600}   // set a default width
+        height={400}  // set a default height
+        className="rounded-lg object-contain h-auto mb-5"
+      />
+    </div>
+
+      <a
+    href="/FooterPDf/AICTE-idea-lab-complete-tender.pdf"
     target="_blank"
     rel="noopener noreferrer"
-    className="mt-4 inline-block px-6 py-2 bg-[#760135] text-white rounded hover:opacity-90 transition"
+    className="mt-4 px-6 py-2 bg-[#760135] text-white rounded hover:opacity-90 transition"
   >
     Know More
   </a>
+
 </div>
 
 
