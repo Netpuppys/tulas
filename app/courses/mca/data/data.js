@@ -6,7 +6,7 @@ import ProgramEducationalOutcome from "../../../../public/courses/mca/ProgramEdu
 import clubs from "../../../../public/courses/bjmc/clubs.png";
 import beyondCurriculum from "../../../../public/courses/bca/beyondCurriculum.webp";
 import careerProspectus from "../../../../public/courses/bjmc/careerProspectus.png";
-import mcaDocument from "../../../../public/courses/mca/mca-course-outcomes.pdf";
+import mcaDocument from "../../../../public/courses/mca/all-course-mca-course-outcomes.pdf";
 import DepartmentalVission from "../../../../public/courses/mca/departmentVission.webp";
 import DepartmentalMission from "../../../../public/courses/mca/departmentMission.webp";
 import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
