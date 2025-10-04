@@ -27,6 +27,14 @@ import WorkshopOnElectricVehicles from "../../public/Homepage/LatestNews/Worksho
 import WorkshopOnSpirituality from "../../public/Homepage/LatestNews/WorkshopOnSprituality.webp";
 import WorldHealthDay from "../../public/Homepage/LatestNews/WorldHealthDay.webp";
 import WorldHealthDayJuhi from "../../public/Homepage/LatestNews/WorldHealthDayJuhi.webp";
+
+import newformatimg1 from "../../public/Homepage/LatestNews/newformatimg1.webp";
+import newformatimg2 from "../../public/Homepage/LatestNews/newformatimg2.webp";
+import newformatimg3 from "../../public/Homepage/LatestNews/newformatimg3.webp";
+
+import Campusplacmentmca from "../../public/Homepage/LatestNews/Campusplacmentmca.webp";
+import Campusplacmentbsc from "../../public/Homepage/LatestNews/Campusplacmentbsc.webp";
+
 import bannerImg from "../../public/Homepage/LatestNews/bannerImageNews.webp";
 import Footer from "@/component/Footer";
 import Image from "next/image";
@@ -37,7 +45,41 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 
 function LatestNews() {
   const sports = [
-    {
+
+        {
+      image: newformatimg3,
+      name: "One Day Skill Development Workshop On Value Addition Of Holy Indian Basil/Tulsi",
+      date: "06-Oct-2025",
+      time: "11:00 am Onwards",
+      location: "Agriculture Research Farm",
+    },
+            {
+      image: newformatimg2,
+      name: "Veer Madho Singh Bhandari Uttrakhand Technical University Intercollege kabaddi League (Boys/Girls)",
+      date: "04-Oct - 05-Oct-2025",
+      time: "10:30 am Onwards",
+      location: "Tula's Campus",
+    },
+            {
+      image: newformatimg1,
+      name: "Ad - Spark Design Thinking Organized By  Nexus-CISM Buisness Simulation Club, Gradute School of Buisness",
+      date: "04-Oct-2025",
+      time: "9:45 am - 12:30 am",
+      location: "Lab 8 G-Block",
+    },
+        {
+      image: Campusplacmentbsc,
+      name: "Campus Placement Drive B.Sc. (Hons) Agriculture - 2026 Batch",
+      date: "30-Sept-2025",
+      location: "TRC Lab, Tula's Institute",
+    },
+        {
+      image: Campusplacmentmca,
+      name: "Campus Placement Drive MCA - 2026 Batch",
+      date: "29-Sept-2025",
+      location: "TRC Lab, Tula's Institute",
+    },
+        {
       image: BakeryTraining,
       name: "Tula's Institute is organizing a training program on Kneed to know Bakery Training",
       date: "03-Apr - 04-Apr-2025",

@@ -74,6 +74,28 @@ const ActiveCardModal = ({
                     </li>
                   ))}
                 </ul>
+                {/* PDF Button */}
+                    {card.pdf && (
+                      <a
+                        href={card.pdf}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-6 inline-block px-5 py-2 bg-[#007A83] text-white rounded-lg hover:bg-[#005f63] transition"
+                      >
+                        View PDF
+                      </a>
+                    )}
+
+                    {card.secondPdf && (
+                        <a
+                          href={card.secondPdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block mx-5 px-5 py-2 bg-[#E69706] text-white rounded-lg hover:bg-[#c67c05] transition"
+                        >
+                          View Another PDF
+                        </a>
+                      )}
               </div>
               {/* <div className="bg-[#007a83] min-w-60 overflow-hidden w-60 min-h-[20rem] h-[20rem] shadow-2xl">
                 <Image
