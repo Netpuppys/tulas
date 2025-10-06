@@ -80,9 +80,9 @@ const ActiveCardModal = ({
                         href={card.pdf}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-6 inline-block px-5 py-2 bg-[#007A83] text-white rounded-lg hover:bg-[#005f63] transition"
+                        className="mt-6 inline-block my-2 px-5 py-2 bg-[#007A83] text-white rounded-lg hover:bg-[#005f63] transition"
                       >
-                        View PDF
+                        New updated M1 aug to dec 2024.pdf
                       </a>
                     )}
 
@@ -91,9 +91,9 @@ const ActiveCardModal = ({
                           href={card.secondPdf}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block mx-5 px-5 py-2 bg-[#E69706] text-white rounded-lg hover:bg-[#c67c05] transition"
+                          className="inline-block my-2 px-5 py-2 bg-[#E69706] text-white rounded-lg hover:bg-[#c67c05] transition"
                         >
-                          View Another PDF
+                          New updated M2 2025- jan-jun.pdf
                         </a>
                       )}
               </div>
