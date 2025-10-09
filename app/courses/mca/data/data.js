@@ -187,11 +187,6 @@ export const items = [
   },
   {
     title: "Department Magazine",
-    description: [
-      "PSO 1: Understand and apply the computing techniques, mathematical principles and industrial concepts to effectively tackle real-time industrial challenges.",
-      "PSO 2: Analyze, design, develop, test and maintain the software applications with latest computing tools and technologies.",
-      "PSO 3: Equipped with project management skills to plan, execute, and deliver software projects effectively, considering factors such as scope, time, cost, quality, and risk.",
-    ],
       pdf: "/courses/mca/New-updated-aug-to-dec.pdf", 
         secondPdf: "/courses/mca/new-updated-jan-jun.pdf",
 

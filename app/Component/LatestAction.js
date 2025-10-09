@@ -1,16 +1,27 @@
 import React, { useRef } from "react";
-import newformatimg1 from "../../public/Homepage/LatestNews/newformatimg1.webp";
 import newformatimg2 from "../../public/Homepage/LatestNews/newformatimg2.webp";
 import newformatimg3 from "../../public/Homepage/LatestNews/newformatimg3.webp";
-
-import Campusplacmentmca from "../../public/Homepage/LatestNews/Campusplacmentmca.webp";
-import Campusplacmentbsc from "../../public/Homepage/LatestNews/Campusplacmentbsc.webp";
+import newformatimg4 from "../../public/Homepage/LatestNews/newformatimg4.webp";
+import newformatimg5 from "../../public/Homepage/LatestNews/newformatimg5.webp";
 import Image from "next/image";
 
 import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 function StatsAndNews() {
   const swiperRef = useRef();
   const sports = [
+        {
+      image: newformatimg5,
+      name: "Veer Madho Singh Bhandari Uttrakhand Technical University Intercollege Football Tournament",
+      date: "13-Oct - 14-Oct-2025",
+      time: "10:30 am Onwards",
+      location: "DR. G.G. Grag Stadium",
+    },
+            {
+      image: newformatimg4,
+      name: "Campus Placement Drive - 2026 Batch MetConnect Infotech Pvt. Ltd",
+      date: "10-Oct-2025",
+      location: "Tula's Campus",
+    },
        {
       image: newformatimg3,
       name: "One Day Skill Development Workshop On Value Addition Of Holy Indian Basil/Tulsi",
@@ -25,25 +36,7 @@ function StatsAndNews() {
       time: "10:30 am Onwards",
       location: "Tula's Campus",
     },
-            {
-      image: newformatimg1,
-      name: "Ad - Spark Design Thinking Organized By  Nexus-CISM Buisness Simulation Club, Gradute School of Buisness",
-      date: "04-Oct-2025",
-      time: "9:45 am - 12:30 am",
-      location: "Lab 8 G-Block",
-    },
-        {
-      image: Campusplacmentbsc,
-      name: "Campus Placement Drive B.Sc. (Hons) Agriculture - 2026 Batch",
-      date: "30-Sept-2025",
-      location: "TRC Lab, Tula's Institute",
-    },
-        {
-      image: Campusplacmentmca,
-      name: "Campus Placement Drive MCA - 2026 Batch",
-      date: "29-Sept-2025",
-      location: "TRC Lab, Tula's Institute",
-    },
+
   ];
 
   return (

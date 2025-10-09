@@ -31,6 +31,9 @@ import WorldHealthDayJuhi from "../../public/Homepage/LatestNews/WorldHealthDayJ
 import newformatimg1 from "../../public/Homepage/LatestNews/newformatimg1.webp";
 import newformatimg2 from "../../public/Homepage/LatestNews/newformatimg2.webp";
 import newformatimg3 from "../../public/Homepage/LatestNews/newformatimg3.webp";
+import newformatimg4 from "../../public/Homepage/LatestNews/newformatimg4.webp";
+import newformatimg5 from "../../public/Homepage/LatestNews/newformatimg5.webp";
+
 
 import Campusplacmentmca from "../../public/Homepage/LatestNews/Campusplacmentmca.webp";
 import Campusplacmentbsc from "../../public/Homepage/LatestNews/Campusplacmentbsc.webp";
@@ -46,6 +49,19 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 function LatestNews() {
   const sports = [
 
+    {
+      image: newformatimg5,
+      name: "Veer Madho Singh Bhandari Uttrakhand Technical University Intercollege Football Tournament",
+      date: "13-Oct - 14-Oct-2025",
+      time: "10:30 am Onwards",
+      location: "DR. G.G. Grag Stadium",
+    },
+            {
+      image: newformatimg4,
+      name: "Campus Placement Drive - 2026 Batch MetConnect Infotech Pvt. Ltd",
+      date: "10-Oct-2025",
+      location: "Tula's Campus",
+    },
         {
       image: newformatimg3,
       name: "One Day Skill Development Workshop On Value Addition Of Holy Indian Basil/Tulsi",
