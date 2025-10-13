@@ -238,7 +238,7 @@ export const sections = [
   {
     title: "Departmental Vision",
     description:
-      "To pave the way for business administration, amalgamating human capital development, research  and innovation with strong commitment towards society.",
+      "To emerge as a globally recognised centre for skilled human capital development, inculcating a culture of research and innovation in business administration &amp; entrepreneurship with ethical values.",
     image: DepartmentalVission,
   },
   {
@@ -247,26 +247,19 @@ export const sections = [
       <>
         <ul className="list-disc ml-5">
           <li>
-            To equip proteges with a comprehensive set of analytical, technical
-            and behavioral skills to navigate global business dynamism.
+            M1: To develop skilled professionals with strong analytical, technical, and behavioral competencies, enhancing their problem-solving ability to thrive in global business dynamism
           </li>
           <li>
-            To foster a culture of innovation and ethical practices encouraging
-            individuals to be professional and responsible value creators for
-            the society and stakeholders.
+            M2: To equip learners with analytical tools and decision-making abilities for solving complex managerial problems
           </li>
           <li>
-            To nurture entrepreneurial mind sets of aspirants by unleashing
-            enterprising skills, opportunities and facilities.
+            M3: To nurture entrepreneurial mindsets by fostering employment and ethical business practices.
           </li>
           <li>
-            To contribute for sustainable future by industrial and institutional
-            collaboration for contemporary research settings.
+            M4: To encourage research and innovation in collaboration with industries.
           </li>
           <li>
-            To cultivate strong leadership traits among learners by bridging the
-            gap between theory and practices through real world learning
-            experiences.
+            M5: To create an inclusive and diverse learning environment fostering teamwork and leadership.
           </li>
         </ul>
       </>

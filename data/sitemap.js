@@ -152,16 +152,22 @@ const sitemap = [
         linkTo: "#",
         superNestedLinks: [
           {
+            title: "MBA",
+            linkTo: "/courses/mba",
+          },
+        ],
+      },
+      {
+        title: "Department of management and commerce",
+        linkTo: "#",
+        superNestedLinks: [
+          {
             title: "BBA",
             linkTo: "/courses/bba",
           },
           {
             title: "B.Com (Hons.)",
             linkTo: "/courses/bcom",
-          },
-          {
-            title: "MBA",
-            linkTo: "/courses/mba",
           },
         ],
       },
