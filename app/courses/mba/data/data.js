@@ -33,6 +33,17 @@ import PrakharSrivastava from "../../../../public/courses/mba/PlacementDesign/Pr
 import PriyankaPriya from "../../../../public/courses/mba/PlacementDesign/PriyankaPriya.webp";
 import ShubhamSaxena from "../../../../public/courses/mba/PlacementDesign/ShubhamSaxena.webp";
 
+import ShikhaDabral from "../../../../public/courses/bba/facultyData/ShikhaDabral.webp";
+import ShikhaDabralResume from "../../../../public/courses/bba/facultyData/ShikhaDabralResume.pdf";
+import PrakashBhatnagar from "../../../../public/courses/bcom/facultyData/PrakashBhatnagar.webp";
+import PrakashBhatnagarResume from "../../../../public/courses/bcom/facultyData/PrakashBhatnagarResume.pdf";
+import Varun from "../../../../public/courses/mba/facultyData/varunsingh.jpg";
+import VarunResume from "../../../../public/courses/mba/facultyData/Varunresume.pdf";
+import Prakshit from "../../../../public/courses/mba/facultyData/parikshitkala.jpg";
+import PrakshitResume from "../../../../public/courses/mba/facultyData/prakshitresume.pdf";
+import Ranvijay from "../../../../public/courses/bba/facultyData/Ranvijay.webp";
+import RanvijayResume from "../../../../public/courses/bba/facultyData/RanvijayResume.pdf";
+
 export const features = [
   {
     image: DiptanuDebnath,
@@ -250,30 +261,30 @@ export const items = [
   {
     title: "Program Outcomes",
     description: [
-      "PO1: Apply knowledge of management theories and practices to solve business problems.",
-      "PO2: Foster analytical and critical thinking abilities for data-based decision-making.",
-      "PO3: Ability to develop value-based leadership.",
-      "PO4: Ability to understand, analyse and communicate global, economic, legal, and ethical aspects.",
-      "PO5: Ability to lead themselves and others in the achievement of organizational goals.",
+      "PO1. Apply knowledge of management theories and practices to solve business problems.",
+      "PO2. Foster Analytical and critical thinking abilities for data-based decision making.",
+      "PO3. Ability to develop Value based Leadership ability.",
+      "PO4. Ability to understand, analyze and communicate global, economic, legal, and ethical aspects of business..",
+      "PO5. Ability to lead themselves and others in the achievement of organizational goals, contributing effectively to a team environment.",
     ],
     image: Program,
   },
   {
     title: "Program Specific Outcome",
     description: [
-      "PSO 1: To develop skills in business analytics for industry and business requirements.",
-      "PSO 2: To develop skills and knowledge for entrepreneurship.",
-      "PSO 3: To develop professionals that overcome business challenges during adverse economic situations.",
+      "PSO1: Applied Finance for Global Competitiveness: Apply financial and international business knowledge to analyze global markets, manage risks, and make strategic decisions in a global business context.",
+      "PSO2: Innovative Marketing Acumen : Apply innovative digital marketing strategies with traditional marketing and supply chain operations to drive entrepreneurship, improve customer engagement, optimize value delivery, and facilitate data-driven decision-making in a dynamic business environment.",
+      "PSO3: Transformational HR Practices: Apply innovative and strategic HR practices to manage talent, foster engagement, and align HR functions with organizational goals.",
     ],
     image: Course,
   },
   {
     title: "Program Educational Objective",
     description: [
-      "PEO 1: To sharpen problem-solving ability by acquiring a holistic knowledge of the managerial concepts.",
-      "PEO 2: To make effective decisions for complex managerial problems by applying analytical tools.",
-      "PEO 3: To produce professionals, team players, and leaders in the context of a global business scenario.",
-      "PEO 4: To develop and promote an entrepreneurial mindset among learners.",
+      "PEO 1. Problem Solving: To sharpen problem solving ability by acquiring holistic knowledge of the managerial concepts.",
+      "PEO 2. Decision Making: To make effective decisions for complex managerial problems by applying analytical tools.",
+      "PEO 3. Leadership &amp;amp; Innovation: To develop team players, equipped with the skills to succeed in dynamic global business environments and drive innovation.",
+      "PEO 4: Ethical Entrepreneurship: To inculcate an entrepreneurial mindset to create value, drive innovation, and uphold ethical business practices for sustainable development and responsible leadership.",
     ],
     image: Program,
   },
@@ -293,7 +304,7 @@ export const sections = [
   {
     title: "Departmental Vision",
     description:
-      "To pave the way for business administration, amalgamating human capital development, research and innovation with strong commitment towards society.",
+      "To emerge as a globally recognised centre for skilled human capital development, inculcating a culture of research and innovation in business administration &amp; entrepreneurship with ethical values.",
     image: DepartmentalVission,
   },
   {
@@ -302,26 +313,19 @@ export const sections = [
       <>
         <ul className="list-disc ml-5">
           <li>
-            To equip proteges with a comprehensive set of analytical, technical
-            and behaviourial skills to navigate global business dynamism.
+            M1: To develop skilled professionals with strong analytical, technical, and behavioral competencies, enhancing their problem-solving ability to thrive in global business dynamism
           </li>
           <li>
-            To foster a culture of innovation and ethical practices encouraging
-            individuals to be professional and responsible value creators for
-            the society and stakeholders.
+            M2: To equip learners with analytical tools and decision-making abilities for solving complex managerial problems
           </li>
           <li>
-            To nurture entrepreneurial mind sets of aspirants by unleashing
-            enterprising skills, opportunities and facilities.
+            M3: To nurture entrepreneurial mindsets by fostering employment and ethical business practices.
           </li>
           <li>
-            To contribute for sustainable future by industrial and institutional
-            collaboration for contemporary research settings.
+            M4: To encourage research and innovation in collaboration with industries.
           </li>
           <li>
-            To cultivate strong leadership traits among learners by bridging the
-            gap between theory and practices through real world learning
-            experiences.
+            M5: To create an inclusive and diverse learning environment fostering teamwork and leadership.
           </li>
         </ul>
       </>
@@ -452,25 +456,7 @@ export const facultyData = [
     imageUrl: ArghyaSarkar,
     resume: ArghyaSarkarResume,
   },
-  {
-    name: "Prof. Amit Nautiyal",
-    designation: "Professor",
-    education: "Ph.D.",
-    publications: "19",
-    experience: "12.5",
-    imageUrl: AmitNautiyal,
-    resume: AmitNautiyalResume,
-  },
-  {
-    name: "Dr. Anant Lakshendra",
-    designation: "Associate Professor",
-    education: "Ph.D.",
-    publications: "11",
-    experience: "24",
-    imageUrl: AnantLakshendra,
-    resume: AnantLakshendraResume,
-  },
-  {
+    {
     name: "Dr. Abdal Ahmad",
     designation: "ASST PROFESSOR",
     education: "Ph.D.",
@@ -480,6 +466,14 @@ export const facultyData = [
     resume: AbdalAhmedResume,
   },
   {
+    name: "Dr. Shikha Dabral",
+    designation: "ASST PROFESSOR",
+    education: "Ph.D.",
+    experience: "8",
+    imageUrl: ShikhaDabral,
+    resume: ShikhaDabralResume,
+  },
+  {
     name: "Dr. Akansha Gautam",
     designation: "ASST PROFESSOR",
     education: "Ph.D.",
@@ -487,6 +481,24 @@ export const facultyData = [
     experience: "9",
     imageUrl: Akansha,
     resume: AkanshaResume,
+  },
+    {
+    name: "Dr. Rajvijay Singh",
+    designation: "ASST PROFESSOR",
+    education: "Ph.D.",
+    publications: "4",
+    experience: "5",
+    imageUrl: Ranvijay,
+    resume: RanvijayResume,
+  },
+    {
+    name: "Prof. Parikshit Kala",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D.(P)",
+    publications: "3",
+    experience: "6",
+    imageUrl: Prakshit,
+    resume: PrakshitResume,
   },
   {
     name: "Mr. Emmanuel Gabriel",
@@ -515,7 +527,15 @@ export const facultyData = [
     imageUrl: BharatBhushan,
     resume: BharatBhushanResume,
   },
-
+  {
+    name: "Prakash Bhatnager",
+    designation: "ASST PROFESSOR",
+    education: "MBA, Ph.D.(P)",
+    publications: "1",
+    experience: "6",
+    imageUrl: PrakashBhatnagar,
+    resume: PrakashBhatnagarResume,
+  },
   {
     name: "Ms. Swati Yadav",
     designation: "ASST PROFESSOR",
@@ -526,13 +546,13 @@ export const facultyData = [
     resume: SwatiYadavResume,
   },
   {
-    name: "Ms. Nandini Dhyani",
+    name: "Mr. Varun Kumar",
     designation: "ASST PROFESSOR",
     education: "MBA, Ph.D.(P)",
     publications: "3",
     experience: "6",
-    imageUrl: Nandini,
-    resume: NandiniResume,
+    imageUrl: Varun,
+    resume: VarunResume,
   },
 ];
 export const itemsClubs = [

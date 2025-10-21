@@ -35,6 +35,18 @@ import rohitKotnala from "../../../../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../../../../public/courses/bca/saurabhRawat.png";
 import content1 from "../../../../public/courses/bca/content1.webp";
 import content2 from "../../../../public/courses/bca/content2.webp";
+
+import AkhileshPandey from "../../../../public/courses/bca/facultyData/akhileshpandey.jpeg";
+import AkhileshPandeyResume from "../../../../public/courses/bca/facultyData/AkhileshPandeyresume.pdf";
+import AnanyaSharma from "../../../../public/courses/bca/facultyData/ananyasharma.jpg";
+import AnanyaSharmaResume from "../../../../public/courses/bca/facultyData/ananyasharmaresume.pdf";
+import ApoorvTalvar from "../../../../public/courses/bca/facultyData/apoorvtalvar.jpg";
+import ApoorvTalvarResume from "../../../../public/courses/bca/facultyData/Apporvatalvarresume.pdf";
+import AnandOjha from "../../../../public/courses/bca/facultyData/anandojha.jpg";
+import AnandResume from "../../../../public/courses/bca/facultyData/anandresume.pdf";
+
+
+
 export const features = [
   {
     image: anshikaPundir,
@@ -373,24 +385,6 @@ export const semesterData = [
 ];
 export const facultyData = [
   {
-    name: "Dr Priya Matta",
-    designation: "Associate Professor & HoD",
-    education: "Ph.D.",
-    publications: "67",
-    experience: "20",
-    imageUrl: Priya,
-    resume: PriyaResume,
-  },
-  {
-    name: "Mr. Aizaz Ahmad",
-    designation: "Assistant Professor",
-    education: "MCA Ph.D. (P)",
-    publications: "0",
-    experience: "8",
-    imageUrl: aizaz,
-    resume: aizazResume,
-  },
-  {
     name: "Ms.Vaibhavi Panuily",
     designation: "Assistant Professor",
     education: "MCA Ph.D. (P)",
@@ -407,6 +401,24 @@ export const facultyData = [
     experience: "8",
     imageUrl: devendraSoo,
     resume: devendraSooResume,
+  },
+    {
+    name: "Ms. Divya Negi",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "1",
+    experience: "3",
+    imageUrl: DivyaNegi,
+    resume: DivyaNegiResume,
+  },
+    {
+    name: "Mr.Anuj Singh Rajput",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "2",
+    experience: "3",
+    imageUrl: anuj,
+    resume: anujResume,
   },
   {
     name: "Mohd. Murshleen",
@@ -427,24 +439,6 @@ export const facultyData = [
     resume: HemlataResume,
   },
   {
-    name: "Ms. Divya Negi",
-    designation: "Assistant Professor",
-    education: "MCA ",
-    publications: "1",
-    experience: "3",
-    imageUrl: DivyaNegi,
-    resume: DivyaNegiResume,
-  },
-  {
-    name: "Mr.Anuj Singh Rajput",
-    designation: "Assistant Professor",
-    education: "MCA ",
-    publications: "2",
-    experience: "3",
-    imageUrl: anuj,
-    resume: anujResume,
-  },
-  {
     name: "Ms Payal Manwal",
     designation: "Assistant Professor",
     education: "MCA ",
@@ -452,6 +446,43 @@ export const facultyData = [
     experience: "1",
     imageUrl: PayalManwal,
     resume: PayalManwalResume,
+  },
+    {
+    name: "Mr Akhilesh Pandey",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "2",
+    experience: "4",
+    imageUrl: AkhileshPandey,
+    resume: AkhileshPandeyResume,
+  },
+    {
+    name: "Ms Ananya Sharma",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "1",
+    experience: "3",
+    imageUrl: AnanyaSharma,
+    resume: AnanyaSharmaResume,
+  },
+    {
+    name: "Mr Anand Ojha",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "3",
+    experience: "5",
+    imageUrl: AnandOjha,
+    resume: AnandResume,
+
+  },
+    {
+    name: "Ms Apoorva Talwar",
+    designation: "Assistant Professor",
+    education: "MCA ",
+    publications: "1",
+    experience: "12",
+    imageUrl: ApoorvTalvar,
+    resume: ApoorvTalvarResume,
   },
 ];
 export const itemsClubs = [
