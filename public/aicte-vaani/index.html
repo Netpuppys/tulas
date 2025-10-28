@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AICTE-VAANI Workshop | Tula's Institute, Dehradun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+      background-attachment: fixed;
+      color: #222;
+      line-height: 1.8;
+      overflow-x: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: relative;
+    }
+    
+    /* Tech Pattern Background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+      z-index: 0;
+      pointer-events: none;
+    }
+    
+    /* Floating Tech Elements */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 40% 80%, rgba(34, 211, 238, 0.08) 0%, transparent 40%);
+      animation: techFloat 20s ease-in-out infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+    
+    @keyframes techFloat {
+      0%, 100% { 
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      50% { 
+        transform: translateY(-30px) scale(1.05);
+        opacity: 0.8;
+      }
+    }
+    
+    /* Allow selection for inputs */
+    input, textarea {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(30,60,114,0.95), rgba(126,34,206,0.85)), 
+                  url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 80px 20px 40px;
+      margin-top: 0;
+      overflow: hidden;
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(102,126,234,0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(118,75,162,0.3) 0%, transparent 50%);
+      animation: heroFloat 15s ease-in-out infinite;
+    }
+    
+    @keyframes heroFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-30px); }
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      animation: fadeInUp 1.2s ease-out;
+    }
+    
+    .hero-title {
+      font-size: clamp(1.8em, 5vw, 3em);
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-shadow: 3px 3px 20px rgba(0,0,0,0.4);
+      line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+      font-size: clamp(1em, 3vw, 1.4em);
+      margin-bottom: 12px;
+      color: #fbbf24;
+      font-weight: 600;
+    }
+    
+    .hero-description {
+      font-size: clamp(0.9em, 2.5vw, 1.05em);
+      margin-bottom: 25px;
+      opacity: 0.95;
+      padding: 0 10px;
+    }
+    
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    
+    .badge {
+      background: rgba(255,255,255,0.2);
+      padding: 8px 20px;
+      border-radius: 50px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 2px solid rgba(255,255,255,0.3);
+      font-weight: 600;
+      font-size: clamp(0.85em, 2vw, 1em);
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+    }
+    
+    .badge-link {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .badge-link:hover {
+      background: rgba(255,255,255,0.35);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+      border-color: rgba(255,255,255,0.5);
+    }
+    
+    .badge-link:active {
+      transform: translateY(-1px) scale(1.02);
+    }
+    
+    .register-btn {
+      margin-top: 50px;
+      padding: 15px 40px;
+      font-size: 1.1em;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: #1e3c72;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+      animation: heroFloat 3s ease-in-out infinite;
+    }
+    
+    .register-btn:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 12px 35px rgba(251, 191, 36, 0.6);
+      background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    }
+    
+    .register-btn:active {
+      transform: translateY(-2px) scale(1.02);
+    }
+    
+    /* Hero Language Toggle */
+    .hero-lang-toggle {
+      position: absolute;
+      top: 100px;
+      right: 20px;
+      z-index: 100;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: #1e3c72;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+    
+    .hero-lang-toggle:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(251, 191, 36, 0.6);
+    }
+    
+    .hero-lang-toggle:active {
+      transform: translateY(0);
+    }
+    
+    .hero-lang-toggle::before {
+      content: '🌐';
+      font-size: 18px;
+    }
+    
+    .hero-lang-content {
+      display: none;
+      animation: fadeInUp 0.5s ease-out;
+    }
+    
+    .hero-lang-content.active {
+      display: block;
+    }
+    
+    /* Scroll Progress Bar */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      z-index: 9999;
+      transition: width 0.2s ease;
+      box-shadow: 0 0 10px rgba(102,126,234,0.8);
+    }
+    
+    header {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      animation: slideDown 1s ease-out;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+      flex-wrap: wrap;
+      padding: 5px;
+      border-radius: 0;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(255,255,255,0.1);
+      animation: fadeInUp 1.2s ease-out 0.3s backwards;
+    }
+    
+    .logo-container img {
+      height: 50px;
+      object-fit: contain;
+      padding: 5px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: scaleIn 0.6s ease-out backwards;
+    }
+    
+    .logo-container a {
+      display: inline-block;
+      text-decoration: none;
+      line-height: 0;
+    }
+    
+    .logo-container a:nth-child(1) img {
+      background: #1a1a1a;
+      animation-delay: 0.1s;
+    }
+    
+    .logo-container a:nth-child(2) img,
+    .logo-container a:nth-child(3) img {
+      background: white;
+    }
+    
+    .logo-container a:nth-child(2) img { animation-delay: 0.2s; }
+    .logo-container a:nth-child(3) img { animation-delay: 0.3s; }
+    
+    .logo-container img:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+    
+    @keyframes scaleIn {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    
+    @keyframes fadeInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+      animation: fadeInUp 1s ease-out 0.5s backwards;
+      background: linear-gradient(45deg, #fff, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    header p {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease-out 0.7s backwards;
+      font-weight: 300;
+    }
+    
+    header p strong {
+      font-weight: 600;
+      color: #fbbf24;
+    }
+    
+    main {
+      position: relative;
+      z-index: 1;
+      background: transparent;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .section-wrapper {
+      padding: 30px 0;
+      position: relative;
+    }
+    
+    .section-wrapper:nth-child(even) {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .section-wrapper:nth-child(even)::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.05), transparent);
+      pointer-events: none;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      color: #d97706;
+      margin-bottom: 25px;
+      position: relative;
+      padding-bottom: 10px;
+      text-shadow: 0 2px 10px rgba(217, 119, 6, 0.3);
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #d97706, #f59e0b);
+      border-radius: 2px;
+    }
+    
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    
+    .content-grid.reverse {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 25px;
+      align-items: center;
+    }
+    
+    .content-grid.reverse .content-text {
+      order: 1 !important;
+    }
+    
+    .content-grid.reverse .content-image {
+      order: 2 !important;
+    }
+    
+    .content-text {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      border: 1px solid rgba(59, 130, 246, 0.1);
+    }
+    
+    .content-image {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 0 1px rgba(59, 130, 246, 0.2);
+      transition: transform 0.4s ease;
+      border: 2px solid rgba(59, 130, 246, 0.2);
+    }
+    
+    .content-image:hover {
+      transform: scale(1.05);
+    }
+    
+    .content-image img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .single-column {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.1);
+      border: 1px solid rgba(59, 130, 246, 0.1);
+    }
+    
+    .single-column p {
+      margin: 8px 0;
+    }
+    
+    .single-column .content-block {
+      margin-bottom: 0;
+    }
+    
+    .content-block {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    .content-block:nth-child(1) { animation-delay: 0.1s; }
+    .content-block:nth-child(2) { animation-delay: 0.15s; }
+    .content-block:nth-child(3) { animation-delay: 0.2s; }
+    .content-block:nth-child(4) { animation-delay: 0.25s; }
+    .content-block:nth-child(5) { animation-delay: 0.3s; }
+    .content-block:nth-child(6) { animation-delay: 0.35s; }
+    
+    h2 {
+      color: #d97706;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-size: 1.6em;
+      position: relative;
+      font-weight: 700;
+      transition: color 0.3s ease;
+      text-shadow: 0 2px 10px rgba(217, 119, 6, 0.3);
+    }
+    
+    h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 6px;
+      background: linear-gradient(180deg, #d97706, #f59e0b);
+      border-radius: 10px;
+      animation: slideRight 0.5s ease-out;
+    }
+    
+    @keyframes slideRight {
+      from { width: 0; }
+      to { width: 6px; }
+    }
+    
+    h2:hover {
+      color: #f59e0b;
+    }
+    
+    p, li {
+      margin: 6px 0;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+    
+    .hindi {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      color: #333;
+      background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+      padding: 12px;
+      border-left: 4px solid #8b5cf6;
+      border-radius: 10px;
+      margin-top: 12px;
+      box-shadow: 0 5px 15px rgba(139,92,246,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hindi:hover {
+      transform: translateX(5px);
+      box-shadow: 0 8px 25px rgba(139,92,246,0.2);
+    }
+    
+    ul, ol {
+      margin-left: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    ul li, ol li {
+      padding: 6px 0;
+      transition: transform 0.3s ease;
+      line-height: 1.6;
+    }
+    
+    ul li:hover, ol li:hover {
+      transform: translateX(10px);
+    }
+    
+    a.btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 50px;
+      margin: 10px 10px 0 0;
+      font-weight: 600;
+      transition: all 0.4s ease;
+      box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    a.btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s ease, height 0.6s ease;
+    }
+    
+    a.btn:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    
+    a.btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(102,126,234,0.6);
+    }
+    
+    footer {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: #fff;
+      text-align: center;
+      padding: 40px 30px;
+      margin-top: 60px;
+      font-size: 1em;
+      box-shadow: 0 -10px 40px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease-out;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      transition: all 0.4s ease;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    
+    .social-links a:hover {
+      background: rgba(255,255,255,0.9);
+      transform: translateY(-5px) rotate(360deg);
+      box-shadow: 0 10px 25px rgba(255,255,255,0.3);
+    }
+    
+    .social-links a svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+      transition: fill 0.3s ease;
+    }
+    
+    .social-links a:hover svg {
+      fill: #1e3c72;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    /* Image Carousel Styles */
+    .carousel-container {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      background: #fff;
+    }
+    
+    .carousel-wrapper {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      touch-action: pan-y;
+    }
+    
+    .carousel-slide {
+      min-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f8f9fa;
+    }
+    
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      max-height: 70vh;
+    }
+    
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.9);
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #1e3c72;
+      transition: all 0.3s ease;
+      z-index: 10;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    
+    .carousel-btn:hover {
+      background: #1e3c72;
+      color: white;
+      transform: translateY(-50%) scale(1.1);
+    }
+    
+    .carousel-btn.prev {
+      left: 20px;
+    }
+    
+    .carousel-btn.next {
+      right: 20px;
+    }
+    
+    .carousel-indicators {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(255,255,255,0.95), transparent);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    .carousel-indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(30,60,114,0.3);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .carousel-indicator.active {
+      background: #1e3c72;
+      width: 30px;
+      border-radius: 6px;
+    }
+    
+    .carousel-indicator:hover {
+      background: rgba(30,60,114,0.6);
+      transform: scale(1.2);
+    }
+    
+    /* Language Toggle Button */
+    .lang-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 20;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+    
+    .lang-toggle:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102,126,234,0.6);
+    }
+    
+    .lang-toggle:active {
+      transform: translateY(0);
+    }
+    
+    .lang-toggle::before {
+      content: '🌐';
+      font-size: 18px;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        padding: 8px 15px;
+      }
+      
+      .logo-container {
+        gap: 8px;
+      }
+      
+      .logo-container img { 
+        height: 40px;
+        padding: 3px;
+      }
+      
+      .hero-section {
+        min-height: 100vh;
+        padding: 80px 15px 30px;
+      }
+      
+      .hero-content {
+        max-width: 100%;
+        padding: 0 10px;
+      }
+      
+      .hero-title { 
+        font-size: 1.8em;
+        margin-bottom: 10px;
+      }
+      
+      .hero-subtitle {
+        font-size: 1em;
+        margin-bottom: 8px;
+      }
+      
+      .hero-description {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+      }
+      
+      .hero-badges {
+        gap: 10px;
+        margin-top: 15px;
+      }
+      
+      .badge {
+        padding: 6px 15px;
+        font-size: 0.85em;
+      }
+      
+      .register-btn {
+        margin-top: 35px;
+        padding: 12px 30px;
+        font-size: 1em;
+      }
+      
+      .hero-lang-toggle {
+        top: 80px;
+        right: 10px;
+        padding: 8px 15px;
+        font-size: 12px;
+      }
+      
+      .hero-lang-toggle::before {
+        font-size: 16px;
+      }
+      
+      .section-title { 
+        font-size: 1.5em;
+        margin-bottom: 15px;
+      }
+      
+      .content-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .content-grid .content-image {
+        order: -1 !important;
+      }
+      
+      .content-grid .content-text {
+        order: 1 !important;
+      }
+      
+      .content-grid.reverse {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      
+      .content-grid.reverse .content-text {
+        order: 1 !important;
+      }
+      
+      .content-grid.reverse .content-image {
+        order: -1 !important;
+      }
+      
+      .single-column {
+        padding: 15px;
+      }
+      
+      .section-wrapper {
+        padding: 20px 0;
+      }
+      
+      h2 {
+        font-size: 1.3em;
+        margin-top: 10px;
+        margin-bottom: 8px;
+      }
+      
+      p, li {
+        font-size: 0.9em;
+        margin: 4px 0;
+      }
+      
+      .hindi {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 0.9em;
+      }
+      
+      .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+      
+      .carousel-btn.prev { left: 10px; }
+      .carousel-btn.next { right: 10px; }
+      
+      .carousel-slide img {
+        max-height: 400px;
+      }
+      
+      .content-image img {
+        height: 200px;
+      }
+      
+      .content-text {
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+  
+  <header>
+    <!-- Logos Row -->
+    <div class="logo-container">
+      <a href="https://www.tulas.edu.in" target="_blank" rel="noopener">
+        <img src="images/tulas-header.png" alt="Tula's Institute - NAAC A+ & NBA Accredited">
+      </a>
+      <a href="https://internship.aicte-india.org/" target="_blank" rel="noopener">
+        <img src="images/abhyantarship-logo.png" alt="Abhyantarship Logo">
+      </a>
+      <a href="https://atalacademy.aicte-india.org/" target="_blank" rel="noopener">
+        <img src="images/atal-logo.png" alt="ATAL Logo">
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <button class="hero-lang-toggle" onclick="toggleHeroLanguage()" id="heroLangToggle">
+      <span id="heroLangText">हिंदी में देखें</span>
+    </button>
+    <div class="hero-content">
+      <div id="hero-english" class="hero-lang-content active">
+        <h1 class="hero-title">AICTE-VAANI Sponsored Workshop</h1>
+        <p class="hero-subtitle">"Infrastructure Development using Modern AI Technologies"</p>
+        <p class="hero-description">Organized by Department of Computer Science & Engineering<br>Tula's Institute, Dehradun</p>
+        <div class="hero-badges">
+          <span class="badge">🗓️ 20-22 Nov 2025</span>
+          <a href="https://maps.app.goo.gl/UdzXfGGSqJ8qMjP77" target="_blank" rel="noopener" class="badge badge-link">📍 Dehradun</a>
+          <span class="badge">💰 Free Registration</span>
+        </div>
+        <button class="register-btn" onclick="scrollToRegistration()">📝 Register Below</button>
+      </div>
+      <div id="hero-hindi" class="hero-lang-content">
+        <h1 class="hero-title">AICTE-VAANI प्रायोजित कार्यशाला</h1>
+        <p class="hero-subtitle">"आधुनिक एआई प्रौद्योगिकियों का उपयोग करके अवसंरचना विकास"</p>
+        <p class="hero-description">कंप्यूटर विज्ञान और इंजीनियरिंग विभाग द्वारा आयोजित<br>तुलाʼस इंस्टीट्यूट, देहरादून</p>
+        <div class="hero-badges">
+          <span class="badge">🗓️ 20-22 नवम्बर 2025</span>
+          <a href="https://maps.app.goo.gl/nH8qGvXoYKSjSgBx5" target="_blank" rel="noopener" class="badge badge-link">📍 देहरादून</a>
+          <span class="badge">💰 निःशुल्क पंजीकरण</span>
+        </div>
+        <button class="register-btn" onclick="scrollToRegistration()">📝 नीचे पंजीकरण करें</button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+  <!-- About Section -->
+  <div class="section-wrapper">
+    <div class="container">
+      <h2 class="section-title">About the Workshop</h2>
+      <div class="content-grid">
+        <div class="content-text">
+          <div class="content-block">
+          <p>
+            Greetings from <strong>Tula's Institute, Dehradun</strong> (Affiliated to Veer Madho Singh Bhandari Uttarakhand Technical University)!
+          </p>
+          <p>
+            The Department of CSE, Tula's Institute Dehradun is organizing a <strong>Three Days Offline AICTE–Vibrant Advocacy for Advancement and Nurturing of Indian Languages (VAANI)</strong>
+            sponsored Workshop on <strong>"Infrastructure Development using Modern AI Technologies"</strong>.
+          </p>
+          <div class="hindi">
+            <p><strong>कार्यशाला के बारे में:</strong><br>
+            <strong>तुलाʼस इंस्टीट्यूट, देहरादून</strong> (वीर मदो सिंह भंडारी उत्तराखंड तकनीकी विश्वविद्यालय से संबद्ध) की ओर से शुभकामनाएं!<br>
+            सीएसई विभाग, तुलाʼस इंस्टीट्यूट देहरादून द्वारा <strong>तीन दिवसीय ऑफलाइन एआईसीटीई–वाइब्रेंट एडवोकेसी फॉर एडवांसमेंट एंड नरचरिंग ऑफ इंडियन लैंग्वेजेज (VAANI)</strong> द्वारा प्रायोजित कार्यशाला का आयोजन किया जा रहा है जिसका विषय है — <strong>"आधुनिक एआई प्रौद्योगिकियों का उपयोग करके अवसंरचना विकास"</strong>।
+            </p>
+          </div>
+          </div>
+        </div>
+        <div class="content-image">
+          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800" alt="AI Technology Workshop">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brochure Section -->
+  <div class="section-wrapper">
+    <div class="container">
+      <h2 class="section-title">📚 Workshop Brochure</h2>
+      <div class="single-column">
+        <div class="content-block">
+        <div class="carousel-container">
+        <button class="lang-toggle" onclick="toggleLanguage()" id="langToggle">
+          <span id="langText">हिंदी में देखें</span>
+        </button>
+        
+        <div class="carousel-wrapper" id="carouselWrapper">
+          <div class="carousel-slide">
+            <img src="images/brochure-page1-en.png" alt="Workshop Brochure Page 1" data-en="images/brochure-page1-en.png" data-hi="images/brochure-page1-hi.png">
+          </div>
+          <div class="carousel-slide">
+            <img src="images/brochure-page2-en.png" alt="Workshop Brochure Page 2" data-en="images/brochure-page2-en.png" data-hi="images/brochure-page2-hi.png">
+          </div>
+          <div class="carousel-slide">
+            <img src="images/brochure-page3-en.png" alt="Workshop Brochure Page 3" data-en="images/brochure-page3-en.png" data-hi="images/brochure-page3-hi.png">
+          </div>
+          <div class="carousel-slide">
+            <img src="images/brochure-page4-en.png" alt="Workshop Brochure Page 4" data-en="images/brochure-page4-en.png" data-hi="images/brochure-page4-hi.png">
+          </div>
+          <div class="carousel-slide">
+            <img src="images/brochure-page5-en.png" alt="Workshop Brochure Page 5" data-en="images/brochure-page5-en.png" data-hi="images/brochure-page5-hi.png">
+          </div>
+          <div class="carousel-slide">
+            <img src="images/brochure-page6-en.png" alt="Workshop Brochure Page 6" data-en="images/brochure-page6-en.png" data-hi="images/brochure-page6-hi.png">
+          </div>
+        </div>
+        
+        <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous">‹</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next">›</button>
+        
+        <div class="carousel-indicators">
+          <button class="carousel-indicator active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
+          <button class="carousel-indicator" onclick="goToSlide(1)" aria-label="Slide 2"></button>
+          <button class="carousel-indicator" onclick="goToSlide(2)" aria-label="Slide 3"></button>
+          <button class="carousel-indicator" onclick="goToSlide(3)" aria-label="Slide 4"></button>
+          <button class="carousel-indicator" onclick="goToSlide(4)" aria-label="Slide 5"></button>
+          <button class="carousel-indicator" onclick="goToSlide(5)" aria-label="Slide 6"></button>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seminar Details Section -->
+  <div class="section-wrapper" id="registration-section">
+    <div class="container">
+      <h2 class="section-title">Workshop Details</h2>
+      <div class="content-grid reverse">
+        <div class="content-text">
+          <div class="content-block">
+    <ul>
+      <li><strong>📅 Dates:</strong> 20th – 22nd November, 2025</li>
+      <li><strong>🏫 Mode:</strong> Offline/Physical</li>
+      <li><strong>📍 Venue:</strong> Tula's Institute, Dehradun</li>
+      <li><strong>🗣️ Language:</strong> Hindi</li>
+      <li><strong>💰 Registration Fees:</strong> Nil</li>
+      <li><strong>🕓 Timing:</strong> 10:00 AM – 4:30 PM</li>
+      <li><strong>🗓️ Last Date of Registration:</strong> 15th November, 2025</li>
+    </ul>
+    <a class="btn" href="https://atalacademy.aicte-india.org/login" target="_blank" rel="noopener">👉 Register Here</a>
+
+    <div class="hindi">
+      <p><strong>कार्यशाला विवरण:</strong><br>
+      📅 दिनांक: 20 से 22 नवम्बर, 2025<br>
+      🏫 माध्यम: ऑफलाइन/भौतिक<br>
+      📍 स्थान: तुलाʼस इंस्टीट्यूट, देहरादून<br>
+      🗣️ भाषा: हिंदी<br>
+      💰 पंजीकरण शुल्क: निःशुल्क<br>
+      🕓 समय: प्रातः 10:00 बजे से सायं 4:30 बजे तक<br>
+      🗓️ पंजीकरण की अंतिम तिथि: 15 नवम्बर, 2025</p>
+      <a class="btn" href="https://atalacademy.aicte-india.org/login" target="_blank" rel="noopener">👉 यहाँ पंजीकरण करें</a>
+    </div>
+          </div>
+        </div>
+        <div class="content-image">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800" alt="Conference Event">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Steps Section -->
+  <div class="section-wrapper">
+    <div class="container">
+      <h2 class="section-title">Steps for Registration</h2>
+      <div class="content-grid">
+        <div class="content-image">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800" alt="Registration Process">
+        </div>
+        <div class="content-text">
+          <div class="content-block">
+          <ol>
+            <li>Sign up as a participant and complete your details.</li>
+            <li>Go to FDPs → Select FDP Type VAANI → November</li>
+            <li>Use Ctrl+F and search for Application No: <strong>2132155474</strong></li>
+            <li>Select the Institute: <strong>Tula's Institute, Dehradun</strong></li>
+            <li>Register for FDP titled: <strong>"Infrastructure Development using Modern AI Technologies"</strong></li>
+            <li>Upload the NOC and Apply.</li>
+          </ol>
+
+          <div class="hindi">
+            <p><strong>पंजीकरण के चरण:</strong></p>
+            <ol>
+              <li>प्रतिभागी के रूप में साइन अप करें और अपनी जानकारी पूरी करें।</li>
+              <li>FDPs → प्रकार चुनें VAANI → माह चुनें नवंबर।</li>
+              <li><strong>Ctrl+F</strong> दबाएँ और <strong>Application No: 2132155474</strong> खोजें।</li>
+              <li>संस्थान चुनें: <strong>तुलाʼस इंस्टीट्यूट, देहरादून</strong></li>
+              <li>शीर्षक वाला FDP चुनें: <strong>"आधुनिक एआई प्रौद्योगिकियों का उपयोग करके अवसंरचना विकास"</strong></li>
+              <li>NOC अपलोड करें और आवेदन करें।</li>
+            </ol>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section-wrapper">
+    <div class="container">
+      <h2 class="section-title">Contact Information</h2>
+      <div class="single-column">
+        <div class="content-block">
+        <p><strong>Coordinator:</strong> Dr. Bharti Kalra<br>
+        Associate Professor, Department of CSE<br>
+        Email: <a href="mailto:bharti@tulas.edu.in">bharti@tulas.edu.in</a><br>
+        Contact: 8171287028</p>
+
+        <p><strong>Co-Coordinator:</strong> Dr. Ritu Pal<br>
+        Assistant Professor, Department of CSE<br>
+        Email: <a href="mailto:ritu.pal@tulas.edu.in">ritu.pal@tulas.edu.in</a><br>
+        Contact: 9650178266</p>
+
+        <div class="hindi">
+          <p><strong>संपर्क जानकारी:</strong><br>
+          <strong>समन्वयक:</strong> डॉ. भारती कालरा<br>
+          एसोसिएट प्रोफेसर, सीएसई विभाग<br>
+          ईमेल: bharti@tulas.edu.in | संपर्क: 8171287028<br><br>
+          <strong>सह-समन्वयक:</strong> डॉ. ऋतु पाल<br>
+          असिस्टेंट प्रोफेसर, सीएसई विभाग<br>
+          ईमेल: ritu.pal@tulas.edu.in | संपर्क: 9650178266</p>
+        </div>
+
+        <p>
+          We welcome your participation and request you to share this information among Faculty Members, Research Scholars, and PG Students.
+        </p>
+        <div class="hindi">
+          <p>हम आपके सक्रिय सहभाग की आशा करते हैं और अनुरोध करते हैं कि इस जानकारी को संकाय सदस्यों, शोधार्थियों और पीजी विद्यार्थियों के बीच साझा करें।</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Department of Computer Science & Engineering, Tula's Institute, Dehradun</p>
+    
+    <div class="social-links">
+      <a href="https://www.instagram.com/tulasinstitutedehradun?igsh=MTl4cjc2bmVmeDBycQ==" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+      
+      <a href="https://www.linkedin.com/school/tula's-institute/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-hide header on scroll
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+    const scrollThreshold = 100;
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Auto-hide header logic
+      if (scrollTop > scrollThreshold) {
+        if (scrollTop > lastScrollTop) {
+          // Scrolling down - hide header
+          header.style.transform = 'translateY(-100%)';
+        } else {
+          // Scrolling up - show header
+          header.style.transform = 'translateY(0)';
+        }
+      } else {
+        // At top of page - always show header
+        header.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = scrollTop;
+      
+      // Scroll Progress Bar
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercentage = (scrollTop / scrollHeight) * 100;
+      document.getElementById('progressBar').style.width = scrollPercentage + '%';
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.content-block').forEach(block => {
+      observer.observe(block);
+    });
+
+    // Smooth scroll to registration section
+    function scrollToRegistration() {
+      const section = document.getElementById('registration-section');
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Hero Language Toggle Function
+    let currentHeroLang = 'en'; // Default language is English
+    
+    function toggleHeroLanguage() {
+      const englishContent = document.getElementById('hero-english');
+      const hindiContent = document.getElementById('hero-hindi');
+      const langText = document.getElementById('heroLangText');
+      
+      if (currentHeroLang === 'en') {
+        // Switch to Hindi
+        currentHeroLang = 'hi';
+        englishContent.classList.remove('active');
+        hindiContent.classList.add('active');
+        langText.textContent = 'View in English';
+      } else {
+        // Switch to English
+        currentHeroLang = 'en';
+        hindiContent.classList.remove('active');
+        englishContent.classList.add('active');
+        langText.textContent = 'हिंदी में देखें';
+      }
+    }
+
+    // Carousel Functionality
+    let currentSlide = 0;
+    let currentLang = 'en'; // Default language is English
+    const wrapper = document.getElementById('carouselWrapper');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.carousel-indicator');
+    const totalSlides = slides.length;
+    
+    // Language Toggle Function
+    function toggleLanguage() {
+      const allImages = document.querySelectorAll('.carousel-slide img');
+      const langText = document.getElementById('langText');
+      
+      if (currentLang === 'en') {
+        // Switch to Hindi
+        currentLang = 'hi';
+        allImages.forEach(img => {
+          img.src = img.getAttribute('data-hi');
+        });
+        langText.textContent = 'View in English';
+      } else {
+        // Switch to English
+        currentLang = 'en';
+        allImages.forEach(img => {
+          img.src = img.getAttribute('data-en');
+        });
+        langText.textContent = 'हिंदी में देखें';
+      }
+    }
+    
+    // Touch/Swipe Support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    function updateCarousel() {
+      wrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+      
+      // Update indicators
+      indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+      });
+    }
+    
+    function moveSlide(direction) {
+      currentSlide += direction;
+      
+      if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+      } else if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+      }
+      
+      updateCarousel();
+    }
+    
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+    
+    // Touch Events
+    wrapper.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    wrapper.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+    
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+      
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          moveSlide(1); // Swipe left
+        } else {
+          moveSlide(-1); // Swipe right
+        }
+      }
+    }
+    
+    // Auto-play (optional)
+    let autoplayInterval;
+    
+    function startAutoplay() {
+      autoplayInterval = setInterval(() => {
+        moveSlide(1);
+      }, 5000); // Change slide every 5 seconds
+    }
+    
+    function stopAutoplay() {
+      clearInterval(autoplayInterval);
+    }
+    
+    // Start autoplay
+    startAutoplay();
+    
+    // Pause on hover
+    const carouselContainer = document.querySelector('.carousel-container');
+    carouselContainer.addEventListener('mouseenter', stopAutoplay);
+    carouselContainer.addEventListener('mouseleave', startAutoplay);
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') moveSlide(-1);
+      if (e.key === 'ArrowRight') moveSlide(1);
+    });
+
+    // Copy Protection - Replace copied content
+    document.addEventListener('copy', function(e) {
+      e.preventDefault();
+      
+      // Custom message to be copied instead
+      const customMessage = 'Thanks for trying! 😊\n\nFor more information, visit: https://www.tulas.edu.in';
+      
+      if (e.clipboardData) {
+        e.clipboardData.setData('text/plain', customMessage);
+        e.clipboardData.setData('text/html', '<p>' + customMessage + '</p>');
+      }
+      
+      // Show a subtle notification
+      showCopyNotification();
+    });
+
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      showCopyNotification();
+      return false;
+    });
+
+    // Disable text selection with CSS override
+    document.addEventListener('selectstart', function(e) {
+      // Allow selection for form inputs
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        return true;
+      }
+    });
+
+    // Disable common keyboard shortcuts for copying
+    document.addEventListener('keydown', function(e) {
+      // Ctrl+C, Ctrl+X, Ctrl+A, Ctrl+U, F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+      if (
+        (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'u' || e.key === 'a')) ||
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C'))
+      ) {
+        if (e.key === 'c' || e.key === 'x') {
+          // Allow copy but with custom content
+          return true;
+        }
+        e.preventDefault();
+        showCopyNotification();
+        return false;
+      }
+    });
+
+    // Show notification when someone tries to copy
+    function showCopyNotification() {
+      // Create notification element if it doesn't exist
+      let notification = document.getElementById('copyNotification');
+      if (!notification) {
+        notification = document.createElement('div');
+        notification.id = 'copyNotification';
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 15px 25px;
+          border-radius: 10px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+          z-index: 10000;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        `;
+        notification.innerHTML = '✋ Content is protected!';
+        document.body.appendChild(notification);
+      }
+      
+      // Show notification
+      notification.style.opacity = '1';
+      
+      // Hide after 2 seconds
+      setTimeout(() => {
+        notification.style.opacity = '0';
+      }, 2000);
+    }
+
+    // Disable drag and drop of images
+    document.addEventListener('dragstart', function(e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+        return false;
+      }
+    });
+
+    // Console warning for developers
+    console.log('%c⚠️ Warning!', 'color: red; font-size: 30px; font-weight: bold;');
+    console.log('%cThis website is protected. Unauthorized copying or scraping is not allowed.', 'color: orange; font-size: 16px;');
+    console.log('%c© 2025 Tula\'s Institute, Dehradun', 'color: blue; font-size: 14px;');
+  </script>
+</body>
+</html>

@@ -116,7 +116,7 @@ function RAndCell() {
               "The Research and Development (R&D) Cell at Tula’s Institute is an integral part of the Centre for Innovation, Research, and Entrepreneurship (CIRE). Its primary focus is to facilitate and drive cutting-edge research activities across various disciplines within the Institute."
             }
           />
-
+          
           <Vision sections={sections} color={true} />
           <Collaborators />
           <h3 className="text-[#00383D] pt-8 md:pt-[3%] text-center text-[25px] md:text-[40px] font-[CarotSlab]">
@@ -126,6 +126,12 @@ function RAndCell() {
             <Image src={graph1} alt="" className="w-[80%] md:w-[40%]" />
             <Image src={graph2} alt="" className="w-[80%] md:w-[40%]" />
           </div>
+          <Link
+            href={`/aicte-vaani/index.html`}
+            className="px-12 md:px-20 py-2 mb-10 bg-[#00383D] text-[20px] md:text-[28px] font-[TTChocolatesMedium] text-[#FFFFFF] rounded-full border border-[#00383D] hover:bg-[#FFFFFF] hover:text-[#00383D] transition-all"
+          >
+            Funded Projects
+          </Link>
           <Link
             href={`/research/research-and-development-rd-cell/funded-projects-and-grants/${utmParams}`}
             className="px-12 md:px-20 py-2 mb-20 bg-[#00383D] text-[20px] md:text-[28px] font-[TTChocolatesMedium] text-[#FFFFFF] rounded-full border border-[#00383D] hover:bg-[#FFFFFF] hover:text-[#00383D] transition-all"

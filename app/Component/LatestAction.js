@@ -1,40 +1,35 @@
 import React, { useRef } from "react";
-import newformatimg2 from "../../public/Homepage/LatestNews/newformatimg2.webp";
-import newformatimg3 from "../../public/Homepage/LatestNews/newformatimg3.webp";
-import newformatimg4 from "../../public/Homepage/LatestNews/newformatimg4.webp";
-import newformatimg5 from "../../public/Homepage/LatestNews/newformatimg5.webp";
+import newformatimg7 from "../../public/Homepage/LatestNews/newformatimg7.webp";
+import newformatimg8 from "../../public/Homepage/LatestNews/newformatimg8.webp";
+import newformatimg9 from "../../public/Homepage/LatestNews/newformatimg9.webp";
+import newformatimg10 from "../../public/Homepage/LatestNews/newformatimg10.webp"
 import Image from "next/image";
 
 import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 function StatsAndNews() {
   const swiperRef = useRef();
   const sports = [
-        {
-      image: newformatimg5,
-      name: "Veer Madho Singh Bhandari Uttrakhand Technical University Intercollege Football Tournament",
-      date: "13-Oct - 14-Oct-2025",
-      time: "10:30 am Onwards",
-      location: "DR. G.G. Grag Stadium",
-    },
-            {
-      image: newformatimg4,
-      name: "Campus Placement Drive - 2026 Batch MetConnect Infotech Pvt. Ltd",
-      date: "10-Oct-2025",
-      location: "Tula's Campus",
+    {
+      image: newformatimg10,
+      name: "Department of civil engineering is organizing an industrial visit to Civil Treatment Plant (STP)",
+      date: "04-Nov-2025",
+      time: "9:30 am Onwards",
+      location: "Uttrakhand Jal Sansthan, Pithuwala, Dehradun",
     },
        {
-      image: newformatimg3,
-      name: "One Day Skill Development Workshop On Value Addition Of Holy Indian Basil/Tulsi",
-      date: "06-Oct-2025",
-      time: "11:00 am Onwards",
-      location: "Agriculture Research Farm",
+      image: newformatimg9,
+      name: "Congratlations Saniya Kumari , BBA (3rd Year) NPTEL",
+      date: "July-August 2025",
     },
-            {
-      image: newformatimg2,
-      name: "Veer Madho Singh Bhandari Uttrakhand Technical University Intercollege kabaddi League (Boys/Girls)",
-      date: "04-Oct - 05-Oct-2025",
-      time: "10:30 am Onwards",
-      location: "Tula's Campus",
+       {
+      image: newformatimg8,
+      name: "Congratlations Vaishnav Aron , BTECH CSE (3rd Year) NPTEL",
+      date: "July-August 2025",
+    },
+       {
+      image: newformatimg7,
+      name: "Outstanding Achievement, Vaishnav Aron & Saniya kumari , Achiever's NPTEL",
+      date: "July-August 2025",
     },
 
   ];

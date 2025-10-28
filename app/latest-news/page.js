@@ -33,6 +33,11 @@ import newformatimg2 from "../../public/Homepage/LatestNews/newformatimg2.webp";
 import newformatimg3 from "../../public/Homepage/LatestNews/newformatimg3.webp";
 import newformatimg4 from "../../public/Homepage/LatestNews/newformatimg4.webp";
 import newformatimg5 from "../../public/Homepage/LatestNews/newformatimg5.webp";
+import newformatimg6 from "../../public/Homepage/LatestNews/newformatimg6.webp";
+import newformatimg7 from "../../public/Homepage/LatestNews/newformatimg7.webp";
+import newformatimg8 from "../../public/Homepage/LatestNews/newformatimg8.webp";
+import newformatimg9 from "../../public/Homepage/LatestNews/newformatimg9.webp";
+import newformatimg10 from "../../public/Homepage/LatestNews/newformatimg10.webp";
 
 
 import Campusplacmentmca from "../../public/Homepage/LatestNews/Campusplacmentmca.webp";
@@ -49,6 +54,34 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 function LatestNews() {
   const sports = [
 
+    {
+      image: newformatimg10,
+      name: "Department of civil engineering is organizing an industrial visit to Civil Treatment Plant (STP)",
+      date: "04-Nov-2025",
+      time: "9:30 am Onwards",
+      location: "Uttrakhand Jal Sansthan, Pithuwala, Dehradun",
+    },
+       {
+      image: newformatimg9,
+      name: "Congratlations Saniya Kumari , BBA (3rd Year) NPTEL",
+      date: "July-August 2025",
+    },
+       {
+      image: newformatimg8,
+      name: "Congratlations Vaishnav Aron , BTECH CSE (3rd Year) NPTEL",
+      date: "July-August 2025",
+    },
+       {
+      image: newformatimg7,
+      name: "Outstanding Achievement, Vaishnav Aron & Saniya kumari , Achiever's NPTEL",
+      date: "July-August 2025",
+    },
+       {
+      image: newformatimg6,
+      name: "Campus Placement Drive - Btech CSE, BCA & MCA 2026 Batch",
+      date: "29-Oct-2025",
+      location: "Tula's Campus",
+    },
     {
       image: newformatimg5,
       name: "Veer Madho Singh Bhandari Uttrakhand Technical University Intercollege Football Tournament",
