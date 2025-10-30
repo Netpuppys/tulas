@@ -206,14 +206,14 @@ export const items = [
       "PO7 – Self-Directed and Life-Long Learning : Acquire the ability to engage in independent and life-long learning in the broadest context socio-technologies changes.",
     ],
   },
-  {
-    title: "Program Specific Outcome",
-    description: [
-      "PSO 1 : Ability to build and perform career in data management and support IT industry.",
-      "PSO 2 : Develop skills to design industry software and applications",
-    ],
-    image: ProgramSpecificOutcome,
-  },
+  // {
+  //   title: "Program Specific Outcome",
+  //   description: [
+  //     "PSO 1 : Ability to build and perform career in data management and support IT industry.",
+  //     "PSO 2 : Develop skills to design industry software and applications",
+  //   ],
+  //   image: ProgramSpecificOutcome,
+  // },
 
   // Add other carousel items here
 ];

@@ -68,7 +68,7 @@ export const quotes = (
   <>
     “Code your future, innovate with technology, and transform the world with{" "}
     <strong className="text-[#760135]">
-      Tula’s Institute’s Master’s in Computer Applications Program.
+      Tula’s Institute’s Masters in Computer Applications Program.
     </strong>
     ”
   </>
