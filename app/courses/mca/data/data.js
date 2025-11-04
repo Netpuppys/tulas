@@ -99,17 +99,17 @@ export const content = (
 export const items = [
   {
     title: "USPs",
-    description: [
-      "Here’s why Tula’s Institute stands out as the ideal place to pursue your Master of Computer Applications:",
-      <>
+    intro: "Here’s why Tula’s Institute stands out as the ideal place to pursue your Master of Computer Applications",
+    image: USP,
+    outro: "Join Tula’s Institute and propel your tech career to new heights!",
+
+    points: [
+       <>
         <strong className="font-bold">Industry-Aligned Curriculum:</strong>
         <br />
         Learn the latest skills in AI, machine learning, cloud computing, and
         software development with an industry-informed syllabus.
       </>,
-    ],
-    image: USP,
-    points: [
       <>
         <strong className="font-bold">Hands-On Learning:</strong>
         <br />
@@ -144,22 +144,10 @@ export const items = [
         <br />
         Engage in extracurriculars, soft skills training, and leadership
         opportunities.
-      </>,
-      <italic className="italic font-bold">
-        "Join Tula’s Institute and propel your tech career to new heights!"
-      </italic>,
+      </>
     ],
   },
-  {
-    title: "Course Outcomes",
-    description: [
-      <Link href={mcaDocument} target="_blank">
-        Click here to Download MCA Course Outcomes
-      </Link>,
-    ],
-    image: CourseOutcomes,
-  },
-  {
+    {
     title: "Program Outcomes",
     description: [
       "PO1 (Foundation Knowledge): Apply knowledge of mathematics, programming logic and coding fundamentals for solution architecture and problem solving.",
@@ -175,6 +163,7 @@ export const items = [
       "PO8 (Life-long learning): Change management skills and the ability to learn, keep up with contemporary technologies and ways of working.",
     ],
   },
+
   {
     title: "Program Educational Outcomes",
     description: [
@@ -184,6 +173,15 @@ export const items = [
       "PEO 4: Industry Collaboration and Research Excellence: All graduates will enjoy partnerships with the software industries and research institutes, thus having hands-on experiences in projects and research on advanced technology areas, improving their skills in collaborative and independent research.",
     ],
     image: ProgramEducationalOutcome,
+  },
+    {
+    title: "Course Outcomes",
+    description: [
+      <Link href={mcaDocument} target="_blank">
+        Click here to Download MCA Course Outcomes
+      </Link>,
+    ],
+    image: CourseOutcomes,
   },
   {
     title: "Department Magazine",

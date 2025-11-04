@@ -2,7 +2,7 @@ import USP from "../../../../public/bsc-agriculture/Crousel/USP.png";
 import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import Link from "next/link";
-import mbaDocument from "../../../../public/courses/mba/MBA.pdf";
+import mbaDocument from "../../../../public/courses/mba/MBAnew.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
 import ArghyaSarkar from "../../../../public/courses/mba/facultyData/ArghyaSarkar.webp";
@@ -313,19 +313,19 @@ export const sections = [
       <>
         <ul className="list-disc ml-5">
           <li>
-            M1: To develop skilled professionals with strong analytical, technical, and behavioral competencies, enhancing their problem-solving ability to thrive in global business dynamism
+            To develop skilled professionals with strong analytical, technical, and behavioral competencies, enhancing their problem-solving ability to thrive in global business dynamism
           </li>
           <li>
-            M2: To equip learners with analytical tools and decision-making abilities for solving complex managerial problems
+            To equip learners with analytical tools and decision-making abilities for solving complex managerial problems
           </li>
           <li>
-            M3: To nurture entrepreneurial mindsets by fostering employment and ethical business practices.
+            To nurture entrepreneurial mindsets by fostering employment and ethical business practices.
           </li>
           <li>
-            M4: To encourage research and innovation in collaboration with industries.
+            To encourage research and innovation in collaboration with industries.
           </li>
           <li>
-            M5: To create an inclusive and diverse learning environment fostering teamwork and leadership.
+            To create an inclusive and diverse learning environment fostering teamwork and leadership.
           </li>
         </ul>
       </>
@@ -356,23 +356,15 @@ export const semesterData = [
   {
     semester: "I SEMESTER",
     subjects: [
-      { code: "MB101 PPM", title: "Principles and Practices of Management" },
-      { code: "MB102 FA", title: "Financial accounting" },
+      { code: "MB101", title: "Principles and Practices of Management" },
+      { code: "MB102", title: "Financial accounting" },
       {
-        code: "MB103 QTOR",
-        title: "Quantitative Techniques and Operation Research",
-      },
-      { code: "MB104 ME", title: "Managerial Economics" },
-      { code: "MB105 BE", title: "Business Environment" },
-      { code: "MB106 BL", title: "Business Laws" },
-      {
-        code: "MB107 PBC",
-        title: "Professional Business Communication",
-      },
-      {
-        code: "MB108",
-        title: "MIS and Computer applications in Business",
-      },
+        code: "MB103", title: "Quantitative Techniques and Operation Research"},
+      { code: "MB104", title: "Managerial Economics" },
+      { code: "MB105E", title: "Business Environment" },
+      { code: "MB106", title: "Business Laws" },
+      { code: "MB107", title: "Professional Business Communication"},
+      { code: "MB108", title: "Information System for Managers"},
     ],
   },
   {
@@ -380,71 +372,60 @@ export const semesterData = [
     subjects: [
       { code: "MB201", title: "Organisational Behaviour" },
       { code: "MB202", title: "Management Accounting" },
-      { code: "MB203", title: "Live projects on current business Issues" },
-      { code: "MB204", title: "Marketing Management" },
-      { code: "MB205", title: "Financial Management" },
-      { code: "MB206", title: "Human Resource Management" },
-      { code: "MB207", title: "Production and Operations Management" },
-      { code: "MB208", title: "Business Research Methods" },
+      { code: "MB203", title: "Marketing Management" },
+      { code: "MB204", title: "Financial Management" },
+      { code: "MB205", title: "Human Resource Management" },
+      { code: "MB206", title: "Production and Operation Management" },
+      { code: "MB207", title: "Business Research Methods" },
+      { code: "MB208", title: "State of Art Seminar" },
     ],
   },
   {
-    semester: "III SEMESTER",
-    subjects: [
-      { code: "MB301 IB", title: "International Business" },
-      { code: "MB302 PM", title: "Project Management" },
-      {
-        code: "MB303 TQM",
-        title: "Total Quality Management",
-      },
-      { code: "MBAT 311", title: "Consumer Behaviour" },
-      { code: "MBAT 313", title: "Marketing of Services (Minor)" },
-      { code: "MBAT 315", title: "Retail Management" },
-      {
-        code: "MBAT 321",
-        title: "Security Analysis and Portfolio Management",
-      },
-      {
-        code: "MBAT 322",
-        title: "Financial Markets and Institutions (Minor)",
-      },
-      { code: "MBAT 323", title: "International Financial Management" },
-      { code: "MBAT 331", title: "Industrial Relations and Labour Laws" },
-      {
-        code: "MBAT 333",
-        title: "Human Resource Planning & Development (Minor)",
-      },
-      {
-        code: "MBAT 342",
-        title: "Cross-Cultural Business Management (Minor)",
-      },
-      {
-        code: "MBAT 335",
-        title: "Organisational Structure and Change",
-      },
-    ],
-  },
+  semester: "III SEMESTER",
+  subjects: [
+    { code: "MBT 301", title: "Strategic Management" },
+    { code: "MBT 302", title: "International Business" },
+    { code: "MBT 303", title: "Universal Human Values and Professional Ethics" },
+    { code: "MBT 304", title: "Total Quality Management" },
+    { code: "MBT 305 M1", title: "Integrated Marketing Communications" },
+    { code: "MBT 305 M3", title: "Digital Marketing" },
+    { code: "MBT 305 M4", title: "Consumer Behaviour" },
+    { code: "MBT 305 F1", title: "Security Analysis and Portfolio Management" },
+    { code: "MBT 305 F2", title: "Working Capital Management" },
+    { code: "MBT 305 F4", title: "Financial Markets and Institutions" },
+    { code: "MBT 305 HR1", title: "Industrial Relations and Labour Laws" },
+    { code: "MBT 305 HR2", title: "Training & Development" },
+    { code: "MBT 305 HR4", title: "Counselling Skills for Managers" },
+    { code: "MBT 305 IB4", title: "Cross Cultural Business Management" },
+    { code: "MBT 305 SC4", title: "Designing & Managing Supply Chain" },
+    {
+      code: "MBT 306",
+      title:
+        "Summer Internship Project Report and Viva-Voce (Training Report and Presentation followed by viva voce)"
+    }
+  ]
+},
+
   {
-    semester: "IV SEMESTER",
-    subjects: [
-      { code: "MB401", title: "Business Ethics and Corporate Governance" },
-      { code: "MB402", title: "Strategic Management" },
-      { code: "MB403", title: "Entrepreneurship Development" },
-      {
-        code: "MB404",
-        title: "Research Project",
-      },
-      { code: "MBAT 412", title: "Sales Management (Minor)" },
-      { code: "MBAT 413", title: "Financial Services (Minor)" },
-      {
-        code: "MBAT 422",
-        title: "Mergers and Corporate Restructuring",
-      },
-      { code: "MB431", title: "International Human Resource Management" },
-      { code: "MB441", title: "EXIM Financing and Documentation (Minor)" },
-      { code: "MB433", title: "Corporate leadership (Minor)" },
-    ],
-  },
+  semester: "IV SEMESTER",
+  subjects: [
+    { code: "MBT 401", title: "Business Ethics & Corporate Governance" },
+    { code: "MBT 402", title: "Project Management" },
+    { code: "MBT 403", title: "Entrepreneurship Development" },
+    { code: "MBT 404 M2", title: "Retail Management" },
+    { code: "MBT 404 M3", title: "Rural Marketing" },
+    { code: "MBT 404 M4", title: "Sales Management" },
+    { code: "MBT 404 F1", title: "International Financial Management" },
+    { code: "MBT 404 F3", title: "Financial Derivatives" },
+    { code: "MBT 404 F4", title: "Financial Services" },
+    { code: "MBT 404 HR1", title: "International Human Resource Management" },
+    { code: "MBT 404 HR3", title: "Compensation Management" },
+    { code: "MBT 305 HR4", title: "Corporate Leadership" },
+    { code: "MBT 404 IB 4", title: "Exim Financing and Documentation" },
+    { code: "MBT 404 SC4", title: "Lean Supply Chain & Supplier relationship Management" },
+    { code: "MBT 405", title: "Dissertation & Viva-Voce" }
+  ]
+},
 ];
 export const facultyData = [
   {

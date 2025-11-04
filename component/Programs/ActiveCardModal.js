@@ -64,6 +64,12 @@ const ActiveCardModal = ({
                 >
                   {card?.title}
                 </p>
+                {card.intro && (
+                  <p className="text-[#1b1b1b] font-light leading-snug my-3">
+                    {card.intro}
+                  </p>
+                )}
+
                 <ul className="mt-[1.5%] list-disc ml-5">
                   {card?.description?.map((item, index) => (
                     <li
@@ -74,6 +80,7 @@ const ActiveCardModal = ({
                     </li>
                   ))}
                 </ul>
+
                 {/* PDF Button */}
                     {card.pdf && (
                       <a
@@ -82,7 +89,7 @@ const ActiveCardModal = ({
                         rel="noopener noreferrer"
                         className="mt-6 inline-block my-2 px-5 py-2 bg-[#007A83] text-white rounded-lg hover:bg-[#005f63] transition"
                       >
-                        New updated M1 aug to dec 2024.pdf
+                        Binary Beats-Aug-Dec-2024
                       </a>
                     )}
 
@@ -93,7 +100,7 @@ const ActiveCardModal = ({
                           rel="noopener noreferrer"
                           className="inline-block my-2 px-5 py-2 bg-[#E69706] text-white rounded-lg hover:bg-[#c67c05] transition"
                         >
-                          New updated M2 2025- jan-jun.pdf
+                        Binary Beats-Jan-July-2024
                         </a>
                       )}
               </div>
@@ -115,6 +122,11 @@ const ActiveCardModal = ({
                 </li>
               ))}
             </ul>
+                {card.outro && (
+                  <p className="text-[#1b1b1b] font-light leading-snug my-3">
+                    {card.outro}
+                  </p>
+                )}
           </div>
         )}
         {card.imagesArray && (
