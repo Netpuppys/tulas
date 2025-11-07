@@ -1,14 +1,28 @@
 import React, { useRef } from "react";
-import newformatimg7 from "../../public/Homepage/LatestNews/newformatimg7.webp";
-import newformatimg8 from "../../public/Homepage/LatestNews/newformatimg8.webp";
+ 
 import newformatimg9 from "../../public/Homepage/LatestNews/newformatimg9.webp";
 import newformatimg10 from "../../public/Homepage/LatestNews/newformatimg10.webp"
+import newformatimg11 from "../../public/Homepage/LatestNews/newformatimg11.webp";
+import newformatimg12 from "../../public/Homepage/LatestNews/newformatimg12.webp";
 import Image from "next/image";
 
 import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 function StatsAndNews() {
   const swiperRef = useRef();
   const sports = [
+    {
+      image: newformatimg12,
+      name: "Department of civil engineering is organizing an Inter - Department Copmetition",
+      date: "07-Nov-2025",
+      time: "10:00 am Onwards",
+    },
+       {
+      image: newformatimg11,
+      name: "Two day skill development workshop on value addition of fruits, vegetables & spices",
+      date: "7th-8th Nov-2025",
+      time: "10:30 am Onwards",
+      location: "Agriculture Department (LAB J-406)",    
+    },
     {
       image: newformatimg10,
       name: "Department of civil engineering is organizing an industrial visit to Civil Treatment Plant (STP)",
@@ -21,17 +35,6 @@ function StatsAndNews() {
       name: "Congratlations Saniya Kumari , BBA (3rd Year) NPTEL",
       date: "July-August 2025",
     },
-       {
-      image: newformatimg8,
-      name: "Congratlations Vaishnav Aron , BTECH CSE (3rd Year) NPTEL",
-      date: "July-August 2025",
-    },
-       {
-      image: newformatimg7,
-      name: "Outstanding Achievement, Vaishnav Aron & Saniya kumari , Achiever's NPTEL",
-      date: "July-August 2025",
-    },
-
   ];
 
   return (

@@ -38,6 +38,9 @@ import newformatimg7 from "../../public/Homepage/LatestNews/newformatimg7.webp";
 import newformatimg8 from "../../public/Homepage/LatestNews/newformatimg8.webp";
 import newformatimg9 from "../../public/Homepage/LatestNews/newformatimg9.webp";
 import newformatimg10 from "../../public/Homepage/LatestNews/newformatimg10.webp";
+import newformatimg11 from "../../public/Homepage/LatestNews/newformatimg11.webp";
+import newformatimg12 from "../../public/Homepage/LatestNews/newformatimg12.webp";
+
 
 
 import Campusplacmentmca from "../../public/Homepage/LatestNews/Campusplacmentmca.webp";
@@ -54,6 +57,19 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 function LatestNews() {
   const sports = [
 
+        {
+      image: newformatimg12,
+      name: "Department of civil engineering is organizing an Inter - Department Copmetition",
+      date: "07-Nov-2025",
+      time: "10:00 am Onwards",
+    },
+       {
+      image: newformatimg11,
+      name: "Two day skill development workshop on value addition of fruits, vegetables & spices",
+      date: "7th-8th Nov-2025",
+      time: "10:30 am Onwards",
+      location: "Agriculture Department (LAB J-406)",    
+    },
     {
       image: newformatimg10,
       name: "Department of civil engineering is organizing an industrial visit to Civil Treatment Plant (STP)",
