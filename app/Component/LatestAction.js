@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
  
-import newformatimg9 from "../../public/Homepage/LatestNews/newformatimg9.webp";
-import newformatimg10 from "../../public/Homepage/LatestNews/newformatimg10.webp"
-import newformatimg11 from "../../public/Homepage/LatestNews/newformatimg11.webp";
 import newformatimg12 from "../../public/Homepage/LatestNews/newformatimg12.webp";
+import newformatimg13 from "../../public/Homepage/LatestNews/newformatimg13.webp";
+import newformatimg14 from "../../public/Homepage/LatestNews/newformatimg14.webp";
+import newformatimg15 from "../../public/Homepage/LatestNews/newformatimg15.webp";
+
 import Image from "next/image";
 
 import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
@@ -11,29 +12,29 @@ function StatsAndNews() {
   const swiperRef = useRef();
   const sports = [
     {
+      image: newformatimg15,
+      name: "Department of computer applications is organizing a workshop on cyber security",
+      date: "10th-11th Nov-2025",
+      location: "New seminar hall and pharmacy block",  
+      time: "10:30 am Onwards",  
+    },
+    {
+      image: newformatimg14,
+      name: "Campus Placement Drive - Btech CSE, MBA, BBA, BCA, MCA, Bcom(Hons) 2026 Batch",
+      date: "10-Nov-2025",
+      location: "Tula's Institiute",    
+    },
+    {
+      image: newformatimg13,
+      name: "A decade of glory - 10th diff deheradun international film festival",
+      date: "08-Nov-2025",
+      location: "Tula's Auditorium",    
+    },
+    {
       image: newformatimg12,
       name: "Department of civil engineering is organizing an Inter - Department Copmetition",
       date: "07-Nov-2025",
       time: "10:00 am Onwards",
-    },
-       {
-      image: newformatimg11,
-      name: "Two day skill development workshop on value addition of fruits, vegetables & spices",
-      date: "7th-8th Nov-2025",
-      time: "10:30 am Onwards",
-      location: "Agriculture Department (LAB J-406)",    
-    },
-    {
-      image: newformatimg10,
-      name: "Department of civil engineering is organizing an industrial visit to Civil Treatment Plant (STP)",
-      date: "04-Nov-2025",
-      time: "9:30 am Onwards",
-      location: "Uttrakhand Jal Sansthan, Pithuwala, Dehradun",
-    },
-       {
-      image: newformatimg9,
-      name: "Congratlations Saniya Kumari , BBA (3rd Year) NPTEL",
-      date: "July-August 2025",
     },
   ];
 
