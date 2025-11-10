@@ -23,7 +23,7 @@ function BannerHome({
   const startAutoSlide = () => {
     autoSlideRef.current = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % bannerImages.length);
-    }, 8000);
+    }, 2500);
   };
 
   const stopAutoSlide = () => {

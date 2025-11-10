@@ -103,6 +103,8 @@ const Footer = ({ set = false, color = false }) => {
       target: "_blank",
     },
     { title: "Tula's University", linkTo: "/tulas-university/" },
+    { title: "Blogs", linkTo: "/blog" },
+
   ];
 
   const socialMediaLinks = [

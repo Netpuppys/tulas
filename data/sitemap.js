@@ -480,5 +480,9 @@ const sitemap = [
       },
     ],
   },
+    {
+    title: "Blogs",
+    linkTo: "/blog",
+  },
 ];
 export default sitemap;
