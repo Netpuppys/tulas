@@ -18,9 +18,14 @@ const Blogs = ({ utmParams }) => {
         const data = await response.json();
 
         if (data.success) {
-          const filteredBlogs = data.data.filter(
+          let filteredBlogs = data.data.filter(
             (blog) => blog.category && blog.category.name === "Blogs"
           );
+
+                  // FORCE ONLY 9 on first page load
+        if (page === 1) {
+          filteredBlogs = filteredBlogs.slice(0, 9);
+        }
 
           if (filteredBlogs.length === 0) {
             setAllBlogsLoaded(true); // If no blogs are returned, set allBlogsLoaded to true
