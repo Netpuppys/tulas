@@ -43,6 +43,13 @@ import newformatimg12 from "../../public/Homepage/LatestNews/newformatimg12.webp
 import newformatimg13 from "../../public/Homepage/LatestNews/newformatimg13.webp";
 import newformatimg14 from "../../public/Homepage/LatestNews/newformatimg14.webp";
 import newformatimg15 from "../../public/Homepage/LatestNews/newformatimg15.webp";
+import newformatimg16 from "../../public/Homepage/LatestNews/newformatimg16.webp";
+import newformatimg17 from "../../public/Homepage/LatestNews/newformatimg17.webp";
+import newformatimg18 from "../../public/Homepage/LatestNews/newformatimg18.webp";
+import newformatimg19 from "../../public/Homepage/LatestNews/newformatimg19.webp";
+import newformatimg20 from "../../public/Homepage/LatestNews/newformatimg20.webp";
+import newformatimg21 from "../../public/Homepage/LatestNews/newformatimg21.webp";
+
 
 
 
@@ -60,6 +67,42 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 
 function LatestNews() {
   const sports = [
+    {
+      image: newformatimg21,
+      name: "Wrokshop on infrastructure development using modern AI technologies",
+      date: "20th-22th Nov-2025",
+      location: "Tula's institute Deheradun",  
+    },    {
+      image: newformatimg20,
+      name: "Masterclass on data-driven sustainblility strategies",
+      date: "17th Nov-2025",
+      location: "F-404 Tula's institute",  
+      time: "11:30 am Onwards",  
+    },    {
+      image: newformatimg19,
+      name: "Add-on certificate program on Fullstack development",
+      date: "17th-28th Nov-2025",
+      location: "G-404 Tula's institute",  
+      time: "11:30 am - 4:00 pm",
+    },    {
+      image: newformatimg18,
+      name: "Add-on certificate program on microsoft azure 102",
+      date: "17th-28th Nov-2025",
+      location: "Computer lab 8",  
+      time: "10:00 am - 4:00 pm",
+    },    {
+      image: newformatimg17,
+      name: "Add-on certificate program on Advance Python (Tensorflow, pytorch)",
+      date: "17th-28th Nov-2025",
+      location: "seminar hall C block",  
+      time: "10:00 am - 4:00 pm",
+    },    {
+      image: newformatimg16,
+      name: "Add-on certificate program on big data & cloud (Hadoop, spark etc)",
+      date: "17th-28th Nov-2025",
+      location: "Pharmacy 801",  
+      time: "10:00 am - 4:00 pm",
+    },    
     {
       image: newformatimg15,
       name: "Department of computer applications is organizing a workshop on cyber security",

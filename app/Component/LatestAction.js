@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
  
-import newformatimg12 from "../../public/Homepage/LatestNews/newformatimg12.webp";
-import newformatimg13 from "../../public/Homepage/LatestNews/newformatimg13.webp";
-import newformatimg14 from "../../public/Homepage/LatestNews/newformatimg14.webp";
-import newformatimg15 from "../../public/Homepage/LatestNews/newformatimg15.webp";
+import newformatimg18 from "../../public/Homepage/LatestNews/newformatimg18.webp";
+import newformatimg19 from "../../public/Homepage/LatestNews/newformatimg19.webp";
+import newformatimg20 from "../../public/Homepage/LatestNews/newformatimg20.webp";
+import newformatimg21 from "../../public/Homepage/LatestNews/newformatimg21.webp";
 
 import Image from "next/image";
 
@@ -12,30 +12,29 @@ function StatsAndNews() {
   const swiperRef = useRef();
   const sports = [
     {
-      image: newformatimg15,
-      name: "Department of computer applications is organizing a workshop on cyber security",
-      date: "10th-11th Nov-2025",
-      location: "New seminar hall and pharmacy block",  
-      time: "10:30 am Onwards",  
-    },
-    {
-      image: newformatimg14,
-      name: "Campus Placement Drive - Btech CSE, MBA, BBA, BCA, MCA, Bcom(Hons) 2026 Batch",
-      date: "10-Nov-2025",
-      location: "Tula's Institiute",    
-    },
-    {
-      image: newformatimg13,
-      name: "A decade of glory - 10th diff deheradun international film festival",
-      date: "08-Nov-2025",
-      location: "Tula's Auditorium",    
-    },
-    {
-      image: newformatimg12,
-      name: "Department of civil engineering is organizing an Inter - Department Copmetition",
-      date: "07-Nov-2025",
-      time: "10:00 am Onwards",
-    },
+      image: newformatimg21,
+      name: "Wrokshop on infrastructure development using modern AI technologies",
+      date: "20th-22th Nov-2025",
+      location: "Tula's institute Deheradun",  
+    },    {
+      image: newformatimg20,
+      name: "Masterclass on data-driven sustainblility strategies",
+      date: "17th Nov-2025",
+      location: "F-404 Tula's institute",  
+      time: "11:30 am Onwards",  
+    },    {
+      image: newformatimg19,
+      name: "Add-on certificate program on Fullstack development",
+      date: "17th-28th Nov-2025",
+      location: "G-404 Tula's institute",  
+      time: "11:30 am - 4:00 pm",
+    },    {
+      image: newformatimg18,
+      name: "Add-on certificate program on microsoft azure 102",
+      date: "17th-28th Nov-2025",
+      location: "Computer lab 8",  
+      time: "10:00 am - 4:00 pm",
+    }, 
   ];
 
   return (
