@@ -99,7 +99,7 @@ export const content = (
 export const items = [
   {
     title: "USPs",
-    intro: "Here’s why Tula’s Institute stands out as the ideal place to pursue your Master of Computer Applications",
+    intro: "Here’s why Tula’s Institute stands out as the ideal place to pursue your Masters In Computer Applications",
     image: USP,
     outro: "Join Tula’s Institute and propel your tech career to new heights!",
 
