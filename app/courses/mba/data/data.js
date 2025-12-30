@@ -39,7 +39,7 @@ import PrakashBhatnagar from "../../../../public/courses/bcom/facultyData/Prakas
 import PrakashBhatnagarResume from "../../../../public/courses/bcom/facultyData/PrakashBhatnagarResume.pdf";
 import Varun from "../../../../public/courses/mba/facultyData/varunsingh.jpg";
 import VarunResume from "../../../../public/courses/mba/facultyData/Varunresume.pdf";
-import Prakshit from "../../../../public/courses/mba/facultyData/parikshitkala.jpg";
+import Prakshit from "../../../../public/courses/mba/facultyData/parikshitkala2.jpeg";
 import PrakshitResume from "../../../../public/courses/mba/facultyData/prakshitresume.pdf";
 import Ranvijay from "../../../../public/courses/bba/facultyData/Ranvijay.webp";
 import RanvijayResume from "../../../../public/courses/bba/facultyData/RanvijayResume.pdf";
@@ -244,18 +244,17 @@ export const items = [
   {
     title: "USPs",
     description: [
-      "Fully equipped modern amphitheater kind classrooms for better reach and visibility.",
-      "200+ alumni network in various startups, Entrepreneurships, governmental and blue-chip companies.",
-      "50+ placement opportunities given during the semester.",
-      "research articles and papers in journals of repute.",
+      "The Graduate School of Business (GSB) grooms’ future-ready professionals through a blend of experiential learning, industry engagement & innovation. The curriculum fosters holistic development, practical skills & global business competence.",
     ],
     image: USP,
     points: [
-      "MoU’s with various companies to assist students in their needs of training, placement and internships.",
-      "Collaborative and integrative pedagogy helps to adopt concepts quickly.",
-      "Interaction based ‘Flipped Classroom’ Learning Methodology.",
-      "Comprehend the theories and techniques used in successful organizations using “Case Based” Teaching pedagogy.",
-      "Prepare students for entrepreneurship and employment",
+      "Practice-Oriented Pedagogy - Simulation-based learning and case analysis strengthen analytical, strategic & decision-making capabilities.",
+      "Experiential Learning Framework - Structured internships, live projects & fieldwork ensure effective application of theoretical concepts.",
+      "Industry Engagement & Collaboration - Industry partnerships & expert interactions provide exposure to contemporary business practices.",
+      "Entrepreneurship, Innovation & Research - An enabling ecosystem supports innovation, start-up initiatives & research-oriented problem solving.",
+      "Holistic Development & Leadership Skills - The curriculum promotes ethical values, leadership competence & professional communication.",
+      "Future-Ready Curriculum Design - An outcome-oriented, industry-aligned curriculum integrating experiential learning, technology & continuous assessment to build analytical, leadership & decision- making skills.",
+      "Global Competence & Cultural Readiness - The programme develops foreign language proficiency & cross-cultural sensitivity to enhance global business communication.",
     ],
   },
   {
@@ -283,7 +282,7 @@ export const items = [
     description: [
       "PEO 1. Problem Solving: To sharpen problem solving ability by acquiring holistic knowledge of the managerial concepts.",
       "PEO 2. Decision Making: To make effective decisions for complex managerial problems by applying analytical tools.",
-      "PEO 3. Leadership &amp;amp; Innovation: To develop team players, equipped with the skills to succeed in dynamic global business environments and drive innovation.",
+      "PEO 3. Leadership &amp; Innovation: To develop team players, equipped with the skills to succeed in dynamic global business environments and drive innovation.",
       "PEO 4: Ethical Entrepreneurship: To inculcate an entrepreneurial mindset to create value, drive innovation, and uphold ethical business practices for sustainable development and responsible leadership.",
     ],
     image: Program,
@@ -304,7 +303,7 @@ export const sections = [
   {
     title: "Departmental Vision",
     description:
-      "To emerge as a globally recognised centre for skilled human capital development, inculcating a culture of research and innovation in business administration &amp; entrepreneurship with ethical values.",
+      "To emerge as a globally recognised centre for skilled human capital development, inculcating a culture of research and innovation in business administration & entrepreneurship with ethical values.",
     image: DepartmentalVission,
   },
   {
@@ -430,7 +429,7 @@ export const semesterData = [
 export const facultyData = [
   {
     name: "Dr. Arghya Sarkar",
-    designation: "Associate Professor & HoD",
+    designation: "ASSISTANT PROFESSOR",
     education: "Ph.D.",
     publications: "15",
     experience: "16",
@@ -439,7 +438,7 @@ export const facultyData = [
   },
       {
     name: "Prof. Parikshit Kala",
-    designation: "ASST PROFESSOR",
+    designation: "PROFESSOR",
     education: "MBA, Ph.D.(P)",
     publications: "3",
     experience: "6",
@@ -448,7 +447,7 @@ export const facultyData = [
   },
     {
     name: "Dr. Shikha Dabral",
-    designation: "ASST PROFESSOR",
+    designation: "ASSOCIATE PROFESSOR",
     education: "Ph.D.",
     experience: "8",
     imageUrl: ShikhaDabral,
@@ -456,7 +455,7 @@ export const facultyData = [
   },
     {
     name: "Dr. Akansha Gautam",
-    designation: "ASST PROFESSOR",
+    designation: "ASSOCIATE PROFESSOR",
     education: "Ph.D.",
     publications: "27",
     experience: "9",
@@ -465,7 +464,7 @@ export const facultyData = [
   },
     {
     name: "Dr. Abdal Ahmad",
-    designation: "ASST PROFESSOR",
+    designation: "ASSOCIATE PROFESSOR",
     education: "Ph.D.",
     publications: "37",
     experience: "14",
@@ -564,66 +563,43 @@ export const itemsClubs = [
   },
   {
     title: "Beyond Curriculum",
-    description: [
-      "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s. some of the activities which are regularly conducted for the students are:",
-      "NCC",
-      "NSS",
-      "Picnics",
-      "Educational Tours",
-      "Industrial Visits",
-      "Leisure Tours",
-      "Seminars",
-    ],
-    image: Program,
-    points: [
-      "Workshops",
-      "Symposiums",
-      "Athletic meets",
-      "Cultural Meets",
-      "Sport Meets",
-      "Debates",
-      "Extempore",
-      "Mock Interview sessions",
-      "Business plan developments",
-      "Theatre reviews",
-      "Quizzes",
-      "Social Work",
-      "Volunteering in Social cause campaigns",
-      "Conducting Events and Festivals",
-      "And lots more to add to the overall bucket of beyond curriculum activities",
-    ],
+   description: [
+  "At the Graduate School of Business, Beyond the Curriculum initiatives develop future-ready professionals through industry-aligned certifications, experiential learning, and globally recognized MOOCs.",
+],
+image: Program,
+points: [
+  "Analytics and Data-Driven Decision Making – Builds analytical competencies using business data analysis, SPSS, Power BI, financial modelling, and HR analytics",
+  "Digital Marketing with SEO – Develops practical skills in digital marketing tools, strategies, and online visibility management",
+  "BFSI Sectoral Competency – Provides industry-oriented learning in BFSI operations, regulatory frameworks, and technology architecture",
+  "Financial Accounting – Develops core accounting and financial reporting skills using TALLY software",
+  "Technical Analysis for Investment – Enables interpretation of market trends and indicators for informed investment decisions",
+  "Business Simulation – Enhances strategic decision-making through simulation exercises using tools like CESIM",
+  "MOOC Certifications – Offers NPTEL and SWAYAM certifications in Business, Finance, Marketing, Sustainability, and Entrepreneurship",
+  "Global Language Proficiency – Builds proficiency in French to strengthen communication and global business readiness",
+  "Soft Skills & Personality Development – Develops communication, leadership, and interpersonal skills for professional excellence",
+],
+
   },
   {
     title: "Career Prospects",
-    description: [
-      "MBA degree holder gets job opportunities that includes team leadership and managerial responsibility for Corporate and other sectors. A manager’s job profile broadly includes planning, strategizing, execution, leading the team, liaison with clients, coordinating with other departments, delegation of work and responsibilities, reporting to higher authorities regarding projects undertaken etc.. Given below are some of the popular job options after MBA :",
-    ],
-    image: Course,
-    points: [
-      "Finance Manager",
-      "Marketing Manager",
-      "Sales Manager",
-      "Human Resources Manager",
-      "Operations Manager",
-      "Product Manager",
-      "Data Analytics Manager",
-      "Digital Marketing Manager",
-      "Advertising Sales Manager",
-      "NGO Manager",
-      "Project Manager",
-      "Telecom Manager",
-      "Transport & Logistics Manager",
-      "Infrastructure Manager",
-      "International Business Manager",
-      "Risk Manager",
-      "Energy & Environment Manager",
-      "Import & Export Manager",
-      "IT & Systems Manager",
-      "Healthcare & Hospital Manager",
-      "Materials Manager",
-      "Retail Manager",
-      "Supply Chain Manager",
-      "Public Policy Manager",
-    ],
+   description: [
+  "MBA graduates are prepared for diverse managerial and leadership roles across industries and functional domains. Career prospects are aligned with specialization, industry exposure, and organizational requirements. Below are some prominent career opportunities available after completing an MBA:",
+],
+image: Course,
+points: [
+  "Marketing Manager / Brand Strategist – Develops marketing strategies to strengthen brand equity and market presence",
+  "Business Analyst – Analyzes business data to support strategic and operational decisions",
+  "Financial Analyst – Evaluates financial performance, investments, and risk for informed decision-making",
+  "Human Resource Manager – Manages talent, performance, compliance, and employee engagement",
+  "Operations Manager – Optimizes processes, supply chains, and resources for operational efficiency",
+  "Management Consultant – Advises organizations on strategy, transformation, and performance improvement",
+  "Product Manager – Leads product lifecycle aligning customer needs with business objectives",
+  "Digital Marketing Manager – Designs data-driven campaigns to enhance online engagement",
+  "Banking and Financial Services Professional – Manages financial products, compliance, and customer relationships",
+  "Supply Chain Manager – Plans and controls end-to-end logistics and supply chain networks",
+  "Entrepreneur / Business Owner – Identifies opportunities, builds ventures, and drives business growth",
+  "Corporate Strategy Manager – Formulates long-term strategies to achieve organizational growth",
+],
+
   },
 ];
