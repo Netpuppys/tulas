@@ -10,19 +10,19 @@ import mcaDocument from "../../../../public/courses/mca/all-course-mca-course-ou
 import DepartmentalVission from "../../../../public/courses/mca/departmentVission.webp";
 import DepartmentalMission from "../../../../public/courses/mca/departmentMission.webp";
 import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
-import PriyaResume from "../../../../public/courses/mca/facultyData/PriyaResume.pdf";
+import PriyaResume from "../../../../public/courses/mca/newresume/PriyaResume.pdf";
 import RASHMI from "../../../../public/courses/mca/facultyData/RASHMI.webp";
 import RASHMIResume from "../../../../public/courses/mca/facultyData/RASHMIResume.pdf";
 import sidhartha from "../../../../public/courses/mca/facultyData/sidhartha.webp";
-import sidharthaResume from "../../../../public/courses/mca/facultyData/sidharthaResume.pdf";
+import sidharthaResume from "../../../../public/courses/mca/newresume/sidharthaResume.pdf";
 import RakeshKumar from "../../../../public/courses/mca/facultyData/RakeshKumar.webp";
-import RakeshKumarResume from "../../../../public/courses/mca/facultyData/RakeshKumarResume.pdf";
+import RakeshKumarResume from "../../../../public/courses/mca/newresume/RakeshKumarResume.pdf";
 import ShikaTayal from "../../../../public/courses/mca/facultyData/ShikaTayal.webp";
-import ShikaTayalResume from "../../../../public/courses/mca/facultyData/ShikaTayalResume.pdf";
+import ShikaTayalResume from "../../../../public/courses/mca/newresume/ShikaTayalResume.pdf";
 import Musheer from "../../../../public/courses/mca/facultyData/Musheer.webp";
-import MusheerResume from "../../../../public/courses/mca/facultyData/musheer-updated-resume.pdf";
+import MusheerResume from "../../../../public/courses/mca/newresume/musheer-updated-resume.pdf";
 import SanjeevKumnar from "../../../../public/courses/mca/facultyData/SanjeevKumnar.webp";
-import SanjeevKumnarResume from "../../../../public/courses/mca/facultyData/SanjeevKumnarResume.pdf";
+import SanjeevKumnarResume from "../../../../public/courses/mca/newresume/SanjeevKumnarResume.pdf";
 import Link from "next/link";
 import content1 from "../../../../public/courses/mca/content1.webp";
 import content2 from "../../../../public/courses/mca/content2.webp";
@@ -35,9 +35,9 @@ import RanjanKumar from "../../../../public/courses/mca/PlacementDesign/RanjanKu
 import RishabhSingh from "../../../../public/courses/mca/PlacementDesign/RishabhSingh.webp";
 import TanyaChauhan from "../../../../public/courses/mca/PlacementDesign/TanyaChauhan.webp";
 import AhmadJmal from "../../../../public/courses/btech/computer-science/facultyData/AhmadJmal.webp";
-import AhmadJmalResume from "../../../../public/courses/btech/computer-science/facultyData/AhmadJmalResume.pdf";
+import AhmadJmalResume from "../../../../public/courses/mca/newresume/AhmadJmalResume.pdf";
 import aizaz from "../../../../public/courses/bca/facultyData/aizaz.webp";
-import aizazResume from "../../../../public/courses/bca/facultyData/aizazResume.pdf";
+import aizazResume from "../../../../public/courses/mca/newresume/aizazResume.pdf";
 
 export const features = [
   {
@@ -75,25 +75,13 @@ export const quotes = (
 );
 export const content = (
   <>
-    The Masters in Computer Applications (MCA) is a postgraduate pathway to
-    advanced, specialized tech roles for aspiring tech leaders, offering
-    in-depth training in software development, data science, AI, and
-    cybersecurity. With fast growing global digitalization, the demand for
-    computer applications specialists is constantly expanding.
+    The Department of Computer Applications provides a comprehensive understanding of important areas of computer science and its applications providing them professional skills in software development.
     <br />
     <br />
-    The Department of Computer Applications provides a comprehensive
-    understanding of important areas of computer science and its applications
-    providing them professional skills in software development. It assists
-    students in developing practical abilities to solve a variety of
-    difficulties that may arise during computer programming and their
-    applications. In addition, the post graduates of MCA also find a way to move
-    to the education sector.
-    <br />
-    <br />
-    With an MCA, you’re not just keeping up with technology—you’re leading it.
-    Step into a future filled with opportunities, and make your mark in the
-    ever-expanding digital world.
+     It assists students in developing practical abilities to solve a variety of difficulties that may arise during computer programming and their applications. 
+     <br />
+     <br />
+     In addition, the postgraduates of MCA also find a way to move to the education sector.
   </>
 );
 export const items = [
@@ -396,6 +384,15 @@ export const facultyData = [
     imageUrl: SanjeevKumnar,
     resume: SanjeevKumnarResume,
   },
+    {
+    name: "Dr. Ahmad jamal",
+    designation: "Associate Professor",
+    education: "Ph.D.",
+    publications: "9",
+    experience: "9",
+    imageUrl: AhmadJmal,
+    resume: AhmadJmalResume,
+  },
   {
     name: "Dr Musheer Vaqur",
     designation: "Associate Professor",
@@ -407,7 +404,7 @@ export const facultyData = [
   },
   {
     name: "Dr. Shikha Tayal Aeron",
-    designation: "Assistant Professor",
+    designation: "Associate Professor",
     education: "Ph.D.",
     publications: "6",
     experience: "13",
@@ -423,6 +420,15 @@ export const facultyData = [
     imageUrl: RakeshKumar,
     resume: RakeshKumarResume,
   },
+    {
+    name: "Mr. Aizaz Ahmad",
+    designation: "Assistant Professor",
+    education: "MCA Ph.D. (P)",
+    publications: "0",
+    experience: "8",
+    imageUrl: aizaz,
+    resume: aizazResume,
+  },
   {
     name: "Mr. Siddharth Sharma",
     designation: "Assistant Professor",
@@ -431,24 +437,6 @@ export const facultyData = [
     experience: "13",
     imageUrl: sidhartha,
     resume: sidharthaResume,
-  },
-  {
-    name: "Dr. Ahmad jamal",
-    designation: "Associate Professor",
-    education: "Ph.D.",
-    publications: "9",
-    experience: "9",
-    imageUrl: AhmadJmal,
-    resume: AhmadJmalResume,
-  },
-  {
-    name: "Mr. Aizaz Ahmad",
-    designation: "Assistant Professor",
-    education: "MCA Ph.D. (P)",
-    publications: "0",
-    experience: "8",
-    imageUrl: aizaz,
-    resume: aizazResume,
   },
 ];
 export const hod = [
@@ -462,20 +450,18 @@ export const hod = [
 ];
 export const HODcontent = (
   <>
-    Greetings! On behalf of the faculty members, staff, and students of the
-    Department of Computer Application at Tula’s Institute, Dehradun, I welcome
-    you all to the creative world of computer application. The Department has a
-    team of well qualified and experienced faculty members. The Department lays
-    maximum stress on student outcomes through industry based curriculum,
-    effective teaching learning methods and counselling of students through
-    Mentor-Mentee Program.
+    On behalf of the faculty, staff, and students of the Department of Computer Applications, Tula’s Institute, Dehradun, I extend a warm welcome to all of you stepping into the dynamic and innovation-driven world of computing.
     <br />
-    <br />I believe the computer application discipline has been widely
-    recognized as an essential source and technique for the advancements in
-    software industry. We prepare our students to meet increasing global
-    challenges of ever evolving technologies so as to make them acceptable to
-    both industries and higher institution of learning. In Tula’s Institute all
-    the students get the opportunity to excel in their academic activities.
+    <br />Our department is powered by a team of experienced and academically distinguished faculty members who are committed to build strong technical foundations in every learner and have strong expertise in core and emerging domains such as Artificial Intelligence, Data Science, Cyber Security, Cloud Computing, Software Engineering, and Internet of Things (IoT). With an industry-aligned curriculum, advanced pedagogical practices, and continuous guidance through the Mentor–Mentee Program, we ensure that each student receives holistic academic and professional development.
+    <br />
+    <br />
+    In today’s digital era, computer applications form the backbone of technological advancement across industries. From intelligent systems and data-driven technologies to modern software architectures, this discipline equips students with the skills and mindset needed to contribute meaningfully to the global tech ecosystem.
+    <br />
+    <br />
+    At Tula’s Institute, we nurture a culture of curiosity, innovation, and excellence. Our goal is to prepare students to embrace emerging technologies, solve real-world problems, and lead with confidence in a rapidly evolving digital landscape. We look forward to empower each learner to reach new heights and to guide you as you explore, innovate, and excel in this exciting journey of technological advancement.
+    <br />
+    <br />
+    Whether you are currently a part of Tula’s Institute or exploring the opportunity to join us through our academic or teaching–learning programs, I warmly welcome you to our vibrant, technical, creative, dynamic, and innovation-driven family.
   </>
 );
 export const itemsClubs = [

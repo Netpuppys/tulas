@@ -68,8 +68,8 @@ function BCA() {
           selectedCardTable={selectedCardTable}
           semesterData={semesterData}
           facultyData={facultyData}
-          hod={hod}
-          HODcontent={HODcontent}
+          // hod={hod}
+          // HODcontent={HODcontent}
         />
         <DownloadFeeStructure pdf={BCAFee} />
         <PlacementProgram features={features} />
