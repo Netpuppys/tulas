@@ -39,6 +39,21 @@ import TausifRaza from "../../../public/courses/mba/PlacementDesign/TausifRaza.w
 import PrakharSrivastava from "../../../public/courses/mba/PlacementDesign/PrakharShrivastava.webp";
 import PriyankaPriya from "../../../public/courses/mba/PlacementDesign/PriyankaPriya.webp";
 import ShubhamSaxena from "../../../public/courses/mba/PlacementDesign/ShubhamSaxena.webp";
+
+import CarouselLanding from "../Component/CarouselLandingPage";
+
+// images
+import SanskritiBannerDesktop from "../../../public/Homepage/BannerHome/SanskritiBannerDesktop.webp";
+import RankedBannerDesktop from "../../../public/Homepage/BannerHome/RankedBannerDesktop.webp";
+import MahakumbhBannerDesktop from "../../../public/Homepage/BannerHome/MahakumbhBannerDesktop.webp";
+import PlacementBannerDesktop from "../../../public/Homepage/BannerHome/PlacementBannerDesktop.webp";
+import RankedBannerMobile from "../../../public/Homepage/BannerHome/RankedBannerMobile.webp";
+import SanskritiBannerMobile from "../../../public/Homepage/BannerHome/SanskritiBannerMobile.webp";
+import MahakumbhBannerMobile from "../../../public/Homepage/BannerHome/MahakumbhBannerMobile.webp";
+import PlacementBannerMobile from "../../../public/Homepage/BannerHome/PlacementBannerMobile.webp";
+import desktopbanner1 from "../../../public/Homepage/BannerHome/desktopbanner1.jpg";
+import mobilebanner1 from "../../../public/Homepage/BannerHome/mobilebanner1.jpg";
+// images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
 
@@ -162,6 +177,24 @@ const page = () => {
   ];
   const journeyQuote =
     "Transform Your Business Acumen with an MBA from Tula's Institute!";
+
+  const bannerImagesDesktop = [
+    SanskritiBannerDesktop,
+    RankedBannerDesktop,
+    MahakumbhBannerDesktop,
+    PlacementBannerDesktop,
+    desktopbanner1,
+    // desktopbanner2,
+  ];
+  const bannerImagesMobile = [
+    RankedBannerMobile,
+    SanskritiBannerMobile,
+    MahakumbhBannerMobile,
+    PlacementBannerMobile,
+    mobilebanner1,
+    // mobilebanner2,
+  ];
+
   return (
     <>
       <head>
@@ -178,11 +211,20 @@ const page = () => {
           {/* <NavbarLandingPage /> */}
           {/* banner */}
           <BannerLandingPage bannerImg={bannerImg} />
-          {/* Form */}
+
+          {/* carousel */}
+        {/* <div className="hidden md:block">
+          <CarouselLanding bannerImages={bannerImagesDesktop} scrollButton={true} />
+        </div>
+        <div className="block md:hidden">
+          <CarouselLanding bannerImages={bannerImagesMobile} scrollButton={true} />
+        </div>   */}
+         {/* carousel */}
+                {/* Form */}
           <div ref={scrollRef}>
             <FormLandingPage
               course={1}
-              formHeading={"MBA Admissions Open 2025"}
+              formHeading={"MBA Admissions Open 2026"}
               thankYOu={`/graduate-school-of-business/mba/thank-you/${utmParams}`}
             />
           </div>
