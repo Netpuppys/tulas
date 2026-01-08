@@ -18,6 +18,8 @@ import {
   sections,
   selectedCard1,
   semesterData,
+  hod,
+  HODcontent, 
 } from "./data/data";
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
@@ -58,6 +60,8 @@ function MBA() {
           selectedCard1={selectedCard1}
           semesterData={semesterData}
           facultyData={facultyData}
+          hod={hod}
+          HODcontent={HODcontent}
         />
         <DownloadFeeStructure pdf={MBAFee} />
         <PlacementProgram features={features} />

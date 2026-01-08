@@ -336,6 +336,8 @@ export const cards = [
   { title: "Eligibility" },
   { title: "Curriculum" },
   { title: "Senior Faculty" },
+  { title: "From the Desk of HOD" },
+
 ];
 export const selectedCard1 = (
   <>
@@ -355,76 +357,184 @@ export const semesterData = [
   {
     semester: "I SEMESTER",
     subjects: [
-      { code: "MB101", title: "Principles and Practices of Management" },
-      { code: "MB102", title: "Financial accounting" },
+      { code: "MBT 101", title: "Principles and Practices of Management" },
+      { code: "MBT 102", title: "Financial Accounting" },
       {
-        code: "MB103", title: "Quantitative Techniques and Operation Research"},
-      { code: "MB104", title: "Managerial Economics" },
-      { code: "MB105E", title: "Business Environment" },
-      { code: "MB106", title: "Business Laws" },
-      { code: "MB107", title: "Professional Business Communication"},
-      { code: "MB108", title: "Information System for Managers"},
+        code: "MBT 103",
+        title: "Quantitative Techniques & Operation Research",
+      },
+      { code: "MBT 104", title: "Managerial Economics" },
+      { code: "MBT 105", title: "Business Environment" },
+      { code: "MBT 106", title: "Business Laws" },
+      {
+        code: "MBT 107",
+        title: "Professional Business Communication",
+      },
+      {
+        code: "MBT 108",
+        title: "Information System for Managers",
+      },
     ],
   },
   {
     semester: "II SEMESTER",
     subjects: [
-      { code: "MB201", title: "Organisational Behaviour" },
-      { code: "MB202", title: "Management Accounting" },
-      { code: "MB203", title: "Marketing Management" },
-      { code: "MB204", title: "Financial Management" },
-      { code: "MB205", title: "Human Resource Management" },
-      { code: "MB206", title: "Production and Operation Management" },
-      { code: "MB207", title: "Business Research Methods" },
-      { code: "MB208", title: "State of Art Seminar" },
+      { code: "MBT 201", title: "Organisational Behaviour" },
+      { code: "MBT 202", title: "Management Accounting" },
+      { code: "MBT 203", title: "Marketing Management" },
+      { code: "MBT 204", title: "Financial Management" },
+      {
+        code: "MBT 205",
+        title: "Human Resource Management",
+      },
+      {
+        code: "MBT 206",
+        title: "Production & Operation Management",
+      },
+      {
+        code: "MBT 207",
+        title: "Business Research Methods",
+      },
+      {
+        code: "MBT 208",
+        title: "State of Art Seminar",
+      },
     ],
   },
   {
-  semester: "III SEMESTER",
-  subjects: [
-    { code: "MBT 301", title: "Strategic Management" },
-    { code: "MBT 302", title: "International Business" },
-    { code: "MBT 303", title: "Universal Human Values and Professional Ethics" },
-    { code: "MBT 304", title: "Total Quality Management" },
-    { code: "MBT 305 M1", title: "Integrated Marketing Communications" },
-    { code: "MBT 305 M3", title: "Digital Marketing" },
-    { code: "MBT 305 M4", title: "Consumer Behaviour" },
-    { code: "MBT 305 F1", title: "Security Analysis and Portfolio Management" },
-    { code: "MBT 305 F2", title: "Working Capital Management" },
-    { code: "MBT 305 F4", title: "Financial Markets and Institutions" },
-    { code: "MBT 305 HR1", title: "Industrial Relations and Labour Laws" },
-    { code: "MBT 305 HR2", title: "Training & Development" },
-    { code: "MBT 305 HR4", title: "Counselling Skills for Managers" },
-    { code: "MBT 305 IB4", title: "Cross Cultural Business Management" },
-    { code: "MBT 305 SC4", title: "Designing & Managing Supply Chain" },
-    {
-      code: "MBT 306",
-      title:
-        "Summer Internship Project Report and Viva-Voce (Training Report and Presentation followed by viva voce)"
-    }
-  ]
-},
+    semester: "III SEMESTER",
+    subjects: [
+      { code: "MBT 301", title: "Strategic Marketing" },
+      { code: "MBT 302", title: "International Business" },
+      {
+        code: "MBT 303",
+        title: "Universal Human Values and Professional Ethics",
+      },
+      { code: "MBT 304", title: "Total Quality Management" },
 
+      {
+        code: "MBT 305 F1",
+        title: "Security Analysis and Portfolio Management",
+      },
+      {
+        code: "MBT 305 F2",
+        title: "Working Capital Management",
+      },
+      {
+        code: "MBT 305 F4",
+        title: "Financial Markets and Institutions",
+      },
+
+      { code: "MBT 305 M1", title: "Marketing Research" },
+      { code: "MBT 305 M3", title: "Digital Marketing" },
+      { code: "MBT 305 M4", title: "Consumer Behaviour" },
+
+      {
+        code: "MBT 305 HR1",
+        title: "Industrial Relations and Labour Laws",
+      },
+      {
+        code: "MBT 305 HR2",
+        title: "Training & Development",
+      },
+      {
+        code: "MBT 305 HR4",
+        title: "Counselling Skills for Managers",
+      },
+
+      {
+        code: "MBT 305 IB1",
+        title: "Import and Export Management",
+      },
+      {
+        code: "MBT 305 IB2",
+        title: "International Business Laws and Treaties",
+      },
+      {
+        code: "MBT 305 IB4",
+        title: "Cross Cultural Business Management",
+      },
+
+      {
+        code: "MBT 305 SC4",
+        title: "Designing & Managing Supply Chain",
+      },
+
+      {
+        code: "MBT 306",
+        title: "Project Report & Viva-Voce",
+      },
+    ],
+  },
   {
-  semester: "IV SEMESTER",
-  subjects: [
-    { code: "MBT 401", title: "Business Ethics & Corporate Governance" },
-    { code: "MBT 402", title: "Project Management" },
-    { code: "MBT 403", title: "Entrepreneurship Development" },
-    { code: "MBT 404 M2", title: "Retail Management" },
-    { code: "MBT 404 M3", title: "Rural Marketing" },
-    { code: "MBT 404 M4", title: "Sales Management" },
-    { code: "MBT 404 F1", title: "International Financial Management" },
-    { code: "MBT 404 F3", title: "Financial Derivatives" },
-    { code: "MBT 404 F4", title: "Financial Services" },
-    { code: "MBT 404 HR1", title: "International Human Resource Management" },
-    { code: "MBT 404 HR3", title: "Compensation Management" },
-    { code: "MBT 305 HR4", title: "Corporate Leadership" },
-    { code: "MBT 404 IB 4", title: "Exim Financing and Documentation" },
-    { code: "MBT 404 SC4", title: "Lean Supply Chain & Supplier relationship Management" },
-    { code: "MBT 405", title: "Dissertation & Viva-Voce" }
-  ]
-},
+    semester: "IV SEMESTER",
+    subjects: [
+      {
+        code: "MBT 401",
+        title: "Business Ethics & Corporate Governance",
+      },
+      { code: "MBT 402", title: "Project Management" },
+      {
+        code: "MBT 403",
+        title: "Entrepreneurship Management",
+      },
+
+      { code: "MBT 404 M2", title: "Retail Management" },
+      { code: "MBT 404 M3", title: "Rural Marketing" },
+      { code: "MBT 404 M4", title: "Sales Management" },
+
+      {
+        code: "MBT 404 F1",
+        title: "International Financial Management",
+      },
+      {
+        code: "MBT 404 F3",
+        title: "Financial Derivatives",
+      },
+      {
+        code: "MBT 404 F4",
+        title: "Financial Services",
+      },
+
+      {
+        code: "MBT 404 HR1",
+        title: "International Human Resource Management",
+      },
+      {
+        code: "MBT 404 HR3",
+        title: "Compensation Management",
+      },
+      {
+        code: "MBT 404 HR4",
+        title: "Corporate Leadership",
+      },
+
+      {
+        code: "MBT 404 IB1",
+        title: "International Marketing Management",
+      },
+      {
+        code: "MBT 404 IB2",
+        title: "Global Financial Markets & Instruments",
+      },
+      {
+        code: "MBT 404 IB4",
+        title: "EXIM Financing & Documentation",
+      },
+
+      {
+        code: "MBT 404 SCM4",
+        title:
+          "Lean Supply Chain & Supplier Relationship Management",
+      },
+
+      {
+        code: "MBT 405",
+        title: "Dissertation & Viva-Voce",
+      },
+    ],
+  },
+
 ];
 export const facultyData = [
   {
@@ -440,8 +550,8 @@ export const facultyData = [
     name: "Prof. Parikshit Kala",
     designation: "PROFESSOR",
     education: "MBA, Ph.D.(P)",
-    publications: "3",
-    experience: "6",
+    publications: "16",
+    experience: "21",
     imageUrl: Prakshit,
     resume: PrakshitResume,
   },
@@ -474,7 +584,7 @@ export const facultyData = [
 
     {
     name: "Dr. Rajvijay Singh",
-    designation: "ASST PROFESSOR",
+    designation: "ASSISTANT PROFESSOR",
     education: "Ph.D.",
     publications: "4",
     experience: "5",
@@ -483,7 +593,7 @@ export const facultyData = [
   },
     {
     name: "Mr. Anupum Nautiyal",
-    designation: "ASST PROFESSOR",
+    designation: "ASSISTANT PROFESSOR",
     education: "MBA, Ph.D.(P)",
     publications: "3",
     experience: "11",
@@ -492,7 +602,7 @@ export const facultyData = [
   },
   {
     name: "Mr. Emmanuel Gabriel",
-    designation: "ASST PROFESSOR",
+    designation: "ASSISTANT PROFESSOR",
     education: "MBA, Ph.D.(P)",
     publications: "3",
     experience: "9",
@@ -501,7 +611,7 @@ export const facultyData = [
   },
   {
     name: "Mr. Bharat Bhusan",
-    designation: "ASST PROFESSOR",
+    designation: "ASSISTANT PROFESSOR",
     education: "MBA, Ph.D(P)",
     publications: "2",
     experience: "6",
@@ -510,7 +620,7 @@ export const facultyData = [
   },
   {
     name: "Prakash Bhatnager",
-    designation: "ASST PROFESSOR",
+    designation: "ASSISTANT PROFESSOR",
     education: "MBA, Ph.D.(P)",
     publications: "1",
     experience: "6",
@@ -519,7 +629,7 @@ export const facultyData = [
   },
   {
     name: "Ms. Swati Yadav",
-    designation: "ASST PROFESSOR",
+    designation: "ASSISTANT PROFESSOR",
     education: "MBA, Ph.D.(P)",
     publications: "2",
     experience: "5",
@@ -528,7 +638,7 @@ export const facultyData = [
   },
   {
     name: "Mr. Varun Kumar",
-    designation: "ASST PROFESSOR",
+    designation: "ASSISTANT PROFESSOR",
     education: "MBA, Ph.D.(P)",
     publications: "3",
     experience: "6",
@@ -536,20 +646,52 @@ export const facultyData = [
     resume: VarunResume,
   },
 ];
+export const hod = [
+  {
+    name: "Dr. Aarghya Sarkar	",
+    email: "mba.hod@tulas.edu.in",
+    designation: "Graduate School of Business	",
+    department: "Computer Applications",
+    imageUrl: ArghyaSarkar, // Replace with the actual image path
+  },
+];
+export const HODcontent = (
+  <>
+   It is with great privilege that I extend a cordial welcome to the Graduate School of Business at Tula’s Institute, Dehradun. The department is distinguished by its rigorously designed industry-aligned curriculum, outcome-based pedagogy & committed faculty, all dedicated to developing competent, ethical and globally proficient business leaders.
+    <br />
+    <br />Our department offers the Master of Business Administration (MBA) a unique integration of experiential learning, corporate engagement, and structured mentorship, enabling students to acquire critical thinking, strategic decision-making, and leadership capabilities. Through live projects, internships, industry interactions and technology-enabled classrooms, where students gain practical exposure and a competitive edge in both professional and academic domains.
+    <br />
+    <br />
+    At Tula’s Institute, we are committed to holistic student development, ensuring that every learner attains excellence and is fully prepared to meet the dynamic challenges of contemporary business environments.
+  </>
+);
 export const itemsClubs = [
   {
     title: "Clubs/Societies/ Memberships",
-    description: ["VIBGYOR", "VICTREE", "COMPETERE"],
+    description: [
+      "Wealth Wizard( Finance Club)",
+      "Creative Edge (Marketing Club)",
+      "Vissionaries (HR Club)",
+      "Inspire X (Entrepreneurship)",
+      "Nexus( Simulation club)",
+      "Matrix ( Analytics Club)",
+      "AIMA (All India Management Association)"
+    ],
     image: USP,
   },
   {
     title: "Edge Over Others",
     description: [
-      "A Versatile degree",
-      "An MBA can help with career advancement",
-      "An MBA can help you meet people",
-      "An MBA can help you learn about other functional areas and industries",
-      "An MBA program can help you move to a new place",
+     "Finance",
+      "Marketing",
+      "Human Resource Management (HR)",
+      "Business Analytics &amp; Data Analytics",
+      "Supply Chain and Operations Management",
+      "International Business",
+      "Entrepreneurship",
+      "Operations and Supply Chain Management",
+      "Information Technology and Systems Management",
+      "Consulting"
     ],
     image: Course,
     points: [
