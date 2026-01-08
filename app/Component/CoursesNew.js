@@ -76,7 +76,7 @@ function CoursesNew() {
           ],
         },
         {
-          title: "Graduate School of Business",
+          title: "Department of Managment of Commerce",
           superNestedLinks: [
             {
               title: "BBA",
@@ -89,7 +89,7 @@ function CoursesNew() {
           ],
         },
         {
-          title: "Department of Computer Applications",
+          title: "Graduate school of Computer Applications",
           superNestedLinks: [
             {
               title: "BCA",

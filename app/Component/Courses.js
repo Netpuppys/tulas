@@ -68,7 +68,7 @@ function Courses({ parentRef }) {
 
   return (
     <div ref={childRef} className="w-full h-fit">
-      <div className="w-full h-[3900px] md:h-[222vh] relative bg-[#3D001B] overflow-hidden">
+      <div className="w-full h-[4900px] md:h-[262vh] relative bg-[#3D001B] overflow-hidden">
         <div
           className={`${
             scrollY > 0 && scrollY < componentHeight && opacity !== 0

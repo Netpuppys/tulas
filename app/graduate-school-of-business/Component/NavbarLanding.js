@@ -16,7 +16,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
     <div className="fixed w-full z-[9999] pointer-events-none">
 
       {/* ================= DESKTOP TOP BAR ================= */}
-      <div className="bg-[rgba(19,19,19,0.50)] backdrop-blur-xl w-full hidden md:block pointer-events-auto">
+      <div className="bg-[rgba(19,19,19,0.80)] backdrop-blur-xl w-full hidden md:block pointer-events-auto">
         <div className="w-[95%] mx-auto flex items-center justify-center gap-4 border-b border-[#9A9A9A] py-2">
           <a
             href="tel:+91-8069204028"
@@ -35,7 +35,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
       </div>
 
       {/* ================= NAVBAR ================= */}
-      <div className="bg-[rgba(19,19,19,0.50)] backdrop-blur-xl pointer-events-auto">
+      <div className="bg-[rgba(19,19,19,0.80)] backdrop-blur-xl pointer-events-auto">
         <div className="px-0 md:px-[2%] pb-3 md:pt-2 pt-0">
 
           {/* ===== MOBILE STRUCTURE ===== */}

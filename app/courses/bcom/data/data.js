@@ -348,15 +348,15 @@ export const semesterData = [
 ];
 
 export const facultyData = [
-  {
-    name: "Dr. Arghya Sarkar",
-    designation: "Associate Professor & HoD",
-    education: "Ph.D.",
-    publications: "15",
-    experience: "16",
-    imageUrl: ArghyaSarkar,
-    resume: ArghyaSarkarResume,
-  },
+  // {
+  //   name: "Dr. Arghya Sarkar",
+  //   designation: "Associate Professor & HoD",
+  //   education: "Ph.D.",
+  //   publications: "15",
+  //   experience: "16",
+  //   imageUrl: ArghyaSarkar,
+  //   resume: ArghyaSarkarResume,
+  // },
   {
     name: "Prakash Bhatnager",
     designation: "ASST PROFESSOR",
@@ -366,23 +366,23 @@ export const facultyData = [
     imageUrl: PrakashBhatnagar,
     resume: PrakashBhatnagarResume,
   },
-  {
-    name: "Ms. Akanksha Pal",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D(P)",
-    publications: "2",
-    experience: "5",
-    imageUrl: Akanksha,
-    resume: AkankshaResume,
-  },
-  {
-    name: "Mr. Tarun Kumar",
-    designation: "ASST PROFESSOR",
-    education: "MBA",
-    experience: "14",
-    imageUrl: TarunSharma,
-    resume: TarunSharmaResume,
-  },
+  // {
+  //   name: "Ms. Akanksha Pal",
+  //   designation: "ASST PROFESSOR",
+  //   education: "MBA, Ph.D(P)",
+  //   publications: "2",
+  //   experience: "5",
+  //   imageUrl: Akanksha,
+  //   resume: AkankshaResume,
+  // },
+  // {
+  //   name: "Mr. Tarun Kumar",
+  //   designation: "ASST PROFESSOR",
+  //   education: "MBA",
+  //   experience: "14",
+  //   imageUrl: TarunSharma,
+  //   resume: TarunSharmaResume,
+  // },
   {
     name: "Ms. Niharika Dutt Nautiyal",
     designation: "ASST PROFESSOR",

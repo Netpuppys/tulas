@@ -249,7 +249,7 @@ function FormLandingPage({
   };
 
   return (
-    <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 -mt-[50%] md:-mt-[10%]">
+    <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 -mt-[10%] md:-mt-[10%]">
       <div className="w-full flex flex-col justify-center items-center">
         {/* <Image src={mba} className="w-fit h-fit " alt="" />
         <h1 className="font-[TTChocolatesMedium] leading-tight my-4 text-center font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)]">

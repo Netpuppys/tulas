@@ -10,21 +10,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Dynalight&family=Oswald:wght@200..700&family=Reem+Kufi:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fasthand&display=swap"
+          href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Dynalight&family=Oswald:wght@200..700&family=Reem+Kufi:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap&family=Fasthand&display=swap"
           rel="stylesheet"
-        />
-
-        {/* SEO Meta */}
+        ></link>
         <meta
           name="robots"
           content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
         />
-
-        {/* OG */}
         <meta property="og:title" content="Tula's Institute, Dehradun" />
         <meta
           property="og:description"
@@ -37,10 +32,13 @@ export default function RootLayout({ children }) {
         <meta property="og:image:alt" content="Tula's Institute, Dehradun" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-
-        {/* ================= GOOGLE TAG MANAGER (SEO GUY) ================= */}
+        {/* Google Tag Manager */}
         <Script
-          id="gtm"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-WX6R6WSL"
+        />
+        <Script
+          id="gtag-1"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -48,29 +46,27 @@ export default function RootLayout({ children }) {
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-MDRPG4GC');
+              })(window,document,'script','dataLayer','GTM-WX6R6WSL');
             `,
           }}
         />
-
-        {/* ================= MICROSOFT CLARITY (SEO GUY) ================= */}
-        <Script
+        {/* clarity */}
+        <script
           id="clarity"
-          strategy="afterInteractive"
+          type="text/javascript"
+          // strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;
-                  t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];
-                  y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "pu9ur843jb");
+            function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "pu9ur843jb"
             `,
           }}
         />
-
-        {/* ================= META PIXEL ================= */}
+        
+        {/* Meta Pixel */}
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
@@ -89,8 +85,6 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-
-        {/* ================= SCHEMAS (UNCHANGED) ================= */}
         <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -147,6 +141,7 @@ export default function RootLayout({ children }) {
               name: "Tula's Institute",
               image:
                 "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
+              "@id": "",
               url: "https://tulas.edu.in/",
               telephone: "0135-2699300",
               address: {
@@ -167,7 +162,6 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-
         <Script
           id="blogposting-schema"
           type="application/ld+json"
@@ -175,53 +169,46 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BlogPosting",
-              mainEntityOfPage: {
+              "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://tulas.edu.in/blog/",
+                "@id": "https://tulas.edu.in/blog/"
               },
-              headline:
-                "Best Engineering & Degree College in Dehradun, Uttarakhand | Tula's Institute",
-              description:
-                "Stay Updated With the Latest Insights, News, and Academic Advancements at Tula's Institute.",
-              image:
-                "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
-              author: {
+              "headline": "Best Engineering & Degree College in Dehradun, Uttarakhand | Tula's Institute",
+              "description": "Stay Updated With the Latest Insights, News, and Academic Advancements at Tula's Institute, the Best Engineering & Degree College in Dehradun, Uttarakhand. Explore Articles on Engineering, Technology, Student Life, Career Tips, and More from Our Expert Faculty and Students.",
+              "image": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
+              "author": {
                 "@type": "Organization",
-                name: "Tula's Institute",
-                url: "https://tulas.edu.in/",
+                "name": "Tula's Institute",
+                "url": "https://tulas.edu.in/"
               },
-              publisher: {
+              "publisher": {
                 "@type": "Organization",
-                name: "Tula's Institute",
-                logo: {
+                "name": "Tula's Institute", // Should not be empty
+                "logo": {
                   "@type": "ImageObject",
-                  url: "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
-                },
+                  "url": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png" // Should not be empty
+                }
               },
-              datePublished: "2023-11-15",
-              dateModified: "2023-11-16",
-            }),
+              "datePublished": "2023-11-15", // Should include actual date
+              "dateModified": "2023-11-16" // Recommended to add
+            })
           }}
         />
       </head>
-
       <body className={inter.className}>
-        {/* GTM noscript */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-MDRPG4GC"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WX6R6WSL"
             height="0"
             width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
+            className="hidden opacity-0"
+          ></iframe>
         </noscript>
-
-        {/* Meta Pixel noscript */}
         <noscript>
           <img
             height="1"
             width="1"
-            style={{ display: "none" }}
+            className="hidden opacity-0"
             src="https://www.facebook.com/tr?id=1001916883544560&ev=PageView&noscript=1"
           />
         </noscript>

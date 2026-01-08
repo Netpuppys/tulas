@@ -76,7 +76,7 @@ function CarouselLanding({
     <div
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
-      className={`w-full relative overflow-hidden ${
+      className={`w-full relative overflow-hidden  ${
         screen
           ? "h-[80vh] md:h-screen"
           : "aspect-[1088/1350] md:aspect-[2745/1329] md:h-full"

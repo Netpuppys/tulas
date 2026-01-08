@@ -37,7 +37,7 @@ import TanyaChauhan from "../../../../public/courses/mca/PlacementDesign/TanyaCh
 import AhmadJmal from "../../../../public/courses/btech/computer-science/facultyData/AhmadJmal.webp";
 import AhmadJmalResume from "../../../../public/courses/mca/newresume/AhmadJmalResume.pdf";
 import aizaz from "../../../../public/courses/bca/facultyData/aizaz.webp";
-import aizazResume from "../../../../public/courses/mca/newresume/aizazResume.pdf";
+import aizazResume from "../../../../public/courses/mca/newresume/aizazresume.pdf";
 
 export const features = [
   {

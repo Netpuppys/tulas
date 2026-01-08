@@ -43,16 +43,17 @@ import ShubhamSaxena from "../../../public/courses/mba/PlacementDesign/ShubhamSa
 import CarouselLanding from "../Component/CarouselLandingPage";
 
 // images
-import SanskritiBannerDesktop from "../../../public/Homepage/BannerHome/SanskritiBannerDesktop.webp";
-import RankedBannerDesktop from "../../../public/Homepage/BannerHome/RankedBannerDesktop.webp";
-import MahakumbhBannerDesktop from "../../../public/Homepage/BannerHome/MahakumbhBannerDesktop.webp";
-import PlacementBannerDesktop from "../../../public/Homepage/BannerHome/PlacementBannerDesktop.webp";
-import RankedBannerMobile from "../../../public/Homepage/BannerHome/RankedBannerMobile.webp";
-import SanskritiBannerMobile from "../../../public/Homepage/BannerHome/SanskritiBannerMobile.webp";
-import MahakumbhBannerMobile from "../../../public/Homepage/BannerHome/MahakumbhBannerMobile.webp";
-import PlacementBannerMobile from "../../../public/Homepage/BannerHome/PlacementBannerMobile.webp";
-import desktopbanner1 from "../../../public/Homepage/BannerHome/desktopbanner1.jpg";
-import mobilebanner1 from "../../../public/Homepage/BannerHome/mobilebanner1.jpg";
+import Banner1 from "../../../public/landingPage/1.jpg";
+import Banner2 from "../../../public/landingPage/2.jpg";
+import Banner3 from "../../../public/landingPage/4.jpg";
+import Banner4 from "../../../public/landingPage/6.jpg";
+import Banner5 from "../../../public/landingPage/9.jpg";
+
+import Bannermd1 from "../../../public/landingPage/1md.jpg";
+import Bannermd2 from "../../../public/landingPage/2md.jpg";
+import Bannermd3 from "../../../public/landingPage/4md.jpg";
+import Bannermd4 from "../../../public/landingPage/6md.jpg";
+import Bannermd5 from "../../../public/landingPage/9md.jpg";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -179,19 +180,19 @@ const page = () => {
     "Transform Your Business Acumen with an MBA from Tula's Institute!";
 
   const bannerImagesDesktop = [
-    SanskritiBannerDesktop,
-    RankedBannerDesktop,
-    MahakumbhBannerDesktop,
-    PlacementBannerDesktop,
-    desktopbanner1,
+    Banner1,
+    Banner2,
+    Banner3,
+    Banner4,
+    Banner5,
     // desktopbanner2,
   ];
   const bannerImagesMobile = [
-    RankedBannerMobile,
-    SanskritiBannerMobile,
-    MahakumbhBannerMobile,
-    PlacementBannerMobile,
-    mobilebanner1,
+    Bannermd1,
+    Bannermd2,
+    Bannermd3,
+    Bannermd4,
+    Bannermd5,
     // mobilebanner2,
   ];
 
@@ -213,10 +214,10 @@ const page = () => {
           <BannerLandingPage bannerImg={bannerImg} />
 
           {/* carousel */}
-        {/* <div className="hidden md:block">
+        {/* <div className="hidden md:block pt-[34px] md:pt-[90px]">
           <CarouselLanding bannerImages={bannerImagesDesktop} scrollButton={true} />
         </div>
-        <div className="block md:hidden">
+        <div className="block md:hidden pt-[64px] md:pt-[80px]">
           <CarouselLanding bannerImages={bannerImagesMobile} scrollButton={true} />
         </div>   */}
          {/* carousel */}

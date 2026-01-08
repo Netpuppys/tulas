@@ -4,6 +4,8 @@ import Business from "../../public/Homepage/Courses/Business.png";
 import Agriculture from "../../public/Homepage/Courses/Agriculture.png";
 import MassCoummunication from "../../public/Homepage/Courses/MassCommunication.png";
 import computerApplication from "../../public/Homepage/Courses/ComputerApplication.png";
+import computerApplicationgraduate from "../../public/Homepage/Courses/computerapplicationgraduate.jpg";
+import departmentofmanagment from "../../public/Homepage/Courses/departmentofmanagment.jpg";
 import Pharmacy from "../../public/Homepage/Courses/Pharmacy.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -157,6 +159,70 @@ function CardCourses({ linked = true }) {
         },
       ],
     },
+        {
+      src: departmentofmanagment,
+      title: "DEPARTMENT OF MANAGMENT AND COMMERCE",
+      degrees: [
+        {
+          name: "MBA",
+          link: "/courses/mba",
+          // branches: [
+          //   {
+          //     name: "Finance",
+          //     linkTo: "/courses/mba",
+          //   },
+          //   {
+          //     name: "Human Resource Management",
+          //     linkTo: "/courses/mba",
+          //   },
+          //   {
+          //     name: "Marketing",
+          //     linkTo: "/courses/mba",
+          //   },
+          //   {
+          //     name: "Development",
+          //     linkTo: "/courses/mba",
+          //   },
+          //   {
+          //     name: "International Business",
+          //     linkTo: "/courses/mba",
+          //   },
+          //   {
+          //     name: "Business Analytics",
+          //     linkTo: "/courses/mba",
+          //   },
+          // ],
+        },
+        {
+          name: "B.com. (Hons)",
+          link: "/courses/bcom",
+          branches: [
+            {
+              name: "",
+              linkTo: "",
+            },
+          ],
+        },
+        {
+          name: "BBA",
+          link: "/courses/bba",
+          branches: [
+            {
+              name: "Human Resource Management",
+              linkTo: "/courses/bba",
+            },
+            {
+              name: "Marketing",
+              linkTo: "/courses/bba",
+            },
+            {
+              name: "Finance",
+              linkTo: "/courses/bba",
+            },
+          ],
+        },
+      ],
+    },
     {
       src: Agriculture,
       title: "DEPARTMENT OF AGRICULTURE",
@@ -215,6 +281,32 @@ function CardCourses({ linked = true }) {
         },
       ],
     },
+        {
+      src: computerApplicationgraduate,
+      title: "GRADUATE SCHOOL OF COMPUTER APPLICATIONS",
+      degrees: [
+        {
+          name: "BCA",
+          link: "/courses/bca",
+          branches: [
+            {
+              name: "",
+              linkTo: "",
+            },
+          ],
+        },
+        {
+          name: "MCA",
+          link: "/courses/mca",
+          branches: [
+            {
+              name: "",
+              linkTo: "",
+            },
+          ],
+        },
+      ],
+    },
     {
       src: Pharmacy,
       title: "TULA'S INSTITUTE OF PHARMACY",
@@ -244,24 +336,25 @@ function CardCourses({ linked = true }) {
   ];
   const { utmParams } = useContext(UtmContext);
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center w-full h-fit gap-4">
-      {cardsCourses.map((image, index) => (
-        <div className="w-[90%] md:w-fit" key={index}>
-          <div
-            className={`w-full md:w-[15vw] group card-group h-[400px] md:h-full overflow-hidden shadow-lg transform transition-all duration-500`}
-          >
-            <Image
-              src={image.src}
-              loading="lazy"
-              alt=""
-              className="z-50 object-cover w-full h-full"
-              width={270}
-              height={510}
-            />
-            <div className="absolute w-full h-fit overflow-scroll z-30 bottom-0 p-2 flex flex-col gap-4">
-              <div className="text-white w-fit text-left font-[BenchNine] text-3xl md:text-4xl">
-                {image.title}
-              </div>
+<div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
+  {cardsCourses.map((image, index) => (
+    <div className="w-full max-w-[300px]" key={index}>
+      <div
+        className="group card-group h-[400px] overflow-hidden shadow-lg transform transition-all duration-500 relative"
+      >
+        <Image
+          src={image.src}
+          loading="lazy"
+          alt=""
+          className="z-50 object-cover w-full h-full"
+          width={240}
+          height={400}
+        />
+
+        <div className="absolute w-full h-fit z-30 bottom-0 p-2 flex flex-col gap-4">
+          <div className="text-white w-fit text-left font-[BenchNine] text-2xl md:text-3xl">
+            {image.title}
+          </div>
               {/* {image.degrees.map((degree, degreeIndex) => (
                 <div
                   key={degreeIndex}
