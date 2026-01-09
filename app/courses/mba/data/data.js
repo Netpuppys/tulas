@@ -539,7 +539,7 @@ export const semesterData = [
 export const facultyData = [
   {
     name: "Dr. Arghya Sarkar",
-    designation: "ASSISTANT PROFESSOR",
+    designation: "ASSISTANT PROFESSOR (HOD)",
     education: "Ph.D.",
     publications: "15",
     experience: "16",
@@ -650,8 +650,8 @@ export const hod = [
   {
     name: "Dr. Aarghya Sarkar	",
     email: "mba.hod@tulas.edu.in",
-    designation: "Graduate School of Business	",
-    department: "Computer Applications",
+    designation: "Head of the Department",
+    department: "Graduate School of Business",
     imageUrl: ArghyaSarkar, // Replace with the actual image path
   },
 ];
@@ -682,6 +682,8 @@ export const itemsClubs = [
   {
     title: "Edge Over Others",
     description: [
+      "An MBA develops managerial competence, strategic insight, and leadership skills, enabling graduates to pursue diverse career opportunities across industries and functional areas.",
+      "Functional Career Paths",
      "Finance",
       "Marketing",
       "Human Resource Management (HR)",
