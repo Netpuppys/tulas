@@ -99,7 +99,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
             href="tel:+91-8069204028"
             className="w-1/2 flex justify-center items-center gap-2 text-white"
           >
-            <IoCall /> Call
+            <IoCall /> +91 8069204028
           </a>
           <div className="w-[1px] bg-white"></div>
           <button
