@@ -159,10 +159,10 @@ function LifeAtTulas() {
                       src={slide.image}
                       alt=""
                       loading="lazy"
-                      className="w-full -z-10 h-full object-cover opacity-70"
+                      className="w-full -z-10 h-full object-cover opacity-85"
                     />
                     <div className=" absolute w-full h-full z-20"></div>
-                    <div className="absolute z-20 left-[5%] top-[6%]">
+                    {/* <div className="absolute z-20 left-[5%] top-[6%]">
                       <div className="text-white w-fit font-[TTChocolatesMedium] text-[clamp(10px,5vw,30px)] md:text-[clamp(10px,1.5vw,50px)] leading-tight">
                         {slide.title}
                         <div className="h-[2px] bg-[#E69706] w-[50%] rounded-full"></div>
@@ -170,7 +170,7 @@ function LifeAtTulas() {
                       <h3 className="text-[clamp(8px,3.8vw,30px)] mt-2 md:text-[clamp(10px,1.05vw,45px)] md:max-w-[70%]">
                         {slide.description}
                       </h3>
-                    </div>
+                    </div> */}
                   </div>
                 </SwiperSlide>
               ))}
