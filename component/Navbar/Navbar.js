@@ -198,45 +198,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
             </div>
             {/* )} */}
 
-            {/* minimal buttons after scrolling */}
-            {/* {scrolled && (
-              <div className="flex pointer-events-auto mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
-                <button
-                  className="bg-[#007A83] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
-                  onClick={handleButtonClick}
-                >
-                  <div
-                    className={`p-[15px] rounded-[50%] aspect-square border-r-transparent`}
-                  >
-                    <label
-                      className={
-                        isChecked
-                          ? "checked flex flex-col w-[30px] cursor-pointer"
-                          : "unCheck flex flex-col w-[30px] cursor-pointer"
-                      }
-                    >
-                      <span
-                        className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}
-                      ></span>
-                      <span
-                        className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}
-                      ></span>
-                      <span
-                        className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}
-                      ></span>
-                    </label>
-                  </div>
-                </button>
-                <button
-                  className="bg-[#760135] rounded-full text-3xl shadow-lg w-16 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
-                  onClick={() =>
-                    (window.location.href = `/apply-now/${utmParams}`)
-                  }
-                >
-                  <PiPencilSimpleLineLight />
-                </button>
-              </div>
-            )} */}
+            
 
             {/* {!scrolled && ( */}
             <div className="flex pointer-events-auto relative right-10 animate-fadeIn items-center justify-center gap-6">
@@ -284,6 +246,29 @@ function Navbar({ fullBanner = false, scroled = false }) {
 
           {/*Mobile navbar */}
           <div className="w-full flex flex-col gap-2 pointer-events-auto h-fit px-3">
+                        {!isChecked && (
+              <div className="w-full flex mdNavbar:hidden relative items-center gap-9 md:gap-6">
+                <Image
+                  src={Years20}
+                  alt=""
+                  className="w-[15vw] md:w-[7vw] h-fit"
+                />
+                <div className="h-[30px] md:h-[60px] w-[1px] bg-white"></div>
+
+                <Image
+                 src={NBA} 
+                 alt="" 
+                 className="w-[15vw] md:w-[5vw] h-fit" 
+                 />
+                <div className="h-[30px] md:h-[60px] w-[1px] bg-white"></div>
+
+                <Image
+                  src={NAAC}
+                  alt=""
+                  className="w-[25vw] md:w-[10vw] h-fit"
+                />
+              </div>
+            )}
             <div className="flex w-full flex-row-reverse items-start mdNavbar:flex-row justify-between">
               <div className="flex mdNavbar:hidden mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
                 {/* menu button */}
@@ -335,7 +320,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
                 </Link>
               )}
             </div>
-            {!isChecked && (
+            {/* {!isChecked && (
               <div className="w-fit flex mdNavbar:hidden relative items-center gap-3 md:gap-6">
                 <Image
                   src={Years20}
@@ -353,7 +338,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
                   className="w-[30vw] md:w-[10vw] h-fit"
                 />
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>

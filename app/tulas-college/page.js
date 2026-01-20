@@ -23,7 +23,7 @@ function TulasUniversity() {
     <>
       <head>
         <title>
-          Tula's University | Best Engineering College in Dehradun, Uttarakhand
+          Tula's College | Best Engineering College in Dehradun, Uttarakhand
         </title>
         <meta
           name="description"
@@ -40,7 +40,7 @@ function TulasUniversity() {
                 />
                 <div className="bottom-8 px-8 md:bottom-10 z-10 absolute ">
                   <h3 className="font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] text-white z-10 font-[CarotSlab]">
-                    Tula's University
+                    Tula's College
                   </h3>
                 </div>
               </div>
