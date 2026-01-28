@@ -164,7 +164,6 @@ export default function HomePage() {
   const bannerImagesDesktop = [
     SanskritiBannerDesktop,
     RankedBannerDesktop,
-    desktopbanner3,
     MahakumbhBannerDesktop,
     PlacementBannerDesktop,
     Aictedeskstop,
@@ -174,7 +173,6 @@ export default function HomePage() {
   const bannerImagesMobile = [
     RankedBannerMobile,
     SanskritiBannerMobile,
-    mobilebanner3,
     MahakumbhBannerMobile,
     PlacementBannerMobile,
     Aictemobile,

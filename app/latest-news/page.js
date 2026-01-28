@@ -49,6 +49,8 @@ import newformatimg18 from "../../public/Homepage/LatestNews/newformatimg18.webp
 import newformatimg19 from "../../public/Homepage/LatestNews/newformatimg19.webp";
 import newformatimg20 from "../../public/Homepage/LatestNews/newformatimg20.webp";
 import newformatimg21 from "../../public/Homepage/LatestNews/newformatimg21.webp";
+import newformatimg22 from "../../public/Homepage/LatestNews/newformatimg22.webp";
+
 
 
 
@@ -67,6 +69,13 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 
 function LatestNews() {
   const sports = [
+    {
+      image: newformatimg22,
+      name: "Guest lecture on AI tools in higher education and research",
+      date: "30th Jan 2026",
+      location: "Old seminar hall",  
+      time: "10:00 am Onwards",  
+    },
     {
       image: newformatimg21,
       name: "Wrokshop on infrastructure development using modern AI technologies",

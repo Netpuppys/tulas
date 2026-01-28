@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
  
-import newformatimg18 from "../../public/Homepage/LatestNews/newformatimg18.webp";
 import newformatimg19 from "../../public/Homepage/LatestNews/newformatimg19.webp";
 import newformatimg20 from "../../public/Homepage/LatestNews/newformatimg20.webp";
 import newformatimg21 from "../../public/Homepage/LatestNews/newformatimg21.webp";
+import newformatimg22 from "../../public/Homepage/LatestNews/newformatimg22.webp";
+
 
 import Image from "next/image";
 
@@ -12,24 +13,26 @@ function StatsAndNews() {
   const swiperRef = useRef();
   const sports = [
     {
+      image: newformatimg22,
+      name: "Guest lecture on AI tools in higher education and research",
+      date: "30th Jan 2026",
+      location: "Old seminar hall",  
+      time: "10:00 am Onwards",  
+    },
+        {
       image: newformatimg21,
-      name: "Wrokshop on infrastructure development using modern AI technologies",
-      date: "20th-22th Nov-2025",
-      location: "Tula's institute Deheradun",  
-    },    {
-      image: newformatimg20,
       name: "Masterclass on data-driven sustainblility strategies",
       date: "17th Nov-2025",
       location: "F-404 Tula's institute",  
       time: "11:30 am Onwards",  
     },    {
-      image: newformatimg19,
+      image: newformatimg20,
       name: "Add-on certificate program on Fullstack development",
       date: "17th-28th Nov-2025",
       location: "G-404 Tula's institute",  
       time: "11:30 am - 4:00 pm",
     },    {
-      image: newformatimg18,
+      image: newformatimg19,
       name: "Add-on certificate program on microsoft azure 102",
       date: "17th-28th Nov-2025",
       location: "Computer lab 8",  
