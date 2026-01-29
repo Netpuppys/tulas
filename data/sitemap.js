@@ -1,6 +1,6 @@
 import Plagiarism from "../public/research/plagiarism-policy.pdf";
 import Research_Remuneration_Form from "../public/research/Research_Remuneration_Form.pdf";
-import NewResearchPolicy from "../public/research/NewResearchPolicy.pdf";
+import NewResearchPolicy from "../public/research/new-research-policy-tulas.pdf";
 import Organogram from "../public/FooterPDf/Organogram.pdf";
 const sitemap = [
   {
