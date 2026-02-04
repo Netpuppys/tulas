@@ -26,8 +26,8 @@ import PayalManwal from "../../../../public/courses/bca/facultyData/PayalManwal.
 import PayalManwalResume from "../../../../public/courses/bca/facultyData/PayalManwalResume.pdf";
 import vaibhavi from "../../../../public/courses/bca/facultyData/vaibhavi.webp";
 import vaibhaviResume from "../../../../public/courses/bca/facultyData/vaibhaviResume.pdf";
-import HimaniRawat from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawat.webp";
-import HimaniRawatResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawatResume.pdf";
+import HimaniRawat from "../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawat.webp";
+import HimaniRawatResume from "../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawatResume.pdf";
 import Link from "next/link";
 import anshikaPundir from "../../../../public/courses/bca/anshikaPundir.png";
 import ashutosh from "../../../../public/courses/bca/ashutosh.png";
