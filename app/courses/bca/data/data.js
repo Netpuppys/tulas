@@ -26,6 +26,8 @@ import PayalManwal from "../../../../public/courses/bca/facultyData/PayalManwal.
 import PayalManwalResume from "../../../../public/courses/bca/facultyData/PayalManwalResume.pdf";
 import vaibhavi from "../../../../public/courses/bca/facultyData/vaibhavi.webp";
 import vaibhaviResume from "../../../../public/courses/bca/facultyData/vaibhaviResume.pdf";
+import HimaniRawat from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawat.webp";
+import HimaniRawatResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawatResume.pdf";
 import Link from "next/link";
 import anshikaPundir from "../../../../public/courses/bca/anshikaPundir.png";
 import ashutosh from "../../../../public/courses/bca/ashutosh.png";
@@ -479,10 +481,19 @@ export const facultyData = [
     name: "Ms Apoorva Talwar",
     designation: "Assistant Professor",
     education: "MCA ",
-    publications: "1",
+    publications: "1", 
     experience: "12",
     imageUrl: ApoorvTalvar,
     resume: ApoorvTalvarResume,
+  },
+    {
+    name: "Ms. Himani Rawat",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "0",
+    experience: "2",
+    imageUrl: HimaniRawat,
+    resume: HimaniRawatResume,
   },
 ];
 export const itemsClubs = [

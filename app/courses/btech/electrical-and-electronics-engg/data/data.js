@@ -15,8 +15,8 @@ import abhishekchakrovarty from "../../../../../public/courses/btech/electrical-
 import abhishekchakrovartyResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/abhishekchakrovartyResume.pdf";
 import NarendraKumar from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/NarendraKumar.webp";
 import NarendraKumarResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/NarendraKumarResume.pdf";
-import priyanka from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/priyanka.webp";
-import priyankaResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/priyankaResume.pdf";
+// import priyanka from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/priyanka.webp";
+// import priyankaResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/priyankaResume.pdf";
 import rajkumar from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/rajkumar.webp";
 import rajkumarResume from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/rajkumarResume.pdf";
 import RASHMIDHAUNDIYAL from "../../../../../public/courses/btech/electrical-and-electronics/facultyData/RASHMIDHAUNDIYAL.webp";
@@ -485,15 +485,15 @@ export const facultyData = [
     imageUrl: rajkumar,
     resume: rajkumarResume,
   },
-  {
-    name: "Ms. Priyanka Raturi Semwal",
-    designation: "ASST PROFESSOR",
-    education: "M.Tech P.hd (P)",
-    publications: "6",
-    experience: "10",
-    imageUrl: priyanka,
-    resume: priyankaResume,
-  },
+  // {
+  //   name: "Ms. Priyanka Raturi Semwal",
+  //   designation: "ASST PROFESSOR",
+  //   education: "M.Tech P.hd (P)",
+  //   publications: "6",
+  //   experience: "10",
+  //   imageUrl: priyanka,
+  //   resume: priyankaResume,
+  // },
   {
     name: "Mr. Narendra Kumar",
     designation: "ASST PROFESSOR",

@@ -46,6 +46,18 @@ import AniketPalResume from "../../../../public/courses/applied-science/facultyD
 import MukeshPathela from "../../../../public/courses/btech/electronics-and-communication/facultyData/MukeshPathela.webp";
 import Vijay from "../../../../public/About/vijay.png";
 import VijayResume from "../../../../public/courses/applied-science/facultyData/VijayResume.pdf";
+import Rajni from "../../../../../public/courses/btech/electronics-and-communication/facultyData/Rajni.webp";
+import RajniResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RajniResume.pdf";
+import Sachin from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Sachin.webp";
+import SachinResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SachinResume.pdf";
+import Manoj from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Manoj.webp";
+import ManojResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/ManojResume.pdf";
+import Abhishek from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Abhishek.webp";
+import AbhishekResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AbhishekResume.pdf";
+import Himanshu from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Himanshu.webp";
+import HimanshuResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/HimanshuResume.pdf";
+import Satish from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Satish.webp";
+import SatishResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SatishResume.pdf";
 import Link from "next/link";
 import placement3 from "../../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../../public/Homepage/Placement/placement4.png";
@@ -424,5 +436,59 @@ export const facultyData = [
     experience: "2",
     imageUrl: AniketPal,
     resume: AniketPalResume,
+  },
+    {
+    name: "Ms Ragini shukla",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "6",
+    experience: "10",
+    imageUrl: Rajni,
+    resume: RajniResume,
+  },
+    {
+    name: "Mr. Sachin Kaushik",
+    education: "M.Tech",
+    experience: "11 Yrs.",
+    designation: "Assistant Professor",
+    publications: "6",
+    imageUrl: Sachin,
+    resume: SachinResume,
+  },
+    {
+    name: "Manoj Singh",
+    education: "B.Tech, M.Tech",
+    experience: "3 Yrs.",
+    designation: "Assistant Professor",
+    publications: "02",
+    imageUrl: Manoj,
+    resume: ManojResume,
+  },
+    {
+    name: "Mr. Abhishek Singh",
+    education: "B.Tech, M.Tech",
+    experience: "6 Yrs.",
+    designation: "Assistant Professor",
+    publications: "02",
+    imageUrl: Abhishek,
+    resume: AbhishekResume,
+  },
+    {
+    name: "Mr. Himanshu Kala",
+    education: "B.Tech, M.Tech",
+    experience: "6 Yrs.",
+    designation: "Assistant Professor",
+    publications: "03",
+    imageUrl: Himanshu,
+    resume: HimanshuResume,
+  },
+    {
+    name: "Mr. Satish Kumar",
+    education: "B.Tech, M.Tech",
+    experience: "7 Yrs.",
+    designation: "Assistant Professor",
+    publications: "02",
+    imageUrl: Satish,
+    resume: SatishResume,
   },
 ];

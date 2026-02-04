@@ -23,14 +23,8 @@ import NANSE from "../../../../../public/courses/btech/electronics-and-communica
 import NANSEResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/NANSEResume.pdf";
 import SandeepKumar from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SandeepKumar.webp";
 import SandeepKumarResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/SandeepKumarResume.pdf";
-import HimaniRawat from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawat.webp";
-import HimaniRawatResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawatResume.pdf";
-import Lokesh from "../../../../../public/courses/btech/electronics-and-communication/facultyData/Lokesh.webp";
-import LokeshResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/LokeshResume.pdf";
-import Rajni from "../../../../../public/courses/btech/electronics-and-communication/facultyData/Rajni.webp";
-import RajniResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/RajniResume.pdf";
-import swati from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swati.webp";
-import swatiResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/swatiResume.pdf";
+// import HimaniRawat from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawat.webp";
+// import HimaniRawatResume from "../../../../../public/courses/btech/electronics-and-communication/facultyData/HimaniRawatResume.pdf";
 import placement3 from "../../../../../public/Homepage/Placement/placement3.png";
 import placement4 from "../../../../../public/Homepage/Placement/placement4.png";
 import content1 from "../../../../../public/courses/btech/electronics-and-communication/ContentLeft.webp";
@@ -504,42 +498,7 @@ export const facultyData = [
     imageUrl: SandeepKumar,
     resume: SandeepKumarResume,
   },
-  {
-    name: "Ms. Himani Rawat",
-    designation: "ASST PROFESSOR",
-    education: "M.Tech",
-    publications: "0",
-    experience: "2",
-    imageUrl: HimaniRawat,
-    resume: HimaniRawatResume,
-  },
-  {
-    name: "Mr Lokesh Bhargava",
-    designation: "ASST PROFESSOR",
-    education: "M.Tech",
-    publications: "2",
-    experience: "5",
-    imageUrl: Lokesh,
-    resume: LokeshResume,
-  },
-  {
-    name: "Ms Ragini shukla",
-    designation: "ASST PROFESSOR",
-    education: "M.Tech",
-    publications: "6",
-    experience: "10",
-    imageUrl: Rajni,
-    resume: RajniResume,
-  },
-  {
-    name: "Ms Swati Joshi",
-    designation: "ASST PROFESSOR",
-    education: "M.Tech",
-    publications: "4",
-    experience: "3",
-    imageUrl: swati,
-    resume: swatiResume,
-  },
+
 ];
 
 export const HODcontent = (

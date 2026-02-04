@@ -20,20 +20,10 @@ import AnuragBahuguna from "../../../../../public/courses/btech/mechanical-engin
 import AnuragResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnuragResume.pdf";
 import AnupamGautam from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnupamGautam.webp";
 import AnupamResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AnupamResume.pdf";
-import Sachin from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Sachin.webp";
-import SachinResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SachinResume.pdf";
 import Subhash from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Subhash.webp";
 import SubhashResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SubhashResume.pdf";
-import Satish from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Satish.webp";
-import SatishResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/SatishResume.pdf";
 import Rahul from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Rahul.webp";
 import RahulResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/RahulResume.pdf";
-import Himanshu from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Himanshu.webp";
-import HimanshuResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/HimanshuResume.pdf";
-import Abhishek from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Abhishek.webp";
-import AbhishekResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/AbhishekResume.pdf";
-import Manoj from "../../../../../public/courses/btech/mechanical-engineering/facultyData/Manoj.webp";
-import ManojResume from "../../../../../public/courses/btech/mechanical-engineering/facultyData/ManojResume.pdf";
 import content1 from "../../../../../public/courses/btech/mechanical-engineering/content1.webp";
 import content2 from "../../../../../public/courses/btech/mechanical-engineering/content2.webp";
 import Link from "next/link";
@@ -460,15 +450,6 @@ export const facultyData = [
     resume: AnupamResume,
   },
   {
-    name: "Mr. Sachin Kaushik",
-    education: "M.Tech",
-    experience: "11 Yrs.",
-    designation: "Assistant Professor",
-    publications: "6",
-    imageUrl: Sachin,
-    resume: SachinResume,
-  },
-  {
     name: "Mr. Amit Moray",
     education: "B.Tech, M.Tech, Ph.D. (Pursuing)",
     experience: "15 Yrs.",
@@ -476,42 +457,6 @@ export const facultyData = [
     publications: "40",
     imageUrl: AmitMAURYA,
     resume: AmitResume,
-  },
-  {
-    name: "Manoj Singh",
-    education: "B.Tech, M.Tech",
-    experience: "3 Yrs.",
-    designation: "Assistant Professor",
-    publications: "02",
-    imageUrl: Manoj,
-    resume: ManojResume,
-  },
-  {
-    name: "Mr. Abhishek Singh",
-    education: "B.Tech, M.Tech",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    publications: "02",
-    imageUrl: Abhishek,
-    resume: AbhishekResume,
-  },
-  {
-    name: "Mr. Himanshu Kala",
-    education: "B.Tech, M.Tech",
-    experience: "6 Yrs.",
-    designation: "Assistant Professor",
-    publications: "03",
-    imageUrl: Himanshu,
-    resume: HimanshuResume,
-  },
-  {
-    name: "Mr. Satish Kumar",
-    education: "B.Tech, M.Tech",
-    experience: "7 Yrs.",
-    designation: "Assistant Professor",
-    publications: "02",
-    imageUrl: Satish,
-    resume: SatishResume,
   },
 ];
 

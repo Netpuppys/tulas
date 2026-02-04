@@ -46,6 +46,8 @@ import UpendraKumar from "../../../public/courses/btech/computer-science/faculty
 import UpendraKumarResume from "../../../public/courses/btech/computer-science/facultyData/UpendraKumarResume.pdf";
 import AsiaKhatoon from "../../../public/courses/btech/computer-science/facultyData/AsiaKhatoon.webp";
 import AsiaKhatoonResume from "../../../public/courses/btech/computer-science/facultyData/AsiaKhatoonResume.pdf";
+import swati from "../../../public/courses/btech/electronics-and-communication/facultyData/swati.webp";
+import swatiResume from "../../../public/courses/btech/electronics-and-communication/facultyData/swatiResume.pdf";
 
 export const facultyDataCSE = [
   {
@@ -233,21 +235,21 @@ export const facultyDataCSE = [
   //   imageUrl: anju,
   //   resume: anjuResume,
   // },
-  {
-    name: "Ms. Suman Rana",
-    designation: "Assistant Professor",
-    education: "MCA",
-    imageUrl: SumanRana,
-    resume: SumanRanaResume,
-  },
-  {
-    name: "Ms. Anita",
-    designation: "Assistant Professor",
-    education: "MCA",
-    experience: "1.5",
-    imageUrl: anita,
-    resume: anitaResume,
-  },
+  // {
+  //   name: "Ms. Suman Rana",
+  //   designation: "Assistant Professor",
+  //   education: "MCA",
+  //   imageUrl: SumanRana,
+  //   resume: SumanRanaResume,
+  // },
+  // {
+  //   name: "Ms. Anita",
+  //   designation: "Assistant Professor",
+  //   education: "MCA",
+  //   experience: "1.5",
+  //   imageUrl: anita,
+  //   resume: anitaResume,
+  // },
   {
     name: "Mr. Rajul",
     designation: "Assistant Professor",
@@ -255,5 +257,14 @@ export const facultyDataCSE = [
     experience: "0",
     imageUrl: rajul,
     resume: rajulResume,
+  },
+    {
+    name: "Ms Swati Joshi",
+    designation: "ASST PROFESSOR",
+    education: "M.Tech",
+    publications: "4",
+    experience: "3",
+    imageUrl: swati,
+    resume: swatiResume,
   },
 ];
