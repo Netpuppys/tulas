@@ -357,15 +357,15 @@ export const facultyData = [
   //   imageUrl: ArghyaSarkar,
   //   resume: ArghyaSarkarResume,
   // },
-  {
-    name: "Prakash Bhatnager",
-    designation: "ASST PROFESSOR",
-    education: "MBA, Ph.D.(P)",
-    publications: "1",
-    experience: "6",
-    imageUrl: PrakashBhatnagar,
-    resume: PrakashBhatnagarResume,
-  },
+  // {
+  //   name: "Prakash Bhatnager",
+  //   designation: "ASST PROFESSOR",
+  //   education: "MBA, Ph.D.(P)",
+  //   publications: "1",
+  //   experience: "6",
+  //   imageUrl: PrakashBhatnagar,
+  //   resume: PrakashBhatnagarResume,
+  // },
   // {
   //   name: "Ms. Akanksha Pal",
   //   designation: "ASST PROFESSOR",
@@ -383,14 +383,14 @@ export const facultyData = [
   //   imageUrl: TarunSharma,
   //   resume: TarunSharmaResume,
   // },
-  {
-    name: "Ms. Niharika Dutt Nautiyal",
-    designation: "ASST PROFESSOR",
-    education: "MBA",
-    experience: "3",
-    imageUrl: NiharikaNautiyal,
-    resume: NiharikaNautiyalResume,
-  },
+  // {
+  //   name: "Ms. Niharika Dutt Nautiyal",
+  //   designation: "ASST PROFESSOR",
+  //   education: "MBA",
+  //   experience: "3",
+  //   imageUrl: NiharikaNautiyal,
+  //   resume: NiharikaNautiyalResume,
+  // },
 ];
 export const itemsClubs = [
   {
