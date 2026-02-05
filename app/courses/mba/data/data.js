@@ -3,6 +3,7 @@ import Course from "../../../../public/bsc-agriculture/Crousel/Course.png";
 import Program from "../../../../public/bsc-agriculture/Crousel/Program.png";
 import Link from "next/link";
 import mbaDocument from "../../../../public/courses/mba/MBAnew.pdf";
+import magazineDoc from "../../../../public/courses/mba/magazine.pdf";
 import DepartmentalVission from "../../../../public/courses/bjmc/departmentalVision.png";
 import DepartmentalMission from "../../../../public/courses/bjmc/departmentalMission.png";
 import ArghyaSarkar from "../../../../public/courses/mba/facultyData/ArghyaSarkar.webp";
@@ -292,6 +293,15 @@ export const items = [
     description: [
       <Link href={mbaDocument} target="_blank">
         Click here to download MBA Course Outcomes
+      </Link>,
+    ],
+    image: Course,
+  },
+    {
+    title: "Magazine",
+    description: [
+      <Link href={magazineDoc} target="_blank">
+        Click here to download Magazine
       </Link>,
     ],
     image: Course,

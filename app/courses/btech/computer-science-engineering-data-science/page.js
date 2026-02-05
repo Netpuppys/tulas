@@ -30,6 +30,8 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
+import CSEDataFaculty from "../../../../public/courses/all-faculty/CSE-data-science.pdf";
+import ReadFaculty from "@/component/Programs/ReadFaculty";
 function BAJMC() {
   return (
     <>
@@ -70,6 +72,7 @@ function BAJMC() {
           hod={hod}
           HODcontent={HODcontent}
         />
+        <ReadFaculty pdf={CSEDataFaculty}/>
         <DownloadFeeStructure pdf={BTechFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />

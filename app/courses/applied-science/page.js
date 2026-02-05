@@ -25,6 +25,8 @@ import {
 import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.png";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import ASHFaculty from "../../../public/courses/all-faculty/ASH.pdf";
+import ReadFaculty from "@/component/Programs/ReadFaculty";
 function BAJMC() {
   return (
     <>
@@ -66,6 +68,7 @@ function BAJMC() {
           hod={hod}
           HODcontent={HODcontent}
         />
+        <ReadFaculty pdf={ASHFaculty}/>
         <PlacementProgram features={features} />
         <TopRecruiter />
         <Footer />

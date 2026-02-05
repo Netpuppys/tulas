@@ -32,6 +32,8 @@ import contentRight from "../../../../public/courses/btech/computer-science/cont
 import topBanner from "../../../../public/courses/btech/computer-science/topBanner.webp";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
+import CSEFaculty from "../../../../public/courses/all-faculty/CSE.pdf";
+import ReadFaculty from "@/component/Programs/ReadFaculty";
 const sideImages = [contentLeft, contentRight];
 
 function page() {
@@ -78,6 +80,7 @@ function page() {
           hod={hod}
           HODcontent={HODcontent}
         />
+        <ReadFaculty pdf={CSEFaculty}/>
         <DownloadFeeStructure pdf={BTechFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />

@@ -30,6 +30,8 @@ import PlacementProgram from "@/component/Programs/PlacementProgram";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
+import CSEAIFaculty from "../../../../public/courses/all-faculty/CSE-AI-ML.pdf";
+import ReadFaculty from "@/component/Programs/ReadFaculty";
 const sideImages = [
   contentLeft,
   contentRight
@@ -76,6 +78,7 @@ function page() {
           hod={hod}
           HODcontent={HODcontent}
         />
+        <ReadFaculty pdf={CSEAIFaculty}/>
         <DownloadFeeStructure pdf={BTechFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />

@@ -30,6 +30,8 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
+import CyberFaculty from "../../../../public/courses/all-faculty/CSE-cyber-security.pdf";
+import ReadFaculty from "@/component/Programs/ReadFaculty";
 const sideImages = [contentLeft, contentRight];
 
 function page() {
@@ -74,6 +76,7 @@ function page() {
           hod={hod}
           HODcontent={HODcontent}
         />
+        <ReadFaculty pdf={CyberFaculty}/>
         <DownloadFeeStructure pdf={BTechFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />

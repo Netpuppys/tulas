@@ -30,6 +30,8 @@ import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.pn
 import exploreCrouselBackground from "../../../public/courses/bjmc/exploreCrouselBackground.png";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BCAFee from "../../../public/FeeStructure/BCA.pdf";
+import BCAFaculty from "../../../public/courses/all-faculty/BCA.pdf";
+import ReadFaculty from "@/component/Programs/ReadFaculty";
 function BCA() {
   return (
     <>
@@ -71,6 +73,7 @@ function BCA() {
           // hod={hod}
           // HODcontent={HODcontent}
         />
+        <ReadFaculty pdf={BCAFaculty}/>
         <DownloadFeeStructure pdf={BCAFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
