@@ -27,6 +27,12 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import MBAFee from "../../../public/FeeStructure/MBA.pdf";
+import StudentPlacement from "@/component/Programs/StudentPlacement";
+
+import MBAstudentplaced from "../../../public/courses/mba/placement-mba.pdf";
+import MBAstudentlist from "../../../public/courses/mba/student-list-mba.pdf";
+import MBAfacultylist from "../../../public/courses/mba/faculty-mba.pdf";
+
 function MBA() {
   return (
     <>
@@ -64,6 +70,11 @@ function MBA() {
           HODcontent={HODcontent}
         />
         <DownloadFeeStructure pdf={MBAFee} />
+        <div className="flex flex-col md:flex-row justify-center gap-4">
+        <StudentPlacement buttonText="Top Placed Students" pdf={MBAstudentplaced}/>
+        <StudentPlacement buttonText="Students List" pdf={MBAstudentlist}/>
+        <StudentPlacement buttonText="Faculty List" pdf={MBAfacultylist}/>
+        </div>
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram

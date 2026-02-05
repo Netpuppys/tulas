@@ -30,6 +30,11 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import MCAFee from "../../../public/FeeStructure/CSE.pdf";
+import StudentPlacement from "@/component/Programs/StudentPlacement";
+
+import MCAstudentplaced from "../../../public/courses/mca/placement-mca.pdf";
+import MCAstudentlist from "../../../public/courses/mca/student-list-mca.pdf";
+import MCAfacultylist from "../../../public/courses/mca/faculty-mca.pdf";
 function MCA() {
   return (
     <>
@@ -73,6 +78,11 @@ function MCA() {
           HODcontent={HODcontent}
         />
         <DownloadFeeStructure pdf={MCAFee} />
+         <div className="flex flex-col md:flex-row justify-center gap-4">
+        <StudentPlacement buttonText="Top Placed Students" pdf={MCAstudentplaced}/>
+        <StudentPlacement buttonText="Students List" pdf={MCAstudentlist}/>
+        <StudentPlacement buttonText="Faculty List" pdf={MCAfacultylist}/>
+        </div>
         <PlacementProgram features={features} />
         <TopRecruiter />
         <CarouselProgram
