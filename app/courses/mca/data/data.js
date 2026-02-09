@@ -10,11 +10,11 @@ import mcaDocument from "../../../../public/courses/mca/all-course-mca-course-ou
 import DepartmentalVission from "../../../../public/courses/mca/departmentVission.webp";
 import DepartmentalMission from "../../../../public/courses/mca/departmentMission.webp";
 import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
-import PriyaResume from "../../../../public/courses/mca/newresume/PriyaResume.pdf";
+import PriyaResume from "../../../../public/courses/mca/newresume/priya-latest26.pdf";
 import RASHMI from "../../../../public/courses/mca/facultyData/RASHMI.webp";
 import RASHMIResume from "../../../../public/courses/mca/facultyData/RASHMIResume.pdf";
 import sidhartha from "../../../../public/courses/mca/facultyData/sidhartha.webp";
-import sidharthaResume from "../../../../public/courses/mca/newresume/sidharthaResume.pdf";
+import sidharthaResume from "../../../../public/courses/mca/newresume/siddarth-latest26.pdf";
 import RakeshKumar from "../../../../public/courses/mca/facultyData/RakeshKumar.webp";
 import RakeshKumarResume from "../../../../public/courses/mca/newresume/RakeshKumarResume.pdf";
 import ShikaTayal from "../../../../public/courses/mca/facultyData/ShikaTayal.webp";
@@ -35,9 +35,9 @@ import RanjanKumar from "../../../../public/courses/mca/PlacementDesign/RanjanKu
 import RishabhSingh from "../../../../public/courses/mca/PlacementDesign/RishabhSingh.webp";
 import TanyaChauhan from "../../../../public/courses/mca/PlacementDesign/TanyaChauhan.webp";
 import AhmadJmal from "../../../../public/courses/btech/computer-science/facultyData/AhmadJmal.webp";
-import AhmadJmalResume from "../../../../public/courses/mca/newresume/AhmadJmalResume.pdf";
+import AhmadJmalResume from "../../../../public/courses/mca/newresume/ahmadlatest26.pdf";
 import aizaz from "../../../../public/courses/bca/facultyData/aizaz.webp";
-import aizazResume from "../../../../public/courses/mca/newresume/aizazResume.pdf";
+import aizazResume from "../../../../public/courses/mca/newresume/aizazlatest26.pdf";
 
 export const features = [
   {
