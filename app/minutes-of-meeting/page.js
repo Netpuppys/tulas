@@ -45,6 +45,16 @@ import Meeting36 from "../../public/FooterPDf/Meeting36.pdf";
 import Meeting37 from "../../public/FooterPDf/Meeting37.pdf";
 import Meeting38 from "../../public/FooterPDf/Meeting38.pdf";
 import Meeting39 from "../../public/FooterPDf/Meeting39.pdf";
+import Meeting40 from "../../public/FooterPDf/Meeting40.pdf";
+import Meeting41 from "../../public/FooterPDf/Meeting41.pdf";
+import Meeting42 from "../../public/FooterPDf/Meeting42.pdf";
+import Meeting43 from "../../public/FooterPDf/Meeting43.pdf";
+import Meeting44 from "../../public/FooterPDf/Meeting44.pdf";
+import Meeting45 from "../../public/FooterPDf/Meeting45.pdf";
+import Meeting46 from "../../public/FooterPDf/Meeting46.pdf";
+import Meeting47 from "../../public/FooterPDf/Meeting47.pdf";
+import Meeting48 from "../../public/FooterPDf/Meeting48.pdf";
+
 import Link from "next/link";
 
 function MinuteOfMeeting() {
@@ -240,6 +250,44 @@ function MinuteOfMeeting() {
       title: "39th Meeting of IQAC 2023-24",
       linkTo: Meeting39,
     },
+    {
+       title: "40th Meeting of IQAC 2023-24",
+       linkTo: Meeting40,
+    },
+    {
+      title: "41st Meeting of IQAC 2023-24",
+      linkTo: Meeting41,
+    },
+    {
+      title: "42nd Meeting of IQAC 2023-24",
+      linkTo: Meeting42,
+    },
+    {
+      title: "43rd Meeting of IQAC 2023-24",
+      linkTo: Meeting43,
+    },
+    {
+      title: "44th Meeting of IQAC 2023-24",
+      linkTo: Meeting44,
+    },
+    {
+      title: "45th Meeting of IQAC 2023-24",
+      linkTo: Meeting45,
+    },
+    {
+      title: "46th Meeting of IQAC 2023-24",
+      linkTo: Meeting46,
+    },
+    {
+      title: "47th Meeting of IQAC 2023-24",
+      linkTo: Meeting47,
+    },
+    {
+      title: "48th Meeting of IQAC 2023-24",
+      linkTo: Meeting48,
+    },
+
+
   ];
   return (
     <>
