@@ -7,6 +7,7 @@ import clubs from "../../../../public/courses/bjmc/clubs.png";
 import beyondCurriculum from "../../../../public/courses/bca/beyondCurriculum.webp";
 import careerProspectus from "../../../../public/courses/bjmc/careerProspectus.png";
 import mcaDocument from "../../../../public/courses/mca/all-course-mca-course-outcomes.pdf";
+import erepositry from "../../../../public/courses/mca/qr-code.pdf";
 import DepartmentalVission from "../../../../public/courses/mca/departmentVission.webp";
 import DepartmentalMission from "../../../../public/courses/mca/departmentMission.webp";
 import Priya from "../../../../public/courses/mca/facultyData/PriyaMatta.webp";
@@ -176,7 +177,11 @@ export const items = [
       pdf: "/courses/mca/New-updated-aug-to-dec.pdf", 
         secondPdf: "/courses/mca/new-updated-jan-jun.pdf",
 
-
+    description: [
+      <Link href={erepositry} target="_blank">
+        Click here to View E-Repository
+      </Link>,
+    ],
     image: ProgramSpecificOutcome,
   },
 
