@@ -15,6 +15,7 @@ import innovationAndStartupPolicy from "../public/research/innovation-and-startu
 import Plagiarism from "../public/research/plagiarism-policy.pdf";
 import HandBook from "../public/research/HandBook.pdf";
 import NewResearchPolicy from "../public/research/NewResearchPolicy.pdf";
+import HrPolicy from "../public/FooterPDf/hr-policy.pdf";
 import ANTIRAGGING0001 from "../public/research/ANTI-RAGGING_0001.pdf";
 import HolidayCalendar from "../public/research/holiday-calender-26.pdf";
 import Examination from "../public/research/Examination.pdf";
@@ -47,6 +48,7 @@ const Footer = ({ set = false, color = false }) => {
     },
     { title: "Handbook", linkTo: HandBook, target: "_blank" },
     { title: "Research Policy", linkTo: NewResearchPolicy, target: "_blank" },
+    { title: "HR Policy", linkTo: HrPolicy, target: "_blank" },
     { title: "Plagiarism Policy", linkTo: Plagiarism, target: "_blank" },
     {
       title: "QuillBot Software",
