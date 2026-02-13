@@ -50,6 +50,7 @@ import newformatimg19 from "../../public/Homepage/LatestNews/newformatimg19.webp
 import newformatimg20 from "../../public/Homepage/LatestNews/newformatimg20.webp";
 import newformatimg21 from "../../public/Homepage/LatestNews/newformatimg21.webp";
 import newformatimg22 from "../../public/Homepage/LatestNews/newformatimg22.webp";
+import newformatimg23 from "../../public/Homepage/LatestNews/newformatimg23.webp";
 
 
 
@@ -69,6 +70,12 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 
 function LatestNews() {
   const sports = [
+    {
+      image: newformatimg23,
+      name: "Campus Placement Drive: B.tech Civil 2026 Batch",
+      date: "14th Feb 2026",
+      location: "Tulas's Institute",  
+    }, 
     {
       image: newformatimg22,
       name: "Guest lecture on AI tools in higher education and research",

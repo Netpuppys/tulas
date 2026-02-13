@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
  
-import newformatimg19 from "../../public/Homepage/LatestNews/newformatimg19.webp";
 import newformatimg20 from "../../public/Homepage/LatestNews/newformatimg20.webp";
 import newformatimg21 from "../../public/Homepage/LatestNews/newformatimg21.webp";
 import newformatimg22 from "../../public/Homepage/LatestNews/newformatimg22.webp";
+import newformatimg23 from "../../public/Homepage/LatestNews/newformatimg23.webp";
 
 
 import Image from "next/image";
@@ -12,6 +12,12 @@ import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 function StatsAndNews() {
   const swiperRef = useRef();
   const sports = [
+    {
+      image: newformatimg23,
+      name: "Campus Placement Drive: B.tech Civil 2026 Batch",
+      date: "14th Feb 2026",
+      location: "Tulas's Institute",  
+    }, 
     {
       image: newformatimg22,
       name: "Guest lecture on AI tools in higher education and research",
@@ -31,13 +37,7 @@ function StatsAndNews() {
       date: "17th-28th Nov-2025",
       location: "G-404 Tula's institute",  
       time: "11:30 am - 4:00 pm",
-    },    {
-      image: newformatimg19,
-      name: "Add-on certificate program on microsoft azure 102",
-      date: "17th-28th Nov-2025",
-      location: "Computer lab 8",  
-      time: "10:00 am - 4:00 pm",
-    }, 
+    },
   ];
 
   return (

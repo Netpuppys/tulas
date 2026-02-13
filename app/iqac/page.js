@@ -9,6 +9,9 @@ import background from "../../public/research/r-and-cell/background.png";
 import BestPractices21 from "../../public/FooterPDf/BestPractices21.pdf";
 import BestPractices22 from "../../public/FooterPDf/BestPractices22.pdf";
 import BestPractices23 from "../../public/FooterPDf/BestPractices23.pdf";
+import InstituteCommittees from "../../public/FooterPDf/institute-committee.pdf";
+import HrPolicy from "../../public/FooterPDf/hr-policy.pdf";
+
 
 import { UtmContext } from "@/component/utmParams";
 
@@ -25,6 +28,9 @@ function IQAC() {
     { title: "Best Practices 2021-22", linkTo: BestPractices21 },
     { title: "Best Practices 2022-23", linkTo: BestPractices22 },
     { title: "Best Practices 2023-24", linkTo: BestPractices23 },
+    { title: "Institute Committees", linkTo: InstituteCommittees },
+    { title: "HR Policy", linkTo: HrPolicy },
+
   ];
   return (
     <>
