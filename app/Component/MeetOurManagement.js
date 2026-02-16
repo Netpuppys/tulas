@@ -117,7 +117,7 @@ const InternalSection = () => {
                 />
                 <div className="rounded-xl absolute top-0 flip-image w-full h-full bg-[#760135] flex items-center justify-center px-2 md:px-[5%]">
                   <h6 className="textShow relative z-10 text-center text-wrap font-[TTChocolates] text-[clamp(8px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-white">
-                    {card.description}TTChocolates
+                    {card.description}
                   </h6>
                 </div>
               </div>
