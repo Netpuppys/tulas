@@ -105,6 +105,7 @@ const Footer = ({ set = false, color = false }) => {
       target: "_blank",
     },
     { title: "Blogs", linkTo: "/blog" },
+    { title: "Disclaimer", linkTo: "/disclaimer" },
 
   ];
 

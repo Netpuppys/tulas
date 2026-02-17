@@ -381,3 +381,16 @@ input[type="tel"] {
 .text-shadow-sm {
   text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
+
+@keyframes scroll-slow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-slow {
+  animation: scroll-slow 40s linear infinite;
+}
