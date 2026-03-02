@@ -269,7 +269,7 @@ const AdmissionOpenPage = () => {
             <FormLandingPage
               course={0}
               showCourse={true}
-              formHeading={"Admissions Open 2025"}
+              formHeading={"Admissions Open 2026"}
               thankYOu={`/admissions-open/thank-you/${utmParams}`}
             />
           </div>

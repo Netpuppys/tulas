@@ -17,13 +17,13 @@ export default function LandingReadmore() {
 
   return (
     <div className="max-w-3xl mx-auto px-4">
-      {/* Heading */}
-<div className="flex items-center gap-3 mb-6 mt-6 relative z-10">
-  <span className="w-3 h-3 bg-orange-500 rounded-full"></span>
-  <h2 className="text-2xl md:text-2xl tracking-wide text-[#1a1a1a]">
-    ABOUT THE PROGRAMME
-  </h2>
-</div>
+              {/* Heading */}
+      <div className="px-4 md:px-12 max-w-4xl">
+        <h3 className="text-[clamp(28px,6vw,36px)] text-center font-medium mb-3">
+          <span className="text-orange-500">About</span>{" "}
+          <span className="text-gray-800 font-light">The Programme</span>
+        </h3>
+      </div>
 
 
       {/* Always visible text */}

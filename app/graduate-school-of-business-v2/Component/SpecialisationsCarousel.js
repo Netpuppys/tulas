@@ -35,11 +35,14 @@ export default function SpecialisationsCarousel() {
   const swiperRef = useRef();
 
   return (
-    <section className="bg-white py-5 px-4 overflow-visible">
-      {/* Heading */}
-     <h2 className="text-[clamp(32px,6vw,48px)] font-light mb-6 text-[#1a1a1a] leading-[1.25] tracking-wide">
-      SPECIALISATIONS <br /> WE OFFER
-     </h2>
+    <section className="bg-white pb-5 px-4 overflow-visible">
+                   {/* Heading */}
+      <div className="px-2 md:px-12 max-w-4xl">
+        <h3 className="text-[clamp(28px,6vw,36px)] text-center font-medium mb-3">
+          <span className="text-orange-500">Specializations</span>{" "}
+          <span className="text-gray-800 font-light">We Offer</span>
+        </h3>
+      </div>
 
 
       {/* Slider */}
@@ -104,7 +107,7 @@ function SpecialisationCard({ item }) {
           {item.desc}
         </p>
 
-        <button className="mt-6 w-full bg-[#1f1f1f] text-orange-500 py-4 text-lg font-semibold">
+        <button className="mt-6 w-full bg-orange-500 text-white py-2 rounded-[10px] text-lg font-semibold">
           APPLY NOW
         </button>
       </div>

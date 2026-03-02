@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import bannerImg from "../../../public/graduate-school-of-business-v2/mba/bannerimg.png";
+import bannerImg from "../../../public/graduate-school-of-business-v2/mba/newbannerimg.png";
 import BannerLandingPage from "../Component/BannerLandingPage";
 import FormLandingPage from "../Component/FormLandingPage";
 import CarouselContent from "../Component/CarouselContent";
@@ -65,6 +65,14 @@ import LandingAccredition from "../Component/LandingAccredition";
 import LandingAdmissionEligibility from "../Component/LandingAdmissionEligibility";
 import SpecialisationsCarousel from "../Component/SpecialisationsCarousel";
 import LandingPerks from "../Component/LandingPerks";
+import LandingHighlights from "../Component/LandingHighlights";
+import LandingCareerPathSlider from "../Component/LandingCareerPathSlider";
+import LandingInternshipSection from "../Component/LandingInternshipSection";
+import LandingLifeTulas from "../Component/LandingLifeTulas";
+import LandingAccordionCard from "../Component/LandingAccordionCard";
+import LandingGlobalHiringPartners from "../Component/LandingGlobalHiringPartners";
+import LandingAlumniSuccessStories from "../Component/LandingAlumniSuccessStories";
+import LandingFormNew from "../Component/LandingFormNew";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -236,33 +244,32 @@ const placementSlides = [
           {/* banner */}
           <BannerLandingPage bannerImg={bannerImg} />
 
-          {/* carousel */}
-        {/* <div className="hidden md:block pt-[34px] md:pt-[90px]">
-          <CarouselLanding bannerImages={bannerImagesDesktop} scrollButton={true} />
-        </div>
-        <div className="block md:hidden pt-[64px] md:pt-[80px]">
-          <CarouselLanding bannerImages={bannerImagesMobile} scrollButton={true} />
-        </div>   */}
-         {/* carousel */}
-                {/* Form */}
-          {/* <div ref={scrollRef}>
-            <FormLandingPage
+          <div ref={scrollRef}>
+            <LandingFormNew
               course={1}
               formHeading={"MBA Admissions Open 2026"}
-              thankYOu={`/graduate-school-of-business/mba/thank-you/${utmParams}`}
+              thankYOu={`/graduate-school-of-business-v2/mba/thank-you/${utmParams}`}
             />
-          </div> */}
+          </div>
+
+          {/* carousel */}
+        {/* <div className="hidden md:block pt-[34px] md:pt-[90px]">
+     
           {/* Content One */}
 
           <LandingReadmore/>
 
           <LandingAccredition/>
           
-          <LandingAdmissionEligibility/>
+          {/* <LandingAdmissionEligibility/> */}
+
+          <LandingPerks perksSlides={placementSlides} />
 
           <SpecialisationsCarousel/>
 
-          <div className="w-full pb-8 md:pb-[4%] bg-white sticky z-10 h-full">
+          <LandingGlobalHiringPartners/>
+
+          {/* <div className="w-full pb-8 md:pb-[4%] bg-white sticky z-10 h-full">
             <div className="w-full">
               <Image
                 src={AccreditationImg}
@@ -275,36 +282,23 @@ const placementSlides = [
                 className="md:hidden w-full h-fit"
               />
             </div>
-          </div>
+          </div> */}
 
-          <LandingPerks perksSlides={placementSlides} />
+          <LandingAlumniSuccessStories/>
+          
+          <LandingCareerPathSlider/>
 
+          <LandingInternshipSection/>
 
-          {/* Why Choose Tulas */}
-          <WhyChoose />
-          {/* At a glance */}
-          {/* <AtGlance /> */}
-          <CampusLife />
-          <TableProgram selectedCard1={selectedCard1} />
-          {/*Faculty */}
-          <div className="pt-8 md:pt-[4%] px-4 md:px-6 flex flex-col items-center justify-center w-full">
-            <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
-              Our Professors
-            </h8>
-            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
-              With every lesson, professors are shaping minds and paving the way
-              for future innovations.
-            </h4>
-          </div>
-          <div className="pb-8 md:pb-[4%] px-4 w-full">
-            <FacultyDataLandingPage facultyData={facultyData} />
-          </div>
-          {/* Accreditations */}
-          {/* <Accreditations /> */}
-          {/* Placement */}
-          <div className="pb-8 md:pb-[3%]">
+          <LandingHighlights/>
+
+          <LandingLifeTulas/>
+
+          <LandingAccordionCard/>
+
+          {/* <div className="pb-8 md:pb-[3%]">
             <PlacementProgram features={features} />
-          </div>
+          </div> */}
           <Placement scrollRef={scrollRef} />
           {scrolled && (
             <button

@@ -394,3 +394,18 @@ input[type="tel"] {
 .animate-scroll-slow {
   animation: scroll-slow 40s linear infinite;
 }
+.career-swiper .swiper-button-next,
+.career-swiper .swiper-button-prev {
+  color: #fff;
+  background: #f97316; /* orange */
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.career-swiper .swiper-button-next::after,
+.career-swiper .swiper-button-prev::after {
+  font-size: 13px;
+  font-weight: bold;
+}

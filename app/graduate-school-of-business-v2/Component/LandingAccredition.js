@@ -10,6 +10,10 @@ import logo5 from "../../../public/Homepage/AccreditationLogo/5.png";
 import logo6 from "../../../public/Homepage/AccreditationLogo/6.png";
 import logo7 from "../../../public/Homepage/AccreditationLogo/7.png";
 
+
+
+
+
 function LandingAccredition() {
   const items = [
     { img: logo1, title: "NAAC", subtitle: "Accredited A+" },
@@ -19,14 +23,20 @@ function LandingAccredition() {
     { img: logo5, title: "UGC", subtitle: "Recognized University" },
     { img: logo6, title: "ISO", subtitle: "Certified Institute" },
     { img: logo7, title: "NIRF", subtitle: "Ranked Institution" },
+
+
+    
   ];
 
   return (
     <section className="bg-white py-10 overflow-hidden">
-      {/* Heading */}
-      <h3 className="text-center text-[clamp(18px,6vw,36px)] font-light text-orange-400 mb-10">
-        Accreditations <span className="text-gray-800">&amp;</span> Recognitions
-      </h3>
+              {/* Heading */}
+      <div className="px-2 md:px-12 max-w-4xl">
+        <h3 className="text-[clamp(25px,6vw,36px)] text-center font-medium mb-3">
+          <span className="text-orange-500">Recognitions</span>{" "}
+          <span className="text-gray-800 font-light">& Accreditations</span>
+        </h3>
+      </div>
 
       {/* Scroll area */}
       <div className="relative w-full overflow-hidden">
