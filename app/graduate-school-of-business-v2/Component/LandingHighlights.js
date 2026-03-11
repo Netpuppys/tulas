@@ -42,9 +42,9 @@ export default function LandingHighlights() {
   ];
 
   return (
-    <section className="py-5 bg-white">
+    <section className="py-5 bg-gray-200">
             <h3 className="text-center text-[clamp(29px,5.5vw,34px)] font-medium">
-        <span className="text-orange-500">Tula’s</span>{" "}
+        <span className="text-orange-500">Tula's</span>{" "}
         <span className="text-gray-800 font-light">Highlights</span>
       </h3>
       <div className="max-w-6xl mx-auto px-4">
@@ -57,14 +57,14 @@ export default function LandingHighlights() {
         {/* Content */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
           {highlights.map((item, index) => (
-            <div key={index} className="flex gap-4">
+            <div key={index} className="flex gap-4 text-center">
               {/* <item.icon className="w-7 h-7 text-[#1a1a1a] flex-shrink-0 mt-1" /> */}
 
               <div>
-                <h3 className="font-medium tracking-wide text-[#1a1a1a] text-lg">
+                <h3 className="font-medium tracking-wide text-orange-500 text-lg">
                   {item.title}
                 </h3>
-                <p className="mt-2 font-light text-gray-600 leading-relaxed">
+                <p className="mt-2 font-light text-gray-900 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

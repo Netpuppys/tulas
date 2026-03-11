@@ -1,6 +1,7 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import bannerImg from "../../../public/graduate-school-of-business-v2/mba/newbannerimg.png";
+import bannerImgDesktop from "../../../public/graduate-school-of-business-v2/mba/whytulas.jpg";
 import BannerLandingPage from "../Component/BannerLandingPage";
 import FormLandingPage from "../Component/FormLandingPage";
 import CarouselContent from "../Component/CarouselContent";
@@ -73,6 +74,10 @@ import LandingAccordionCard from "../Component/LandingAccordionCard";
 import LandingGlobalHiringPartners from "../Component/LandingGlobalHiringPartners";
 import LandingAlumniSuccessStories from "../Component/LandingAlumniSuccessStories";
 import LandingFormNew from "../Component/LandingFormNew";
+import LandingBusinessSchool from "../Component/LandingBusinessSchool";
+import LandingWhyTulas from "../Component/LandingWhyTulas";
+import LandingEligibilitySection from "../Component/LandingEligibilitySection";
+import LandingAccordianSpecialization from "../Component/LandingAccordianSpecialization";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -219,6 +224,7 @@ const placementSlides = [
   {
     image: mbaimg1,
     image2: mbaimg2,
+    image3: mbaimg2,
   },
     {
     image: mbaimg3,
@@ -242,15 +248,15 @@ const placementSlides = [
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bannerImg} />
+          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
 
-          <div ref={scrollRef}>
+          {/* <div ref={scrollRef}>
             <LandingFormNew
               course={1}
               formHeading={"MBA Admissions Open 2026"}
               thankYOu={`/graduate-school-of-business-v2/mba/thank-you/${utmParams}`}
             />
-          </div>
+          </div> */}
 
           {/* carousel */}
         {/* <div className="hidden md:block pt-[34px] md:pt-[90px]">
@@ -259,13 +265,21 @@ const placementSlides = [
 
           <LandingReadmore/>
 
-          <LandingAccredition/>
+              <LandingBusinessSchool />
+
           
           {/* <LandingAdmissionEligibility/> */}
 
-          <LandingPerks perksSlides={placementSlides} />
+          <LandingWhyTulas/>
 
-          <SpecialisationsCarousel/>
+    <LandingPerks perksSlides={placementSlides} />
+
+
+          <LandingAccordianSpecialization/>
+
+          {/* <SpecialisationsCarousel/> */}
+
+          <LandingEligibilitySection/>
 
           <LandingGlobalHiringPartners/>
 
@@ -286,11 +300,13 @@ const placementSlides = [
 
           <LandingAlumniSuccessStories/>
           
-          <LandingCareerPathSlider/>
+          {/* <LandingCareerPathSlider/> */}
 
           <LandingInternshipSection/>
 
-          <LandingHighlights/>
+          {/* <LandingHighlights/> */}
+
+          <LandingAccredition/>
 
           <LandingLifeTulas/>
 
@@ -299,7 +315,7 @@ const placementSlides = [
           {/* <div className="pb-8 md:pb-[3%]">
             <PlacementProgram features={features} />
           </div> */}
-          <Placement scrollRef={scrollRef} />
+          {/* <Placement scrollRef={scrollRef} /> */}
           {scrolled && (
             <button
               onClick={handleScrollArrow}

@@ -25,12 +25,14 @@ export default function LandingGlobalHiringPartners() {
   return (
     <section className="w-full pt-10 overflow-hidden">
       {/* Heading */}
-      <h3 className="text-center text-[clamp(26px,5.5vw,34px)] font-medium mb-8">
-        <span className="text-orange-500">750</span>{" "}
+      <h3 className="text-center text-[clamp(26px,5.5vw,34px)] font-medium">
+        <span className="text-orange-500">250+ MBA</span>{" "}
         <span className="text-gray-800 font-light">
-          Global Hiring Partners
+          Hiring Partners
         </span>
       </h3>
+
+      <h5 className="text-center font-light text-orange-500 mb-8">Reserve Your Seat Among Top MNCs.</h5>
 
       {/* ROW 1 */}
       <div className="overflow-hidden mb-4">
@@ -77,10 +79,10 @@ function LogoCard({ partner }) {
         min-w-[120px] md:min-w-[170px]
         h-[120px]
         bg-white
-        border border-gray-200
+        border border-gray-600
         rounded-xl
         flex items-center justify-center
-        shadow-sm
+        shadow-md
       "
     >
       <Image

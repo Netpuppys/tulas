@@ -6,6 +6,18 @@ export default function LandingReadmore() {
   const [open, setOpen] = useState(false);
   const contentRef = useRef(null);
   const [height, setHeight] = useState("0px");
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
 
   useEffect(() => {
     if (open) {
@@ -16,51 +28,52 @@ export default function LandingReadmore() {
   }, [open]);
 
   return (
-    <div className="max-w-3xl mx-auto px-4">
-              {/* Heading */}
-      <div className="px-4 md:px-12 max-w-4xl">
-        <h3 className="text-[clamp(28px,6vw,36px)] text-center font-medium mb-3">
-          <span className="text-orange-500">About</span>{" "}
-          <span className="text-gray-800 font-light">The Programme</span>
-        </h3>
-      </div>
-
+    <div className="max-w-3xl md:max-w-6xl mx-auto px-4 pt-5">
+      {/* Heading */}
+          <h2 className="text-center text-[clamp(26px,5vw,38px)] font-medium mb-6">
+          <span className="text-orange-500 font-semibold">MBA</span>{" "}
+          <span className="text-gray-800 font-light">At Tula’s</span>
+        </h2>
 
       {/* Always visible text */}
+      <h5 className="text-[15px] md:text-[16px] text-center text-orange-600 mb-4">
+        Designed For Future Decision - makers
+      </h5>
+
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        Choosing the right business management degree is crucial for career
-        advancement. The MBA Program at Tula's Institute is meticulously
-        designed to transform aspiring professionals into executive-level
-        thinkers and competent leaders equipped for global industries.
+        The MBA at Tula’s Institute is a 2-year full-time industry-aligned postgraduate program designed to transform graduates into confident decision-makers, strategic thinkers and future business leaders.
       </p>
 
       {/* Expandable content */}
       <div
         ref={contentRef}
-        style={{ maxHeight: height }}
-        className="overflow-hidden transition-[max-height] duration-700 ease-in-out"
+        style={!isDesktop ? { maxHeight: height } : {}}
+        className={`transition-[max-height] duration-700 ease-in-out ${
+          isDesktop ? "" : "overflow-hidden"
+        }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-          The programme emphasizes real-world exposure, industry-aligned
-          curriculum, experienced faculty, and leadership development.
-          Students gain hands-on experience through live projects,
-          internships, case studies, and global business perspectives to
-          prepare them for dynamic corporate environments.
+          Built on the strength of NAAC A+ accreditation and a structured, outcome-driven academic framework, the program integrates core management fundamentals with an industry-aligned curriculum, complemented by hands-on learning through case studies, live projects and internship opportunities, all supported by a dedicated placement ecosystem
+          <br/>
+          <br/>
+          With focused specialisations in Marketing, Finance, Human Resource Management, Business Analytics, International Business and Supply Chain Management, the program develops both strategic insight and functional expertise across key business domains.
         </p>
       </div>
 
-      {/* Read more button */}
-      <button
-        onClick={() => setOpen(!open)}
-        className="mt-6 w-full bg-[#2b2b2b] text-white py-2 flex items-center justify-center gap-2 text-md font-light"
-      >
-        {open ? "Read less" : "Read more"}
-        <IoChevronDown
-          className={`transition-transform duration-500 ${
-            open ? "rotate-180" : ""
-          }`}
-        />
-      </button>
+      {/* Read more button (mobile only) */}
+      {!isDesktop && (
+        <button
+          onClick={() => setOpen(!open)}
+          className="mt-6 w-full bg-[#2b2b2b] text-white py-2 flex items-center justify-center gap-2 text-md font-light"
+        >
+          {open ? "Read less" : "Read more"}
+          <IoChevronDown
+            className={`transition-transform duration-500 ${
+              open ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+      )}
     </div>
   );
 }

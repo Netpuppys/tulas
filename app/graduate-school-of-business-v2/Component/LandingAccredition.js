@@ -31,12 +31,10 @@ function LandingAccredition() {
   return (
     <section className="bg-white py-10 overflow-hidden">
               {/* Heading */}
-      <div className="px-2 md:px-12 max-w-4xl">
         <h3 className="text-[clamp(25px,6vw,36px)] text-center font-medium mb-3">
           <span className="text-orange-500">Recognitions</span>{" "}
           <span className="text-gray-800 font-light">& Accreditations</span>
         </h3>
-      </div>
 
       {/* Scroll area */}
       <div className="relative w-full overflow-hidden">
@@ -56,9 +54,9 @@ className="flex flex-col items-center text-center min-w-[140px] md:min-w-[220px]
               <p className="text-sm font-semibold text-gray-800">
                 {item.title}
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              {/* <p className="text-xs text-gray-500 mt-1">
                 {item.subtitle}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>

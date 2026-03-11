@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import tulasLogo from "../../../public/graduate-school-of-business/mba/tulasLogo.png";
 import Image from "next/image";
 import { IoCall, IoLocation, IoMail } from "react-icons/io5";
-import { courses, specializations, state } from "@/data/courses";
+import { cities, courses, specializations, state } from "@/data/courses";
 import axios from "axios";
 import {
   getCountries,
@@ -33,6 +33,7 @@ function LandingFormNew({
     Course: course,
     Center: "",
     State: "",
+    City: "",
   });
   const [otp, setOtp] = useState("");
   const [isOtpSent, setIsOtpSent] = useState(false);
@@ -83,6 +84,13 @@ function LandingFormNew({
     setFormData((prev) => ({
       ...prev,
       Center: Number(value),
+    }));
+  };
+
+    const handleCityChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      City: Number(value),
     }));
   };
 
@@ -178,6 +186,7 @@ function LandingFormNew({
           Course: course,
           Center: "",
           State: "",
+          City: "",
         });
         setOtp("");
         window.location.href = thankYOu;
@@ -252,13 +261,13 @@ function LandingFormNew({
     <div className="relative flex pointer-events-none flex-col justify-center items-center w-full md:w-[80%] mx-auto h-full z-20 my-10">
               {/* Heading */}
       <div className="px-4 md:px-12 max-w-4xl">
-        <h3 className="text-[clamp(28px,6vw,36px)] text-center font-medium mb-3">
-          <span className="text-orange-500">Begin</span>{" "}
-          <span className="text-gray-800 font-light">Your Journey</span>
+        <h3 className="text-[clamp(28px,6vw,36px)] text-center font-medium mb-3 hidden">
+          <span className="text-orange-500">Start</span>{" "}
+          <span className="text-gray-800 font-light">Your MBA Application</span>
         </h3>
 
-        <p className="text-gray-600 text-sm font-light md:text-base mb-8">
-          Be a part of Tula’s Community. Our Team is here to guide you, answer your questions, and help you take the Next step with confidence.
+        <p className="text-gray-600 text-sm font-light md:text-base mb-8 hidden">
+          Join Tula’s to move forward with complete support from our admissions team.
         </p>
       </div>
       <div className="w-full flex flex-col justify-center items-center">
@@ -274,7 +283,7 @@ function LandingFormNew({
           style={{ boxShadow: "0px 7px 29px 0px rgba(55, 55, 55, 0.28)" }}
           className="flex pointer-events-auto bg-[#ffff] w-[95%] md:w-full mx-auto z-30 rounded-2xl overflow-hidden"
         >
-          <div className="hidden bg-white md:flex flex-col rounded-r-2xl px-7 py-7 pb-4 max-w-[410px]">
+          <div className="hidden md:hidden bg-white md:flex flex-col rounded-r-2xl px-7 py-7 pb-4 max-w-[410px]">
             <h3 className="text-[clamp(12px,4.8vw,36px)] md:text-[clamp(12px,1.3vw,50px)] font-[TTChocolatesMedium] text-[#353535]">
               Enquire Now
             </h3>
@@ -313,9 +322,9 @@ function LandingFormNew({
             {/* <h3 className="text-center text-white text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.3vw,45px)] pb-4 w-full">
               {formHeading}
             </h3> */}
-                    <h3 className="text-[clamp(20px,6vw,36px)] text-center font-bold mb-3">
+                    <h3 className="text-[clamp(20px,6vw,36px)] text-center font-semibold mb-3">
           <span className="text-orange-500 ">Apply</span>{" "}
-          <span className="text-gray-800">Now</span>
+          <span className="text-gray-800 font-light">Now</span>
         </h3>
             <div className="md:flex items-center justify-between gap-3">
               <input
@@ -413,6 +422,7 @@ function LandingFormNew({
                     </option>
                   ))}
               </select>
+                
               {showCourse && (
                 <select
                   value={formData.Course}
@@ -429,6 +439,25 @@ function LandingFormNew({
                 </select>
               )}
             </div>
+            <select
+                              value={formData.City}
+                              onChange={(e) => handleCityChange(e.target.value)}
+                              required
+                              disabled={!formData.State}
+                              title={!formData.State ? "Please Select State" : ""}
+                              className="w-full classic px-5 py-3 h-12 border border-gray-300 focus:outline-none rounded-[10px] text-gray-500 bg-[#FFFFFF] mb-5"
+                            >
+                              <option value="">Select City</option>
+                              {formData.State &&
+                                cities[formData.State]
+                                  .slice()
+                                  .sort((a, b) => a.name.localeCompare(b.name))
+                                  .map((city, index) => (
+                                    <option key={index} value={city.id}>
+                                      {city.name}
+                                    </option>
+                                  ))}
+                            </select>
             <button
               type="submit"
               disabled={!verified}

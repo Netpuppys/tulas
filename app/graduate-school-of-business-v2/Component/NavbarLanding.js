@@ -7,7 +7,7 @@ import phoneCallGif from "../../../public/Components/Navbar/phone_ringing.gif";
 import NBA from "../../../public/Components/Navbar/NBA.png";
 import NAAC from "../../../public/Components/Navbar/NAAC.png";
 import TulasLogo from "../../../public/Components/Navbar/TulasLogo.png";
-import TulasLogoMobile from "../../../public/Components/Navbar/TulasLogomd.png";
+import TulasLogoMobile from "../../../public/Components/Navbar/tulas-unilogo.png";
 import Years20 from "../../../public/graduate-school-of-business/mba/20Years.png";
 import Image from "next/image";
 
@@ -16,18 +16,18 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
     <div className="fixed w-full z-[9999] pointer-events-none">
 
       {/* ================= DESKTOP TOP BAR ================= */}
-      <div className="bg-[rgba(19,19,19,0.80)] backdrop-blur-xl w-full hidden md:block pointer-events-auto">
+      <div className="bg-white w-full hidden md:block pointer-events-auto">
         <div className="w-[95%] mx-auto flex items-center justify-center gap-4 border-b border-[#9A9A9A] py-2">
           <a
             href="tel:+91-8069204028"
-            className="flex gap-2 items-center"
+            className="flex gap-2 items-center text-black"
           >
             <Image src={phoneCallGif} alt="" className="w-5" />
             Admissions Helpline Number - +91-8069204028
           </a>
           <button
             onClick={handleScrollArrow}
-            className="px-8 bg-white text-[#3D001B] rounded-full"
+            className="px-8 bg-orange-600 text-white rounded-full"
           >
             Enquire Now
           </button>
@@ -35,7 +35,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
       </div>
 
       {/* ================= NAVBAR ================= */}
-      <div className="bg-[rgba(19,19,19,0.80)] backdrop-blur-xl pointer-events-auto">
+      <div className="bg-white md:bg-orange-600 shadow-md pointer-events-auto">
         <div className="px-0 md:px-[2%] pb-3 md:pt-2 pt-0">
 
           {/* ===== MOBILE STRUCTURE ===== */}
@@ -43,7 +43,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
 <div className="flex flex-col gap-2 md:hidden">
 
   {/* TOP ROW: YEARS + NBA + NAAC with RED BACKGROUND */}
-  <div className="flex justify-between items-center gap-3 bg-[#3D001B] px-4 pb-2 pt-1">
+  <div className="flex justify-between items-center gap-3 bg-orange-600 px-4 pb-2 pt-1">
     <Image src={Years20} alt="" className="w-[50px]" />
     {nba && <Image src={NBA} alt="" className="w-[45px]" />}
     <Image src={NAAC} alt="" className="w-[60px]" />
@@ -54,12 +54,12 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
     <Image
       src={TulasLogoMobile}
       alt=""
-      className="w-[10vw]"
+      className="w-[15vw]"
     />
 
     <button
       onClick={() => (window.location.href = "tel:+91-8069204028")}
-      className="bg-[#3D001B] rounded-full w-14 aspect-square flex justify-center items-center"
+      className="bg-orange-600 rounded-full w-14 aspect-square flex justify-center items-center"
     >
       <Image src={phoneCallGif} alt="" className="w-8" />
     </button>

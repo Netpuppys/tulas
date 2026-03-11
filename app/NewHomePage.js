@@ -97,6 +97,8 @@ import desktopbanner3 from "../public/Homepage/BannerHome/filmfestival.webp";
 import mobilebanner3 from "../public/Homepage/BannerHome/filmfestivalmobile.webp";
 
 import { ThreeDots } from "react-loader-spinner";
+import LandingAccredition from "./graduate-school-of-business-v2/Component/LandingAccredition";
+import LandingAcademicNotifications from "./newhome-components/LandingAcademicNotifications";
 
 export default function NewHomePage() {
   const parentRef = useRef(null);
@@ -213,17 +215,17 @@ export default function NewHomePage() {
 
         <div className="relative overflow-hidden ">
           {/* Blurred sides */}
-          <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10  bg-gradient-to-r from-[#007A83] to-transparent" />
+          {/* <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10  bg-gradient-to-r from-[#007A83] to-transparent" /> */}
           {/* Scrolling text */}
           <marquee
             direction="left"
             scrollamount="10"
-            className="ml-[7%] w-[93%]"
+            className=" w-[100%] bg-orange-500"
           >
             <div className="w-fit py-2 md:py-6 flex gap-4 md:gap-[2%] whitespace-nowrap">
               {name.map((item, index) => (
                 <div key={index} className="relative w-fit mx-auto">
-                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] bg-gradient-to-r from-[#E69706] via-[#760135] to-[#007A83] text-transparent bg-clip-text font-[TTChocolates] leading-tight font-extrabold">
+                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center uppercase md:text-[clamp(10px,1.2vw,50px)] font-[TTChocolates] leading-tight font-extrabold">
                     {item}
                   </h2>
                 </div>
@@ -231,9 +233,12 @@ export default function NewHomePage() {
             </div>
           </marquee>
         </div>
-        <AccreditationLogo />
-        <AboutTulasForm />
-        <Accreditation />
+
+        <LandingAcademicNotifications/>
+
+        <LandingAccredition/>
+        {/* <AboutTulasForm />
+        <Accreditation /> */}
         <Placement features={features} />
         <StatsAndNews />
         <Courses parentRef={parentRef} />
