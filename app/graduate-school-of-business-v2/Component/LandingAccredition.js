@@ -31,9 +31,9 @@ function LandingAccredition() {
   return (
     <section className="bg-white py-10 overflow-hidden">
               {/* Heading */}
-        <h3 className="text-[clamp(25px,6vw,36px)] text-center font-medium mb-3">
+        <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-3">
           <span className="text-orange-500">Recognitions</span>{" "}
-          <span className="text-gray-800 font-light">& Accreditations</span>
+          <span className="text-gray-800">& Accreditations</span>
         </h3>
 
       {/* Scroll area */}

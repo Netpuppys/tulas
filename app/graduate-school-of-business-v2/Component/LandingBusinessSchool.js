@@ -8,9 +8,10 @@ export default function LandingBusinessSchool() {
       <div className="w-full max-w-2xl md:max-w-6xl px-4">
 
         {/* Heading */}
-        <h2 className="text-center text-[clamp(26px,5vw,36px)] font-medium mb-10 leading-snug">
-          <span className="text-orange-500 font-semibold">India’s</span>{" "}
-          <span className="text-gray-800 font-light">Leading B- School Ranking</span>
+        <h2 className="text-center text-[clamp(36px,5vw,36px)] font-medium mb-10 leading-snug">
+          <span className="text-orange-500 font-extrabold">Ranked Among</span>{" "}
+          <br/>
+          <span className="text-gray-800 font-extrabold">India's Top B-Schools</span>
         </h2>
 
         {/* Card */}
@@ -49,7 +50,7 @@ export default function LandingBusinessSchool() {
 
             <div className="flex justify-center">
               <Image
-                src="/Homepage/Accreditation/ranking3.png"
+                src="/Homepage/Accreditation/ranking4.png"
                 alt="MDRA"
                 width={180}
                 height={60}
@@ -79,6 +80,19 @@ export default function LandingBusinessSchool() {
               </p>
             </div>
 
+                       <div className="flex flex-col items-center gap-3">
+              <Image
+                src="/Homepage/Accreditation/ranking4.png"
+                alt="MDRA"
+                width={180}
+                height={60}
+                className="object-contain"
+              />
+              <p className="text-gray-800 font-medium text-sm">
+                Recognised for Academic Leadership
+              </p>
+            </div>
+
             <div className="flex flex-col items-center gap-3">
               <Image
                 src="/Homepage/Accreditation/ranking1.png"
@@ -89,19 +103,6 @@ export default function LandingBusinessSchool() {
               />
               <p className="text-gray-800 font-medium text-sm">
                 All India | Private B-School | North Zone
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center gap-3">
-              <Image
-                src="/Homepage/Accreditation/ranking3.png"
-                alt="MDRA"
-                width={180}
-                height={60}
-                className="object-contain"
-              />
-              <p className="text-gray-800 font-medium text-sm">
-                Recognised for Academic Leadership
               </p>
             </div>
 

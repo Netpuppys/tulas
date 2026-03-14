@@ -1,124 +1,102 @@
 "use client";
-import React, { useRef } from "react";
+
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
-import AnalyticsImg from "../../../public/graduate-school-of-business-v2/mba/buisnessanys.png";
-
-const data = [
-  {
-    image: AnalyticsImg,
-    tag: "BUSINESS ANALYTICS",
-    title: "TURNING DATA INTO DECISIONS",
-    desc:
-      "Designed for a data-driven economy, this course goes beyond dashboards. Gain hands-on experience with analytics tools, real-world datasets, and case studies.",
-  },
-  {
-    image: AnalyticsImg,
-    tag: "FINANCE",
-    title: "MASTERING FINANCIAL STRATEGY",
-    desc:
-      "Build expertise in financial analysis, investment planning, risk management, and corporate finance.",
-  },
-  {
-    image: AnalyticsImg,
-    tag: "MARKETING",
-    title: "BUILDING POWERFUL BRANDS",
-    desc:
-      "Learn consumer behavior, digital marketing strategies, brand management, and growth marketing.",
-  },
-];
+import { useRef } from "react";
 
 export default function SpecialisationsCarousel() {
-  const swiperRef = useRef();
+  const scrollRef = useRef(null);
+
+  const alumniCards = [
+    "/Homepage/special/special1.png",
+    "/Homepage/special/special2.png",
+    "/Homepage/special/special3.png",
+    "/Homepage/special/special4.png",
+    "/Homepage/special/special5.png",
+    "/Homepage/special/special6.png",
+    "/Homepage/special/special7.png",
+    "/Homepage/special/special8.png",
+  ];
+
+  const scroll = (direction) => {
+    if (!scrollRef.current) return;
+
+    const container = scrollRef.current;
+    const scrollAmount = container.offsetWidth * 0.8;
+
+    container.scrollBy({
+      left: direction === "left" ? -scrollAmount : scrollAmount,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <section className="bg-white pb-5 px-4 overflow-visible">
-                   {/* Heading */}
-      <div className="px-2 md:px-12 max-w-4xl">
-        <h3 className="text-[clamp(28px,6vw,36px)] text-center font-medium mb-3">
-          <span className="text-orange-500">Specializations</span>{" "}
-          <span className="text-gray-800 font-light">We Offer</span>
+    <section className="w-full py-12">
+      {/* Heading */}
+      <div className="px-4 md:px-12">
+        <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-3">
+          <span className="text-orange-500">Be A Part</span>{" "}
+          <span className="text-gray-800">of Industry Ready MBA</span>
         </h3>
+
+        <p className="text-gray-600 text-sm md:text-base mb-8">
+          At Tulas Institute, focused training and placement support prepares students for on campus careers. Our alumni are part of leading organisations across industries.
+        </p>
       </div>
 
-
-      {/* Slider */}
-      <div className="relative">
-        <Swiper
-        ref={swiperRef}
-        spaceBetween={24}
-        slidesPerView={1}
-        className="px-1 md:px-0"
-          breakpoints={{
-            768: {
-              slidesPerView: 3,
-            },
-          }}
-        >
-          {data.map((item, index) => (
-            <SwiperSlide key={index}>
-              <SpecialisationCard item={item} />
-            </SwiperSlide>
+      {/* Scroll container */}
+      <div
+        ref={scrollRef}
+        className="overflow-x-scroll scrollbar-hide scroll-smooth"
+      >
+        <div className="flex gap-5 px-4 md:px-12">
+          {alumniCards.map((src, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-[82%] sm:w-[60%] md:w-[380px] h-[420px] rounded-3xl overflow-hidden"
+            >
+              <Image
+                src={src}
+                alt={`Alumni story ${index + 1}`}
+                width={380}
+                height={420}
+                className="w-full h-full object-cover"
+                priority={index === 0}
+              />
+            </div>
           ))}
-        </Swiper>
-
-        {/* Arrows (desktop only like design) */}
-        <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 w-full justify-between px-4 z-20 pointer-events-none">
-          <Arrow onClick={() => swiperRef.current.swiper.slidePrev()}>
-            <IoIosArrowBack />
-          </Arrow>
-          <Arrow onClick={() => swiperRef.current.swiper.slideNext()}>
-            <IoIosArrowForward />
-          </Arrow>
         </div>
+      </div>
+
+      {/* CTA + Arrows */}
+      <div className="flex items-center justify-center gap-6 mt-6 px-4">
+        
+        {/* Left Arrow (desktop only) */}
+        <button
+          onClick={() => scroll("left")}
+          className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 hover:bg-gray-300"
+        >
+          ←
+        </button>
+
+        {/* Apply Button */}
+        <button onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+         className="w-full md:w-auto bg-orange-500 text-white py-2 px-10 rounded-[10px] text-lg font-semibold">
+          APPLY NOW
+        </button>
+
+        {/* Right Arrow (desktop only) */}
+        <button
+          onClick={() => scroll("right")}
+          className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 hover:bg-gray-300"
+        >
+          →
+        </button>
       </div>
     </section>
   );
 }
-function SpecialisationCard({ item }) {
-  return (
-    <div className="flex flex-col">
-      {/* Image card */}
-      <div className="relative rounded-3xl overflow-hidden">
-        <Image
-          src={item.image}
-          alt={item.tag}
-          className="w-full h-[420px] object-cover"
-        />
-
-        <div className="absolute inset-0" />
-      </div>
-
-      {/* Content */}
-      <div className="mt-6">
-        <div className="flex items-center gap-3 mb-3">
-          <span className="w-3 h-3 bg-orange-500 rounded-full" />
-          <p className="text-sm font-light text-[#1a1a1a]">{item.tag}</p>
-        </div>
-
-        <h3 className="text-2xl font-light mb-4 text-[#1a1a1a]">
-          {item.title}
-        </h3>
-
-        <p className="text-gray-600 font-light leading-relaxed">
-          {item.desc}
-        </p>
-
-        <button className="mt-6 w-full bg-orange-500 text-white py-2 rounded-[10px] text-lg font-semibold">
-          APPLY NOW
-        </button>
-      </div>
-    </div>
-  );
-}
-const Arrow = ({ onClick, children }) => (
-<button
-  onClick={onClick}
-  className="pointer-events-auto bg-white shadow-xl w-14 h-14 rounded-full flex items-center justify-center text-3xl active:scale-90 transition"
->
-    {children}
-  </button>
-);

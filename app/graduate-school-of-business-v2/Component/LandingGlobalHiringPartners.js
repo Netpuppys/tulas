@@ -4,18 +4,41 @@ import Image from "next/image";
 
 export default function LandingGlobalHiringPartners() {
   const partners = [
-    { name: "Aditya Birla Group", logo: "/Homepage/AccreditationLogo/1.png" },
-    { name: "Amazon", logo: "/Homepage/AccreditationLogo/2.png" },
-    { name: "SpiceJet", logo: "/Homepage/AccreditationLogo/3.png" },
-    { name: "Google", logo: "/Homepage/AccreditationLogo/4.png" },
-    { name: "Cognizant", logo: "/Homepage/AccreditationLogo/5.png" },
-    { name: "BMW", logo: "/Homepage/AccreditationLogo/6.png" },
-    { name: "BMW", logo: "/Homepage/AccreditationLogo/7.png" },
-    { name: "BMW", logo: "/Homepage/AccreditationLogo/8.png" },
-    { name: "BMW", logo: "/Homepage/AccreditationLogo/9.png" },
-    { name: "BMW", logo: "/Homepage/AccreditationLogo/10.png" },
-    { name: "BMW", logo: "/Homepage/AccreditationLogo/11.png" },
-    { name: "BMW", logo: "/Homepage/AccreditationLogo/12.png" },
+    { name: "Aditya Birla Group", logo: "/Homepage/partners/Academor.png" },
+    { name: "Amazon", logo: "/Homepage/partners/Acxiom Consulting.png" },
+    { name: "SpiceJet", logo: "/Homepage/partners/Amazon Web Services.png" },
+    { name: "Google", logo: "/Homepage/partners/Arrise.png" },
+    { name: "Cognizant", logo: "/Homepage/partners/Artech.png" },
+    { name: "BMW", logo: "/Homepage/partners/ASC International.png" },
+    { name: "BMW", logo: "/Homepage/partners/BMW.png" },
+    { name: "BMW", logo: "/Homepage/partners/CK (Calvin Klein).png" },
+    { name: "BMW", logo: "/Homepage/partners/Cywarden.png" },
+    { name: "BMW", logo: "/Homepage/partners/Easemytrip.png" },
+    { name: "BMW", logo: "/Homepage/partners/ESAF BANK.png" },
+    { name: "BMW", logo: "/Homepage/partners/Fitelo.png" },
+
+    { name: "Aditya Birla Group", logo: "/Homepage/partners/Glowlogics.png" },
+    { name: "Amazon", logo: "/Homepage/partners/Google.png" },
+    { name: "SpiceJet", logo: "/Homepage/partners/Grant thornton.png" },
+    { name: "Google", logo: "/Homepage/partners/Hero.png" },
+    { name: "Cognizant", logo: "/Homepage/partners/Hikeedu.png" },
+    { name: "BMW", logo: "/Homepage/partners/HSBC.png" },
+    { name: "BMW", logo: "/Homepage/partners/Intel.png" },
+    { name: "BMW", logo: "/Homepage/partners/Learning Routes.png" },
+    { name: "BMW", logo: "/Homepage/partners/Movidu.png" },
+    { name: "BMW", logo: "/Homepage/partners/MWIDM.png" },
+    { name: "BMW", logo: "/Homepage/partners/Prodesk it.png" },
+    { name: "BMW", logo: "/Homepage/partners/Reality Assitant.png" },
+
+    { name: "Amazon", logo: "/Homepage/partners/Relinns Technologies.png" },
+    { name: "SpiceJet", logo: "/Homepage/partners/Root Analysis.png" },
+    { name: "Google", logo: "/Homepage/partners/Siemens.png" },
+    { name: "Cognizant", logo: "/Homepage/partners/Silverspace.png" },
+    { name: "BMW", logo: "/Homepage/partners/Stellaraa Edu Tech.png" },
+    { name: "BMW", logo: "/Homepage/partners/Step2gen.png" },
+    { name: "BMW", logo: "/Homepage/partners/Talbros.png" },
+    { name: "BMW", logo: "/Homepage/partners/The times of india.png" },
+    { name: "BMW", logo: "/Homepage/partners/Verizon.png" },
   ];
 
   // split into two rows
@@ -25,14 +48,14 @@ export default function LandingGlobalHiringPartners() {
   return (
     <section className="w-full pt-10 overflow-hidden">
       {/* Heading */}
-      <h3 className="text-center text-[clamp(26px,5.5vw,34px)] font-medium">
+      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-2">
         <span className="text-orange-500">250+ MBA</span>{" "}
-        <span className="text-gray-800 font-light">
+        <span className="text-gray-800">
           Hiring Partners
         </span>
       </h3>
 
-      <h5 className="text-center font-light text-orange-500 mb-8">Reserve Your Seat Among Top MNCs.</h5>
+      <h5 className="text-center font-light text-2xl text-orange-500 mb-8">Reserve Your Seat Among Top MNCs.</h5>
 
       {/* ROW 1 */}
       <div className="overflow-hidden mb-4">

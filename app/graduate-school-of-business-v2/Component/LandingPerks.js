@@ -13,9 +13,9 @@ function LandingPerks({ perksSlides = [] }) {
 
         {/* Heading */}
         <div className="w-full md:max-w-xl mx-auto">
-          <h3 className="text-[clamp(28px,6vw,36px)] text-center font-medium mb-6">
+          <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-6">
             <span className="text-orange-500">Excellence</span>{" "}
-            <span className="text-gray-800 font-light">Redefined</span>
+            <span className="text-gray-800 font-extrabold">Redefined</span>
           </h3>
         </div>
 

@@ -33,15 +33,13 @@ export default function LandingAlumniSuccessStories() {
     <section className="w-full py-12">
       {/* Heading */}
       <div className="px-4 md:px-12">
-        <h3 className="text-[clamp(28px,6vw,36px)] text-center font-medium mb-3">
+        <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-3">
           <span className="text-orange-500">Tula's</span>{" "}
-          <span className="text-gray-800 font-light">Success Stories</span>
+          <span className="text-gray-800">Success Stories</span>
         </h3>
 
         <p className="text-gray-600 text-sm md:text-base mb-8">
-          At Tula’s University, focused training and placement support prepare
-          students for on-campus careers. Our alumni are part of leading
-          organizations across industries.
+          At Tulas Institute, focused training and placement support prepares students for on campus careers. Our alumni are part of leading organisations across industries.
         </p>
       </div>
 
@@ -81,7 +79,13 @@ export default function LandingAlumniSuccessStories() {
         </button>
 
         {/* Apply Button */}
-        <button className="w-full md:w-auto bg-orange-500 text-white py-2 px-10 rounded-[10px] text-lg font-semibold">
+        <button onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+         className="w-full md:w-auto bg-orange-500 text-white py-2 px-10 rounded-[10px] text-lg font-semibold">
           APPLY NOW
         </button>
 

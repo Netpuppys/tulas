@@ -6,10 +6,10 @@ export default function LandingInternshipSection() {
     <>
 <section className="bg-white pb-6">
             {/* Heading */}
-      <h3 className="text-center text-[clamp(26px,5.5vw,34px)] font-medium">
+      {/* <h3 className="text-center text-[clamp(26px,5.5vw,34px)] font-medium">
         <span className="text-orange-500">Internship</span>{" "}
         <span className="text-gray-800 font-light">Offered By Tula’s</span>
-      </h3>
+      </h3> */}
   <div className="max-w-6xl mx-auto px-4">
     <div className="flex flex-col md:flex-row items-center gap-10">
 
@@ -23,15 +23,20 @@ export default function LandingInternshipSection() {
         </h2> */}
 
         {/* IMAGE (mobile only position) */}
-        <div className="relative w-full h-[260px] md:h-[560px] rounded-2xl overflow-hidden mb-6">
+        <div className="relative w-full h-[260px] md:h-[660px] rounded-2xl overflow-hidden mb-6">
           <Image
-            src="/landingPage/intershipbanner.png"
+            src="/landingPage/intershipbanner2.png"
             alt="Internship at Tula's"
             fill
             className="object-cover"
             priority
           />
         </div>
+                    {/* Heading */}
+      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold">
+        <span className="text-orange-500">Internship</span>{" "}
+        <span className="text-gray-800">Offered By Tula’s</span>
+      </h3>
 
         <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
           The Training and Placement Cell at Tula’s supports students in preparing for real corporate opportunities through structured training, internship support and campus recruitment initiatives. With resume building, aptitude preparation, mock interviews and regular corporate interactions, students gain the skills, confidence and industry exposure needed to begin their MBA careers.

@@ -58,8 +58,11 @@ import Bannermd5 from "../../../public/landingPage/9md.jpg";
 
 import mbaimg1 from "../../../public/graduate-school-of-business-v2/mba/choosemba1.png";
 import mbaimg2 from "../../../public/graduate-school-of-business-v2/mba/choosemba2.png";
-import mbaimg3 from "../../../public/graduate-school-of-business-v2/mba/choosemba1.png";
-import mbaimg4 from "../../../public/graduate-school-of-business-v2/mba/choosemba2.png";
+import mbaimg3 from "../../../public/graduate-school-of-business-v2/mba/tulasstat1.png";
+import mbaimg4 from "../../../public/graduate-school-of-business-v2/mba/tulasstat2.png";
+import mbaimg5 from "../../../public/graduate-school-of-business-v2/mba/tulasstat3.png";
+import mbaimg6 from "../../../public/graduate-school-of-business-v2/mba/tulasstat4.png";
+
 
 import LandingReadmore from "../Component/LandingReadmore";
 import LandingAccredition from "../Component/LandingAccredition";
@@ -224,11 +227,12 @@ const placementSlides = [
   {
     image: mbaimg1,
     image2: mbaimg2,
-    image3: mbaimg2,
+    image3: mbaimg3,
   },
     {
-    image: mbaimg3,
-    image2: mbaimg4,
+    image: mbaimg4,
+    image2: mbaimg5,
+    image3: mbaimg6,
   },
 ];
 
@@ -277,8 +281,6 @@ const placementSlides = [
 
           <LandingAccordianSpecialization/>
 
-          {/* <SpecialisationsCarousel/> */}
-
           <LandingEligibilitySection/>
 
           <LandingGlobalHiringPartners/>
@@ -299,12 +301,13 @@ const placementSlides = [
           </div> */}
 
           <LandingAlumniSuccessStories/>
+
+          <SpecialisationsCarousel/>
           
           {/* <LandingCareerPathSlider/> */}
+          <LandingHighlights/>
 
           <LandingInternshipSection/>
-
-          {/* <LandingHighlights/> */}
 
           <LandingAccredition/>
 

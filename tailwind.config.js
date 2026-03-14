@@ -15,6 +15,7 @@ module.exports = {
         ttchocolates: ['TTChocolates', 'sans-serif'],
         ttchocolatesMedium: ['TTChocolatesMedium', 'sans-serif'],
         appelstroop: ['DKAppelstroop', 'cursive'],
+        montserrat: ['Montserrat', 'sans-serif']
       },
       screens: {
         mdNavbar: "880px",

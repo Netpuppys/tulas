@@ -7,32 +7,44 @@ export default function LandingAccordianSpecialization() {
 
   const items = [
     {
-      title: "Human Resource Management",
-      text: "Comprehensive support and care during pregnancy with expert guidance and medical supervision.",
-      mobileImage: "/graduate-school-of-business-v2/mba/buisnessanys.png",
-      image: "/graduate-school-of-business-v2/mba/testing.jpg",
-    },
-    {
-      title: "International Business",
-      text: "Helping new parents with newborn care, feeding guidance, and sleep routines.",
-      mobileImage: "/graduate-school-of-business-v2/mba/buisnessanys.png",
-      image: "/graduate-school-of-business-v2/mba/testing.jpg",
-    },
-    {
       title: "Marketing",
-      text: "Special programs designed for mothers to recover and regain strength after delivery.",
+      subitle: "Drive demand & deliver growth",
+      text: "Master brand strategy, consumer behaviour and market intelligence. Learn how to position products, scale businesses and drive measurable growth across competitive markets.",
+      mobileImage: "/graduate-school-of-business-v2/mba/buisnessanys.png",
+      image: "/graduate-school-of-business-v2/mba/testing.jpg",
+    },
+    {
+      title: "Human Resource Management (HRM)",
+      subitle: "Build high-performance teams",
+      text: "Learn to build high-performance teams, manage talent strategy and shape organisational culture. Ideal for future leaders in people strategy and workforce transformation.",
+      mobileImage: "/graduate-school-of-business-v2/mba/buisnessanys.png",
+      image: "/graduate-school-of-business-v2/mba/testing.jpg",
+    },
+    {
+      title: "Digital Marketing",
+      subitle: "Engineer growth for digital economy",
+      text: "Build expertise in performance marketing, social media strategy, SEO, analytics and digital brand management. Designed for leaders who want to dominate the digital economy.",
+      mobileImage: "/graduate-school-of-business-v2/mba/buisnessanys.png",
+      image: "/graduate-school-of-business-v2/mba/testing.jpg",
+    },
+        {
+      title: "International Business",
+      subitle: "Lead across global markets",
+      text: "Understand global trade, cross-border strategy and international market dynamics. Prepare to manage business operations in a globally interconnected environment.",
       mobileImage: "/graduate-school-of-business-v2/mba/buisnessanys.png",
       image: "/graduate-school-of-business-v2/mba/testing.jpg",
     },
         {
       title: "Finance",
-      text: "Special programs designed for mothers to recover and regain strength after delivery.",
+      subitle: "Power growth with financial insight",
+      text: "Develop strong financial acumen in investment analysis, risk management, corporate finance and strategic decision-making. Built for those who aim to lead financial growth and governance.",
       mobileImage: "/graduate-school-of-business-v2/mba/buisnessanys.png",
       image: "/graduate-school-of-business-v2/mba/testing.jpg",
     },
-        {
-      title: "Digital Marketing",
-      text: "Special programs designed for mothers to recover and regain strength after delivery.",
+          {
+      title: "Business Analytics",
+      subitle: "Turn data into decisions",
+      text: "Combine data, technology and strategy to drive smarter business decisions. Gain expertise in data interpretation, predictive analysis and evidence-based leadership.",
       mobileImage: "/graduate-school-of-business-v2/mba/buisnessanys.png",
       image: "/graduate-school-of-business-v2/mba/testing.jpg",
     },
@@ -46,9 +58,9 @@ export default function LandingAccordianSpecialization() {
     <section className="max-w-6xl mx-auto py-16 px-4">
 
       {/* Heading */}
-      <h2 className="text-center text-[clamp(26px,5vw,38px)] font-medium mb-8">
-        <span className="text-orange-500 font-semibold">Specializations</span>{" "}
-        <span className="text-gray-800 font-light">We Offer</span>
+      <h2 className="text-center text-[clamp(38px,5vw,38px)] font-extrabold mb-8">
+        <span className="text-orange-500">Specialisations</span>{" "}
+        <span className="text-gray-800">We Offer</span>
       </h2>
 
       <div className="space-y-4">
@@ -80,13 +92,13 @@ export default function LandingAccordianSpecialization() {
               <div className="overflow-hidden">
                 <div className="p-5 border-t">
 
-                  <Image
+                  {/* <Image
                     src={item.image}
                     alt={item.title}
                     width={800}
                     height={400}
                     className="rounded-lg mb-4 w-full h-auto hidden md:block"
-                    />
+                    /> */}
 
                     {/* Mobile Image */}
                     <Image
@@ -98,7 +110,7 @@ export default function LandingAccordianSpecialization() {
                     />
 
                   <h3 className="text-xl font-semibold mb-2 text-orange-500">
-                    {item.title}
+                    {item.subitle}
                   </h3>
 
                   <p className="text-gray-600">
