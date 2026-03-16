@@ -182,7 +182,7 @@ const page = () => {
           <div ref={scrollRef}>
             <FormLandingPage
               course={3}
-              formHeading={"B.Tech Admissions Open 2025"}
+              formHeading={"B.Tech Admissions Open 2026"}
               thankYOu={`/department-of-engineering/btech/thank-you/${utmParams}`}
             />
           </div>

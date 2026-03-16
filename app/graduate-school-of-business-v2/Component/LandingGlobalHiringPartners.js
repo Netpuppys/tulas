@@ -55,42 +55,56 @@ export default function LandingGlobalHiringPartners() {
         </span>
       </h3>
 
-      <h5 className="text-center font-light text-2xl text-orange-500 mb-8">Reserve Your Seat Among Top MNCs.</h5>
+      <h5 className="text-center font-light text-2xl text-orange-500 mb-8">Reserve Your Seat Among Top MNCs</h5>
 
-      {/* ROW 1 */}
-      <div className="overflow-hidden mb-4">
-        <div className="flex gap-4 animate-scroll">
-          {[...row1, ...row1].map((partner, index) => (
-            <LogoCard key={`r1-${index}`} partner={partner} />
-          ))}
-        </div>
-      </div>
+{/* ROW 1 - move left */}
+<div className="overflow-hidden mb-4">
+  <div className="flex gap-4 animate-scroll-left">
+    {[...row1, ...row1].map((partner, index) => (
+      <LogoCard key={`r1-${index}`} partner={partner} />
+    ))}
+  </div>
+</div>
 
-      {/* ROW 2 */}
-      <div className="overflow-hidden">
-        <div className="flex gap-4 animate-scroll">
-          {[...row2, ...row2].map((partner, index) => (
-            <LogoCard key={`r2-${index}`} partner={partner} />
-          ))}
-        </div>
-      </div>
+{/* ROW 2 - move right */}
+<div className="overflow-hidden">
+  <div className="flex gap-4 animate-scroll-right">
+    {[...row2, ...row2].map((partner, index) => (
+      <LogoCard key={`r2-${index}`} partner={partner} />
+    ))}
+  </div>
+</div>
 
       {/* animation */}
       <style jsx>{`
-        .animate-scroll {
-          width: max-content;
-          animation: scroll 40s linear infinite;
-        }
+  .animate-scroll-left {
+    width: max-content;
+    animation: scrollLeft 40s linear infinite;
+  }
 
-        @keyframes scroll {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
+  .animate-scroll-right {
+    width: max-content;
+    animation: scrollRight 40s linear infinite;
+  }
+
+  @keyframes scrollLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scrollRight {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+`}</style>
     </section>
   );
 }

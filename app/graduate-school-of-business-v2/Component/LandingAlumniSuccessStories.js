@@ -8,13 +8,13 @@ export default function LandingAlumniSuccessStories() {
 
   const alumniCards = [
     "/Homepage/Alumni/alumni1.jpg",
-    "/Homepage/Alumni/alumini2.jpg",
-    "/Homepage/Alumni/alumini3.jpg",
-    "/Homepage/Alumni/alumini4.jpg",
-    "/Homepage/Alumni/alumini5.jpg",
-    "/Homepage/Alumni/alumini6.jpg",
-    "/Homepage/Alumni/alumini7.jpg",
-    "/Homepage/Alumni/alumini8.jpg",
+    "/Homepage/Alumni/alumni2.jpg",
+    "/Homepage/Alumni/alumni3.jpg",
+    "/Homepage/Alumni/alumni4.jpg",
+    "/Homepage/Alumni/alumni5.jpg",
+    "/Homepage/Alumni/alumni6.jpg",
+    "/Homepage/Alumni/alumni7.jpg",
+    "/Homepage/Alumni/alumni8.jpg",
   ];
 
   const scroll = (direction) => {
@@ -34,7 +34,7 @@ export default function LandingAlumniSuccessStories() {
       {/* Heading */}
       <div className="px-4 md:px-12">
         <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-3">
-          <span className="text-orange-500">Tula's</span>{" "}
+          <span className="text-orange-500">Tulas</span>{" "}
           <span className="text-gray-800">Success Stories</span>
         </h3>
 

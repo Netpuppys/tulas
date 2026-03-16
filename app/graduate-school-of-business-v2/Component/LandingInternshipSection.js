@@ -35,7 +35,7 @@ export default function LandingInternshipSection() {
                     {/* Heading */}
       <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold">
         <span className="text-orange-500">Internship</span>{" "}
-        <span className="text-gray-800">Offered By Tula’s</span>
+        <span className="text-gray-800">Offered By Tulas</span>
       </h3>
 
         <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
@@ -70,10 +70,10 @@ export default function LandingInternshipSection() {
           {/* Item 1 */}
           <div className="flex items-center gap-6">
             <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
-              20
+              01
             </span>
             <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
-              <span className="font-bold">Years</span> of Academic Excellence
+              <span className="font-bold">20 Years</span> of Academic Excellence
             </p>
           </div>
 

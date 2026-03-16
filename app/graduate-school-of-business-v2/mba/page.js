@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import bannerImg from "../../../public/graduate-school-of-business-v2/mba/newbannerimg.png";
-import bannerImgDesktop from "../../../public/graduate-school-of-business-v2/mba/whytulas.jpg";
+import bannerImg from "../../../public/graduate-school-of-business-v2/mba/mbamobile.jpg";
+import bannerImgDesktop from "../../../public/graduate-school-of-business-v2/mba/mbadesktop.jpg";
 import BannerLandingPage from "../Component/BannerLandingPage";
 import FormLandingPage from "../Component/FormLandingPage";
 import CarouselContent from "../Component/CarouselContent";

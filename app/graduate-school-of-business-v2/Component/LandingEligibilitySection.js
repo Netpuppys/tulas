@@ -69,7 +69,7 @@ export default function LandingEligibilitySection() {
                 behavior: "smooth",
               })
             }
-               className="bg-[#f3d1b2] text-gray-900 px-8 py-2 rounded-full text-lg font-light shadow-md hover:scale-105 transition">
+               className="bg-[#f3d1b2] text-gray-900 px-8 py-2 rounded-full text-lg font-medium shadow-lg hover:scale-105 transition">
                 Begin Your Application
               </button>
 

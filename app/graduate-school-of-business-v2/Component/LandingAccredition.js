@@ -38,16 +38,16 @@ function LandingAccredition() {
 
       {/* Scroll area */}
       <div className="relative w-full overflow-hidden">
-      <div className="flex w-max animate-scroll-slow gap-6 md:gap-16 px-4 md:px-10">
+      <div className="flex w-max animate-scroll-slow gap-4 md:gap-8 px-4 md:px-10">
           {[...items, ...items].map((item, index) => (
             <div
               key={index}
-className="flex flex-col items-center text-center min-w-[140px] md:min-w-[220px]"
+className="flex flex-col items-center text-center min-w-[120px] md:min-w-[180px]"
             >
               <Image
                 src={item.img}
                 alt={item.title}
-                className="h-24 w-auto object-contain mb-4"
+                className="h-28 md:h-32 w-auto object-contain mb-3"
                 loading="lazy"
               />
 

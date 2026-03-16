@@ -64,49 +64,55 @@ export default function LandingBusinessSchool() {
 
           </div>
 
-          {/* Desktop layout */}
-          <div className="hidden md:flex items-center justify-between text-center">
+{/* Desktop layout */}
+<div className="hidden md:flex items-start justify-between text-center">
 
-            <div className="flex flex-col items-center gap-3">
-              <Image
-                src="/Homepage/Accreditation/ranking2.png"
-                alt="Times B School"
-                width={200}
-                height={60}
-                className="object-contain"
-              />
-              <p className="text-gray-800 font-medium text-sm">
-                Top 100 Management Institutes in India
-              </p>
-            </div>
+  <div className="flex flex-col items-center gap-3 w-1/3">
+    <div className="h-[80px] flex items-center justify-center">
+      <Image
+        src="/Homepage/Accreditation/ranking2.png"
+        alt="Times B School"
+        width={200}
+        height={60}
+        className="object-contain"
+      />
+    </div>
+    <p className="text-gray-800 font-medium text-sm">
+      Top 100 Management Institutes in India
+    </p>
+  </div>
 
-                       <div className="flex flex-col items-center gap-3">
-              <Image
-                src="/Homepage/Accreditation/ranking4.png"
-                alt="MDRA"
-                width={180}
-                height={60}
-                className="object-contain"
-              />
-              <p className="text-gray-800 font-medium text-sm">
-                Recognised for Academic Leadership
-              </p>
-            </div>
+  <div className="flex flex-col items-center gap-3 w-1/3">
+    <div className="h-[80px] flex items-center justify-center">
+      <Image
+        src="/Homepage/Accreditation/ranking4.png"
+        alt="MDRA"
+        width={180}
+        height={60}
+        className="object-contain"
+      />
+    </div>
+    <p className="text-gray-800 font-medium text-sm">
+      Recognised for Academic Leadership
+    </p>
+  </div>
 
-            <div className="flex flex-col items-center gap-3">
-              <Image
-                src="/Homepage/Accreditation/ranking1.png"
-                alt="The Week"
-                width={200}
-                height={60}
-                className="object-contain"
-              />
-              <p className="text-gray-800 font-medium text-sm">
-                All India | Private B-School | North Zone
-              </p>
-            </div>
+  <div className="flex flex-col items-center gap-3 w-1/3">
+    <div className="h-[80px] flex items-center justify-center">
+      <Image
+        src="/Homepage/Accreditation/ranking1.png"
+        alt="The Week"
+        width={200}
+        height={60}
+        className="object-contain"
+      />
+    </div>
+    <p className="text-gray-800 font-medium text-sm">
+      All India | Private B-School | North Zone
+    </p>
+  </div>
 
-          </div>
+</div>
 
         </div>
       </div>

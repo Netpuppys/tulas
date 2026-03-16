@@ -25,7 +25,7 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
           <Image
             src={bannerImgDesktop}
             alt="Banner"
-            className="hidden md:block w-full h-[560px] object-cover"
+            className="hidden md:block w-full h-[690px] object-cover"
             priority
           />
 

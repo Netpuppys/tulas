@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { IoCheckmark } from "react-icons/io5";
+import { IoCheckmark, IoCheckmarkSharp } from "react-icons/io5";
 import { IoArrowForward } from "react-icons/io5";
 
 export default function LandingWhyTulas() {
@@ -14,7 +14,7 @@ export default function LandingWhyTulas() {
         {/* Heading */}
         <h2 className="text-center text-[clamp(36px,5vw,38px)] font-medium mb-6">
           <span className="text-orange-500 font-extrabold">Why</span>{" "}
-          <span className="text-gray-800 font-extrabold">Tula’s MBA?</span>
+          <span className="text-gray-800 font-extrabold">Tulas MBA?</span>
         </h2>
 
         {/* Description */}
@@ -23,34 +23,33 @@ export default function LandingWhyTulas() {
         </p>
 
         {/* Check Points */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-3xl mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-3xl mx-auto">
 
-          <div className="flex items-center gap-3 text-orange-500 text-2xl font-medium">
-            <IoCheckmark className="text-2xl text-orange-500" />
-            5+ Specialisations
-          </div>
+  <div className="flex items-center gap-3 text-2xl font-medium text-black">
+    <IoCheckmarkSharp className="text-2xl text-orange-500" />
+    <span className="text-orange-500 font-bold">5+</span> Specialisations
+  </div>
 
-          <div className="flex items-center gap-3 text-orange-500 text-2xl font-medium">
-            <IoCheckmark className="text-2xl text-orange-500" />
-            250+ Global Recruiters
-          </div>
+  <div className="flex items-center gap-3 text-2xl font-medium text-black">
+    <IoCheckmarkSharp className="text-2xl text-orange-500" />
+    <span className="text-orange-500 font-bold">250+</span> Global Recruiters
+  </div>
 
-          <div className="flex items-center gap-3 text-orange-500 text-2xl font-medium">
-            <IoCheckmark className="text-2xl text-orange-500" />
-            100% Paid Internships
-          </div>
+  <div className="flex items-center gap-3 text-2xl font-medium text-black">
+    <IoCheckmarkSharp className="text-2xl text-orange-500" />
+    <span className="text-orange-500 font-bold">100%</span> Paid Internships
+  </div>
 
-          <div className="flex items-center gap-3 text-orange-500 text-2xl font-medium">
-            <IoCheckmark className="text-2xl text-orange-500" />
-            100% Placement Support
-          </div>
+  <div className="flex items-center gap-3 text-2xl font-medium text-black">
+    <IoCheckmarkSharp className="text-2xl text-orange-500" />
+    <span className="text-orange-500 font-bold">100%</span> Placement Support
+  </div>
 
-        </div>
+</div>
       </div>
 
       {/* FULL WIDTH IMAGE */}
-      <div className="w-full rounded-[15px] md:rounded-[0px] overflow-hidden">
-
+<div className="w-[92%] max-w-md mx-auto md:w-full rounded-[15px] md:rounded-[0px] overflow-hidden">
         {/* Mobile Image */}
         <Image
           src="/landingPage/landingwhy.jpg"
