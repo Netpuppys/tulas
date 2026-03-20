@@ -1,87 +1,119 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
+import bannerImg from "../../../public/landingbanner/bba/bbamobile.jpg";
+import bannerImgDesktop from "../../../public/landingbanner/bba/bbadesktop.jpg";
+import BannerLandingPage from "../Component/BannerLandingPage";
+import FormLandingPage from "../Component/FormLandingPage";
+import CarouselContent from "../Component/CarouselContent";
+import CuttingEdge from "../Component/CuttingEdge";
+import WhyChoose from "../Component/WhyChoose";
+import Placement from "../Component/Placement";
 import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
+import { facultyData, selectedCard1 } from "@/app/courses/mba/data/data";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import Image from "next/image";
+import NavbarLanding from "../Component/NavbarLanding";
 import CampusLife from "@/app/Component/CampusLife";
-import NavbarLanding from "@/app/graduate-school-of-business/Component/NavbarLanding";
-import BannerLandingPage from "@/app/graduate-school-of-business/Component/BannerLandingPage";
-import FormLandingPage from "@/app/graduate-school-of-business/Component/FormLandingPage";
-import CarouselContent from "@/app/graduate-school-of-business/Component/CarouselContent";
-import CuttingEdge from "@/app/graduate-school-of-business/Component/CuttingEdge";
-import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
-import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
-import Placement from "@/app/graduate-school-of-business/Component/Placement";
-import { facultyData, selectedCard1 } from "@/app/courses/bba/data/data";
-import { UtmContext } from "@/component/utmParams";
-import bbaBannerImg from "../../../public/landingPage/bbaBannerImg.webp";
+import FacultyDataLandingPage from "../Component/FacultyDataLandingPage";
 import marketingIcon from "../../../public/graduate-school-of-business/mba/marketingIcon.png";
 import finance from "../../../public/graduate-school-of-business/mba/finance.png";
+import BusinessAnalytics from "../../../public/graduate-school-of-business/mba/BusinessAnalytics.png";
 import HumanResource from "../../../public/graduate-school-of-business/mba/HumanResource.png";
-import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
+import InternationalBusiness from "../../../public/graduate-school-of-business/mba/InternationalBusiness.png";
+import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBusiness.png";
 import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
+import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
 import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
 import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
 import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
 import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
+import { UtmContext } from "@/component/utmParams";
 import TableProgram from "@/component/Programs/tableProgram";
-import AbhishekPandy from "../../../public/graduate-school-of-business/bba/AbhishekPandy.png";
-import AdilAhmed from "../../../public/graduate-school-of-business/bba/AdilAhmed.png";
-import AdityaPandey from "../../../public/graduate-school-of-business/bba/AdityaPandey.png";
-import DivyaShankar from "../../../public/graduate-school-of-business/bba/DivyaShankar.png";
-import GautamSinghChauhan from "../../../public/graduate-school-of-business/bba/GautamSinghChauhan.png";
-import JasmineBatham from "../../../public/graduate-school-of-business/bba/JasmineBatham.png";
-import KumariPriya from "../../../public/graduate-school-of-business/bba/KumariPriya.png";
-import NainseeSingh from "../../../public/graduate-school-of-business/bba/NainseeSingh.png";
-import PriyankaDhiman from "../../../public/graduate-school-of-business/bba/PriyankaDhiman.png";
-import RahulBauri from "../../../public/graduate-school-of-business/bba/RahulBauri.png";
-import RajniMondi from "../../../public/graduate-school-of-business/bba/RajniMondi.png";
-import RomaKumari from "../../../public/graduate-school-of-business/bba/RomaKumari.png";
-import ShambhaviRajChauhan from "../../../public/graduate-school-of-business/bba/ShambhaviRajChauhan.png";
-import SrishtiGupta from "../../../public/graduate-school-of-business/bba/SrishtiGupta.png";
-import SushantTrivedi from "../../../public/graduate-school-of-business/bba/SushantTrivedi.png";
-import UjjwalPratik from "../../../public/graduate-school-of-business/bba/UjjwalPratik.png";
+
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import AccreditationImg from "../../../public/Homepage/Accreditation/accreditationMBA.webp";
+import AccreditationImgMobile from "../../../public/Homepage/Accreditation/mbapagestop.webp";
+import DiptanuDebnath from "../../../public/courses/mba/PlacementDesign/DiptanuDebnath.webp";
+import MayankSrivastava from "../../../public/courses/mba/PlacementDesign/MayankSrivastava.webp";
+import JatinSobti from "../../../public/courses/mba/PlacementDesign/JatinSobti.webp";
+import TausifRaza from "../../../public/courses/mba/PlacementDesign/TausifRaza.webp";
+import PrakharSrivastava from "../../../public/courses/mba/PlacementDesign/PrakharShrivastava.webp";
+import PriyankaPriya from "../../../public/courses/mba/PlacementDesign/PriyankaPriya.webp";
+import ShubhamSaxena from "../../../public/courses/mba/PlacementDesign/ShubhamSaxena.webp";
+
+import CarouselLanding from "../Component/CarouselLandingPage";
+
+// images
+import Banner1 from "../../../public/landingPage/1.jpg";
+import Banner2 from "../../../public/landingPage/2.jpg";
+import Banner3 from "../../../public/landingPage/4.jpg";
+import Banner4 from "../../../public/landingPage/6.jpg";
+import Banner5 from "../../../public/landingPage/9.jpg";
+
+import Bannermd1 from "../../../public/landingPage/1md.jpg";
+import Bannermd2 from "../../../public/landingPage/2md.jpg";
+import Bannermd3 from "../../../public/landingPage/4md.jpg";
+import Bannermd4 from "../../../public/landingPage/6md.jpg";
+import Bannermd5 from "../../../public/landingPage/9md.jpg";
+
+import mbaimg1 from "../../../public/graduate-school-of-business-v2/mba/choosemba1.png";
+import mbaimg2 from "../../../public/graduate-school-of-business-v2/mba/choosemba2.png";
+import mbaimg3 from "../../../public/graduate-school-of-business-v2/mba/tulasstat1.png";
+import mbaimg4 from "../../../public/graduate-school-of-business-v2/mba/tulasstat2.png";
+import mbaimg5 from "../../../public/graduate-school-of-business-v2/mba/tulasstat3.png";
+import mbaimg6 from "../../../public/graduate-school-of-business-v2/mba/tulasstat4.png";
+
+
+import LandingReadmore from "../Component/LandingReadmore";
+import LandingAccredition from "../Component/LandingAccredition";
+import LandingAdmissionEligibility from "../Component/LandingAdmissionEligibility";
+import SpecialisationsCarousel from "../Component/SpecialisationsCarousel";
+import LandingPerks from "../Component/LandingPerks";
+import LandingHighlights from "../Component/LandingHighlights";
+import LandingCareerPathSlider from "../Component/LandingCareerPathSlider";
+import LandingInternshipSection from "../Component/LandingInternshipSection";
+import LandingLifeTulas from "../Component/LandingLifeTulas";
+import LandingAccordionCard from "../Component/LandingAccordionCard";
+import LandingGlobalHiringPartners from "../Component/LandingGlobalHiringPartners";
+import LandingAlumniSuccessStories from "../Component/LandingAlumniSuccessStories";
+import LandingFormNew from "../Component/LandingFormNew";
+import LandingBusinessSchool from "../Component/LandingBusinessSchool";
+import LandingWhyTulas from "../Component/LandingWhyTulas";
+import LandingEligibilitySection from "../Component/LandingEligibilitySection";
+import LandingAccordianSpecialization from "../Component/LandingAccordianSpecialization";
+import BbaLandingReadmore from "../Component/BbaLandingReadMore";
+import BbaLandingWhyTulas from "../Component/BbaLandingWhyTulas";
+import BbaLandingAccordianSpecialization from "../Component/BbaLandingAccordianSpecialization";
+import BbaLandingEligibilitySection from "../Component/BbaLandingEligibilitySection";
+import BbaLandingAccordionCard from "../Component/BbaLandingAccordionCard";
+import BbaLandingGlobalHiringPartners from "../Component/BbaLandingGlobalHiringPartners";
+// images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
+
   const handleScrollArrow = () => {
     window.scrollTo({
       top: 0, // Scroll to the top of the page
       behavior: "smooth", // Smooth scrolling effect
     });
   };
+
   const features = [
     {
-      image: AbhishekPandy,
-      image2: AdilAhmed,
+      image: DiptanuDebnath,
+      image2: MayankSrivastava,
     },
     {
-      image: AdityaPandey,
-      image2: DivyaShankar,
+      image: JatinSobti,
+      image2: TausifRaza,
     },
     {
-      image: GautamSinghChauhan,
-      image2: JasmineBatham,
+      image: PrakharSrivastava,
+      image2: PriyankaPriya,
     },
     {
-      image: KumariPriya,
-      image2: NainseeSingh,
-    },
-    {
-      image: PriyankaDhiman,
-      image2: RahulBauri,
-    },
-    {
-      image: RajniMondi,
-      image2: RomaKumari,
-    },
-    {
-      image: ShambhaviRajChauhan,
-      image2: SrishtiGupta,
-    },
-    {
-      image: SushantTrivedi,
-      image2: UjjwalPratik,
+      image: ShubhamSaxena,
+      image2: TausifRaza,
     },
   ];
   const scrollRef = useRef(null);
@@ -118,48 +150,103 @@ const page = () => {
       title: "Human Resource Management",
       icon: HumanResource,
     },
+    // {
+    //   title: "Entreprenuership",
+    //   icon: entreprenurship,
+    // },
+    {
+      title: "Business Analytics",
+      icon: BusinessAnalytics,
+    },
+
+    {
+      title: "International Business",
+      icon: InternationalBusiness,
+    },
+    {
+      title: "Supply Chain Management",
+      icon: AgriBusiness,
+    },
+    // {
+    //   title: "Health Care",
+    //   icon: healthCare,
+    // },
   ];
   const journey = [
     {
       icon: comprehensiveCurriculam,
-      title: "Comprehensive Curriculum",
-      description: "Covers leadership, management, finance & marketing.",
+      title: "Comprehensive Business Curriculum",
+      description:
+        "Master leadership, management, finance, marketing & strategic decision-making.",
     },
     {
       icon: industryReleventSkills,
-      title: "Industry Relevant Skills",
+      title: "Industry-Aligned Specializations",
       description:
-        "Hands-on training through internships, projects & workshops.",
+        "Specialized tracks in Marketing, Human Resources, Finance, Business Analytics, International Business, and other emerging fields.",
     },
     {
       icon: highCareerDemand,
-      title: "High Career Demand",
+      title: "Hands-on Learning",
       description:
-        "Prepares for careers in corporate, entrepreneurship & business leadership.",
+        "Case studies, industry-driven projects, live simulations, and internships.",
     },
     {
       icon: paathwayToProfessionalCertification,
-      title: "Tech-Driven Learning",
-      description: "Engage in real-world case studies & business simulations.",
+      title: "Global Business Exposure",
+      description:
+        "interactions with corporate leaders, participation in global seminars, industry visits, and collaborative research initiatives.",
     },
     {
       icon: diverseIndustryApplications,
-      title: "Diverse Specializations",
+      title: "Diverse Career Opportunities",
       description:
-        "Choose from Finance, Marketing, HRM, International Business & more.",
+        "Prepare for leadership roles in corporate, startups, and entrepreneurship.",
     },
     {
       icon: globalAccredetation,
-      title: "Global Accreditation",
+      title: "Accredited & Recognized",
       description: "NAAC A+, AICTE & UGC-approved program.",
     },
   ];
   const journeyQuote =
-    "Step into the Corporate World with a BBA from Tula’s Institute!";
+    "Transform Your Business Acumen with an MBA from Tula's Institute!";
+
+  const bannerImagesDesktop = [
+    Banner1,
+    Banner2,
+    Banner3,
+    Banner4,
+    Banner5,
+    // desktopbanner2,
+  ];
+  const bannerImagesMobile = [
+    Bannermd1,
+    Bannermd2,
+    Bannermd3,
+    Bannermd4,
+    Bannermd5,
+    // mobilebanner2,
+  ];
+
+const placementSlides = [
+  {
+    image: mbaimg1,
+    image2: mbaimg2,
+    image3: mbaimg3,
+  },
+    {
+    image: mbaimg4,
+    image2: mbaimg5,
+    image3: mbaimg6,
+  },
+];
+
+
   return (
     <>
       <head>
-        <title>Tula's Institute is best to pursue a career in MBA</title>
+        <title>Tula's Institute is best to pursue a career in BBA</title>
         <meta
           name="description"
           content="Join Tula's Institute. Excel in MBA and more with industry-focused programs and dedicated faculty. Become a future leader today"
@@ -171,83 +258,72 @@ const page = () => {
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bbaBannerImg} />
-          {/* Form */}
-          <div ref={scrollRef}>
-            <FormLandingPage
+          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
+
+          {/* <div ref={scrollRef}>
+            <LandingFormNew
               course={1}
-              formHeading={"BBA Admissions Open 2026"}
-              thankYOu={`/graduate-school-of-business/bba/thank-you/${utmParams}`}
+              formHeading={"MBA Admissions Open 2026"}
+              thankYOu={`/graduate-school-of-business-v2/mba/thank-you/${utmParams}`}
             />
-          </div>
+          </div> */}
+
+          {/* carousel */}
+        {/* <div className="hidden md:block pt-[34px] md:pt-[90px]">
+     
           {/* Content One */}
-<CarouselContent
-      title="Tula's Institute: Developing Business Leaders of Tomorrow"
-      description={
-        <>
-        <div className="mt-4 md:mt-[1%]"></div>
-            <p>
-Founded in 2006 under the Rishabh Educational Trust, Tula's Institute in Dehradun has
-emerged as a hub for nurturing future-ready professionals. With a focus on real-world
-learning, innovation, and leadership, our business programs empower students to take on
-the evolving challenges of the global market.
-      </p>
-<div className="mt-4 md:mt-[1%]"></div>
-      <p>
-As one of the most sought-after BBA colleges in Dehradun, Tula's blends academic rigor
-with hands-on experience. Our BBA curriculum is crafted to build a strong foundation in
-management while enhancing decision-making, analytical thinking, and communication
-skills.
-      </p>
-<div className="mt-4 md:mt-[1%]"></div>
-      <p>
-If you're looking for the best BBA college in Uttarakhand, Tula's Institute offers the perfect
-balance of quality education, experienced faculty, and career-oriented exposure. We don't
-just teach business—we build leaders who think strategically, act ethically, and adapt
-confidently.
-      </p>
-<div className="mt-4 md:mt-[1%]"></div>
-      <p>
-With BBA admission 2025 now open, this is the ideal time to join a community that believes
-in transforming ambition into achievement.
-      </p>
-        </>
-      }
-    />           {/* Cutting Edge */}
-          <CuttingEdge
-            scrollRef={scrollRef}
-            heading={"Tula’s BBA Specialisations"}
-            department={department}
-            journey={journey}
-            journeyHeading={"Your BBA Journey at Tula’s Institute"}
-            journeyQuote={journeyQuote}
-          />
-          {/* Why Choose Tulas */}
-          <WhyChoose />
-          {/* At a glance */}
-          {/* <AtGlance /> */}
-          <CampusLife />
-          <TableProgram selectedCard1={selectedCard1} />
-          {/*Faculty */}
-          <div className="pt-8 md:pt-[4%] px-4 md:px-6 flex flex-col items-center justify-center w-full">
-            <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
-              Our Professors
-            </h8>
-            <h4 className="px-8 w-full my-4 md:my-8 text-center font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
-              With every lesson, professors are shaping minds and paving the way
-              for future innovations.
-            </h4>
-          </div>
-          <div className="pb-8 md:pb-[4%] px-4 w-full">
-            <FacultyDataLandingPage facultyData={facultyData} />
-          </div>
-          {/* Accreditations */}
-          {/* <Accreditations /> */}
-          {/* Placement */}
-          <div className="pb-8 md:pb-[3%]">
+
+          <LandingBusinessSchool />
+
+          <BbaLandingReadmore/>
+          
+          {/* <LandingAdmissionEligibility/> */}
+
+          <BbaLandingWhyTulas/>
+
+    <LandingPerks perksSlides={placementSlides} />
+
+
+          <BbaLandingAccordianSpecialization/>
+
+          <BbaLandingEligibilitySection/>
+
+          <BbaLandingGlobalHiringPartners/>
+
+          {/* <div className="w-full pb-8 md:pb-[4%] bg-white sticky z-10 h-full">
+            <div className="w-full">
+              <Image
+                src={AccreditationImg}
+                alt=""
+                className="w-full hidden md:flex h-fit"
+              />
+              <Image
+                src={AccreditationImgMobile}
+                alt=""
+                className="md:hidden w-full h-fit"
+              />
+            </div>
+          </div> */}
+
+          <LandingAlumniSuccessStories/>
+
+          {/* <SpecialisationsCarousel/> */}
+          
+          {/* <LandingCareerPathSlider/> */}
+          <LandingHighlights/>
+
+          <LandingInternshipSection/>
+
+          <LandingAccredition/>
+
+          <LandingLifeTulas/>
+
+          <BbaLandingAccordionCard/>
+
+          {/* <div className="pb-8 md:pb-[3%]">
             <PlacementProgram features={features} />
-          </div>
-          <Placement scrollRef={scrollRef} />
+          </div> */}
+          {/* <Placement scrollRef={scrollRef} /> */}
           {scrolled && (
             <button
               onClick={handleScrollArrow}
