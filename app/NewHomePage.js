@@ -97,7 +97,7 @@ import desktopbanner3 from "../public/Homepage/BannerHome/filmfestival.webp";
 import mobilebanner3 from "../public/Homepage/BannerHome/filmfestivalmobile.webp";
 
 import { ThreeDots } from "react-loader-spinner";
-import LandingAccredition from "./graduate-school-of-business-v2/Component/LandingAccredition";
+import LandingAccredition from "./graduate-school-of-business/Component/LandingAccredition";
 import LandingAcademicNotifications from "./newhome-components/LandingAcademicNotifications";
 
 export default function NewHomePage() {
