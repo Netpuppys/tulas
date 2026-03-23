@@ -263,16 +263,16 @@ const AdmissionOpenPage = () => {
           <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bannerImg} />
+          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImg}/>
           {/* Form */}
-          <div ref={scrollRef}>
+          {/* <div ref={scrollRef}>
             <FormLandingPage
               course={0}
               showCourse={true}
               formHeading={"Admissions Open 2026"}
               thankYOu={`/admissions-open/thank-you/${utmParams}`}
             />
-          </div>
+          </div> */}
           {/* Content One */}
           <div className="py-8 md:py-[4%] bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
             {sections.map((section, index) => {
