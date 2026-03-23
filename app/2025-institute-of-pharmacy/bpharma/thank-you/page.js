@@ -1,8 +1,8 @@
 import ThankYou from "@/component/thankYou";
 import React from "react";
 
-function ThankYouMBA() {
+function ThankYouBPharma() {
   return <ThankYou />;
 }
 
-export default ThankYouMBA;
+export default ThankYouBPharma;

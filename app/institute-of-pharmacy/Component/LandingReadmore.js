@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 import { IoChevronDown } from "react-icons/io5";
 
-export default function BbaLandingReadmore() {
+export default function LandingReadmore() {
   const [open, setOpen] = useState(false);
   const contentRef = useRef(null);
   const [height, setHeight] = useState("0px");
@@ -31,17 +31,17 @@ export default function BbaLandingReadmore() {
     <div className="max-w-3xl md:max-w-6xl mx-auto px-4 pt-5">
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
-          <span className="text-orange-500 font-bold">BBA</span>{" "}
+          <span className="text-orange-500 font-bold">B.Pharma</span>{" "}
           <span className="text-gray-800 font-bold">at Tulas</span>
         </h2>
 
       {/* Always visible text */}
-      <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
-        Designed for students aspiring to build careers in business, management and entrepreneurship.
-      </h5>
+      {/* <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
+        Built For Tomorrow’s Engineers
+      </h5> */}
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        At Tula’s, the BBA program is designed to provide students with a strong academic foundation along with practical understanding of business and management. The curriculum covers key areas such as marketing, finance, human resource management, operations and organisational behaviour, ensuring well-rounded business knowledge. Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program combines classroom learning with case studies, projects and industry exposure.
+        The B.Pharm program at Tulas is designed for students who aspire to build careers in pharmaceutical sciences and the healthcare sector. The program focuses on developing a strong foundation in pharmaceutical chemistry, pharmacology, pharmaceutics, and drug formulation. The curriculum is thoughtfully structured to cover key areas such as medicinal chemistry, pharmaceutical analysis, drug delivery systems, and regulatory practices—ensuring a comprehensive understanding of the field
       </p>
 
       {/* Expandable content */}
@@ -53,7 +53,7 @@ export default function BbaLandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-          Students develop analytical, managerial and decision-making skills, preparing them for career opportunities in corporate organisations and for higher studies such as MBA. With a focus on real-world application, students engage in practical assignments, presentations and collaborative projects that enhance problem-solving abilities, communication skills and business awareness, helping them adapt effectively to dynamic corporate environments.
+         Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with practical lab work, research exposure, and industry-relevant training. Students gain hands-on experience through laboratory experiments, formulation techniques, and applied assignments, preparing them for diverse roles across pharmaceutical industries, healthcare organisations, and research domains.
         </p>
       </div>
 

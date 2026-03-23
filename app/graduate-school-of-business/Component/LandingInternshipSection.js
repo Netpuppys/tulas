@@ -63,54 +63,54 @@ export default function LandingInternshipSection() {
 </section>
 
 <section className="w-full py-14">
-      <div className="max-w-[1200px] mx-auto px-12 md:px-6">
+  <div className="max-w-[1200px] mx-auto px-12 md:px-6">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-16">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-16">
 
-          {/* Item 1 */}
-          <div className="flex items-center gap-6">
-            <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
-              01
-            </span>
-            <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
-              <span className="font-bold">20 Years</span> of Academic Excellence
-            </p>
-          </div>
-
-          {/* Item 2 */}
-          <div className="flex items-center gap-6">
-            <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
-              03
-            </span>
-            <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
-              <span className="font-bold">250+ Global</span> Recruiter Network
-            </p>
-          </div>
-
-          {/* Item 3 */}
-          <div className="flex items-center gap-6">
-            <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
-              02
-            </span>
-            <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
-              <span className="font-bold">100+</span> Corporate Interactions & Projects
-            </p>
-          </div>
-
-          {/* Item 4 */}
-          <div className="flex items-center gap-6">
-            <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
-              04
-            </span>
-            <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
-              <span className="font-bold">5000+ Successful</span> Alumni Stories
-            </p>
-          </div>
-
-        </div>
-
+      {/* Item 1 */}
+      <div className="flex items-center gap-6 order-1">
+        <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
+          01
+        </span>
+        <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
+          <span className="font-bold">20 Years</span> of Academic Excellence
+        </p>
       </div>
-    </section>
+
+      {/* Item 2 */}
+      <div className="flex items-center gap-6 order-2 md:order-3">
+        <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
+          02
+        </span>
+        <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
+          <span className="font-bold">100+</span> Corporate Interactions & Projects
+        </p>
+      </div>
+
+      {/* Item 3 */}
+      <div className="flex items-center gap-6 order-3 md:order-2">
+        <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
+          03
+        </span>
+        <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
+          <span className="font-bold">250+ Global</span> Recruiter Network
+        </p>
+      </div>
+
+      {/* Item 4 */}
+      <div className="flex items-center gap-6 order-4">
+        <span className="text-[70px] md:text-[90px] text-orange-500 leading-none">
+          04
+        </span>
+        <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
+          <span className="font-bold">5000+ Successful</span> Alumni Stories
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 </>
   );
 }

@@ -93,7 +93,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
       </div>
 
       {/* ================= MOBILE BOTTOM BAR ================= */}
-      {/* <div className="fixed bottom-0 w-full bg-[#007A83] md:hidden pointer-events-auto z-50">
+      <div className="fixed bottom-0 w-full bg-orange-500 md:hidden pointer-events-auto z-50">
         <div className="flex py-2">
           <a
             href="tel:+91-8069204028"
@@ -109,7 +109,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
             <SiGoogleforms /> Enquire
           </button>
         </div>
-      </div> */}
+      </div>
 
       {/* ================= WHATSAPP FLOAT ================= */}
       <button

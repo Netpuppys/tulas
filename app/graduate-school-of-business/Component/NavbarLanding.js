@@ -93,7 +93,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
       </div>
 
       {/* ================= MOBILE BOTTOM BAR ================= */}
-      {/* <div className="fixed bottom-0 w-full bg-[#007A83] md:hidden pointer-events-auto z-50">
+      <div className="fixed bottom-0 w-full bg-orange-500 md:hidden pointer-events-auto z-50">
         <div className="flex py-2">
           <a
             href="tel:+91-8069204028"
@@ -109,10 +109,10 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
             <SiGoogleforms /> Enquire
           </button>
         </div>
-      </div> */}
+      </div>
 
       {/* ================= WHATSAPP FLOAT ================= */}
-      <button
+      {/* <button
         onClick={() =>
           (window.location.href =
             "https://api.whatsapp.com/send/?phone=%2B919456540269")
@@ -120,7 +120,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
         className="fixed right-4 bottom-[40px] md:bottom-[1.5vw] md:right-[2.5vw] bg-black shadow-2xl rounded-full w-16 aspect-square flex justify-center items-center z-50 pointer-events-auto"
       >
         <FaWhatsapp className="w-10 h-10 text-[#25D366]" />
-      </button>
+      </button> */}
     </div>
   );
 }

@@ -2,49 +2,51 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export default function BbaLandingAccordianSpecialization() {
+export default function LandingAccordianSpecialization() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const items = [
     {
-      title: "Marketing",
-      text: "Understand how organisations identify customer needs and build market presence. Learn consumer behaviour, market research, product development and brand strategy. Develop the ability to plan, execute and evaluate marketing activities, enabling you to understand how businesses position themselves and compete in dynamic market environments.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop.jpg",
+      title: "Pharmaceutical Chemistry",
+      text: "Understand the chemical composition, structure and properties of drug molecules. Learn how medicines are designed, synthesised and evaluated using principles of organic, inorganic and medicinal chemistry. Develop the ability to analyse chemical behaviour and stability of drugs, forming a strong foundation for drug discovery, formulation and quality assessment in pharmaceutical industries.",
+      mobileImage: "/btechimage/btechspecial.jpg",
+      image: "/btechimage/btechspecial.jpg",
     },
     {
-      title: "Digital Marketing",
-      text: "Develop an understanding of digital platforms, social media, content strategies and online consumer engagement. Learn how businesses use digital channels for communication, campaign planning and performance evaluation. Gain exposure to evolving digital trends and tools that support brand visibility and customer interaction in the digital ecosystem.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop1.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop1.jpg",
+      title: `Pharmaceutics`,
+      text: "Learn how medicines are formulated, developed and delivered in various dosage forms such as tablets, capsules, syrups and injectables. Understand drug delivery systems, formulation techniques and manufacturing processes. Gain practical exposure to formulation development and production methods used in pharmaceutical industries to ensure safety, stability and effectiveness of medicines.",
+      mobileImage: "/btechimage/btechspecial1.jpg",
+      image: "/btechimage/btechspecial1.jpg",
     },
     {
-      title: "Digital Marketing",
-      subitle: "Engineer growth for digital economy",
-      text: "Build expertise in performance marketing, social media strategy, SEO, analytics and digital brand management.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
+      title: "Pharmacology",
+      text: "Study how drugs interact with the human body and produce therapeutic effects. Learn about drug mechanisms, dosage, side effects and toxicity. Develop an understanding of how medicines are used in the treatment of diseases, ensuring safe and effective use of drugs in clinical and healthcare settings.",
+      mobileImage: "/btechimage/btechspecial2.jpg",
+      image: "/btechimage/btechspecial2.jpg",
     },
     {
-      title: "International Business",
-      subitle: "Lead across global markets",
-      text: "Understand global trade, cross-border strategy and international market dynamics.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop3.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop3.jpg",
+      title: "Pharmaceutical Analysis",
+      text: "Gain knowledge of analytical techniques used to test the quality, purity and safety of pharmaceutical products. Learn laboratory methods, instrumentation and regulatory standards used in drug testing. Develop the ability to evaluate medicines and ensure they meet required quality and compliance standards.",
+      mobileImage: "/btechimage/btechspecial3.jpg",
+      image: "/btechimage/btechspecial3.jpg",
     },
     {
-      title: "Finance",
-      subitle: "Power growth with financial insight",
-      text: "Develop strong financial acumen in investment analysis, risk management and corporate finance.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop4.png",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop4.png",
+      title: `Pharmacognosy`,
+      text: "Understand drugs derived from natural sources such as plants, herbs and marine organisms. Learn extraction, identification and evaluation of natural compounds used in medicine. Develop knowledge of traditional and modern applications of natural products in pharmaceutical and healthcare practices.",
+      mobileImage: "/btechimage/btechspecial4.jpg",
+      image: "/btechimage/btechspecial4.jpg",
     },
     {
-      title: "Business Analytics",
-      subitle: "Turn data into decisions",
-      text: "Combine data, technology and strategy to drive smarter business decisions.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop5.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop5.jpg",
+      title: `Pharmaceutical Jurisprudence`,
+      text: "Study the legal, ethical and regulatory framework governing the pharmaceutical industry. Learn about drug laws, quality standards, licensing and compliance requirements. Develop awareness of professional responsibilities and regulations involved in manufacturing, distribution and sale of pharmaceutical products.",
+      mobileImage: "/btechimage/btechspecial5.jpg",
+      image: "/btechimage/btechspecial5.jpg",
+    },
+        {
+      title: `Clinical Pharmacy & Drug Safety`,
+      text: "Develop an understanding of patient care, drug usage and safety monitoring. Learn how medicines are prescribed, dispensed and reviewed in clinical settings. Gain insights into pharmacovigilance, drug interactions and patient counselling to ensure safe and effective healthcare practices.",
+      mobileImage: "/btechimage/btechspecial6.jpg",
+      image: "/btechimage/btechspecial6.jpg",
     },
   ];
 
@@ -104,7 +106,7 @@ export default function BbaLandingAccordianSpecialization() {
                 alt={items[activeIndex].title}
                 width={800}
                 height={400}
-                className="rounded-lg mb-5 w-full h-auto"
+                className="rounded-lg mb-5 w-full h-[260px] md:h-[320px] object-cover"
               />
 
               <h3 className="text-2xl font-semibold mb-3 text-orange-500">
@@ -158,7 +160,7 @@ function MobileAccordion({ item, index, activeIndex, setActiveIndex }) {
               alt={item.title}
               width={800}
               height={400}
-              className="rounded-lg mb-4 w-full h-auto"
+              className="rounded-lg mb-4 w-full h-[220px] object-cover"
             />
 
             <h3 className="text-xl font-semibold mb-2 text-orange-500">

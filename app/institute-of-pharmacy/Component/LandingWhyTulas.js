@@ -16,7 +16,7 @@ import Bannermd3 from "../../../public/landingPage/4md.jpg";
 import Bannermd4 from "../../../public/landingPage/6md.jpg";
 import Bannermd5 from "../../../public/landingPage/9md.jpg";
 
-export default function BbaLandingWhyTulas() {
+export default function LandingWhyTulas() {
 
     const bannerImagesDesktop = [
     Banner1,
@@ -40,32 +40,33 @@ export default function BbaLandingWhyTulas() {
         {/* Heading */}
         <h2 className="text-center text-[clamp(36px,5vw,38px)] font-medium mb-6">
           <span className="text-orange-500 font-extrabold">Why</span>{" "}
-          <span className="text-gray-800 font-extrabold">Tulas BBA?</span>
+          <span className="text-gray-800 font-extrabold">Tulas B.Pharma?</span>
         </h2>
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-          Tulas BBA program is designed to build strong foundations in business and management along with practical industry understanding.
+          Tulas B.Pharm program is designed to develop advanced expertise in software development and information technology with strong practical exposure. 
           <br/>
-          With a balance of conceptual clarity and applied learning, students develop the skills required to work in corporate, business and managerial environments
+          With a focus on technical depth and application-based learning, students build the skills required for specialised roles in the IT industry and evolving technology domains.
+
         </p>
 
         {/* Check Points */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-4xl mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 mx-auto">
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">5+</span> Specialisations
+    <span className="text-orange-500 font-bold">250+</span> Pharma & Healthcare Recruiters
+  </div>
+  
+  <div className="flex items-center gap-3 text-2xl font-medium text-black">
+    <IoCheckmarkSharp className="text-2xl text-orange-500" />
+    <span className="text-orange-500 font-bold">Intenterships In</span> Pharma Companies & Labs
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">Portfolio</span> through Live Projects
-  </div>
-
-  <div className="flex items-center gap-3 text-2xl font-medium text-black">
-    <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">100%</span> Paid Internships
+    <span className="text-orange-500 font-bold">Practical Exposure</span> to Drug Development
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">

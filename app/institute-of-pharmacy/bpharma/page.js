@@ -1,56 +1,113 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
+import bannerImg from "../../../public/landingbanner/bpharma/bpharmamobile.jpg";
+import bannerImgDesktop from "../../../public/landingbanner/bpharma/bpharmadesktop.jpg";
+import BannerLandingPage from "../Component/BannerLandingPage";
+import FormLandingPage from "../Component/FormLandingPage";
+import CarouselContent from "../Component/CarouselContent";
+import CuttingEdge from "../Component/CuttingEdge";
+import WhyChoose from "../Component/WhyChoose";
+import Placement from "../Component/Placement";
 import ScrollImage from "../../../public/Homepage/BannerHome/scrollWidgetGray.png";
+import { facultyData, selectedCard1 } from "@/app/courses/mba/data/data";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import Image from "next/image";
+import NavbarLanding from "../Component/NavbarLanding";
 import CampusLife from "@/app/Component/CampusLife";
-import NavbarLanding from "@/app/graduate-school-of-business/Component/NavbarLanding";
-import BannerLandingPage from "@/app/graduate-school-of-business/Component/BannerLandingPage";
-import FormLandingPage from "@/app/graduate-school-of-business/Component/FormLandingPage";
-import CarouselContent from "@/app/graduate-school-of-business/Component/CarouselContent";
-import WhyChoose from "@/app/graduate-school-of-business/Component/WhyChoose";
-import FacultyDataLandingPage from "@/app/graduate-school-of-business/Component/FacultyDataLandingPage";
-import Placement from "@/app/graduate-school-of-business/Component/Placement";
-import { UtmContext } from "@/component/utmParams";
-import bpharmaBannerImg from "../../../public/courses/bpharm/bpharmaBanner.jpg";
-import Journey from "@/app/graduate-school-of-business/Component/Journey";
+import FacultyDataLandingPage from "../Component/FacultyDataLandingPage";
+import marketingIcon from "../../../public/graduate-school-of-business/mba/marketingIcon.png";
+import finance from "../../../public/graduate-school-of-business/mba/finance.png";
+import BusinessAnalytics from "../../../public/graduate-school-of-business/mba/BusinessAnalytics.png";
+import HumanResource from "../../../public/graduate-school-of-business/mba/HumanResource.png";
+import InternationalBusiness from "../../../public/graduate-school-of-business/mba/InternationalBusiness.png";
+import AgriBusiness from "../../../public/graduate-school-of-business/mba/AgriBusiness.png";
 import comprehensiveCurriculam from "../../../public/graduate-school-of-business/mba/comprehensiveCurriculam.png";
 import industryReleventSkills from "../../../public/graduate-school-of-business/mba/industryReleventSkills.png";
 import highCareerDemand from "../../../public/graduate-school-of-business/mba/highCareerDemand.png";
 import paathwayToProfessionalCertification from "../../../public/graduate-school-of-business/mba/paathwayToProfessionalCertification.png";
 import diverseIndustryApplications from "../../../public/graduate-school-of-business/mba/diverseIndustryApplications.png";
 import globalAccredetation from "../../../public/graduate-school-of-business/mba/globalAccredetation.png";
-import Accreditation from "@/app/Component/Accreditation";
+import { UtmContext } from "@/component/utmParams";
 import TableProgram from "@/component/Programs/tableProgram";
-import anshikaPundir from "../../../public/courses/bca/anshikaPundir.png";
-import ashutosh from "../../../public/courses/bca/ashutosh.png";
-import gauravSrivastava from "../../../public/courses/bca/gauravSrivastava.png";
-import prathamNautiyal from "../../../public/courses/bca/prathamNautiyal.png";
-import rohitKotnala from "../../../public/courses/bca/rohitKotnala.png";
-import saurabhRawat from "../../../public/courses/bca/saurabhRawat.png";
-import PlacementProgram from "@/component/Programs/PlacementProgram";
-import { selectedCard1 } from "@/app/courses/bpharma/data";
 
+import PlacementProgram from "@/component/Programs/PlacementProgram";
+import AccreditationImg from "../../../public/Homepage/Accreditation/accreditationMBA.webp";
+import AccreditationImgMobile from "../../../public/Homepage/Accreditation/mbapagestop.webp";
+import DiptanuDebnath from "../../../public/courses/mba/PlacementDesign/DiptanuDebnath.webp";
+import MayankSrivastava from "../../../public/courses/mba/PlacementDesign/MayankSrivastava.webp";
+import JatinSobti from "../../../public/courses/mba/PlacementDesign/JatinSobti.webp";
+import TausifRaza from "../../../public/courses/mba/PlacementDesign/TausifRaza.webp";
+import PrakharSrivastava from "../../../public/courses/mba/PlacementDesign/PrakharShrivastava.webp";
+import PriyankaPriya from "../../../public/courses/mba/PlacementDesign/PriyankaPriya.webp";
+import ShubhamSaxena from "../../../public/courses/mba/PlacementDesign/ShubhamSaxena.webp";
+
+import CarouselLanding from "../Component/CarouselLandingPage";
+
+// images
+import Banner1 from "../../../public/landingPage/1.jpg";
+import Banner2 from "../../../public/landingPage/2.jpg";
+import Banner3 from "../../../public/landingPage/4.jpg";
+import Banner4 from "../../../public/landingPage/6.jpg";
+import Banner5 from "../../../public/landingPage/9.jpg";
+
+import Bannermd1 from "../../../public/landingPage/1md.jpg";
+import Bannermd2 from "../../../public/landingPage/2md.jpg";
+import Bannermd3 from "../../../public/landingPage/4md.jpg";
+import Bannermd4 from "../../../public/landingPage/6md.jpg";
+import Bannermd5 from "../../../public/landingPage/9md.jpg";
+
+import mbaimg1 from "../../../public/graduate-school-of-business-v2/mba/choosemba1.png";
+import mbaimg2 from "../../../public/graduate-school-of-business-v2/mba/choosemba2.png";
+import mbaimg3 from "../../../public/graduate-school-of-business-v2/mba/tulasstat1.png";
+import mbaimg4 from "../../../public/graduate-school-of-business-v2/mba/tulasstat2.png";
+import mbaimg5 from "../../../public/graduate-school-of-business-v2/mba/tulasstat3.png";
+import mbaimg6 from "../../../public/graduate-school-of-business-v2/mba/tulasstat4.png";
+
+
+import LandingReadmore from "../Component/LandingReadmore";
+import LandingAccredition from "../Component/LandingAccredition";
+import LandingAdmissionEligibility from "../Component/LandingAdmissionEligibility";
+import SpecialisationsCarousel from "../Component/SpecialisationsCarousel";
+import LandingPerks from "../Component/LandingPerks";
+import LandingHighlights from "../Component/LandingHighlights";
+import LandingCareerPathSlider from "../Component/LandingCareerPathSlider";
+import LandingInternshipSection from "../Component/LandingInternshipSection";
+import LandingLifeTulas from "../Component/LandingLifeTulas";
+import LandingAccordionCard from "../Component/LandingAccordionCard";
+import LandingGlobalHiringPartners from "../Component/LandingGlobalHiringPartners";
+import LandingAlumniSuccessStories from "../Component/LandingAlumniSuccessStories";
+import LandingFormNew from "../Component/LandingFormNew";
+import LandingBusinessSchool from "../Component/LandingBusinessSchool";
+import LandingWhyTulas from "../Component/LandingWhyTulas";
+import LandingEligibilitySection from "../Component/LandingEligibilitySection";
+import LandingAccordianSpecialization from "../Component/LandingAccordianSpecialization";
+// images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
+
   const handleScrollArrow = () => {
     window.scrollTo({
       top: 0, // Scroll to the top of the page
       behavior: "smooth", // Smooth scrolling effect
     });
   };
+
   const features = [
     {
-      image: anshikaPundir,
-      image2: ashutosh,
+      image: DiptanuDebnath,
+      image2: MayankSrivastava,
     },
     {
-      image: gauravSrivastava,
-      image2: prathamNautiyal,
+      image: JatinSobti,
+      image2: TausifRaza,
     },
     {
-      image: rohitKotnala,
-      image2: saurabhRawat,
+      image: PrakharSrivastava,
+      image2: PriyankaPriya,
+    },
+    {
+      image: ShubhamSaxena,
+      image2: TausifRaza,
     },
   ];
   const scrollRef = useRef(null);
@@ -74,46 +131,112 @@ const page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const department = [
+    {
+      title: "Finance",
+      icon: finance,
+    },
+    {
+      title: "Marketing",
+      icon: marketingIcon,
+    },
+    {
+      title: "Human Resource Management",
+      icon: HumanResource,
+    },
+    // {
+    //   title: "Entreprenuership",
+    //   icon: entreprenurship,
+    // },
+    {
+      title: "Business Analytics",
+      icon: BusinessAnalytics,
+    },
+
+    {
+      title: "International Business",
+      icon: InternationalBusiness,
+    },
+    {
+      title: "Supply Chain Management",
+      icon: AgriBusiness,
+    },
+    // {
+    //   title: "Health Care",
+    //   icon: healthCare,
+    // },
+  ];
   const journey = [
     {
       icon: comprehensiveCurriculam,
-      title: "Cutting-Edge Curriculum",
+      title: "Comprehensive Business Curriculum",
       description:
-        " Dive deep into drug formulation, pharmacology, and regulatory sciences through an innovative and comprehensive syllabus.",
+        "Master leadership, management, finance, marketing & strategic decision-making.",
     },
     {
       icon: industryReleventSkills,
-      title: "Industry-Focused Training",
+      title: "Industry-Aligned Specializations",
       description:
-        "Gain hands-on experience with real-world pharmaceutical practices, ensuring you're job-ready from day one.",
+        "Specialized tracks in Marketing, Human Resources, Finance, Business Analytics, International Business, and other emerging fields.",
     },
     {
       icon: highCareerDemand,
-      title: "In-Demand Career Paths",
+      title: "Hands-on Learning",
       description:
-        "Unlock diverse roles in healthcare, R&D, quality control, and pharmaceutical marketing.",
+        "Case studies, industry-driven projects, live simulations, and internships.",
     },
     {
       icon: paathwayToProfessionalCertification,
-      title: "Competitive Edge",
+      title: "Global Business Exposure",
       description:
-        " Stand out with a strong foundation in pharmaceutical sciences combined with practical exposure and global trends.",
+        "interactions with corporate leaders, participation in global seminars, industry visits, and collaborative research initiatives.",
     },
     {
       icon: diverseIndustryApplications,
-      title: "Versatile Applications",
+      title: "Diverse Career Opportunities",
       description:
-        "Apply your knowledge across hospitals, research labs, production units, and entrepreneurial ventures.",
+        "Prepare for leadership roles in corporate, startups, and entrepreneurship.",
     },
     {
       icon: globalAccredetation,
-      title: "Globally Accredited Program",
-      description:
-        "Earn a qualification recognized worldwide, opening doors for international education and employment.",
+      title: "Accredited & Recognized",
+      description: "NAAC A+, AICTE & UGC-approved program.",
     },
   ];
   const journeyQuote =
-    "Empowering future pharmacists with knowledge, innovation, and global opportunities";
+    "Transform Your Business Acumen with an MBA from Tula's Institute!";
+
+  const bannerImagesDesktop = [
+    Banner1,
+    Banner2,
+    Banner3,
+    Banner4,
+    Banner5,
+    // desktopbanner2,
+  ];
+  const bannerImagesMobile = [
+    Bannermd1,
+    Bannermd2,
+    Bannermd3,
+    Bannermd4,
+    Bannermd5,
+    // mobilebanner2,
+  ];
+
+const placementSlides = [
+  {
+    image: mbaimg1,
+    image2: mbaimg2,
+    image3: mbaimg3,
+  },
+    {
+    image: mbaimg4,
+    image2: mbaimg5,
+    image3: mbaimg6,
+  },
+];
+
+
   return (
     <>
       <head>
@@ -129,81 +252,72 @@ const page = () => {
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bpharmaBannerImg} />
-          {/* Form */}
-          <div ref={scrollRef}>
-            <FormLandingPage
-              course={122}
-              formHeading={" B.Pharm. Admissions Open 2025"}
-              thankYOu={`/institute-of-pharmacy/bpharma/thank-you/${utmParams}`}
-            />
-          </div>
-          {/* Content One */}
-<CarouselContent
-      title="Tula's Institute: Nurturing the Future of Healthcare and Innovation"
-      description={
-        <>
-        <div className="mt-4 md:mt-[1%]"></div>
-            <p>
-Established in 2006 under the Rishabh Educational Trust, Tula’s Institute is committed to
-excellence in professional education. With a growing focus on healthcare and
-pharmaceutical innovation, our B.Pharm program is designed to develop skilled
-professionals ready to make an impact in the medical and research fields.
-      </p>
-<div className="mt-4 md:mt-[1%]"></div>
-      <p>
-As one of the leading BPharma colleges in Dehradun, Tula’s offers a curriculum that
-combines pharmaceutical science with practical lab work, clinical exposure, and ethical
-training. We prepare students not just for jobs—but for meaningful careers in drug
-development, healthcare, and biotech industries.
-      </p>
-<div className="mt-4 md:mt-[1%]"></div>
-      <p>
-Recognized as a trusted pharmacy college in Uttarakhand, we emphasize research,
-innovation, and real-world application to ensure our graduates are equipped for both higher
-studies and immediate industry roles.
-      </p>
-<div className="mt-4 md:mt-[1%]"></div>
-      <p>
-With BPharma admission 2025 now open, take your first step toward a career that saves
-lives and shapes the future—only at Tula’s Institute.
-      </p>
-        </>
-      }
-    />            {/* Cutting Edge */}
-          {/* <CuttingEdge scrollRef={scrollRef} heading={"Tula’s BCA"} /> */}
-          <div className="pt-8 md:pt-[4%]"></div>
-          <Journey
-            heading={"Your  B.Pharm. Journey at Tula’s Institute"}
-            journey={journey}
-            journeyQuotes={journeyQuote}
-          />
-          {/* <TableProgram selectedCard1={selectedCard1} /> */}
-          <div className="w-full h-full flex flex-col pt-8 pb-8 md:pt-[4%] md:pb-[2%] gap-4 items-center ">
-            <h8 className="text-[#007A83] px-4 text-center text-[clamp(10px,7.5vw,50px)] leading-tight md:text-[clamp(10px,3.2vw,50px)] font-[GoudyCatalogue] font-semibold">
-              Our Recruiters
-            </h8>
-            <h4 className="px-8 text-center w-full font-[TTChocolates] leading-tight text-[clamp(10px,4.2vw,30px)] md:text-[clamp(10px,1.1vw,45px)] text-[#353535]">
-              Give your career a boost with lucrative national & international
-              internship and placement opportunities at Tula's Graduate School
-              of Business.
-            </h4>
-          </div>
-          <Accreditation />
-          <div className="pt-8 md:pt-[4%]"></div>
-          {/* Why Choose Tulas */}
-          <WhyChoose />
-          {/* At a glance */}
-          {/* <AtGlance /> */}
-          <CampusLife />
+          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
 
-          {/* Accreditations */}
-          {/* <Accreditations /> */}
-          {/* Placement */}
+          {/* <div ref={scrollRef}>
+            <LandingFormNew
+              course={1}
+              formHeading={"MBA Admissions Open 2026"}
+              thankYOu={`/graduate-school-of-business-v2/mba/thank-you/${utmParams}`}
+            />
+          </div> */}
+
+          {/* carousel */}
+        {/* <div className="hidden md:block pt-[34px] md:pt-[90px]">
+     
+          {/* Content One */}
+
+          <LandingBusinessSchool />
+
+          <LandingReadmore/>
+          
+          {/* <LandingAdmissionEligibility/> */}
+
+          <LandingWhyTulas/>
+
+    <LandingPerks perksSlides={placementSlides} />
+
+
+          <LandingAccordianSpecialization/>
+
+          <LandingEligibilitySection/>
+
+          <LandingGlobalHiringPartners/>
+
+          {/* <div className="w-full pb-8 md:pb-[4%] bg-white sticky z-10 h-full">
+            <div className="w-full">
+              <Image
+                src={AccreditationImg}
+                alt=""
+                className="w-full hidden md:flex h-fit"
+              />
+              <Image
+                src={AccreditationImgMobile}
+                alt=""
+                className="md:hidden w-full h-fit"
+              />
+            </div>
+          </div> */}
+
+          <LandingAlumniSuccessStories/>
+
+          {/* <SpecialisationsCarousel/> */}
+          
+          {/* <LandingCareerPathSlider/> */}
+          <LandingHighlights/>
+
+          <LandingInternshipSection/>
+
+          <LandingAccredition/>
+
+          <LandingLifeTulas/>
+
+          <LandingAccordionCard/>
+
           {/* <div className="pb-8 md:pb-[3%]">
             <PlacementProgram features={features} />
           </div> */}
-          <Placement scrollRef={scrollRef} />
+          {/* <Placement scrollRef={scrollRef} /> */}
           {scrolled && (
             <button
               onClick={handleScrollArrow}
