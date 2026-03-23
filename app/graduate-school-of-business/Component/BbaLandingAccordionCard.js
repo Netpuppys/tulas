@@ -72,7 +72,7 @@ const [openIndex, setOpenIndex] = useState(0);
                 ${isOpen ? "rounded-b-none shadow-none" : ""}
               `}
             >
-              <span className="text-black font-light">{item.title}</span>
+              <span className="text-black font-light text-left">{item.title}</span>
 
               <svg
                 className={`w-5 h-5 shrink-0 transition-transform text-orange-500 ${

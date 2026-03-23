@@ -48,7 +48,7 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
       {/* Mobile Form (unchanged) */}
       <div ref={scrollRef} className="md:hidden">
         <LandingFormNew
-          course={1}
+          course={7}
           formHeading={"MBA Admissions Open 2026"}
           thankYOu={`/graduate-school-of-business-v2/mba/thank-you/${utmParams}`}
         />

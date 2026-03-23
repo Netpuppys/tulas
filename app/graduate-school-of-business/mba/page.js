@@ -301,7 +301,7 @@ const placementSlides = [
 
           <LandingAlumniSuccessStories/>
 
-          <SpecialisationsCarousel/>
+          {/* <SpecialisationsCarousel/> */}
           
           {/* <LandingCareerPathSlider/> */}
           <LandingHighlights/>

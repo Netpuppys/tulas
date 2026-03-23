@@ -67,12 +67,12 @@ const [openIndex, setOpenIndex] = useState(0);
             <button
               onClick={() => toggle(index)}
               aria-expanded={isOpen}
-              className={`flex items-center justify-between w-full px-5 py-3 font-medium text-body border rounded-lg shadow-lg transition
+              className={`flex justify-between w-full px-5 py-3 font-medium text-body border rounded-lg shadow-lg transition
                 hover:text-heading hover:bg-neutral-secondary-medium
                 ${isOpen ? "rounded-b-none shadow-none" : ""}
               `}
             >
-              <span className="text-black font-light">{item.title}</span>
+              <span className="text-black font-light text-left">{item.title}</span>
 
               <svg
                 className={`w-5 h-5 shrink-0 transition-transform text-orange-500 ${
