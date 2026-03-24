@@ -87,6 +87,7 @@ import BbaLandingAccordianSpecialization from "../Component/BbaLandingAccordianS
 import BbaLandingEligibilitySection from "../Component/BbaLandingEligibilitySection";
 import BbaLandingAccordionCard from "../Component/BbaLandingAccordionCard";
 import BbaLandingGlobalHiringPartners from "../Component/BbaLandingGlobalHiringPartners";
+import BbaLandingInternshipSection from "../Component/BbaLandingInternshipSection";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -288,7 +289,10 @@ const placementSlides = [
 
           <BbaLandingEligibilitySection/>
 
-          <BbaLandingGlobalHiringPartners/>
+          <BbaLandingGlobalHiringPartners
+            heading="250+ Corporate & Business Recruiters"
+            subheading="Industry Exposure & Opportunities"
+          />
 
           {/* <div className="w-full pb-8 md:pb-[4%] bg-white sticky z-10 h-full">
             <div className="w-full">
@@ -312,7 +316,7 @@ const placementSlides = [
           {/* <LandingCareerPathSlider/> */}
           <LandingHighlights/>
 
-          <LandingInternshipSection/>
+          <BbaLandingInternshipSection/>
 
           <LandingAccredition/>
 

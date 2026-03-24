@@ -106,10 +106,10 @@ export default function LandingAccordianSpecialization() {
                 alt={items[activeIndex].title}
                 width={800}
                 height={400}
-                className="rounded-lg mb-5 w-full h-auto"
-              />
+                className="rounded-lg mb-5 w-full h-[260px] md:h-[320px] object-cover"
+              />              
 
-              <h3 className="text-2xl font-semibold mb-3 text-orange-500">
+              <h3 className="text-2xl font-semibold mb-3 text-orange-500 capitalize">
                 {items[activeIndex].subitle}
               </h3>
 

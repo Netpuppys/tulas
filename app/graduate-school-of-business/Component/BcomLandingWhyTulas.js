@@ -35,28 +35,28 @@ export default function BcomLandingWhyTulas() {
     <section className="w-full py-6 bg-white">
 
       {/* CONTENT CONTAINER */}
-      <div className="w-full max-w-4xl md:max-w-6xl px-5 mx-auto">
+      <div className="w-full max-w-4xl md:max-w-7xl px-5 mx-auto">
 
         {/* Heading */}
         <h2 className="text-center text-[clamp(36px,5vw,38px)] font-medium mb-6">
           <span className="text-orange-500 font-extrabold">Why</span>{" "}
-          <span className="text-gray-800 font-extrabold">Tulas Bcom?</span>
+          <span className="text-gray-800 font-extrabold">Tulas B.Com?</span>
         </h2>
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-          Tula’s commerce programs are designed to build strong academic foundations along with practical business understanding. 
+          Tulas commerce programs are designed to build strong academic foundations along with practical business understanding. 
           <br/>
           With a balance of conceptual clarity and applied learning, students develop the skills required to work in finance, accounting and business environments
 
         </p>
 
         {/* Check Points */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-3xl mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-5xl mx-auto">
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">5+</span> Specialisations
+    <span className="text-orange-500 font-bold">6+</span> Core Commerce Domains
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">

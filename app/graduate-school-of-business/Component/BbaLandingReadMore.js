@@ -36,12 +36,12 @@ export default function BbaLandingReadmore() {
         </h2>
 
       {/* Always visible text */}
-      <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
-        Designed for students aspiring to build careers in business, management and entrepreneurship.
+      <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4 capitalize">
+        Designed for students aspiring to build careers in business, management and entrepreneurship
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        At Tula’s, the BBA program is designed to provide students with a strong academic foundation along with practical understanding of business and management. The curriculum covers key areas such as marketing, finance, human resource management, operations and organisational behaviour, ensuring well-rounded business knowledge. Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program combines classroom learning with case studies, projects and industry exposure.
+       At Tulas, the BBA program is designed to provide students with a strong academic foundation along with practical understanding of business and management. The curriculum covers key areas such as marketing, finance, human resource management, operations and organisational behaviour, ensuring well-rounded business knowledge. Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program combines classroom learning with case studies, projects and industry exposure
       </p>
 
       {/* Expandable content */}
@@ -53,7 +53,7 @@ export default function BbaLandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-          Students develop analytical, managerial and decision-making skills, preparing them for career opportunities in corporate organisations and for higher studies such as MBA. With a focus on real-world application, students engage in practical assignments, presentations and collaborative projects that enhance problem-solving abilities, communication skills and business awareness, helping them adapt effectively to dynamic corporate environments.
+         Students develop analytical, managerial and decision-making skills, preparing them for career opportunities in corporate organisations and for higher studies such as MBA. With a focus on real-world application, students engage in practical assignments, presentations and collaborative projects that enhance problem-solving abilities, communication skills and business awareness, helping them adapt effectively to dynamic corporate environments.
         </p>
       </div>
 

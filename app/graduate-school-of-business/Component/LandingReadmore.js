@@ -37,7 +37,7 @@ export default function LandingReadmore() {
 
       {/* Always visible text */}
       <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
-        Designed For Future Decision-makers
+        Designed for Future Decision-makers
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">

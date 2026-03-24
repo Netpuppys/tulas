@@ -39,7 +39,7 @@ export default function LandingAlumniSuccessStories() {
         </h3>
 
         <p className="text-gray-600 text-sm text-center md:text-base mb-8">
-          At Tulas Institute, focused training and placement support prepares students for on campus careers. Our alumni are part of leading organisations across industries.
+          At Tulas Institute, practical learning, industry exposure, and career support prepare students for real-world opportunities. Our alumni work across industries such as IT and software development, banking and finance, pharmaceutical and healthcare, media and digital platforms, marketing and advertising, e-commerce, and emerging sectors like startups and analytics.
         </p>
       </div>
 

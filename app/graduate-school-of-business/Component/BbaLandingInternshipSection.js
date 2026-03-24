@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function LandingInternshipSection() {
+export default function BbaLandingInternshipSection() {
   return (
 
     <>
@@ -33,13 +33,13 @@ export default function LandingInternshipSection() {
           />
         </div>
                     {/* Heading */}
-      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-4">
-        <span className="text-orange-500">Finance Internships</span>{" "}
+      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-5">
+        <span className="text-orange-500">Industry Internships</span>{" "}
         <span className="text-gray-800">& Exposure at Tulas</span>
       </h3>
 
         <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
-          The Training and Placement Cell at Tulas supports students through structured training, internships and industry exposure. Students gain hands-on experience through case-based learning, financial projects, internships and industry interactions.
+          The Training and Placement Cell at Tulas supports students through structured training, internships and industry exposure. Students gain hands-on experience through business case studies, live projects, industry interactions and expert sessions.
 
         </p>
         <br/>

@@ -31,13 +31,13 @@ export default function BcomLandingReadmore() {
     <div className="max-w-3xl md:max-w-6xl mx-auto px-4 pt-5">
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
-          <span className="text-orange-500 font-bold">Bcom</span>{" "}
+          <span className="text-orange-500 font-bold">B.Com</span>{" "}
           <span className="text-gray-800 font-bold">at Tulas</span>
         </h2>
 
       {/* Always visible text */}
-      <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
-        Designed for future professionals in finance, business and commerce.
+      <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4 capitalize">
+        Designed for future professionals in finance, business and commerce
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">

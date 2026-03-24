@@ -33,7 +33,7 @@ export default function LandingInternshipSection() {
           />
         </div>
                     {/* Heading */}
-      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold">
+      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-4">
         <span className="text-orange-500">Internship</span>{" "}
         <span className="text-gray-800">Offered By Tulas</span>
       </h3>
@@ -93,7 +93,7 @@ export default function LandingInternshipSection() {
           03
         </span>
         <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
-          <span className="font-bold">250+ Global</span> Recruiter Network
+          <span className="font-bold">350+ Global</span> Recruiter Network
         </p>
       </div>
 

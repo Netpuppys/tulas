@@ -8,7 +8,8 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          The BBA program focuses on developing foundational knowledge in business and management along with essential analytical and decision-making skills required for managerial roles.
+          The BBA program at Tulas is a 3-year undergraduate program designed to build a strong foundation in business and management. The curriculum progresses from core fundamentals in the initial years to advanced business concepts and applied learning in later stages. It focuses on developing analytical, managerial and decision-making skills, preparing students to understand real-world business environments through an outcome-driven academic framework and industry-oriented learning approach.
+
         </p>
       </>
     ),
@@ -18,7 +19,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          Students study subjects such as marketing, finance, human resource management, operations, business law and entrepreneurship. The curriculum also includes case studies, projects and applied learning to build practical business understanding.
+          Students study core business subjects such as marketing, finance, human resource management, operations, business law and entrepreneurship. The curriculum also includes organisational behaviour, business strategy and financial management, along with case studies, projects and applied learning to build practical business understanding.
         </p>
       </>
     ),
@@ -28,7 +29,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          Yes. The program incorporates case-based learning, live projects, internships and industry interactions to provide students with practical exposure and understanding of real-world business environments.
+          Yes. The program integrates case-based learning, live projects, internships and industry interactions to provide hands-on exposure. Students also benefit from structured training initiatives and skill development through TCCI (Tulas Career Catalyst Initiative), helping them align with industry expectations and workplace requirements.
         </p>
       </>
     ),
@@ -38,7 +39,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          Graduates can pursue careers in marketing, sales, human resources, operations and business development, or opt for higher studies such as MBA and other professional programs.
+          Graduates can pursue career opportunities across marketing, sales, human resources, operations, business development and corporate roles. Students can also opt for higher studies such as MBA or other specialised programs to advance into managerial and leadership positions in the long term.
         </p>
       </>
     ),

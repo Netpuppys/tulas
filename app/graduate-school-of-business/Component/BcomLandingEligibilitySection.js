@@ -8,14 +8,14 @@ export default function BcomLandingEligibilitySection() {
         {/* Top Heading */}
         <h2 className="text-center text-[clamp(28px,5vw,38px)] font-medium mb-6">
           <span className="text-orange-500 font-extrabold">
-            Where Leaders
+            Where Numbers
           </span>{" "}
-          <span className="text-gray-800 font-extrabold">Create Impact</span>
+          <span className="text-gray-800 font-extrabold">Become Careers</span>
         </h2>
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed mb-5 md:text-left">
-          Built for individuals who aim to move beyond participation and into leadership. Bcom at Tulas develops strategic thinking, analytical clarity and executive confidence preparing graduates to influence organisations, not just work within them.
+          Built for individuals who want to move beyond theoretical knowledge to understanding how businesses operate and grow. B.Com at Tulas helps students develop financial clarity, analytical thinking and business understanding, preparing them to work across finance, accounting and corporate environments.
         </p>
 
         {/* Wrapper for Eligibility + CTA */}
@@ -29,22 +29,16 @@ export default function BcomLandingEligibilitySection() {
 
             <ul className="space-y-2 text-gray-700 text-[15px] md:text-[17px] leading-relaxed list-disc pl-5">
               <li>
-                Bachelor’s degree of minimum{" "}
-                <span className="font-semibold">3-year duration</span> from a
-                recognised university.
+                Passed XII or equivalent course in any discipline from any recognized Board / Council / University
               </li>
               <li>
-                Minimum <span className="font-semibold">50% </span>aggregate marks in
-                the qualifying examination.
+                Minimum 45% marks for general (open) category
               </li>
               <li>
-                Minimum <span className="font-semibold">45% </span>aggregate marks for
-                candidates belonging to{" "}
-                reserved categories.
+                Minimum 40% marks for students of SC and ST category
               </li>
               <li>
-                A qualifying score in <span className="font-semibold">CAT /
-                MAT / XAT / CMAT</span> or equivalent entrance examination.
+                Minimum age of 17 years for B.Com (Hons.)
               </li>
             </ul>
           </div>
@@ -54,13 +48,13 @@ export default function BcomLandingEligibilitySection() {
             <div className="bg-orange-500 rounded-[28px] px-6 py-8 text-center text-white">
 
               <h4 className="text-[22px] md:text-3xl font-light leading-snug mb-3">
-                Shape Your Future in{" "}
+                Shape Your Career in{" "}
+                <br />
+                <span className="font-semibold text-[32px]">Commerce</span>
+                <br />
+                Step Into Finance &{" "}
                 <br />
                 <span className="font-semibold text-[32px]">Business</span>
-                <br />
-                Step Into the League of{" "}
-                <br />
-                <span className="font-semibold text-[32px]">Leaders</span>
               </h4>
 
               <button onClick={() =>

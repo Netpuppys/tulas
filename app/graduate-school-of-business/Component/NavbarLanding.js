@@ -5,7 +5,7 @@ import { IoCall } from "react-icons/io5";
 import { SiGoogleforms } from "react-icons/si";
 import phoneCallGif from "../../../public/Components/Navbar/phone_ringing.gif";
 import NBA from "../../../public/Components/Navbar/NBA.png";
-import NAAC from "../../../public/Components/Navbar/NAAC.png";
+import NAAC from "../../../public/Components/Navbar/NAAC3.png";
 import TulasLogo from "../../../public/Components/Navbar/TulasLogo.png";
 import TulasLogoMobile from "../../../public/Components/Navbar/tulas-unilogo.png";
 import Years20 from "../../../public/graduate-school-of-business/mba/20Years.png";
@@ -23,7 +23,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
             className="flex gap-2 items-center text-black"
           >
             <Image src={phoneCallGif} alt="" className="w-5" />
-            Admissions Helpline Number - +91-8069204028
+            Admissions Helpline Number +91-8069204028
           </a>
           <button
             onClick={handleScrollArrow}
@@ -72,7 +72,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
             <Image
               src={TulasLogo}
               alt=""
-              className="w-[12vw]"
+              className="w-[15vw]"
             />
 
             <div className="flex items-center gap-6">

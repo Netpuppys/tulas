@@ -4,11 +4,12 @@ import { useState } from "react";
 
 const faqs = [
   {
-    title: "What is the difference between B.Com and B.Com (Hons.) at Tula’s?",
+    title: "What is the difference between B.Com and B.Com (Hons.) at Tulas?",
     content: (
       <>
         <p className="mb-2 text-body">
-          B.Com is a 3-year undergraduate program focused on core commerce fundamentals. B.Com (Hons.) is a 4-year advanced program that includes deeper academic learning, analytical depth and extended practical exposure.
+          B.Com is a 3-year undergraduate program focused on building strong fundamentals in commerce, accounting and business practices. B.Com (Hons.) is a 4-year advanced program that extends this learning with deeper analytical understanding, advanced financial concepts and strategic business insights, along with additional academic and practical exposure.
+
         </p>
       </>
     ),
@@ -18,17 +19,18 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          The program covers accounting, finance, taxation, business law, economics and management. Students also develop practical understanding through case studies, projects and applied learning.
+          The program covers core areas such as financial accounting, corporate finance, taxation, business law, economics and management. Along with theoretical understanding, students engage in case studies, projects and applied learning to understand how these concepts work in real business environments, helping them build analytical and decision-making skills.
         </p>
       </>
     ),
   },
   {
-    title: "Does Tula’s provide practical exposure and industry experience?",
+    title: "Does Tulas provide practical exposure and industry experience?",
     content: (
       <>
         <p className="mb-2 text-body">
-          Yes. Students gain hands-on experience through live projects, internships, industry interactions and practical learning modules.
+         Yes. The program integrates practical learning through case-based assignments, financial projects, internships and industry interactions. Students also benefit from structured training and skill development through TCCI (Tulas Career Catalyst Initiative), which helps bridge the gap between academic learning and industry expectations.
+
         </p>
       </>
     ),
@@ -38,7 +40,8 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          Graduates can pursue careers in accounting, finance, banking, consulting, taxation and corporate roles, or opt for higher studies like MBA, CA, CFA and other professional certifications.
+          Graduates can pursue careers across accounting, finance, banking, taxation and corporate sectors in roles such as accountant, financial analyst, auditor and business analyst. Students can also opt for higher studies and professional qualifications like MBA, CA, CFA or other specialised certifications to advance into managerial and specialised roles.
+
         </p>
       </>
     ),

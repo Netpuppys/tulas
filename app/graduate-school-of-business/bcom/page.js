@@ -287,7 +287,9 @@ const placementSlides = [
 
           <BcomLandingEligibilitySection/>
 
-          <LandingGlobalHiringPartners/>
+          <LandingGlobalHiringPartners
+           heading="250+ Corporate & Business Recruiters"
+            subheading="Industry Exposure & Opportunities"/>
 
           {/* <div className="w-full pb-8 md:pb-[4%] bg-white sticky z-10 h-full">
             <div className="w-full">

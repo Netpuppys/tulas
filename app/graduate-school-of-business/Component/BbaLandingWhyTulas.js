@@ -35,7 +35,7 @@ export default function BbaLandingWhyTulas() {
     <section className="w-full py-6 bg-white">
 
       {/* CONTENT CONTAINER */}
-      <div className="w-full max-w-4xl md:max-w-6xl px-5 mx-auto">
+      <div className="w-full max-w-4xl md:max-w-7xl px-5 mx-auto">
 
         {/* Heading */}
         <h2 className="text-center text-[clamp(36px,5vw,38px)] font-medium mb-6">
@@ -45,13 +45,11 @@ export default function BbaLandingWhyTulas() {
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-          Tulas BBA program is designed to build strong foundations in business and management along with practical industry understanding.
-          <br/>
-          With a balance of conceptual clarity and applied learning, students develop the skills required to work in corporate, business and managerial environments
+          Tulas BBA program is designed to build strong foundations in business and management along with practical industry understanding. With a balance of conceptual clarity and applied learning, students develop the skills required to work in corporate, business and managerial environments
         </p>
 
         {/* Check Points */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-4xl mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-5xl mx-auto">
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
@@ -60,7 +58,7 @@ export default function BbaLandingWhyTulas() {
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">Portfolio</span> through Live Projects
+    <span className="text-orange-500 font-bold">Live</span> Projects & Portfolio
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">

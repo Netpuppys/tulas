@@ -45,7 +45,7 @@ export default function LandingWhyTulas() {
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-          Tulas MBA is an industry-aligned postgraduate programme designed for accelerated career growth and leadership development. In-demand specialisations, corporate internships, live projects, and placement-focused training ensure real-world business readiness.
+          Tulas B.Tech blends strong engineering foundations with hands-on learning, advanced laboratories and innovation-driven projects to prepare students for emerging technologies and evolving industries. With specialised disciplines and practical exposure, the program equips future engineers to design solutions, build intelligent systems and shape the technology of tomorrow.
         </p>
 
         {/* Check Points */}

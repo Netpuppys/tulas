@@ -5,10 +5,10 @@ import { IoCall } from "react-icons/io5";
 import { SiGoogleforms } from "react-icons/si";
 import phoneCallGif from "../../../public/Components/Navbar/phone_ringing.gif";
 import NBA from "../../../public/Components/Navbar/NBA.png";
-import NAAC from "../../../public/Components/Navbar/NAAC.png";
+import NAAC from "../../../public/Components/Navbar/NAAC3.png";
 import TulasLogo from "../../../public/Components/Navbar/TulasLogo.png";
 import TulasLogoMobile from "../../../public/Components/Navbar/tulas-unilogo.png";
-import Years20 from "../../../public/graduate-school-of-business/mba/20Years.png";
+import Years20 from "../../../public/graduate-school-of-business/mba/20Years2.png";
 import Image from "next/image";
 
 function NavbarLanding({ handleScrollArrow, nba = false }) {

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const faqs = [
   {
-    title: "What B.Tech specialisations are offered at Tula’s?",
+    title: "What B.Tech specialisations are offered at Tulas?",
     content: (
       <>
         <p className="mb-2 text-body">

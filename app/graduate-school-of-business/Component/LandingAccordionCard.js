@@ -4,11 +4,11 @@ import { useState } from "react";
 
 const faqs = [
   {
-    title: "What is the duration of the MBA program at Tula’s?",
+    title: "What is the duration of the MBA program at Tulas?",
     content: (
       <>
         <p className="mb-2 text-body">
-          The MBA at Tula’s is a 2-year full-time postgraduate program designed to build leadership, strategic thinking and industry-ready management skills.
+          The MBA at Tulas is a 2-year full-time postgraduate program designed to build leadership, strategic thinking and industry-ready management skills.
         </p>
       </>
     ),
@@ -34,7 +34,7 @@ const faqs = [
     ),
   },
   {
-    title: "Does Tula’s provide internships and placement support for MBA students?",
+    title: "Does Tulas provide internships and placement support for MBA students?",
     content: (
       <>
         <p className="mb-2 text-body">

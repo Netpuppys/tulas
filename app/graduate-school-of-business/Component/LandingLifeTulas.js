@@ -13,8 +13,8 @@ function LandingLifeTulas() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    "College Vibes Fest",
-    "Hostel & Mess Life",
+    "Cultural Fest",
+    "Hostel Life",
     "Infrastructure Labs",
     "Sports Grounds",
     "Gym Yoga"
@@ -48,7 +48,7 @@ function LandingLifeTulas() {
       <button
         key={index}
         onClick={() => setActiveTab(index)}
-        className={`flex-shrink-0 px-6 py-2 rounded-full text-sm font-medium transition border
+        className={`flex-shrink-0 px-6 py-2 rounded-full text-sm font-bold transition border
           ${
             activeTab === index
               ? "bg-white"

@@ -36,7 +36,7 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
               <LandingFormNew
                 course={7}
                 formHeading={"Start Your MBA Application"}
-                thankYOu={`/graduate-school-of-business-v2/mba/thank-you/${utmParams}`}
+                thankYOu={`/department-of-computer-application/bca/thank-you/${utmParams}`}
               />
 
             </div>
@@ -50,7 +50,7 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
         <LandingFormNew
           course={7}
           formHeading={"MBA Admissions Open 2026"}
-          thankYOu={`/graduate-school-of-business-v2/mba/thank-you/${utmParams}`}
+          thankYOu={`/department-of-computer-application/bca/thank-you/${utmParams}`}
         />
       </div>
     </>

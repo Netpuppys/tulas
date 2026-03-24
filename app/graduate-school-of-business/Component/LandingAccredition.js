@@ -21,7 +21,7 @@ function LandingAccredition() {
     { img: logo3, title: "UBTER", subtitle: "Uttarakhand Board of Technical Education" },
     { img: logo4, title: "AICTE", subtitle: "Approved Institution" },
     { img: logo5, title: "UGC", subtitle: "Recognized University" },
-    { img: logo6, title: "ISO", subtitle: "Certified Institute" },
+    { img: logo6, title: "NBA", subtitle: "Certified Institute" },
     { img: logo7, title: "NIRF", subtitle: "Ranked Institution" },
 
 
@@ -51,9 +51,9 @@ className="flex flex-col items-center text-center min-w-[120px] md:min-w-[180px]
                 loading="lazy"
               />
 
-              <p className="text-sm font-semibold text-gray-800">
+              {/* <p className="text-sm font-semibold text-gray-800">
                 {item.title}
-              </p>
+              </p> */}
               {/* <p className="text-xs text-gray-500 mt-1">
                 {item.subtitle}
               </p> */}

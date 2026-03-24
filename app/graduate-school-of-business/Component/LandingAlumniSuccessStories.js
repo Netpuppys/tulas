@@ -38,8 +38,8 @@ export default function LandingAlumniSuccessStories() {
           <span className="text-gray-800">Success Stories</span>
         </h3>
 
-        <p className="text-gray-600 text-sm text-center md:text-base mb-8">
-          At Tulas Institute, focused training and placement support prepares students for on campus careers. Our alumni are part of leading organisations across industries.
+        <p className="text-gray-600 text-sm text-center md:text-base mb-8 ">
+         At Tulas Institute, practical learning, industry exposure, and career support prepare students for real-world opportunities. Our alumni work across industries such as IT and software development, banking and finance, pharmaceutical and healthcare, media and digital platforms, marketing and advertising, e-commerce, and emerging sectors like startups and analytics.
         </p>
       </div>
 
@@ -86,7 +86,7 @@ export default function LandingAlumniSuccessStories() {
               })
             }
          className="w-full md:w-auto bg-orange-500 text-white py-2 px-10 rounded-[10px] text-lg font-semibold">
-          APPLY NOW
+          Start Your Career Journey
         </button>
 
         {/* Right Arrow (desktop only) */}
