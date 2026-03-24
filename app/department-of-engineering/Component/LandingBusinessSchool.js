@@ -2,117 +2,44 @@
 
 import Image from "next/image";
 
-export default function LandingBusinessSchool() {
+export default function LandingInternshipSection() {
   return (
-    <section className="w-full py-5 bg-white flex justify-center">
-      <div className="w-full max-w-2xl md:max-w-6xl px-4">
+    <section className="bg-white pb-6 mt-5">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex flex-col items-center gap-10">
 
-        {/* Heading */}
-        <h2 className="text-center text-[clamp(36px,5vw,36px)] font-medium mb-10 leading-snug">
-          <span className="text-orange-500 font-extrabold">Ranked Among</span>{" "}
-          <br/>
-          <span className="text-gray-800 font-extrabold">India's Top B-Schools</span>
-        </h2>
+          <div className="w-full">
+            {/* Heading */}
+            <h2 className="text-center text-[clamp(36px,5vw,36px)] font-medium mb-10 leading-snug">
+              <span className="text-orange-500 font-extrabold">Ranked Among</span>{" "}
+              <br/>
+              <span className="text-gray-800 font-extrabold">India's Top B-Schools</span>
+            </h2>
 
-        {/* Card */}
-        <div className="bg-gray-200 rounded-[40px] px-6 py-8">
+{/* MOBILE IMAGE */}
+<div className="w-[80%] mx-auto md:hidden mb-6">
+  <Image
+    src="/landingPage/rankingmobile.png"
+    alt="Internship Mobile"
+    width={800}
+    height={1200}
+    className="w-full h-auto object-cover rounded-xl"
+    priority
+  />
+</div>
 
-          {/* Mobile layout (same as before) */}
-          <div className="space-y-5 md:hidden text-center">
-
-            <div className="flex justify-center">
+            {/* DESKTOP IMAGE (unchanged) */}
+            <div className="relative w-full aspect-[21/9] hidden md:block rounded-2xl overflow-hidden mb-6">
               <Image
-                src="/Homepage/Accreditation/careerlinks.png"
-                alt="Times B School"
-                width={200}
-                height={60}
-                className="object-contain"
+                src="/landingPage/rankingdesktop.png"
+                alt="Internship Desktop"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
-
-            <p className="text-gray-800 font-medium text-sm">
-              Top 20 Private Engineering Colleges
-            </p>
-
-            <div className="flex justify-center">
-              <Image
-                src="/Homepage/Accreditation/ranking1.png"
-                alt="The Week"
-                width={200}
-                height={60}
-                className="object-contain"
-              />
-            </div>
-
-            <p className="text-gray-800 font-medium text-sm">
-              Recognised for Academic Leadership
-            </p>
-
-            <div className="flex justify-center">
-              <Image
-                src="/Homepage/Accreditation/career360.png"
-                alt="MDRA"
-                width={180}
-                height={60}
-                className="object-contain"
-              />
-            </div>
-
-            <p className="text-gray-800 font-medium text-sm">
-              AAA Rating for Engineering Excellence
-            </p>
 
           </div>
-
-{/* Desktop layout */}
-<div className="hidden md:flex items-start justify-between text-center">
-
-  <div className="flex flex-col items-center gap-3 w-1/3">
-    <div className="h-[80px] flex items-center justify-center">
-      <Image
-        src="/Homepage/Accreditation/careerlinks.png"
-        alt="Times B School"
-        width={200}
-        height={60}
-        className="object-contain"
-      />
-    </div>
-    <p className="text-gray-800 font-medium text-sm">
-      Top 20 Private Engineering Colleges
-    </p>
-  </div>
-
-  <div className="flex flex-col items-center gap-3 w-1/3">
-    <div className="h-[80px] flex items-center justify-center">
-      <Image
-        src="/Homepage/Accreditation/ranking4.png"
-        alt="MDRA"
-        width={180}
-        height={60}
-        className="object-contain"
-      />
-    </div>
-    <p className="text-gray-800 font-medium text-sm">
-      Recognised for Academic Leadership
-    </p>
-  </div>
-
-  <div className="flex flex-col items-center gap-3 w-1/3">
-    <div className="h-[80px] flex items-center justify-center">
-      <Image
-        src="/Homepage/Accreditation/career360.png"
-        alt="The Week"
-        width={200}
-        height={60}
-        className="object-contain"
-      />
-    </div>
-    <p className="text-gray-800 font-medium text-sm">
-      AAA Rating for Engineering Excellence
-    </p>
-  </div>
-
-</div>
 
         </div>
       </div>

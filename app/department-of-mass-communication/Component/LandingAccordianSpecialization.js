@@ -59,8 +59,8 @@ export default function LandingAccordianSpecialization() {
 
       {/* Heading */}
       <h2 className="text-center text-[clamp(38px,5vw,38px)] font-extrabold mb-10">
-        <span className="text-orange-500">Specialisations</span>{" "}
-        <span className="text-gray-800">We Offer</span>
+        <span className="text-orange-500">Core</span>{" "}
+        <span className="text-gray-800">Media Domains</span>
       </h2>
 
       {/* ---------------- MOBILE (ACCORDION) ---------------- */}

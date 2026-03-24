@@ -8,14 +8,15 @@ export default function LandingEligibilitySection() {
         {/* Top Heading */}
         <h2 className="text-center text-[clamp(28px,5vw,38px)] font-medium mb-6">
           <span className="text-orange-500 font-extrabold">
-            Where Stories
+            Where Technology
           </span>{" "}
-          <span className="text-gray-800 font-extrabold">Become Careers</span>
+          <span className="text-gray-800 font-extrabold">Careers Begin</span>
         </h2>
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed mb-5 md:text-left">
-          Built for individuals who want to move beyond consuming content to creating, expressing and storytelling. BJMC/BAJMC at Tulas helps students develop creative confidence, communication skills and media awareness, preparing them to work across different media platforms and formats.
+          Built for individuals who want to move beyond using technology to understanding and building it. BCA at Tulas helps students develop programming skills, technical knowledge and problem-solving ability, preparing them for careers across software development, IT and technology-driven environments.
+
         </p>
 
         {/* Wrapper for Eligibility + CTA */}
@@ -28,13 +29,13 @@ export default function LandingEligibilitySection() {
             </h3>
             <ul className="space-y-2 text-gray-700 text-[15px] md:text-[17px] leading-relaxed list-disc pl-5">
               <li>
-                10+2 or equivalent examination from a recognised board in any stream (Arts, Commerce or Science).
+                10+2 or equivalent examination from a recognised board in any stream.
               </li>
               <li>
-                Minimum 50% aggregate marks for general and minimum 45% aggregate marks for reserved categories.
+                Minimum 50% aggregate marks for general category
               </li>
               <li>
-                Minimum age of 17 years for BAJMC.
+                Minimum 45% aggregate marks for reserved categories
               </li>
             </ul>
           </div>
@@ -46,11 +47,11 @@ export default function LandingEligibilitySection() {
               <h4 className="text-[22px] md:text-2xl font-light leading-snug mb-3">
                 Shape Your Career in {" "}
                 <br />
-                <span className="font-bold text-[36px]">Media</span>
+                <span className="font-bold text-[36px]">Technology</span>
                 <br />
-                Step Into the Media &{" "}
+                Step Into IT &{" "}
                 <br />
-                <span className="font-bold text-[36px]">Communication</span>
+                <span className="font-bold text-[36px]">Software</span>
               </h4>
 
               <button onClick={() =>

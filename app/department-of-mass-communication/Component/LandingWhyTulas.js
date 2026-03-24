@@ -40,12 +40,12 @@ export default function LandingWhyTulas() {
         {/* Heading */}
         <h2 className="text-center text-[clamp(36px,5vw,38px)] font-medium mb-6">
           <span className="text-orange-500 font-extrabold">Why</span>{" "}
-          <span className="text-gray-800 font-extrabold">Tulas BJMC?</span>
+          <span className="text-gray-800 font-extrabold">Tulas BAJMC?</span>
         </h2>
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-          Tulas BJMC is designed to help students explore, create and grow within the media space. With a balance of academic learning and practical exposure, students gain the confidence to express ideas, tell stories and build a career in media and communication.
+          Tulas BAJMC is designed to help students explore, create and grow within the media space. With a balance of academic learning and practical exposure, students gain the confidence to express ideas, tell stories and build a career in media and communication.
         </p>
 
         {/* Check Points */}

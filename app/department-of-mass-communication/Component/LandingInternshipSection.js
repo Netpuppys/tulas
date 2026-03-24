@@ -33,7 +33,7 @@ export default function LandingInternshipSection() {
           />
         </div>
                     {/* Heading */}
-      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold">
+      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-4">
         <span className="text-orange-500">Media Internships</span>{" "}
         <span className="text-gray-800">& Exposure at Tulas</span>
       </h3>

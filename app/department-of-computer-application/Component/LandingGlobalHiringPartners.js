@@ -49,13 +49,13 @@ export default function LandingGlobalHiringPartners() {
     <section className="w-full pt-10 overflow-hidden">
       {/* Heading */}
       <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-2">
-        <span className="text-orange-500">250+ Media</span>{" "}
+        <span className="text-orange-500">250+ Tech</span>{" "}
         <span className="text-gray-800">
           Hiring Partners
         </span>
       </h3>
 
-      <h5 className="text-center font-medium text-2xl text-gray-900 mb-8">Industry Exposure & Media Opportunities</h5>
+      <h5 className="text-center font-medium text-2xl text-orange-500 mb-8">Industry Exposure & Career Opportunities</h5>
 
 {/* ROW 1 - move left */}
 <div className="overflow-hidden mb-4">

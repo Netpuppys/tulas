@@ -7,46 +7,53 @@ export default function McaLandingAccordianSpecialization() {
 
   const items = [
     {
-      title: "Journalism & Reporting",
+      title: "Advanced Programming & Data Structures",
       // subitle: "Build the foundations of tomorrow",
-      text: "Develop the ability to research, write and report news stories across print and digital platforms. Build skills in news writing, interviewing, fact-checking and editorial structuring, along with an understanding of media ethics and journalism fundamentals.",
-      mobileImage: "/bjmcimage/bjmcspecial.jpg",
-      image: "/bjmcimage/bjmcspecial.jpg",
+      text: "Develop advanced programming skills using structured approaches to data structures and algorithms. Learn to apply logical thinking and problem-solving techniques to design efficient solutions for complex computing challenges. This domain builds a strong foundation for software development and helps students understand how scalable applications are developed and optimised in real-world environments.",
+      mobileImage: "/bcaimage/bcaimg.png",
+      image: "/bcaimage/bcaimg.png",
     },
     {
-      title: `Digital Media & Content Creation`,
+      title: `Database Management Systems`,
       // subitle: "Create technology powering digital world",
-      text: "Build foundational skills in content creation for social media, blogs and digital platforms. Gain hands-on exposure to content planning, video creation, basic editing tools and audience engagement strategies across digital ecosystems.",
-      mobileImage: "/bjmcimage/bjmcspecial1.jpg",
-      image: "/bjmcimage/bjmcspecial1.jpg",
+      text: "Gain in-depth understanding of database design, data modelling and management systems. Learn to organise, store and retrieve data efficiently using structured query techniques. Develop the ability to work with large datasets and understand how databases support application development and business systems in practical environments.",
+      mobileImage: "/bcaimage/bcaimg1.png",
+      image: "/bcaimage/bcaimg1.png",
     },
     {
-      title: "Advertising & Brand Communication",
+      title: "Software Engineering",
       // subitle: "Turn data into futuristic decisions",
-      text: "Understand how brands communicate and influence audiences. Develop skills in copywriting, campaign ideation, visual communication and brand storytelling, along with an understanding of consumer behaviour and marketing communication basics.",
-      mobileImage: "/bjmcimage/bjmcspecial2.jpg",
-      image: "/bjmcimage/bjmcspecial2.jpg",
+      text: "Understand the complete software development lifecycle, including requirement analysis, system design, development, testing and maintenance. Learn structured methodologies and best practices used in the industry to build reliable and efficient software systems. This domain helps students develop a systematic approach to software development and project execution.",
+      mobileImage: "/bcaimage/bcaimg2.png",
+      image: "/bcaimage/bcaimg2.png",
     },
     {
-      title: "Public Relations & Corporate Communication",
+      title: "Web Technologies & Application Development",
       // subitle: "Secure the Digital World",
-      text: "Gain exposure to media relations, press communication and reputation management. Build skills in writing press releases, managing communication strategies and handling brand messaging across corporate and public platforms.",
-      mobileImage: "/bjmcimage/bjmcspecial3.jpg",
-      image: "/bjmcimage/bjmcspecial3.jpg",
+      text: "Develop knowledge of web technologies used to design and build modern applications. Learn how front-end and back-end systems work together to create functional and user-friendly web platforms. Gain practical exposure to application development processes used across industries.",
+      mobileImage: "/bcaimage/bcaimg3.png",
+      image: "/bcaimage/bcaimg3.png",
     },
     {
-      title: `Film, Video & Audio Production`,
+      title: `Computer Networks`,
       // subitle: "Build Machines that Think",
-      text: "Develop practical skills in scripting, camera handling, video shooting and editing using basic production tools. Gain hands-on experience in creating audio-visual content, short videos and media productions from concept to final output.",
-      mobileImage: "/bjmcimage/bjmcspecial4.jpg",
-      image: "/bjmcimage/bjmcspecial4.jpg",
+      text: "Understand the fundamentals of network architecture, communication protocols and system connectivity. Learn how data is transmitted across networks and how systems interact in connected environments. Develop a foundational understanding of networking concepts used in modern computing systems.",
+      mobileImage: "/bcaimage/bcaimg4.png",
+      image: "/bcaimage/bcaimg4.png",
     },
     {
-      title: `Media Studies & Communication Foundations`,
+      title: `Operating Systems`,
       // subitle: "Connect the World Through Technology",
-      text: "Understand communication theories, media laws, audience behaviour and development communication. Build analytical skills to evaluate media content, understand industry trends and interpret the role of media in society.",
-      mobileImage: "/bjmcimage/bjmcspecial5.jpg",
-      image: "/bjmcimage/bjmcspecial5.jpg",
+      text: "Gain understanding of how computer systems function at a system level. Learn about process management, memory handling and system operations that support application performance. This domain helps students understand the interaction between hardware and software in computing environments.",
+      mobileImage: "/bcaimage/bcaimg5.png",
+      image: "/bcaimage/bcaimg5.png",
+    },
+    {
+      title: `Application Architecture & System Design`,
+      // subitle: "Connect the World Through Technology",
+      text: "Learn to design and structure complete software systems by integrating multiple technologies. Understand application architecture, system components and scalability considerations required to build efficient and reliable software solutions in real-world scenarios.",
+      mobileImage: "/bcaimage/bcaimg6.png",
+      image: "/bcaimage/bcaimg6.png",
     },
   ];
 
@@ -59,8 +66,8 @@ export default function McaLandingAccordianSpecialization() {
 
       {/* Heading */}
       <h2 className="text-center text-[clamp(38px,5vw,38px)] font-extrabold mb-10">
-        <span className="text-orange-500">Specialisations</span>{" "}
-        <span className="text-gray-800">We Offer</span>
+        <span className="text-orange-500">Core</span>{" "}
+        <span className="text-gray-800">Technical Domains</span>
       </h2>
 
       {/* ---------------- MOBILE (ACCORDION) ---------------- */}

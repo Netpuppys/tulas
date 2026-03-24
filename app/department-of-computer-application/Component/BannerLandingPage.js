@@ -31,7 +31,7 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
 
           {/* Desktop Form Overlay */}
           <div className="hidden md:flex absolute inset-0 items-center justify-end pr-0">
-            <div className="w-[680px] ">
+            <div className="w-[600px] ">
               
               <LandingFormNew
                 course={7}

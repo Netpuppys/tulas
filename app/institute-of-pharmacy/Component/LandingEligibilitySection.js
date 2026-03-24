@@ -8,9 +8,9 @@ export default function LandingEligibilitySection() {
         {/* Top Heading */}
         <h2 className="text-center text-[clamp(28px,5vw,38px)] font-medium mb-6">
           <span className="text-orange-500 font-extrabold">
-            Where Leaders
+            Where Healthcare
           </span>{" "}
-          <span className="text-gray-800 font-extrabold">Create Impact</span>
+          <span className="text-gray-800 font-extrabold">Career Begins</span>
         </h2>
 
         {/* Description */}
@@ -43,13 +43,13 @@ export default function LandingEligibilitySection() {
             <div className="bg-orange-500 rounded-[28px] px-6 py-8 text-center text-white">
 
               <h4 className="text-[22px] md:text-4xl font-light leading-snug mb-3">
-                Design the Future of {" "}
+                Shape Your Career in {" "}
                 <br />
-                <span className="font-bold text-[36px]">Technology</span>
+                <span className="font-bold text-[36px]">Pharmacy</span>
                 <br />
-                Step Into the World of{" "}
+                Step Into Healthcare &{" "}
                 <br />
-                <span className="font-bold text-[36px]">Innovation</span>
+                <span className="font-bold text-[36px]">Pharma Sciences</span>
               </h4>
 
               <button onClick={() =>

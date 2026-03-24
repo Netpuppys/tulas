@@ -33,17 +33,18 @@ export default function LandingInternshipSection() {
           />
         </div>
                     {/* Heading */}
-      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold">
-        <span className="text-orange-500">Media Internships</span>{" "}
+      <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-4">
+        <span className="text-orange-500">Tech Internships</span>{" "}
         <span className="text-gray-800">& Exposure at Tulas</span>
       </h3>
 
         <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
-          The Training and Placement Cell at Tula’s supports students in preparing for real corporate opportunities through structured training, internship support and campus recruitment initiatives. With resume building, aptitude preparation, mock interviews and regular corporate interactions, students gain the skills, confidence and industry exposure needed to begin their BJMC careers.
+          The Training and Placement Cell at Tulas supports students through structured training, internships and industry exposure in the IT and technology sectors. Students gain hands-on experience through coding projects, software development assignments, technical labs, internships and industry interactions, helping them understand real-world application of computing concepts.
         </p>
         <br/>
         <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
-          Complementing this is TCCI (Tula’s Career Catalyst Initiative) - a Professional Capability Acceleration Framework designed to bridge the gap between academic learning and real workplace expectations through diagnostic assessments, targeted development and real-world simulations. It helps students graduate with practical capabilities and the readiness to contribute effectively from day one.
+          Complementing this is TCCI (Tulas Career Catalyst Initiative) - a professional capability framework designed to bridge the gap between academic learning and industry expectations through skill development, project-based training and performance-driven learning.
+
         </p>
       </div>
 

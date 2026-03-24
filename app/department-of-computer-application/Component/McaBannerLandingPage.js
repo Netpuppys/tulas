@@ -3,7 +3,7 @@ import Image from "next/image";
 import LandingFormNew from "./LandingFormNew";
 import { UtmContext } from "@/component/utmParams";
 
-function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
+function McaBannerLandingPage({ bannerImg, bannerImgDesktop }) {
   const scrollRef = useRef(null);
   const { utmParams } = useContext(UtmContext);
 
@@ -34,9 +34,9 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
             <div className="w-[600px] ">
               
               <LandingFormNew
-                course={5}
+                course={7}
                 formHeading={"Start Your MBA Application"}
-                thankYOu={`/department-of-mass-communication/bjmc/thank-you/${utmParams}`}
+                thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`}
               />
 
             </div>
@@ -48,13 +48,13 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
       {/* Mobile Form (unchanged) */}
       <div ref={scrollRef} className="md:hidden">
         <LandingFormNew
-          course={5}
+          course={7}
           formHeading={"MBA Admissions Open 2026"}
-          thankYOu={`/department-of-mass-communication/bjmc/thank-you/${utmParams}`}
+          thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`}
         />
       </div>
     </>
   );
 }
 
-export default BannerLandingPage;
+export default McaBannerLandingPage;

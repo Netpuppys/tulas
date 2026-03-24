@@ -7,46 +7,53 @@ export default function LandingAccordianSpecialization() {
 
   const items = [
     {
-      title: "Journalism & Reporting",
+      title: "Programming & Data Structures",
       // subitle: "Build the foundations of tomorrow",
-      text: "Develop the ability to research, write and report news stories across print and digital platforms. Build skills in news writing, interviewing, fact-checking and editorial structuring, along with an understanding of media ethics and journalism fundamentals.",
-      mobileImage: "/bjmcimage/bjmcspecial.jpg",
-      image: "/bjmcimage/bjmcspecial.jpg",
+      text: "Build a strong foundation in programming through languages and structured problem-solving approaches. Learn data structures, algorithms and logic development to write efficient and scalable code. Develop the ability to solve real-world problems by designing optimised solutions, which forms the core of software development and technical decision-making.",
+      mobileImage: "/bcaimage/bcaimg.png",
+      image: "/bcaimage/bcaimg.png",
     },
     {
-      title: `Digital Media & Content Creation`,
+      title: `Database Management Systems`,
       // subitle: "Create technology powering digital world",
-      text: "Build foundational skills in content creation for social media, blogs and digital platforms. Gain hands-on exposure to content planning, video creation, basic editing tools and audience engagement strategies across digital ecosystems.",
-      mobileImage: "/bjmcimage/bjmcspecial1.jpg",
-      image: "/bjmcimage/bjmcspecial1.jpg",
+      text: "Understand how data is stored, organised and managed within applications. Learn database design, SQL and data handling techniques used in real-world systems. Develop the ability to create, manage and retrieve structured data efficiently, supporting application development and business decision-making processes.",
+      mobileImage: "/bcaimage/bcaimg1.png",
+      image: "/bcaimage/bcaimg1.png",
     },
     {
-      title: "Advertising & Brand Communication",
+      title: "Web Development",
       // subitle: "Turn data into futuristic decisions",
-      text: "Understand how brands communicate and influence audiences. Develop skills in copywriting, campaign ideation, visual communication and brand storytelling, along with an understanding of consumer behaviour and marketing communication basics.",
-      mobileImage: "/bjmcimage/bjmcspecial2.jpg",
-      image: "/bjmcimage/bjmcspecial2.jpg",
+      text: "Learn to design and develop responsive websites and web applications. Gain exposure to front-end and back-end technologies, user interface design and application functionality. Develop practical skills to build interactive, user-friendly and scalable web platforms used across industries.",
+      mobileImage: "/bcaimage/bcaimg2.png",
+      image: "/bcaimage/bcaimg2.png",
     },
     {
-      title: "Public Relations & Corporate Communication",
+      title: "Software Engineering",
       // subitle: "Secure the Digital World",
-      text: "Gain exposure to media relations, press communication and reputation management. Build skills in writing press releases, managing communication strategies and handling brand messaging across corporate and public platforms.",
-      mobileImage: "/bjmcimage/bjmcspecial3.jpg",
-      image: "/bjmcimage/bjmcspecial3.jpg",
+      text: "Understand the complete software development lifecycle, including planning, design, development, testing and maintenance. Learn structured methodologies and best practices to build reliable and efficient software systems. Develop the ability to manage software projects and deliver quality solutions.",
+      mobileImage: "/bcaimage/bcaimg3.png",
+      image: "/bcaimage/bcaimg3.png",
     },
     {
-      title: `Film, Video & Audio Production`,
+      title: `Computer Networks`,
       // subitle: "Build Machines that Think",
-      text: "Develop practical skills in scripting, camera handling, video shooting and editing using basic production tools. Gain hands-on experience in creating audio-visual content, short videos and media productions from concept to final output.",
-      mobileImage: "/bjmcimage/bjmcspecial4.jpg",
-      image: "/bjmcimage/bjmcspecial4.jpg",
+      text: "Gain knowledge of networking concepts, communication protocols and system connectivity. Understand how computers and devices interact, share data and function across networks. Develop a foundational understanding of network architecture and security in digital environments.",
+      mobileImage: "/bcaimage/bcaimg4.png",
+      image: "/bcaimage/bcaimg4.png",
     },
     {
-      title: `Media Studies & Communication Foundations`,
+      title: `Operating Systems`,
       // subitle: "Connect the World Through Technology",
-      text: "Understand communication theories, media laws, audience behaviour and development communication. Build analytical skills to evaluate media content, understand industry trends and interpret the role of media in society.",
-      mobileImage: "/bjmcimage/bjmcspecial5.jpg",
-      image: "/bjmcimage/bjmcspecial5.jpg",
+      text: "Understand how computer systems function at a fundamental level. Learn about process management, memory management, file systems and system operations. Develop the ability to work with and optimise system-level performance that supports software applications.",
+      mobileImage: "/bcaimage/bcaimg5.png",
+      image: "/bcaimage/bcaimg5.png",
+    },
+    {
+      title: `Application Development`,
+      // subitle: "Connect the World Through Technology",
+      text: "Build practical skills in designing and developing software applications. Work on real-world projects to create functional programs and systems. Develop hands-on experience in integrating multiple technologies to build complete, usable and efficient applications.",
+      mobileImage: "/bcaimage/bcaimg6.png",
+      image: "/bcaimage/bcaimg6.png",
     },
   ];
 
@@ -59,8 +66,8 @@ export default function LandingAccordianSpecialization() {
 
       {/* Heading */}
       <h2 className="text-center text-[clamp(38px,5vw,38px)] font-extrabold mb-10">
-        <span className="text-orange-500">Specialisations</span>{" "}
-        <span className="text-gray-800">We Offer</span>
+        <span className="text-orange-500">Core</span>{" "}
+        <span className="text-gray-800">Technical Domains</span>
       </h2>
 
       {/* ---------------- MOBILE (ACCORDION) ---------------- */}

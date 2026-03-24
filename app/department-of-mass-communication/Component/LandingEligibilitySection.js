@@ -15,7 +15,7 @@ export default function LandingEligibilitySection() {
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed mb-5 md:text-left">
-          Built for individuals who want to move beyond consuming content to creating, expressing and storytelling. BJMC/BAJMC at Tulas helps students develop creative confidence, communication skills and media awareness, preparing them to work across different media platforms and formats.
+          Built for individuals who want to move beyond consuming content to creating, expressing and storytelling. BAJMC/B.A. (Hons.) JMC at Tulas helps students develop creative confidence, communication skills and media awareness, preparing them to work across different media platforms and formats.
         </p>
 
         {/* Wrapper for Eligibility + CTA */}
@@ -48,7 +48,7 @@ export default function LandingEligibilitySection() {
                 <br />
                 <span className="font-bold text-[36px]">Media</span>
                 <br />
-                Step Into the Media &{" "}
+                Start Your Journey in Mass{" "}
                 <br />
                 <span className="font-bold text-[36px]">Communication</span>
               </h4>

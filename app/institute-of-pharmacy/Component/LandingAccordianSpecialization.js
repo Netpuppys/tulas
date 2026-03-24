@@ -9,44 +9,44 @@ export default function LandingAccordianSpecialization() {
     {
       title: "Pharmaceutical Chemistry",
       text: "Understand the chemical composition, structure and properties of drug molecules. Learn how medicines are designed, synthesised and evaluated using principles of organic, inorganic and medicinal chemistry. Develop the ability to analyse chemical behaviour and stability of drugs, forming a strong foundation for drug discovery, formulation and quality assessment in pharmaceutical industries.",
-      mobileImage: "/btechimage/btechspecial.jpg",
-      image: "/btechimage/btechspecial.jpg",
+      mobileImage: "/bpharmaimage/bpharm.png",
+      image: "/bpharmaimage/bpharm.png",
     },
     {
       title: `Pharmaceutics`,
       text: "Learn how medicines are formulated, developed and delivered in various dosage forms such as tablets, capsules, syrups and injectables. Understand drug delivery systems, formulation techniques and manufacturing processes. Gain practical exposure to formulation development and production methods used in pharmaceutical industries to ensure safety, stability and effectiveness of medicines.",
-      mobileImage: "/btechimage/btechspecial1.jpg",
-      image: "/btechimage/btechspecial1.jpg",
+      mobileImage: "/bpharmaimage/bpharm1.png",
+      image: "/bpharmaimage/bpharm1.png",
     },
     {
       title: "Pharmacology",
       text: "Study how drugs interact with the human body and produce therapeutic effects. Learn about drug mechanisms, dosage, side effects and toxicity. Develop an understanding of how medicines are used in the treatment of diseases, ensuring safe and effective use of drugs in clinical and healthcare settings.",
-      mobileImage: "/btechimage/btechspecial2.jpg",
-      image: "/btechimage/btechspecial2.jpg",
+      mobileImage: "/bpharmaimage/bpharm2.png",
+      image: "/bpharmaimage/bpharm2.png",
     },
     {
       title: "Pharmaceutical Analysis",
       text: "Gain knowledge of analytical techniques used to test the quality, purity and safety of pharmaceutical products. Learn laboratory methods, instrumentation and regulatory standards used in drug testing. Develop the ability to evaluate medicines and ensure they meet required quality and compliance standards.",
-      mobileImage: "/btechimage/btechspecial3.jpg",
-      image: "/btechimage/btechspecial3.jpg",
+      mobileImage: "/bpharmaimage/bpharm3.png",
+      image: "/bpharmaimage/bpharm3.png",
     },
     {
       title: `Pharmacognosy`,
       text: "Understand drugs derived from natural sources such as plants, herbs and marine organisms. Learn extraction, identification and evaluation of natural compounds used in medicine. Develop knowledge of traditional and modern applications of natural products in pharmaceutical and healthcare practices.",
-      mobileImage: "/btechimage/btechspecial4.jpg",
-      image: "/btechimage/btechspecial4.jpg",
+      mobileImage: "/bpharmaimage/bpharm4.png",
+      image: "/bpharmaimage/bpharm4.png",
     },
     {
       title: `Pharmaceutical Jurisprudence`,
       text: "Study the legal, ethical and regulatory framework governing the pharmaceutical industry. Learn about drug laws, quality standards, licensing and compliance requirements. Develop awareness of professional responsibilities and regulations involved in manufacturing, distribution and sale of pharmaceutical products.",
-      mobileImage: "/btechimage/btechspecial5.jpg",
-      image: "/btechimage/btechspecial5.jpg",
+      mobileImage: "/bpharmaimage/bpharm5.png",
+      image: "/bpharmaimage/bpharm5.png",
     },
         {
       title: `Clinical Pharmacy & Drug Safety`,
       text: "Develop an understanding of patient care, drug usage and safety monitoring. Learn how medicines are prescribed, dispensed and reviewed in clinical settings. Gain insights into pharmacovigilance, drug interactions and patient counselling to ensure safe and effective healthcare practices.",
-      mobileImage: "/btechimage/btechspecial6.jpg",
-      image: "/btechimage/btechspecial6.jpg",
+      mobileImage: "/bpharmaimage/bpharm6.png",
+      image: "/bpharmaimage/bpharm6.png",
     },
   ];
 
@@ -59,8 +59,8 @@ export default function LandingAccordianSpecialization() {
 
       {/* Heading */}
       <h2 className="text-center text-[clamp(38px,5vw,38px)] font-extrabold mb-10">
-        <span className="text-orange-500">Specialisations</span>{" "}
-        <span className="text-gray-800">We Offer</span>
+        <span className="text-orange-500">Core</span>{" "}
+        <span className="text-gray-800">Pharma Domains</span>
       </h2>
 
       {/* ---------------- MOBILE (ACCORDION) ---------------- */}

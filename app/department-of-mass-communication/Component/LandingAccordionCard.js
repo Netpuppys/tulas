@@ -4,41 +4,41 @@ import { useState } from "react";
 
 const faqs = [
   {
-    title: "What B.Tech specialisations are offered at Tula’s?",
+    title: "What is the difference between BAJMC and B.A.(Hons.) JMC at Tulas?",
     content: (
       <>
         <p className="mb-2 text-body">
-          Tulas offers B.Tech programs in Computer Science & Engineering, Artificial Intelligence & Machine Learning, Data Science, Cyber Security, Civil Engineering, Mechanical Engineering, Electronics & Communication Engineering and Electrical & Electronics Engineering.
+          BAJMC is a 3-year undergraduate program focused on building foundational skills in journalism, media and communication. B.A.(Hons.) JMC is a 4-year advanced program that includes deeper academic learning, research exposure and extended practical training.
         </p>
       </>
     ),
   },
   {
-    title: "What is the eligibility criteria for B.Tech admission?",
+    title: "What will students study and learn during the program?",
     content: (
       <>
         <p className="mb-2 text-body">
-          Candidates must have passed 10+2 with Physics and Mathematics as compulsory subjects along with one additional subject such as Chemistry, Computer Science, Biotechnology or related subjects, with a minimum of 45% marks (40% for reserved categories).
+          The programs cover journalism, digital media, advertising, public relations and media production, along with communication theories, media laws and news writing fundamentals. Students also build practical skills in content creation, storytelling, video production, editing and digital media.
         </p>
       </>
     ),
   },
   {
-    title: "Is lateral entry available for the B.Tech program?",
+    title: "Does Tulas provide practical exposure and industry experience?",
     content: (
       <>
         <p className="mb-2 text-body">
-          Yes. Diploma holders in Engineering or B.Sc. graduates with Mathematics may apply for B.Tech lateral entry directly into the second year, subject to eligibility criteria.
+          Yes. Students gain hands-on experience through studio training, media labs, live projects, internships and industry interactions, helping them build a strong portfolio and real-world understanding of media across print, television and digital platforms.
         </p>
       </>
     ),
   },
   {
-    title: "Does Tulas provide internship and placement opportunities for B.Tech students?",
+    title: "What are the eligibility criteria and career opportunities after B.A.(Hons.) JMC/BAJMC?",
     content: (
       <>
         <p className="mb-2 text-body">
-         Yes. The Training and Placement Cell provides internship opportunities, career training, mock interviews and connects students with leading recruiters through campus placement drives.
+         Applicants must have completed 10+2 from a recognised board in any stream with a minimum of 50% aggregate marks (45% for reserved categories). Graduates can pursue careers in journalism, content creation, social media, public relations, advertising, video production and media strategy. Minimum age required for B.A.(Hons.) JMC is 17 years.
         </p>
       </>
     ),

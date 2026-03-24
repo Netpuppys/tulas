@@ -8,7 +8,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          The BCA program focuses on developing foundational and applied knowledge in computer applications, programming and software development for entry-level roles in the IT sector.
+          The BCA program at Tulas is a 3 year program that focuses on building a strong foundation in computer applications, programming and software development. It is designed to develop analytical thinking, problem-solving ability and technical skills required to work in modern IT environments through an outcome-driven and application-oriented learning approach.
         </p>
       </>
     ),
@@ -18,7 +18,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          Students study programming languages, database systems, web development, software engineering and computer fundamentals. The curriculum includes lab work, projects and practical assignments to build hands-on technical skills.
+          Students study core subjects such as programming languages, data structures, database management systems, web technologies and software engineering. The curriculum also includes practical lab work, coding projects and application-based learning, helping students understand how to design, develop and manage real-world software systems.
         </p>
       </>
     ),
@@ -28,7 +28,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          Yes. Students gain practical exposure through lab sessions, coding projects, internships and industry interactions, enabling them to develop real-world technical competencies.
+          Yes. The program emphasises hands-on learning through lab sessions, coding projects, internships and industry interactions. Students also benefit from structured training and skill development through TCCI (Tula’s Career Catalyst Initiative), which helps align their technical skills with industry expectations.
         </p>
       </>
     ),
@@ -38,7 +38,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-         Graduates can pursue roles such as software developer, web developer, system analyst and IT support professional, or continue with higher studies such as MCA and specialised technology programs.
+        Graduates can pursue careers in software development, web development, system analysis, application development and IT support roles. Students can also opt for higher studies such as MCA or specialised programs to advance into technical and specialised roles in the technology sector.
         </p>
       </>
     ),

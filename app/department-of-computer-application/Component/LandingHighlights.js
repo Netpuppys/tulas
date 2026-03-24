@@ -18,7 +18,7 @@ export default function LandingHighlights() {
 
         {/* Heading */}
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-10">
-          <span className="text-orange-500">Tula’s</span>{" "}
+          <span className="text-orange-500">Tulas</span>{" "}
           <span className="text-black">Highlights</span>
         </h2>
 

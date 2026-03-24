@@ -45,9 +45,7 @@ export default function McaLandingWhyTulas() {
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-         Tulas MCA program is designed to develop advanced expertise in software development and information technology with strong practical exposure. 
-         <br/>
-         With a focus on technical depth and application-based learning, students build the skills required for specialised roles in the IT industry and evolving technology domains
+         Tulas MCA program is designed to develop advanced expertise in software development and information technology with strong practical exposure. With a focus on technical depth and application-based learning, students build the skills required for specialised roles in the IT industry and evolving technology domains
 
         </p>
 
@@ -61,7 +59,7 @@ export default function McaLandingWhyTulas() {
   
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">Studio</span> & Production Training
+    <span className="text-orange-500 font-bold">Live</span> Projects & Portfolio
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">

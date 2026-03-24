@@ -8,7 +8,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          The B.Pharm program focuses on building a strong foundation in pharmaceutical sciences, drug formulation and healthcare applications. It develops knowledge in pharmacology, pharmaceutics and medicinal chemistry, preparing students for roles in pharmaceutical and healthcare sectors.
+          Tulas B.Pharmaa is a 4 year program that focuses on building a strong foundation in pharmaceutical sciences, drug formulation and healthcare applications. It develops knowledge in pharmacology, pharmaceutics and medicinal chemistry, preparing students for roles in pharmaceutical and healthcare sectors.
         </p>
       </>
     ),

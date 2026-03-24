@@ -45,9 +45,7 @@ export default function LandingWhyTulas() {
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-         Tulas BCA program is designed to build strong foundations in computer applications and software development along with practical technical understanding.
-         <br/>
-         With a balance of conceptual clarity and hands-on learning, students develop the skills required to work in IT, software and technology-driven environments.
+         Tulas BCA program is designed to build strong foundations in computer applications and software development along with practical technical understanding. With a balance of conceptual clarity and hands-on learning, students develop the skills required to work in IT, software and technology-driven environments.
         </p>
 
         {/* Check Points */}
@@ -60,7 +58,7 @@ export default function LandingWhyTulas() {
   
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">Studio</span> & Production Training
+    <span className="text-orange-500 font-bold">Live</span> Projects & Portfolio
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">

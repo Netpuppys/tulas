@@ -55,7 +55,7 @@ export default function LandingGlobalHiringPartners() {
         </span>
       </h3>
 
-      <h5 className="text-center font-medium text-2xl text-gray-900 mb-8">Industry Exposure & Media Opportunities</h5>
+      <h5 className="text-center font-medium text-2xl text-orange-500 mb-8">Industry Exposure & Media Opportunities</h5>
 
 {/* ROW 1 - move left */}
 <div className="overflow-hidden mb-4">

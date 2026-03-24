@@ -76,6 +76,7 @@ import McaLandingWhyTulas from "../Component/McaLandingWhyTulas";
 import McaLandingAccordianSpecialization from "../Component/McaLandingAccordianSpecialization";
 import McaLandingEligibilitySection from "../Component/McaLandingEligibilitySection";
 import McaLandingAccordionCard from "../Component/McaLandingAccordionCard";
+import McaBannerLandingPage from "../Component/McaBannerLandingPage";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -247,7 +248,7 @@ const placementSlides = [
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
+          <McaBannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
 
           {/* <div ref={scrollRef}>
             <LandingFormNew

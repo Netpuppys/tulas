@@ -45,28 +45,26 @@ export default function LandingWhyTulas() {
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-          Tulas B.Pharm program is designed to develop advanced expertise in software development and information technology with strong practical exposure. 
-          <br/>
-          With a focus on technical depth and application-based learning, students build the skills required for specialised roles in the IT industry and evolving technology domains.
+          Tulas B.Pharm program is designed to develop advanced expertise in software development and information technology with strong practical exposure. With a focus on technical depth and application-based learning, students build the skills required for specialised roles in the IT industry and evolving technology domains.
 
         </p>
 
         {/* Check Points */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-3xl mx-auto">
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">250+</span> Pharma & Healthcare Recruiters
+    <span className="text-orange-500 font-bold">250+</span> Healthcare Recruiters
   </div>
   
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">Intenterships In</span> Pharma Companies & Labs
+    <span className="text-orange-500 font-bold">Industry</span> Exposure
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">Practical Exposure</span> to Drug Development
+    <span className="text-orange-500 font-bold">100%</span> Paid Internships
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">

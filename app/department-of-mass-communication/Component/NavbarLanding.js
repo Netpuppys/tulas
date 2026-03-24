@@ -112,7 +112,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
       </div>
 
       {/* ================= WHATSAPP FLOAT ================= */}
-      <button
+      {/* <button
         onClick={() =>
           (window.location.href =
             "https://api.whatsapp.com/send/?phone=%2B919456540269")
@@ -120,7 +120,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
         className="fixed right-4 bottom-[40px] md:bottom-[1.5vw] md:right-[2.5vw] bg-black shadow-2xl rounded-full w-16 aspect-square flex justify-center items-center z-50 pointer-events-auto"
       >
         <FaWhatsapp className="w-10 h-10 text-[#25D366]" />
-      </button>
+      </button> */}
     </div>
   );
 }

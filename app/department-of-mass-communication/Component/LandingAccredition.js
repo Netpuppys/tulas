@@ -51,9 +51,9 @@ className="flex flex-col items-center text-center min-w-[120px] md:min-w-[180px]
                 loading="lazy"
               />
 
-              <p className="text-sm font-semibold text-gray-800">
+              {/* <p className="text-sm font-semibold text-gray-800">
                 {item.title}
-              </p>
+              </p> */}
               {/* <p className="text-xs text-gray-500 mt-1">
                 {item.subtitle}
               </p> */}

@@ -8,7 +8,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          The MCa program focuses on developing foundational and applied knowledge in computer applications, programming and software development for entry-level roles in the IT sector.
+          MCA is 2 year program that focuses on developing advanced technical expertise in software development, programming and system design for specialised roles in the IT sector.
         </p>
       </>
     ),
@@ -18,7 +18,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          Students study programming languages, database systems, web development, software engineering and computer fundamentals. The curriculum includes lab work, projects and practical assignments to build hands-on technical skills.
+          Students study advanced programming, data structures, database systems, software engineering and application development. The curriculum also includes live projects and practical assignments.
         </p>
       </>
     ),
@@ -28,7 +28,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          Yes. Students gain practical exposure through lab sessions, coding projects, internships and industry interactions, enabling them to develop real-world technical competencies.
+          Yes. Students gain hands-on experience through real-time projects, internships and industry-based assignments, helping them align with current technology practices and industry requirements.
         </p>
       </>
     ),
@@ -38,7 +38,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-        Graduates can pursue roles such as software developer, application developer, system architect, data analyst and IT consultant, or explore specialised domains within the technology sector.
+       Graduates can pursue roles such as software developer, application developer, system architect, data analyst and IT consultant, or explore specialised domains within the technology sector.
         </p>
       </>
     ),

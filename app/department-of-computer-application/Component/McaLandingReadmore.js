@@ -36,12 +36,12 @@ export default function McaLandingReadmore() {
         </h2>
 
       {/* Always visible text */}
-      <h5 className="text-[19px] md:text-[23px] text-center text-gray-900 mb-4">
-        Designed for graduates aspiring to build advanced careers in software development
+      <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
+        Designed for Careers in Software Development
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        The MCA program at Tulas focuses on developing in-depth knowledge in advanced programming, application development and system architecture.
+        At Tula’s, the MCA program is designed to develop advanced technical expertise and prepare graduates for specialised roles in the evolving IT industry. The program builds in-depth knowledge across programming, application development and system design, providing a strong foundation in modern computing practices.
       </p>
 
       {/* Expandable content */}
@@ -53,10 +53,7 @@ export default function McaLandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-The curriculum covers key areas such as data structures, database management systems, software engineering, web technologies and application design. Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program integrates academic rigour with project-based learning, practical exposure and industry-relevant training.
-          <br/>
-          <br/>
-Students gain hands-on experience through real-time projects and technical assignments, preparing them for advanced roles in the IT industry.
+The curriculum covers key areas such as data structures, database management systems, software engineering, web technologies and application architecture, ensuring a comprehensive and industry-relevant learning experience. Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with project-based training, practical exposure and real-world applications. Students gain hands-on experience through live projects and technical assignments, preparing them to build, manage and innovate within technology-driven environments.
         </p>
       </div>
 

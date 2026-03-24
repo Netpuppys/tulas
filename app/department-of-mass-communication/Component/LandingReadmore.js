@@ -31,17 +31,17 @@ export default function LandingReadmore() {
     <div className="max-w-3xl md:max-w-6xl mx-auto px-4 pt-5">
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
-          <span className="text-orange-500 font-bold">BJMC</span>{" "}
+          <span className="text-orange-500 font-bold">BAJMC</span>{" "}
           <span className="text-gray-800 font-bold">at Tulas</span>
         </h2>
 
       {/* Always visible text */}
-      <h5 className="text-[19px] md:text-[23px] text-center text-gray-900 mb-4">
-        Designed for storytellers, creators and media enthusiasts.
+      <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
+        Designed for Storytellers, Creators and Media Enthusiasts
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        The BJMC (3-year) program at Tulas, along with a 4-year honors, is designed to build a strong foundation in journalism, media and communication while preparing students for the evolving media landscape.
+        The BAJMC (3-year) program at Tulas, along with a 4-year honors, is designed to build a strong foundation in journalism, media and communication while preparing students for the evolving media landscape.
       </p>
 
       {/* Expandable content */}

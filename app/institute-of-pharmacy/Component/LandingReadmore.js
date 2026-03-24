@@ -30,18 +30,18 @@ export default function LandingReadmore() {
   return (
     <div className="max-w-3xl md:max-w-6xl mx-auto px-4 pt-5">
       {/* Heading */}
-          <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
+          <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium ">
           <span className="text-orange-500 font-bold">B.Pharma</span>{" "}
           <span className="text-gray-800 font-bold">at Tulas</span>
         </h2>
 
       {/* Always visible text */}
-      {/* <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
-        Built For Tomorrow’s Engineers
-      </h5> */}
+      <h5 className="text-[19px] md:text-[23px] text-center text-orange-500 mb-4">
+        From Lab Learning to Real-World Healthcare
+      </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        The B.Pharm program at Tulas is designed for students who aspire to build careers in pharmaceutical sciences and the healthcare sector. The program focuses on developing a strong foundation in pharmaceutical chemistry, pharmacology, pharmaceutics, and drug formulation. The curriculum is thoughtfully structured to cover key areas such as medicinal chemistry, pharmaceutical analysis, drug delivery systems, and regulatory practices—ensuring a comprehensive understanding of the field
+        The B.Pharm program at Tulas is designed for students who aspire to build careers in pharmaceutical sciences and the healthcare sector. The program focuses on developing a strong foundation in pharmaceutical chemistry, pharmacology, pharmaceutics, and drug formulation. The curriculum is thoughtfully structured to cover key areas such as medicinal chemistry, pharmaceutical analysis, drug delivery systems, and regulatory practices-ensuring a comprehensive understanding of the field
       </p>
 
       {/* Expandable content */}

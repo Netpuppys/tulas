@@ -86,7 +86,7 @@ export default function LandingAlumniSuccessStories() {
               })
             }
          className="w-full md:w-auto bg-orange-500 text-white py-2 px-10 rounded-[10px] text-lg font-semibold">
-          APPLY NOW
+          Start Your Career Journey
         </button>
 
         {/* Right Arrow (desktop only) */}
