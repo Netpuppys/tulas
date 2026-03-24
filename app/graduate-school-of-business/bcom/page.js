@@ -86,6 +86,7 @@ import BcomLandingWhyTulas from "../Component/BcomLandingWhyTulas";
 import BcomLandingAccordianSpecialization from "../Component/BcomLandingAccordianSpecialization";
 import BcomLandingEligibilitySection from "../Component/BcomLandingEligibilitySection";
 import BcomLandingAccordionCard from "../Component/BcomLandingAccordionCard";
+import BcomBannerLandingPage from "../Component/BcomBannerLandingPage";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -257,7 +258,7 @@ const placementSlides = [
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
+          <BcomBannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
 
           {/* <div ref={scrollRef}>
             <LandingFormNew

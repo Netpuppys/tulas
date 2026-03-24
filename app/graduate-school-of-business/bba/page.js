@@ -88,6 +88,7 @@ import BbaLandingEligibilitySection from "../Component/BbaLandingEligibilitySect
 import BbaLandingAccordionCard from "../Component/BbaLandingAccordionCard";
 import BbaLandingGlobalHiringPartners from "../Component/BbaLandingGlobalHiringPartners";
 import BbaLandingInternshipSection from "../Component/BbaLandingInternshipSection";
+import BbaBannerLandingPage from "../Component/BbaBannerLandingPage";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -259,7 +260,7 @@ const placementSlides = [
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
+          <BbaBannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
 
           {/* <div ref={scrollRef}>
             <LandingFormNew
