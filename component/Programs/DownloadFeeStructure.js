@@ -6,7 +6,7 @@ function DownloadFeeStructure({ pdf }) {
   const [formPopup, setFormPopup] = useState(false);
   return (
     <>
-      <button
+      {/* <button
         onClick={() => setFormPopup(true)}
         className={`w-fit mx-auto mt-6 md:mt-[3%] py-3 bg-[#007A83] group relative px-10 flex items-center justify-center text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full `}
       >
@@ -14,7 +14,7 @@ function DownloadFeeStructure({ pdf }) {
         <p className="z-20 flex items-center text-white group-hover:text-[#007A83] transition-all duration-200 justify-center gap-2 text-[clamp(10px,3.5vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
           Download Fee Structure <FaDownload />
         </p>
-      </button>
+      </button> */}
       {formPopup && (
         <FormPopup
           formPopup={formPopup}
