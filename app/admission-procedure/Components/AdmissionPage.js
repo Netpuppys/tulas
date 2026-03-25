@@ -143,7 +143,7 @@ function AdmissionPage() {
           </div>
         </div>
       </div>
-      <div ref={bankRef} className="w-full h-fit bg-white">
+      {/* <div ref={bankRef} className="w-full h-fit bg-white">
         <div className="py-10 md:py-20 px-2 max-w-[1000px] mx-auto">
           <h3 className="text-[#3D001B] text-center font-[600] text-[clamp(10px,2.8vw,60px)]">
             Bank Details
@@ -261,7 +261,7 @@ function AdmissionPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div ref={prospectusRef}>
         <Vision sections={sectionsData} />
       </div>

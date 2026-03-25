@@ -205,7 +205,7 @@ const Footer = ({ set = false, color = false }) => {
             >
               DOWNLOAD PROSPECTUS
             </button>
-            <button
+            {/* <button
               onClick={() => {
                 setFormPopup(true);
                 setFeesStructure(true);
@@ -213,7 +213,7 @@ const Footer = ({ set = false, color = false }) => {
               className="w-[70%] rounded-full md:w-fit bg-[#E69706] border-2 text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
             >
               DOWNLOAD FEE STRUCTURE
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
