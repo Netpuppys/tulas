@@ -314,9 +314,9 @@ export const facultyData = [
   {
     name: "Ms. Shaista Hasan",
     designation: "Assistant Professor",
-    education: "MA",
-    publications: "0",
-    experience: "15",
+    education: "Ph.D(P)",
+    publications: "02",
+    experience: "17",
     imageUrl: ShaistaHasan,
     resume: ShaistaHasanResume,
   },
