@@ -34,7 +34,7 @@ function BcomBannerLandingPage({ bannerImg, bannerImgDesktop }) {
             <div className="w-[600px] ">
               
               <LandingFormNew
-                course={1}
+                course={130}
                 formHeading={"Start Your MBA Application"}
                 thankYOu={`/graduate-school-of-business/bcom/thank-you/${utmParams}`}
               />
@@ -48,7 +48,7 @@ function BcomBannerLandingPage({ bannerImg, bannerImgDesktop }) {
       {/* Mobile Form (unchanged) */}
       <div ref={scrollRef} className="md:hidden">
         <LandingFormNew
-          course={1}
+          course={130}
           formHeading={"MBA Admissions Open 2026"}
           thankYOu={`/graduate-school-of-business/bcom/thank-you/${utmParams}`}
         />
