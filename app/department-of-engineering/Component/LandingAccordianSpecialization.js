@@ -21,25 +21,31 @@ export default function LandingAccordianSpecialization() {
       image: "/btechimage/btechspecial1.jpg",
     },
     {
-      title: "Data Science",
+      title: `Artificial Intelligence & Machine Learning (AI & ML)`,
+      subitle: "Build Machines that Think",
+      text: "Explore technologies that are shaping the future of automation and intelligent systems. The programme focuses on machine learning, deep learning, neural networks, and data-driven decision systems, enabling students to develop smart technologies used across industries.",
+      mobileImage: "/btechimage/btechspecial4.jpg",
+      image: "/btechimage/btechspecial4.jpg",
+    },
+     {
+      title: "Data Science (AI Integrated)",
       subitle: "Turn data into futuristic decisions",
       text: "Learn to turn complex data into meaningful insights that drive decision-making. The programme covers data analytics, machine learning, visualization, and statistical modelling, equipping students to solve real-world problems across industries such as technology, finance, healthcare, and business.",
       mobileImage: "/btechimage/btechspecial2.jpg",
       image: "/btechimage/btechspecial2.jpg",
     },
     {
-      title: "Cyber Security",
+      title: "Cyber Security (AI Integrated)",
       subitle: "Secure the Digital World",
       text: "As digital systems expand, protecting data and networks has become critical. This programme provides practical knowledge in ethical hacking, network security, digital forensics, and cyber defence strategies to prepare students for roles that safeguard digital infrastructure and information systems.",
       mobileImage: "/btechimage/btechspecial3.jpg",
       image: "/btechimage/btechspecial3.jpg",
     },
     {
-      title: `Artificial Intelligence & Machine Learning (AI & ML)`,
-      subitle: "Build Machines that Think",
-      text: "Explore technologies that are shaping the future of automation and intelligent systems. The programme focuses on machine learning, deep learning, neural networks, and data-driven decision systems, enabling students to develop smart technologies used across industries.",
-      mobileImage: "/btechimage/btechspecial4.jpg",
-      image: "/btechimage/btechspecial4.jpg",
+      title: `Full Stack Development (AI Integrated)`,
+      text: "The program is designed to develop expertise in full stack development with AI integrated across application design and development. The curriculum covers data structures, front-end and back-end development, databases, cloud computing and software engineering, along with machine learning, generative AI and AI-enabled application development. Through project-based learning, students build real-world applications, APIs and AI-driven solutions, preparing them for modern software and AI-powered technology roles.",
+      mobileImage: "/btechimage/btechspecial7.jpg",
+      image: "/btechimage/btechspecial7.jpg",
     },
     {
       title: `Electronics & Communication Engineering (ECE)`,
@@ -62,6 +68,7 @@ export default function LandingAccordianSpecialization() {
       mobileImage: "/btechimage/btechspecial7.jpg",
       image: "/btechimage/btechspecial7.jpg",
     },
+       
   ];
 
   const toggle = (index) => {
@@ -120,7 +127,7 @@ export default function LandingAccordianSpecialization() {
                 alt={items[activeIndex].title}
                 width={800}
                 height={400}
-                className="rounded-lg mb-5 w-full h-[260px] md:h-[320px] object-cover"
+                className="rounded-lg mb-5 w-full h-[360px] md:h-[320px] object-cover"
               />
 
               <h3 className="text-2xl font-semibold mb-3 text-orange-500">

@@ -6,54 +6,61 @@ export default function LandingAccordianSpecialization() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const items = [
-    {
-      title: "Programming & Data Structures",
-      // subitle: "Build the foundations of tomorrow",
-      text: "Build a strong foundation in programming through languages and structured problem-solving approaches. Learn data structures, algorithms and logic development to write efficient and scalable code. Develop the ability to solve real-world problems by designing optimised solutions, which forms the core of software development and technical decision-making.",
+    // {
+    //   title: "Advanced Programming & Data Structures",
+    //   text: "Develop advanced programming skills using structured approaches to data structures and algorithms. Learn to apply logical thinking and problem-solving techniques to design efficient solutions for complex computing challenges. This domain builds a strong foundation for software development and helps students understand how scalable applications are developed and optimised in real-world environments.",
+    //   mobileImage: "/bcaimage/bcaimg.png",
+    //   image: "/bcaimage/bcaimg.png",
+    // },
+    // {
+    //   title: `Database Management Systems`,
+    //   text: "Gain in-depth understanding of database design, data modelling and management systems. Learn to organise, store and retrieve data efficiently using structured query techniques. Develop the ability to work with large datasets and understand how databases support application development and business systems in practical environments.",
+    //   mobileImage: "/bcaimage/bcaimg1.png",
+    //   image: "/bcaimage/bcaimg1.png",
+    // },
+    // {
+    //   title: "Software Engineering",
+    //   text: "Understand the complete software development lifecycle, including requirement analysis, system design, development, testing and maintenance. Learn structured methodologies and best practices used in the industry to build reliable and efficient software systems. This domain helps students develop a systematic approach to software development and project execution.",
+    //   mobileImage: "/bcaimage/bcaimg2.png",
+    //   image: "/bcaimage/bcaimg2.png",
+    // },
+    // {
+    //   title: "Web Technologies & Application Development",
+    //   text: "Develop knowledge of web technologies used to design and build modern applications. Learn how front-end and back-end systems work together to create functional and user-friendly web platforms. Gain practical exposure to application development processes used across industries.",
+    //   mobileImage: "/bcaimage/bcaimg3.png",
+    //   image: "/bcaimage/bcaimg3.png",
+    // },
+    // {
+    //   title: `Computer Networks`,
+    //   text: "Understand the fundamentals of network architecture, communication protocols and system connectivity. Learn how data is transmitted across networks and how systems interact in connected environments. Develop a foundational understanding of networking concepts used in modern computing systems.",
+    //   mobileImage: "/bcaimage/bcaimg4.png",
+    //   image: "/bcaimage/bcaimg4.png",
+    // },
+    // {
+    //   title: `Operating Systems`,
+    //   text: "Gain understanding of how computer systems function at a system level. Learn about process management, memory handling and system operations that support application performance. This domain helps students understand the interaction between hardware and software in computing environments.",
+    //   mobileImage: "/bcaimage/bcaimg5.png",
+    //   image: "/bcaimage/bcaimg5.png",
+    // },
+    // {
+    //   title: `Application Architecture & System Design`,
+    //   text: "Learn to design and structure complete software systems by integrating multiple technologies. Understand application architecture, system components and scalability considerations required to build efficient and reliable software solutions in real-world scenarios.",
+    //   mobileImage: "/bcaimage/bcaimg6.png",
+    //   image: "/bcaimage/bcaimg6.png",
+    // },
+        {
+      title: `Full Stack Software Development (AI Integrated)`,
+      // subitle: "Connect the World Through Technology",
+      text: "This specialisation focuses on developing advanced expertise in full stack software engineering with AI integrated across application architecture. The curriculum covers advanced front-end and back-end frameworks, system design, scalable architectures, cloud deployment and software engineering practices, along with AI-driven application development and automation. Students learn to design, optimise and deploy intelligent, scalable systems. Work on complex applications, APIs and AI-integrated solutions aligned with industry-level development practices.",
       mobileImage: "/bcaimage/bcaimg.png",
       image: "/bcaimage/bcaimg.png",
     },
-    {
-      title: `Database Management Systems`,
-      // subitle: "Create technology powering digital world",
-      text: "Understand how data is stored, organised and managed within applications. Learn database design, SQL and data handling techniques used in real-world systems. Develop the ability to create, manage and retrieve structured data efficiently, supporting application development and business decision-making processes.",
-      mobileImage: "/bcaimage/bcaimg1.png",
-      image: "/bcaimage/bcaimg1.png",
-    },
-    {
-      title: "Web Development",
-      // subitle: "Turn data into futuristic decisions",
-      text: "Learn to design and develop responsive websites and web applications. Gain exposure to front-end and back-end technologies, user interface design and application functionality. Develop practical skills to build interactive, user-friendly and scalable web platforms used across industries.",
-      mobileImage: "/bcaimage/bcaimg2.png",
-      image: "/bcaimage/bcaimg2.png",
-    },
-    {
-      title: "Software Engineering",
-      // subitle: "Secure the Digital World",
-      text: "Understand the complete software development lifecycle, including planning, design, development, testing and maintenance. Learn structured methodologies and best practices to build reliable and efficient software systems. Develop the ability to manage software projects and deliver quality solutions.",
+        {
+      title: `Artificial Intelligence & Machine Learning (AI & ML) `,
+      // subitle: "Connect the World Through Technology",
+      text: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development. Students work on large datasets, build high-performance models and understand real-world AI deployment. Develop the ability to design intelligent systems and deliver data-driven solutions across domains.",
       mobileImage: "/bcaimage/bcaimg3.png",
       image: "/bcaimage/bcaimg3.png",
-    },
-    {
-      title: `Computer Networks`,
-      // subitle: "Build Machines that Think",
-      text: "Gain knowledge of networking concepts, communication protocols and system connectivity. Understand how computers and devices interact, share data and function across networks. Develop a foundational understanding of network architecture and security in digital environments.",
-      mobileImage: "/bcaimage/bcaimg4.png",
-      image: "/bcaimage/bcaimg4.png",
-    },
-    {
-      title: `Operating Systems`,
-      // subitle: "Connect the World Through Technology",
-      text: "Understand how computer systems function at a fundamental level. Learn about process management, memory management, file systems and system operations. Develop the ability to work with and optimise system-level performance that supports software applications.",
-      mobileImage: "/bcaimage/bcaimg5.png",
-      image: "/bcaimage/bcaimg5.png",
-    },
-    {
-      title: `Application Development`,
-      // subitle: "Connect the World Through Technology",
-      text: "Build practical skills in designing and developing software applications. Work on real-world projects to create functional programs and systems. Develop hands-on experience in integrating multiple technologies to build complete, usable and efficient applications.",
-      mobileImage: "/bcaimage/bcaimg6.png",
-      image: "/bcaimage/bcaimg6.png",
     },
   ];
 
@@ -66,8 +73,8 @@ export default function LandingAccordianSpecialization() {
 
       {/* Heading */}
       <h2 className="text-center text-[clamp(38px,5vw,38px)] font-extrabold mb-10">
-        <span className="text-orange-500">Core</span>{" "}
-        <span className="text-gray-800">Technical Domains</span>
+        <span className="text-orange-500">Specialisations</span>{" "}
+        <span className="text-gray-800">We Offer</span>
       </h2>
 
       {/* ---------------- MOBILE (ACCORDION) ---------------- */}

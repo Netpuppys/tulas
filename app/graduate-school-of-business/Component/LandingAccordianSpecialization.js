@@ -21,14 +21,7 @@ export default function LandingAccordianSpecialization() {
       image: "/graduate-school-of-business-v2/mba/specialdesktop1.jpg",
     },
     {
-      title: "Digital Marketing",
-      subitle: "Engineer growth for digital economy",
-      text: "Build expertise in performance marketing, social media strategy, SEO, analytics and digital brand management.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
-    },
-    {
-      title: "International Business",
+      title: "International Business (IB)",
       subitle: "Lead across global markets",
       text: "Understand global trade, cross-border strategy and international market dynamics.",
       mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop3.jpg",
@@ -41,8 +34,21 @@ export default function LandingAccordianSpecialization() {
       mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop4.png",
       image: "/graduate-school-of-business-v2/mba/specialdesktop4.png",
     },
+        {
+      title: "Agri-Business Management",
+      text: "The backbone of the Indian Economy - Agriculture and Agribusiness provide 54% of employment to the Indian Population. The recent spurt in full-time MBA specialization in the Agri-Business Management program offers a focus on the development of Agri-managerial skills, in the curriculum. The program aims at enabling meritorious agricultural graduates to acquire the critical competencies to function as effective Agri-business managers.",
+      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop5jpg",
+      image: "/graduate-school-of-business-v2/mba/specialdesktop5.jpg",
+    },
     {
-      title: "Business Analytics",
+      title: "Digital Marketing (AI Integrated)",
+      subitle: "Engineer growth for digital economy",
+      text: "Build expertise in performance marketing, social media strategy, SEO, analytics and digital brand management.",
+      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
+      image: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
+    },
+    {
+      title: "Business Analytics (AI Integrated)",
       subitle: "Turn data into decisions",
       text: "Combine data, technology and strategy to drive smarter business decisions.",
       mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop5.jpg",
