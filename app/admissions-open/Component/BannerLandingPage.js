@@ -34,9 +34,9 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
             <div className="w-[600px] ">
               
               <LandingFormNew
-                course={3}
-                formHeading={"Start Your Btech Application"}
-                thankYOu={`/department-of-engineering/btech/thank-you/${utmParams}`}
+                // course={3}
+                formHeading={"Admissions Open 2026"}
+                thankYOu={`/admissions-open/thank-you/${utmParams}`}
               />
 
             </div>
@@ -48,9 +48,9 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop }) {
       {/* Mobile Form (unchanged) */}
       <div ref={scrollRef} className="md:hidden">
         <LandingFormNew
-          course={3}
-          formHeading={"MBA Admissions Open 2026"}
-          thankYOu={`/department-of-engineering/btech/thank-you/${utmParams}`}
+          // course={3}
+          formHeading={"Admissions Open 2026"}
+          thankYOu={`/admissions-open/thank-you/${utmParams}`}
         />
       </div>
     </>

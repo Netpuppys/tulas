@@ -13,7 +13,7 @@ export default function LandingInternshipSection() {
             <h2 className="text-center text-[clamp(36px,5vw,36px)] font-medium mb-10 leading-snug">
               <span className="text-orange-500 font-extrabold">Ranked Among</span>{" "}
               <br/>
-              <span className="text-gray-800 font-extrabold">India's Top B-Schools</span>
+              <span className="text-gray-800 font-extrabold">India’s Leading Institutes</span>
             </h2>
 
 {/* MOBILE IMAGE */}

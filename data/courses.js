@@ -33,6 +33,7 @@ export const specializations = {
     { id: 11, name: "B.Tech-Electronics & Communication Engineering" },
     { id: 12, name: "B.Tech-Electrical & Electronics Engineering" },
     { id: 13, name: "B.Tech-Mechanical Engineering" },
+    { id: 121, name: "B.Tech- Full Stack Development" },
   ],
   5: [
     { id: 19, name: "BAJMC" },

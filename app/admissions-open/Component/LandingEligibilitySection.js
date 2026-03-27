@@ -3,7 +3,7 @@ import { IoCheckmarkSharp } from "react-icons/io5";
 
 export default function LandingEligibilitySection() {
   return (
-    <section className="w-full py-6 bg-white flex justify-center">
+    <section className="w-full mt-12 py-6 bg-white flex justify-center">
       <div className="w-full max-w-6xl px-3">
 
         {/* Wrapper */}
@@ -33,7 +33,7 @@ export default function LandingEligibilitySection() {
                 
                 <div className="flex items-center gap-3 text-lg font-medium text-black">
                   <IoCheckmarkSharp className="text-2xl text-orange-500" />
-                  <span className="text-orange-500 font-bold">250+</span> Global Recruiters
+                  <span className="text-orange-500 font-bold">750+</span> Global Recruiters
                 </div>
 
                 <div className="flex items-center gap-3 text-lg font-medium text-black">

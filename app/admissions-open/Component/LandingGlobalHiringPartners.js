@@ -49,7 +49,7 @@ export default function LandingGlobalHiringPartners() {
     <section className="w-full pt-10 overflow-hidden">
       {/* Heading */}
       <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-2">
-        <span className="text-orange-500">350+ GLobal</span>{" "}
+        <span className="text-orange-500">750+ Global</span>{" "}
         <span className="text-gray-800">
           Hiring Partners
         </span>
