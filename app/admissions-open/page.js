@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import bannerImg from "../../public/landingbanner/generic/whytulas.jpg";
+import bannerImg from "../../public/landingbanner/generic/landingwhy.jpg";
 import bannerImgDesktop from "../../public/landingbanner/generic/whytulas2.jpg";
 import BannerLandingPage from "./Component/BannerLandingPage";
 import FormLandingPage from "./Component/FormLandingPage";

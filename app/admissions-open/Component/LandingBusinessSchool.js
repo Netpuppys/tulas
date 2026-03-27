@@ -17,7 +17,7 @@ export default function LandingInternshipSection() {
             </h2>
 
 {/* MOBILE IMAGE */}
-<div className="w-[80%] mx-auto md:hidden mb-6">
+<div className="w-[100%] mx-auto md:hidden mb-6">
   <Image
     src="/landingPage/rankingmobile.png"
     alt="Internship Mobile"
