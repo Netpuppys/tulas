@@ -1,10 +1,10 @@
 export const courses = [
   { id: 1, name: "Management" },
   { id: 2, name: "Agriculture" },
-  { id: 3, name: "Engineering (UG)" },
   { id: 5, name: "Mass Communication" },
   { id: 7, name: "Computer Application" },
   { id: 122, name: "Pharmacy" },
+  { id: 3, name: "Engineering (UG)" },
   { id: 127, name: "Engineering (PG)" },
   { id: 128, name: "Engineering (UG Lateral)"},
 

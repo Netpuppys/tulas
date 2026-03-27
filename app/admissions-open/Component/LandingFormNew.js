@@ -328,8 +328,8 @@ export default function LandingFormNew() {
               Enquire Now
             </h3> */}
             <h3 className="text-[clamp(20px,6vw,26px)] text-center font-semibold mb-3 pt-6">
-          <span className="text-orange-500 ">Start</span>{" "}
-          <span className="text-gray-800 font-medium">your Tulas Application</span>
+          <span className="text-orange-500 ">Enquire</span>{" "}
+          <span className="text-gray-800 font-medium">Now</span>
         </h3>
             <input
               type="text"

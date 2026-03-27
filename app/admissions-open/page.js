@@ -160,7 +160,7 @@ const page = () => {
       icon: InternationalBusiness,
     },
     {
-      title: "Supply Chain Management",
+      title: "Supply Chain Management",
       icon: AgriBusiness,
     },
     // {
