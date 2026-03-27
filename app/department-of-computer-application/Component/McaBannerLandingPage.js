@@ -34,7 +34,7 @@ function McaBannerLandingPage({ bannerImg, bannerImgDesktop }) {
             <div className="w-[600px] ">
               
               <LandingFormNew
-                course={8}
+                course={7}
                 formHeading={"Start Your MBA Application"}
                 thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`}
               />
@@ -48,7 +48,7 @@ function McaBannerLandingPage({ bannerImg, bannerImgDesktop }) {
       {/* Mobile Form (unchanged) */}
       <div ref={scrollRef} className="md:hidden">
         <LandingFormNew
-          course={8}
+          course={7}
           formHeading={"MBA Admissions Open 2026"}
           thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`}
         />
