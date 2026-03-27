@@ -6,42 +6,42 @@ export default function BbaLandingAccordianSpecialization() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const items = [
-    {
-      title: "Marketing",
-      text: "Understand how organisations identify customer needs and build market presence. Learn consumer behaviour, market research, product development and brand strategy. Develop the ability to plan, execute and evaluate marketing activities, enabling you to understand how businesses position themselves and compete in dynamic market environments.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop.jpg",
-    },
+    // {
+    //   title: "Marketing",
+    //   text: "Understand how organisations identify customer needs and build market presence. Learn consumer behaviour, market research, product development and brand strategy. Develop the ability to plan, execute and evaluate marketing activities, enabling you to understand how businesses position themselves and compete in dynamic market environments.",
+    //   mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop.jpg",
+    //   image: "/graduate-school-of-business-v2/mba/specialdesktop.jpg",
+    // },
     {
       title: "Digital Marketing",
       text: "Develop an understanding of digital platforms, social media, content strategies and online consumer engagement. Learn how businesses use digital channels for communication, campaign planning and performance evaluation. Gain exposure to evolving digital trends and tools that support brand visibility and customer interaction in the digital ecosystem.",
       mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
       image: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
     },
-    {
-      title: "Finance",
-      text: "Build a strong foundation in financial management, corporate finance and investment analysis. Learn budgeting, financial planning, capital allocation and risk assessment. Develop the ability to interpret financial data, evaluate performance and support informed decision-making within organisations and financial environments.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop5.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop5.jpg",
-    },
-    {
-      title: "International Business",
-      text: "Understand how businesses operate in global markets and cross-border environments. Learn international trade practices, global business strategies and cultural dynamics. Develop awareness of global economic trends and business practices, preparing you to work in multinational organisations and diverse business settings.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop3.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop3.jpg",
-    },
+    // {
+    //   title: "Finance",
+    //   text: "Build a strong foundation in financial management, corporate finance and investment analysis. Learn budgeting, financial planning, capital allocation and risk assessment. Develop the ability to interpret financial data, evaluate performance and support informed decision-making within organisations and financial environments.",
+    //   mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop5.jpg",
+    //   image: "/graduate-school-of-business-v2/mba/specialdesktop5.jpg",
+    // },
+    // {
+    //   title: "International Business",
+    //   text: "Understand how businesses operate in global markets and cross-border environments. Learn international trade practices, global business strategies and cultural dynamics. Develop awareness of global economic trends and business practices, preparing you to work in multinational organisations and diverse business settings.",
+    //   mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop3.jpg",
+    //   image: "/graduate-school-of-business-v2/mba/specialdesktop3.jpg",
+    // },
     {
       title: "Business Analytics",
       text: "Develop the ability to analyse, interpret and use data for effective business decision-making. Learn basic analytical tools, reporting techniques and data-driven approaches. Understand how organisations use data insights to improve performance, identify trends and support strategic planning across business functions.",
       mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop4.png",
       image: "/graduate-school-of-business-v2/mba/specialdesktop4.png",
     },
-    {
-      title: "Human Resource Management",
-      text: "Understand how organisations manage people, performance and workplace dynamics. Learn recruitment, training, performance management and employee engagement. Develop the ability to align human resources with organisational goals, supporting productivity, team effectiveness and overall business growth.",
-      mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop1.jpg",
-      image: "/graduate-school-of-business-v2/mba/specialdesktop1.jpg",
-    },
+    // {
+    //   title: "Human Resource Management",
+    //   text: "Understand how organisations manage people, performance and workplace dynamics. Learn recruitment, training, performance management and employee engagement. Develop the ability to align human resources with organisational goals, supporting productivity, team effectiveness and overall business growth.",
+    //   mobileImage: "/graduate-school-of-business-v2/mba/specialdesktop1.jpg",
+    //   image: "/graduate-school-of-business-v2/mba/specialdesktop1.jpg",
+    // },
   ];
 
   const toggle = (index) => {

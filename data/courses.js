@@ -4,29 +4,24 @@ export const courses = [
   { id: 3, name: "Engineering (UG)" },
   { id: 5, name: "Mass Communication" },
   { id: 7, name: "Computer Application" },
-  { id: 8, name: "Master Computer Application" },
   { id: 122, name: "Pharmacy" },
-  { id: 122, name: "D Pharmacy" },
   { id: 127, name: "Engineering (PG)" },
   { id: 128, name: "Engineering (UG Lateral)"},
-
-  { id: 129, name: "BBA"},
-  { id: 130, name: "Bcom"},
 
 ];
 export const specializations = {
   1: [
-    { id: 1, name: "B.Com (Hons.)" },
-    { id: 20, name: "BBA" },
+    { id: 1, name: "B.Com" },
+    { id: 133, name: "B.Com (Hons.)" },
     { id: 30, name: "MBA-AgriBusiness" },
-    { id: 31, name: "MBA-Business Analytics" },
-    { id: 32, name: "MBA-Entrepreneurship and Venture Development" },
     { id: 33, name: "MBA-Finance" },
     { id: 34, name: "MBA-HR" },
     { id: 35, name: "MBA-IB" },
-    { id: 36, name: "MBA-Marketing" },
-    { id: 49, name: "MBA" },
-    { id: 81, name: "MBA-Supply Chain Management" },
+    { id: 125, name: "MBA - Digital Marketing" },
+    { id: 31, name: "MBA-Business Analytics" },
+    { id: 20, name: "BBA" },
+    { id: 122, name: "BBA - Business Analytics" },
+    { id: 123, name: "BBA - Digital Marketing" },
   ],
   2: [{ id: 5, name: "B.Sc(Hons) Agriculture" }],
   3: [
@@ -38,24 +33,22 @@ export const specializations = {
     { id: 11, name: "B.Tech-Electronics & Communication Engineering" },
     { id: 12, name: "B.Tech-Electrical & Electronics Engineering" },
     { id: 13, name: "B.Tech-Mechanical Engineering" },
-    { id: 22, name: "Diploma-Civil Engineering" },
-    { id: 23, name: "Diploma-Computer Science & Engineering" },
-    { id: 24, name: "Diploma-Mechanical Engineering" },
   ],
   5: [
     { id: 19, name: "BAJMC" },
-    { id: 20, name: "BA(Hons)JMC" }
+    { id: 134, name: "BA(Hons)JMC" },
   ],
   7: [
     { id: 21, name: "BCA" },
-  ],
-  8: [
+    { id: 126, name: "BCA - AIML" },
+    { id: 127, name: "BCA - Cybersecurity" },
+    { id: 128, name: "BCA - Full Stack Development" },
     { id: 37, name: "MCA" },
+    { id: 129, name: "MCA - AIML" },
+    { id: 130, name: "MCA - Full Stack Development" },
   ],
   122: [
     { id: 82, name: "B.Pharma" },
-  ],
-  123: [
     { id: 83, name: "D.Pharma" },
   ],
   127: [
@@ -72,28 +65,12 @@ export const specializations = {
     },
     { id: 17, name: "B.Tech Lateral-Electrical & Electronics Engineering" },
     { id: 18, name: "B.Tech Lateral-Mechanical Engineering" },
-    { id: 86, name: "Diploma Lateral Computer Science"},
-    { id: 25, name: "Diploma Lateral-Civil Engineering" },
-    { id: 26, name: "Diploma Lateral-Mechanical Engineering" },
-
     { id: 53, name: "B.Tech Lateral-Data Science" },
     {
       id: 79,
       name: "B.Tech Lateral-Artificial Intelligence & Machine Learning",
     },
     { id: 80, name: "B.Tech Lateral-Cyber Security" },
-  ],
-  129: [
-    { id: 92, name: "Marketing" },
-    { id: 93, name: "Digital Marketing" },
-    { id: 94, name: "Finance" },
-    { id: 95, name: "International Business" },
-    { id: 96, name: "Business Analytics" },
-    { id: 97, name: "Human Resource Management" },    
-  ],
-    130: [
-    { id: 98, name: "B.Com" },
-    { id: 99, name: "B.Com (Hons.)" },   
   ],
 };
 export const state = [
