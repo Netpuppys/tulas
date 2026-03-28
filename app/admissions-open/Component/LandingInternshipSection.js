@@ -38,11 +38,11 @@ export default function LandingInternshipSection() {
         <span className="text-gray-800">& Internships at Tulas</span>
       </h3>
 
-        <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
+        <p className="text-gray-800 leading-relaxed text-base md:text-lg">
           The Training and Placement Cell at Tulas supports students in preparing for real-world career opportunities through structured training, internship support, and campus recruitment initiatives. With resume building, aptitude preparation, mock interviews, and regular corporate interactions, students gain the skills, confidence, and exposure needed to step into their professional journeys.
         </p>
         <br/>
-        <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
+        <p className="text-gray-800 leading-relaxed text-base md:text-lg">
           Complementing this is TCCI (Tulas Career Catalyst Initiative)-a professional capability framework designed to bridge the gap between academic learning and workplace expectations. Through assessments, targeted development, and real-world simulations, it ensures students graduate with practical skills and the readiness to perform from day one.
         </p>
       </div>

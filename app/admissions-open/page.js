@@ -302,7 +302,7 @@ const placementSlides = [
 
           <LandingAlumniSuccessStories/>
 
-          {/* <LandingProgramsSection/> */}
+          <LandingProgramsSection/>
 
           {/* <SpecialisationsCarousel/> */}
           
@@ -311,7 +311,7 @@ const placementSlides = [
 
           <LandingHighlights/>
 
-          {/* <LandingCelebrities/> */}
+          <LandingCelebrities/>
 
           <LandingLifeTulas/>
 

@@ -24,7 +24,7 @@ export default function LandingEligibilitySection() {
               </h2>
 
               {/* Description */}
-              <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed mb-5 md:text-left">
+              <p className="text-black text-[15px] md:text-[17px] leading-relaxed mb-5 md:text-left">
                 At Tulas, a future-focused curriculum blends industry relevance, AI-driven learning, and innovation-led thinking, helping students build the skills, confidence, and clarity to lead, adapt, and succeed in a rapidly evolving world. Join Tulas if you are ready to move beyond learning into real-world impact.
               </p>
 

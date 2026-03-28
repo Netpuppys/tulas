@@ -143,16 +143,16 @@ function AdmissionPage() {
           </div>
         </div>
       </div>
-      {/* <div ref={bankRef} className="w-full h-fit bg-white">
+      <div ref={bankRef} className="w-full h-fit bg-white">
         <div className="py-10 md:py-20 px-2 max-w-[1000px] mx-auto">
           <h3 className="text-[#3D001B] text-center font-[600] text-[clamp(10px,2.8vw,60px)]">
-            Bank Details
+            Pay Fee
           </h3>
           <h4 className="text-[#353535] text-center text-[clamp(10px,1vw,22px)]">
             The institute provides the facility of payment of respective fee
             (Academic & Hostel Fee) in the below mentioned accounts :
           </h4>
-          <div className="flex flex-col md:flex-row pt-10 mx-auto w-fit justify-center items-center h-fit gap-10">
+          {/* <div className="flex flex-col md:flex-row pt-10 mx-auto w-fit justify-center items-center h-fit gap-10">
             {academicFees.map((fees, index) => (
               <div
                 key={index}
@@ -182,7 +182,7 @@ function AdmissionPage() {
             <div className="w-3 h-3 rounded-full bg-[#3D0018]"></div>
             <div className="w-full h-[2px] bg-[#3D0018]"></div>
             <div className="w-3 h-3 rounded-full bg-[#3D0018]"></div>
-          </div>
+          </div> */}
           <div
             ref={feesRef}
             className="flex w-full mx-auto pt-10 gap-2 md:gap-10"
@@ -261,7 +261,7 @@ function AdmissionPage() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div ref={prospectusRef}>
         <Vision sections={sectionsData} />
       </div>
