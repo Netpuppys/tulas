@@ -311,7 +311,7 @@ const placementSlides = [
 
           <LandingHighlights/>
 
-          <LandingCelebrities/>
+          {/* <LandingCelebrities/> */}
 
           <LandingLifeTulas/>
 
