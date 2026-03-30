@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const data = {
   ug: {
-    tabs: ["B Tech", "BBA", "BCA", "BCom", "B.Com Hons.", "BSc Agriculture", "B Pharma", "BA (Hons.) JMC", "Applied Sci. & Humanities",],
+    tabs: ["B Tech", "BBA", "BCA", "BCom", "B.Com Hons.", "BSc Agriculture", "B.Pharma", "BAJMC", "BA (Hons.) JMC", "Applied Sci. & Humanities",],
     courses: {
       "B Tech": [
         {
@@ -56,12 +56,12 @@ const data = {
       ],
       BBA: [
         {
-          title: "Digital Marketing",
+          title: "Digital Marketing (AI Integrated)",
           img: "/graduate-school-of-business-v2/mba/specialdesktop2.jpg",
           desc: "Develop an understanding of digital platforms, social media, content strategies and online consumer engagement. Learn how businesses use digital channels for communication, campaign planning and performance evaluation. Gain exposure to evolving digital trends and tools that support brand visibility and customer interaction in the digital ecosystems",
         },
         {
-          title: "Business Analytics",
+          title: "Business Analytics (AI Integrated)",
           img: "/graduate-school-of-business-v2/mba/specialdesktop4.png",
           desc: "Develop the ability to analyse, interpret and use data for effective business decision-making. Learn basic analytical tools, reporting techniques and data-driven approaches. Understand how organisations use data insights to improve performance, identify trends and support strategic planning across business functions.",
         },
@@ -82,7 +82,7 @@ const data = {
         {
           title: "B.Com",
           img: "/graduate-school-of-business/bcom/specialdesktop2.png",
-          desc: "TThe B.Com (3-year) program at Tulas, along with a 4-year honours track, is designed to build a strong foundation in commerce, accounting and business practices. The B.Com program focuses on developing core knowledge in accounting, finance, taxation and business operations",
+          desc: "B.Com is 3 years. Build a sharp foundation in finance, accounting, and business strategy with real-world exposure that prepares you for corporate careers",
         },
       ],
       "B.Com Hons.": [
@@ -99,11 +99,18 @@ const data = {
           desc: "A future-focused agriculture degree rooted in science and field application Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with practical exposure, case-based learning and industry-relevant training.",
         },
       ],
-       "B Pharma": [
+       "B.Pharma": [
         {
-          title: "B Pharma",
+          title: "B.Pharma",
           img: "/bpharmaimage/bpharm.png",
           desc: "The B.Pharm program at Tulas is designed for students who aspire to build careers in pharmaceutical sciences and the healthcare sector. The program focuses on developing a strong foundation in pharmaceutical chemistry, pharmacology, pharmaceutics, and drug formulation.",
+        },
+      ],
+      "BAJMC": [
+        {
+          title: "BAJMC",
+          img: "/graduate-school-of-business/bcom/specialdesktop5.png",
+          desc: "The BAJMC (3-year) program at Tulas, along with a 4-year honors, is designed to build a strong foundation in journalism, media and communication while preparing students for the evolving media landscape.",
         },
       ],
         "BA (Hons.) JMC": [
@@ -184,30 +191,39 @@ const data = {
     },
   },
     diploma: {
-    tabs: ["Diploma in Civil Engineering", "Diploma in Mechanical Engineering", "Diploma in Computer Science Engineering"],
+    tabs: ["Civil Engineering", "Mechanical Engineering", "Computer Science Engineering", "D.Pharma"],
     courses: {
-      "Diploma in Civil Engineering": [
+      "Civil Engineering": [
         {
-          title: "Diploma in Civil Engineering",
+          title: "Civil Engineering",
           img: "/btechimage/btechspecial5.jpg",
           desc: "The Diploma in Civil Engineering is a three-year comprehensive program designed to equip students with the fundamentals of construction, design, and infrastructure development.",
         },
         
       ],
-      "Diploma in Mechanical Engineering": [
+      "Mechanical Engineering": [
        {
-          title: "Diploma in Mechanical Engineering",
+          title: "Mechanical Engineering",
           img: "/bcaimage/bcaimg.png",
           img: "/graduate-school-of-business-v2/mba/specialdesktop.jpg",
           desc: "The Diploma in Mechanical Engineering is a three-year program designed to provide students with in-depth knowledge of mechanical systems, manufacturing processes, and engineering design.",
         },
       ],
-      "Diploma in Computer Science Engineering": [
+      "Computer Science Engineering": [
         {
-          title: "Diploma in Computer Science Engineering",
+          title: "Computer Science Engineering",
           img: "/bcaimage/bcaimg.png",
           desc: "The Diploma program in Computer Science and Engineering program is a three-year undergraduate program. The Diploma program in Computer Science & Engineering stands out as one of the most coveted engineering program",
         },
+        
+      ],
+       "D.Pharma": [
+        {
+          title: "D.Pharma",
+          img: "/bpharmaimage/bpharm3.png",
+          desc: "The Diploma in Pharmacy (D.Pharm.) is a two-year program designed to provide students with comprehensive knowledge of pharmaceutical sciences, drug formulation, and healthcare practices. With an intake capacity of 60 seats",
+        },
+        
       ],
     },
   },
@@ -230,7 +246,7 @@ export default function LandingProgramsSection() {
         </h2>
 
         {/* MAIN TABS */}
-        <div className="flex justify-center gap-4 mb-6 overflow-x-auto scrollbar-hide">
+        <div className="flex justify-center gap-3 mb-6 scrollbar-hide">
           {["ug", "pg" , "diploma"].map((item) => (
             <button
               key={item}
@@ -238,7 +254,7 @@ export default function LandingProgramsSection() {
                 setActiveMain(item);
                 setActiveSub(data[item].tabs[0]);
               }}
-              className={`px-5 py-2 rounded font-medium transition ${
+              className={`px-3 py-2 rounded font-medium transition ${
                 activeMain === item
                   ? "bg-orange-500 text-white"
                   : "bg-gray-800 text-white"
@@ -247,7 +263,7 @@ export default function LandingProgramsSection() {
               {item === "ug"
   ? "Undergraduate"
   : item === "pg"
-  ? "Post Graduate"
+  ? "Post-graduate"
   : "Diploma"}
             </button>
           ))}
@@ -300,7 +316,14 @@ export default function LandingProgramsSection() {
 
                 <div className="text-xs text-gray-500 ">
                   <p>Eligibility: 10+2</p>
-                  <p>Duration: 4 years</p>
+                  <p>
+                    Duration:{" "}
+                    {activeMain === "diploma"
+                      ? "3 years"
+                      : activeMain === "pg"
+                      ? "4 years"
+                      : "4 years"}
+                  </p>
                 </div>
 
                 {/* Button at bottom */}

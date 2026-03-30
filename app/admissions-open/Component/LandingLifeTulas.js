@@ -32,8 +32,8 @@ function LandingLifeTulas() {
     <section className="bg-[#fbf4ee] pt-5 pb-16">
 
       <h3 className="text-center text-[clamp(39px,5.5vw,34px)] font-extrabold mb-6">
-        <span className="text-orange-500">Life At</span>{" "}
-        <span className="text-gray-800 ">Tulas</span>
+        <span className="text-orange-500">Life</span>{" "}
+        <span className="text-gray-800 ">at Tulas</span>
       </h3>
 
       <div className="max-w-7xl mx-auto px-3">
