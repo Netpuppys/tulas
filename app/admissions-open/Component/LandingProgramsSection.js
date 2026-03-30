@@ -183,9 +183,19 @@ const data = {
       ],
       "M.Tech": [
         {
-          title: "M.Tech",
-          img: "/btechimage/btechspecial3.jpg",
-          desc: "The Master of Technology (M.Tech) is a two-year postgraduate program aimed at professionals and students looking to deepen their expertise in engineering and technology. This advanced degree offers a robust curriculum that integrates theoretical concepts with practical applications, focusing on specialized knowledge ",
+          title: "M.Tech Computer Science & Engineering",
+          img: "/btechimage/btechspecial2.jpg",
+          desc: "Step into the world of computing, software development, and advanced technologies. The programme focuses on programming, system architecture, and emerging technologies, enabling students to design scalable digital solutions and build careers in software, product development, and technology innovation.",
+        },
+        {
+          title: "M.Tech Civil Engineering",
+          img: "/btechimage/btechspecial.jpg",
+          desc: "Design and build the infrastructure that powers cities and communities. Develop expertise in structural design, construction management and sustainable development to lead large-scale projects with precision.",
+        },
+        {
+          title: "M.Tech Thermal",
+          img: "/btechimage/btechspecial6.jpg",
+          desc: "M.Tech in Thermal Engineering is a postgraduate program specializing in energy transfer, heat transfer, and fluid dynamics, often focusing on renewable energy and HVAC systems",
         },
       ],
     },

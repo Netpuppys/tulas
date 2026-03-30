@@ -87,7 +87,7 @@ const page = () => {
 
   const handleScrollArrow = () => {
     window.scrollTo({
-      top: 0, // Scroll to the top of the page
+      top: 500, // Scroll to the top of the page
       behavior: "smooth", // Smooth scrolling effect
     });
   };
