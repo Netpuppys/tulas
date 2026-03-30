@@ -174,7 +174,7 @@ export default function LandingFormNew() {
           City: "",
         });
         setOtp("");
-        window.location.href = `/admission-thank-you/${utmParams}`;
+        window.location.href = `/admissions-open/thank-you${utmParams}`;
       })
       .catch((error) => {
         setLoading(false);
