@@ -473,7 +473,7 @@ export default function LandingFormNew() {
                 className="flex items-center text-gray-800 cursor-pointer text-[clamp(5px,3vw,30px)] md:text-[clamp(6px,0.8vw,45px)]"
               >
                 I Agree to receive information regarding my submitted
-                application by signing up on Tula's Institute
+                application by signing up on Tulas Institute
               </label>
             </div>
 
