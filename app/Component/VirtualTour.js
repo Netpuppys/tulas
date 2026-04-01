@@ -77,7 +77,7 @@ function VirtualTour() {
           alt=""
         />
       </div>
-      <div className="relative -mt-[110px] w-full h-full">
+      {/* <div className="relative -mt-[110px] w-full h-full">
         <div
           className="flex justify-around backgroundVirtual mx-auto w-[95%] md:w-[80%] px-[4%] py-6 flex-wrap gap-y-5"
           ref={statsRef}
@@ -104,7 +104,7 @@ function VirtualTour() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -79,10 +79,10 @@ import prathamNautiyal from "../public/courses/bca/prathamNautiyal.png";
 import rohitKotnala from "../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../public/courses/bca/saurabhRawat.png";
 import SanskritiBannerDesktop from "../public/Homepage/BannerHome/SanskritiBannerDesktop.webp";
-import RankedBannerDesktop from "../public/Homepage/BannerHome/RankedBannerDesktop.webp";
+import RankedBannerDesktop from "../public/Homepage/BannerHome/rankingbannernew.jpg";
 import MahakumbhBannerDesktop from "../public/Homepage/BannerHome/MahakumbhBannerDesktop.webp";
 import PlacementBannerDesktop from "../public/Homepage/BannerHome/PlacementBannerDesktop.webp";
-import RankedBannerMobile from "../public/Homepage/BannerHome/RankedBannerMobile.webp";
+import RankedBannerMobile from "../public/Homepage/BannerHome/rankBanneMobile.png";
 import SanskritiBannerMobile from "../public/Homepage/BannerHome/SanskritiBannerMobile.webp";
 import MahakumbhBannerMobile from "../public/Homepage/BannerHome/MahakumbhBannerMobile.webp";
 import PlacementBannerMobile from "../public/Homepage/BannerHome/PlacementBannerMobile.webp";
@@ -99,6 +99,17 @@ import mobilebanner3 from "../public/Homepage/BannerHome/filmfestivalmobile.webp
 import { ThreeDots } from "react-loader-spinner";
 import LandingAccredition from "./graduate-school-of-business/Component/LandingAccredition";
 import LandingAcademicNotifications from "./newhome-components/LandingAcademicNotifications";
+import HomeBusinessSection from "./newhome-components/HomeBusinessSchool";
+import HomeWhyTulas from "./newhome-components/HomeWhyTulas";
+import HomeAlumniSuccessStories from "./newhome-components/HomeAlumniSuccessStories";
+import HomeProgramsSection from "./newhome-components/HomeProgramsSection";
+import HomeGlobalHiringPartners from "./newhome-components/HomeGlobalHiringPartners";
+import HomeEligibilitySection from "./newhome-components/HomeEligibilitySection";
+import HomeInternshipSection from "./newhome-components/HomeInternshipSection";
+import HomeVirtual from "./newhome-components/HomeVirtual";
+import HomeHighlights from "./newhome-components/HomeHighlights";
+import HomeLifeTulas from "./newhome-components/HomeLifeTulas";
+import HomeMainBanner from "./newhome-components/HomeMainBanner";
 
 export default function NewHomePage() {
   const parentRef = useRef(null);
@@ -164,8 +175,8 @@ export default function NewHomePage() {
   ];
 
   const bannerImagesDesktop = [
+    // RankedBannerDesktop,
     SanskritiBannerDesktop,
-    RankedBannerDesktop,
     MahakumbhBannerDesktop,
     PlacementBannerDesktop,
     Aictedeskstop,
@@ -173,7 +184,7 @@ export default function NewHomePage() {
     // desktopbanner2,
   ];
   const bannerImagesMobile = [
-    RankedBannerMobile,
+    // RankedBannerMobile,
     SanskritiBannerMobile,
     MahakumbhBannerMobile,
     PlacementBannerMobile,
@@ -207,22 +218,19 @@ export default function NewHomePage() {
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <Navbar fullBanner={true} />
         <div className="hidden md:block">
-          <BannerHome bannerImages={bannerImagesDesktop} scrollButton={true} />
+          <HomeMainBanner bannerImages={bannerImagesDesktop} scrollButton={true} />
         </div>
         <div className="block md:hidden">
-          <BannerHome bannerImages={bannerImagesMobile} scrollButton={true} />
+          <HomeMainBanner bannerImages={bannerImagesMobile} scrollButton={true} />
         </div>
 
         <div className="relative overflow-hidden ">
-          {/* Blurred sides */}
-          {/* <div className="pointer-events-none absolute top-0 left-0 w-[10%] h-full z-10  bg-gradient-to-r from-[#007A83] to-transparent" /> */}
-          {/* Scrolling text */}
           <marquee
             direction="left"
             scrollamount="10"
             className=" w-[100%] bg-orange-500"
           >
-            <div className="w-fit py-2 md:py-6 flex gap-4 md:gap-[2%] whitespace-nowrap">
+            <div className="w-fit py-2 md:py-3 flex gap-4 md:gap-[2%] whitespace-nowrap">
               {name.map((item, index) => (
                 <div key={index} className="relative w-fit mx-auto">
                   <h2 className="text-[clamp(10px,3.5vw,50px)] text-center uppercase md:text-[clamp(10px,1.2vw,50px)] font-[TTChocolates] leading-tight font-extrabold">
@@ -234,23 +242,34 @@ export default function NewHomePage() {
           </marquee>
         </div>
 
-        <LandingAcademicNotifications/>
+        {/* <LandingAcademicNotifications/> */}
+
+        <HomeBusinessSection/>
+
+        <HomeWhyTulas/>
+
+        <HomeAlumniSuccessStories/>
+
+        <HomeProgramsSection/>
+
+        <HomeGlobalHiringPartners/>
+
+        <HomeEligibilitySection/>
+
+        <HomeInternshipSection/>
+
+        <HomeVirtual/>
+        <VirtualTour />
+
+        <HomeHighlights/>
+
+        <StatsAndNews />
+
+        <HomeLifeTulas/>
 
         <LandingAccredition/>
         {/* <AboutTulasForm />
         <Accreditation /> */}
-        <Placement features={features} />
-        <StatsAndNews />
-        <Courses parentRef={parentRef} />
-        <CoursesNew />
-        <Famous />
-        <LifeAtTulas />
-        <CampusLife />
-        <Virtual />
-        <VirtualTour />
-        <MeetOurManagement parentRef={parentRef} />
-        <AwardsCrousel />
-        <EventsAndActivites />
         {/*
         <Testimonials />
         <Video />
