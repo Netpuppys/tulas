@@ -110,6 +110,7 @@ import HomeVirtual from "./newhome-components/HomeVirtual";
 import HomeHighlights from "./newhome-components/HomeHighlights";
 import HomeLifeTulas from "./newhome-components/HomeLifeTulas";
 import HomeMainBanner from "./newhome-components/HomeMainBanner";
+import HomeFormBanner from "./newhome-components/HomeFormBanner";
 
 export default function NewHomePage() {
   const parentRef = useRef(null);
@@ -243,6 +244,7 @@ export default function NewHomePage() {
         </div>
 
         {/* <LandingAcademicNotifications/> */}
+        <HomeFormBanner/>
 
         <HomeBusinessSection/>
 

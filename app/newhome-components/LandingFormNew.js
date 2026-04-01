@@ -8,7 +8,7 @@ import {
 import "react-phone-input-2/lib/style.css";
 import { cities, courses, specializations, state } from "@/data/courses";
 import axios from "axios";
-import formPopupBackground from "../../../public/Homepage/aboutTulas/formPopup.png";
+import formPopupBackground from "../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 import { UtmContext } from "@/component/utmParams";
@@ -245,7 +245,7 @@ export default function LandingFormNew() {
   return (
     <div
       id="2"
-      className="flex flex-col-reverse md:flex-row md:gap-[10%] relative px-4 py-8 md:px-[10%] md:py-[5%] justify-between items-center"
+      className="flex flex-col-reverse md:flex-row md:gap-[10%] relative px-2 py-4 md:px-[5%] md:py-[2%] justify-between items-center"
     >
       {isOtpSent && (
         <div className="fixed w-screen h-screen top-0 left-0 z-50 flex items-center justify-center flex-col">
