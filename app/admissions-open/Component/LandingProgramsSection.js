@@ -31,21 +31,21 @@ const data = {
         },
         {
           title: "Data Science (AI Integrated)",
-          img: "/btechimage/btechspecial3.jpg",
+          img: "/btechimage/data.jpg",
           desc: "Learn to turn complex data into meaningful insights that drive decision-making. The programme covers data analytics, machine learning, visualization, and statistical modelling, equipping students to solve real-world problems across industries such as technology, finance, healthcare, and business.",
           duration: "4 years",
           eligibility: "10+2",
         },
         {
           title: "Cyber Security (AI Integrated)",
-          img: "/btechimage/btechspecial4.jpg",
+          img: "/btechimage/btechspecial3.jpg",
           desc: "As digital systems expand, protecting data and networks has become critical. This programme provides practical knowledge in ethical hacking, network security, digital forensics, and cyber defence strategies to prepare students for roles that safeguard digital infrastructure and information systems.",
           duration: "4 years",
           eligibility: "10+2",
         },
         {
           title: "Full Stack Development (AI Integrated)",
-          img: "/btechimage/btechspecial5.jpg",
+          img: "/btechimage/full.jpg",
           desc: "The program is designed to develop expertise in full stack development with AI integrated across application design and development. The curriculum covers data structures, front-end and back-end development, databases, cloud computing and software engineering, along with machine learning, generative AI and AI-enabled application development.",
           duration: "4 years",
           eligibility: "10+2",
@@ -66,7 +66,7 @@ const data = {
         },
         {
           title: "Mechanical Engineering (ME)",
-          img: "/btechimage/btechspecial4.jpg",
+          img: "/btechimage/mech.jpg",
           desc: "Develop the engineering principles that drive machines, manufacturing, and automation. The programme covers thermodynamics, design engineering, manufacturing processes, and robotics, preparing students for careers across automotive, production, aerospace, and industrial sectors.",
           duration: "4 years",
           eligibility: "10+2",
