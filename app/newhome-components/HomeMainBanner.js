@@ -95,8 +95,9 @@ function HomeMainBanner({
       onTouchEnd={handleTouchEnd}
       className={`w-full relative overflow-hidden ${
         screen
-          ? "h-[80vh] md:h-screen"
-          : "aspect-[1088/1350] md:aspect-[2745/1329] mt-20 md:mt-14 md:h-full"
+          ? "h-[100vh] md:h-screen"
+          : "aspect-[788/1350] md:aspect-[2445/1329] mt-20 md:mt-14 md:h-full"
+          // : "aspect-[1088/1350] md:aspect-[2745/1329] mt-20 md:mt-14 md:h-full"
       }`}
     >
       {/* Slides */}
@@ -108,17 +109,17 @@ function HomeMainBanner({
           }`}
         >
           <Image
-            src={image.src}
-            alt=""
-            fill
-            priority={idx === 0}
-            className="object-contain"
-          />
+  src={image.src}
+  alt=""
+  width={1920}
+  height={1080}
+  className="w-full h-auto object-contain"
+/>
         </div>
       ))}
 
       {/* Scroll Button */}
-      {scrollButton && (
+      {/* {scrollButton && (
         <button
           onClick={handleScrollArrow}
           className="absolute bottom-10 right-10 z-20 w-[100px] aspect-square"
@@ -132,7 +133,7 @@ function HomeMainBanner({
             <IoIosArrowRoundDown className="absolute text-[40px] text-white" />
           </div>
         </button>
-      )}
+      )} */}
 
       {/* Title */}
       {title && (

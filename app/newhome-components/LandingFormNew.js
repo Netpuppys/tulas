@@ -319,7 +319,7 @@ export default function LandingFormNew() {
       )}
 
       <div className="w-full md:w-[100%]  flex flex-col justify-center items-center">
-        <div className="w-full max-w-[500px] bg-white backdrop-blur-xl h-fit mx-auto rounded-2xl">
+        <div className="w-full bg-white backdrop-blur-xl h-fit mx-auto rounded-2xl">
           <form
             className="w-full h-full rounded-2xl overflow-hidden px-5  rounded-2xl border-t-[6px] border-orange-500 shadow-md"
             onSubmit={handleSubmit}
@@ -328,8 +328,8 @@ export default function LandingFormNew() {
               Enquire Now
             </h3> */}
             <h3 className="text-[clamp(20px,6vw,26px)] text-center font-semibold mb-3 pt-6">
-          <span className="text-orange-500 ">Enquire</span>{" "}
-          <span className="text-gray-800 font-medium">Now</span>
+          <span className="text-orange-500 ">Start</span>{" "}
+          <span className="text-gray-800 font-medium">Your Tulas Application</span>
         </h3>
             <input
               type="text"

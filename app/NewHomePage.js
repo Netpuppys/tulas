@@ -78,23 +78,12 @@ import gauravSrivastava from "../public/courses/bca/gauravSrivastava.png";
 import prathamNautiyal from "../public/courses/bca/prathamNautiyal.png";
 import rohitKotnala from "../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../public/courses/bca/saurabhRawat.png";
-import SanskritiBannerDesktop from "../public/Homepage/BannerHome/SanskritiBannerDesktop.webp";
-import RankedBannerDesktop from "../public/Homepage/BannerHome/rankingbannernew.jpg";
-import MahakumbhBannerDesktop from "../public/Homepage/BannerHome/MahakumbhBannerDesktop.webp";
-import PlacementBannerDesktop from "../public/Homepage/BannerHome/PlacementBannerDesktop.webp";
-import RankedBannerMobile from "../public/Homepage/BannerHome/rankBanneMobile.png";
-import SanskritiBannerMobile from "../public/Homepage/BannerHome/SanskritiBannerMobile.webp";
-import MahakumbhBannerMobile from "../public/Homepage/BannerHome/MahakumbhBannerMobile.webp";
-import PlacementBannerMobile from "../public/Homepage/BannerHome/PlacementBannerMobile.webp";
-import Aictedeskstop from "../public/Homepage/BannerHome/Aictedeskstop.jpg";
-import Aictemobile from "../public/Homepage/BannerHome/Aictemobile.jpg";
-import desktopbanner1 from "../public/Homepage/BannerHome/desktopbanner1.jpg";
-import mobilebanner1 from "../public/Homepage/BannerHome/mobilebanner1.jpg";
-import desktopbanner2 from "../public/Homepage/BannerHome/desktopbanner2.jpg";
-import mobilebanner2 from "../public/Homepage/BannerHome/mobilebanner2.jpg";
-
-import desktopbanner3 from "../public/Homepage/BannerHome/filmfestival.webp";
-import mobilebanner3 from "../public/Homepage/BannerHome/filmfestivalmobile.webp";
+import desktopbanner1 from "../public/Homepage/BannerHome/newbanner.jpg";
+import mobilebanner1 from "../public/Homepage/BannerHome/newbannermobile.jpg";
+import desktopbanner2 from "../public/Homepage/BannerHome/newbanner1.jpg";
+import mobilebanner2 from "../public/Homepage/BannerHome/newbannermobile1.jpg";
+import desktopbanner3 from "../public/Homepage/BannerHome/newbanner2.jpg";
+import mobilebanner3 from "../public/Homepage/BannerHome/newbannermobile2.jpg";
 
 import { ThreeDots } from "react-loader-spinner";
 import LandingAccredition from "./graduate-school-of-business/Component/LandingAccredition";
@@ -111,6 +100,9 @@ import HomeHighlights from "./newhome-components/HomeHighlights";
 import HomeLifeTulas from "./newhome-components/HomeLifeTulas";
 import HomeMainBanner from "./newhome-components/HomeMainBanner";
 import HomeFormBanner from "./newhome-components/HomeFormBanner";
+import HomePerks from "./newhome-components/HomePerks";
+import HomeStatsAndNews from "./newhome-components/HomeStatsAndNews";
+import HomeCelebrities from "./newhome-components/HomeCelebrities";
 
 export default function NewHomePage() {
   const parentRef = useRef(null);
@@ -176,22 +168,14 @@ export default function NewHomePage() {
   ];
 
   const bannerImagesDesktop = [
-    // RankedBannerDesktop,
-    SanskritiBannerDesktop,
-    MahakumbhBannerDesktop,
-    PlacementBannerDesktop,
-    Aictedeskstop,
     desktopbanner1,
-    // desktopbanner2,
+    desktopbanner2,
+    desktopbanner3,
   ];
   const bannerImagesMobile = [
-    // RankedBannerMobile,
-    SanskritiBannerMobile,
-    MahakumbhBannerMobile,
-    PlacementBannerMobile,
-    Aictemobile,
     mobilebanner1,
-    // mobilebanner2,
+    mobilebanner2,
+    mobilebanner3,
   ];
   const name = [
     "Ranked 86th by Times of B School in India.",
@@ -250,6 +234,8 @@ export default function NewHomePage() {
 
         <HomeWhyTulas/>
 
+        <HomePerks/>
+
         <HomeAlumniSuccessStories/>
 
         <HomeProgramsSection/>
@@ -265,7 +251,9 @@ export default function NewHomePage() {
 
         <HomeHighlights/>
 
-        <StatsAndNews />
+        <HomeStatsAndNews/>
+
+        <HomeCelebrities/>
 
         <HomeLifeTulas/>
 

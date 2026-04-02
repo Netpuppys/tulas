@@ -13,11 +13,11 @@ function HomeLifeTulas() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    "College Vibes Fest",
-    "Hostel & Mess Life",
-    "Infrastructure Labs",
-    "Sports Grounds",
-    "Gym Yoga"
+    "Fests",
+    "Hostel",
+    "Infrastructure",
+    "Sports",
+    "Wellness"
   ];
 
   const tabImages = [

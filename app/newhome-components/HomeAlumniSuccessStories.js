@@ -34,7 +34,7 @@ export default function HomeAlumniSuccessStories() {
       {/* Heading */}
       <div className="px-4 md:px-12">
         <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-3">
-          <span className="text-orange-500">Tulas</span>{" "}
+          <span className="text-orange-500">Alumini</span>{" "}
           <span className="text-gray-800">Success Stories</span>
         </h3>
 

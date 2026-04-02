@@ -370,7 +370,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
       {!isChecked && (
         <>
           <div
-  className={`fixed bottom-0 left-0 w-full z-50 pointer-events-auto bg-[#007A83] mdNavbar:hidden`}
+  className={`fixed bottom-0 left-0 w-full z-50 pointer-events-auto bg-orange-500 mdNavbar:hidden`}
           >
             <div className="w-full mx-auto flex justify-between h-fit py-2">
               <a

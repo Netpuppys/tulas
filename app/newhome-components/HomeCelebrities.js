@@ -5,39 +5,39 @@ import Image from "next/image";
 const celebrities = [
   {
     name: "Papon",
-    img: "/images/papon.jpg",
+    img: "/Homepage/celeb/papon.jpg",
   },
   {
     name: "Darshan Raval",
-    img: "/images/darshan.jpg",
+    img: "/Homepage/celeb/darshan.jpg",
   },
   {
     name: "Chitrashi Rawat",
-    img: "/images/chitrashi.jpg",
+    img: "/Homepage/celeb/chitrashi.png",
   },
   {
     name: "Dilip Sen",
-    img: "/images/dilip.jpg",
+    img: "/Homepage/celeb/dilip.png",
   },
   {
     name: "Hardy Sandhu",
-    img: "/images/hardy.jpg",
+    img: "/Homepage/celeb/hardy.jpg",
   },
   {
     name: "Jimmy Shergill",
-    img: "/images/jimmy.jpg",
+    img: "/Homepage/celeb/jimmy.png",
   },
   {
     name: "Salim & Sulaiman",
-    img: "/images/salim.jpg",
+    img: "/Homepage/celeb/salim.jpg",
   },
   {
     name: "Dino Morea",
-    img: "/images/dino.jpg",
+    img: "/Homepage/celeb/dino.jpg",
   },
 ];
 
-export default function LandingCelebrities() {
+export default function HomeCelebrities() {
   return (
     <section className="py-10">
       <div className="max-w-7xl mx-auto px-4">
