@@ -45,7 +45,6 @@ function Navbar({ fullBanner = false, scroled = false }) {
 
       window.addEventListener("scroll", handleScroll);
 
-      // Cleanup the event listener when the component unmounts
       return () => {
         window.removeEventListener("scroll", handleScroll);
       };
