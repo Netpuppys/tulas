@@ -205,6 +205,16 @@ const sitemap = [
           },
         ],
       },
+       {
+        title: "School of Law",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "LLB",
+            linkTo: "/courses/llb",
+          },
+        ],
+      },
     ],
   },
   {
