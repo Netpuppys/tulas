@@ -64,7 +64,7 @@ function HomeStatsAndNews() {
         {/* HEADING */}
         <div className="text-center pt-8 md:pt-[3%] px-4">
           <h2 className="text-[clamp(28px,5vw,50px)] font-extrabold text-black">
-            <span className="text-orange-500">Happening</span>{" "}
+            <span className="text-orange-500">Happenings</span>{" "}
             <span>at Tulas</span>
           </h2>
         </div>

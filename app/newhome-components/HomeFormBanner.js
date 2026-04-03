@@ -12,19 +12,19 @@ function HomeFormBanner() {
   const departments = [
     {
       title: "School Of Management",
-      courses: ["Bachelor in Business Administration (BBA)", "Master in Business Administration (MBA)"],
+      courses: ["Bachelor in Business Administration (BBA)","Bachelor in Business Administration (Digital Marketing)","Bachelor in Business Administration (Business Analytics)", "Master in Business Administration (MBA)", "Master in Business Administration (Marketing)", "Master in Business Administration (Human Resource Management)", "Master in Business Administration (International Business)", "Master in Business Administration (Finance)", "Master in Business Administration (Agri-Business Management)", "Master in Business Administration (Digital Marketing)", "Master in Business Administration (Business Analytics)",],
     },
     {
       title: "Department Of Engineering",
-      courses: ["Civil Engineering", "Computer Science & Engineering (CSE)", "Computer Science & Engineering (AI&ML) ", "Computer Science & Engineering ( Cyber Security)", "Computer Science & Engineering ( Data Science)", "Electronics & Communication Engineering (ECE)", "Electrical & Electronics Engineering (EEE)", "Mechanical Engineering (ME)"],
+      courses: ["Civil Engineering (CE)", "Computer Science & Engineering (CSE)", "Computer Science & Engineering (AI&ML) ", "Computer Science & Engineering (Cyber Security)", "Computer Science & Engineering (Data Science)", "Electronics & Communication Engineering (ECE)", "Electrical & Electronics Engineering (EEE)", "Mechanical Engineering (ME)", "Master of Technology (M.Tech)", "Diploma in Civil Engineering", "Diploma in Mechanical Engineering", "Diploma in Computer Science Engineering"],
     },
     {
       title: "Department Of Commerce",
-      courses: ["Bachelor in Commerce", "Bachelor in Commerce (Hons.)"],
+      courses: ["Bachelor in Commerce (B.Com)", "Bachelor in Commerce (Hons.)"],
     },
     {
       title: "Department Of Computer Applications",
-      courses: ["Bachelor in Computer Applications (BCA)", "Masters in Computer Applications (MCA)"],
+      courses: ["Bachelor in Computer Applications (BCA)", "Bachelor in Computer Applications (Full Stack Software Development)", "Bachelor in Computer Applications (AI & ML)", "Masters in Computer Applications (MCA)", "Masters in Computer Applications (Full Stack Software Development)",  "Masters in Computer Applications (AI & ML)"],
     },
     {
       title: "Department Of Mass Comm. & Journalism",
@@ -32,7 +32,15 @@ function HomeFormBanner() {
     },
     {
       title: "Department Of Pharmacy",
-      courses: ["Bachelor in Pharmacy", "Diploma in Pharmacy"],
+      courses: ["Bachelor in Pharmacy (B.Pharma)", "Diploma in Pharmacy (D.Pharma)"],
+    },
+        {
+      title: "School of Law",
+      courses: ["LL.B (Bachelor of Legislative Law)", "B.B.A LL.B (Hons.)", "B.A LL.B (Hons.)"],
+    },
+        {
+      title: "Department of Agriculture",
+      courses: ["B.Sc.(Hons.) Agriculture"],
     },
   ];
 
@@ -62,7 +70,7 @@ function HomeFormBanner() {
         onClick={() =>
           setOpenIndex(openIndex === index ? null : index)
         }
-        className="w-full bg-[#eeeeee] hover:bg-white transition-all duration-200 rounded-xl px-5 py-3 flex justify-between text-sm md:text-[18px] font-semibold text-gray-800 shadow-sm"
+        className="w-full bg-[#eeeeee] hover:bg-white transition-all duration-200 rounded-xl px-5 py-3 flex justify-between text-sm md:text-[16px] font-semibold text-gray-800 shadow-sm"
       >
         <span className="text-left leading-snug">
           {words.map((word, idx) => (

@@ -10,8 +10,8 @@ function HomeVirtual() {
     <div className="py-8 md:py-[4%] h-fit w-full flex flex-col justify-center items-center px-4 md:px-0">
       <div className="pb-8 md:pb-[3%] px-4 text-wrap text-[clamp(10px,5.3vw,55px)] md:text-[clamp(10px,1.8vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-tight md:leading-none z-10 text-center">
         <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-4">
-        <span className="text-orange-500">Virtual Walkthrough of Campus</span>{" "}
-        <span className="text-gray-800">with 360-degree Tour</span>
+        <span className="text-orange-500">Take a</span>{" "}
+        <span className="text-gray-800">Virtual Tour</span>
       </h3>
       </div>
       <div className="flex w-full md:w-[85%] flex-col md:flex-row justify-between items-center md:gap-16">

@@ -31,9 +31,41 @@ const celebrities = [
     name: "Salim & Sulaiman",
     img: "/Homepage/celeb/salim.jpg",
   },
-  {
-    name: "Dino Morea",
+    {
+    name: "Dino",
     img: "/Homepage/celeb/dino.jpg",
+  },
+  {
+    name: "Abhinav Kumar",
+    img: "/Homepage/celeb/AbhinavKumar.webp",
+  },
+    {
+    name: "Amit Kumar Sinha",
+    img: "/Homepage/celeb/AmitKumarSinha.webp",
+  },
+    {
+    name: "Anil Sahsra buddhe",
+    img: "/Homepage/celeb/AnilSahsrabuddhe.webp",
+  },
+    {
+    name: "Anurag Tripathi",
+    img: "/Homepage/celeb/AnuragTripathi.webp",
+  },
+    {
+    name: "Arvind Pandey",
+    img: "/Homepage/celeb/ArvindPandey.webp",
+  },
+    {
+    name: "Ashok Kumar",
+    img: "/Homepage/celeb/AshokKumar.webp",
+  },
+    {
+    name: "David",
+    img: "/Homepage/celeb/David.webp",
+  },
+    {
+    name: "Hemant Pandey",
+    img: "/Homepage/celeb/HemantPandey.webp",
   },
 ];
 

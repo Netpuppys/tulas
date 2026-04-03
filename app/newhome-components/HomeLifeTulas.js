@@ -33,44 +33,42 @@ function HomeLifeTulas() {
 
       <h3 className="text-center text-[clamp(39px,5.5vw,34px)] font-extrabold mb-6">
         <span className="text-orange-500">Life</span>{" "}
-        <span className="text-gray-800 ">at Tulas</span>
+        <span className="text-gray-800">at Tulas</span>
       </h3>
 
       <div className="max-w-7xl mx-auto px-3">
 
         {/* Tabs */}
-       {/* Tabs */}
-<div className="flex md:justify-center gap-2 overflow-x-auto whitespace-nowrap pb-3 mb-6 scrollbar-hide">
-  {tabs.map((tab, index) => {
-    const [first, ...rest] = tab.split(" ");
+        <div className="flex md:justify-center gap-3 overflow-x-auto whitespace-nowrap pb-3 mb-6 scrollbar-hide">
+          {tabs.map((tab, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveTab(index)}
+              className={`flex-shrink-0 px-6 py-2 rounded-full text-sm font-semibold transition border
+                ${
+                  activeTab === index
+                    ? "bg-orange-500 text-white border-orange-500"
+                    : "bg-white text-gray-800 border-gray-300"
+                }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
 
-    return (
-      <button
-        key={index}
-        onClick={() => setActiveTab(index)}
-        className={`flex-shrink-0 px-6 py-2 rounded-full text-sm font-medium transition border
-          ${
-            activeTab === index
-              ? "bg-white"
-              : "bg-white"
-          }`}
-      >
-        <span className="text-orange-500">{first}</span>{" "}
-        <span className="text-black">{rest.join(" ")}</span>
-      </button>
-    );
-  })}
-</div>
+        {/* Scrollable Image with fixed height */}
+        <div className="overflow-x-auto scrollbar-hide">
+          <div className="flex justify-start">
 
-        {/* Horizontal Scroll Image */}
-        <div className="overflow-x-auto rounded-xl shadow-sm bg-white scrollbar-hide">
-          <div className="min-w-[1200px]">
-            <Image
-              src={tabImages[activeTab]}
-              alt={tabs[activeTab]}
-              className="w-full h-auto"
-              priority
-            />
+            <div className="h-[580px] sm:h-[500px] md:h-[680px] flex-shrink-0">
+              <Image
+                src={tabImages[activeTab]}
+                alt={tabs[activeTab]}
+                className="h-full w-auto object-contain"
+                priority
+              />
+            </div>
+
           </div>
         </div>
 

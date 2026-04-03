@@ -8,7 +8,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import TulasFooter from "../public/Components/Footer/tulasFooter.png";
+import TulasFooter from "../public/Components/Footer/tulaslogo.png";
 import Link from "next/link";
 import ContactForm from "@/app/contact/Component/form";
 import innovationAndStartupPolicy from "../public/research/innovation-and-startup-policy.pdf";
@@ -32,6 +32,13 @@ import Brouchure from "../public/FooterPDf/Brouchure.pdf";
 import FeeStructure from "../public/FooterPDf/FeeStructure.pdf";
 const subTitle =
   "Affiliated to Uttarakhand Technical University and Sri Dev Suman University, Approved by AICTE, Ministry of HRD, Govt of India";
+      const handleScrollArrow = () => {
+    window.scrollTo({
+      top: 1000, // Scroll to the top of the page
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  };
+
 
 const Footer = ({ set = false, color = false }) => {
   const keyLinks = [
@@ -131,7 +138,7 @@ const Footer = ({ set = false, color = false }) => {
   const cardsData = [
     {
       leftText:
-        "Copyright © 2025 Tula's Institute, Dehradun | All Rights Reserved",
+        "Copyright © 2025 Tulas Institute, Dehradun | All Rights Reserved",
     },
     {
       leftText: (
@@ -177,26 +184,24 @@ const Footer = ({ set = false, color = false }) => {
           }  flex flex-col md:flex-row gap-2 justify-between px-4 md:px-[4%] py-3 md:py-0 items-center z-40`}
         >
           <h3 className="font-[Oswald] text-center w-full md:w-fit text-[clamp(10px,6vw,40px)] md:text-[clamp(10px,2vw,40px)]">
-            BE A PART OF TULA'S FAMILY
+            BE A PART OF TULAS FAMILY
           </h3>
           <div className="flex justify-center flex-wrap w-full md:w-fit gap-2">
+            <button
+             onClick={handleScrollArrow}
+              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
+            >
+              ENQUIRE NOW
+            </button>
             <button
               onClick={() => {
                 window.location.href = `/apply-now/${utmParams}`;
               }}
               className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
             >
-              ENQUIRY NOW
-            </button>
-            <button
-              onClick={() => {
-                window.location.href = `/apply-now?`;
-              }}
-              className="w-[70%] rounded-full md:w-fit bg-[#E69706] border-2 text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
-            >
               APPLY TODAY
             </button>
-            <button
+            {/* <button
               onClick={() => {
                 setFormPopup(true);
                 setProspectus(true);
@@ -204,7 +209,7 @@ const Footer = ({ set = false, color = false }) => {
               className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
             >
               DOWNLOAD PROSPECTUS
-            </button>
+            </button> */}
             {/* <button
               onClick={() => {
                 setFormPopup(true);
@@ -257,7 +262,7 @@ const Footer = ({ set = false, color = false }) => {
               </h4>
             </div>
             <p className="text-[clamp(10px,5vw,20px)] md:text-[clamp(10px,1.1vw,20px)] text-center md:text-start font-[TTChocolates] mb-8">
-              Tula's Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road,
+              Tulas Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road,
               Dehradun- 248011
               <strong className="text-[#E69706]"> Uttarakhand</strong>
             </p>

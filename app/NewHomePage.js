@@ -103,6 +103,8 @@ import HomeFormBanner from "./newhome-components/HomeFormBanner";
 import HomePerks from "./newhome-components/HomePerks";
 import HomeStatsAndNews from "./newhome-components/HomeStatsAndNews";
 import HomeCelebrities from "./newhome-components/HomeCelebrities";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import HomeAwards from "./newhome-components/HomeAwards";
 
 export default function NewHomePage() {
   const parentRef = useRef(null);
@@ -115,6 +117,13 @@ export default function NewHomePage() {
 
     return () => clearTimeout(timer);
   }, []);
+
+    const handleScrollArrow = () => {
+    window.scrollTo({
+      top: 1400, // Scroll to the top of the page
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  };
 
   const features = [
     {
@@ -201,7 +210,7 @@ export default function NewHomePage() {
         </div>
       )}
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
-        <Navbar fullBanner={true} />
+        <NewNavbar fullBanner={true}  handleScrollArrow={handleScrollArrow} />
         <div className="hidden md:block">
           <HomeMainBanner bannerImages={bannerImagesDesktop} scrollButton={true} />
         </div>
@@ -218,7 +227,7 @@ export default function NewHomePage() {
             <div className="w-fit py-2 md:py-3 flex gap-4 md:gap-[2%] whitespace-nowrap">
               {name.map((item, index) => (
                 <div key={index} className="relative w-fit mx-auto">
-                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center uppercase md:text-[clamp(10px,1.2vw,50px)] font-[TTChocolates] leading-tight font-extrabold">
+                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center capitalize md:text-[clamp(10px,1.2vw,50px)] font-[TTChocolates] leading-tight font-extrabold">
                     {item}
                   </h2>
                 </div>
@@ -257,13 +266,10 @@ export default function NewHomePage() {
 
         <HomeLifeTulas/>
 
+        <HomeAwards/>
+
         <LandingAccredition/>
-        {/* <AboutTulasForm />
-        <Accreditation /> */}
-        {/*
-        <Testimonials />
-        <Video />
-        */}
+
         <Footer />
       </div>
     </>

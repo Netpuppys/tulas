@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import { FaPen } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import { FiInfo } from "react-icons/fi";
 import { PiPencilSimpleLineLight } from "react-icons/pi";
 import { SiGoogleforms } from "react-icons/si";
 import logo360 from "../../public/Components/Navbar/logo360.png";
@@ -12,13 +13,15 @@ import NBA from "../../public/Components/Navbar/NBA.png";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import TulasLogo from "../../public/Components/Navbar/TulasLogo.png";
 import whatsapp from "../../public/Components/Navbar/whatsapp.png";
+import touricon from "../../public/Components/Navbar/rotation.png";
+import whatsappnew from "../../public/Components/Navbar/whatsapp2.png";
 import Years20 from "../../public/graduate-school-of-business/mba/20Years.png";
 import FormPopup from "../formPopup";
 import { UtmContext } from "../utmParams";
 import NavbarDesktop from "./Component/NavbarDesktop";
 import NavbarMobile from "./Component/NavbarMobile";
 
-function Navbar({ fullBanner = false, scroled = false }) {
+function NewNavbar({ fullBanner = false, scroled = false ,  handleScrollArrow,}) {
   const [isChecked, setIsChecked] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [formPopup, setFormPopup] = useState(false);
@@ -27,6 +30,8 @@ function Navbar({ fullBanner = false, scroled = false }) {
   const [nestedLinksVisible, setNestedLinksVisible] = useState(false);
   const [scrolled, setScrolled] = useState(scroled);
   const { utmParams } = useContext(UtmContext);
+  const [showBottomBar, setShowBottomBar] = useState(true);
+  const [showStickyBar, setShowStickyBar] = useState(true);
 
   // useEffect to check if the page is scrolled
   useEffect(() => {
@@ -100,7 +105,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
       <div className={`z-[9999] relative`}>
         {/* top bar */}
         <div
-          className={`w-full pointer-events-auto mdNavbar:bg-[rgba(19,19,19,0.50)] mdNavbar:backdrop-blur-xl hidden mdNavbar:flex`}
+          className={`w-full pointer-events-auto mdNavbar:bg-[rgba(19,19,19,0.80)] mdNavbar:backdrop-blur-xl hidden mdNavbar:flex`}
         >
           <div className="w-[95%] mx-auto flex items-center justify-center gap-4 top-0 border-b-[0.5px] border-[#9A9A9A] h-fit py-2">
             <a
@@ -120,7 +125,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
         </div>
         <div
           className={`mdNavbar:px-10 w-full relative ${
-            !isChecked ? "bg-[rgba(19,19,19,0.50)] backdrop-blur-xl" : ""
+            !isChecked ? "bg-[rgba(19,19,19,0.80)] backdrop-blur-xl" : ""
           } h-full py-2 flex flex-col justify-center`}
         >
           <div className="hidden h-fit w-full mdNavbar:flex justify-between items-center">
@@ -369,8 +374,8 @@ function Navbar({ fullBanner = false, scroled = false }) {
       )}
       {!isChecked && (
         <>
-          <div
-  className={`fixed bottom-0 left-0 w-full z-50 pointer-events-auto bg-[#007A83] mdNavbar:hidden`}
+          {/* <div
+  className={`fixed bottom-0 left-0 w-full z-50 pointer-events-auto bg-orange-500 mdNavbar:hidden`}
           >
             <div className="w-full mx-auto flex justify-between h-fit py-2">
               <a
@@ -382,14 +387,72 @@ function Navbar({ fullBanner = false, scroled = false }) {
               </a>
               <div className="w-[1px] bg-white"></div>
               <button
-                onClick={handleFormPopup}
+                onClick={handleScrollArrow}
                 className={`w-[calc(50%-0.5px)] gap-2 flex justify-center items-center text-white rounded-full`}
               >
                 <SiGoogleforms /> Enquire Now
               </button>
             </div>
-          </div>
-          <div
+          </div> */}
+{/* MOBILE STICKY BAR */}
+{!isChecked && (
+  <>
+    {showStickyBar && (
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[92%] z-50 mdNavbar:hidden pointer-events-auto">
+        <div className="flex items-center justify-between px-4 py-3 rounded-full border-2 border-gray-300 bg-white shadow-lg">
+
+          {/* CALL NOW */}
+          <a
+            href="tel:+91-9837983721"
+            className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold"
+          >
+            <IoCall className="text-lg" />
+            CALL NOW
+          </a>
+
+          {/* 360 */}
+          <button
+            onClick={() =>
+              (window.location.href = `/virtual-tour/index.html/${utmParams}`)
+            }
+          >
+            <Image src={touricon} alt="360" className="w-8 h-8" />
+          </button>
+
+          {/* WHATSAPP */}
+          <button
+            onClick={() =>
+              (window.location.href =
+                "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
+            }
+          >
+            <Image src={whatsappnew} alt="whatsapp" className="w-8 h-8" />
+          </button>
+
+          {/* CLOSE */}
+          <button
+            onClick={() => setShowStickyBar(false)}
+            className="text-2xl text-black"
+          >
+            ✕
+          </button>
+
+        </div>
+      </div>
+    )}
+
+   {/* FLOATING REOPEN BUTTON */}
+{!showStickyBar && (
+  <button
+    onClick={() => setShowStickyBar(true)}
+    className="fixed bottom-6 right-4 z-[10000] mdNavbar:hidden bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg pointer-events-auto"
+  >
+    <FiInfo className="text-2xl" />
+  </button>
+)}
+  </>
+)}
+          {/* <div
             className={`w-fit right-4 top-[50%] flex flex-col gap-2 -translate-y-1/2 absolute pointer-events-auto`}
           >
             <button
@@ -428,11 +491,11 @@ function Navbar({ fullBanner = false, scroled = false }) {
                 className="w-[25px] h-[25px] mdNavbar:w-[29px] mdNavbar:h-[29px]"
               />
             </a>
-          </div>
+          </div> */}
         </>
       )}
     </div>
   );
 }
 
-export default Navbar;
+export default NewNavbar;
