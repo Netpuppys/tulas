@@ -222,11 +222,12 @@ function Navbar({ fullBanner = false, scroled = false }) {
               />
               <div className="h-[60px] w-[1px] bg-white"></div>
               <Image
-                src={TulasLogo}
-                alt=""
-                onClick={() => (window.location.href = `/${utmParams}`)}
-                className="w-[12vw] h-full pointer-events-auto cursor-pointer"
-              />
+  src={TulasLogo}
+  alt="Tulas Logo"
+  width={200}
+  height={80}
+  className="w-[14vw] h-auto object-contain"
+/>
             </div>
             {/* )} */}
 
@@ -312,11 +313,13 @@ function Navbar({ fullBanner = false, scroled = false }) {
                   href={`/${utmParams}`}
                   className="mdNavbar:hidden animate-translateButton"
                 >
-                  <Image
-                    src={TulasLogo}
-                    alt=""
-                    className="w-[50vw] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
-                  />
+                 <Image
+  src={TulasLogo}
+  alt="Tulas Logo"
+  width={200}
+  height={80}
+  className="w-[50vw] mdNavbar:w-[160px] h-auto object-contain"
+/>
                 </Link>
               )}
             </div>
