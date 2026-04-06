@@ -9,6 +9,9 @@ const Virtual = dynamic(() => import("./Component/Virtual"), { ssr: false });
 const VirtualTour = dynamic(() => import("./Component/VirtualTour"), {
   ssr: false,
 });
+const MegaMenu = dynamic(() => import("@/component/Navbar/MegaMenu"), {
+  ssr: false,
+});
 const Courses = dynamic(() => import("./Component/Courses"), { ssr: false });
 const CampusLife = dynamic(() => import("./Component/CampusLife"), {
   ssr: false,
@@ -105,6 +108,7 @@ import HomeStatsAndNews from "./newhome-components/HomeStatsAndNews";
 import HomeCelebrities from "./newhome-components/HomeCelebrities";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import HomeAwards from "./newhome-components/HomeAwards";
+// import MegaMenu from "@/component/Navbar/MegaMenu";
 
 export default function NewHomePage() {
   const parentRef = useRef(null);
@@ -211,6 +215,15 @@ export default function NewHomePage() {
       )}
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
         <NewNavbar fullBanner={true}  handleScrollArrow={handleScrollArrow} />
+        {/* <MegaMenu/> */}
+        {/* Desktop Navbar */}
+{/* <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true} handleScrollArrow={handleScrollArrow} />
+</div> */}
         <div className="hidden md:block">
           <HomeMainBanner bannerImages={bannerImagesDesktop} scrollButton={true} />
         </div>
