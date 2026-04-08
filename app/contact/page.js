@@ -63,11 +63,18 @@ function Contact() {
       link: "mailto:info@tulas.edu.in",
     },
     {
-      title: "ADDRESS",
+      title: "DEHRADUN, UTTRAKHAND",
       image: address,
       description:
         "Tula's Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road, Dehradun- 248011 Uttarakhand",
       link: "https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D",
+    },
+        {
+      title: "PATNA, BIHAR",
+      image: address,
+      description:
+        "409 RN Tower Commercial Complex Near Ram Jaipal More Bailey Road Patna",
+      link: "https://maps.app.goo.gl/nEuFfzgapR1AMYN68",
     },
     {
       title: "COLLEGE LANDLINE",
@@ -97,8 +104,8 @@ function Contact() {
     },
     {
       title: "BIHAR ADMISSION HELPLINE",
-      link: "tel:+91-9837983721",
-      button: "+91 98379 83721",
+      link: "tel:+91-7503332999",
+      button: "+91 7503332999",
       image: bihar,
     },
   ];

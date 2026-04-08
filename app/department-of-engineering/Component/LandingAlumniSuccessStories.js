@@ -33,7 +33,7 @@ export default function LandingAlumniSuccessStories() {
     <section className="w-full py-12">
       {/* Heading */}
       <div className="px-4 md:px-12">
-        <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-3">
+        <h3 className="text-[clamp(38px,6vw,36px)] font-extrabold mb-3" style={{ textAlign: "center" }}>
           <span className="text-orange-500">Tulas</span>{" "}
           <span className="text-gray-800">Success Stories</span>
         </h3>

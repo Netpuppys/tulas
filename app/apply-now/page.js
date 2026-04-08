@@ -53,6 +53,11 @@ import saurabhRawat from "../../public/courses/bca/saurabhRawat.png";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
 import { useInView } from "react-intersection-observer";
+import { IoCheckmarkSharp } from "react-icons/io5";
+import ApplyBanner from "./components/ApplyBanner";
+import LandingAlumniSuccessStories from "../department-of-engineering/Component/LandingAlumniSuccessStories";
+import HomePerks from "../newhome-components/HomePerks";
+
 
 const page = () => {
   useLayoutEffect(() => {
@@ -303,19 +308,86 @@ const page = () => {
       </head>
       <body>
         <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} />
-        <div className="w-full min-h-screen overflow-x-hidden relative font-[TTChocolatesMedium]">
-          {/* banner */}
-          <div className="w-screen h-[80vh] md:h-screen relative overflow-hidden flex items-center justify-center">
-            <Image
-              src={bannerImage}
-              className="w-full h-full object-cover"
-              alt=""
-            />
-            <div className="w-[90%] mx-auto md:w-fit h-fit absolute bottom-0 md:top-1/2 md:-translate-y-1/2 md:right-[10vw]">
-              <div ref={scrollRef} id="ee-form-15"></div>
-            </div>
-          </div>
 
+        <ApplyBanner/>
+
+
+                        <section className="w-full mt-12 py-6 bg-white flex justify-center">
+                <div className="w-full max-w-6xl px-3">
+          
+                  {/* Wrapper */}
+                  <div className="flex flex-col md:flex-row gap-8 md:items-stretch">
+          
+                    {/* LEFT SECTION */}
+                    <div className="md:w-1/2 w-full flex justify-center items-center">
+  <div className="w-full max-w-xl text-center flex flex-col items-center">
+
+    {/* Heading */}
+    <h2 className="text-[clamp(28px,5vw,38px)] font-medium mb-2" style={{ textAlign: "center" }}>
+      <span className="text-orange-500 font-extrabold">
+        Where Future-Ready
+      </span>{" "}
+      <span className="text-gray-800 font-extrabold">
+        Careers Begin
+      </span>
+    </h2>
+
+    {/* Description */}
+    <p className="text-black text-[15px] md:text-[17px] leading-relaxed mb-5">
+      At Tulas, a future-focused curriculum blends industry relevance, AI-driven learning, and innovation-led thinking, helping students build the skills, confidence, and clarity to lead, adapt, and succeed in a rapidly evolving world. Join Tulas if you are ready to move beyond learning into real-world impact.
+    </p>
+
+    {/* Check Points */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 w-full">
+      
+      <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
+        <IoCheckmarkSharp className="text-2xl text-orange-500" />
+        <span className="text-orange-500 font-bold">750+</span> Global Recruiters
+      </div>
+
+      <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
+        <IoCheckmarkSharp className="text-2xl text-orange-500" />
+        <span className="text-orange-500 font-bold">AI</span> Native Specialisations
+      </div>
+
+      <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
+        <IoCheckmarkSharp className="text-2xl text-orange-500" />
+        <span className="text-orange-500 font-bold">100%</span> Paid Internships
+      </div>
+
+      <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
+        <IoCheckmarkSharp className="text-2xl text-orange-500" />
+        <span className="text-orange-500 font-bold">100%</span> Placement Support
+      </div>
+
+    </div>
+
+  </div>
+</div>
+          
+                    {/* CTA SECTION */}
+          <div className="md:w-1/2 w-full flex justify-center items-center">
+  <div id="ee-form-15" className="w-full max-w-md mx-auto"></div>
+</div>
+          
+                  </div>
+          
+                </div>
+              </section>
+        
+        <div className="w-full min-h-screen overflow-x-hidden relative">
+              <LandingAlumniSuccessStories/>
+              
+              <HomePerks/>
+
+              <div className="w-full flex justify-center items-center py-4">
+  <p className="text-sm text-gray-600">
+    Copyright © 2026 Tulas Institute, Dehradun | All Rights Reserved
+  </p>
+</div>
+
+
+{/* 
           <div className="py-8 md:py-[4%] bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
             {sections.map((section, index) => {
               const { ref, inView } = useInView({
@@ -359,25 +431,27 @@ const page = () => {
                 </div>
               );
             })}
-          </div>
-          <CarouselContent section={false} />
+          </div> */}
+
+
+          {/* <CarouselContent section={false} /> */}
           {/* Cutting Edge */}
-          <CuttingEdge
+          {/* <CuttingEdge
             scrollRef={scrollRef}
             heading={"Courses we Offered"}
             departments={departments}
             journeyHeading={"Your Journey at Tula’s Institute"}
             journey={journey}
             journeyQuote={journeyQuote}
-          />
+          /> */}
 
           {/* Why Choose Tulas */}
-          <WhyChoose />
+          {/* <WhyChoose /> */}
           {/* At a glance */}
           {/* <AtGlance /> */}
-          <CampusLife />
+          {/* <CampusLife /> */}
           {/*Faculty */}
-          <div className="pt-8 md:pt-[4%] px-4 md:px-6 flex flex-col items-center justify-center w-full">
+          {/* <div className="pt-8 md:pt-[4%] px-4 md:px-6 flex flex-col items-center justify-center w-full">
             <h8
               style={{
                 textAlign: "center",
@@ -398,14 +472,14 @@ const page = () => {
           </div>
           <div className="pb-8 md:pb-[4%] px-4 w-full">
             <FacultyDataLandingPage facultyData={facultyDataCSE} />
-          </div>
+          </div> */}
           {/* Accreditations */}
           {/* <Accreditations /> */}
           {/* Placement */}
-          <div className="pb-8 md:pb-[3%]">
+          {/* <div className="pb-8 md:pb-[3%]">
             <PlacementProgram features={features} />
-          </div>
-          <Placement scrollRef={scrollRef} />
+          </div> */}
+          {/* <Placement scrollRef={scrollRef} />
           {scrolled && (
             <button
               onClick={handleScrollArrow}
@@ -420,7 +494,7 @@ const page = () => {
                 <IoIosArrowRoundUp className="absolute text-[40px] font-thin text-[#292929]" />
               </div>
             </button>
-          )}
+          )} */}
         </div>
       </body>
     </>
