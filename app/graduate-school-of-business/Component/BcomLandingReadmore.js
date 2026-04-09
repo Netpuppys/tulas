@@ -32,7 +32,7 @@ export default function BcomLandingReadmore() {
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
           <span className="text-orange-500 font-bold">B.Com</span>{" "}
-          <span className="text-gray-800 font-bold">at Tulas</span>
+          <span className="text-gray-800 font-bold">at Tulas, Dehradun</span>
         </h2>
 
       {/* Always visible text */}
@@ -41,7 +41,7 @@ export default function BcomLandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        The B.Com (3-year) program at Tula’s, along with a 4-year honours track, is designed to build a strong foundation in commerce, accounting and business practices.
+        The 3 year B.Com program at Tulas Dehradun, along with a 4-year B.Com (Hons), is designed to build a strong foundation in commerce, accounting and business practices.
       </p>
 
       {/* Expandable content */}
@@ -53,10 +53,10 @@ export default function BcomLandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-          The B.Com program focuses on developing core knowledge in accounting, finance, taxation and business operations. The B.Com (Hons.) program extends this learning with advanced coursework, analytical depth and a deeper understanding of financial systems and business strategy.
+          As one of the best BCom (Hons) colleges in Dehradun, Tulas provides a curriculum that blends core concepts of accounting, finance, economics, and business law with hands-on learning experiences. Our mission is to prepare students for dynamic careers in commerce, entrepreneurship, and financial services
           <br/>
           <br/>
-          Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with practical exposure, case-based learning and industry-relevant training. Students gain understanding across financial accounting, corporate finance, business law, taxation, economics and management, preparing them for careers in finance, business and related domains.
+          Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, this B.Com program in Uttarkhand combines academic learning with practical exposure. Recognized among the best commerce colleges in Uttarakhand,Tulas is known for personalized mentorship, industry exposure, and strong academic framework.
 
         </p>
       </div>

@@ -32,7 +32,7 @@ export default function LandingReadmore() {
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium ">
           <span className="text-orange-500 font-bold">B.Pharma</span>{" "}
-          <span className="text-gray-800 font-bold">at Tulas</span>
+          <span className="text-gray-800 font-bold">at Tulas, Dehradun</span>
         </h2>
 
       {/* Always visible text */}
@@ -41,7 +41,7 @@ export default function LandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        The B.Pharm program at Tulas is designed for students who aspire to build careers in pharmaceutical sciences and the healthcare sector. The program focuses on developing a strong foundation in pharmaceutical chemistry, pharmacology, pharmaceutics, and drug formulation. The curriculum is thoughtfully structured to cover key areas such as medicinal chemistry, pharmaceutical analysis, drug delivery systems, and regulatory practices-ensuring a comprehensive understanding of the field
+        The B.Pharm program at Tulas, Dehradun Uttarakhand is designed for students who aspire to build careers in pharmaceutical sciences and the healthcare sector. As one of the leading B.Pharma colleges in Dehradun, Tulas offers a curriculum that combines pharmaceutical science with practical lab work, clinical exposure, and ethical training. We prepare students not just for jobs but for meaningful careers in drug development, healthcare, and biotech industries.
       </p>
 
       {/* Expandable content */}
@@ -53,7 +53,7 @@ export default function LandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-         Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with practical lab work, research exposure, and industry-relevant training. Students gain hands-on experience through laboratory experiments, formulation techniques, and applied assignments, preparing them for diverse roles across pharmaceutical industries, healthcare organisations, and research domains.
+        Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, B.Pharma at Tulas is a good choice in Uttarakhand. We emphasize research, innovation, and real-world application to ensure our graduates are equipped for both higher studies and immediate industry roles.
         </p>
       </div>
 

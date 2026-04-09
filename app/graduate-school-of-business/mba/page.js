@@ -81,6 +81,7 @@ import LandingBusinessSchool from "../Component/LandingBusinessSchool";
 import LandingWhyTulas from "../Component/LandingWhyTulas";
 import LandingEligibilitySection from "../Component/LandingEligibilitySection";
 import LandingAccordianSpecialization from "../Component/LandingAccordianSpecialization";
+import MbaBannerLandingPage from "../Component/MbaBannerLandingPage";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -252,7 +253,7 @@ const placementSlides = [
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
+          <MbaBannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
 
           {/* <div ref={scrollRef}>
             <LandingFormNew

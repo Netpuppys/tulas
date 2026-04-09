@@ -32,7 +32,7 @@ export default function LandingReadmore() {
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
           <span className="text-orange-500 font-bold">B.Tech</span>{" "}
-          <span className="text-gray-800 font-bold">at Tulas</span>
+          <span className="text-gray-800 font-bold">at Tulas, Dehradun</span>
         </h2>
 
       {/* Always visible text */}
@@ -41,7 +41,7 @@ export default function LandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        The B.Tech at Tula’s is a 4-year full-time industry-aligned undergraduate program designed to develop future-ready engineers with strong technical foundations, analytical thinking and practical problem-solving abilities.
+       With BTech admissions 2026 now open, aspiring engineers have the opportunity to join a campus that blends innovation, industry exposure, and a student-centric approach.
       </p>
 
       {/* Expandable content */}
@@ -53,10 +53,11 @@ export default function LandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-          Supported by NAAC A+ accreditation and NBA accredited programs, the curriculum follows a structured, outcome-driven academic framework that combines classroom learning with advanced laboratories, project-based assignments, technical workshops and industry exposure through internships. Learning is strengthened through advanced laboratories, project-based assignments, technical workshops and internship opportunities, supported by a dedicated training and placement ecosystem.
+          The B.Tech program at Tulas Dehradun is a 4-year full-time industry-aligned undergraduate program designed to develop future-ready engineers with strong technical foundations, analytical thinking and practical problem-solving abilities. Supported by NAAC A+ accreditation and NBA accreditation, Btech program  at Tulas has specialized programs in Computer Science & Engineering, Artificial Intelligence & Machine Learning, Data Science, Cyber Security, Civil Engineering, Mechanical Engineering, Electronics & Communication Engineering, and Electrical & Electronics Engineering, this B.Tech program in Uttarakhand equips students with both deep technical expertise and the ability to innovate across evolving engineering and technology domains.
+
           <br/>
           <br/>
-          With specialized programs in Computer Science & Engineering, Artificial Intelligence & Machine Learning, Data Science, Cyber Security, Civil Engineering, Mechanical Engineering, Electronics & Communication Engineering, and Electrical & Electronics Engineering, the program equips students with both deep technical expertise and the ability to innovate across evolving engineering and technology domains.
+         Recognized as the best engineering college in Uttarakhand, Tulas stands out for its commitment to quality education and career-focused learning. As a private BTech college with placements, we ensure that students are not only job-ready but future-ready, with top recruiters visiting us every year. The curriculum follows a structured, outcome-driven academic framework that combines classroom learning with advanced laboratories, project-based assignments, technical workshops and industry exposure through internships. Learning is strengthened through advanced laboratories, project-based assignments, technical workshops and internship opportunities, supported by a dedicated training and placement ecosystem.
         </p>
       </div>
 

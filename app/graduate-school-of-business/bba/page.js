@@ -89,6 +89,7 @@ import BbaLandingAccordionCard from "../Component/BbaLandingAccordionCard";
 import BbaLandingGlobalHiringPartners from "../Component/BbaLandingGlobalHiringPartners";
 import BbaLandingInternshipSection from "../Component/BbaLandingInternshipSection";
 import BbaBannerLandingPage from "../Component/BbaBannerLandingPage";
+import BbaAlumni from "../Component/BbaAlumni";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -310,7 +311,7 @@ const placementSlides = [
             </div>
           </div> */}
 
-          <LandingAlumniSuccessStories/>
+          <BbaAlumni/>
 
           {/* <SpecialisationsCarousel/> */}
           

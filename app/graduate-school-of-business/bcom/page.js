@@ -87,6 +87,7 @@ import BcomLandingAccordianSpecialization from "../Component/BcomLandingAccordia
 import BcomLandingEligibilitySection from "../Component/BcomLandingEligibilitySection";
 import BcomLandingAccordionCard from "../Component/BcomLandingAccordionCard";
 import BcomBannerLandingPage from "../Component/BcomBannerLandingPage";
+import BcomAlumni from "../Component/BcomAlumni";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -307,7 +308,7 @@ const placementSlides = [
             </div>
           </div> */}
 
-          <LandingAlumniSuccessStories/>
+          <BcomAlumni/>
 
           {/* <SpecialisationsCarousel/> */}
           

@@ -32,7 +32,7 @@ export default function LandingReadmore() {
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
           <span className="text-orange-500 font-bold">BAJMC</span>{" "}
-          <span className="text-gray-800 font-bold">at Tulas</span>
+          <span className="text-gray-800 font-bold">at Tulas, Dehradun</span>
         </h2>
 
       {/* Always visible text */}
@@ -41,7 +41,7 @@ export default function LandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        The BAJMC (3-year) program at Tulas, along with a 4-year honors, is designed to build a strong foundation in journalism, media and communication while preparing students for the evolving media landscape.
+       Ranked among the top BJMC colleges in Dehradun, Tulas offers a rich blend of classroom learning, field assignments, studio experience, and internships. From news reporting and film production to digital content creation and public relations, we prepare students for diverse and dynamic careers in media.
       </p>
 
       {/* Expandable content */}
@@ -53,7 +53,7 @@ export default function LandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-          The program focuses on developing creative thinking, storytelling ability and communication skills across multiple media platforms. Students gain exposure to journalism, digital media, advertising, public relations and audio-visual production, while also building a strong academic base through media laws, communication theories and news writing fundamentals.
+          As the best BJMC college in Uttarakhand, Tulas offers BJMC (3-year) program, along with a 4-year honors, designed to build a strong foundation in journalism, media and communication while preparing students for the evolving media landscape.
           <br/>
           <br/>
           Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program combines classroom learning with hands-on training in fully equipped media labs, studios and production environments. Through live projects, media productions, internships and real-world assignments, students build a strong portfolio and practical understanding of how media works across print, television and digital platforms.

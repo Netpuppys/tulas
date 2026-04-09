@@ -32,7 +32,7 @@ export default function McaLandingReadmore() {
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
           <span className="text-orange-500 font-bold">MCA</span>{" "}
-          <span className="text-gray-800 font-bold">at Tulas</span>
+          <span className="text-gray-800 font-bold">at Tulas, Dehradun</span>
         </h2>
 
       {/* Always visible text */}
@@ -41,7 +41,7 @@ export default function McaLandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        At Tula’s, the MCA program is designed to develop advanced technical expertise and prepare graduates for specialised roles in the evolving IT industry. The program builds in-depth knowledge across programming, application development and system design, providing a strong foundation in modern computing practices.
+        At Tulas, the MCA program at Tulas is designed to develop advanced technical expertise and prepare graduates for specialised roles in the evolving IT industry. Supported by NAAC A+ accreditation and an outcome-driven academic framework, this MCA program in Uttarakhand combines academic learning with project-based training, practical exposure and real-world applications. Students gain hands-on experience through live projects and technical assignments, preparing them to build, manage and innovate.
       </p>
 
       {/* Expandable content */}
@@ -53,7 +53,7 @@ export default function McaLandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-The curriculum covers key areas such as data structures, database management systems, software engineering, web technologies and application architecture, ensuring a comprehensive and industry-relevant learning experience. Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with project-based training, practical exposure and real-world applications. Students gain hands-on experience through live projects and technical assignments, preparing them to build, manage and innovate within technology-driven environments.
+          As one of the best MCA colleges in Dehradun, Tulas offers a curriculum that blends core computing principles with real-world application. From software engineering and cloud computing to data analytics and AI, students gain exposure to the latest technologies shaping the tech industry.
         </p>
       </div>
 

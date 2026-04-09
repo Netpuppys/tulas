@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 
-export default function LandingAlumniSuccessStories() {
+export default function BbaAlumni() {
   const scrollRef = useRef(null);
 
   const alumniCards = [
@@ -38,8 +38,8 @@ export default function LandingAlumniSuccessStories() {
           <span className="text-gray-800">Success Stories</span>
         </h3>
 
-        <p className="text-gray-600 text-sm text-center md:text-base mb-8">
-          At Tulas Dehradun, practical learning, industry exposure, and career support prepare students for real-world opportunities. Our alumni work across industries such as IT and software development, banking and finance, pharmaceutical and healthcare, media and digital platforms. Admissions 2026 are now open for B.Pharma at Tulas. If you're searching for a recognised college in Dehradun that delivers both knowledge and opportunity then this is your destination.
+        <p className="text-gray-600 text-sm text-center md:text-base mb-8 ">
+        At Tulas Dehradun, practical learning, industry exposure, and career support prepare students for real-world opportunities. Our alumni work across industries such as IT and software development, banking and finance, pharmaceutical and healthcare, media and digital platforms. Admissions 2026 are now open for BBA at Tulas. If you're searching for a recognised college in Dehradun that delivers both knowledge and opportunity then this is your destination.
         </p>
       </div>
 

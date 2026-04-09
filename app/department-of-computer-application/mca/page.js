@@ -77,6 +77,7 @@ import McaLandingAccordianSpecialization from "../Component/McaLandingAccordianS
 import McaLandingEligibilitySection from "../Component/McaLandingEligibilitySection";
 import McaLandingAccordionCard from "../Component/McaLandingAccordionCard";
 import McaBannerLandingPage from "../Component/McaBannerLandingPage";
+import McaAlumni from "../Component/McaAlumni";
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
@@ -295,7 +296,7 @@ const placementSlides = [
             </div>
           </div> */}
 
-          <LandingAlumniSuccessStories/>
+          <McaAlumni/>
 
           {/* <SpecialisationsCarousel/> */}
           

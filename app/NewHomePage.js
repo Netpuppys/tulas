@@ -214,16 +214,16 @@ export default function NewHomePage() {
         </div>
       )}
       <div ref={parentRef} className="w-full h-fit overflow-x-hidden">
-        <NewNavbar fullBanner={true}  handleScrollArrow={handleScrollArrow} />
+        {/* <NewNavbar fullBanner={true}  handleScrollArrow={handleScrollArrow} /> */}
         {/* <MegaMenu/> */}
         {/* Desktop Navbar */}
-{/* <div className="hidden md:block">
+<div className="hidden md:block">
   <MegaMenu />
 </div>
 
 <div className="block md:hidden">
   <NewNavbar fullBanner={true} handleScrollArrow={handleScrollArrow} />
-</div> */}
+</div>
         <div className="hidden md:block">
           <HomeMainBanner bannerImages={bannerImagesDesktop} scrollButton={true} />
         </div>

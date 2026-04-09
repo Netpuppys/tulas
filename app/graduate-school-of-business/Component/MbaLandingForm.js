@@ -14,7 +14,7 @@ import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 import { UtmContext } from "@/component/utmParams";
-function LandingFormNew({
+function MbaLandingForm({
   course,
   thankYOu,
   formHeading,
@@ -414,10 +414,14 @@ function LandingFormNew({
   // disabled={!formData.Course}
 >
   <option value="">Select Specialization</option>
+<option value="49">MBA</option>
+  <option value="30">MBA-AgriBusiness</option>
+  <option value="33">MBA-Finance</option>
+  <option value="34">MBA-HR</option>
+  <option value="35">MBA-IB</option>
+  <option value="125">MBA - Digital Marketing</option>
+  <option value="31">MBA-Business Analytics</option>
 
-  <option value="20">BBA</option>
-  <option value="122">BBA - Business Analytics</option>
-  <option value="123">BBA - Digital Marketing</option>
 </select>
               <select
                 value={formData.State}
@@ -569,4 +573,4 @@ function LandingFormNew({
   );
 }
 
-export default LandingFormNew;
+export default MbaLandingForm;

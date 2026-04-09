@@ -2,9 +2,9 @@ import React, { useRef, useContext } from "react";
 import Image from "next/image";
 import LandingFormNew from "./LandingFormNew";
 import { UtmContext } from "@/component/utmParams";
-import BcomLandingForm from "./BcomLandingForm";
+import MbaLandingForm from "./MbaLandingForm";
 
-function BcomBannerLandingPage({ bannerImg, bannerImgDesktop }) {
+function MbaBannerLandingPage({ bannerImg, bannerImgDesktop }) {
   const scrollRef = useRef(null);
   const { utmParams } = useContext(UtmContext);
 
@@ -34,10 +34,10 @@ function BcomBannerLandingPage({ bannerImg, bannerImgDesktop }) {
           <div className="hidden md:flex absolute inset-0 items-center justify-end pr-0">
             <div className="w-[600px] ">
               
-              <BcomLandingForm
+              <MbaLandingForm
                 course={1}
                 formHeading={"Start Your MBA Application"}
-                thankYOu={`/graduate-school-of-business/bcom/thank-you/${utmParams}`}
+                thankYOu={`/graduate-school-of-business/mba/thank-you/${utmParams}`}
               />
 
             </div>
@@ -48,14 +48,14 @@ function BcomBannerLandingPage({ bannerImg, bannerImgDesktop }) {
 
       {/* Mobile Form (unchanged) */}
       <div ref={scrollRef} className="md:hidden">
-        <BcomLandingForm
+        <MbaLandingForm
           course={1}
           formHeading={"MBA Admissions Open 2026"}
-          thankYOu={`/graduate-school-of-business/bcom/thank-you/${utmParams}`}
+          thankYOu={`/graduate-school-of-business/mba/thank-you/${utmParams}`}
         />
       </div>
     </>
   );
 }
 
-export default BcomBannerLandingPage;
+export default MbaBannerLandingPage;

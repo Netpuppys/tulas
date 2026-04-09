@@ -43,6 +43,16 @@ const faqs = [
       </>
     ),
   },
+  {
+    title: "Why Tulas is the best BCA college in Dehradun, Uttrakhand?",
+    content: (
+      <>
+        <p className="mb-2 text-body">
+        If you are looking for a BCA college in Uttarakhand, Dehradun then Tulas is suggested as it is UGC approved and NAAC A+ Accredited. It has an amazing campus life, students club, annual fests and industry workshops on futuristic skills and courses that will help students get good placements. With a good alumni record, alumni of Tulas are working in different industries at good packages.BCA admissions 2026 are open. Apply now by filling the admission form.
+        </p>
+      </>
+    ),
+  },
 ];
 
 export default function LandingAccordionCard() {

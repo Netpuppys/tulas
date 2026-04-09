@@ -14,7 +14,7 @@ import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 import { UtmContext } from "@/component/utmParams";
-function LandingFormNew({
+function BcomLandingForm({
   course,
   thankYOu,
   formHeading,
@@ -413,11 +413,11 @@ function LandingFormNew({
   className="w-full classic px-5 py-3 h-12 border border-gray-300 text-gray-500 bg-[#FFFFFF] rounded-[10px]"
   // disabled={!formData.Course}
 >
-  <option value="">Select Specialization</option>
+  <option value="">Select Course</option>
 
-  <option value="20">BBA</option>
-  <option value="122">BBA - Business Analytics</option>
-  <option value="123">BBA - Digital Marketing</option>
+  <option value="1">B.Com</option>
+  <option value="133">B.Com (Hons.)</option>
+
 </select>
               <select
                 value={formData.State}
@@ -569,4 +569,4 @@ function LandingFormNew({
   );
 }
 
-export default LandingFormNew;
+export default BcomLandingForm;

@@ -32,7 +32,7 @@ export default function BbaLandingReadmore() {
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
           <span className="text-orange-500 font-bold">BBA</span>{" "}
-          <span className="text-gray-800 font-bold">at Tulas</span>
+          <span className="text-gray-800 font-bold">at Tulas, Dehradun</span>
         </h2>
 
       {/* Always visible text */}
@@ -41,7 +41,7 @@ export default function BbaLandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-       At Tulas, the BBA program is designed to provide students with a strong academic foundation along with practical understanding of business and management. The curriculum covers key areas such as marketing, finance, human resource management, operations and organisational behaviour, ensuring well-rounded business knowledge. Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program combines classroom learning with case studies, projects and industry exposure
+      As one of the reputed BBA colleges in Dehradun Uttarakhand, the BBA program at Tulas is designed to provide students with a strong academic foundation along with practical understanding of business and management.  Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program combines classroom learning with case studies, projects and industry exposure.
       </p>
 
       {/* Expandable content */}
@@ -53,7 +53,7 @@ export default function BbaLandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-         Students develop analytical, managerial and decision-making skills, preparing them for career opportunities in corporate organisations and for higher studies such as MBA. With a focus on real-world application, students engage in practical assignments, presentations and collaborative projects that enhance problem-solving abilities, communication skills and business awareness, helping them adapt effectively to dynamic corporate environments.
+        With a focus on real-world application, students engage in practical assignments, presentations and collaborative projects that enhance problem-solving abilities, communication skills and business awareness, helping them adapt effectively to dynamic corporate environments. If you're looking for the best BBA college in Uttarakhand, Tulas Institute offers the perfect balance of quality education, experienced faculty, and career-oriented exposure.
         </p>
       </div>
 

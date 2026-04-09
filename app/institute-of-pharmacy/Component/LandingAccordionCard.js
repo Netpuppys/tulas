@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const faqs = [
   {
-    title: "What is the focus of the B.Pharma program at Tula’s?",
+    title: "What is the focus of the B.Pharma program at Tulas?",
     content: (
       <>
         <p className="mb-2 text-body">
@@ -24,7 +24,7 @@ const faqs = [
     ),
   },
   {
-    title: "Does Tula’s provide practical exposure and industry experie",
+    title: "Does Tulas provide practical exposure and industry experience ?",
     content: (
       <>
         <p className="mb-2 text-body">
@@ -39,6 +39,16 @@ const faqs = [
       <>
         <p className="mb-2 text-body">
          Graduates can pursue careers in pharmaceutical companies, healthcare organisations, research laboratories and regulatory bodies. Roles include pharmacist, drug analyst, quality control executive, medical representative and research associate, or students can opt for higher studies such as M.Pharm and specialised programs.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Why Tulas is the best B.Pharma college in Dehradun, Uttrakhand?",
+    content: (
+      <>
+        <p className="mb-2 text-body">
+         If you are looking for a B.Pharma college in Uttarakhand, Dehradun then Tulas is suggested as it is UGC approved and NAAC A+ Accredited. It has an amazing campus life, students club, annual fests and industry workshops on futuristic skills and courses that will help students get good placements. With a good alumni record, alumni of Tulas are working in different industries at good packages.B.Pharma admissions 2026 are open. Apply now by filling the admission form.
         </p>
       </>
     ),

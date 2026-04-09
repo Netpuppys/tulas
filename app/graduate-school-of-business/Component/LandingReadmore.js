@@ -32,7 +32,7 @@ export default function LandingReadmore() {
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
           <span className="text-orange-500 font-bold">MBA</span>{" "}
-          <span className="text-gray-800 font-bold">at Tulas</span>
+          <span className="text-gray-800 font-bold">at Tulas, Dehradun</span>
         </h2>
 
       {/* Always visible text */}
@@ -41,7 +41,7 @@ export default function LandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        The MBA at Tulas Institute is a 2-year full-time industry-aligned postgraduate program designed to transform graduates into confident decision-makers, strategic thinkers and future business leaders.
+        Ranked among the top MBA colleges in Dehradun, Tulas offers a dynamic learning environment where students gain in-depth business knowledge, hands-on experience, and exposure to real-time industry challenges. From marketing and finance to HR and analytics, our curriculum is tailored to meet the demands of a fast-changing market.
       </p>
 
       {/* Expandable content */}
@@ -53,10 +53,10 @@ export default function LandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
+          Master of Business Administration at Tulas Institute is a 2-year full-time industry-aligned postgraduate program designed to transform graduates into confident decision-makers, strategic thinkers and future business leaders.
+          <br/>
+          <br/>
           Built on the strength of NAAC A+ accreditation and a structured, outcome-driven academic framework, the program integrates core management fundamentals with an industry-aligned curriculum, complemented by hands-on learning through case studies, live projects and internship opportunities, all supported by a dedicated placement ecosystem.
-          <br/>
-          <br/>
-          With focused specialisations in Marketing, Finance, Human Resource Management, Business Analytics, International Business and Supply Chain Management, the program develops both strategic insight and functional expertise across key business domains.
         </p>
       </div>
 

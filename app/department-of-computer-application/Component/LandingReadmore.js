@@ -32,7 +32,7 @@ export default function LandingReadmore() {
       {/* Heading */}
           <h2 className="text-center text-[clamp(39px,5vw,38px)] font-montserrat font-medium mb-2">
           <span className="text-orange-500 font-bold">BCA</span>{" "}
-          <span className="text-gray-800 font-bold">at Tulas</span>
+          <span className="text-gray-800 font-bold">at Tulas, Dehradun</span>
         </h2>
 
       {/* Always visible text */}
@@ -41,7 +41,7 @@ export default function LandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-       At Tulas, the BCA program is designed to build a strong foundation in computer applications and prepare students for careers in the evolving IT industry. The curriculum covers key areas such as programming, database management, web technologies and software engineering, ensuring a well-rounded understanding of software and system development.
+      Recognized among the top BCA colleges in Dehradun, Tulas combines strong academic foundations with hands-on training in programming, data structures, software development, and emerging technologies.
       </p>
 
       {/* Expandable content */}
@@ -53,7 +53,7 @@ export default function LandingReadmore() {
         }`}
       >
         <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600 mt-4">
-         Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program integrates theoretical learning with practical lab work, project-based assignments and industry-relevant training. Students develop technical skills in coding, application development and system design, preparing them for roles in software development, IT services and technology-driven organisations.
+         As the best BCA college in Uttarakhand,  our program is designed to build a strong foundation in computer applications and prepare students for careers in the evolving IT industry. The curriculum covers key areas such as programming, database management, web technologies and software engineering, ensuring a well-rounded understanding of software and system development. Supported by NAAC A+ accreditation and an outcome-driven academic framework, the program integrates theoretical learning with practical understanding, project-based assignments and industry-relevant training and placements. Students develop technical skills in coding, application development and system design, preparing them for roles in software development, IT services and technology-driven organisations.
         </p>
       </div>
 
