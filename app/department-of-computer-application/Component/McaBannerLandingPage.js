@@ -2,6 +2,7 @@ import React, { useRef, useContext } from "react";
 import Image from "next/image";
 import LandingFormNew from "./LandingFormNew";
 import { UtmContext } from "@/component/utmParams";
+import McaLandingForm from "./McaLandingForm";
 
 function McaBannerLandingPage({ bannerImg, bannerImgDesktop }) {
   const scrollRef = useRef(null);
@@ -33,7 +34,7 @@ function McaBannerLandingPage({ bannerImg, bannerImgDesktop }) {
           <div className="hidden md:flex absolute inset-0 items-center justify-end pr-0">
             <div className="w-[600px] ">
               
-              <LandingFormNew
+              <McaLandingForm
                 course={7}
                 formHeading={"Start Your MBA Application"}
                 thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`}
@@ -47,7 +48,7 @@ function McaBannerLandingPage({ bannerImg, bannerImgDesktop }) {
 
       {/* Mobile Form (unchanged) */}
       <div ref={scrollRef} className="md:hidden">
-        <LandingFormNew
+        <McaLandingForm
           course={7}
           formHeading={"MBA Admissions Open 2026"}
           thankYOu={`/department-of-computer-application/mca/thank-you/${utmParams}`}

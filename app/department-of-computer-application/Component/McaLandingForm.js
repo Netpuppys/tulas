@@ -415,10 +415,9 @@ function McaLandingForm({
 >
   <option value="">Select Course</option>
 
-  <option value="21">BCA</option>
-  <option value="126">BCA - AIML</option>
-  <option value="127">BCA - Cybersecurity</option>
-  <option value="128">BCA - Full Stack Development</option>
+  <option value="37">MCA</option>
+  <option value="129">MCA - AIML</option>
+  <option value="130">MCA - Full Stack Development</option>
 
 </select>
               <select
