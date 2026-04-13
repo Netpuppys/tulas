@@ -135,6 +135,10 @@ const sitemap = [
             title: "B.Sc Agriculture",
             linkTo: "/b-sc-agriculture",
           },
+          {
+            title: "M.Sc. Agronomy",
+            linkTo: "courses/msc-agronomy",
+          },
         ],
       },
       {
