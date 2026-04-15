@@ -46,17 +46,17 @@ const CarouselSection = ({
                 />
 
                 <div>
-                  <h2 className="text-lg font-bold border-b pb-2">
+                  <h2 className="text-lg font-bold border-b">
                     {item.name}
                   </h2>
-                  <p className="text-gray-600">{item.date}</p>
+                  {/* <p className="text-gray-600">{item.date}</p> */}
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <div className="flex space-x-6 justify-center mt-4">
+        <div className="flex space-x-6 justify-center mt-1">
           <button
             onClick={handlePrevClick}
             className="h-[50px] w-[50px] bg-[#760135] text-white rounded-full flex items-center justify-center"

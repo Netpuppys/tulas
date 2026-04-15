@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function HomeBusinessSection() {
+export default function LandingInternshipSection() {
   return (
     <section className="bg-white pb-6 mt-5">
       <div className="max-w-6xl mx-auto px-4">
@@ -13,11 +13,11 @@ export default function HomeBusinessSection() {
             <h2 className="text-center text-[clamp(36px,5vw,36px)] font-medium mb-10 leading-snug">
               <span className="text-orange-500 font-extrabold">Ranked Among</span>{" "}
               <br/>
-              <span className="text-gray-800 font-extrabold">India’s Top Private Colleges</span>
+              <span className="text-gray-800 font-extrabold">India's Top Private Colleges</span>
             </h2>
 
 {/* MOBILE IMAGE */}
-<div className="w-[100%] mx-auto md:hidden mb-6">
+<div className="w-[80%] mx-auto md:hidden mb-6">
   <Image
     src="/landingPage/rankingmobile.png"
     alt="Internship Mobile"

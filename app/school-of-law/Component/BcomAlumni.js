@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 
-export default function HomeAlumniSuccessStories() {
+export default function BcomAlumni() {
   const scrollRef = useRef(null);
 
   const alumniCards = [
@@ -34,12 +34,12 @@ export default function HomeAlumniSuccessStories() {
       {/* Heading */}
       <div className="px-4 md:px-12">
         <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-3">
-          <span className="text-orange-500">Alumini</span>{" "}
+          <span className="text-orange-500">Tulas</span>{" "}
           <span className="text-gray-800">Success Stories</span>
         </h3>
 
-        <p className="text-gray-600 text-sm text-center md:text-base mb-8">
-         At Tulas Dehradun, practical learning, industry exposure, and career support prepare students for real-world opportunities. Our alumni work across industries such as IT and software development, banking and finance, pharmaceutical and healthcare, media and digital platforms. Admissions 2026 are now open at Tulas. If you're searching for a recognised college in Dehradun that delivers both knowledge and opportunity then this is your destination.
+        <p className="text-gray-600 text-sm text-center md:text-base mb-8 ">
+        At Tulas Dehradun, practical learning, industry exposure, and career support prepare students for real-world opportunities. Our alumni work across industries such as IT and software development, banking and finance, pharmaceutical and healthcare, media and digital platforms. Admissions 2026 are now open for BA. LLB (Hons.) at Tulas. If you're searching for a recognised college in Dehradun that delivers both knowledge and opportunity then this is your destination.
         </p>
       </div>
 
@@ -68,8 +68,9 @@ export default function HomeAlumniSuccessStories() {
       </div>
 
       {/* CTA + Arrows */}
-      {/* <div className="flex items-center justify-center gap-6 mt-6 px-4">
+      <div className="flex items-center justify-center gap-6 mt-6 px-4">
         
+        {/* Left Arrow (desktop only) */}
         <button
           onClick={() => scroll("left")}
           className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 hover:bg-gray-300"
@@ -77,6 +78,7 @@ export default function HomeAlumniSuccessStories() {
           ←
         </button>
 
+        {/* Apply Button */}
         <button onClick={() =>
               window.scrollTo({
                 top: 0,
@@ -87,13 +89,14 @@ export default function HomeAlumniSuccessStories() {
           Start Your Career Journey
         </button>
 
+        {/* Right Arrow (desktop only) */}
         <button
           onClick={() => scroll("right")}
           className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-orange-500 hover:bg-gray-300"
         >
           →
         </button>
-      </div> */}
+      </div>
     </section>
   );
 }

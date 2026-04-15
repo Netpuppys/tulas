@@ -2,10 +2,9 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
 
-function HomeMainBanner({
+function CarouselLanding({
   bannerImages,
   title,
   scrollButton = false,
@@ -19,7 +18,7 @@ function HomeMainBanner({
   const autoSlideRef = useRef(null);
   const pauseTimeout = useRef(null);
 
-  // === AUTO SLIDE ===
+  // === AUTO SLIDE with pause on interaction ===
   const startAutoSlide = () => {
     autoSlideRef.current = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % bannerImages.length);
@@ -32,7 +31,7 @@ function HomeMainBanner({
 
     pauseTimeout.current = setTimeout(() => {
       startAutoSlide();
-    }, 15000);
+    }, 15000); // restart after 15s idle
   };
 
   useEffect(() => {
@@ -40,7 +39,7 @@ function HomeMainBanner({
     return () => clearInterval(autoSlideRef.current);
   }, []);
 
-  // === SWIPE ===
+  // === SWIPE HANDLERS ===
   const handleTouchStart = (e) => {
     setTouchStartX(e.touches[0].clientX);
   };
@@ -49,7 +48,6 @@ function HomeMainBanner({
     const touchEndX = e.changedTouches[0].clientX;
     const swipeDistance = touchStartX - touchEndX;
     const minSwipe = 50;
-
     stopAutoSlide();
 
     if (swipeDistance > minSwipe) {
@@ -61,16 +59,7 @@ function HomeMainBanner({
     setTouchStartX(null);
   };
 
-  // === SCROLL ===
-  const handleScrollArrow = () => {
-    if (scrollToSection < maxSections) {
-      setScrollToSection((prev) => prev + 1);
-    }
-    const element = document.getElementById(`${scrollToSection}`);
-    if (element) element.scrollIntoView({ behavior: "smooth" });
-  };
-
-  // === SLIDES ===
+  // === SLIDE FUNCTIONS ===
   const goToPrevSlide = () => {
     setPrevIndex(currentIndex);
     setCurrentIndex((prev) =>
@@ -83,62 +72,35 @@ function HomeMainBanner({
     setCurrentIndex((prev) => (prev + 1) % bannerImages.length);
   };
 
-  const goToSlide = (idx) => {
-    setPrevIndex(currentIndex);
-    setCurrentIndex(idx);
-    stopAutoSlide();
-  };
-
   return (
     <div
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
-      className={`w-full relative overflow-hidden ${
+      className={`w-full relative overflow-hidden  ${
         screen
-          ? "h-[100vh] md:h-screen"
-          : "aspect-[788/1350] md:aspect-[2345/920] mt-[70px] md:mt-[0px] md:h-full"
-          // : "aspect-[1088/1350] md:aspect-[2745/1329] mt-20 md:mt-14 md:h-full"
+          ? "h-[80vh] md:h-screen"
+          : "aspect-[1088/1350] md:aspect-[2745/1329] md:h-full"
       }`}
     >
-      {/* Slides */}
+      {/* Background Slides */}
       {bannerImages.map((image, idx) => (
         <div
           key={idx}
-          className={`absolute top-0 left-0 w-full h-full bg-black transition-opacity duration-1000 ${
+          className={`absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ${
             idx === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
-        >
-          <Image
-  src={image.src}
-  alt=""
-  width={1920}
-  height={1080}
-  className="w-full h-auto object-contain"
-/>
-        </div>
+          style={{
+            backgroundImage: `url(${image.src})`,
+          }}
+        />
       ))}
 
-      {/* Scroll Button */}
-      {/* {scrollButton && (
-        <button
-          onClick={handleScrollArrow}
-          className="absolute bottom-10 right-10 z-20 w-[100px] aspect-square"
-        >
-          <div className="relative w-full h-full flex justify-center items-center">
-            <Image
-              className="animate-scrollSpin absolute w-full h-fit"
-              src={ScrollImage}
-              alt=""
-            />
-            <IoIosArrowRoundDown className="absolute text-[40px] text-white" />
-          </div>
-        </button>
-      )} */}
+
 
       {/* Title */}
       {title && (
         <div className="absolute bottom-4 md:bottom-[2%] px-8 md:px-[2%] w-full z-20">
-          <h3 className="text-white font-[CarotSlab] leading-tight text-[clamp(16px,7vw,60px)] md:text-[clamp(20px,4vw,120px)] font-semibold drop-shadow-md">
+          <h3 className="text-white z-10 font-[CarotSlab] leading-tight text-[clamp(16px,7vw,60px)] md:text-[clamp(20px,4vw,120px)] font-semibold drop-shadow-md">
             {title}
           </h3>
         </div>
@@ -150,35 +112,34 @@ function HomeMainBanner({
           goToPrevSlide();
           stopAutoSlide();
         }}
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-white z-30 text-6xl"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white z-30 text-6xl font-thin"
       >
         ‹
       </button>
-
       <button
         onClick={() => {
           goToNextSlide();
           stopAutoSlide();
         }}
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-white z-30 text-6xl"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white z-30 text-6xl font-thin"
       >
         ›
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-30">
+      {/* <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-30">
         {bannerImages.map((_, idx) => (
           <button
             key={idx}
             onClick={() => goToSlide(idx)}
-            className={`w-3 h-3 rounded-full transition ${
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
               currentIndex === idx ? "bg-white" : "bg-gray-400 opacity-50"
             }`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
 
-export default HomeMainBanner;
+export default CarouselLanding;

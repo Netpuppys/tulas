@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import logo from "@/public/Components/Navbar/TulasLogo.png";
 import NAAC from "../../public/Components/Navbar/naacnew.png";
 
@@ -261,30 +261,13 @@ const ChevronDown = () => (
 /* ------------------------------------------------------------------ */
 /*  COMPONENT                                                           */
 /* ------------------------------------------------------------------ */
-export default function MegaMenu() {
+export default function BackupMegaMenu() {
   const [openPrograms,     setOpenPrograms]    = useState(false);
   const [activeMenu,       setActiveMenu]      = useState(null);
   const [category,         setCategory]        = useState("undergraduate");
   const [dept,             setDept]            = useState("School Of Management");
   const [navHover,         setNavHover]        = useState(false);
   const [expandedResearch, setExpandedResearch] = useState(null);
-
-  /* Sticky Layer 3 — observe when top two bars leave the viewport */
-  const topBarsRef = useRef(null);
-  const navBarRef  = useRef(null);
-  const [isFixed,    setIsFixed]    = useState(false);
-  const [navHeight,  setNavHeight]  = useState(0);
-
-  useEffect(() => {
-    if (navBarRef.current) setNavHeight(navBarRef.current.offsetHeight);
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsFixed(!entry.isIntersecting),
-      { threshold: 0 }
-    );
-    if (topBarsRef.current) observer.observe(topBarsRef.current);
-    return () => observer.disconnect();
-  }, []);
 
   /* Close hover-based menus */
   const closeHoverMenus = () => {
@@ -311,10 +294,7 @@ export default function MegaMenu() {
   const currentCourses = menuData[category]?.[dept] ?? [];
 
   return (
-    <header className="w-full">
-
-      {/* ===== LAYERS 1 & 2 — scroll away (observed) ===== */}
-      <div ref={topBarsRef}>
+    <header className="fixed top-0 left-0 w-full z-[9999]">
 
       {/* ===== LAYER 1 — TOP STRIP ===== */}
       <div className="w-full bg-white border-b border-gray-200">
@@ -364,15 +344,10 @@ export default function MegaMenu() {
           </div>
         </div>
       </div>
-      </div>{/* end topBarsRef wrapper */}
-
-      {/* Spacer — prevents layout jump when nav becomes fixed */}
-      {isFixed && <div style={{ height: navHeight }} />}
 
       {/* ===== LAYER 3 — BOTTOM DARK NAV BAR ===== */}
       <div
-        ref={navBarRef}
-        className={isFixed ? "fixed top-0 left-0 w-full z-[9999]" : "relative"}
+        className="relative"
         onMouseEnter={() => setNavHover(true)}
         onMouseLeave={closeHoverMenus}
       >
