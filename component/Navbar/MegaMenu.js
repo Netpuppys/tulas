@@ -5,6 +5,32 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import logo from "@/public/Components/Navbar/TulasLogo.png";
 import NAAC from "../../public/Components/Navbar/naacnew.png";
+import Organogram from "../../public/FooterPDf/Organogram.pdf";
+import Plagiarism from "../../public/research/plagiarism-policy.pdf";
+import NewResearchPolicy from "../../public/research/new-research-policy-tulas.pdf";
+
+/* ------------------------------------------------------------------ */
+/*  TOP STRIP ITEMS                                                     */
+/* ------------------------------------------------------------------ */
+const topStripItems = [
+  {
+    name: "ERP",
+    href: "#",
+    subLinks: [
+      { name: "Teached Login",      href: "https://teacher.camu.in" },
+      { name: "Student Login",      href: "https://student.camu.in" },     
+    ],
+  },
+  { name: "BLOG",    href: "/blog",    subLinks: null },  {
+    name: "ALUMNI",
+    href: "#",
+    subLinks: [
+      { name: "Alumni Login", href: "https://alumni.tulas.edu.in" },
+      { name: "Alumni Testimonials",      href: "/alumni-testimonials" },
+      { name: "Degree Request Form", href: "/degree-request-form" },
+    ],
+  },
+];
 
 /* ------------------------------------------------------------------ */
 /*  PROGRAMME DATA                                                      */
@@ -98,13 +124,13 @@ const simpleMenus = {
     text: "Learn about Tulas Institute, its vision, leadership, and legacy of academic excellence.",
     left: [
       { name: "About Tulas",      href: "/about" },
-      { name: "Vision & Mission", href: "/about/vision-mission" },
-      { name: "Organogram",       href: "/about/organogram" },
-      { name: "Management",       href: "/about/management" },
+      { name: "Vision & Mission", href: "/vision-mission" },
+      { name: "Organogram",       href: Organogram },
+      { name: "Management",       href: "/about/management-messages" },
     ],
     right: [
-      { name: "Approvals",      href: "/about/approvals" },
-      { name: "About Dehradun", href: "/about/dehradun" },
+      { name: "Approvals",      href: "/about/approval" },
+      { name: "About Dehradun", href: "/about-dehradun" },
       { name: "Contact Us",     href: "/contact" },
       { name: "Why Tulas",      href: "/about/why-tulas" },
     ],
@@ -114,25 +140,25 @@ const simpleMenus = {
     text: "Discover world-class infrastructure including labs, library, hostels, and sports facilities.",
     left: [
       { name: "Library",         href: "/infrastructure/library" },
-      { name: "Computer Centre", href: "/infrastructure/computer-centre" },
+      { name: "Computer Centre", href: "/infrastructure/computer-center" },
       { name: "Auditorium",      href: "/infrastructure/auditorium" },
       { name: "Lecture Theatre", href: "/infrastructure/lecture-theatre" },
     ],
     right: [
-      { name: "Hostel & Mess Facilities", href: "/infrastructure/hostel" },
-      { name: "Sports",                   href: "/infrastructure/sports" },
-      { name: "ICT Facilities",           href: "/infrastructure/ict-facilities" },
-      { name: "Institute Video",          href: "/infrastructure/video" },
+      { name: "Hostel & Mess Facilities", href: "/infrastructure/hostel-and-mess" },
+      { name: "Sports",                   href: "/sports" },
+      { name: "ICT Facilities",           href: "/ict-facilities" },
+      { name: "Institute Video",          href: "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view" },
     ],
   },
   admissions: {
     title: "Admissions",
     text: "Get complete details about admission process, eligibility, and start your journey with Tulas.",
     left: [
-      { name: "Admission Procedure",   href: "/admissions/procedure" },
-      { name: "Admission Eligibility", href: "/admissions/eligibility" },
-      { name: "Pay Fee Online",        href: "/admissions/pay-fee" },
-      { name: "E-Prospectus",          href: "/admissions/prospectus" },
+      { name: "Admission Procedure", href: "/admission-procedure" },
+      { name: "Bank Details",        href: "/bank-details" },
+      { name: "Pay Fee Online",      href: "/pay-fee-online" },
+      { name: "E-Prospectus",        href: "/download-e-prospectus" },
     ],
     right: [],
   },
@@ -140,16 +166,16 @@ const simpleMenus = {
     title: "Campus Life",
     text: "Experience vibrant campus life with clubs, events, sports, and student engagement activities.",
     left: [
-      { name: "Student Clubs",     href: "/campus/clubs" },
-      { name: "Cultural Events",   href: "/campus/events" },
-      { name: "Sports Activities", href: "/campus/sports" },
-      { name: "Student Welfare",   href: "/campus/welfare" },
+      { name: "Dehradun International Film Festival", href: "/campus-life/celebrities" },
+      { name: "Technical Fests",                      href: "/campus-life/technical-fests" },
+      { name: "Sanskriti Cultural Fest",              href: "/campus-life/sanskriti" },
+      { name: "NCC",                                  href: "/campus-life/ncc" },
     ],
     right: [
-      { name: "Hostel Life",        href: "/campus/hostel" },
-      { name: "Cafeteria",          href: "/campus/cafeteria" },
-      { name: "Gymnasium",          href: "/campus/gymnasium" },
-      { name: "Medical Facilities", href: "/campus/medical" },
+      { name: "NSS",                      href: "/campus-life/nss" },
+      { name: "Vibgyor- Student Clubs",   href: "/campus-life/vibgyor" },
+      { name: "Victree- Sports Clubs",    href: "/campus-life/victree" },
+      { name: "Prominent Personalities",  href: "/campus-life/prominent-personalities" },
     ],
   },
   academics: {
@@ -172,17 +198,11 @@ const simpleMenus = {
     title: "Placements",
     text: "Check placement records, recruiters, internships, and career opportunities at Tulas.",
     left: [
-      { name: "Placement Procedure",  href: "/placements/procedure" },
-      { name: "Placement Statistics", href: "/placements/statistics" },
-      { name: "Top Recruiters",       href: "/placements/recruiters" },
-      { name: "Placement Cell",       href: "/placements/cell" },
+      { name: "Placement at Tulas",             href: "/placements/career-innovation-centre" },
+      { name: "Technical Placement Record",     href: "/placements/technical-department" },
+      { name: "Non-Technical Placement Record", href: "/placements/non-technical-department" },
     ],
-    right: [
-      { name: "Industry Connect",  href: "/placements/industry-connect" },
-      { name: "Internships",       href: "/placements/internships" },
-      { name: "Career Guidance",   href: "/placements/career-guidance" },
-      { name: "Alumni Network",    href: "/placements/alumni" },
-    ],
+    right: [],
   },
 };
 
@@ -192,47 +212,47 @@ const simpleMenus = {
 const researchData = [
   {
     title: "Research and Development (R&D) Cell",
-    href: "/research/rd-cell",
+    href: "/research/research-and-development-rd-cell",
     subLinks: [
-      { name: "Research Projects",      href: "/research/rd-cell/projects" },
-      { name: "Faculty Research",       href: "/research/rd-cell/faculty" },
-      { name: "Research Publications",  href: "/research/rd-cell/publications" },
-      { name: "Collaborations",         href: "/research/rd-cell/collaborations" },
+      { name: "Funded Projects and Grants", href: "/research/research-and-development-rd-cell/funded-projects-and-grants" },
+      { name: "Journal Publications",       href: "/research/research-and-development-rd-cell/journal-publications" },
+      { name: "Conference Publications",    href: "/research/research-and-development-rd-cell/conference-publications" },
+      { name: "Conferences Organized",      href: "/research/research-and-development-rd-cell/conference-organized" },
+      { name: "FDPs and Workshops",         href: "/research/fdps-workshops" },
+      { name: "Research Policy",            href: NewResearchPolicy },
+      { name: "Plagiarism Policy",          href: Plagiarism },
+      { name: "Research Remuneration",      href: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:957d143a-c27f-4828-92d5-e9536adca5ce" },
     ],
   },
   {
     title: "Intellectual Property Rights",
-    href: "/research/ipr",
+    href: "/research/intellectual-property-rights-ipr-cell",
     subLinks: [
-      { name: "Patents Filed", href: "/research/ipr/patents" },
-      { name: "Copyrights",    href: "/research/ipr/copyrights" },
-      { name: "Trademarks",    href: "/research/ipr/trademarks" },
-      { name: "IP Policy",     href: "/research/ipr/policy" },
+      { name: "Patents Filed", href: "/research/intellectual-property-rights-ipr-cell/paten" },
     ],
   },
   {
     title: "Entrepreneurship Development Cell",
-    href: "/research/edc",
+    href: "/research/entrepreneurship-development-cell",
     subLinks: null,
   },
   {
     title: "Institute Innovation Council",
-    href: "/research/iic",
+    href: "/research/institute-innovation-council-iic",
     subLinks: [
-      { name: "Innovation Projects",   href: "/research/iic/projects" },
-      { name: "Startup Support",       href: "/research/iic/startups" },
-      { name: "Mentorship Programme",  href: "/research/iic/mentorship" },
-      { name: "IIC Activities",        href: "/research/iic/activities" },
+      { name: "IIC Events",          href: "/research/institute-innovation-council-iic/iic-events" },
+      { name: "IAAS Student Branch", href: "/research/iaas-student-branch" },
+      { name: "IEEE Student Branch", href: "/research/ieee-student-branch-stb17561" },
     ],
   },
   {
     title: "Tula's Technology and Incubator (TTBI)",
-    href: "/research/ttbi",
+    href: "https://www.tulasincubator.com",
     subLinks: null,
   },
   {
     title: "AICTE IDEA LAB",
-    href: "/research/idea-lab",
+    href: "/research/aicte-idea-lab",
     subLinks: null,
   },
 ];
@@ -269,11 +289,14 @@ export default function MegaMenu() {
   const [navHover,         setNavHover]        = useState(false);
   const [expandedResearch, setExpandedResearch] = useState(null);
 
+  /* Top strip hover state for sub-dropdowns */
+  const [activeTopStrip, setActiveTopStrip] = useState(null);
+
   /* Sticky Layer 3 — observe when top two bars leave the viewport */
   const topBarsRef = useRef(null);
   const navBarRef  = useRef(null);
-  const [isFixed,    setIsFixed]    = useState(false);
-  const [navHeight,  setNavHeight]  = useState(0);
+  const [isFixed,   setIsFixed]   = useState(false);
+  const [navHeight, setNavHeight] = useState(0);
 
   useEffect(() => {
     if (navBarRef.current) setNavHeight(navBarRef.current.offsetHeight);
@@ -293,12 +316,6 @@ export default function MegaMenu() {
     setExpandedResearch(null);
   };
 
-  /* Full close (used only when navigating away / explicit dismiss) */
-  const closeAll = () => {
-    closeHoverMenus();
-    setOpenPrograms(false);
-  };
-
   /* Switch level tab and auto-select first dept */
   const switchCategory = (level) => {
     setCategory(level);
@@ -316,54 +333,103 @@ export default function MegaMenu() {
       {/* ===== LAYERS 1 & 2 — scroll away (observed) ===== */}
       <div ref={topBarsRef}>
 
-      {/* ===== LAYER 1 — TOP STRIP ===== */}
-      <div className="w-full bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-2">
-          <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">
-            <span className="text-orange-500 text-base leading-none">•</span>
-            <span className="tracking-wide">Excellence in Education Since 2006</span>
-          </div>
-          <div className="flex items-center gap-7 text-gray-600 text-xs font-semibold tracking-widest">
-            {["STUDENT PORTAL", "BLOG", "LIBRARY", "CAREER", "ALUMNI"].map((item) => (
-              <span key={item} className="cursor-pointer hover:text-orange-500 transition-colors">{item}</span>
-            ))}
-          </div>
-          <div className="flex items-center">
-            <Image src={NAAC} alt="NAAC A+" className="h-7 w-auto object-contain" />
-          </div>
-        </div>
-      </div>
+        {/* ===== LAYER 1 — TOP STRIP ===== */}
+        <div className="w-full bg-white border-b border-gray-200">
+          <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-2">
+            <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">
+              <span className="text-orange-500 text-base leading-none">•</span>
+              <span className="tracking-wide">Excellence in Education Since 2006</span>
+            </div>
 
-      {/* ===== LAYER 2 — MAIN HEADER ===== */}
-      <div className="w-full bg-[#e0500e]">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-          <div className="flex items-center gap-5 flex-shrink-0">
-            <Image src={logo} alt="Tulas Institute Dehradun" className="h-[68px] w-auto object-contain" />
-            <div className="hidden md:flex flex-col justify-center text-white">
-              <span className="text-[14px] font-semibold leading-tight tracking-wide">20 Years of</span>
-              <span className="text-[14px] font-semibold leading-tight tracking-wide">Academic Excellence</span>
+            {/* Top strip nav items */}
+            <div className="flex items-center gap-7 text-gray-600 text-xs font-semibold tracking-widest">
+              {topStripItems.map((item) => (
+                <div
+                  key={item.name}
+                  className="relative"
+                  onMouseEnter={() => item.subLinks && setActiveTopStrip(item.name)}
+                  onMouseLeave={() => setActiveTopStrip(null)}
+                >
+                  <Link
+                    href={item.href}
+                    className={`flex items-center gap-1 hover:text-orange-500 transition-colors cursor-pointer ${activeTopStrip === item.name ? "text-orange-500" : ""}`}
+                  >
+                    {item.name}
+                    {item.subLinks && (
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3">
+                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                      </svg>
+                    )}
+                  </Link>
+
+                  {/* Sub-dropdown */}
+                  {item.subLinks && activeTopStrip === item.name && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-[9999] min-w-[180px]">
+                      {/* small caret */}
+                      <div className="flex justify-center">
+                        <div className="w-3 h-3 bg-white border-l border-t border-gray-200 rotate-45 -mb-1.5 z-10 relative" />
+                      </div>
+                      <div className="bg-white border border-gray-200 rounded-xl shadow-xl overflow-hidden">
+                        {item.subLinks.map((sub, j) => (
+                          <Link
+                            key={j}
+                            href={sub.href}
+                            className="flex items-center gap-2 px-4 py-2.5 text-xs font-semibold text-gray-600 hover:bg-orange-50 hover:text-orange-500 transition-colors whitespace-nowrap tracking-widest"
+                          >
+                            <span className="text-orange-400 text-[10px]">›</span>
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
-          </div>
-          <div className="flex items-center gap-3 flex-shrink-0">
-            <div className="flex items-center gap-3 bg-[#263145] text-white rounded-full px-5 py-2.5 cursor-pointer hover:bg-[#1c2538] transition-colors select-none">
-              <PhoneIcon />
-              <div className="leading-none">
-                <p className="text-[10px] text-gray-300 mb-0.5">For Admission Enquiry</p>
-                <p className="text-base font-bold tracking-wide">1800 103 XXX</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 bg-white text-gray-800 rounded-full px-5 py-2.5 cursor-pointer hover:shadow-md transition-shadow select-none border border-gray-100">
-              <div className="w-8 h-8 bg-[#f26522] rounded-full flex items-center justify-center flex-shrink-0">
-                <PersonIcon />
-              </div>
-              <div className="leading-none">
-                <p className="text-sm font-bold text-gray-800 mb-0.5">Admissions Open</p>
-                <p className="text-[10px] text-gray-500">For Session 2026-27</p>
-              </div>
+
+            <div className="flex items-center">
+              <Image src={NAAC} alt="NAAC A+" className="h-7 w-auto object-contain" />
             </div>
           </div>
         </div>
+
+        {/* ===== LAYER 2 — MAIN HEADER ===== */}
+<div className="w-full bg-[#e0500e]">
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+    <div className="flex items-center gap-5 flex-shrink-0">
+      <Image src={logo} alt="Tulas Institute Dehradun" className="h-[68px] w-auto object-contain" />
+      <div className="hidden md:flex flex-col justify-center text-white">
+        <span className="text-[14px] font-semibold leading-tight tracking-wide">20 Years of</span>
+        <span className="text-[14px] font-semibold leading-tight tracking-wide">Academic Excellence</span>
       </div>
+    </div>
+
+    <div className="flex items-center gap-3 flex-shrink-0">
+      
+      {/* CALL */}
+      <a href="tel:+91 9837983721" className="flex items-center gap-3 bg-[#263145] text-white rounded-full px-5 py-2.5 cursor-pointer hover:bg-[#1c2538] transition-colors select-none">
+        <PhoneIcon />
+        <div className="leading-none">
+          <p className="text-[10px] text-gray-300 mb-0.5">For Admission Enquiry</p>
+          <p className="text-base font-bold tracking-wide">+91-9837983721</p>
+        </div>
+      </a>
+
+      {/* ROUTE */}
+      <Link href="/admission-open" className="flex items-center gap-3 bg-white text-gray-800 rounded-full px-5 py-2.5 cursor-pointer hover:shadow-md transition-shadow select-none border border-gray-100">
+        <div className="w-8 h-8 bg-[#f26522] rounded-full flex items-center justify-center flex-shrink-0">
+          <PersonIcon />
+        </div>
+        <div className="leading-none">
+          <p className="text-sm font-bold text-gray-800 mb-0.5">Admissions Open</p>
+          <p className="text-[10px] text-gray-500">For Session 2026-27</p>
+        </div>
+      </Link>
+
+    </div>
+  </div>
+</div>
+
       </div>{/* end topBarsRef wrapper */}
 
       {/* Spacer — prevents layout jump when nav becomes fixed */}
@@ -425,10 +491,10 @@ export default function MegaMenu() {
                 Campus Life <ChevronDown />
               </span>
 
-              <span onMouseEnter={() => setActiveMenu(null)}
+              <Link href="/contact"
                 className="px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap">
                 Contact Us
-              </span>
+              </Link>
 
             </nav>
           </div>
@@ -436,7 +502,7 @@ export default function MegaMenu() {
 
         {/* ============ DROPDOWNS ============ */}
 
-        {/* ---- PROGRAMMES MEGA MENU — hover to open, click inside for level/dept ---- */}
+        {/* ---- PROGRAMMES MEGA MENU ---- */}
         {openPrograms && (
           <div
             className="absolute left-0 w-full z-50"
@@ -447,17 +513,14 @@ export default function MegaMenu() {
               <div className="max-w-7xl mx-auto px-6 py-8">
                 <div className="flex gap-5">
 
-                  {/* COL 1 — level tabs: onClick to switch */}
+                  {/* COL 1 — level tabs */}
                   <div className="w-[180px] flex-shrink-0 flex flex-col gap-3">
                     {["undergraduate", "postgraduate", "diploma"].map((level) => (
                       <div
                         key={level}
                         onClick={() => switchCategory(level)}
                         className={`flex justify-between items-center px-4 py-3.5 rounded-xl cursor-pointer font-semibold uppercase text-sm tracking-wider transition-colors
-                          ${category === level
-                            ? "bg-[#f26522] text-white"
-                            : "bg-white/10 text-white hover:bg-white/20"
-                          }`}
+                          ${category === level ? "bg-[#f26522] text-white" : "bg-white/10 text-white hover:bg-white/20"}`}
                       >
                         {level}
                         <span className="text-base">›</span>
@@ -465,7 +528,7 @@ export default function MegaMenu() {
                     ))}
                   </div>
 
-                  {/* COL 2 — departments: onClick to switch */}
+                  {/* COL 2 — departments */}
                   <div className="w-[240px] flex-shrink-0 bg-white/5 rounded-2xl p-4">
                     <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-3 px-1">Departments</p>
                     <div className="flex flex-col gap-0.5">
@@ -474,10 +537,7 @@ export default function MegaMenu() {
                           key={d}
                           onClick={() => setDept(d)}
                           className={`flex justify-between items-center px-3 py-2.5 rounded-lg cursor-pointer text-sm transition-colors
-                            ${dept === d
-                              ? "bg-[#f26522] text-white"
-                              : "text-gray-300 hover:bg-white/10 hover:text-white"
-                            }`}
+                            ${dept === d ? "bg-[#f26522] text-white" : "text-gray-300 hover:bg-white/10 hover:text-white"}`}
                         >
                           <span>{d}</span>
                           <span className="text-base flex-shrink-0 ml-1">›</span>
@@ -486,7 +546,7 @@ export default function MegaMenu() {
                     </div>
                   </div>
 
-                  {/* COL 3 — courses: clickable links */}
+                  {/* COL 3 — courses */}
                   <div className="flex-1 bg-white/5 rounded-2xl p-4">
                     <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-3 px-1">
                       Courses — <span className="text-white/60">{dept}</span>
@@ -514,7 +574,6 @@ export default function MegaMenu() {
         {/* ---- HOVER-BASED DROPDOWNS (research, simple menus) ---- */}
         {navHover && (
           <>
-
             {/* ---- RESEARCH DROPDOWN ---- */}
             {activeMenu === "research" && (
               <div
@@ -541,10 +600,8 @@ export default function MegaMenu() {
                                   {item.title}
                                 </Link>
                                 {item.subLinks && (
-                                  <div
-                                    className={`w-8 h-8 rounded flex items-center justify-center flex-shrink-0 ml-4 text-white font-bold text-lg cursor-pointer transition-colors
-                                      ${expandedResearch === i ? "bg-[#f26522]" : "bg-gray-600 group-hover:bg-[#f26522]"}`}
-                                  >
+                                  <div className={`w-8 h-8 rounded flex items-center justify-center flex-shrink-0 ml-4 text-white font-bold text-lg cursor-pointer transition-colors
+                                    ${expandedResearch === i ? "bg-[#f26522]" : "bg-gray-600 group-hover:bg-[#f26522]"}`}>
                                     {expandedResearch === i ? "−" : "+"}
                                   </div>
                                 )}
@@ -638,7 +695,6 @@ export default function MegaMenu() {
                 </div>
               </div>
             )}
-
           </>
         )}
       </div>
