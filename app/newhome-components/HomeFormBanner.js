@@ -40,7 +40,7 @@ function HomeFormBanner() {
     },
         {
       title: "Department of Agriculture",
-      courses: ["B.Sc.(Hons.) Agriculture", "M.Sc. Agriculture"],
+      courses: ["B.Sc.(Hons.) Agriculture", "M.Sc. Agronomy"],
     },
   ];
 

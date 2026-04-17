@@ -13,22 +13,22 @@ function NewNavbarMobile({ isChecked, utmParams }) {
 
   return (
     <div
-      className={`block mdNavbar:hidden pointer-events-auto absolute w-full max-w-[500px] top-0 bg-orange-500 h-[80vh] max-h-[80vh] overflow-y-auto ${
+      className={`block mdNavbar:hidden pointer-events-auto fixed top-0 w-[80%] max-w-[380px] bg-white h-screen max-h-screen overflow-y-auto shadow-2xl transition-all duration-300 ease-in-out ${
         isChecked
-          ? "animate-translateLeftMenu left-0 block"
-          : "animate-translateRightMenu left-[-100%] hidden"
+          ? "right-0 translate-x-0 opacity-100 visible"
+          : "right-0 translate-x-full opacity-0 invisible"
       }`}
     >
       {/* Top spacer so items don't sit behind the close (X) button */}
       <div className="h-20" />
 
-      <div className="flex flex-col bg-orange-400 mx-5 rounded-xl">
+      <div className="flex flex-col bg-white">
         {sitemap.map((item, index) => (
           <div key={index}>
             {/* ── Level 1 Header ── */}
-            <div className="flex items-center justify-between border-b border-white/20 px-6 py-4 bg-transparent">
+            <div className="flex items-center justify-between border-b border-gray-200 px-6 py-4 bg-white">
               <Link
-                className="text-white font-semibold text-[17px] tracking-wide flex-1"
+                className="text-gray-900 font-semibold text-[17px] tracking-wide flex-1"
                 href={
                   item.target ? `${item.linkTo}` : `${item.linkTo}/${utmParams}`
                 }
@@ -40,9 +40,9 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                 {item.title}
               </Link>
 
-              {item.nestedLinks ? (
+              {item.nestedLinks && (
                 <button
-                  className="text-white ml-3 flex-shrink-0"
+                  className="text-gray-700 ml-3 flex-shrink-0"
                   onClick={() =>
                     setShowSubHeaders(
                       showSubHeaders === item.title ? null : item.title
@@ -55,8 +55,6 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                     <FiChevronRight className="text-2xl" />
                   )}
                 </button>
-              ) : (
-                <FiChevronRight className="text-white text-2xl flex-shrink-0 ml-3" />
               )}
             </div>
 
@@ -71,9 +69,9 @@ function NewNavbarMobile({ isChecked, utmParams }) {
               <div className="site-map-sub-header-inner-wrapper">
                 {item.nestedLinks?.map((subItem, subIndex) => (
                   <div key={subIndex}>
-                    <div className="flex items-center justify-between border-b border-white/20 pl-10 pr-6 py-3 bg-[#e06b10]">
+                    <div className="flex items-center justify-between border-b border-gray-200 pl-10 pr-6 py-3 bg-gray-50">
                       <Link
-                        className="text-white text-[15px] font-medium flex-1"
+                        className="text-gray-800 text-[15px] font-medium flex-1"
                         href={
                           subItem.target
                             ? `${subItem.linkTo}`
@@ -89,9 +87,9 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                         {subItem.title}
                       </Link>
 
-                      {subItem.superNestedLinks ? (
+                      {subItem.superNestedLinks && (
                         <button
-                          className="text-white ml-3 flex-shrink-0"
+                          className="text-gray-700 ml-3 flex-shrink-0"
                           onClick={() =>
                             setShowSubSubHeaders(
                               showSubSubHeaders === subItem.title
@@ -106,8 +104,6 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                             <FiChevronRight className="text-xl" />
                           )}
                         </button>
-                      ) : (
-                        <FiChevronRight className="text-white/70 text-xl flex-shrink-0 ml-3" />
                       )}
                     </div>
 
@@ -122,9 +118,9 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                       <div className="site-map-sub-header-inner-wrapper">
                         {subItem.superNestedLinks?.map((subsubItem, ssIndex) => (
                           <div key={ssIndex}>
-                            <div className="flex items-center justify-between border-b border-white/20 pl-14 pr-6 py-3 bg-[#c85e0a]">
+                            <div className="flex items-center justify-between border-b border-gray-200 pl-14 pr-6 py-3 bg-gray-100">
                               <Link
-                                className="text-white text-[14px] flex-1"
+                                className="text-gray-800 text-[14px] flex-1"
                                 href={
                                   subsubItem.target
                                     ? `${subsubItem.linkTo}`
@@ -140,9 +136,9 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                                 {subsubItem.title}
                               </Link>
 
-                              {subsubItem.thirdNestedLinks ? (
+                              {subsubItem.thirdNestedLinks && (
                                 <button
-                                  className="text-white ml-3 flex-shrink-0"
+                                  className="text-gray-700 ml-3 flex-shrink-0"
                                   onClick={() =>
                                     setShowSubSubSubHeaders(
                                       showSubSubSubHeaders === subsubItem.title
@@ -157,8 +153,6 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                                     <FiChevronRight className="text-lg" />
                                   )}
                                 </button>
-                              ) : (
-                                <FiChevronRight className="text-white/60 text-lg flex-shrink-0 ml-3" />
                               )}
                             </div>
 
@@ -175,7 +169,7 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                                   (subsubsubItem, sssIndex) => (
                                     <Link
                                       key={sssIndex}
-                                      className="block text-white/90 text-[13px] pl-16 pr-6 py-3 border-b border-white/20 bg-[#b05208]"
+                                      className="block text-gray-700 text-[13px] pl-16 pr-6 py-3 border-b border-gray-200 bg-gray-200"
                                       href={
                                         subsubsubItem.target
                                           ? `${subsubsubItem.linkTo}`

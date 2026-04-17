@@ -413,8 +413,10 @@ function MbaLandingForm({
   className="w-full classic px-5 py-3 h-12 border border-gray-300 text-gray-500 bg-[#FFFFFF] rounded-[10px]"
   // disabled={!formData.Course}
 >
-  <option value="">Select Specialization</option>
+  <option value="">Select Program</option>
 <option value="140">LLB</option>
+<option value="139">BBALLB</option>
+<option value="138">BALLB</option>
 </select>
               <select
                 value={formData.State}

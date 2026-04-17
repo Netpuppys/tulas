@@ -8,7 +8,7 @@ const faqs = [
     content: (
       <>
         <p className="mb-2 text-body">
-          The LLB program in Dehradun at Tulas is a 3-year course designed for graduates who want to build a strong foundation in law. Recognised among the best LLB colleges in Dehradun, the program focuses on both theoretical understanding and practical application. Students study core subjects such as constitutional law, criminal law, contract law, civil procedure, and corporate law, while developing skills in legal research, drafting, and case analysis through a structured, application-driven approach.
+          The LL.B. program in Dehradun at Tulas is a 3-year course designed for graduates who want to build a strong foundation in law. Recognised among the best LL.B. colleges in Dehradun, the program focuses on both theoretical understanding and practical application. Students can choose BBA LL.B. program or BA LL.B. program as per their interests. The core subjects such as constitutional law, criminal law, contract law, civil procedure, and corporate law prepare future lawyers while developing skills in legal research, drafting, and case analysis through a structured, application-driven approach.
         </p>
       </>
     ),

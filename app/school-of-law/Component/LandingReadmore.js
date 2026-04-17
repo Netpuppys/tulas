@@ -41,7 +41,7 @@ export default function LandingReadmore() {
       </h5>
 
       <p className="text-[15px] md:text-[16px] leading-relaxed text-gray-600">
-        Recognised as one of the best law college in Dehradun, Uttarakhand, Tulas offers a dynamic environment for graduates who want to build a professional career in law. The LL.B program focuses on developing a clear understanding of legal systems along with practical skills required for litigation, corporate law, and other legal roles.
+       Recognised as one of the best law colleges in Dehradun, Uttarakhand, Tulas offers a dynamic environment for graduates who want to build a professional career in law. The LL.B program focuses on developing a clear understanding of legal systems along with practical skills required for litigation, corporate law, and other legal roles.
       </p>
 
       {/* Expandable content */}
@@ -56,7 +56,7 @@ export default function LandingReadmore() {
           Students study key areas such as constitutional law, criminal law, contract law, and civil procedures, gaining insight into how law works across courts and organisations. Through case-based learning, research, and drafting exercises, students build the ability to analyse and apply legal concepts effectively.
           <br/>
           <br/>
-          If you are looking for LLB program in Uttarakhand, then Tulas college can be a good choice. Students get Internships with law firms, courts, and organisations with insight into real legal environments and processes. This ensures that students graduate with not only knowledge, but also the confidence and professional readiness required for careers in law.
+          If you are looking for an LL.B. program in Uttarakhand, then Tulas college can be a good choice. At Tulas, you get to choose from LL.B, BA LL.B, BBA LL.B. and move forward with your desired law course. Students get Internships with law firms, courts, and organisations with insight into real legal environments and processes. This ensures that students graduate with not only knowledge, but also the confidence and professional readiness required for careers in law.
         </p>
       </div>
 

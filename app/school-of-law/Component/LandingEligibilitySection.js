@@ -26,10 +26,12 @@ export default function LandingEligibilitySection() {
             <h3 className="text-center md:text-left text-orange-500 font-medium text-xl md:text-2xl mb-5">
               Program Eligibility
             </h3>
-
+           <h3 className="text-center md:text-left text-orange-500 font-medium text-md md:text-lg mt-2">
+              LL.B.
+            </h3>
             <ul className="space-y-2 text-gray-700 text-[15px] md:text-[17px] leading-relaxed list-disc pl-5">
               <li>
-                Graduation in any discipline from a recognised university.
+                Graduation in any discipline from a recognised university 
               </li>
               <li>
                Minimum 50% aggregate marks for general category
@@ -38,6 +40,23 @@ export default function LandingEligibilitySection() {
                Minimum 45% aggregate marks for reserved categories
               </li>
             </ul>
+
+            <h3 className="text-center md:text-left text-orange-500 font-medium text-md md:text-lg mt-2">
+              BBA LL.B. | BA LL.B.
+            </h3>
+            <ul className="space-y-2 text-gray-700 text-[15px] md:text-[17px] leading-relaxed list-disc pl-5">
+              <li>
+                10+2 or equivalent examination from a recognised board in any stream
+              </li>
+              <li>
+               Minimum 50% aggregate marks for general category
+              </li>
+              <li>
+               Minimum 45% aggregate marks for reserved categories
+              </li>
+            </ul>
+
+            
           </div>
 
           {/* CTA Card */}

@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const data = {
   ug: {
-    tabs: ["B Tech", "BBA", "BCA", "BCom", "B.Com Hons.", "BSc Agriculture", "B.Pharma", "BAJMC", "BA (Hons.) JMC", "Applied Sci. & Humanities",],
+    tabs: ["B Tech", "BBA", "BCA", "BCom", "B.Com Hons.", "BSc Agriculture", "B.Pharma", "BAJMC", "BA (Hons.) JMC", "Applied Sci. & Humanities", "LLB",],
     courses: {
       "B Tech": [
         {
@@ -14,6 +15,7 @@ const data = {
           desc: "Design and build the infrastructure that powers cities and communities. Develop expertise in structural design, construction management and sustainable development to lead large-scale projects with precision.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/civil-engineering/",
         },
         {
           title: "Computer Science & Engineering (CSE)",
@@ -21,6 +23,7 @@ const data = {
           desc: "Step into the world of computing, software development, and advanced technologies. The programme focuses on programming, system architecture, and emerging technologies, enabling students to design scalable digital solutions and build careers in software, product development, and technology innovation.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/computer-science",
         },
         {
           title: "Artificial Intelligence & Machine Learning (AI & ML)",
@@ -28,6 +31,7 @@ const data = {
           desc: "Explore technologies that are shaping the future of automation and intelligent systems. The programme focuses on machine learning, deep learning, neural networks, and data-driven decision systems, enabling students to develop smart technologies used across industries.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning",
         },
         {
           title: "Data Science (AI Integrated)",
@@ -35,6 +39,7 @@ const data = {
           desc: "Learn to turn complex data into meaningful insights that drive decision-making. The programme covers data analytics, machine learning, visualization, and statistical modelling, equipping students to solve real-world problems across industries such as technology, finance, healthcare, and business.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/computer-science-engineering-data-science",
         },
         {
           title: "Cyber Security (AI Integrated)",
@@ -42,6 +47,7 @@ const data = {
           desc: "As digital systems expand, protecting data and networks has become critical. This programme provides practical knowledge in ethical hacking, network security, digital forensics, and cyber defence strategies to prepare students for roles that safeguard digital infrastructure and information systems.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/computer-science-engineering-cyber-security",
         },
         {
           title: "Full Stack Development (AI Integrated)",
@@ -49,6 +55,7 @@ const data = {
           desc: "The program is designed to develop expertise in full stack development with AI integrated across application design and development. The curriculum covers data structures, front-end and back-end development, databases, cloud computing and software engineering, along with machine learning, generative AI and AI-enabled application development.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/cse-full-stack-development",
         },
         {
           title: "Electronics & Communication Engineering (ECE)",
@@ -56,6 +63,7 @@ const data = {
           desc: "Build expertise in electronic systems, communication networks, and embedded technologies. The programme prepares students to work across telecommunications, consumer electronics, and emerging fields such as IoT and smart communication systems.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/electronics-and-communication-engg",
         },
         {
           title: "Electrical & Electronics Engineering (EEE)",
@@ -63,6 +71,7 @@ const data = {
           desc: "Gain a strong foundation in power systems, electrical machines, and modern energy technologies. Students learn to work with smart grids, automation systems, and industrial electrical solutions that power industries and infrastructure.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/electrical-and-electronics-engg/",
         },
         {
           title: "Mechanical Engineering (ME)",
@@ -70,6 +79,7 @@ const data = {
           desc: "Develop the engineering principles that drive machines, manufacturing, and automation. The programme covers thermodynamics, design engineering, manufacturing processes, and robotics, preparing students for careers across automotive, production, aerospace, and industrial sectors.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/btech/mechanical-engineering/",
         },
       ],
       BBA: [
@@ -79,6 +89,7 @@ const data = {
           desc: "Develop an understanding of digital platforms, social media, content strategies and online consumer engagement. Learn how businesses use digital channels for communication, campaign planning and performance evaluation. Gain exposure to evolving digital trends and tools that support brand visibility and customer interaction in the digital ecosystems",
           duration: "3 years",
           eligibility: "10+2",
+          href: "/courses/bba",
         },
         {
           title: "Business Analytics (AI Integrated)",
@@ -86,6 +97,7 @@ const data = {
           desc: "Develop the ability to analyse, interpret and use data for effective business decision-making. Learn basic analytical tools, reporting techniques and data-driven approaches. Understand how organisations use data insights to improve performance, identify trends and support strategic planning across business functions.",
           duration: "3 years",
           eligibility: "10+2",
+          href: "/courses/bba",
         },
       ],
       BCA: [
@@ -95,6 +107,7 @@ const data = {
           desc: "This specialisation focuses on developing advanced expertise in full stack software engineering with AI integrated across application architecture. The curriculum covers advanced front-end and back-end frameworks, system design, scalable architectures, cloud deployment and software engineering practices, along with AI-driven application development and automation.",
           duration: "3 years",
           eligibility: "10+2",
+          href: "/courses/bca/",
         },
         {
           title: "Artificial Intelligence & Machine Learning (AI & ML)",
@@ -102,6 +115,7 @@ const data = {
           desc: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development.",
           duration: "3 years",
           eligibility: "10+2",
+          href: "/courses/bca/",
         },
       ],
       BCom: [
@@ -111,6 +125,7 @@ const data = {
           desc: "B.Com is 3 years. Build a sharp foundation in finance, accounting, and business strategy with real-world exposure that prepares you for corporate careers",
           duration: "3 years",
           eligibility: "10+2",
+          href: "/courses/bcom/",
         },
       ],
       "B.Com Hons.": [
@@ -120,6 +135,7 @@ const data = {
           desc: "The B.Com (Hons.) program extends this learning with advanced coursework, analytical depth and a deeper understanding of financial systems and business strategy. Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with practical exposure, case-based learning and industry-relevant training.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/bcom/",
         },
       ],
       "BSc Agriculture": [
@@ -129,6 +145,7 @@ const data = {
           desc: "A future-focused agriculture degree rooted in science and field application Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with practical exposure, case-based learning and industry-relevant training.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/b-sc-agriculture/",
         },
       ],
        "B.Pharma": [
@@ -138,6 +155,7 @@ const data = {
           desc: "The B.Pharm program at Tulas is designed for students who aspire to build careers in pharmaceutical sciences and the healthcare sector. The program focuses on developing a strong foundation in pharmaceutical chemistry, pharmacology, pharmaceutics, and drug formulation.",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/bpharma/",
         },
       ],
       "BAJMC": [
@@ -147,6 +165,7 @@ const data = {
           desc: "The BAJMC (3-year) program at Tulas, along with a 4-year honors, is designed to build a strong foundation in journalism, media and communication while preparing students for the evolving media landscape.",
           duration: "3 years",
           eligibility: "10+2",
+          href: "/courses/bjmc/",
         },
       ],
         "BA (Hons.) JMC": [
@@ -156,6 +175,7 @@ const data = {
           desc: "The program focuses on developing creative thinking, storytelling ability and communication skills across multiple media platforms. ",
           duration: "4 years",
           eligibility: "10+2",
+          href: "/courses/bjmc/",
         },
       ],
       "Applied Sci. & Humanities": [
@@ -165,6 +185,33 @@ const data = {
           desc: "Department of Applied Sciences and Humanities at Tulas Institute, Dehradun, is a foundational learning and interdisciplinary growth hub. The Department caters to introductory science courses like Physics, Chemistry, Mathematics, Environmental studies, and English ",
           duration: "3 years",
           eligibility: "10+2",
+          href: "/applied-sciences-humanities/",
+        },
+      ],
+      LLB: [
+        {
+          title: "LLB",
+          img: "/school-of-law/law/criminal-law-opt.png",
+          desc: "This specialisation focuses on developing advanced expertise in full stack software engineering with AI integrated across application architecture. The curriculum covers advanced front-end and back-end frameworks, system design, scalable architectures, cloud deployment and software engineering practices, along with AI-driven application development and automation.",
+          duration: "3 years",
+          eligibility: "10+2",
+          href: "/courses/llb/",
+        },
+        {
+          title: "BBA LLB",
+          img: "/school-of-law/law/constitutional-law.png",
+          desc: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development.",
+          duration: "3 years",
+          eligibility: "10+2",
+          href: "/courses/llb/",
+        },
+        {
+          title: "BA LLB",
+          img: "/school-of-law/law/contract-commercial-law.png",
+          desc: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development.",
+          duration: "3 years",
+          eligibility: "10+2",
+          href: "/courses/llb/",
         },
       ],
     },
@@ -179,6 +226,7 @@ const data = {
           desc: "Master brand strategy, consumer behaviour and market intelligence. Learn how to position products, scale businesses and drive measurable growth across competitive markets.",
           duration: "2 years",
           eligibility: "Passed Bachelor Degree of minimum 3 years duration",
+          href: "/programmes/mba-marketing",
         },
         {
           title: "Human Resource Management (HRM)",
@@ -186,6 +234,7 @@ const data = {
           desc: "Learn to build high-performance teams, manage talent strategy and shape organisational culture.",
           duration: "2 years",
           eligibility: "Passed Bachelor Degree of minimum 3 years duration",
+          href: "/programmes/mba-hr",
         },
         {
           title: "International Business (IB)",
@@ -193,6 +242,7 @@ const data = {
           desc: "Understand global trade, cross-border strategy and international market dynamics.",
           duration: "2 years",
           eligibility: "Passed Bachelor Degree of minimum 3 years duration",
+          href: "/programmes/mba-international-business",
         },
         {
           title: "Finance",
@@ -200,6 +250,7 @@ const data = {
           desc: "Develop strong financial acumen in investment analysis, risk management and corporate finance.",
           duration: "2 years",
           eligibility: "Passed Bachelor Degree of minimum 3 years duration",
+          href: "/programmes/mba-finance",
         },
         {
           title: "Agri-Business Management",
@@ -207,6 +258,7 @@ const data = {
           desc: "The backbone of the Indian Economy - Agriculture and Agribusiness provide 54% of employment to the Indian Population. The recent spurt in full-time MBA specialization in the Agri-Business Management program offers a focus on the development of Agri-managerial skills, in the curriculum..",
           duration: "2 years",
           eligibility: "Passed Bachelor Degree of minimum 3 years duration",
+          href: "/programmes/mba-agri-business",
         },
         {
           title: "Digital Marketing (AI Integrated)",
@@ -214,6 +266,7 @@ const data = {
           desc: "Build expertise in performance marketing, social media strategy, SEO, analytics and digital brand management.",
           duration: "2 years",
           eligibility: "Passed Bachelor Degree of minimum 3 years duration",
+          href: "/programmes/mba-digital-marketing",
         },
         {
           title: "Business Analytics (AI Integrated)",
@@ -221,6 +274,7 @@ const data = {
           desc: "Built for individuals who aim to move beyond participation and into leadership. MBA at Tulas develops strategic thinking, analytical clarity and executive confidence preparing graduates to influence organisations, not just work within them.",
           duration: "2 years",
           eligibility: "Passed Bachelor Degree of minimum 3 years duration",
+          href: "/programmes/mba-business-analytics",
         },
       ],
       MCA: [
@@ -230,6 +284,7 @@ const data = {
           desc: "This specialisation focuses on developing advanced expertise in full stack software engineering with AI integrated across application architecture. The curriculum covers advanced front-end and back-end frameworks, system design, scalable architectures, cloud deployment and software engineering practices, along with AI-driven application development and automation.",
           duration: "2 years",
           eligibility: "Passed BCA/ Bachelor Degree in Computer Science Engineering or equivalent Degree. Passed B.Sc./ B.Com./ B.A. with Mathematics at 10+2 Level or at Graduation Level",
+          href: "/programmes/mca-fullstack",
         },
         {
           title: "Artificial Intelligence & Machine Learning (AI & ML)",
@@ -237,6 +292,7 @@ const data = {
           desc: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development.",
           duration: "2 years",
           eligibility: "Passed BCA/ Bachelor Degree in Computer Science Engineering or equivalent Degree. Passed B.Sc./ B.Com./ B.A. with Mathematics at 10+2 Level or at Graduation Level",
+          href: "/programmes/mca-aiml",
         },
       ],
       "M.Tech": [
@@ -246,6 +302,7 @@ const data = {
           desc: "Step into the world of computing, software development, and advanced technologies. The programme focuses on programming, system architecture, and emerging technologies, enabling students to design scalable digital solutions and build careers in software, product development, and technology innovation.",
           duration: "2 years",
           eligibility: "B.Tech/B.E. in a relevant field",
+          href: "/programmes/mtech",
         },
         {
           title: "M.Tech Civil Engineering",
@@ -253,6 +310,7 @@ const data = {
           desc: "Design and build the infrastructure that powers cities and communities. Develop expertise in structural design, construction management and sustainable development to lead large-scale projects with precision.",
           duration: "2 years",
           eligibility: "B.Tech/B.E. in a relevant field",
+          href: "/programmes/mtech",
         },
         {
           title: "M.Tech Thermal",
@@ -260,6 +318,7 @@ const data = {
           desc: "M.Tech in Thermal Engineering is a postgraduate program specializing in energy transfer, heat transfer, and fluid dynamics, often focusing on renewable energy and HVAC systems",
           duration: "2 years",
           eligibility: "B.Tech/B.E. in a relevant field",
+          href: "/programmes/mtech",
         },
       ],
     },
@@ -274,8 +333,9 @@ const data = {
           desc: "The Diploma in Civil Engineering is a three-year comprehensive program designed to equip students with the fundamentals of construction, design, and infrastructure development.",
           duration: "3 years",
           eligibility: "Passed class 10",
+          href: "/programmes/diploma-civil",
         },
-        
+
       ],
       "Mechanical Engineering": [
        {
@@ -284,6 +344,7 @@ const data = {
           desc: "The Diploma in Mechanical Engineering is a three-year program designed to provide students with in-depth knowledge of mechanical systems, manufacturing processes, and engineering design.",
           duration: "3 years",
           eligibility: "Passed class 10",
+          href: "/programmes/diploma-mechanical",
         },
       ],
       "Computer Science Engineering": [
@@ -293,8 +354,9 @@ const data = {
           desc: "The Diploma program in Computer Science and Engineering program is a three-year undergraduate program. The Diploma program in Computer Science & Engineering stands out as one of the most coveted engineering program",
           duration: "3 years",
           eligibility: "Passed class 10",
+          href: "/programmes/diploma-cse",
         },
-        
+
       ],
        "D.Pharma": [
         {
@@ -303,8 +365,9 @@ const data = {
           desc: "The Diploma in Pharmacy (D.Pharm.) is a two-year program designed to provide students with comprehensive knowledge of pharmaceutical sciences, drug formulation, and healthcare practices. With an intake capacity of 60 seats",
           duration: "2 years",
           eligibility: "10+2",
+          href: "/programmes/dpharma",
         },
-        
+
       ],
     },
   },
@@ -402,14 +465,18 @@ export default function HomeProgramsSection() {
 
                 {/* Button at bottom */}
                 <div className="mt-auto">
-                  <button onClick={() =>
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              })
-            } className="w-full border border-orange-500 text-orange-500 py-2 rounded-full text-sm hover:bg-orange-500 hover:text-white transition">
+                  <Link
+                    href={course.href || "#"}
+                    onClick={() =>
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      })
+                    }
+                    className="block w-full text-center border border-orange-500 text-orange-500 py-2 rounded-full text-sm hover:bg-orange-500 hover:text-white transition"
+                  >
                     Explore Programme
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
