@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-import logo from "@/public/Components/Navbar/TulasLogo.png";
+import logo from "../../public/Components/Footer/tulaslogo.png";
 import NAAC from "../../public/Components/Navbar/naacnew.png";
 import Organogram from "../../public/FooterPDf/Organogram.pdf";
 import Plagiarism from "../../public/research/plagiarism-policy.pdf";

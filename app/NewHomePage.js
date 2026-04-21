@@ -108,6 +108,7 @@ import HomeStatsAndNews from "./newhome-components/HomeStatsAndNews";
 import HomeCelebrities from "./newhome-components/HomeCelebrities";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import HomeAwards from "./newhome-components/HomeAwards";
+import NewFooter from "@/component/NewFooter";
 // import MegaMenu from "@/component/Navbar/MegaMenu";
 
 export default function NewHomePage() {
@@ -283,7 +284,8 @@ export default function NewHomePage() {
 
         <LandingAccredition/>
 
-        <Footer />
+        {/* <Footer /> */}
+        <NewFooter/>
       </div>
     </>
   );

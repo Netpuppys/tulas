@@ -34,17 +34,16 @@ export default function LandingInternshipSection() {
         </div>
                     {/* Heading */}
       <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-4">
-        <span className="text-orange-500">Finance Internships</span>{" "}
-        <span className="text-gray-800">& Exposure at Tulas</span>
+        <span className="text-orange-500">Agriculture Industry</span>{" "}
+        <span className="text-gray-800">Internships at Tulas</span>
       </h3>
 
         <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
-          The Training and Placement Cell at Tulas supports students through structured training, internships and industry exposure. Students gain hands-on experience through case-based learning, financial projects, internships and industry interactions.
-
+          The Training and Placement Cell at Tulas supports students in preparing for real-world opportunities in the agricultural and allied sectors through structured training, field exposure, and industry collaborations. With guidance in research projects, fieldwork, data analysis, and interactions with agri-experts and organisations, students develop the skills, confidence, and practical understanding required to build successful careers in agronomy, agri-business, and research.
         </p>
         <br/>
         <p className="text-[#6b7280] leading-relaxed text-base md:text-lg">
-          Complementing this is TCCI (Tulas Career Catalyst Initiative) - a professional capability framework designed to bridge the gap between academic learning and industry expectations through skill development, real-world projects and performance-based training.
+          Complementing this is TCCI (Tulas Career Catalyst Initiative) – a Professional Capability Acceleration Framework designed to bridge the gap between academic learning and real-world agricultural practices. Through diagnostic assessments, targeted development, and field-based simulations, it equips students with hands-on capabilities and the readiness to contribute effectively across modern agriculture, agri-tech, and sustainability-driven roles from day one.
         </p>
       </div>
 
@@ -94,7 +93,7 @@ export default function LandingInternshipSection() {
           03
         </span>
         <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
-          <span className="font-bold">750+ Global</span> Recruiter Network
+          <span className="font-bold">200+ Agri</span> Industry Collaborations
         </p>
       </div>
 
@@ -104,7 +103,7 @@ export default function LandingInternshipSection() {
           04
         </span>
         <p className="text-gray-700 text-lg md:text-2xl leading-snug font-medium max-w-[280px]">
-          <span className="font-bold">7000+ Successful</span> Alumni Stories
+          <span className="font-bold">5000+ Successful</span> Alumni Stories
         </p>
       </div>
 

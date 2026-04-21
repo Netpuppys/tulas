@@ -24,7 +24,9 @@ export const specializations = {
     { id: 122, name: "BBA - Business Analytics" },
     { id: 123, name: "BBA - Digital Marketing" },
   ],
-  2: [{ id: 5, name: "B.Sc(Hons) Agriculture" }],
+  2: [{ id: 5, name: "B.Sc(Hons) Agriculture" },
+    { id: 142, name: "MSC. Agronomy" }
+  ],
   3: [
     { id: 6, name: "B.Tech-Civil Engineering" },
     { id: 7, name: "B.Tech-Computer Science & Engineering" },

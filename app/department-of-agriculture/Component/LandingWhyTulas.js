@@ -40,12 +40,12 @@ export default function LandingWhyTulas() {
         {/* Heading */}
         <h2 className="text-center text-[clamp(36px,5vw,38px)] font-medium mb-6">
           <span className="text-orange-500 font-extrabold">Why</span>{" "}
-          <span className="text-gray-800 font-extrabold">Tulas MBA?</span>
+          <span className="text-gray-800 font-extrabold">Tulas M.Sc Agronomy ?</span>
         </h2>
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-          Tulas MBA is an industry-aligned postgraduate programme designed for accelerated career growth and leadership development. In-demand specialisations, corporate internships, live projects, and placement-focused training ensure real-world business readiness.
+          M.Sc Agronomy from Tulas College combines scientific knowledge with field-based learning, research, and modern agricultural practices to prepare students for the future of farming. With a focus on sustainability and innovation, the program enables graduates to enhance crop productivity, manage resources efficiently, and drive impact in the agricultural sector.
         </p>
 
         {/* Check Points */}
@@ -53,17 +53,17 @@ export default function LandingWhyTulas() {
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">5+</span> Specialisations
+    <span className="text-orange-500 font-bold">350+</span> Global Recruiters
+  </div>
+  
+  <div className="flex items-center gap-3 text-2xl font-medium text-black">
+    <IoCheckmarkSharp className="text-2xl text-orange-500" />
+    <span className="text-orange-500 font-bold">Industry</span> Collaboration
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">750+</span> Global Recruiters
-  </div>
-
-  <div className="flex items-center gap-3 text-2xl font-medium text-black">
-    <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">100%</span> Paid Internships
+    <span className="text-orange-500 font-bold">100+</span> Alumni in Govt Sector
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
