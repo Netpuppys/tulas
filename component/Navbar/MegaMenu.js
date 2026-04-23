@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import logo from "../../public/Components/Footer/tulaslogo.png";
-import NAAC from "../../public/Components/Navbar/naacnew.png";
+import NAAC from "../../public/Components/Navbar/naacorange.png";
 import Organogram from "../../public/FooterPDf/Organogram.pdf";
 import Plagiarism from "../../public/research/plagiarism-policy.pdf";
 import NewResearchPolicy from "../../public/research/new-research-policy-tulas.pdf";
@@ -314,6 +314,7 @@ export default function MegaMenu() {
     setNavHover(false);
     setActiveMenu(null);
     setExpandedResearch(null);
+    setOpenPrograms(false);
   };
 
   /* Switch level tab and auto-select first dept */
@@ -472,8 +473,8 @@ export default function MegaMenu() {
               </span>
 
               <span onMouseEnter={() => { setActiveMenu("admissions"); setOpenPrograms(false); }}
-                className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap ${activeMenu === "admissions" ? "bg-[#f26522]" : ""}`}>
-                Admissions
+                className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap flex items-center gap-1.5 ${activeMenu === "admissions" ? "bg-[#f26522]" : ""}`}>
+                Admissions <ChevronDown />
               </span>
 
               <span onMouseEnter={() => { setActiveMenu("research"); setOpenPrograms(false); setExpandedResearch(null); }}

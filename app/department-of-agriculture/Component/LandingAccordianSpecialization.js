@@ -9,32 +9,32 @@ export default function LandingAccordianSpecialization() {
     {
       title: "Advanced Crop Production & Agronomy",
       text: "This subject focuses on modern crop production techniques and agronomy practices, helping students understand cropping systems and yield optimisation across different agro-climatic conditions. It builds the foundation for sustainable agriculture while enabling students to improve productivity through scientific farming methods.",
-      mobileImage: "/btechimage/btechspecial.jpg",
-      image: "/btechimage/btechspecial.jpg",
+      mobileImage: "/landingbanner/msc/advancedcrop1.png",
+      image: "/landingbanner/msc/advancedcrop1.png",
     },
     {
       title: `Soil Fertility & Nutrient Management`,
       text: "Students gain in-depth knowledge of soil fertility, soil health, and nutrient management techniques essential for maintaining long-term agricultural sustainability. The subject covers fertiliser management and integrated approaches that support efficient crop growth and resource utilisation.",
-      mobileImage: "/btechimage/btechspecial1.jpg",
-      image: "/btechimage/btechspecial1.jpg",
+      mobileImage: "/landingbanner/msc/soil.png",
+      image: "/landingbanner/msc/soil.png",
     },
     {
       title: `Precision Farming & Smart Agriculture`,
       text: "This area introduces precision farming and smart agriculture practices using modern tools like GIS, remote sensing, and data-driven agriculture techniques. Students learn how technology can enhance farm efficiency, optimise inputs, and improve decision-making in modern agri-tech environments.",
-      mobileImage: "/btechimage/btechspecial4.jpg",
-      image: "/btechimage/btechspecial4.jpg",
+      mobileImage: "/landingbanner/msc/precision.png",
+      image: "/landingbanner/msc/precision.png",
     },
      {
       title: "Agrometeorology & Climate-Smart Agriculture",
       text: "Focusing on agrometeorology, this subject explores how weather and climate impact crop performance. Students are trained in climate-smart agriculture practices and climate resilience strategies to manage risks and ensure sustainable farming in changing environmental conditions.",
-      mobileImage: "/btechimage/btechspecial2.jpg",
-      image: "/btechimage/btechspecial2.jpg",
+      mobileImage: "/landingbanner/msc/agrometeorology.png",
+      image: "/landingbanner/msc/agrometeorology.png",
     },
     {
       title: "Research Methodology & Field Experimentation",
       text: "This subject develops strong capabilities in agricultural research through field experimentation, crop trials, and data analysis. Students learn how to design experiments and interpret results, preparing them for careers in research, consultancy, and innovation within the agricultural sector.",
-      mobileImage: "/btechimage/btechspecial3.jpg",
-      image: "/btechimage/btechspecial3.jpg",
+      mobileImage: "/landingbanner/msc/research.png",
+      image: "/landingbanner/msc/research.png",
     },
     
   ];

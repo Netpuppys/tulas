@@ -39,6 +39,7 @@ const NewFooter = ({ set = false, color = false }) => {
     { title: "Programs", linkTo: "/programs/" },
     { title: "Admissions", linkTo: "/admissions/" },
     { title: "Placements", linkTo: "/placements/" },
+    { title: "Career", linkTo: "/careers/" },
   ];
 
   const socialMediaLinks = [
@@ -90,6 +91,7 @@ const NewFooter = ({ set = false, color = false }) => {
     { title: "Internshala", linkTo: "https://internshala.com/", target: "_blank" },
     { title: "National Career Service", linkTo: "https://www.ncs.gov.in/", target: "_blank" },
     { title: "National Scholarship Portal", linkTo: "https://scholarships.gov.in/", target: "_blank" },
+    { title: "Disclaimer", linkTo: "/disclaimer/" },
   ];
 
   const otherKeyLinks = [
@@ -106,6 +108,8 @@ const NewFooter = ({ set = false, color = false }) => {
     },
     { title: "Innovation & Startup policy", linkTo: innovationAndStartupPolicy, target: "_blank" },
     { title: "Mandatory Disclosure", linkTo: MadatoryDisclosure, target: "_blank" },
+      { title: "Hr policy", linkTo: HrPolicy, target: "_blank" },
+
   ];
 
   const renderLink = (link, index) => {
@@ -135,11 +139,11 @@ const NewFooter = ({ set = false, color = false }) => {
       <div className="w-full px-[5%] py-10 grid grid-cols-1 md:grid-cols-[1fr_auto_auto_auto] gap-10 border-b border-white/10">
 
         {/* Logo + tagline */}
-        <div className="flex flex-col gap-4 max-w-[260px]">
+        <div className="flex flex-col gap-4 max-w-[360px]">
           <Image
             src={TulasFooter}
             alt="Tula's Institute Dehradun Logo"
-            className="w-[160px] h-auto"
+            className="w-[260px] h-auto"
           />
           <p className="text-[13px] text-gray-400 leading-relaxed">
             Building future leaders through quality education and innovation since 2006.
@@ -210,7 +214,7 @@ const NewFooter = ({ set = false, color = false }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E69706] flex items-center justify-center text-[15px] transition-colors duration-200"
+                className="w-9 h-9 rounded-full bg-orange-500 hover:bg-white/10 flex items-center justify-center text-[15px] transition-colors duration-200"
               >
                 {social.icon}
               </a>
@@ -256,17 +260,6 @@ const NewFooter = ({ set = false, color = false }) => {
               >
                 <span className="text-orange-500 text-[10px]">▶</span>
                 Landline
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/tulasinstitutedehradun/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-[13px] text-gray-300 hover:text-orange-500 transition-colors duration-200 py-[3px]"
-              >
-                <span className="text-orange-500 text-[10px]">▶</span>
-                Social Media
               </a>
             </li>
           </ul>

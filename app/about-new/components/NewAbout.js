@@ -88,6 +88,17 @@ import mobilebanner2 from "../../../public/Homepage/BannerHome/newbannermobile1.
 import desktopbanner3 from "../../../public/Homepage/BannerHome/newbanner2.jpg";
 import mobilebanner3 from "../../../public/Homepage/BannerHome/newbannermobile2.jpg";
 
+import leader1 from "../../../public/placement-team/leader1.png";
+import leader2 from "../../../public/placement-team/leader2.png";
+import leader3 from "../../../public/placement-team/leader3.png";
+import leader4 from "../../../public/placement-team/leader4.png";
+import leader5 from "../../../public/placement-team/leader5.png";
+import leader6 from "../../../public/placement-team/leader6.png";
+import leader7 from "../../../public/placement-team/leader7.png";
+import leader8 from "../../../public/placement-team/leader8.png";
+import leader9 from "../../../public/placement-team/leader9.png";
+import leader10 from "../../../public/placement-team/leader10.png";
+
 import { ThreeDots } from "react-loader-spinner";
 import LandingAccredition from "../../graduate-school-of-business/Component/LandingAccredition";
 import LandingAcademicNotifications from "../../newhome-components/LandingAcademicNotifications";
@@ -111,6 +122,10 @@ import HomeAwards from "../../newhome-components/HomeAwards";
 import NewFooter from "@/component/NewFooter";
 import AboutWhy from "./AboutWhy";
 import AboutWhyChoose from "./AboutWhyChoose";
+import AboutManagment from "./AboutManagment";
+import AlumniTestimonials from "./AlumniTestimonials";
+import AboutVision from "./AboutVision";
+import AboutLeader from "./AboutLeader";
 // import MegaMenu from "@/component/Navbar/MegaMenu";
 
 export default function NewAbout() {
@@ -193,6 +208,31 @@ export default function NewAbout() {
     mobilebanner2,
     mobilebanner3,
   ];
+
+  const leaders = [
+      {
+        image: leader1,
+        image2: leader2,
+      },
+      {
+         image: leader3,
+        image2: leader4,
+      },
+      {
+         image: leader5,
+        image2: leader6,
+      },
+      {
+         image: leader7,
+        image2: leader8,
+      },
+      {
+         image: leader9,
+        image2: leader10,
+      },
+      
+    ];
+
   const name = [
     "Ranked 86th by Times of B School in India.",
     "Ranked Amongst Top 50 Private College in India.",
@@ -262,26 +302,19 @@ export default function NewAbout() {
 
         <AboutWhyChoose/>
 
+        <AboutVision/>
+
         <HomeGlobalHiringPartners/>
 
-        <HomeEligibilitySection/>
+        <AboutManagment/>
 
         <HomeAlumniSuccessStories/>
 
         <HomeInternshipSection/>
 
-        <HomeVirtual/>
-        <VirtualTour />
+        {/* <AlumniTestimonials/> */}
 
-        <HomeHighlights/>
-
-        <HomeStatsAndNews/>
-
-        <HomeLifeTulas/>
-
-        <HomeAwards/>
-
-        <LandingAccredition/>
+        <AboutLeader features={leaders}/>
 
         {/* <Footer /> */}
         <NewFooter/>

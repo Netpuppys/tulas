@@ -38,8 +38,8 @@ export default function AboutWhyChoose() {
 
         {/* Heading */}
               <h3 className="text-[clamp(38px,6vw,38px)] font-extrabold mb-5" style={{ textAlign: "center" }}>
-          <span className="text-orange-500">Shape Your</span>{" "}
-          <span className="text-gray-800">Future at Tulas</span>
+          <span className="text-orange-500">Why Choose</span>{" "}
+          <span className="text-gray-800">Tulas ?</span>
         </h3>
 
         <AboutPerks perksSlides={placementSlides}/>
