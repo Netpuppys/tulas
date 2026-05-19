@@ -1,10 +1,10 @@
 import NewHomePage from "../NewHomePage";
-import NewAbout from "./components/NewAbout";
+import Testabout from "./components/Testabout";
 
 export default function NewHome() {
   return (
     <>
-    <NewAbout/>
+    <Testabout/>
     </>
   );
 }
