@@ -14,11 +14,11 @@ function IAQCStructure() {
       <head>
         <title>
           IQAC Structure | Best Engineering College in Dehradun, Uttarakhand |
-          Tula's Institute
+          Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the structure of the Internal Quality Assurance Cell (IQAC) at Tula's Institute, Dehradun. Understand how our organized framework ensures continuous quality enhancement and academic excellence across all departments."
+          content="Explore the structure of the Internal Quality Assurance Cell (IQAC) at Tulas University, Dehradun. Understand how our organized framework ensures continuous quality enhancement and academic excellence across all departments."
         />
       </head>
       <body>

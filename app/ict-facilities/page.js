@@ -14,6 +14,9 @@ import lan from "../../public/ict-facilities/lan.png";
 import whiteBoard from "../../public/ict-facilities/white-board.png";
 import wifi from "../../public/ict-facilities/wifi.png";
 import Vision from "@/component/Programs/Vision";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function ICTFacilities() {
   const { ref, inView } = useInView({
@@ -25,14 +28,14 @@ function ICTFacilities() {
       title: "ICT Facilities",
       description: (
         <>
-          Tula’s Institute integrates traditional teaching with IT-enabled
+          Tulas University integrates traditional teaching with IT-enabled
           learning tools such as PPTs, video clippings, online classes, and
           digital resources to enhance practical learning and advanced
           knowledge. With over 205 Mbps internet connectivity, students have
           seamless access to online resources.
           <br />
           <br />
-          The institute offers state-of-the-art infrastructure, including
+          The University offers state-of-the-art infrastructure, including
           ICT-enabled classrooms, seminar halls, tutorial rooms, and
           AICTE-compliant laboratories. To bridge the gap between academic
           curriculum and industry expectations, the college collaborates with
@@ -83,27 +86,34 @@ function ICTFacilities() {
       <head>
         <title>
           ICT Facilities | Best Engineering College in Dehradun, Uttarakhand |
-          Tula's Institute
+          Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the advanced ICT facilities at Tula's Institute, Dehradun. Our state-of-the-art computer labs, high-speed internet, and digital resources support a dynamic learning environment, empowering students with cutting-edge technology"
+          content="Explore the advanced ICT facilities at Tulas University, Dehradun. Our state-of-the-art computer labs, high-speed internet, and digital resources support a dynamic learning environment, empowering students with cutting-edge technology"
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
-                ICT <span className="text-[#007A83]">FACILITIES</span>
+                ICT <span className="text-[#f97316]">FACILITIES</span>
               </>
             }
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "Tula’s has implemented ICT to support advanced learning and assessment. The institute has adequate classrooms to meet the need of the various programs being run. Presently all lecture rooms, tutorial rooms and seminar halls are equipped with projectors and Wi-Fi/LAN connectivity for the use of ICT during teaching. Computer assisted learning and digital materials are made available to the students to supplement classroom teaching."
+              "Tulas has implemented ICT to support advanced learning and assessment. The institute has adequate classrooms to meet the need of the various programs being run. Presently all lecture rooms, tutorial rooms and seminar halls are equipped with projectors and Wi-Fi/LAN connectivity for the use of ICT during teaching. Computer assisted learning and digital materials are made available to the students to supplement classroom teaching."
             }
           />
           <div className="w-full relative overflow-hidden">
@@ -141,7 +151,7 @@ function ICTFacilities() {
             </div>
           </Fade>
           <div className="w-full h-fit z-50">
-            <Footer />
+            <NewFooter/>
           </div>
         </div>
       </body>

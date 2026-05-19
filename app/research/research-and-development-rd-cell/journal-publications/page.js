@@ -8,6 +8,9 @@ import Footer from "@/component/Footer";
 import background from "../../../../public/research/r-and-cell/journal/background.png";
 import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function RAndDFunded() {
   const { ref, inView } = useInView({
@@ -20,21 +23,28 @@ function RAndDFunded() {
       <head>
         <title>
           Journal Publications | Best Engineering College in Dehradun,
-          Uttarakhand | Tula's Institute
+          Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the journal publications from Tula's Institute faculty and students, showcasing cutting-edge research and academic contributions across various disciplines."
+          content="Explore the journal publications from Tulas University faculty and students, showcasing cutting-edge research and academic contributions across various disciplines."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
-                Journal <span className="text-[#007A83]">Publications</span>
+                Journal <span className="text-[#f97316]">Publications</span>
               </>
             }
             description={<></>}
@@ -65,7 +75,7 @@ function RAndDFunded() {
           </div>
 
           <div className="w-full h-fit z-50">
-            <Footer color={true} />
+            <NewFooter/>
           </div>
         </div>
       </body>

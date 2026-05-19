@@ -13,7 +13,7 @@ function AccreditationLogo() {
 
   return (
     <div className="pt-8 md:pt-[3%] bg-white w-full h-fit flex flex-col items-center justify-center relative">
-      <h3 className="text-[#760135] font-[CarotSlab] text-center px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
+      <h3 className="text-[#f97316] font-bold mb-5 text-center px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] w-fit whitespace-nowrap leading-tight md:leading-none z-10">
         Affiliations & Accreditations
       </h3>
       {/* Swiper for image carousel */}

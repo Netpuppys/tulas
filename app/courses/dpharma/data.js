@@ -33,7 +33,7 @@ export const features = [
 export const heading = (
   <>
     Best Pharmacy (D.Pharm.) Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
@@ -67,11 +67,11 @@ export const content = (
 export const quotes = (
   <>
     “Shape the future of healthcare with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s D. Pharm. program.
+    <strong className="text-[#f97316]">
+      Tulas University D. Pharm. program.
     </strong>{" "}
     Empowering aspiring pharmacists with the skills to make a difference in{" "}
-    <strong className="text-[#760135]">
+    <strong className="text-[#f97316]">
       patient care and the pharmaceutical industry.
     </strong>
     ”
@@ -588,14 +588,14 @@ export const itemsClubs = [
     image: Course,
     points: [
       "Our program fosters creativity, enabling students to produce compelling media content that resonates across various platforms, addressing the needs for information, awareness, and entertainment in both popular and high culture.",
-      "At Tula’s Department of Journalism & Mass Communication, we offer cutting-edge infrastructure designed to prepare students for diverse media engagements and research. Our state-of-the-art Electronic Media and Production Centre, along with a comprehensive library and supportive learning environment, empowers students to hone their skills and gain practical experience.",
-      "As the demand for skilled media professionals continues to rise, our graduates are well-positioned to excel in various fields, from journalism and public relations to digital marketing and content creation. With a BA.(Hons.) JMC from Tula’s, students are not just participants in the media industry; they are leaders poised to make a significant impact.",
+      "At Tulas Department of Journalism & Mass Communication, we offer cutting-edge infrastructure designed to prepare students for diverse media engagements and research. Our state-of-the-art Electronic Media and Production Centre, along with a comprehensive library and supportive learning environment, empowers students to hone their skills and gain practical experience.",
+      "As the demand for skilled media professionals continues to rise, our graduates are well-positioned to excel in various fields, from journalism and public relations to digital marketing and content creation. With a BA.(Hons.) JMC from Tulas, students are not just participants in the media industry; they are leaders poised to make a significant impact.",
     ],
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "At Department of Journalism and Communications Tula’s , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
+      "At Department of Journalism and Communications Tulas , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
       "Besides a wide variety of extracurricular activities, workshops, and industry partnerships, there are also many opportunities for students to acquire additional know-how and proficiencies.",
     ],
     image: Program,

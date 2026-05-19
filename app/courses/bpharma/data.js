@@ -33,7 +33,7 @@ export const features = [
 export const heading = (
   <>
     Best B.Pharm. Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const sideImages = [content1, content2];

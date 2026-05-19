@@ -165,12 +165,12 @@ function Feedback() {
     <>
       <head>
         <title>
-          Feedback | Best Engineering College in Dehradun, Uttarakhand | Tula's
-          Institute
+          Feedback | Best Engineering College in Dehradun, Uttarakhand | Tulas
+          University
         </title>
         <meta
           name="description"
-          content="We value your feedback at Tula's Institute, Dehradun. Share your thoughts and suggestions to help us improve and continue providing top-quality education and student support. Your feedback matters to us."
+          content="We value your feedback at Tulas University, Dehradun. Share your thoughts and suggestions to help us improve and continue providing top-quality education and student support. Your feedback matters to us."
         />
       </head>
       <body>
@@ -181,7 +181,7 @@ function Feedback() {
           description={<></>}
           belowTitle={<></>}
           belowPara={
-            "Tula’s Institute is dedicated to advancing Research and Development initiatives, driven by a clear vision and mission to explore and advance research in cutting-edge technologies and various fields of Engineering. To foster an environment conducive to such pursuits, the Institute has established the Centre for Innovation, Research, and Entrepreneurship (CIRE). "
+            "Tulas University is dedicated to advancing Research and Development initiatives, driven by a clear vision and mission to explore and advance research in cutting-edge technologies and various fields of Engineering. To foster an environment conducive to such pursuits, the Institute has established the Centre for Innovation, Research, and Entrepreneurship (CIRE). "
           }
         />
         <div className="w-full relative overflow-hidden">

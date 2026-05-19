@@ -13,6 +13,9 @@ import graph1 from "../../../public/research/r-and-cell/graph1.png";
 import graph2 from "../../../public/research/r-and-cell/graph2.png";
 import Vision from "@/component/Programs/Vision";
 import { UtmContext } from "@/component/utmParams";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function RAndCell() {
   const { utmParams } = useContext(UtmContext);
@@ -23,7 +26,7 @@ function RAndCell() {
         <>
           The R&D Cell plays a crucial role in facilitating the smooth
           conduction of various government and non-government research projects
-          at Tula’s Institute. It acts as a central point of contact and support
+          at Tulas University. It acts as a central point of contact and support
           for researchers, ensuring that projects are executed efficiently and
           effectively.
           <br />
@@ -92,34 +95,41 @@ function RAndCell() {
       <head>
         <title>
           Research and Development (R&D) Cell | Best Engineering College in
-          Dehradun, Uttarakhand | Tula's Institute
+          Dehradun, Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="The R&D Cell at Tula's Institute fosters cutting-edge research across various disciplines. It supports faculty in securing research grants and encourages publication in reputed journals. Explore funded projects, journal and conference publications, and organized conferences."
+          content="The R&D Cell at Tulas University fosters cutting-edge research across various disciplines. It supports faculty in securing research grants and encourages publication in reputed journals. Explore funded projects, journal and conference publications, and organized conferences."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
                 Research and{" "}
-                <span className="text-[#007A83]">Development (R&D) Cell</span>
+                <span className="text-[#f97316]">Development (R&D) Cell</span>
               </>
             }
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "The Research and Development (R&D) Cell at Tula’s Institute is an integral part of the Centre for Innovation, Research, and Entrepreneurship (CIRE). Its primary focus is to facilitate and drive cutting-edge research activities across various disciplines within the Institute."
+              "The Research and Development (R&D) Cell at Tulas University is an integral part of the Centre for Innovation, Research, and Entrepreneurship (CIRE). Its primary focus is to facilitate and drive cutting-edge research activities across various disciplines within the Institute."
             }
           />
           
           <Vision sections={sections} color={true} />
           <Collaborators />
-          <h3 className="text-[#00383D] pt-8 md:pt-[3%] text-center text-[25px] md:text-[40px] font-[CarotSlab]">
+          <h3 className="text-[#f97316] pt-8 md:pt-[3%] text-center text-[25px] md:text-[40px] font-[CarotSlab]">
             Cumulative Citations
           </h3>
           <div className="flex items-center flex-col md:flex-row justify-center gap-6 md:gap-[10%] py-8 md:py-14">
@@ -128,18 +138,18 @@ function RAndCell() {
           </div>
           <Link
             href={`/aicte-vaani/index.html`}
-            className="px-12 md:px-20 py-2 mb-10 bg-[#00383D] text-[20px] md:text-[28px] font-[TTChocolatesMedium] text-[#FFFFFF] rounded-full border border-[#00383D] hover:bg-[#FFFFFF] hover:text-[#00383D] transition-all"
+            className="px-12 md:px-20 py-2 mb-10 bg-[#f97316] text-[20px] md:text-[28px] font-[TTChocolatesMedium] text-[#FFFFFF] rounded-full border border-[#f97316] hover:bg-[#FFFFFF] hover:text-[#f97316] transition-all"
           >
             Funded Projects
           </Link>
           <Link
             href={`/research/research-and-development-rd-cell/funded-projects-and-grants/${utmParams}`}
-            className="px-12 md:px-20 py-2 mb-20 bg-[#00383D] text-[20px] md:text-[28px] font-[TTChocolatesMedium] text-[#FFFFFF] rounded-full border border-[#00383D] hover:bg-[#FFFFFF] hover:text-[#00383D] transition-all"
+            className="px-12 md:px-20 py-2 mb-20 bg-[#f97316] text-[20px] md:text-[28px] font-[TTChocolatesMedium] text-[#FFFFFF] rounded-full border border-[#f97316] hover:bg-[#FFFFFF] hover:text-[#f97316] transition-all"
           >
             Funded Projects and Grants
           </Link>
           <div className="w-full h-fit z-50">
-            <Footer color={true} />
+            <NewFooter/>
           </div>
         </div>
       </body>

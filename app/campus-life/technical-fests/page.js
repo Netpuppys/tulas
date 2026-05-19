@@ -8,6 +8,9 @@ import Image from "next/image";
 import Footer from "@/component/Footer";
 import fest from "../../../public/campus-life/technical-fests/technical-fest.png";
 import Vision from "@/component/Programs/Vision";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function TechnicalFest() {
   const sections = [
     {
@@ -50,19 +53,26 @@ function TechnicalFest() {
   return (
     <>
       <head>
-        <title>Technical Fests - Utkrisht at Tula’s Institute, Dehradun</title>
+        <title>Technical Fests - Utkrisht at Tulas University, Dehradun</title>
         <meta
           name="description"
-          content="Join the excitement of Utkrisht, Tula’s Institute’s annual technical fest. Engage in robot wars, coding competitions, technical quizzes, and more. A platform for students to showcase innovative projects, learn from experts, and explore cutting-edge technologies."
+          content="Join the excitement of Utkrisht, Tulas University annual technical fest. Engage in robot wars, coding competitions, technical quizzes, and more. A platform for students to showcase innovative projects, learn from experts, and explore cutting-edge technologies."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
           title={
             <>
-              Technical<span className="text-[#007A83]"> Fests</span>
+              Technical<span className="text-[#f97316]"> Fests</span>
             </>
           }
           belowTitle={"Utkrisht – The Ultimate Technical Challenge"}
@@ -80,7 +90,7 @@ function TechnicalFest() {
         </div>
         <Vision sections={sections} />
         <div className="w-full h-fit z-50">
-          <Footer color={true} />
+          <NewFooter />
         </div>
       </body>
     </>

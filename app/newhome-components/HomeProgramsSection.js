@@ -467,12 +467,6 @@ export default function HomeProgramsSection() {
                 <div className="mt-auto">
                   <Link
                     href={course.href || "#"}
-                    onClick={() =>
-                      window.scrollTo({
-                        top: 0,
-                        behavior: "smooth",
-                      })
-                    }
                     className="block w-full text-center border border-orange-500 text-orange-500 py-2 rounded-full text-sm hover:bg-orange-500 hover:text-white transition"
                   >
                     Explore Programme

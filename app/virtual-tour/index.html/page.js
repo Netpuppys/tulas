@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Tula's Institute | Best Engineering College in Dehradun, Uttarakhand
+          Tulas University | Best Engineering College in Dehradun, Uttarakhand
         </title>
         <meta
           name="viewport"

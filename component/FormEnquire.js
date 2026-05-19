@@ -331,7 +331,7 @@ function FormEnquire({ formPopup, pdf }) {
           value={formData.FirstName}
           onChange={(e) => handleChange("FirstName", e.target.value)}
           required
-          className="px-5 py-2 focus:outline-none w-full bg-[#F4F4F4] border-b-2 border-[#760135] text-[#4B4B4B] placeholder:text-[#4B4B4B] disabled:opacity-100 disabled:cursor-not-allowed mb-2"
+          className="px-5 py-2 focus:outline-none w-full bg-[#F4F4F4] border-b-2 border-[#f97316] text-[#4B4B4B] placeholder:text-[#4B4B4B] disabled:opacity-100 disabled:cursor-not-allowed mb-2"
         />
         <input
           type="Email"
@@ -339,7 +339,7 @@ function FormEnquire({ formPopup, pdf }) {
           value={formData.Email}
           onChange={(e) => handleChange("Email", e.target.value)}
           required
-          className="px-5 py-2 focus:outline-none w-full bg-[#F4F4F4] border-b-2 border-[#760135] text-[#4B4B4B] placeholder:text-[#4B4B4B] disabled:opacity-100 disabled:cursor-not-allowed mb-2"
+          className="px-5 py-2 focus:outline-none w-full bg-[#F4F4F4] border-b-2 border-[#f97316] text-[#4B4B4B] placeholder:text-[#4B4B4B] disabled:opacity-100 disabled:cursor-not-allowed mb-2"
         />
         <div className="w-full flex flex-col md:flex-row gap-2 mb-2">
           <div className="flex w-full">
@@ -347,7 +347,7 @@ function FormEnquire({ formPopup, pdf }) {
               value={countryCode}
               disabled={verified}
               onChange={handleCountryCodeChange}
-              className="w-14 h-[42px] text-center focus:outline-none bg-[#F4F4F4] border-b-2 border-[#760135] text-[#4B4B4B] placeholder:text-[#4B4B4B]"
+              className="w-14 h-[42px] text-center focus:outline-none bg-[#F4F4F4] border-b-2 border-[#f97316] text-[#4B4B4B] placeholder:text-[#4B4B4B]"
             >
               <option value="91">{`+${getCountryCallingCode("IN")}`}</option>
               <option value="977">{`+${getCountryCallingCode("NP")}`}</option>
@@ -367,7 +367,7 @@ function FormEnquire({ formPopup, pdf }) {
               maxLength={10}
               onChange={handlePhoneNumberChange}
               placeholder="Enter your Mobile No...."
-              className={`py-2 focus:outline-none w-full bg-[#F4F4F4] border-b-2 border-[#760135] text-[#4B4B4B] disabled:opacity-100 disabled:cursor-not-allowed placeholder:text-[#4B4B4B]`}
+              className={`py-2 focus:outline-none w-full bg-[#F4F4F4] border-b-2 border-[#f97316] text-[#4B4B4B] disabled:opacity-100 disabled:cursor-not-allowed placeholder:text-[#4B4B4B]`}
             />
           </div>
           <button
@@ -385,7 +385,7 @@ function FormEnquire({ formPopup, pdf }) {
             value={formData.State}
             onChange={handleStateChange}
             required
-            className="w-full md:w-1/2 classics px-5 py-2 h-10 border-b-2 border-[#760135] focus:outline-none text-[#4B4B4B] bg-[#F4F4F4] placeholder:text-[#4B4B4B]"
+            className="w-full md:w-1/2 classics px-5 py-2 h-10 border-b-2 border-[#f97316] focus:outline-none text-[#4B4B4B] bg-[#F4F4F4] placeholder:text-[#4B4B4B]"
           >
             <option value="">Select State</option>
             {state
@@ -403,7 +403,7 @@ function FormEnquire({ formPopup, pdf }) {
             required
             disabled={!formData.State}
             title={!formData.State ? "Please Select State" : ""}
-            className="w-full md:w-1/2 classics disabled:opacity-100 disabled:cursor-not-allowed px-5 py-2 h-10 border-b-2 border-[#760135] focus:outline-none text-[#4B4B4B] bg-[#F4F4F4] placeholder:text-[#4B4B4B]"
+            className="w-full md:w-1/2 classics disabled:opacity-100 disabled:cursor-not-allowed px-5 py-2 h-10 border-b-2 border-[#f97316] focus:outline-none text-[#4B4B4B] bg-[#F4F4F4] placeholder:text-[#4B4B4B]"
           >
             <option value="">Select City</option>
             {formData.State &&
@@ -422,7 +422,7 @@ function FormEnquire({ formPopup, pdf }) {
             value={formData.Course}
             onChange={handleCourseChange}
             required
-            className="w-full md:w-1/2 classics px-5 py-2 h-10 border-b-2 border-[#760135] focus:outline-none text-[#4B4B4B] bg-[#F4F4F4] placeholder:text-[#4B4B4B]"
+            className="w-full md:w-1/2 classics px-5 py-2 h-10 border-b-2 border-[#f97316] focus:outline-none text-[#4B4B4B] bg-[#F4F4F4] placeholder:text-[#4B4B4B]"
           >
             <option value="">Select Course</option>
             {courses.map((Course) => (
@@ -437,7 +437,7 @@ function FormEnquire({ formPopup, pdf }) {
             required
             disabled={!formData.Course}
             title={!formData.Course ? "Please Select Course" : ""}
-            className="w-full md:w-1/2 classics disabled:opacity-100 disabled:cursor-not-allowed px-5 py-2 h-10 border-b-2 border-[#760135] focus:outline-none text-[#4B4B4B] bg-[#F4F4F4] placeholder:text-[#4B4B4B]"
+            className="w-full md:w-1/2 classics disabled:opacity-100 disabled:cursor-not-allowed px-5 py-2 h-10 border-b-2 border-[#f97316] focus:outline-none text-[#4B4B4B] bg-[#F4F4F4] placeholder:text-[#4B4B4B]"
           >
             <option value="">Select Specialization</option>
             {formData.Course &&
@@ -471,7 +471,7 @@ function FormEnquire({ formPopup, pdf }) {
           type="submit"
           disabled={!verified}
           title={verified ? "" : "Please Verify Mobile Number"}
-          className={`w-full bg-[#760135] text-white cursor-pointer py-2 disabled:opacity-100 disabled:cursor-not-allowed font-semibold mb-10`}
+          className={`w-full bg-[#f97316] text-white cursor-pointer py-2 disabled:opacity-100 disabled:cursor-not-allowed font-semibold mb-10`}
         >
           Submit
         </button>

@@ -34,6 +34,9 @@ import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
 import CSEFaculty from "../../../../public/courses/all-faculty/CSE.pdf";
 import ReadFaculty from "@/component/Programs/ReadFaculty";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 const sideImages = [contentLeft, contentRight];
 
 function page() {
@@ -50,7 +53,14 @@ function page() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={topBanner}
           title={<>COMPUTER SCIENCE & ENGINEERING (CSE)</>}
@@ -91,7 +101,7 @@ function page() {
           backgroundCrousel={exploreCrouselBackground}
           color={true}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

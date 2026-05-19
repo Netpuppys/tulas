@@ -15,7 +15,7 @@ function IQACVision() {
     {
       title: "Vision",
       description:
-        "To ensure quality culture as the prime concern for Tula’s Institute, Dehradun through institutionalizing and internalizing all the initiatives taken with internal and external support.",
+        "To ensure quality culture as the prime concern for Tulas University, Dehradun through institutionalizing and internalizing all the initiatives taken with internal and external support.",
       image: DepartmentalVission,
     },
     {
@@ -40,11 +40,11 @@ function IQACVision() {
       <head>
         <title>
           IQAC Vision & Mission | Best Engineering College in Dehradun,
-          Uttarakhand | Tula's Institute
+          Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Discover the vision and mission of the Internal Quality Assurance Cell (IQAC) at Tula's Institute, Dehradun. Learn how our commitment to quality drives academic and institutional excellence, fostering a culture of continuous improvement."
+          content="Discover the vision and mission of the Internal Quality Assurance Cell (IQAC) at Tulas University, Dehradun. Learn how our commitment to quality drives academic and institutional excellence, fostering a culture of continuous improvement."
         />
       </head>
       <body>
@@ -56,7 +56,7 @@ function IQACVision() {
           belowTitle={<></>}
           belowPara={
             <>
-              Tula’s Institute is dedicated to advancing Research and
+              Tulas University is dedicated to advancing Research and
               Development initiatives, driven by a clear vision and mission to
               explore and advance research in cutting-edge technologies and
               various fields of Engineering. To foster an environment conducive

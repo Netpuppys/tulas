@@ -62,14 +62,14 @@ export const sideImages = [content1, content2];
 export const heading = (
   <>
     Excellence in Legal{" "}
-    <span className="text-[#760135]">Education and Practice</span>
+    <span className="text-[#f97316]">Education and Practice</span>
   </>
 );
 export const quotes = (
   <>
     “Code your future, innovate with technology, and transform the world with{" "}
-    <strong className="text-[#760135]">
-      Tulas Institute’s Masters in Computer Applications Program.
+    <strong className="text-[#f97316]">
+      Tulas University Masters in Computer Applications Program.
     </strong>
     ”
   </>
@@ -93,7 +93,7 @@ export const items = [
     title: "USPs",
     // intro: "Here’s why Tulas Institute stands out as the ideal place to pursue your LLB",
     image: USP,
-    outro: "Join Tulas Institute and propel your tech career to new heights!",
+    outro: "Join Tulas University and propel your tech career to new heights!",
 
     points: [
        <>
@@ -217,7 +217,7 @@ export const itemsClubs = [
   {
     title: "Beyond the Curriculum - More Than Just a Degree",
     description: [
-      "At Tulas Institute, the MCA program offers more than just academic knowledge, preparing you to be a well-rounded tech leader:",
+      "At Tulas University, the MCA program offers more than just academic knowledge, preparing you to be a well-rounded tech leader:",
       <>
         <strong className="font-bold">Internships & Industry Projects:</strong>
         <br />
@@ -260,7 +260,7 @@ export const itemsClubs = [
   {
     title: "Career Prospectus – A Future Filled with Limitless Potential",
     description: [
-      "An MCA degree from Tulas Institute unlocks a world of rewarding, high-paying career opportunities in the rapidly evolving tech industry:",
+      "An MCA degree from Tulas University unlocks a world of rewarding, high-paying career opportunities in the rapidly evolving tech industry:",
       <>
         <strong className="font-bold">Software Engineer/Developer:</strong>
         <br />

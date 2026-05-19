@@ -27,6 +27,9 @@ import { FaDownload } from "react-icons/fa";
 import Link from "next/link";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BPharmaFee from "../../../public/FeeStructure/BPharma.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BPharma() {
   return (
     <>
@@ -38,7 +41,14 @@ function BPharma() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={bpharmaBanner}
           title={<>Bachelor of Pharmacy (B. Pharm)</>}
@@ -68,7 +78,7 @@ function BPharma() {
             <Link
               href={bpharmacy}
               target="_blank"
-              className={`py-3 bg-[#007A83] group relative px-10 flex items-center justify-center text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full `}
+              className={`py-3 bg-[#f97316] group relative px-10 flex items-center justify-center text-white disabled:opacity-50 disabled:cursor-not-allowed rounded-full `}
             >
               <div className="absolute z-10 bg-white w-1/2 h-1/2 opacity-0 group-hover:opacity-100 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:w-[calc(100%-4px)] group-hover:h-[calc(100%-4px)] transition-all duration-300 rounded-full"></div>
               <p className="z-20 flex items-center text-white group-hover:text-[#007A83] transition-all duration-200 justify-center gap-2 text-[clamp(10px,3.5vw,30px)] md:text-[clamp(10px,0.9vw,45px)]">
@@ -80,7 +90,7 @@ function BPharma() {
         <PlacementProgram features={features} />
         <TopRecruiter />
 
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

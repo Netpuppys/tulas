@@ -95,7 +95,7 @@ function BannerHome({
       className={`w-full relative overflow-hidden ${
         screen
           ? "h-[80vh] md:h-screen"
-          : "aspect-[1088/1350] md:aspect-[2745/1329] mt-20 md:mt-14 md:h-full"
+          : "aspect-[1088/1350] md:aspect-[2745/1329] mt-20 md:mt-0 md:h-full"
       }`}
     >
       {/* Background Slides */}

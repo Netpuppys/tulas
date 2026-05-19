@@ -8,6 +8,9 @@ import Footer from "@/component/Footer";
 import background from "../../../../public/research/r-and-cell/funded-projects-and-grants/background.png";
 import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function RAndDConferencePublication() {
   const { ref, inView } = useInView({
@@ -20,28 +23,35 @@ function RAndDConferencePublication() {
       <head>
         <title>
           Conference Publications | Best Engineering College in Dehradun,
-          Uttarakhand | Tula's Institute
+          Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Discover the conference publications from Tula's Institute, showcasing cutting-edge research and innovations presented at various academic and industry conferences."
+          content="Discover the conference publications from Tulas University, showcasing cutting-edge research and innovations presented at various academic and industry conferences."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
                 Books, Conference
-                <span className="text-[#007A83]"> & Book Chapters</span>
+                <span className="text-[#f97316]"> & Book Chapters</span>
               </>
             }
             description={<></>}
             belowPara={
               <>
-                At Tula’s Institute, we recognize the importance of Books, book
+                At Tulas University, we recognize the importance of Books, book
                 chapters and conference publication as a significant aspect of
                 academic learning and research. We encourage our faculty,
                 researchers, and students to actively participate in conferences
@@ -67,7 +77,7 @@ function RAndDConferencePublication() {
           </div>
 
           <div className="w-full h-fit z-50">
-            <Footer />
+            <NewFooter/>
           </div>
         </div>
       </body>

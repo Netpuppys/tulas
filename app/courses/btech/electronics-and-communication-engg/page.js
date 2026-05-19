@@ -31,21 +31,31 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/BTech.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
       <head>
         <title>
-          Electronics and Communication Engg College in Dehradun | Tula's
-          Institute
+          Electronics and Communication Engg College in Dehradun | Tulas
+          
         </title>
         <meta
           name="description"
-          content="Tula's Institute is a reputed Electronics & Communication Engg in Dehradun, India with an outstanding campus placement record in ECE, Tula's Institute offers a wide variety of courses to choose from and is ranked among the top Engineering Colleges in Dehradun."
+          content="Tulas is a reputed Electronics & Communication Engg in Dehradun, India with an outstanding campus placement record in ECE, Tulas offers a wide variety of courses to choose from and is ranked among the top Engineering Colleges in Dehradun."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>Department of Electronics & Communication Engineering (ECE)</>
@@ -85,7 +95,7 @@ function BAJMC() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

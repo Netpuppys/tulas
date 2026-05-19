@@ -32,6 +32,9 @@ import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
 import CyberFaculty from "../../../../public/courses/all-faculty/CSE-cyber-security.pdf";
 import ReadFaculty from "@/component/Programs/ReadFaculty";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 const sideImages = [contentLeft, contentRight];
 
 function page() {
@@ -40,15 +43,22 @@ function page() {
       <head>
         <title>
           Best Computer Science & Engineering( Cyber Security) College in
-          Dehradun, Uttarakhand | Tula's Institute
+          Dehradun, Uttarakhand | Tulas 
         </title>
         <meta
           name="description"
-          content="Tula's Institute Is the Best Computer Science & Engineering( Cyber Security) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (Cyber Security) for Aspiring Professionals. Visit Now!"
+          content="Tulas Is the Best Computer Science & Engineering( Cyber Security) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (Cyber Security) for Aspiring Professionals. Visit Now!"
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title={<>COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)</>}
@@ -87,7 +97,7 @@ function page() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

@@ -7,11 +7,14 @@ import vision from "../../public/vision/vision.webp";
 import mission from "../../public/vision/mission.webp";
 import Vision from "@/component/Programs/Vision";
 import BannerProgram from "@/component/Programs/BannerProgram";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewFooter from "@/component/NewFooter";
 
 function VisionAndMission() {
   const sections = [
     {
-      title: "Institute’s Vision",
+      title: "University Vision",
       description: (
         <>
           To emerge as an academic centre producing world class professionals,
@@ -21,7 +24,7 @@ function VisionAndMission() {
       image: vision,
     },
     {
-      title: "Institute’s Mission",
+      title: "University Mission",
       description: (
         <ul className="list-disc ml-5">
           <li>
@@ -48,19 +51,26 @@ function VisionAndMission() {
     <>
       <head>
         <title>
-          Institute’s Vision & Mission | Excellence in Education & Innovation
+          University's Vision & Mission | Excellence in Education & Innovation
         </title>
         <meta
           name="description"
-          content="Discover the vision and mission of our institute, dedicated to producing world-class professionals, fostering innovation, and promoting research. Learn how we strive for academic excellence, diversity, and technology-driven education."
+          content="Discover the vision and mission of our University, dedicated to producing world-class professionals, fostering innovation, and promoting research. Learn how we strive for academic excellence, diversity, and technology-driven education."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <BannerProgram image={BannerImg} title={"Vision & Mission"} />
           <Vision color={true} sections={sections} />
-          <Footer color={true} />
+          <NewFooter/>
         </div>
       </body>
     </>

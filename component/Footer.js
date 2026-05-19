@@ -138,7 +138,7 @@ const Footer = ({ set = false, color = false }) => {
   const cardsData = [
     {
       leftText:
-        "Copyright © 2025 Tulas Institute, Dehradun | All Rights Reserved",
+        "Copyright © 2026 Tulas University, Dehradun | All Rights Reserved",
     },
     {
       leftText: (
@@ -180,7 +180,7 @@ const Footer = ({ set = false, color = false }) => {
         {/* black bar */}
         <div
           className={`w-full h-full ${
-            color ? "bg-[#00383D]" : "bg-[#120008]"
+            color ? "bg-[#f97316]" : "bg-[#f97316]"
           }  flex flex-col md:flex-row gap-2 justify-between px-4 md:px-[4%] py-3 md:py-0 items-center z-40`}
         >
           <h3 className="font-[Oswald] text-center w-full md:w-fit text-[clamp(10px,6vw,40px)] md:text-[clamp(10px,2vw,40px)]">
@@ -189,7 +189,7 @@ const Footer = ({ set = false, color = false }) => {
           <div className="flex justify-center flex-wrap w-full md:w-fit gap-2">
             <button
              onClick={handleScrollArrow}
-              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
+              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#000000] hover:bg-[#f97316] hover:text-[#120008] border-2 border-[#f97316] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
             >
               ENQUIRE NOW
             </button>
@@ -197,7 +197,7 @@ const Footer = ({ set = false, color = false }) => {
               onClick={() => {
                 window.location.href = `/apply-now/${utmParams}`;
               }}
-              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
+              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#000000] hover:bg-[#f97316] hover:text-[#120008] border-2 border-[#f97316] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
             >
               APPLY TODAY
             </button>
@@ -206,7 +206,7 @@ const Footer = ({ set = false, color = false }) => {
                 setFormPopup(true);
                 setProspectus(true);
               }}
-              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#E69706] hover:text-[#120008] border-2 border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
+              className="w-[70%] rounded-full md:w-fit text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] bg-[#00383D] hover:bg-[#f97316] hover:text-[#120008] border-2 border-[#f97316] py-[6px] px-2 md:py-2 md:px-[1vw] text-white"
             >
               DOWNLOAD PROSPECTUS
             </button> */}
@@ -215,7 +215,7 @@ const Footer = ({ set = false, color = false }) => {
                 setFormPopup(true);
                 setFeesStructure(true);
               }}
-              className="w-[70%] rounded-full md:w-fit bg-[#E69706] border-2 text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#E69706] py-[6px] px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
+              className="w-[70%] rounded-full md:w-fit bg-[#f97316] border-2 text-[clamp(10px,3vw,40px)] md:text-[clamp(9px,0.8vw,18px)] border-[#f97316] py-[6px] px-2 md:py-2 md:px-[1vw] text-[#120008] hover:text-white hover:bg-transparent "
             >
               DOWNLOAD FEE STRUCTURE
             </button> */}
@@ -226,7 +226,7 @@ const Footer = ({ set = false, color = false }) => {
       {/* main footer */}
       <div
         className={`w-full flex flex-col relative z-50 h-fit md:min-h-[88vh] justify-center items-center ${
-          color ? "bg-[#005D64]" : "bg-[#3D001B]"
+          color ? "bg-[#000000]" : "bg-[#000000]"
         }`}
       >
         <div className="w-full flex flex-col items-center gap-[6%] justify-center">
@@ -256,15 +256,15 @@ const Footer = ({ set = false, color = false }) => {
         <div className="flex flex-col gap-2 md:flex-row justify-between w-full h-full mt-8 px-[5%]">
           <div className="max-w-full md:max-w-[25%] flex flex-col items-center md:block">
             <div className="items-center md:items-start justify-center flex flex-col">
-              <div className="w-[40%] md:w-[15%] h-[2px] bg-[#E69706]"></div>
+              <div className="w-[40%] md:w-[15%] h-[2px] bg-[#f97316]"></div>
               <h4 className="text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
                 ADDRESS
               </h4>
             </div>
             <p className="text-[clamp(10px,5vw,20px)] md:text-[clamp(10px,1.1vw,20px)] text-center md:text-start font-[TTChocolates] mb-8">
-              Tulas Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road,
+              Tulas University, Dhoolkot, Post Office: Selaqui, Chakrata Road,
               Dehradun- 248011
-              <strong className="text-[#E69706]"> Uttarakhand</strong>
+              <strong className="text-[#f97316]"> Uttarakhand</strong>
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.277785508504!2d77.8834027760641!3d30.343054304360063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929fa74538275%3A0x3cb757428c691de3!2sTula&#39;s%20Institute!5e0!3m2!1sen!2sin!4v1724739581831!5m2!1sen!2sin"
@@ -277,7 +277,7 @@ const Footer = ({ set = false, color = false }) => {
           </div>
           <div className="mb-6 md:mb-0 md:w-[45%]">
             <div className="md:w-[80%] justify-center flex flex-col items-center text-center">
-              <div className="w-[40%] md:w-[15%] h-[2px] bg-[#E69706]"></div>
+              <div className="w-[40%] md:w-[15%] h-[2px] bg-[#f97316]"></div>
               <h4 className="text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,1.6vw,30px)] font-normal mb-4 font-[Oswald]">
                 KEY LINKS
               </h4>
@@ -300,7 +300,7 @@ const Footer = ({ set = false, color = false }) => {
                       }
                       className="flex gap-2 text-[clamp(10px,4vw,20px)] md:text-[clamp(10px,1.1vw,20px)] w-fit"
                     >
-                      <span className="text-[#E69706]">{"> "}</span>
+                      <span className="text-[#f97316]">{"> "}</span>
                       {link.title}
                     </Link>
                   </li>
@@ -323,7 +323,7 @@ const Footer = ({ set = false, color = false }) => {
                       }
                       className="flex gap-2 text-[clamp(10px,4vw,20px)] md:text-[clamp(10px,1vw,20px)] w-fit"
                     >
-                      <span className="text-[#E69706]">{"> "}</span>
+                      <span className="text-[#f97316]">{"> "}</span>
                       {link.title}
                     </Link>
                   </li>
@@ -335,7 +335,7 @@ const Footer = ({ set = false, color = false }) => {
           <div className="flex flex-row mb-6 md:flex-col w-full md:w-fit h-full md:h-fit items-start justify-between">
             <div className="flex flex-col w-[33%] md:w-fit h-full">
               <div className="justify-center flex flex-col">
-                <div className="w-[40%] md:w-[65%] h-[2px] bg-[#E69706]"></div>
+                <div className="w-[40%] md:w-[65%] h-[2px] bg-[#f97316]"></div>
                 <h4 className="text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,1.6vw,30px)] leading-tight font-normal mb-4 font-[Oswald]">
                   ADMISSION HELPLINE
                 </h4>
@@ -346,7 +346,7 @@ const Footer = ({ set = false, color = false }) => {
                     href="tel:+91-6366937159"
                     className="flex justify-start items-center gap-2"
                   >
-                    <span className="text-[#E69706]">
+                    <span className="text-[#f97316]">
                       <FiPhone />
                     </span>
                     +91-9837983721
@@ -354,7 +354,7 @@ const Footer = ({ set = false, color = false }) => {
                 </li>
                 {/* <li>
                   <a href="tel:+91-9837634737">
-                    <span className="text-[#E69706]">{"> "}</span>+91-9837983721
+                    <span className="text-[#f97316]">{"> "}</span>+91-9837983721
                     <br />
                     (Nepal Admission Helpline)
                   </a>
@@ -363,7 +363,7 @@ const Footer = ({ set = false, color = false }) => {
             </div>
             <div className="flex flex-col w-[33%] md:w-fit h-full">
               <div className="md:mt-8 justify-center flex flex-col">
-                <div className="w-[40%] md:w-[35%] h-[2px] bg-[#E69706]"></div>
+                <div className="w-[40%] md:w-[35%] h-[2px] bg-[#f97316]"></div>
                 <h4 className="text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,1.6vw,30px)] leading-tight font-normal mb-4 font-[Oswald]">
                   LANDLINE
                 </h4>
@@ -374,7 +374,7 @@ const Footer = ({ set = false, color = false }) => {
                     href="tel:0135-269930"
                     className="flex justify-start items-center gap-2"
                   >
-                    <span className="text-[#E69706]">
+                    <span className="text-[#f97316]">
                       <TbDeviceLandlinePhone />
                     </span>
                     0135-2699300
@@ -385,14 +385,14 @@ const Footer = ({ set = false, color = false }) => {
 
             <div className="flex-col flex w-[33%] md:w-fit h-full">
               <div className="md:mt-8 justify-center flex flex-col">
-                <div className="w-[40%] md:w-[15%] h-[2px] bg-[#E69706]"></div>
+                <div className="w-[40%] md:w-[15%] h-[2px] bg-[#f97316]"></div>
                 <h4 className="text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,1.6vw,30px)] leading-tight font-normal mb-4 font-[Oswald]">
                   MAIL
                 </h4>
               </div>
 
               <p className="text-[clamp(10px,3.6vw,20px)] md:text-[clamp(10px,1.1vw,20px)] font-[TTChocolates] flex gap-1 items-center">
-                <span className="text-[#E69706]">
+                <span className="text-[#f97316]">
                   <MdMail />
                 </span>
                 <a href="mailto:info@tulas.edu.in">info@tulas.edu.in</a>

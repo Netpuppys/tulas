@@ -22,7 +22,7 @@ function HomePerks() {
 
   return (
     <section className="py-10 bg-[#ffff]">
-                <h3 className="text-[clamp(43px,6vw,42px)] font-extrabold mb-3" style={{ textAlign: "center" }}>
+                <h3 className="text-[clamp(33px,6vw,32px)] font-extrabold mb-3 px-2" style={{ textAlign: "center" }}>
           <span className="text-orange-500">Shape Your</span>{" "}
           <span className="text-gray-800">Future at Tulas</span>
         </h3>
@@ -36,7 +36,7 @@ function HomePerks() {
           </h2> */}
 
           <p className="text-gray-700 mb-5 leading-relaxed text-sm md:text-base">
-            Tulas Institute, established in 2006 under the Rishabh Educational Trust, has built a strong reputation for delivering quality education with a future-focused approach. Backed by UGC recognition and NAAC A+ accreditation, the institute maintains high academic standards while continuously evolving to meet the demands of a changing world.
+            Tulas University, established in 2006 under the Rishabh Educational Trust, has built a strong reputation for delivering quality education with a future-focused approach. Backed by UGC recognition and NAAC A+ accreditation, the University maintains high academic standards while continuously evolving to meet the demands of a changing world.
           </p>
 
           <p className="text-gray-700 leading-relaxed text-sm md:text-base">

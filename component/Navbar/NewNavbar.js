@@ -189,7 +189,7 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
             <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
               {/* Hamburger / Close button */}
               <button
-                className="bg-[rgba(19,19,19,0.16)] text-3xl rounded-lg shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative border-2 border-gray-400"
+                className="bg-[rgba(19,19,19,0.16)] text-3xl rounded-lg shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative border-2 border-white"
                 onClick={handleButtonClick}
               >
                 <div className={`p-[11px] rounded-[50%] aspect-square`}>
@@ -200,9 +200,9 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
                         : "unCheck flex flex-col w-[30px] cursor-pointer"
                     }
                   >
-                    <span className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-black`}></span>
-                    <span className={`my-[3px] rounded-lg h-[3px] w-full bg-black`}></span>
-                    <span className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-black`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}></span>
                   </label>
                 </div>
               </button>

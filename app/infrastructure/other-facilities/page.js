@@ -37,7 +37,7 @@ const sections = [
   {
     title: "ATM Facility",
     description:
-      "24/7 ATM runs within the Oriental Bank of Commerce campus, making transactions as quick as the blink of an eye. Parents or guardians of students can transfer money online to students, which they can receive immediately. Money transactions can never be an obstacle in a student’s life at Tula’s.",
+      "24/7 ATM runs within the Oriental Bank of Commerce campus, making transactions as quick as the blink of an eye. Parents or guardians of students can transfer money online to students, which they can receive immediately. Money transactions can never be an obstacle in a student’s life at Tulas.",
     image: atm,
   },
   {
@@ -101,7 +101,7 @@ const sections = [
     title: "Transportation",
     description: (
       <>
-        Tula’s Institute offers safe and reliable transportation, ensuring a
+        Tulas University offers safe and reliable transportation, ensuring a
         stress-free commute for students and faculty. With pick-up and drop-off
         points conveniently located within a 500-meter radius of residences, the
         service prioritizes both comfort and efficiency.
@@ -119,7 +119,7 @@ const sections = [
         reported immediately.
         <br />
         <br />
-        With Tula’s, every ride is safe, convenient, and comfortable.
+        With Tulas, every ride is safe, convenient, and comfortable.
       </>
     ),
     image: TulasTransportation,
@@ -147,7 +147,7 @@ function OtherFacilities() {
         <title>Best Facilities Among all colleges in Dehradun,Uttrakhand</title>
         <meta
           name="description"
-          content="Tula's Institute is committed to offer the best infrastructure and facilities like: Wifi,Canteen,Gym,Playground,shopping mall...."
+          content="Tulas University is committed to offer the best infrastructure and facilities like: Wifi,Canteen,Gym,Playground,shopping mall...."
         />
       </head>
       <body>
@@ -157,13 +157,13 @@ function OtherFacilities() {
             image={BannerImg}
             title={
               <>
-                Campus <span className="text-[#007A83]">Facilities</span>
+                Campus <span className="text-[#f97316]">Facilities</span>
               </>
             }
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "Set against a backdrop of natural beauty, Tula’s Institute offers an environment that inspires growth and discovery. From thoughtfully planned spaces to an environment that balances focus and recreation, the campus sets the stage for holistic growth. It’s where innovation meets comfort, creating the perfect backdrop for academic and personal journeys."
+              "Set against a backdrop of natural beauty, Tulas University offers an environment that inspires growth and discovery. From thoughtfully planned spaces to an environment that balances focus and recreation, the campus sets the stage for holistic growth. It’s where innovation meets comfort, creating the perfect backdrop for academic and personal journeys."
             }
           />
           {/* fixed background */}

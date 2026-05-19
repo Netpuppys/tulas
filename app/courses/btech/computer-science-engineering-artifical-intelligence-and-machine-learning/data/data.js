@@ -35,13 +35,13 @@ export const features = [
 export const heading = (
   <>
     Best Computer Science & Engineering (AI & ML) Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
   <>
     The B.Tech in Computer Science & Engineering (Artificial Intelligence &
-    Machine Learning) at Tula’s Institute is a comprehensive program that blends
+    Machine Learning) at Tulas University is a comprehensive program that blends
     fundamental principles of computer science with state-of-the-art
     methodologies in artificial intelligence (AI) and machine learning (ML).
     This program is designed to equip students with the skills required to
@@ -77,8 +77,8 @@ export const quotes = (
   <>
     “"Shape the future with AI, master intelligent technologies, and lead the
     next wave of innovation with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s B.Tech in CSE (AI & ML).
+    <strong className="text-[#f97316]">
+      Tulas B.Tech in CSE (AI & ML).
     </strong>
     ”
   </>

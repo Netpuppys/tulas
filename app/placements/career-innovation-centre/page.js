@@ -2,7 +2,7 @@
 import React from "react";
 import Navbar from "@/component/Navbar/Navbar";
 import bannerImage from "../../../public/placements/placemnetnewbanner.png";
-import placement1 from "../../../public/placements/placement1.webp";
+import mobilebannerImage from "../../../public/placements/bannerImg.webp";
 import placement2 from "../../../public/placements/placement2.webp";
 import placement3 from "../../../public/placements/placement3.webp";
 import Footer from "@/component/Footer";
@@ -11,7 +11,7 @@ import { PiStudentFill } from "react-icons/pi";
 import { FaIdBadge, FaHandshake, FaUserTie } from "react-icons/fa";
 import NewBannerProgram from "@/component/Programs/NewBannerProgram";
 import AccreditationLogo from "@/app/Component/AccreditationLogo";
-import HallFame from "@/app/about/Components/HallFame";
+import HallFame from "@/app/about-backup/Components/HallFame";
 
 import hallfame1 from "/public/About/hallfame/Aanchal.png";
 import hallfame2 from "/public/About/hallfame/ABHISHEK PANDY.png";
@@ -38,7 +38,7 @@ import leader9 from "/public/placement-team/leader9.png";
 import leader10 from "/public/placement-team/leader10.png";
 
 
-import TopRecruiters from "@/app/about/Components/TopRecruiters";
+import TopRecruiters from "@/app/about-backup/Components/TopRecruiters";
 
 import {
   FaClipboardList,
@@ -55,6 +55,9 @@ import PlacementDrive from "../components/PlacementDrive";
 import Leaders from "../components/Leaders";
 import TopPlacements from "../components/TopPlacements";
 import YouTubeEmbed from "../components/YouTubeEmbed";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
  const features = [
     {
@@ -121,22 +124,22 @@ import YouTubeEmbed from "../components/YouTubeEmbed";
 
     const newstats = [
     {
-      icon: <PiStudentFill className="text-[#760135] text-5xl mb-2" />,
+      icon: <PiStudentFill className="text-[#f97316] text-5xl mb-2" />,
       value: "400+",
       label: ["Overall Students placed"],
     },
     {
-      icon: <FaIdBadge className="text-[#760135] text-5xl mb-2" />,
+      icon: <FaIdBadge className="text-[#f97316] text-5xl mb-2" />,
       value: "1.4 CR",
       label: ["Top Packages"],
     },
     {
-      icon: <FaHandshake className="text-[#760135] text-6xl mb-2" />,
+      icon: <FaHandshake className="text-[#f97316] text-6xl mb-2" />,
       value: "79%",
       label: ["Overall Placements"],
     },
     {
-      icon: <FaUserTie className="text-[#760135] text-5xl mb-2" />,
+      icon: <FaUserTie className="text-[#f97316] text-5xl mb-2" />,
       value: "700+",
       label: ["Recruiters Tie-Ups"],
     },
@@ -193,25 +196,32 @@ const page = () => {
     <>
       <head>
         <title>
-          Career Innovation Centre | Tula's Institute | Shaping Future Leaders
+          Career Innovation Centre | Tulas University | Shaping Future Leaders
         </title>
         <meta
           name="description"
-          content="Discover the Career Innovation Centre at Tula's Institute, where students are empowered with career planning, skills development, and industry connections to excel in their chosen fields."
+          content="Discover the Career Innovation Centre at Tulas University, where students are empowered with career planning, skills development, and industry connections to excel in their chosen fields."
         />
       </head>
       <body>
-        <Navbar />
-        <NewBannerProgram image={bannerImage} mobileImage={bannerImage}/>
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
+        <NewBannerProgram image={bannerImage} mobileImage={mobilebannerImage}/>
 
               <div className="bg-white w-full px-3">
         <div className="min-h-fit pt-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1200px] mx-auto">
-          <h3 className="text-2xl font-[Merriweather] font-bold md:text-5xl text-[#760135] text-left mb-3">
-            <span className="text-[#000]">Placement at</span> TULA'S
+          <h3 className="text-2xl font-bold md:text-5xl text-[#f97316] text-left mb-3">
+            <span className="text-[#000]">Placement at</span> TULAS
           </h3>
           <h4 className="leading-tight text-[clamp(13px,4vw,30px)] md:text-[clamp(13px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
             <>
-              Tula's Institute is dedicated to serve the community by recognizing the diverse needs of the individuals.  Tula's Institute is recognized as one of the 'Top Engineering Colleges in Uttarakhand. Known for its excellence in academic programs from undergraduate to postgraduate level, Tula's Institute attracts students from different states of India and neighbouring countries at priority. At Tula's Institute, we believe in maintaining a balance between academics and extra/co- curricular activities while keeping a healthy teacher-student ratio and in providing equal opportunities for all.
+              Tulas University is dedicated to serve the community by recognizing the diverse needs of the individuals.  Tulas University is recognized as one of the 'Top Engineering Colleges in Uttarakhand. Known for its excellence in academic programs from undergraduate to postgraduate level, Tulas University attracts students from different states of India and neighbouring countries at priority. At Tulas University, we believe in maintaining a balance between academics and extra/co- curricular activities while keeping a healthy teacher-student ratio and in providing equal opportunities for all.
             </>
           </h4>
         </div>
@@ -221,7 +231,7 @@ const page = () => {
 
                 <div className="relative overflow-hidden my-8">
           {/* Blurred sides */}
-          <div className="pointer-events-none absolute top-0 left-0 w-[7%] h-full z-10  bg-gradient-to-r from-[#760135] to-transparent" />
+          <div className="pointer-events-none absolute top-0 left-0 w-[7%] h-full z-10  bg-gradient-to-r from-[#f97316] to-transparent" />
           {/* Scrolling text */}
           <marquee
             direction="left"
@@ -231,14 +241,14 @@ const page = () => {
             <div className="w-fit py-2 md:py-6 flex gap-4 md:gap-[2%] whitespace-nowrap">
               {name.map((item, index) => (
                 <div key={index} className="relative w-fit mx-auto">
-                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] bg-gradient-to-r from-[#E69706] via-[#760135] to-[#007A83] text-transparent bg-clip-text font-[TTChocolates] leading-tight font-extrabold">
+                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] bg-gradient-to-r from-[#E69706] via-[#f97316] to-[#000000] text-transparent bg-clip-text font-[TTChocolates] leading-tight font-extrabold">
                     {item}
                   </h2>
                 </div>
               ))} 
             </div>
           </marquee>
-            <div className="pointer-events-none absolute top-0 right-0 w-[7%] h-full z-10 bg-gradient-to-l from-[#760135] to-transparent" />
+            <div className="pointer-events-none absolute top-0 right-0 w-[7%] h-full z-10 bg-gradient-to-l from-[#f97316] to-transparent" />
 
         </div>
 
@@ -251,7 +261,7 @@ const page = () => {
         className="w-[250px] bg-white shadow-[0_2px_6px_rgba(16,105,103,0.2)] hover:shadow-[0_10px_25px_rgba(16,105,103,0.4)] transition-shadow duration-300 p-6 text-center rounded"
       >
         <div className="flex justify-center mb-2">{item.icon}</div>
-        <div className="text-[#760135] text-2xl font-bold">{item.value}</div>
+        <div className="text-[#f97316] text-2xl font-bold">{item.value}</div>
         <div className="text-sm text-black font-medium leading-tight mt-1">
           <div>{item.label[0]}</div>
           <div className="font-bold">{item.label[1]}</div>
@@ -262,8 +272,8 @@ const page = () => {
 </div>
 
 <h2 className="text-center pt-5 text-[clamp(24px,4vw,42px)] font-[Merriweather]">
-  <span className="font-bold text-[#760135]">World's Leading Brands</span>{' '}
-  <span className="font-light text-[#106967]">Hire Our Talented Students</span>
+  <span className="font-bold text-[#f97316]">World's Leading Brands</span>{' '}
+  <span className="font-light text-[#000000]">Hire Our Talented Students</span>
 </h2>
 
 
@@ -286,7 +296,7 @@ const page = () => {
 
 
         <div className="w-full h-fit z-50">
-          <Footer />
+          <NewFooter/>
         </div>
       </body>
     </>

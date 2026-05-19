@@ -17,7 +17,7 @@ const topStripItems = [
     name: "ERP",
     href: "#",
     subLinks: [
-      { name: "Teached Login",      href: "https://teacher.camu.in" },
+      { name: "Teacher Login",      href: "https://teacher.camu.in" },
       { name: "Student Login",      href: "https://student.camu.in" },     
     ],
   },
@@ -81,36 +81,36 @@ const menuData = {
 
   postgraduate: {
     "School Of Management": [
-      { name: "MBA",                        href: "/programmes/mba" },
-      { name: "MBA Marketing",              href: "/programmes/mba-marketing" },
-      { name: "MBA Human Resource Mgmt.",   href: "/programmes/mba-hr" },
-      { name: "MBA International Business", href: "/programmes/mba-international-business" },
-      { name: "MBA Finance",                href: "/programmes/mba-finance" },
-      { name: "MBA Agri-Business Mgmt.",    href: "/programmes/mba-agri-business" },
-      { name: "MBA Digital Marketing",      href: "/programmes/mba-digital-marketing" },
-      { name: "MBA Business Analytics",     href: "/programmes/mba-business-analytics" },
+      { name: "MBA",                        href: "/courses/mba" },
+      { name: "MBA Marketing",              href: "/courses/mba" },
+      { name: "MBA Human Resource Mgmt.",   href: "/courses/mba" },
+      { name: "MBA International Business", href: "/courses/mba" },
+      { name: "MBA Finance",                href: "/courses/mba" },
+      { name: "MBA Agri-Business Mgmt.",    href: "/courses/mba" },
+      { name: "MBA Digital Marketing",      href: "/courses/mba" },
+      { name: "MBA Business Analytics",     href: "/courses/mba" },
     ],
     "Department Of Engineering": [
-      { name: "M.Tech", href: "/programmes/mtech" },
+      { name: "M.Tech", href: "/mtech" },
     ],
     "Department Of Computer Applications": [
-      { name: "MCA",                                 href: "/programmes/mca" },
-      { name: "MCA Full Stack Software Development", href: "/programmes/mca-fullstack" },
-      { name: "MCA AI & ML",                         href: "/programmes/mca-aiml" },
+      { name: "MCA",                                 href: "/courses/mca" },
+      { name: "MCA Full Stack Software Development", href: "/courses/mca" },
+      { name: "MCA AI & ML",                         href: "/courses/mca" },
     ],
     "Department Of Agriculture": [
-      { name: "M.Sc. Agronomy", href: "/programmes/msc-agronomy" },
+      { name: "M.Sc. Agronomy", href: "/courses/msc-agronomy" },
     ],
   },
 
   diploma: {
     "Department Of Engineering": [
-      { name: "Diploma in Civil Engineering",            href: "/programmes/diploma-civil" },
-      { name: "Diploma in Mechanical Engineering",       href: "/programmes/diploma-mechanical" },
-      { name: "Diploma in Computer Science Engineering", href: "/programmes/diploma-cse" },
+      { name: "Diploma in Civil Engineering",            href: "/diploma-in-civil-engineering" },
+      { name: "Diploma in Mechanical Engineering",       href: "/diploma-mechanical-engineering" },
+      { name: "Diploma in Computer Science Engineering", href: "/diploma-computer-science-engineering" },
     ],
     "Department Of Pharmacy": [
-      { name: "Diploma in Pharmacy (D.Pharma)", href: "/programmes/dpharma" },
+      { name: "Diploma in Pharmacy (D.Pharma)", href: "/courses/dpharma" },
     ],
   },
 };
@@ -228,7 +228,7 @@ const researchData = [
     title: "Intellectual Property Rights",
     href: "/research/intellectual-property-rights-ipr-cell",
     subLinks: [
-      { name: "Patents Filed", href: "/research/intellectual-property-rights-ipr-cell/paten" },
+      { name: "Patents Filed", href: "/research/intellectual-property-rights-ipr-cell/patent" },
     ],
   },
   {
@@ -329,7 +329,7 @@ export default function MegaMenu() {
   const currentCourses = menuData[category]?.[dept] ?? [];
 
   return (
-    <header className="w-full">
+    <header className="w-full font-sans">
 
       {/* ===== LAYERS 1 & 2 — scroll away (observed) ===== */}
       <div ref={topBarsRef}>
@@ -417,7 +417,7 @@ export default function MegaMenu() {
       </a>
 
       {/* ROUTE */}
-      <Link href="/admission-open" className="flex items-center gap-3 bg-white text-gray-800 rounded-full px-5 py-2.5 cursor-pointer hover:shadow-md transition-shadow select-none border border-gray-100">
+      <Link href="/admissions-open" className="flex items-center gap-3 bg-white text-gray-800 rounded-full px-5 py-2.5 cursor-pointer hover:shadow-md transition-shadow select-none border border-gray-100">
         <div className="w-8 h-8 bg-[#f26522] rounded-full flex items-center justify-center flex-shrink-0">
           <PersonIcon />
         </div>
@@ -453,46 +453,47 @@ export default function MegaMenu() {
                 Home
               </Link>
 
-              <span onMouseEnter={() => { setActiveMenu("about"); setOpenPrograms(false); }}
+              <span onMouseEnter={() => { setActiveMenu("about"); setOpenPrograms(false); setNavHover(true); }}
                 className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap flex items-center gap-1.5 ${activeMenu === "about" ? "bg-[#f26522]" : ""}`}>
                 About Us <ChevronDown />
               </span>
 
-              <span onMouseEnter={() => { setActiveMenu("infrastructure"); setOpenPrograms(false); }}
+              <span onMouseEnter={() => { setActiveMenu("infrastructure"); setOpenPrograms(false); setNavHover(true); }}
                 className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap flex items-center gap-1.5 ${activeMenu === "infrastructure" ? "bg-[#f26522]" : ""}`}>
                 Infrastructure <ChevronDown />
               </span>
 
               {/* ---- PROGRAMMES — hover to open (inside uses click) ---- */}
               <span
-                onMouseEnter={() => { setOpenPrograms(true); setActiveMenu(null); }}
+                onMouseEnter={() => { setOpenPrograms(true); setActiveMenu(null); setNavHover(true); }}
                 className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap flex items-center gap-1.5
                   ${openPrograms ? "bg-[#f26522]" : ""}`}
               >
                 Programmes <ChevronDown />
               </span>
 
-              <span onMouseEnter={() => { setActiveMenu("admissions"); setOpenPrograms(false); }}
+              <span onMouseEnter={() => { setActiveMenu("admissions"); setOpenPrograms(false); setNavHover(true); }}
                 className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap flex items-center gap-1.5 ${activeMenu === "admissions" ? "bg-[#f26522]" : ""}`}>
                 Admissions <ChevronDown />
               </span>
 
-              <span onMouseEnter={() => { setActiveMenu("research"); setOpenPrograms(false); setExpandedResearch(null); }}
+              <span onMouseEnter={() => { setActiveMenu("research"); setOpenPrograms(false); setExpandedResearch(null); setNavHover(true); }}
                 className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap flex items-center gap-1.5 ${activeMenu === "research" ? "bg-[#f26522]" : ""}`}>
                 Research <ChevronDown />
               </span>
 
-              <span onMouseEnter={() => { setActiveMenu("placements"); setOpenPrograms(false); }}
+              <span onMouseEnter={() => { setActiveMenu("placements"); setOpenPrograms(false); setNavHover(true); }}
                 className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap flex items-center gap-1.5 ${activeMenu === "placements" ? "bg-[#f26522]" : ""}`}>
                 Placements <ChevronDown />
               </span>
 
-              <span onMouseEnter={() => { setActiveMenu("campus"); setOpenPrograms(false); }}
+              <span onMouseEnter={() => { setActiveMenu("campus"); setOpenPrograms(false); setNavHover(true); }}
                 className={`px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap flex items-center gap-1.5 ${activeMenu === "campus" ? "bg-[#f26522]" : ""}`}>
                 Campus Life <ChevronDown />
               </span>
 
               <Link href="/contact"
+              onMouseEnter={() => setActiveMenu(null)}
                 className="px-4 py-[14px] cursor-pointer hover:bg-[#f26522] transition-colors whitespace-nowrap">
                 Contact Us
               </Link>
@@ -585,6 +586,17 @@ export default function MegaMenu() {
                 <div className="w-full bg-[#1a1a1a]/90 backdrop-blur-md border-t-2 border-[#f26522] shadow-2xl">
                   <div className="max-w-7xl mx-auto px-6 py-8">
                     <div className="flex gap-10">
+                      <div className="flex-1 flex flex-col justify-center">
+                        <h2 className="text-2xl font-bold text-[#f26522] mb-3">Research at Tulas</h2>
+                        <p className="text-sm text-gray-300 leading-relaxed mb-6">
+                          Tulas Institute is committed to fostering a culture of innovation and research.
+                          Our dedicated research cells and incubation centres empower students and faculty
+                          to explore cutting-edge ideas, file patents, and build startups that solve real-world problems.
+                        </p>
+                        <button className="self-start bg-[#f26522] hover:bg-orange-600 transition-colors text-white px-5 py-2.5 rounded-full text-sm font-semibold">
+                          → Explore Research
+                        </button>
+                      </div>                      
                       <div className="w-[480px] flex-shrink-0">
                         <p className="text-[#f26522] text-xs uppercase tracking-widest font-semibold mb-4">Research Areas</p>
                         <div className="flex flex-col divide-y divide-white/10">
@@ -625,17 +637,6 @@ export default function MegaMenu() {
                           ))}
                         </div>
                       </div>
-                      <div className="flex-1 flex flex-col justify-center">
-                        <h2 className="text-2xl font-bold text-[#f26522] mb-3">Research at Tulas</h2>
-                        <p className="text-sm text-gray-300 leading-relaxed mb-6">
-                          Tulas Institute is committed to fostering a culture of innovation and research.
-                          Our dedicated research cells and incubation centres empower students and faculty
-                          to explore cutting-edge ideas, file patents, and build startups that solve real-world problems.
-                        </p>
-                        <button className="self-start bg-[#f26522] hover:bg-orange-600 transition-colors text-white px-5 py-2.5 rounded-full text-sm font-semibold">
-                          → Explore Research
-                        </button>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -659,9 +660,9 @@ export default function MegaMenu() {
                         <p className="text-sm text-gray-300 mb-6 leading-relaxed">
                           {simpleMenus[activeMenu].text}
                         </p>
-                        <button className="bg-[#f26522] hover:bg-orange-600 transition-colors text-white px-5 py-2.5 rounded-full text-sm font-semibold">
+                        <Link href="/admissions-open" className="bg-[#f26522] hover:bg-orange-600 transition-colors text-white px-5 py-2.5 rounded-full text-sm font-semibold">
                           → Apply Now
-                        </button>
+                        </Link>
                       </div>
 
                       {/* LEFT LINKS */}

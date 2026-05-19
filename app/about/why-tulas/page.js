@@ -18,6 +18,8 @@ import ratio from "../../../public/About/why-tulas/ratio.png";
 import Vision from "@/component/Programs/Vision";
 import WhyTulasScroll from "@/app/Component/WhyTulasScroll";
 import { useRef } from "react";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import MegaMenu from "@/component/Navbar/MegaMenu";
 
 // const sectionData = [
 //   {
@@ -130,7 +132,7 @@ import { useRef } from "react";
 
 const pageDescription = (
   <>
-    Tula's Institute ranked among the 'Top engineering Colleges in Dehradun', is
+    Tulas University ranked among the 'Top engineering Colleges in Dehradun', is
     nestled in a serene campus, and provides a perfect blend of diverse
     opportunities to the young leaders of tomorrow. A stimulating curriculum
     with focus on sustainability, a tech savvy campus founded on state of the
@@ -140,22 +142,22 @@ const pageDescription = (
     preferred engineering college in Dehradun.
     <br />
     <br />
-    Consistently rated amongst the Best Engineering College in Dehradun, Tula's
+    Consistently rated amongst the Best Engineering College in Dehradun, Tulas
     is committed to giving best knowledge to their students through our
-    intensive training. Tula's believes in imparting high end technological &
+    intensive training. Tulas believes in imparting high end technological &
     corporate training as well to promote innovative idea to increase
     professional growth. When it comes to placement, our mission is to achieve
-    100% placement through hard work and dedication. Tula's institute is also
+    100% placement through hard work and dedication. Tulas University is also
     known as Best Placement Engineering College in Dehradun, Uttarakhand.
-    Students at Tula's get the best academic experience and industry exposure
-    for a successful future. Let us tell you why Tula's is a perfect choice for
+    Students at Tulas get the best academic experience and industry exposure
+    for a successful future. Let us tell you why Tulas is a perfect choice for
     you.
   </>
 );
 
 const bannerText = (
   <>
-    <span className="text-[#007A83]">Tula's Institute</span> is spread in 20
+    <span className="text-[#007A83]">Tulas University</span> is spread in 20
     acres of lush green campus and has been rated as the No. 1 college in
     Dehradun having state of the art facilities like auditorium, high-tech
     computer labs and with world class library having a collection of 32,000
@@ -173,21 +175,27 @@ const WhyTulas = () => {
         <title>Top Engineering college in Dehradun, Uttarakhand</title>
         <meta
           name="description"
-          content="Tula's Institute, Best engineering institute in Dehradun Uttarakhand, is North Indiaâ€™s fastest growing private college with best placement records."
+          content="Tulas University, Best engineering institute in Dehradun Uttarakhand, is North Indiaâ€™s fastest growing private college with best placement records."
         />
       </head>
       <body>
         <div
           ref={parentRef}
-          className="w-full min-h-screen font-[TTChocolates]"
+          className="w-full min-h-screen"
         >
-          <Navbar />
-
+          {/* <Navbar /> */}
+          <div className="hidden md:block">
+            <MegaMenu />
+          </div>
+          
+          <div className="block md:hidden">
+            <NewNavbar fullBanner={true}/>
+          </div>
           <Banner
             image={banner}
             title={
               <>
-                WHY <span className="text-[#007A83]">TULA'S</span>
+                WHY <span className="text-[#f97316]">TULAS</span>
               </>
             }
             belowPara={pageDescription}
@@ -208,10 +216,10 @@ const WhyTulas = () => {
           </div>
           {/* <Vision sections={sectionData.slice(0, 4)} /> */}
           <div className="w-full h-full relative z-50 bg-white py-8 md:py-20 flex flex-col items-center justify-center">
-            <p className="text-[#3D001B] font-[TTChocolatesMedium] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] underline underline-offset-8 px-4">
+            <p className="text-[#f97316] font-[TTChocolatesMedium] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] underline underline-offset-8 px-4">
               World Class Infrastructure
             </p>
-            <p className="text-[#007A83] text-[clamp(10px,1.8vw,40px)] font-semibold">
+            <p className="text-[#000000] text-[clamp(10px,1.8vw,40px)] font-semibold">
               Rated as #1 College Of Dehradun
             </p>
             <Image

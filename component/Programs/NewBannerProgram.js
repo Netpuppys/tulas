@@ -8,14 +8,14 @@ function NewBannerProgram({ image, mobileImage, title, titleColor, description }
       <Image
         src={image}
         alt=""
-        className="hidden md:block w-full h-full object-cover pt-[120px]"
+        className="hidden md:block w-full h-full object-cover pt-[0px]"
       />
 
       {/* Mobile Image */}
       <Image
         src={mobileImage || image}
         alt=""
-        className="block md:hidden w-full h-full object-cover pt-[120px]"
+        className="block md:hidden w-full h-full object-cover pt-[80px]"
       />
 
       {/* Overlay content */}

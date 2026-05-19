@@ -8,6 +8,9 @@ import Footer from "@/component/Footer";
 import background from "../../../public/research/r-and-cell/funded-projects-and-grants/background.png";
 import { useInView } from "react-intersection-observer";
 import TableComponent from "./data/tableData";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function RAndFDPS() {
   const { ref, inView } = useInView({
@@ -20,15 +23,22 @@ function RAndFDPS() {
       <head>
         <title>
           FDPs & Workshops | Best Engineering College in Dehradun, Uttarakhand |
-          Tula's Institute
+          Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the Faculty Development Programs (FDPs) and workshops at Tula's Institute, a top engineering college in Dehradun. Our programs empower faculty and students with the latest knowledge and skills in technology and education."
+          content="Explore the Faculty Development Programs (FDPs) and workshops at Tulas University, a top engineering college in Dehradun. Our programs empower faculty and students with the latest knowledge and skills in technology and education."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
@@ -70,7 +80,7 @@ function RAndFDPS() {
           </div>
 
           <div className="w-full h-fit z-50">
-            <Footer />
+            <NewFooter/>
           </div>
         </div>
       </body>

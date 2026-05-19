@@ -35,20 +35,30 @@ import StudentPlacement from "@/component/Programs/StudentPlacement";
 import MCAstudentplaced from "../../../public/courses/mca/placement-mca.pdf";
 import MCAstudentlist from "../../../public/courses/mca/student-list-mca.pdf";
 import MCAfacultylist from "../../../public/courses/mca/faculty-mca.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function MCA() {
   return (
     <>
       <head>
         <title>
-          Best Private LLB College in Dehradun, Uttarakhand | Tula's Institute
+          Best Private LLB College in Dehradun, Uttarakhand | Tulas 
         </title>
         <meta
           name="description"
-          content="Tula's Institute is one of the Best LLB College in Dehradun, Uttarakhand, India that provides valuable educational practices to its students with the help of experienced faculty."
+          content="Tulas is one of the Best LLB College in Dehradun, Uttarakhand, India that provides valuable educational practices to its students with the help of experienced faculty."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>School of Law (LLB)</>
@@ -87,7 +97,7 @@ function MCA() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         /> */}
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

@@ -6,6 +6,9 @@ import BannerImg from "../../public/alumni/bannerImg.png";
 import background from "../../public/alumni/background.png";
 import Testimonials from "../Component/Testimonials";
 import Testimonial from "./testimonials/testimonial";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function AlumniTestimonials() {
   return (
@@ -13,19 +16,26 @@ function AlumniTestimonials() {
       <head>
         <title>
           Alumni Testimonials | Best Engineering College in Dehradun,
-          Uttarakhand | Tula's Institute
+          Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Discover inspiring alumni testimonials from graduates of Tula's Institute, the top engineering college in Dehradun, Uttarakhand. Hear firsthand experiences about our supportive faculty, cutting-edge curriculum, and successful career paths. Join a legacy of excellence at Tula's Institute!"
+          content="Discover inspiring alumni testimonials from graduates of Tulas University, the top engineering college in Dehradun, Uttarakhand. Hear firsthand experiences about our supportive faculty, cutting-edge curriculum, and successful career paths. Join a legacy of excellence at Tulas University!"
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           title={
             <>
-              ALUMNI <span className="text-[#007A83]">TESTIMONIALS</span>
+              ALUMNI <span className="text-[#f97316]">TESTIMONIALS</span>
             </>
           }
           image={BannerImg}
@@ -33,11 +43,11 @@ function AlumniTestimonials() {
           belowTitle={<>Hear it from our very own</>}
           belowPara={
             <>
-              At Tula's Institute, we take pride in the achievements of our
+              At Tulas University, we take pride in the achievements of our
               alumni, who continue to make remarkable strides in their
               respective fields. Their success stories are a testament to the
               foundation of knowledge, skills, and values they gained during
-              their time with us. Explore their experiences and see how Tula's
+              their time with us. Explore their experiences and see how Tulas
               has been a stepping stone to their continued growth and impact!
             </>
           }
@@ -56,7 +66,7 @@ function AlumniTestimonials() {
         <div className=" bg-white">
           <Testimonials />
         </div>
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

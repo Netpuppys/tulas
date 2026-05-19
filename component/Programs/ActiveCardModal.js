@@ -36,7 +36,7 @@ const ActiveCardModal = ({
         {/* top bar */}
         <div
           className={`w-full md:w-[45vw] h-20 ${
-            color ? "bg-[#007A83]" : "bg-[#760135]"
+            color ? "bg-[#f97316]" : "bg-[#f97316]"
           } flex items-center justify-between px-[1.3rem] py-4`}
         >
           <p className="font-[CarotSlab] text-[clamp(10px,5vw,40px)] md:text-[clamp(10px,1.5vw,40px)] leading-tight font-medium">
@@ -45,7 +45,7 @@ const ActiveCardModal = ({
           <button
             onClick={() => setActiveCard(null)}
             className={`h-full aspect-square bg-white flex items-center justify-center ${
-              color ? "text-[#007A83]" : "text-[#760135]"
+              color ? "text-[#f97316]" : "text-[#f97316]"
             } text-2xl`}
           >
             <IoClose />
@@ -59,7 +59,7 @@ const ActiveCardModal = ({
               <div className="">
                 <p
                   className={`${
-                    color ? "text-[#007A83]" : "text-[#760135]"
+                    color ? "text-[#f97316]" : "text-[#f97316]"
                   } underline underline-offset-8 text-[clamp(10px,4.5vw,40px)] md:text-[clamp(10px,1.3vw,40px)] font-[CarotSlab] font-medium`}
                 >
                   {card?.title}
@@ -135,7 +135,7 @@ const ActiveCardModal = ({
               <div className="">
                 <p
                   className={`${
-                    color ? "text-[#007A83]" : "text-[#760135]"
+                    color ? "text-[#f97316]" : "text-[#f97316]"
                   } underline underline-offset-8 text-[clamp(10px,1.5vw,40px)] font-[CarotSlab] font-medium`}
                 >
                   {card?.title}
@@ -194,9 +194,9 @@ const ActiveCardModal = ({
                     <div className="h-[4px] bg-[#E69706] w-[80px] rounded-full"></div>
                   </h3>
                 </div>
-                <button className="w-full absolute bottom-0 flex justify-center items-center gap-4 py-3 bg-white text-[#007A83]">
+                <button className="w-full absolute bottom-0 flex justify-center items-center gap-4 py-3 bg-white text-[#f97316]">
                   Click to Expand{" "}
-                  <span className="bg-[#007A83] text-white p-1 rounded-full aspect-square">
+                  <span className="bg-[#f97316] text-white p-1 rounded-full aspect-square">
                     <HiPlus />
                   </span>
                 </button>

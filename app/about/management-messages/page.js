@@ -1,5 +1,5 @@
 import React from "react";
-import AboutPage from "../Components/AboutPage";
+import AboutPage from "../components/AboutPage";
 export const metadata = {
   title:
     "About Management Messages | Tula's Institute Dehradun",
@@ -9,7 +9,7 @@ export const metadata = {
 function ManagementPage() {
   return (
     <>
-      <AboutPage />
+      <AboutPage/>
     </>
   );
 }

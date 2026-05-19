@@ -76,10 +76,10 @@ export default function TeamSection() {
   {/* 👆 w-4/5 makes container 80% wide */}
 
   <div className="text-center my-8">
-    <h2 className="text-5xl font-bold text-[#800033] font-[CarotSlab]">
+    <h2 className="text-5xl font-bold text-[#f97316] font-[CarotSlab]">
       Placement &amp; Training Team
     </h2>
-    <h3 className="text-3xl font-bold text-[#007A83] mt-1 font-[CarotSlab]">
+    <h3 className="text-3xl font-bold text-black mt-1 font-[CarotSlab]">
       (TCCI)
     </h3>
   </div>
@@ -88,7 +88,7 @@ export default function TeamSection() {
 <div className="grid md:grid-cols-12 gap-6 items-center">
   {/* Image card → first on mobile, right on desktop */}
   <div className="md:col-span-4 order-1 md:order-2 flex flex-col items-center">
-    <div className="border-4 border-[#007A83] rounded-md overflow-hidden">
+    <div className="border-4 border-[#000000] rounded-md overflow-hidden">
       <Image
         src={members[activeIndex].img}
         alt={members[activeIndex].name}
@@ -97,7 +97,7 @@ export default function TeamSection() {
         className="object-cover"
       />
     </div>
-    <div className="bg-[#8C1D40] px-8 text-white text-center py-3 mt-[-60px]">
+    <div className="bg-[#f97316] px-8 text-white text-center py-3 mt-[-60px]">
       <p className="font-bold text-lg">{members[activeIndex].name}</p>
       <p className="text-sm">{members[activeIndex].title}</p>
     </div>

@@ -7,6 +7,9 @@ import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../../public/research/r-and-cell/funded-projects-and-grants/background.png";
 import TableComponent from "./data/tableData";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function RAndDFunded() {
   return (
@@ -14,22 +17,29 @@ function RAndDFunded() {
       <head>
         <title>
           Funded Research Projects | Best Engineering College in Dehradun,
-          Uttarakhand | Tula's Institute
+          Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Discover the funded research projects at Tula's Institute, supporting innovative research and academic excellence in various fields of engineering and technology."
+          content="Discover the funded research projects at Tulas University, supporting innovative research and academic excellence in various fields of engineering and technology."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
                 Funded{" "}
-                <span className="text-[#007A83]">Projects and Grants</span>
+                <span className="text-[#f97316]">Projects and Grants</span>
               </>
             }
             belowPara={
@@ -64,7 +74,7 @@ function RAndDFunded() {
           </div>
 
           <div className="w-full h-fit z-50">
-            <Footer />
+            <NewFooter/>
           </div>
         </div>
       </body>

@@ -349,11 +349,11 @@ function BTech() {
     <>
       <head>
         <title>
-          Best Engineering College in Dehradun, India | Tula's Institute
+          Best Engineering College in Dehradun, India | Tulas University
         </title>
         <meta
           name="description"
-          content="Looking for the Top Engineering and Degree College in Dehradun(Uttarakhand)? Look No Further Than Tula's Institute. We Offer the Best Engineering Courses Across India. Visit Now!"
+          content="Looking for the Top Engineering and Degree College in Dehradun(Uttarakhand)? Look No Further Than Tulas University. We Offer the Best Engineering Courses Across India. Visit Now!"
         />
       </head>
       <body>
@@ -451,7 +451,7 @@ function BTech() {
                 <div className="w-full text-[#353535] md:w-full px-4 md:px-0">
                   <h5 className="w-fit mx-auto text-[#353535] text-center pb-4 md:pb-[3%] leading-tight text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,2.5vw,45px)] font-[CarotSlab] font-medium">
                     About the Course
-                    <div className="h-[4px] bg-[#007A83] w-[55%] mx-auto rounded-full"></div>
+                    <div className="h-[4px] bg-[#f97316] w-[55%] mx-auto rounded-full"></div>
                   </h5>
                   <h5 className="w-full text-[#353535] md:w-full text-justify mx-auto leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] font-normal">
                     The Bachelor of Technology (B.Tech) is a four-year
@@ -494,7 +494,7 @@ function BTech() {
                     engineering specialization.
                   </h5>
                 </div>
-                <div className="w-full max-w-[500px] bg-[#007a83] overflow-hidden backdrop-blur-xl h-fit mx-auto rounded-2xl">
+                <div className="w-full max-w-[500px] bg-[#f97316] overflow-hidden backdrop-blur-xl h-fit mx-auto rounded-2xl">
                   <form className="w-full h-full px-5" onSubmit={handleSubmit}>
                     <h3 className="text-center text-white text-[clamp(10px,4.5vw,30px)] leading-tight md:text-[clamp(10px,1.5vw,45px)] w-full py-6">
                       Enquire Now
@@ -648,7 +648,7 @@ function BTech() {
                         className="flex items-center cursor-pointer text-[clamp(5px,3vw,30px)] md:text-[clamp(6px,0.8vw,45px)]"
                       >
                         I Agree to receive information regarding my submitted
-                        application by signing up on Tula's Institute
+                        application by signing up on Tulas University
                       </label>
                     </div>
 
@@ -656,7 +656,7 @@ function BTech() {
                       type="submit"
                       disabled={!verified}
                       title={verified ? "" : "Please Verify Mobile Number"}
-                      className={`w-full bg-white text-[#007A83] cursor-pointer py-2 rounded-[3px] disabled:opacity-100 disabled:cursor-not-allowed font-semibold mb-10`}
+                      className={`w-full bg-white text-[#000000] cursor-pointer py-2 rounded-[3px] disabled:opacity-100 disabled:cursor-not-allowed font-semibold mb-10`}
                     >
                       Submit
                     </button>
@@ -668,8 +668,8 @@ function BTech() {
         </div>
         <div className="px-4 md:px-6 flex flex-col items-center justify-center w-full">
           <h8 className="text-[#353535] px-4 text-center text-[clamp(10px,5.5vw,50px)] leading-tight md:text-[clamp(10px,2.5vw,45px)] font-[CarotSlab] font-medium">
-            Why Choose TULA’s
-            <div className="h-[4px] bg-[#007A83] w-[55%] mx-auto rounded-full"></div>
+            Why Choose TULAs
+            <div className="h-[4px] bg-[#f97316] w-[55%] mx-auto rounded-full"></div>
           </h8>
           <div className="flex flex-wrap gap-4 w-full pt-8 md:pt-[3%] md:w-[95%] mx-auto">
             {whyData.map((card, index) => (

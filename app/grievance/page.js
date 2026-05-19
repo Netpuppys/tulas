@@ -11,6 +11,9 @@ import { ThreeDots } from "react-loader-spinner";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 const formTypes = ["Student", "Parent", "Staff"];
 
@@ -217,7 +220,7 @@ const GrievanceForm = ({ formState }) => {
                 className="absolute top-0 -left-28 w-[30rem] scale-150 h-[20rem] z-10 cursor-pointer opacity-0"
                 onChange={(e) => handleFileInput(e)}
               />
-              <p className="text-[#007A83] text-sm font-medium z-0">
+              <p className="text-[#f97316] text-sm font-medium z-0">
                 Choose file
               </p>
             </div>
@@ -228,7 +231,7 @@ const GrievanceForm = ({ formState }) => {
         </div>
         <button
           type="submit"
-          className="w-full md:w-[55%] font-[TTChocolatesMedium] text-[1.5rem] font-semibold h-14 rounded-lg bg-[#007A83] flex items-center justify-center"
+          className="w-full md:w-[55%] font-[TTChocolatesMedium] text-[1.5rem] font-semibold h-14 rounded-lg bg-[#f97316] flex items-center justify-center"
         >
           {submitLoader ? (
             <ThreeDots color="#FFFFFF" height={30} />
@@ -254,11 +257,18 @@ function Grievance() {
 
   return (
     <div className="w-full h-fit">
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
       <Banner title={"Grievance"} image={bannerImage} />
 
       <div className="w-full bg-white flex flex-col items-center justify-start py-8 md:py-20 px-10">
-        <p className="font-[carotSlab] text-[2.6rem] font-medium text-[#760135] text-center">
+        <p className="font-[carotSlab] text-[2.6rem] font-medium text-[#f97316] text-center">
           Grievance Form
         </p>
         <p className="font-[TTChocolates] text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight text-center text-[#404040]">
@@ -269,7 +279,7 @@ function Grievance() {
             <button
               key={id}
               onClick={() => setFormState(item)}
-              className="w-[22rem] h-12 bg-[#3D001B] rounded-full flex items-center justify-center text-white font-[TTChocolatesMedium] text-[1.8rem] font-medium "
+              className="w-[22rem] h-12 bg-[#f97316] rounded-full flex items-center justify-center text-white font-[TTChocolatesMedium] text-[1.8rem] font-medium "
             >
               {item}
             </button>
@@ -297,7 +307,7 @@ function Grievance() {
       <ToastContainer closeButton closeOnClick={true} />
 
       <div className=" w-full">
-        <Footer />
+        <NewFooter />
       </div>
     </div>
   );

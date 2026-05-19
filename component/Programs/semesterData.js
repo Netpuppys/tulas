@@ -8,7 +8,7 @@ const SemesterTable = ({ semesterData }) => {
           key={index}
           className="flex flex-col items-center justify-center gap-4 md:gap-6"
         >
-          <h2 className="px-20 py-1 text-white font-[TTChocolatesMedium] bg-[#007A83] text-center rounded-full text-[clamp(10px,4.5vw,45px)] md:text-[clamp(10px,1.2vw,45px)]">
+          <h2 className="px-20 py-1 text-white font-[TTChocolatesMedium] bg-[#f97316] text-center rounded-full text-[clamp(10px,4.5vw,45px)] md:text-[clamp(10px,1.2vw,45px)]">
             {semester.semester}
           </h2>
           <table

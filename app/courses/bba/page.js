@@ -27,20 +27,30 @@ import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BBAFee from "../../../public/FeeStructure/BBA.pdf";
 import BBAFaculty from "../../../public/courses/all-faculty/BBA-and-B.pdf";
 import ReadFaculty from "@/component/Programs/ReadFaculty";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BBA() {
   return (
     <>
       <head>
         <title>
-          Best BBA College in Dehradun, Uttarakhand | Tula's Institute
+          Best BBA College in Dehradun, Uttarakhand | Tulas
         </title>
         <meta
           name="description"
-          content="Tula's is the Best BBA College in Dehradun, Uttarakhand, Tula's is the Top BBA College in all over Uttarakhand 100% placements record in top-level MNC companies, for more info call on admission helpline."
+          content="Tulas is the Best BBA College in Dehradun, Uttarakhand, Tulas is the Top BBA College in all over Uttarakhand 100% placements record in top-level MNC companies, for more info call on admission helpline."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+          <MegaMenu />
+        </div>
+        
+        <div className="block md:hidden">
+          <NewNavbar fullBanner={true}/>
+        </div>
         <BannerProgram
           image={BannerImg}
           title=<>BBA</>
@@ -73,7 +83,7 @@ function BBA() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

@@ -522,7 +522,7 @@ export const itemsClubs = [
       "Work as incredible avenues of socialization and teaches students about the essentials of planning, management, co-operation and co-ordination.",
       "To promote psychological, ethical, civic, social, disciplinary, cultural and recreational values.",
       "By getting involved in various types of co-curricular activities, you can relax, rejuvenate and boost your creativity and thinking skills.",
-      "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s. some of the activities which are regularly conducted for the students are:",
+      "Activities for various types of personal and professional development are a part of daily activity for the students at Tulas. some of the activities which are regularly conducted for the students are:",
       "NCC",
       "NSS",
       "Picnics",

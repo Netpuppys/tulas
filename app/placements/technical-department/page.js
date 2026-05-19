@@ -36,6 +36,9 @@ import image30 from "../../../public/placements/technical/image30.jpg";
 import image31 from "../../../public/placements/technical/image31.jpg";
 import TopRecruiter from "../components/TopRecruiters";
 import BannerProgram from "@/component/Programs/BannerProgram";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 const carouselImages = [
   [image1, image2, image3, image4, image5, image6, image7, image8],
@@ -75,7 +78,7 @@ const TableComponent = () => {
 
 const description = (
   <>
-    The Technical Department at Tula’s stands as a cornerstone of our placement
+    The Technical Department at Tulas stands as a cornerstone of our placement
     success, ensuring students are equipped with the technical expertise
     required by top recruiters. Through rigorous training, state-of-the-art
     resources, and a commitment to excellence, the department has consistently
@@ -88,7 +91,14 @@ const description = (
 const page = () => {
   return (
     <div className="w-full">
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
       <BannerProgram title={"Technical Placement Record"} image={bannerImage} />
       <div className="w-full bg-white">
         <div className="min-h-fit py-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1000px] px-8 mx-auto">
@@ -106,7 +116,7 @@ const page = () => {
         <TopRecruiter crouselImages={carouselImages} />
       </div>
       <div className="w-full">
-        <Footer />
+        <NewFooter/>
       </div>
     </div>
   );

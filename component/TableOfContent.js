@@ -57,14 +57,14 @@ function TableOfContent({ slug }) {
             {tocItems?.map((item) => (
               <li
                 key={item.id}
-                className={`cursor-pointer 
+                className={`cursor-pointer  
                  ${
                    item.tagName === "h2"
-                     ? "text-[24px] md:text-[32px] ml-5 md:ml-10"
+                     ? "text-[24px] md:text-[32px] ml-5 md:ml-10 text-[#263145]"
                      : item.tagName === "h3"
-                     ? "text-[18px] font-semibold list-disc mt-4 text-[#353535] md:text-[24px] ml-10 md:ml-20"
+                     ? "text-[18px] font-semibold list-disc mt-4 text-[#263145] md:text-[24px] ml-10 md:ml-20"
                      : item.tagName === "h4"
-                     ? "text-[16px] text-[#b90124] md:text-[20px] ml-14 md:ml-24"
+                     ? "text-[16px] text-[#263145] md:text-[20px] ml-14 md:ml-24"
                      : ""
                  }`}
               >

@@ -8,6 +8,9 @@ import "../Blog.css";
 import { notFound } from "next/navigation"; // Import notFound function
 // import school from "../../public/Homepage/BannerHome/BannerImage3.webp";
 import TableOfContent from "@/component/TableOfContent";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 export const revalidate = 60; // ISR revalidation every 60 seconds
 
 export async function generateStaticParams() {
@@ -87,7 +90,14 @@ export default async function SlugPage({ params }) {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
       <div className="w-full z-40 bg-white">
         <div className="h-[240px] md:h-[85vh] w-full bg-black relative">
           <Image
@@ -100,9 +110,9 @@ export default async function SlugPage({ params }) {
         </div>
 
         <div className="min-h-fit py-6 md:py-[1%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1100px] px-6 mx-auto">
-          <h3 className="text-[30px] md:text-[clam(20px,3.5vw,60px)] text-[#000] z-10 font-[CarotSlab]">
+          <h3 className="text-[30px] md:text-[clam(20px,3.5vw,60px)] text-[#000] z-10 ">
             {firstHalf}
-            <span className="text-[#760135]"> {secondHalf}</span>
+            <span className="text-[#f97316]"> {secondHalf}</span>
           </h3>
           <h4 className="text-sm font-[TTChocolates] md:text-xl text-[#404040]">
             {blog?.yoast_head_json?.description}
@@ -116,12 +126,12 @@ export default async function SlugPage({ params }) {
           </h6>
           <TableOfContent slug={slug} />
           <div
-            className="text-[#353535]"
+            className="text-[#263145]" 
             dangerouslySetInnerHTML={{ __html: cleanContent(blog?.content) }}
           />
         </>
       </div>
-      <Footer color={true} />
+      <NewFooter />
     </>
   );
 }

@@ -51,13 +51,13 @@ export const features = [
 export const heading = (
   <>
     Best Computer Science & Engineering Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
   <>
-    The B.Tech in Computer Science & Engineering (CSE) program at Tula’s
-    Institute is designed to create future-ready professionals in the IT
+    The B.Tech in Computer Science & Engineering (CSE) program at Tulas
+    University is designed to create future-ready professionals in the IT
     industry. This program is accredited by NBA in year 2024.This program
     provides an in-depth understanding of software development, networking,
     artificial intelligence, cybersecurity and cloud computing. With a strong
@@ -89,8 +89,8 @@ export const content = (
 export const quotes = (
   <>
     “Code your future, innovate with technology, and transform the world with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s B.Tech in Computer Science & Engineering.
+    <strong className="text-[#f97316]">
+      Tulas University B.Tech in Computer Science & Engineering.
     </strong>
     ”
   </>

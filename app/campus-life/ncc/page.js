@@ -12,6 +12,9 @@ import img1 from "../../../public/campus-life/ncc/img1.webp";
 import img2 from "../../../public/campus-life/ncc/img2.webp";
 import img3 from "../../../public/campus-life/ncc/img3.webp";
 import GalleryCrousel from "@/component/GalleryCrousel";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function NCC() {
   // const sections = [
@@ -48,18 +51,25 @@ function NCC() {
     <>
       <head>
         <title>
-          NCC at Tula's Institute | Building Leadership & Patriotism
+          NCC at Tulas | Building Leadership & Patriotism
         </title>
         <meta
           name="description"
-          content="Explore the National Cadet Corps (NCC) at Tula's Institute, Dehradun’s leading engineering college. Our NCC program fosters leadership, patriotism, and resilience through physical training, drills, and community service. Join us to build character and gain invaluable life skills in service to the nation."
+          content="Explore the National Cadet Corps (NCC) at Tulas, Dehradun’s leading engineering college. Our NCC program fosters leadership, patriotism, and resilience through physical training, drills, and community service. Join us to build character and gain invaluable life skills in service to the nation."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
-          title={<span className="text-[#007A83]">NCC</span>}
+          title={<span className="text-[#f97316]">NCC</span>}
           // belowPara={
           //   "At Tula’s, the NCC isn’t just a program—it’s a transformative journey! Behind every great leader is a story of discipline, resilience, and purpose—this is what NCC at Tula’s delivers."
           // }
@@ -73,7 +83,7 @@ function NCC() {
           />
         </div>
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.3vw,50px)] text-center w-full font-[CarotSlab] leading-tight text-[#007A83] mb-4">
+          <h3 className="text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.3vw,50px)] text-center w-full font-[CarotSlab] leading-tight text-[#f97316] mb-4">
             NATIONAL CADET CORPS
           </h3>
           <Image
@@ -82,7 +92,7 @@ function NCC() {
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
           <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] leading-tight w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-[#353535]">
-            The National Cadet Corps (NCC) at Tula’s Institute plays a pivotal
+            The National Cadet Corps (NCC) at Tulas University plays a pivotal
             role in shaping disciplined and responsible citizens. Our NCC unit
             is dedicated to fostering qualities of leadership, patriotism, and
             selfless service among students. Through a structured program of
@@ -90,7 +100,7 @@ function NCC() {
             service, cadets develop a strong sense of duty and resilience.
             <br />
             <br />
-            The NCC at Tula’s Institute offers students the opportunity to
+            The NCC at Tulas University offers students the opportunity to
             participate in various national and state-level camps, parades, and
             competitions, providing them with a platform to showcase their
             skills and dedication. These experiences not only build character
@@ -98,10 +108,10 @@ function NCC() {
             responsibility.
             <br />
             <br />
-            By being a part of the NCC, students at Tula’s Institute gain
+            By being a part of the NCC, students at Tulas University gain
             invaluable life skills, leadership qualities, and a commitment to
             serving the nation. The NCC program is a cornerstone of our
-            institute’s commitment to holistic education and personal
+            University commitment to holistic education and personal
             development.
           </p>
         </div>
@@ -110,7 +120,7 @@ function NCC() {
           <GalleryCrousel images={images} />
         </div>
         <div className="w-full h-fit z-50">
-          <Footer color={true} />
+          <NewFooter />
         </div>
       </body>
     </>

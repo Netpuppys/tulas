@@ -56,6 +56,9 @@ import Meeting47 from "../../public/FooterPDf/Meeting47.pdf";
 import Meeting48 from "../../public/FooterPDf/Meeting48.pdf";
 
 import Link from "next/link";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewFooter from "@/component/NewFooter";
 
 function MinuteOfMeeting() {
   const button = [
@@ -302,7 +305,14 @@ function MinuteOfMeeting() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
           title={
@@ -336,7 +346,7 @@ function MinuteOfMeeting() {
           ))}
         </div>
         <div className="w-full h-fit z-50">
-          <Footer color={true} />
+          <NewFooter/>
         </div>
       </body>
     </>

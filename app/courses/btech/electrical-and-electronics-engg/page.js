@@ -31,20 +31,30 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/BTech.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
       <head>
         <title>
-          Best EEE Engineering College in Dehradun | Tula's Institute
+          Best EEE Engineering College in Dehradun | Tulas University
         </title>
         <meta
           name="description"
-          content="Tula's Institute is one of the best EEE Colleges in Dehradun with a good campus placement record in Electrical and Electronics Engg, the Best engineering college in Dehradun, for students applying for both undergraduate and post-graduate programs."
+          content="Tulas University is one of the best EEE Colleges in Dehradun with a good campus placement record in Electrical and Electronics Engg, the Best engineering college in Dehradun, for students applying for both undergraduate and post-graduate programs."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>Department of Electrical & Electronics Engineering (EEE)</>
@@ -82,7 +92,7 @@ function BAJMC() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

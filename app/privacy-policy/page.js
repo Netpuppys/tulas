@@ -3,12 +3,21 @@ import React from "react";
 import bannerImg from "../../public/privacy-policy/bannerImg.png";
 import Image from "next/image";
 import Footer from "@/component/Footer";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
 
 function PrivacyPolicy() {
   return (
     <div className="relative">
-      <Navbar scroled={true} />
-      <div className="pt-24 md:pt-40 w-full h-full">
+      {/* <Navbar scroled={true} /> */}
+      <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
+      <div className="pt-24 md:pt-10 w-full h-full">
         <div className="w-[calc(100%-64px)] md:w-[90%] flex items-center justify-center mx-auto rounded-3xl overflow-hidden h-full relative">
           <Image
             src={bannerImg}

@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "CarotSlab";
   src: url(../public/fonts/Carot\ Slab\ Medium.ttf);
+} */
+ @font-face {
+  font-family: "CarotSlab";
+  src: local("Arial");
 }
 
 @font-face {
@@ -70,7 +74,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
   color: white;
-  font-family: "TTChocolates";
+  /* font-family: "TTChocolates"; */
   overscroll-behavior: none;
 }
 

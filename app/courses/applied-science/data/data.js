@@ -68,7 +68,7 @@ export const sideImages = [contentLeft, contentRight];
 export const heading = (
   <>
     Best Applied Sciences and Humanities Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const features = [
@@ -83,7 +83,7 @@ export const features = [
 ];
 export const content = (
   <>
-    Department of Applied Sciences and Humanities at Tula's Institute, Dehradun,
+    Department of Applied Sciences and Humanities at Tulas University, Dehradun,
     is a foundational learning and interdisciplinary growth hub. The Department
     caters to introductory science courses like Physics, Chemistry, Mathematics,
     Environmental studies, and English, laying the groundwork for students
@@ -115,7 +115,7 @@ export const content = (
 export const quotes = (
   <>
     “Building strong foundations in science and{" "}
-    <strong className="text-[#760135]">
+    <strong className="text-[#f97316]">
       communication for a future of innovation and success.
     </strong>
     ”

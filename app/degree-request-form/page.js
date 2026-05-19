@@ -7,10 +7,13 @@ import background from "../../public/AboutDehradun/background.png";
 import Footer from "@/component/Footer";
 import Image from "next/image";
 import DegreeForm from "./Components/form"; // Import the DegreeForm component
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 const title = (
   <>
-    DEGREE <span className="text-[#007A83]">REQUEST FORM</span>
+    DEGREE <span className="text-[#f97316]">REQUEST FORM</span>
   </>
 );
 
@@ -54,15 +57,22 @@ function DegreeRequestForm() {
       <head>
         <title>
           Degree Request Form | Best Engineering College in Dehradun,
-          Uttarakhand | Tula's Institute
+          Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Submit your Degree Request Form at Tula's Institute, Dehradun's premier engineering college. Easily request your academic degree with our streamlined process for graduates and alumni."
+          content="Submit your Degree Request Form at Tulas University, Dehradun's premier engineering college. Easily request your academic degree with our streamlined process for graduates and alumni."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
           title={title}
@@ -84,7 +94,7 @@ function DegreeRequestForm() {
             <div className="w-full items-center flex justify-center">
               <button
                 onClick={() => setShowForm(true)} // Show the form modal when clicked
-                className="font-[TTChocolatesMedium] mb-8 bg-white rounded-full text-[#760135] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-20"
+                className="font-[TTChocolatesMedium] mb-8 bg-white rounded-full text-[#f97316] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-20"
               >
                 Degree Request Form
               </button>
@@ -152,7 +162,7 @@ function DegreeRequestForm() {
         )}
 
         <div className="w-full h-fit z-40">
-          <Footer />
+          <NewFooter />
         </div>
       </body>
     </>

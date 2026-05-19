@@ -443,7 +443,7 @@ function Careers() {
       <Banner
         title={"Career"}
         image={bannerImage}
-        belowTitle={"Careers at Tula's Institute, Dehradun"}
+        belowTitle={"Careers at Tulas University, Dehradun"}
         belowPara={
           <>
             Join the journey of academic excellence and innovation at Tula's
@@ -453,7 +453,7 @@ function Careers() {
             to our mission of excellence in education.
             <br />
             <br />
-            <strong>Why Choose Tula's Institute for Your Career?</strong>
+            <strong>Why Choose Tulas University for Your Career?</strong>
             <br />
             <ul className="ml-5 list-disc ">
               <li>
@@ -470,7 +470,7 @@ function Careers() {
                 reflecting our dedication to quality education and innovation.
               </li>
             </ul>
-            At Tula’s, you’ll work in a dynamic, collaborative environment that
+            At Tulas, you’ll work in a dynamic, collaborative environment that
             fosters creativity, growth, and professional development. We offer
             opportunities for educators, administrators, and professionals
             passionate about shaping a brighter future for students.

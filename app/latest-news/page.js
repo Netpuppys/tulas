@@ -74,7 +74,7 @@ function LatestNews() {
       image: newformatimg23,
       name: "Campus Placement Drive: B.tech Civil 2026 Batch",
       date: "14th Feb 2026",
-      location: "Tulas's Institute",  
+      location: "Tulas University",  
     }, 
     {
       image: newformatimg22,
@@ -87,18 +87,18 @@ function LatestNews() {
       image: newformatimg21,
       name: "Wrokshop on infrastructure development using modern AI technologies",
       date: "20th-22th Nov-2025",
-      location: "Tula's institute Deheradun",  
+      location: "Tulas University Deheradun",  
     },    {
       image: newformatimg20,
       name: "Masterclass on data-driven sustainblility strategies",
       date: "17th Nov-2025",
-      location: "F-404 Tula's institute",  
+      location: "F-404 Tulas University",  
       time: "11:30 am Onwards",  
     },    {
       image: newformatimg19,
       name: "Add-on certificate program on Fullstack development",
       date: "17th-28th Nov-2025",
-      location: "G-404 Tula's institute",  
+      location: "G-404 Tulas University",  
       time: "11:30 am - 4:00 pm",
     },    {
       image: newformatimg18,
@@ -130,13 +130,13 @@ function LatestNews() {
       image: newformatimg14,
       name: "Campus Placement Drive - Btech CSE, MBA, BBA, BCA, MCA, Bcom(Hons) 2026 Batch",
       date: "10-Nov-2025",
-      location: "Tula's Institiute",    
+      location: "Tulas Institiute",    
     },
     {
       image: newformatimg13,
       name: "A decade of glory - 10th diff deheradun international film festival",
       date: "08-Nov-2025",
-      location: "Tula's Auditorium",    
+      location: "Tulas Auditorium",    
     },
     {
       image: newformatimg12,
@@ -177,7 +177,7 @@ function LatestNews() {
       image: newformatimg6,
       name: "Campus Placement Drive - Btech CSE, BCA & MCA 2026 Batch",
       date: "29-Oct-2025",
-      location: "Tula's Campus",
+      location: "Tulas Campus",
     },
     {
       image: newformatimg5,
@@ -190,7 +190,7 @@ function LatestNews() {
       image: newformatimg4,
       name: "Campus Placement Drive - 2026 Batch MetConnect Infotech Pvt. Ltd",
       date: "10-Oct-2025",
-      location: "Tula's Campus",
+      location: "Tulas Campus",
     },
         {
       image: newformatimg3,
@@ -204,7 +204,7 @@ function LatestNews() {
       name: "Veer Madho Singh Bhandari Uttrakhand Technical University Intercollege kabaddi League (Boys/Girls)",
       date: "04-Oct - 05-Oct-2025",
       time: "10:30 am Onwards",
-      location: "Tula's Campus",
+      location: "Tulas Campus",
     },
             {
       image: newformatimg1,
@@ -217,27 +217,27 @@ function LatestNews() {
       image: Campusplacmentbsc,
       name: "Campus Placement Drive B.Sc. (Hons) Agriculture - 2026 Batch",
       date: "30-Sept-2025",
-      location: "TRC Lab, Tula's Institute",
+      location: "TRC Lab, Tulas University",
     },
         {
       image: Campusplacmentmca,
       name: "Campus Placement Drive MCA - 2026 Batch",
       date: "29-Sept-2025",
-      location: "TRC Lab, Tula's Institute",
+      location: "TRC Lab, Tulas University",
     },
         {
       image: BakeryTraining,
-      name: "Tula's Institute is organizing a training program on Kneed to know Bakery Training",
+      name: "Tulas University is organizing a training program on Kneed to know Bakery Training",
       date: "03-Apr - 04-Apr-2025",
       time: "11:00 am Onwards",
-      location: "TRC Lab, Tula's Institute",
+      location: "TRC Lab, Tulas University",
     },
     {
       image: WorldHealthDay,
       name: "Internal Complaint Committee (ICC) is organizing an event on World Health Day by Dr. Neha Mahajan",
       date: "07-Apr-2025",
       time: "11:00 am Onwards",
-      location: "Auditorium, Tula's Institute",
+      location: "Auditorium, Tulas University",
     },
     {
       image: SaraSaePvtLtd,
@@ -251,35 +251,35 @@ function LatestNews() {
       name: "Internal Complaint Committee (ICC) is organizing an event on World Health Day by Dr. Juhi Garg",
       date: "07-Apr-2025",
       time: "11:00 am Onwards",
-      location: "Auditorium, Tula's Institute",
+      location: "Auditorium, Tulas University",
     },
     {
       image: TenderingInCivilEngineering,
       name: "Department of Civil Engineering is organizing an Expert talk on tranding in Civil Engineering",
       date: "04-Apr-2025",
       time: "10:00 am Onwards",
-      location: "Seminar Hall (I301), Tula's Institute",
+      location: "Seminar Hall (I301), Tulas University",
     },
     {
       image: WorkshopOnElectricVehicles,
       name: "Department of Electrical and Electronics Engineering  & Electronics and Communication Engineering are organizing in-house workshop on Mathemiatical Modelling of the Electric Vehicles",
       date: "02-Apr-2025",
       time: "09:40 am Onwards",
-      location: "E-Block, Tula's Institute",
+      location: "E-Block, Tulas University",
     },
     {
       image: FarmersIncomeAndIndianAgriculture,
       name: "Graduate School of Business is organizing guest Lecture on The Contribution of Livestock Farming to improving Farmer's Income and Indian Agriculture",
       date: "02-Apr-2025",
       time: "10:00 am - 12:30 pm",
-      location: "Auditorium, Tula's Institute",
+      location: "Auditorium, Tulas University",
     },
     {
       image: EventBannersTiMarch,
       name: "Graduate School of Business is organizing Add-On Certification course on Data Analytics using different Data Set",
       date: "28-Mar - 07-Apr-2025",
       time: "10:00 am Onwards",
-      location: "Lab-4, Tula's Institute",
+      location: "Lab-4, Tulas University",
     },
     {
       image: CleanlinessDriveRishikesh,
@@ -293,7 +293,7 @@ function LatestNews() {
       name: "Department of Computer Science & Engineering is organizing 12 hours Hackathon on Hack the Future 1.0",
       date: "26-Mar-2025",
       time: "10:00 pm - 11:00 am",
-      location: "Lab- 2, 3 & 5, Tula's Institute",
+      location: "Lab- 2, 3 & 5, Tulas University",
     },
     {
       image: AWSCloudPractitioner,
@@ -321,7 +321,7 @@ function LatestNews() {
       name: "Internal Complaint Committee (ICC) is Organizing Event on International Women's Day",
       date: "07-Mar-2025",
       time: "11:00 am Onwards",
-      location: "Auditorium, Tula's Institute",
+      location: "Auditorium, Tulas University",
     },
     {
       image: Techthone,
@@ -332,7 +332,7 @@ function LatestNews() {
     },
     {
       image: StrenthingRuralWomen,
-      name: "Tula's Institute is Organizing Hands on Training Programme on Strengthening Rural Women through Jute Bag Making",
+      name: "Tulas University is Organizing Hands on Training Programme on Strengthening Rural Women through Jute Bag Making",
       date: "24-Feb - 25-Feb-2025",
       time: "10:00 am - 04:00 pm",
       location: "TRC Lab",
@@ -342,7 +342,7 @@ function LatestNews() {
       name: "International Complaint Committee (ICC) is organizing Open Mic Competition on Voices for Equality: Accelerating Change Together",
       date: "24-Feb-2025",
       time: "02:00 pm Onwards",
-      location: "New Seminar Hall (C-Block), Tula's Institute",
+      location: "New Seminar Hall (C-Block), Tulas University",
     },
     {
       image: FiringPractice,
@@ -367,10 +367,10 @@ function LatestNews() {
     },
     {
       image: SarikaPanchhi,
-      name: "Graduate School of Business in Collaboration with Tula's Technology and Business Incubator is organizing InspireX",
+      name: "Graduate School of Business in Collaboration with Tulas Technology and Business Incubator is organizing InspireX",
       date: "08-Feb-2025",
       time: "11:00 am - 12:30 pm",
-      location: "Old Seminar Hall, Tula's Institute",
+      location: "Old Seminar Hall, Tulas University",
     },
     {
       image: WorkshopOnEngineOverhaulingME,
@@ -381,7 +381,7 @@ function LatestNews() {
     },
     {
       image: JuniorBrainBattle,
-      name: "Junior Brain Battle is organizing by NSS Unit, Tula's Institute",
+      name: "Junior Brain Battle is organizing by NSS Unit, Tulas University",
       date: "04-Feb-2025",
       time: "01:00 pm - 04:00 pm",
       location: "Primary School, Bayakhala, Saharpur, Dehradun",
@@ -434,7 +434,7 @@ function LatestNews() {
                 onClick={() => setSelectedItem(item)}
                 className="flex w-full md:w-[calc(25%-1rem)] flex-col md:flex-row gap-4"
               >
-                <div className="relative p-2 rounded-xl bg-[#007A83] w-full h-full flex flex-col justify-between mx-auto">
+                <div className="relative p-2 rounded-xl bg-[#f97316] w-full h-full flex flex-col justify-between mx-auto">
                   <div className="w-full h-fit flex flex-col justify-between">
                     <Image
                       src={item.image}

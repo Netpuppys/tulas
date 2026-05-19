@@ -119,11 +119,11 @@ function AboutIQAC() {
       <head>
         <title>
           About IQAC | Best Engineering College in Dehradun, Uttarakhand |
-          Tula's Institute
+          Tulas University
         </title>
         <meta
           name="description"
-          content="Tula's Institute, Best engineering institute in Dehradun Uttarakhand, is North Indiaâ€™s fastest growing private college with best placement records."
+          content="Tulas University, Best engineering institute in Dehradun Uttarakhand, is North Indiaâ€™s fastest growing private college with best placement records."
         />
       </head>
       <body>
@@ -139,7 +139,7 @@ function AboutIQAC() {
           description={<></>}
           belowTitle={""}
           belowPara={
-            "The Internal Quality Assurance Cell (IQAC) was established in 2014 at Tula’s Institute, Dehradun as an accreditation quality measure. The IQAC has been constituted as per the recommendations of the National Assessment and Accreditation Council (NAAC). The IQAC ensures the effective implementation of quality initiatives through continuous reviews and periodic meetings. The IQAC works towards attaining excellence in all academic and administrative endeavors of the institution."
+            "The Internal Quality Assurance Cell (IQAC) was established in 2014 at Tulas University, Dehradun as an accreditation quality measure. The IQAC has been constituted as per the recommendations of the National Assessment and Accreditation Council (NAAC). The IQAC ensures the effective implementation of quality initiatives through continuous reviews and periodic meetings. The IQAC works towards attaining excellence in all academic and administrative endeavors of the institution."
           }
         />
         <div className="w-full relative overflow-hidden">

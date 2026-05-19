@@ -3,6 +3,7 @@ import "./globals.css";
 import { MobileProvider } from "@/component/IsMobileContext";
 import Script from "next/script";
 import { UtmProvider } from "@/component/utmParams";
+import HideUniversity from "./HideUniversity";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -180,7 +181,10 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} font-sans`}>
+
+        <HideUniversity/>
+
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WX6R6WSL"

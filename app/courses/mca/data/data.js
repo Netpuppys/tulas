@@ -62,14 +62,14 @@ export const sideImages = [content1, content2];
 export const heading = (
   <>
     Best Masters in Computer Applications Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const quotes = (
   <>
     “Code your future, innovate with technology, and transform the world with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s Masters in Computer Applications Program.
+    <strong className="text-[#f97316]">
+      Tulas University Masters in Computer Applications Program.
     </strong>
     ”
   </>
@@ -88,9 +88,9 @@ export const content = (
 export const items = [
   {
     title: "USPs",
-    intro: "Here’s why Tula’s Institute stands out as the ideal place to pursue your Masters In Computer Applications",
+    intro: "Here’s why Tulas University stands out as the ideal place to pursue your Masters In Computer Applications",
     image: USP,
-    outro: "Join Tula’s Institute and propel your tech career to new heights!",
+    outro: "Join Tulas University and propel your tech career to new heights!",
 
     points: [
        <>
@@ -455,7 +455,7 @@ export const hod = [
 ];
 export const HODcontent = (
   <>
-    On behalf of the faculty, staff, and students of the Department of Computer Applications, Tula’s Institute, Dehradun, I extend a warm welcome to all of you stepping into the dynamic and innovation-driven world of computing.
+    On behalf of the faculty, staff, and students of the Department of Computer Applications, Tulas University, Dehradun, I extend a warm welcome to all of you stepping into the dynamic and innovation-driven world of computing.
     <br />
     <br />Our department is powered by a team of experienced and academically distinguished faculty members who are committed to build strong technical foundations in every learner and have strong expertise in core and emerging domains such as Artificial Intelligence, Data Science, Cyber Security, Cloud Computing, Software Engineering, and Internet of Things (IoT). With an industry-aligned curriculum, advanced pedagogical practices, and continuous guidance through the Mentor–Mentee Program, we ensure that each student receives holistic academic and professional development.
     <br />
@@ -463,10 +463,10 @@ export const HODcontent = (
     In today’s digital era, computer applications form the backbone of technological advancement across industries. From intelligent systems and data-driven technologies to modern software architectures, this discipline equips students with the skills and mindset needed to contribute meaningfully to the global tech ecosystem.
     <br />
     <br />
-    At Tula’s Institute, we nurture a culture of curiosity, innovation, and excellence. Our goal is to prepare students to embrace emerging technologies, solve real-world problems, and lead with confidence in a rapidly evolving digital landscape. We look forward to empower each learner to reach new heights and to guide you as you explore, innovate, and excel in this exciting journey of technological advancement.
+    At Tulas University, we nurture a culture of curiosity, innovation, and excellence. Our goal is to prepare students to embrace emerging technologies, solve real-world problems, and lead with confidence in a rapidly evolving digital landscape. We look forward to empower each learner to reach new heights and to guide you as you explore, innovate, and excel in this exciting journey of technological advancement.
     <br />
     <br />
-    Whether you are currently a part of Tula’s Institute or exploring the opportunity to join us through our academic or teaching–learning programs, I warmly welcome you to our vibrant, technical, creative, dynamic, and innovation-driven family.
+    Whether you are currently a part of Tulas University or exploring the opportunity to join us through our academic or teaching–learning programs, I warmly welcome you to our vibrant, technical, creative, dynamic, and innovation-driven family.
   </>
 );
 export const itemsClubs = [
@@ -488,7 +488,7 @@ export const itemsClubs = [
   {
     title: "Beyond the Curriculum – More Than Just a Degree",
     description: [
-      "At Tula’s Institute, the MCA program offers more than just academic knowledge, preparing you to be a well-rounded tech leader:",
+      "At Tulas University, the MCA program offers more than just academic knowledge, preparing you to be a well-rounded tech leader:",
       <>
         <strong className="font-bold">Internships & Industry Projects:</strong>
         <br />
@@ -523,7 +523,7 @@ export const itemsClubs = [
         workshops and activities.
       </>,
       <italic className="italic font-bold">
-        Tula’s MCA program prepares you for both technical expertise and
+        Tulas MCA program prepares you for both technical expertise and
         professional success in the tech industry.
       </italic>,
     ],
@@ -531,7 +531,7 @@ export const itemsClubs = [
   {
     title: "Career Prospectus – A Future Filled with Limitless Potential",
     description: [
-      "An MCA degree from Tula’s Institute unlocks a world of rewarding, high-paying career opportunities in the rapidly evolving tech industry:",
+      "An MCA degree from Tulas University unlocks a world of rewarding, high-paying career opportunities in the rapidly evolving tech industry:",
       <>
         <strong className="font-bold">Software Engineer/Developer:</strong>
         <br />
@@ -583,7 +583,7 @@ export const itemsClubs = [
         Pursue advanced degrees or research, leading to roles in academia or
         specialized tech sectors.
       </>,
-      "Tula’s MCA program equips you with the skills, insights, and leadership potential to excel in these dynamic fields and shape the future of technology.",
+      "Tulas MCA program equips you with the skills, insights, and leadership potential to excel in these dynamic fields and shape the future of technology.",
       <italic className="italic font-bold">
         "The tech world is waiting—are you ready to lead?"
       </italic>,

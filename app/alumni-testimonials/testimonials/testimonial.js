@@ -265,7 +265,7 @@ function Testimonial() {
         <div className="flex space-x-10 md:pt-4 justify-center self-center">
           <button
             onClick={handlePrevClick}
-            className={`pointer-events-auto shadow-2xl text-[#007A83] h-[60px] w-[60px] bg-white rounded-full flex items-center justify-center text-[40px] ${
+            className={`pointer-events-auto shadow-2xl text-[#f97316] h-[60px] w-[60px] bg-white rounded-full flex items-center justify-center text-[40px] ${
               activeIndex === 0
                 ? "cursor-not-allowed opacity-50"
                 : "active:scale-90"
@@ -276,7 +276,7 @@ function Testimonial() {
           </button>
           <button
             onClick={handleNextClick}
-            className={`pointer-events-auto shadow-2xl text-[#007A83] h-[60px] w-[60px] bg-white rounded-full flex items-center justify-center text-[40px] ${
+            className={`pointer-events-auto shadow-2xl text-[#f97316] h-[60px] w-[60px] bg-white rounded-full flex items-center justify-center text-[40px] ${
               activeIndex === features.length - 1
                 ? "cursor-not-allowed opacity-50"
                 : "active:scale-90"

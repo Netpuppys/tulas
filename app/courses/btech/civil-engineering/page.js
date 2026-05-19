@@ -31,6 +31,9 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/BTech.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
@@ -40,11 +43,18 @@ function BAJMC() {
         </title>
         <meta
           name="description"
-          content="Tula’s Institute is a reputed Best Civil Engineering Colleges in Dehradun Uttarakhand. Department of Civil Engineering has evolved a comprehensive student-centric learning approach."
+          content="Tulas is a reputed Best Civil Engineering Colleges in Dehradun Uttarakhand. Department of Civil Engineering has evolved a comprehensive student-centric learning approach."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram image={BannerImg} title={<>CIVIL ENGINEERING (CE)</>} />
         <Program
           sideImages={sideImages}
@@ -78,7 +88,7 @@ function BAJMC() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

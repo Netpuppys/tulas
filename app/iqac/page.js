@@ -36,12 +36,12 @@ function IQAC() {
     <>
       <head>
         <title>
-          IQAC | Best Engineering College in Dehradun, Uttarakhand | Tula's
-          Institute
+          IQAC | Best Engineering College in Dehradun, Uttarakhand | Tulas
+          University
         </title>
         <meta
           name="description"
-          content="Learn about the Internal Quality Assurance Cell (IQAC) at Tula's Institute, Dehradun. Committed to enhancing educational standards, IQAC drives continuous improvement through quality initiatives and best practices for academic excellence."
+          content="Learn about the Internal Quality Assurance Cell (IQAC) at Tulas University, Dehradun. Committed to enhancing educational standards, IQAC drives continuous improvement through quality initiatives and best practices for academic excellence."
         />
       </head>
       <body>

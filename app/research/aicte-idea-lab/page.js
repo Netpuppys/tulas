@@ -10,6 +10,9 @@ import { Fade } from "react-awesome-reveal";
 import intellectual from "../../../public/research/intellectual/intellectual.png";
 import Vision from "@/component/Programs/Vision";
 import Link from "next/link";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 // import ILT from "../../public/FooterPDf/idea-lab-tender.doc";
 
 function AICTEIDEALAB() {
@@ -18,7 +21,7 @@ function AICTEIDEALAB() {
       title: "Web Development Cell",
       description: (
         <>
-          The key responsibilities and activities of Tula’s Web Development Cell
+          The key responsibilities and activities of Tulas Web Development Cell
           include:
           <br />
           <br />
@@ -84,21 +87,28 @@ function AICTEIDEALAB() {
       <head>
         <title>
           AICTE IDEA Lab | Best Engineering College in Dehradun, Uttarakhand |
-          Tula's Institute
+          Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the AICTE IDEA Lab at Tula's Institute, fostering innovation and skills in web technologies through collaborative projects, workshops, and expert guidance."
+          content="Explore the AICTE IDEA Lab at Tulas University, fostering innovation and skills in web technologies through collaborative projects, workshops, and expert guidance."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
-                AICTE IDEA <span className="text-[#007A83]">Lab</span>
+                AICTE IDEA <span className="text-[#f97316]">Lab</span>
               </>
             }
             description={<></>}
@@ -106,17 +116,17 @@ function AICTEIDEALAB() {
             belowPara={""}
           />
           <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
-  <h1 className="text-2xl md:text-4xl font-bold mb-4 text-[#760135]">
+  <h1 className="text-2xl md:text-4xl font-bold mb-4 text-[#f97316]">
     NOTICE INVITING TENDER
   </h1>
   <p className="mb-3 text-[#000]">
     E-Tenders are invited in a two-bid system (Technical and Financial) for the supply/execution of the item(s)/stores/work as specified below. Submissions are invited from Original Equipment Manufacturers (OEMs) or their Authorized Distributors only, in accordance with the provisions of GFR 2017 and the terms and conditions outlined in the tender document.
   </p>
   <p className="my-3 text-[#000]">
-    The interested bidders should Courier/email/registered post the duly signed tender form and their bids along with scanned copies of all the relevant certificates, documents, etc., in support of their technical &amp; price bid all duly sealed and signed should be sent. The technical bids will be opened on 30/09/2025 in the office of Dean research & development ,CIRE,Tula's institute Dehradun (PURCHASE).
+    The interested bidders should Courier/email/registered post the duly signed tender form and their bids along with scanned copies of all the relevant certificates, documents, etc., in support of their technical &amp; price bid all duly sealed and signed should be sent. The technical bids will be opened on 30/09/2025 in the office of Dean research & development ,CIRE,Tulas University Dehradun (PURCHASE).
   </p>
   <p className="my-3 text-[#000]">
-    The tender document including item specifications, eligibility conditions, and terms, can be viewed and downloaded from the website of Tula's Institute, Dhoolkot, PO-Selaqui, Chakrata Road, Dehradun, Uttarakhand at www.tulas.edu.in/research/aicte-idea-lab/
+    The tender document including item specifications, eligibility conditions, and terms, can be viewed and downloaded from the website of Tulas University, Dhoolkot, PO-Selaqui, Chakrata Road, Dehradun, Uttarakhand at www.tulas.edu.in/research/aicte-idea-lab/
   </p>
 
     <div className="w-full flex justify-start">
@@ -133,7 +143,7 @@ function AICTEIDEALAB() {
     href="/FooterPDf/AICTE-idea-lab-complete-tender.pdf"
     target="_blank"
     rel="noopener noreferrer"
-    className="mt-4 px-6 py-2 bg-[#760135] text-white rounded hover:opacity-90 transition"
+    className="mt-4 px-6 py-2 bg-[#f97316] text-white rounded hover:opacity-90 transition"
   >
     Know More
   </a>
@@ -142,7 +152,7 @@ function AICTEIDEALAB() {
 
 
           <div className="w-full h-fit z-50">
-            <Footer color={true} />
+            <NewFooter/>
           </div>
         </div>
       </body>

@@ -33,6 +33,9 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BAJMCFee from "../../../public/FeeStructure/BAJMC.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
@@ -42,11 +45,18 @@ function BAJMC() {
         </title>
         <meta
           name="description"
-          content="Register Now! & Become a part of the best BJMC College in Dehradun. Tula's Institute has been awarded as the best Engineering & Management College in North India."
+          content="Register Now! & Become a part of the best BJMC College in Dehradun. Tulas has been awarded as the best Engineering & Management College in North India."
         />
       </head>
       <body>
-          <Navbar />
+          {/* <Navbar /> */}
+          <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
           <BannerProgram
             image={BannerImg}
             title=<>BA(Hons.) JMC</>
@@ -92,7 +102,7 @@ function BAJMC() {
             backgroundCrousel={exploreCrouselBackground}
             background={exploreCrouselBackground}
           />
-          <Footer />
+          <NewFooter />
       </body>
     </>
   );

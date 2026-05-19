@@ -7,25 +7,35 @@ import BannerImg from "../../../public/infrastructure/library/bannerImg.webp";
 import Image from "next/image";
 import Footer from "@/component/Footer";
 import nss from "../../../public/campus-life/nss/nss.png";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function NSS() {
   return (
     <>
       <head>
         <title>
-          NSS at Tula's Institute | Fostering Social Responsibility & Community
+          NSS at Tulas | Fostering Social Responsibility & Community
           Service
         </title>
         <meta
           name="description"
-          content="Join the National Service Scheme (NSS) at Tula's Institute, where students engage in impactful community service initiatives. From cleanliness drives and blood donation camps to GreenX sustainability projects, our NSS club fosters leadership, teamwork, and a commitment to societal welfare."
+          content="Join the National Service Scheme (NSS) at Tulas, where students engage in impactful community service initiatives. From cleanliness drives and blood donation camps to GreenX sustainability projects, our NSS club fosters leadership, teamwork, and a commitment to societal welfare."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
-          title={<span className="text-[#007A83]">NSS</span>}
+          title={<span className="text-[#f97316]">NSS</span>}
           // belowPara={
           //   "At Tula’s Institute, NSS is all about stepping up, having fun, and making a difference! Students take on roles that not only build leadership and teamwork but also spark a passion for social and environmental causes, all while creating real change in the community."
           // }
@@ -39,7 +49,7 @@ function NSS() {
           />
         </div>
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.5vw,50px)] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
+          <h3 className="text-[clamp(10px,7vw,50px)] md:text-[clamp(10px,2.5vw,50px)] text-center w-full font-[CarotSlab] text-[#f97316] mb-4">
             National Service Scheme (NSS)
           </h3>
           <Image
@@ -48,7 +58,7 @@ function NSS() {
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
           <div className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] leading-tight mx-auto text-[#353535]">
-            The NSS (National Service Scheme) club at Tula's Institute is
+            The NSS (National Service Scheme) club at Tulas University is
             dedicated to fostering a sense of social responsibility and
             community service among students.
             <br />
@@ -84,7 +94,7 @@ function NSS() {
           </div>
         </div>
         <div className="w-full h-fit z-50">
-          <Footer />
+          <NewFooter />
         </div>
       </body>
     </>

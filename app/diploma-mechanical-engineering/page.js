@@ -23,13 +23,16 @@ import TableProgram from "@/component/Programs/tableProgram";
 import TopRecruiter from "@/component/topRecruiter";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function BSCAgriculture() {
   return (
     <>
       <head>
         <title>
-          Diploma in Mechanical Engineering in Dehradun | Tula's Institute
+          Diploma in Mechanical Engineering in Dehradun | Tulas 
         </title>
         <meta
           name="description"
@@ -37,7 +40,14 @@ function BSCAgriculture() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>DIPLOMA IN MECHANICAL ENGINEERING</>
@@ -60,7 +70,7 @@ function BSCAgriculture() {
         />
         <PlacementProgram features={features} />
         <TopRecruiter />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

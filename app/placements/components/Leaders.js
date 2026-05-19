@@ -20,7 +20,7 @@ function Leaders({ halltitle, features }) {
 
   return (
     <div className="flex flex-col justify-center items-center bg-gray-100">
-      <div className="text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(15px,6.3vw,55px)] md:text-[clamp(15px,2.3vw,55px)] text-[#991E55] leading-none z-10 font-bold uppercase tracking-tight font-serif">
+      <div className="text-center pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(15px,6.3vw,55px)] md:text-[clamp(15px,2.3vw,55px)] text-[#f97316] leading-none z-10 font-bold uppercase tracking-tight font-serif">
         {halltitle}
       </div>
 
@@ -88,13 +88,13 @@ function Leaders({ halltitle, features }) {
         }
 
         .swiper-pagination-bullet {
-          background: #991e55;
+          background: #f97316;
           opacity: 0.5;
           transition: all 0.3s ease;
         }
 
         .swiper-pagination-bullet-active {
-          background: #991e55;
+          background: #f97316;
           opacity: 1;
         }
       `}</style>

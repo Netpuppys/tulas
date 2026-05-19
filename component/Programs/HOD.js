@@ -16,7 +16,7 @@ function HOD({ hod, HODcontent }) {
               className="rounded-2xl w-[40%] md:w-[225px] h-full object-cover"
             />
             <div className="px-4 text-[#353535] py-4 md:px-8 flex flex-col gap-2 md:gap-4">
-              <h3 className="text-[#760135] font-[TTChocolatesMedium] leading-tight font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,45px)]">
+              <h3 className="text-[#f97316] font-[TTChocolatesMedium] leading-tight font-semibold text-[clamp(10px,4.5vw,30px)] md:text-[clamp(10px,1.4vw,45px)]">
                 {faculty.name}
               </h3>
               {faculty.email && (

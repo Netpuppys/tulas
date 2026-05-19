@@ -14,12 +14,15 @@ import img3 from "../../../public/campus-life/sanskriti/img3.png";
 import Footer from "@/component/Footer";
 import GalleryCrousel from "@/component/GalleryCrousel";
 import Banner from "@/component/Banner";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function Celebrities() {
   const sections = [
     {
       title: "Lights, Camera, Festival!",
       description:
-        "The Dehradun International Film Festival at Tula’s Institute is more than just an event—it’s a culturally enriching experience for students. Workshops, film screenings, and panel discussions provide valuable insights into the technical and creative processes behind filmmaking. Students are encouraged to think critically, develop new skills, and gain a deeper understanding of the industry's evolving trends.",
+        "The Dehradun International Film Festival at Tulas University is more than just an event—it’s a culturally enriching experience for students. Workshops, film screenings, and panel discussions provide valuable insights into the technical and creative processes behind filmmaking. Students are encouraged to think critically, develop new skills, and gain a deeper understanding of the industry's evolving trends.",
       image: filmFestival1,
     },
     {
@@ -47,28 +50,35 @@ function Celebrities() {
     <>
       <head>
         <title>
-          Celebrities at Tula's Institute | Film Festivals, Star Nights & Talk
+          Celebrities at Tulas University | Film Festivals, Star Nights & Talk
           Shows
         </title>
         <meta
           name="description"
-          content="Experience the excitement of celebrity events at Tula's Institute, Dehradun's top engineering college. From the Dehradun International Film Festival to Star Nights and exclusive talk shows, our campus comes alive with inspiring encounters with Bollywood stars, directors, and performers."
+          content="Experience the excitement of celebrity events at Tulas University, Dehradun's top engineering college. From the Dehradun International Film Festival to Star Nights and exclusive talk shows, our campus comes alive with inspiring encounters with Bollywood stars, directors, and performers."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+          <MegaMenu />
+        </div>
+        
+        <div className="block md:hidden">
+          <NewNavbar fullBanner={true}/>
+        </div>
         <Banner
           image={BannerImg}
           title={
             <>
               Dehradun International{" "}
-              <span className="text-[#007A83]">Film Festival</span>
+              <span className="text-[#f97316]">Film Festival</span>
             </>
           }
         />
 
         <div className="bg-white w-full h-fit flex flex-col justify-center items-center py-8 md:py-20">
-          {/* <h3 className="font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] text-center w-full font-[CarotSlab] text-[#007A83] mb-4">
+          {/* <h3 className="font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] text-center w-full font-[CarotSlab] text-[#f97316] mb-4">
             DEHRADUN INTERNATIONAL FILM FESTIVAL
           </h3> */}
           <Image
@@ -78,11 +88,11 @@ function Celebrities() {
           />
           <p className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] mx-auto text-center text-[#353535]">
             The{" "}
-            <span className="font-black text-[#007A83] font-[TTChocolatesMedium]">
-              Tula's Institute{" "}
+            <span className="font-black text-[#f97316] font-[TTChocolatesMedium]">
+              Tulas University{" "}
             </span>
             hosts the prestigious
-            <span className="font-black text-[#3D001B] font-[TTChocolatesMedium]">
+            <span className="font-black font-[TTChocolatesMedium]">
               {" "}
               Dehradun International Film Festival{" "}
             </span>
@@ -94,9 +104,9 @@ function Celebrities() {
             into the film industry, foster connections, and be inspired by the
             journeys of these celebrated figures. Its an annual celebration of
             regional cinema, creativity, and learning at
-            <span className="font-black text-[#007A83] font-[TTChocolatesMedium]">
+            <span className="font-black text-[#f97316] font-[TTChocolatesMedium]">
               {" "}
-              Tula's Institute.
+              Tulas University.
             </span>
           </p>
         </div>
@@ -114,7 +124,7 @@ function Celebrities() {
           <GalleryCrousel images={images} />
         </div>
         <div className="w-full h-fit z-50">
-          <Footer />
+          <NewFooter/>
         </div>
       </body>
     </>

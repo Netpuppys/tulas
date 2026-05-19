@@ -70,7 +70,7 @@ const ContactForm = ({ contactRef }) => {
     <div
       ref={contactRef}
       id="contact"
-      className="w-full bg-[#3D001B] py-8 md:py-28 px-8 md:px-[13%]"
+      className="w-full py-8 md:py-28 px-8 md:px-[13%]"
     >
       <ToastContainer closeButton closeOnClick={true} />
       <h3 className="text-[30px] text-white font-[CarotSlab] md:text-[40px] text-center">

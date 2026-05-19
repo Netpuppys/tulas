@@ -43,14 +43,14 @@ export const features = [
 export const heading = (
   <>
     Best Electrical & Electronics Engineering Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const sideImages = [contentLeft, contentRight];
 export const content = (
   <>
-    The Department of Electrical & Electronics Engineering (EEE) at Tula’s
-    Institute, established in 2006, is committed to academic excellence,
+    The Department of Electrical & Electronics Engineering (EEE) at Tulas
+    University, established in 2006, is committed to academic excellence,
     research, and innovation. With a vision to become a leading center of
     excellence, the department focuses on cutting-edge technologies and
     industry-driven learning to create highly skilled and employable engineers
@@ -68,7 +68,7 @@ export const content = (
     <div className="mt-2 md:mt-[1%]"></div>
     Through practical exposure, industry training, and research-driven
     education, graduates from the Department of Electrical & Electronics
-    Engineering at Tula’s Institute are well-prepared for careers in power
+    Engineering at Tulas University are well-prepared for careers in power
     generation, renewable energy, industrial automation, smart grids, and
     electric mobility.
   </>
@@ -76,8 +76,8 @@ export const content = (
 export const quotes = (
   <>
     “Power the future with innovation, sustainability, and technology at{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s B.Tech in Electrical & Electronics Engineering.
+    <strong className="text-[#f97316]">
+      Tulas University B.Tech in Electrical & Electronics Engineering.
     </strong>
     ”
   </>

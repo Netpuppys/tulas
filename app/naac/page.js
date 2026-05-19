@@ -28,11 +28,11 @@ function NAAC() {
       <head>
         <title>
           NAAC Accreditation | Best Engineering College in Dehradun, Uttarakhand
-          | Tula's Institute
+          | Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the NAAC accreditation of Tula's Institute, Dehradun, showcasing our dedication to quality education and academic standards. Learn about our commitment to continuous improvement and excellence in higher education."
+          content="Explore the NAAC accreditation of Tulas University, Dehradun, showcasing our dedication to quality education and academic standards. Learn about our commitment to continuous improvement and excellence in higher education."
         />
       </head>
       <body>

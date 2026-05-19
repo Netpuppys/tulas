@@ -10,6 +10,9 @@ import { Fade } from "react-awesome-reveal";
 import intellectual from "../../../public/research/intellectual/intellectual.png";
 import { useInView } from "react-intersection-observer";
 import Vision from "@/component/Programs/Vision";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function IntellectualPropertyRightsIprCell() {
   const sections = [
@@ -52,7 +55,7 @@ function IntellectualPropertyRightsIprCell() {
             <br />
             <li>
               IP Commercialization and Licensing: The IPR Cell facilitates the
-              commercialization of IP assets developed at Tula’s Institute. It
+              commercialization of IP assets developed at Tulas University. It
               identifies potential commercialization opportunities, explores
               licensing agreements, and connects innovators with industry
               partners and investors. The cell plays a crucial role in
@@ -79,7 +82,7 @@ function IntellectualPropertyRightsIprCell() {
             </li>
           </ul>
           <br />
-          The IPR Cell at Tula’s Institute is instrumental in fostering a
+          The IPR Cell at Tulas University is instrumental in fostering a
           culture of respect for intellectual property rights, promoting
           innovation, and supporting the commercialization of valuable
           inventions and creative works. Through its initiatives, the IPR Cell
@@ -103,28 +106,35 @@ function IntellectualPropertyRightsIprCell() {
       <head>
         <title>
           Intellectual Property Rights (IPR) Cell | Best Engineering College in
-          Dehradun, Uttarakhand | Tula's Institute
+          Dehradun, Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the Intellectual Property Rights (IPR) Cell at Tula's Institute, dedicated to fostering innovation and protecting intellectual property. Learn about various initiatives and resources to help students and faculty safeguard their creative ideas and research."
+          content="Explore the Intellectual Property Rights (IPR) Cell at Tulas University, dedicated to fostering innovation and protecting intellectual property. Learn about various initiatives and resources to help students and faculty safeguard their creative ideas and research."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
                 Intellectual Property Rights{" "}
-                <span className="text-[#007A83]">(IPR) Cell</span>
+                <span className="text-[#f97316]">(IPR) Cell</span>
               </>
             }
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "The Intellectual Property Rights (IPR) Cell at Tula’s Institute is a dedicated unit that focuses on the management, protection, and utilization of intellectual property assets within the institute. The IPR Cell plays a critical role in creating awareness about intellectual property rights, facilitating the filing and protection of IP assets, and supporting innovation and research activities."
+              "The Intellectual Property Rights (IPR) Cell at Tulas University is a dedicated unit that focuses on the management, protection, and utilization of intellectual property assets within the institute. The IPR Cell plays a critical role in creating awareness about intellectual property rights, facilitating the filing and protection of IP assets, and supporting innovation and research activities."
             }
           />
           <div className="w-full relative overflow-hidden">
@@ -136,7 +146,7 @@ function IntellectualPropertyRightsIprCell() {
           </div>
           <Vision sections={sections} />
           <div className="w-full h-fit z-50">
-            <Footer />
+            <NewFooter/>
           </div>
         </div>
       </body>

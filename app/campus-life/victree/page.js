@@ -18,6 +18,9 @@ import basketball from "../../../public/campus-life/victree/basketball.png";
 import volleyball from "../../../public/campus-life/victree/volleyball.png";
 import badminton from "../../../public/campus-life/victree/badminton.png";
 import athletics from "../../../public/campus-life/victree/athletics.png";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function Victree() {
   const sections = [
@@ -81,24 +84,31 @@ function Victree() {
   return (
     <>
       <head>
-        <title>Victree - Sports Club at Tula's Institute, Dehradun</title>
+        <title>Victree - Sports Club at Tulas, Dehradun</title>
         <meta
           name="description"
-          content="Join Victree, the dynamic sports club at Tula’s Institute, Dehradun. Explore a wide range of indoor and outdoor games like Table Tennis, Badminton, Football, and more, promoting fitness, teamwork, and sportsmanship on campus."
+          content="Join Victree, the dynamic sports club at Tulas, Dehradun. Explore a wide range of indoor and outdoor games like Table Tennis, Badminton, Football, and more, promoting fitness, teamwork, and sportsmanship on campus."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
           title={
             <>
-              Victree <span className="text-[#007A83]">- Sports Club</span>
+              Victree <span className="text-[#f97316]">- Sports Club</span>
             </>
           }
         />
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] leading-tight text-[#007A83] mb-4">
+          <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] leading-tight text-[#f97316] mb-4">
             Victree Sports Club - Where the Game’s Always On!
           </h3>
           <Image
@@ -107,7 +117,7 @@ function Victree() {
             className="w-full aspect-[9/12] px-4 object-cover md:aspect-video md:w-[80%] py-4 md:py-8 mx-auto mb-4"
           />
           <p className="text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] w-[90%] md:w-[70%] font-[TTChocolates] leading-tight mx-auto text-center text-[#353535]">
-            At Tula’s Institute, Victree Sports Club is where energy,
+            At Tulas University, Victree Sports Club is where energy,
             competition, and camaraderie collide. With over 10 sports available,
             students can dive into everything from strategy-driven indoor games
             to action-packed outdoor matches.
@@ -149,7 +159,7 @@ function Victree() {
           </p>
         </div>
         <div className="w-full h-fit z-50">
-          <Footer />
+          <NewFooter />
         </div>
       </body>
     </>

@@ -33,11 +33,11 @@ function MSC() {
       <head>
         <title>
           Master of Science in Agronomy | Best Engineering College
-          in Dehradun, Uttarakhand | Tula's Institute
+          in Dehradun, Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the Master of Science in Agronomy at Tulas Institute, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty."
+          content="Explore the Master of Science in Agronomy at Tulas University, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty."
         />
       </head>
       <body>

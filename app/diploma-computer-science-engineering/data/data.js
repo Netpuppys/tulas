@@ -19,7 +19,7 @@ export const sideImages = [content1, content2];
 export const heading = (
   <>
     Best Computer Science and Engineering Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
@@ -70,11 +70,11 @@ export const content = (
 export const quotes = (
   <>
     “Code, innovate, and transform the digital world with{" "}
-    <strong className="text-[#760135]">
+    <strong className="text-[#f97316]">
       Tula’s Institute’s Diploma in Computer Science.
     </strong>{" "}
     Equipping future tech leaders with the skills to{" "}
-    <strong className="text-[#760135]">shape tomorrow’s technology.</strong>”
+    <strong className="text-[#f97316]">shape tomorrow’s technology.</strong>”
   </>
 );
 export const sections = [

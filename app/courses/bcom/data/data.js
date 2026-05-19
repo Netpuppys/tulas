@@ -25,7 +25,7 @@ export const features = [
 ];
 export const content = (
   <>
-    The Bachelor of Commerce (Hons.) program at Tula’s offers a comprehensive
+    The Bachelor of Commerce (Hons.) program at Tulas offers a comprehensive
     and well-rounded curriculum designed to prepare students for various
     managerial roles across multiple sectors. Its full-time, three-year degree
     is affiliated with Sri Dev Suman Uttarakhand University, A State Govt
@@ -418,7 +418,7 @@ export const itemsClubs = [
   {
     title: "Beyond Curriculum",
     description: [
-      "Activities for various types of personal and professional development are a part of daily activity for the students at Tula’s. some of the activities which are regularly conducted for the students are:",
+      "Activities for various types of personal and professional development are a part of daily activity for the students at Tulas. some of the activities which are regularly conducted for the students are:",
       "NCC",
       "NSS",
       "Picnics",

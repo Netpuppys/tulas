@@ -28,6 +28,9 @@ import CrouselBackground from "../../../public/courses/bjmc/CrouselBackground.pn
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import DPharmaFee from "../../../public/FeeStructure/DPharma.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function DPharma() {
   return (
     <>
@@ -35,11 +38,18 @@ function DPharma() {
         <title>Diploma In Pharmacy (D. Pharm.) in Dehradun</title>
         <meta
           name="description"
-          content="Register Now! & Become a part of the best BJMC College in Dehradun. Tula's Institute has been awarded as the best Engineering & Management College in North India."
+          content="Register Now! & Become a part of the best BJMC College in Dehradun. Tulas University has been awarded as the best Engineering & Management College in North India."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+          <MegaMenu />
+        </div>
+        
+        <div className="block md:hidden">
+          <NewNavbar fullBanner={true}/>
+        </div>
         <BannerProgram
           image={dpharmaBanner}
           title={<>Diploma In Pharmacy (D. Pharm.)</>}
@@ -72,7 +82,7 @@ function DPharma() {
         <DownloadFeeStructure pdf={DPharmaFee} />
         <PlacementProgram features={features} />
         <TopRecruiter />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

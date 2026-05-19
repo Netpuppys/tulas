@@ -26,6 +26,9 @@ import logo20 from "../../../public/placements/nonTechnical/logo20.png";
 import logo21 from "../../../public/placements/nonTechnical/logo21.png";
 import TopRecruiter from "../components/TopRecruiters";
 import BannerProgram from "@/component/Programs/BannerProgram";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 const logosArray = [
   [logo1, logo2, logo3, logo4, logo5, logo6, logo7],
@@ -61,7 +64,7 @@ const TableComponent = () => {
 };
 
 const description =
-  "The Non-Technical Department at Tula’s focuses on delivering comprehensive education in areas such as management, humanities, and commerce. With a curriculum designed to align with industry standards, the department equips students with the knowledge and skills needed to excel in their chosen fields. Through practical learning, expert guidance, and a commitment to academic excellence, the Non-Technical Department prepares students for thriving careers in professional environments.";
+  "The Non-Technical Department at Tulas focuses on delivering comprehensive education in areas such as management, humanities, and commerce. With a curriculum designed to align with industry standards, the department equips students with the knowledge and skills needed to excel in their chosen fields. Through practical learning, expert guidance, and a commitment to academic excellence, the Non-Technical Department prepares students for thriving careers in professional environments.";
 
 const page = () => {
   return (
@@ -72,7 +75,14 @@ const page = () => {
         alt=""
       /> */}
 
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
       <BannerProgram
         title={"Non-Technical Placement Record"}
         image={bannerImage}
@@ -93,7 +103,7 @@ const page = () => {
         <TopRecruiter crouselImages={logosArray} />
       </div>
       <div className="w-full">
-        <Footer />
+        <NewFooter/>
       </div>
     </div>
   );

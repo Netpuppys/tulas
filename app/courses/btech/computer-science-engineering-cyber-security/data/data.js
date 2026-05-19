@@ -35,13 +35,13 @@ export const features = [
 export const heading = (
   <>
     Best Computer Science & Engineering (Cyber Security) Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
   <>
-    The B.Tech in Computer Science & Engineering (Cyber Security) at Tula’s
-    Institute prepares students to safeguard the digital world by developing
+    The B.Tech in Computer Science & Engineering (Cyber Security) at Tulas
+    University prepares students to safeguard the digital world by developing
     expertise in network security, cryptography, ethical hacking, digital
     forensics, and incident response. This program equips students with a strong
     technical foundation and hands-on experience to counter evolving cyber
@@ -66,8 +66,8 @@ export const quotes = (
   <>
     “Defend the digital world, master cyber security, and become the shield
     against cyber threats with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s B.Tech in CSE (Cyber Security).
+    <strong className="text-[#f97316]">
+      Tulas B.Tech in CSE (Cyber Security).
     </strong>
     ”
   </>

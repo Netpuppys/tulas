@@ -48,14 +48,14 @@ function NavbarMobile({ isChecked, utmParams }) {
                 >
                   <div className="relative w-full h-full flex items-center justify-center">
                     <FiPlus
-                      className={`transition-all duration-500 ease-in-out text-lg text-[#007A83] absolute ${
+                      className={`transition-all duration-500 ease-in-out text-lg text-[#f97316] absolute ${
                         showSubHeaders === item.title
                           ? "rotate-90 opacity-0"
                           : "rotate-0 opacity-100"
                       }`}
                     />
                     <FiMinus
-                      className={`transition-all duration-500 ease-in-out text-lg text-[#007A83] absolute ${
+                      className={`transition-all duration-500 ease-in-out text-lg text-[#f97316] absolute ${
                         showSubHeaders === item.title
                           ? "rotate-0 opacity-100"
                           : "-rotate-90 opacity-0"

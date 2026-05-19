@@ -59,13 +59,13 @@ const CarouselSection = ({
         <div className="flex space-x-6 justify-center mt-1">
           <button
             onClick={handlePrevClick}
-            className="h-[50px] w-[50px] bg-[#760135] text-white rounded-full flex items-center justify-center"
+            className="h-[50px] w-[50px] bg-[#f97316] text-white rounded-full flex items-center justify-center"
           >
             <IoIosArrowBack />
           </button>
           <button
             onClick={handleNextClick}
-            className="h-[50px] w-[50px] bg-[#760135] text-white rounded-full flex items-center justify-center"
+            className="h-[50px] w-[50px] bg-[#f97316] text-white rounded-full flex items-center justify-center"
           >
             <IoIosArrowForward />
           </button>

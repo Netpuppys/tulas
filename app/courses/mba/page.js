@@ -32,21 +32,31 @@ import StudentPlacement from "@/component/Programs/StudentPlacement";
 import MBAstudentplaced from "../../../public/courses/mba/placement-mba.pdf";
 import MBAstudentlist from "../../../public/courses/mba/student-list-mba.pdf";
 import MBAfacultylist from "../../../public/courses/mba/faculty-mba.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function MBA() {
   return (
     <>
       <head>
         <title>
-          Best MBA College in Dehradun, Uttarakhand | Tula's Institute
+          Best MBA College in Dehradun, Uttarakhand | Tulas
         </title>
         <meta
           name="description"
-          content="Tula's Institute is leading in Best MBA College in Dehradun. We are recognized as Top private MBA College in Dehradun. We have rated best Management and top B Schools of Dehradun India is looking for."
+          content="Tulas is leading in Best MBA College in Dehradun. We are recognized as Top private MBA College in Dehradun. We have rated best Management and top B Schools of Dehradun India is looking for."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>MBA</>
@@ -83,7 +93,7 @@ function MBA() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

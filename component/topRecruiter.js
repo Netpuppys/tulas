@@ -50,7 +50,7 @@ function TopRecruiter({ padding = false }) {
         padding ? "" : "py-8 md:py-[3%]"
       }  bg-white w-full h-fit flex flex-col items-center justify-center relative`}
     >
-      <h3 className="text-[#760135] pb-8 md:pb-14 text-[25px] md:text-[40px] font-[CarotSlab]">
+      <h3 className="text-[#f97316] pb-8 md:pb-14 text-[25px] md:text-[40px] font-bold">
         TOP RECRUITERS
       </h3>
 

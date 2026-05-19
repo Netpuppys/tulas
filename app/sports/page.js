@@ -20,6 +20,9 @@ import { useState, useEffect, useRef } from "react";
 import { useMobile } from "@/component/IsMobileContext";
 import GalleryCrousel from "@/component/GalleryCrousel";
 import Vision from "@/component/Programs/Vision";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 // const TextBanner = ({ filledText }) => {
 //   return (
@@ -168,12 +171,12 @@ function Sports() {
     <>
       <head>
         <title>
-          Sports | Best Engineering College in Dehradun, Uttarakhand | Tula's
-          Institute
+          Sports | Best Engineering College in Dehradun, Uttarakhand | Tulas
+          University
         </title>
         <meta
           name="description"
-          content="Discover the vibrant sports culture at Tula's Institute, offering state-of-the-art facilities and opportunities for students to excel in various sports and physical activities."
+          content="Discover the vibrant sports culture at Tulas University, offering state-of-the-art facilities and opportunities for students to excel in various sports and physical activities."
         />
       </head>
       <body>
@@ -181,7 +184,14 @@ function Sports() {
           // ref={parentRef}
           className="w-full h-fit overflow-x-hidden"
         >
-          <Navbar />
+          {/* <Navbar /> */}
+          <div className="hidden md:block">
+            <MegaMenu />
+          </div>
+          
+          <div className="block md:hidden">
+            <NewNavbar fullBanner={true}/>
+          </div>
           <Banner
             image={BannerImg}
             title={<>SPORTS FACILITIES</>}
@@ -194,7 +204,7 @@ function Sports() {
               out.
               <br />
               <br />
-              But not at Tula's!
+              But not at Tulas!
               <br />
               <br />
               Here we have a 22-acre campus designed with everything the sports
@@ -204,7 +214,7 @@ function Sports() {
               <br />
               <br />
               Craving for a field or pitch that brings out the finest in you?
-              Join Tula's, an institution that nurtures and nourishes all parts
+              Join Tulas, a University that nurtures and nourishes all parts
               of you!
             </>
           />
@@ -225,7 +235,7 @@ function Sports() {
               </h3>
               <p className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
                 Having the right space to relax, have fun, and grow is super
-                important. With the great facilities at Tula’s, indoor
+                important. With the great facilities at Tulas, indoor
                 activities become more than just games—they help you sharpen
                 your mind, improve focus, and work on your skills. Whether it's
                 planning your next move in chess, reacting quickly in table
@@ -381,7 +391,7 @@ function Sports() {
                 Spaces Built for Sports Under the Sky
               </h3>
               <p className="leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] font-[TTChocolates] text-white text-center md:text-justify text-opacity-90 md:max-w-[65vw]">
-                The outdoor sports facilities at Tula’ are designed to give
+                The outdoor sports facilities at Tula are designed to give
                 students the perfect space for all kinds of action. With
                 well-maintained fields and tracks, it's the ideal environment to
                 train, compete, and enjoy the outdoors
@@ -390,7 +400,7 @@ function Sports() {
             <Vision sections={sections} />
           </div>
         </div>
-        <Footer color={true} />
+        <NewFooter/>
       </body>
     </>
   );

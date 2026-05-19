@@ -19,6 +19,9 @@ import patent9 from "../../../../public/research/patents/patent9.png";
 import patent10 from "../../../../public/research/patents/patent10.jpg";
 import CarouselProgram from "@/component/Programs/CrouselProgram";
 import SlidingCarousel from "./components/SlidingCarousel";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function Patent() {
   const patentImages = [
@@ -47,7 +50,14 @@ function Patent() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="w-full flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
@@ -90,7 +100,7 @@ function Patent() {
             <SlidingCarousel items={patentImages} />
           </div>
           <div className="w-full h-fit z-50">
-            <Footer color={true} />
+            <NewFooter/>
           </div>
         </div>
       </body>

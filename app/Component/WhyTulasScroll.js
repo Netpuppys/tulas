@@ -6,7 +6,7 @@ import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useMobile } from "@/component/IsMobileContext";
 import ComputerCenter from "../../public/Homepage/ScrollSection/ComputerCenter.png";
-const title = "15 REASONS TO CHOOSE TULA’S";
+const title = "15 REASONS TO CHOOSE TULAS";
 const images = [
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-9.png",
@@ -21,7 +21,7 @@ const images = [
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-2+(1).png",
     title: "Incubator",
-    text: "Tula’s Technology Business Incubator Foundation (TTBIF) approved by MSME & StartUP Uttarakhand for innovation and startups.",
+    text: "Tulas Technology Business Incubator Foundation (TTBIF) approved by MSME & StartUP Uttarakhand for innovation and startups.",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-3+(1).png",
@@ -47,7 +47,7 @@ const images = [
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-6.png",
     title: "NCC",
-    text: "NCC 29 UK battalion at Tula’s led by the Government of India, Ministry of Defence.",
+    text: "NCC 29 UK battalion at Tulas led by the Government of India, Ministry of Defence.",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-7.png",
@@ -68,7 +68,7 @@ const images = [
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-10.png",
     title: "NSS",
-    text: "NSS Unit at Tula’s led by the Government of India, Ministry of Youth Affairs & Sports.",
+    text: "NSS Unit at Tulas led by the Government of India, Ministry of Youth Affairs & Sports.",
   },
   {
     src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-11.png",

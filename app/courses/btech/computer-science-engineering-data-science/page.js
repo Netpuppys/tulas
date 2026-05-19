@@ -32,21 +32,31 @@ import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
 import CSEDataFaculty from "../../../../public/courses/all-faculty/CSE-data-science.pdf";
 import ReadFaculty from "@/component/Programs/ReadFaculty";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
       <head>
         <title>
           Best Computer Science & Engineering( Data Science) College in
-          Dehradun, Uttarakhand | Tula's Institute
+          Dehradun, Uttarakhand | Tulas
         </title>
         <meta
           name="description"
-          content="Tula's Institute Is the Best Computer Science & Engineering( Data Science) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (data Science) for Aspiring Professionals. Visit Now!"
+          content="Tulas Is the Best Computer Science & Engineering( Data Science) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (data Science) for Aspiring Professionals. Visit Now!"
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>COMPUTER SCIENCE & ENGINEERING (Data Science)</>
@@ -82,7 +92,7 @@ function BAJMC() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

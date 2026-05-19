@@ -9,6 +9,9 @@ import Footer from "@/component/Footer";
 import background from "../../public/AboutDehradun/background.png";
 import Image from "next/image";
 import { UtmContext } from "@/component/utmParams";
+import MegaMenu from '@/component/Navbar/MegaMenu';
+import NewNavbar from '@/component/Navbar/NewNavbar';
+import NewFooter from '@/component/NewFooter';
 
 function Blog() {
   const { utmParams } = useContext(UtmContext);
@@ -57,7 +60,14 @@ function Blog() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           title={"Blogs"}
           image={BannerImg}
@@ -81,7 +91,7 @@ function Blog() {
             alt=""
           />
         </div>
-        <Footer color={true} />
+        <NewFooter />
       </body>
     </>
   );

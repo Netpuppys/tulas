@@ -6,11 +6,11 @@ function page() {
     <>
       <head>
         <title>
-          Download E-Prospectus | Tula's Institute Dehradun, Uttarakhand
+          Download E-Prospectus | Tulas University Dehradun, Uttarakhand
         </title>
         <meta
           name="description"
-          content="Download E-Prospectus - Tula's Institute Dehradun, Uttarakhand, is one of the Top and best Engineering College and Management College in Dehradun Uttarakhand, India, Get ranked no-1 College in Dehradun Uttarakhand."
+          content="Download E-Prospectus - Tulas University Dehradun, Uttarakhand, is one of the Top and best Engineering College and Management College in Dehradun Uttarakhand, India, Get ranked no-1 College in Dehradun Uttarakhand."
         />
       </head>
       <body>

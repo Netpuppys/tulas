@@ -1,5 +1,6 @@
 import React from "react";
 import HomePage from "./HomePage";
+import NewHomePage from "./NewHomePage";
 
 export const metadata = {
   title: "Best Engineering College in Dehradun, India | Tula's Institute",
@@ -9,7 +10,8 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <HomePage />
+      {/* <HomePage /> */}
+      <NewHomePage/>
     </>
   );
 }

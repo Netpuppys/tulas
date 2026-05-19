@@ -19,7 +19,7 @@ export default function TopPlacements() {
       degree: "M.B.A",
       company: "KPMG",
       img: "/placements/tp2.png",
-      bg: "bg-teal-800",
+      bg: "bg-[#263145]",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export default function TopPlacements() {
       degree: "M.B.A",
       company: "Deloitte",
       img: "/placements/tp3.png",
-      bg: "bg-[#800033]",
+      bg: "bg-[#f97316]",
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ export default function TopPlacements() {
       degree: "B.Tech-M.E",
       company: "KPMG",
       img: "/placements/tp4.png",
-      bg: "bg-teal-800",
+      bg: "bg-[#263145]",
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ export default function TopPlacements() {
       degree: "B.Tech-E.C.E",
       company: "KIMO",
       img: "/placements/tp5.png",
-      bg: "bg-[#800033]",
+      bg: "bg-[#f97316]",
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ export default function TopPlacements() {
       degree: "B.Tech-M.E",
       company: "GEP",
       img: "/placements/tp6.png",
-      bg: "bg-teal-800",
+      bg: "bg-[#263145]",
     },
     {
       id: 6,
@@ -59,7 +59,7 @@ export default function TopPlacements() {
       degree: "B.Tech-C.S.E",
       company: "Publicis Sapient",
       img: "/placements/tp7.png",
-      bg: "bg-[#800033]",
+      bg: "bg-[#f97316]",
     },
     {
       id: 7,
@@ -67,7 +67,7 @@ export default function TopPlacements() {
       degree: "B.Tech-E.C.E",
       company: "Adobe",
       img: "/placements/tp8.png",
-      bg: "bg-teal-800",
+      bg: "bg-[#263145]",
     },
   ];
 
@@ -82,11 +82,11 @@ export default function TopPlacements() {
   return (
     <section className="relative w-full py-16">
       {/* Half background gradient from bottom */}
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-r from-[#800033] via-[#4b0023] to-[#007A83]" />
+      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-r from-[#f97316] to-[#263145]" />
 
       <div className="relative z-10 w-full md:w-[85%] mx-auto">
         <h2 className="text-center text-4xl font-bold text-teal-900 mb-10 font-serif">
-          Some of Our <span className="text-[#800033]">Top Placements</span>
+          Some of Our <span className="text-[#f97316]">Top Placements</span>
         </h2>
 
         {/* Swiper Carousel */}
@@ -129,10 +129,10 @@ export default function TopPlacements() {
 
           {/* Custom navigation buttons */}
           <button className="prev-btn absolute left-0 top-1/2 -translate-y-1/2 z-20 p-3 bg-white rounded-full shadow-lg">
-            <FaChevronLeft className="text-[#800033]" />
+            <FaChevronLeft className="text-[#f97316]" />
           </button>
           <button className="next-btn absolute right-0 top-1/2 -translate-y-1/2 z-20 p-3 bg-white rounded-full shadow-lg">
-            <FaChevronRight className="text-[#800033]" />
+            <FaChevronRight className="text-[#f97316]" />
           </button>
         </div>
       </div>
@@ -140,12 +140,12 @@ export default function TopPlacements() {
       {/* Pagination styles */}
       <style jsx global>{`
         .swiper-pagination-bullet {
-          background: #800033;
+          background: #f97316;
           opacity: 0.4;
           transition: all 0.3s ease;
         }
         .swiper-pagination-bullet-active {
-          background: #800033;
+          background: #f97316;
           opacity: 1;
         }
       `}</style>

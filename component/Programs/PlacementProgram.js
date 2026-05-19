@@ -14,10 +14,10 @@ function PlacementProgram({ features }) {
         style={{
           textAlign: "center",
         }}
-        className="font-[CarotSlab] pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-none z-10"
+        className="pt-8 md:pt-[3%] px-4 text-wrap text-[clamp(10px,6.3vw,55px)] md:text-[clamp(10px,2.3vw,55px)] text-[#242424] w-fit whitespace-nowrap leading-none z-10 font-bold"
       >
-        Top Placed <span className="text-[#760135]">Students</span>
-        <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
+        Top Placed <span className="text-[#f97316]">Students</span>
+        <div className="h-[4px] bg-[#f97316] w-[80%] mx-auto rounded-full"></div>
       </div>
 
       <div className="w-full md:w-[85%] relative z-10 -mb-[7%] overflow-hidden">
@@ -64,7 +64,7 @@ function PlacementProgram({ features }) {
           style={{
             textAlign: "center",
           }}
-          className="w-full text-white md:w-[70%] px-4 mx-auto leading-tight text-[clamp(10px,4.8vw,30px)] md:text-[clamp(10px,1.5vw,45px)] font-[LevSerif] font-normal italic"
+          className="w-full text-white md:w-[70%] px-4 mx-auto leading-tight text-[clamp(10px,4.8vw,30px)] md:text-[clamp(10px,1.5vw,45px)] font-normal italic"
         >
           <strong>World’s Leading Brands</strong> Hire Our Talented Students
         </h5>

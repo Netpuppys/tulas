@@ -7,7 +7,7 @@ import { IoCall } from "react-icons/io5";
 import { PiPencilSimpleLineLight } from "react-icons/pi";
 import { SiGoogleforms } from "react-icons/si";
 import logo360 from "../../public/Components/Navbar/logo360.png";
-import NAAC from "../../public/Components/Navbar/Naac2.png";
+import NAAC from "../../public/Components/Navbar/naacorangewhite.png";
 import NBA from "../../public/Components/Navbar/NBA.png";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import TulasLogo from "../../public/Components/Footer/tulaslogo.png";
@@ -111,7 +111,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
             </a>
             <button
               onClick={handleFormPopup}
-              className={`px-8 bg-[#007A83] text-white rounded-full`}
+              className={`px-8 bg-[#f97316] text-white rounded-full`}
             >
               Enquire Now
             </button>
@@ -225,7 +225,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
   alt="Tulas Logo"
   width={200}
   height={80}
-  className="w-[14vw] h-auto object-contain"
+  className="w-[5vw] h-auto object-contain"
 />
             </div>
             {/* )} */}
@@ -273,7 +273,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
               <div className="flex mdNavbar:hidden mdNavbar:w-fit animate-translateButton flex-row-reverse mdNavbar:flex-row gap-2 mdNavbar:gap-6">
                 {/* menu button */}
                 <button
-                  className="bg-[#007A83] rounded-full text-3xl shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
+                  className="bg-[#f97316] rounded-full text-3xl shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
                   onClick={handleButtonClick}
                 >
                   {/* {isChecked? <IoCloseOutline /> : <CgMenuLeftAlt />} */}
@@ -299,7 +299,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
                 </button>
                 {/* apply now button */}
                 <button
-                  className="bg-[#760135] rounded-full text-3xl shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
+                  className="bg-[#263145] rounded-full text-3xl shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative"
                   onClick={() =>
                     (window.location.href = `/apply-now/${utmParams}`)
                   }
@@ -372,7 +372,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
       {!isChecked && (
         <>
           <div
-  className={`fixed bottom-0 left-0 w-full z-50 pointer-events-auto bg-[#007A83] mdNavbar:hidden`}
+  className={`fixed bottom-0 left-0 w-full z-50 pointer-events-auto bg-[#f97316] mdNavbar:hidden`}
           >
             <div className="w-full mx-auto flex justify-between h-fit py-2">
               <a
@@ -411,7 +411,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
               onClick={() =>
                 (window.location.href = `/virtual-tour/index.html/${utmParams}`)
               }
-              className="bg-[#760135] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+              className="bg-[#263145] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
             >
               <Image
                 src={logo360}
@@ -422,7 +422,7 @@ function Navbar({ fullBanner = false, scroled = false }) {
             <a
               href="tel:+91-9837983721"
               title="Admissions Helpline Number - +91-9837983721"
-              className="bg-[#E69706] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+              className="bg-[#f97316] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
             >
               <Image
                 src={phoneCallGif}

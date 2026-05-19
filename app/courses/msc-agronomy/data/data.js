@@ -84,7 +84,7 @@ export const features = [
 ];
 export const content = (
   <>
-    The School of Agriculture at Tulas Institute, Dehradun offers a specialised M.Sc. (Agronomy) program designed to build advanced expertise in crop production, soil science, and sustainable farming practices. The program focuses on developing scientific understanding, analytical thinking, and practical skills required to address modern agricultural challenges and ensure food security
+    The School of Agriculture at Tulas University, Dehradun offers a specialised M.Sc. (Agronomy) program designed to build advanced expertise in crop production, soil science, and sustainable farming practices. The program focuses on developing scientific understanding, analytical thinking, and practical skills required to address modern agricultural challenges and ensure food security
     <br />
     <br />
     Structured to go beyond classroom learning, the program integrates academic depth with field-based applications. Students are trained to understand crop systems, optimise resource use, and adopt innovative techniques that enhance productivity while maintaining ecological balance. The curriculum is aligned with contemporary agricultural practices and emerging global needs, covering key areas such as crop physiology, soil fertility management, agronomic practices, weed management, water resource management, and climate-resilient agriculture. Interdisciplinary inputs from environmental science, biotechnology, and agricultural economics enable students to approach farming systems holistically.

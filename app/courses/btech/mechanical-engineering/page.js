@@ -31,20 +31,30 @@ import PlacementProgram from "@/component/Programs/PlacementProgram";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/BTech.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
       <head>
         <title>
-          Best Mechanical Engineering College in Dehradun | Tula's Institute
+          Best Mechanical Engineering College in Dehradun | Tulas 
         </title>
         <meta
           name="description"
-          content="Tula's Institute is one of the best Mechanical Engineering College in Dehradun, Uttarakhand, Among a myriad of engineering activities, the Mechanical Engineering Department has been a focal point of the Tula's Institute, Dehradun top engineering colleges Dehradun."
+          content="Tulas is one of the best Mechanical Engineering College in Dehradun, Uttarakhand, Among a myriad of engineering activities, the Mechanical Engineering Department has been a focal point of the Tulas, Dehradun top engineering colleges Dehradun."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>Department of MECHANICAL ENGINEERING (ME)</>
@@ -83,7 +93,7 @@ function BAJMC() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

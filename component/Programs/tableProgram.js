@@ -21,7 +21,7 @@ function TableProgram({
     <>
       <div className="w-full px-4 relative z-[20]">
         {cards && (
-          <div className="md:rounded-full max-w-[1200px] mx-auto md:bg-[#007A83] py-1 px-1 overflow-hidden flex flex-col md:flex-row gap-2 md:gap-0 items-center relative">
+          <div className="md:rounded-full max-w-[1200px] mx-auto md:bg-[#f97316] py-1 px-1 overflow-hidden flex flex-col md:flex-row gap-2 md:gap-0 items-center relative">
             <div
               style={{
                 left: `${selectedCard * marginLeft}%`,
@@ -36,8 +36,8 @@ function TableProgram({
                 key={card.id}
                 className={`w-full py-1 rounded-full z-20 px-1 shadow-md md:shadow-none flex items-center justify-center cursor-pointer ${
                   selectedCard === index
-                    ? "text-white md:text-[#007A83] bg-[#007A83] md:bg-transparent"
-                    : "text-[#007A83] md:text-white bg-white md:bg-transparent"
+                    ? "text-white md:text-[#f97316] bg-[#f97316] md:bg-transparent"
+                    : "text-[#f97316] md:text-white bg-white md:bg-transparent"
                 }`}
                 onClick={() => setSelectedCard(index)}
               >
@@ -50,7 +50,7 @@ function TableProgram({
         )}
         <div className="pt-8 md:pt-[3%] overflow-hidden">
           {selectedCard === 0 && selectedCard1 && (
-            <div className="bg-white max-w-[1200px] mx-auto text-[#007A83] px-4 md:px-8 text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,2.5vw,45px)]">
+            <div className="bg-white max-w-[1200px] mx-auto text-[#f97316] px-4 md:px-8 text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,2.5vw,45px)]">
               {selectedCard1}
             </div>
           )}
@@ -78,7 +78,7 @@ function TableProgram({
             <HOD hod={hod} HODcontent={HODcontent} />
           )}
           {selectedCard === 4 && specialization && (
-            <div className="bg-[#007A83] max-w-[1200px] mx-auto rounded-3xl text-white px-4 md:px-8 py-4 md:py-8 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[TTChocolates] font-normal">
+            <div className="bg-[#f97316] max-w-[1200px] mx-auto rounded-3xl text-white px-4 md:px-8 py-4 md:py-8 leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1vw,45px)] font-[TTChocolates] font-normal">
               {specialization}
             </div>
           )}

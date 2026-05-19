@@ -1,7 +1,7 @@
 export default function PlacementProcess({ steps = [] }) {
   return (
     <div className="w-full py-12 px-4 md:px-16">
-      <h3 className="text-[#760135] text-center pb-8 text-[30px] md:text-[50px] font-bold font-[CarotSlab]">
+      <h3 className="text-[#f97316] text-center pb-8 text-[30px] md:text-[50px] font-bold font-[CarotSlab]">
         Placement Process
       </h3>
 
@@ -12,12 +12,12 @@ export default function PlacementProcess({ steps = [] }) {
             className="relative flex flex-col items-center group"
           >
             {/* Number Outside (hover effect) */}
-            <div className="absolute-top-10 text-7xl font-bold text-[#74043D] opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+            <div className="absolute-top-10 text-7xl font-bold text-[#f97316] opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
               {`0${index + 1}`}
             </div>
 
             {/* Gradient Border Box */}
-            <div className="rounded-[30px] p-[8px] bg-gradient-to-br from-[#74043D] to-[#007A83] w-full">
+            <div className="rounded-[30px] p-[8px] bg-gradient-to-br from-[#f97316] to-[#263145] w-full">
               <div className="bg-white rounded-[24px] p-6 text-center flex flex-col items-center justify-center min-h-[180px]">
                 {/* Icon */}
                 <div className="mb-4">{step.icon}</div>

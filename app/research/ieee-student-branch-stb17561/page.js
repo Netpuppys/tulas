@@ -7,6 +7,9 @@ import Image from "next/image";
 import Footer from "@/component/Footer";
 import background from "../../../public/research/r-and-cell/journal/background.png";
 import TableComponent from "./data/tableData";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function IICEvents() {
   return (
@@ -14,22 +17,29 @@ function IICEvents() {
       <head>
         <title>
           IEEE Student Branch (STB17561) | Best Engineering College in Dehradun,
-          Uttarakhand | Tula's Institute
+          Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Discover the IEEE Student Branch at Tula's Institute, a platform for innovation and technological excellence. The branch organizes workshops, talks, and events to bridge the gap between academia and industry, fostering skill development and networking opportunities for students."
+          content="Discover the IEEE Student Branch at Tulas University, a platform for innovation and technological excellence. The branch organizes workshops, talks, and events to bridge the gap between academia and industry, fostering skill development and networking opportunities for students."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
                 IEEE Student{" "}
-                <span className="text-[#007A83]">Branch (STB17561)</span>
+                <span className="text-[#f97316]">Branch (STB17561)</span>
               </>
             }
             description={<></>}
@@ -37,12 +47,12 @@ function IICEvents() {
               <>
                 IEEE is the world’s largest professional association advancing
                 innovation and technological excellence for the benefit of
-                humanity. IEEE-Tula's Student Branch organizes talks, tutorials,
+                humanity. IEEE-Tulas Student Branch organizes talks, tutorials,
                 hands-on workshops, industrial visits and distinguishes lectures
                 with an intention to reach out to students, faculties and
                 industry professionals. The programs are an exercise in life
                 long learning and are offered for the continuing education and
-                skill upgradation of professionals. IEEE-Tula's Student Branch
+                skill upgradation of professionals. IEEE-Tulas Student Branch
                 aims to create an awareness among the students community about
                 the recent advancements and to make them aware of the industry
                 standards and expectations; thereby bridging the gap between
@@ -51,7 +61,7 @@ function IICEvents() {
                 amongst the students.
                 <br />
                 <br />
-                Tula’s IEEE SB consist of various student bodies some of which
+                Tulas IEEE SB consist of various student bodies some of which
                 are IEEE WIE Affinity Group, IEEE Computer Society, IEEE PES,
                 IEEE Sensors Council etc. To know more visit:
                 <br />
@@ -75,7 +85,7 @@ function IICEvents() {
           </div>
 
           <div className="w-full h-fit z-50">
-            <Footer color={true} />
+            <NewFooter/>
           </div>
         </div>
       </body>

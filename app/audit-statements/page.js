@@ -24,11 +24,11 @@ function AuditStatement() {
       <head>
         <title>
           Audited Statements | Best Engineering College in Dehradun, Uttarakhand
-          | Tula's Institute
+          | Tulas University
         </title>
         <meta
           name="description"
-          content="Review the audited financial statements of Tula's Institute, Dehradun’s leading engineering college. Gain transparency into our financial health, resource allocation, and commitment to quality education and infrastructure. Explore our dedication to accountability and excellence."
+          content="Review the audited financial statements of Tulas University, Dehradun’s leading engineering college. Gain transparency into our financial health, resource allocation, and commitment to quality education and infrastructure. Explore our dedication to accountability and excellence."
         />
       </head>
       <body>

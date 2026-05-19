@@ -19,6 +19,9 @@ import Technoocrats from "../../../public/campus-life/vibgyor/Technoocrats.webp"
 import Quill from "../../../public/campus-life/vibgyor/Quill.webp";
 import Expresso from "../../../public/campus-life/vibgyor/Expresso.webp";
 import BannerImg from "../../../public/campus-life/vibgyor/bannerImg.png";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function Vibgyor() {
   const sections = [
     {
@@ -91,26 +94,33 @@ function Vibgyor() {
   return (
     <>
       <head>
-        <title>Vibgyor - Student Council at Tula's Institute, Dehradun</title>
+        <title>Vibgyor - Student Council at Tulas, Dehradun</title>
         <meta
           name="description"
-          content="Explore Vibgyor, the dynamic student council at Tula’s Institute, Dehradun. Discover 11 diverse clubs like Footloose, Sargam, and Technocrats, fostering talent and creativity across campus through vibrant events and activities."
+          content="Explore Vibgyor, the dynamic student council at Tulas, Dehradun. Discover 11 diverse clubs like Footloose, Sargam, and Technocrats, fostering talent and creativity across campus through vibrant events and activities."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
           title={
             <>
-              Vibgyor- <span className="text-[#007A83]">Student Clubs</span>
+              Vibgyor- <span className="text-[#f97316]">Student Clubs</span>
             </>
           }
         />
 
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] leading-tight text-[#007A83] mb-4">
-            Meet Vibgyor – the heartbeat of Tula’s Institute!
+          <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] leading-tight text-[#f97316] mb-4">
+            Meet Vibgyor – the heartbeat of Tulas University!
           </h3>
           <Image
             src={vibgyorMain}
@@ -155,7 +165,7 @@ function Vibgyor() {
           </p>
         </div>
         <div className="w-full h-fit z-50">
-          <Footer color={true} />
+          <NewFooter />
         </div>
       </body>
     </>

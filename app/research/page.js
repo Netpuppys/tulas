@@ -62,7 +62,7 @@ function Research() {
           </li>
           <li>
             <Link href={"https://www.tulasincubator.com"} target="_blank">
-              Tula’s Technology and Business Incubator (TTBIF)
+              Tulas Technology and Business Incubator (TTBIF)
             </Link>
           </li>
         </ul>
@@ -75,12 +75,12 @@ function Research() {
     <>
       <head>
         <title>
-          Research | Best Engineering College in Dehradun, Uttarakhand | Tula's
-          Institute
+          Research | Best Engineering College in Dehradun, Uttarakhand | Tulas
+          University
         </title>
         <meta
           name="description"
-          content="Explore cutting-edge research initiatives at Tula's Institute, a leading engineering college in Dehradun. Our research programs foster innovation and contribute to technological advancements in various fields."
+          content="Explore cutting-edge research initiatives at Tulas University, a leading engineering college in Dehradun. Our research programs foster innovation and contribute to technological advancements in various fields."
         />
       </head>
       <body>
@@ -90,14 +90,14 @@ function Research() {
           title={
             <>
               Research and{" "}
-              <span className="text-[#007A83]">Development (R&D) Cell</span>
+              <span className="text-[#f97316]">Development (R&D) Cell</span>
             </>
           }
           description={<></>}
           belowTitle={<></>}
           belowPara={
             <>
-              Tula’s Institute is dedicated to advancing research and
+              Tulas University is dedicated to advancing research and
               development initiatives, driven by a clear vision and mission to
               explore and advance research in cutting-edge technologies and
               various fields of engineering. To foster an environment conducive

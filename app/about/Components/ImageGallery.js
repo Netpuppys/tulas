@@ -21,7 +21,7 @@ const images = [
 export default function ImageGallery() {
   return (
     <div className="w-full py-7 relative">
-      <div className="text-center pb-8 md:pt-[3%] px-4 text-wrap text-[clamp(15px,6.3vw,55px)] md:text-[clamp(15px,2.3vw,55px)] text-[#991E55] leading-none z-10 font-bold uppercase tracking-tight font-serif">
+      <div className="text-center pb-8 md:pt-[3%] px-4 text-wrap text-[clamp(15px,6.3vw,55px)] md:text-[clamp(15px,2.3vw,55px)] text-[#f97316] leading-none z-10 font-bold uppercase tracking-tight ">
         #TulasVibes 
       </div>
       <Swiper

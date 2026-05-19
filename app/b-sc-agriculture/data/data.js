@@ -56,13 +56,13 @@ export const features = [
 export const heading = (
   <>
     Best B.Sc.(Hons.) Agriculture Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const quotes = (
   <>
     “Cultivating knowledge, growing innovation—{" "}
-    <strong className="text-[#760135]">
+    <strong className="text-[#f97316]">
       B.Sc.(Hons.) Agriculture empowers future leaders to feed the world
       sustainably and shape the future of farming.
     </strong>

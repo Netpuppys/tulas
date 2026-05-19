@@ -20,9 +20,12 @@ import { Fade } from "react-awesome-reveal";
 import bihar from "../../public/Contact/bihar.png";
 import admission from "../../public/Contact/admission.png";
 import nepal from "../../public/Contact/nepal.png";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewFooter from "@/component/NewFooter";
 const title = (
   <>
-    CONTACT <span className="text-[#007A83]">US</span>
+    CONTACT <span className="text-[#f97316]">US</span>
   </>
 );
 
@@ -66,7 +69,7 @@ function Contact() {
       title: "DEHRADUN, UTTRAKHAND",
       image: address,
       description:
-        "Tula's Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road, Dehradun- 248011 Uttarakhand",
+        "Tulas University, Dhoolkot, Post Office: Selaqui, Chakrata Road, Dehradun- 248011 Uttarakhand",
       link: "https://www.google.com/maps/place/Tula's+Institute/@30.3430543,77.8834028,17z/data=!3m1!4b1!4m6!3m5!1s0x390929fa74538275:0x3cb757428c691de3!8m2!3d30.3430497!4d77.8859777!16s%2Fm%2F010qjbdj?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D",
     },
         {
@@ -113,16 +116,23 @@ function Contact() {
     <>
       <head>
         <title>
-          Contact | Best Engineering College in Dehradun, Uttarakhand | Tula's
+          Contact | Best Engineering College in Dehradun, Uttarakhand | Tulas
           Institute
         </title>
         <meta
           name="description"
-          content="Get in touch with Tula's Institute, the top engineering college in Dehradun, Uttarakhand. Contact us for admissions, inquiries, or campus tours and learn more about our programs, facilities, and student life."
+          content="Get in touch with Tulas University, the top engineering college in Dehradun, Uttarakhand. Contact us for admissions, inquiries, or campus tours and learn more about our programs, facilities, and student life."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
           title={title}
@@ -171,7 +181,7 @@ function Contact() {
                       {mobileContact.title}
                     </h4>
                     <Link href={mobileContact.link}>
-                      <button className="w-fit text-wrap px-10 py-2 font-semibold font-[TTChocolatesMedium] text-[14px] text-[#760135] bg-white rounded-full flex gap-2 items-center ">
+                      <button className="w-fit text-wrap px-10 py-2 font-semibold font-[TTChocolatesMedium] text-[14px] text-[#f97316] bg-white rounded-full flex gap-2 items-center ">
                         <FiPhoneCall />
                         {mobileContact.button}
                       </button>
@@ -199,7 +209,7 @@ function Contact() {
             <div className="bg-[#000] bg-opacity-80 h-fit md:h-[450px] text-[#D2D2D2] gap-5 absolute bottom-28 md:bottom-0 self-end md:right-16 w-full md:w-[300px] md:top-0 z-40 px-10 flex flex-col py-5 md:py-3 justify-center">
               <Image src={TulasFooter} alt="" />
               <h4 className="py-8 border-y-[1px] border-white font-[CarotSlab] text-[16px] md:text-[18px]">
-                Tula's Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road,
+                Tulas University, Dhoolkot, Post Office: Selaqui, Chakrata Road,
                 Dehradun- 248011 Uttarakhand
               </h4>
               <h3 className="font-[CarotSlab] md:text-[18px]">
@@ -221,7 +231,7 @@ function Contact() {
           </div>
         </div>
         <div className="w-full h-fit z-40">
-          <Footer set={true} />
+          <NewFooter/>
         </div>
       </body>
     </>

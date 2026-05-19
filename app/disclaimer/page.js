@@ -23,7 +23,7 @@ function Disclaimer() {
 <div className="mx-auto max-w-5xl pt-32 pb-20 px-4">
   {/* Page Title */}
   <div className="text-center mb-10">
-        <p className="font-[carotSlab] text-[2.6rem] font-medium text-[#760135] text-center">
+        <p className="font-[carotSlab] text-[2.6rem] font-medium text-orange-500 text-center">
           Disclaimer
         </p>
     <div className="mx-auto mt-2 h-1 w-16 bg-yellow-500 rounded" />
@@ -46,11 +46,11 @@ function Disclaimer() {
       <div className="space-y-6 text-gray-700 leading-relaxed text-[15px]">
         <p>
           This disclaimer outlines the terms governing the use of the official
-          website of <strong>Tula’s Institute</strong>.
+          website of <strong>Tulas University</strong>.
         </p>
 
         <p>
-          Tula’s Institute makes every reasonable effort to ensure that the
+          Tulas University makes every reasonable effort to ensure that the
           information presented on this website is accurate and up to date.
           However, the Institute does not guarantee the completeness, accuracy,
           reliability, or timeliness of the information provided. Academic
@@ -69,7 +69,7 @@ function Disclaimer() {
         </p>
 
         <p>
-          Tula’s Institute shall not be liable for any loss, damage, or
+          Tulas University shall not be liable for any loss, damage, or
           inconvenience arising from reliance on the information published on
           this website.
         </p>
@@ -81,7 +81,7 @@ function Disclaimer() {
         </p>
 
         <p>
-          Tula’s Institute reserves the right to amend, update, or withdraw any
+          Tulas University reserves the right to amend, update, or withdraw any
           information published on the website at any time without prior
           notice.
         </p>

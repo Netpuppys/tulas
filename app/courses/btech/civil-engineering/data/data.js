@@ -48,13 +48,13 @@ export const features = [
 import Link from "next/link";
 export const heading = (
   <>
-    Best Civil Engineering Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    Best Civil Engineering University in{" "}
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
   <>
-    The Department of Civil Engineering at Tula’s Institute is dedicated to
+    The Department of Civil Engineering at Tulas University is dedicated to
     shaping future engineers who can design, build, and sustain the
     infrastructure of tomorrow. Established in 2011, the department offers a
     comprehensive B.Tech in Civil Engineering program, providing students with
@@ -62,7 +62,7 @@ export const content = (
     engineering, environmental engineering, and transportation systems.
     <div className="mt-2 md:mt-[1%]"></div>Civil engineers play a vital role in
     improving modern society by designing roads, bridges, tunnels, skyscrapers,
-    and sustainable water systems. The curriculum at Tula’s Institute integrates
+    and sustainable water systems. The curriculum at Tulas University integrates
     theoretical knowledge with hands-on practical learning through advanced
     laboratories, industrial visits, live projects, and expert mentorship.
     <div className="mt-2 md:mt-[1%]"></div>With a strong emphasis on
@@ -71,7 +71,7 @@ export const content = (
     interdisciplinary learning approach, enabling students to develop
     problem-solving skills and technical expertise required for a successful
     career in civil engineering.<div className="mt-2 md:mt-[1%]"></div>
-    Graduates from the B.Tech Civil Engineering program at Tula’s Institute have
+    Graduates from the B.Tech Civil Engineering program at Tulas University have
     opportunities in government sectors, private construction firms, urban
     planning agencies, and international infrastructure projects. The program
     also lays a strong foundation for those aiming to pursue higher studies or
@@ -81,11 +81,11 @@ export const content = (
 export const quotes = (
   <>
     “Build the foundations of tomorrow with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s B.Tech in Civil Engineering.
+    <strong className="text-[#f97316]">
+      Tulas University B.Tech in Civil Engineering.
     </strong>{" "}
     Empowering future engineers with the skills to design,{" "}
-    <strong className="text-[#760135]">
+    <strong className="text-[#f97316]">
       innovate, and create a sustainable world.
     </strong>
     ”
@@ -549,7 +549,7 @@ export const hod = [
   },
 ];
 export const HODcontent =
-  "I would like to welcome you at Tula’s Civil Engineering Department where students are encouraged to engage in extra-curricular and co-curricular activities which are essential for their personality development as well as development of organizational skills. Our faculty members are dedicated, highly qualified with vast industry experience in diverse fields of civil engineering. Our main objective is to nurture our students to make them industry-ready in the field of construction & designing so as to serve the nation.";
+  "I would like to welcome you at Tulas Civil Engineering Department where students are encouraged to engage in extra-curricular and co-curricular activities which are essential for their personality development as well as development of organizational skills. Our faculty members are dedicated, highly qualified with vast industry experience in diverse fields of civil engineering. Our main objective is to nurture our students to make them industry-ready in the field of construction & designing so as to serve the nation.";
 export const itemsClubs = [
   {
     title: "Work Carried Out by Civil Engineer",

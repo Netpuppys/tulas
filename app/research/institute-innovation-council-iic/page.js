@@ -10,6 +10,9 @@ import { Fade } from "react-awesome-reveal";
 import intellectual from "../../../public/research/intellectual/intellectual.png";
 import { useInView } from "react-intersection-observer";
 import Vision from "@/component/Programs/Vision";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function instituteInnovationCouncilIic() {
   const sections = [
@@ -32,7 +35,7 @@ function instituteInnovationCouncilIic() {
           solutions and ventures.
           <br />
           <br />
-          The key objectives of Tula’s IIC program are as follows:
+          The key objectives of Tulas IIC program are as follows:
           <br />
           <br />
           <ul className="ml-5 list-disc">
@@ -83,7 +86,7 @@ function instituteInnovationCouncilIic() {
             </li>
           </ul>
           <br />
-          Through the Institution’s Innovation Council, Tula’s Institute strives
+          Through the Institution’s Innovation Council, Tulas University strives
           to create a dynamic ecosystem that nurtures innovation, fosters
           entrepreneurship, and empowers individuals to become drivers of
           change. By engaging a diverse range of stakeholders, the IIC aims to
@@ -100,28 +103,35 @@ function instituteInnovationCouncilIic() {
       <head>
         <title>
           Institute Innovation Council (IIC) | Best Engineering College in
-          Dehradun, Uttarakhand | Tula's Institute
+          Dehradun, Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the Institute Innovation Council (IIC) at Tula's Institute, dedicated to fostering innovation, entrepreneurship, and research. Learn about the initiatives, projects, and opportunities for students to engage in cutting-edge research and technological advancements."
+          content="Explore the University Innovation Council (IIC) at Tulas University, dedicated to fostering innovation, entrepreneurship, and research. Learn about the initiatives, projects, and opportunities for students to engage in cutting-edge research and technological advancements."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
                 Institute Innovation{" "}
-                <span className="text-[#007A83]">Council (IIC)</span>
+                <span className="text-[#f97316]">Council (IIC)</span>
               </>
             }
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "Tula’s Institute takes pride in its Institution’s Innovation Council (IIC), which is supported by the Ministry of Education (MoE) through the MoE’s Innovation Cell (MIC) and launched in collaboration with the All India Council for Technical Education (AICTE). The IIC program is designed to systematically cultivate a culture of innovation and a thriving start-up ecosystem within educational institutions."
+              "Tulas Institute takes pride in its Institution’s Innovation Council (IIC), which is supported by the Ministry of Education (MoE) through the MoE’s Innovation Cell (MIC) and launched in collaboration with the All India Council for Technical Education (AICTE). The IIC program is designed to systematically cultivate a culture of innovation and a thriving start-up ecosystem within educational institutions."
             }
           />
           <div className="w-full relative overflow-hidden">
@@ -133,7 +143,7 @@ function instituteInnovationCouncilIic() {
           </div>
           <Vision sections={sections} />
           <div className="w-full h-fit z-50">
-            <Footer />
+            <NewFooter/>
           </div>
         </div>
       </body>

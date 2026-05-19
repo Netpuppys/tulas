@@ -12,21 +12,31 @@ import Vision from "@/component/Programs/Vision";
 import sanskriti from "../../../public/campus-life/sanskriti/sanskriti.png";
 import Footer from "@/component/Footer";
 import GalleryCrousel from "@/component/GalleryCrousel";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function Sanskriti() {
   const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
       <head>
         <title>
-          Sanskriti - Annual Cultural Fest at Tula’s Institute, Dehradun
+          Sanskriti - Annual Cultural Fest at Tulas, Dehradun
         </title>
         <meta
           name="description"
-          content="Experience the vibrant annual cultural fest, Sanskriti, at Tula’s Institute, Dehradun. From dance and fashion shows to star-studded performances by Bollywood artists, Sanskriti offers a platform for students to showcase their creativity and celebrate culture, talent, and unity."
+          content="Experience the vibrant annual cultural fest, Sanskriti, at Tulas University, Dehradun. From dance and fashion shows to star-studded performances by Bollywood artists, Sanskriti offers a platform for students to showcase their creativity and celebrate culture, talent, and unity."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <Banner
           image={BannerImg}
           title={<>Sanskriti- Cultural Fest</>}
@@ -45,7 +55,7 @@ function Sanskriti() {
           />
         </div>
         <div className="bg-white w-full h-fit flex flex-col justify-center  items-center py-8 md:py-20">
-          <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] leading-tight text-[#007A83] mb-4">
+          <h3 className="text-[clamp(10px,7vw,30px)] md:text-[clamp(10px,2.5vw,45px)] text-center w-full font-[CarotSlab] leading-tight text-[#f97316] mb-4">
             Sanskriti Fest
           </h3>
           <Image
@@ -77,7 +87,7 @@ function Sanskriti() {
         </div>
         {/* <Vision sections={sections} /> */}
         <div className="w-full h-fit z-50">
-          <Footer />
+          <NewFooter/>
         </div>
       </body>
     </>

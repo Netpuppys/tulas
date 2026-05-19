@@ -12,16 +12,19 @@ import roadImage from "../../public/AboutDehradun/road.png";
 import hillsImage from "../../public/Homepage/BannerHome/BannerImage3.webp";
 import Cards from "./components/Cards";
 import { Fade } from "react-awesome-reveal";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewFooter from "@/component/NewFooter";
 const title = (
   <>
-    <span className="text-[#007A83]">ABOUT</span>
+    <span className="text-[#f97316]">ABOUT</span>
     <br />
-    DEHRADUN, <span className="text-[#007A83]">UTTARAKHAND</span>
+    DEHRADUN, <span className="text-[#f97316]">UTTARAKHAND</span>
   </>
 );
 
 const mainDescription =
-  "Cradled in the foothills of the Himalayas, Dehradun is the capital of the state Uttarakhand. Flanked by river Ganga on the east and Yamuna on the west, Tula’s Institute adds to the verdant greenery to the campus. Dehradun is the education capital of India. The scenic beauty and pleasant weather attract students from different parts of India and the neighbouring country as well. Doon Valley has some of the most esteemed schools and colleges in Dehradun. Dehradun is known to provide the best education in India. Being home to premier education institutions such as Natural Gas Corporation, Indian Institute of Remote Sensing, Indian Institute of Petroleum, Wildlife Institute of India, Instruments Research and Development (DRDO) and Wadia Institute of Himalayan Geology, and Ordnance Factory Dehradun; students get several opportunities to explore more in their field of study. To nurture our assets and create value, we believe that there needs to be a serene and tranquil environment. This led us to choose Dehradun as the location of our campus. Dehradun is located 256 km north of India's Capital, New Delhi. Doon valley has a sub-tropical climate with cool winters, warm and crisp springs, moderate summers and heavy monsoon, which offer an ideal environment to nurture talent and create the visionaries of India in the years to come.";
+  "Cradled in the foothills of the Himalayas, Dehradun is the capital of the state Uttarakhand. Flanked by river Ganga on the east and Yamuna on the west, Tulas University adds to the verdant greenery to the campus. Dehradun is the education capital of India. The scenic beauty and pleasant weather attract students from different parts of India and the neighbouring country as well. Doon Valley has some of the most esteemed schools and colleges in Dehradun. Dehradun is known to provide the best education in India. Being home to premier education institutions such as Natural Gas Corporation, Indian Institute of Remote Sensing, Indian Institute of Petroleum, Wildlife Institute of India, Instruments Research and Development (DRDO) and Wadia Institute of Himalayan Geology, and Ordnance Factory Dehradun; students get several opportunities to explore more in their field of study. To nurture our assets and create value, we believe that there needs to be a serene and tranquil environment. This led us to choose Dehradun as the location of our campus. Dehradun is located 256 km north of India's Capital, New Delhi. Doon valley has a sub-tropical climate with cool winters, warm and crisp springs, moderate summers and heavy monsoon, which offer an ideal environment to nurture talent and create the visionaries of India in the years to come.";
 
 const cardData = [
   {
@@ -56,7 +59,14 @@ function Contact() {
       </head>
       <body>
         <div>
-          <Navbar />
+          {/* <Navbar /> */}
+          <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
           <Banner
             image={BannerImg}
             title={title}
@@ -96,7 +106,7 @@ function Contact() {
                 >
                   <p className="text-white mb-5 text-[30px] md:text-[clamp(10px,2.2vw,50px)] leading-[1.2] font-[CarotSlab] ">
                     Soothe your senses with the beautiful aesthetics offered at{" "}
-                    Tula&apos;s Institute
+                    Tulas University
                   </p>
                   <div className="text-[#D1D1D1] font-semibold leading-tight text-[clamp(10px,4vw,30px)] md:text-[clamp(10px,1.1vw,45px)] md:pr-10 text-pretty font-[TTChocolates]">
                     <Fade delay={500}>{mainDescription}</Fade>
@@ -119,7 +129,7 @@ function Contact() {
           </div>
 
           <div className="w-full h-fit z-50">
-            <Footer />
+            <NewFooter/>
           </div>
         </div>
       </body>

@@ -47,7 +47,7 @@ export const features = [
 export const heading = (
   <>
     Best Media, Journalism & Mass Communication Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
@@ -92,12 +92,12 @@ export const content = (
 export const quotes = (
   <>
     “Unleash your creative potential with{" "}
-    <strong className="text-[#760135]">
-      Tula's Institute's BA.(Hons.) JMC program.
+    <strong className="text-[#f97316]">
+      Tulas University's BA.(Hons.) JMC program.
     </strong>{" "}
     Empowering future media leaders to shape perspectives and make a mark in the
     world of{" "}
-    <strong className="text-[#760135]">journalism and communication.</strong>”
+    <strong className="text-[#f97316]">journalism and communication.</strong>”
   </>
 );
 export const items = [
@@ -107,7 +107,7 @@ export const items = [
       "Qualified Faculty members from all verticals of Media, Journalism & Mass communication",
       "State of the art Electronic Media Production Centre (EMPC)",
       "Tie ups with prominent media houses",
-      "In-house Newspaper (Tula’s Tabloid) publication and Electronic Media News dissemination platforms to facilitate students with industrial exposure before entering into job market",
+      "In-house Newspaper (Tulas Tabloid) publication and Electronic Media News dissemination platforms to facilitate students with industrial exposure before entering into job market",
       "Preparation of professionals for the different media fields which would work closely with different stakeholders of civil society, media, and other democratic institutions, thereby contributing prominently towards overall national and regional development.",
     ],
     image: USP,
@@ -466,14 +466,14 @@ export const itemsClubs = [
     image: edge,
     points: [
       "Our program fosters creativity, enabling students to produce compelling media content that resonates across various platforms, addressing the needs for information, awareness, and entertainment in both popular and high culture.",
-      "At Tula’s Department of Journalism & Mass Communication, we offer cutting-edge infrastructure designed to prepare students for diverse media engagements and research. Our state-of-the-art Electronic Media and Production Centre, along with a comprehensive library and supportive learning environment, empowers students to hone their skills and gain practical experience.",
-      "As the demand for skilled media professionals continues to rise, our graduates are well-positioned to excel in various fields, from journalism and public relations to digital marketing and content creation. With a BA.(Hons.) JMC from Tula’s, students are not just participants in the media industry; they are leaders poised to make a significant impact.",
+      "At Tulas Department of Journalism & Mass Communication, we offer cutting-edge infrastructure designed to prepare students for diverse media engagements and research. Our state-of-the-art Electronic Media and Production Centre, along with a comprehensive library and supportive learning environment, empowers students to hone their skills and gain practical experience.",
+      "As the demand for skilled media professionals continues to rise, our graduates are well-positioned to excel in various fields, from journalism and public relations to digital marketing and content creation. With a BA.(Hons.) JMC from Tulas, students are not just participants in the media industry; they are leaders poised to make a significant impact.",
     ],
   },
   {
     title: "Beyond Curriculum",
     description: [
-      "At Department of Journalism and Communications Tula’s , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
+      "At Department of Journalism and Communications Tulas , we believe that education goes beyond classroom walls. Commitment to holistic development powerfully equips students with the competencies needed to flourish in the fast-evolving media environment.",
       "Besides a wide variety of extracurricular activities, workshops, and industry partnerships, there are also many opportunities for students to acquire additional know-how and proficiencies.",
     ],
     image: beyondCurriculum,

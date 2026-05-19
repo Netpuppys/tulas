@@ -94,6 +94,9 @@ import Image from "next/image";
 import { IoClose } from "react-icons/io5";
 import Navbar from "@/component/Navbar/Navbar";
 import BannerProgram from "@/component/Programs/BannerProgram";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function ProminentPersonalities() {
   const categories = [
@@ -614,7 +617,14 @@ function ProminentPersonalities() {
   }, [selectedItem]);
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
       <BannerProgram image={bannerImg} title="Prominent Personalities" />
       <div className="w-full h-full pt-8 md:pt-[4%]">
         <div className="w-[calc(100%-2rem)] font-[TTChocolates] md:w-[90%] mx-auto">
@@ -627,10 +637,10 @@ function ProminentPersonalities() {
                   setSelectedCategory(category.name);
                   setVisibleCount(6);
                 }}
-                className={`px-4 w-full md:w-[calc(25%-16px)] py-2 rounded-full shadow-[0px_4px_18.6px_0px_rgba(0,0,0,0.25)] text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1vw,50px)] border border-[#007a83] transition-all ${
+                className={`px-4 w-full md:w-[calc(25%-16px)] py-2 rounded-full shadow-[0px_4px_18.6px_0px_rgba(0,0,0,0.25)] text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1vw,50px)] border border-[#f97316] transition-all ${
                   selectedCategory === category.name
-                    ? "bg-[#007a83] text-white"
-                    : "bg-white text-[#007a83] "
+                    ? "bg-[#f97316] text-white"
+                    : "bg-white text-[#f97316] "
                 }`}
               >
                 {category.name}
@@ -647,7 +657,7 @@ function ProminentPersonalities() {
                 <div
                   key={index}
                   onClick={() => setSelectedItem(item)}
-                  className={`bg-white rounded-lg flex flex-col justify-between items-center overflow-hidden border border-[#007a83] shadow-[0px_4px_25.2px_0px_rgba(0,0,0,0.25)] w-full md:w-[calc(33.33%-16px)]`}
+                  className={`bg-white rounded-lg flex flex-col justify-between items-center overflow-hidden border border-[#f97316] shadow-[0px_4px_25.2px_0px_rgba(0,0,0,0.25)] w-full md:w-[calc(33.33%-16px)]`}
                 >
                   <Image
                     src={item.image}
@@ -657,7 +667,7 @@ function ProminentPersonalities() {
                     className="w-full h-fit aspect-[1.5/1] md:aspect-[2/1] object-cover"
                   />
                   <div className="w-full h-fit p-4">
-                    <h3 className="uppercase text-[#007a83] text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.2vw,50px)] leading-tight font-bold mt-2">
+                    <h3 className="uppercase text-[#f97316] text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1.2vw,50px)] leading-tight font-bold mt-2">
                       {item.name}
                     </h3>
                     <p className="text-[clamp(10px,3.8vw,50px)] text-[#494949] italic md:text-[clamp(10px,0.8vw,50px)] mt-1">
@@ -674,7 +684,7 @@ function ProminentPersonalities() {
             <div className="flex w-full flex-wrap gap-4 pb-8 md:pb-[4%] justify-center">
               <button
                 onClick={handleViewMore}
-                className="px-4 w-full md:w-[calc(25%-16px)] py-2 rounded-full shadow-[0px_4px_18.6px_0px_rgba(0,0,0,0.25)] text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1vw,50px)] border border-[#007a83] transition-all bg-[#007a83] text-white hover:bg-white hover:text-[#007a83] duration-300"
+                className="px-4 w-full md:w-[calc(25%-16px)] py-2 rounded-full shadow-[0px_4px_18.6px_0px_rgba(0,0,0,0.25)] text-[clamp(10px,4.5vw,50px)] md:text-[clamp(10px,1vw,50px)] border border-[#f97316] transition-all bg-[#f97316] text-white hover:bg-white hover:text-[#f97316] duration-300"
               >
                 View More
               </button>
@@ -686,7 +696,7 @@ function ProminentPersonalities() {
         <div className="fixed z-20 w-full inset-0 flex items-center justify-center bg-black bg-opacity-80">
           <div className="p-5 w-[95%] md:w-[40%] mx-auto h-fit rounded shadow-lg relative">
             <button
-              className="absolute top-2 right-2 bg-[#007a83] text-white aspect-square p-2 rounded-full"
+              className="absolute top-2 right-2 bg-[#f97316] text-white aspect-square p-2 rounded-full"
               onClick={() => setSelectedItem(null)}
             >
               <IoClose />
@@ -701,7 +711,7 @@ function ProminentPersonalities() {
           </div>
         </div>
       )}
-      <Footer color={true} />
+      <NewFooter />
     </>
   );
 }

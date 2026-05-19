@@ -83,14 +83,14 @@ const Testimonials = () => {
         {/* Play/Pause Button */}
         <button
           onClick={handlePlayToggle}
-          className="bg-[#007A83] border-2 border-[#007A83] md:hover:bg-white md:hover:text-[#007A83] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl"
+          className="bg-[#f97316] border-2 border-[#f97316] md:hover:bg-white md:hover:text-[#f97316] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl"
         >
           {isPlaying ? <FaPause /> : <FaPlay />}
         </button>
         {/* Mute/Unmute Button */}
         <button
           onClick={handleMuteToggle}
-          className="bg-[#760135] border-2 border-[#760135] md:hover:bg-white md:hover:text-[#760135] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl"
+          className="bg-[#000000] border-2 border-[#000000] md:hover:bg-white md:hover:text-[#000000] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl"
         >
           {isMuted ? <IoVolumeMute /> : <IoVolumeHigh />}
         </button>
@@ -99,7 +99,7 @@ const Testimonials = () => {
       <div className="w-full h-full flex items-center justify-center">
         <h3 className="text-[#2A2A2A] w-fit text-center font-[CarotSlab] align-baseline leading-[0.8] text-[clamp(30px,2.8vw,55px)]">
           Student Testimonials
-          <div className="h-[4px] bg-[#007A83] w-[80%] mx-auto rounded-full"></div>
+          <div className="h-[4px] bg-[#f97316] w-[80%] mx-auto rounded-full"></div>
         </h3>
       </div>
 
@@ -115,7 +115,7 @@ const Testimonials = () => {
         <div className="w-[80%] h-full flex items-center justify-center px-8 md:px-0 relative">
           {isBuffering && (
             <div className="absolute top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2">
-              <ThreeDots color="#007A83" height={30} />
+              <ThreeDots color="#f97316" height={30} />
             </div>
           )}
 

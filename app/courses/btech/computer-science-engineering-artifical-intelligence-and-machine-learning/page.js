@@ -32,6 +32,9 @@ import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BTechFee from "../../../../public/FeeStructure/CSE.pdf";
 import CSEAIFaculty from "../../../../public/courses/all-faculty/CSE-AI-ML.pdf";
 import ReadFaculty from "@/component/Programs/ReadFaculty";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 const sideImages = [
   contentLeft,
   contentRight
@@ -43,15 +46,22 @@ function page() {
       <head>
         <title>
           Best Computer Science & Engineering( Artificial Intelligence and
-          Machine Learning) College in Dehradun, Uttarakhand | Tula's Institute
+          Machine Learning) College in Dehradun, Uttarakhand | Tulas 
         </title>
         <meta
           name="description"
-          content="Tula's Institute Is the Best Computer Science & Engineering( Artificial Intelligence and Machine Learning) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (artificial Intelligence and Machine Learning) for Aspiring Professionals. Visit Now!"
+          content="Tulas Is the Best Computer Science & Engineering( Artificial Intelligence and Machine Learning) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (artificial Intelligence and Machine Learning) for Aspiring Professionals. Visit Now!"
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title={<>COMPUTER SCIENCE & ENGINEERING (AI & ML)</>}
@@ -88,7 +98,7 @@ function page() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

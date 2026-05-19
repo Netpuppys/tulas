@@ -23,6 +23,9 @@ import event12 from "../../../../public/research/institute-innovation-council-ii
 import event13 from "../../../../public/research/institute-innovation-council-iic/iic-events/event13.png";
 import event14 from "../../../../public/research/institute-innovation-council-iic/iic-events/event14.png";
 import SlidingCarousel from "../../intellectual-property-rights-ipr-cell/patent/components/SlidingCarousel";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function IICEvents() {
   const { ref, inView } = useInView({
     triggerOnce: false,
@@ -50,23 +53,30 @@ function IICEvents() {
       <head>
         <title>
           IIC Events | Best Engineering College in Dehradun, Uttarakhand |
-          Tula's Institute
+          Tulas University
         </title>
         <meta
           name="description"
-          content="Discover the exciting events organized by the Institute Innovation Council (IIC) at Tula's Institute. Engage in workshops, seminars, and networking opportunities that foster innovation, research, and entrepreneurship among students."
+          content="Discover the exciting events organized by the Institute Innovation Council (IIC) at Tulas University. Engage in workshops, seminars, and networking opportunities that foster innovation, research, and entrepreneurship among students."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
-                Tula's Institute's Innovation{" "}
-                <span className="text-[#007A83]">
-                  Council (Tula's-IIC) Events
+                Tulas University's Innovation{" "}
+                <span className="text-[#f97316]">
+                  Council (Tulas-IIC) Events
                 </span>
               </>
             }
@@ -83,8 +93,8 @@ function IICEvents() {
                 <br />
                 <br />
                 To enhance the innovation and start-up/entrepreneurial ecosystem
-                with in the institute. Tula’s Institute’s Innovation Council
-                (Tula’s-IIC) organizes events with in the institute. Tula’s-IIC
+                with in the institute. Tulas University Innovation Council
+                (Tulas-IIC) organizes events with in the institute. Tulas-IIC
                 events are listed below:
               </>
             }
@@ -110,7 +120,7 @@ function IICEvents() {
             <SlidingCarousel items={crouselImages} />
           </div>
           <div className="w-full h-fit z-50">
-            <Footer color={true} />
+            <NewFooter/>
           </div>
         </div>
       </body>

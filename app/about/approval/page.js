@@ -44,6 +44,8 @@ import AICTEApproval09pdf from "../../../public/About/Approvals/ApprovalsPDF/AIC
 import AICTEApproval08pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2008-09.pdf";
 import AICTEApproval07pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2007-08.pdf";
 import AICTEApproval06pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-LOA-2006-07.pdf";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import MegaMenu from "@/component/Navbar/MegaMenu";
 
 export const metadata = {
   title: "Approval | Tula's Institute",
@@ -170,11 +172,18 @@ function Approval() {
   ];
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="hidden md:block">
+        <MegaMenu />
+      </div>
+      
+      <div className="block md:hidden">
+        <NewNavbar fullBanner={true}/>
+      </div>
       <Banner
         title={
           <>
-            <span className="text-[#007A83]">APPROVALS</span>
+            <span className="text-[#E69706]">APPROVALS</span>
           </>
         }
         image={BannerImg}
@@ -198,7 +207,7 @@ function Approval() {
           alt=""
         />
         <div className="py-8 md:py-20 flex flex-col justify-center items-center">
-          <div className="text-[#007A83] text-[25px] md:text-[35px] font-[TTChocolatesMedium] py-1 w-[95%] md:w-[70%] text-center bg-white rounded-3xl">
+          <div className="text-[#f97316] text-[25px] md:text-[35px] font-[TTChocolatesMedium] py-1 w-[95%] md:w-[70%] text-center bg-white rounded-3xl">
             AICTE Approvals
           </div>
           <div className="pt-10 w-[95%] md:w-[70%] mx-auto">

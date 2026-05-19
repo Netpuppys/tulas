@@ -25,20 +25,30 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BcomFee from "../../../public/FeeStructure/BCOM.pdf";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BBA() {
   return (
     <>
       <head>
         <title>
-          Best B.Com (Hons.) College in Dehradun, Uttarakhand | Tula's Institute
+          Best B.Com (Hons.) College in Dehradun, Uttarakhand | Tulas 
         </title>
         <meta
           name="description"
-          content="Tula's Institute is one of the best B.Com (Hons.) College in Dehradun. The college holds merit not only on academic grounds but also on extracurricular activities."
+          content="Tulas is one of the best B.Com (Hons.) College in Dehradun. The college holds merit not only on academic grounds but also on extracurricular activities."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title={"B.COM (HONS)"}
@@ -70,7 +80,7 @@ function BBA() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

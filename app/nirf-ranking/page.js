@@ -88,10 +88,10 @@ function NIRFRanking() {
   return (
     <>
       <head>
-        <title>NIRF Ranking 2024 | Tula's Institute</title>
+        <title>NIRF Ranking 2024 | Tulas University</title>
         <meta
           name="description"
-          content="Discover Tula's Institute's NIRF Ranking for 2024, a testament to our commitment to academic excellence and quality education. Learn why we are recognized among the top engineering colleges in Dehradun, Uttarakhand."
+          content="Discover Tulas University's NIRF Ranking for 2024, a testament to our commitment to academic excellence and quality education. Learn why we are recognized among the top engineering colleges in Dehradun, Uttarakhand."
         />
       </head>
       <body>

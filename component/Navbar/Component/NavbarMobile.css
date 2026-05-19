@@ -17,7 +17,7 @@
 .site-map-link {
   height: inherit;
   display: flex;
-  color: #007a83;
+  color: #f97316;
   font-family: TTChocolatesMedium;
   font-size: 22px;
   font-weight: 700;
@@ -78,7 +78,7 @@
 
 .site-map-sub-header {
   height: 60px;
-  color: #007a83;
+  color: #f97316;
   font-size: 20px;
   font-family: TTChocolates;
   font-weight: 600;

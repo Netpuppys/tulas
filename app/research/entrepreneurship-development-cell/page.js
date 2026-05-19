@@ -28,6 +28,9 @@ import EPR15 from "../../../public/research/entrepreneurship-development-cell/EP
 import EPR16 from "../../../public/research/entrepreneurship-development-cell/EPR16.png";
 import EPR17 from "../../../public/research/entrepreneurship-development-cell/EPR17.png";
 import Link from "next/link";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function EntrepreneurshipDevelopmentCell() {
   const patentImages = [
@@ -122,28 +125,35 @@ function EntrepreneurshipDevelopmentCell() {
       <head>
         <title>
           Conferences | Best Engineering College in Dehradun, Uttarakhand |
-          Tula's Institute
+          Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the various conferences hosted by Tula's Institute, providing a platform for students, faculty, and industry experts to discuss cutting-edge research, innovations, and advancements in engineering and technology."
+          content="Explore the various conferences hosted by Tulas University, providing a platform for students, faculty, and industry experts to discuss cutting-edge research, innovations, and advancements in engineering and technology."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <div className="flex flex-col items-center overflow-hidden">
           <Banner
             image={BannerImg}
             title={
               <>
                 Entrepreneurship{" "}
-                <span className="text-[#007A83]">Development</span>
+                <span className="text-[#f97316]">Development</span>
               </>
             }
             description={<></>}
             belowTitle={<></>}
             belowPara={
-              "Tula’s Entrepreneurship Development Cell is a dynamic unit within the institute that focuses on fostering an entrepreneurial ecosystem and nurturing aspiring entrepreneurs among students, faculty, and alumni. The cell collaborates closely with Tula’s Technology and Business Incubator (TTBIF), which is owned by the institute and is recognized by the Uttarakhand Start-up and MSME India."
+              "Tulas Entrepreneurship Development Cell is a dynamic unit within the institute that focuses on fostering an entrepreneurial ecosystem and nurturing aspiring entrepreneurs among students, faculty, and alumni. The cell collaborates closely with Tulas Technology and Business Incubator (TTBIF), which is owned by the institute and is recognized by the Uttarakhand Start-up and MSME India."
             }
           />
           <div className="w-full relative overflow-hidden">
@@ -170,7 +180,7 @@ function EntrepreneurshipDevelopmentCell() {
             <SlidingCarousel items={patentImages} />
           </div>
           <div className="w-full h-fit z-50">
-            <Footer color={true} />
+            <NewFooter/>
           </div>
         </div>
       </body>

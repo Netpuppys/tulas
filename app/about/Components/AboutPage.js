@@ -7,9 +7,6 @@ import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import background from "../../../public/AboutDehradun/background.png";
 import { Fade } from "react-awesome-reveal";
-import Location from "./Location";
-import Management from "./Management";
-import AboutManagement from "./AboutManagement";
 import BannerHome from "@/app/Component/BannerHome";
 import BannerImage from "../../../public/Homepage/BannerHome/banner.png";
 import BannerImage1 from "../../../public/Homepage/BannerHome/BannerImage1.webp";
@@ -43,6 +40,9 @@ import hallfame11 from "/public/About/hallfame/Shristi Saumya.png";
 import hallfame12 from "/public/About/hallfame/Srishti Gupta.png";
 
 import ImageGallery from "./ImageGallery";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewFooter from "@/component/NewFooter";
 
 
 
@@ -80,7 +80,12 @@ const AboutGallery = dynamic(() => import("./AboutGallery"), {
     },
     
   ];
-
+    const handleScrollArrow = () => {
+    window.scrollTo({
+      top: 1400, // Scroll to the top of the page
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  };
 
 const button = [
   {
@@ -208,22 +213,22 @@ export default function AboutPage() {
 
     const newstats = [
     {
-      icon: <FaWifi className="text-[#760135] text-5xl mb-2" />,
+      icon: <FaWifi className="text-[#f97316] text-5xl mb-2" />,
       value: "22",
       label: ["ACRES", "WIFI ENABLED"],
     },
     {
-      icon: <FaUserGraduate className="text-[#760135] text-5xl mb-2" />,
+      icon: <FaUserGraduate className="text-[#f97316] text-5xl mb-2" />,
       value: "200+",
       label: ["QUALIFIED", "FACULTY MEMBERS"],
     },
     {
-      icon: <PiStudentFill className="text-[#760135] text-5xl mb-2" />,
+      icon: <PiStudentFill className="text-[#f97316] text-5xl mb-2" />,
       value: "3000+",
       label: ["STUDENTS", "ENROLLED"],
     },
     {
-      icon: <FaBriefcase className="text-[#760135] text-5xl mb-2" />,
+      icon: <FaBriefcase className="text-[#f97316] text-5xl mb-2" />,
       value: "20+",
       label: ["YEARS OF", "EXPERIENCE"],
     },
@@ -232,20 +237,27 @@ export default function AboutPage() {
 
 
 
-  return (
+  return ( 
     <div className="max-w-[100vw] md:max-w-none overflow-x-hidden">
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true} handleScrollArrow={handleScrollArrow} />
+</div>
       <BannerHome
         bannerImages={bannerImages}
       />
       <div className="bg-white w-full px-3">
         <div className="min-h-fit py-8 md:py-[3%] h-fit md:min-h-[15vh] w-full overflow-hidden flex flex-col justify-center max-w-[1200px] mx-auto">
-          <h3 className="text-2xl font-[] font-bold md:text-5xl text-[#760135] text-left mb-3">
-            <span className="text-[#000]">ABOUT</span> TULA'S
+          <h3 className="text-2xl font-[] font-bold md:text-5xl text-[#f97316] text-left mb-3">
+            <span className="text-[#000]">ABOUT</span> TULAS
           </h3>
           <h4 className="leading-tight text-[clamp(13px,4vw,30px)] md:text-[clamp(13px,1.1vw,45px)] font-[TTChocolates] text-[#404040]">
             <>
-              Tula's Institute is dedicated to serve the community by recognizing the diverse needs of the individuals.  Tula's Institute is recognized as one of the 'Top Engineering Colleges in Uttarakhand. Known for its excellence in academic programs from undergraduate to postgraduate level, Tula's Institute attracts students from different states of India and neighbouring countries at priority. At Tula's Institute, we believe in maintaining a balance between academics and extra/co- curricular activities while keeping a healthy teacher-student ratio and in providing equal opportunities for all.
+              Tulas University is dedicated to serve the community by recognizing the diverse needs of the individuals.  Tulas University is recognized as one of the 'Top Engineering Colleges in Uttarakhand. Known for its excellence in academic programs from undergraduate to postgraduate level, Tulas University attracts students from different states of India and neighbouring countries at priority. At Tulas University, we believe in maintaining a balance between academics and extra/co- curricular activities while keeping a healthy teacher-student ratio and in providing equal opportunities for all.
             </>
           </h4>
         </div>
@@ -271,7 +283,7 @@ export default function AboutPage() {
 
           <div className="relative overflow-hidden my-8">
           {/* Blurred sides */}
-          <div className="pointer-events-none absolute top-0 left-0 w-[7%] h-full z-10  bg-gradient-to-r from-[#760135] to-transparent" />
+          <div className="pointer-events-none absolute top-0 left-0 w-[7%] h-full z-10  bg-gradient-to-r from-[#f97316] to-transparent" />
           {/* Scrolling text */}
           <marquee
             direction="left"
@@ -281,14 +293,14 @@ export default function AboutPage() {
             <div className="w-fit py-2 md:py-6 flex gap-4 md:gap-[2%] whitespace-nowrap">
               {name.map((item, index) => (
                 <div key={index} className="relative w-fit mx-auto">
-                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] bg-gradient-to-r from-[#E69706] via-[#760135] to-[#007A83] text-transparent bg-clip-text font-[TTChocolates] leading-tight font-extrabold">
+                  <h2 className="text-[clamp(10px,3.5vw,50px)] text-center md:text-[clamp(10px,1.2vw,50px)] bg-gradient-to-r from-[#E69706] via-[#f97316] to-[#007A83] text-transparent bg-clip-text font-[TTChocolates] leading-tight font-extrabold">
                     {item}
                   </h2>
                 </div>
               ))} 
             </div>
           </marquee>
-            <div className="pointer-events-none absolute top-0 right-0 w-[7%] h-full z-10 bg-gradient-to-l from-[#760135] to-transparent" />
+            <div className="pointer-events-none absolute top-0 right-0 w-[7%] h-full z-10 bg-gradient-to-l from-[#f97316] to-transparent" />
 
         </div>
 
@@ -300,7 +312,7 @@ export default function AboutPage() {
                 className="w-[250px] bg-[#eee] shadow-md p-6 text-center rounded"
               >
                 <div className="flex justify-center mb-2">{item.icon}</div>
-                <div className="text-[#760135] text-2xl font-bold">{item.value}</div>
+                <div className="text-[#f97316] text-2xl font-bold">{item.value}</div>
                 <div className="text-sm text-black font-medium leading-tight mt-1">
                   <div>{item.label[0]}</div>
                   <div className="font-bold">{item.label[1]}</div>
@@ -315,10 +327,10 @@ export default function AboutPage() {
 
     {/* Left Section */}
     <div className="text-center md:text-left md:w-[40%]">
-      <h3 className="text-[#760135] text-3xl font-semibold mb-1">
+      <h3 className="text-[#f97316] text-3xl font-semibold mb-1">
         Innovate, Create & Lead
       </h3>
-      <h2 className="text-5xl font-bold text-[#760135]">
+      <h2 className="text-5xl font-bold text-[#f97316]">
         <span className="text-black">The </span>TULA’S way
       </h2>
     </div>
@@ -326,17 +338,17 @@ export default function AboutPage() {
     {/* Right Section */}
     <div className="md:w-[60%] text-md text-[#222] tracking-wide leading-relaxed text-justify">
       <p>
-        Tula’s Institute is redefining the future of education. It goes beyond mere textbooks and lectures; it involves cultivating an environment conducive to invention. At Tula’s, each project serves as a chance to challenge conventions, every concept represents a progression towards innovation, and every student is enabled to reimagine the realm of possibility. Education ignites curiosity and propels transformation.
+        Tulas University is redefining the future of education. It goes beyond mere textbooks and lectures; it involves cultivating an environment conducive to invention. At Tulas, each project serves as a chance to challenge conventions, every concept represents a progression towards innovation, and every student is enabled to reimagine the realm of possibility. Education ignites curiosity and propels transformation.
       </p>
     </div>
 
   </div>
         </div>
 
-<div className="bg-[#760135] text-white py-10 px-4">
+<div className="bg-[#ffff] text-white py-10 px-4">
   <div className="max-w-7xl mx-auto">
     {/* Heading */}
-    <h2 className="text-center text-4xl font-extrabold mb-12 text-shadow-sm">
+    <h2 className="text-center text-black text-4xl font-extrabold mb-12 text-shadow-sm">
       University Highlights
     </h2>
 
@@ -344,7 +356,7 @@ export default function AboutPage() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
       
       {/* Box 1 */}
-      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+      <div className="bg-[#f97316]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
         <div className="text-5xl font-extrabold leading-none text-shadow-sm ">22</div>
         <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           <span className="text-sm">Years of</span><br />
@@ -353,7 +365,7 @@ export default function AboutPage() {
       </div>
 
       {/* Box 2 */}
-      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+      <div className="bg-[#f97316]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
         <div className="text-5xl font-extrabold leading-none text-shadow-sm ">₹60</div>
         <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
           <span className="text-sm">LPA</span><br />
@@ -362,7 +374,7 @@ export default function AboutPage() {
       </div>
 
       {/* Box 3 */}
-      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+      <div className="bg-[#f97316]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
         <div className="text-5xl font-extrabold leading-none text-shadow-sm">
           750<sup className="text-2xl align-super">+</sup>
         </div>
@@ -373,7 +385,7 @@ export default function AboutPage() {
       </div>
 
       {/* Box 4 */}
-      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+      <div className="bg-[#f97316]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
         <div className="text-5xl font-extrabold leading-none text-shadow-sm">
           1.5<sup className="text-2xl align-super">+</sup>
         </div>
@@ -384,7 +396,7 @@ export default function AboutPage() {
       </div>
 
       {/* Box 5 */}
-      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+      <div className="bg-[#f97316]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
         <div className="text-5xl font-extrabold leading-none text-shadow-sm">
           50<sup className="text-2xl align-super">+</sup>
         </div>
@@ -394,7 +406,7 @@ export default function AboutPage() {
       </div>
 
       {/* Box 6 */}
-      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+      <div className="bg-[#f97316]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
         <div className="text-sm font-semibold mb-1 text-shadow-sm font-serifbold">Ranked</div>
         <div className="text-5xl font-extrabold leading-none text-shadow-sm">9</div>
         <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
@@ -404,7 +416,7 @@ export default function AboutPage() {
       </div>
 
       {/* Box 7 */}
-      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+      <div className="bg-[#f97316]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
         <div className="text-sm font-semibold mb-1 text-shadow-sm font-serifbold">Ranked</div>
         <div className="text-5xl font-extrabold leading-none text-shadow-sm">31</div>
         <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
@@ -414,7 +426,7 @@ export default function AboutPage() {
       </div>
 
       {/* Box 8 */}
-      <div className="bg-[#11867D]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
+      <div className="bg-[#f97316]/90 rounded-xl py-5 px-4 flex items-center gap-4 text-left shadow-lg hover:-translate-y-1 transition-transform">
         <div className="text-sm font-semibold mb-1 text-shadow-sm font-serifbold">Ranked</div>
         <div className="text-5xl font-extrabold leading-none text-shadow-sm">41</div>
         <div className="text-base mt-2 font-medium text-shadow-sm font-serifbold">
@@ -436,7 +448,7 @@ export default function AboutPage() {
 
 
 
-      <Footer />
+      <NewFooter/>
     </div>
   );
 }

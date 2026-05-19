@@ -74,8 +74,8 @@ function Table({}) {
               key={card.id}
               className={`w-[45%] md:w-fit py-1  rounded-full md:px-16 flex items-center justify-center cursor-pointer ${
                 selectedCard === index
-                  ? "text-white bg-[#3D001B]"
-                  : "text-[#3D001B] bg-white"
+                  ? "text-white bg-[#f97316]"
+                  : "text-[#f97316] bg-white"
               }`}
               onClick={() => setSelectedCard(index)}
             >

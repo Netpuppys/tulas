@@ -42,14 +42,14 @@ export const features = [
 export const heading = (
   <>
     Best Mechanical Engineering Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const quotes = (
   <>
     “Innovate, design, and build the future with{" "}
-    <strong className="text-[#760135]">
-      Mechanical Engineering at Tula’s Institute.
+    <strong className="text-[#f97316]">
+      Mechanical Engineering at Tulas University.
     </strong>
     ”
   </>
@@ -57,7 +57,7 @@ export const quotes = (
 export const sideImages = [content1, content2];
 export const content = (
   <>
-    The Department of Mechanical Engineering at Tula’s Institute, established in
+    The Department of Mechanical Engineering at Tulas University, established in
     2006, is one of the oldest and most prestigious departments, dedicated to
     academic excellence and research-driven innovation. Offering Diploma,
     Undergraduate (B.Tech), and Postgraduate (M.Tech) programs, the department
@@ -73,7 +73,7 @@ export const content = (
     laboratories, industry collaborations, and hands-on training, students gain
     practical experience in real-world applications.
     <div className="mt-2 md:mt-[1%]"></div>
-    Mechanical Engineering at Tula’s Institute opens diverse career
+    Mechanical Engineering at Tulas University opens diverse career
     opportunities in design, development, quality control, manufacturing,
     installation, and operations. The program ensures that graduates are
     industry-ready, with skills that align with the demands of modern
@@ -377,7 +377,7 @@ export const hod = [
 
 export const HODcontent = (
   <>
-    Welcome to the department of Mechanical Engineering at Tula’s Institute,
+    Welcome to the department of Mechanical Engineering at Tulas University,
     Dehradun. The aim of the department is to disseminate knowledge and
     technologies through quality teaching, research and its applications in
     mechanical and allied disciplines. In curriculum, we strive to assimilate
@@ -562,7 +562,7 @@ export const itemsClubs = [
     points: [
       "problem-solving – engineering is all about discovering better, more efficient methods to do things.",
       "Team building– working in groups allows you to share expertise and build faster, more reliable solutions.",
-      "Research and Innovation: Mechanical Engineers from Tula’s institute able to be Researcher and innovator. They are also to be entrepreneur with startup.",
+      "Research and Innovation: Mechanical Engineers from Tulas University able to be Researcher and innovator. They are also to be entrepreneur with startup.",
     ],
   },
 ];

@@ -33,11 +33,11 @@ function BAJMC() {
       <head>
         <title>
           Department of Applied Sciences & Humanities | Best Engineering College
-          in Dehradun, Uttarakhand | Tula's Institute
+          in Dehradun, Uttarakhand | Tulas University
         </title>
         <meta
           name="description"
-          content="Explore the Department of Applied Sciences & Humanities at Tula’s Institute, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty."
+          content="Explore the Department of Applied Sciences & Humanities at Tulas University, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty."
         />
       </head>
       <body>

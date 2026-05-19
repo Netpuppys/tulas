@@ -60,7 +60,7 @@ export default function PlacementDrive() {
 
   return (
     <section className="w-full my-12">
-      <h3 className="text-[#760135] text-center pb-8 text-[25px] md:text-[40px] font-[CarotSlab]">
+      <h3 className="text-[#f97316] text-center pb-8 text-[25px] md:text-[40px] font-[CarotSlab]">
         PLACEMENT DRIVE
       </h3>
 
@@ -109,7 +109,7 @@ export default function PlacementDrive() {
       {/* Progress bar */}
       <div className="relative w-full h-2 bg-gray-200 rounded-full mt-6">
         <div
-          className="absolute top-0 left-0 h-2 bg-[#800033] rounded-full transition-all duration-200"
+          className="absolute top-0 left-0 h-2 bg-[#f97316] rounded-full transition-all duration-200"
           style={{ width: `${scrollProgress}%` }}
         />
       </div>

@@ -36,7 +36,6 @@ const NewFooter = ({ set = false, color = false }) => {
 
   const quickLinks = [
     { title: "About Us", linkTo: "/about/" },
-    { title: "Programs", linkTo: "/programs/" },
     { title: "Admissions", linkTo: "/admissions/" },
     { title: "Placements", linkTo: "/placements/" },
     { title: "Career", linkTo: "/careers/" },
@@ -82,7 +81,7 @@ const NewFooter = ({ set = false, color = false }) => {
   ];
 
   const studyLinks = [
-    { title: "Programs", linkTo: "/programs/" },
+    // { title: "Programs", linkTo: "/programs/" },
     { title: "Exam Details", linkTo: Examination, target: "_blank" },
     { title: "Code of Conduct", linkTo: codeOfConduct, target: "_blank" },
     { title: "Academic Calendar", linkTo: ACADEMICCALENDER, target: "_blank" },
@@ -108,7 +107,7 @@ const NewFooter = ({ set = false, color = false }) => {
     },
     { title: "Innovation & Startup policy", linkTo: innovationAndStartupPolicy, target: "_blank" },
     { title: "Mandatory Disclosure", linkTo: MadatoryDisclosure, target: "_blank" },
-      { title: "Hr policy", linkTo: HrPolicy, target: "_blank" },
+      { title: "HR Policy", linkTo: HrPolicy, target: "_blank" },
 
   ];
 
@@ -175,7 +174,7 @@ const NewFooter = ({ set = false, color = false }) => {
             Contact
           </h4>
           <ul className="flex flex-col gap-1 text-[13px] text-gray-300">
-            <li>Tulas Institute</li>
+            <li>Tulas University</li>
             <li>Dehradun, Uttarakhand</li>
             <li>
               Phone:{" "}
@@ -336,7 +335,7 @@ const NewFooter = ({ set = false, color = false }) => {
       {/* ── COPYRIGHT BAR ── */}
       <div className="w-full px-[5%] py-5 flex flex-col md:flex-row items-center justify-between gap-2 bg-[#0a0a0a]">
         <p className="text-[12px] text-gray-400 text-center md:text-left">
-          Copyright © 2026 Tulas Institute, Dehradun | All Rights Reserved
+          Copyright © 2026 Tulas University, Dehradun | All Rights Reserved
         </p>
         <p className="text-[12px] text-gray-400 text-center md:text-right">
           Designed and Managed By{" "}

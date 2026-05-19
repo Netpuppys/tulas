@@ -242,7 +242,7 @@ const placementSlides = [
   return (
     <>
       <head>
-        <title>Best Engineering College in Dehradun, India | Tula's Institute</title>
+        <title>Best Engineering College in Dehradun, India | Tulas University</title>
         <meta
           name="description"
           content="At Tulas, a future-focused curriculum blends industry relevance, AI-driven learning, and innovation-led thinking"

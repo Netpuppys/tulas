@@ -32,20 +32,30 @@ import DownloadFeeStructure from "@/component/Programs/DownloadFeeStructure";
 import BCAFee from "../../../public/FeeStructure/BCA.pdf";
 import BCAFaculty from "../../../public/courses/all-faculty/BCA.pdf";
 import ReadFaculty from "@/component/Programs/ReadFaculty";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BCA() {
   return (
     <>
       <head>
         <title>
-          Best BCA College in Dehradun, Uttarakhand | Tula's Institute
+          Best BCA College in Dehradun, Uttarakhand | Tulas
         </title>
         <meta
           name="description"
-          content="Tula's Is the Best Private BCA College in Dehradun, Uttarakhand, 3yrs BCA Program, Experienced faculties, 100% Placement, Affiliated to Sri Dev Suman University."
+          content="Tulas Is the Best Private BCA College in Dehradun, Uttarakhand, 3yrs BCA Program, Experienced faculties, 100% Placement, Affiliated to Sri Dev Suman University."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>Bachelor of Computer Applications (BCA)</>
@@ -83,7 +93,7 @@ function BCA() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

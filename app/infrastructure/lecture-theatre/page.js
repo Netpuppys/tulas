@@ -1,73 +1,49 @@
-"use client";
+// app/lecture-theatre/page.js
+// Place all components in: app/lecture-theatre/components/
 
-import Banner from "@/component/Banner";
-import BannerImg from "../../../public/infrastructure/lectureTheater/bannerImgLecture.webp";
-import Navbar from "@/component/Navbar/Navbar";
-import Image from "next/image";
-import Footer from "@/component/Footer";
-import background from "../../../public/infrastructure/lectureTheater/background.png";
-import img1 from "../../../public/infrastructure/lectureTheater/img1.webp";
-import img2 from "../../../public/infrastructure/lectureTheater/img2.webp";
-import img3 from "../../../public/infrastructure/lectureTheater/img3.webp";
-import GalleryCrousel from "@/component/GalleryCrousel";
-import lecture from "../../../public/infrastructure/lectureTheater/img4.webp";
-import Vision from "@/component/Programs/Vision";
+import RankingTicker       from './components/RankingTicker';
+import OverviewSection     from './components/OverviewSection';
+import StatsRow            from './components/StatsRow';
+import InteractiveLearning from './components/InteractiveLearning';
+import FacilitiesGrid      from './components/FacilitiesGrid';
+import DesignEnvironment   from './components/DesignEnvironment';
+import CTABanner           from './components/CTABanner';
+import MarqueeStrip        from './components/MarqueeStrip';
+import GallerySection      from './components/GallerySection';
+import FinalCTA            from './components/FinalCTA';
+import HeroSection from './components/HeroSection';
+import MegaMenu from '@/component/Navbar/MegaMenu';
+import NewNavbar from '@/component/Navbar/NewNavbar';
+import NewFooter from '@/component/NewFooter';
 
-function LectureTheater() {
-  const sections = [
-    {
-      title: "Lecture Theatre",
-      description:
-        "Tula's Institute is having spacious and fully equipped lecture halls which are unique of their kind, these lecture halls can accommodate 70 students. These are designed to provide complete comfort for the intense hours of the classroom teaching and interaction.",
-      image: lecture,
-    },
-  ];
-  const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
+export const metadata = {
+  title: "Lecture Theatre | Tula's Institute, Dehradun",
+  description:
+    "Tulas Lecture Theatres — spacious 70-seat halls with advanced AV aids, ergonomic tiered seating, superior acoustics, and purpose-designed lighting.",
+};
+
+export default function LectureTheatrePage() {
   return (
-    <>
-      <head>
-        <title>
-          Lecture Theatre of Tula's Dehradun,Uttarakhand |Top College Dehradun
-        </title>
-        <meta
-          name="description"
-          content="Tula's is one of the best b.tech college in Uttarakhand, Dehradun. 100% placements records."
-        />
-      </head>
-      <body>
-        <Navbar />
-        <div className="flex flex-col items-center">
-          <Banner
-            image={BannerImg}
-            title={<span className="text-[#007A83]">LECTURE THEATRE</span>}
-            belowPara={
-              "The lecture theatres at Tula's Institute are spacious and well-equipped with advanced audio-visual aids, offering an optimal setting for interactive learning and discussions. They are designed to facilitate a comfortable and engaging educational experience for students."
-            }
-          />
-          {/* fixed background */}
-          <div className="w-full relative overflow-hidden">
-            <Image
-              src={background}
-              className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
-              alt=""
-            />
-          </div>
-          <Vision sections={sections} />
-          <h3
-            className={`px-4 md:px-10 text-center text-white border-white font-[TTChocolatesMedium] rounded-md font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] border-l-4 `}
-          >
-            Gallery
-          </h3>
-          <div className="py-8 md:py-20 w-full h-fit">
-            <GalleryCrousel images={images} />
-          </div>
-          <div className="w-full h-fit z-50">
-            <Footer />
-          </div>
-        </div>
-      </body>
-    </>
+    <main>
+      <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
+      <HeroSection />
+      <RankingTicker />
+      <OverviewSection />
+      <StatsRow />
+      <InteractiveLearning />
+      <FacilitiesGrid />
+      <DesignEnvironment />
+      <CTABanner />
+      <MarqueeStrip />
+      <GallerySection />
+      <FinalCTA />
+      <NewFooter/>
+    </main>
   );
 }
-
-export default LectureTheater;

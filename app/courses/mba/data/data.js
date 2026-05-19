@@ -71,7 +71,7 @@ export const content = (
     competitive and ever evolving world of business.
     <br />
     <br />
-    The MBA program at Tula’s offers a comprehensive and well-rounded curriculum
+    The MBA program at Tulas offers a comprehensive and well-rounded curriculum
     designed to prepare students for various managerial roles across multiple
     sectors. Its full-time, two-year degree is affiliated with Veer Madho Singh
     Bhandari Uttarakhand Technical University Dehradun,
@@ -89,7 +89,7 @@ export const content = (
     the corporate sector.
     <br />
     <br />
-    We at Tula’s offer a full-time two years Master of Business Administration
+    We at Tulas offer a full-time two years Master of Business Administration
     degree affiliated with Uttarakhand Technical University, Dehradun with
     specialized coursework in eleven areas:
     <br />
@@ -667,12 +667,12 @@ export const hod = [
 ];
 export const HODcontent = (
   <>
-   It is with great privilege that I extend a cordial welcome to the Graduate School of Business at Tula’s Institute, Dehradun. The department is distinguished by its rigorously designed industry-aligned curriculum, outcome-based pedagogy & committed faculty, all dedicated to developing competent, ethical and globally proficient business leaders.
+   It is with great privilege that I extend a cordial welcome to the Graduate School of Business at Tulas University, Dehradun. The department is distinguished by its rigorously designed industry-aligned curriculum, outcome-based pedagogy & committed faculty, all dedicated to developing competent, ethical and globally proficient business leaders.
     <br />
     <br />Our department offers the Master of Business Administration (MBA) a unique integration of experiential learning, corporate engagement, and structured mentorship, enabling students to acquire critical thinking, strategic decision-making, and leadership capabilities. Through live projects, internships, industry interactions and technology-enabled classrooms, where students gain practical exposure and a competitive edge in both professional and academic domains.
     <br />
     <br />
-    At Tula’s Institute, we are committed to holistic student development, ensuring that every learner attains excellence and is fully prepared to meet the dynamic challenges of contemporary business environments.
+    At Tulas University, we are committed to holistic student development, ensuring that every learner attains excellence and is fully prepared to meet the dynamic challenges of contemporary business environments.
   </>
 );
 export const itemsClubs = [

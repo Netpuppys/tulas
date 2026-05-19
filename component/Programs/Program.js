@@ -14,7 +14,7 @@ function Program({
         {heading && (
           <h5 className="w-fit mx-auto text-[#353535] text-center px-4 py-8 md:py-[3%] leading-tight text-[clamp(10px,5.5vw,30px)] md:text-[clamp(10px,2.5vw,45px)] font-[CarotSlab] font-medium">
             {heading}
-            <div className="h-[4px] bg-[#007A83] w-[55%] mx-auto rounded-full"></div>
+            <div className="h-[4px] bg-[#f97316] w-[55%] mx-auto rounded-full"></div>
           </h5>
         )}
         <div

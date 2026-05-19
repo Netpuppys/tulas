@@ -85,17 +85,17 @@ export const sideImages = [content1, content2];
 export const heading = (
   <>
     Best Engineering Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const quotes = (
   <>
     “Build the future with{" "}
-    <strong className="text-[#760135]">
+    <strong className="text-[#f97316]">
       Tula's Institute's Diploma in Civil Engineering.
     </strong>{" "}
     Shaping aspiring engineers into skilled professionals to transform the world
-    of <strong className="text-[#760135]">infrastructure and design.</strong>”
+    of <strong className="text-[#f97316]">infrastructure and design.</strong>”
   </>
 );
 export const sections = [

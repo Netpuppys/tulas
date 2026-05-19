@@ -37,14 +37,14 @@ export const features = [
 export const heading = (
   <>
     Best Computer Science & Engineering (Data Science) Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const sideImages = [content1, content2];
 export const content = (
   <>
-    The B.Tech in Computer Science & Engineering (Data Science) at Tula’s
-    Institute is a comprehensive four-year undergraduate program designed to
+    The B.Tech in Computer Science & Engineering (Data Science) at Tulas
+    University is a comprehensive four-year undergraduate program designed to
     equip students with a strong foundation in data science, artificial
     intelligence, and big data analytics. This program covers essential concepts
     such as data collection, storage, processing, and analysis, enabling
@@ -71,8 +71,8 @@ export const content = (
 export const quotes = (
   <>
     “Transform raw data into powerful insights shape the future with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s B.Tech in CSE (Data Science).
+    <strong className="text-[#f97316]">
+      Tulas University B.Tech in CSE (Data Science).
     </strong>
     ”
   </>

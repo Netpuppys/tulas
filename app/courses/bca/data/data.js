@@ -66,7 +66,7 @@ export const features = [
 export const heading = (
   <>
     Best Bachelor of Computer Applications Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
@@ -113,8 +113,8 @@ export const sideImages = [content1, content2];
 export const quotes = (
   <>
     “Code your future, innovate with technology, and transform the world with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s Bachelor of Computer Applications Program.
+    <strong className="text-[#f97316]">
+      Tulas University Bachelor of Computer Applications Program.
     </strong>
     ”
   </>
@@ -123,7 +123,7 @@ export const items = [
   {
     title: "USP - Empowering You to Thrive in the World of Technology",
     description: [
-      "At Tula's Institute, we offer a Bachelor of Computer Applications (BCA) program designed for future tech innovators and problem-solvers. Our industry-oriented curriculum, hands-on training, and personalized guidance prepare students to excel in today’s competitive IT landscape. Here’s why BCA at Tula’s Institute is the ideal choice for building your future:",
+      "At Tulas University, we offer a Bachelor of Computer Applications (BCA) program designed for future tech innovators and problem-solvers. Our industry-oriented curriculum, hands-on training, and personalized guidance prepare students to excel in today’s competitive IT landscape. Here’s why BCA at Tulas University is the ideal choice for building your future:",
     ],
     image: USP,
     points: [
@@ -135,7 +135,7 @@ export const items = [
         Gain mastery in the most sought-after programming languages, including
         C, C++, Java, and Python. Learn core topics in web development, database
         management, and networking from experienced faculty with real-world
-        expertise. At Tula’s, we don’t just teach technology; we prepare you to
+        expertise. At Tulas, we don’t just teach technology; we prepare you to
         thrive in it.
       </>,
       <>
@@ -144,14 +144,14 @@ export const items = [
         Our BCA graduates step into fulfilling careers as software developers,
         system analysts, database administrators, IT consultants, and more. With
         the tech world expanding rapidly into areas like artificial
-        intelligence, data science, and cybersecurity, a degree from Tula’s
+        intelligence, data science, and cybersecurity, a degree from Tulas
         Institute positions you at the forefront of these advancements.
       </>,
       <>
         <strong className="font-bold">Practical, Hands-On Learning</strong>
         <br />
         With a curriculum that balances theory and practical application,
-        students at Tula’s gain valuable real-world experience. Through industry
+        students at Tulas gain valuable real-world experience. Through industry
         projects, internships, and workshops, you’ll apply classroom learning to
         solve real business challenges. By graduation, you’ll be job-ready with
         an impressive portfolio of projects and practical skills.
@@ -159,7 +159,7 @@ export const items = [
       <>
         <strong className="font-bold">Pathways to Advanced Education</strong>
         <br />
-        Tula's BCA program sets you up for success, whether you aim to pursue an
+        Tulas BCA program sets you up for success, whether you aim to pursue an
         MCA, MBA, or any other advanced degree. Our program is designed to equip
         you with the foundational knowledge and academic rigor necessary to
         excel in higher education and beyond.
@@ -169,7 +169,7 @@ export const items = [
         <br />
         Our BCA program isn’t just about landing a job; it’s about building a
         future. Whether you dream of launching your own tech start-up or
-        developing a groundbreaking app, Tula’s Institute equips you with the
+        developing a groundbreaking app, Tulas Institute equips you with the
         skills, network, and confidence to succeed as a tech entrepreneur.
       </>,
       <>
@@ -540,7 +540,7 @@ export const itemsClubs = [
   {
     title: "Beyond the Curriculum - Unlocking Extra Benefits for Your Success",
     description: [
-      "At Tula’s Institute, we believe in empowering our students with real-world skills and experiences that extend far beyond the classroom. Our comprehensive approach includes a variety of additional opportunities to enrich your learning and career prospects:",
+      "At Tulas University, we believe in empowering our students with real-world skills and experiences that extend far beyond the classroom. Our comprehensive approach includes a variety of additional opportunities to enrich your learning and career prospects:",
     ],
     image: beyondCurriculum,
     points: [

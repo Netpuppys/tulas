@@ -44,13 +44,13 @@ export const sideImages = [content1, content2];
 export const heading = (
   <>
     Best Electronics & Communication Engineering Institute in{" "}
-    <span className="text-[#760135]">North India</span>
+    <span className="text-[#f97316]">North India</span>
   </>
 );
 export const content = (
   <>
-    The Department of Electronics & Communication Engineering (ECE) at Tula’s
-    Institute, established in 2006, has been a hub of academic excellence,
+    The Department of Electronics & Communication Engineering (ECE) at Tulas
+    University, established in 2006, has been a hub of academic excellence,
     innovation, and research since the inception of the institute. With a vision
     to become a leading center of excellence in education and research, the
     department is recognized for its outstanding teaching methodologies,
@@ -71,7 +71,7 @@ export const content = (
     <div className="mt-2 md:mt-[1%]"></div>
     The department fosters a research-driven environment, encouraging students
     to engage in innovative projects, industrial training, and skill development
-    programs. Graduates from the ECE department at Tula’s Institute are
+    programs. Graduates from the ECE department at Tulas University are
     well-prepared for dynamic career opportunities in electronics,
     telecommunications, automation, and emerging technologies.
   </>
@@ -79,8 +79,8 @@ export const content = (
 export const quotes = (
   <>
     “Innovate, connect, and revolutionize the world of technology with{" "}
-    <strong className="text-[#760135]">
-      Tula’s Institute’s B.Tech in Electronics & Communication Engineering.
+    <strong className="text-[#f97316]">
+      Tulas University B.Tech in Electronics & Communication Engineering.
     </strong>
     ”
   </>

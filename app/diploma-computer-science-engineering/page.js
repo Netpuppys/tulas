@@ -23,21 +23,31 @@ import {
 import { facultyDataCSE } from "../courses/btech/facultyDataCSE";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
       <head>
         <title>
-          Diploma in Computer Science and Engineering in Dehradun | Tula's
-          Institute
+          Diploma in Computer Science and Engineering in Dehradun | Tulas
+          
         </title>
         <meta
           name="description"
-          content="Enroll in Tula's Institute for a Diploma in Computer Science and Engineering in Dehradun. Gain hands-on experience, industry-relevant skills, and prepare for a successful tech career with our comprehensive diploma program."
+          content="Enroll in Tulas  for a Diploma in Computer Science and Engineering in Dehradun. Gain hands-on experience, industry-relevant skills, and prepare for a successful tech career with our comprehensive diploma program."
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>
         <BannerProgram
           image={BannerImg}
           title=<>DIPLOMA IN COMPUTER SCIENCE ENGINEERING</>
@@ -60,7 +70,7 @@ function BAJMC() {
         />
         <PlacementProgram features={features} />
         <TopRecruiter />
-        <Footer />
+        <NewFooter />
       </body>
     </>
   );

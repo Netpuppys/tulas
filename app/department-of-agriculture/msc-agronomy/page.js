@@ -240,10 +240,10 @@ const placementSlides = [
   return (
     <>
       <head>
-        <title>Tulas Institute is best to pursue a career in M.Sc Agronomy</title>
+        <title>Tulas University is best to pursue a career in M.Sc Agronomy</title>
         <meta
           name="description"
-          content="Join Tula's Institute. Excel in M.Sc Agronomy and more with industry-focused programs and dedicated faculty. Become a future leader today"
+          content="Join Tulas University. Excel in M.Sc Agronomy and more with industry-focused programs and dedicated faculty. Become a future leader today"
         />
       </head>
       <body>

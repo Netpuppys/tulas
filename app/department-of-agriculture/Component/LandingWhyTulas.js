@@ -45,7 +45,7 @@ export default function LandingWhyTulas() {
 
         {/* Description */}
         <p className="text-gray-600 text-[15px] md:text-[17px] leading-relaxed text-center mb-10">
-          M.Sc Agronomy from Tulas College combines scientific knowledge with field-based learning, research, and modern agricultural practices to prepare students for the future of farming. With a focus on sustainability and innovation, the program enables graduates to enhance crop productivity, manage resources efficiently, and drive impact in the agricultural sector.
+          M.Sc Agronomy from Tulas University combines scientific knowledge with field-based learning, research, and modern agricultural practices to prepare students for the future of farming. With a focus on sustainability and innovation, the program enables graduates to enhance crop productivity, manage resources efficiently, and drive impact in the agricultural sector.
         </p>
 
         {/* Check Points */}
