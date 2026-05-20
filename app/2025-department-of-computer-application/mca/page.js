@@ -33,7 +33,6 @@ import RanjanKumar from "../../../public/courses/mca/PlacementDesign/RanjanKumar
 import RishabhSingh from "../../../public/courses/mca/PlacementDesign/RishabhSingh.webp";
 import TanyaChauhan from "../../../public/courses/mca/PlacementDesign/TanyaChauhan.webp";
 
-export
 const page = () => {
   const { utmParams } = useContext(UtmContext);
 
