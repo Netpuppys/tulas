@@ -1,10 +1,9 @@
-import NewHomePage from "../NewHomePage";
-import Testabout from "./components/Testabout";
+import NewAbout from "./Components/NewAbout";
 
 export default function NewHome() {
   return (
     <>
-    <Testabout/>
+    <NewAbout/>
     </>
   );
 }
