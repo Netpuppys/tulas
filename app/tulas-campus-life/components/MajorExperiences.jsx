@@ -3,7 +3,7 @@
 const EVENTS = [
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/biggestAuditorium.33536442.png',
+    img:   '/new-campus/10diff.jpeg',
     tag:   '🎬 10th Edition',
     title: 'Dehradun International Film Festival (DIFF)',
     desc:  'A decade of cinema, storytelling, and culture. DIFF has grown into one of the most prestigious student-led film festivals in India ',
@@ -11,7 +11,7 @@ const EVENTS = [
   },
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/bannerImgComputer.71a0ea86.webp',
+    img:   '/new-campus/utkristh.jpg',
     tag:   '⚡ Tech Fest',
     title: 'Utkrisht',
     desc:  'Where ideas stop being ideas. Hackathons, robotics, coding wars, and innovation showcases — the campus goes full power mode.',
@@ -19,7 +19,7 @@ const EVENTS = [
   },
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/multiUse.4a21bb41.png',
+    img:   '/new-campus/sanskriti(2).jpg',
     tag:   '🎶 Cultural Fest',
     title: 'Sanskriti',
     desc:  'The nights we never wanted to end. Dance, music, fashion, comedy — Sanskriti is the cultural heartbeat of Tulas. Thousands of memories, one fest.',
@@ -27,7 +27,7 @@ const EVENTS = [
   },
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/img1.cdb374cf.webp',
+    img:   '/new-campus/orientation(2).jpg',
     tag:   '🌟 Welcome',
     title: 'Freshers Orientation',
     desc:  'The first day of the rest of your life. A warm, electric welcome that instantly makes you feel at home and part of something bigger.',
@@ -35,7 +35,7 @@ const EVENTS = [
   },
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/img3.ad931c1f.png',
+    img:   '/new-campus/chatrasansad.jpg',
     tag:   '🏛 Leadership',
     title: 'Leadership Fest & Chhatra Sansad 2026',
     desc:  'Where young voices learn to lead. Policy debates, governance discussions, and Uttarakhand\'s biggest student conclave in one place.',
@@ -43,7 +43,7 @@ const EVENTS = [
   },
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/img1.2971fc59.png',
+    img:   '/new-campus/alumni meet.jpg',
     tag:   '💛 Nostalgia',
     title: 'Alumni Meet',
     desc:  '"Some bonds never graduate." 7,000+ alumni return every year to relive memories and remind themselves why Tulas changed their lives.',
@@ -51,7 +51,7 @@ const EVENTS = [
   },
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/img2.709bd723.png',
+    img:   '/new-campus/Expresso.webp',
     tag:   '🎭 VIBGYOR',
     title: 'Student Clubs & Committees',
     desc:  '11 clubs, one vibrant student body — from Quill to Sargam to Footloose to Capture, every passion finds its community at Tulas.',
@@ -59,7 +59,7 @@ const EVENTS = [
   },
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/img2.29683b1b.png',
+    img:   '/new-campus/nssnss.jpg',
     tag:   '🎖 Service',
     title: 'Leadership & Service (NCC & NSS)',
     desc:  'Discipline, community, and purpose. NCC and NSS at Tulas build the leaders and citizens of tomorrow through service and commitment.',
@@ -67,7 +67,7 @@ const EVENTS = [
   },
   {
     wide: false,
-    img:   'https://tulas.edu.in/_next/static/media/img3.71a497c2.png',
+    img:   '/new-campus/sanskriti(6).jpg',
     tag:   '✨ And More',
     title: 'Events & Experiences',
     desc:  'Surprise workshops, guest sessions, pop culture moments, spontaneous celebrations — campus life at Tulas is alive, spontaneous and emotionally rich.',

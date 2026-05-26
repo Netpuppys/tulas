@@ -23,17 +23,17 @@ const STATEMENTS = [
 // Bento cells configuration
 const BENTO = [
   // Row 1
-  { type: 'img',  src: 'https://tulas.edu.in/_next/static/media/biggestAuditorium.33536442.png', alt: 'Auditorium',  tag: '1,000+ Events', label: 'The Grand Stage',          colSpan: 4, rowSpan: 1, gridRow: 1 },
-  { type: 'img',  src: 'https://tulas.edu.in/_next/static/media/multiUse.4a21bb41.png',         alt: 'Cultural',    tag: 'Sanskriti',     label: 'Nights That Never Ended',  colSpan: 5, rowSpan: 2, gridRow: '1/3' },
-  { type: 'img',  src: 'https://tulas.edu.in/_next/static/media/img3.ad931c1f.png',             alt: 'Sports',      tag: null,            label: 'Sports & Wellness',         colSpan: 3, rowSpan: 1, gridRow: 1 },
+  { type: 'img',  src: '/new-campus/diff.jpg', alt: 'Auditorium',  tag: '1,000+ Events', label: 'The Grand Stage',          colSpan: 4, rowSpan: 1, gridRow: 1 },
+  { type: 'img',  src: '/new-campus/sanskriti(4).jpg',         alt: 'Cultural',    tag: 'Sanskriti',     label: 'Nights That Never Ended',  colSpan: 5, rowSpan: 2, gridRow: '1/3' },
+  { type: 'img',  src: '/new-campus/bannermain2.jpg',             alt: 'Sports',      tag: null,            label: 'Sports & Wellness',         colSpan: 3, rowSpan: 1, gridRow: 1 },
   // Row 2
   { type: 'orange', colSpan: 4, rowSpan: 1, gridRow: 2, quoteClass: 'oi', text: 'NOT JUST\nA CAMPUS.\nA WHOLE\nEMOTION.', accent: 'black' },
   // { type: 'black',  colSpan: 2, rowSpan: 1, gridRow: 2, quoteClass: 'w',  text: '7,000+\nAlumni\nCan\'t Be\nWrong',       accent: 'orange' },
-  { type: 'img',  src: 'https://tulas.edu.in/_next/static/media/cafeteria.fcb5d881.png',        alt: 'Cafe',        tag: null,            label: 'Late Night Cafeteria Runs', colSpan: 3, rowSpan: 1, gridRow: 2 },
+  { type: 'img',  src: '/new-campus/gallery.png',        alt: 'Cafe',        tag: null,            label: 'Late Night Cafeteria Runs', colSpan: 3, rowSpan: 1, gridRow: 2 },
   // Row 3
-  { type: 'img',  src: 'https://tulas.edu.in/_next/static/media/bannerImgHostel.614f090d.webp', alt: 'Hostel',      tag: 'Hostel Life',   label: 'Home Away From Home',       colSpan: 4, rowSpan: 1, gridRow: 3 },
+  { type: 'img',  src: '/new-campus/freshers.jpg', alt: 'Hostel',      tag: 'Hostel Life',   label: 'Home Away From Home',       colSpan: 4, rowSpan: 1, gridRow: 3 },
   { type: 'light', colSpan: 4, rowSpan: 1, gridRow: 3, quoteClass: 'd',  text: 'THESE ARE\nSTORIES\nWE\'LL TELL\nFOR YEARS.', accent: 'orange' },
-  { type: 'img',  src: 'https://tulas.edu.in/_next/static/media/library.7922f813.png',          alt: 'Library',     tag: null,            label: 'Knowledge Meets Ambition',  colSpan: 4, rowSpan: 1, gridRow: 3 },
+  { type: 'img',  src: '/new-campus/extra(1).jpg',          alt: 'Library',     tag: null,            label: 'Knowledge Meets Ambition',  colSpan: 4, rowSpan: 1, gridRow: 3 },
 ];
 
 export default function VibeStorytelling() {

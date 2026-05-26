@@ -137,7 +137,7 @@ const sitemap = [
           },
           {
             title: "M.Sc. Agronomy",
-            linkTo: "courses/msc-agronomy",
+            linkTo: "/courses/msc-agronomy",
           },
         ],
       },

@@ -1,6 +1,7 @@
 # robots.txt for https://tulas.edu.in/
-# Optimized for SEO and AI bots (2025)
+# Optimized for SEO and AI Discovery (2026)
 
+# === Default rules for all crawlers ===
 User-agent: *
 Disallow: /cgi-bin/
 Disallow: /temp/
@@ -8,33 +9,91 @@ Disallow: /tag/
 Disallow: /author/
 Disallow: /comments/
 Disallow: /feed/
-Disallow: /wp-admin/
-Disallow: /wp-includes/
+Disallow: /api/
+Allow: /
 
-# Allow important frontend and public content
-Allow: /category/
-Allow: /blog/
-Allow: /blogs/
-Allow: /wp-content/
-Allow: /wp-content/cache/
-Allow: /wp-admin/admin-ajax.php
-
-# AI and advanced crawlers allowed full access
-User-agent: GPTBot
-User-agent: Google-Extended
-User-agent: ChatGPT-User
-User-agent: OpenAI
-User-agent: AI Overview
-User-agent: Generative Artificial Intelligence
-User-agent: Claude-Web
-User-agent: ClaudeBot
-User-agent: anthropic-ai
-User-agent: CCbot
-User-agent: MetaAI
-User-agent: PerplexityBot
+# === Search Engine Crawlers ===
 User-agent: Googlebot
+Allow: /
+
 User-agent: Google-InspectionTool
 Allow: /
 
-# Sitemap location
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# === AI / LLM Crawlers (Explicitly Allowed) ===
+
+# OpenAI (ChatGPT, GPT-based tools)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google AI (Gemini, AI Overviews, SGE)
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Apple Intelligence (Siri, Safari AI)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (used by many AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# Amazon Alexa / AI
+User-agent: Amazonbot
+Allow: /
+
+# ByteDance / TikTok AI
+User-agent: Bytespider
+Allow: /
+
+# You.com AI Search
+User-agent: YouBot
+Allow: /
+
+# Microsoft Copilot
+User-agent: BingPreview
+Allow: /
+
+# Brave Search AI
+User-agent: BraveBot
+Allow: /
+
+# === AI Content Discovery ===
+# LLM-optimized content available at:
+# https://tulas.edu.in/llms.txt
+
+# === Sitemap ===
 Sitemap: https://tulas.edu.in/sitemap.xml
