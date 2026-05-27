@@ -64,7 +64,7 @@ export default function McaLandingWhyTulas() {
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">
     <IoCheckmarkSharp className="text-2xl text-orange-500" />
-    <span className="text-orange-500 font-bold">100%</span> Paid Internships
+    <span className="text-orange-500 font-bold">NBA</span> Accredited
   </div>
 
   <div className="flex items-center gap-3 text-2xl font-medium text-black">

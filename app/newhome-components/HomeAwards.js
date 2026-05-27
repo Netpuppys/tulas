@@ -27,9 +27,9 @@ const CarouselSection = ({
   return (
     <div className="flex w-full md:w-1/2 flex-col items-center">
 
-      <h3 className="font-[CarotSlab] pt-8 px-4 text-[clamp(20px,2.3vw,40px)] text-[#242424] text-center">
+      {/* <h3 className="font-[CarotSlab] pt-8 px-4 text-[clamp(20px,2.3vw,40px)] text-[#242424] text-center">
         {title}
-      </h3>
+      </h3> */}
 
       <div className="w-full md:w-[85%] overflow-hidden">
         <Swiper
@@ -46,9 +46,9 @@ const CarouselSection = ({
                 />
 
                 <div>
-                  <h2 className="text-lg font-bold border-b">
+                  {/* <h2 className="text-lg font-bold border-b">
                     {item.name}
-                  </h2>
+                  </h2> */}
                   {/* <p className="text-gray-600">{item.date}</p> */}
                 </div>
               </div>
@@ -101,7 +101,7 @@ const HomeAwards = () => {
     <div className="w-full flex flex-col md:flex-row">
 
       {/* ✅ RANKINGS (STATIC) */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-16 py-10">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-16 py-5 md:py-12">
 
         <h3 className="text-[clamp(28px,3vw,40px)] font-bold text-[#242424] mb-4">
           AWARDS

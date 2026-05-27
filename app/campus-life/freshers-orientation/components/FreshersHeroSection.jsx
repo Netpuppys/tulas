@@ -1,22 +1,6 @@
 'use client';
 
-const MOSAIC_IMGS = [
-  'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80',
-  'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80',
-  'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80',
-  'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&q=80',
-  'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80',
-  'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80',
-  'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80',
-  'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=80',
-  'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
-  'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80',
-  'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80',
-  'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80',
-  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
-  'https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&q=80',
-  'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
-];
+const BG_IMAGE = '/new-campus/bannermain.jpg';
 
 const FLOATS = [
   { icon: '🎓', label: <><strong>500+</strong> New Students</>,    pos: 'top-[18%] left-[8%]',    delay: '0s'  },
@@ -28,20 +12,18 @@ const FLOATS = [
 export default function FreshersHeroSection() {
   return (
     <>
-      <style dangerouslySetInnerHTML={{__html:`.fo-mosaic{position:absolute;inset:0;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(3,1fr);gap:2px;opacity:.5;z-index:0}@media(max-width:600px){.fo-mosaic{grid-template-columns:repeat(3,1fr)}}.fo-mosaic-cell{overflow:hidden;background:#f0f0f0}.fo-mosaic-cell img{width:100%;height:100%;object-fit:cover;transform:scale(1.1);animation:cl-fo-zoom 10s ease-in-out infinite alternate}.fo-mosaic-cell:nth-child(odd) img{animation-delay:-5s}@keyframes cl-fo-zoom{from{transform:scale(1.1)}to{transform:scale(1.2)}}.cl-fo-float{animation:cl-fo-float 6s ease-in-out infinite}@keyframes cl-fo-float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-15px) rotate(1deg)}}.cl-fo-fadein{animation:cl-fo-fadein 1.2s ease-out both}@keyframes cl-fo-fadein{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}`}} />
+      <style dangerouslySetInnerHTML={{__html:`.cl-fo-float{animation:cl-fo-float 6s ease-in-out infinite}@keyframes cl-fo-float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-15px) rotate(1deg)}}.cl-fo-fadein{animation:cl-fo-fadein 1.2s ease-out both}@keyframes cl-fo-fadein{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}`}} />
 
       <div
         className="relative w-full overflow-hidden flex flex-col justify-center items-center"
         style={{ height: 'calc(100vh - 70px)', minHeight: '580px' }}
       >
-        {/* Mosaic background */}
-        <div className="fo-mosaic">
-          {MOSAIC_IMGS.map((src, i) => (
-            <div key={i} className="fo-mosaic-cell">
-              <img src={src} alt="" />
-            </div>
-          ))}
-        </div>
+        {/* Single background image */}
+        <img
+          src={BG_IMAGE}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+        />
 
         {/* Gradient overlay */}
         <div
@@ -106,18 +88,17 @@ export default function FreshersHeroSection() {
 
           {/* Buttons */}
           <div className="flex gap-4 justify-center flex-wrap">
-            <a
-              href="#experiences"
+            
+             <a href="#experiences"
               className="inline-flex items-center gap-2 px-8 py-[14px] rounded-[10px] font-bold text-[0.92rem] text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(224,107,27,.45)]"
-              style={{ background: '#E06B1B', boxShadow: '0 4px 14px rgba(224,107,27,.3)' }}
-            >
+              style={{ background: '#E06B1B', boxShadow: '0 4px 14px rgba(224,107,27,.3)' }}>
               Explore Campus Life →
             </a>
-            <a
-              href="#about"
+            
+            <a  href="#about"
               className="inline-flex items-center gap-2 px-8 py-[14px] rounded-[10px] font-bold text-[0.92rem] text-white transition-all duration-300 hover:border-white hover:bg-white/10"
-              style={{ background: 'transparent', border: '2px solid rgba(255,255,255,.4)' }}
-            >
+              style={{ background: 'transparent', border: '2px solid rgba(255,255,255,.4)' }}>
+  
               Start Your Journey
             </a>
           </div>

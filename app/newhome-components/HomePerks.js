@@ -21,7 +21,7 @@ function HomePerks() {
   ];
 
   return (
-    <section className="py-10 bg-[#ffff]">
+    <section className="py-5 bg-[#ffff]">
                 <h3 className="text-[clamp(33px,6vw,32px)] font-extrabold mb-3 px-2" style={{ textAlign: "center" }}>
           <span className="text-orange-500">Shape Your</span>{" "}
           <span className="text-gray-800">Future at Tulas</span>

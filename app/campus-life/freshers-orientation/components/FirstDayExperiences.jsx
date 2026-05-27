@@ -2,37 +2,37 @@
 
 const EXPERIENCES = [
   {
-    img:   'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80',
+    img:   '/campus-life/tulasfresher/img1.jpg',
     badge: 'Day 1',
     title: 'Welcome Sessions',
     text:  'Meet the leadership team, understand the university culture, and get inspired about what lies ahead.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80',
+    img:   '/campus-life/tulasfresher/img2.jpg',
     badge: 'Explore',
     title: 'Campus Tours',
     text:  'Navigate your new home — from libraries and labs to cafeterias and hangout spots.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
+    img:   '/campus-life/tulasfresher/img5.jpg',
     badge: 'Connect',
     title: 'Ice-Breaking Activities',
-    text:  'Fun, interactive sessions designed to help you meet your batch mates and make those first connections.',
+    text:  'Fun, interactive sessions designed to help you meet your batch mates & make first connections.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80',
+    img:   '/campus-life/tulasfresher/img6.jpg',
     badge: 'Guidance',
     title: 'Faculty Introductions',
     text:  'Meet your mentors, professors, and academic advisors who will guide your learning journey.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&q=80',
+    img:   '/campus-life/tulasfresher/img9.jpg',
     badge: 'Home',
     title: 'Hostel Introductions',
     text:  'Settle into your new home away from home and meet your hostel family.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=80',
+    img:   '/campus-life/tulasfresher/img8.jpg',
     badge: 'Discover',
     title: 'Clubs & Committees Fair',
     text:  'Explore student clubs, cultural groups, and leadership opportunities waiting for you.',

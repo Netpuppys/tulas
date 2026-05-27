@@ -1,14 +1,14 @@
 'use client';
 
 const MEMORIES = [
-  { src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80', caption: 'Welcome Day 2026'           },
-  { src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80', caption: 'First Orientation Session'  },
-  { src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80', caption: 'Making New Friends'         },
-  { src: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80', caption: 'Exploring Campus'           },
-  { src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80', caption: 'Batch 2026 Together'        },
-  { src: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&q=80', caption: 'Hostel Bonding'             },
-  { src: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&q=80', caption: 'Welcome Celebration'        },
-  { src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80', caption: 'Ice-Breaking Activities'    },
+  { src: '/campus-life/tulasfresher/img1.jpg', caption: 'Welcome Day 2026'           },
+  { src: '/campus-life/tulasfresher/img2.jpg', caption: 'First Orientation Session'  },
+  { src: '/campus-life/tulasfresher/img11.jpg', caption: 'Making New Friends'         },
+  { src: '/campus-life/tulasfresher/img10.jpg', caption: 'Exploring Campus'           },
+  { src: '/campus-life/tulasfresher/img4.jpg', caption: 'Batch 2026 Together'        },
+  { src: '/campus-life/tulasfresher/img5.jpg', caption: 'Hostel Bonding'             },
+  { src: '/campus-life/tulasfresher/img6.jpg', caption: 'Welcome Celebration'        },
+  { src: '/campus-life/tulasfresher/img12.jpg', caption: 'Ice-Breaking Activities'    },
 ];
 
 export default function MemoryWall() {

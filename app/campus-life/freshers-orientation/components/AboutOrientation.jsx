@@ -26,7 +26,7 @@ export default function AboutOrientation() {
           style={{ boxShadow: '0 20px 60px rgba(27,45,91,.12)' }}
         >
           <img
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=85"
+            src="/campus-life/tulasfresher/img12.jpg"
             alt="Freshers Welcome"
             className="w-full object-cover transition-transform duration-[600ms] group-hover:scale-[1.05]"
             style={{ height: '600px', maxHeight: '60vw' }}

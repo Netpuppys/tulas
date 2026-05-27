@@ -62,10 +62,10 @@ export default function HomeInternshipSection() {
   </div>
 </section>
 
-<section className="w-full py-14">
+<section className="w-full md:py-14 py-5">
   <div className="max-w-[1200px] mx-auto px-12 md:px-6">
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-16">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-16">
 
       {/* Item 1 */}
       <div className="flex items-center gap-6 order-1">

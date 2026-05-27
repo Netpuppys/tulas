@@ -30,10 +30,10 @@ export default function HomeAlumniSuccessStories() {
   };
 
   return (
-    <section className="w-full py-12">
+    <section className="w-full pb-12 md:mt-5">
       {/* Heading */}
       <div className="px-4 md:px-12">
-        <h3 className="text-[clamp(38px,6vw,36px)] text-center font-extrabold mb-3">
+        <h3 className="text-[clamp(38px,6vw,31px)] text-center font-extrabold mb-3">
           <span className="text-orange-500">Alumini</span>{" "}
           <span className="text-gray-800">Success Stories</span>
         </h3>

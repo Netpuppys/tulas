@@ -45,7 +45,7 @@ function HomeFormBanner() {
   ];
 
   return (
-    <section className="w-full py-6 flex justify-center mt-12">
+    <section className="w-full py-6 flex justify-center mt-2">
     <div className="w-full max-w-8xl mx-auto grid md:grid-cols-[60%_40%] gap-6 px-4">
         {/* LEFT SIDE */}
         <div className="bg-[#d9d9d9] rounded-[28px] p-8 md:p-10">

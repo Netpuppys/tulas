@@ -44,7 +44,7 @@ function HomeStatsAndNews() {
   ];
 
   return (
-    <div className="relative mt-8 md:mt-[3%] flex flex-col justify-center items-center overflow-hidden">
+    <div className="relative mt-0 flex flex-col justify-center items-center overflow-hidden">
 
       {/* BACKGROUND IMAGE */}
       <Image

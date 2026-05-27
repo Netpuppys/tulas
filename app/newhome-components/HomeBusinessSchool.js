@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HomeBusinessSection() {
   return (
-    <section className="bg-white pb-6 mt-5">
+    <section className="bg-white pb-6 mt-3">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col items-center gap-10">
 
