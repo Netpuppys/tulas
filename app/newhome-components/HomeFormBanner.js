@@ -16,7 +16,7 @@ function HomeFormBanner() {
     },
     {
       title: "Department Of Engineering",
-      courses: ["Civil Engineering (CE)", "Computer Science & Engineering (CSE)", "Computer Science & Engineering (AI&ML) ", "Computer Science & Engineering (Cyber Security)", "Computer Science & Engineering (Data Science)", "Electronics & Communication Engineering (ECE)", "Electrical & Electronics Engineering (EEE)", "Mechanical Engineering (ME)", "Master of Technology (M.Tech)", "Diploma in Civil Engineering", "Diploma in Mechanical Engineering", "Diploma in Computer Science Engineering"],
+      courses: ["Civil Engineering (CE)", "Computer Science & Engineering (CSE)", "Computer Science & Engineering (AI&ML) ", "Computer Science & Engineering (Cyber Security)", "Computer Science & Engineering (Data Science)", "Computer Science & Engineering (Fullstack Development)","Electronics & Communication Engineering (ECE)", "Electrical & Electronics Engineering (EEE)", "Mechanical Engineering (ME)", "Master of Technology (M.Tech)", "Diploma in Civil Engineering", "Diploma in Mechanical Engineering", "Diploma in Computer Science Engineering"],
     },
     {
       title: "Department Of Commerce",

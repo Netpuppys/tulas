@@ -62,6 +62,13 @@ function BAJMC() {
           title=<>COMPUTER SCIENCE & ENGINEERING (Data Science)</>
           titleColor={""}
         />
+                <h2
+            className="font-montserrat text-center mt-5 font-extrabold leading-[1.1] text-[#111111] max-[600px]:text-[1.65rem]"
+            style={{ fontSize: 'clamp(1.9rem, 3vw, 1.8rem)' }}
+          >
+            Industry-Oriented B.Tech <br />
+            <em className="text-[#f26522] not-italic">CSE with NBA Accreditation</em>
+          </h2>
         <Program
           content={content}
           heading={heading}

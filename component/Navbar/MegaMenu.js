@@ -51,7 +51,7 @@ const menuData = {
       { name: "B.Tech CSE AI & ML",                    href: "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning" },
       { name: "B.Tech CSE Cyber Security",             href: "/courses/btech/computer-science-engineering-cyber-security" },
       { name: "B.Tech CSE Data Science",               href: "/courses/btech/computer-science-engineering-data-science" },
-      { name: "B.Tech CSE Full Stack Development",     href: "/courses/btech/cse-full-stack-development" },
+      { name: "B.Tech CSE Full Stack Development",     href: "/courses/btech/computer-science" },
     ],
     "Department Of Commerce": [
       { name: "B.Com",         href: "/courses/bcom/" },
