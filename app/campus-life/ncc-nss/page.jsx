@@ -21,7 +21,7 @@ export default function NCCPage() {
       </div>
       <NCCHeroSection/>
       <AboutLeadershipService />
-      <CommunityImpact />
+      {/* <CommunityImpact /> */}
       <NCCExperiences />
       <LeadershipDevelopment />
       <VideoGallery />

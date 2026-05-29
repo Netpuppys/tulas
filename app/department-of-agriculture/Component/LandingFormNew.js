@@ -167,7 +167,7 @@ function LandingFormNew({
 
     axios
       .post(
-        "https://thirdpartyapi.extraaedge.com/api/SaveRequest",
+        "https://publisher.extraaedge.com/api/Webhook/addPublisherLead",
         updatedFormData
       )
       .then(() => {

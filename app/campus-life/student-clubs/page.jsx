@@ -24,7 +24,7 @@ export default function ClubsPage() {
       <VibgyorSection />
       <ClubsShowcase />
       <PersonalityDevelopment />
-      <ClubsGallery />
+      {/* <ClubsGallery /> */}
       <ClubsCTABanner />
       <NewFooter/>
     </main>

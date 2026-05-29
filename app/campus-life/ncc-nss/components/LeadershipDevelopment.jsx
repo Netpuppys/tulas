@@ -28,7 +28,7 @@ export default function LeadershipDevelopment() {
           {/* Image side */}
           <div className="cl-lead-left">
             <img
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1200"
+              src="/campus-life/newncc/img12.jpg"
               alt="Leadership moment"
               className="w-full h-full object-cover"
               style={{ opacity: '.85', mixBlendMode: 'luminosity' }}

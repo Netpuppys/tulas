@@ -2,37 +2,37 @@
 
 const EXPERIENCES = [
   {
-    img:   'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800',
+    img:   '/campus-life/newncc/img3.jpg',
     badge: 'NCC',
     title: 'Annual Training Camps',
     desc:  'Intensive 10-day camps focused on physical fitness, drill training, weapon handling, and leadership exercises in real military environments.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800',
+    img:   '/campus-life/newncc/img7.jpg',
     badge: 'NCC',
     title: 'Precision Drill Training',
     desc:  'Daily practice sessions building discipline, coordination, and synchronization. Our cadets compete at state and national levels.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800',
+    img:   '/campus-life/newncc/img8.jpg',
     badge: 'NSS',
     title: 'Leadership Workshops',
     desc:  'Monthly sessions on communication, conflict resolution, project management, and community mobilization skills.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800',
+    img:   '/campus-life/newncc/img9.jpg',
     badge: 'NSS',
     title: 'Village Immersion Camps',
     desc:  'Seven-day residential programs where students live in villages, understand ground realities, and implement community development projects.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800',
+    img:   '/campus-life/newncc/img10.jpg',
     badge: 'NCC',
     title: 'Adventure & Survival Training',
     desc:  'Rock climbing, trekking, map reading, and survival skills that build courage, endurance, and decision-making under pressure.',
   },
   {
-    img:   'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800',
+    img:   '/campus-life/newncc/img11.jpg',
     badge: 'NSS',
     title: 'Impact Projects',
     desc:  'Student-led initiatives addressing real community challenges—from literacy programs to sanitation drives—creating measurable social impact.',

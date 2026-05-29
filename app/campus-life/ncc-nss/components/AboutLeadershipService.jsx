@@ -63,7 +63,7 @@ export default function AboutLeadershipService() {
             style={{ boxShadow: '0 20px 60px rgba(27,45,91,.15)' }}
           >
             <img
-              src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200"
+              src="/campus-life/newncc/img1.jpg"
               alt="NCC training"
               className="w-full object-cover transition-transform duration-[6000ms] group-hover:scale-[1.08]"
               style={{ height: '520px' }}
@@ -75,7 +75,7 @@ export default function AboutLeadershipService() {
             style={{ boxShadow: '0 16px 48px rgba(27,45,91,.2)', border: '4px solid #fff' }}
           >
             <img
-              src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600"
+              src="/campus-life/newncc/img2.jpg"
               alt="NSS volunteering"
               className="w-full h-full object-cover"
             />

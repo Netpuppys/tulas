@@ -62,7 +62,7 @@ export default function PersonalityDevelopment() {
         {/* Image side */}
         <div className="relative min-h-[500px] max-[960px]:h-[300px]">
           <img
-            src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800"
+            src="/campus-life/studentclub/img5.jpg"
             alt="Student development"
             className="w-full h-full object-cover"
             style={{ position: 'absolute', inset: 0 }}

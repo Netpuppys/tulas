@@ -8,15 +8,15 @@ const VIDEOS = [
 
 // span: 1, 2, or 3  (out of 6 columns)
 const PHOTOS = [
-  { src: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600', span: 2 },
-  { src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400', span: 1 },
-  { src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800', span: 3 },
-  { src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800', span: 3 },
-  { src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600', span: 2 },
-  { src: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400', span: 1 },
-  { src: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400', span: 1 },
-  { src: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600', span: 2 },
-  { src: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800', span: 3 },
+  { src: '/campus-life/newncc/img1.jpg', span: 2 },
+  { src: '/campus-life/newncc/img2.jpg', span: 1 },
+  { src: '/campus-life/newncc/img3.jpg', span: 3 },
+  { src: '/campus-life/newncc/img8.jpg', span: 3 },
+  { src: '/campus-life/newncc/img5.jpg', span: 2 },
+  { src: '/campus-life/newncc/img6.jpg', span: 1 },
+  { src: '/campus-life/newncc/img7.jpg', span: 1 },
+  { src: '/campus-life/newncc/img9.jpg', span: 2 },
+  { src: '/campus-life/newncc/img12.jpg', span: 3 },
 ];
 
 export default function VideoGallery() {
@@ -48,7 +48,7 @@ export default function VideoGallery() {
         </div>
 
         {/* Video cards */}
-        <div className="cl-vid-grid">
+        {/* <div className="cl-vid-grid">
           {VIDEOS.map((v, i) => (
             <div
               key={i}
@@ -70,7 +70,7 @@ export default function VideoGallery() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Photo collage */}
         <div className="cl-photo-collage">

@@ -77,7 +77,7 @@ function FormLandingPage({ course, thankYOu, showCourse = false }) {
     setLoading(true);
 
     axios
-      .post("https://thirdpartyapi.extraaedge.com/api/SaveRequest", formData)
+      .post("https://publisher.extraaedge.com/api/Webhook/addPublisherLead", formData)
       .then(() => {
         setLoading(false);
         window.location.href = thankYOu;

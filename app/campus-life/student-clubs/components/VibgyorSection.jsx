@@ -97,7 +97,7 @@ export default function VibgyorSection() {
               style={{ height: '450px', boxShadow: '0 20px 60px rgba(27,45,91,.15)', border: '8px solid #fff' }}
             >
               <img
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600"
+                src="/campus-life/studentclub/img8.jpg"
                 alt="VIBGYOR student council"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.04]"
               />

@@ -1,6 +1,6 @@
 'use client';
 
-const BG_IMAGE = '/new-campus/bannermain.jpg';
+const BG_IMAGE = '/campus-life/tulasfresher/img10.jpg';
 
 const FLOATS = [
   { icon: '🎓', label: <><strong>500+</strong> New Students</>,    pos: 'top-[18%] left-[8%]',    delay: '0s'  },
@@ -28,7 +28,7 @@ export default function FreshersHeroSection() {
         {/* Gradient overlay */}
         <div
           className="absolute inset-0 z-[1]"
-          style={{ background: 'linear-gradient(135deg,rgba(27,45,91,.92) 0%,rgba(224,107,27,.88) 100%)' }}
+          style={{ background: 'linear-gradient(135deg,rgba(0,31,76,.92) 0%,rgba(0,31,76,.78) 45%,rgba(223,84,0,.65) 100%)' }}
         />
 
         {/* Dot pattern overlay */}
@@ -67,8 +67,8 @@ export default function FreshersHeroSection() {
 
           {/* Title */}
           <h1
-            className="text-white mb-6 leading-[.92] tracking-[.02em]"
-            style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 'clamp(3.2rem,9vw,8.5rem)', textShadow: '0 4px 30px rgba(0,0,0,.4)' }}
+            className="font-black text-white mb-[26px] leading-[.95] tracking-[-0.02em]"
+            style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 'clamp(2rem,8vw,5.5rem)' }}
           >
             Every Journey<br />
             <em className="not-italic block" style={{ color: '#E06B1B', filter: 'drop-shadow(0 2px 10px rgba(224,107,27,.6))' }}>

@@ -47,7 +47,7 @@ export default function StorytellingSection() {
             style={{ height: '500px', boxShadow: '0 20px 60px rgba(27,45,91,.15)' }}
           >
             <img
-              src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800"
+              src="/campus-life/studentclub/img1.jpg"
               alt="Students collaborating"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
             />
@@ -58,7 +58,7 @@ export default function StorytellingSection() {
             style={{ boxShadow: '0 15px 40px rgba(27,45,91,.2)', border: '4px solid #fff' }}
           >
             <img
-              src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400"
+              src="/campus-life/studentclub/img2.jpg"
               alt="Event planning"
               className="w-full h-full object-cover"
             />
