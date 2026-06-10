@@ -6,28 +6,28 @@ const CARDS = [
     tag:   'Industry Sessions',
     title: 'Guest Lectures & Masterclasses',
     desc:  'Industry leaders, entrepreneurs, and experts share insights, experiences, and knowledge that textbooks can\'t teach. From startup stories to tech trends, students gain perspectives that shape their futures.',
-    img:   'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80',
+    img:   '/campus-life/tulasexperience/img2.jpg',
   },
   {
     icon:  '💻',
     tag:   'Hands-On Learning',
     title: 'Workshops & Skill-Building',
     desc:  'From coding bootcamps and design thinking workshops to public speaking and leadership training — practical sessions that build real-world skills through participation and collaboration.',
-    img:   'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
+    img:   '/campus-life/tulasexperience/img6.jpg',
   },
   {
     icon:  '🗣️',
     tag:   'Interactive',
     title: 'Panel Discussions & Q&A Sessions',
     desc:  'Open forums where students engage directly with experts, ask questions, challenge ideas, and participate in conversations that broaden perspectives and deepen understanding.',
-    img:   'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80',
+    img:   '/campus-life/tulasexperience/img8.jpg',
   },
   {
     icon:  '🚀',
     tag:   'Innovation',
     title: 'Hackathons & Innovation Labs',
     desc:  'Intensive innovation sessions where students collaborate, ideate, prototype, and build solutions to real-world problems — learning by doing, failing fast, and iterating.',
-    img:   'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
+    img:   '/campus-life/tulasexperience/img11.jpg',
   },
 ];
 

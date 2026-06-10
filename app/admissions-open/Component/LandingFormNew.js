@@ -13,6 +13,16 @@ import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 import { UtmContext } from "@/component/utmParams";
 
+// ─────────────────────────────────────────────────────────────────────────────
+// STEP 1: Deploy Apps Script as a Web App, then paste the full URL below.
+//
+// The URL looks like:
+//   https://script.google.com/macros/s/AKfycbxXXXXXXXXXXXXXXXXXXXXXXX/exec
+//                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//                                        this whole URL goes below — don't trim it
+// ─────────────────────────────────────────────────────────────────────────────
+const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxOjE3JEAJlP7dbj8ASMBvCJvbHYj2jDtpcDQ95mWFBZKFMR-xVFNfn4K1A4Me2nMIEOw/exec";
+
 export default function LandingFormNew() {
   const { utmParams } = useContext(UtmContext);
   const [formData, setFormData] = useState({
@@ -152,11 +162,51 @@ export default function LandingFormNew() {
         ? searchQuery || "No search Query Available"
         : "Organic Lead Search Query not available",
     };
-    axios
-      .post(
-        "https://publisher.extraaedge.com/api/Webhook/addPublisherLead",
-        updatedFormData
-      )
+
+    // ─── PRIMARY: Post to CRM ────────────────────────────────────────────────
+    const crmPost = axios.post(
+      "https://publisher.extraaedge.com/api/Webhook/addPublisherLead",
+      updatedFormData
+    );
+
+    // ─── BACKUP: Post to Google Sheets (silent fail — never blocks the form) ─
+    // Prepare human-readable values for Google Sheets only
+    const selectedCourse =
+      courses.find((c) => c.id === Number(updatedFormData.Course))?.name || "";
+
+    const selectedCenter =
+      specializations[updatedFormData.Course]?.find(
+        (s) => s.id === Number(updatedFormData.Center)
+      )?.name || "";
+
+    const selectedState =
+      state.find((s) => s.id === Number(updatedFormData.State))?.name || "";
+
+    const selectedCity =
+      cities[updatedFormData.State]?.find(
+        (c) => c.id === Number(updatedFormData.City)
+      )?.name || "";
+
+    const sheetsData = {
+      ...updatedFormData,
+      Course: selectedCourse,
+      Center: selectedCenter,
+      State: selectedState,
+      City: selectedCity,
+    };
+
+    // Google Sheets backup
+    const sheetsBackup = fetch(SHEETS_WEBAPP_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "text/plain",
+      },
+      body: JSON.stringify(sheetsData),
+    }).catch((err) => console.warn("Sheets backup failed:", err));
+
+    // Wait for both, but only CRM failure should alert the user
+    Promise.all([crmPost, sheetsBackup])
       .then(() => {
         setLoading(false);
         setVerified(false);

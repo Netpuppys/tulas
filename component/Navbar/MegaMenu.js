@@ -167,13 +167,14 @@ const simpleMenus = {
     text: "Experience vibrant campus life with clubs, events, sports, and student engagement activities.",
     left: [
       { name: "Dehradun International Film Festival", href: "/campus-life/celebrities" },
-      { name: "Technical Fests",                      href: "/campus-life/technical-fests" },
+      { name: "Leadership Fests",                      href: "/campus-life/leadership-fests" },
       { name: "Sanskriti Cultural Fest",              href: "/campus-life/sanskriti" },
-      { name: "NCC",                                  href: "/campus-life/ncc" },
+      { name: "NCC/NSS",                                  href: "/campus-life/ncc-nss" },
+      { name: "Tulas Experiences",                 href: "/campus-life/tulas-experiences/" },
     ],
     right: [
-      { name: "NSS",                      href: "/campus-life/nss" },
-      { name: "Vibgyor- Student Clubs",   href: "/campus-life/vibgyor" },
+      { name: "Student Clubs",   href: "/campus-life/student-clubs" },
+      { name: "Freshers Orientation",  href: "/campus-life/freshers-orientation/" },
       { name: "Victree- Sports Clubs",    href: "/campus-life/victree" },
       { name: "Prominent Personalities",  href: "/campus-life/prominent-personalities" },
     ],

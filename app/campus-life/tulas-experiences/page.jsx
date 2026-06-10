@@ -25,7 +25,7 @@ export default function ExperiencesPage() {
       <SpontaneousCampusLife />
       <LearningExperiences />
       <CelebrationsFestivals />
-      <VideosStories />
+      {/* <VideosStories /> */}
       <MemoriesGallery />
       <ExperiencesCTABanner />
 

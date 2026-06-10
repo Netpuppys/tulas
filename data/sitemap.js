@@ -274,24 +274,32 @@ const sitemap = [
         linkTo: "/campus-life/celebrities",
       },
       {
-        title: "Technical Fests",
-        linkTo: "/campus-life/technical-fests",
+        title: "Leadership Fests",
+        linkTo: "/campus-life/leadership-fests",
       },
       {
         title: "Sanskriti- Cultural Fest",
         linkTo: "/campus-life/sanskriti",
       },
       {
-        title: "NCC",
-        linkTo: "/campus-life/ncc",
+        title: "NCC / NSS",
+        linkTo: "/campus-life/ncc-nss",
       },
       {
         title: "NSS",
         linkTo: "/campus-life/nss",
       },
       {
-        title: "Vibgyor- Student Clubs",
-        linkTo: "/campus-life/vibgyor",
+        title: "Student Clubs",
+        linkTo: "/campus-life/student-clubs",
+      },
+      {
+        title: "Freshers Orientation",
+        linkTo: "/campus-life/freshers-orientation",
+      },
+      {
+        title: "Tulas Experiences",
+        linkTo: "/campus-life/tulas-experiences",
       },
       {
         title: "Victree- Sports Clubs",

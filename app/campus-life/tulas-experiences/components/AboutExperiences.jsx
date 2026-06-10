@@ -60,13 +60,13 @@ export default function AboutExperiences() {
           <div>
             <div className="cl-ae-collage">
               <div className="cl-ae-img tall">
-                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80" alt="Workshop session" />
+                <img src="/campus-life/tulasexperience/img1.jpg" alt="Workshop session" />
               </div>
               <div className="cl-ae-img">
-                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80" alt="Student celebration" />
+                <img src="/campus-life/tulasexperience/img2.jpg" alt="Student celebration" />
               </div>
               <div className="cl-ae-img">
-                <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80" alt="Campus event" />
+                <img src="/campus-life/tulasexperience/img3.jpg" alt="Campus event" />
               </div>
             </div>
           </div>

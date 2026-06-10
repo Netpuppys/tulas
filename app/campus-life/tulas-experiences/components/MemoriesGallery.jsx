@@ -1,60 +1,76 @@
 'use client';
 
 const MEMORIES = [
-  { img: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80', caption: 'Creative Workshop Vibes'  },
-  { img: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80', caption: 'Festival Celebrations'     },
-  { img: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&q=80', caption: 'Squad Goals'              },
-  { img: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80', caption: 'Behind The Scenes'        },
-  { img: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80', caption: 'Candid Campus Moments'    },
-  { img: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80', caption: 'Friendship Goals'         },
-  { img: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&q=80', caption: 'Pure Joy'                 },
-  { img: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&q=80', caption: 'Learning Together'        },
-  { img: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&q=80', caption: 'Campus Energy'            },
-  { img: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80', caption: 'Community Spirit'         },
+  { src: '/campus-life/tulasfresher/img1.jpg', caption: 'Welcome Day 2026'           },
+  { src: '/campus-life/tulasexperience/img2.jpg', caption: 'First Orientation Session'  },
+  { src: '/campus-life/tulasfresher/img11.jpg', caption: 'Making New Friends'         },
+  { src: '/campus-life/tulasexperience/img10.jpg', caption: 'Exploring Campus'           },
+  { src: '/campus-life/tulasfresher/img4.jpg', caption: 'Batch 2026 Together'        },
+  { src: '/campus-life/tulasexperience/img5.jpg', caption: 'Hostel Bonding'             },
+  { src: '/campus-life/tulasfresher/img6.jpg', caption: 'Welcome Celebration'        },
+  { src: '/campus-life/tulasexperience/img7.jpg', caption: 'Ice-Breaking Activities'    },
 ];
 
 export default function MemoriesGallery() {
   return (
     <>
-      <style dangerouslySetInnerHTML={{__html:`.cl-mem-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}.cl-mem-card{position:relative;background:#fff;border-radius:12px;padding:8px;box-shadow:0 8px 28px rgba(0,31,76,.1);transition:all .4s;transform:rotate(-2deg);cursor:default}.cl-mem-card:nth-child(even){transform:rotate(2deg)}.cl-mem-card:hover{transform:rotate(0deg) translateY(-12px) scale(1.05);box-shadow:0 24px 64px rgba(0,31,76,.15);z-index:10}.cl-mem-img{position:relative;overflow:hidden;border-radius:8px;height:260px}.cl-mem-img img{width:100%;height:100%;object-fit:cover;filter:contrast(1.04)}@media(max-width:1200px){.cl-mem-grid{grid-template-columns:repeat(4,1fr)}}@media(max-width:768px){.cl-mem-grid{grid-template-columns:repeat(2,1fr)}}`}} />
+      {/* Scrapbook tape pseudo-element + card tilt variants */}
+      <style dangerouslySetInnerHTML={{__html:`.cl-mem-card{transform:rotate(-2deg)}.cl-mem-card:nth-child(even){transform:rotate(2deg)}.cl-mem-card:hover{transform:rotate(0deg) translateY(-8px) scale(1.05);box-shadow:0 16px 40px rgba(224,107,27,.4);z-index:10}.cl-mem-card::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%) rotate(-2deg);width:80px;height:25px;background:rgba(255,255,255,.3);border-left:1px dashed rgba(0,0,0,.1);border-right:1px dashed rgba(0,0,0,.1);z-index:2}`}} />
 
       <section
-        className="py-[110px] px-[7%] max-[768px]:py-[70px] max-[768px]:px-[5%]"
-        style={{ background: 'linear-gradient(to bottom,#f8f9fb 0%,#fff 100%)' }}
+        id="gallery"
+        className="relative py-[100px] max-[960px]:py-[70px] max-[600px]:py-[60px] px-[7%] max-[600px]:px-[5%] overflow-hidden"
+        style={{ background: '#1B2D5B' }}
       >
-        {/* Header */}
-        <div className="mb-[60px]">
-          <div className="inline-flex items-center gap-3 text-[.72rem] font-extrabold uppercase tracking-[.18em] mb-[18px]" style={{ color: '#DF5400' }}>
-            <span className="block w-[45px] h-[2px] flex-shrink-0" style={{ background: '#DF5400' }} />
-            Living Archive
-          </div>
-          <h2
-            className="font-black leading-[.98] tracking-[-0.015em] mb-5"
-            style={{ fontFamily: "'Montserrat',sans-serif", fontSize: 'clamp(2.5rem,5vw,4.8rem)', color: '#001F4C' }}
-          >
-            Memories{' '}
-            <em className="not-italic" style={{ color: '#DF5400' }}>That Stay.</em>
-          </h2>
-          <p className="text-[1.15rem] leading-[1.8] max-w-[720px] font-medium" style={{ color: '#4a5568' }}>
-            A scrapbook of campus life — candid moments, spontaneous celebrations, and experiences that become the stories we carry forward.
-          </p>
-        </div>
+        {/* Radial accent */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ backgroundImage: 'radial-gradient(circle at 80% 20%,rgba(224,107,27,.12) 0%,transparent 60%)' }}
+        />
 
-        {/* Scrapbook grid */}
-        <div className="cl-mem-grid">
-          {MEMORIES.map((m, i) => (
-            <div key={i} className="cl-mem-card">
-              <div className="cl-mem-img">
-                <img src={m.img} alt={m.caption} />
-              </div>
-              <div
-                className="px-2 pt-3 pb-2 text-[.82rem] font-semibold text-center leading-[1.4]"
-                style={{ color: '#001F4C' }}
-              >
-                {m.caption}
-              </div>
+        <div className="relative z-[2]">
+          {/* Header — centred */}
+          <div className="text-center max-w-[800px] mx-auto mb-[60px]">
+            <div className="inline-flex items-center gap-[10px] text-[0.75rem] font-bold text-[#E06B1B] uppercase tracking-[.15em] mb-4">
+              <span className="block w-[30px] h-[3px] bg-[#E06B1B] rounded-[2px] flex-shrink-0" />
+              Captured Moments
             </div>
-          ))}
+            <h2
+              className="text-white mb-5 leading-[.95] tracking-[.01em]"
+              style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 'clamp(2.8rem,5vw,5.5rem)' }}
+            >
+              A Scrapbook Of<br />
+              <em className="not-italic" style={{ color: '#E06B1B' }}>First Memories</em>
+            </h2>
+            <p className="text-[1.05rem] leading-[1.8] max-w-[650px] mx-auto" style={{ color: 'rgba(255,255,255,.65)' }}>
+              Every smile, every interaction, every moment of discovery — these are the memories that mark the beginning of your Tula&apos;s journey.
+            </p>
+          </div>
+
+          {/* Gallery grid */}
+          <div className="grid grid-cols-4 max-[1100px]:grid-cols-3 max-[760px]:grid-cols-2 max-[480px]:grid-cols-1 gap-5">
+            {MEMORIES.map((mem, i) => (
+              <div
+                key={i}
+                className="cl-mem-card relative bg-white rounded-[12px] overflow-hidden p-3 cursor-pointer transition-all duration-[400ms]"
+                style={{ boxShadow: '0 8px 24px rgba(0,0,0,.3)' }}
+              >
+                <div className="w-full h-[260px] rounded-[8px] overflow-hidden">
+                  <img
+                    src={mem.src}
+                    alt={mem.caption}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* <div
+                  className="pt-3 pb-2 text-center text-[0.88rem] font-semibold"
+                  style={{ color: '#1B2D5B' }}
+                >
+                  {mem.caption}
+                </div> */}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
