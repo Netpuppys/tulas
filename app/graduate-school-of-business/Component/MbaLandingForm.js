@@ -14,6 +14,28 @@ import formPopup from "../../../public/Homepage/aboutTulas/formPopup.png";
 import OtpInput from "react-otp-input";
 import { ThreeDots } from "react-loader-spinner";
 import { UtmContext } from "@/component/utmParams";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STEP 1: Deploy Apps Script as a Web App, then paste the full URL below.
+//
+// The URL looks like:
+//   https://script.google.com/macros/s/AKfycbxXXXXXXXXXXXXXXXXXXXXXXX/exec
+//                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//                                        this whole URL goes below — don't trim it
+// ─────────────────────────────────────────────────────────────────────────────
+const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxOjE3JEAJlP7dbj8ASMBvCJvbHYj2jDtpcDQ95mWFBZKFMR-xVFNfn4K1A4Me2nMIEOw/exec";
+
+// Human-readable labels for the hardcoded Center options in this form
+const CENTER_NAMES = {
+  49: "MBA",
+  30: "MBA-AgriBusiness",
+  33: "MBA-Finance",
+  34: "MBA-HR",
+  35: "MBA-IB",
+  125: "MBA - Digital Marketing",
+  31: "MBA-Business Analytics",
+};
+
 function MbaLandingForm({
   course,
   thankYOu,
@@ -165,11 +187,43 @@ function MbaLandingForm({
         : "Organic Lead Search Query not available",
     };
 
-    axios
-      .post(
-        "https://publisher.extraaedge.com/api/Webhook/addPublisherLead",
-        updatedFormData
-      )
+    // ─── PRIMARY: Post to CRM ────────────────────────────────────────────────
+    const crmPost = axios.post(
+      "https://publisher.extraaedge.com/api/Webhook/addPublisherLead",
+      updatedFormData
+    );
+
+    // ─── BACKUP: Post to Google Sheets (silent fail — never blocks the form) ─
+    // Prepare human-readable values for Google Sheets only
+    const selectedCenter = CENTER_NAMES[Number(updatedFormData.Center)] || "";
+
+    const selectedState =
+      state.find((s) => s.id === Number(updatedFormData.State))?.name || "";
+
+    const selectedCity =
+      cities[updatedFormData.State]?.find(
+        (c) => c.id === Number(updatedFormData.City)
+      )?.name || "";
+
+    const sheetsData = {
+      ...updatedFormData,
+      Center: selectedCenter,
+      State: selectedState,
+      City: selectedCity,
+    };
+
+    // Google Sheets backup
+    const sheetsBackup = fetch(SHEETS_WEBAPP_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "text/plain",
+      },
+      body: JSON.stringify(sheetsData),
+    }).catch((err) => console.warn("Sheets backup failed:", err));
+
+    // Wait for both, but only CRM failure should alert the user
+    Promise.all([crmPost, sheetsBackup])
       .then(() => {
         setLoading(false);
         setVerified(false);
@@ -267,7 +321,7 @@ function MbaLandingForm({
         </h3>
 
         <p className="text-gray-600 text-sm font-light md:text-base mb-8 hidden">
-          Join Tula’s to move forward with complete support from our admissions team.
+          Join Tula's to move forward with complete support from our admissions team.
         </p>
       </div>
       <div className="w-full flex flex-col justify-center items-center">
@@ -276,7 +330,7 @@ function MbaLandingForm({
           Get the skills. Gain the edge.
           <br />
           <span className="text-[#007A83]">
-            Own the future with an MBA from Tula’s.
+            Own the future with an MBA from Tula's.
           </span>
         </h1> */}
         <div
@@ -312,7 +366,7 @@ function MbaLandingForm({
             >
               <IoLocation className="min-w-[16px] h-[16px]" />
               Tula's Institute, Dhoolkot Near Selaqui, Dhulkot Rd,
-              Dehradun, Uttarakhand
+              Dehradun, Uttarakhand
             </a>
             <div className="w-full flex justify-end">
               <Image src={tulasLogo} alt="" className="mt-4 max-w-[114px]" />
@@ -439,7 +493,7 @@ function MbaLandingForm({
                     </option>
                   ))}
               </select>
-                
+
               {showCourse && (
                 <select
                   value={formData.Course}
