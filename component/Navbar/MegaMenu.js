@@ -12,6 +12,7 @@ import whatsapp from "../../public/Components/Navbar/whatsapp.png";
 import logo360 from "../../public/Components/Navbar/logo360.png";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import { UtmContext } from "../utmParams";
+import FormPopup from "../formPopup";
 
 
 
@@ -298,6 +299,7 @@ export default function MegaMenu() {
   const [expandedResearch, setExpandedResearch] = useState(null);
   const [activeTopStrip, setActiveTopStrip] = useState(null);
     const { utmParams } = useContext(UtmContext);
+    const [formPopup, setFormPopup] = useState(false);
   
 
   /* Observe only Layer 1 (top strip) leaving viewport */
@@ -416,13 +418,7 @@ export default function MegaMenu() {
             </div>
 
             <div className="flex items-center gap-3 flex-shrink-0">
-              <a onClick={() => {
-  const el = document.getElementById("Homeform");
-  if (el) {
-    const top = el.getBoundingClientRect().top + window.scrollY - 120;
-    window.scrollTo({ top, behavior: "smooth" });
-  }
-}}
+              <a onClick={() => setFormPopup(true)}
  className="flex items-center gap-3 bg-[#263145] text-white rounded-full px-5 py-2.5 cursor-pointer hover:bg-[#1c2538] transition-colors select-none">
                 <PhoneIcon />
                 <div className="leading-none">
@@ -756,7 +752,7 @@ export default function MegaMenu() {
                   </a>
                 </div>
               </>
-          
+          {formPopup && <FormPopup formPopup={formPopup} setFormPopup={setFormPopup} />}
 
     </header>
   );

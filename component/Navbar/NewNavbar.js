@@ -22,6 +22,7 @@ import NavbarDesktop from "./Component/NavbarDesktop";
 import NavbarMobile from "./Component/NavbarMobile";
 import NewNavbarMobile from "./Component/NewNavbarMobile";
 
+
 function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
   const [isChecked, setIsChecked] = useState(false);
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -33,6 +34,7 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
   const { utmParams } = useContext(UtmContext);
   const [showBottomBar, setShowBottomBar] = useState(true);
   const [showStickyBar, setShowStickyBar] = useState(true);
+  
 
   useEffect(() => {
     if (!scroled) {
@@ -299,13 +301,7 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
       {/* Mobile sticky bottom strip - Enquire Now & Apply Now */}
 <div className="fixed bottom-0 left-0 w-full z-[9998] mdNavbar:hidden pointer-events-auto flex">
   <button
-    onClick={() => {
-  const el = document.getElementById("Homeform");
-  if (el) {
-    const top = el.getBoundingClientRect().top + window.scrollY - 80;
-    window.scrollTo({ top, behavior: "smooth" });
-  }
-}}
+    onClick={() => setFormPopup(true)}
     className="flex-1 flex items-center justify-center gap-2 bg-white text-orange-500 border-t-2 border-r border-orange-400 py-2 text-sm font-bold uppercase tracking-wide"
   >
     <SiGoogleforms className="text-base" />
@@ -319,7 +315,10 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
   Call Now
 </button>
 </div>
+          {formPopup && <FormPopup formPopup={formPopup} setFormPopup={setFormPopup} />}
+
     </div>
+    
   );
 }
 

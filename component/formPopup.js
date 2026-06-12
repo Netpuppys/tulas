@@ -17,15 +17,15 @@ function FormPopup({ formPopup, setFormPopup, pdf }) {
             <h3 className="text-[4vw] font-[CarotSlab] font-black tracking-wider text-white">
               <span className="border-b border-[#FFF]">YOUR DREAMS</span>
               <br />
-              <span className="text-[#007A83]">BEGIN HERE</span>
+              <span className="text-[#e0500e]">BEGIN HERE</span>
             </h3>
           </div>
           <div className="shadow-2xl relative w-[95%] md:w-full max-w-[480px] pointer-events-auto">
             <button
               onClick={() => setFormPopup(false)}
-              className="p-2 bg-[#007A83] text-xl text-white aspect-square rounded-full absolute -translate-y-1/2 right-2"
+              className="p-2 bg-[#e0500e] text-xl text-white aspect-square rounded-full absolute -translate-y-1/2 right-2"
             >
-              <IoClose />
+              <IoClose/>
             </button>
             <FormEnquire formPopup={formPopup} pdf={pdf} />
           </div>
