@@ -82,13 +82,13 @@ const menuData = {
   postgraduate: {
     "School Of Management": [
       { name: "MBA",                        href: "/courses/mba" },
-      { name: "MBA Marketing",              href: "/courses/mba" },
-      { name: "MBA Human Resource Mgmt.",   href: "/courses/mba" },
-      { name: "MBA International Business", href: "/courses/mba" },
-      { name: "MBA Finance",                href: "/courses/mba" },
-      { name: "MBA Agri-Business Mgmt.",    href: "/courses/mba" },
-      { name: "MBA Digital Marketing",      href: "/courses/mba" },
-      { name: "MBA Business Analytics",     href: "/courses/mba" },
+      { name: "MBA Marketing",              href: "/courses/mba/marketing" },
+      { name: "MBA Human Resource Mgmt.",   href: "/courses/mba/human-resource-managment" },
+      { name: "MBA International Business", href: "/courses/mba/international-business" },
+      { name: "MBA Finance",                href: "/courses/mba/finance" },
+      { name: "MBA Agri-Business Mgmt.",    href: "/courses/mba/agri-business" },
+      { name: "MBA Digital Marketing",      href: "/courses/mba/digital-marketing" },
+      { name: "MBA Business Analytics",     href: "/courses/mba/business-analytics" },
     ],
     "Department Of Engineering": [
       { name: "M.Tech", href: "/mtech" },

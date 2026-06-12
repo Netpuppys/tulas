@@ -158,6 +158,40 @@ const sitemap = [
           {
             title: "MBA",
             linkTo: "/courses/mba",
+            thirdNestedLinks: [
+              {
+                title: "Human Resource Managment",
+                linkTo: "/courses/mba/human-resource-managment",
+              },
+              {
+                title: "Agri-Business Management",
+                linkTo: "/courses/mba/agri-business",
+              },
+              {
+                title: "Business Analytics",
+                linkTo:
+                  "/courses/mba/business-analytics",
+              },
+              {
+                title: "Marketing",
+                linkTo:
+                  "/courses/mba/marketing",
+              },
+              {
+                title: "Digital Marketing",
+                linkTo:
+                  "/courses/mba/digital-marketing",
+              },
+              {
+                title: "Finance",
+                linkTo: "/courses/mba/finance",
+              },
+              {
+                title: "International Business ",
+                linkTo: "/courses/mba/international-business",
+              },
+              
+            ],
           },
         ],
       },
