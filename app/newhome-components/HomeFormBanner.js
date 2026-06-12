@@ -162,9 +162,9 @@ function HomeFormBanner() {
 
         {/* RIGHT FORM */}
         <div className="w-full">
-          <div className="">
+          <div className="" id="Homeform">
             <LandingFormNew
-              formHeading={"Start Your Tulas Application"}
+              formHeading={"Apply Now"}
               thankYOu={`/admissions-open/thank-you/${utmParams}`}
             />
           </div>

@@ -344,8 +344,8 @@ const sheetsBackup = fetch(SHEETS_WEBAPP_URL, {
             onSubmit={handleSubmit}
           >
             <h3 className="text-[clamp(20px,6vw,26px)] text-center font-semibold mb-3 pt-6">
-              <span className="text-orange-500">Start</span>{" "}
-              <span className="text-gray-800 font-medium">Your Tulas Application</span>
+              <span className="text-orange-500">Apply</span>{" "}
+              <span className="text-gray-800 font-medium">Now</span>
             </h3>
             <input
               type="text"

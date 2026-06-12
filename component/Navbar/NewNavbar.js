@@ -252,14 +252,14 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
       {!isChecked && (
         <>
           {showStickyBar && (
-            <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[92%] z-50 mdNavbar:hidden pointer-events-auto">
+            <div className="fixed bottom-12 left-1/2 -translate-x-1/2 w-[92%] z-50 mdNavbar:hidden pointer-events-auto">
               <div className="flex items-center justify-between px-4 py-3 rounded-full border-2 border-gray-300 bg-white shadow-lg">
                 <a
-                  href="tel:+91-9837983721"
+                  href="/apply-now"
                   className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold"
                 >
-                  <IoCall className="text-lg" />
-                  CALL NOW
+                  <PiPencilSimpleLineLight className="text-lg" />
+                  Apply Now
                 </a>
                 <button
                   onClick={() =>
@@ -296,6 +296,29 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
           )}
         </>
       )}
+      {/* Mobile sticky bottom strip - Enquire Now & Apply Now */}
+<div className="fixed bottom-0 left-0 w-full z-[9998] mdNavbar:hidden pointer-events-auto flex">
+  <button
+    onClick={() => {
+  const el = document.getElementById("Homeform");
+  if (el) {
+    const top = el.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+}}
+    className="flex-1 flex items-center justify-center gap-2 bg-white text-orange-500 border-t-2 border-r border-orange-400 py-2 text-sm font-bold uppercase tracking-wide"
+  >
+    <SiGoogleforms className="text-base" />
+    Enquire Now
+  </button>
+  <button
+  onClick={() => window.location.href = "tel:+91-9837983721"}
+  className="flex-1 flex items-center justify-center gap-2 bg-orange-500 text-white border-t-2 border-orange-500 py-3 text-sm font-bold uppercase tracking-wide"
+>
+  <IoCall className="text-base" />
+  Call Now
+</button>
+</div>
     </div>
   );
 }
