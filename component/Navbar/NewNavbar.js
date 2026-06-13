@@ -302,7 +302,7 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
 <div className="fixed bottom-0 left-0 w-full z-[9998] mdNavbar:hidden pointer-events-auto flex">
   <button
     onClick={() => setFormPopup(true)}
-    className="flex-1 flex items-center justify-center gap-2 bg-white text-orange-500 border-t-2 border-r border-orange-400 py-2 text-sm font-bold uppercase tracking-wide"
+    className="flex-1 flex items-center justify-center gap-2 bg-orange-500 text-white border-t-2 border-r border-orange-400 py-2 text-sm font-bold uppercase tracking-wide"
   >
     <SiGoogleforms className="text-base" />
     Enquire Now

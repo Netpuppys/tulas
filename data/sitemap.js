@@ -457,10 +457,10 @@ const sitemap = [
         title: "Pay Fee Online",
         linkTo: "/pay-fee-online",
       },
-      {
-        title: "E-Prospectus",
-        linkTo: "/download-e-prospectus",
-      },
+      // {
+      //   title: "E-Prospectus",
+      //   linkTo: "/download-e-prospectus",
+      // },
     ],
   },
   {

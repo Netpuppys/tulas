@@ -272,10 +272,10 @@ function AdmissionPage() {
           </div>
         </div>
       </div>
-      <div ref={prospectusRef}>
+      {/* <div ref={prospectusRef}>
         <Vision sections={sectionsData} />
-      </div>
-      <div className="flex items-center justify-center">
+      </div> */}
+      {/* <div className="flex items-center justify-center">
         <button
           onClick={() => {
             window.location.href = "";
@@ -284,7 +284,7 @@ function AdmissionPage() {
         >
           Download E-Prospectus
         </button>
-      </div>
+      </div> */}
       <div className="w-full h-fit z-40">
         <NewFooter/>
       </div>

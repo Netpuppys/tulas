@@ -166,7 +166,7 @@ const simpleMenus = {
       { name: "Admission Procedure", href: "/admission-procedure" },
       { name: "Bank Details", href: "/bank-details" },
       { name: "Pay Fee Online", href: "/pay-fee-online" },
-      { name: "E-Prospectus", href: "/download-e-prospectus" },
+      // { name: "E-Prospectus", href: "/download-e-prospectus" },
     ],
     right: [],
   },
