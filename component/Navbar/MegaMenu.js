@@ -347,7 +347,7 @@ export default function MegaMenu() {
             <span className="text-orange-500 text-base leading-none">•</span>
             <span className="tracking-wide">Excellence in Education Since 2006</span>
           </div>
-
+                
           <div className="flex items-center gap-7 text-gray-600 text-xs font-semibold tracking-widest">
             {topStripItems.map((item) => (
               <div
@@ -409,13 +409,13 @@ export default function MegaMenu() {
         {/* ===== LAYER 2 — MAIN HEADER (orange) ===== */}
         <div className="w-full bg-[#e0500e]">
           <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-            <div className="flex items-center gap-5 flex-shrink-0">
+            <Link href="/" className="flex items-center gap-5 flex-shrink-0">
               <Image src={logo} alt="Tulas Institute Dehradun" className="h-[68px] w-auto object-contain" />
               <div className="hidden md:flex flex-col justify-center text-white">
                 <span className="text-[14px] font-semibold leading-tight tracking-wide">20 Years of</span>
                 <span className="text-[14px] font-semibold leading-tight tracking-wide">Academic Excellence</span>
               </div>
-            </div>
+            </Link>
 
             <div className="flex items-center gap-3 flex-shrink-0">
               <a onClick={() => setFormPopup(true)}

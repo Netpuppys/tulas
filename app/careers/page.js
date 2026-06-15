@@ -12,6 +12,9 @@ import { ThreeDots } from "react-loader-spinner";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 const CareersForm = () => {
   const [formData, setFormData] = useState({
@@ -439,7 +442,13 @@ const CareersForm = () => {
 function Careers() {
   return (
     <div className="w-full h-fit">
-      <Navbar />
+            <div className="hidden md:block">
+              <MegaMenu />
+            </div>
+            
+            <div className="block md:hidden">
+              <NewNavbar fullBanner={true}/>
+            </div>
       <Banner
         title={"Career"}
         image={bannerImage}
@@ -496,7 +505,7 @@ function Careers() {
       <ToastContainer closeButton closeOnClick={true} />
 
       <div className="w-full">
-        <Footer />
+        <NewFooter/>
       </div>
     </div>
   );

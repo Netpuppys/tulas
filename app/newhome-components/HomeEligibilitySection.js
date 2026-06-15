@@ -1,5 +1,7 @@
 "use client";
 import { IoCheckmarkSharp } from "react-icons/io5";
+import Link from "next/link";
+
 
 export default function HomeEligibilitySection() {
   return (
@@ -70,17 +72,11 @@ export default function HomeEligibilitySection() {
       <div className="font-bold text-[46px]">Opportunities</div>
     </h4>
 
-    <button
-      onClick={() =>
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        })
-      }
+    <Link href="/apply-now"
       className="bg-[#f3d1b2] text-gray-900 px-2 py-2 mt-6 rounded-full text-lg font-medium shadow-xl hover:scale-105 transition"
     >
       Begin Your Application
-    </button>
+    </Link>
 
   </div>
   
