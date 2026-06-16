@@ -31,12 +31,12 @@ function Disclaimer() {
 
 <div className="mx-auto max-w-5xl pt-12 pb-10 px-4">
   {/* Page Title */}
-  {/* <div className="text-center mb-10">
+  <div className="text-center mb-10">
         <p className="font-[carotSlab] text-[2.6rem] font-medium text-orange-500 text-center">
-          Disclaimer
+          Terms and Conditions
         </p>
     <div className="mx-auto mt-2 h-1 w-16 bg-yellow-500 rounded" />
-  </div> */}
+  </div>
 
   {/* Card */}
   <div className="rounded-xl border border-gray-200 bg-white shadow-sm">
