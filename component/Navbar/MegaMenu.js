@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef, useContext } from "react";
 import logo from "../../public/Components/Footer/tulaslogo.png";
+import year from "../../public/Components/Footer/20year.png";
 import NAAC from "../../public/Components/Navbar/naacorange.png";
 import Organogram from "../../public/FooterPDf/Organogram.pdf";
 import Plagiarism from "../../public/research/plagiarism-policy.pdf";
@@ -411,10 +412,11 @@ export default function MegaMenu() {
           <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
             <Link href="/" className="flex items-center gap-5 flex-shrink-0">
               <Image src={logo} alt="Tulas Institute Dehradun" className="h-[68px] w-auto object-contain" />
-              <div className="hidden md:flex flex-col justify-center text-white">
+              <Image src={year} alt="Tulas Institute Dehradun" className="h-[48px] w-auto object-contain" />
+              {/* <div className="hidden md:flex flex-col justify-center text-white">
                 <span className="text-[14px] font-semibold leading-tight tracking-wide">20 Years of</span>
                 <span className="text-[14px] font-semibold leading-tight tracking-wide">Academic Excellence</span>
-              </div>
+              </div> */}
             </Link>
 
             <div className="flex items-center gap-3 flex-shrink-0">

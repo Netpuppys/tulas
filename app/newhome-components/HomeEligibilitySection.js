@@ -9,7 +9,7 @@ export default function HomeEligibilitySection() {
       <div className="w-full max-w-6xl px-3">
 
         {/* Wrapper */}
-        <div className="flex flex-col md:flex-row gap-8 md:items-stretch">
+        <div className="flex flex-col md:flex-row gap-8 md:items-center">
 
           {/* LEFT SECTION */}
           <div className="md:w-1/2 w-full flex">
@@ -26,7 +26,7 @@ export default function HomeEligibilitySection() {
               </h2>
 
               {/* Description */}
-              <p className="text-black text-[15px] md:text-[17px] leading-relaxed mb-5 md:text-left">
+              <p className="text-black text-[15px] md:text-[17px] leading-relaxed mb-5 text-center">
                 At Tulas, a future-focused curriculum blends industry relevance, AI-driven learning, and innovation-led thinking, helping students build the skills, confidence, and clarity to lead, adapt, and succeed in a rapidly evolving world. Join Tulas if you are ready to move beyond learning into real-world impact.
               </p>
 
@@ -59,28 +59,15 @@ export default function HomeEligibilitySection() {
           </div>
 
           {/* CTA SECTION */}
-<div className="md:w-1/2 w-full flex">
-  <div className="bg-orange-500 rounded-[28px] px-6 py-5 text-center text-white w-full flex flex-col justify-center">
-
-    <h4 className="text-[18px] md:text-3xl font-light leading-relaxed space-y-3">
-      <div>Shape Your Future</div>
-
-      <div className="font-bold text-[46px]">Career</div>
-
-      <div>Step Into New</div>
-
-      <div className="font-bold text-[46px]">Opportunities</div>
-    </h4>
-
-    <Link href="/apply-now"
-      className="bg-[#f3d1b2] text-gray-900 px-2 py-2 mt-6 rounded-full text-lg font-medium shadow-xl hover:scale-105 transition"
-    >
-      Begin Your Application
-    </Link>
-
-  </div>
-  
-</div>
+          <div className="md:w-1/2 w-full flex items-start">
+            <Link href="/apply-now" className="w-full block rounded-[28px] overflow-hidden hover:opacity-90 transition">
+              <img
+                src="/Components/Banner/orangebox.png"
+                alt="Shape Your Future Career - Begin Your Application"
+                className="w-full h-auto rounded-[28px]"
+              />
+            </Link>
+          </div>
 
         </div>
 

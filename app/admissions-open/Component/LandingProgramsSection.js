@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const data = {
   ug: {
-    tabs: ["B Tech", "BBA", "BCA", "BCom", "B.Com Hons.", "BSc Agriculture", "B.Pharma", "BAJMC", "BA (Hons.) JMC", "Applied Sci. & Humanities",],
+    tabs: ["B Tech", "BBA", "BCA", "BCom", "B.Com Hons.", "BSc Agriculture", "B.Pharma", "BAJMC", "BA (Hons.) JMC", "Applied Sci. & Humanities", "LLB"],
     courses: {
       "B Tech": [
         {
@@ -167,10 +167,36 @@ const data = {
           eligibility: "10+2",
         },
       ],
+      LLB: [
+        {
+          title: "LLB",
+          img: "/school-of-law/law/criminal-law-opt.png",
+          desc: "This specialisation focuses on developing advanced expertise in full stack software engineering with AI integrated across application architecture. The curriculum covers advanced front-end and back-end frameworks, system design, scalable architectures, cloud deployment and software engineering practices, along with AI-driven application development and automation.",
+          duration: "3 years",
+          eligibility: "10+2",
+          href: "/courses/llb/",
+        },
+        {
+          title: "BBA LLB",
+          img: "/school-of-law/law/constitutional-law.png",
+          desc: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development.",
+          duration: "3 years",
+          eligibility: "10+2",
+          href: "/courses/llb/",
+        },
+        {
+          title: "BA LLB",
+          img: "/school-of-law/law/contract-commercial-law.png",
+          desc: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development.",
+          duration: "3 years",
+          eligibility: "10+2",
+          href: "/courses/llb/",
+        },
+      ],
     },
   },
   pg: {
-    tabs: ["M.Tech", "MBA", "MCA"],
+    tabs: ["M.Tech", "MBA", "MCA","M.sc Agronomy"],
     courses: {
       MBA: [
         {
@@ -260,6 +286,15 @@ const data = {
           desc: "M.Tech in Thermal Engineering is a postgraduate program specializing in energy transfer, heat transfer, and fluid dynamics, often focusing on renewable energy and HVAC systems",
           duration: "2 years",
           eligibility: "B.Tech/B.E. in a relevant field",
+        },
+      ],
+      "M.sc Agronomy": [
+        {
+          title: "M.sc Agronomy",
+          img: "/graduate-school-of-business/bcom/specialdesktop5.png",
+          desc: "A future-focused agriculture degree rooted in science and field application Built on the strength of NAAC A+ accreditation and an outcome-driven academic framework, the program combines academic learning with practical exposure, case-based learning and industry-relevant training.",
+          duration: "2 years",
+          eligibility: "B.sc Agriculture",
         },
       ],
     },
