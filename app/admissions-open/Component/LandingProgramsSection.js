@@ -196,7 +196,7 @@ const data = {
     },
   },
   pg: {
-    tabs: ["M.Tech", "MBA", "MCA","M.sc."],
+    tabs: ["M.Tech", "MBA", "MCA","M.Sc."],
     courses: {
       MBA: [
         {
@@ -288,7 +288,7 @@ const data = {
           eligibility: "B.Tech/B.E. in a relevant field",
         },
       ],
-      "M.sc.": [
+      "M.Sc.": [
         {
           title: "M.sc Agronomy",
           img: "/graduate-school-of-business/bcom/specialdesktop5.png",
