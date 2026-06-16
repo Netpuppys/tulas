@@ -180,7 +180,7 @@ const data = {
           title: "BBA LLB",
           img: "/school-of-law/law/constitutional-law.png",
           desc: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development.",
-          duration: "3 years",
+          duration: "5 years",
           eligibility: "10+2",
           href: "/courses/llb/",
         },
@@ -188,7 +188,7 @@ const data = {
           title: "BA LLB",
           img: "/school-of-law/law/contract-commercial-law.png",
           desc: "This specialisation focuses on developing advanced knowledge and application of artificial intelligence and machine learning for complex problem-solving. The curriculum covers advanced machine learning algorithms, deep learning, data modelling, optimisation techniques and AI system development.",
-          duration: "3 years",
+          duration: "5 years",
           eligibility: "10+2",
           href: "/courses/llb/",
         },
@@ -196,7 +196,7 @@ const data = {
     },
   },
   pg: {
-    tabs: ["M.Tech", "MBA", "MCA","M.sc Agronomy"],
+    tabs: ["M.Tech", "MBA", "MCA","M.sc."],
     courses: {
       MBA: [
         {
@@ -288,7 +288,7 @@ const data = {
           eligibility: "B.Tech/B.E. in a relevant field",
         },
       ],
-      "M.sc Agronomy": [
+      "M.sc.": [
         {
           title: "M.sc Agronomy",
           img: "/graduate-school-of-business/bcom/specialdesktop5.png",
