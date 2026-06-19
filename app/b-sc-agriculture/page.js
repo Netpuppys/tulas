@@ -26,6 +26,9 @@ import CrouselBackground from "../../public/courses/bjmc/CrouselBackground.png";
 import exploreCrouselBackground from "../../public/courses/bjmc/exploreCrouselBackground.png";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function BSCAgriculture() {
   return (
     <>
@@ -39,7 +42,14 @@ function BSCAgriculture() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+                      <MegaMenu />
+                    </div>
+                    
+                    <div className="block md:hidden">
+                      <NewNavbar fullBanner={true}/>
+                    </div>
         <BannerProgram
           image={BannerImg}
           title=<>BSc. Agriculture</>
@@ -75,7 +85,7 @@ function BSCAgriculture() {
           background={exploreCrouselBackground}
           backgroundCrousel={exploreCrouselBackground}
         />
-        <Footer />
+        <NewFooter/>
       </body>
     </>
   );

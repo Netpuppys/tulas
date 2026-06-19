@@ -52,6 +52,7 @@ const menuData = {
       { name: "BBA Business Analytics", href: "/courses/bba" },
     ],
     "Department Of Engineering": [
+      { name: "B.Tech", href: "/courses/btech/" },
       { name: "B.Tech Civil Engineering (CE)", href: "/courses/btech/civil-engineering/" },
       { name: "B.Tech Mechanical Engineering (ME)", href: "/courses/btech/mechanical-engineering/" },
       { name: "B.Tech ECE", href: "/courses/btech/electronics-and-communication-engg" },
@@ -412,7 +413,7 @@ export default function MegaMenu() {
           <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
             <Link href="/" className="flex items-center gap-5 flex-shrink-0">
               <Image src={logo} alt="Tulas Institute Dehradun" className="h-[68px] w-auto object-contain" />
-              <Image src={year} alt="Tulas Institute Dehradun" className="h-[48px] w-auto object-contain" />
+              <Image src={year} alt="Tulas Institute Dehradun" className="h-[55px] w-auto object-contain" />
               {/* <div className="hidden md:flex flex-col justify-center text-white">
                 <span className="text-[14px] font-semibold leading-tight tracking-wide">20 Years of</span>
                 <span className="text-[14px] font-semibold leading-tight tracking-wide">Academic Excellence</span>
@@ -447,7 +448,7 @@ export default function MegaMenu() {
           onMouseEnter={() => setNavHover(true)}
           onMouseLeave={closeHoverMenus}
         >
-          <div className="w-full bg-[#2b2b2b]">
+          <div className="w-full bg-[#263145]">
             <div className="max-w-7xl mx-auto">
               <nav className="flex items-center justify-center flex-wrap text-white text-[13.5px] font-medium">
 
@@ -513,7 +514,7 @@ export default function MegaMenu() {
               onMouseEnter={() => { setOpenPrograms(true); setNavHover(true); }}
               onMouseLeave={closeHoverMenus}
             >
-              <div className="w-full bg-[#1a1a1a]/90 backdrop-blur-md border-t-2 border-[#f26522] shadow-2xl">
+              <div className="w-full bg-[#263145]/90 backdrop-blur-md border-t-2 border-[#f26522] shadow-2xl">
                 <div className="max-w-7xl mx-auto px-6 py-8">
                   <div className="flex gap-5">
 
@@ -581,11 +582,11 @@ export default function MegaMenu() {
                   onMouseEnter={() => { setActiveMenu("research"); setNavHover(true); }}
                   onMouseLeave={closeHoverMenus}
                 >
-                  <div className="w-full bg-[#1a1a1a]/90 backdrop-blur-md border-t-2 border-[#f26522] shadow-2xl">
+                  <div className="w-full bg-[#263145]/90 backdrop-blur-md border-t-2 border-[#f26522] shadow-2xl">
                     <div className="max-w-7xl mx-auto px-6 py-8">
                       <div className="flex gap-10">
                         <div className="flex-1 flex flex-col justify-center">
-                          <h2 className="text-2xl font-bold text-[#f26522] mb-3">Research at Tulas</h2>
+                          <h2 className="text-2xl font-bold text-[#ffff] mb-3">Research at Tulas</h2>
                           <p className="text-sm text-gray-300 leading-relaxed mb-6">
                             Tulas Institute is committed to fostering a culture of innovation and research.
                             Our dedicated research cells and incubation centres empower students and faculty
@@ -647,11 +648,11 @@ export default function MegaMenu() {
                   onMouseEnter={() => { setActiveMenu(activeMenu); setNavHover(true); }}
                   onMouseLeave={closeHoverMenus}
                 >
-                  <div className="w-full bg-[#1a1a1a]/90 backdrop-blur-md border-t-2 border-[#f26522] shadow-2xl">
+                  <div className="w-full bg-[#263145]/90 backdrop-blur-md border-t-2 border-[#f26522] shadow-2xl">
                     <div className="max-w-7xl mx-auto px-6 py-10">
                       <div className="grid grid-cols-3 gap-10 text-white">
                         <div>
-                          <h2 className="text-2xl font-bold mb-3 text-[#f26522]">
+                          <h2 className="text-2xl font-bold mb-3 text-[#ffff]">
                             {simpleMenus[activeMenu].title}
                           </h2>
                           <p className="text-sm text-gray-300 mb-6 leading-relaxed">
@@ -721,7 +722,7 @@ export default function MegaMenu() {
                       (window.location.href =
                         "https://api.whatsapp.com/send/?phone=%2B919258159248&text&type=phone_number&app_absent=0")
                     }
-                    className="bg-[#00837d] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
+                    className="bg-[#25D366] shadow-2xl cursor-pointer w-full h-full aspect-square rounded-full p-3 text-white"
                   >
                     <Image
                       src={whatsapp}

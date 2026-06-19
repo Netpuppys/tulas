@@ -78,7 +78,7 @@ const sitemap = [
           },
           {
             title: "B.Tech",
-            linkTo: "/btech",
+            linkTo: "/courses/btech",
             thirdNestedLinks: [
               {
                 title: "Civil Engineering (CE)",
