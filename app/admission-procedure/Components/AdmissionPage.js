@@ -7,7 +7,7 @@ import background from "../../../public/AboutDehradun/background.png";
 import Footer from "@/component/Footer";
 import Image from "next/image";
 import Table from "./Table";
-import eProspectus from "../../../public/admission-procedure/e-prospectus.png";
+import eProspectus from "../../../public/admission-procedure/vision.jpg";
 import Vision from "@/component/Programs/Vision";
 import { UtmContext } from "@/component/utmParams";
 import MegaMenu from "@/component/Navbar/MegaMenu";
@@ -39,20 +39,18 @@ function AdmissionPage() {
   ];
   const sectionsData = [
     {
-      title: "E - Prospectus",
+      title: "Brochure",
       description: (
         <>
-          Accessing the institute’s e-prospectus is quick and easy:
+          Everything you need to know about Tulas Institute — in one place.
           <br />
           <ul className="list-disc ml-5">
-            <li>Fill out the form provided below with the required details.</li>
+            <li>Explore our programmes, campus, and facilities.</li>
             <li>
-              Upon successful registration, you will receive an email at your
-              registered email ID.
+              Get detailed information on eligibility, fee structure, and admissions.
             </li>
             <li>
-              The email will contain the e-prospectus, which you can download
-              for your reference.
+              Download the brochure and take the first step towards your future.
             </li>
           </ul>
         </>
@@ -94,7 +92,7 @@ function AdmissionPage() {
   const prospectusRef = useRef(null);
   useEffect(() => {
     if (
-      window.location.pathname === "/download-e-prospectus/" &&
+      window.location.pathname === "/download-brochure" &&
       prospectusRef.current
     ) {
       prospectusRef.current.scrollIntoView({ behavior: "smooth" });
@@ -272,19 +270,19 @@ function AdmissionPage() {
           </div>
         </div>
       </div>
-      {/* <div ref={prospectusRef}>
+      <div ref={prospectusRef}>
         <Vision sections={sectionsData} />
-      </div> */}
-      {/* <div className="flex items-center justify-center">
-        <button
-          onClick={() => {
-            window.location.href = "";
-          }}
-          className="font-[TTChocolatesMedium] mb-8 bg-white rounded-full text-[#f97316] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32 font-[600]"
-        >
-          Download E-Prospectus
-        </button>
-      </div> */}
+      </div>
+      <div className="flex items-center justify-center">
+  <button
+    onClick={() => {
+      window.open("/footer/brochure.pdf", "_blank");
+    }}
+    className="font-[TTChocolatesMedium] mb-8 bg-white rounded-full text-[#f97316] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32 font-[600]"
+  >
+    Download Brochure
+  </button>
+</div>
       <div className="w-full h-fit z-40">
         <NewFooter/>
       </div>
