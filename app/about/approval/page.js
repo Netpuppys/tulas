@@ -25,25 +25,6 @@ import AICTEApproval08 from "../../../public/About/Approvals/AprovalImages/AICTE
 import AICTEApproval07 from "../../../public/About/Approvals/AprovalImages/AICTEApproval(EOA)07-08.webp";
 import AICTEApproval06 from "../../../public/About/Approvals/AprovalImages/AICTEApproval(EOA)06-07.webp";
 import Link from "next/link";
-import AICTEApproval25Pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2025-26.pdf";
-import AICTEApprovalPdf from "../../../public/About/Approvals/ApprovalsPDF/EOAReport2023-24.pdf";
-import AICTEApproval22pdf from "../../../public/About/Approvals/ApprovalsPDF/EXTENSION-OF-APPROVAL-2022-23.pdf";
-import AICTEApproval21pdf from "../../../public/About/Approvals/ApprovalsPDF/EOA-Report-21-22.pdf";
-import AICTEApproval20pdf from "../../../public/About/Approvals/ApprovalsPDF/EOA-Report-2020-21-3.pdf";
-import AICTEApproval19pdf from "../../../public/About/Approvals/ApprovalsPDF/EOA_Report_2019-20-1.pdf";
-import AICTEApproval18pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-20118-191.pdf";
-import AICTEApproval17pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2017-18-1.pdf";
-import AICTEApproval16pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2016-17.pdf";
-import AICTEApproval15pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2015-16.pdf";
-import AICTEApproval14pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2014-15.pdf";
-import AICTEApproval13pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2013-14.pdf";
-import AICTEApproval12pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2012-13.pdf";
-import AICTEApproval11pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2011-12.pdf";
-import AICTEApproval10pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2010-11.pdf";
-import AICTEApproval09pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2009-10.pdf";
-import AICTEApproval08pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2008-09.pdf";
-import AICTEApproval07pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2007-08.pdf";
-import AICTEApproval06pdf from "../../../public/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-LOA-2006-07.pdf";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import MegaMenu from "@/component/Navbar/MegaMenu";
 
@@ -59,126 +40,125 @@ function Approval() {
       imageSrc: AICTEApproval06,
       title: "AICTE Approval (EOA)",
       year: "2025-26",
-      link: AICTEApproval25Pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2025-26.pdf",
     },
     {
       imageSrc: AICTEApproval,
       title: "AICTE Approval (EOA)",
       year: "2023-24",
-      link: AICTEApprovalPdf,
+      link: "/About/Approvals/ApprovalsPDF/EOAReport2023-24.pdf",
     },
     {
       imageSrc: AICTEApproval22,
       title: "AICTE Approval (EOA)",
       year: "2022-23",
-      link: AICTEApproval22pdf,
+      link: "/About/Approvals/ApprovalsPDF/EXTENSION-OF-APPROVAL-2022-23.pdf",
     },
     {
       imageSrc: AICTEApproval21,
       title: "Extension of Approval",
       year: "2021-22",
-      link: AICTEApproval21pdf,
+      link: "/About/Approvals/ApprovalsPDF/EOA-Report-21-22.pdf",
     },
     {
       imageSrc: AICTEApproval20,
       title: "Extension of Approval (EoA)",
       year: "2020-21",
-      link: AICTEApproval20pdf,
+      link: "/About/Approvals/ApprovalsPDF/EOA-Report-2020-21-3.pdf",
     },
     {
       imageSrc: AICTEApproval19,
       title: "AICTE Approval (EOA)",
       year: "2019-20",
-      link: AICTEApproval19pdf,
+      link: "/About/Approvals/ApprovalsPDF/EOA_Report_2019-20-1.pdf",
     },
     {
       imageSrc: AICTEApproval18,
       title: "AICTE Approval (EOA)",
       year: "2018-19",
-      link: AICTEApproval18pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-20118-191.pdf",
     },
     {
       imageSrc: AICTEApproval17,
       title: "AICTE Approval (EOA)",
       year: "2017-18",
-      link: AICTEApproval17pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2017-18-1.pdf",
     },
     {
       imageSrc: AICTEApproval16,
       title: "AICTE Approval (EOA)",
       year: "2016-17",
-      link: AICTEApproval16pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2016-17.pdf",
     },
     {
       imageSrc: AICTEApproval15,
       title: "AICTE APPROVAL (EOA)",
       year: "2015-16",
-      link: AICTEApproval15pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2015-16.pdf",
     },
     {
       imageSrc: AICTEApproval14,
       title: "AICTE APPROVAL (EOA)",
       year: "2014-15",
-      link: AICTEApproval14pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2014-15.pdf",
     },
     {
       imageSrc: AICTEApproval13,
       title: "AICTE APPROVAL (EOA)",
       year: "2013-14",
-      link: AICTEApproval13pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2013-14.pdf",
     },
     {
       imageSrc: AICTEApproval12,
       title: "AICTE APPROVAL (EOA)",
       year: "2012-13",
-      link: AICTEApproval12pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2012-13.pdf",
     },
     {
       imageSrc: AICTEApproval11,
       title: "AICTE APPROVAL (EOA)",
       year: "2011-12",
-      link: AICTEApproval11pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2011-12.pdf",
     },
     {
       imageSrc: AICTEApproval10,
       title: "AICTE APPROVAL (EOA)",
       year: "2010-11",
-      link: AICTEApproval10pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2010-11.pdf",
     },
     {
       imageSrc: AICTEApproval09,
       title: "AICTE APPROVAL (EOA)",
       year: "2009-10",
-      link: AICTEApproval09pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2009-10.pdf",
     },
     {
       imageSrc: AICTEApproval08,
       title: "AICTE APPROVAL (EOA)",
       year: "2008-09",
-      link: AICTEApproval08pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2008-09.pdf",
     },
     {
       imageSrc: AICTEApproval07,
       title: "AICTE APPROVAL (EOA)",
       year: "2007-08",
-      link: AICTEApproval07pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-EOA-2007-08.pdf",
     },
     {
       imageSrc: AICTEApproval06,
       title: "AICTE APPROVAL (EOA)",
       year: "2006-07",
-      link: AICTEApproval06pdf,
+      link: "/About/Approvals/ApprovalsPDF/AICTE-APPROVAL-LOA-2006-07.pdf",
     },
   ];
+
   return (
     <div>
-      {/* <Navbar /> */}
       <div className="hidden md:block">
         <MegaMenu />
       </div>
-      
       <div className="block md:hidden">
-        <NewNavbar fullBanner={true}/>
+        <NewNavbar fullBanner={true} />
       </div>
       <Banner
         title={
@@ -191,15 +171,14 @@ function Approval() {
         belowTitle={<></>}
         belowPara={
           <>
-            We are thrilled to inform you that we have streamlined our  degree
+            We are thrilled to inform you that we have streamlined our degree
             collection process for your convenience. You no longer need to make
-            the journey back  to the institute to obtain your degree. Instead,
-            we are now offering a hassle-free service where  your degree will be
-            posted directly to your residence.{" "}
+            the journey back to the institute to obtain your degree. Instead, we
+            are now offering a hassle-free service where your degree will be
+            posted directly to your residence.
           </>
         }
       />
-      {/* fixed background */}
       <div className="w-full relative overflow-hidden">
         <Image
           src={background}
@@ -226,7 +205,7 @@ function Approval() {
                     <div className="text-red-500 bg-white group-hover:bg-transparent rounded-r-xl min-w-[80px] max-w-[80px] md:min-w-[160px] md:max-w-[160px] h-[83px] flex items-center justify-center text-[40px] md:text-[52px]">
                       <BsFileEarmarkPdf />
                     </div>
-                    <p className="text-[18px] md:text-[25px] text-white group-hover:text-[#353535]  font-[TTChocolatesMedium]">
+                    <p className="text-[18px] md:text-[25px] text-white group-hover:text-[#353535] font-[TTChocolatesMedium]">
                       {approval.title}
                     </p>
                     <p className="text-[20px] md:text-[30px] text-white group-hover:text-[#353535] font-[TTChocolatesMedium]">

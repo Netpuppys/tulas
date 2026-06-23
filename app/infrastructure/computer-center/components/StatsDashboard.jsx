@@ -49,12 +49,12 @@ export default function StatsDashboard() {
       </div>
 
       {/* Edit hint */}
-      <div className="flex items-center gap-3 bg-[rgba(242,101,34,0.08)] border border-dashed border-[rgba(242,101,34,0.35)] rounded-[10px] px-5 py-[14px] max-[600px]:py-[11px] max-[600px]:px-[14px] mb-7 text-[0.82rem] max-[600px]:text-[0.78rem] text-white/55">
+      {/* <div className="flex items-center gap-3 bg-[rgba(242,101,34,0.08)] border border-dashed border-[rgba(242,101,34,0.35)] rounded-[10px] px-5 py-[14px] max-[600px]:py-[11px] max-[600px]:px-[14px] mb-7 text-[0.82rem] max-[600px]:text-[0.78rem] text-white/55">
         <span className="text-[1.1rem] flex-shrink-0">✏️</span>
         <span>
           <strong className="text-[#f26522]">Editable Section:</strong> All numbers can be updated directly in the component data arrays at the top of this file. Look for the ⚡ comments.
         </span>
-      </div>
+      </div> */}
 
       {/* Primary stats — 4 cols */}
       <div className="grid grid-cols-4 max-[1100px]:grid-cols-2 max-[380px]:grid-cols-1 gap-[2px] bg-white/[0.06] rounded-[18px] overflow-hidden border border-white/[0.07] mb-7">
