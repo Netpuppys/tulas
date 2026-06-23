@@ -43,6 +43,9 @@ import hallfame11 from "/public/About/hallfame/Shristi Saumya.png";
 import hallfame12 from "/public/About/hallfame/Srishti Gupta.png";
 
 import ImageGallery from "./ImageGallery";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 
 
@@ -234,8 +237,13 @@ export default function AboutPage() {
 
   return (
     <div className="max-w-[100vw] md:max-w-none overflow-x-hidden">
-      <Navbar />
-      <BannerHome
+<div className="hidden md:block">
+  <MegaMenu />
+</div>
+
+<div className="block md:hidden">
+  <NewNavbar fullBanner={true}/>
+</div>      <BannerHome
         bannerImages={bannerImages}
       />
       <div className="bg-white w-full px-3">
@@ -436,7 +444,7 @@ export default function AboutPage() {
 
 
 
-      <Footer />
+      <NewFooter/>
     </div>
   );
 }
