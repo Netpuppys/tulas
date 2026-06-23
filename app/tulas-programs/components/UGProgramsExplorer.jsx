@@ -1,99 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect, useRef, useCallback } from 'react';
 
 /* ─── DATA ─────────────────────────────────────────────────────────────── */
 
 const SCHOOLS = [
-  {
-    id: 'computing', ic: 'CS', label: 'School of Computing',
-    titleNormal: 'School of', titleOrange: 'Computing',
-    intro: 'Future-ready programs in computer science, applications and emerging technologies — built on a strong foundation and enhanced through an AI-integrated curriculum.',
-    programs: [
-      {
-        level: 'ug', name: 'B.Tech Computer Science & Engineering',
-        href: 'https://tulas.edu.in/courses/btech/computer-science/',
-        levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Specialized Tracks',
-        tracks: [
-          { label: 'Artificial Intelligence & Machine Learning', href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning/' },
-          { label: 'Data Science',    href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-data-science/' },
-          { label: 'Cyber Security',  href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-cyber-security/' },
-          { label: 'Full Stack Development' },
-        ],
-        duration: '4 Years',
-        elig: 'Passed 10+2 with Physics, Chemistry and Mathematics from a recognised board.',
-        feesKey: 'B.Tech CSE',
-      },
-      {
-        level: 'ug', name: 'Bachelor of Computer Applications (BCA)',
-        href: '#', levelLabel: 'Undergraduate · BCA', tracksLabel: 'Specialized Tracks',
-        tracks: [{ label: 'Artificial Intelligence & Machine Learning' }, { label: 'Data Science' }],
-        duration: '3 Years',
-        elig: '10+2 or equivalent examination from a recognised board in any stream.',
-        feesKey: 'BCA',
-      },
-      {
-        level: 'pg', name: 'Master of Computer Applications (MCA)',
-        href: '#', levelLabel: 'Postgraduate · MCA', tracksLabel: 'Specialized Tracks',
-        tracks: [{ label: 'Artificial Intelligence & Machine Learning' }, { label: 'Full Stack Development' }],
-        duration: '2 Years',
-        elig: 'Graduation with Mathematics at 10+2 or graduation level.',
-        feesKey: 'MCA',
-      },
-      {
-        level: 'diploma', name: 'Diploma in Computer Science Engineering',
-        href: '#', levelLabel: 'Diploma', tracksLabel: 'Specialized Tracks',
-        tracks: [{ label: 'Single integrated diploma program', none: true }],
-        duration: '3 Years',
-        elig: 'Passed 10th / SSC examination from a recognised board.',
-        feesKey: 'Diploma in CSE',
-      },
-    ],
-  },
-  {
-    id: 'engineering', ic: 'EN', label: 'School of Engineering',
-    titleNormal: 'School of', titleOrange: 'Engineering',
-    intro: 'Core engineering disciplines with modern labs, hands-on projects and industry exposure — preparing students for Industry 4.0 careers.',
-    programs: [
-      {
-        level: 'ug', name: 'B.Tech Core Engineering',
-        href: '#', levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Branches Offered',
-        tracks: [
-          { label: 'Civil Engineering',          href: 'https://tulas.edu.in/courses/btech/civil-engineering/' },
-          { label: 'Electronics & Communication', href: 'https://tulas.edu.in/courses/btech/electronics-and-communication-engg/' },
-          { label: 'Electrical & Electronics',   href: 'https://tulas.edu.in/courses/btech/electrical-and-electronics-engg/' },
-          { label: 'Mechanical Engineering',     href: 'https://tulas.edu.in/courses/btech/mechanical-engineering/' },
-        ],
-        duration: '4 Years',
-        elig: 'Passed 10+2 with Physics, Chemistry and Mathematics from a recognised board.',
-        feesKey: 'B.Tech Core Engineering',
-      },
-      {
-        level: 'pg', name: 'M.Tech',
-        href: '#', levelLabel: 'Postgraduate · M.Tech', tracksLabel: 'Specialized Tracks',
-        tracks: [{ label: 'Computer Science & Engineering' }, { label: 'Thermal Engineering' }, { label: 'Civil Engineering' }],
-        duration: '2 Years',
-        elig: 'B.Tech / B.E. in relevant discipline with qualifying entrance requirements.',
-        feesKey: 'M.Tech',
-      },
-      {
-        level: 'diploma', name: 'Engineering Diploma',
-        href: '#', levelLabel: 'Diploma', tracksLabel: 'Branches Offered',
-        tracks: [{ label: 'Civil Engineering' }, { label: 'Mechanical Engineering' }, { label: 'Computer Science Engineering' }],
-        duration: '3 Years',
-        elig: 'Passed 10th / SSC examination from a recognised board.',
-        feesKey: 'Engineering Diploma',
-      },
-      {
-        level: 'diploma', name: 'Diploma Lateral Entry',
-        href: '#', levelLabel: 'Diploma · Lateral Entry', tracksLabel: 'Branches Offered',
-        tracks: [{ label: 'Civil (LE)' }, { label: 'Mechanical (LE)' }, { label: 'Computer Science (LE)' }],
-        duration: '2 Years',
-        elig: '10+2 with PCM / PCB, or 10th + ITI in relevant trade.',
-        feesKey: 'Diploma Lateral Entry',
-      },
-    ],
-  },
   {
     id: 'management', ic: 'MG', label: 'School of Management',
     titleNormal: 'School of', titleOrange: 'Management',
@@ -101,19 +13,29 @@ const SCHOOLS = [
     programs: [
       {
         level: 'ug', name: 'Bachelor of Business Administration (BBA)',
-        href: '#', levelLabel: 'Undergraduate · BBA', tracksLabel: 'Specialized Tracks',
-        tracks: [{ label: 'Digital Marketing' }, { label: 'Business Analytics' }],
+        href: 'https://tulas.edu.in/courses/bba',
+        levelLabel: 'Undergraduate · BBA', tracksLabel: 'Specialized Tracks',
+        tracks: [
+          { label: 'BBA', href: 'https://tulas.edu.in/courses/bba' },
+          { label: 'BBA Digital Marketing', href: 'https://tulas.edu.in/courses/bba' },
+          { label: 'BBA Business Analytics', href: 'https://tulas.edu.in/courses/bba' },
+        ],
         duration: '3 Years',
         elig: '10+2 or equivalent examination from a recognised board in any stream.',
         feesKey: 'BBA',
       },
       {
         level: 'pg', name: 'Master of Business Administration (MBA)',
-        href: '#', levelLabel: 'Postgraduate · MBA', tracksLabel: 'Specialized Tracks',
+        href: 'https://tulas.edu.in/courses/mba',
+        levelLabel: 'Postgraduate · MBA', tracksLabel: 'Specialized Tracks',
         tracks: [
-          { label: 'Marketing' }, { label: 'Finance' }, { label: 'Human Resource Management' },
-          { label: 'International Business' }, { label: 'Digital Marketing' },
-          { label: 'Business Analytics' }, { label: 'Agri-Business Management' },
+          { label: 'Marketing',              href: 'https://tulas.edu.in/courses/mba/marketing' },
+          { label: 'Finance',                href: 'https://tulas.edu.in/courses/mba/finance' },
+          { label: 'Human Resource Mgmt.',   href: 'https://tulas.edu.in/courses/mba/human-resource-managment' },
+          { label: 'International Business', href: 'https://tulas.edu.in/courses/mba/international-business' },
+          { label: 'Digital Marketing',      href: 'https://tulas.edu.in/courses/mba/digital-marketing' },
+          { label: 'Business Analytics',     href: 'https://tulas.edu.in/courses/mba/business-analytics' },
+          { label: 'Agri-Business Mgmt.',    href: 'https://tulas.edu.in/courses/mba/agri-business' },
         ],
         duration: '2 Years',
         elig: 'Graduation in any discipline with minimum required marks.',
@@ -122,29 +44,116 @@ const SCHOOLS = [
     ],
   },
   {
-    id: 'commerce', ic: 'CM', label: 'School of Commerce',
-    titleNormal: 'School of', titleOrange: 'Commerce',
-    intro: 'Strong foundations in commerce, finance and accounting with pathways into professional and corporate careers.',
+    id: 'engineering', ic: 'EN', label: 'Department of Engineering',
+    titleNormal: 'Department of', titleOrange: 'Engineering',
+    intro: 'Core and specialized engineering disciplines with modern labs, hands-on projects and industry exposure — preparing students for Industry 4.0 careers.',
     programs: [
       {
-        level: 'ug', name: 'Commerce (B.Com)',
-        href: '#', levelLabel: 'Undergraduate · B.Com', tracksLabel: 'Programs Included',
-        tracks: [{ label: 'B.Com' }, { label: 'B.Com (Hons.)' }],
-        duration: '3–4 Yrs',
-        elig: '10+2 or equivalent examination from a recognised board.',
-        feesKey: 'Commerce',
+        level: 'ug', name: 'B.Tech',
+        href: 'https://tulas.edu.in/courses/btech/',
+        levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Branches & Specializations',
+        tracks: [
+          { label: 'Civil Engineering',             href: 'https://tulas.edu.in/courses/btech/civil-engineering/' },
+          { label: 'Mechanical Engineering',        href: 'https://tulas.edu.in/courses/btech/mechanical-engineering/' },
+          { label: 'Electronics & Comm. (ECE)',     href: 'https://tulas.edu.in/courses/btech/electronics-and-communication-engg' },
+          { label: 'Electrical & Electronics (EEE)',href: 'https://tulas.edu.in/courses/btech/electrical-and-electronics-engg/' },
+          { label: 'Computer Science (CSE)',        href: 'https://tulas.edu.in/courses/btech/computer-science' },
+          { label: 'CSE – AI & ML',                href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning' },
+          { label: 'CSE – Cyber Security',         href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-cyber-security' },
+          { label: 'CSE – Data Science',           href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-data-science' },
+          { label: 'CSE – Full Stack Development', href: 'https://tulas.edu.in/courses/btech/computer-science' },
+        ],
+        duration: '4 Years',
+        elig: 'Passed 10+2 with Physics, Chemistry and Mathematics from a recognised board.',
+        feesKey: 'B.Tech',
+      },
+      {
+        level: 'pg', name: 'M.Tech',
+        href: 'https://tulas.edu.in/mtech',
+        levelLabel: 'Postgraduate · M.Tech', tracksLabel: 'Program',
+        tracks: [{ label: 'Master of Technology program', none: true }],
+        duration: '2 Years',
+        elig: 'B.Tech / B.E. in relevant discipline with qualifying entrance requirements.',
+        feesKey: 'M.Tech',
+      },
+      {
+        level: 'diploma', name: 'Diploma in Engineering',
+        href: '#',
+        levelLabel: 'Diploma', tracksLabel: 'Branches Offered',
+        tracks: [
+          { label: 'Civil Engineering',            href: 'https://tulas.edu.in/diploma-in-civil-engineering' },
+          { label: 'Mechanical Engineering',       href: 'https://tulas.edu.in/diploma-mechanical-engineering' },
+          { label: 'Computer Science Engineering', href: 'https://tulas.edu.in/diploma-computer-science-engineering' },
+        ],
+        duration: '3 Years',
+        elig: 'Passed 10th / SSC examination from a recognised board.',
+        feesKey: 'Engineering Diploma',
       },
     ],
   },
   {
-    id: 'media', ic: 'MC', label: 'Media & Communication',
-    titleNormal: 'Media &', titleOrange: 'Communication',
+    id: 'commerce', ic: 'CM', label: 'Department of Commerce',
+    titleNormal: 'Department of', titleOrange: 'Commerce',
+    intro: 'Strong foundations in commerce, finance and accounting with pathways into professional and corporate careers.',
+    programs: [
+      {
+        level: 'ug', name: 'Bachelor of Commerce (B.Com)',
+        href: 'https://tulas.edu.in/courses/bcom/',
+        levelLabel: 'Undergraduate · B.Com', tracksLabel: 'Programs Offered',
+        tracks: [
+          { label: 'B.Com',        href: 'https://tulas.edu.in/courses/bcom/' },
+          { label: 'B.Com (Hons.)', href: 'https://tulas.edu.in/courses/bcom/' },
+        ],
+        duration: '3 Years',
+        elig: '10+2 or equivalent examination from a recognised board.',
+        feesKey: 'B.Com',
+      },
+    ],
+  },
+  {
+    id: 'computing', ic: 'CA', label: 'Dept. of Computer Applications',
+    titleNormal: 'Dept. of', titleOrange: 'Computer Applications',
+    intro: 'Application-focused computing programs designed for the modern tech industry, with specializations in AI, ML and full stack software development.',
+    programs: [
+      {
+        level: 'ug', name: 'Bachelor of Computer Applications (BCA)',
+        href: 'https://tulas.edu.in/courses/bca/',
+        levelLabel: 'Undergraduate · BCA', tracksLabel: 'Specialized Tracks',
+        tracks: [
+          { label: 'Full Stack Software Development',        href: 'https://tulas.edu.in/courses/bca/' },
+          { label: 'Artificial Intelligence & ML', href: 'https://tulas.edu.in/courses/bca/' },
+        ],
+        duration: '3 Years',
+        elig: '10+2 or equivalent examination from a recognised board in any stream.',
+        feesKey: 'BCA',
+      },
+      {
+        level: 'pg', name: 'Master of Computer Applications (MCA)',
+        href: 'https://tulas.edu.in/courses/mca',
+        levelLabel: 'Postgraduate · MCA', tracksLabel: 'Specialized Tracks',
+        tracks: [
+          { label: 'Full Stack Software Development',        href: 'https://tulas.edu.in/courses/mca' },
+          { label: 'Artificial Intelligence & ML', href: 'https://tulas.edu.in/courses/mca' },
+        ],
+        duration: '2 Years',
+        elig: 'Graduation with Mathematics at 10+2 or graduation level.',
+        feesKey: 'MCA',
+      },
+    ],
+  },
+  {
+    id: 'media', ic: 'MC', label: 'Dept. of Mass Comm. & Journalism',
+    titleNormal: 'Dept. of Mass Comm. &', titleOrange: 'Journalism',
     intro: 'Creative, hands-on journalism and mass communication programs for the digital media age.',
     programs: [
       {
         level: 'ug', name: 'Journalism & Mass Communication',
-        href: '#', levelLabel: 'Undergraduate · JMC', tracksLabel: 'Programs Included',
-        tracks: [{ label: 'BAJMC' }, { label: 'BA (Hons.) JMC' }],
+        href: 'https://tulas.edu.in/courses/bjmc/',
+        levelLabel: 'Undergraduate · JMC', tracksLabel: 'Programs Offered',
+        tracks: [
+          { label: 'BAJMC',           href: 'https://tulas.edu.in/courses/bjmc/' },
+          { label: 'BA (Hons.) JMC',  href: 'https://tulas.edu.in/courses/bjmc/' },
+        ],
         duration: '3–4 Yrs',
         elig: '10+2 or equivalent examination from a recognised board.',
         feesKey: 'Journalism & Mass Communication',
@@ -152,36 +161,14 @@ const SCHOOLS = [
     ],
   },
   {
-    id: 'agriculture', ic: 'AG', label: 'School of Agriculture',
-    titleNormal: 'School of', titleOrange: 'Agriculture',
-    intro: 'Science-led agriculture programs combining field practice, research and modern agri-technology.',
-    programs: [
-      {
-        level: 'ug', name: 'B.Sc. (Hons.) Agriculture',
-        href: '#', levelLabel: 'Undergraduate · B.Sc.', tracksLabel: 'Specialized Tracks',
-        tracks: [{ label: 'Integrated honours program', none: true }],
-        duration: '4 Years',
-        elig: 'Passed 10+2 with Physics, Chemistry and Mathematics / Biology / Agriculture.',
-        feesKey: 'B.Sc. Agriculture',
-      },
-      {
-        level: 'pg', name: 'M.Sc. Agronomy',
-        href: '#', levelLabel: 'Postgraduate · M.Sc.', tracksLabel: 'Specialized Tracks',
-        tracks: [{ label: 'Master of Science in Agronomy', none: true }],
-        duration: '2 Years',
-        elig: 'B.Sc. Agriculture / Horticulture / Forestry from a recognised institution.',
-        feesKey: 'M.Sc. Agronomy',
-      },
-    ],
-  },
-  {
-    id: 'pharmacy', ic: 'PH', label: 'School of Pharmacy',
-    titleNormal: 'School of', titleOrange: 'Pharmacy',
+    id: 'pharmacy', ic: 'PH', label: 'Department of Pharmacy',
+    titleNormal: 'Department of', titleOrange: 'Pharmacy',
     intro: 'Pharmacy programs with strong lab training and pathways into healthcare, research and the pharmaceutical industry.',
     programs: [
       {
-        level: 'ug', name: 'Bachelor of Pharmacy (B.Pharm.)',
-        href: '#', levelLabel: 'Undergraduate · B.Pharm', tracksLabel: 'Specialized Tracks',
+        level: 'ug', name: 'Bachelor of Pharmacy (B.Pharm)',
+        href: 'https://tulas.edu.in/courses/bpharma/',
+        levelLabel: 'Undergraduate · B.Pharm', tracksLabel: 'Program',
         tracks: [{ label: 'Integrated pharmacy program', none: true }],
         duration: '4 Years',
         elig: 'Passed 10+2 with Physics, Chemistry and Biology / Mathematics.',
@@ -189,8 +176,9 @@ const SCHOOLS = [
       },
       {
         level: 'diploma', name: 'Diploma in Pharmacy (D.Pharm)',
-        href: '#', levelLabel: 'Diploma', tracksLabel: 'Specialized Tracks',
-        tracks: [{ label: 'Single diploma program', none: true }],
+        href: 'https://tulas.edu.in/courses/dpharma',
+        levelLabel: 'Diploma', tracksLabel: 'Program',
+        tracks: [{ label: 'Diploma pharmacy program', none: true }],
         duration: '2 Years',
         elig: 'Passed 10+2 with Physics, Chemistry and Biology / Mathematics.',
         feesKey: 'D.Pharm',
@@ -200,19 +188,24 @@ const SCHOOLS = [
   {
     id: 'law', ic: 'LW', label: 'School of Law',
     titleNormal: 'School of', titleOrange: 'Law',
-    intro: 'Integrated and postgraduate law programs designed to build sharp legal minds and ethical professionals.',
+    intro: 'Integrated and standalone law programs designed to build sharp legal minds and ethical professionals.',
     programs: [
       {
-        level: 'ug', name: 'Integrated Law',
-        href: '#', levelLabel: 'Undergraduate · Integrated LL.B', tracksLabel: 'Programs Included',
-        tracks: [{ label: 'BBA LL.B' }, { label: 'BA LL.B' }],
+        level: 'ug', name: 'Integrated Law (5-Year)',
+        href: 'https://tulas.edu.in/courses/llb/',
+        levelLabel: 'Undergraduate · Integrated LL.B', tracksLabel: 'Programs Offered',
+        tracks: [
+          { label: 'BA LL.B (Hons.)',  href: 'https://tulas.edu.in/courses/llb/' },
+          { label: 'BBA LL.B (Hons.)', href: 'https://tulas.edu.in/courses/llb/' },
+        ],
         duration: '5 Years',
         elig: 'Passed 10+2 or equivalent examination from a recognised board.',
         feesKey: 'Integrated Law',
       },
       {
-        level: 'pg', name: 'LL.B',
-        href: '#', levelLabel: 'Postgraduate · LL.B', tracksLabel: 'Specialized Tracks',
+        level: 'ug', name: 'LL.B',
+        href: 'https://tulas.edu.in/courses/llb/',
+        levelLabel: 'Undergraduate · LL.B', tracksLabel: 'Program',
         tracks: [{ label: 'Bachelor of Legislative Law', none: true }],
         duration: '3 Years',
         elig: 'Graduation in any discipline from a recognised university.',
@@ -220,9 +213,112 @@ const SCHOOLS = [
       },
     ],
   },
+  {
+    id: 'agriculture', ic: 'AG', label: 'Department of Agriculture',
+    titleNormal: 'Department of', titleOrange: 'Agriculture',
+    intro: 'Science-led agriculture programs combining field practice, research and modern agri-technology.',
+    programs: [
+      {
+        level: 'ug', name: 'B.Sc. (Hons.) Agriculture',
+        href: 'https://tulas.edu.in/b-sc-agriculture/',
+        levelLabel: 'Undergraduate · B.Sc.', tracksLabel: 'Program',
+        tracks: [{ label: 'Integrated honours program', none: true }],
+        duration: '4 Years',
+        elig: 'Passed 10+2 with Physics, Chemistry and Mathematics / Biology / Agriculture.',
+        feesKey: 'B.Sc. Agriculture',
+      },
+      {
+        level: 'pg', name: 'M.Sc. Agronomy',
+        href: 'https://tulas.edu.in/courses/msc-agronomy',
+        levelLabel: 'Postgraduate · M.Sc.', tracksLabel: 'Program',
+        tracks: [{ label: 'Master of Science in Agronomy', none: true }],
+        duration: '2 Years',
+        elig: 'B.Sc. Agriculture / Horticulture / Forestry from a recognised institution.',
+        feesKey: 'M.Sc. Agronomy',
+      },
+    ],
+  },
 ];
 
 const MODAL_OVERRIDES = { 'Apply Now': 'Apply To Tulas', 'Brochure': 'Download Brochure', 'Enquiry': 'Admissions Enquiry', 'Counselling': 'Talk To Counsellor' };
+
+/* ─── FEE DATA ──────────────────────────────────────────────────────────── */
+// Each row: [No Scholarship, 91%+, 81-90%, 71-80%, 60-70%, <60%]
+
+const FEES_DATA = {
+  'BBA': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'BBA',                ai: [151000,106000,111000,116000,121000,126000], uk: [151000,101000,106000,111000,116000,121000] },
+      { prog: 'BBA + Specialization', ai: [176000,131000,136000,141000,146000,151000], uk: [176000,126000,131000,136000,141000,146000] },
+    ],
+  },
+  'MBA': {
+    note: 'Per annum · Scholarship based on graduation aggregate %',
+    rows: [
+      { prog: 'MBA',                  ai: [358000,313000,318000,323000,328000,333000], uk: [358000,271750,276750,281750,286750,291750] },
+      { prog: 'MBA + Specialization', ai: [383000,338000,343000,348000,353000,358000], uk: [383000,296750,301750,306750,311750,316750] },
+    ],
+  },
+  'B.Tech': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'CSE',                  ai: [248750,203750,208750,213750,218750,223750], uk: [248750,186250,191250,196250,201250,206250] },
+      { prog: 'CSE + Specialization', ai: [273750,228750,233750,238750,243750,248750], uk: [273750,211250,216250,221250,226250,231250] },
+      { prog: 'CE / ECE / EEE / ME',  ai: [168250,123250,128250,133250,138250,143250], uk: [168250,118250,123250,128250,133250,138250] },
+    ],
+  },
+  'M.Tech': {
+    note: 'Per annum · Scholarship based on graduation aggregate %',
+    rows: [
+      { prog: 'M.Tech', ai: [139500,94500,99500,104500,109500,114500], uk: [139500,89500,94500,99500,104500,109500] },
+    ],
+  },
+  'B.Com': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'B.Com', ai: [110750,78750,83750,88750,93750,98750], uk: [110750,70750,75750,80750,85750,90750] },
+    ],
+  },
+  'BCA': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'BCA',                  ai: [151000,106000,111000,116000,121000,126000], uk: [151000,101000,106000,111000,116000,121000] },
+      { prog: 'BCA + Specialization', ai: [176000,131000,136000,141000,146000,151000], uk: [176000,126000,131000,136000,141000,146000] },
+    ],
+  },
+  'MCA': {
+    note: 'Per annum · Scholarship based on graduation aggregate %',
+    rows: [
+      { prog: 'MCA',                  ai: [172850,127850,132850,137850,142850,147850], uk: [172850,126850,131850,136850,141850,146850] },
+      { prog: 'MCA + Specialization', ai: [197850,152850,157850,162850,167850,172850], uk: [197850,151850,156850,161850,166850,171850] },
+    ],
+  },
+  'Journalism & Mass Communication': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'BJMC / BA (Hons.) JMC', ai: [110750,78750,83750,88750,93750,98750], uk: [110750,70750,75750,80750,85750,90750] },
+    ],
+  },
+  'B.Pharm': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'B.Pharm', ai: [162500,117500,122500,127500,132500,137500], uk: [162500,112500,117500,122500,127500,132500] },
+    ],
+  },
+  'B.Sc. Agriculture': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'B.Sc. (Hons.) Agriculture', ai: [122250,77250,82250,87250,92250,97250], uk: [122250,72250,77250,82250,87250,92250] },
+    ],
+  },
+  'M.Sc. Agronomy': {
+    note: 'Per annum · Scholarship based on graduation aggregate %',
+    rows: [
+      { prog: 'M.Sc. Agronomy', ai: [129250,79250,84250,89250,94250,99250], uk: [129250,74250,79250,84250,89250,94250] },
+    ],
+  },
+};
 
 /* ─── COMPONENT ─────────────────────────────────────────────────────────── */
 
@@ -273,14 +369,17 @@ export default function UGProgramsExplorer() {
     return () => document.removeEventListener('keydown', onKey);
   }, []);
 
-  const modalTitle = MODAL_OVERRIDES[modal.prog] || 'Get Fee Details';
-  const modalSub   = MODAL_OVERRIDES[modal.prog] ? 'Tulas University · Admissions 2026' : modal.prog;
+  const feeData    = FEES_DATA[modal.prog] || null;
+  const isAction   = !!MODAL_OVERRIDES[modal.prog];
+  const fmt        = (n) => '₹ ' + n.toLocaleString('en-IN');
+  const FEE_COLS   = ['91%+', '81–90%', '71–80%', '60–70%', '<60%'];
 
   return (
     <>
       <style dangerouslySetInnerHTML={{__html:`
         /* Level tabs */
         .cl-ug-levelbar{position:sticky;top:140px;z-index:900;background:#fff;border-bottom:1px solid #e0e4ed;box-shadow:0 4px 18px rgba(0,31,76,.05)}
+        @media(max-width:768px){.cl-ug-levelbar{top:70px}}
         .cl-ug-levelinner{max-width:1500px;margin:0 auto;padding:0 5%;display:flex}
         .cl-ug-tab{padding:22px 30px;font-size:.92rem;font-weight:700;color:#5a6a8a;cursor:pointer;border-bottom:3px solid transparent;transition:all .25s;white-space:nowrap}
         .cl-ug-tab:hover{color:#001F4C}
@@ -295,26 +394,47 @@ export default function UGProgramsExplorer() {
         .cl-ug-sl-dim{opacity:.4;pointer-events:none}
         /* pc-top grid */
         .cl-pc-top{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;padding:26px 30px}
+        /* school header */
+        .cl-school-hdr{display:flex;align-items:center;gap:18px;margin-bottom:14px;overflow:hidden}
+        .cl-school-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.6rem,4vw,2.4rem);color:#001F4C;line-height:1;letter-spacing:.01em;min-width:0;word-break:break-word}
+        .cl-school-line{flex:1;height:2px;background:#e0e4ed;flex-shrink:1;min-width:10px}
+        /* pc-name */
+        .cl-pc-name{font-size:clamp(1rem,3vw,1.25rem);font-weight:800;line-height:1.3;margin-bottom:6px;overflow-wrap:anywhere}
         /* pc-name arrow */
         .cl-pc-link .cl-arrow{color:#DF5400;font-size:1rem;opacity:0;transform:translateX(-4px);transition:all .25s;display:inline-block}
         .cl-pc-link:hover .cl-arrow{opacity:1;transform:translateX(0)}
         /* Modal animation */
         @keyframes cl-modal-pop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
         .cl-modal{animation:cl-modal-pop .35s ease}
+        /* pc-side responsive layout */
+        .cl-pc-side{display:flex;flex-direction:column;align-items:flex-end;gap:14px;flex-shrink:0}
+        .cl-pc-dur{text-align:right}
+        .cl-pc-actions{display:flex;flex-direction:column;gap:10px;width:170px}
+        /* Hide level tab scrollbar */
+        .cl-ug-levelinner{-ms-overflow-style:none;scrollbar-width:none}
+        .cl-ug-levelinner::-webkit-scrollbar{display:none}
         /* Floating btn label hide on mobile */
-        @media(max-width:768px){
-          .cl-float-lbl{display:none}
-          .cl-float-btn{padding:14px!important;border-radius:50%!important}
-          .cl-ug-levelinner{overflow-x:auto}
-          .cl-pc-top{grid-template-columns:1fr;gap:18px}
-        }
         @media(max-width:1100px){
           .cl-ug-explorer{grid-template-columns:1fr;gap:0}
           .cl-ug-snav{position:static;display:flex;gap:10px;overflow-x:auto;margin-bottom:30px;padding-bottom:8px}
           .cl-ug-snav-head,.cl-ug-side-cta{display:none}
           .cl-ug-sl{margin-bottom:0;white-space:nowrap;border:2px solid #e0e4ed;flex-shrink:0}
         }
-        @media(max-width:520px){.cl-pc-top{grid-template-columns:1fr}}
+        @media(max-width:768px){
+          .cl-float-lbl{display:none}
+          .cl-float-btn{padding:14px!important;border-radius:50%!important;min-width:unset!important;width:50px;height:50px;justify-content:center}
+          .cl-ug-levelinner{overflow-x:auto}
+          .cl-pc-top{grid-template-columns:1fr;gap:18px}
+          .cl-pc-side{flex-direction:row;align-items:center;justify-content:space-between;width:100%;flex-shrink:1}
+          .cl-pc-dur{text-align:left}
+          .cl-pc-actions{flex-direction:row;width:auto}
+          .cl-school-title{font-size:clamp(1.3rem,5.5vw,1.7rem)}
+          .cl-school-line{display:none}
+        }
+        @media(max-width:520px){
+          .cl-pc-side{flex-direction:column;align-items:flex-start}
+          .cl-pc-actions{flex-direction:column;width:100%}
+        }
       `}} />
 
       {/* ── LEVEL TABS ── */}
@@ -435,14 +555,11 @@ export default function UGProgramsExplorer() {
                 style={{ scrollMarginTop: 210 }}
               >
                 {/* School header */}
-                <div className="flex items-center gap-[18px] mb-[14px]">
-                  <div
-                    className="leading-[1] tracking-[.01em] flex-shrink-0"
-                    style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: '2.4rem', color: '#001F4C' }}
-                  >
+                <div className="cl-school-hdr">
+                  <div className="cl-school-title">
                     {school.titleNormal} <em className="not-italic" style={{ color: '#DF5400' }}>{school.titleOrange}</em>
                   </div>
-                  <div className="flex-1 h-[2px]" style={{ background: '#e0e4ed' }} />
+                  <div className="cl-school-line" />
                 </div>
                 <p className="text-[.98rem] leading-[1.8] mb-[28px] max-w-[760px]" style={{ color: '#5a6a8a' }}>
                   {school.intro}
@@ -460,7 +577,7 @@ export default function UGProgramsExplorer() {
                     <div className="cl-pc-top">
                       {/* Left info */}
                       <div style={{ minWidth: 0 }}>
-                        <div className="font-extrabold text-[1.25rem] leading-[1.3] mb-[6px]" style={{ color: '#001F4C' }}>
+                        <div className="cl-pc-name" style={{ color: '#001F4C' }}>
                           {prog.href && prog.href !== '#' ? (
                             <a
                               href={prog.href}
@@ -520,12 +637,12 @@ export default function UGProgramsExplorer() {
                       </div>
 
                       {/* Right side */}
-                      <div className="flex flex-col items-end gap-[14px] flex-shrink-0">
-                        <div className="text-right">
+                      <div className="cl-pc-side">
+                        <div className="cl-pc-dur">
                           <div className="text-[.66rem] font-bold uppercase tracking-[.08em]" style={{ color: '#5a6a8a' }}>Duration</div>
                           <div className="leading-[1]" style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: '1.8rem', color: '#001F4C' }}>{prog.duration}</div>
                         </div>
-                        <div className="flex flex-col gap-[10px] w-[170px] max-[768px]:w-auto max-[768px]:flex-row">
+                        <div className="cl-pc-actions">
                           <button
                             onClick={() => openModal(prog.feesKey)}
                             className="inline-flex items-center justify-center gap-[7px] font-bold text-[.84rem] text-white rounded-[30px] px-[18px] py-[12px] transition-all duration-300 cursor-pointer"
@@ -535,15 +652,15 @@ export default function UGProgramsExplorer() {
                           >
                             <span>₹</span> Know Fees
                           </button>
-                          <button
-                            onClick={() => openModal('Apply Now')}
+                          <Link
+                            href={'/apply-now'}
                             className="inline-flex items-center justify-center gap-[7px] font-bold text-[.84rem] rounded-[30px] px-[18px] py-[11px] transition-all duration-300 cursor-pointer"
                             style={{ background: '#fff', color: '#001F4C', border: '2px solid #e0e4ed' }}
                             onMouseEnter={e => { e.currentTarget.style.borderColor = '#001F4C'; e.currentTarget.style.background = '#001F4C'; e.currentTarget.style.color = '#fff'; }}
                             onMouseLeave={e => { e.currentTarget.style.borderColor = '#e0e4ed'; e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#001F4C'; }}
                           >
                             Apply Now
-                          </button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -572,7 +689,7 @@ export default function UGProgramsExplorer() {
       </div>
 
       {/* ── FLOATING CTAs ── */}
-      <div className="fixed right-[24px] bottom-[24px] z-[8000] flex flex-col gap-[12px]">
+      {/* <div className="fixed right-[24px] bottom-[24px] z-[8000] flex flex-col gap-[12px]">
         {[
           { label: 'Apply Now', key: 'Apply Now',  bg: '#DF5400', color: '#fff', hoverBg: '#c44900' },
           { label: 'Brochure',  key: 'Brochure',  bg: '#fff',    color: '#001F4C', hoverBorder: '#DF5400', hoverColor: '#DF5400' },
@@ -591,63 +708,164 @@ export default function UGProgramsExplorer() {
             <span className="cl-float-lbl">{btn.label}</span>
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* ── MODAL ── */}
       {modal.open && (
         <div
-          className="fixed inset-0 z-[10000] flex items-center justify-center p-[20px]"
-          style={{ background: 'rgba(0,31,76,.6)', backdropFilter: 'blur(6px)' }}
+          className="fixed inset-0 z-[10000] flex items-center justify-center p-[16px]"
+          style={{ background: 'rgba(0,31,76,.65)', backdropFilter: 'blur(6px)' }}
           onClick={e => { if (e.target === e.currentTarget) closeModal(); }}
         >
           <div
-            className="cl-modal relative rounded-[24px] max-w-[480px] w-full px-[40px] py-[44px] text-center"
-            style={{ background: '#fff', boxShadow: '0 30px 80px rgba(0,0,0,.4)' }}
+            className="cl-modal relative rounded-[20px] w-full overflow-hidden"
+            style={{
+              background: '#fff',
+              boxShadow: '0 30px 80px rgba(0,0,0,.4)',
+              maxWidth: feeData ? '760px' : '480px',
+              maxHeight: '90vh',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
           >
-            <button
-              onClick={closeModal}
-              className="absolute top-[18px] right-[20px] text-[1.6rem] leading-[1] cursor-pointer"
-              style={{ background: 'none', border: 'none', color: '#5a6a8a' }}
-            >
-              ×
-            </button>
-
+            {/* ── Modal header ── */}
             <div
-              className="w-[70px] h-[70px] rounded-full flex items-center justify-center text-[2rem] mx-auto mb-[20px]"
-              style={{ background: '#FFF3D7', color: '#DF5400' }}
+              className="flex items-center gap-[14px] px-[28px] py-[20px] flex-shrink-0"
+              style={{ borderBottom: '1px solid #e0e4ed' }}
             >
-              ₹
-            </div>
-
-            <h3
-              className="mb-[8px] leading-[1]"
-              style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: '2.2rem', color: '#001F4C' }}
-            >
-              {modalTitle}
-            </h3>
-            <div className="font-bold text-[1rem] mb-[18px]" style={{ color: '#DF5400' }}>{modalSub}</div>
-            <p className="text-[.94rem] leading-[1.8] mb-[26px]" style={{ color: '#5a6a8a' }}>
-              Fee structures are shared by our admissions team along with available scholarships and payment options. Request details and a counsellor will reach out to you.
-            </p>
-
-            <div className="flex flex-col gap-[12px]">
-              <button
-                className="py-[14px] rounded-[10px] font-bold text-[.92rem] text-white cursor-pointer transition-all duration-300"
-                style={{ background: '#DF5400', border: 'none' }}
-                onMouseEnter={e => e.currentTarget.style.background = '#c44900'}
-                onMouseLeave={e => e.currentTarget.style.background = '#DF5400'}
+              <div
+                className="w-[42px] h-[42px] rounded-full flex items-center justify-center text-[1.1rem] flex-shrink-0"
+                style={{ background: '#FFF3D7', color: '#DF5400' }}
               >
-                Request Fee Details
-              </button>
+                ₹
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3
+                  className="leading-[1] mb-[3px]"
+                  style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(1.4rem,4vw,1.9rem)', color: '#001F4C' }}
+                >
+                  {feeData ? modal.prog : (MODAL_OVERRIDES[modal.prog] || modal.prog)}
+                </h3>
+                <p className="text-[.76rem]" style={{ color: '#5a6a8a' }}>
+                  {feeData ? feeData.note : 'Tulas University · Admissions 2026'}
+                </p>
+              </div>
               <button
-                className="py-[14px] rounded-[10px] font-bold text-[.92rem] cursor-pointer transition-all duration-300"
-                style={{ background: '#f8f9fc', color: '#001F4C', border: '2px solid #e0e4ed' }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = '#DF5400'; e.currentTarget.style.color = '#DF5400'; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = '#e0e4ed'; e.currentTarget.style.color = '#001F4C'; }}
+                onClick={closeModal}
+                className="text-[1.6rem] leading-[1] cursor-pointer flex-shrink-0 w-[32px] h-[32px] flex items-center justify-center rounded-full"
+                style={{ background: '#f8f9fc', border: 'none', color: '#5a6a8a' }}
               >
-                Talk To Counsellor
+                ×
               </button>
             </div>
+
+            {feeData ? (
+              <>
+                {/* ── Scholarship hint ── */}
+                <div
+                  className="flex items-center gap-[10px] px-[28px] py-[10px] flex-shrink-0 text-[.76rem] font-semibold"
+                  style={{ background: '#FFF3D7', color: '#8b4500', borderBottom: '1px solid #fde8cb' }}
+                >
+                  <span>🎓</span>
+                  Scholarship deducted automatically from total fee · Fees are per annum
+                </div>
+
+                {/* ── Fee table ── */}
+                <div style={{ overflowX: 'auto', overflowY: 'auto', flex: 1 }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.8rem', minWidth: '560px' }}>
+                    <thead>
+                      <tr style={{ background: '#001F4C', color: '#fff', position: 'sticky', top: 0, zIndex: 2 }}>
+                        <th style={{ padding: '13px 16px', color: '#ffff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Programme</th>
+                        <th style={{ padding: '13px 12px', color: '#ffff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Category</th>
+                        <th style={{ padding: '13px 12px', color: '#ffff', textAlign: 'right', whiteSpace: 'nowrap', fontWeight: 700 }}>No Scholarship</th>
+                        {FEE_COLS.map(c => (
+                          <th key={c} style={{ padding: '13px 10px', textAlign: 'right', whiteSpace: 'nowrap', color: '#FFF3D7', fontWeight: 700 }}>{c}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {feeData.rows.flatMap((row, ri) => [
+                        <tr key={`${ri}-ai`} style={{ background: ri % 2 === 0 ? '#f8f9fc' : '#fff' }}>
+                          <td
+                            rowSpan={2}
+                            style={{ padding: '11px 16px', fontWeight: 700, color: '#001F4C', verticalAlign: 'middle', borderRight: '1px solid #e0e4ed', borderBottom: '2px solid #e0e4ed', whiteSpace: 'nowrap' }}
+                          >
+                            {row.prog}
+                          </td>
+                          <td style={{ padding: '10px 12px', color: '#5a6a8a', fontSize: '.72rem', whiteSpace: 'nowrap', borderBottom: '1px dashed #e0e4ed' }}>All India</td>
+                          <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '1px dashed #e0e4ed' }}>{fmt(row.ai[0])}</td>
+                          {row.ai.slice(1).map((v, i) => (
+                            <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '1px dashed #e0e4ed' }}>{fmt(v)}</td>
+                          ))}
+                        </tr>,
+                        <tr key={`${ri}-uk`} style={{ background: ri % 2 === 0 ? '#f8f9fc' : '#fff' }}>
+                          <td style={{ padding: '10px 12px', color: '#5a6a8a', fontSize: '.72rem', whiteSpace: 'nowrap', borderBottom: '2px solid #e0e4ed' }}>Uttarakhand</td>
+                          <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '2px solid #e0e4ed' }}>{fmt(row.uk[0])}</td>
+                          {row.uk.slice(1).map((v, i) => (
+                            <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '2px solid #e0e4ed' }}>{fmt(v)}</td>
+                          ))}
+                        </tr>,
+                      ])}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* ── Footer ── */}
+                {/* <div className="px-[28px] py-[18px] flex-shrink-0" style={{ borderTop: '1px solid #e0e4ed', background: '#f8f9fc' }}>
+                  <div className="flex gap-[10px]">
+                    <button
+                      className="flex-1 py-[12px] rounded-[10px] font-bold text-[.88rem] text-white cursor-pointer transition-all duration-300"
+                      style={{ background: '#DF5400', border: 'none' }}
+                      onMouseEnter={e => e.currentTarget.style.background = '#c44900'}
+                      onMouseLeave={e => e.currentTarget.style.background = '#DF5400'}
+                    >
+                      Apply Now
+                    </button>
+                    <button
+                      className="flex-1 py-[12px] rounded-[10px] font-bold text-[.88rem] cursor-pointer transition-all duration-300"
+                      style={{ background: '#fff', color: '#001F4C', border: '2px solid #e0e4ed' }}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = '#DF5400'; e.currentTarget.style.color = '#DF5400'; }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = '#e0e4ed'; e.currentTarget.style.color = '#001F4C'; }}
+                    >
+                      Talk To Counsellor
+                    </button>
+                  </div>
+                </div> */}
+              </>
+            ) : (
+              /* ── Contact / Action modal ── */
+              <div className="px-[36px] py-[32px] text-center">
+                <div
+                  className="w-[60px] h-[60px] rounded-full flex items-center justify-center text-[1.6rem] mx-auto mb-[18px]"
+                  style={{ background: '#FFF3D7', color: '#DF5400' }}
+                >
+                  {isAction ? '📝' : '₹'}
+                </div>
+                <p className="text-[.94rem] leading-[1.8] mb-[24px]" style={{ color: '#5a6a8a' }}>
+                  {isAction
+                    ? 'Our admissions team will get in touch with you shortly.'
+                    : 'Fee details for this program are shared by our admissions team along with scholarship and payment options.'}
+                </p>
+                <div className="flex flex-col gap-[12px]">
+                  <button
+                    className="py-[13px] rounded-[10px] font-bold text-[.92rem] text-white cursor-pointer transition-all duration-300"
+                    style={{ background: '#DF5400', border: 'none' }}
+                    onMouseEnter={e => e.currentTarget.style.background = '#c44900'}
+                    onMouseLeave={e => e.currentTarget.style.background = '#DF5400'}
+                  >
+                    {isAction ? MODAL_OVERRIDES[modal.prog] : 'Request Fee Details'}
+                  </button>
+                  <button
+                    className="py-[13px] rounded-[10px] font-bold text-[.92rem] cursor-pointer transition-all duration-300"
+                    style={{ background: '#f8f9fc', color: '#001F4C', border: '2px solid #e0e4ed' }}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = '#DF5400'; e.currentTarget.style.color = '#DF5400'; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = '#e0e4ed'; e.currentTarget.style.color = '#001F4C'; }}
+                  >
+                    Talk To Counsellor
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}

@@ -13,9 +13,9 @@ export default function UGHero() {
         style={{ height: '52vh', minHeight: 400 }}
       >
         {/* Background */}
-        <div className="cl-ugh-bg absolute inset-0 z-0">
+        {/* <div className="cl-ugh-bg absolute inset-0 z-0">
           <img src="assets/ABHI0044.JPG" alt="Programs at Tulas" />
-        </div>
+        </div> */}
 
         {/* Overlay */}
         <div
@@ -35,9 +35,9 @@ export default function UGHero() {
 
         {/* Content */}
         <div className="relative z-[5] text-center py-[40px] px-[7%] max-w-[1100px] w-full">
-          <div className="flex items-center gap-[10px] justify-center mb-[20px] text-[.82rem] font-medium" style={{ color: 'rgba(255,255,255,.65)' }}>
+          {/* <div className="flex items-center gap-[10px] justify-center mb-[20px] text-[.82rem] font-medium" style={{ color: 'rgba(255,255,255,.65)' }}>
             Home / Academics / <span style={{ color: '#FFF3D7' }}>Undergraduate</span>
-          </div>
+          </div> */}
 
           <div
             className="inline-flex items-center gap-[10px] rounded-[32px] px-[28px] py-[10px] font-bold text-[.76rem] uppercase tracking-[.16em] text-white mb-[22px]"
@@ -50,7 +50,7 @@ export default function UGHero() {
             className="text-white mb-[18px] tracking-[.02em]"
             style={{
               fontFamily: "'Bebas Neue',sans-serif",
-              fontSize: 'clamp(3rem,8vw,7rem)',
+              fontSize: 'clamp(2rem,6vw,5rem)',
               lineHeight: '.92',
               textShadow: '0 8px 50px rgba(0,0,0,.6)',
             }}
