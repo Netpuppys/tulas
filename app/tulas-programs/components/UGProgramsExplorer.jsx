@@ -318,6 +318,33 @@ const FEES_DATA = {
       { prog: 'M.Sc. Agronomy', ai: [129250,79250,84250,89250,94250,99250], uk: [129250,74250,79250,84250,89250,94250] },
     ],
   },
+  'Engineering Diploma': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'All Engineering Diploma', ai: [64600,34600,39600,44600,49600,54600], uk: [64600,30600,35600,40600,45600,50600] },
+    ],
+  },
+  'D.Pharm': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'Diploma in Pharmacy (D.Pharm)', ai: [87500,62500,65000,67500,70000,72500], uk: [87500,60000,62500,65000,67500,70000] },
+    ],
+  },
+  'Integrated Law': {
+    note: 'Per annum · Fixed fee structure',
+    flat: true,
+    rows: [
+      { prog: 'BA LL.B (Hons.)',  fee: 116000 },
+      { prog: 'BBA LL.B (Hons.)', fee: 122500 },
+    ],
+  },
+  'LL.B': {
+    note: 'Per annum · Fixed fee structure',
+    flat: true,
+    rows: [
+      { prog: 'LL.B (3-Year)', fee: 93750 },
+    ],
+  },
 };
 
 /* ─── COMPONENT ─────────────────────────────────────────────────────────── */
@@ -772,42 +799,60 @@ export default function UGProgramsExplorer() {
 
                 {/* ── Fee table ── */}
                 <div style={{ overflowX: 'auto', overflowY: 'auto', flex: 1 }}>
-                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.8rem', minWidth: '560px' }}>
-                    <thead>
-                      <tr style={{ background: '#001F4C', color: '#fff', position: 'sticky', top: 0, zIndex: 2 }}>
-                        <th style={{ padding: '13px 16px', color: '#ffff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Programme</th>
-                        <th style={{ padding: '13px 12px', color: '#ffff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Category</th>
-                        <th style={{ padding: '13px 12px', color: '#ffff', textAlign: 'right', whiteSpace: 'nowrap', fontWeight: 700 }}>No Scholarship</th>
-                        {FEE_COLS.map(c => (
-                          <th key={c} style={{ padding: '13px 10px', textAlign: 'right', whiteSpace: 'nowrap', color: '#FFF3D7', fontWeight: 700 }}>{c}</th>
+                  {feeData.flat ? (
+                    /* Flat fee table (Law programs — no scholarship tiers) */
+                    <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.88rem' }}>
+                      <thead>
+                        <tr style={{ background: '#001F4C', color: '#fff' }}>
+                          <th style={{ padding: '14px 20px', textAlign: 'left', fontWeight: 700 }}>Programme</th>
+                          <th style={{ padding: '14px 20px', textAlign: 'right', fontWeight: 700 }}>Fee Per Year</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {feeData.rows.map((row, ri) => (
+                          <tr key={ri} style={{ background: ri % 2 === 0 ? '#f8f9fc' : '#fff', borderBottom: '1px solid #e0e4ed' }}>
+                            <td style={{ padding: '16px 20px', fontWeight: 700, color: '#001F4C' }}>{row.prog}</td>
+                            <td style={{ padding: '16px 20px', textAlign: 'right', fontWeight: 700, color: '#DF5400', fontSize: '1.05rem' }}>{fmt(row.fee)}</td>
+                          </tr>
                         ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {feeData.rows.flatMap((row, ri) => [
-                        <tr key={`${ri}-ai`} style={{ background: ri % 2 === 0 ? '#f8f9fc' : '#fff' }}>
-                          <td
-                            rowSpan={2}
-                            style={{ padding: '11px 16px', fontWeight: 700, color: '#001F4C', verticalAlign: 'middle', borderRight: '1px solid #e0e4ed', borderBottom: '2px solid #e0e4ed', whiteSpace: 'nowrap' }}
-                          >
-                            {row.prog}
-                          </td>
-                          <td style={{ padding: '10px 12px', color: '#5a6a8a', fontSize: '.72rem', whiteSpace: 'nowrap', borderBottom: '1px dashed #e0e4ed' }}>All India</td>
-                          <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '1px dashed #e0e4ed' }}>{fmt(row.ai[0])}</td>
-                          {row.ai.slice(1).map((v, i) => (
-                            <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '1px dashed #e0e4ed' }}>{fmt(v)}</td>
+                      </tbody>
+                    </table>
+                  ) : (
+                    /* Tiered scholarship table */
+                    <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.8rem', minWidth: '560px' }}>
+                      <thead>
+                        <tr style={{ background: '#001F4C', color: '#fff', position: 'sticky', top: 0, zIndex: 2 }}>
+                          <th style={{ padding: '13px 16px', color: '#fff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Programme</th>
+                          <th style={{ padding: '13px 12px', color: '#fff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Category</th>
+                          <th style={{ padding: '13px 12px', color: '#fff', textAlign: 'right', whiteSpace: 'nowrap', fontWeight: 700 }}>No Scholarship</th>
+                          {FEE_COLS.map(c => (
+                            <th key={c} style={{ padding: '13px 10px', textAlign: 'right', whiteSpace: 'nowrap', color: '#FFF3D7', fontWeight: 700 }}>{c}</th>
                           ))}
-                        </tr>,
-                        <tr key={`${ri}-uk`} style={{ background: ri % 2 === 0 ? '#f8f9fc' : '#fff' }}>
-                          <td style={{ padding: '10px 12px', color: '#5a6a8a', fontSize: '.72rem', whiteSpace: 'nowrap', borderBottom: '2px solid #e0e4ed' }}>Uttarakhand</td>
-                          <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '2px solid #e0e4ed' }}>{fmt(row.uk[0])}</td>
-                          {row.uk.slice(1).map((v, i) => (
-                            <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '2px solid #e0e4ed' }}>{fmt(v)}</td>
-                          ))}
-                        </tr>,
-                      ])}
-                    </tbody>
-                  </table>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {feeData.rows.flatMap((row, ri) => [
+                          <tr key={`${ri}-ai`} style={{ background: ri % 2 === 0 ? '#f8f9fc' : '#fff' }}>
+                            <td rowSpan={2} style={{ padding: '11px 16px', fontWeight: 700, color: '#001F4C', verticalAlign: 'middle', borderRight: '1px solid #e0e4ed', borderBottom: '2px solid #e0e4ed', whiteSpace: 'nowrap' }}>
+                              {row.prog}
+                            </td>
+                            <td style={{ padding: '10px 12px', color: '#5a6a8a', fontSize: '.72rem', whiteSpace: 'nowrap', borderBottom: '1px dashed #e0e4ed' }}>All India</td>
+                            <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '1px dashed #e0e4ed' }}>{fmt(row.ai[0])}</td>
+                            {row.ai.slice(1).map((v, i) => (
+                              <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '1px dashed #e0e4ed' }}>{fmt(v)}</td>
+                            ))}
+                          </tr>,
+                          <tr key={`${ri}-uk`} style={{ background: ri % 2 === 0 ? '#f8f9fc' : '#fff' }}>
+                            <td style={{ padding: '10px 12px', color: '#5a6a8a', fontSize: '.72rem', whiteSpace: 'nowrap', borderBottom: '2px solid #e0e4ed' }}>Uttarakhand</td>
+                            <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '2px solid #e0e4ed' }}>{fmt(row.uk[0])}</td>
+                            {row.uk.slice(1).map((v, i) => (
+                              <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '2px solid #e0e4ed' }}>{fmt(v)}</td>
+                            ))}
+                          </tr>,
+                        ])}
+                      </tbody>
+                    </table>
+                  )}
                 </div>
 
                 {/* ── Footer ── */}

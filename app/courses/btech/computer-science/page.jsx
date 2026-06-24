@@ -10,6 +10,7 @@ import CSEHero from './components/CSEHero';
 import NewFooter from '@/component/NewFooter';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
+import CSEProgramDetails from './components/CSEProgramDetails';
 
 export default function CSEPage() {
   return (
@@ -25,6 +26,7 @@ export default function CSEPage() {
       <CSEOverview />
       <CSEAICurriculum />
       <CSECertifications />
+      <CSEProgramDetails/>
       {/* <CSELabsInfrastructure /> */}
       {/* <CSEReadinessIndex /> */}
       <CSECareerOutcomes />

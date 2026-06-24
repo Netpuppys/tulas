@@ -432,7 +432,7 @@ const sitemap = [
       },
       {
         title: "Tula’s Technology and Incubator (TTBI)",
-        linkTo: "https://www.tulasincubator.com",
+        linkTo: "https://ttbif.in/",
         target: "_blank",
       },
       {

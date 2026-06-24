@@ -258,7 +258,7 @@ const researchData = [
   },
   {
     title: "Tula's Technology and Incubator (TTBI)",
-    href: "https://www.tulasincubator.com",
+    href: "https://ttbif.in/",
     subLinks: null,
   },
   {
