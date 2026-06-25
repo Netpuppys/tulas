@@ -36,8 +36,8 @@ const NewFooter = ({ set = false, color = false }) => {
 
   const quickLinks = [
     { title: "About Us", linkTo: "/about/" },
-    { title: "Admissions", linkTo: "/admissions/" },
-    { title: "Placements", linkTo: "/placements/" },
+    { title: "Admissions", linkTo: "/admission-procedure/" },
+    { title: "Placements", linkTo: "/placements/career-innovation-centre/" },
     { title: "Career", linkTo: "/careers/" },
   ];
 
@@ -273,7 +273,7 @@ const NewFooter = ({ set = false, color = false }) => {
           <ul className="flex flex-col">
             <li>
               <Link
-                href={`/news/${utmParams}`}
+                href={`/latest-news`}
                 className="flex items-center gap-2 text-[13px] text-gray-300 hover:text-orange-500 transition-colors duration-200 py-[3px]"
               >
                 <span className="text-orange-500 text-[10px]">▶</span>

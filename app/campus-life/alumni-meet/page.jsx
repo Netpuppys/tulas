@@ -25,9 +25,9 @@ export default function AlumniMeetPage() {
       <ReunionsCampusMemories />
       <AlumniNetworking />
       <SuccessStories />
-      <AlumniStoriesSection />
+      {/* <AlumniStoriesSection /> */}
       <MemoryWallGallery />
-      <AlumniMeetCTA />
+      {/* <AlumniMeetCTA /> */}
 
       <NewFooter/>
     </main>

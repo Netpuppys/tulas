@@ -5,34 +5,25 @@ import { useState } from 'react';
 /* ─── DATA ─────────────────────────────────────────────────────────────── */
 
 const SECTIONS = [
-  {
-    id: 'usps',
-    tag: 'Unique Selling Points',
-    title: 'USPs',
-    description: [
-      'Practice based Curriculum to fit into the industry requirements.',
-      'Mentoring & Content Delivery by Experienced & qualified Faculty Members and Industry Experts through Guest Lectures and Expert Talks.',
-      'Add-on Certification Programs, Value Added Courses and Short Term Courses are conducted regularly for professional development of the students. (More than 500 certifications).',
-    ],
-    points: [
-      '1000+ Alumni working with reputed MNCs and Government Sectors.',
-      'Well qualified faculty with core teaching & industry experience.',
-      'Strong inclination towards research by faculty members & students. (100+ journal & conference publications).',
-      'Focus on Industry based learning through regular industry interactions, industrial visits, projects and internships.',
-      '12 Patents published by faculty members.',
-      'Funded Research projects from AICTE, TEQIP-III, Uttarakhand Technical University.',
-      'Faculty members indulge in regular upskilling through FDPs, Workshops and Seminars. (175+ FDPs completed).',
-    ],
-  },
-  {
-    id: 'course-outcomes',
-    tag: 'Academic Deliverables',
-    title: 'Course Outcomes',
-    isDownload: true,
-    downloadLabel: 'Download B.Tech Computer Science Course Outcomes',
-    // ↓ Replace '#' with the actual PDF URL / path
-    downloadHref: '#',
-  },
+  // {
+  //   id: 'usps',
+  //   tag: 'Unique Selling Points',
+  //   title: 'USPs',
+  //   description: [
+  //     'Practice based Curriculum to fit into the industry requirements.',
+  //     'Mentoring & Content Delivery by Experienced & qualified Faculty Members and Industry Experts through Guest Lectures and Expert Talks.',
+  //     'Add-on Certification Programs, Value Added Courses and Short Term Courses are conducted regularly for professional development of the students. (More than 500 certifications).',
+  //   ],
+  //   points: [
+  //     '1000+ Alumni working with reputed MNCs and Government Sectors.',
+  //     'Well qualified faculty with core teaching & industry experience.',
+  //     'Strong inclination towards research by faculty members & students. (100+ journal & conference publications).',
+  //     'Focus on Industry based learning through regular industry interactions, industrial visits, projects and internships.',
+  //     '12 Patents published by faculty members.',
+  //     'Funded Research projects from AICTE, TEQIP-III, Uttarakhand Technical University.',
+  //     'Faculty members indulge in regular upskilling through FDPs, Workshops and Seminars. (175+ FDPs completed).',
+  //   ],
+  // },
   {
     id: 'program-outcomes',
     tag: 'Graduate Competencies',
@@ -78,6 +69,15 @@ const SECTIONS = [
       'PEO3 — Lifelong Learning: To equip students with creative project management skills that help them become lifelong learners by means of continuing education.',
       'PEO4 — Social Awareness and Ethics: To foster awareness, accountability and ethics that lead towards efficient collaboration, economic growth and multidisciplinary interactions.',
     ],
+  },
+    {
+    id: 'course-outcomes',
+    tag: 'Academic Deliverables',
+    title: 'Course Outcomes',
+    isDownload: true,
+    downloadLabel: 'Download B.Tech Computer Science Course Outcomes',
+    // ↓ Replace '#' with the actual PDF URL / path
+    downloadHref: '/courses/btech/computer-science/CSE.pdf',
   },
 ];
 

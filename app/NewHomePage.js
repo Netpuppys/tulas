@@ -81,7 +81,9 @@ import gauravSrivastava from "../public/courses/bca/gauravSrivastava.png";
 import prathamNautiyal from "../public/courses/bca/prathamNautiyal.png";
 import rohitKotnala from "../public/courses/bca/rohitKotnala.png";
 import saurabhRawat from "../public/courses/bca/saurabhRawat.png";
+import desktopbanner from "../public/Homepage/BannerHome/nbabanner.png";
 import desktopbanner1 from "../public/Homepage/BannerHome/newbanner.jpg";
+import mobilebanner from "../public/Homepage/BannerHome/nbamobile.jpeg";
 import mobilebanner1 from "../public/Homepage/BannerHome/newbannermobile.jpg";
 import desktopbanner2 from "../public/Homepage/BannerHome/newbanner1.jpg";
 import mobilebanner2 from "../public/Homepage/BannerHome/newbannermobile1.jpg";
@@ -182,11 +184,13 @@ export default function NewHomePage() {
   ];
 
   const bannerImagesDesktop = [
+    desktopbanner,
     desktopbanner1,
     desktopbanner2,
     desktopbanner3,
   ];
   const bannerImagesMobile = [
+    mobilebanner,
     mobilebanner1,
     mobilebanner2,
     mobilebanner3,

@@ -1,15 +1,66 @@
 'use client';
 
 const WHY_CARDS = [
-  { num: '01', title: 'AI-Integrated Learning',          text: 'Artificial intelligence and machine learning woven across the entire curriculum.'                   },
-  { num: '02', title: 'IIT Kanpur E&ICT Academy',       text: 'Association bringing premier certifications and academic credibility to your degree.'              },
-  { num: '03', title: 'Industry-Aligned Curriculum',     text: 'Continuously updated to match real industry trends, tools, and practices.'                        },
-  { num: '04', title: 'Industry Certifications',         text: 'AWS, Microsoft, Google, NVIDIA, Oracle and Python certifications built in.'                       },
-  { num: '05', title: 'Internship Opportunities',        text: 'Multiple internships and a direct internship-to-placement pathway.'                               },
-  { num: '06', title: 'Innovation & Research Culture',   text: 'A centre of excellence in teaching, research and innovative computing practices.'                 },
-  { num: '07', title: 'Project-Based Learning',          text: 'Learn by building — live projects, hackathons, and product development.'                          },
-  { num: '08', title: 'Emerging Technology Exposure',    text: 'Generative AI, Agentic AI, cloud, computer vision, blockchain and IoT.'                          },
-  { num: '09', title: 'Placement Readiness Framework',   text: 'Career development and corporate readiness powered by TCCI.'                                     },
+  {
+    num: '01',
+    title: 'AI-Integrated Learning',
+    text: 'Artificial intelligence and machine learning woven across the curriculum to enhance how you learn, create and solve.',
+  },
+  {
+    num: '02',
+    title: 'IIT Kanpur E&ICT Academy & Industry Certifications',
+    text: 'Earn industry-recognized certifications through IIT Kanpur E&ICT Academy and global partners including AWS, Microsoft, Google, NVIDIA and Oracle.',
+  },
+  {
+    num: '03',
+    title: 'Industry-Aligned Curriculum',
+    text: 'A future-focused curriculum continuously updated to match evolving technologies, industry trends and workplace expectations.',
+  },
+  {
+    num: '04',
+    title: 'Project-Based Learning',
+    text: 'Build practical skills through live projects, hackathons, product development and real-world problem solving.',
+  },
+  {
+    num: '05',
+    title: 'Industry Connect & Projects',
+    text: 'Bridge classroom learning with the real world through projects, industrial visits, expert interactions and corporate collaborations.',
+  },
+  {
+    num: '06',
+    title: 'Emerging Technology Exposure',
+    text: 'Explore Generative AI, Agentic AI, Cloud Computing, Computer Vision, Blockchain, IoT and other future technologies.',
+  },
+  {
+    num: '07',
+    title: 'Career & Placement Readiness',
+    text: 'Develop corporate-ready skills through aptitude training, interview preparation, soft skills and placement support powered by TCCI.',
+  },
+  {
+    num: '08',
+    title: 'Expert Faculty & Mentorship',
+    text: 'Learn from experienced faculty and industry experts committed to continuous upskilling, mentorship and practical learning.',
+  },
+  {
+    num: '09',
+    title: 'Research, Innovation & Patents',
+    text: 'Innovate through research publications, funded projects, patents and a culture that encourages discovery and problem-solving.',
+  },
+  {
+    num: '10',
+    title: 'Global Alumni Network',
+    text: 'Join a thriving network of 1000+ alumni working across leading MNCs, startups and government organizations.',
+  },
+  {
+    num: '11',
+    title: 'Modern Labs & Centres of Excellence',
+    text: 'Learn in advanced laboratories and technology centres designed for hands-on experimentation, innovation and industry-ready skills.',
+  },
+  {
+    num: '12',
+    title: 'Student Clubs & Technical Communities',
+    text: 'Grow beyond academics through coding clubs, innovation cells, hackathons, competitions and leadership opportunities.',
+  },
 ];
 
 export default function WhyCSE() {
@@ -27,7 +78,7 @@ export default function WhyCSE() {
 
       <section
         id="why-cse-section"
-        className="py-[110px] px-[7%] max-[640px]:py-[70px] max-[640px]:px-[5%]"
+        className="py-[50px] px-[7%] max-[640px]:py-[30px] max-[640px]:px-[5%]"
         style={{ background: '#f8f9fc' }}
       >
         {/* Header */}

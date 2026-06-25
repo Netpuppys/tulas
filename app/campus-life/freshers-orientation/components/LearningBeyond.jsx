@@ -5,37 +5,31 @@ const OPPS = [
     icon: '🎭',
     title: 'Cultural Clubs',
     desc:  'Express yourself through music, dance, drama, and arts. Join vibrant cultural communities that celebrate creativity.',
-    cta:   'Explore Clubs →',
   },
   {
     icon: '🏆',
     title: 'Leadership Opportunities',
     desc:  'Take on leadership roles in student councils, event committees, and organizational bodies.',
-    cta:   'Lead The Way →',
   },
   {
     icon: '💡',
     title: 'Innovation & Startups',
     desc:  'Join incubation programs, hackathons, and entrepreneurship cells to turn your ideas into reality.',
-    cta:   'Start Building →',
   },
   {
     icon: '⚽',
     title: 'Sports & Fitness',
     desc:  'Stay active with athletics, intramural sports, fitness programs, and outdoor adventures.',
-    cta:   'Get Active →',
   },
   {
     icon: '🎤',
     title: 'Public Speaking & Debate',
     desc:  'Develop communication skills through debate societies, public speaking forums, and MUN.',
-    cta:   'Find Your Voice →',
   },
   {
     icon: '🌍',
     title: 'Social Impact',
     desc:  'Contribute to meaningful causes through community service, sustainability initiatives, and outreach programs.',
-    cta:   'Make A Difference →',
   },
 ];
 
@@ -88,13 +82,13 @@ export default function LearningBeyond() {
               <span className="block text-[2.2rem] mb-[18px]">{op.icon}</span>
               <h3 className="font-extrabold text-[1.18rem] text-[#1B2D5B] mb-3">{op.title}</h3>
               <p className="text-[0.92rem] text-[#5a6a8a] leading-[1.75] mb-4">{op.desc}</p>
-              <a
+              {/* <a
                 href="#"
                 className="inline-flex items-center gap-[6px] font-bold text-[0.85rem] transition-all duration-200 hover:gap-[10px]"
                 style={{ color: '#E06B1B' }}
               >
                 {op.cta}
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

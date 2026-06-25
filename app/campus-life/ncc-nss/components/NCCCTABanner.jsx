@@ -51,25 +51,18 @@ export default function NCCCTABanner() {
         {/* Buttons */}
         <div className="flex gap-4 justify-center flex-wrap max-[600px]:flex-col max-[600px]:items-center">
           <a
-            href="https://tulas.edu.in/campus-life/"
+            href="/campus-life/tulas-experiences"
             className="inline-flex items-center gap-2 px-[30px] py-[14px] rounded-[10px] font-bold text-[0.92rem] text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_26px_rgba(224,107,27,.45)]"
             style={{ background: '#E06B1B', fontFamily: "'Syne', sans-serif" }}
           >
             Explore Campus Life →
           </a>
           <a
-            href="tel:+91-9837983721"
+            href="/apply-now"
             className="inline-flex items-center gap-2 px-[30px] py-[14px] rounded-[10px] font-semibold text-[0.92rem] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
             style={{ background: 'transparent', border: '2px solid rgba(255,255,255,.4)', fontFamily: "'Syne', sans-serif" }}
           >
             Join The Community
-          </a>
-          <a
-            href="#impact"
-            className="inline-flex items-center gap-2 px-[30px] py-[13px] rounded-[10px] font-semibold text-[0.86rem] text-white transition-all duration-200 hover:border-white"
-            style={{ background: 'transparent', border: '2px solid rgba(255,255,255,.5)', fontFamily: "'Syne', sans-serif" }}
-          >
-            View Activities
           </a>
         </div>
       </div>

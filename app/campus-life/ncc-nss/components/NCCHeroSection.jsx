@@ -93,7 +93,7 @@ export default function NCCHeroSection() {
               Explore Leadership & Services →
             </a>
             
-            <a  href="#about"
+            <a  href="/apply-now"
               className="inline-flex items-center gap-2 px-8 py-[14px] rounded-[10px] font-bold text-[0.92rem] text-white transition-all duration-300 hover:border-white hover:bg-white/10"
               style={{ background: 'transparent', border: '2px solid rgba(255,255,255,.4)' }}>
   

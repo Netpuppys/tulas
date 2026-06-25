@@ -22,7 +22,7 @@ export default function AboutAlumniCommunity() {
 
       <section
         id="about"
-        className="py-[100px] px-[7%] max-[640px]:py-[65px] max-[640px]:px-[5%] relative overflow-hidden"
+        className="py-[40px] px-[7%] max-[640px]:py-[35px] max-[640px]:px-[5%] relative overflow-hidden"
         style={{ background: '#FFF8F0' }}
       >
         {/* Radial accent */}
@@ -38,7 +38,7 @@ export default function AboutAlumniCommunity() {
             style={{ boxShadow: '0 24px 70px rgba(0,31,76,.14)' }}
           >
             <img
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=85"
+              src="/Homepage/LifeAtTulas/lifetulas1.jpg"
               alt="Alumni Community"
               className="w-full object-cover"
               style={{ height: '650px' }}
@@ -58,7 +58,7 @@ export default function AboutAlumniCommunity() {
 
             <h2
               className="mb-5 leading-[.95] tracking-[.01em]"
-              style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(3rem,5.5vw,6rem)', color: '#001F4C' }}
+              style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(2rem,3vw,4rem)', color: '#001F4C' }}
             >
               A Network Built On<br />
               <em className="not-italic" style={{ color: '#DF5400' }}>Shared Experiences</em>

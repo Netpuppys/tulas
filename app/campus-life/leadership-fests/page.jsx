@@ -23,7 +23,7 @@ export default function LeadershipFestPage() {
       <LeadershipFestHero/>
       <AboutLeadershipFest />
       <ChhatraSansadConclave />
-      <ProminentSpeakers />
+      {/* <ProminentSpeakers /> */}
       <LeadershipExperiences />
       <EventHighlights />
       <LeadershipCultureSection />

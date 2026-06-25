@@ -4,7 +4,6 @@ const PILLS = [
   { bold: '4-Year',        rest: ' B.Tech Program'       },
   { bold: 'AI-Integrated', rest: ' Curriculum'           },
   { bold: null,            rest: 'Industry Certifications' },
-  { bold: null,            rest: 'Multiple Internships'    },
   { bold: null,            rest: 'Project-Based Learning'  },
   { bold: 'Up to ₹60 LPA',rest: ' Highest Package'       },
 ];

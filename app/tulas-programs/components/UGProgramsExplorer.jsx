@@ -405,7 +405,7 @@ export default function UGProgramsExplorer() {
     <>
       <style dangerouslySetInnerHTML={{__html:`
         /* Level tabs */
-        .cl-ug-levelbar{position:sticky;top:140px;z-index:900;background:#fff;border-bottom:1px solid #e0e4ed;box-shadow:0 4px 18px rgba(0,31,76,.05)}
+        .cl-ug-levelbar{position:sticky;top:140px;z-index:10;background:#fff;border-bottom:1px solid #e0e4ed;box-shadow:0 4px 18px rgba(0,31,76,.05)}
         @media(max-width:768px){.cl-ug-levelbar{top:70px}}
         .cl-ug-levelinner{max-width:1500px;margin:0 auto;padding:0 5%;display:flex}
         .cl-ug-tab{padding:22px 30px;font-size:.92rem;font-weight:700;color:#5a6a8a;cursor:pointer;border-bottom:3px solid transparent;transition:all .25s;white-space:nowrap}

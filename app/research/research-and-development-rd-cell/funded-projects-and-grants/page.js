@@ -10,6 +10,7 @@ import TableComponent from "./data/tableData";
 import MegaMenu from "@/component/Navbar/MegaMenu";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import NewFooter from "@/component/NewFooter";
+import CustomiFrame from "./data/iFrame";
 
 function RAndDFunded() {
   return (
@@ -67,9 +68,10 @@ function RAndDFunded() {
               alt=""
             />
           </div> */}
-          <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
+          <div className="pb-8 px-4 md:px-[4%] md:pb-[3%] w-full">
             <div className="overflow-auto w-full flex">
               <TableComponent />
+              {/* <CustomiFrame/> */}
             </div>
           </div>
 

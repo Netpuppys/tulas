@@ -149,7 +149,7 @@ export default function CSEOverview() {
         </div> 
 
         {/* Core Learning Areas */}
-        <div className="mt-[70px]">
+        {/* <div className="mt-[70px]">
           <h3 className="text-center text-[1.5rem] font-extrabold mb-[36px]" style={{ color: '#001F4C' }}>Core Learning Areas</h3>
           <div className="flex flex-wrap gap-[12px] justify-center max-w-[900px] mx-auto">
             {LEARN_CHIPS.map((chip, i) => (
@@ -164,7 +164,7 @@ export default function CSEOverview() {
               </span>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

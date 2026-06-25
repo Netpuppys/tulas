@@ -51,7 +51,7 @@ export default function ClubsCTABanner() {
         {/* Buttons */}
         <div className="flex gap-4 justify-center flex-wrap max-[600px]:flex-col max-[600px]:items-center">
           <a
-            href="/campus-life"
+            href="/campus-life/tulas-experiences/"
             className="inline-flex items-center gap-2 px-8 py-[14px] rounded-[10px] font-bold text-[0.9rem] text-white transition-all duration-[250ms] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(27,45,91,.3)]"
             style={{ background: '#1B2D5B', fontFamily: "'Syne', sans-serif" }}
           >
@@ -64,13 +64,13 @@ export default function ClubsCTABanner() {
           >
             Join Student Clubs →
           </a>
-          <a
+          {/* <a
             href="#"
             className="inline-flex items-center gap-2 px-8 py-[14px] rounded-[10px] font-semibold text-[0.9rem] text-white transition-all duration-[250ms] hover:border-[#E06B1B] hover:text-[#E06B1B]"
             style={{ background: 'transparent', border: '2px solid rgba(255,255,255,.4)', fontFamily: "'Syne', sans-serif" }}
           >
             View Activities
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

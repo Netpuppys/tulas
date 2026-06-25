@@ -2,33 +2,23 @@
 
 const ITEMS = [
   {
-    img:   'https://images.unsplash.com/photo-1583745889531-b5f576768c0d?w=1200&q=80',
-    emoji: '🎨',
-    title: 'Holi Celebrations',
+    img:   '/festivals/img1.jpg',
     large: true,
   },
   {
-    img:   'https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=800&q=80',
-    emoji: '🪔',
-    title: 'Diwali Festival',
+    img:   '/festivals/img2.jpg',
     large: false,
   },
   {
-    img:   'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
-    emoji: '🎭',
-    title: 'Cultural Nights',
+    img:   '/festivals/img3.jpg',
     large: false,
   },
   {
-    img:   'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80',
-    emoji: '🎉',
-    title: "Fresher's Welcome",
+    img:   '/festivals/img4.jpg',
     large: false,
   },
   {
-    img:   'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80',
-    emoji: '🎓',
-    title: 'Farewell Moments',
+    img:   '/festivals/img6.jpg',
     large: false,
   },
 ];

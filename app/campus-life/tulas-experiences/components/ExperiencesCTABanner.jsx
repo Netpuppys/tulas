@@ -62,7 +62,7 @@ export default function ExperiencesCTABanner() {
 
         {/* Buttons */}
         <div className="flex gap-[18px] justify-center flex-wrap">
-          <a
+          {/* <a
             href="https://tulas.edu.in/campus-life/"
             className="inline-flex items-center gap-2 px-[38px] py-4 rounded-[12px] font-bold text-[.95rem] text-white transition-all duration-300 hover:-translate-y-[3px]"
             style={{ background: '#DF5400', boxShadow: '0 8px 24px rgba(223,84,0,.3)' }}
@@ -70,13 +70,13 @@ export default function ExperiencesCTABanner() {
             onMouseLeave={e => e.currentTarget.style.boxShadow = '0 8px 24px rgba(223,84,0,.3)'}
           >
             Explore Campus Life →
-          </a>
+          </a> */}
           <a
-            href="https://tulas.edu.in/admissions/"
+            href="/apply-now"
             className="inline-flex items-center gap-2 px-[38px] py-4 rounded-[12px] font-bold text-[.95rem] text-white transition-all duration-300 hover:-translate-y-0.5"
-            style={{ background: '#001F4C' }}
-            onMouseEnter={e => { e.currentTarget.style.background = '#001635'; e.currentTarget.style.boxShadow = '0 10px 32px rgba(0,31,76,.3)'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = '#001F4C'; e.currentTarget.style.boxShadow = 'none'; }}
+            style={{ background: '#DF5400', boxShadow: '0 8px 24px rgba(223,84,0,.3)' }}
+            onMouseEnter={e => e.currentTarget.style.boxShadow = '0 12px 36px rgba(223,84,0,.45)'}
+            onMouseLeave={e => e.currentTarget.style.boxShadow = '0 8px 24px rgba(223,84,0,.3)'}
           >
             Join The Community
           </a>

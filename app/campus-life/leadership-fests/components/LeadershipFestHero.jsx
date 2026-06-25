@@ -87,13 +87,13 @@ export default function LeadershipFestHero() {
           {/* Buttons */}
           <div className="flex gap-4 justify-center flex-wrap">
             
-             <a href="#experiences"
+             <a href="#about"
               className="inline-flex items-center gap-2 px-8 py-[14px] rounded-[10px] font-bold text-[0.92rem] text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(224,107,27,.45)]"
               style={{ background: '#E06B1B', boxShadow: '0 4px 14px rgba(224,107,27,.3)' }}>
               Explore Experiences →
             </a>
             
-            <a  href="#about"
+            <a  href="/apply-now"
               className="inline-flex items-center gap-2 px-8 py-[14px] rounded-[10px] font-bold text-[0.92rem] text-white transition-all duration-300 hover:border-white hover:bg-white/10"
               style={{ background: 'transparent', border: '2px solid rgba(255,255,255,.4)' }}>
   

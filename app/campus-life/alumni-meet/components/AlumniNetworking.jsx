@@ -59,7 +59,7 @@ export default function AlumniNetworking() {
             </div>
             <h2
               className="mb-5 leading-[.95] tracking-[.01em]"
-              style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(3rem,5.5vw,6rem)', color: '#fff' }}
+              style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(2rem,3vw,4rem)', color: '#fff' }}
             >
               Alumni Connections &amp;<br />
               <em className="not-italic" style={{ color: '#DF5400' }}>Networking</em>

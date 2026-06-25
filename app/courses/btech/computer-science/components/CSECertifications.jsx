@@ -44,8 +44,8 @@ export default function CSECertifications() {
             className="mb-[22px] leading-[.95] tracking-[.01em]"
             style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(2rem,4vw,4rem)', color: '#001F4C' }}
           >
-            Certifications, Projects<br />
-            <em className="not-italic" style={{ color: '#DF5400' }}>&amp; Internships</em>
+            Certifications
+            <em className="not-italic" style={{ color: '#DF5400' }}> &amp; Projects</em>
           </h2>
           <p className="text-[1.08rem] leading-[1.9] max-w-[850px] mx-auto" style={{ color: '#5a6a8a' }}>
             Beyond the degree — globally recognized certifications, real projects, and continuous industry exposure that make graduates job-ready.
@@ -103,12 +103,12 @@ export default function CSECertifications() {
         </div>
 
         {/* Internship ecosystem */}
-        <div>
+        {/* <div>
           <div className="text-center text-[1.3rem] font-extrabold mb-[24px]" style={{ color: '#001F4C' }}>Internship Ecosystem</div>
           <p className="text-center max-w-[760px] mx-auto text-[1.05rem] leading-[1.9]" style={{ color: '#5a6a8a' }}>
             Students undergo <strong style={{ color: '#001F4C' }}>multiple internship opportunities</strong> across the program — gaining real industry exposure, mentorship, and a direct pathway from internship to placement.
           </p>
-        </div>
+        </div> */}
       </section>
     </>
   );

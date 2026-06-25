@@ -32,7 +32,7 @@ const topStripItems = [
   { name: "BLOG", href: "/blog", subLinks: null },
   {
     name: "ALUMNI",
-    href: "#",
+    href: "/",
     subLinks: [
       { name: "Alumni Login", href: "https://alumni.tulas.edu.in" },
       { name: "Alumni Testimonials", href: "/alumni-testimonials" },
@@ -187,6 +187,7 @@ const simpleMenus = {
       { name: "Freshers Orientation", href: "/campus-life/freshers-orientation/" },
       { name: "Victree- Sports Clubs", href: "/campus-life/victree" },
       { name: "Prominent Personalities", href: "/campus-life/prominent-personalities" },
+      { name: "Alumni Meet", href: "/campus-life/alumni-meet" },
     ],
   },
   academics: {
@@ -550,22 +551,45 @@ export default function MegaMenu() {
                     </div>
 
                     <div className="flex-1 bg-white/5 rounded-2xl p-4">
-                      <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-3 px-1">
-                        Courses — <span className="text-white/60">{dept}</span>
-                      </p>
-                      <div className="grid grid-cols-2 gap-x-4 gap-y-0.5">
-                        {currentCourses.map((course, i) => (
-                          <Link
-                            key={`${dept}-${i}`}
-                            href={course.href}
-                            className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-colors group"
-                          >
-                            <span className="text-[#f26522] group-hover:translate-x-0.5 transition-transform flex-shrink-0 text-xs">›</span>
-                            <span className="leading-snug">{course.name}</span>
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
+  <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-3 px-1">
+    Courses — <span className="text-white/60">{dept}</span>
+  </p>
+  {(() => {
+    const cseCourses = currentCourses.filter(c => c.name.includes("CSE"));
+    const otherCourses = currentCourses.filter(c => !c.name.includes("CSE"));
+    const hasSplit = cseCourses.length > 0 && otherCourses.length > 0;
+
+    const CourseLink = ({ course, i }) => (
+      <Link
+        key={`${dept}-${i}`}
+        href={course.href}
+        className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-colors group"
+      >
+        <span className="text-[#f26522] group-hover:translate-x-0.5 transition-transform flex-shrink-0 text-xs">›</span>
+        <span className="leading-snug">{course.name}</span>
+      </Link>
+    );
+
+    if (hasSplit) {
+      return (
+        <div className="grid grid-cols-2 gap-x-4">
+          <div className="flex flex-col gap-0.5">
+            {otherCourses.map((course, i) => <CourseLink key={i} course={course} i={i} />)}
+          </div>
+          <div className="flex flex-col gap-0.5">
+            {cseCourses.map((course, i) => <CourseLink key={i} course={course} i={i} />)}
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="grid grid-cols-2 gap-x-4 gap-y-0.5">
+        {currentCourses.map((course, i) => <CourseLink key={i} course={course} i={i} />)}
+      </div>
+    );
+  })()}
+</div>
 
                   </div>
                 </div>

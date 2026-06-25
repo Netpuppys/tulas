@@ -336,6 +336,10 @@ const sitemap = [
         linkTo: "/campus-life/tulas-experiences",
       },
       {
+        title: "Alumni Meet",
+        linkTo: "/campus-life/alumni-meet",
+      },
+      {
         title: "Victree- Sports Clubs",
         linkTo: "/campus-life/victree",
       },

@@ -67,6 +67,9 @@ import { IoClose } from "react-icons/io5";
 import Navbar from "@/component/Navbar/Navbar";
 import BannerProgram from "@/component/Programs/BannerProgram";
 import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function LatestNews() {
   const sports = [
@@ -421,9 +424,15 @@ function LatestNews() {
       document.body.style.overflow = "auto";
     };
   }, [selectedItem]);
-  return (
+  return ( 
     <>
-      <Navbar />
+      <div className="hidden md:block">
+              <MegaMenu />
+            </div>
+            
+            <div className="block md:hidden">
+              <NewNavbar fullBanner={true}/>
+            </div>
       <BannerProgram image={bannerImg} title="Latest News And Updates" />
       <div className="w-full h-full pt-8 md:pt-[4%]">
         <div className="w-[calc(100%-2rem)] font-[TTChocolates] md:w-[90%] mx-auto">
@@ -497,7 +506,7 @@ function LatestNews() {
           </div>
         </div>
       )}
-      <Footer color={true} />
+      <NewFooter />
     </>
   );
 }

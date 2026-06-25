@@ -47,13 +47,13 @@ export default function LeadershipExperiences() {
               <span className="block text-[2.6rem] mb-6">{c.icon}</span>
               <h3 className="font-extrabold text-[1.3rem] mb-4" style={{ color: '#001F4C' }}>{c.title}</h3>
               <p className="text-[.98rem] leading-[1.85] mb-5" style={{ color: '#5a6a8a' }}>{c.desc}</p>
-              <a
+              {/* <a
                 href="#"
                 className="cl-le-link inline-flex items-center gap-[6px] font-bold text-[.88rem] transition-all duration-200"
                 style={{ color: '#DF5400' }}
               >
                 {c.link}
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

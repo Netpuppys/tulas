@@ -27,7 +27,7 @@ export default function FreshersOrientationPage() {
       <LearningBeyond />
       <FreshersStudentStories />
       <MemoryWall />
-      <FreshersCTABanner />
+      {/* <FreshersCTABanner /> */}
       <NewFooter/>
     </main>
   );

@@ -63,7 +63,7 @@ export default function LeadershipFestCTA() {
         {/* Buttons */}
         <div className="flex gap-[18px] justify-center flex-wrap">
           <a
-            href="https://tulas.edu.in/admissions-open/"
+            href="https://tulas.edu.in/apply-now"
             className="inline-flex items-center gap-2 px-[38px] py-4 rounded-[12px] font-bold text-[.95rem] text-white transition-all duration-300 hover:-translate-y-0.5"
             style={{ background: '#001F4C' }}
             onMouseEnter={e => { e.currentTarget.style.background = '#001635'; e.currentTarget.style.boxShadow = '0 10px 32px rgba(0,31,76,.3)'; }}

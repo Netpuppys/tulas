@@ -27,7 +27,7 @@ export default function SuccessStories() {
             </div>
             <h2
               className="leading-[.95] tracking-[.01em]"
-              style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(3rem,5.5vw,6rem)', color: '#001F4C' }}
+              style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(2rem,3vw,4rem)', color: '#001F4C' }}
             >
               Stories Of Progress<br />
               <em className="not-italic" style={{ color: '#DF5400' }}>&amp; Possibility</em>
