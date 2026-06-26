@@ -23,6 +23,9 @@ import Management21 from "../../public/FooterPDf/Management21.pdf";
 import Overall19 from "../../public/FooterPDf/Overall19.pdf";
 import Engineering19 from "../../public/FooterPDf/Engineering19.pdf";
 import Link from "next/link";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function NIRFRanking() {
   const button = [
@@ -95,7 +98,14 @@ function NIRFRanking() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+                      <MegaMenu />
+                    </div>
+                    
+                    <div className="block md:hidden">
+                      <NewNavbar fullBanner={true}/>
+                    </div>
         <Banner
           image={BannerImg}
           title={"NIRF Ranking"}
@@ -133,7 +143,7 @@ function NIRFRanking() {
           ))}
         </div>
         <div className="w-full h-fit z-50">
-          <Footer />
+          <NewFooter/>
         </div>
       </body>
     </>

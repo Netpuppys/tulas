@@ -9,6 +9,9 @@ import Vision from "@/component/Programs/Vision";
 import BannerImg from "../../public/infrastructure/library/bannerImg.webp";
 import background from "../../public/research/r-and-cell/background.png";
 import Footer from "@/component/Footer";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function IQACVision() {
   const sections = [
@@ -48,7 +51,14 @@ function IQACVision() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+              <MegaMenu />
+            </div>
+            
+            <div className="block md:hidden">
+              <NewNavbar fullBanner={true}/>
+            </div>
         <Banner
           image={BannerImg}
           title={<>IQAC</>}
@@ -74,7 +84,7 @@ function IQACVision() {
         </div>
         <Vision sections={sections} />
         <div className="w-full h-fit z-50">
-          <Footer color={true} />
+          <NewFooter/>
         </div>
       </body>
     </>

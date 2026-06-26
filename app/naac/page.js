@@ -13,6 +13,9 @@ import IIQA from "../../public/FooterPDf/IIQA.pdf";
 import STRATEGIC from "../../public/FooterPDf/STRATEGIC.pdf";
 import STRATEGICplan from "../../public/FooterPDf/STRATEGICplan.pdf";
 import Link from "next/link";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function NAAC() {
   const button = [
@@ -36,7 +39,14 @@ function NAAC() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+                      <MegaMenu />
+                    </div>
+                    
+                    <div className="block md:hidden">
+                      <NewNavbar fullBanner={true}/>
+                    </div>
         <Banner
           image={BannerImg}
           title={"NAAC"}
@@ -66,7 +76,7 @@ function NAAC() {
           ))}
         </div>
         <div className="w-full h-fit z-50">
-          <Footer />
+          <NewFooter/>
         </div>
       </body>
     </>

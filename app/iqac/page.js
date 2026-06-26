@@ -14,6 +14,9 @@ import InstituteCommittees from "../../public/FooterPDf/institute-committee.pdf"
 
 
 import { UtmContext } from "@/component/utmParams";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 function IQAC() {
   const { utmParams } = useContext(UtmContext);
@@ -45,7 +48,14 @@ function IQAC() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+              <MegaMenu />
+            </div>
+            
+            <div className="block md:hidden">
+              <NewNavbar fullBanner={true}/>
+            </div>
         <Banner
           image={BannerImg}
           title={<>IQAC</>}
@@ -92,7 +102,7 @@ function IQAC() {
           ))}
         </div>
         <div className="w-full h-fit z-50">
-          <Footer color={true} />
+          <NewFooter/>
         </div>
       </body>
     </>

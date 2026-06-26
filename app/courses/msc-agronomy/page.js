@@ -27,6 +27,9 @@ import BannerProgram from "@/component/Programs/BannerProgram";
 import PlacementProgram from "@/component/Programs/PlacementProgram";
 import ASHFaculty from "../../../public/courses/all-faculty/ASH.pdf";
 import ReadFaculty from "@/component/Programs/ReadFaculty";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function MSC() {
   return (
     <>
@@ -41,7 +44,14 @@ function MSC() {
         />
       </head>
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
+        <div className="hidden md:block">
+              <MegaMenu />
+            </div>
+            
+            <div className="block md:hidden">
+              <NewNavbar fullBanner={true}/>
+            </div>
         <BannerProgram
           image={BannerImg}
           title=<>Master of Science in Agronomy</>
@@ -71,7 +81,7 @@ function MSC() {
         {/* <ReadFaculty pdf={ASHFaculty}/> */}
         <PlacementProgram features={features} />
         <TopRecruiter />
-        <Footer />
+        <NewFooter/>
       </body>
     </>
   );
