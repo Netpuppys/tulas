@@ -165,6 +165,7 @@ const simpleMenus = {
     title: "Admissions",
     text: "Get complete details about admission process, eligibility, and start your journey with Tulas.",
     left: [
+      { name: "Programs & Fee structure 2026", href: "/tulas-programs" },
       { name: "Admission Procedure", href: "/admission-procedure" },
       { name: "Bank Details", href: "/bank-details" },
       { name: "Pay Fee Online", href: "/pay-fee-online" },

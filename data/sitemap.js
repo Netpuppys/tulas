@@ -449,6 +449,9 @@ const sitemap = [
     title: "Admissions",
     linkTo: "#",
     nestedLinks: [
+      { title: "Programs & Fee structure 2026",
+        linkTo: "/tulas-programs" 
+      },
       {
         title: "Admission Procedure- Eligibility",
         linkTo: "/admission-procedure",
