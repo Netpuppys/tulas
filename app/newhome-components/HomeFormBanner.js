@@ -44,7 +44,7 @@ function HomeFormBanner() {
     { name: "MBA in Business Analytics", href: "/courses/mba/business-analytics" },
   ],
 },
-    {
+   {
   title: "Department Of Engineering",
   courses: [
     { name: "B.Tech CSE", href: "/courses/btech/computer-science" },
@@ -56,7 +56,12 @@ function HomeFormBanner() {
     { name: "B.Tech EEE", href: "/courses/btech/electrical-and-electronics-engg/" },
     { name: "B.Tech Civil Engineering", href: "/courses/btech/civil-engineering/" },
     { name: "B.Tech Mechanical Engineering", href: "/courses/btech/mechanical-engineering/" },
+
     { name: "M.Tech", href: "/mtech" },
+    { name: "M.Tech Computer Science Engineering", href: "/mtech" },
+    { name: "M.Tech Thermal Engineering", href: "/mtech" },
+    { name: "M.Tech Structural Engineering", href: "/mtech" },
+
     { name: "Diploma in Civil Engineering", href: "/diploma-in-civil-engineering" },
     { name: "Diploma in Mechanical Engineering", href: "/diploma-mechanical-engineering" },
     { name: "Diploma in CSE", href: "/diploma-computer-science-engineering" },

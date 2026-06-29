@@ -12,20 +12,37 @@ const SCHOOLS = [
     intro: 'Industry-aligned business programs that build leadership, analytics and entrepreneurial capability for the modern workplace.',
     programs: [
       {
-        level: 'ug', name: 'Bachelor of Business Administration (BBA)',
+        level: 'ug', name: 'BBA',
         href: 'https://tulas.edu.in/courses/bba',
-        levelLabel: 'Undergraduate · BBA', tracksLabel: 'Specialized Tracks',
-        tracks: [
-          { label: 'BBA', href: 'https://tulas.edu.in/courses/bba' },
-          { label: 'BBA Digital Marketing', href: 'https://tulas.edu.in/courses/bba' },
-          { label: 'BBA Business Analytics', href: 'https://tulas.edu.in/courses/bba' },
-        ],
+        levelLabel: 'Undergraduate · BBA', tracksLabel: 'Program',
+        tracks: [{ label: 'Bachelor of Business Administration', none: true }],
         duration: '3 Years',
         elig: '10+2 or equivalent examination from a recognised board in any stream.',
         feesKey: 'BBA',
       },
       {
-        level: 'pg', name: 'Master of Business Administration (MBA)',
+        level: 'ug', name: 'BBA - Specialization',
+        href: 'https://tulas.edu.in/courses/bba',
+        levelLabel: 'Undergraduate · BBA', tracksLabel: 'Specialized Tracks',
+        tracks: [
+          { label: 'Digital Marketing',  href: 'https://tulas.edu.in/courses/bba' },
+          { label: 'Business Analytics', href: 'https://tulas.edu.in/courses/bba' },
+        ],
+        duration: '3 Years',
+        elig: '10+2 or equivalent examination from a recognised board in any stream.',
+        feesKey: 'BBA-Specialization',
+      },
+      {
+        level: 'pg', name: 'MBA',
+        href: 'https://tulas.edu.in/courses/mba',
+        levelLabel: 'Postgraduate · MBA', tracksLabel: 'Program',
+        tracks: [{ label: 'Master of Business Administration', none: true }],
+        duration: '2 Years',
+        elig: 'Graduation in any discipline with minimum required marks.',
+        feesKey: 'MBA',
+      },
+      {
+        level: 'pg', name: 'MBA - Specialization',
         href: 'https://tulas.edu.in/courses/mba',
         levelLabel: 'Postgraduate · MBA', tracksLabel: 'Specialized Tracks',
         tracks: [
@@ -39,7 +56,7 @@ const SCHOOLS = [
         ],
         duration: '2 Years',
         elig: 'Graduation in any discipline with minimum required marks.',
-        feesKey: 'MBA',
+        feesKey: 'MBA-Specialization',
       },
     ],
   },
@@ -49,23 +66,41 @@ const SCHOOLS = [
     intro: 'Core and specialized engineering disciplines with modern labs, hands-on projects and industry exposure — preparing students for Industry 4.0 careers.',
     programs: [
       {
-        level: 'ug', name: 'B.Tech',
-        href: 'https://tulas.edu.in/courses/btech/',
-        levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Branches & Specializations',
+        level: 'ug', name: 'B.Tech CSE',
+        href: 'https://tulas.edu.in/courses/btech/computer-science',
+        levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Program',
+        tracks: [{ label: 'Computer Science Engineering', none: true }],
+        duration: '4 Years',
+        elig: 'Passed 10+2 with Physics, Chemistry and Mathematics from a recognised board.',
+        feesKey: 'B.Tech-CSE',
+      },
+      {
+        level: 'ug', name: 'B.Tech CSE - Specialization',
+        href: 'https://tulas.edu.in/courses/btech/computer-science',
+        levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Specialized Tracks',
         tracks: [
-          { label: 'Civil Engineering',             href: 'https://tulas.edu.in/courses/btech/civil-engineering/' },
-          { label: 'Mechanical Engineering',        href: 'https://tulas.edu.in/courses/btech/mechanical-engineering/' },
-          { label: 'Electronics & Comm. (ECE)',     href: 'https://tulas.edu.in/courses/btech/electronics-and-communication-engg' },
-          { label: 'Electrical & Electronics (EEE)',href: 'https://tulas.edu.in/courses/btech/electrical-and-electronics-engg/' },
-          { label: 'Computer Science (CSE)',        href: 'https://tulas.edu.in/courses/btech/computer-science' },
-          { label: 'CSE – AI & ML',                href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning' },
-          { label: 'CSE – Cyber Security',         href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-cyber-security' },
-          { label: 'CSE – Data Science',           href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-data-science' },
-          { label: 'CSE – Full Stack Development', href: 'https://tulas.edu.in/courses/btech/computer-science' },
+          { label: 'AI & Machine Learning', href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning' },
+          { label: 'Cyber Security',        href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-cyber-security' },
+          { label: 'Data Science',          href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-data-science' },
+          { label: 'Full Stack Development',href: 'https://tulas.edu.in/courses/btech/computer-science' },
         ],
         duration: '4 Years',
         elig: 'Passed 10+2 with Physics, Chemistry and Mathematics from a recognised board.',
-        feesKey: 'B.Tech',
+        feesKey: 'B.Tech-CSE-Spec',
+      },
+      {
+        level: 'ug', name: 'B.Tech Core Branches',
+        href: 'https://tulas.edu.in/courses/btech/',
+        levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Branches Offered',
+        tracks: [
+          { label: 'Civil Engineering',              href: 'https://tulas.edu.in/courses/btech/civil-engineering/' },
+          { label: 'Mechanical Engineering',         href: 'https://tulas.edu.in/courses/btech/mechanical-engineering/' },
+          { label: 'Electronics & Comm. (ECE)',      href: 'https://tulas.edu.in/courses/btech/electronics-and-communication-engg' },
+          { label: 'Electrical & Electronics (EEE)', href: 'https://tulas.edu.in/courses/btech/electrical-and-electronics-engg/' },
+        ],
+        duration: '4 Years',
+        elig: 'Passed 10+2 with Physics, Chemistry and Mathematics from a recognised board.',
+        feesKey: 'B.Tech-Core',
       },
       {
         level: 'pg', name: 'M.Tech',
@@ -116,28 +151,46 @@ const SCHOOLS = [
     intro: 'Application-focused computing programs designed for the modern tech industry, with specializations in AI, ML and full stack software development.',
     programs: [
       {
-        level: 'ug', name: 'Bachelor of Computer Applications (BCA)',
+        level: 'ug', name: 'BCA',
         href: 'https://tulas.edu.in/courses/bca/',
-        levelLabel: 'Undergraduate · BCA', tracksLabel: 'Specialized Tracks',
-        tracks: [
-          { label: 'Full Stack Software Development',        href: 'https://tulas.edu.in/courses/bca/' },
-          { label: 'Artificial Intelligence & ML', href: 'https://tulas.edu.in/courses/bca/' },
-        ],
+        levelLabel: 'Undergraduate · BCA', tracksLabel: 'Program',
+        tracks: [{ label: 'Bachelor of Computer Applications', none: true }],
         duration: '3 Years',
         elig: '10+2 or equivalent examination from a recognised board in any stream.',
         feesKey: 'BCA',
       },
       {
-        level: 'pg', name: 'Master of Computer Applications (MCA)',
-        href: 'https://tulas.edu.in/courses/mca',
-        levelLabel: 'Postgraduate · MCA', tracksLabel: 'Specialized Tracks',
+        level: 'ug', name: 'BCA - Specialization',
+        href: 'https://tulas.edu.in/courses/bca/',
+        levelLabel: 'Undergraduate · BCA', tracksLabel: 'Specialized Tracks',
         tracks: [
-          { label: 'Full Stack Software Development',        href: 'https://tulas.edu.in/courses/mca' },
-          { label: 'Artificial Intelligence & ML', href: 'https://tulas.edu.in/courses/mca' },
+          { label: 'Full Stack Software Development', href: 'https://tulas.edu.in/courses/bca/' },
+          { label: 'Artificial Intelligence & ML',    href: 'https://tulas.edu.in/courses/bca/' },
         ],
+        duration: '3 Years',
+        elig: '10+2 or equivalent examination from a recognised board in any stream.',
+        feesKey: 'BCA-Specialization',
+      },
+      {
+        level: 'pg', name: 'MCA',
+        href: 'https://tulas.edu.in/courses/mca',
+        levelLabel: 'Postgraduate · MCA', tracksLabel: 'Program',
+        tracks: [{ label: 'Master of Computer Applications', none: true }],
         duration: '2 Years',
         elig: 'Graduation with Mathematics at 10+2 or graduation level.',
         feesKey: 'MCA',
+      },
+      {
+        level: 'pg', name: 'MCA - Specialization',
+        href: 'https://tulas.edu.in/courses/mca',
+        levelLabel: 'Postgraduate · MCA', tracksLabel: 'Specialized Tracks',
+        tracks: [
+          { label: 'Full Stack Software Development', href: 'https://tulas.edu.in/courses/mca' },
+          { label: 'Artificial Intelligence & ML',    href: 'https://tulas.edu.in/courses/mca' },
+        ],
+        duration: '2 Years',
+        elig: 'Graduation with Mathematics at 10+2 or graduation level.',
+        feesKey: 'MCA-Specialization',
       },
     ],
   },
@@ -249,23 +302,43 @@ const FEES_DATA = {
   'BBA': {
     note: 'Per annum · Scholarship based on 12th aggregate %',
     rows: [
-      { prog: 'BBA',                ai: [151000,106000,111000,116000,121000,126000], uk: [151000,101000,106000,111000,116000,121000] },
-      { prog: 'BBA + Specialization', ai: [176000,131000,136000,141000,146000,151000], uk: [176000,126000,131000,136000,141000,146000] },
+      { prog: 'BBA', ai: [151000,106000,111000,116000,121000,126000], uk: [151000,101000,106000,111000,116000,121000] },
+    ],
+  },
+  'BBA-Specialization': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'BBA - Specialization', ai: [176000,131000,136000,141000,146000,151000], uk: [176000,126000,131000,136000,141000,146000] },
     ],
   },
   'MBA': {
     note: 'Per annum · Scholarship based on graduation aggregate %',
     rows: [
-      { prog: 'MBA',                  ai: [358000,313000,318000,323000,328000,333000], uk: [358000,271750,276750,281750,286750,291750] },
-      { prog: 'MBA + Specialization', ai: [383000,338000,343000,348000,353000,358000], uk: [383000,296750,301750,306750,311750,316750] },
+      { prog: 'MBA', ai: [358000,313000,318000,323000,328000,333000], uk: [358000,271750,276750,281750,286750,291750] },
     ],
   },
-  'B.Tech': {
+  'MBA-Specialization': {
+    note: 'Per annum · Scholarship based on graduation aggregate %',
+    rows: [
+      { prog: 'MBA - Specialization', ai: [383000,338000,343000,348000,353000,358000], uk: [383000,296750,301750,306750,311750,316750] },
+    ],
+  },
+  'B.Tech-CSE': {
     note: 'Per annum · Scholarship based on 12th aggregate %',
     rows: [
-      { prog: 'CSE',                  ai: [248750,203750,208750,213750,218750,223750], uk: [248750,186250,191250,196250,201250,206250] },
-      { prog: 'CSE + Specialization', ai: [273750,228750,233750,238750,243750,248750], uk: [273750,211250,216250,221250,226250,231250] },
-      { prog: 'CE / ECE / EEE / ME',  ai: [168250,123250,128250,133250,138250,143250], uk: [168250,118250,123250,128250,133250,138250] },
+      { prog: 'B.Tech CSE', ai: [248750,203750,208750,213750,218750,223750], uk: [248750,186250,191250,196250,201250,206250] },
+    ],
+  },
+  'B.Tech-CSE-Spec': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'B.Tech CSE - Specialization', ai: [273750,228750,233750,238750,243750,248750], uk: [273750,211250,216250,221250,226250,231250] },
+    ],
+  },
+  'B.Tech-Core': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'B.Tech CE / ECE / EEE / ME', ai: [168250,123250,128250,133250,138250,143250], uk: [168250,118250,123250,128250,133250,138250] },
     ],
   },
   'M.Tech': {
@@ -283,15 +356,25 @@ const FEES_DATA = {
   'BCA': {
     note: 'Per annum · Scholarship based on 12th aggregate %',
     rows: [
-      { prog: 'BCA',                  ai: [151000,106000,111000,116000,121000,126000], uk: [151000,101000,106000,111000,116000,121000] },
-      { prog: 'BCA + Specialization', ai: [176000,131000,136000,141000,146000,151000], uk: [176000,126000,131000,136000,141000,146000] },
+      { prog: 'BCA', ai: [151000,106000,111000,116000,121000,126000], uk: [151000,101000,106000,111000,116000,121000] },
+    ],
+  },
+  'BCA-Specialization': {
+    note: 'Per annum · Scholarship based on 12th aggregate %',
+    rows: [
+      { prog: 'BCA - Specialization', ai: [176000,131000,136000,141000,146000,151000], uk: [176000,126000,131000,136000,141000,146000] },
     ],
   },
   'MCA': {
     note: 'Per annum · Scholarship based on graduation aggregate %',
     rows: [
-      { prog: 'MCA',                  ai: [172850,127850,132850,137850,142850,147850], uk: [172850,126850,131850,136850,141850,146850] },
-      { prog: 'MCA + Specialization', ai: [197850,152850,157850,162850,167850,172850], uk: [197850,151850,156850,161850,166850,171850] },
+      { prog: 'MCA', ai: [172850,127850,132850,137850,142850,147850], uk: [172850,126850,131850,136850,141850,146850] },
+    ],
+  },
+  'MCA-Specialization': {
+    note: 'Per annum · Scholarship based on graduation aggregate %',
+    rows: [
+      { prog: 'MCA - Specialization', ai: [197850,152850,157850,162850,167850,172850], uk: [197850,151850,156850,161850,166850,171850] },
     ],
   },
   'Journalism & Mass Communication': {
@@ -398,14 +481,14 @@ export default function UGProgramsExplorer() {
 
   const feeData    = FEES_DATA[modal.prog] || null;
   const isAction   = !!MODAL_OVERRIDES[modal.prog];
-  const fmt        = (n) => '₹ ' + n.toLocaleString('en-IN');
+  const fmt        = (n) => '₹ ' - n.toLocaleString('en-IN');
   const FEE_COLS   = ['91%+', '81–90%', '71–80%', '60–70%', '<60%'];
 
   return (
     <>
       <style dangerouslySetInnerHTML={{__html:`
         /* Level tabs */
-        .cl-ug-levelbar{position:sticky;top:140px;z-index:10;background:#fff;border-bottom:1px solid #e0e4ed;box-shadow:0 4px 18px rgba(0,31,76,.05)}
+        .cl-ug-levelbar{position:sticky;top:140px;z-index:80;background:#fff;border-bottom:1px solid #e0e4ed;box-shadow:0 4px 18px rgba(0,31,76,.05)}
         @media(max-width:768px){.cl-ug-levelbar{top:70px}}
         .cl-ug-levelinner{max-width:1500px;margin:0 auto;padding:0 5%;display:flex}
         .cl-ug-tab{padding:22px 30px;font-size:.92rem;font-weight:700;color:#5a6a8a;cursor:pointer;border-bottom:3px solid transparent;transition:all .25s;white-space:nowrap}
@@ -900,14 +983,14 @@ export default function UGProgramsExplorer() {
                   >
                     {isAction ? MODAL_OVERRIDES[modal.prog] : 'Request Fee Details'}
                   </button>
-                  <button
+                  {/* <button
                     className="py-[13px] rounded-[10px] font-bold text-[.92rem] cursor-pointer transition-all duration-300"
                     style={{ background: '#f8f9fc', color: '#001F4C', border: '2px solid #e0e4ed' }}
                     onMouseEnter={e => { e.currentTarget.style.borderColor = '#DF5400'; e.currentTarget.style.color = '#DF5400'; }}
                     onMouseLeave={e => { e.currentTarget.style.borderColor = '#e0e4ed'; e.currentTarget.style.color = '#001F4C'; }}
                   >
                     Talk To Counsellor
-                  </button>
+                  </button> */}
                 </div>
               </div>
             )}

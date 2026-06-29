@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import ScrollImage from "../../public/Homepage/BannerHome/scrollWidget.png";
 import { IoIosArrowRoundDown } from "react-icons/io";
+import Link from "next/link";
 
 function HomeMainBanner({
   bannerImages,
@@ -108,13 +109,15 @@ function HomeMainBanner({
             idx === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          <Image
-  src={image.src}
-  alt=""
-  width={1920}
-  height={1080}
-  className="w-full h-auto object-contain"
-/>
+          <Link href="/apply-now" className="block w-full h-full">
+  <Image
+    src={image.src}
+    alt=""
+    width={1920}
+    height={1080}
+    className="w-full h-auto object-contain cursor-pointer"
+  />
+</Link>
         </div>
       ))}
 

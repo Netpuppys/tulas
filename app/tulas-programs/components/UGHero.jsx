@@ -55,7 +55,7 @@ export default function UGHero() {
               textShadow: '0 8px 50px rgba(0,0,0,.6)',
             }}
           >
-            Undergraduate<br />
+            {/* Undergraduate<br /> */}
             <em className="not-italic" style={{ color: '#FFF3D7', filter: 'drop-shadow(0 4px 16px rgba(255,243,215,.5))' }}>Programs</em>
           </h1>
 
