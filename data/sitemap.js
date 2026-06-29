@@ -452,16 +452,20 @@ const sitemap = [
       { title: "Programs & Fee structure 2026",
         linkTo: "/tulas-programs" 
       },
-      {
-        title: "Admission Procedure- Eligibility",
-        linkTo: "/admission-procedure",
-      },
-      {
-        title: "Bank Details",
-        linkTo: "/bank-details",
-      },
+      // {
+      //   title: "Admission Procedure- Eligibility",
+      //   linkTo: "/admission-procedure",
+      // },
+      // {
+      //   title: "Bank Details",
+      //   linkTo: "/bank-details",
+      // },
       {
         title: "Pay Fee Online",
+        linkTo: "/pay-fee-online",
+      },
+       {
+        title: "Brochure",
         linkTo: "/pay-fee-online",
       },
       // {

@@ -114,9 +114,7 @@ function AdmissionPage() {
         title={title}
         description={<></>}
         belowTitle={<></>}
-        belowPara={
-          "Thinking about your next big step? Tulas University is where ambitions meet opportunities, and students like you turn dreams into achievements. Let’s begin this exciting journey together!"
-        }
+        belowPara={<></>}
       />
 
       {/* Background and Form Button */}
@@ -126,7 +124,7 @@ function AdmissionPage() {
           className="w-full fixed h-screen top-0 left-0 -z-10 object-cover"
           alt=""
         />
-        <div ref={admissionRef} className="py-10 md:py-20">
+        {/* <div ref={admissionRef} className="py-10 md:py-20">
           <div className="w-full items-center flex flex-col gap-8 justify-center">
             <h3 className="text-white font-[TTChocolatesMedium] md:text-[40px] border-b-2 border-white">
               Admission Eligibility
@@ -149,10 +147,10 @@ function AdmissionPage() {
               Apply Now
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
       <div ref={bankRef} className="w-full h-fit bg-white">
-        <div className="py-10 md:py-20 px-2 max-w-[1000px] mx-auto">
+        <div className="py-5 md:py-10 px-2 max-w-[1000px] mx-auto">
           <h3 className="text-[#f97316] text-center font-[600] text-[clamp(10px,2.8vw,60px)]">
             Pay Fee
           </h3>

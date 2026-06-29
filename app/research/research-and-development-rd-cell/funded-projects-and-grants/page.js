@@ -70,8 +70,8 @@ function RAndDFunded() {
           </div> */}
           <div className="pb-8 px-4 md:px-[4%] md:pb-[3%] w-full">
             <div className="overflow-auto w-full flex">
-              <TableComponent />
-              {/* <CustomiFrame/> */}
+              {/* <TableComponent /> */}
+              <CustomiFrame/>
             </div>
           </div>
 
