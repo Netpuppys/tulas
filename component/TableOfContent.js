@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 function TableOfContent({ slug }) {
   const [tocItems, setTocItems] = useState([]);
   const [blog, setBlog] = useState(null);
+
   useEffect(() => {
     const fetchPost = async () => {
       const res = await axios.get(
@@ -12,37 +13,47 @@ function TableOfContent({ slug }) {
       );
       if (res?.data?.data) {
         setBlog(res.data.data);
-        generateToc(res.data.data.content); // Generate TOC from content
+        generateToc(res.data.data.content);
       }
     };
 
     const generateToc = (htmlContent) => {
       const tempDiv = document.createElement("div");
       tempDiv.innerHTML = htmlContent;
-
       const headings = tempDiv.querySelectorAll("h2, h3, h4");
       const tocList = Array.from(headings).map((heading) => ({
         text: heading.innerText,
         id: heading.id,
-        tagName: heading.tagName.toLowerCase(), // Get the tag name (h2, h3, h4)
+        tagName: heading.tagName.toLowerCase(),
       }));
-
       setTocItems(tocList);
     };
 
     fetchPost();
   }, []);
+
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
       const offsetTop =
-        element.getBoundingClientRect().top + window.pageYOffset - 100; // Offset by 100px
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
+        element.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: offsetTop, behavior: "smooth" });
     }
   };
+
+  const getLiClass = (tagName) => {
+    if (tagName === "h2") {
+      return "cursor-pointer text-[24px] md:text-[32px] ml-5 md:ml-10";
+    }
+    if (tagName === "h3") {
+      return "cursor-pointer text-[18px] font-semibold list-disc mt-4 md:text-[24px] ml-10 md:ml-20";
+    }
+    if (tagName === "h4") {
+      return "cursor-pointer text-[16px] md:text-[20px] ml-14 md:ml-24";
+    }
+    return "cursor-pointer";
+  };
+
   return (
     <div>
       {tocItems.length > 0 && (
@@ -50,29 +61,16 @@ function TableOfContent({ slug }) {
           className="content-div-blog-table"
           style={{ fontFamily: "TTChocolates" }}
         >
-          <h8 className="text-[28px] md:text-[45px] font-[600]">
+          <h2 className="text-[28px] md:text-[45px] font-[600]">
             Table of Content
-          </h8>
+          </h2>
           <ul>
-            {tocItems?.map((item) => (
-              <li
-                key={item.id}
-                className={`cursor-pointer  
-                 ${
-                   item.tagName === "h2"
-                     ? "text-[24px] md:text-[32px] ml-5 md:ml-10 text-[#263145]"
-                     : item.tagName === "h3"
-                     ? "text-[18px] font-semibold list-disc mt-4 text-[#263145] md:text-[24px] ml-10 md:ml-20"
-                     : item.tagName === "h4"
-                     ? "text-[16px] text-[#263145] md:text-[20px] ml-14 md:ml-24"
-                     : ""
-                 }`}
-              >
-                {item.tagName === "h3" ? "" : ""}
-                <a
-                  onClick={() => handleScroll(item.id)}
-                  // href={`#${item.id}`}
-                >
+            {tocItems.map((item) => (
+              <li key={item.id} className={getLiClass(item.tagName)}>
+                
+                 <a onClick={() => handleScroll(item.id)}
+                  className="!text-[#f97316] hover:text-[#ea6c00] cursor-pointer">
+  
                   {item.text}
                 </a>
               </li>
