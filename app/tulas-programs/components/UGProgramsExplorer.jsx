@@ -481,8 +481,8 @@ export default function UGProgramsExplorer() {
 
   const feeData    = FEES_DATA[modal.prog] || null;
   const isAction   = !!MODAL_OVERRIDES[modal.prog];
-  const fmt        = (n) => '₹ ' - n.toLocaleString('en-IN');
-  const FEE_COLS   = ['91%+', '81–90%', '71–80%', '60–70%', '<60%'];
+const fmt = (n) => '₹ ' + n.toLocaleString('en-IN');  
+const FEE_COLS   = ['91%+', '81–90%', '71–80%', '60–70%', '<60%'];
 
   return (
     <>
@@ -921,17 +921,17 @@ export default function UGProgramsExplorer() {
                               {row.prog}
                             </td>
                             <td style={{ padding: '10px 12px', color: '#5a6a8a', fontSize: '.72rem', whiteSpace: 'nowrap', borderBottom: '1px dashed #e0e4ed' }}>All India</td>
-                            <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '1px dashed #e0e4ed' }}>{fmt(row.ai[0])}</td>
-                            {row.ai.slice(1).map((v, i) => (
-                              <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '1px dashed #e0e4ed' }}>{fmt(v)}</td>
-                            ))}
+                            <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '1px dashed #e0e4ed', whiteSpace: 'nowrap' }}>{fmt(row.ai[0])}</td>
+{row.ai.slice(1).map((v, i) => (
+  <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '1px dashed #e0e4ed', whiteSpace: 'nowrap' }}>{fmt(v)}</td>
+))}
                           </tr>,
                           <tr key={`${ri}-uk`} style={{ background: ri % 2 === 0 ? '#f8f9fc' : '#fff' }}>
                             <td style={{ padding: '10px 12px', color: '#5a6a8a', fontSize: '.72rem', whiteSpace: 'nowrap', borderBottom: '2px solid #e0e4ed' }}>Uttarakhand</td>
-                            <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '2px solid #e0e4ed' }}>{fmt(row.uk[0])}</td>
-                            {row.uk.slice(1).map((v, i) => (
-                              <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '2px solid #e0e4ed' }}>{fmt(v)}</td>
-                            ))}
+                            <td style={{ padding: '10px 12px', textAlign: 'right', fontWeight: 700, color: '#001F4C', borderBottom: '2px solid #e0e4ed', whiteSpace: 'nowrap' }}>{fmt(row.uk[0])}</td>
+{row.uk.slice(1).map((v, i) => (
+  <td key={i} style={{ padding: '10px 10px', textAlign: 'right', color: '#DF5400', fontWeight: 600, borderBottom: '2px solid #e0e4ed', whiteSpace: 'nowrap' }}>{fmt(v)}</td>
+))}
                           </tr>,
                         ])}
                       </tbody>
