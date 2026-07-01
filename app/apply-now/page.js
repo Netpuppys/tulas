@@ -57,6 +57,9 @@ import { IoCheckmarkSharp } from "react-icons/io5";
 import ApplyBanner from "./components/ApplyBanner";
 import LandingAlumniSuccessStories from "../department-of-engineering/Component/LandingAlumniSuccessStories";
 import HomePerks from "../newhome-components/HomePerks";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 
 
 const page = () => {
@@ -307,7 +310,14 @@ const page = () => {
         />
       </head>
       <body>
-        <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} />
+        {/* <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} /> */}
+        <div className="hidden md:block">
+                                  <MegaMenu />
+                                </div>
+                                
+                                <div className="block md:hidden">
+                                  <NewNavbar fullBanner={true}/>
+                                </div>
 
         <ApplyBanner/>
 
@@ -379,6 +389,8 @@ const page = () => {
               <LandingAlumniSuccessStories/>
               
               <HomePerks/>
+
+              <NewFooter/>
 
               <div className="w-full flex justify-center items-center py-4">
   <p className="text-sm text-gray-600">

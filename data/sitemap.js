@@ -204,6 +204,10 @@ const sitemap = [
             linkTo: "/courses/bba",
           },
           {
+            title: "BBA Digital Marketing",
+            linkTo: "/courses/bba/digital-marketing",
+          },
+          {
             title: "B.Com (Hons.)",
             linkTo: "/courses/bcom",
           },

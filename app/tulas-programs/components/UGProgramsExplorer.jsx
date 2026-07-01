@@ -23,7 +23,7 @@ const SCHOOLS = [
       {
         level: 'ug', name: 'BBA - Specialization',
         href: 'https://tulas.edu.in/courses/bba',
-        levelLabel: 'Undergraduate · BBA', tracksLabel: 'Specialized Tracks',
+        levelLabel: 'Undergraduate · BBA', tracksLabel: 'Choose From',
         tracks: [
           { label: 'Digital Marketing',  href: 'https://tulas.edu.in/courses/bba' },
           { label: 'Business Analytics', href: 'https://tulas.edu.in/courses/bba' },
@@ -44,7 +44,7 @@ const SCHOOLS = [
       {
         level: 'pg', name: 'MBA - Specialization',
         href: 'https://tulas.edu.in/courses/mba',
-        levelLabel: 'Postgraduate · MBA', tracksLabel: 'Specialized Tracks',
+        levelLabel: 'Postgraduate · MBA', tracksLabel: 'Choose From',
         tracks: [
           { label: 'Marketing',              href: 'https://tulas.edu.in/courses/mba/marketing' },
           { label: 'Finance',                href: 'https://tulas.edu.in/courses/mba/finance' },
@@ -77,7 +77,7 @@ const SCHOOLS = [
       {
         level: 'ug', name: 'B.Tech CSE - Specialization',
         href: 'https://tulas.edu.in/courses/btech/computer-science',
-        levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Specialized Tracks',
+        levelLabel: 'Undergraduate · B.Tech', tracksLabel: 'Choose From',
         tracks: [
           { label: 'AI & Machine Learning', href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning' },
           { label: 'Cyber Security',        href: 'https://tulas.edu.in/courses/btech/computer-science-engineering-cyber-security' },
@@ -162,7 +162,7 @@ const SCHOOLS = [
       {
         level: 'ug', name: 'BCA - Specialization',
         href: 'https://tulas.edu.in/courses/bca/',
-        levelLabel: 'Undergraduate · BCA', tracksLabel: 'Specialized Tracks',
+        levelLabel: 'Undergraduate · BCA', tracksLabel: 'Choose From',
         tracks: [
           { label: 'Full Stack Software Development', href: 'https://tulas.edu.in/courses/bca/' },
           { label: 'Artificial Intelligence & ML',    href: 'https://tulas.edu.in/courses/bca/' },
@@ -183,7 +183,7 @@ const SCHOOLS = [
       {
         level: 'pg', name: 'MCA - Specialization',
         href: 'https://tulas.edu.in/courses/mca',
-        levelLabel: 'Postgraduate · MCA', tracksLabel: 'Specialized Tracks',
+        levelLabel: 'Postgraduate · MCA', tracksLabel: 'Choose From',
         tracks: [
           { label: 'Full Stack Software Development', href: 'https://tulas.edu.in/courses/mca' },
           { label: 'Artificial Intelligence & ML',    href: 'https://tulas.edu.in/courses/mca' },
@@ -709,7 +709,8 @@ export default function UGProgramsExplorer() {
                           className="inline-block text-[.68rem] font-bold uppercase tracking-[.06em] px-[12px] py-[4px] rounded-[20px] mb-[14px]"
                           style={{ background: '#f8f9fc', color: '#5a6a8a' }}
                         >
-                          {prog.levelLabel}
+                          {/* {prog.levelLabel} */}
+                          {prog.duration}
                         </span>
 
                         <div className="text-[.7rem] font-bold uppercase tracking-[.08em] mb-[10px]" style={{ color: '#DF5400' }}>
@@ -748,10 +749,10 @@ export default function UGProgramsExplorer() {
 
                       {/* Right side */}
                       <div className="cl-pc-side">
-                        <div className="cl-pc-dur">
+                        {/* <div className="cl-pc-dur">
                           <div className="text-[.66rem] font-bold uppercase tracking-[.08em]" style={{ color: '#5a6a8a' }}>Duration</div>
                           <div className="leading-[1]" style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: '1.8rem', color: '#001F4C' }}>{prog.duration}</div>
-                        </div>
+                        </div> */}
                         <div className="cl-pc-actions">
                           <button
                             onClick={() => openModal(prog.feesKey)}

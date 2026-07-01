@@ -48,7 +48,7 @@ const menuData = {
   undergraduate: {
     "School Of Management": [
       { name: "BBA", href: "/courses/bba" },
-      { name: "BBA Digital Marketing", href: "/courses/bba" },
+      { name: "BBA Digital Marketing", href: "/courses/bba/digital-marketing" },
       { name: "BBA Business Analytics", href: "/courses/bba" },
     ],
     "Department Of Engineering": [

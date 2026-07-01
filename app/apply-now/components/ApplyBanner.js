@@ -7,7 +7,7 @@ export default function ApplyBanner() {
     <div className="w-full">
       
       {/* Desktop Image */}
-      <div className="hidden md:block w-full pt-8">
+      <div className="hidden md:block w-full">
         <Image
           src="/landingPage/landingwhy-desktop-cropped.jpg" // replace with your desktop image
           alt="Banner Desktop"
@@ -19,7 +19,7 @@ export default function ApplyBanner() {
       </div>
 
       {/* Mobile Image */}
-      <div className="block md:hidden w-full">
+      <div className="block md:hidden w-full pt-8">
         <Image
           src="/landingPage/landingwhy-desktop.jpg" // replace with your mobile image
           alt="Banner Mobile"
