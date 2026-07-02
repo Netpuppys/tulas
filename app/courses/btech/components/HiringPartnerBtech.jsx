@@ -52,8 +52,8 @@ export default function HiringPartnerBtech() {
             className="mb-[22px] leading-[.95] tracking-[.01em] text-center"
             style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: 'clamp(2rem,4vw,4rem)', color: '#001F4C' }}
           >
-            Where Engineering <br />
-            <em className="not-italic" style={{ color: '#DF5400' }}>Recruiters</em>
+            The Leading 
+            <em className="not-italic" style={{ color: '#DF5400' }}> Recruiters</em>
           </h2>
 
       <h5 className="text-center font-light text-md text-black mb-8">Trusted by leading organizations across technology, consulting, manufacturing and emerging tech.</h5>

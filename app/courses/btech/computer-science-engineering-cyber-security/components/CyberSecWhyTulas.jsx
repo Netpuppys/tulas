@@ -1,15 +1,66 @@
 'use client';
 
 const WHY_CARDS = [
-  { n: '01', title: 'Hands-On Cyber Labs', desc: 'Practice real attack and defense in dedicated, isolated security labs.' },
-  { n: '02', title: 'IIT Kanpur E&ICT Academy', desc: "Association bringing premier certifications and academic credibility to your degree." },
-  { n: '03', title: 'Industry-Aligned Curriculum', desc: 'Continuously updated to match real threats, tools, and security practices.' },
-  { n: '04', title: 'Industry Certifications', desc: 'CEH, CompTIA Security+, AWS, Cisco, Microsoft and Python tracks built in.' },
-  { n: '05', title: 'Internship Opportunities', desc: 'Multiple internships and a direct internship-to-placement pathway.' },
-  { n: '06', title: 'Innovation & Research Culture', desc: 'A centre of excellence in security teaching, research and practice.' },
-  { n: '07', title: 'Capture-The-Flag Culture', desc: 'Learn by competing — CTFs, hackathons, and live security challenges.' },
-  { n: '08', title: 'Emerging Threat Exposure', desc: 'Cloud security, IoT security, AI-driven threats, DevSecOps and more.' },
-  { n: '09', title: 'Placement Readiness Framework', desc: 'Career development and corporate readiness powered by TCCI.' },
+  {
+    num: '01',
+    title: 'AI-Integrated Learning',
+    text: 'Artificial intelligence and machine learning woven across the curriculum to enhance how you learn, create and solve.',
+  },
+  {
+    num: '02',
+    title: 'IIT Kanpur E&ICT Academy & Industry Certifications',
+    text: 'Earn industry-recognized certifications through IIT Kanpur E&ICT Academy and global partners including AWS, Microsoft, Google, NVIDIA and Oracle.',
+  },
+  {
+    num: '03',
+    title: 'Industry-Aligned Curriculum',
+    text: 'A future-focused curriculum continuously updated to match evolving technologies, industry trends and workplace expectations.',
+  },
+  {
+    num: '04',
+    title: 'Project-Based Learning',
+    text: 'Build practical skills through live projects, hackathons, product development and real-world problem solving.',
+  },
+  {
+    num: '05',
+    title: 'Industry Connect & Projects',
+    text: 'Bridge classroom learning with the real world through projects, industrial visits, expert interactions and corporate collaborations.',
+  },
+  {
+    num: '06',
+    title: 'Emerging Technology Exposure',
+    text: 'Explore Generative AI, Agentic AI, Cloud Computing, Computer Vision, Blockchain, IoT and other future technologies.',
+  },
+  {
+    num: '07',
+    title: 'Career & Placement Readiness',
+    text: 'Develop corporate-ready skills through aptitude training, interview preparation, soft skills and placement support powered by TCCI.',
+  },
+  {
+    num: '08',
+    title: 'Expert Faculty & Mentorship',
+    text: 'Learn from experienced faculty and industry experts committed to continuous upskilling, mentorship and practical learning.',
+  },
+  {
+    num: '09',
+    title: 'Research, Innovation & Patents',
+    text: 'Innovate through research publications, funded projects, patents and a culture that encourages discovery and problem-solving.',
+  },
+  {
+    num: '10',
+    title: 'Global Alumni Network',
+    text: 'Join a thriving network of 1000+ alumni working across leading MNCs, startups and government organizations.',
+  },
+  {
+    num: '11',
+    title: 'Modern Labs & Centres of Excellence',
+    text: 'Learn in advanced laboratories and technology centres designed for hands-on experimentation, innovation and industry-ready skills.',
+  },
+  {
+    num: '12',
+    title: 'Student Clubs & Technical Communities',
+    text: 'Grow beyond academics through coding clubs, innovation cells, hackathons, competitions and leadership opportunities.',
+  },
 ];
 
 export default function CyberSecWhyTulas() {

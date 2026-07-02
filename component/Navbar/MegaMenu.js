@@ -49,7 +49,7 @@ const menuData = {
     "School Of Management": [
       { name: "BBA", href: "/courses/bba" },
       { name: "BBA Digital Marketing", href: "/courses/bba/digital-marketing" },
-      { name: "BBA Business Analytics", href: "/courses/bba" },
+      { name: "BBA Business Analytics", href: "/courses/bba/business-analytics" },
     ],
     "Department Of Engineering": [
       { name: "B.Tech", href: "/courses/btech/" },
@@ -106,7 +106,7 @@ const menuData = {
     "Department Of Computer Applications": [
       { name: "MCA", href: "/courses/mca" },
       { name: "MCA Full Stack Software Development", href: "/courses/mca" },
-      { name: "MCA AI & ML", href: "/courses/mca" },
+      { name: "MCA AI & ML", href: "/courses/mca/artificial-intelligence-&-machine-learning" },
     ],
     "Department Of Agriculture": [
       { name: "M.Sc. Agronomy", href: "/courses/msc-agronomy" },

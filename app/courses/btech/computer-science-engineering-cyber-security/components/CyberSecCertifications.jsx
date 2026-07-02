@@ -74,7 +74,7 @@ export default function CyberSecCertifications() {
 
           <div className="cl-cyf-head">
             <div className="cl-cyf-eyebrow"><span className="bar" />Practical Learning</div>
-            <h2 className="cl-cyf-h2">Certifications, Projects<br /><em>&amp; Internships</em></h2>
+            <h2 className="cl-cyf-h2">Certifications <em>&amp; Projects</em></h2>
             <p>Beyond the degree — globally recognized certifications, real projects, and continuous industry exposure that make graduates job-ready.</p>
           </div>
 
@@ -105,11 +105,6 @@ export default function CyberSecCertifications() {
             ))}
           </div>
 
-          {/* Internship */}
-          <div className="cl-cyf-sub" style={{ marginBottom: '24px' }}>Internship Ecosystem</div>
-          <p className="cl-cyf-intern">
-            Students undergo <strong>multiple internship opportunities</strong> across the program — gaining real industry exposure, mentorship, and a direct pathway from internship to placement.
-          </p>
 
         </div>
       </section>
