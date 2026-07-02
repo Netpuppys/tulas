@@ -54,215 +54,6 @@ const sitemap = [
     ],
   },
   {
-    title: "Programs",
-    linkTo: "#",
-    nestedLinks: [
-      {
-        title: "Department of Engineering",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "Diploma",
-            linkTo: "#",
-            thirdNestedLinks: [
-              {
-                title: "Diploma in Civil Engineering",
-                linkTo: "/diploma-in-civil-engineering",
-              },
-              {
-                title: "Diploma in Mechanical Engineering",
-                linkTo: "/diploma-mechanical-engineering",
-              },
-              {
-                title: "Diploma in Computer Science Engineering",
-                linkTo: "/diploma-computer-science-engineering",
-              },
-            ],
-          },
-          {
-            title: "B.Tech",
-            linkTo: "/courses/btech",
-            thirdNestedLinks: [
-              {
-                title: "Civil Engineering (CE)",
-                linkTo: "/courses/btech/civil-engineering",
-              },
-              {
-                title: "Computer Science & Engineering (CSE)",
-                linkTo: "/courses/btech/computer-science",
-              },
-              {
-                title: "Computer Science & Engineering (AI&ML)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning",
-              },
-              {
-                title: "Computer Science & Engineering (Cyber Security)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-cyber-security",
-              },
-              {
-                title: "Computer Science & Engineering( Data Science)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-data-science",
-              },
-              {
-                title: "Electronics & Communication Engineering (ECE)",
-                linkTo: "/courses/btech/electronics-and-communication-engg",
-              },
-              {
-                title: "Electrical & Electronics Engineering (EEE)",
-                linkTo: "/courses/btech/electrical-and-electronics-engg",
-              },
-              {
-                title: "Mechanical Engineering (ME)",
-                linkTo: "/courses/btech/mechanical-engineering",
-              },
-            ],
-          },
-          {
-            title: "M.Tech",
-            linkTo: "/mtech",
-          },
-        ],
-      },
-      {
-        title: "Department of Applied Sciences and Humanities",
-        linkTo: "/courses/applied-science",
-      },
-      {
-        title: "Department of Agriculture",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "B.Sc Agriculture",
-            linkTo: "/b-sc-agriculture",
-          },
-          {
-            title: "M.Sc. Agronomy",
-            linkTo: "/courses/msc-agronomy",
-          },
-        ],
-      },
-      {
-        title: "Department of Journalism and Communications",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "BA.(Hons.) JMC",
-            linkTo: "/courses/bjmc",
-          },
-        ],
-      },
-      {
-        title: "Graduate School of Business",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "MBA",
-            linkTo: "/courses/mba",
-            thirdNestedLinks: [
-              {
-                title: "Human Resource Managment",
-                linkTo: "/courses/mba/human-resource-managment",
-              },
-              {
-                title: "Agri-Business Management",
-                linkTo: "/courses/mba/agri-business",
-              },
-              {
-                title: "Business Analytics",
-                linkTo:
-                  "/courses/mba/business-analytics",
-              },
-              {
-                title: "Marketing",
-                linkTo:
-                  "/courses/mba/marketing",
-              },
-              {
-                title: "Digital Marketing",
-                linkTo:
-                  "/courses/mba/digital-marketing",
-              },
-              {
-                title: "Finance",
-                linkTo: "/courses/mba/finance",
-              },
-              {
-                title: "International Business ",
-                linkTo: "/courses/mba/international-business",
-              },
-
-            ],
-          },
-        ],
-      },
-      {
-        title: "Department of management and commerce",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "BBA",
-            linkTo: "/courses/bba",
-          },
-          {
-            title: "BBA Digital Marketing",
-            linkTo: "/courses/bba/digital-marketing",
-          },
-          {
-            title: "B.Com (Hons.)",
-            linkTo: "/courses/bcom",
-          },
-        ],
-      },
-      {
-        title: "Department of Computer Applications",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "MCA",
-            linkTo: "/courses/mca",
-          },
-        ],
-      },
-            {
-        title: "Graduate School of Computer Applications",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "BCA",
-            linkTo: "/courses/bca",
-          },
-        ],
-      },
-      {
-        title: "Tulas Institute of Pharmacy",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: " B.Pharm.",
-            linkTo: "/courses/bpharma",
-          },
-          {
-            title: "D.Pharm.",
-            linkTo: "/courses/dpharma",
-          },
-        ],
-      },
-       {
-        title: "School of Law",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "LLB",
-            linkTo: "/courses/llb",
-          },
-        ],
-      },
-    ],
-  },
-  {
     title: "Infrastructure",
     linkTo: "#",
     nestedLinks: [
@@ -307,53 +98,277 @@ const sitemap = [
     ],
   },
   {
-    title: "Campus Life",
+    title: "Programs",
     linkTo: "#",
     nestedLinks: [
       {
-        title: "Dehradun International Film Festival",
-        linkTo: "/campus-life/celebrities",
+        title: "Department of management and commerce",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "BBA",
+            linkTo: "/courses/bba",
+          },
+          {
+            title: "BBA Digital Marketing",
+            linkTo: "/courses/bba/digital-marketing",
+          },
+          {
+            title: "BBA Business Analytics",
+            linkTo: "/courses/bba/business-analytics",
+          },
+          {
+            title: "B.Com",
+            linkTo: "/courses/bcom/",
+          },
+          {
+            title: "B.Com (Hons.)",
+            linkTo: "/courses/bcom/",
+          },
+        ],
       },
       {
-        title: "Leadership Fests",
-        linkTo: "/campus-life/leadership-fests",
+        title: "Graduate School of Business",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "MBA",
+            linkTo: "/courses/mba",
+            thirdNestedLinks: [
+              {
+                title: "Marketing",
+                linkTo: "/courses/mba/marketing",
+              },
+              {
+                title: "Human Resource Managment",
+                linkTo: "/courses/mba/human-resource-managment",
+              },
+              {
+                title: "International Business ",
+                linkTo: "/courses/mba/international-business",
+              },
+              {
+                title: "Finance",
+                linkTo: "/courses/mba/finance",
+              },
+              {
+                title: "Agri-Business Management",
+                linkTo: "/courses/mba/agri-business",
+              },
+              {
+                title: "Digital Marketing",
+                linkTo: "/courses/mba/digital-marketing",
+              },
+              {
+                title: "Business Analytics",
+                linkTo: "/courses/mba/business-analytics",
+              },
+            ],
+          },
+        ],
       },
       {
-        title: "Sanskriti- Cultural Fest",
-        linkTo: "/campus-life/sanskriti",
+        title: "Department of Engineering",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "B.Tech",
+            linkTo: "/courses/btech/",
+            thirdNestedLinks: [
+              {
+                title: "Civil Engineering (CE)",
+                linkTo: "/courses/btech/civil-engineering/",
+              },
+              {
+                title: "Mechanical Engineering (ME)",
+                linkTo: "/courses/btech/mechanical-engineering/",
+              },
+              {
+                title: "Electronics & Communication Engineering (ECE)",
+                linkTo: "/courses/btech/electronics-and-communication-engg",
+              },
+              {
+                title: "Electrical & Electronics Engineering (EEE)",
+                linkTo: "/courses/btech/electrical-and-electronics-engg/",
+              },
+              {
+                title: "Computer Science & Engineering (CSE)",
+                linkTo: "/courses/btech/computer-science",
+              },
+              {
+                title: "Computer Science & Engineering (AI&ML)",
+                linkTo:
+                  "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning",
+              },
+              {
+                title: "Computer Science & Engineering (Cyber Security)",
+                linkTo:
+                  "/courses/btech/computer-science-engineering-cyber-security",
+              },
+              {
+                title: "Computer Science & Engineering( Data Science)",
+                linkTo:
+                  "/courses/btech/computer-science-engineering-data-science",
+              },
+              {
+                title: "Computer Science & Engineering (Full Stack Development)",
+                linkTo: "/courses/btech/computer-science",
+              },
+            ],
+          },
+          {
+            title: "M.Tech",
+            linkTo: "/mtech",
+          },
+          {
+            title: "Diploma",
+            linkTo: "#",
+            thirdNestedLinks: [
+              {
+                title: "Diploma in Civil Engineering",
+                linkTo: "/diploma-in-civil-engineering",
+              },
+              {
+                title: "Diploma in Mechanical Engineering",
+                linkTo: "/diploma-mechanical-engineering",
+              },
+              {
+                title: "Diploma in Computer Science Engineering",
+                linkTo: "/diploma-computer-science-engineering",
+              },
+            ],
+          },
+        ],
       },
       {
-        title: "NCC / NSS",
-        linkTo: "/campus-life/ncc-nss",
+        title: "Department of Applied Sciences and Humanities",
+        linkTo: "/courses/applied-science",
+      },
+      {
+        title: "Graduate School of Computer Applications",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "BCA",
+            linkTo: "/courses/bca/",
+          },
+          {
+            title: "BCA Full Stack Software Development",
+            linkTo: "/courses/bca/",
+          },
+          {
+            title: "BCA AI & ML",
+            linkTo: "/courses/bca/",
+          },
+        ],
+      },
+      {
+        title: "Department of Computer Applications",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "MCA",
+            linkTo: "/courses/mca",
+          },
+          {
+            title: "MCA Full Stack Software Development",
+            linkTo: "/courses/mca",
+          },
+          {
+            title: "MCA AI & ML",
+            linkTo: "/courses/mca/artificial-intelligence-&-machine-learning",
+          },
+        ],
+      },
+      {
+        title: "Department of Journalism and Communications",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "BAJMC",
+            linkTo: "/courses/bjmc/",
+          },
+          {
+            title: "BA.(Hons.) JMC",
+            linkTo: "/courses/bjmc/",
+          },
+        ],
+      },
+      {
+        title: "Tulas Institute of Pharmacy",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: " B.Pharm.",
+            linkTo: "/courses/bpharma/",
+          },
+          {
+            title: "D.Pharm.",
+            linkTo: "/courses/dpharma",
+          },
+        ],
+      },
+      {
+        title: "School of Law",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "LLB",
+            linkTo: "/courses/llb/",
+          },
+          {
+            title: "B.A. LL.B (Hons.)",
+            linkTo: "/courses/llb/",
+          },
+          {
+            title: "BBA LL.B (Hons.)",
+            linkTo: "/courses/llb/",
+          },
+        ],
+      },
+      {
+        title: "Department of Agriculture",
+        linkTo: "#",
+        superNestedLinks: [
+          {
+            title: "B.Sc Agriculture",
+            linkTo: "/b-sc-agriculture/",
+          },
+          {
+            title: "M.Sc. Agronomy",
+            linkTo: "/courses/msc-agronomy",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Admissions",
+    linkTo: "#",
+    nestedLinks: [
+      { title: "Programs & Fee structure 2026",
+        linkTo: "/tulas-programs"
       },
       // {
-      //   title: "NSS",
-      //   linkTo: "/campus-life/nss",
+      //   title: "Admission Procedure- Eligibility",
+      //   linkTo: "/admission-procedure",
+      // },
+      // {
+      //   title: "Bank Details",
+      //   linkTo: "/bank-details",
       // },
       {
-        title: "Student Clubs",
-        linkTo: "/campus-life/student-clubs",
+        title: "Pay Fee Online",
+        linkTo: "/pay-fee-online",
       },
-      {
-        title: "Freshers Orientation",
-        linkTo: "/campus-life/freshers-orientation",
+       {
+        title: "Brochure",
+        linkTo: "/pay-fee-online",
       },
-      {
-        title: "Tulas Experiences",
-        linkTo: "/campus-life/tulas-experiences",
-      },
-      {
-        title: "Alumni Meet",
-        linkTo: "/campus-life/alumni-meet",
-      },
-      {
-        title: "Victree- Sports Clubs",
-        linkTo: "/campus-life/victree",
-      },
-      {
-        title: "Prominent Personalities",
-        linkTo: "/campus-life/prominent-personalities",
-      },
+      // {
+      //   title: "E-Prospectus",
+      //   linkTo: "/download-e-prospectus",
+      // },
     ],
   },
   {
@@ -386,7 +401,7 @@ const sitemap = [
           {
             title: "Conferences Organized",
             linkTo:
-              "/research/research-and-development-rd-cell/conferences-organized",
+              "/research/research-and-development-rd-cell/conference-organized",
           },
           {
             title: "FDPs and Workshops",
@@ -453,35 +468,6 @@ const sitemap = [
     ],
   },
   {
-    title: "Admissions",
-    linkTo: "#",
-    nestedLinks: [
-      { title: "Programs & Fee structure 2026",
-        linkTo: "/tulas-programs"
-      },
-      // {
-      //   title: "Admission Procedure- Eligibility",
-      //   linkTo: "/admission-procedure",
-      // },
-      // {
-      //   title: "Bank Details",
-      //   linkTo: "/bank-details",
-      // },
-      {
-        title: "Pay Fee Online",
-        linkTo: "/pay-fee-online",
-      },
-       {
-        title: "Brochure",
-        linkTo: "/pay-fee-online",
-      },
-      // {
-      //   title: "E-Prospectus",
-      //   linkTo: "/download-e-prospectus",
-      // },
-    ],
-  },
-  {
     title: "Placements",
     linkTo: "#",
     nestedLinks: [
@@ -520,21 +506,52 @@ const sitemap = [
     ],
   },
   {
-    title: "Alumni",
+    title: "Campus Life",
     linkTo: "#",
     nestedLinks: [
       {
-        title: "Alumni Login",
-        linkTo: "https://alumni.tulas.edu.in",
-        target: "_blank",
+        title: "Dehradun International Film Festival",
+        linkTo: "/campus-life/celebrities",
       },
       {
-        title: "Alumni Testimonials",
-        linkTo: "/alumni-testimonials",
+        title: "Leadership Fests",
+        linkTo: "/campus-life/leadership-fests",
       },
       {
-        title: "Degree Request Form",
-        linkTo: "/degree-request-form",
+        title: "Sanskriti- Cultural Fest",
+        linkTo: "/campus-life/sanskriti",
+      },
+      {
+        title: "NCC / NSS",
+        linkTo: "/campus-life/ncc-nss",
+      },
+      // {
+      //   title: "NSS",
+      //   linkTo: "/campus-life/nss",
+      // },
+      {
+        title: "Tulas Experiences",
+        linkTo: "/campus-life/tulas-experiences/",
+      },
+      {
+        title: "Student Clubs",
+        linkTo: "/campus-life/student-clubs",
+      },
+      {
+        title: "Freshers Orientation",
+        linkTo: "/campus-life/freshers-orientation/",
+      },
+      {
+        title: "Victree- Sports Clubs",
+        linkTo: "/campus-life/victree",
+      },
+      {
+        title: "Prominent Personalities",
+        linkTo: "/campus-life/prominent-personalities",
+      },
+      {
+        title: "Alumni Meet",
+        linkTo: "/campus-life/alumni-meet",
       },
     ],
   },
@@ -554,9 +571,28 @@ const sitemap = [
       },
     ],
   },
-    {
+  {
     title: "Blogs",
     linkTo: "/blog",
+  },
+  {
+    title: "Alumni",
+    linkTo: "#",
+    nestedLinks: [
+      {
+        title: "Alumni Login",
+        linkTo: "https://alumni.tulas.edu.in",
+        target: "_blank",
+      },
+      {
+        title: "Alumni Testimonials",
+        linkTo: "/alumni-testimonials",
+      },
+      {
+        title: "Degree Request Form",
+        linkTo: "/degree-request-form",
+      },
+    ],
   },
 ];
 export default sitemap;
