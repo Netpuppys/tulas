@@ -15,7 +15,7 @@ const sitemap = [
     linkTo: "/about/",
     nestedLinks: [
       {
-        title: "About Tula's",
+        title: "About Tulas",
         linkTo: "/about",
       },
       {
@@ -237,7 +237,7 @@ const sitemap = [
         ],
       },
       {
-        title: "Tula's Institute of Pharmacy",
+        title: "Tulas Institute of Pharmacy",
         linkTo: "#",
         superNestedLinks: [
           {
@@ -442,7 +442,7 @@ const sitemap = [
         ],
       },
       {
-        title: "Tula's Technology and Incubator (TTBI)",
+        title: "Tulas Technology and Incubator (TTBI)",
         linkTo: "https://ttbif.in/",
         target: "_blank",
       },
@@ -506,7 +506,7 @@ const sitemap = [
       //   linkTo: "/placements/industries-tie-up",
       // },
       {
-        title: "Placement at Tula's",
+        title: "Placement at Tulas",
         linkTo: "/placements/career-innovation-centre",
       },
       {
