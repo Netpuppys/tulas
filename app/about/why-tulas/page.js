@@ -20,6 +20,9 @@ import WhyTulasScroll from "@/app/Component/WhyTulasScroll";
 import { useRef } from "react";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import MegaMenu from "@/component/Navbar/MegaMenu";
+import AboutWhyChoose from "../Components/AboutWhyChoose";
+import HomeGlobalHiringPartners from "@/app/newhome-components/HomeGlobalHiringPartners";
+import NewFooter from "@/component/NewFooter";
 
 // const sectionData = [
 //   {
@@ -201,7 +204,7 @@ const WhyTulas = () => {
             belowPara={pageDescription}
           />
 
-          <div className="w-screen h-screen fixed top-0 left-0 -z-10 bg-[linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),linear-gradient(0deg, rgba(61, 0, 27, 0.72) 0%, rgba(61, 0, 27, 0.72) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;]">
+          {/* <div className="w-screen h-screen fixed top-0 left-0 -z-10 bg-[linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),linear-gradient(0deg, rgba(61, 0, 27, 0.72) 0%, rgba(61, 0, 27, 0.72) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;]">
             <Image
               src={hostelBackground}
               className="w-full h-full object-cover"
@@ -213,7 +216,14 @@ const WhyTulas = () => {
           </div>
           <div className="-z-10">
             <WhyTulasScroll parentRef={parentRef} />
-          </div>
+          </div> */}
+
+
+          <AboutWhyChoose/>
+
+          <HomeGlobalHiringPartners/>
+
+
           {/* <Vision sections={sectionData.slice(0, 4)} /> */}
           <div className="w-full h-full relative z-50 bg-white py-8 md:py-20 flex flex-col items-center justify-center">
             <p className="text-[#f97316] font-[TTChocolatesMedium] font-semibold text-[30px] md:text-[clamp(10px,2.5vw,50px)] underline underline-offset-8 px-4">
@@ -235,7 +245,7 @@ const WhyTulas = () => {
           {/* <Vision sections={sectionData.slice(4)} /> */}
 
           <div className="w-full h-full relative z-[60] bg-white">
-            <Footer color={true} />
+            <NewFooter/>
           </div>
         </div>
       </body>

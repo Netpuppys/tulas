@@ -57,6 +57,14 @@ const SPECS = [
     overview: 'Power systems, control engineering, renewable energy, and smart grids.',
     tags: ['Power Systems', 'Control', 'Renewables'],
   },
+  {
+  img: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80',
+  badge: 'Trending',
+  name: 'Full Stack Development',
+  overview:
+    'Master end-to-end web development with frontend, backend, databases, cloud deployment, and modern development frameworks.',
+  tags: ['React', 'Node.js', 'Cloud'],
+},
 ];
 
 export default function BtechSpecializations() {
@@ -144,10 +152,7 @@ export default function BtechSpecializations() {
           ))}
 
           {/* Lateral entry card */}
-          <a
-            href="https://tulas.edu.in/btech/"
-            target="_blank"
-            rel="noopener"
+          {/* <div
             className="rounded-[20px] overflow-hidden flex flex-col items-center justify-center text-center p-[40px] transition-all duration-400"
             style={{ background: 'linear-gradient(135deg,#001F4C 0%,#00152e 100%)', color: '#fff', boxShadow: '0 8px 28px rgba(0,31,76,.07)' }}
             onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-10px)'; e.currentTarget.style.boxShadow = '0 24px 55px rgba(0,31,76,.35)'; }}
@@ -157,15 +162,13 @@ export default function BtechSpecializations() {
               className="mb-[12px] leading-[1]"
               style={{ fontFamily: "'Bebas Neue',sans-serif", fontSize: '2.2rem', color: '#FFF3D7' }}
             >
-              Lateral Entry<br />&amp; More
+              Bachelor of Technology
             </div>
             <p className="text-[.92rem] leading-[1.7]" style={{ color: 'rgba(255,255,255,.8)' }}>
-              Diploma holders can join directly in the second year. View eligibility and all engineering pathways.
+              The B.Tech program is structured to provide a balanced mix of classroom instruction, laboratory experience, industrial exposure, and real-world applications.
             </p>
-            <span className="mt-[18px] font-bold text-[.86rem]" style={{ color: '#FFF3D7' }}>
-              View All Details →
-            </span>
-          </a>
+
+          </div> */}
         </div>
       </section>
     </>

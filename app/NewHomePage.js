@@ -198,15 +198,15 @@ export default function NewHomePage() {
   const name = [
     "Ranked 86th by Times of B School in India.",
     "Ranked Amongst Top 50 Private College in India.",
-    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "NAAC A+ Highest Ranking in Uttarakhand.",
     "65th best Engineering Colleges in India by Outlook.",
     "Ranked 86th by Times of B School in India.",
     "Ranked Amongst Top 50 Private College in India.",
-    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "NAAC A+ Highest Ranking in Uttarakhand.",
     "65th best Engineering Colleges in India by Outlook.",
     "Ranked 86th by Times of B School in India.",
     "Ranked Amongst Top 50 Private College in India.",
-    "NAAC A+ Highest Ranking in Uttrakhand.",
+    "NAAC A+ Highest Ranking in Uttarakhand.",
     "65th best Engineering Colleges in India by Outlook.",
   ];
   return (
