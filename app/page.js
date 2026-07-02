@@ -3,9 +3,9 @@ import HomePage from "./HomePage";
 import NewHomePage from "./NewHomePage";
 
 export const metadata = {
-  title: "Best Engineering College in Dehradun, India | Tula's Institute",
+  title: "Best College in Dehradun, Uttarakhand | Admission Open 2026 | Tulas Institute",
   description:
-    "Looking for the Top Engineering and Degree College in Dehradun(Uttarakhand)? Look No Further Than Tula's Institute. We Offer the Best Engineering Courses Across India. Visit Now!",
+    "Tulas Institute, Dehradun offers UGC recognized, NAAC A+ accredited BTech, MBA, MCA, BBA, BCA, BSc Agriculture & Many More Programs. Admissions 2026 Open. Apply Now!",
 };
 export default function Home() {
   return (

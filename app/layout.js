@@ -21,10 +21,10 @@ export default function RootLayout({ children }) {
           name="robots"
           content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
         />
-        <meta property="og:title" content="Tula's Institute, Dehradun" />
+        <meta property="og:title" content="Best College in Dehradun, Uttarakhand | Admission Open 2026 | Tulas Institute" />
         <meta
           property="og:description"
-          content="Looking for the Top Engineering and Degree College in Dehradun(Uttarakhand)? Look No Further Than Tula's Institute. We Offer the Best Engineering Courses Across India. Visit Now!"
+          content="Tulas Institute, Dehradun offers UGC recognized, NAAC A+ accredited BTech, MBA, MCA, BBA, BCA, BSc Agriculture & Many More Programs. Admissions 2026 Open. Apply Now!"
         />
         <meta
           property="og:image"
