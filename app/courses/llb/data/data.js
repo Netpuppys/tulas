@@ -61,8 +61,8 @@ export const features = [
 export const sideImages = [content1, content2];
 export const heading = (
   <>
-    Excellence in Legal{" "}
-    <span className="text-[#f97316]">Education and Practice</span>
+    Approved by {" "}
+    <span className="text-[#f97316]">Bar Council of India (BCI)</span>
   </>
 );
 export const quotes = (

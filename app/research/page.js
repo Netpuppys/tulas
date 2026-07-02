@@ -10,6 +10,9 @@ import Link from "next/link";
 import CIRE from "../../public/research/CIRE.png";
 import Vision from "@/component/Programs/Vision";
 import { UtmContext } from "@/component/utmParams";
+import MegaMenu from "@/component/Navbar/MegaMenu";
+import NewNavbar from "@/component/Navbar/NewNavbar";
+import NewFooter from "@/component/NewFooter";
 function Research() {
   const { utmParams } = useContext(UtmContext);
   const sections = [
@@ -84,7 +87,13 @@ function Research() {
         />
       </head>
       <body>
-        <Navbar />
+        <div className="hidden md:block">
+          <MegaMenu />
+        </div>
+        
+        <div className="block md:hidden">
+          <NewNavbar fullBanner={true}/>
+        </div>
         <Banner
           image={BannerImg}
           title={
@@ -126,7 +135,7 @@ function Research() {
         </div>
         <Vision sections={sections} />
         <div className="w-full h-fit z-50">
-          <Footer color={true} />
+          <NewFooter/>
         </div>
       </body>
     </>

@@ -2,8 +2,8 @@
 
 // ⚡ EDITABLE — update these values to reflect actual data
 const PRIMARY_STATS = [
-  { icon: '🖥️', num: '757', suffix: '+', label: 'Total Desktops',   note: 'Update with actual count' },
-  { icon: '🏛️', num: '9',  suffix: '',   label: 'Computer Labs',    note: 'Add actual number of labs' },
+  { icon: '🖥️', num: '757', suffix: '+', label: 'Total Desktops',   note: 'High Spec Machines' },
+  { icon: '🏛️', num: '9',  suffix: '',   label: 'Computer Labs',    note: 'Industry Level Labs' },
   { icon: '📡', num: '869', suffix: '+', label: 'Network Nodes',    note: 'Campus-wide LAN nodes' },
   { icon: '⚡',  num: '3',   suffix: ' Gbps', label: 'Internet Speed', note: 'Dedicated leased line' },
 ];

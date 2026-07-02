@@ -9,27 +9,27 @@ import ComputerCenter from "../../public/Homepage/ScrollSection/ComputerCenter.p
 const title = "15 REASONS TO CHOOSE TULAS";
 const images = [
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-9.png",
+    src: "https://tulas.edu.in/landingPage/rankingmobile.png",
     title: "Ranking",
     text: "Ranked among the Top 50 Private Colleges in India for 8 consecutive years.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-4.png",
+    src: "https://tulas.edu.in/_next/static/media/nishant.215a395a.png",
     title: "Faculty",
     text: "Highly esteemed faculty recognized for innovation in teaching, novel research, and patents.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-2+(1).png",
+    src: "https://tulas.edu.in/_next/static/media/intellectual.77ab7bc1.png",
     title: "Incubator",
     text: "Tulas Technology Business Incubator Foundation (TTBIF) approved by MSME & StartUP Uttarakhand for innovation and startups.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-3+(1).png",
+    src: "https://tulas.edu.in/_next/static/media/placemnetnewbanner.968be777.png",
     title: "Placement",
     text: "700+ campus placement drives and 25+ industrial tie-ups ensuring high-quality recruitment opportunities.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-5.png",
+    src: "https://tulas.edu.in/Homepage/Alumni/alumni1.png",
     title: "Alumni",
     text: "A global network of 7,000+ successful alumni.",
   },
@@ -39,49 +39,47 @@ const images = [
     text: "ICT facilities with modern labs, classrooms, and air-conditioned auditoriums.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-1+(1).png",
+    src: "https://tulas.edu.in/_next/static/media/patent1.21683fdf.jpg",
     title: "Patents & Awards",
     text: "2000+ highly cited research papers, 30+ patents, 15+ government-funded projects, and 20+ prestigious awards.",
   },
-
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-6.png",
+    src: "https://tulas.edu.in/_next/static/media/ncc.8cf070ab.webp",
     title: "NCC",
     text: "NCC 29 UK battalion at Tulas led by the Government of India, Ministry of Defence.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-7.png",
+    src: "https://tulas.edu.in/infrastructure/library/4image.jpg",
     title: "FDPs & IEEE",
     text: "100+ FDPs and IEEE conferences conducted annually",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-8.png",
+    src: "https://tulas.edu.in/infrastructure/library/2image.jpg",
     title: "Library",
     text: "Library with 70,000+ books, 2,500+ journals,1,500+ recorded lectures and excellent digital resources.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image+(1).png",
+    src: "https://tulas.edu.in/_next/static/media/CIRE.d274a39c.png",
     title: "CIRE",
     text: "Industry-Supported Center for Innovation, Research & Entrepreneurship (CIRE).",
   },
-
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-10.png",
+    src: "https://tulas.edu.in/_next/static/media/nss.5e43429d.png",
     title: "NSS",
     text: "NSS Unit at Tulas led by the Government of India, Ministry of Youth Affairs & Sports.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-11.png",
+    src: "https://tulas.edu.in/_next/static/media/medical.e0bf3fff.png",
     title: "Medical assistance",
     text: "24×7 on-campus medical assistance with qualified doctors and medical insurance for all.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-12.png",
+    src: "https://tulas.edu.in/_next/static/media/bannerImg.c0845e66.webp",
     title: "Sports",
     text: "Comprehensive indoor and outdoor sports infrastructure.",
   },
   {
-    src: "https://tulas-assets.s3.ap-south-1.amazonaws.com/why-tulas/image-13.png",
+    src: "https://tulas.edu.in/_next/static/media/background.c4eaffbb.png",
     title: "Yoga Kendra",
     text: "Heartfulness Yoga Kendra for mindfulness and wellness.",
   },

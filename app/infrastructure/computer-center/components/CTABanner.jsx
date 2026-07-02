@@ -53,10 +53,10 @@ export default function CTABanner() {
             📞 Call Admissions
           </a>
           <a
-            href="https://tulas.edu.in/virtual-tour/index.html"
+            href="/apply-now"
             className="font-montserrat bg-transparent text-white border-2 border-white/50 hover:border-white px-[30px] max-[600px]:px-4 py-[12px] max-[600px]:py-[13px] rounded-[10px] font-semibold text-[0.84rem] max-[600px]:text-[0.82rem] transition-all duration-200 text-center flex-1"
           >
-            🏛 Virtual Tour
+            🏛 Apply Now
           </a>
         </div>
       </div>

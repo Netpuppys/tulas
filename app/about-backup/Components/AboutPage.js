@@ -327,7 +327,7 @@ export default function AboutPage() {
         Innovate, Create & Lead
       </h3>
       <h2 className="text-5xl font-bold text-[#f97316]">
-        <span className="text-black">The </span>TULA’S way
+        <span className="text-black">The </span>TULAS way
       </h2>
     </div>
 

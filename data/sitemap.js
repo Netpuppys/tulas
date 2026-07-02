@@ -1,7 +1,10 @@
-import Plagiarism from "../public/research/plagiarism-policy.pdf";
-import Research_Remuneration_Form from "../public/research/Research_Remuneration_Form.pdf";
-import NewResearchPolicy from "../public/research/new-research-policy-tulas.pdf";
-import Organogram from "../public/FooterPDf/Organogram.pdf";
+// Files inside /public are already served from the site root in Next.js —
+// no need (and no correct way) to `import` them. Reference the paths as plain strings.
+const Plagiarism = "/research/plagiarism-policy.pdf";
+const Research_Remuneration_Form = "/research/Research_Remuneration_Form.pdf";
+const NewResearchPolicy = "/research/new-research-policy-tulas.pdf";
+const Organogram = "/FooterPDf/Organogram.pdf"; // <-- verify this matches the real folder name/casing in /public
+
 const sitemap = [
   {
     title: "Home",
@@ -190,7 +193,7 @@ const sitemap = [
                 title: "International Business ",
                 linkTo: "/courses/mba/international-business",
               },
-              
+
             ],
           },
         ],
@@ -323,10 +326,10 @@ const sitemap = [
         title: "NCC / NSS",
         linkTo: "/campus-life/ncc-nss",
       },
-      {
-        title: "NSS",
-        linkTo: "/campus-life/nss",
-      },
+      // {
+      //   title: "NSS",
+      //   linkTo: "/campus-life/nss",
+      // },
       {
         title: "Student Clubs",
         linkTo: "/campus-life/student-clubs",
@@ -439,7 +442,7 @@ const sitemap = [
         ],
       },
       {
-        title: "Tula’s Technology and Incubator (TTBI)",
+        title: "Tula's Technology and Incubator (TTBI)",
         linkTo: "https://ttbif.in/",
         target: "_blank",
       },
@@ -454,7 +457,7 @@ const sitemap = [
     linkTo: "#",
     nestedLinks: [
       { title: "Programs & Fee structure 2026",
-        linkTo: "/tulas-programs" 
+        linkTo: "/tulas-programs"
       },
       // {
       //   title: "Admission Procedure- Eligibility",
@@ -503,7 +506,7 @@ const sitemap = [
       //   linkTo: "/placements/industries-tie-up",
       // },
       {
-        title: "Placement at Tula’s",
+        title: "Placement at Tula's",
         linkTo: "/placements/career-innovation-centre",
       },
       {

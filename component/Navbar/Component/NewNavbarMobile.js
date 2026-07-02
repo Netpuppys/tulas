@@ -30,7 +30,7 @@ function NewNavbarMobile({ isChecked, utmParams }) {
               <Link
                 className="text-gray-900 font-semibold text-[17px] tracking-wide flex-1"
                 href={
-                  item.target ? `${item.linkTo}` : `${item.linkTo}/${utmParams}`
+                  item.target ? `${item.linkTo}` : `${item.linkTo}${utmParams}`
                 }
                 target={item.target ? "_blank" : ""}
                 rel={
@@ -75,7 +75,7 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                         href={
                           subItem.target
                             ? `${subItem.linkTo}`
-                            : `${subItem.linkTo}/${utmParams}`
+                            : `${subItem.linkTo}${utmParams}`
                         }
                         target={subItem.target ? "_blank" : ""}
                         rel={
@@ -124,7 +124,7 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                                 href={
                                   subsubItem.target
                                     ? `${subsubItem.linkTo}`
-                                    : `${subsubItem.linkTo}/${utmParams}`
+                                    : `${subsubItem.linkTo}${utmParams}`
                                 }
                                 target={subsubItem.target ? "_blank" : ""}
                                 rel={
@@ -173,7 +173,7 @@ function NewNavbarMobile({ isChecked, utmParams }) {
                                       href={
                                         subsubsubItem.target
                                           ? `${subsubsubItem.linkTo}`
-                                          : `${subsubsubItem.linkTo}/${utmParams}`
+                                          : `${subsubsubItem.linkTo}${utmParams}`
                                       }
                                       target={
                                         subsubsubItem.target ? "_blank" : ""
