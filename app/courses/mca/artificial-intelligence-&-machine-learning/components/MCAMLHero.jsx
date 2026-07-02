@@ -18,7 +18,7 @@ export default function MCAMLHero() {
       `}} />
 
       <section
-        className="relative w-full overflow-hidden flex items-center justify-center"
+        className="relative w-full overflow-hidden flex items-center justify-center pt-10"
         style={{ minHeight: 'calc(100vh - 80px)' }}
       >
         {/* Background image */}
@@ -46,12 +46,12 @@ export default function MCAMLHero() {
         <div className="relative z-[5] text-center py-[50px] px-[7%] max-w-[1200px] w-full">
 
           {/* Breadcrumb */}
-          <div
+          {/* <div
             className="flex items-center gap-[10px] justify-center mb-[22px] text-[.82rem] font-medium"
             style={{ color: 'rgba(255,255,255,.65)' }}
           >
             Home / Programs / MCA / <span style={{ color: '#FFF3D7' }}>Artificial Intelligence &amp; Machine Learning</span>
-          </div>
+          </div> */}
 
           {/* Badge */}
           <div
