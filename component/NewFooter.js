@@ -131,7 +131,7 @@ const NewFooter = ({ set = false, color = false }) => {
   };
 
   return (
-    <footer className="w-full text-white overflow-hidden z-40 bg-[#111111]">
+    <footer className="w-full text-white overflow-hidden z-40 bg-[#263145]">
       {set && <ContactForm />}
 
       {/* ── TOP BAND ── */}

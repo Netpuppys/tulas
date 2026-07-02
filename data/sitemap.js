@@ -44,7 +44,7 @@ const sitemap = [
         linkTo: "/contact",
       },
       {
-        title: "Why Tula's",
+        title: "Why Tulas",
         linkTo: "/about/why-tulas",
       },
       {
