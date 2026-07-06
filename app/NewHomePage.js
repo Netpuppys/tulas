@@ -193,7 +193,7 @@ export default function NewHomePage() {
     desktopbanner5,
     desktopbanner,
     desktopbanner1,
-    desktopbanner2,
+    // desktopbanner2,
     desktopbanner3,
   ];
   const bannerImagesMobile = [
@@ -201,7 +201,7 @@ export default function NewHomePage() {
     mobilebanner5,
     mobilebanner,
     mobilebanner1,
-    mobilebanner2,
+    // mobilebanner2,
     mobilebanner3,
   ];
   const name = [
