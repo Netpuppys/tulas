@@ -89,6 +89,11 @@ import desktopbanner2 from "../public/Homepage/BannerHome/newbanner1.jpg";
 import mobilebanner2 from "../public/Homepage/BannerHome/newbannermobile1.jpg";
 import desktopbanner3 from "../public/Homepage/BannerHome/newbanner2.jpg";
 import mobilebanner3 from "../public/Homepage/BannerHome/newbannermobile2.jpg";
+import desktopbanner4 from "../public/Homepage/BannerHome/ranking-desktop.jpg";
+import mobilebanner4 from "../public/Homepage/BannerHome/ranking-mobile.jpg";
+import desktopbanner5 from "../public/Homepage/BannerHome/learn-desktop.jpg";
+import mobilebanner5 from "../public/Homepage/BannerHome/learn-mobile.jpg";
+
 
 import { ThreeDots } from "react-loader-spinner";
 import LandingAccredition from "./graduate-school-of-business/Component/LandingAccredition";
@@ -184,12 +189,16 @@ export default function NewHomePage() {
   ];
 
   const bannerImagesDesktop = [
+    desktopbanner4,
+    desktopbanner5,
     desktopbanner,
     desktopbanner1,
     desktopbanner2,
     desktopbanner3,
   ];
   const bannerImagesMobile = [
+    mobilebanner4,
+    mobilebanner5,
     mobilebanner,
     mobilebanner1,
     mobilebanner2,
