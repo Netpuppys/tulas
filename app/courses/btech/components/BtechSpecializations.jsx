@@ -60,7 +60,7 @@ const SPECS = [
   {
   img: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80',
   badge: 'Trending',
-  name: 'Full Stack Development',
+  name: 'CSE - Fullsntack Development',
   overview:
     'Master end-to-end web development with frontend, backend, databases, cloud deployment, and modern development frameworks.',
   tags: ['React', 'Node.js', 'Cloud'],

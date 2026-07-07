@@ -258,7 +258,7 @@ const sitemap = [
           },
           {
             title: "BCA AI & ML",
-            linkTo: "/courses/bca/",
+            linkTo: "/courses/bca/artificial-intelligence-&-machine-learning",
           },
         ],
       },

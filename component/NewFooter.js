@@ -14,7 +14,7 @@ import ContactForm from "@/app/contact/Component/form";
 import innovationAndStartupPolicy from "../public/research/innovation-and-startup-policy.pdf";
 import Plagiarism from "../public/research/plagiarism-policy.pdf";
 import HandBook from "../public/research/HandBook.pdf";
-import NewResearchPolicy from "../public/research/NewResearchPolicy.pdf";
+import NewResearchPolicy from "../public/research/new-research-policy-tulas.pdf";
 import HrPolicy from "../public/FooterPDf/hr-policy.pdf";
 import ANTIRAGGING0001 from "../public/research/ANTI-RAGGING_0001.pdf";
 import HolidayCalendar from "../public/research/holiday-calender-26.pdf";

@@ -11,6 +11,8 @@ import NewFooter from '@/component/NewFooter';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import CSEProgramDetails from './components/CSEProgramDetails';
+import ImageHero from './components/ImageHero';
+
 
 export default function CSEPage() {
   return (
@@ -22,7 +24,8 @@ export default function CSEPage() {
             <div className="block md:hidden">
               <NewNavbar fullBanner={true}/>
             </div>
-      <CSEHero/>
+      {/* <CSEHero/> */}
+      <ImageHero/>
       <CSEOverview />
       <CSEAICurriculum />
       <CSECertifications />
