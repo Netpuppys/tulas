@@ -24,8 +24,8 @@ export default function CSEPage() {
             <div className="block md:hidden">
               <NewNavbar fullBanner={true}/>
             </div>
-      {/* <CSEHero/> */}
-      <ImageHero/>
+      <CSEHero/>
+      {/* <ImageHero/> */}
       <CSEOverview />
       <CSEAICurriculum />
       <CSECertifications />

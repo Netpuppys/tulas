@@ -254,7 +254,7 @@ const sitemap = [
           },
           {
             title: "BCA Full Stack Software Development",
-            linkTo: "/courses/bca/",
+            linkTo: "/courses/bca/fullstack-devlopment",
           },
           {
             title: "BCA AI & ML",

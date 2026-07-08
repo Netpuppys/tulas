@@ -69,7 +69,7 @@ const menuData = {
     ],
     "Department Of Computer Applications": [
       { name: "BCA", href: "/courses/bca/" },
-      { name: "BCA Full Stack Software Development", href: "/courses/bca/" },
+      { name: "BCA Full Stack Software Development", href: "/courses/bca/fullstack-devlopment" },
       { name: "BCA AI & ML", href: "/courses/bca/artificial-intelligence-&-machine-learning" },
     ],
     "Department Of Mass Comm. & Journalism": [
