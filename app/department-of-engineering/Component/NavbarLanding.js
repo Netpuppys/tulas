@@ -5,10 +5,10 @@ import { IoCall } from "react-icons/io5";
 import { SiGoogleforms } from "react-icons/si";
 import phoneCallGif from "../../../public/Components/Navbar/phone_ringing.gif";
 import NBA from "../../../public/Components/Navbar/NBA.png";
-import NAAC from "../../../public/Components/Navbar/NAAC3.png";
+import NAAC from "../../../public/Components/Navbar/naacorange.png";
 import TulasLogo from "../../../public/Components/Footer/tulaslogo.png";
-import TulasLogoMobile from "../../../public/Components/Navbar/tulas-unilogo.png";
-import Years20 from "../../../public/graduate-school-of-business/mba/20Years.png";
+import TulasLogoMobile from "../../../public/Components/Footer/tulaslogo.png";
+import Years20 from "../../../public/graduate-school-of-business/mba/20Years3.png";
 import Image from "next/image";
 
 function NavbarLanding({ handleScrollArrow, nba = false }) {
@@ -16,18 +16,18 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
     <div className="fixed w-full z-[9999] pointer-events-none">
 
       {/* ================= DESKTOP TOP BAR ================= */}
-      <div className="bg-white w-full hidden md:block pointer-events-auto">
+      <div className="bg-orange-600 w-full hidden md:block pointer-events-auto">
         <div className="w-[95%] mx-auto flex items-center justify-center gap-4 border-b border-[#9A9A9A] py-2">
           <a
             href="tel:+91-8069204028"
-            className="flex gap-2 items-center text-black"
+            className="flex gap-2 items-center text-white"
           >
             <Image src={phoneCallGif} alt="" className="w-5" />
-            Admissions Helpline Number - +91-8069204028
+            Admissions Helpline Number +91-8069204028
           </a>
           <button
             onClick={handleScrollArrow}
-            className="px-8 bg-orange-600 text-white rounded-full"
+            className="px-8 bg-white text-orange-600 rounded-full"
           >
             Enquire Now
           </button>
@@ -35,7 +35,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
       </div>
 
       {/* ================= NAVBAR ================= */}
-      <div className="bg-white md:bg-orange-600 shadow-md pointer-events-auto">
+      <div className="bg-white md:bg-white shadow-md pointer-events-auto">
         <div className="px-0 md:px-[2%] pb-3 md:pt-2 pt-0">
 
           {/* ===== MOBILE STRUCTURE ===== */}
@@ -54,7 +54,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
     <Image
       src={TulasLogoMobile}
       alt=""
-      className="w-[15vw]"
+      className="w-[30vw]"
     />
 
     <button
@@ -72,7 +72,7 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
             <Image
               src={TulasLogo}
               alt=""
-              className="w-[12vw]"
+              className="w-[15vw]"
             />
 
             <div className="flex items-center gap-6">

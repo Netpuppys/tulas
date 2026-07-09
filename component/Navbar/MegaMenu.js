@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef, useContext } from "react";
 import logo from "../../public/Components/Footer/tulaslogo.png";
 import year from "../../public/Components/Footer/20year.png";
-import NAAC from "../../public/Components/Navbar/naacorange.png";
+import NAAC from "../../public/Components/Navbar/naacorangewhite.png";
 import Organogram from "../../public/FooterPDf/Organogram.pdf";
 import Plagiarism from "../../public/research/plagiarism-policy.pdf";
 import NewResearchPolicy from "../../public/research/new-research-policy-tulas.pdf";
@@ -345,14 +345,14 @@ export default function MegaMenu() {
     <header className="w-full font-sans">
 
       {/* ===== LAYER 1 — TOP STRIP (scrolls away) ===== */}
-      <div ref={topStripRef} className="w-full bg-white border-b border-gray-200">
+      <div ref={topStripRef} className="w-full bg-[#e0500e] border-b border-gray-200">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-2">
-          <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">
-            <span className="text-orange-500 text-base leading-none">•</span>
+          <div className="flex items-center gap-2 text-white text-sm font-medium">
+            <span className="text-white text-base leading-none">•</span>
             <span className="tracking-wide">Excellence in Education Since 2006</span>
           </div>
                 
-          <div className="flex items-center gap-7 text-gray-600 text-xs font-semibold tracking-widest">
+          <div className="flex items-center gap-7 text-white text-xs font-semibold tracking-widest">
             {topStripItems.map((item) => (
               <div
                 key={item.name}
@@ -411,7 +411,7 @@ export default function MegaMenu() {
       >
 
         {/* ===== LAYER 2 — MAIN HEADER (orange) ===== */}
-        <div className="w-full bg-[#e0500e]">
+        <div className="w-full bg-[#ffff]">
           <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
             <Link href="/" className="flex items-center gap-5 flex-shrink-0">
               <Image src={logo} alt="Tulas Institute Dehradun" className="h-[68px] w-auto object-contain" />
@@ -432,13 +432,13 @@ export default function MegaMenu() {
                 </div>
               </a>
 
-              <Link href="/apply-now" className="flex items-center gap-3 bg-white text-gray-800 rounded-full px-5 py-2.5 cursor-pointer hover:shadow-md transition-shadow select-none border border-gray-100">
+              <Link href="/apply-now" className="flex items-center gap-3 bg-[#f26522] text-gray-800 rounded-full px-5 py-2.5 cursor-pointer hover:shadow-md transition-shadow select-none border border-gray-100">
                 <div className="w-8 h-8 bg-[#f26522] rounded-full flex items-center justify-center flex-shrink-0">
                   <PersonIcon />
                 </div>
                 <div className="leading-none">
-                  <p className="text-sm font-bold text-gray-800 mb-0.5">Apply Now</p>
-                  <p className="text-[10px] text-gray-500">For Session 2026-27</p>
+                  <p className="text-sm font-bold text-white mb-0.5">Apply Now</p>
+                  <p className="text-[10px] text-white">For Session 2026-27</p>
                 </div>
               </Link>
             </div>

@@ -116,6 +116,8 @@ import HomeCelebrities from "./newhome-components/HomeCelebrities";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import HomeAwards from "./newhome-components/HomeAwards";
 import NewFooter from "@/component/NewFooter";
+import AIBeyondClassroom from "./newhome-components/AIBeyondClassroom";
+import AIBeyondClassroomEditorial from "./newhome-components/AIBeyondClassroomEditorial";
 // import MegaMenu from "@/component/Navbar/MegaMenu";
 
 export default function NewHomePage() {
@@ -268,6 +270,8 @@ export default function NewHomePage() {
 
         <HomeBusinessSection/>
 
+        {/* <AIBeyondClassroomEditorial/> */}
+
         <HomeWhyTulas/>
 
         <HomePerks/>
@@ -275,6 +279,8 @@ export default function NewHomePage() {
         <HomeAlumniSuccessStories/>
 
         <HomeProgramsSection/>
+
+        <AIBeyondClassroom/>
 
         <HomeGlobalHiringPartners/>
 

@@ -34,7 +34,7 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
   const { utmParams } = useContext(UtmContext);
   const [showBottomBar, setShowBottomBar] = useState(true);
   const [showStickyBar, setShowStickyBar] = useState(true);
-  
+
 
   useEffect(() => {
     if (!scroled) {
@@ -103,13 +103,21 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
 
       {/* ── Header bar — always on top of the sliding menu ── */}
       <div className={`z-[10000] relative`}>
+        {/* <div
+          className={`mdNavbar:px-10 w-full relative h-full py-2 flex flex-col justify-center
+            ${
+              isChecked
+                ? "bg-white shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
+                : "bg-[rgba(19,19,19,0.80)] backdrop-blur-xl"
+            }
+          `}
+        > */}
         <div
           className={`mdNavbar:px-10 w-full relative h-full py-2 flex flex-col justify-center
             ${
               isChecked
-                /* Mobile: solid orange to blend with the open menu; desktop: transparent */
-                ? "bg-orange-500 mdNavbar:bg-transparent"
-                : "bg-[rgba(19,19,19,0.80)] backdrop-blur-xl"
+                ? "bg-white shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
+                : "bg-[#ffff] backdrop-blur-xl"
             }
           `}
         >
@@ -123,7 +131,7 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
               >
                 <div
                   className={`p-[15px] border-2 rounded-[50%] aspect-square border-r-transparent ${
-                    isChecked ? "border-black" : "border-white"
+                    isChecked ? "border-[#0B1F4E]" : "border-white"
                   }`}
                 >
                   <label
@@ -133,15 +141,15 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
                         : "unCheck flex flex-col w-[30px] cursor-pointer"
                     }
                   >
-                    <span className={`my-[3px] rounded-lg h-[3px] w-1/2 ${isChecked ? "bg-black" : "bg-white"}`}></span>
-                    <span className={`my-[3px] rounded-lg h-[3px] w-full ${isChecked ? "bg-black" : "bg-white"}`}></span>
-                    <span className={`my-[3px] rounded-lg h-[3px] w-3/4 ${isChecked ? "bg-black" : "bg-white"}`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-1/2 ${isChecked ? "bg-[#0B1F4E]" : "bg-white"}`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-full ${isChecked ? "bg-[#0B1F4E]" : "bg-white"}`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-3/4 ${isChecked ? "bg-[#0B1F4E]" : "bg-white"}`}></span>
                   </label>
                 </div>
                 <h3
                   style={{ fontFamily: "Zilla Slab" }}
                   className={`hidden mdNavbar:block text-left text-[25px] -ml-4 font-semibold transition-color ${
-                    isChecked ? "text-[#353535]" : "text-white"
+                    isChecked ? "text-[#0B1F4E]" : "text-white"
                   }`}
                 >
                   {!isChecked ? "Menu" : "Close"}
@@ -191,7 +199,11 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
             <div className="flex w-full flex-row-reverse items-center mdNavbar:flex-row justify-between">
               {/* Hamburger / Close button */}
               <button
-                className="bg-[rgba(19,19,19,0.16)] text-3xl rounded-lg shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative border-2 border-white"
+                className={`text-3xl rounded-lg shadow-lg w-14 mdNavbar:w-20 aspect-square flex flex-row justify-center items-center cursor-pointer relative border-2 ${
+                  isChecked
+                    ? "bg-white border-[#0B1F4E]"
+                    : "bg-[rgba(19,19,19,0.16)] border-white"
+                }`}
                 onClick={handleButtonClick}
               >
                 <div className={`p-[11px] rounded-[50%] aspect-square`}>
@@ -202,9 +214,9 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
                         : "unCheck flex flex-col w-[30px] cursor-pointer"
                     }
                   >
-                    <span className={`my-[3px] rounded-lg h-[3px] w-1/2 bg-white`}></span>
-                    <span className={`my-[3px] rounded-lg h-[3px] w-full bg-white`}></span>
-                    <span className={`my-[3px] rounded-lg h-[3px] w-3/4 bg-white`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-1/2 ${isChecked ? "bg-[#0B1F4E]" : "bg-white"}`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-full ${isChecked ? "bg-[#0B1F4E]" : "bg-white"}`}></span>
+                    <span className={`my-[3px] rounded-lg h-[3px] w-3/4 ${isChecked ? "bg-[#0B1F4E]" : "bg-white"}`}></span>
                   </label>
                 </div>
               </button>
@@ -214,7 +226,7 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
                 <Image
                   src={TulasLogo}
                   alt=""
-                  className="w-[50vw] mdNavbar:w-[160px] h-fit pointer-events-auto cursor-pointer"
+                  className="w-[40vw] mdNavbar:w-[140px] h-fit pointer-events-auto cursor-pointer"
                 />
               </Link>
             </div>
@@ -318,7 +330,7 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
           {formPopup && <FormPopup formPopup={formPopup} setFormPopup={setFormPopup} />}
 
     </div>
-    
+
   );
 }
 
