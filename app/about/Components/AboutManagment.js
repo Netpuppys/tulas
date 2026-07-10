@@ -23,14 +23,14 @@ const leadershipCards = [
   {
     image: silky,
     name: "Silky Jain Marwah",
-    profile: "Director General",
+    profile: "Executive Director",
     description:
       "Education isn't just about lessons, it's about shaping lives and inspiring change",
   },
   {
     image: raunak,
     name: "Raunak Jain",
-    profile: "Senior Vice President",
+    profile: "Vice Chairman",
     description:
       "Greatness Begins when we push boundaries and strive for excellence every single day",
   },
