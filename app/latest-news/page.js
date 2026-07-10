@@ -51,6 +51,13 @@ import newformatimg20 from "../../public/Homepage/LatestNews/newformatimg20.webp
 import newformatimg21 from "../../public/Homepage/LatestNews/newformatimg21.webp";
 import newformatimg22 from "../../public/Homepage/LatestNews/newformatimg22.webp";
 import newformatimg23 from "../../public/Homepage/LatestNews/newformatimg23.webp";
+import newformatimg24 from "../../public/Homepage/LatestNews/newformatimg24.jpeg";
+import newformatimg25 from "../../public/Homepage/LatestNews/newformatimg25.jpeg";
+import newformatimg26 from "../../public/Homepage/LatestNews/newformatimg26.jpeg";
+import newformatimg27 from "../../public/Homepage/LatestNews/newformatimg27.jpeg";
+import newformatimg28 from "../../public/Homepage/LatestNews/newformatimg28.jpeg";
+
+
 
 
 
@@ -73,6 +80,21 @@ import NewFooter from "@/component/NewFooter";
 
 function LatestNews() {
   const sports = [
+    {
+      image: newformatimg28,
+    }, 
+    {
+      image: newformatimg27,
+    }, 
+    {
+      image: newformatimg26,
+    }, 
+    {
+      image: newformatimg25,
+    }, 
+    {
+      image: newformatimg24,
+    }, 
     {
       image: newformatimg23,
       name: "Campus Placement Drive: B.tech Civil 2026 Batch",

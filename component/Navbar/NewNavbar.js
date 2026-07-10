@@ -8,14 +8,14 @@ import { FiInfo } from "react-icons/fi";
 import { PiPencilSimpleLineLight } from "react-icons/pi";
 import { SiGoogleforms } from "react-icons/si";
 import logo360 from "../../public/Components/Navbar/logo360.png";
-import NAAC from "../../public/Components/Navbar/Naac2.png";
-import NBA from "../../public/Components/Navbar/NBA.png";
+import NAAC from "../../public/Components/Navbar/naacorangewhite.png";
+import NBA from "../../public/Components/Navbar/newnba.png";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import TulasLogo from "../../public/Components/Footer/tulaslogo.png";
 import whatsapp from "../../public/Components/Navbar/whatsapp.png";
 import touricon from "../../public/Components/Navbar/rotation.png";
 import whatsappnew from "../../public/Components/Navbar/whatsapp2.png";
-import Years20 from "../../public/graduate-school-of-business/mba/20Years.png";
+import Years20 from "../../public/graduate-school-of-business/mba/mobile20year.png";
 import FormPopup from "../formPopup";
 import { UtmContext } from "../utmParams";
 import NavbarDesktop from "./Component/NavbarDesktop";
@@ -100,6 +100,17 @@ function NewNavbar({ fullBanner = false, scroled = false, handleScrollArrow }) {
 
   return (
     <div className="fixed w-full h-full z-[9999] pointer-events-none">
+        {/* TOP ROW: YEARS + NBA + NAAC with RED BACKGROUND */}
+<div className="flex items-center bg-orange-600 px-4 pb-2 pt-1 z-[10000] relative">
+  {/* Left */}
+  <Image src={Years20} alt="" className="w-[50px]" />
+
+  {/* Right */}
+  <div className="ml-auto flex items-center gap-3">
+    <Image src={NBA} alt="" className="w-[45px]" />
+    <Image src={NAAC} alt="" className="w-[60px]" />
+  </div>
+</div>
 
       {/* ── Header bar — always on top of the sliding menu ── */}
       <div className={`z-[10000] relative`}>

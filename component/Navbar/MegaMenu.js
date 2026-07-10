@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef, useContext } from "react";
 import logo from "../../public/Components/Footer/tulaslogo.png";
-import year from "../../public/Components/Footer/20year.png";
+import year from "../../public/Components/Footer/20yearblue.png";
 import NAAC from "../../public/Components/Navbar/naacorangewhite.png";
 import Organogram from "../../public/FooterPDf/Organogram.pdf";
 import Plagiarism from "../../public/research/plagiarism-policy.pdf";

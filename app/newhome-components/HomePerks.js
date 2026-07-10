@@ -36,11 +36,14 @@ function HomePerks() {
           </h2> */}
 
           <p className="text-gray-700 mb-5 leading-relaxed text-sm md:text-base">
-            Tulas University, established in 2006 under the Rishabh Educational Trust, has built a strong reputation for delivering quality education with a future-focused approach. Backed by UGC recognition and NAAC A+ accreditation, the University maintains high academic standards while continuously evolving to meet the demands of a changing world.
+            Tulas University is a leading university in Dehradun, Uttarakhand, known for academic excellence, modern infrastructure and strong placement outcomes. UGC Approved and NAAC A+ Accredited, the university offers undergraduate, postgraduate and doctoral programmes across engineering, management, law, commerce, computer applications and emerging fields, making it a preferred choice for career-focused education.
           </p>
 
+          <p className="text-gray-700 mb-5 leading-relaxed text-sm md:text-base">
+           Built on more than 20 years of academic excellence, Tulas University delivers AI-driven learning, industry-integrated curriculum, advanced laboratories, global exposure and hands-on training that prepares students for real-world challenges and evolving career landscapes.
+          </p>
           <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-           At Tulas, education goes beyond traditional learning. With a modern, industry-aligned curriculum, integration of emerging technologies, and a strong emphasis on innovation and practical exposure, students are equipped with the skills, mindset, and confidence needed to succeed across diverse career paths. From academic excellence to career readiness, every aspect of the Tulas experience is designed to prepare students not just for their first job but for long-term growth, adaptability, and leadership in an ever-evolving professional landscape.
+            With a strong emphasis on innovation, research, entrepreneurship and career development, the university equips students with the skills, knowledge and experience needed to become industry-ready professionals and future leaders. Its robust placement ecosystem, industry collaborations and focus on emerging technologies make it a top choice for students seeking quality higher education in Uttarakhand.
           </p>
         </div>
 

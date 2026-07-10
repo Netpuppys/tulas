@@ -97,7 +97,7 @@ function HomeMainBanner({
       className={`w-full relative overflow-hidden ${
         screen
           ? "h-[100vh] md:h-screen"
-          : "aspect-[788/1350] md:aspect-[2345/920] mt-[70px] md:mt-[0px] md:h-full"
+          : "aspect-[788/1350] md:aspect-[2345/920] mt-[100px] md:mt-[0px] md:h-full"
           // : "aspect-[1088/1350] md:aspect-[2745/1329] mt-20 md:mt-14 md:h-full"
       }`}
     >

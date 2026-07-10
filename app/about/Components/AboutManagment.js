@@ -16,21 +16,21 @@ const leadershipCards = [
   {
     image: sunil,
     name: "Dr. Sunil Kumar Jain",
-    profile: "Chairman - Tulas Group",
+    profile: "Founder & President",
     description:
       "True Leadership lies in empowering others to dream more, learn more & achieve more",
   },
   {
     image: silky,
     name: "Silky Jain Marwah",
-    profile: "Executive Director",
+    profile: "Director General",
     description:
       "Education isn't just about lessons, it's about shaping lives and inspiring change",
   },
   {
     image: raunak,
     name: "Raunak Jain",
-    profile: "Vice Chairman",
+    profile: "Senior Vice President",
     description:
       "Greatness Begins when we push boundaries and strive for excellence every single day",
   },

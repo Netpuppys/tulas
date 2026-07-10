@@ -8,7 +8,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import TulasFooter from "../public/Components/Footer/tulaslogo.png";
+import TulasFooter from "../public/Components/Footer/tulasfooterlogo.png";
 import Link from "next/link";
 import ContactForm from "@/app/contact/Component/form";
 import innovationAndStartupPolicy from "../public/research/innovation-and-startup-policy.pdf";
@@ -43,17 +43,17 @@ const NewFooter = ({ set = false, color = false }) => {
 
   const socialMediaLinks = [
     {
-      href: "https://www.facebook.com/tulasinstitutedehradun/",
+      href: "https://www.facebook.com/tulasuniversitydehradun/",
       icon: <FaFacebookF />,
       label: "Facebook",
     },
     {
-      href: "https://www.linkedin.com/school/tula's-institute/",
+      href: "https://www.linkedin.com/school/tulasuniversity/",
       icon: <FaLinkedinIn />,
       label: "LinkedIn",
     },
     {
-      href: "https://www.youtube.com/@TulasInstitutedehradun",
+      href: "https://www.youtube.com/@tulasuniversitydehradun",
       icon: <FaYoutube />,
       label: "YouTube",
     },
@@ -63,7 +63,7 @@ const NewFooter = ({ set = false, color = false }) => {
       label: "X (Twitter)",
     },
     {
-      href: "https://www.instagram.com/tulasinstitutedehradun/",
+      href: "https://www.instagram.com/tulasuniversity.ddn/",
       icon: <FaInstagram />,
       label: "Instagram",
     },

@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef } from "react"; 
 import Image from "next/image";
 
-import newformatimg20 from "../../public/Homepage/LatestNews/newformatimg20.webp";
-import newformatimg21 from "../../public/Homepage/LatestNews/newformatimg21.webp";
-import newformatimg22 from "../../public/Homepage/LatestNews/newformatimg22.webp";
-import newformatimg23 from "../../public/Homepage/LatestNews/newformatimg23.webp";
+import newformatimg25 from "../../public/Homepage/LatestNews/newformatimg25.jpeg";
+import newformatimg26 from "../../public/Homepage/LatestNews/newformatimg26.jpeg";
+import newformatimg27 from "../../public/Homepage/LatestNews/newformatimg27.jpeg";
+import newformatimg28 from "../../public/Homepage/LatestNews/newformatimg28.jpeg";
 
 import { MdDateRange, MdLocationPin, MdTimer } from "react-icons/md";
 
@@ -15,31 +15,16 @@ function HomeStatsAndNews() {
 
   const sports = [
     {
-      image: newformatimg23,
-      name: "Campus Placement Drive: B.tech Civil 2026 Batch",
-      date: "14th Feb 2026",
-      location: "Tulas's Institute",
+      image: newformatimg28,
     },
     {
-      image: newformatimg22,
-      name: "Guest lecture on AI tools in higher education and research",
-      date: "30th Jan 2026",
-      location: "Old seminar hall",
-      time: "10:00 am Onwards",
+      image: newformatimg27,
     },
     {
-      image: newformatimg21,
-      name: "Masterclass on data-driven sustainblility strategies",
-      date: "17th Nov-2025",
-      location: "F-404 Tula's institute",
-      time: "11:30 am Onwards",
+      image: newformatimg26,
     },
     {
-      image: newformatimg20,
-      name: "Add-on certificate program on Fullstack development",
-      date: "17th-28th Nov-2025",
-      location: "G-404 Tula's institute",
-      time: "11:30 am - 4:00 pm",
+      image: newformatimg25,
     },
   ];
 
@@ -91,7 +76,7 @@ function HomeStatsAndNews() {
                 </div>
 
                 {/* CONTENT */}
-                <div className="p-4">
+                {/* <div className="p-4">
 
                   <h2 className="text-[clamp(14px,1vw,18px)] line-clamp-2 text-[#353535] font-semibold leading-tight">
                     {sport.name}
@@ -118,7 +103,7 @@ function HomeStatsAndNews() {
                     </div>
                   )}
 
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

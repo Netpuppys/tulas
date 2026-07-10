@@ -13,7 +13,7 @@ function NewNavbarMobile({ isChecked, utmParams }) {
 
   return (
     <div
-      className={`block mdNavbar:hidden pointer-events-auto fixed top-0 w-[80%] max-w-[380px] bg-white h-screen max-h-screen overflow-y-auto shadow-2xl transition-all duration-300 ease-in-out ${
+      className={`block mdNavbar:hidden pointer-events-auto fixed top-8 w-[80%] max-w-[380px] bg-white h-screen max-h-screen overflow-y-auto shadow-2xl transition-all duration-300 ease-in-out ${
         isChecked
           ? "right-0 translate-x-0 opacity-100 visible"
           : "right-0 translate-x-full opacity-0 invisible"
