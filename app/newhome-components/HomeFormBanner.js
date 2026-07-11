@@ -57,7 +57,7 @@ function HomeFormBanner() {
     { name: "B.Tech Civil Engineering", href: "/courses/btech/civil-engineering/" },
     { name: "B.Tech Mechanical Engineering", href: "/courses/btech/mechanical-engineering/" },
 
-    { name: "M.Tech", href: "/mtech" },
+    // { name: "M.Tech", href: "/mtech" },
     { name: "M.Tech Computer Science Engineering", href: "/mtech" },
     { name: "M.Tech Thermal Engineering", href: "/mtech" },
     { name: "M.Tech Structural Engineering", href: "/mtech" },

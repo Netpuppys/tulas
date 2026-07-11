@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useState, useEffect, useRef, useContext } from "react";
 import logo from "../../public/Components/Footer/tulaslogo.png";
 import year from "../../public/Components/Footer/20yearblue.png";
-import NAAC from "../../public/Components/Navbar/naacorangewhite.png";
+import NAAC from "../../public/Components/Navbar/newnaac.png";
+import NBA from "../../public/Components/Navbar/newnba.png";
 import Organogram from "../../public/FooterPDf/Organogram.pdf";
 import Plagiarism from "../../public/research/plagiarism-policy.pdf";
 import NewResearchPolicy from "../../public/research/new-research-policy-tulas.pdf";
@@ -396,7 +397,9 @@ export default function MegaMenu() {
           </div>
 
           <div className="flex items-center">
+            <Image src={NBA} alt="NAAC A+" className="h-7 px-3 w-auto object-contain" />
             <Image src={NAAC} alt="NAAC A+" className="h-7 w-auto object-contain" />
+            
           </div>
         </div>
       </div>
