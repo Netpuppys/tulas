@@ -9,7 +9,7 @@ import { PiPencilSimpleLineLight } from "react-icons/pi";
 import { SiGoogleforms } from "react-icons/si";
 import logo360 from "../../public/Components/Navbar/logo360.png";
 import NAAC from "../../public/Components/Navbar/naacorangewhite.png";
-import NBA from "../../public/Components/Navbar/newnba.png";
+import NBA from "../../public/Components/Navbar/newnbawhite.png";
 import phoneCallGif from "../../public/Components/Navbar/phone_ringing.gif";
 import TulasLogo from "../../public/Components/Footer/tulaslogo.png";
 import whatsapp from "../../public/Components/Navbar/whatsapp.png";

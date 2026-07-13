@@ -10,6 +10,7 @@ import MBAAgrMCTABanner from './components/MBAAgrMCTABanner';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
+import ImageHero from './components/ImageHero';
 
 export default function MBAAgrMPage() {
   return (
@@ -21,7 +22,8 @@ export default function MBAAgrMPage() {
             <div className="block md:hidden">
               <NewNavbar fullBanner={true}/>
             </div>
-      <MBAAgrMHero />
+      {/* <MBAAgrMHero /> */}
+      <ImageHero/>
       <MBAAgrMOverview />
       <MBAAgrMLearning />
       <MBAAgrMPractical />

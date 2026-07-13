@@ -274,7 +274,7 @@ function AdmissionPage() {
       <div className="flex items-center justify-center">
   <button
     onClick={() => {
-      window.open("/footer/brochure.pdf", "_blank");
+      window.open("/footer/tulasunibrochure.pdf", "_blank");
     }}
     className="font-[TTChocolatesMedium] mb-8 bg-white rounded-full text-[#f97316] text-[18px] md:text-[24px] text-center items-center py-2 px-10 md:px-32 font-[600]"
   >

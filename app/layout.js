@@ -21,16 +21,16 @@ export default function RootLayout({ children }) {
           name="robots"
           content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
         />
-        <meta property="og:title" content="Best College in Dehradun, Uttarakhand | Admission Open 2026 | Tulas Institute" />
+        <meta property="og:title" content="Best University in Dehradun, Uttarakhand | Admission Open 2026 | Tulas University" />
         <meta
           property="og:description"
-          content="Tulas Institute, Dehradun offers UGC recognized, NAAC A+ accredited BTech, MBA, MCA, BBA, BCA, BSc Agriculture & Many More Programs. Admissions 2026 Open. Apply Now!"
+          content="Tulas University, Dehradun offers UGC recognized, NAAC A+ accredited BTech, MBA, MCA, BBA, BCA, BSc Agriculture & Many More Programs. Admissions 2026 Open. Apply Now!"
         />
         <meta
           property="og:image"
           content="https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp"
         />
-        <meta property="og:image:alt" content="Tula's Institute, Dehradun" />
+        <meta property="og:image:alt" content="Tula's University, Dehradun" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         {/* Google Tag Manager */}
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "CollegeOrUniversity",
-              name: "Tula's Institute",
+              name: "Tula's University",
               url: "https://tulas.edu.in/",
               logo: "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
               contactPoint: {
@@ -88,11 +88,11 @@ export default function RootLayout({ children }) {
                 availableLanguage: ["en", "Hindi"],
               },
               sameAs: [
-                "https://www.facebook.com/tulasinstitutedehradun/",
-                "https://twitter.com/tulas_institute",
-                "https://www.instagram.com/tulasinstitutedehradun/",
-                "https://www.youtube.com/@TulasInstitutedehradun",
-                "https://www.linkedin.com/school/tula's-institute/",
+                "https://www.facebook.com/tulasUniversitydehradun/",
+                "https://twitter.com/tulas_University",
+                "https://www.instagram.com/tulasUniversitydehradun/",
+                "https://www.youtube.com/@TulasUniversitydehradun",
+                "https://www.linkedin.com/school/tula's-University/",
               ],
             }),
           }}
@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "WebSite",
-              name: "Tula's Institute",
+              name: "Tula's University",
               url: "https://tulas.edu.in/",
               potentialAction: {
                 "@type": "SearchAction",
@@ -124,7 +124,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Tula's Institute",
+              name: "Tula's University",
               image:
                 "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
               "@id": "",
@@ -133,17 +133,17 @@ export default function RootLayout({ children }) {
               address: {
                 "@type": "PostalAddress",
                 streetAddress:
-                  "Tula's Institute, Dhoolkot, Post Office: Selaqui, Chakrata Road",
+                  "Tula's University, Dhoolkot, Post Office: Selaqui, Chakrata Road",
                 addressLocality: "Dehradun",
                 postalCode: "248011",
                 addressCountry: "IN",
               },
               sameAs: [
-                "https://www.facebook.com/tulasinstitutedehradun/",
-                "https://twitter.com/tulas_institute",
-                "https://www.instagram.com/tulasinstitutedehradun/",
-                "https://www.youtube.com/@TulasInstitutedehradun",
-                "https://www.linkedin.com/school/tula's-institute/",
+                "https://www.facebook.com/tulasUniversitydehradun/",
+                "https://twitter.com/tulas_University",
+                "https://www.instagram.com/tulasUniversitydehradun/",
+                "https://www.youtube.com/@TulasUniversitydehradun",
+                "https://www.linkedin.com/school/tula's-University/",
               ],
             }),
           }}
@@ -159,17 +159,17 @@ export default function RootLayout({ children }) {
                 "@type": "WebPage",
                 "@id": "https://tulas.edu.in/blog/"
               },
-              "headline": "Best Engineering & Degree College in Dehradun, Uttarakhand | Tula's Institute",
-              "description": "Stay Updated With the Latest Insights, News, and Academic Advancements at Tula's Institute, the Best Engineering & Degree College in Dehradun, Uttarakhand. Explore Articles on Engineering, Technology, Student Life, Career Tips, and More from Our Expert Faculty and Students.",
+              "headline": "Best Engineering & Degree University in Dehradun, Uttarakhand | Tula's University",
+              "description": "Stay Updated With the Latest Insights, News, and Academic Advancements at Tula's University, the Best Engineering & Degree University in Dehradun, Uttarakhand. Explore Articles on Engineering, Technology, Student Life, Career Tips, and More from Our Expert Faculty and Students.",
               "image": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
               "author": {
                 "@type": "Organization",
-                "name": "Tula's Institute",
+                "name": "Tula's University",
                 "url": "https://tulas.edu.in/"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "Tula's Institute", // Should not be empty
+                "name": "Tula's University", // Should not be empty
                 "logo": {
                   "@type": "ImageObject",
                   "url": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png" // Should not be empty

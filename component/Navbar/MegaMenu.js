@@ -6,7 +6,7 @@ import { useState, useEffect, useRef, useContext } from "react";
 import logo from "../../public/Components/Footer/tulaslogo.png";
 import year from "../../public/Components/Footer/20yearblue.png";
 import NAAC from "../../public/Components/Navbar/newnaac.png";
-import NBA from "../../public/Components/Navbar/newnba.png";
+import NBA from "../../public/Components/Navbar/newnbawhite.png";
 import Organogram from "../../public/FooterPDf/Organogram.pdf";
 import Plagiarism from "../../public/research/plagiarism-policy.pdf";
 import NewResearchPolicy from "../../public/research/new-research-policy-tulas.pdf";
@@ -183,6 +183,7 @@ const simpleMenus = {
       { name: "Sanskriti Cultural Fest", href: "/campus-life/sanskriti" },
       { name: "NCC/NSS", href: "/campus-life/ncc-nss" },
       { name: "Tulas Experiences", href: "/campus-life/tulas-experiences/" },
+      { name: "Utkrisht", href: "/campus-life/technical-fests" },
     ],
     right: [
       { name: "Student Clubs", href: "/campus-life/student-clubs" },

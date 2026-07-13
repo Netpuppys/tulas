@@ -188,16 +188,15 @@ export default function AIBeyondClassroom() {
         .ai-showcase {
           --navy: #001f4c;
           --navy-deep: #00152e;
-          --orange: #df5400;
-          --orange-deep: #c44900;
+          --orange: #f97316;
+          --orange-deep: #f97316;
           --ivory: #fff3d7;
           --ink-soft: #5a6a8a;
           --border: #e0e4ed;
           --bg-soft: #f8f9fc;
           display: block;
-          font-family: var(--font-montserrat), sans-serif;
           color: var(--navy);
-          background: var(--bg-soft);
+         
           line-height: 1.4;
         }
         .ai-showcase :global(*) {
@@ -205,7 +204,6 @@ export default function AIBeyondClassroom() {
         }
         .ai-showcase h2,
         .ai-showcase h3 {
-          font-family: var(--font-montserrat), sans-serif;
           letter-spacing: -0.01em;
           margin: 0;
           font-weight: 800;

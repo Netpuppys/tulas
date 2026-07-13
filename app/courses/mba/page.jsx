@@ -11,6 +11,7 @@ import MBAGCTABanner      from './components/MBAGCTABanner';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
+import ImageHero from './components/ImageHero';
 
 export default function MBAGPage() {
   return (
@@ -22,7 +23,8 @@ export default function MBAGPage() {
 <div className="block md:hidden">
   <NewNavbar fullBanner={true}/>
 </div>
-      <MBAGHero />
+      {/* <MBAGHero /> */}
+      <ImageHero/>
       <MBAGOverview />
       <MBAGCurriculum />
       <MBAGCertifications />

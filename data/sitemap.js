@@ -553,6 +553,9 @@ const sitemap = [
         title: "Alumni Meet",
         linkTo: "/campus-life/alumni-meet",
       },
+      { title: "Utkrisht", 
+        linkTo: "/campus-life/technical-fests" },
+
     ],
   },
   {

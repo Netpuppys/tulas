@@ -9,6 +9,7 @@ import CyberSecHero from './components/CyberSecHero';
 import NewFooter from '@/component/NewFooter';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
+import ImageHero from './components/ImageHero';
 
 export default function CyberSecPage() {
   return (
@@ -20,7 +21,8 @@ export default function CyberSecPage() {
                   <div className="block md:hidden">
                     <NewNavbar fullBanner={true}/>
                   </div>
-      <CyberSecHero/>
+      {/* <CyberSecHero/> */}
+      <ImageHero/>
       <CyberSecOverview />
       <CyberSecCurriculum />
       <CyberSecCertifications />

@@ -9,6 +9,7 @@ import DSCTABanner from './components/DSCTABanner';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
+import ImageHero from './components/ImageHero';
 
 export default function DSPage() {
   return (
@@ -20,7 +21,8 @@ export default function DSPage() {
                         <div className="block md:hidden">
                           <NewNavbar fullBanner={true}/>
                         </div>
-      <DSHero />
+      {/* <DSHero /> */}
+      <ImageHero/>
       <DSOverview />
       <DSCurriculum />
       <DSCertifications />

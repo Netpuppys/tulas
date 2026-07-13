@@ -82,18 +82,33 @@ function LatestNews() {
   const sports = [
     {
       image: newformatimg28,
+      name: "Tulas is now a university",
+      date: "July 2026",
+      location: "Tulas University",
     }, 
     {
       image: newformatimg27,
+      name: "Rumours or announcement ?",
+      date: "July 2026",
+      location: "Tulas University",
     }, 
     {
       image: newformatimg26,
+      name: "Building future leaders at tulas",
+      date: "July 2026",
+      location: "Tulas University",
     }, 
     {
       image: newformatimg25,
+      name: "Tulas Admissions",
+      date: "July 2026",
+      location: "Tulas University",
     }, 
     {
       image: newformatimg24,
+       name: "Tulas Football league 2026",
+      date: "June 2026",
+      location: "Tulas University",  
     }, 
     {
       image: newformatimg23,
@@ -456,13 +471,12 @@ function LatestNews() {
               <NewNavbar fullBanner={true}/>
             </div>
       <BannerProgram image={bannerImg} title="Latest News And Updates" />
-      <div className="w-full h-full pt-8 md:pt-[4%]">
+    <div className="w-full h-full pt-8 md:pt-[4%]">
         <div className="w-[calc(100%-2rem)] font-[TTChocolates] md:w-[90%] mx-auto">
           <div className="flex py-8 flex-wrap justify-center md:py-[3%] gap-4">
             {sports.map((item, index) => (
               <div
                 key={index}
-                onClick={() => setSelectedItem(item)}
                 className="flex w-full md:w-[calc(25%-1rem)] flex-col md:flex-row gap-4"
               >
                 <div className="relative p-2 rounded-xl bg-[#f97316] w-full h-full flex flex-col justify-between mx-auto">
@@ -509,25 +523,6 @@ function LatestNews() {
           </div>
         </div>
       </div>
-      {selectedItem && (
-        <div className="fixed z-20 w-full inset-0 flex items-center justify-center bg-black bg-opacity-80">
-          <div className="p-5 w-[95%] md:w-[40%] mx-auto h-fit rounded shadow-lg relative">
-            <button
-              className="absolute top-2 right-2 bg-[#007a83] text-white aspect-square p-2 rounded-full"
-              onClick={() => setSelectedItem(null)}
-            >
-              <IoClose />
-            </button>
-            <Image
-              src={selectedItem.image}
-              alt=""
-              loading="lazy"
-              placeholder="blur"
-              className="w-full h-fit rounded"
-            />
-          </div>
-        </div>
-      )}
       <NewFooter />
     </>
   );
