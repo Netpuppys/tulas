@@ -47,12 +47,14 @@ const topStripItems = [
 /* ------------------------------------------------------------------ */
 const menuData = {
   undergraduate: {
-    "School Of Management": [
+    "School Of Management & Commerce": [
       { name: "BBA", href: "/courses/bba" },
       { name: "BBA Digital Marketing", href: "/courses/bba/digital-marketing" },
       { name: "BBA Business Analytics", href: "/courses/bba/business-analytics" },
+      { name: "B.Com", href: "/courses/bcom/" },
+      { name: "B.Com (Hons.)", href: "/courses/bcom/" },
     ],
-    "Department Of Engineering": [
+    "School Of Engineering": [
       { name: "B.Tech", href: "/courses/btech/" },
       { name: "B.Tech Civil Engineering (CE)", href: "/courses/btech/civil-engineering/" },
       { name: "B.Tech Mechanical Engineering (ME)", href: "/courses/btech/mechanical-engineering/" },
@@ -64,20 +66,20 @@ const menuData = {
       { name: "B.Tech CSE Data Science", href: "/courses/btech/computer-science-engineering-data-science" },
       { name: "B.Tech CSE Full Stack Development", href: "/courses/btech/computer-science" },
     ],
-    "Department Of Commerce": [
-      { name: "B.Com", href: "/courses/bcom/" },
-      { name: "B.Com (Hons.)", href: "/courses/bcom/" },
-    ],
-    "Department Of Computer Applications": [
+    // "School Of Commerce": [
+    //   { name: "B.Com", href: "/courses/bcom/" },
+    //   { name: "B.Com (Hons.)", href: "/courses/bcom/" },
+    // ],
+    "School Of Computer Applications": [
       { name: "BCA", href: "/courses/bca/" },
       { name: "BCA Full Stack Software Development", href: "/courses/bca/fullstack-devlopment" },
       { name: "BCA AI & ML", href: "/courses/bca/artificial-intelligence-&-machine-learning" },
     ],
-    "Department Of Mass Comm. & Journalism": [
+    "School Of Mass Comm. & Journalism": [
       { name: "BAJMC", href: "/courses/bjmc/" },
       { name: "BA (Hons.) JMC", href: "/courses/bjmc/" },
     ],
-    "Department Of Pharmacy": [
+    "School Of Pharmacy": [
       { name: "B.Pharma", href: "/courses/bpharma/" },
     ],
     "School Of Law": [
@@ -85,13 +87,13 @@ const menuData = {
       { name: "B.A. LL.B (Hons.)", href: "/courses/llb/" },
       { name: "BBA LL.B (Hons.)", href: "/courses/llb/" },
     ],
-    "Department Of Agriculture": [
+    "School Of Agriculture": [
       { name: "B.Sc. (Hons.) Agriculture", href: "/b-sc-agriculture/" },
     ],
   },
 
   postgraduate: {
-    "School Of Management": [
+    "School Of Management & Commerce": [
       { name: "MBA", href: "/courses/mba" },
       { name: "MBA Marketing", href: "/courses/mba/marketing" },
       { name: "MBA Human Resource Mgmt.", href: "/courses/mba/human-resource-managment" },
@@ -101,26 +103,26 @@ const menuData = {
       { name: "MBA Digital Marketing", href: "/courses/mba/digital-marketing" },
       { name: "MBA Business Analytics", href: "/courses/mba/business-analytics" },
     ],
-    "Department Of Engineering": [
+    "School Of Engineering": [
       { name: "M.Tech", href: "/mtech" },
     ],
-    "Department Of Computer Applications": [
+    "School Of Computer Applications": [
       { name: "MCA", href: "/courses/mca" },
       { name: "MCA Full Stack Software Development", href: "/courses/mca" },
       { name: "MCA AI & ML", href: "/courses/mca/artificial-intelligence-&-machine-learning" },
     ],
-    "Department Of Agriculture": [
+    "School Of Agriculture": [
       { name: "M.Sc. Agronomy", href: "/courses/msc-agronomy" },
     ],
   },
 
   diploma: {
-    "Department Of Engineering": [
+    "School Of Engineering": [
       { name: "Diploma in Civil Engineering", href: "/diploma-in-civil-engineering" },
       { name: "Diploma in Mechanical Engineering", href: "/diploma-mechanical-engineering" },
       { name: "Diploma in Computer Science Engineering", href: "/diploma-computer-science-engineering" },
     ],
-    "Department Of Pharmacy": [
+    "School Of Pharmacy": [
       { name: "Diploma in Pharmacy (D.Pharma)", href: "/courses/dpharma" },
     ],
   },
@@ -300,7 +302,7 @@ export default function MegaMenu() {
   const [openPrograms, setOpenPrograms] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const [category, setCategory] = useState("undergraduate");
-  const [dept, setDept] = useState("School Of Management");
+  const [dept, setDept] = useState("School Of Management & Commerce");
   const [navHover, setNavHover] = useState(false);
   const [expandedResearch, setExpandedResearch] = useState(null);
   const [activeTopStrip, setActiveTopStrip] = useState(null);

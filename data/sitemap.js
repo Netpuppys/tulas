@@ -97,251 +97,112 @@ const sitemap = [
       },
     ],
   },
-  {
-    title: "Programs",
-    linkTo: "#",
-    nestedLinks: [
-      {
-        title: "Department of management and commerce",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "BBA",
-            linkTo: "/courses/bba",
-          },
-          {
-            title: "BBA Digital Marketing",
-            linkTo: "/courses/bba/digital-marketing",
-          },
-          {
-            title: "BBA Business Analytics",
-            linkTo: "/courses/bba/business-analytics",
-          },
-          {
-            title: "B.Com",
-            linkTo: "/courses/bcom/",
-          },
-          {
-            title: "B.Com (Hons.)",
-            linkTo: "/courses/bcom/",
-          },
-        ],
-      },
-      {
-        title: "Graduate School of Business",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "MBA",
-            linkTo: "/courses/mba",
-            thirdNestedLinks: [
-              {
-                title: "Marketing",
-                linkTo: "/courses/mba/marketing",
-              },
-              {
-                title: "Human Resource Managment",
-                linkTo: "/courses/mba/human-resource-managment",
-              },
-              {
-                title: "International Business ",
-                linkTo: "/courses/mba/international-business",
-              },
-              {
-                title: "Finance",
-                linkTo: "/courses/mba/finance",
-              },
-              {
-                title: "Agri-Business Management",
-                linkTo: "/courses/mba/agri-business",
-              },
-              {
-                title: "Digital Marketing",
-                linkTo: "/courses/mba/digital-marketing",
-              },
-              {
-                title: "Business Analytics",
-                linkTo: "/courses/mba/business-analytics",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Department of Engineering",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "B.Tech",
-            linkTo: "/courses/btech/",
-            thirdNestedLinks: [
-              {
-                title: "Civil Engineering (CE)",
-                linkTo: "/courses/btech/civil-engineering/",
-              },
-              {
-                title: "Mechanical Engineering (ME)",
-                linkTo: "/courses/btech/mechanical-engineering/",
-              },
-              {
-                title: "Electronics & Communication Engineering (ECE)",
-                linkTo: "/courses/btech/electronics-and-communication-engg",
-              },
-              {
-                title: "Electrical & Electronics Engineering (EEE)",
-                linkTo: "/courses/btech/electrical-and-electronics-engg/",
-              },
-              {
-                title: "Computer Science & Engineering (CSE)",
-                linkTo: "/courses/btech/computer-science",
-              },
-              {
-                title: "Computer Science & Engineering (AI&ML)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning",
-              },
-              {
-                title: "Computer Science & Engineering (Cyber Security)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-cyber-security",
-              },
-              {
-                title: "Computer Science & Engineering( Data Science)",
-                linkTo:
-                  "/courses/btech/computer-science-engineering-data-science",
-              },
-              {
-                title: "Computer Science & Engineering (Full Stack Development)",
-                linkTo: "/courses/btech/computer-science",
-              },
-            ],
-          },
-          {
-            title: "M.Tech",
-            linkTo: "/mtech",
-          },
-          {
-            title: "Diploma",
-            linkTo: "#",
-            thirdNestedLinks: [
-              {
-                title: "Diploma in Civil Engineering",
-                linkTo: "/diploma-in-civil-engineering",
-              },
-              {
-                title: "Diploma in Mechanical Engineering",
-                linkTo: "/diploma-mechanical-engineering",
-              },
-              {
-                title: "Diploma in Computer Science Engineering",
-                linkTo: "/diploma-computer-science-engineering",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Department of Applied Sciences and Humanities",
-        linkTo: "/courses/applied-science",
-      },
-      {
-        title: "Graduate School of Computer Applications",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "BCA",
-            linkTo: "/courses/bca/",
-          },
-          {
-            title: "BCA Full Stack Software Development",
-            linkTo: "/courses/bca/fullstack-devlopment",
-          },
-          {
-            title: "BCA AI & ML",
-            linkTo: "/courses/bca/artificial-intelligence-&-machine-learning",
-          },
-        ],
-      },
-      {
-        title: "Department of Computer Applications",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "MCA",
-            linkTo: "/courses/mca",
-          },
-          {
-            title: "MCA Full Stack Software Development",
-            linkTo: "/courses/mca",
-          },
-          {
-            title: "MCA AI & ML",
-            linkTo: "/courses/mca/artificial-intelligence-&-machine-learning",
-          },
-        ],
-      },
-      {
-        title: "Department of Journalism and Communications",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "BAJMC",
-            linkTo: "/courses/bjmc/",
-          },
-          {
-            title: "BA.(Hons.) JMC",
-            linkTo: "/courses/bjmc/",
-          },
-        ],
-      },
-      {
-        title: "Tulas Institute of Pharmacy",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: " B.Pharm.",
-            linkTo: "/courses/bpharma/",
-          },
-          {
-            title: "D.Pharm.",
-            linkTo: "/courses/dpharma",
-          },
-        ],
-      },
-      {
-        title: "School of Law",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "LLB",
-            linkTo: "/courses/llb/",
-          },
-          {
-            title: "B.A. LL.B (Hons.)",
-            linkTo: "/courses/llb/",
-          },
-          {
-            title: "BBA LL.B (Hons.)",
-            linkTo: "/courses/llb/",
-          },
-        ],
-      },
-      {
-        title: "Department of Agriculture",
-        linkTo: "#",
-        superNestedLinks: [
-          {
-            title: "B.Sc Agriculture",
-            linkTo: "/b-sc-agriculture/",
-          },
-          {
-            title: "M.Sc. Agronomy",
-            linkTo: "/courses/msc-agronomy",
-          },
-        ],
-      },
-    ],
-  },
+{
+  title: "Programs",
+  linkTo: "#",
+  nestedLinks: [
+    {
+      title: "School Of Management & Commerce",
+      linkTo: "#",
+      superNestedLinks: [
+        { title: "BBA", linkTo: "/courses/bba" },
+        { title: "BBA Digital Marketing", linkTo: "/courses/bba/digital-marketing" },
+        { title: "BBA Business Analytics", linkTo: "/courses/bba/business-analytics" },
+        { title: "B.Com", linkTo: "/courses/bcom/" },
+        { title: "B.Com (Hons.)", linkTo: "/courses/bcom/" },
+        {
+          title: "MBA",
+          linkTo: "/courses/mba",
+          thirdNestedLinks: [
+            { title: "Marketing", linkTo: "/courses/mba/marketing" },
+            { title: "Human Resource Managment", linkTo: "/courses/mba/human-resource-managment" },
+            { title: "International Business", linkTo: "/courses/mba/international-business" },
+            { title: "Finance", linkTo: "/courses/mba/finance" },
+            { title: "Agri-Business Management", linkTo: "/courses/mba/agri-business" },
+            { title: "Digital Marketing", linkTo: "/courses/mba/digital-marketing" },
+            { title: "Business Analytics", linkTo: "/courses/mba/business-analytics" },
+          ],
+        },
+      ],
+    },
+    {
+      title: "School Of Engineering",
+      linkTo: "#",
+      superNestedLinks: [
+        {
+          title: "B.Tech",
+          linkTo: "/courses/btech/",
+          thirdNestedLinks: [
+            { title: "Civil Engineering (CE)", linkTo: "/courses/btech/civil-engineering/" },
+            { title: "Mechanical Engineering (ME)", linkTo: "/courses/btech/mechanical-engineering/" },
+            { title: "Electronics & Communication Engineering (ECE)", linkTo: "/courses/btech/electronics-and-communication-engg" },
+            { title: "Electrical & Electronics Engineering (EEE)", linkTo: "/courses/btech/electrical-and-electronics-engg/" },
+            { title: "Computer Science & Engineering (CSE)", linkTo: "/courses/btech/computer-science" },
+            { title: "Computer Science & Engineering (AI&ML)", linkTo: "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning" },
+            { title: "Computer Science & Engineering (Cyber Security)", linkTo: "/courses/btech/computer-science-engineering-cyber-security" },
+            { title: "Computer Science & Engineering (Data Science)", linkTo: "/courses/btech/computer-science-engineering-data-science" },
+            { title: "Computer Science & Engineering (Full Stack Development)", linkTo: "/courses/btech/computer-science" },
+          ],
+        },
+        { title: "M.Tech", linkTo: "/mtech" },
+        {
+          title: "Diploma",
+          linkTo: "#",
+          thirdNestedLinks: [
+            { title: "Diploma in Civil Engineering", linkTo: "/diploma-in-civil-engineering" },
+            { title: "Diploma in Mechanical Engineering", linkTo: "/diploma-mechanical-engineering" },
+            { title: "Diploma in Computer Science Engineering", linkTo: "/diploma-computer-science-engineering" },
+          ],
+        },
+      ],
+    },
+    {
+      title: "School Of Computer Applications",
+      linkTo: "#",
+      superNestedLinks: [
+        { title: "BCA", linkTo: "/courses/bca/" },
+        { title: "BCA Full Stack Software Development", linkTo: "/courses/bca/fullstack-devlopment" },
+        { title: "BCA AI & ML", linkTo: "/courses/bca/artificial-intelligence-&-machine-learning" },
+        { title: "MCA", linkTo: "/courses/mca" },
+        { title: "MCA Full Stack Software Development", linkTo: "/courses/mca" },
+        { title: "MCA AI & ML", linkTo: "/courses/mca/artificial-intelligence-&-machine-learning" },
+      ],
+    },
+    {
+      title: "School Of Mass Comm. & Journalism",
+      linkTo: "#",
+      superNestedLinks: [
+        { title: "BAJMC", linkTo: "/courses/bjmc/" },
+        { title: "BA (Hons.) JMC", linkTo: "/courses/bjmc/" },
+      ],
+    },
+    {
+      title: "School Of Pharmacy",
+      linkTo: "#",
+      superNestedLinks: [
+        { title: "B.Pharma", linkTo: "/courses/bpharma/" },
+        { title: "D.Pharma", linkTo: "/courses/dpharma" },
+      ],
+    },
+    {
+      title: "School Of Law",
+      linkTo: "#",
+      superNestedLinks: [
+        { title: "LL.B", linkTo: "/courses/llb/" },
+        { title: "B.A. LL.B (Hons.)", linkTo: "/courses/llb/" },
+        { title: "BBA LL.B (Hons.)", linkTo: "/courses/llb/" },
+      ],
+    },
+    {
+      title: "School Of Agriculture",
+      linkTo: "#",
+      superNestedLinks: [
+        { title: "B.Sc. (Hons.) Agriculture", linkTo: "/b-sc-agriculture/" },
+        { title: "M.Sc. Agronomy", linkTo: "/courses/msc-agronomy" },
+      ],
+    },
+  ],
+},
   {
     title: "Admissions",
     linkTo: "#",
