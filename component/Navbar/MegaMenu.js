@@ -49,13 +49,14 @@ const menuData = {
   undergraduate: {
     "School Of Management & Commerce": [
       { name: "BBA", href: "/courses/bba" },
-      { name: "BBA Digital Marketing", href: "/courses/bba/digital-marketing" },
+            { name: "B.Com", href: "/courses/bcom/" },
       { name: "BBA Business Analytics", href: "/courses/bba/business-analytics" },
-      { name: "B.Com", href: "/courses/bcom/" },
-      { name: "B.Com (Hons.)", href: "/courses/bcom/" },
+                  { name: "B.Com (Hons.)", href: "/courses/bcom/" },
+            { name: "BBA Digital Marketing", href: "/courses/bba/digital-marketing" },
+
     ],
     "School Of Engineering": [
-      { name: "B.Tech", href: "/courses/btech/" },
+      { name: "B.Tech (All Specialisations)", href: "/courses/btech/" },
       { name: "B.Tech Civil Engineering (CE)", href: "/courses/btech/civil-engineering/" },
       { name: "B.Tech Mechanical Engineering (ME)", href: "/courses/btech/mechanical-engineering/" },
       { name: "B.Tech ECE", href: "/courses/btech/electronics-and-communication-engg" },
@@ -94,7 +95,7 @@ const menuData = {
 
   postgraduate: {
     "School Of Management & Commerce": [
-      { name: "MBA", href: "/courses/mba" },
+      { name: "MBA (All Specialisations)", href: "/courses/mba" },
       { name: "MBA Marketing", href: "/courses/mba/marketing" },
       { name: "MBA Human Resource Mgmt.", href: "/courses/mba/human-resource-managment" },
       { name: "MBA International Business", href: "/courses/mba/international-business" },

@@ -78,6 +78,20 @@ const SPECS = [
       </svg>
     ),
   },
+  {
+    tag: 'Agriculture',
+    title: 'Agri Business Mgmt.',
+    desc: 'Agricultural economics, policy, and agribusiness strategy built on a live farm-to-market brief.',
+    pills: ['Data Statergy', 'Agricultural Economics', 'Finance & FinTech'],
+    icon: (
+      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="18" y1="20" x2="18" y2="10"/>
+        <line x1="12" y1="20" x2="12" y2="4"/>
+        <line x1="6" y1="20" x2="6" y2="14"/>
+        <line x1="2" y1="20" x2="22" y2="20"/>
+      </svg>
+    ),
+  },
 ];
 
 const CORE_AREAS = [
@@ -223,12 +237,12 @@ export default function MBAGOverview() {
           </div>
 
           {/* Core Learning Areas */}
-          <div className="cl-mbagov-cla-title">Core Learning Areas</div>
+          {/* <div className="cl-mbagov-cla-title">Core Learning Areas</div>
           <div className="cl-mbagov-cla-row">
             {CORE_AREAS.map(a => (
               <span key={a} className="cl-mbagov-cla-chip">{a}</span>
             ))}
-          </div>
+          </div> */}
 
         </div>
       </section>
