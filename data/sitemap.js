@@ -111,7 +111,7 @@ const sitemap = [
         { title: "B.Com", linkTo: "/courses/bcom/" },
         { title: "B.Com (Hons.)", linkTo: "/courses/bcom/" },
         {
-          title: "MBA",
+          title: "MBA (All Specialisations)",
           linkTo: "/courses/mba",
           thirdNestedLinks: [
             { title: "Marketing", linkTo: "/courses/mba/marketing" },
@@ -130,7 +130,7 @@ const sitemap = [
       linkTo: "#",
       superNestedLinks: [
         {
-          title: "B.Tech",
+          title: "B.Tech (All Specialisations)",
           linkTo: "/courses/btech/",
           thirdNestedLinks: [
             { title: "Civil Engineering (CE)", linkTo: "/courses/btech/civil-engineering/" },
@@ -190,7 +190,7 @@ const sitemap = [
       superNestedLinks: [
         { title: "LL.B", linkTo: "/courses/llb/" },
         { title: "B.A. LL.B (Hons.)", linkTo: "/courses/llb/" },
-        { title: "BBA LL.B (Hons.)", linkTo: "/courses/llb/" },
+        { title: "BBA LL.B (Hons.)", linkTo: "/courses/bba-llb/" },
       ],
     },
     {
