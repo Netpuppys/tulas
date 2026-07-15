@@ -189,7 +189,7 @@ const sitemap = [
       linkTo: "#",
       superNestedLinks: [
         { title: "LL.B", linkTo: "/courses/llb/" },
-        { title: "B.A. LL.B (Hons.)", linkTo: "/courses/llb/" },
+        { title: "B.A. LL.B (Hons.)", linkTo: "/courses/ba-llb/" },
         { title: "BBA LL.B (Hons.)", linkTo: "/courses/bba-llb/" },
       ],
     },
