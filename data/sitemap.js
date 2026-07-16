@@ -189,8 +189,8 @@ const sitemap = [
       linkTo: "#",
       superNestedLinks: [
         { title: "LL.B", linkTo: "/courses/llb/" },
-        { title: "B.A. LL.B (Hons.)", linkTo: "/courses/ba-llb/" },
-        { title: "BBA LL.B (Hons.)", linkTo: "/courses/bba-llb/" },
+        { title: "B.A. LL.B", linkTo: "/courses/ba-llb/" },
+        { title: "BBA LL.B", linkTo: "/courses/bba-llb/" },
       ],
     },
     {

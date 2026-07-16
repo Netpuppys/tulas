@@ -40,7 +40,7 @@ export default function BALLBWhyTulas() {
         <div className="cl-ballbwhy-wrap">
           <div className="cl-ballbwhy-head">
             <div className="cl-ballbwhy-eyebrow"><span className="bar"/>The Tulas Advantage</div>
-            <h2 className="cl-ballbwhy-h2">Why Study BA LL.B. (Hons.)<br/><em>At Tulas</em></h2>
+            <h2 className="cl-ballbwhy-h2">Why Study BA LL.B. <br/><em>At Tulas</em></h2>
             <p className="cl-ballbwhy-sub">A legal education engineered for the courtroom and the public service — practice-oriented, ethics-driven, and career-focused for India's courts, civil services, and public institutions.</p>
           </div>
           <div className="cl-ballbwhy-grid">

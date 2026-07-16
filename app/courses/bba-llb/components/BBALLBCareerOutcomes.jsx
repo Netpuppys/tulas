@@ -69,7 +69,7 @@ export default function BBALLBCareerOutcomes() {
           <div className="cl-bbllbco-head">
             <div className="cl-bbllbco-eyebrow"><span className="bar"/>Career Outcomes</div>
             <h2 className="cl-bbllbco-h2">Where This Degree<br/><em>Can Take You</em></h2>
-            <p className="cl-bbllbco-sub">From compliance to corporate law — a BBA LL.B. (Hons.) opens careers across business, law firms, and consultancy.</p>
+            <p className="cl-bbllbco-sub">From compliance to corporate law — a BBA LL.B.  opens careers across business, law firms, and consultancy.</p>
           </div>
 
           <div className="cl-bbllbco-ach">

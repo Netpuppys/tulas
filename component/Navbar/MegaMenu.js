@@ -85,8 +85,8 @@ const menuData = {
     ],
     "School Of Law": [
       { name: "LL.B", href: "/courses/llb/" },
-      { name: "B.A. LL.B (Hons.)", href: "/courses/ba-llb/" },
-      { name: "BBA LL.B (Hons.)", href: "/courses/bba-llb/" },
+      { name: "B.A. LL.B", href: "/courses/ba-llb/" },
+      { name: "BBA LL.B", href: "/courses/bba-llb/" },
     ],
     "School Of Agriculture": [
       { name: "B.Sc. (Hons.) Agriculture", href: "/b-sc-agriculture/" },

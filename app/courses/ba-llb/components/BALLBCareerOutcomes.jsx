@@ -69,7 +69,7 @@ export default function BALLBCareerOutcomes() {
           <div className="cl-ballbco-head">
             <div className="cl-ballbco-eyebrow"><span className="bar"/>Career Outcomes</div>
             <h2 className="cl-ballbco-h2">Where This Degree<br/><em>Can Take You</em></h2>
-            <p className="cl-ballbco-sub">From advocacy to civil services — a BA LL.B. (Hons.) opens careers across courts, government, policy, academia, and human rights organisations.</p>
+            <p className="cl-ballbco-sub">From advocacy to civil services — a BA LL.B.  opens careers across courts, government, policy, academia, and human rights organisations.</p>
           </div>
 
           <div className="cl-ballbco-ach">

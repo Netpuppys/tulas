@@ -85,8 +85,8 @@ export default function BALLBOverview() {
             <div className="cl-ballbov-text">
               <div className="cl-ballbov-eyebrow"><span className="bar"/>Tulas School of Law</div>
               <h2 className="cl-ballbov-h2">Where Society<br/><em>Meets Law</em></h2>
-              <p className="cl-ballbov-lead">The BA LL.B. (Hons.) at Tulas School of Law combines humanities with legal education to develop strong analytical, advocacy, and public policy skills.</p>
-              <p className="cl-ballbov-body">Law is inseparable from society — understanding governance, human rights, political structures, and social justice is as essential as knowing legal statutes. The BA LL.B. (Hons.) programme at Tulas School of Law integrates political science, public policy, and humanities with rigorous legal training to develop graduates who are ready to serve in courts, civil services, academia, and public institutions. Through moot courts, legal aid clinics, policy research, and internships, students graduate as confident, practice-ready advocates.</p>
+              <p className="cl-ballbov-lead">The BA LL.B.  at Tulas School of Law combines humanities with legal education to develop strong analytical, advocacy, and public policy skills.</p>
+              <p className="cl-ballbov-body">Law is inseparable from society — understanding governance, human rights, political structures, and social justice is as essential as knowing legal statutes. The BA LL.B.  programme at Tulas School of Law integrates political science, public policy, and humanities with rigorous legal training to develop graduates who are ready to serve in courts, civil services, academia, and public institutions. Through moot courts, legal aid clinics, policy research, and internships, students graduate as confident, practice-ready advocates.</p>
               <blockquote className="cl-ballbov-bq">"A legal education should prepare you for the courtroom — not just the classroom."</blockquote>
             </div>
           </div>

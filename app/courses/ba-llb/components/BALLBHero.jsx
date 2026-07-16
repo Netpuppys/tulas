@@ -29,10 +29,10 @@ export default function BALLBHero() {
         <img className="cl-ballbh-bg" src="/school-of-law/law/civil-procedure-code-opt.png" alt="BA LLB Hero" aria-hidden="true"/>
         <div className="cl-ballbh-overlay"/>
         <div className="cl-ballbh-inner">
-          <div className="cl-ballbh-bc">Home / Programs / School of Law / <span className="cur">BA LL.B. (Hons.)</span></div>
-          <div className="cl-ballbh-badge">BA LL.B. (Hons.) · 5 Years · BCI Approved</div>
+          <div className="cl-ballbh-bc">Home / Programs / School of Law / <span className="cur">BA LL.B. </span></div>
+          <div className="cl-ballbh-badge">BA LL.B.  · 5 Years · BCI Approved</div>
           <h1 className="cl-ballbh-h1">Where Law Meets<br/><em>Society &amp; Governance</em></h1>
-          <p className="cl-ballbh-desc">An integrated programme that combines humanities with legal education — the BA LL.B. (Hons.) at Tulas School of Law develops strong analytical, advocacy, and public policy skills for careers spanning litigation, judiciary, civil services, and academia.</p>
+          <p className="cl-ballbh-desc">An integrated programme that combines humanities with legal education — the BA LL.B.  at Tulas School of Law develops strong analytical, advocacy, and public policy skills for careers spanning litigation, judiciary, civil services, and academia.</p>
           <div className="cl-ballbh-chips">
             <span className="cl-ballbh-chip"><strong>5 Years</strong> Programme</span>
             <span className="cl-ballbh-chip">BCI Approved Programme</span>

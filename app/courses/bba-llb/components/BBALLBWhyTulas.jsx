@@ -40,7 +40,7 @@ export default function BBALLBWhyTulas() {
         <div className="cl-bbllbwhy-wrap">
           <div className="cl-bbllbwhy-head">
             <div className="cl-bbllbwhy-eyebrow"><span className="bar"/>The Tulas Advantage</div>
-            <h2 className="cl-bbllbwhy-h2">Why Study BBA LL.B. (Hons.)<br/><em>At Tulas</em></h2>
+            <h2 className="cl-bbllbwhy-h2">Why Study BBA LL.B. <br/><em>At Tulas</em></h2>
             <p className="cl-bbllbwhy-sub">A legal education engineered for the courtroom and the boardroom — practice-oriented, ethics-driven, and career-focused for India's corporate legal sector.</p>
           </div>
           <div className="cl-bbllbwhy-grid">

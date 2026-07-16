@@ -112,7 +112,7 @@ export default function BTechEEEOverview() {
               <thead><tr><th>Course</th><th>Duration</th><th>Eligibility</th></tr></thead>
               <tbody>
                 <tr><td className="k">B.Tech</td><td>4 Years</td><td>Passed 10+2 with Physics and Mathematics compulsory, plus one of Chemistry / Biology / Computer Science / Engineering Graphics / Business Studies, with at least 45% marks (40% for reserved category). Diploma holders in Engineering also eligible.</td></tr>
-                <tr><td className="k">B.Tech (Lateral Entry)</td><td>3 Years</td><td>Diploma in Engineering &amp; Technology (45%/40% marks) or B.Sc. graduates with 10+2 Mathematics, subject to bridge course requirements.</td></tr>
+               
               </tbody>
             </table>
           </div>

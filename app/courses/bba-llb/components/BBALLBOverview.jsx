@@ -85,7 +85,7 @@ export default function BBALLBOverview() {
             <div className="cl-bbllbov-text">
               <div className="cl-bbllbov-eyebrow"><span className="bar"/>Tulas School of Law</div>
               <h2 className="cl-bbllbov-h2">Where Business<br/><em>Meets Legal Practice</em></h2>
-              <p className="cl-bbllbov-lead">The BBA LL.B. (Hons.) at Tulas School of Law combines business management with legal education to address modern corporate legal challenges.</p>
+              <p className="cl-bbllbov-lead">The BBA LL.B. at Tulas School of Law combines business management with legal education to address modern corporate legal challenges.</p>
               <p className="cl-bbllbov-body">Law is more than understanding statutes and legal principles — it is about interpreting complex situations, solving real-world legal challenges, and advocating for justice with integrity. At Tulas School of Law, students gain a comprehensive understanding of the legal system while developing analytical thinking, legal reasoning, and professional ethics. Through moot courts, legal research, drafting exercises, internships, and industry interactions, students graduate as confident, practice-ready professionals.</p>
               <blockquote className="cl-bbllbov-bq">"A legal education should prepare you for the courtroom — not just the classroom."</blockquote>
             </div>

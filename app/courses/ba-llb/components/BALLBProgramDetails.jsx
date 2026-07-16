@@ -87,7 +87,7 @@ export default function BALLBProgramDetails() {
       <section className="cl-ballbpd-sec" id="program-details">
         <div className="cl-ballbpd-inner">
           <div className="cl-ballbpd-head">
-            <span className="cl-ballbpd-eyebrow">BA LL.B. (Hons.) · Academic Framework</span>
+            <span className="cl-ballbpd-eyebrow">BA LL.B.  · Academic Framework</span>
             <h2>Program <em>Details</em></h2>
           </div>
           <div className="cl-ballbpd-grid">

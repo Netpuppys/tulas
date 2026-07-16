@@ -29,10 +29,10 @@ export default function BBALLBHero() {
         <img className="cl-bbllbh-bg" src="/school-of-law/law/business-commercial-law.png" alt="BBA LLB Hero" aria-hidden="true"/>
         <div className="cl-bbllbh-overlay"/>
         <div className="cl-bbllbh-inner">
-          <div className="cl-bbllbh-bc">Home / Programs / School of Law / <span className="cur">BBA LL.B. (Hons.)</span></div>
-          <div className="cl-bbllbh-badge">BBA LL.B. (Hons.) · 5 Years · BCI Approved</div>
+          <div className="cl-bbllbh-bc">Home / Programs / School of Law / <span className="cur">BBA LL.B. </span></div>
+          <div className="cl-bbllbh-badge">BBA LL.B.  · 5 Years · BCI Approved</div>
           <h1 className="cl-bbllbh-h1">Where Business Meets<br/><em>Corporate Law</em></h1>
-          <p className="cl-bbllbh-desc">A multidisciplinary programme combining business administration with legal education — the BBA LL.B. (Hons.) at Tulas School of Law prepares students for corporate law, compliance, taxation, and commercial legal practice.</p>
+          <p className="cl-bbllbh-desc">A multidisciplinary programme combining business administration with legal education — the BBA LL.B.  at Tulas School of Law prepares students for corporate law, compliance, taxation, and commercial legal practice.</p>
           <div className="cl-bbllbh-chips">
             <span className="cl-bbllbh-chip"><strong>5 Years</strong> Programme</span>
             <span className="cl-bbllbh-chip">BCI Approved Programme</span>
