@@ -320,65 +320,63 @@ const page = () => {
                                 </div>
 
 
-                        <section className="w-full mt-12 py-6 bg-white flex justify-center">
+                        <section className="w-full pt-[120px] md:pt-10 pb-6 bg-white flex justify-center">
                 <div className="w-full max-w-6xl px-3">
           
                   {/* Wrapper */}
-                  <div className="flex flex-col md:flex-row gap-8 md:items-stretch">
-          
-                    {/* LEFT SECTION */}
-                    <div className="md:w-1/2 w-full flex justify-center items-center">
-  <div className="w-full max-w-xl text-center flex flex-col items-center">
+<div className="flex flex-col md:flex-row gap-8 md:items-stretch">
 
-    {/* Heading */}
-    <h2 className="text-[clamp(28px,5vw,38px)] font-medium mb-2" style={{ textAlign: "center" }}>
-      <span className="text-orange-500 font-extrabold">
-        Where Future-Ready
-      </span>{" "}
-      <span className="text-gray-800 font-extrabold">
-        Careers Begin
-      </span>
-    </h2>
+  {/* LEFT SECTION */}
+  <div className="order-2 md:order-1 md:w-1/2 w-full flex justify-center items-center">
+    <div className="w-full max-w-xl text-center flex flex-col items-center">
 
-    {/* Description */}
-    <p className="text-black text-[15px] md:text-[17px] leading-relaxed mb-5">
-      At Tulas, a future-focused curriculum blends industry relevance, AI-driven learning, and innovation-led thinking, helping students build the skills, confidence, and clarity to lead, adapt, and succeed in a rapidly evolving world. Join Tulas if you are ready to move beyond learning into real-world impact.
-    </p>
+      {/* Heading */}
+      <h2 className="text-[clamp(28px,5vw,38px)] font-medium mb-2" style={{ textAlign: "center" }}>
+        <span className="text-orange-500 font-extrabold">
+          Where Future-Ready
+        </span>{" "}
+        <span className="text-gray-800 font-extrabold">
+          Careers Begin
+        </span>
+      </h2>
 
-    {/* Check Points */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 w-full">
-      
-      <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
-        <IoCheckmarkSharp className="text-2xl text-orange-500" />
-        <span className="text-orange-500 font-bold">750+</span> Global Recruiters
-      </div>
+      {/* Description */}
+      <p className="text-black text-[15px] md:text-[17px] leading-relaxed mb-5">
+        At Tulas, a future-focused curriculum blends industry relevance, AI-driven learning, and innovation-led thinking, helping students build the skills, confidence, and clarity to lead, adapt, and succeed in a rapidly evolving world. Join Tulas if you are ready to move beyond learning into real-world impact.
+      </p>
 
-      <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
-        <IoCheckmarkSharp className="text-2xl text-orange-500" />
-        <span className="text-orange-500 font-bold">AI</span> Native Specialisations
-      </div>
+      {/* Check Points */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 w-full">
+        <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
+          <IoCheckmarkSharp className="text-2xl text-orange-500" />
+          <span className="text-orange-500 font-bold">750+</span> Global Recruiters
+        </div>
 
-      <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
-        <IoCheckmarkSharp className="text-2xl text-orange-500" />
-        <span className="text-orange-500 font-bold">100%</span> Paid Internships
-      </div>
+        <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
+          <IoCheckmarkSharp className="text-2xl text-orange-500" />
+          <span className="text-orange-500 font-bold">AI</span> Native Specialisations
+        </div>
 
-      <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
-        <IoCheckmarkSharp className="text-2xl text-orange-500" />
-        <span className="text-orange-500 font-bold">100%</span> Placement Support
+        <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
+          <IoCheckmarkSharp className="text-2xl text-orange-500" />
+          <span className="text-orange-500 font-bold">100%</span> Paid Internships
+        </div>
+
+        <div className="flex items-center gap-3 text-lg font-medium text-black justify-center md:justify-start">
+          <IoCheckmarkSharp className="text-2xl text-orange-500" />
+          <span className="text-orange-500 font-bold">100%</span> Placement Support
+        </div>
       </div>
 
     </div>
-
   </div>
+
+  {/* CTA SECTION */}
+  <div className="order-1 md:order-2 md:w-1/2 w-full flex justify-center items-center">
+    <div id="ee-form-15" className="w-full max-w-md mx-auto"></div>
+  </div>
+
 </div>
-          
-                    {/* CTA SECTION */}
-          <div className="md:w-1/2 w-full flex justify-center items-center">
-  <div id="ee-form-15" className="w-full max-w-md mx-auto"></div>
-</div>
-          
-                  </div>
           
                 </div>
               </section>
