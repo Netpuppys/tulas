@@ -7,6 +7,10 @@ import HideUniversity from "./HideUniversity";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  metadataBase: new URL("https://tulas.edu.in"),
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

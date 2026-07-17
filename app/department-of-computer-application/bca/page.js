@@ -76,6 +76,7 @@ import LandingBusinessSchool from "../Component/LandingBusinessSchool";
 import LandingWhyTulas from "../Component/LandingWhyTulas";
 import LandingEligibilitySection from "../Component/LandingEligibilitySection";
 import LandingAccordianSpecialization from "../Component/LandingAccordianSpecialization";
+
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);

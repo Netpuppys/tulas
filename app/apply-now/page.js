@@ -319,8 +319,6 @@ const page = () => {
                                   <NewNavbar fullBanner={true}/>
                                 </div>
 
-        <ApplyBanner/>
-
 
                         <section className="w-full mt-12 py-6 bg-white flex justify-center">
                 <div className="w-full max-w-6xl px-3">
@@ -384,6 +382,9 @@ const page = () => {
           
                 </div>
               </section>
+
+                      <ApplyBanner/>
+
         
         <div className="w-full min-h-screen overflow-x-hidden relative">
               <LandingAlumniSuccessStories/>

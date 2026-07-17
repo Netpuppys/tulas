@@ -83,6 +83,7 @@ import LandingAccordianSpecialization from "./Component/LandingAccordianSpeciali
 import LandingAboutTulas from "./Component/LandingAboutTulas";
 import LandingProgramsSection from "./Component/LandingProgramsSection";
 import LandingCelebrities from "./Component/LandingCelebrities";
+
 // images
 const page = () => {
   const { utmParams } = useContext(UtmContext);
