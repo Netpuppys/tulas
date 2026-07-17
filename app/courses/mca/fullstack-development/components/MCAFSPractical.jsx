@@ -64,7 +64,7 @@ export default function MCAFSPractical() {
           <div className="cl-mcafspr-cert-grid">
             <div className="cl-mcafspr-cert cl-mcafspr-cert-feat">
               <span className="tag">Flagship Association</span>
-              <div className="t">IIT Kanpur E&amp;ICT Academy Certifications</div>
+              <div className="font-bold">IIT Kanpur E&amp;ICT Academy Certifications</div>
               <div className="d">Premier certifications backed by IIT Kanpur's Electronics &amp; ICT Academy — adding national credibility and industry recognition to your MCA degree.</div>
             </div>
             {PARTNERS.map((p,i)=>(
@@ -84,8 +84,7 @@ export default function MCAFSPractical() {
             ))}
           </div>
 
-          <div className="cl-mcafspr-block-title">Industry Exposure</div>
-          <p className="cl-mcafspr-intern">Students engage with <strong>real industry problems every semester</strong> — through hackathons, expert mentorship, live project briefs, and a final major project that is co-designed and evaluated by an industry partner. Every practical activity is built to make graduates immediately deployable.</p>
+        
         </div>
       </section>
     </>

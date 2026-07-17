@@ -1,5 +1,7 @@
 'use client';
 
+import BtechStudents from "@/app/courses/btech/components/BtechStudents";
+import HiringPartnerBtech from "@/app/courses/btech/components/HiringPartnerBtech";
 const ROLES = [
   { title:'Full Stack Developer',           range:'₹4–12 LPA',    desc:'Build and maintain end-to-end web applications spanning frontend, backend, and database layers for product companies and startups.' },
   { title:'Backend Engineer',               range:'₹5–14 LPA',    desc:'Design server-side systems, RESTful APIs, and microservices for high-performance, scalable software applications.' },
@@ -26,7 +28,7 @@ export default function MCAFSCareerOutcomes() {
   return (
     <>
       <style dangerouslySetInnerHTML={{__html:`
-        .cl-mcafsco-sec{background:#f8f9fc;padding:110px 7%}
+        .cl-mcafsco-sec{background:#f8f9fc;padding:10px 7%}
         .cl-mcafsco-wrap{max-width:1280px;margin:0 auto}
 
         .cl-mcafsco-head{text-align:center;max-width:860px;margin:0 auto 70px}
@@ -93,6 +95,10 @@ export default function MCAFSCareerOutcomes() {
             ))}
           </div>
 
+          <HiringPartnerBtech/>
+                              
+                                      <BtechStudents/>
+{/* 
           <div className="cl-mcafsco-mq-head">
             <h3>Where Our Graduates Get Hired</h3>
             <p>Trusted by leading organisations across technology, product, consulting, and emerging tech sectors.</p>
@@ -106,7 +112,7 @@ export default function MCAFSCareerOutcomes() {
             <div className="cl-mcafsco-mq-track rev">
               {ROW2.map((c,i)=><div key={i} className="cl-mcafsco-mq-chip">{c}</div>)}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
