@@ -144,7 +144,16 @@ const sitemap = [
             { title: "Computer Science & Engineering (Full Stack Development)", linkTo: "/courses/btech/computer-science" },
           ],
         },
-        { title: "M.Tech", linkTo: "/mtech" },
+        {
+          title: "M.Tech (All Specialisations)",
+          linkTo: "/courses/mtech/",
+          thirdNestedLinks: [
+            { title: "M.Tech Computer Science Engineering", linkTo: "/mtech" },
+      { title: "M.Tech Thermal Engineering", linkTo: "/mtech" },
+      { title: "M.Tech Stuctural Engineering", linkTo: "/mtech" },
+          ],
+        },
+        // { title: "M.Tech", linkTo: "/mtech" },
         {
           title: "Diploma",
           linkTo: "#",
@@ -163,8 +172,9 @@ const sitemap = [
         { title: "BCA", linkTo: "/courses/bca/" },
         { title: "BCA Full Stack Software Development", linkTo: "/courses/bca/fullstack-devlopment" },
         { title: "BCA AI & ML", linkTo: "/courses/bca/artificial-intelligence-&-machine-learning" },
+        { title: "BCA Cyber Security", linkTo: "/courses/bca/" },
         { title: "MCA", linkTo: "/courses/mca" },
-        { title: "MCA Full Stack Software Development", linkTo: "/courses/mca" },
+        { title: "MCA Full Stack Software Development", linkTo: "/courses/mca/fullstack-development" },
         { title: "MCA AI & ML", linkTo: "/courses/mca/artificial-intelligence-&-machine-learning" },
       ],
     },

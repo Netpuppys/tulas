@@ -319,6 +319,8 @@ const page = () => {
                                   <NewNavbar fullBanner={true}/>
                                 </div>
 
+                                                      <ApplyBanner/>
+
 
                         <section className="w-full pt-[120px] md:pt-10 pb-6 bg-white flex justify-center">
                 <div className="w-full max-w-6xl px-3">
@@ -380,9 +382,6 @@ const page = () => {
           
                 </div>
               </section>
-
-                      <ApplyBanner/>
-
         
         <div className="w-full min-h-screen overflow-x-hidden relative">
               <LandingAlumniSuccessStories/>
@@ -391,7 +390,11 @@ const page = () => {
 
               <NewFooter/>
 
-            
+              <div className="w-full flex justify-center items-center py-4">
+  <p className="text-sm text-gray-600">
+    Copyright © 2026 Tulas University, Dehradun | All Rights Reserved
+  </p>
+</div>
 
 
 {/* 

@@ -75,6 +75,7 @@ const menuData = {
       { name: "BCA", href: "/courses/bca/" },
       { name: "BCA Full Stack Software Development", href: "/courses/bca/fullstack-devlopment" },
       { name: "BCA AI & ML", href: "/courses/bca/artificial-intelligence-&-machine-learning" },
+      { name: "BCA Cyber Security", href: "/courses/bca/" },
     ],
     "School Of Mass Comm. & Journalism": [
       { name: "BAJMC", href: "/courses/bjmc/" },
@@ -105,11 +106,14 @@ const menuData = {
       { name: "MBA Business Analytics", href: "/courses/mba/business-analytics" },
     ],
     "School Of Engineering": [
-      { name: "M.Tech", href: "/mtech" },
+      { name: "M.Tech (All Specialisations)", href: "/mtech" },
+      { name: "M.Tech Computer Science Engineering", href: "/mtech" },
+      { name: "M.Tech Thermal Engineering", href: "/mtech" },
+      { name: "M.Tech Stuctural Engineering", href: "/mtech" },
     ],
     "School Of Computer Applications": [
       { name: "MCA", href: "/courses/mca" },
-      { name: "MCA Full Stack Software Development", href: "/courses/mca" },
+      { name: "MCA Full Stack Software Development", href: "/courses/mca/fullstack-development" },
       { name: "MCA AI & ML", href: "/courses/mca/artificial-intelligence-&-machine-learning" },
     ],
     "School Of Agriculture": [

@@ -9,6 +9,7 @@ import logo4 from "../../../public/Homepage/AccreditationLogo/4.png";
 import logo5 from "../../../public/Homepage/AccreditationLogo/5.png";
 import logo6 from "../../../public/Homepage/AccreditationLogo/6.png";
 import logo7 from "../../../public/Homepage/AccreditationLogo/7.png";
+import logo8 from "../../../public/Homepage/AccreditationLogo/13.png";
 
 
 
@@ -23,6 +24,7 @@ function LandingAccredition() {
     { img: logo5, title: "UGC", subtitle: "Recognized University" },
     { img: logo6, title: "NBA", subtitle: "Certified Institute" },
     { img: logo7, title: "NIRF", subtitle: "Ranked Institution" },
+    { img: logo8, title: "BCI", subtitle: "Bar Council of India" },
 
 
     
