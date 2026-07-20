@@ -90,7 +90,7 @@ const menuData = {
       { name: "BBA LL.B", href: "/courses/bba-llb/" },
     ],
     "School Of Agriculture": [
-      { name: "B.Sc. (Hons.) Agriculture", href: "/b-sc-agriculture/" },
+      { name: "B.Sc. (Hons.) Agriculture", href: "/courses/bsc-agriculture/" },
     ],
   },
 

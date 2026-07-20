@@ -79,12 +79,12 @@ function NavbarLanding({ handleScrollArrow, nba = false }) {
               <Image src={Years20} alt="" className="w-[7vw]" />
               <div className="h-[60px] w-[1px] bg-white"></div>
 
-              {nba && (
+           
                 <>
-                  <Image src={NBA} alt="" className="w-[5vw]" />
+                  <Image src={'/Components/Navbar/NBA.png'} width={200} height={200} alt="" className="w-[5vw]" />
                   <div className="h-[60px] w-[1px] bg-white"></div>
                 </>
-              )}
+    
 
               <Image src={NAAC} alt="" className="w-[10vw]" />
             </div>

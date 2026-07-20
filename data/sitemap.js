@@ -207,7 +207,7 @@ const sitemap = [
       title: "School Of Agriculture",
       linkTo: "#",
       superNestedLinks: [
-        { title: "B.Sc. (Hons.) Agriculture", linkTo: "/b-sc-agriculture/" },
+        { title: "B.Sc. (Hons.) Agriculture", linkTo: "/courses/bsc-agriculture/" },
         { title: "M.Sc. Agronomy", linkTo: "/courses/msc-agronomy" },
       ],
     },
