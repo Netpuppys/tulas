@@ -12,16 +12,16 @@ const CAMPUSES = [
     alt:'Tulas Institute Main Campus, Dehradun',
     mapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.2777855085124!2d77.8834027761828!3d30.343054304359832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929fa74538275%3A0x3cb757428c691de3!2sTula\'s%20Institute!5e0!3m2!1sen!2sin!4v1725008516487!5m2!1sen!2sin',
   },
-  {
-    id:'patna',
-    label:'📍 Patna, Bihar',
-    name:'Regional Office, Patna',
-    address:'409, RN Tower Commercial Complex, Near Ram Jaipal More, Bailey Road, Patna, Bihar.',
-    pills:['Bailey Road','RN Tower'],
-    img:'/Contact/whytulas.jpg',
-    alt:'Tulas Regional Office, Patna',
-    mapSrc:'https://www.google.com/maps?q=RN+Tower+Bailey+Road+Patna&output=embed',
-  },
+  // {
+  //   id:'patna',
+  //   label:'📍 Patna, Bihar',
+  //   name:'Regional Office, Patna',
+  //   address:'409, RN Tower Commercial Complex, Near Ram Jaipal More, Bailey Road, Patna, Bihar.',
+  //   pills:['Bailey Road','RN Tower'],
+  //   img:'/Contact/whytulas.jpg',
+  //   alt:'Tulas Regional Office, Patna',
+  //   mapSrc:'https://www.google.com/maps?q=RN+Tower+Bailey+Road+Patna&output=embed',
+  // },
 ];
 
 export default function ContactCampuses() {
@@ -62,9 +62,9 @@ export default function ContactCampuses() {
       <section className="cl-ctcam-sec" id="campuses">
         <div className="cl-ctcam-wrap">
           <div className="cl-ctcam-head">
-            <div className="cl-ctcam-eyebrow"><span className="bar"/>Visit Us</div>
-            <h2 className="cl-ctcam-h2">Our <em>Campuses</em></h2>
-            <p className="cl-ctcam-sub">Two locations, one mission — switch between them to see address, map, and directions.</p>
+            <div className="cl-ctcam-eyebrow"><span className="bar"/>Our Campus</div>
+            <h2 className="cl-ctcam-h2">Visit <em>Us</em></h2>
+            {/* <p className="cl-ctcam-sub">Two locations, one mission — switch between them to see address, map, and directions.</p> */}
           </div>
 
           <div className="cl-ctcam-tabs">
