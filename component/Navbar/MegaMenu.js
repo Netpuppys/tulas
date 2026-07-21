@@ -107,8 +107,8 @@ const menuData = {
     ],
     "School Of Engineering": [
       { name: "M.Tech (All Specialisations)", href: "/mtech" },
-      { name: "M.Tech Computer Science Engineering", href: "/mtech" },
-      { name: "M.Tech Thermal Engineering", href: "/mtech" },
+      { name: "M.Tech Computer Science Engineering", href: "/courses/mtech/computer-science" },
+      { name: "M.Tech Thermal Engineering", href: "/courses/mtech/thermal-engineering" },
       { name: "M.Tech Stuctural Engineering", href: "/mtech" },
     ],
     "School Of Computer Applications": [

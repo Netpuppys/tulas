@@ -148,8 +148,8 @@ const sitemap = [
           title: "M.Tech (All Specialisations)",
           linkTo: "/courses/mtech/",
           thirdNestedLinks: [
-            { title: "M.Tech Computer Science Engineering", linkTo: "/mtech" },
-      { title: "M.Tech Thermal Engineering", linkTo: "/mtech" },
+            { title: "M.Tech Computer Science Engineering", linkTo: "/courses/mtech/computer-science" },
+      { title: "M.Tech Thermal Engineering", linkTo: "/courses/mtech/thermal-engineering" },
       { title: "M.Tech Stuctural Engineering", linkTo: "/mtech" },
           ],
         },
