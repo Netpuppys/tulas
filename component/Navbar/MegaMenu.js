@@ -166,7 +166,7 @@ const simpleMenus = {
       { name: "Hostel & Mess Facilities", href: "/infrastructure/hostel-and-mess" },
       { name: "Sports", href: "/sports" },
       { name: "ICT Facilities", href: "/ict-facilities" },
-      { name: "Institute Video", href: "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view" },
+      { name: "Institute Videoo", href: "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view" },
     ],
   },
   admissions: {
