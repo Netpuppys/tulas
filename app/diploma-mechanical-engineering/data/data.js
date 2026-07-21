@@ -136,13 +136,13 @@ export const selectedCardTable = [
     eligibility:
       "Passed 10th Std./ SSC examination. Obtained at least 35% marks in the qualifying examination.",
   },
-  {
-    sno: 2,
-    course: "DIPLOMA – ME (Lateral Entry)",
-    duration: "2 years",
-    eligibility:
-      "Passed 10+2 examination with Physics and Chemistry as compulsory subjects along with Mathematics/ Biology subject. OR 10+2 Science (with Mathematics as one of the Subject) or 10+2 Science with Technical Vocational subject. OR 10th + (2 years ITI) with appropriate Trade in that order shall be eligible for admission to Second Year Diploma Course(s) of appropriate Programme.",
-  },
+  // {
+  //   sno: 2,
+  //   course: "DIPLOMA – ME (Lateral Entry)",
+  //   duration: "2 years",
+  //   eligibility:
+  //     "Passed 10+2 examination with Physics and Chemistry as compulsory subjects along with Mathematics/ Biology subject. OR 10+2 Science (with Mathematics as one of the Subject) or 10+2 Science with Technical Vocational subject. OR 10th + (2 years ITI) with appropriate Trade in that order shall be eligible for admission to Second Year Diploma Course(s) of appropriate Programme.",
+  // },
 ];
 export const semesterData = [
   {
