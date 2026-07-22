@@ -109,7 +109,7 @@ const sitemap = [
         { title: "BBA Digital Marketing", linkTo: "/courses/bba/digital-marketing" },
         { title: "BBA Business Analytics", linkTo: "/courses/bba/business-analytics" },
         { title: "B.Com", linkTo: "/courses/bcom/" },
-        { title: "B.Com (Hons.)", linkTo: "/courses/bcom/" },
+        { title: "B.Com (Hons.)", linkTo: "/courses/bcom-hons/" },
         {
           title: "MBA (All Specialisations)",
           linkTo: "/courses/mba",
@@ -150,7 +150,7 @@ const sitemap = [
           thirdNestedLinks: [
             { title: "M.Tech Computer Science Engineering", linkTo: "/courses/mtech/computer-science" },
       { title: "M.Tech Thermal Engineering", linkTo: "/courses/mtech/thermal-engineering" },
-      { title: "M.Tech Stuctural Engineering", linkTo: "/mtech" },
+      { title: "M.Tech Structural Engineering", linkTo: "/courses/mtech/structural-engineering" },
           ],
         },
         // { title: "M.Tech", linkTo: "/mtech" },

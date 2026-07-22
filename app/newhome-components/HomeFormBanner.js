@@ -83,8 +83,8 @@ const departments = [
     title: "School Of Law",
     courses: [
       { name: "LL.B (Bachelor of Legislative Law)", href: "/courses/llb/" },
-      { name: "B.B.A LL.B (Hons.)", href: "/courses/llb/" },
-      { name: "B.A LL.B (Hons.)", href: "/courses/llb/" },
+      { name: "B.B.A LL.B", href: "/courses/llb/" },
+      { name: "B.A LL.B", href: "/courses/llb/" },
     ],
   },
   {

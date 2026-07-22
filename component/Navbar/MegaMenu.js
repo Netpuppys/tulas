@@ -51,7 +51,7 @@ const menuData = {
       { name: "BBA", href: "/courses/bba" },
             { name: "B.Com", href: "/courses/bcom/" },
       { name: "BBA Business Analytics", href: "/courses/bba/business-analytics" },
-                  { name: "B.Com (Hons.)", href: "/courses/bcom/" },
+                  { name: "B.Com (Hons.)", href: "/courses/bcom-hons/" },
             { name: "BBA Digital Marketing", href: "/courses/bba/digital-marketing" },
 
     ],
@@ -109,7 +109,7 @@ const menuData = {
       { name: "M.Tech (All Specialisations)", href: "/mtech" },
       { name: "M.Tech Computer Science Engineering", href: "/courses/mtech/computer-science" },
       { name: "M.Tech Thermal Engineering", href: "/courses/mtech/thermal-engineering" },
-      { name: "M.Tech Stuctural Engineering", href: "/mtech" },
+      { name: "M.Tech Structural Engineering", href: "/courses/mtech/structural-engineering" },
     ],
     "School Of Computer Applications": [
       { name: "MCA", href: "/courses/mca" },
