@@ -187,7 +187,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} font-sans`}>
 
-        {/* <HideUniversity/> */}
+        <HideUniversity/>
 
         <noscript>
           <iframe
