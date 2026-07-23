@@ -123,9 +123,9 @@ const menuData = {
 
   diploma: {
     "School Of Engineering": [
-      { name: "Diploma in Civil Engineering", href: "/diploma-in-civil-engineering" },
-      { name: "Diploma in Mechanical Engineering", href: "/diploma-mechanical-engineering" },
-      { name: "Diploma in Computer Science Engineering", href: "/diploma-computer-science-engineering" },
+      { name: "Diploma in Civil Engineering", href: "/courses/diploma-in-civil-engineering" },
+      { name: "Diploma in Mechanical Engineering", href: "/courses/diploma-in-mechanical-engineering" },
+      { name: "Diploma in Computer Science Engineering", href: "/courses/diploma-in-computer-science" },
     ],
     "School Of Pharmacy": [
       { name: "Diploma in Pharmacy (D.Pharma)", href: "/courses/dpharma" },

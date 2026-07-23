@@ -158,9 +158,9 @@ const sitemap = [
           title: "Diploma",
           linkTo: "#",
           thirdNestedLinks: [
-            { title: "Diploma in Civil Engineering", linkTo: "/diploma-in-civil-engineering" },
-            { title: "Diploma in Mechanical Engineering", linkTo: "/diploma-mechanical-engineering" },
-            { title: "Diploma in Computer Science Engineering", linkTo: "/diploma-computer-science-engineering" },
+            { title: "Diploma in Civil Engineering", linkTo: "/courses/diploma-in-civil-engineering" },
+            { title: "Diploma in Mechanical Engineering", linkTo: "/courses/diploma-in-mechanical-engineering" },
+            { title: "Diploma in Computer Science Engineering", linkTo: "/courses/diploma-in-computer-science" },
           ],
         },
       ],
