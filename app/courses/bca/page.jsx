@@ -9,6 +9,7 @@ import BCAGCTABanner from './components/BCAGCTABanner';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
+import ImageHero from './components/ImageHero';
 
 export default function BCAGPage() {
   return (
@@ -20,7 +21,8 @@ export default function BCAGPage() {
                   <div className="block md:hidden">
                     <NewNavbar fullBanner={true}/>
                   </div>  
-      <BCAGHero />
+      {/* <BCAGHero /> */}
+      <ImageHero/>
       <BCAGOverview />
       <BCAGLearning />
       <BCAGPractical />

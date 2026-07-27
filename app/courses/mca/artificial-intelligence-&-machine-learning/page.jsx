@@ -10,6 +10,7 @@ import NewFooter from '@/component/NewFooter';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import CyberSecCertifications from '../../btech/computer-science-engineering-cyber-security/components/CyberSecCertifications';
+import ImageHero from './components/ImageHero';
 
 export default function MCAMLPage() {
   return (
@@ -21,7 +22,8 @@ export default function MCAMLPage() {
                         <div className="block md:hidden">
                           <NewNavbar fullBanner={true}/>
                         </div>
-      <MCAMLHero />
+      {/* <MCAMLHero /> */}
+      <ImageHero/>
       <MCAMLOverview />
       <MCAMLCurriculum />
       <CyberSecCertifications/>
