@@ -59,6 +59,7 @@ const departments = [
       { name: "BCA", href: "/courses/bca/" },
       { name: "BCA in Full Stack Software Development", href: "/courses/bca/fullstack-devlopment" },
       { name: "BCA in AI & ML", href: "/courses/bca/artificial-intelligence-&-machine-learning" },
+      { name: "BCA Cyber Security", href: "/courses/bca/" },
 
       { name: "MCA", href: "/courses/mca" },
       { name: "MCA in Full Stack Software Development", href: "/courses/mca" },
