@@ -3,7 +3,7 @@ import Image from "next/image";
 import LandingFormNew from "./LandingFormNew";
 import { UtmContext } from "@/component/utmParams";
 
-function BannerLandingPage({ bannerImg, bannerImgDesktop,heading='BTech',highlight=<>Where Engineering meets </>, change=false }) {
+function BannerLandingPage({ bannerImg, bannerImgDesktop,title='btech computer science',highlight=<>Where Engineering meets </>, change=false }) {
   const scrollRef = useRef(null);
   const { utmParams } = useContext(UtmContext);
 
@@ -33,10 +33,10 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop,heading='BTech',highlig
           />
 
       {change &&
-      <div class="text-black absolute top-[30%] max-w-[400px] left-[45%] sm:left-[30%] lg:left-[37%] w-full">
-        <h1 className='text-xl md:text-3xl font-bold'>{heading} 
-          <br />
-          <span className='text-md md:text-2xl text-orange-500 '>
+      <div class="text-black absolute top-[20%] md:top-[30%] max-w-[270px] md:max-w-[370px] xl:max-w-[450px] left-[45%] md:left-[30%] lg:left-[37%] w-full">
+        <h1 className='text-xl md:text-2xl xl:text-4xl capitalize  font-bold'>{title} 
+          <hr className='h-0.5 w-[80%] bg-orange-500 xl:my-2' />
+          <span className='text-xs md:text-lg xl:text-xl text-orange-500 '>
           {highlight}</span> </h1>
         </div>
       }

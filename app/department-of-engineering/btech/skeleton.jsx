@@ -80,9 +80,12 @@ import LandingWhyTulas from "../Component/LandingWhyTulas";
 import LandingEligibilitySection from "../Component/LandingEligibilitySection";
 import LandingAccordianSpecialization from "../Component/LandingAccordianSpecialization";
 
-const imageUrl =  '/landing_page/'
+const imageUrl = "/landing_page/";
 // images
-const Skeleton = () => {
+const Skeleton = ({
+  title = "btech computer science",
+  highlight = "NAAC A+ Accredited | 100% Placement Support | Admissions Open for 2026",
+}) => {
   const { utmParams } = useContext(UtmContext);
 
   const handleScrollArrow = () => {
@@ -223,80 +226,99 @@ const Skeleton = () => {
     // mobilebanner2,
   ];
 
-const placementSlides = [
-  {
-    image: mbaimg1,
-    image2: mbaimg2,
-    image3: mbaimg3,
-  },
+  const placementSlides = [
     {
-    image: mbaimg4,
-    image2: mbaimg5,
-    image3: mbaimg6,
-  },
-];
+      image: mbaimg1,
+      image2: mbaimg2,
+      image3: mbaimg3,
+    },
+    {
+      image: mbaimg4,
+      image2: mbaimg5,
+      image3: mbaimg6,
+    },
+  ];
 
-const faqs = [
-  {
-    title: "What B.Tech specialisations are offered at Tulas?",
-    content: (
-      <>
-        <p className="mb-2 text-body">
-          Tulas offers B.Tech programs in Computer Science & Engineering, Artificial Intelligence & Machine Learning, Data Science, Cyber Security, Civil Engineering, Mechanical Engineering, Electronics & Communication Engineering and Electrical & Electronics Engineering.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "What is the eligibility criteria for B.Tech admission?",
-    content: (
-      <>
-        <p className="mb-2 text-body">
-          Candidates must have passed 10+2 with Physics and Mathematics as compulsory subjects along with one additional subject such as Chemistry, Computer Science, Biotechnology or related subjects, with a minimum of 45% marks (40% for reserved categories).
-        </p>
-      </>
-    ),
-  },
-   {
-    title: "Does Tulas Universities provide any scholarships?",
-    content: (
-      <>
-        <p className="mb-2 text-body">
-        Yes, Tulas University offers up to 100% scholarships for different categories based on merit, Uttarakhand state domicile, defence background, sports achievements, and female students.</p>
-      </>
-    ),
-  },
-  {
-    title: "Does Tulas provide internship and placement opportunities for B.Tech students?",
-    content: (
-      <>
-        <p className="mb-2 text-body">
-         Yes. The Training and Placement Cell provides internship opportunities, career training, mock interviews and connects students with leading recruiters through campus placement drives.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Why Tulas is the best B.Tech college in Dehradun, Uttrakhand?",
-    content: (
-      <>
-        <p className="mb-2 text-body">
-         If you are looking for a B.Tech college in Uttarakhand, Dehradun then Tulas is suggested as it is UGC approved and NAAC A+ Accredited. It has an amazing campus life, students club, annual fests and industry workshops on futuristic skills and courses that will help students get good placements. With a good alumni record, alumni of Tulas are working in different industries at good packages. B.Tech admissions 2026 are open. Apply now by filling the admission form
-        </p>
-      </>
-    ),
-  },
-];
+  const faqs = [
+    {
+      title: "What B.Tech specialisations are offered at Tulas?",
+      content: (
+        <>
+          <p className="mb-2 text-body">
+            Tulas offers B.Tech programs in Computer Science & Engineering,
+            Artificial Intelligence & Machine Learning, Data Science, Cyber
+            Security, Civil Engineering, Mechanical Engineering, Electronics &
+            Communication Engineering and Electrical & Electronics Engineering.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: "What is the eligibility criteria for B.Tech admission?",
+      content: (
+        <>
+          <p className="mb-2 text-body">
+            Candidates must have passed 10+2 with Physics and Mathematics as
+            compulsory subjects along with one additional subject such as
+            Chemistry, Computer Science, Biotechnology or related subjects, with
+            a minimum of 45% marks (40% for reserved categories).
+          </p>
+        </>
+      ),
+    },
+    {
+      title: "Does Tulas Universities provide any scholarships?",
+      content: (
+        <>
+          <p className="mb-2 text-body">
+            Yes, Tulas University offers up to 100% scholarships for different
+            categories based on merit, Uttarakhand state domicile, defence
+            background, sports achievements, and female students.
+          </p>
+        </>
+      ),
+    },
+    {
+      title:
+        "Does Tulas provide internship and placement opportunities for B.Tech students?",
+      content: (
+        <>
+          <p className="mb-2 text-body">
+            Yes. The Training and Placement Cell provides internship
+            opportunities, career training, mock interviews and connects
+            students with leading recruiters through campus placement drives.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: "Why Tulas is the best B.Tech college in Dehradun, Uttrakhand?",
+      content: (
+        <>
+          <p className="mb-2 text-body">
+            If you are looking for a B.Tech college in Uttarakhand, Dehradun
+            then Tulas is suggested as it is UGC approved and NAAC A+
+            Accredited. It has an amazing campus life, students club, annual
+            fests and industry workshops on futuristic skills and courses that
+            will help students get good placements. With a good alumni record,
+            alumni of Tulas are working in different industries at good
+            packages. B.Tech admissions 2026 are open. Apply now by filling the
+            admission form
+          </p>
+        </>
+      ),
+    },
+  ];
 
-const para = ["Tula's Institute to Tulas University - 20 Years of Academic Excellence",
-  "From humble beginnings in 2006 to becoming a full-fledged state university in 2026, Tulas University has come a long way. As the world rapidly evolves, we're evolving with it. Our programs are designed to prepare you for the future and careers that don't even exist yet.",
-  "Our curriculum is updated annually with industry insights, ensuring you're job-ready from day one. Get hands-on experience through live projects, internships, hackathons, and certifications valued by top companies.",
-  "With a strong placement ecosystem, we've connected students with 350+ companies, including Microsoft, Adobe, Oracle, Infosys, and HCL. Our focus on skill-based training makes you industry-ready.",
-  "Tulas University is NAAC A+ accredited, and its Btech CSE is NBA accredited. We're consistently ranked among the top universities in the country for our placements, curriculum, and industry exposure.",
-  "Nestled in the foothills of the majestic Himalayas, our campus is a perfect blend of serene beauty and academic excellence. Experience vibrant campus life with fests like Utkrisht, sports, NCC, and alumni meets, just 250 km from Delhi.",
-  "Tulas University - where academic excellence meets industry relevance."
-]
-
+  const para = [
+    "Tula's Institute to Tulas University - 20 Years of Academic Excellence",
+    "From humble beginnings in 2006 to becoming a full-fledged state university in 2026, Tulas University has come a long way. As the world rapidly evolves, we're evolving with it. Our programs are designed to prepare you for the future and careers that don't even exist yet.",
+    "Our curriculum is updated annually with industry insights, ensuring you're job-ready from day one. Get hands-on experience through live projects, internships, hackathons, and certifications valued by top companies.",
+    "With a strong placement ecosystem, we've connected students with 350+ companies, including Microsoft, Adobe, Oracle, Infosys, and HCL. Our focus on skill-based training makes you industry-ready.",
+    "Tulas University is NAAC A+ accredited, and its Btech CSE is NBA accredited. We're consistently ranked among the top universities in the country for our placements, curriculum, and industry exposure.",
+    "Nestled in the foothills of the majestic Himalayas, our campus is a perfect blend of serene beauty and academic excellence. Experience vibrant campus life with fests like Utkrisht, sports, NCC, and alumni meets, just 250 km from Delhi.",
+    "Tulas University - where academic excellence meets industry relevance.",
+  ];
 
   return (
     <>
@@ -313,7 +335,13 @@ const para = ["Tula's Institute to Tulas University - 20 Years of Academic Excel
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage change bannerImgDesktop={imageUrl+'d1.jpg'} bannerImg={imageUrl+'m1.jpg'}/>
+          <BannerLandingPage
+            change
+            bannerImgDesktop={imageUrl + "d1.jpg"}
+            bannerImg={imageUrl + "m1.jpeg"}
+            title={title}
+            highlight={highlight}
+          />
 
           {/* <div ref={scrollRef}>
             <LandingFormNew
@@ -324,27 +352,25 @@ const para = ["Tula's Institute to Tulas University - 20 Years of Academic Excel
           </div> */}
 
           {/* carousel */}
-        {/* <div className="hidden md:block pt-[34px] md:pt-[90px]">
+          {/* <div className="hidden md:block pt-[34px] md:pt-[90px]">
      
           {/* Content One */}
 
           <RankSection />
 
           <LandingReadmore paragraphs={para} />
-          
+
           {/* <LandingAdmissionEligibility/> */}
 
-          <LandingWhyTulas/>
+          <LandingWhyTulas />
 
+          <LandingPerks perksSlides={placementSlides} />
 
-    <LandingPerks perksSlides={placementSlides} />
-
-
-          <LandingAccordianSpecialization/>
+          <LandingAccordianSpecialization />
 
           <LandingEligibilitySection change />
 
-          <LandingGlobalHiringPartners/>
+          <LandingGlobalHiringPartners />
 
           {/* <div className="w-full pb-8 md:pb-[4%] bg-white sticky z-10 h-full">
             <div className="w-full">
@@ -364,15 +390,15 @@ const para = ["Tula's Institute to Tulas University - 20 Years of Academic Excel
           <LandingAlumniSuccessStories change />
 
           {/* <SpecialisationsCarousel/> */}
-          
+
           {/* <LandingCareerPathSlider/> */}
-          <LandingHighlights/>
+          <LandingHighlights />
 
-          <LandingInternshipSection/>
+          <LandingInternshipSection />
 
-          <LandingAccredition/>
+          <LandingAccredition />
 
-          <LandingLifeTulas/>
+          <LandingLifeTulas />
 
           <LandingAccordionCard data={faqs} />
 
@@ -402,8 +428,6 @@ const para = ["Tula's Institute to Tulas University - 20 Years of Academic Excel
 };
 
 export default Skeleton;
-
-
 
 // ---------- Configuration ----------
 const rankConfig = {
@@ -469,13 +493,13 @@ function RankSection() {
         </div>
 
         {/* Ranking Cards */}
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="grid grid-cols-2 md:flex md:flex-row gap-4">
           {rankItems.map((item, idx) => (
             <div key={idx} className="flex-1">
               {/* Logo */}
               <div className="mt-3 pt-3 border-t border-brand-orange w-full flex bg-white justify-center">
                 <img
-                  src={imageUrl+item.image}
+                  src={imageUrl + item.image}
                   alt="Ranking Logo"
                   className="w-auto object-contain max-h-[150px] h-[150px] w-full"
                   onError={(e) => (e.target.style.display = "none")}
