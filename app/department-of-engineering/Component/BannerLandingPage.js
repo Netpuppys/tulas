@@ -33,16 +33,16 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop,title='btech computer s
           />
 
       {change &&
-      <div class="text-black absolute top-[20%] md:top-[30%] max-w-[270px] md:max-w-[370px] xl:max-w-[450px] left-[45%] md:left-[30%] lg:left-[37%] w-full">
-        <h1 className='text-xl md:text-2xl xl:text-4xl capitalize  font-bold'>{title} 
+      <div class="text-black absolute px-3 top-[20%] md:top-[28%] 5xl:top-[30%] max-w-[200px] md:max-w-[270px] xl:max-w-[300px] 4xl:max-w-[450px] left-[45%] md:left-[35%] lg:left-[40%] w-full">
+        <h1 className='text-sm md:text-sm xl:text-2xl 4xl:text-4xl capitalize   font-bold'>{title} 
           <hr className='h-0.5 w-[80%] bg-orange-500 xl:my-2' />
-          <span className='text-xs md:text-lg xl:text-xl text-orange-500 '>
+          <span className='text-[9px] sm:text-xs xl:text-md 2xl:text-lg md:max-w-auto text-orange-500 '>
           {highlight}</span> </h1>
         </div>
       }
 
           {/* Desktop Form Overlay */}
-          <div className={`hidden ${change ? 'bottom-[0%] -right-10 lg:flex': 'inset-0 md:flex'}  absolute items-center justify-end pr-0`}>
+          <div className={`hidden ${change ? 'bottom-[0%] -right-10 xl:flex': 'inset-0 md:flex'}  absolute items-center justify-end pr-0`}>
             <div className="w-[600px] ">
               
               <LandingFormNew
@@ -58,7 +58,7 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop,title='btech computer s
       </div>
 
       {/* Mobile Form (unchanged) */}
-      <div ref={scrollRef} className={`${change ? " lg:hidden" :'md:hidden'} `}>
+      <div ref={scrollRef} className={`${change ? " xl:hidden" :'md:hidden'} `}>
         <LandingFormNew
           course={3}
           formHeading={"MBA Admissions Open 2026"}

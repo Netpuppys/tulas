@@ -4,7 +4,7 @@ import Skeleton from "@/app/department-of-engineering/btech/skeleton";
 
 function Page() {
   return (
-        <Skeleton title={'computer science and engineering cse'} />
+        <Skeleton title={'Computer Science Engineering (CSE)'} />
   )
 }
 
