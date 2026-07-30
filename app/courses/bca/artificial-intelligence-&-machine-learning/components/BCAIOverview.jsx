@@ -133,7 +133,7 @@ export default function BCAIOverview() {
             </div>
 
             <div>
-              <div className="cl-bcaiov-eyebrow"><span className="bar" />School of Computing</div>
+              <div className="cl-bcaiov-eyebrow"><span className="bar" />School of Computer Applications</div>
               <h2 className="cl-bcaiov-h2">Where Code<br /><em>Meets AI</em></h2>
               <p className="cl-bcaiov-lead">
                 The BCA in AI &amp; ML at Tulas Institute teaches you to build real software — not just study it.

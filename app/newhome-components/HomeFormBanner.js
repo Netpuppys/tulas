@@ -93,74 +93,54 @@ function HomeFormBanner() {
         { name: "M.Tech Thermal Engineering", href: "/mtech" },
         { name: "M.Tech Structural Engineering", href: "/mtech" },
 
-        {
-          name: "Diploma in Civil Engineering",
-          href: "/diploma-in-civil-engineering",
-        },
-        {
-          name: "Diploma in Mechanical Engineering",
-          href: "/diploma-mechanical-engineering",
-        },
-        {
-          name: "Diploma in CSE",
-          href: "/diploma-computer-science-engineering",
-        },
-      ],
-    },
-    {
-      title: "School Of Computer Applications",
-      courses: [
-        { name: "BCA", href: "/courses/bca/" },
-        {
-          name: "BCA in Full Stack Software Development",
-          href: "/courses/bca/fullstack-devlopment",
-        },
-        {
-          name: "BCA in AI & ML",
-          href: "/courses/bca/artificial-intelligence-&-machine-learning",
-        },
+      { name: "Diploma in Civil Engineering", href: "/diploma-in-civil-engineering" },
+      { name: "Diploma in Mechanical Engineering", href: "/diploma-mechanical-engineering" },
+      { name: "Diploma in CSE", href: "/diploma-computer-science-engineering" },
+    ],
+  },
+  {
+    title: "School Of Computer Applications",
+    courses: [
+      { name: "BCA", href: "/courses/bca/" },
+      { name: "BCA in Full Stack Software Development", href: "/courses/bca/fullstack-devlopment" },
+      { name: "BCA in AI & ML", href: "/courses/bca/artificial-intelligence-&-machine-learning" },
+      { name: "BCA Cyber Security", href: "/courses/bca/" },
 
-        { name: "MCA", href: "/courses/mca" },
-        {
-          name: "MCA in Full Stack Software Development",
-          href: "/courses/mca",
-        },
-        {
-          name: "MCA in AI & ML",
-          href: "/courses/mca/artificial-intelligence-&-machine-learning",
-        },
-      ],
-    },
-    {
-      title: "School Of Mass Comm. & Journalism",
-      courses: [
-        { name: "BAJMC", href: "/courses/bjmc/" },
-        { name: "BA (Hons.) JMC", href: "/courses/bjmc/" },
-      ],
-    },
-    {
-      title: "School Of Pharmacy",
-      courses: [
-        { name: "Bachelor in Pharmacy (B.Pharma)", href: "/courses/bpharma/" },
-        { name: "Diploma in Pharmacy (D.Pharma)", href: "/courses/dpharma" },
-      ],
-    },
-    {
-      title: "School Of Law",
-      courses: [
-        { name: "LL.B (Bachelor of Legislative Law)", href: "/courses/llb/" },
-        { name: "B.B.A LL.B (Hons.)", href: "/courses/llb/" },
-        { name: "B.A LL.B (Hons.)", href: "/courses/llb/" },
-      ],
-    },
-    {
-      title: "School Of Agriculture",
-      courses: [
-        { name: "B.Sc.(Hons.) Agriculture", href: "/b-sc-agriculture/" },
-        { name: "M.Sc. Agronomy", href: "/courses/msc-agronomy" },
-      ],
-    },
-  ];
+      { name: "MCA", href: "/courses/mca" },
+      { name: "MCA in Full Stack Software Development", href: "/courses/mca" },
+      { name: "MCA in AI & ML", href: "/courses/mca/artificial-intelligence-&-machine-learning" },
+    ],
+  },
+  {
+    title: "School Of Mass Comm. & Journalism",
+    courses: [
+      { name: "BAJMC", href: "/courses/bjmc/" },
+      { name: "BA (Hons.) JMC", href: "/courses/bjmc/" },
+    ],
+  },
+  {
+    title: "School Of Pharmacy",
+    courses: [
+      { name: "Bachelor in Pharmacy (B.Pharma)", href: "/courses/bpharma/" },
+      { name: "Diploma in Pharmacy (D.Pharma)", href: "/courses/dpharma" },
+    ],
+  },
+  {
+    title: "School Of Law",
+    courses: [
+      { name: "LL.B (Bachelor of Legislative Law)", href: "/courses/llb/" },
+      { name: "B.B.A LL.B", href: "/courses/llb/" },
+      { name: "B.A LL.B", href: "/courses/llb/" },
+    ],
+  },
+  {
+    title: "School Of Agriculture",
+    courses: [
+      { name: "B.Sc.(Hons.) Agriculture", href: "/b-sc-agriculture/" },
+      { name: "M.Sc. Agronomy", href: "/courses/msc-agronomy" },
+    ],
+  },
+];
 
   return (
     <section className="w-full py-6 flex justify-center mt-2">

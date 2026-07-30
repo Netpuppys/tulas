@@ -87,7 +87,7 @@ export default function MCAFSOverview() {
             </div>
 
             <div className="cl-mcafsov-text">
-              <div className="cl-mcafsov-eyebrow"><span className="bar"/>School of Computing</div>
+              <div className="cl-mcafsov-eyebrow"><span className="bar"/>School of Computer Applications</div>
               <h2 className="cl-mcafsov-h2">Where Code<br/><em>Meets Architecture</em></h2>
               <p className="cl-mcafsov-lead">The MCA in Full Stack Development builds an advanced computing foundation, with a strong focus on software development, system design, data management, and emerging technologies.</p>
               <p className="cl-mcafsov-body">Students move from core computing fundamentals — operating systems, data structures, database management, and networks — into applied full stack specialisation across five elective tracks covering frontend, backend, cloud, and AI-integrated development. Industry-integrated learning through live projects, hackathons, and industry-sponsored capstone projects builds graduates who are ready to architect and ship enterprise-grade software.</p>

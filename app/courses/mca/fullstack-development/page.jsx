@@ -10,6 +10,7 @@ import MCAFSCTABanner from './components/MCAFSCTABanner';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
+import ImageHero from './components/ImageHero';
 
 export default function MCAFSPage() {
   return (
@@ -21,7 +22,8 @@ export default function MCAFSPage() {
             <div className="block md:hidden">
               <NewNavbar fullBanner={true}/>
             </div>      
-      <MCAFSHero />
+      {/* <MCAFSHero /> */}
+      <ImageHero/>
       <MCAFSOverview />
       <MCAFSLearning />
       <MCAFSCurriculum />

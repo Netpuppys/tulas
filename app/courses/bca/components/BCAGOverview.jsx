@@ -96,7 +96,7 @@ export default function BCAGOverview() {
               </div>
             </div>
             <div>
-              <div className="cl-bcagovw-eyebrow"><span className="bar"/>School of Computing</div>
+              <div className="cl-bcagovw-eyebrow"><span className="bar"/>School of Computer Applications</div>
               <h2 className="cl-bcagovw-h2">Where Computing<br/><em>Meets Career</em></h2>
               <p className="cl-bcagovw-lead">The BCA at Tulas Institute delivers a strong foundation in computing through programming, databases, software engineering, networking, and web technologies.</p>
               <p className="cl-bcagovw-body">Students build a strong computing core — programming, databases, software engineering, networking, and web technologies — then choose from specialisation opportunities in emerging domains such as Artificial Intelligence, Machine Learning, Full Stack Development, and Cloud Computing. Industry-integrated learning through live projects, case studies, hackathons, workshops, and expert sessions, plus multiple embedded industry certifications, make graduates job-ready from day one.</p>

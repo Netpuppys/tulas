@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           property="og:image"
           content="https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp"
         />
-        <meta property="og:image:alt" content="Tula's University, Dehradun" />
+        <meta property="og:image:alt" content="Tulas University, Dehradun" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         {/* Google Tag Manager */}
@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "CollegeOrUniversity",
-              name: "Tula's University",
+              name: "Tulas University",
               url: "https://tulas.edu.in/",
               logo: "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
               contactPoint: {
@@ -109,7 +109,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "WebSite",
-              name: "Tula's University",
+              name: "Tulas University",
               url: "https://tulas.edu.in/",
               potentialAction: {
                 "@type": "SearchAction",
@@ -128,7 +128,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Tula's University",
+              name: "Tulas University",
               image:
                 "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
               "@id": "",
@@ -137,7 +137,7 @@ export default function RootLayout({ children }) {
               address: {
                 "@type": "PostalAddress",
                 streetAddress:
-                  "Tula's University, Dhoolkot, Post Office: Selaqui, Chakrata Road",
+                  "Tulas University, Dhoolkot, Post Office: Selaqui, Chakrata Road",
                 addressLocality: "Dehradun",
                 postalCode: "248011",
                 addressCountry: "IN",
@@ -163,17 +163,17 @@ export default function RootLayout({ children }) {
                 "@type": "WebPage",
                 "@id": "https://tulas.edu.in/blog/"
               },
-              "headline": "Best Engineering & Degree University in Dehradun, Uttarakhand | Tula's University",
-              "description": "Stay Updated With the Latest Insights, News, and Academic Advancements at Tula's University, the Best Engineering & Degree University in Dehradun, Uttarakhand. Explore Articles on Engineering, Technology, Student Life, Career Tips, and More from Our Expert Faculty and Students.",
+              "headline": "Best Engineering & Degree University in Dehradun, Uttarakhand | Tulas University",
+              "description": "Stay Updated With the Latest Insights, News, and Academic Advancements at Tulas University, the Best Engineering & Degree University in Dehradun, Uttarakhand. Explore Articles on Engineering, Technology, Student Life, Career Tips, and More from Our Expert Faculty and Students.",
               "image": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
               "author": {
                 "@type": "Organization",
-                "name": "Tula's University",
+                "name": "Tulas University",
                 "url": "https://tulas.edu.in/"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "Tula's University", // Should not be empty
+                "name": "Tulas University", // Should not be empty
                 "logo": {
                   "@type": "ImageObject",
                   "url": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png" // Should not be empty

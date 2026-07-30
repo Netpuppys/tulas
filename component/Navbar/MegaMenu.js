@@ -51,7 +51,7 @@ const menuData = {
       { name: "BBA", href: "/courses/bba" },
             { name: "B.Com", href: "/courses/bcom/" },
       { name: "BBA Business Analytics", href: "/courses/bba/business-analytics" },
-                  { name: "B.Com (Hons.)", href: "/courses/bcom/" },
+                  { name: "B.Com (Hons.)", href: "/courses/bcom-hons/" },
             { name: "BBA Digital Marketing", href: "/courses/bba/digital-marketing" },
 
     ],
@@ -107,9 +107,9 @@ const menuData = {
     ],
     "School Of Engineering": [
       { name: "M.Tech (All Specialisations)", href: "/mtech" },
-      { name: "M.Tech Computer Science Engineering", href: "/mtech" },
-      { name: "M.Tech Thermal Engineering", href: "/mtech" },
-      { name: "M.Tech Stuctural Engineering", href: "/mtech" },
+      { name: "M.Tech Computer Science Engineering", href: "/courses/mtech/computer-science" },
+      { name: "M.Tech Thermal Engineering", href: "/courses/mtech/thermal-engineering" },
+      { name: "M.Tech Structural Engineering", href: "/courses/mtech/structural-engineering" },
     ],
     "School Of Computer Applications": [
       { name: "MCA", href: "/courses/mca" },
@@ -123,9 +123,9 @@ const menuData = {
 
   diploma: {
     "School Of Engineering": [
-      { name: "Diploma in Civil Engineering", href: "/diploma-in-civil-engineering" },
-      { name: "Diploma in Mechanical Engineering", href: "/diploma-mechanical-engineering" },
-      { name: "Diploma in Computer Science Engineering", href: "/diploma-computer-science-engineering" },
+      { name: "Diploma in Civil Engineering", href: "/courses/diploma-in-civil-engineering" },
+      { name: "Diploma in Mechanical Engineering", href: "/courses/diploma-in-mechanical-engineering" },
+      { name: "Diploma in Computer Science Engineering", href: "/courses/diploma-in-computer-science" },
     ],
     "School Of Pharmacy": [
       { name: "Diploma in Pharmacy (D.Pharma)", href: "/courses/dpharma" },
@@ -166,7 +166,7 @@ const simpleMenus = {
       { name: "Hostel & Mess Facilities", href: "/infrastructure/hostel-and-mess" },
       { name: "Sports", href: "/sports" },
       { name: "ICT Facilities", href: "/ict-facilities" },
-      { name: "Institute Video", href: "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view" },
+      { name: "Institute Videoo", href: "https://drive.google.com/file/d/1EBffP1S9nRRnIiGXD6awmc9POIkF5QH1/view" },
     ],
   },
   admissions: {

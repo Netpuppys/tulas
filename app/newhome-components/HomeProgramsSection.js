@@ -117,6 +117,14 @@ const data = {
           eligibility: "10+2",
           href: "/courses/bca/",
         },
+         {
+          title: "Cyber Security",
+          img: "/bcaimage/bcaimg2.png",
+          desc: "This specialisation focuses on developing advanced knowledge and practical skills in cybersecurity to protect digital systems and information. The curriculum covers network security, ethical hacking, cryptography, cyber threat analysis, digital forensics, risk management, security policies ",
+          duration: "3 years",
+          eligibility: "10+2",
+          href: "/courses/bca/",
+        },
       ],
       BCom: [
         {

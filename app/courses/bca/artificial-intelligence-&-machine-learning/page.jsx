@@ -12,6 +12,7 @@ import BCAICTABanner      from './components/BCAICTABanner';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
+import ImageHero from './components/ImageHero';
 
 export default function BCAIPage() {
   return (
@@ -23,7 +24,8 @@ export default function BCAIPage() {
             <div className="block md:hidden">
               <NewNavbar fullBanner={true}/>
             </div>
-      <BCAIHero />
+      {/* <BCAIHero /> */}
+      <ImageHero/>
       <BCAIOverview />
       <BCAILearning />
       <BCAICurriculum />

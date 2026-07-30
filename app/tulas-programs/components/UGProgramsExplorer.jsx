@@ -888,7 +888,7 @@ const FEE_COLS   = ['91%+', '81–90%', '71–80%', '60–70%', '<60%'];
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.88rem' }}>
                       <thead>
                         <tr style={{ background: '#001F4C', color: '#fff' }}>
-                          <th style={{ padding: '14px 20px', textAlign: 'left', fontWeight: 700 }}>Programme</th>
+                          <th style={{ padding: '14px 20px', textAlign: 'left', fontWeight: 700 }}>Program</th>
                           <th style={{ padding: '14px 20px', textAlign: 'right', fontWeight: 700 }}>Fee Per Year</th>
                         </tr>
                       </thead>
@@ -906,7 +906,7 @@ const FEE_COLS   = ['91%+', '81–90%', '71–80%', '60–70%', '<60%'];
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.8rem', minWidth: '560px' }}>
                       <thead>
                         <tr style={{ background: '#001F4C', color: '#fff', position: 'sticky', top: 0, zIndex: 2 }}>
-                          <th style={{ padding: '13px 16px', color: '#fff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Programme</th>
+                          <th style={{ padding: '13px 16px', color: '#fff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Program</th>
                           <th style={{ padding: '13px 12px', color: '#fff', textAlign: 'left', whiteSpace: 'nowrap', fontWeight: 700 }}>Category</th>
                           <th style={{ padding: '13px 12px', color: '#fff', textAlign: 'right', whiteSpace: 'nowrap', fontWeight: 700 }}>No Scholarship</th>
                           {FEE_COLS.map(c => (

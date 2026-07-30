@@ -22,6 +22,8 @@ import SlidingCarousel from "./components/SlidingCarousel";
 import MegaMenu from "@/component/Navbar/MegaMenu";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import NewFooter from "@/component/NewFooter";
+import CustomiFrame from "./data/iFrame";
+
 
 function Patent() {
   const patentImages = [
@@ -88,7 +90,8 @@ function Patent() {
           </div> */}
           <div className="pb-8 px-8 md:px-[8%] md:pb-[3%] w-full">
             <div className="h-full overflow-auto w-full">
-              <TableComponent />
+              {/* <TableComponent /> */}
+             <CustomiFrame/>
             </div>
           </div>
           <div className="px-8 md:px-32 w-full flex flex-col items-center justify-center">

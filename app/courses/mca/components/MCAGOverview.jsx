@@ -97,7 +97,7 @@ export default function MCAGOverview() {
             </div>
 
             <div className="cl-mcagovw-text">
-              <div className="cl-mcagovw-eyebrow"><span className="bar"/>School of Computing</div>
+              <div className="cl-mcagovw-eyebrow"><span className="bar"/>School of Computer Applications</div>
               <h2 className="cl-mcagovw-h2">Where Computing<br/><em>Meets Career</em></h2>
               <p className="cl-mcagovw-lead">The MCA at Tulas Institute delivers an advanced computing curriculum with a strong focus on software development, system design, data management, and emerging technologies.</p>
               <p className="cl-mcagovw-body">Students build a strong computing core — operating systems, data structures, databases, networks, and software engineering — then choose from specialisation opportunities in Artificial Intelligence, Machine Learning, Full Stack Development, Cloud Computing, Data Science, Cyber Security, and DevOps. Industry-integrated learning, embedded certifications, and an industry-sponsored capstone project make graduates ready for advanced computing careers from day one.</p>

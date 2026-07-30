@@ -9,6 +9,7 @@ import MCAGCTABanner from './components/MCAGCTABanner';
 import MegaMenu from '@/component/Navbar/MegaMenu';
 import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
+import ImageHero from './components/ImageHero';
 
 export default function MCAGPage() {
   return (
@@ -20,7 +21,8 @@ export default function MCAGPage() {
             <div className="block md:hidden">
               <NewNavbar fullBanner={true}/>
             </div>        
-      <MCAGHero />
+      {/* <MCAGHero /> */}
+      <ImageHero/>
       <MCAGOverview />
       <MCAGLearning />
       <MCAGPractical />
