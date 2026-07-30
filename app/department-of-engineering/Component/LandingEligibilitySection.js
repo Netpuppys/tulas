@@ -1,6 +1,6 @@
 "use client";
 
-export default function LandingEligibilitySection() {
+export default function LandingEligibilitySection({change=false}) {
   return (
     <section className="w-full py-6 bg-white flex justify-center">
       <div className="w-full max-w-6xl px-3">
@@ -21,7 +21,7 @@ export default function LandingEligibilitySection() {
         {/* Wrapper for Eligibility + CTA */}
         <div className="flex flex-col md:flex-row gap-8 items-start">
 
-          {/* Program Eligibility */}
+    {!change &&
           <div className="md:w-1/2 w-full">
             <h3 className="text-center md:text-left text-orange-500 font-bold text-xl md:text-2xl mb-5">
               Program Eligibility
@@ -53,9 +53,11 @@ export default function LandingEligibilitySection() {
               </li>
             </ul>
           </div>
+    }
+       
 
           {/* CTA Card */}
-          <div className="md:w-1/2 w-full">
+          <div className={`md:w-1/2 w-full ${change ? 'mx-auto': ''} `}>
             <div className="bg-orange-500 rounded-[28px] px-6 py-8 text-center text-white">
 
               <h4 className="text-[22px] md:text-4xl font-light leading-snug mb-3">

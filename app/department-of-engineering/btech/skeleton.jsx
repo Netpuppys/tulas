@@ -79,8 +79,10 @@ import LandingBusinessSchool from "../Component/LandingBusinessSchool";
 import LandingWhyTulas from "../Component/LandingWhyTulas";
 import LandingEligibilitySection from "../Component/LandingEligibilitySection";
 import LandingAccordianSpecialization from "../Component/LandingAccordianSpecialization";
+
+const imageUrl =  '/landing_page/'
 // images
-const page = () => {
+const Skeleton = () => {
   const { utmParams } = useContext(UtmContext);
 
   const handleScrollArrow = () => {
@@ -234,6 +236,67 @@ const placementSlides = [
   },
 ];
 
+const faqs = [
+  {
+    title: "What B.Tech specialisations are offered at Tulas?",
+    content: (
+      <>
+        <p className="mb-2 text-body">
+          Tulas offers B.Tech programs in Computer Science & Engineering, Artificial Intelligence & Machine Learning, Data Science, Cyber Security, Civil Engineering, Mechanical Engineering, Electronics & Communication Engineering and Electrical & Electronics Engineering.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "What is the eligibility criteria for B.Tech admission?",
+    content: (
+      <>
+        <p className="mb-2 text-body">
+          Candidates must have passed 10+2 with Physics and Mathematics as compulsory subjects along with one additional subject such as Chemistry, Computer Science, Biotechnology or related subjects, with a minimum of 45% marks (40% for reserved categories).
+        </p>
+      </>
+    ),
+  },
+   {
+    title: "Does Tulas Universities provide any scholarships?",
+    content: (
+      <>
+        <p className="mb-2 text-body">
+        Yes, Tulas University offers up to 100% scholarships for different categories based on merit, Uttarakhand state domicile, defence background, sports achievements, and female students.</p>
+      </>
+    ),
+  },
+  {
+    title: "Does Tulas provide internship and placement opportunities for B.Tech students?",
+    content: (
+      <>
+        <p className="mb-2 text-body">
+         Yes. The Training and Placement Cell provides internship opportunities, career training, mock interviews and connects students with leading recruiters through campus placement drives.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Why Tulas is the best B.Tech college in Dehradun, Uttrakhand?",
+    content: (
+      <>
+        <p className="mb-2 text-body">
+         If you are looking for a B.Tech college in Uttarakhand, Dehradun then Tulas is suggested as it is UGC approved and NAAC A+ Accredited. It has an amazing campus life, students club, annual fests and industry workshops on futuristic skills and courses that will help students get good placements. With a good alumni record, alumni of Tulas are working in different industries at good packages. B.Tech admissions 2026 are open. Apply now by filling the admission form
+        </p>
+      </>
+    ),
+  },
+];
+
+const para = ["Tula's Institute to Tulas University - 20 Years of Academic Excellence",
+  "From humble beginnings in 2006 to becoming a full-fledged state university in 2026, Tulas University has come a long way. As the world rapidly evolves, we're evolving with it. Our programs are designed to prepare you for the future and careers that don't even exist yet.",
+  "Our curriculum is updated annually with industry insights, ensuring you're job-ready from day one. Get hands-on experience through live projects, internships, hackathons, and certifications valued by top companies.",
+  "With a strong placement ecosystem, we've connected students with 350+ companies, including Microsoft, Adobe, Oracle, Infosys, and HCL. Our focus on skill-based training makes you industry-ready.",
+  "Tulas University is NAAC A+ accredited, and its Btech CSE is NBA accredited. We're consistently ranked among the top universities in the country for our placements, curriculum, and industry exposure.",
+  "Nestled in the foothills of the majestic Himalayas, our campus is a perfect blend of serene beauty and academic excellence. Experience vibrant campus life with fests like Utkrisht, sports, NCC, and alumni meets, just 250 km from Delhi.",
+  "Tulas University - where academic excellence meets industry relevance."
+]
+
 
   return (
     <>
@@ -245,12 +308,12 @@ const placementSlides = [
         />
       </head>
       <body>
-        <div className="w-full min-h-screen h-full relative">
+        <div className="w-full min-h-screen h-full relative ">
           {/* Navbar */}
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
           {/* <NavbarLandingPage /> */}
           {/* banner */}
-          <BannerLandingPage bannerImg={bannerImg} bannerImgDesktop={bannerImgDesktop}/>
+          <BannerLandingPage change bannerImgDesktop={imageUrl+'d1.jpg'} bannerImg={imageUrl+'m1.jpg'}/>
 
           {/* <div ref={scrollRef}>
             <LandingFormNew
@@ -265,9 +328,9 @@ const placementSlides = [
      
           {/* Content One */}
 
-          <LandingBusinessSchool />
+          <RankSection />
 
-          <LandingReadmore/>
+          <LandingReadmore paragraphs={para} />
           
           {/* <LandingAdmissionEligibility/> */}
 
@@ -279,7 +342,7 @@ const placementSlides = [
 
           <LandingAccordianSpecialization/>
 
-          <LandingEligibilitySection/>
+          <LandingEligibilitySection change />
 
           <LandingGlobalHiringPartners/>
 
@@ -298,7 +361,7 @@ const placementSlides = [
             </div>
           </div> */}
 
-          <LandingAlumniSuccessStories/>
+          <LandingAlumniSuccessStories change />
 
           {/* <SpecialisationsCarousel/> */}
           
@@ -311,7 +374,7 @@ const placementSlides = [
 
           <LandingLifeTulas/>
 
-          <LandingAccordionCard/>
+          <LandingAccordionCard data={faqs} />
 
           {/* <div className="pb-8 md:pb-[3%]">
             <PlacementProgram features={features} />
@@ -338,4 +401,106 @@ const placementSlides = [
   );
 };
 
-export default page;
+export default Skeleton;
+
+
+
+// ---------- Configuration ----------
+const rankConfig = {
+  ranks: [
+    {
+      image: "./logo/4.jpg",
+      ranking: [
+        { rank: "#1", desc: "Private ENGINEERING COLLEGE IN Dehradun" },
+        { rank: "#21", desc: "Private ENGINEERING COLLEGE IN North India" },
+      ],
+    },
+    {
+      image: "./logo/1.jpg",
+      ranking: [{ rank: "#20", desc: "Private ENGINEERING COLLEGE 2025" }],
+    },
+    {
+      image: "./logo/2.jpg",
+      ranking: [{ rank: "#37", desc: "Pvt. ENGINEERING COLLEGE IN Dehradun" }],
+    },
+    {
+      image: "./logo/3.jpg",
+      ranking: [{ rank: "#65", desc: "ENGINEERING Excellence 2025" }],
+    },
+    {
+      image: "./logo/6.jpg",
+      ranking: [{ rank: "#88", desc: "ENGINEERING Excellence 2026" }],
+    },
+  ],
+};
+
+// ---------- Rank Section Component ----------
+function RankSection() {
+  const rankItems = rankConfig.ranks;
+  return (
+    <section className="py-12 bg-brand-bgLight">
+      {/* Inline styles - you can move to a separate CSS file */}
+      <style>
+        {`
+          .brand-bgLight {
+            background-color: #fbf8f5;
+          }
+          .brand-orange {
+            color: #f26522;
+          }
+          .brand-navy {
+            color: #121f38;
+          }
+          .font-heading {
+            font-family: "Nunito", sans-serif;
+          }
+        `}
+      </style>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center max-w-2xl mx-auto mb-8">
+          <span className="text-brand-orange font-extrabold uppercase text-xs tracking-widest font-heading">
+            Perfect Choice
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold font-heading text-brand-navy mt-1">
+            India's Top Ranked University
+          </h2>
+        </div>
+
+        {/* Ranking Cards */}
+        <div className="flex flex-col md:flex-row gap-4">
+          {rankItems.map((item, idx) => (
+            <div key={idx} className="flex-1">
+              {/* Logo */}
+              <div className="mt-3 pt-3 border-t border-brand-orange w-full flex bg-white justify-center">
+                <img
+                  src={imageUrl+item.image}
+                  alt="Ranking Logo"
+                  className="w-auto object-contain max-h-[150px] h-[150px] w-full"
+                  onError={(e) => (e.target.style.display = "none")}
+                />
+              </div>
+
+              {/* Ranking Details */}
+              <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200/60 text-center hover:shadow-md transition flex flex-col items-center">
+                <div className="flex justify-center gap-1 items-start w-full">
+                  {item.ranking.map((r, i) => (
+                    <div key={i} className="mt-0">
+                      <div className="text-brand-orange text-xl font-black font-heading">
+                        {r.rank}
+                      </div>
+                      <div className="text-[10px] font-bold text-gray-700 uppercase leading-tight">
+                        {r.desc}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

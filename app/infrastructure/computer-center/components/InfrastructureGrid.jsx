@@ -87,7 +87,7 @@ export default function InfrastructureGrid() {
             <div className="font-montserrat font-bold text-[1.3rem] max-[600px]:text-[1.1rem] text-[#111111] mb-[10px]">
               {FEATURED.title}
             </div>
-            <p className="text-[0.86rem] leading-[1.7] text-[#6b7280]">{FEATURED.text}</p>
+            <p className="text-[0.86rem] leading-[1.7] text-[#6b7280]>{FEATURED.text}</p>
             <div className="flex gap-2 flex-wrap mt-[18px] max-[600px]:gap-[6px]">
               {FEATURED.tags.map((tag, i) => (
                 <span key={i} className="bg-[#fff3ec] text-[#f26522] rounded-full px-[14px] max-[600px]:px-[11px] py-[5px] max-[600px]:py-1 text-[0.75rem] max-[600px]:text-[0.72rem] font-semibold tracking-[0.03em]">

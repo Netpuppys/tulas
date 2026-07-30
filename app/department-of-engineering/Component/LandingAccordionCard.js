@@ -55,7 +55,7 @@ const faqs = [
   },
 ];
 
-export default function LandingAccordionCard() {
+export default function LandingAccordionCard({data=faqs}) {
 const [openIndex, setOpenIndex] = useState(0);
 
   const toggle = (index) => {
@@ -69,7 +69,7 @@ const [openIndex, setOpenIndex] = useState(0);
         <span className="text-orange-500">Frequently</span>{" "}
         <span className="text-gray-800">Asked Questions</span>
       </h3>
-      {faqs.map((item, index) => {
+      {data.map((item, index) => {
         const isOpen = openIndex === index;
 
         return (

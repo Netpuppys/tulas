@@ -17,6 +17,17 @@ module.exports = {
         appelstroop: ['DKAppelstroop', 'cursive'],
         montserrat: ['Montserrat', 'sans-serif']
       },
+      colors: {
+              brand: {
+                orange: "#f26522",
+                darkorange: "#d85312",
+                navy: "#121f38",
+                navyDark: "#0a1224",
+                bgLight: "#fbf8f5",
+                grayBg: "#f4f5f7",
+                borderGray: "#e2e8f0",
+              },
+            },
       screens: {
         mdNavbar: "880px",
       },

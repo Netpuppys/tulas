@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 
-export default function LandingAlumniSuccessStories() {
+export default function LandingAlumniSuccessStories({change=false}) {
   const scrollRef = useRef(null);
 
   const alumniCards = [
@@ -52,14 +52,14 @@ export default function LandingAlumniSuccessStories() {
           {alumniCards.map((src, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[82%] sm:w-[60%] md:w-[380px] rounded-3xl overflow-hidden shadow-md bg-white"
+              className={`flex-shrink-0 ${change? "": "w-[82%] sm:w-[60%] md:w-[380px]"}  rounded-3xl overflow-hidden shadow-md bg-white`}
             >
               <Image
                 src={src}
                 alt={`Alumni story ${index + 1}`}
                 width={400}
                 height={520}
-                className="w-full h-full object-cover"
+                className={`w-full h-full ${change ? 'max-w-[250px]':''} object-cover`}
                 priority={index === 0}
               />
             </div>
