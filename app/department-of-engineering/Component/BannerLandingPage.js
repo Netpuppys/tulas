@@ -10,7 +10,7 @@ function BannerLandingPage({ bannerImg, bannerImgDesktop,title='btech computer s
   return (
     <>
       {/* Banner */}
-      <div className={`w-full ${change ? 'pt-[110px] md:pt-0 md:min-h-screen' :'pt-[110px] md:pt-[120px]'}  flex justify-center overflow-hidden`}>
+      <div className={`w-full ${change ? 'pt-[110px] md:pt-0 md:min-h-screen' :'pt-[110px] md:pt-[120px]'} overflow-hidden`}>
         <div className="relative ">
 
           {/* Mobile Banner */}
