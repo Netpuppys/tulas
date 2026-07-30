@@ -10,98 +10,163 @@ function HomeFormBanner() {
   const { utmParams } = useContext(UtmContext);
   const [openIndex, setOpenIndex] = useState(null);
 
-const departments = [
-  {
-    title: "School Of Management & Commerce",
-    courses: [
-      { name: "BBA", href: "/courses/bba" },
-      { name: "BBA in Digital Marketing", href: "/courses/bba/digital-marketing" },
-      { name: "BBA in Business Analytics", href: "/courses/bba/business-analytics" },
-      { name: "Bachelor in Commerce (B.Com)", href: "/courses/bcom/" },
-      { name: "Bachelor in Commerce (Hons.)", href: "/courses/bcom/" },
+  const departments = [
+    {
+      title: "School Of Management & Commerce",
+      courses: [
+        { name: "BBA", href: "/courses/bba" },
+        {
+          name: "BBA in Digital Marketing",
+          href: "/courses/bba/digital-marketing",
+        },
+        {
+          name: "BBA in Business Analytics",
+          href: "/courses/bba/business-analytics",
+        },
+        { name: "Bachelor in Commerce (B.Com)", href: "/courses/bcom/" },
+        { name: "Bachelor in Commerce (Hons.)", href: "/courses/bcom/" },
 
-      { name: "MBA", href: "/courses/mba" },
-      { name: "MBA in Marketing", href: "/courses/mba/marketing" },
-      { name: "MBA in Human Resource Management", href: "/courses/mba/human-resource-managment" },
-      { name: "MBA in International Business", href: "/courses/mba/international-business" },
-      { name: "MBA in Finance", href: "/courses/mba/finance" },
-      { name: "MBA in Agri-Business Management", href: "/courses/mba/agri-business" },
-      { name: "MBA in Digital Marketing", href: "/courses/mba/digital-marketing" },
-      { name: "MBA in Business Analytics", href: "/courses/mba/business-analytics" },
-    ],
-  },
-  {
-    title: "School Of Engineering",
-    courses: [
-      { name: "B.Tech CSE", href: "/courses/btech/computer-science" },
-      { name: "B.Tech CSE in AI & ML", href: "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning" },
-      { name: "B.Tech CSE in Cyber Security", href: "/courses/btech/computer-science-engineering-cyber-security" },
-      { name: "B.Tech CSE in Data Science", href: "/courses/btech/computer-science-engineering-data-science" },
-      { name: "B.Tech CSE in Full Stack Development", href: "/courses/btech/computer-science" },
-      { name: "B.Tech ECE", href: "/courses/btech/electronics-and-communication-engg" },
-      { name: "B.Tech EEE", href: "/courses/btech/electrical-and-electronics-engg/" },
-      { name: "B.Tech Civil Engineering", href: "/courses/btech/civil-engineering/" },
-      { name: "B.Tech Mechanical Engineering", href: "/courses/btech/mechanical-engineering/" },
+        { name: "MBA", href: "/courses/mba" },
+        { name: "MBA in Marketing", href: "/courses/mba/marketing" },
+        {
+          name: "MBA in Human Resource Management",
+          href: "/courses/mba/human-resource-managment",
+        },
+        {
+          name: "MBA in International Business",
+          href: "/courses/mba/international-business",
+        },
+        { name: "MBA in Finance", href: "/courses/mba/finance" },
+        {
+          name: "MBA in Agri-Business Management",
+          href: "/courses/mba/agri-business",
+        },
+        {
+          name: "MBA in Digital Marketing",
+          href: "/courses/mba/digital-marketing",
+        },
+        {
+          name: "MBA in Business Analytics",
+          href: "/courses/mba/business-analytics",
+        },
+      ],
+    },
+    {
+      title: "School Of Engineering",
+      courses: [
+        { name: "B.Tech CSE", href: "/courses/btech/computer-science" },
+        {
+          name: "B.Tech CSE in AI & ML",
+          href: "/courses/btech/computer-science-engineering-artifical-intelligence-and-machine-learning",
+        },
+        {
+          name: "B.Tech CSE in Cyber Security",
+          href: "/courses/btech/computer-science-engineering-cyber-security",
+        },
+        {
+          name: "B.Tech CSE in Data Science",
+          href: "/courses/btech/computer-science-engineering-data-science",
+        },
+        {
+          name: "B.Tech CSE in Full Stack Development",
+          href: "/courses/btech/computer-science",
+        },
+        {
+          name: "B.Tech ECE",
+          href: "/courses/btech/electronics-and-communication-engg",
+        },
+        {
+          name: "B.Tech EEE",
+          href: "/courses/btech/electrical-and-electronics-engg/",
+        },
+        {
+          name: "B.Tech Civil Engineering",
+          href: "/courses/btech/civil-engineering/",
+        },
+        {
+          name: "B.Tech Mechanical Engineering",
+          href: "/courses/btech/mechanical-engineering/",
+        },
 
-      // { name: "M.Tech", href: "/mtech" },
-      { name: "M.Tech Computer Science Engineering", href: "/mtech" },
-      { name: "M.Tech Thermal Engineering", href: "/mtech" },
-      { name: "M.Tech Structural Engineering", href: "/mtech" },
+        // { name: "M.Tech", href: "/mtech" },
+        { name: "M.Tech Computer Science Engineering", href: "/mtech" },
+        { name: "M.Tech Thermal Engineering", href: "/mtech" },
+        { name: "M.Tech Structural Engineering", href: "/mtech" },
 
-      { name: "Diploma in Civil Engineering", href: "/diploma-in-civil-engineering" },
-      { name: "Diploma in Mechanical Engineering", href: "/diploma-mechanical-engineering" },
-      { name: "Diploma in CSE", href: "/diploma-computer-science-engineering" },
-    ],
-  },
-  {
-    title: "School Of Computer Applications",
-    courses: [
-      { name: "BCA", href: "/courses/bca/" },
-      { name: "BCA in Full Stack Software Development", href: "/courses/bca/fullstack-devlopment" },
-      { name: "BCA in AI & ML", href: "/courses/bca/artificial-intelligence-&-machine-learning" },
+        {
+          name: "Diploma in Civil Engineering",
+          href: "/diploma-in-civil-engineering",
+        },
+        {
+          name: "Diploma in Mechanical Engineering",
+          href: "/diploma-mechanical-engineering",
+        },
+        {
+          name: "Diploma in CSE",
+          href: "/diploma-computer-science-engineering",
+        },
+      ],
+    },
+    {
+      title: "School Of Computer Applications",
+      courses: [
+        { name: "BCA", href: "/courses/bca/" },
+        {
+          name: "BCA in Full Stack Software Development",
+          href: "/courses/bca/fullstack-devlopment",
+        },
+        {
+          name: "BCA in AI & ML",
+          href: "/courses/bca/artificial-intelligence-&-machine-learning",
+        },
 
-      { name: "MCA", href: "/courses/mca" },
-      { name: "MCA in Full Stack Software Development", href: "/courses/mca" },
-      { name: "MCA in AI & ML", href: "/courses/mca/artificial-intelligence-&-machine-learning" },
-    ],
-  },
-  {
-    title: "School Of Mass Comm. & Journalism",
-    courses: [
-      { name: "BAJMC", href: "/courses/bjmc/" },
-      { name: "BA (Hons.) JMC", href: "/courses/bjmc/" },
-    ],
-  },
-  {
-    title: "School Of Pharmacy",
-    courses: [
-      { name: "Bachelor in Pharmacy (B.Pharma)", href: "/courses/bpharma/" },
-      { name: "Diploma in Pharmacy (D.Pharma)", href: "/courses/dpharma" },
-    ],
-  },
-  {
-    title: "School Of Law",
-    courses: [
-      { name: "LL.B (Bachelor of Legislative Law)", href: "/courses/llb/" },
-      { name: "B.B.A LL.B (Hons.)", href: "/courses/llb/" },
-      { name: "B.A LL.B (Hons.)", href: "/courses/llb/" },
-    ],
-  },
-  {
-    title: "School Of Agriculture",
-    courses: [
-      { name: "B.Sc.(Hons.) Agriculture", href: "/b-sc-agriculture/" },
-      { name: "M.Sc. Agronomy", href: "/courses/msc-agronomy" },
-    ],
-  },
-];
+        { name: "MCA", href: "/courses/mca" },
+        {
+          name: "MCA in Full Stack Software Development",
+          href: "/courses/mca",
+        },
+        {
+          name: "MCA in AI & ML",
+          href: "/courses/mca/artificial-intelligence-&-machine-learning",
+        },
+      ],
+    },
+    {
+      title: "School Of Mass Comm. & Journalism",
+      courses: [
+        { name: "BAJMC", href: "/courses/bjmc/" },
+        { name: "BA (Hons.) JMC", href: "/courses/bjmc/" },
+      ],
+    },
+    {
+      title: "School Of Pharmacy",
+      courses: [
+        { name: "Bachelor in Pharmacy (B.Pharma)", href: "/courses/bpharma/" },
+        { name: "Diploma in Pharmacy (D.Pharma)", href: "/courses/dpharma" },
+      ],
+    },
+    {
+      title: "School Of Law",
+      courses: [
+        { name: "LL.B (Bachelor of Legislative Law)", href: "/courses/llb/" },
+        { name: "B.B.A LL.B (Hons.)", href: "/courses/llb/" },
+        { name: "B.A LL.B (Hons.)", href: "/courses/llb/" },
+      ],
+    },
+    {
+      title: "School Of Agriculture",
+      courses: [
+        { name: "B.Sc.(Hons.) Agriculture", href: "/b-sc-agriculture/" },
+        { name: "M.Sc. Agronomy", href: "/courses/msc-agronomy" },
+      ],
+    },
+  ];
 
   return (
     <section className="w-full py-6 flex justify-center mt-2">
       <div className="w-full max-w-8xl mx-auto grid md:grid-cols-[60%_40%] gap-6 px-4">
         {/* LEFT SIDE */}
         <div className="bg-[#d9d9d9] rounded-[28px] p-8 md:p-10">
-
           {/* HEADING */}
           <h2 className="text-3xl md:text-5xl font-extrabold leading-tight mb-8">
             <span className="text-orange-600">UNLOCK</span>
@@ -116,7 +181,6 @@ const departments = [
 
               return (
                 <div key={index} className="relative">
-
                   {/* BUTTON */}
                   <button
                     onClick={() =>
@@ -141,20 +205,19 @@ const departments = [
                     />
                   </button>
 
-                 {openIndex === index && (
-  <div className="absolute top-full left-0 mt-2 w-full bg-white rounded-xl p-4 text-sm shadow-xl border z-50">
-    {dept.courses.map((course, i) => (
-      <Link
-        key={i}
-        href={course.href}
-        className="block hover:text-orange-600 text-black transition font-medium py-2 border-b border-gray-100 last:border-b-0"
-      >
-        {course.name}
-      </Link>
-    ))}
-  </div>
-)}
-
+                  {openIndex === index && (
+                    <div className="absolute top-full left-0 mt-2 w-full bg-white rounded-xl p-4 text-sm shadow-xl border z-50">
+                      {dept.courses.map((course, i) => (
+                        <Link
+                          key={i}
+                          href={course.href}
+                          className="block hover:text-orange-600 text-black transition font-medium py-2 border-b border-gray-100 last:border-b-0"
+                        >
+                          {course.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               );
             })}
@@ -170,7 +233,6 @@ const departments = [
             />
           </div>
         </div>
-
       </div>
     </section>
   );

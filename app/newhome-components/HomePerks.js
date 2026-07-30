@@ -17,17 +17,18 @@ function HomePerks() {
     { image: "/graduate-school-of-business-v2/mba/tulasstat2.png" },
     { image: "/graduate-school-of-business-v2/mba/tulasstat3.png" },
     { image: "/graduate-school-of-business-v2/mba/tulasstat4.png" },
-
   ];
 
   return (
     <section className="py-5 bg-[#ffff]">
-                <h3 className="text-[clamp(33px,6vw,32px)] font-extrabold mb-3 px-2" style={{ textAlign: "center" }}>
-          <span className="text-orange-500">Shape Your</span>{" "}
-          <span className="text-gray-800">Future at Tulas</span>
-        </h3>
+      <h3
+        className="text-[clamp(33px,6vw,32px)] font-extrabold mb-3 px-2"
+        style={{ textAlign: "center" }}
+      >
+        <span className="text-orange-500">Shape Your</span>{" "}
+        <span className="text-gray-800">Future at Tulas</span>
+      </h3>
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-[55%_45%] gap-8 items-center">
-
         {/* LEFT CONTENT */}
         <div>
           {/* <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
@@ -36,20 +37,35 @@ function HomePerks() {
           </h2> */}
 
           <p className="text-gray-700 mb-5 leading-relaxed text-sm md:text-base">
-            Tulas University is a leading university in Dehradun, Uttarakhand, known for academic excellence, modern infrastructure and strong placement outcomes. UGC Approved and NAAC A+ Accredited, the university offers undergraduate, postgraduate and doctoral programmes across engineering, management, law, commerce, computer applications and emerging fields, making it a preferred choice for career-focused education.
+            Tulas University is a leading university in Dehradun, Uttarakhand,
+            known for academic excellence, modern infrastructure and strong
+            placement outcomes. UGC Approved and NAAC A+ Accredited, the
+            university offers undergraduate, postgraduate and doctoral
+            programmes across engineering, management, law, commerce, computer
+            applications and emerging fields, making it a preferred choice for
+            career-focused education.
           </p>
 
           <p className="text-gray-700 mb-5 leading-relaxed text-sm md:text-base">
-           Built on more than 20 years of academic excellence, Tulas University delivers AI-driven learning, industry-integrated curriculum, advanced laboratories, global exposure and hands-on training that prepares students for real-world challenges and evolving career landscapes.
+            Built on more than 20 years of academic excellence, Tulas University
+            delivers AI-driven learning, industry-integrated curriculum,
+            advanced laboratories, global exposure and hands-on training that
+            prepares students for real-world challenges and evolving career
+            landscapes.
           </p>
           <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-            With a strong emphasis on innovation, research, entrepreneurship and career development, the university equips students with the skills, knowledge and experience needed to become industry-ready professionals and future leaders. Its robust placement ecosystem, industry collaborations and focus on emerging technologies make it a top choice for students seeking quality higher education in Uttarakhand.
+            With a strong emphasis on innovation, research, entrepreneurship and
+            career development, the university equips students with the skills,
+            knowledge and experience needed to become industry-ready
+            professionals and future leaders. Its robust placement ecosystem,
+            industry collaborations and focus on emerging technologies make it a
+            top choice for students seeking quality higher education in
+            Uttarakhand.
           </p>
         </div>
 
         {/* RIGHT SLIDER */}
         <div className="h-[420px]">
-
           <Swiper
             direction="vertical"
             slidesPerView={2}
@@ -65,21 +81,19 @@ function HomePerks() {
           >
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-  <div className="h-[180px] md:h-[200px] flex items-center justify-center">
-    <Image
-      src={card.image}
-      alt=""
-      width={600}
-      height={300}
-      className="w-full h-full object-contain scale-[0.95]"
-    />
-  </div>
-</SwiperSlide>
+                <div className="h-[180px] md:h-[200px] flex items-center justify-center">
+                  <Image
+                    src={card.image}
+                    alt=""
+                    width={600}
+                    height={300}
+                    className="w-full h-full object-contain scale-[0.95]"
+                  />
+                </div>
+              </SwiperSlide>
             ))}
           </Swiper>
-
         </div>
-
       </div>
     </section>
   );

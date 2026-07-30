@@ -13,7 +13,7 @@ const CARDS = [
   icon: '🖥️',
   title: 'Main Computer Laboratories',
   text: 'Spacious, air-conditioned labs equipped with 500+ high-performance desktops loaded with the latest licensed software. All machines are connected via a dedicated 1 Gbps internet line and campus-wide LAN — students work in an environment that mirrors top-tier tech companies.',
-  tags: ['500+ Desktops', '1 Gbps Internet', 'Air-Conditioned', 'Licensed Software'],
+  tags: ['500+ Desktops', '1Campus Network Gbps Internet', 'Air-Conditioned', 'Licensed Software'],
 },
   {
     icon: '🌐',
