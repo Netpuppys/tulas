@@ -29,11 +29,14 @@ const CO = [
 ];
 
 const PO = [
-  { k:'PO1', v:"Exhibit factual and theoretical knowledge of computer science, mathematics and computing fundamentals." },
-  { k:'PO2', v:"Analyse computing problems and apply appropriate design and development techniques to arrive at solutions." },
-  { k:'PO3', v:"Recognize their role as a developer, technologist, and problem-solver in a computing-driven business environment." },
-  { k:'PO4', v:"Demonstrate effective communication by presenting technical ideas using critical thinking, analysis, and logical reasoning." },
-  { k:'PO5', v:"Practice professional responsibility and ethical standards in academic and workplace environments." },
+  { k:'PO1', v:"Computational Knowledge : Apply knowledge of computer science, mathematics, and information technology to develop efficient solutions for computing problems." },
+  { k:'PO2', v:"Problem Analysis : Identify, formulate, and analyze complex computing problems using logical reasoning, critical thinking, and appropriate computational techniques." },
+  { k:'PO3', v:"Software Development Skills : Design, develop, test, deploy, and maintain software applications using modern programming languages, frameworks, and industry-standard development practices." },
+  { k:'PO4', v:"Modern Technology and Digital Competence : Apply modern computing tools and emerging technologies, including cloud computing, artificial intelligence, cybersecurity, data privacy, data analytics, and database systems, to develop secure and effective computing solutions." },
+  { k:'PO5', v:"Communication and Teamwork : Communicate effectively with technical and non-technical stakeholders and work efficiently as an individual, team member, or leader in multidisciplinary environments." },
+  { k:'PO6', v:"Professional Ethics and Social Responsibility : Apply ethical principles, professional responsibilities, legal standards, and cybersecurity awareness while developing technology-driven solutions for societal and societal welfare." },
+  { k:'PO7', v:"Innovation, Research, and Lifelong Learning : Demonstrate innovation, problem-solving skills, basic research aptitude, and a commitment to lifelong learning for continuous professional development and adaptation to emerging technologies." },
+  { k:'PO8', v:"Leadership, Entrepreneurship, and Career Readiness : Exhibit leadership qualities, project management skills, entrepreneurial mindset, and professional competencies required for successful careers, higher education, and technology-driven ventures." },
 ];
 
 const PEO = [
@@ -121,7 +124,7 @@ export default function BCAGProgramDetails() {
               )}
               {active==='po' && (
                 <>
-                  <div className="cl-bcagpd-content-head"><div className="lbl">Programme Outcomes</div><h3>Program Outcomes</h3></div>
+                  <div className="cl-bcagpd-content-head"><div className="lbl">Program Outcomes</div><h3>Program Outcomes</h3></div>
                   <table className="cl-bcagpd-table">
                     <thead><tr><th>PO</th><th>Outcome</th></tr></thead>
                     <tbody>
@@ -132,7 +135,7 @@ export default function BCAGProgramDetails() {
               )}
               {active==='peo' && (
                 <>
-                  <div className="cl-bcagpd-content-head"><div className="lbl">Programme Educational Objectives</div><h3>Program Educational Objectives</h3></div>
+                  <div className="cl-bcagpd-content-head"><div className="lbl">Program Educational Objectives</div><h3>Program Educational Objectives</h3></div>
                   {PEO.map((p,i)=>(
                     <div key={i} className="cl-bcagpd-point">
                       <div className="cl-bcagpd-dot"/>

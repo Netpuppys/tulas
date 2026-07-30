@@ -23,7 +23,7 @@ const SECTIONS = [
   {
     id: 'peo',
     tag: 'Long-Term Graduate Goals',
-    title: 'Programme Educational Objectives',
+    title: 'Program Educational Objectives',
     points: [
       { title: 'PEO1 — AI Professionals',            desc: 'Produce AI and ML professionals capable of solving complex real-world problems through intelligent systems, data-driven solutions, and research.' },
       { title: 'PEO2 — Industry Leadership',         desc: 'Develop AI leaders who can drive AI initiatives across industries including healthcare, finance, retail, education, and government sectors.' },
@@ -34,7 +34,7 @@ const SECTIONS = [
   {
     id: 'po',
     tag: 'Graduate Competencies',
-    title: 'Programme Outcomes',
+    title: 'Program Outcomes',
     points: [
       { title: 'PO1', desc: 'Apply advanced AI, machine learning, and deep learning principles to design intelligent systems and applications.' },
       { title: 'PO2', desc: 'Critically evaluate AI models, datasets, and architectures to develop effective, scalable, and ethical AI solutions.' },
@@ -47,7 +47,7 @@ const SECTIONS = [
   {
     id: 'pso',
     tag: 'Specialised Competencies',
-    title: 'Programme Specific Outcomes',
+    title: 'Program Specific Outcomes',
     points: [
       { title: 'PSO1 — AI Engineering Competence',      desc: 'Develop enterprise-grade AI applications using machine learning, deep learning, generative AI, and modern AI frameworks including TensorFlow, PyTorch, and LangChain.' },
       { title: 'PSO2 — Data-Driven Research Thinking',  desc: 'Build and evaluate ML pipelines, conduct AI research, and create intelligent solutions that address business and societal challenges at scale.' },

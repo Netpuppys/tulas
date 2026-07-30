@@ -145,7 +145,7 @@ export default function MCAMLOverview() {
               </div>
             </div>
             <div>
-              <div className="cl-mmlo-eyebrow"><span className="bar" />School of Computing &amp; AI</div>
+              <div className="cl-mmlo-eyebrow"><span className="bar" />School of Computer Applications</div>
               <h2 className="cl-mmlo-h2">Where Technology Meets<br /><em>Intelligent Innovation</em></h2>
               <p className="cl-mmlo-lead">The MCA in Artificial Intelligence &amp; Machine Learning at Tulas is built for students who want to engineer the intelligence behind tomorrow's technology.</p>
               <p className="cl-mmlo-body">The programme combines advanced computer science with deep AI specialisation — covering machine learning, deep learning, generative AI, natural language processing, computer vision, MLOps, and cloud AI architecture. Students build real AI systems through live projects, research publications, and industry internships, graduating as AI engineers ready to lead in any technology environment.</p>

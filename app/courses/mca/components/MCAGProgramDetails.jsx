@@ -33,9 +33,9 @@ const PO = [
   { k:'PO1 · Foundation Knowledge',          v:'Apply knowledge of mathematics, programming logic and coding fundamentals for solution architecture and problem solving.' },
   { k:'PO2 · Problem Analysis',              v:'Identify, review, formulate and analyse problems primarily focussing on customer requirements using critical thinking frameworks.' },
   { k:'PO3 · Development of Solutions',      v:'Design, develop and investigate problems with an innovative approach for solutions incorporating ESG/SDG goals.' },
-  { k:'PO4 · Modern Tool Usage',             v:'Select, adapt and apply modern computational tools such as algorithm development with an understanding of limitations, including human biases.' },
-  { k:'PO5 · Individual and Teamwork',       v:'Function and communicate effectively as an individual or a team leader in diverse and multidisciplinary groups, using methodologies such as agile.' },
-  { k:'PO6 · Project Management and Finance',v:'Use the principles of project management such as scheduling and work breakdown structure, and be conversant with the principles of finance for profitable project management.' },
+  { k:'PO4 · Modern Tool Usage',             v:'Select, adapt and apply modern computational tools such as the development of algorithms with an understanding of the limitations including human biases.' },
+  { k:'PO5 · Individual and Teamwork',       v:'Function and communicate effectively as an individual or a team leader in diverse and multidisciplinary groups. Use methodologies such as agile.' },
+  { k:'PO6 · Project Management and Finance',v:'Use the principles of project management such as scheduling, work breakdown structure and be conversant with the principles of Finance for profitable project management.' },
   { k:'PO7 · Ethics',                        v:'Commit to professional ethics in managing software projects with financial aspects; learn to use new technologies for cyber security and insulate customers from malware.' },
   { k:'PO8 · Life-Long Learning',            v:'Change management skills and the ability to learn, keep up with contemporary technologies and ways of working.' },
 ];

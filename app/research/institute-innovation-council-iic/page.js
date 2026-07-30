@@ -17,7 +17,7 @@ import NewFooter from "@/component/NewFooter";
 function instituteInnovationCouncilIic() {
   const sections = [
     {
-      title: "Institute Innovation Council (IIC)",
+      title: "Institut.e's Innovation Council (IIC)",
       description: (
         <>
           The primary role of the IIC is to engage a large number of faculty,
@@ -102,7 +102,7 @@ function instituteInnovationCouncilIic() {
     <>
       <head>
         <title>
-          Institute Innovation Council (IIC) | Best Engineering College in
+          Institute. Innovation Council (IIC) | Best Engineering College in
           Dehradun, Uttarakhand | Tulas University
         </title>
         <meta
@@ -124,7 +124,7 @@ function instituteInnovationCouncilIic() {
             image={BannerImg}
             title={
               <>
-                Institute Innovation{" "}
+                Institut.e Innovation{" "}
                 <span className="text-[#f97316]">Council (IIC)</span>
               </>
             }

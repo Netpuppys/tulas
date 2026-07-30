@@ -167,7 +167,7 @@ export default function BCFSOverview() {
             </div>
 
             <div>
-              <div className="cl-bcfsov-eyebrow"><span className="bar" />School of Computing</div>
+              <div className="cl-bcfsov-eyebrow"><span className="bar" />School of Computer Applications</div>
               <h2 className="cl-bcfsov-h2">Where Code<br /><em>Meets Craft</em></h2>
               <p className="cl-bcfsov-lead">
                 The BCA Full Stack Development programme trains you to build real web products — not just study them.
