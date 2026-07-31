@@ -15,7 +15,6 @@ function BannerLandingPage({
   const { utmParams } = useContext(UtmContext);
   const pathname = usePathname();
 
-  // ✅ Compute the thank‑you URL based on change
   const thankYouUrl = change
     ? `${pathname}/thank-you/${utmParams}`   // current route + /thank-you/ + utmParams
     : `/department-of-engineering/btech/thank-you/${utmParams}`;
