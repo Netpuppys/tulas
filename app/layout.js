@@ -210,7 +210,7 @@ export default function RootLayout({ children }) {
           <UtmProvider>{children}</UtmProvider>
         </MobileProvider>
 
-          {/* <Script
+          <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -222,7 +222,7 @@ export default function RootLayout({ children }) {
     })(window, document, "clarity", "script", "pu9ur843jb");
             `,
           }}
-        /> */}
+        />
       </body>
     </html>
   );
