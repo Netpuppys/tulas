@@ -19,6 +19,7 @@ function BannerLandingPage({
   const thankYouUrl = change
     ? `${pathname}/thank-you/${utmParams}`   // current route + /thank-you/ + utmParams
     : `/department-of-engineering/btech/thank-you/${utmParams}`;
+console.log(title)
 
   return (
     <>
