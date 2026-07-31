@@ -1,6 +1,6 @@
-import React, { useRef, useContext } from "react";
+import React, { useRef, useContext, useMemo } from "react";
 import Image from "next/image";
-import { usePathname } from "next/navigation"; // ✅ import added
+import { usePathname } from "next/navigation";
 import LandingFormNew from "./LandingFormNew";
 import { UtmContext } from "@/component/utmParams";
 
@@ -15,10 +15,19 @@ function BannerLandingPage({
   const { utmParams } = useContext(UtmContext);
   const pathname = usePathname();
 
-  const thankYouUrl = change
-    ? `${pathname}/thank-you/${utmParams}`   // current route + /thank-you/ + utmParams
-    : `/department-of-engineering/btech/thank-you/${utmParams}`;
-console.log(title)
+  // ✅ Memoized and safe URL construction
+  const thankYouUrl = useMemo(() => {
+    // Ensure utmParams is a string and encode special characters
+    const safeParams = encodeURIComponent(utmParams || "");
+
+    if (change) {
+      // Remove trailing slash from pathname to prevent double slashes
+      const base = pathname?.endsWith("/") ? pathname.slice(0, -1) : pathname || "";
+      return `${base}/thank-you/${safeParams}`;
+    } else {
+      return `/department-of-engineering/btech/thank-you/${safeParams}`;
+    }
+  }, [pathname, utmParams, change]);
 
   return (
     <>
@@ -66,16 +75,14 @@ console.log(title)
           {/* Desktop Form Overlay */}
           <div
             className={`hidden ${
-              change
-                ? "bottom-[0%] -right-10 xl:flex"
-                : "inset-0 md:flex"
+              change ? "bottom-[0%] -right-10 xl:flex" : "inset-0 md:flex"
             } absolute items-center justify-end pr-0`}
           >
             <div className="w-[600px]">
               <LandingFormNew
                 course={3}
                 formHeading={"Start Your Btech Application"}
-                thankYOu={thankYouUrl} // ✅ using computed URL
+                thankYOu={thankYouUrl}
               />
             </div>
           </div>
@@ -83,14 +90,11 @@ console.log(title)
       </div>
 
       {/* Mobile Form */}
-      <div
-        ref={scrollRef}
-        className={`${change ? "xl:hidden" : "md:hidden"}`}
-      >
+      <div ref={scrollRef} className={`${change ? "xl:hidden" : "md:hidden"}`}>
         <LandingFormNew
           course={3}
           formHeading={"MBA Admissions Open 2026"}
-          thankYOu={thankYouUrl} // ✅ using computed URL
+          thankYOu={thankYouUrl}
         />
       </div>
     </>
