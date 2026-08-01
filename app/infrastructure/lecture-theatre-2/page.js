@@ -28,16 +28,7 @@ function LectureTheater() {
   const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
-      <head>
-        <title>
-          Lecture Theatre of Tulas Dehradun,Uttarakhand |Top College Dehradun
-        </title>
-        <meta
-          name="description"
-          content="Tulas is one of the best b.tech college in Uttarakhand, Dehradun. 100% placements records."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -75,7 +66,7 @@ function LectureTheater() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

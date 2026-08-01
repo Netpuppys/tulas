@@ -163,17 +163,7 @@ function Feedback() {
   ];
   return (
     <>
-      <head>
-        <title>
-          Feedback | Best Engineering College in Dehradun, Uttarakhand | Tulas
-          University
-        </title>
-        <meta
-          name="description"
-          content="We value your feedback at Tulas University, Dehradun. Share your thoughts and suggestions to help us improve and continue providing top-quality education and student support. Your feedback matters to us."
-        />
-      </head>
-      <body>
+
         <Navbar />
         <Banner
           image={BannerImg}
@@ -214,7 +204,7 @@ function Feedback() {
         <div className="w-full h-fit z-50">
           <Footer />
         </div>
-      </body>
+      
     </>
   );
 }

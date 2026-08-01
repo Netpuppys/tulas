@@ -92,17 +92,7 @@ function RAndCell() {
 
   return (
     <>
-      <head>
-        <title>
-          Research and Development (R&D) Cell | Best Engineering College in
-          Dehradun, Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="The R&D Cell at Tulas University fosters cutting-edge research across various disciplines. It supports faculty in securing research grants and encourages publication in reputed journals. Explore funded projects, journal and conference publications, and organized conferences."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -152,7 +142,7 @@ function RAndCell() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

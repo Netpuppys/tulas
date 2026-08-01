@@ -33,14 +33,7 @@ import NewFooter from "@/component/NewFooter";
 function BPharma() {
   return (
     <>
-      <head>
-        <title>Bachelor of Pharmacy (B. Pharm) in Dehradun</title>
-        <meta
-          name="description"
-          content="Register Now! & Become a part of the best BJMC College in Dehradun. Tula's Institute has been awarded as the best Engineering & Management College in North India."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -91,7 +84,7 @@ function BPharma() {
         <TopRecruiter />
 
         <NewFooter />
-      </body>
+      
     </>
   );
 }

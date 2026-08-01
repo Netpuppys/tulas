@@ -169,17 +169,7 @@ function Sports() {
 
   return (
     <>
-      <head>
-        <title>
-          Sports | Best Engineering College in Dehradun, Uttarakhand | Tulas
-          University
-        </title>
-        <meta
-          name="description"
-          content="Discover the vibrant sports culture at Tulas University, offering state-of-the-art facilities and opportunities for students to excel in various sports and physical activities."
-        />
-      </head>
-      <body>
+
         <div
           // ref={parentRef}
           className="w-full h-fit overflow-x-hidden"
@@ -401,7 +391,7 @@ function Sports() {
           </div>
         </div>
         <NewFooter/>
-      </body>
+      
     </>
   );
 }

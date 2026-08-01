@@ -250,14 +250,7 @@ const AdmissionOpenPage = () => {
 
   return (
     <>
-      <head>
-        <title>Tula's Institute is best to pursue a career in MBA</title>
-        <meta
-          name="description"
-          content="Join Tula's Institute. Excel in MBA and more with industry-focused programs and dedicated faculty. Become a future leader today"
-        />
-      </head>
-      <body>
+
         <div className="w-full min-h-screen h-full relative">
           {/* Navbar */}
           <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} />
@@ -370,7 +363,7 @@ const AdmissionOpenPage = () => {
             </button>
           )}
         </div>
-      </body>
+      
     </>
   );
 };

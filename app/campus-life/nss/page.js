@@ -14,17 +14,7 @@ import NewFooter from "@/component/NewFooter";
 function NSS() {
   return (
     <>
-      <head>
-        <title>
-          NSS at Tulas | Fostering Social Responsibility & Community
-          Service
-        </title>
-        <meta
-          name="description"
-          content="Join the National Service Scheme (NSS) at Tulas, where students engage in impactful community service initiatives. From cleanliness drives and blood donation camps to GreenX sustainability projects, our NSS club fosters leadership, teamwork, and a commitment to societal welfare."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -96,7 +86,7 @@ function NSS() {
         <div className="w-full h-fit z-50">
           <NewFooter />
         </div>
-      </body>
+      
     </>
   );
 }

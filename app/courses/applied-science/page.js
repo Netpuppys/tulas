@@ -33,17 +33,7 @@ import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
-      <head>
-        <title>
-          Department of Applied Sciences & Humanities | Best Engineering College
-          in Dehradun, Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the Department of Applied Sciences & Humanities at Tulas University, the leading engineering college in Dehradun, Uttarakhand. Learn about our innovative programs, research opportunities, and dedicated faculty."
-        />
-      </head>
-      <body>
+
         <div className="hidden md:block">
           <MegaMenu />
         </div>
@@ -81,7 +71,7 @@ function BAJMC() {
         <PlacementProgram features={features} />
         <TopRecruiter />
         <NewFooter/>
-      </body>
+      
     </>
   );
 }

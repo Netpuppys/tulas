@@ -18,9 +18,12 @@ import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
 
 export const metadata = {
-  title: "Campus Life | Tula's Institute, Dehradun",
+  title: "Campus Life | Tulas University, Dehradun",
   description:
-    "Experience campus life at Tulas Institute — 1,000+ events, 50+ celebrity visits, 11 student clubs, DIFF, Sanskriti, Utkrisht, and 7,000+ alumni stories.",
+    "Experience campus life at Tulas University — 1,000+ events, 50+ celebrity visits, 11 student clubs, DIFF, Sanskriti, Utkrisht, and 7,000+ alumni stories.",
+  alternates: {
+    canonical: "https://tulas.edu.in/tulas-campus-life/",
+  },
 };
 
 export default function CampusLifePage() {

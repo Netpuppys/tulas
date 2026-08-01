@@ -33,16 +33,7 @@ import NewFooter from "@/component/NewFooter";
 function BBA() {
   return (
     <>
-      <head>
-        <title>
-          Best BBA College in Dehradun, Uttarakhand | Tulas
-        </title>
-        <meta
-          name="description"
-          content="Tulas is the Best BBA College in Dehradun, Uttarakhand, Tulas is the Top BBA College in all over Uttarakhand 100% placements record in top-level MNC companies, for more info call on admission helpline."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
           <MegaMenu />
@@ -84,7 +75,7 @@ function BBA() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

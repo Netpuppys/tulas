@@ -5,6 +5,7 @@ import { FiMinus, FiPlus } from "react-icons/fi";
 import "../Component/NavbarMobile.css";
 import Link from "next/link";
 import QuickLinks from "./QuickLinks";
+import { buildHref } from "@/component/utmParams";
 function NavbarMobile({ isChecked, utmParams }) {
   const [showSubHeaders, setShowSubHeaders] = useState();
   const [showSubSubHeaders, setShowSubSubHeaders] = useState();
@@ -24,7 +25,7 @@ function NavbarMobile({ isChecked, utmParams }) {
               <Link
                 className="site-map-link"
                 href={
-                  item.target ? `${item.linkTo}` : `${item.linkTo}/${utmParams}`
+                  item.target ? `${item.linkTo}` : buildHref(item.linkTo, utmParams)
                 }
                 target={item.target ? "_blank" : ""}
                 rel={
@@ -81,7 +82,7 @@ function NavbarMobile({ isChecked, utmParams }) {
                         href={
                           subItem.target
                             ? `${subItem.linkTo}`
-                            : `${subItem.linkTo}/${utmParams}`
+                            : buildHref(subItem.linkTo, utmParams)
                         }
                         target={subItem.target ? "_blank" : ""}
                         rel={
@@ -144,7 +145,7 @@ function NavbarMobile({ isChecked, utmParams }) {
                                 href={
                                   subsubItem.target
                                     ? `${subsubItem.linkTo}`
-                                    : `${subsubItem.linkTo}/${utmParams}`
+                                    : buildHref(subsubItem.linkTo, utmParams)
                                 }
                                 target={subsubItem.target ? "_blank" : ""}
                                 rel={
@@ -208,7 +209,7 @@ function NavbarMobile({ isChecked, utmParams }) {
                                       href={
                                         subsubsubItem.target
                                           ? `${subsubsubItem.linkTo}`
-                                          : `${subsubsubItem.linkTo}/${utmParams}`
+                                          : buildHref(subsubsubItem.linkTo, utmParams)
                                       }
                                       target={
                                         subsubsubItem.target ? "_blank" : ""

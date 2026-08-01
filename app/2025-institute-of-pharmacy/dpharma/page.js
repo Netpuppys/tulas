@@ -115,14 +115,7 @@ const page = () => {
     "D.Pharm. at Tula’s Institute is where your journey into healthcare begins—with hands-on skills";
   return (
     <>
-      <head>
-        <title>Tula's Institute is best to pursue a career in MBA</title>
-        <meta
-          name="description"
-          content="Join Tula's Institute. Excel in MBA and more with industry-focused programs and dedicated faculty. Become a future leader today"
-        />
-      </head>
-      <body>
+
         <div className="w-full min-h-screen h-full relative">
           {/* Navbar */}
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
@@ -212,7 +205,7 @@ Don’t miss your chance—D Pharma admission 2025 at Tula's Institute is your g
             </button>
           )}
         </div>
-      </body>
+      
     </>
   );
 };

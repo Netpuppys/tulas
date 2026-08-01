@@ -76,17 +76,7 @@ function Research() {
 
   return (
     <>
-      <head>
-        <title>
-          Research | Best Engineering College in Dehradun, Uttarakhand | Tulas
-          University
-        </title>
-        <meta
-          name="description"
-          content="Explore cutting-edge research initiatives at Tulas University, a leading engineering college in Dehradun. Our research programs foster innovation and contribute to technological advancements in various fields."
-        />
-      </head>
-      <body>
+
         <div className="hidden md:block">
           <MegaMenu />
         </div>
@@ -137,7 +127,7 @@ function Research() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

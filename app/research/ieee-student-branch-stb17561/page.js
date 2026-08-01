@@ -14,17 +14,7 @@ import NewFooter from "@/component/NewFooter";
 function IICEvents() {
   return (
     <>
-      <head>
-        <title>
-          IEEE Student Branch (STB17561) | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Discover the IEEE Student Branch at Tulas University, a platform for innovation and technological excellence. The branch organizes workshops, talks, and events to bridge the gap between academia and industry, fostering skill development and networking opportunities for students."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -88,7 +78,7 @@ function IICEvents() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

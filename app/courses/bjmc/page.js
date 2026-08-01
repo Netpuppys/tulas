@@ -39,16 +39,7 @@ import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
-      <head>
-        <title>
-          B.J.M.C (Bachelor of Journalism & Mass Communications) in Dehradun
-        </title>
-        <meta
-          name="description"
-          content="Register Now! & Become a part of the best BJMC College in Dehradun. Tulas has been awarded as the best Engineering & Management College in North India."
-        />
-      </head>
-      <body>
+
           {/* <Navbar /> */}
           <div className="hidden md:block">
   <MegaMenu />
@@ -103,7 +94,7 @@ function BAJMC() {
             background={exploreCrouselBackground}
           />
           <NewFooter />
-      </body>
+      
     </>
   );
 }

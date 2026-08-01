@@ -174,14 +174,7 @@ const WhyTulas = () => {
   const parentRef = useRef(null);
   return (
     <>
-      <head>
-        <title>Top Engineering college in Dehradun, Uttarakhand</title>
-        <meta
-          name="description"
-          content="Tulas University, Best engineering institute in Dehradun Uttarakhand, is North Indiaâ€™s fastest growing private college with best placement records."
-        />
-      </head>
-      <body>
+
         <div
           ref={parentRef}
           className="w-full min-h-screen"
@@ -218,10 +211,7 @@ const WhyTulas = () => {
             <WhyTulasScroll parentRef={parentRef} />
           </div> */}
 
-
           <AboutWhyChoose/>
-
-
 
           {/* <Vision sections={sectionData.slice(0, 4)} /> */}
           <div className="w-full h-full relative z-50 bg-white py-8 md:py-20 flex flex-col items-center justify-center">
@@ -248,7 +238,7 @@ const WhyTulas = () => {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 };

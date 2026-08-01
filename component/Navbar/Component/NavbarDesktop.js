@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { FiPlus, FiX } from "react-icons/fi";
 import Link from "next/link";
 import QuickLinks from "./QuickLinks";
+import { buildHref } from "@/component/utmParams";
 
 function NavbarDesktop({
   isChecked,
@@ -105,7 +106,7 @@ function NavbarDesktop({
                           href={
                             item.target
                               ? `${item.linkTo}`
-                              : `${item.linkTo}${utmParams}`
+                              : buildHref(item.linkTo, utmParams)
                           }
                           target={item.target ? "_blank" : ""}
                           rel={
@@ -179,7 +180,7 @@ function NavbarDesktop({
                     href={
                       nestedLinks.target
                         ? `${nestedLinks.linkTo}`
-                        : `${nestedLinks.linkTo}/${utmParams}`
+                        : buildHref(nestedLinks.linkTo, utmParams)
                     }
                     target={nestedLinks.target ? "_blank" : ""}
                     rel={
@@ -205,7 +206,7 @@ function NavbarDesktop({
                           href={
                             nestedLinks.target
                               ? `${nestedLinks.linkTo}`
-                              : `${nestedLinks.linkTo}/${utmParams}`
+                              : buildHref(nestedLinks.linkTo, utmParams)
                           }
                           target={nestedLinks.target ? "_blank" : ""}
                           rel={
@@ -264,7 +265,7 @@ function NavbarDesktop({
                             href={
                               superNestedLinks.target
                                 ? `${superNestedLinks.linkTo}`
-                                : `${superNestedLinks.linkTo}/${utmParams}`
+                                : buildHref(superNestedLinks.linkTo, utmParams)
                             }
                             target={superNestedLinks.target ? "_blank" : ""}
                             rel={
@@ -290,7 +291,7 @@ function NavbarDesktop({
                                   href={
                                     superNestedLinks.target
                                       ? `${superNestedLinks.linkTo}`
-                                      : `${superNestedLinks.linkTo}/${utmParams}`
+                                      : buildHref(superNestedLinks.linkTo, utmParams)
                                   }
                                   target={
                                     superNestedLinks.target ? "_blank" : ""
@@ -353,7 +354,7 @@ function NavbarDesktop({
                                     href={
                                       thirdNestedLinks.target
                                         ? `${thirdNestedLinks.linkTo}`
-                                        : `${thirdNestedLinks.linkTo}/${utmParams}`
+                                        : buildHref(thirdNestedLinks.linkTo, utmParams)
                                     }
                                     target={
                                       thirdNestedLinks.target ? "_blank" : ""
@@ -382,7 +383,7 @@ function NavbarDesktop({
                                       href={
                                         thirdNestedLinks.target
                                           ? `${thirdNestedLinks.linkTo}`
-                                          : `${thirdNestedLinks.linkTo}/${utmParams}`
+                                          : buildHref(thirdNestedLinks.linkTo, utmParams)
                                       }
                                       target={
                                         thirdNestedLinks.target ? "_blank" : ""

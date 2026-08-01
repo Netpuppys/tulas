@@ -37,16 +37,7 @@ import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
-      <head>
-        <title>
-          Best EEE Engineering College in Dehradun | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Tulas University is one of the best EEE Colleges in Dehradun with a good campus placement record in Electrical and Electronics Engg, the Best engineering college in Dehradun, for students applying for both undergraduate and post-graduate programs."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -93,7 +84,7 @@ function BAJMC() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

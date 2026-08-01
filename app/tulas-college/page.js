@@ -21,16 +21,7 @@ function TulasUniversity() {
   ];
   return (
     <>
-      <head>
-        <title>
-          Tula's College | Best Engineering College in Dehradun, Uttarakhand
-        </title>
-        <meta
-          name="description"
-          content="Explore Tula's University, Dehradun, showcasing our dedication to quality education and academic standards. Learn about our commitment to continuous improvement and excellence in higher education."
-        />
-      </head>
-      <body>
+
         <Navbar />
               <div className="h-[85vh] md:h-[100vh] w-full relative">
                 <Image
@@ -67,7 +58,7 @@ function TulasUniversity() {
         <div className="w-full h-fit z-50">
           <Footer />
         </div>
-      </body>
+      
     </>
   );
 }

@@ -3,12 +3,18 @@ import HomePage from "./HomePage";
 import NewHomePage from "./NewHomePage";
 
 export const metadata = {
-  title: "Tulas University in Dehradun, Uttarakhand | Admission Open 2026 | Tulas University",
+  title: "Tulas University, Dehradun, Uttarakhand | Admissions Open 2026",
   description:
-    "Tulas University is a leading University in Dehradun, Uttarakhand, known for academic excellence, modern infrastructure and strong placement outcomes. UGC Approved and NAAC A+ Accredited",
+    "Tulas University, Dehradun is UGC approved and NAAC A+ accredited. Study B.Tech, MBA, BBA, BCA, MCA, B.Pharm, LLB and B.Sc Agriculture. Admissions 2026 open.",
   alternates: {
-    canonical:
-      "https://tulas.edu.in/",
+    canonical: "https://tulas.edu.in/",
+  },
+  openGraph: {
+    title: "Tulas University, Dehradun, Uttarakhand | Admissions Open 2026",
+    description:
+      "Tulas University, Dehradun is UGC approved and NAAC A+ accredited. Study B.Tech, MBA, BBA, BCA, MCA, B.Pharm, LLB and B.Sc Agriculture. Admissions 2026 open.",
+    url: "https://tulas.edu.in/",
+    type: "website",
   },
 };
 export default function Home() {

@@ -48,17 +48,7 @@ function Celebrities() {
 
   return (
     <>
-      <head>
-        <title>
-          Celebrities at Tulas University | Film Festivals, Star Nights & Talk
-          Shows
-        </title>
-        <meta
-          name="description"
-          content="Experience the excitement of celebrity events at Tulas University, Dehradun's top engineering college. From the Dehradun International Film Festival to Star Nights and exclusive talk shows, our campus comes alive with inspiring encounters with Bollywood stars, directors, and performers."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
           <MegaMenu />
@@ -126,7 +116,7 @@ function Celebrities() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

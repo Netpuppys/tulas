@@ -39,16 +39,7 @@ import NewFooter from "@/component/NewFooter";
 function MBA() {
   return (
     <>
-      <head>
-        <title>
-          Best MBA College in Dehradun, Uttarakhand | Tulas
-        </title>
-        <meta
-          name="description"
-          content="Tulas is leading in Best MBA College in Dehradun. We are recognized as Top private MBA College in Dehradun. We have rated best Management and top B Schools of Dehradun India is looking for."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -102,7 +93,7 @@ function MBA() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

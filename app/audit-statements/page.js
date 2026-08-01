@@ -21,17 +21,7 @@ function AuditStatement() {
   ];
   return (
     <>
-      <head>
-        <title>
-          Audited Statements | Best Engineering College in Dehradun, Uttarakhand
-          | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Review the audited financial statements of Tulas University, Dehradun’s leading engineering college. Gain transparency into our financial health, resource allocation, and commitment to quality education and infrastructure. Explore our dedication to accountability and excellence."
-        />
-      </head>
-      <body>
+
         <Navbar />
         <Banner
           image={BannerImg}
@@ -68,7 +58,7 @@ function AuditStatement() {
         <div className="w-full h-fit z-50">
           <Footer color={true} />
         </div>
-      </body>
+      
     </>
   );
 }

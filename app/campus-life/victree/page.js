@@ -83,14 +83,7 @@ function Victree() {
   ];
   return (
     <>
-      <head>
-        <title>Victree - Sports Club at Tulas, Dehradun</title>
-        <meta
-          name="description"
-          content="Join Victree, the dynamic sports club at Tulas, Dehradun. Explore a wide range of indoor and outdoor games like Table Tennis, Badminton, Football, and more, promoting fitness, teamwork, and sportsmanship on campus."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -161,7 +154,7 @@ function Victree() {
         <div className="w-full h-fit z-50">
           <NewFooter />
         </div>
-      </body>
+      
     </>
   );
 }

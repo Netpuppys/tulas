@@ -37,16 +37,7 @@ import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
-      <head>
-        <title>
-          Best Civil Engineering Colleges in Dehradun | Best B.Tech College
-        </title>
-        <meta
-          name="description"
-          content="Tulas is a reputed Best Civil Engineering Colleges in Dehradun Uttarakhand. Department of Civil Engineering has evolved a comprehensive student-centric learning approach."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -89,7 +80,7 @@ function BAJMC() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

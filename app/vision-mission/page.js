@@ -49,16 +49,7 @@ function VisionAndMission() {
   ];
   return (
     <>
-      <head>
-        <title>
-          University's Vision & Mission | Excellence in Education & Innovation
-        </title>
-        <meta
-          name="description"
-          content="Discover the vision and mission of our University, dedicated to producing world-class professionals, fostering innovation, and promoting research. Learn how we strive for academic excellence, diversity, and technology-driven education."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -72,7 +63,7 @@ function VisionAndMission() {
           <Vision color={true} sections={sections} />
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

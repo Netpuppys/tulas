@@ -58,7 +58,6 @@ import mbaimg4 from "../../../public/graduate-school-of-business-v2/mba/tulassta
 import mbaimg5 from "../../../public/graduate-school-of-business-v2/mba/tulasstat3.png";
 import mbaimg6 from "../../../public/graduate-school-of-business-v2/mba/tulasstat4.png";
 
-
 import LandingReadmore from "../Component/LandingReadmore";
 import LandingAccredition from "../Component/LandingAccredition";
 import LandingAdmissionEligibility from "../Component/LandingAdmissionEligibility";
@@ -232,17 +231,9 @@ const placementSlides = [
   },
 ];
 
-
   return (
     <>
-      <head>
-        <title>Tula's Institute is best to pursue a career in BCA </title>
-        <meta
-          name="description"
-          content="Join Tula's Institute. Excel in MBA and more with industry-focused programs and dedicated faculty. Become a future leader today"
-        />
-      </head>
-      <body>
+
         <div className="w-full min-h-screen h-full relative">
           {/* Navbar */}
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
@@ -272,7 +263,6 @@ const placementSlides = [
           <LandingWhyTulas/>
 
     <LandingPerks perksSlides={placementSlides} />
-
 
           <LandingAccordianSpecialization/>
 
@@ -330,7 +320,7 @@ const placementSlides = [
             </button>
           )}
         </div>
-      </body>
+      
     </>
   );
 };

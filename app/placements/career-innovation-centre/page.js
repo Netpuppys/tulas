@@ -37,7 +37,6 @@ import leader8 from "/public/placement-team/leader8.png";
 import leader9 from "/public/placement-team/leader9.png";
 import leader10 from "/public/placement-team/leader10.png";
 
-
 import TopRecruiters from "@/app/about-backup/Components/TopRecruiters";
 
 import {
@@ -188,22 +187,12 @@ const stepsData = [
   },
 ];
 
-
 // Our mission is to foster a forward-thinking approach to career growth by integrating cutting-edge tools, personalized guidance, and industry connections."
 
 const page = () => {
   return (
     <>
-      <head>
-        <title>
-          Career Innovation Centre | Tulas University | Shaping Future Leaders
-        </title>
-        <meta
-          name="description"
-          content="Discover the Career Innovation Centre at Tulas University, where students are empowered with career planning, skills development, and industry connections to excel in their chosen fields."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -252,7 +241,6 @@ const page = () => {
 
         </div>
 
-
 <div className="bg-white py-5">
   <div className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-6">
     {newstats.map((item, idx) => (
@@ -276,7 +264,6 @@ const page = () => {
   <span className="font-light text-[#000000]">Hire Our Talented Students</span>
 </h2>
 
-
     <HallFame features={features}/>
 
     <TopRecruiters/>
@@ -292,13 +279,11 @@ const page = () => {
     <YouTubeEmbed/>
 
     <PlacementDrive/>
-    
-
 
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 };

@@ -49,16 +49,7 @@ function NCC() {
   const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
-      <head>
-        <title>
-          NCC at Tulas | Building Leadership & Patriotism
-        </title>
-        <meta
-          name="description"
-          content="Explore the National Cadet Corps (NCC) at Tulas, Dehradun’s leading engineering college. Our NCC program fosters leadership, patriotism, and resilience through physical training, drills, and community service. Join us to build character and gain invaluable life skills in service to the nation."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -122,7 +113,7 @@ function NCC() {
         <div className="w-full h-fit z-50">
           <NewFooter />
         </div>
-      </body>
+      
     </>
   );
 }

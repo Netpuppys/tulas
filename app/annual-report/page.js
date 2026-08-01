@@ -21,17 +21,7 @@ function AnnualReport() {
   ];
   return (
     <>
-      <head>
-        <title>
-          Annual Report | Best Engineering College in Dehradun, Uttarakhand |
-          Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the Annual Report of Tulas University, the best engineering college in Dehradun, Uttarakhand. Gain insights into our academic achievements, research initiatives, student accomplishments, and community impact. Discover our commitment to excellence in engineering education."
-        />
-      </head>
-      <body>
+
         <Navbar />
         <Banner
           image={BannerImg}
@@ -66,7 +56,7 @@ function AnnualReport() {
         <div className="w-full h-fit z-50">
           <Footer />
         </div>
-      </body>
+      
     </>
   );
 }

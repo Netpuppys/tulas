@@ -131,16 +131,7 @@ const description = (
 const page = () => {
   return (
     <>
-      <head>
-        <title>
-          Career Innovation Centre | Tula's Institute | Shaping Future Leaders
-        </title>
-        <meta
-          name="description"
-          content="Discover the Career Innovation Centre at Tula's Institute, where students are empowered with career planning, skills development, and industry connections to excel in their chosen fields."
-        />
-      </head>
-      <body>
+
         <Navbar />
         <BannerProgram title={"Placement at Tula’s"} image={bannerImage} />
         <div className="w-full bg-white">
@@ -157,7 +148,7 @@ const page = () => {
         <div className="w-full h-fit z-50">
           <Footer />
         </div>
-      </body>
+      
     </>
   );
 };

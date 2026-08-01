@@ -30,16 +30,7 @@ import NewFooter from "@/component/NewFooter";
 function BSCAgriculture() {
   return (
     <>
-      <head>
-        <title>
-          Diploma in Mechanical Engineering in Dehradun | Tulas 
-        </title>
-        <meta
-          name="description"
-          content="We offer 3 Years Diploma course in Mechanical Engineering through creative and comprehensive education in Dehradun, Uttarakhand."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -71,7 +62,7 @@ function BSCAgriculture() {
         <PlacementProgram features={features} />
         <TopRecruiter />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

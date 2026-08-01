@@ -15,17 +15,7 @@ import CustomiFrame from "./data/iFrame";
 function RAndDFunded() {
   return (
     <>
-      <head>
-        <title>
-          Funded Research Projects | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Discover the funded research projects at Tulas University, supporting innovative research and academic excellence in various fields of engineering and technology."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -79,7 +69,7 @@ function RAndDFunded() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

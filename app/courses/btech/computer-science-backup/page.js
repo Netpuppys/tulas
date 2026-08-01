@@ -42,17 +42,7 @@ const sideImages = [contentLeft, contentRight];
 function page() {
   return (
     <>
-      <head>
-        <title>
-          Best Computer Science Engineering College in Dehradun | Tula's
-          Institute
-        </title>
-        <meta
-          name="description"
-          content="Tula's Institute is the Best Computer Science Engineering College in Dehradun for students who are applying for both undergraduate and post-graduate programs Tula's offers vast knowledge in the field of computer science to produce quality engineers graduates who can solve real-time problems."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -109,7 +99,7 @@ function page() {
           color={true}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

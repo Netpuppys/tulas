@@ -35,14 +35,7 @@ function Auditorium() {
   const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
-      <head>
-        <title>Tulas | Biggest Auditorium in Dehradun,Uttarakhand</title>
-        <meta
-          name="description"
-          content="The Tulas University provides computerised library, auditorium having a 500 seating capacity, Microsoft innovation centre, computer centre."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -80,7 +73,7 @@ function Auditorium() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

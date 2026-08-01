@@ -61,7 +61,6 @@ import MegaMenu from "@/component/Navbar/MegaMenu";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import NewFooter from "@/component/NewFooter";
 
-
 const page = () => {
   useLayoutEffect(() => {
     const loadScriptAndStyles = () => {
@@ -302,14 +301,7 @@ const page = () => {
   ];
   return (
     <>
-      <head>
-        <title>Tulas University, Dehradun, Uttrakhand, India</title>
-        <meta
-          name="description"
-          content="Apply for Btech, Mtech, Bba, Mba, Bca, Mca, Diploma in Best Engineering College in Dehradun.Tulas University, Dehradun, Uttrakhand, India' 9837983721."
-        />
-      </head>
-      <body>
+
         {/* <NavbarLanding handleScrollArrow={handleScrollArrow} nba={true} /> */}
         <div className="hidden md:block">
                                   <MegaMenu />
@@ -320,7 +312,6 @@ const page = () => {
                                 </div>
 
                                                       <ApplyBanner/>
-
 
                         <section className="w-full pt-[120px] md:pt-10 pb-6 bg-white flex justify-center">
                 <div className="w-full max-w-6xl px-3">
@@ -396,7 +387,6 @@ const page = () => {
   </p>
 </div>
 
-
 {/* 
           <div className="py-8 md:py-[4%] bg-transparent overflow-hidden px-8 md:px-0 w-full h-fit flex gap-8 md:gap-0 flex-col items-center justify-between">
             {sections.map((section, index) => {
@@ -442,7 +432,6 @@ const page = () => {
               );
             })}
           </div> */}
-
 
           {/* <CarouselContent section={false} /> */}
           {/* Cutting Edge */}
@@ -506,7 +495,7 @@ const page = () => {
             </button>
           )} */}
         </div>
-      </body>
+      
     </>
   );
 };

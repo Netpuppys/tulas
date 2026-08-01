@@ -43,17 +43,7 @@ const sideImages = [
 function page() {
   return (
     <>
-      <head>
-        <title>
-          Best Computer Science & Engineering( Artificial Intelligence and
-          Machine Learning) College in Dehradun, Uttarakhand | Tulas 
-        </title>
-        <meta
-          name="description"
-          content="Tulas Is the Best Computer Science & Engineering( Artificial Intelligence and Machine Learning) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (artificial Intelligence and Machine Learning) for Aspiring Professionals. Visit Now!"
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -106,7 +96,7 @@ function page() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

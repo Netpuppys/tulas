@@ -37,17 +37,7 @@ import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
-      <head>
-        <title>
-          Electronics and Communication Engg College in Dehradun | Tulas
-          
-        </title>
-        <meta
-          name="description"
-          content="Tulas is a reputed Electronics & Communication Engg in Dehradun, India with an outstanding campus placement record in ECE, Tulas offers a wide variety of courses to choose from and is ranked among the top Engineering Colleges in Dehradun."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -96,7 +86,7 @@ function BAJMC() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

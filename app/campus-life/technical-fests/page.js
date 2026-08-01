@@ -52,14 +52,7 @@ function TechnicalFest() {
   ];
   return (
     <>
-      <head>
-        <title>Technical Fests - Utkrisht at Tulas University, Dehradun</title>
-        <meta
-          name="description"
-          content="Join the excitement of Utkrisht, Tulas University annual technical fest. Engage in robot wars, coding competitions, technical quizzes, and more. A platform for students to showcase innovative projects, learn from experts, and explore cutting-edge technologies."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -92,7 +85,7 @@ function TechnicalFest() {
         <div className="w-full h-fit z-50">
           <NewFooter />
         </div>
-      </body>
+      
     </>
   );
 }

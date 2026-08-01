@@ -84,17 +84,7 @@ function AICTEIDEALAB() {
   ];
   return (
     <>
-      <head>
-        <title>
-          AICTE IDEA Lab | Best Engineering College in Dehradun, Uttarakhand |
-          Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the AICTE IDEA Lab at Tulas University, fostering innovation and skills in web technologies through collaborative projects, workshops, and expert guidance."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -150,12 +140,11 @@ function AICTEIDEALAB() {
 
 </div>
 
-
           <div className="w-full h-fit z-50">
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

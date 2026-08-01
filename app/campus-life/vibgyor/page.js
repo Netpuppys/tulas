@@ -93,14 +93,7 @@ function Vibgyor() {
   ];
   return (
     <>
-      <head>
-        <title>Vibgyor - Student Council at Tulas, Dehradun</title>
-        <meta
-          name="description"
-          content="Explore Vibgyor, the dynamic student council at Tulas, Dehradun. Discover 11 diverse clubs like Footloose, Sargam, and Technocrats, fostering talent and creativity across campus through vibrant events and activities."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -167,7 +160,7 @@ function Vibgyor() {
         <div className="w-full h-fit z-50">
           <NewFooter />
         </div>
-      </body>
+      
     </>
   );
 }

@@ -63,7 +63,6 @@ import mbaimg4 from "./../../public/graduate-school-of-business-v2/mba/tulasstat
 import mbaimg5 from "./../../public/graduate-school-of-business-v2/mba/tulasstat3.png";
 import mbaimg6 from "./../../public/graduate-school-of-business-v2/mba/tulasstat4.png";
 
-
 import LandingReadmore from "./Component/LandingReadmore";
 import LandingAccredition from "./Component/LandingAccredition";
 import LandingAdmissionEligibility from "./Component/LandingAdmissionEligibility";
@@ -239,17 +238,9 @@ const placementSlides = [
   },
 ];
 
-
   return (
     <>
-      <head>
-        <title>Best Engineering College in Dehradun, India | Tulas University</title>
-        <meta
-          name="description"
-          content="At Tulas, a future-focused curriculum blends industry relevance, AI-driven learning, and innovation-led thinking"
-        />
-      </head>
-      <body>
+
         <div className="w-full min-h-screen h-full relative">
           {/* Navbar */}
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
@@ -340,7 +331,7 @@ const placementSlides = [
             </button>
           )}
         </div>
-      </body>
+      
     </>
   );
 };

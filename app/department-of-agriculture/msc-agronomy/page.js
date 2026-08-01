@@ -63,7 +63,6 @@ import mbaimg4 from "../../../public/graduate-school-of-business-v2/mba/tulassta
 import mbaimg5 from "../../../public/graduate-school-of-business-v2/mba/tulasstat3.png";
 import mbaimg6 from "../../../public/graduate-school-of-business-v2/mba/tulasstat4.png";
 
-
 import LandingReadmore from "../Component/LandingReadmore";
 import LandingAccredition from "../Component/LandingAccredition";
 import LandingAdmissionEligibility from "../Component/LandingAdmissionEligibility";
@@ -81,7 +80,6 @@ import LandingBusinessSchool from "../Component/LandingBusinessSchool";
 import LandingWhyTulas from "../Component/LandingWhyTulas";
 import LandingEligibilitySection from "../Component/LandingEligibilitySection";
 import LandingAccordianSpecialization from "../Component/LandingAccordianSpecialization";
-
 
 // images
 const page = () => {
@@ -238,17 +236,9 @@ const placementSlides = [
   },
 ];
 
-
   return (
     <>
-      <head>
-        <title>Tulas University is best to pursue a career in M.Sc Agronomy</title>
-        <meta
-          name="description"
-          content="Join Tulas University. Excel in M.Sc Agronomy and more with industry-focused programs and dedicated faculty. Become a future leader today"
-        />
-      </head>
-      <body>
+
         <div className="w-full min-h-screen h-full relative">
           {/* Navbar */}
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
@@ -278,7 +268,6 @@ const placementSlides = [
           <LandingWhyTulas/>
 
     <LandingPerks perksSlides={placementSlides} />
-
 
           <LandingAccordianSpecialization/>
 
@@ -336,7 +325,7 @@ const placementSlides = [
             </button>
           )}
         </div>
-      </body>
+      
     </>
   );
 };

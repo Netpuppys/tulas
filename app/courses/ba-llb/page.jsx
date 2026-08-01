@@ -1,11 +1,16 @@
 import Ballbpage from './Ballbpage'
 
 export const metadata = {
-  title: "Tulas University in Dehradun, Uttarakhand | BA LLB | Tulas University",
-  description:
-    "Tulas University is a leading university in Dehradun, Uttarakhand, known for academic excellence, modern infrastructure and strong placement outcomes. UGC Approved and NAAC A+ Accredited",
+  title: "BA LLB in Dehradun | 5 Year Integrated Law | Tulas University",
+  description: "Pursue BA LLB at Tulas University, Dehradun. A BCI recognised 5-year integrated law degree with moot courts, legal aid clinics and chamber internships.",
   alternates: {
-    canonical: "https://tulas.edu.in/courses/ba-llb",
+    canonical: "https://tulas.edu.in/courses/ba-llb/",
+  },
+  openGraph: {
+    title: "BA LLB in Dehradun | 5 Year Integrated Law | Tulas University",
+    description: "Pursue BA LLB at Tulas University, Dehradun. A BCI recognised 5-year integrated law degree with moot courts, legal aid clinics and chamber internships.",
+    url: "https://tulas.edu.in/courses/ba-llb/",
+    type: "website",
   },
 };
 

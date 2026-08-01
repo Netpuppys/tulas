@@ -103,17 +103,7 @@ function IntellectualPropertyRightsIprCell() {
 
   return (
     <>
-      <head>
-        <title>
-          Intellectual Property Rights (IPR) Cell | Best Engineering College in
-          Dehradun, Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the Intellectual Property Rights (IPR) Cell at Tulas University, dedicated to fostering innovation and protecting intellectual property. Learn about various initiatives and resources to help students and faculty safeguard their creative ideas and research."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -149,7 +139,7 @@ function IntellectualPropertyRightsIprCell() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

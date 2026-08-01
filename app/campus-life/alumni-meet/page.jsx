@@ -11,12 +11,16 @@ import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
 
 export const metadata = {
-  title: "Tulas University in Dehradun, Uttarakhand | Admission Open 2026 | Tulas University",
-  description:
-    "Tulas University is a leading university in Dehradun, Uttarakhand, known for academic excellence, modern infrastructure and strong placement outcomes. UGC Approved and NAAC A+ Accredited",
+  title: "Alumni Meet | Tulas University, Dehradun",
+  description: "Relive the annual alumni meet at Tulas University, Dehradun, where 7,000+ graduates reconnect, mentor students and share career journeys across industries.",
   alternates: {
-    canonical:
-      "https://tulas.edu.in/alumni-meet",
+    canonical: "https://tulas.edu.in/campus-life/alumni-meet/",
+  },
+  openGraph: {
+    title: "Alumni Meet | Tulas University, Dehradun",
+    description: "Relive the annual alumni meet at Tulas University, Dehradun, where 7,000+ graduates reconnect, mentor students and share career journeys across industries.",
+    url: "https://tulas.edu.in/campus-life/alumni-meet/",
+    type: "website",
   },
 };
 

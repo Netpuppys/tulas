@@ -29,17 +29,7 @@ import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
-      <head>
-        <title>
-          Diploma in Computer Science and Engineering in Dehradun | Tulas
-          
-        </title>
-        <meta
-          name="description"
-          content="Enroll in Tulas  for a Diploma in Computer Science and Engineering in Dehradun. Gain hands-on experience, industry-relevant skills, and prepare for a successful tech career with our comprehensive diploma program."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -71,7 +61,7 @@ function BAJMC() {
         <PlacementProgram features={features} />
         <TopRecruiter />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

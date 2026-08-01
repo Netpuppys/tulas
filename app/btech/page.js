@@ -347,16 +347,7 @@ function BTech() {
   };
   return (
     <>
-      <head>
-        <title>
-          Best Engineering College in Dehradun, India | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Looking for the Top Engineering and Degree College in Dehradun(Uttarakhand)? Look No Further Than Tulas University. We Offer the Best Engineering Courses Across India. Visit Now!"
-        />
-      </head>
-      <body>
+
         {isOtpSent && (
           <div className="fixed w-screen h-screen top-0 left-0 z-50 flex items-center justify-center flex-col">
             <div
@@ -739,7 +730,7 @@ function BTech() {
         <DownloadFeeStructure pdf={BTechFee} />
         <div className="pt-8 md:pt-[3%]"></div>
         <Footer color={true} />
-      </body>
+      
     </>
   );
 }

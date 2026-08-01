@@ -50,17 +50,7 @@ function IICEvents() {
 
   return (
     <>
-      <head>
-        <title>
-          IIC Events | Best Engineering College in Dehradun, Uttarakhand |
-          Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Discover the exciting events organized by the Institute Innovation Council (IIC) at Tulas University. Engage in workshops, seminars, and networking opportunities that foster innovation, research, and entrepreneurship among students."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -123,7 +113,7 @@ function IICEvents() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

@@ -17,9 +17,12 @@ import NewFooter from '@/component/NewFooter';
 
 
 export const metadata = {
-  title: "Library | Tula's Institute, Dehradun",
+  title: "Library | Tulas University, Dehradun",
   description:
     "Tulas Library — over 60,000 volumes, 18,383+ e-books, 3,338+ e-journals, NPTEL video lectures, and a 448 m² reference hall.",
+  alternates: {
+    canonical: "https://tulas.edu.in/infrastructure/library/",
+  },
 };
 
 export default function LibraryPagee() {

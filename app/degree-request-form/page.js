@@ -54,17 +54,7 @@ function DegreeRequestForm() {
 
   return (
     <>
-      <head>
-        <title>
-          Degree Request Form | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Submit your Degree Request Form at Tulas University, Dehradun's premier engineering college. Easily request your academic degree with our streamlined process for graduates and alumni."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -164,7 +154,7 @@ function DegreeRequestForm() {
         <div className="w-full h-fit z-40">
           <NewFooter />
         </div>
-      </body>
+      
     </>
   );
 }

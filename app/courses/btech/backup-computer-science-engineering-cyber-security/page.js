@@ -40,17 +40,7 @@ const sideImages = [contentLeft, contentRight];
 function page() {
   return (
     <>
-      <head>
-        <title>
-          Best Computer Science & Engineering( Cyber Security) College in
-          Dehradun, Uttarakhand | Tulas 
-        </title>
-        <meta
-          name="description"
-          content="Tulas Is the Best Computer Science & Engineering( Cyber Security) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (Cyber Security) for Aspiring Professionals. Visit Now!"
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -105,7 +95,7 @@ function page() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

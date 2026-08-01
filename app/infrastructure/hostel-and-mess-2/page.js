@@ -124,17 +124,7 @@ function LectureTheater() {
   ];
   return (
     <>
-      <head>
-        <title>
-          Tulas | Best facilities in Dehradun,Uttarakhand | No-1 college in
-          india
-        </title>
-        <meta
-          name="description"
-          content="Best facilities college in dehradun,uttarakhand. Got Ranked no-1 college among all colleges.See all facilities in Tulas University."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
           <MegaMenu />
@@ -217,7 +207,7 @@ function LectureTheater() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

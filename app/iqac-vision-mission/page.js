@@ -40,17 +40,7 @@ function IQACVision() {
   ];
   return (
     <>
-      <head>
-        <title>
-          IQAC Vision & Mission | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Discover the vision and mission of the Internal Quality Assurance Cell (IQAC) at Tulas University, Dehradun. Learn how our commitment to quality drives academic and institutional excellence, fostering a culture of continuous improvement."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
               <MegaMenu />
@@ -86,7 +76,7 @@ function IQACVision() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

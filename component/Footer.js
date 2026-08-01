@@ -26,7 +26,7 @@ import codeOfConduct from "../public/research/code-of-conduct.pdf";
 import { FiPhone } from "react-icons/fi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { MdMail } from "react-icons/md";
-import { UtmContext } from "./utmParams";
+import { UtmContext, buildHref } from "./utmParams";
 import FormPopup from "./formPopup";
 import Brouchure from "../public/FooterPDf/Brouchure.pdf";
 import FeeStructure from "../public/FooterPDf/FeeStructure.pdf";
@@ -290,7 +290,7 @@ const Footer = ({ set = false, color = false }) => {
                       href={
                         link.target
                           ? `${link.linkTo}`
-                          : `${link.linkTo}/${utmParams}`
+                          : buildHref(link.linkTo, utmParams)
                       }
                       target={link.target ? "_blank" : ""}
                       rel={
@@ -313,7 +313,7 @@ const Footer = ({ set = false, color = false }) => {
                       href={
                         link.target
                           ? `${link.linkTo}`
-                          : `${link.linkTo}/${utmParams}`
+                          : buildHref(link.linkTo, utmParams)
                       }
                       target={link.target ? "_blank" : ""}
                       rel={
@@ -419,7 +419,7 @@ const Footer = ({ set = false, color = false }) => {
                 {btnGroup.buttons.map((btn, btnIndex) => (
                   <React.Fragment key={btnIndex}>
                     <Link
-                      href={`${btn.linkTo}/${utmParams}`}
+                      href={buildHref(btn.linkTo, utmParams)}
                       className={`px-1 text-[12px] md:text-[clamp(10px,0.8vw,20px)] font-light md:font-normal md:px-2 ${
                         btnIndex < btnGroup.buttons.length - 1
                           ? "border-r-2 border-white last:border-r-0"

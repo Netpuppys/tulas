@@ -21,17 +21,7 @@ function RAndDConferencePublication() {
 
   return (
     <>
-      <head>
-        <title>
-          Conference Publications | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Discover the conference publications from Tulas University, showcasing cutting-edge research and innovations presented at various academic and industry conferences."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -82,7 +72,7 @@ function RAndDConferencePublication() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

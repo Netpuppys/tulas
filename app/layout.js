@@ -9,6 +9,42 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("https://tulas.edu.in"),
+  // Every page supplies its own title; this is the fallback only.
+  title: {
+    default:
+      "Tulas University in Dehradun, Uttarakhand | Admission Open 2026",
+    template: "%s",
+  },
+  description:
+    "Tulas University, Dehradun is a UGC approved, NAAC A+ accredited university offering B.Tech, MBA, BBA, BCA, MCA, B.Pharm, LLB and B.Sc Agriculture programmes.",
+  // Emitted once, from one place. Per-page metadata (for example the
+  // thank-you pages) overrides this correctly.
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+  // Default Open Graph values. Pages that set their own openGraph title /
+  // description / url override these instead of duplicating them.
+  openGraph: {
+    siteName: "Tulas University",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp",
+        width: 1200,
+        height: 630,
+        alt: "Tulas University, Dehradun",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tulas_University",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -21,22 +57,12 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Dynalight&family=Oswald:wght@200..700&family=Reem+Kufi:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap&family=Fasthand&display=swap"
           rel="stylesheet"
         ></link>
-        <meta
-          name="robots"
-          content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1"
-        />
-        <meta property="og:title" content="Best University in Dehradun, Uttarakhand | Admission Open 2026 | Tulas University" />
-        <meta
-          property="og:description"
-          content="Tulas University, Dehradun offers UGC recognized, NAAC A+ accredited BTech, MBA, MCA, BBA, BCA, BSc Agriculture & Many More Programs. Admissions 2026 Open. Apply Now!"
-        />
-        <meta
-          property="og:image"
-          content="https://tulas-assets.s3.ap-south-1.amazonaws.com/BannerImage3.webp"
-        />
-        <meta property="og:image:alt" content="Tulas University, Dehradun" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        {/*
+          robots and og:* tags are no longer hardcoded here. They lived in this
+          head block and were therefore emitted identically on every page,
+          overriding per-page values. They now come from the `metadata` export
+          above, which Next.js merges correctly with each page's own metadata.
+        */}
         {/* Google Tag Manager */}
         <Script
           strategy="afterInteractive"
@@ -111,12 +137,10 @@ export default function RootLayout({ children }) {
               "@type": "WebSite",
               name: "Tulas University",
               url: "https://tulas.edu.in/",
-              potentialAction: {
-                "@type": "SearchAction",
-                target:
-                  "https://tulas.edu.in/{search_term_string}https://tulas.edu.in/apply-now/",
-                "query-input": "required name=search_term_string",
-              },
+              // The previous SearchAction pointed at a malformed target URL
+              // ("...{search_term_string}https://tulas.edu.in/apply-now/") and
+              // the site has no on-site search endpoint, so it has been
+              // removed rather than left as an invalid entity.
             }),
           }}
         />
@@ -152,38 +176,13 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        <Script
-          id="blogposting-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://tulas.edu.in/blog/"
-              },
-              "headline": "Best Engineering & Degree University in Dehradun, Uttarakhand | Tulas University",
-              "description": "Stay Updated With the Latest Insights, News, and Academic Advancements at Tulas University, the Best Engineering & Degree University in Dehradun, Uttarakhand. Explore Articles on Engineering, Technology, Student Life, Career Tips, and More from Our Expert Faculty and Students.",
-              "image": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png",
-              "author": {
-                "@type": "Organization",
-                "name": "Tulas University",
-                "url": "https://tulas.edu.in/"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Tulas University", // Should not be empty
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://tulas.edu.in/_next/static/media/TulasLogo.f88dd71b.png" // Should not be empty
-                }
-              },
-              "datePublished": "2023-11-15", // Should include actual date
-              "dateModified": "2023-11-16" // Recommended to add
-            })
-          }}
-        />
+        {/*
+          The site-wide "BlogPosting" schema was removed. It declared every
+          single page on the domain to be one blog article published on
+          2023-11-15 and pointing at /blog/, which is invalid structured data
+          and conflicts with the CollegeOrUniversity entity above. Article
+          schema belongs on individual blog posts only.
+        */}
       </head>
       <body className={`${inter.className} font-sans`}>
 

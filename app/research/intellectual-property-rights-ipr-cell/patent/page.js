@@ -24,7 +24,6 @@ import NewNavbar from "@/component/Navbar/NewNavbar";
 import NewFooter from "@/component/NewFooter";
 import CustomiFrame from "./data/iFrame";
 
-
 function Patent() {
   const patentImages = [
     patent1,
@@ -41,17 +40,7 @@ function Patent() {
 
   return (
     <>
-      <head>
-        <title>
-          PATENT | Best Engineering College in Dehradun, Uttarakhand | Tula's
-          Institute
-        </title>
-        <meta
-          name="description"
-          content="Discover the PATENT initiatives at Tula's Institute, where students and faculty are encouraged to innovate and protect their intellectual property. Learn about the patenting process and the resources available to support research and development."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -106,7 +95,7 @@ function Patent() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

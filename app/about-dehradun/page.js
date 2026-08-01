@@ -50,14 +50,7 @@ const cardData = [
 function Contact() {
   return (
     <>
-      <head>
-        <title>About Capital City of Uttarakhand</title>
-        <meta
-          name="description"
-          content="The capital city of Uttarakhand is a complete blend of city and hill culture. It is set in the foot hills of Himalayas with the holy Ganges.."
-        />
-      </head>
-      <body>
+
         <div>
           {/* <Navbar /> */}
           <div className="hidden md:block">
@@ -132,7 +125,7 @@ function Contact() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

@@ -13,17 +13,7 @@ import NewFooter from "@/component/NewFooter";
 function AlumniTestimonials() {
   return (
     <>
-      <head>
-        <title>
-          Alumni Testimonials | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Discover inspiring alumni testimonials from graduates of Tulas University, the top engineering college in Dehradun, Uttarakhand. Hear firsthand experiences about our supportive faculty, cutting-edge curriculum, and successful career paths. Join a legacy of excellence at Tulas University!"
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -67,7 +57,7 @@ function AlumniTestimonials() {
           <Testimonials />
         </div>
         <NewFooter />
-      </body>
+      
     </>
   );
 }

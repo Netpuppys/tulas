@@ -19,16 +19,7 @@ function Sanskriti() {
   const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
-      <head>
-        <title>
-          Sanskriti - Annual Cultural Fest at Tulas, Dehradun
-        </title>
-        <meta
-          name="description"
-          content="Experience the vibrant annual cultural fest, Sanskriti, at Tulas University, Dehradun. From dance and fashion shows to star-studded performances by Bollywood artists, Sanskriti offers a platform for students to showcase their creativity and celebrate culture, talent, and unity."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -89,7 +80,7 @@ function Sanskriti() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

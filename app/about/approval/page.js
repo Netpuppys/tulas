@@ -29,9 +29,17 @@ import NewNavbar from "@/component/Navbar/NewNavbar";
 import MegaMenu from "@/component/Navbar/MegaMenu";
 
 export const metadata = {
-  title: "Approval | Tula's Institute",
-  description:
-    "Tula's over the years has undergone a transformation and is today regarded among the top 3 colleges across Uttarakhand.",
+  title: "Approvals & Recognitions | Tulas University, Dehradun",
+  description: "View the statutory approvals and recognitions held by Tulas University, Dehradun including UGC, AICTE, NAAC A+, NBA, PCI, BCI and university affiliations.",
+  alternates: {
+    canonical: "https://tulas.edu.in/about/approval/",
+  },
+  openGraph: {
+    title: "Approvals & Recognitions | Tulas University, Dehradun",
+    description: "View the statutory approvals and recognitions held by Tulas University, Dehradun including UGC, AICTE, NAAC A+, NBA, PCI, BCI and university affiliations.",
+    url: "https://tulas.edu.in/about/approval/",
+    type: "website",
+  },
 };
 
 function Approval() {

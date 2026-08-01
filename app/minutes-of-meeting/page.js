@@ -290,21 +290,10 @@ function MinuteOfMeeting() {
       linkTo: Meeting48,
     },
 
-
   ];
   return (
     <>
-      <head>
-        <title>
-          Minutes of Meeting | Best Engineering College in Dehradun, Uttarakhand
-          | Tula's Institute
-        </title>
-        <meta
-          name="description"
-          content="Access the minutes of meetings at Tula's Institute, Dehradun, highlighting discussions, decisions, and initiatives aimed at fostering academic excellence and institutional growth. Stay informed on our continuous commitment to quality education."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -348,7 +337,7 @@ function MinuteOfMeeting() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

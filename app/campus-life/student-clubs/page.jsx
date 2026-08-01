@@ -10,12 +10,16 @@ import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
 
 export const metadata = {
-  title: "Tulas University in Dehradun, Uttarakhand | Admission Open 2026 | Tulas University",
-  description:
-    "Tulas University is a leading university in Dehradun, Uttarakhand, known for academic excellence, modern infrastructure and strong placement outcomes. UGC Approved and NAAC A+ Accredited",
+  title: "Student Clubs & Societies | Tulas University, Dehradun",
+  description: "Explore 11+ student clubs at Tulas University, Dehradun covering coding, robotics, music, dance, drama, photography, literature, entrepreneurship and sports.",
   alternates: {
-    canonical:
-      "https://tulas.edu.in/campus-life/students-clubs",
+    canonical: "https://tulas.edu.in/campus-life/student-clubs/",
+  },
+  openGraph: {
+    title: "Student Clubs & Societies | Tulas University, Dehradun",
+    description: "Explore 11+ student clubs at Tulas University, Dehradun covering coding, robotics, music, dance, drama, photography, literature, entrepreneurship and sports.",
+    url: "https://tulas.edu.in/campus-life/student-clubs/",
+    type: "website",
   },
 };
 

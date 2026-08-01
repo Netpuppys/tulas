@@ -100,17 +100,7 @@ function instituteInnovationCouncilIic() {
 
   return (
     <>
-      <head>
-        <title>
-          Institute. Innovation Council (IIC) | Best Engineering College in
-          Dehradun, Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the University Innovation Council (IIC) at Tulas University, dedicated to fostering innovation, entrepreneurship, and research. Learn about the initiatives, projects, and opportunities for students to engage in cutting-edge research and technological advancements."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -146,7 +136,7 @@ function instituteInnovationCouncilIic() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

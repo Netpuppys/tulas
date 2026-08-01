@@ -21,17 +21,7 @@ function RAndDFunded() {
 
   return (
     <>
-      <head>
-        <title>
-          Journal Publications | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the journal publications from Tulas University faculty and students, showcasing cutting-edge research and academic contributions across various disciplines."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -80,7 +70,7 @@ function RAndDFunded() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

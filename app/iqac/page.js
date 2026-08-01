@@ -12,8 +12,7 @@ import BestPractices23 from "../../public/FooterPDf/BestPractices23.pdf";
 import InstituteCommittees from "../../public/FooterPDf/institute-committee.pdf";
 // import HrPolicy from "../../public/FooterPDf/hr-policy.pdf";
 
-
-import { UtmContext } from "@/component/utmParams";
+import { UtmContext, buildHref } from "@/component/utmParams";
 import MegaMenu from "@/component/Navbar/MegaMenu";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import NewFooter from "@/component/NewFooter";
@@ -37,17 +36,7 @@ function IQAC() {
   ];
   return (
     <>
-      <head>
-        <title>
-          IQAC | Best Engineering College in Dehradun, Uttarakhand | Tulas
-          University
-        </title>
-        <meta
-          name="description"
-          content="Learn about the Internal Quality Assurance Cell (IQAC) at Tulas University, Dehradun. Committed to enhancing educational standards, IQAC drives continuous improvement through quality initiatives and best practices for academic excellence."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
               <MegaMenu />
@@ -93,7 +82,7 @@ function IQAC() {
             <button
               key={index}
               onClick={() =>
-                (window.location.href = `${button.linkTo}/${utmParams}`)
+                (window.location.href = buildHref(button.linkTo, utmParams))
               }
               className="py-2 w-[210px] md:w-[400px] rounded-full bg-white text-[clamp(10px,1.2vw,50px)] text-[#760135]"
             >
@@ -104,7 +93,7 @@ function IQAC() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

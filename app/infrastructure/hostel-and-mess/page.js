@@ -26,9 +26,17 @@ import NewFooter from "@/component/NewFooter";
 
 
 export const metadata = {
-  title: 'Hostel & Mess Facilities | Tula\'s Institute, Dehradun',
-  description:
-    'Six well-maintained hostel blocks, nutritious vegetarian mess, and round-the-clock amenities at Tula\'s Institute Dehradun.',
+  title: "Hostel & Mess Facilities | Tulas University, Dehradun",
+  description: "Six well-maintained hostel blocks, a nutritious vegetarian mess and round-the-clock amenities, security and medical support at Tulas University, Dehradun.",
+  alternates: {
+    canonical: "https://tulas.edu.in/infrastructure/hostel-and-mess/",
+  },
+  openGraph: {
+    title: "Hostel & Mess Facilities | Tulas University, Dehradun",
+    description: "Six well-maintained hostel blocks, a nutritious vegetarian mess and round-the-clock amenities, security and medical support at Tulas University, Dehradun.",
+    url: "https://tulas.edu.in/infrastructure/hostel-and-mess/",
+    type: "website",
+  },
 };
 
 export default function HostelMessPage() {

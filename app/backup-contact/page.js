@@ -114,17 +114,7 @@ function Contact() {
   ];
   return (
     <>
-      <head>
-        <title>
-          Contact | Best Engineering College in Dehradun, Uttarakhand | Tulas
-          Institute
-        </title>
-        <meta
-          name="description"
-          content="Get in touch with Tulas University, the top engineering college in Dehradun, Uttarakhand. Contact us for admissions, inquiries, or campus tours and learn more about our programs, facilities, and student life."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -233,7 +223,7 @@ function Contact() {
         <div className="w-full h-fit z-40">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

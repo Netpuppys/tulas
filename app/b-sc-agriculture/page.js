@@ -32,16 +32,7 @@ import NewFooter from "@/component/NewFooter";
 function BSCAgriculture() {
   return (
     <>
-      <head>
-        <title>
-          Best B.Sc Agriculture College in Dehradun | Tula's Institute
-        </title>
-        <meta
-          name="description"
-          content="Are looking for Best B.Sc Agriculture College in Dehradun then Tula's Institute is the best place for Agricultural Courses in Dehradun, Uttrakhand, Ranked as No-1 Agriculture College."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
                       <MegaMenu />
@@ -86,7 +77,7 @@ function BSCAgriculture() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter/>
-      </body>
+      
     </>
   );
 }

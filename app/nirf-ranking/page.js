@@ -90,14 +90,7 @@ function NIRFRanking() {
   ];
   return (
     <>
-      <head>
-        <title>NIRF Ranking 2024 | Tulas University</title>
-        <meta
-          name="description"
-          content="Discover Tulas University's NIRF Ranking for 2024, a testament to our commitment to academic excellence and quality education. Learn why we are recognized among the top engineering colleges in Dehradun, Uttarakhand."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
                       <MegaMenu />
@@ -145,7 +138,7 @@ function NIRFRanking() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

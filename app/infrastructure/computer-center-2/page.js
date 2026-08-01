@@ -60,14 +60,7 @@ function ComputerScience() {
   const images = [{ image: img1 }, { image: img2 }, { image: img3 }];
   return (
     <>
-      <head>
-        <title>Computer Center in Tulas | Best College in Dehradun</title>
-        <meta
-          name="description"
-          content="Tulas has big in house computer centre.Ranked No-1 college in dehradun"
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -121,7 +114,7 @@ function ComputerScience() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

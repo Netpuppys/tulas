@@ -38,17 +38,7 @@ import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
-      <head>
-        <title>
-          Best Computer Science & Engineering( Data Science) College in
-          Dehradun, Uttarakhand | Tulas
-        </title>
-        <meta
-          name="description"
-          content="Tulas Is the Best Computer Science & Engineering( Data Science) Engineering College in Dehradun, Uttarakhand Offering a Comprehensive Program in Computer Science & Engineering (data Science) for Aspiring Professionals. Visit Now!"
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -100,7 +90,7 @@ function BAJMC() {
           backgroundCrousel={exploreCrouselBackground}
         />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

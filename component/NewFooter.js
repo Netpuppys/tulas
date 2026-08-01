@@ -23,7 +23,7 @@ import ICC from "../public/research/ICC.pdf";
 import MadatoryDisclosure from "../public/research/MadatoryDisclosure.pdf";
 import ACADEMICCALENDER from "../public/research/academic-calendar-26.pdf";
 import codeOfConduct from "../public/research/code-of-conduct.pdf";
-import { UtmContext } from "./utmParams";
+import { UtmContext, buildHref } from "./utmParams";
 import FormPopup from "./formPopup";
 import Brouchure from "../public/FooterPDf/Brouchure.pdf";
 import FeeStructure from "../public/FooterPDf/FeeStructure.pdf";
@@ -114,7 +114,7 @@ const NewFooter = ({ set = false, color = false }) => {
   const renderLink = (link, index) => {
     const href = link.target
       ? `${link.linkTo}`
-      : `${link.linkTo}${utmParams}`;
+      : buildHref(link.linkTo, utmParams);
     return (
       <li key={index}>
         <Link
@@ -158,7 +158,7 @@ const NewFooter = ({ set = false, color = false }) => {
             {quickLinks.map((link, index) => (
               <li key={index}>
                 <Link
-                  href={`${link.linkTo}${utmParams}`}
+                  href={buildHref(link.linkTo, utmParams)}
                   className="text-[13px] text-gray-300 hover:text-orange-500 transition-colors duration-200"
                 >
                   {link.title}

@@ -13,29 +13,47 @@ import NewFooter from "@/component/NewFooter";
 export const revalidate = 60;
 
 export async function generateStaticParams() {
-  const res = await fetch("https://blog.tulas.edu.in/api/v1/post", {
-    timeout: 20000,
-  });
-  const { data } = await res.json();
+  try {
+    const res = await fetch("https://blog.tulas.edu.in/api/v1/post");
 
-  if (!Array.isArray(data)) {
+    if (!res.ok) return [];
+
+    const { data } = await res.json();
+
+    if (!Array.isArray(data)) {
+      return [];
+    }
+
+    return data
+      .filter((post) => post && typeof post.slug === "string" && post.slug)
+      .map((post) => ({
+        slug: post.slug,
+      }));
+  } catch (error) {
+    // Never fail the build (or turn every unknown URL into a 500)
+    // just because the blog API is unreachable.
+    console.error("generateStaticParams: blog API unavailable", error);
     return [];
   }
-
-  return data.map((post) => ({
-    slug: post.slug,
-  }));
 }
 
 async function fetchBlogData(slug) {
-  const res = await fetch(`https://blog.tulas.edu.in/api/v1/post/${slug}`);
+  try {
+    const res = await fetch(`https://blog.tulas.edu.in/api/v1/post/${slug}`);
 
-  if (!res.ok) {
-    throw new Error(`Failed to fetch data for slug: ${slug}`);
+    // A missing post must resolve to a 404, not an unhandled throw.
+    // Throwing here made Next.js return HTTP 500 for every unknown URL on the
+    // site, which is what SEO crawlers were reporting as server errors.
+    if (!res.ok) {
+      return null;
+    }
+
+    const { data } = await res.json();
+    return data || null;
+  } catch (error) {
+    console.error(`fetchBlogData failed for slug: ${slug}`, error);
+    return null;
   }
-
-  const { data } = await res.json();
-  return data || null;
 }
 
 export async function generateMetadata({ params }) {
@@ -44,17 +62,20 @@ export async function generateMetadata({ params }) {
 
   if (!blog) {
     return {
-      meta_title: "Blog Not Found",
-      description: "The requested blog could not be found.",
+      title: "Page Not Found | Tulas University",
+      description: "The page you are looking for could not be found.",
+      robots: { index: false, follow: true },
     };
   }
 
   return {
-    title: blog.meta_title,
+    title: blog.meta_title || blog.title,
     description: blog.meta_description,
     keywords: blog.meta_keywords,
-    robots: blog.tags,
-    author: blog.author_name,
+    authors: blog.author_name ? [{ name: blog.author_name }] : undefined,
+    alternates: {
+      canonical: `https://tulas.edu.in/${slug}/`,
+    },
   };
 }
 

@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaRegFilePdf } from "react-icons/fa";
 import Link from "next/link";
-import { UtmContext } from "../utmParams";
+import { UtmContext, buildHref } from "../utmParams";
 function FacultyData({ facultyData }) {
   const { utmParams } = useContext(UtmContext);
   const scrollContainerRef = useRef(null);
@@ -38,7 +38,7 @@ function FacultyData({ facultyData }) {
             <Image
               onClick={() => {
                 if (faculty.linkTo) {
-                  window.location.href = `${faculty.linkTo}/${utmParams}`;
+                  window.location.href = buildHref(faculty.linkTo, utmParams);
                 }
               }}
               src={faculty.imageUrl}
@@ -49,7 +49,7 @@ function FacultyData({ facultyData }) {
           <div
             onClick={() => {
               if (faculty.linkTo) {
-                window.location.href = `${faculty.linkTo}/${utmParams}`;
+                window.location.href = buildHref(faculty.linkTo, utmParams);
               }
             }}
             className="px-4 text-[#353535] py-4 flex group-hover:opacity-0 flex-col transition-all ease-in duration-300 "
@@ -66,7 +66,7 @@ function FacultyData({ facultyData }) {
           <div
             onClick={() => {
               if (faculty.linkTo) {
-                window.location.href = `${faculty.linkTo}/${utmParams}`;
+                window.location.href = buildHref(faculty.linkTo, utmParams);
               }
             }}
             className="px-4 opacity-0 absolute pb-[40px] bg-[#f97316] w-full h-full text-white py-4 group-hover:opacity-100 flex flex-col justify-center gap-2 transition-all ease-in duration-300"

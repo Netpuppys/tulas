@@ -19,9 +19,12 @@ import NewFooter from "@/component/NewFooter";
 
 
 export const metadata = {
-  title: "Computer Centre | Tula's Institute, Dehradun",
+  title: "Computer Centre | Tulas University, Dehradun",
   description:
-    "World-class IT infrastructure at Tula's Institute — 500+ desktops, 1 Gbps internet, Software Development Cell, and AI/ML labs.",
+    "World-class IT infrastructure at Tulas University — 500+ desktops, 1 Gbps internet, Software Development Cell, and AI/ML labs.",
+  alternates: {
+    canonical: "https://tulas.edu.in/infrastructure/computer-center/",
+  },
 };
 
 export default function ComputerCentrePage() {

@@ -83,17 +83,7 @@ function ICTFacilities() {
 
   return (
     <>
-      <head>
-        <title>
-          ICT Facilities | Best Engineering College in Dehradun, Uttarakhand |
-          Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the advanced ICT facilities at Tulas University, Dehradun. Our state-of-the-art computer labs, high-speed internet, and digital resources support a dynamic learning environment, empowering students with cutting-edge technology"
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -154,7 +144,7 @@ function ICTFacilities() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

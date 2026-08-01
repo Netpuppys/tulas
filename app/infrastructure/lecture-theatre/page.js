@@ -17,9 +17,12 @@ import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
 
 export const metadata = {
-  title: "Lecture Theatre | Tula's Institute, Dehradun",
+  title: "Lecture Theatre | Tulas University, Dehradun",
   description:
     "Tulas Lecture Theatres — spacious 70-seat halls with advanced AV aids, ergonomic tiered seating, superior acoustics, and purpose-designed lighting.",
+  alternates: {
+    canonical: "https://tulas.edu.in/infrastructure/lecture-theatre/",
+  },
 };
 
 export default function LectureTheatrePage() {

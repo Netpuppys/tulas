@@ -143,14 +143,7 @@ const sections = [
 function OtherFacilities() {
   return (
     <>
-      <head>
-        <title>Best Facilities Among all colleges in Dehradun,Uttrakhand</title>
-        <meta
-          name="description"
-          content="Tulas University is committed to offer the best infrastructure and facilities like: Wifi,Canteen,Gym,Playground,shopping mall...."
-        />
-      </head>
-      <body>
+
         <Navbar />
         <div className="flex flex-col items-center">
           <Banner
@@ -179,7 +172,7 @@ function OtherFacilities() {
 
           <Footer color={true} />
         </div>
-      </body>
+      
     </>
   );
 }

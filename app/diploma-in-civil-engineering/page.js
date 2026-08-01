@@ -28,17 +28,7 @@ import NewFooter from "@/component/NewFooter";
 function BAJMC() {
   return (
     <>
-      <head>
-        <title>
-          Diploma in Civil Engineering | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas 
-        </title>
-        <meta
-          name="description"
-          content="Earn a Diploma in Civil Engineering at Tulas , the best diploma college in Dehradun, Uttarakhand. Build a solid foundation for your career in civil engineering with our comprehensive program."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
           <MegaMenu />
@@ -70,7 +60,7 @@ function BAJMC() {
         <PlacementProgram features={features} />
         <TopRecruiter />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

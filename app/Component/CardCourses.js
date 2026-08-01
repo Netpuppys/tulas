@@ -9,7 +9,7 @@ import departmentofmanagment from "../../public/Homepage/Courses/departmentofman
 import Pharmacy from "../../public/Homepage/Courses/Pharmacy.png";
 import Image from "next/image";
 import Link from "next/link";
-import { UtmContext } from "@/component/utmParams";
+import { UtmContext, buildHref } from "@/component/utmParams";
 function CardCourses({ linked = true }) {
   const cardsCourses = [
     {
@@ -362,7 +362,7 @@ function CardCourses({ linked = true }) {
                 >
                   {!linked && (
                     <div
-                      // href={`${degree.link}/${utmParams}`}
+                      // href={buildHref(degree.link, utmParams)}
                       className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] leading-tight tracking-tight text-2xl"
                     >
                       {degree.name}
@@ -370,7 +370,7 @@ function CardCourses({ linked = true }) {
                   )}
                   {linked && (
                     <Link
-                      href={`${degree.link}/${utmParams}`}
+                      href={buildHref(degree.link, utmParams)}
                       className="border-t-2 border-b-2 border-[#E69706] w-fit font-[TTChocolates] leading-tight tracking-tight text-2xl"
                     >
                       {degree.name}
@@ -385,7 +385,7 @@ function CardCourses({ linked = true }) {
                       )}
                       {linked && (
                         <Link
-                          href={`${branches.linkTo}/${utmParams}`}
+                          href={buildHref(branches.linkTo, utmParams)}
                           key={branchesIndex}
                         >
                           <h3 className="text-xs mt-[2px]">{branches.name}</h3>

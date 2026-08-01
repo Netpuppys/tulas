@@ -21,17 +21,7 @@ function RAndDConferenceOrganized() {
 
   return (
     <>
-      <head>
-        <title>
-          Conferences Organized | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the conferences organized by Tulas University, where academic and industry leaders come together to share knowledge and foster innovation in engineering and technology."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -83,7 +73,7 @@ function RAndDConferenceOrganized() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

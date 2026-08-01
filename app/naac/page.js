@@ -28,17 +28,7 @@ function NAAC() {
   ];
   return (
     <>
-      <head>
-        <title>
-          NAAC Accreditation | Best Engineering College in Dehradun, Uttarakhand
-          | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the NAAC accreditation of Tulas University, Dehradun, showcasing our dedication to quality education and academic standards. Learn about our commitment to continuous improvement and excellence in higher education."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
                       <MegaMenu />
@@ -78,7 +68,7 @@ function NAAC() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

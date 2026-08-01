@@ -116,17 +116,7 @@ function AboutIQAC() {
   ];
   return (
     <>
-      <head>
-        <title>
-          About IQAC | Best Engineering College in Dehradun, Uttarakhand |
-          Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Tulas University, Best engineering institute in Dehradun Uttarakhand, is North Indiaâ€™s fastest growing private college with best placement records."
-        />
-      </head>
-      <body>
+
         <Navbar />
         <Banner
           image={BannerImg}
@@ -153,7 +143,7 @@ function AboutIQAC() {
         <div className="w-full h-fit z-50">
           <Footer />
         </div>
-      </body>
+      
     </>
   );
 }

@@ -41,16 +41,7 @@ import NewFooter from "@/component/NewFooter";
 function MCA() {
   return (
     <>
-      <head>
-        <title>
-          Best Private LLB College in Dehradun, Uttarakhand | Tulas 
-        </title>
-        <meta
-          name="description"
-          content="Tulas is one of the Best LLB College in Dehradun, Uttarakhand, India that provides valuable educational practices to its students with the help of experienced faculty."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -98,7 +89,7 @@ function MCA() {
           backgroundCrousel={exploreCrouselBackground}
         /> */}
         <NewFooter />
-      </body>
+      
     </>
   );
 }

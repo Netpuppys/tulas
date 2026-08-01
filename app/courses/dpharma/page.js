@@ -34,14 +34,7 @@ import NewFooter from "@/component/NewFooter";
 function DPharma() {
   return (
     <>
-      <head>
-        <title>Diploma In Pharmacy (D. Pharm.) in Dehradun</title>
-        <meta
-          name="description"
-          content="Register Now! & Become a part of the best BJMC College in Dehradun. Tulas University has been awarded as the best Engineering & Management College in North India."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
           <MegaMenu />
@@ -83,7 +76,7 @@ function DPharma() {
         <PlacementProgram features={features} />
         <TopRecruiter />
         <NewFooter />
-      </body>
+      
     </>
   );
 }

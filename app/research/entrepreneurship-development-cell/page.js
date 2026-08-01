@@ -122,17 +122,7 @@ function EntrepreneurshipDevelopmentCell() {
 
   return (
     <>
-      <head>
-        <title>
-          Conferences | Best Engineering College in Dehradun, Uttarakhand |
-          Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the various conferences hosted by Tulas University, providing a platform for students, faculty, and industry experts to discuss cutting-edge research, innovations, and advancements in engineering and technology."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -183,7 +173,7 @@ function EntrepreneurshipDevelopmentCell() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

@@ -16,9 +16,12 @@ import NewNavbar from '@/component/Navbar/NewNavbar';
 import NewFooter from '@/component/NewFooter';
 
 export const metadata = {
-  title: "Auditorium | Tula's Institute, Dehradun",
+  title: "Auditorium | Tulas University, Dehradun",
   description:
     "Tulas Auditorium — 550-seat capacity, Dolby surround sound, HD projector, central AC. Largest auditorium in Dehradun, one of its kind in Northern India.",
+  alternates: {
+    canonical: "https://tulas.edu.in/infrastructure/auditorium/",
+  },
 };
 
 export default function AuditoriumPage() {

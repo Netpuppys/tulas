@@ -80,17 +80,7 @@ function IICEvents() {
   ];
   return (
     <>
-      <head>
-        <title>
-          IAAS Student Branch | Best Engineering College in Dehradun,
-          Uttarakhand | Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the IAAS Student Branch at Tulas University in Dehradun, which fosters knowledge exchange, skill development, international cooperation, and community outreach in the field of agricultural and related sciences. Join us for workshops, events, and global networking opportunities."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
           <MegaMenu />
@@ -150,7 +140,7 @@ function IICEvents() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }

@@ -14,17 +14,7 @@ import NewFooter from "@/component/NewFooter";
 function IAQCStructure() {
   return (
     <>
-      <head>
-        <title>
-          IQAC Structure | Best Engineering College in Dehradun, Uttarakhand |
-          Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the structure of the Internal Quality Assurance Cell (IQAC) at Tulas University, Dehradun. Understand how our organized framework ensures continuous quality enhancement and academic excellence across all departments."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
               <MegaMenu />
@@ -60,7 +50,7 @@ function IAQCStructure() {
         <div className="w-full h-fit z-50">
           <NewFooter/>
         </div>
-      </body>
+      
     </>
   );
 }

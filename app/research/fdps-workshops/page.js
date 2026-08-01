@@ -20,17 +20,7 @@ function RAndFDPS() {
 
   return (
     <>
-      <head>
-        <title>
-          FDPs & Workshops | Best Engineering College in Dehradun, Uttarakhand |
-          Tulas University
-        </title>
-        <meta
-          name="description"
-          content="Explore the Faculty Development Programs (FDPs) and workshops at Tulas University, a top engineering college in Dehradun. Our programs empower faculty and students with the latest knowledge and skills in technology and education."
-        />
-      </head>
-      <body>
+
         {/* <Navbar /> */}
         <div className="hidden md:block">
   <MegaMenu />
@@ -83,7 +73,7 @@ function RAndFDPS() {
             <NewFooter/>
           </div>
         </div>
-      </body>
+      
     </>
   );
 }
