@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-import love1 from "../../../public/Homepage/LifeAtTulas/collegevibes.png";
+import love1 from "../../../public/Homepage/LifeAtTulas/collegevibes.webp";
 import placements1 from "../../../public/Homepage/LifeAtTulas/hotelndmess.png";
 import events1 from "../../../public/Homepage/LifeAtTulas/infrastructure.png";
 import celebrities1 from "../../../public/Homepage/LifeAtTulas/sports.png";
