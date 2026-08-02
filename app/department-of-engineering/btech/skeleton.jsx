@@ -320,16 +320,15 @@ const Skeleton = ({
     "Tulas University - where academic excellence meets industry relevance.",
   ];
 
+  // NOTE: this component must NOT render <head> or <body>.
+  // The App Router already provides both in app/layout.js, so wrapping the
+  // page in a second <body> produced "In HTML, <body> cannot be a child of
+  // <body>" and broke hydration on every lp1-lp32 route.
+  // Page title / description now come from the route's layout.js metadata,
+  // which is also where they belong -- the old hardcoded <title> here said
+  // "MBA" on B.Tech pages.
   return (
     <>
-      <head>
-        <title>Tula's Institute is best to pursue a career in MBA</title>
-        <meta
-          name="description"
-          content="Join Tula's Institute. Excel in MBA and more with industry-focused programs and dedicated faculty. Become a future leader today"
-        />
-      </head>
-      <body>
         <div className="w-full min-h-screen h-full relative ">
           {/* Navbar */}
           <NavbarLanding handleScrollArrow={handleScrollArrow} />
@@ -422,7 +421,6 @@ const Skeleton = ({
             </button>
           )}
         </div>
-      </body>
     </>
   );
 };

@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function HomeBusinessSection() {
   return (
     <section className="bg-white pb-6 mt-3">
@@ -16,29 +14,31 @@ export default function HomeBusinessSection() {
               <span className="text-gray-800 font-extrabold">India’s Top Private Colleges</span>
             </h2>
 
-{/* MOBILE IMAGE */}
-<div className="w-[100%] mx-auto md:hidden mb-6">
-  <Image
-    src="/landingPage/rankingmobile.png"
-    alt="Internship Mobile"
-    width={800}
-    height={1200}
-    className="w-full h-auto object-cover rounded-xl"
-    priority
-  />
-</div>
+{/*
+              Ranking band.
 
-            {/* DESKTOP IMAGE (unchanged) */}
-            <div className="relative w-full aspect-[21/9] hidden md:block rounded-2xl overflow-hidden mb-6">
-              <Image
-                src="/landingPage/rankingdesktop.png"
-                alt="Internship Desktop"
-                fill
-                className="object-cover"
-                priority
+              Previously this rendered two next/image elements and hid one with
+              `md:hidden` / `hidden md:block`. CSS `display:none` does not
+              stop the browser downloading an image, so every visitor pulled
+              both rankingmobile.png and rankingdesktop.png.
+
+              A single picture element lets the browser fetch only the variant it
+              will display. Layout is unchanged.
+            */}
+            <picture className="block w-full">
+              <source
+                media="(min-width: 768px)"
+                srcSet="/landingPage/rankingdesktop.png"
               />
-            </div>
-
+              <img
+                src="/landingPage/rankingmobile.png"
+                alt="Tula's Institute ranked among India's top private colleges"
+                width={1000}
+                height={3378}
+                decoding="async"
+                className="block mx-auto mb-6 w-[100%] h-auto rounded-xl md:w-full md:aspect-[21/9] md:object-cover md:rounded-2xl"
+              />
+            </picture>
           </div>
 
         </div>

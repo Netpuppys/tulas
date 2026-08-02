@@ -24,13 +24,18 @@ export default function LandingInternshipSection() {
 
         {/* IMAGE (mobile only position) */}
         <div className="relative w-full h-[260px] md:h-[660px] rounded-2xl overflow-hidden mb-6">
-          <Image
-            src="/landingPage/intershipbanner2.png"
-            alt="Internship at Tula's"
-            fill
-            className="object-cover"
-            priority
-          />
+          <picture>
+            {/* WebP is 92KB vs 1.2MB for the PNG. The PNG stays as the
+                fallback so older browsers are unaffected. */}
+            <source type="image/webp" srcSet="/landingPage/intershipbanner2.webp" />
+            <img
+              src="/landingPage/intershipbanner2.png"
+              alt="Internship at Tula's"
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </picture>
         </div>
                     {/* Heading */}
       <h3 className="text-center text-[clamp(38px,5.5vw,34px)] font-extrabold mb-4">
