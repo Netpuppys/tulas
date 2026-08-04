@@ -54,20 +54,16 @@ const TableComponent = () => {
         <tr>
           <th className="text-sm font-normal">S.No.</th>
           <th className="text-sm font-normal">Name of Company</th>
-          <th className="text-sm font-normal">Programme</th>
-          <th className="text-sm font-normal">Sector</th>
-          <th className="text-sm font-normal">No. Of Students Placed</th>
+          <th className="text-sm font-normal">Qualifications</th>
           <th className="text-sm font-normal">Package</th>
         </tr>
       </thead>
       <tbody>
-        {tableData.map((project, index) => (
-          <tr key={project.id}>
-            <td>{index + 1}</td>
+        {tableData.map((project) => (
+          <tr key={project.sNo}>
+            <td>{project.sNo}</td>
             <td>{project.company}</td>
-            <td>{project.programme}</td>
-            <td>{project.sector}</td>
-            <td>{project.studentsPlaced}</td>
+            <td>{project.qualifications}</td>
             <td>{project.package}</td>
           </tr>
         ))}
