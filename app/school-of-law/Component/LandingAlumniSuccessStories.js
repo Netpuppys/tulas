@@ -7,14 +7,14 @@ export default function LandingAlumniSuccessStories() {
   const scrollRef = useRef(null);
 
   const alumniCards = [
-    "/Homepage/Alumni/alumni1.png",
-    "/Homepage/Alumni/alumni2.png",
-    "/Homepage/Alumni/alumni3.png",
-    "/Homepage/Alumni/alumni4.png",
-    "/Homepage/Alumni/alumni5.png",
-    "/Homepage/Alumni/alumni6.png",
-    "/Homepage/Alumni/alumni7.png",
-    "/Homepage/Alumni/alumni8.png",
+    "/Homepage/Alumni/alumni1.webp",
+    "/Homepage/Alumni/alumni2.webp",
+    "/Homepage/Alumni/alumni3.webp",
+    "/Homepage/Alumni/alumni4.webp",
+    "/Homepage/Alumni/alumni5.webp",
+    "/Homepage/Alumni/alumni6.webp",
+    "/Homepage/Alumni/alumni7.webp",
+    "/Homepage/Alumni/alumni8.webp",
   ];
 
   const scroll = (direction) => {
