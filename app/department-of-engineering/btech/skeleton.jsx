@@ -461,23 +461,33 @@ function RankSection() {
   const rankItems = rankConfig.ranks;
   return (
     <section className="py-12 bg-brand-bgLight">
-      {/* Inline styles - you can move to a separate CSS file */}
-      <style>
-        {`
-          .brand-bgLight {
-            background-color: #fbf8f5;
-          }
-          .brand-orange {
-            color: #f26522;
-          }
-          .brand-navy {
-            color: #121f38;
-          }
-          .font-heading {
-            font-family: "Nunito", sans-serif;
-          }
-        `}
-      </style>
+      {/*
+        <style> is an HTML raw-text element: entities inside it are NOT
+        decoded by the browser. Passing CSS as a normal JSX child made React
+        escape the double quotes in font-family to &quot; on the server, so
+        the server HTML contained invalid CSS and then mismatched the client
+        on hydration ("Text content does not match server-rendered HTML").
+
+        dangerouslySetInnerHTML is the correct way to emit style/script
+        content in React -- it is not unsafe here, the string is a literal.
+        The quotes around Nunito are also unnecessary for a single-word
+        family name, so they are gone as well.
+
+        Note: .brand-bgLight / .brand-orange / .brand-navy duplicate tokens
+        that already exist in tailwind.config.js (theme.extend.colors.brand)
+        and the markup uses the Tailwind utilities, so only .font-heading
+        actually does anything here.
+      */}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            .brand-bgLight { background-color: #fbf8f5; }
+            .brand-orange  { color: #f26522; }
+            .brand-navy    { color: #121f38; }
+            .font-heading  { font-family: Nunito, sans-serif; }
+          `,
+        }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}

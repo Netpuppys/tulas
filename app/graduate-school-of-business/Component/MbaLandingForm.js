@@ -247,7 +247,12 @@ function MbaLandingForm({
       })
       .catch((error) => {
         setLoading(false);
-        alert.error(error);
+        // `alert` is window.alert -- it has no .error method, so this line
+        // threw "alert.error is not a function" and masked the real failure.
+        console.error("Lead submission failed:", error);
+        alert(
+          "Sorry, we could not submit your enquiry. Please try again, or call our admissions helpline on +91-8069204028."
+        );
       });
   };
   const sendOtp = async () => {
