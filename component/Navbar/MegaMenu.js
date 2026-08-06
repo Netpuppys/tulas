@@ -294,6 +294,21 @@ const PersonIcon = () => (
   </svg>
 );
 
+const PhoneIconn = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-4 h-4 text-white"
+  >
+    <path
+      fillRule="evenodd"
+      d="M1.5 4.5A3 3 0 014.5 1.5h1.372c.86 0 1.61.586 1.819 1.42l.765 3.06a1.875 1.875 0 01-.694 1.954l-1.148.861a11.25 11.25 0 006.591 6.591l.861-1.148a1.875 1.875 0 011.954-.694l3.06.765a1.875 1.875 0 011.42 1.819V19.5a3 3 0 01-3 3H16.5c-8.284 0-15-6.716-15-15v-3z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+
 const ChevronDown = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5 flex-shrink-0">
     <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
@@ -452,6 +467,20 @@ export default function MegaMenu() {
                   <p className="text-[10px] text-white">For Session 2026-27</p>
                 </div>
               </Link>
+
+                <Link
+  href="tel:+919837983721"
+  className="flex items-center gap-3 bg-[#263145] text-gray-800 rounded-full px-5 py-2.5 cursor-pointer hover:shadow-md transition-shadow select-none border border-gray-100"
+>
+  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+    <PhoneIconn />
+  </div>
+
+  <div className="leading-none">
+    <p className="text-sm font-bold text-white mb-0.5">Call Now</p>
+    <p className="text-[10px] text-white">+91 98379 83721</p>
+  </div>
+</Link>
             </div>
           </div>
         </div>
