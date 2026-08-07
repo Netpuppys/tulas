@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 
 export default function LandingAboutTulas() {
   return (
@@ -18,13 +17,18 @@ export default function LandingAboutTulas() {
 
           {/* Image */}
           <div className="relative w-full h-[220px] sm:h-[300px] md:h-[420px] rounded-[25px] overflow-hidden mb-6">
-            <Image
-              src="/landingbanner/generic/whytulas.jpg" // 👈 replace with your image
-              alt="Tulas Campus"
-              fill
-              className="object-cover"
-              priority
-            />
+            {/* WebP with the JPEG kept as fallback, so older browsers are
+                unaffected. `fill` is reproduced by absolute inset-0. */}
+            <picture>
+              <source type="image/webp" srcSet="/landingbanner/generic/whytulas.webp" />
+              <img
+                src="/landingbanner/generic/whytulas.jpg"
+                alt="Tulas Campus"
+                fetchPriority="high"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </picture>
           </div>
 
           {/* Content */}
