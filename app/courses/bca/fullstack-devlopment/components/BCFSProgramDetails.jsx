@@ -38,9 +38,9 @@ const PO_ROWS = [
 ];
 
 const PSO_ITEMS = [
-  { id:'PSO1', title:'Full Stack Proficiency', text:'Demonstrate end-to-end capability to build, test, and deploy full stack web applications using at least two major stacks — MERN, Django+React, Spring Boot+React, or Laravel+React — with integrated cloud and DevOps practices.' },
-  { id:'PSO2', title:'AI-Integrated Development', text:'Design and implement web applications that leverage AI/ML APIs, intelligent automation, and data-driven features, positioning graduates at the intersection of full stack development and artificial intelligence.' },
-  { id:'PSO3', title:'Enterprise & Security Readiness', text:'Develop enterprise-grade, secure web systems adhering to industry standards for authentication, authorisation, network security, and scalable architecture, meeting the demands of large-scale production environments.' },
+  { id:'PSO1', title:'Full Stack Proficiency', text:'Apply programming concepts, database technologies, front-end and back-end development frameworks to design, develop, test, deploy, and maintain responsive, scalable, and secure web and mobile applications' },
+  { id:'PSO2', title:'Modern Web Technologies and DevOps Practices', text:'Utilize contemporary development tools, cloud platforms, APIs, version control systems, containerization technologies, and DevOps practices to build and manage end-to-end software solutions efficiently.' },
+  { id:'PSO3', title:'Professional Practice, Innovation, and Entrepreneurship', text:'Demonstrate problem-solving abilities, teamwork, communication skills, ethical practices, and an entrepreneurial mindset to develop innovative digital solutions and adapt to evolving industry requirements through continuous learning.' },
 ];
 
 const PEO_ITEMS = [

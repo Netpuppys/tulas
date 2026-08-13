@@ -6,6 +6,7 @@ const TABS = [
   { id:'co',   num:'02', label:'Course Outcomes' },
   { id:'po',   num:'03', label:'Program Outcomes' },
   { id:'peo',  num:'04', label:'Program Educational Objectives' },
+  { id:'pso',  num:'05', label:'Program Specific Outcomes' },
 ];
 
 const USPS = [
@@ -44,6 +45,12 @@ const PEO = [
   { code:'PEO2 · Entrepreneurship & Leadership', desc:'To develop entrepreneurial passion and equip students with leadership qualities to manage technology ventures successfully.' },
   { code:'PEO3 · Critical Thinking & Analysis',  desc:'To foster analytical and research skills for effective problem-solving and decision-making in diverse computing environments.' },
   { code:'PEO4 · Ethics & Social Responsibility', desc:'To instill professional ethics, human values, and social responsibility in computing practice.' },
+];
+const PSO = [
+  { code:'PSO1: Software Development and Application Design',      desc:'Graduates will be able to design, develop, test, and deploy efficient software applications using programming languages, data structures, algorithms, and software engineering principles to solve real-world computing problems.' },
+  { code:'PSO2: Web Technologies and Database Management', desc:'Graduates will be able to develop dynamic web applications and manage data effectively using modern web technologies, database management systems, and related tools ensuring secure and efficient data handling.' },
+  { code:'PSO3: Emerging Technologies and Practical Implementation',  desc:'Graduates will be able to apply modern computing tools and emerging technologies such as cloud computing, cybersecurity, data analytics, and artificial intelligence to build innovative and industry-relevant solutions.' },
+  
 ];
 
 export default function BCAGProgramDetails() {
@@ -137,6 +144,17 @@ export default function BCAGProgramDetails() {
                 <>
                   <div className="cl-bcagpd-content-head"><div className="lbl">Program Educational Objectives</div><h3>Program Educational Objectives</h3></div>
                   {PEO.map((p,i)=>(
+                    <div key={i} className="cl-bcagpd-point">
+                      <div className="cl-bcagpd-dot"/>
+                      <p><strong style={{color:'#001F4C'}}>{p.code}</strong> — {p.desc}</p>
+                    </div>
+                  ))}
+                </>
+              )}
+              {active==='pso' && (
+                <>
+                  <div className="cl-bcagpd-content-head"><div className="lbl">Program Specific Outcomes</div><h3>Program Specific Outcomes</h3></div>
+                  {PSO.map((p,i)=>(
                     <div key={i} className="cl-bcagpd-point">
                       <div className="cl-bcagpd-dot"/>
                       <p><strong style={{color:'#001F4C'}}>{p.code}</strong> — {p.desc}</p>

@@ -3,13 +3,17 @@
 import { useState } from 'react';
 
 const USPS = [
-  'You graduate with real apps — a deployed personal website in Year 1, a full-stack web app in Year 2, an AI-powered industry project in Year 3, and a final internship or capstone.',
-  'Core + specialisation architecture — master the full stack, then choose one Minor track: Full Stack Web Development, AI Tools & Applications, or Data Analytics.',
-  'Freelancing and placement readiness built in — Freelancing Fundamentals, Quantitative Aptitude preparation for TCS/Infosys/Wipro tests, and Career Readiness.',
-  'A dedicated NEP 2020 Life Skills & Digital Citizenship course covering financial literacy, developer wellness, data privacy by design, and building a GitHub/LinkedIn profile.',
-  'AI-native learning via LEAP, with 9 certifications from NVIDIA, Google, GitHub, freeCodeCamp, DeepLearning.AI, and IIT Kanpur E&ICT Academy.',
-  'A Minor track capstone presented to an industry panel.',
-  'Dedicated placement support across the final year of the programme.',
+  'NEP 2020-aligned curriculum with flexibility, multidisciplinary learning, and outcome-based education.',
+  'Strong foundation in computing through programming, databases, software engineering, networking, and web technologies.',
+  'Specialization opportunities in emerging domains such as Artificial Intelligence, Machine Learning, Full Stack Development, and Cloud Computing.',
+  'Industry-integrated learning through live projects, case studies, hackathons, workshops, and expert sessions.',
+  'Multiple industry certifications embedded within the curriculum to enhance professional competencies and employability.',
+  'Hands-on experiential learning through advanced laboratories, project-based courses, internships, and capstone projects.',
+  'Research and innovation ecosystem with opportunities for research projects, publications, patents, and participation in innovation challenges.',
+  'Entrepreneurship and startup support through incubation, design thinking, and innovation-driven initiatives.',
+  'Comprehensive skill development encompassing communication, leadership, teamwork, critical thinking, and problem-solving abilities.',
+  'Excellent career and higher education pathways leading to opportunities in software development, data analytics, cloud computing, artificial intelligence, cyber security, as well as higher studies such as MCA and doctoral research.', 
+  'Future-ready graduate profile that combines technical expertise, industry readiness, research aptitude, and innovation capabilities to address evolving global technology demands.',
 ];
 
 const CO_ROWS = [

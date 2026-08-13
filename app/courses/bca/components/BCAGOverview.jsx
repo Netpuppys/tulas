@@ -6,7 +6,7 @@ const PATHS = [
     tag: 'Specialisation',
     title: 'BCA Cyber Security',
     desc: 'A comprehensive undergraduate computing degree covering programming, databases, software engineering, networking, and web technologies.',
-    link: null,
+    link: '/courses/bca/',
     current: false,
   },
   {
