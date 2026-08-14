@@ -5,7 +5,6 @@ import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/Footer";
 import "../Blog.css";
 import { notFound } from "next/navigation";
-import TableOfContent from "@/component/TableOfContent";
 import MegaMenu from "@/component/Navbar/MegaMenu";
 import NewNavbar from "@/component/Navbar/NewNavbar";
 import NewFooter from "@/component/NewFooter";
@@ -150,7 +149,6 @@ export default async function SlugPage({ params }) {
           <h6 className="text-[#353535]">
             Published on {formattedDate} by {blog.author_name}
           </h6>
-          <TableOfContent slug={slug} />
           <div
             className="text-[#263145] max-w-full"
             dangerouslySetInnerHTML={{ __html: cleanContent(blog?.content) }}
