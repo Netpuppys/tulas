@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import TulasFooter from "../public/Components/Footer/tulaslogo.png";
+import Logo2 from "../public/logo2.webp";
 import Link from "next/link";
 import ContactForm from "@/app/contact/Component/form";
 import innovationAndStartupPolicy from "../public/research/innovation-and-startup-policy.pdf";
@@ -231,7 +232,7 @@ const Footer = ({ set = false, color = false }) => {
       >
         <div className="w-full flex flex-col items-center gap-[6%] justify-center">
           <Image
-            src={TulasFooter}
+            src={color ? Logo2 : TulasFooter}
             alt="Tula's Dehradun Logo"
             className="w-[200px] md:w-[10%] h-fit pt-4 md:pt-[1%]"
           />
